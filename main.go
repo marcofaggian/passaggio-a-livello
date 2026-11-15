@@ -949,6 +949,25 @@ func InferStationSchedules(trains []vtTrainDetail, cfg Config) map[string][]Cros
 			}
 
 			// EURISTICA DI TRANSITO SENZA FERMATA:
+			// Se esistono stazioni intermedie note tra questa fermata e la successiva
+			// che questo treno non ha in elenco, stimiamo l'istante di passaggio proporzionale.
+			if i+1 < len(tr.Fermate) && !isTrainCancelled {
+				nextStop := tr.Fermate[i+1]
+				if nextStop.ID != "" {
+					tNext := stopArrivalTime(nextStop, tr.Ritardo)
+					if !tNext.IsZero() && tNext.After(depTime) {
+						if path, durs := graph.FindIntermediatePath(stop.ID, nextStop.ID); len(path) > 2 {
+							interpolateNonStopTransits(
+								tr, path, durs, depTime, tNext,
+								graph.StationNames, visitedStops, cfg, byStation,
+							)
+						}
+					}
+				}
+			}
+		}
+	}
+
 	// Ordinamento canonico e fusione (coalescing) delle chiusure ravvicinate
 	// il cui intervallo di apertura sarebbe inferiore al tempo minimo di sicurezza stradale.
 	for stID := range byStation {
@@ -1124,28 +1143,6 @@ func formatTrainShortLabel(cat string, num int, orig, dest string, delay int) st
 		d = fmt.Sprintf(" (+%dm)", delay)
 	}
 	return fmt.Sprintf("%s %d (%s -> %s)%s", normalizeCategory(cat), num, orig, dest, d)
-}
-		byStation[stID] = append(byStation[stID], ev)
-	}
-}
-
-// ============================================================================
-// 5. FUNZIONI EURISTICHE DI SUPPORTO
-// ============================================================================
-
-func barrierBuffersForCategory(cat string, basePre, basePost time.Duration) (time.Duration, time.Duration) {
-	c := strings.ToUpper(strings.TrimSpace(cat))
-	switch {
-	case strings.HasPrefix(c, "FR"), strings.HasPrefix(c, "FA"), strings.HasPrefix(c, "AV"), strings.HasPrefix(c, "ITA"):
-		// Alta velocità: circuiti di binario attivati a maggiore distanza
-		return basePre + 90*time.Second, basePost
-	case strings.HasPrefix(c, "IC"), strings.HasPrefix(c, "EC"), strings.HasPrefix(c, "EN"), strings.HasPrefix(c, "FB"):
-		// Intercity / Eurocity
-		return basePre + 45*time.Second, basePost
-	default:
-		// Regionali / Suburbano / Altro
-		return basePre, basePost
-	}
 }
 
 func stopReferenceTime(s vtStop, trainDelay int) time.Time {
@@ -1424,6 +1421,9 @@ func WriteStationICSIfChanged(
 
 	writeICSLine(&buf, "END:VCALENDAR")
 
+	if err := os.MkdirAll(outDir, 0o755); err != nil {
+		return fileName, false, fmt.Errorf("creazione directory %s: %w", outDir, err)
+	}
 	if err := os.WriteFile(fullPath, buf.Bytes(), 0o644); err != nil {
 		return fileName, false, fmt.Errorf("scrittura file %s: %w", fullPath, err)
 	}
@@ -1520,6 +1520,9 @@ func WriteCatalogIndexIfChanged(outDir string, entries []CatalogEntry, now time.
 		return false, err
 	}
 	data = append(data, '\n')
+	if err := os.MkdirAll(outDir, 0o755); err != nil {
+		return false, err
+	}
 	if err := os.WriteFile(catalogPath, data, 0o644); err != nil {
 		return false, err
 	}
