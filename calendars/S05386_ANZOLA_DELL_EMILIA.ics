@@ -9,39 +9,65 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:9ad0082e51a539553a06a0dffb846dd2d24454065351405635c371803af0
- c5dd
+X-CONTENT-HASH:f1f73426ef2601695bd79c9f395522161f248b5f3dd47a4a73ed1dcc730f
+ 81ff
 BEGIN:VEVENT
-UID:train-17400--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:1
-DTSTART:20261115T233830Z
-DTEND:20261115T234300Z
-SUMMARY:[FERMATA] REG 17400 (BOLOGNA CENTRALE -> PARMA) ore 00:42 (+8 min)
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: FERM
- ATA\nChiusura sbarre stimata: 00:38:30 - 00:43:00\nTreni coinvolti nella c
- hiusura:\n  - REG 17400 (BOLOGNA CENTRALE -> PARMA) (+8m)\nRitardo massimo
-  rilevato: 8 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rile
- vamento reale da circuito di binario
+UID:train-17406--20261115-S05386@pl-tracker.local
+DTSTAMP:20261116T002034Z
+SEQUENCE:0
+DTSTART:20261116T055530Z
+DTEND:20261116T060000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:55 - 07:00 (primo: REG 17406)
+DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:55:30 - 07:00:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 17406 (BOLOGNA CENTRALE -> PARMA)\n 
+  - REG 17406 (BOLOGNA CENTRALE -> PARMA)\nRitardo massimo rilevato: 0 min\
+ nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per
+  2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
+ a di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:8
-X-PL-CONFIDENCE:0.99
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2458--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
+UID:train-19584--20261115-S05386@pl-tracker.local
+DTSTAMP:20261116T002034Z
 SEQUENCE:0
-DTSTART:20261116T045730Z
-DTEND:20261116T050200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:57 - 06:02 (primo: REG 2458)
+DTSTART:20261116T062830Z
+DTEND:20261116T063644Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:28 - 07:36 (primo: REG 19584)
 DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:57:30 - 06:02:00\nTre
- ni coinvolti nella chiusura:\n  - REG 2458 (BOLOGNA CENTRALE -> MILANO CEN
- TRALE)\n  - REG 2458 (BOLOGNA CENTRALE -> MILANO CENTRALE)\nRitardo massim
+ SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 07:28:30 - 07:36:44\nTre
+ ni coinvolti nella chiusura:\n  - REG 19584 (BOLOGNA CENTRALE -> MODENA)\n
+   - REG 19584 (BOLOGNA CENTRALE -> MODENA)\n  - REG 2451 (MILANO CENTRALE 
+ -> BOLOGNA CENTRALE) [Transito]\n  - REG 2451 (MILANO CENTRALE -> BOLOGNA 
+ CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima
+ : 78%\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo
+  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
+ le (120s)
+LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2451--20261115-S05386@pl-tracker.local
+DTSTAMP:20261116T002034Z
+SEQUENCE:3
+DTSTART:20261116T064330Z
+DTEND:20261116T064800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:43 - 07:48 (primo: REG 2451)
+DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:43:30 - 07:48:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 2451 (MILANO CENTRALE -> BOLOGNA CEN
+ TRALE)\n  - REG 2451 (MILANO CENTRALE -> BOLOGNA CENTRALE)\nRitardo massim
  o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
  usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
   alla soglia minima di sgombero stradale (120s)
@@ -54,166 +80,19 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-19582--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T052830Z
-DTEND:20261116T053300Z
-SUMMARY:[FERMATA] REG 19582 (BOLOGNA CENTRALE -> MODENA) ore 06:32
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: FERM
- ATA\nChiusura sbarre stimata: 06:28:30 - 06:33:00\nTreni coinvolti nella c
- hiusura:\n  - REG 19582 (BOLOGNA CENTRALE -> MODENA)\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
- e da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17403--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T054352Z
-DTEND:20261116T054922Z
-SUMMARY:[TRANSITO VELOCE] REG 17403 (PARMA -> BOLOGNA CENTRALE) ore 06:48
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 06:43:52 - 06:49:22\nTreni coinvolti
-  nella chiusura:\n  - REG 17403 (PARMA -> BOLOGNA CENTRALE) [Transito]\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Transito stimato senza fermata (59% tratta CASTELFRANCO EMILIA ->
-  SAMOGGIA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17403--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T055230Z
-DTEND:20261116T055700Z
-SUMMARY:[FERMATA] REG 17403 (PARMA -> BOLOGNA CENTRALE) ore 06:56
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: FERM
- ATA\nChiusura sbarre stimata: 06:52:30 - 06:57:00\nTreni coinvolti nella c
- hiusura:\n  - REG 17403 (PARMA -> BOLOGNA CENTRALE)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
-  da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3905--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:0
-DTSTART:20261116T060517Z
-DTEND:20261116T061700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:05 - 07:17 (primo: REG 3905)
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:05:17 - 07:17:00\nTre
- ni coinvolti nella chiusura:\n  - REG 3905 (PIACENZA -> ANCONA) [Transito]
- \n  - REG 3905 (PIACENZA -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffi
- dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tr
- eni: intervallo utile tra i passaggi (102s) inferiore alla soglia minima d
- i sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2451--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T063114Z
-DTEND:20261116T063644Z
-SUMMARY:[TRANSITO VELOCE] REG 2451 (MILANO CENTRALE -> BOLOGNA CENTRALE) or
- e 07:35
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 07:31:14 - 07:36:44\nTreni coinvolti
-  nella chiusura:\n  - REG 2451 (MILANO CENTRALE -> BOLOGNA CENTRALE) [Tran
- sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Transito stimato senza fermata (59% tratta CASTELFRANCO 
- EMILIA -> SAMOGGIA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2451--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T064330Z
-DTEND:20261116T064800Z
-SUMMARY:[FERMATA] REG 2451 (MILANO CENTRALE -> BOLOGNA CENTRALE) ore 07:47
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: FERM
- ATA\nChiusura sbarre stimata: 07:43:30 - 07:48:00\nTreni coinvolti nella c
- hiusura:\n  - REG 2451 (MILANO CENTRALE -> BOLOGNA CENTRALE)\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
- revisione da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2462--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:1
-DTSTART:20261116T065530Z
-DTEND:20261116T070000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:55 - 08:00 (primo: REG 2462)
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:55:30 - 08:00:00\nTre
- ni coinvolti nella chiusura:\n  - REG 2462 (RIMINI -> MILANO CENTRALE)\n  
- - REG 2462 (RIMINI -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nA
- ffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2
-  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
- di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-17425--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:1
+DTSTAMP:20261116T002034Z
+SEQUENCE:2
 DTSTART:20261116T072830Z
 DTEND:20261116T073300Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:28 - 08:33 (primo: REG 17425)
 DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
  SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:28:30 - 08:33:00\nTre
  ni coinvolti nella chiusura:\n  - REG 17425 (PIACENZA -> BOLOGNA CENTRALE)
- \n  - REG 19586 (BOLOGNA CENTRALE -> MODENA)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
+ \n  - REG 17425 (PIACENZA -> BOLOGNA CENTRALE)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura contin
+ ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+  minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -223,16 +102,16 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2453--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T074203Z
-DTEND:20261116T074733Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:42 - 08:47 (primo: REG 2453)
+UID:train-2455--20261115-S05386@pl-tracker.local
+DTSTAMP:20261116T002034Z
+SEQUENCE:3
+DTSTART:20261116T084617Z
+DTEND:20261116T085147Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:46 - 09:51 (primo: REG 2455)
 DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:42:03 - 08:47:33\nTre
- ni coinvolti nella chiusura:\n  - REG 2453 (MILANO CENTRALE -> BOLOGNA CEN
- TRALE) [Transito]\n  - REG 2453 (MILANO CENTRALE -> BOLOGNA CENTRALE) [Tra
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:46:17 - 09:51:47\nTre
+ ni coinvolti nella chiusura:\n  - REG 2455 (MILANO CENTRALE -> BOLOGNA CEN
+ TRALE) [Transito]\n  - REG 2455 (MILANO CENTRALE -> BOLOGNA CENTRALE) [Tra
  nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
  rmativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i p
  assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
@@ -245,104 +124,16 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2453--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T075130Z
-DTEND:20261116T080000Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 08:51 - 09:00 (primo: REG 2453)
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
- SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 08:51:30 - 09:00:00\nTre
- ni coinvolti nella chiusura:\n  - REG 2453 (MILANO CENTRALE -> BOLOGNA CEN
- TRALE)\n  - REG 2453 (MILANO CENTRALE -> BOLOGNA CENTRALE)\n  - REG 17410 
- (BOLOGNA CENTRALE -> PARMA)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 3 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2067--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:1
-DTSTART:20261116T080633Z
-DTEND:20261116T081203Z
-SUMMARY:[TRANSITO VELOCE] REG 2067 (VOGHERA -> RIMINI) ore 09:10
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 09:06:33 - 09:12:03\nTreni coinvolti
-  nella chiusura:\n  - REG 2067 (VOGHERA -> RIMINI) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Transito stimato senza fermata (32% tratta CASTELFRANCO EMILIA -> BOLOGNA 
- CENTRALE\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-19588--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:1
-DTSTART:20261116T082830Z
-DTEND:20261116T083919Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:28 - 09:39 (primo: REG 19588)
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:28:30 - 09:39:19\nTre
- ni coinvolti nella chiusura:\n  - REG 19588 (BOLOGNA CENTRALE -> MODENA)\n
-   - REG 3906 (ANCONA -> PIACENZA) [Transito]\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (49s) inferiore alla soglia 
- minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-2455--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T084617Z
-DTEND:20261116T085147Z
-SUMMARY:[TRANSITO VELOCE] REG 2455 (MILANO CENTRALE -> BOLOGNA CENTRALE) or
- e 09:50
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 09:46:17 - 09:51:47\nTreni coinvolti
-  nella chiusura:\n  - REG 2455 (MILANO CENTRALE -> BOLOGNA CENTRALE) [Tran
- sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Transito stimato senza fermata (59% tratta CASTELFRANCO 
- EMILIA -> SAMOGGIA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2455--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
+DTSTAMP:20261116T002034Z
+SEQUENCE:3
 DTSTART:20261116T085430Z
-DTEND:20261116T090000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:54 - 10:00 (primo: REG 2455)
+DTEND:20261116T085900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:54 - 09:59 (primo: REG 2455)
 DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:54:30 - 10:00:00\nTre
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:54:30 - 09:59:00\nTre
  ni coinvolti nella chiusura:\n  - REG 2455 (MILANO CENTRALE -> BOLOGNA CEN
- TRALE)\n  - REG 2466 (BOLOGNA CENTRALE -> MILANO CENTRALE)\nRitardo massim
+ TRALE)\n  - REG 2455 (MILANO CENTRALE -> BOLOGNA CENTRALE)\nRitardo massim
  o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
  usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
   alla soglia minima di sgombero stradale (120s)
@@ -356,8 +147,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19590--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:0
+DTSTAMP:20261116T002034Z
+SEQUENCE:1
 DTSTART:20261116T092830Z
 DTEND:20261116T093300Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:28 - 10:33 (primo: REG 19590)
@@ -377,207 +168,16 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-17409--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T094417Z
-DTEND:20261116T094947Z
-SUMMARY:[TRANSITO VELOCE] REG 17409 (PARMA -> BOLOGNA CENTRALE) ore 10:48
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 10:44:17 - 10:49:47\nTreni coinvolti
-  nella chiusura:\n  - REG 17409 (PARMA -> BOLOGNA CENTRALE) [Transito]\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Transito stimato senza fermata (59% tratta CASTELFRANCO EMILIA ->
-  SAMOGGIA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17409--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T095230Z
-DTEND:20261116T095700Z
-SUMMARY:[FERMATA] REG 17409 (PARMA -> BOLOGNA CENTRALE) ore 10:56
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: FERM
- ATA\nChiusura sbarre stimata: 10:52:30 - 10:57:00\nTreni coinvolti nella c
- hiusura:\n  - REG 17409 (PARMA -> BOLOGNA CENTRALE)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
-  da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3915--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
+UID:train-17412--20261115-S05386@pl-tracker.local
+DTSTAMP:20261116T002034Z
 SEQUENCE:0
-DTSTART:20261116T100633Z
-DTEND:20261116T101203Z
-SUMMARY:[TRANSITO VELOCE] REG 3915 (PIACENZA -> ANCONA) ore 11:10
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 11:06:33 - 11:12:03\nTreni coinvolti
-  nella chiusura:\n  - REG 3915 (PIACENZA -> ANCONA) [Transito]\nRitardo ma
- ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
-  Transito stimato senza fermata (32% tratta CASTELFRANCO EMILIA -> BOLOGNA
-  CENTRALE\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-19592--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:0
-DTSTART:20261116T102830Z
-DTEND:20261116T103300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:28 - 11:33 (primo: REG 19592)
+DTSTART:20261116T095530Z
+DTEND:20261116T100000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:55 - 11:00 (primo: REG 17412)
 DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:28:30 - 11:33:00\nTre
- ni coinvolti nella chiusura:\n  - REG 19592 (BOLOGNA CENTRALE -> MODENA)\n
-   - REG 19592 (BOLOGNA CENTRALE -> MODENA)\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
- er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2459--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T104417Z
-DTEND:20261116T104947Z
-SUMMARY:[TRANSITO VELOCE] REG 2459 (MILANO CENTRALE -> BOLOGNA CENTRALE) or
- e 11:48
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 11:44:17 - 11:49:47\nTreni coinvolti
-  nella chiusura:\n  - REG 2459 (MILANO CENTRALE -> BOLOGNA CENTRALE) [Tran
- sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Transito stimato senza fermata (59% tratta CASTELFRANCO 
- EMILIA -> SAMOGGIA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2459--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T105230Z
-DTEND:20261116T110000Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:52 - 12:00 (primo: REG 2459)
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
- SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 11:52:30 - 12:00:00\nTre
- ni coinvolti nella chiusura:\n  - REG 2459 (MILANO CENTRALE -> BOLOGNA CEN
- TRALE)\n  - REG 2470 (BOLOGNA CENTRALE -> MILANO CENTRALE)\n  - REG 2470 (
- BOLOGNA CENTRALE -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAff
- idabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 3 t
- reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
-  sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3917--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:0
-DTSTART:20261116T110633Z
-DTEND:20261116T111203Z
-SUMMARY:[TRANSITO VELOCE] REG 3917 (PIACENZA -> ANCONA) ore 12:10
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 12:06:33 - 12:12:03\nTreni coinvolti
-  nella chiusura:\n  - REG 3917 (PIACENZA -> ANCONA) [Transito]\nRitardo ma
- ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
-  Transito stimato senza fermata (32% tratta CASTELFRANCO EMILIA -> BOLOGNA
-  CENTRALE\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-19594--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T112830Z
-DTEND:20261116T113300Z
-SUMMARY:[FERMATA] REG 19594 (BOLOGNA CENTRALE -> MODENA) ore 12:32
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: FERM
- ATA\nChiusura sbarre stimata: 12:28:30 - 12:33:00\nTreni coinvolti nella c
- hiusura:\n  - REG 19594 (BOLOGNA CENTRALE -> MODENA)\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
- e da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17413--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:1
-DTSTART:20261116T114417Z
-DTEND:20261116T114947Z
-SUMMARY:[TRANSITO VELOCE] REG 17413 (PARMA -> BOLOGNA CENTRALE) ore 12:48
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 12:44:17 - 12:49:47\nTreni coinvolti
-  nella chiusura:\n  - REG 17413 (PARMA -> BOLOGNA CENTRALE) [Transito]\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Transito stimato senza fermata (59% tratta CASTELFRANCO EMILIA ->
-  SAMOGGIA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17413--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:1
-DTSTART:20261116T115230Z
-DTEND:20261116T120000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:52 - 13:00 (primo: REG 17413)
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:52:30 - 13:00:00\nTre
- ni coinvolti nella chiusura:\n  - REG 17413 (PARMA -> BOLOGNA CENTRALE)\n 
-  - REG 17414 (BOLOGNA CENTRALE -> PARMA)\nRitardo massimo rilevato: 0 min\
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:55:30 - 11:00:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 17412 (BOLOGNA CENTRALE -> PARMA)\n 
+  - REG 17412 (BOLOGNA CENTRALE -> PARMA)\nRitardo massimo rilevato: 0 min\
  nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per
   2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
  a di sgombero stradale (120s)
@@ -590,16 +190,171 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3921--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:0
-DTSTART:20261116T120633Z
-DTEND:20261116T121203Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:06 - 13:12 (primo: REG 3921)
+UID:train-2459--20261115-S05386@pl-tracker.local
+DTSTAMP:20261116T002034Z
+SEQUENCE:3
+DTSTART:20261116T104417Z
+DTEND:20261116T104947Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:44 - 11:49 (primo: REG 2459)
 DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:06:33 - 13:12:03\nTre
- ni coinvolti nella chiusura:\n  - REG 3921 (PIACENZA -> ANCONA) [Transito]
- \n  - REG 3921 (PIACENZA -> ANCONA) [Transito]\nRitardo massimo rilevato: 
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:44:17 - 11:49:47\nTre
+ ni coinvolti nella chiusura:\n  - REG 2459 (MILANO CENTRALE -> BOLOGNA CEN
+ TRALE) [Transito]\n  - REG 2459 (MILANO CENTRALE -> BOLOGNA CENTRALE) [Tra
+ nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i p
+ assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2459--20261115-S05386@pl-tracker.local
+DTSTAMP:20261116T002034Z
+SEQUENCE:3
+DTSTART:20261116T105230Z
+DTEND:20261116T110000Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:52 - 12:00 (primo: REG 2459)
+DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
+ SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 11:52:30 - 12:00:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 2459 (MILANO CENTRALE -> BOLOGNA CEN
+ TRALE)\n  - REG 2459 (MILANO CENTRALE -> BOLOGNA CENTRALE)\n  - REG 2470 (
+ BOLOGNA CENTRALE -> MILANO CENTRALE)\n  - REG 2470 (BOLOGNA CENTRALE -> MI
+ LANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\
+ nNota normativa/euristica: Chiusura continua per 4 treni: intervallo utile
+  tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (12
+ 0s)
+LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3917--20261115-S05386@pl-tracker.local
+DTSTAMP:20261116T002034Z
+SEQUENCE:1
+DTSTART:20261116T110613Z
+DTEND:20261116T111143Z
+SUMMARY:[TRANSITO VELOCE] REG 3917 (PIACENZA -> ANCONA) ore 12:10
+DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 12:06:13 - 12:11:43\nTreni coinvolti
+  nella chiusura:\n  - REG 3917 (PIACENZA -> ANCONA) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Transito stimato senza fermata (31% tratta CASTELFRANCO EMILIA -> BOLOGNA
+  CENTRALE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17413--20261115-S05386@pl-tracker.local
+DTSTAMP:20261116T002034Z
+SEQUENCE:2
+DTSTART:20261116T114417Z
+DTEND:20261116T114947Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:44 - 12:49 (primo: REG 17413)
+DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:44:17 - 12:49:47\nTre
+ ni coinvolti nella chiusura:\n  - REG 17413 (PARMA -> BOLOGNA CENTRALE) [T
+ ransito]\n  - REG 17413 (PARMA -> BOLOGNA CENTRALE) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
+ iore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17413--20261115-S05386@pl-tracker.local
+DTSTAMP:20261116T002034Z
+SEQUENCE:2
+DTSTART:20261116T115230Z
+DTEND:20261116T115700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:52 - 12:57 (primo: REG 17413)
+DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:52:30 - 12:57:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 17413 (PARMA -> BOLOGNA CENTRALE)\n 
+  - REG 17413 (PARMA -> BOLOGNA CENTRALE)\nRitardo massimo rilevato: 0 min\
+ nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per
+  2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
+ a di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19614--20261115-S05386@pl-tracker.local
+DTSTAMP:20261116T002034Z
+SEQUENCE:0
+DTSTART:20261116T152830Z
+DTEND:20261116T153300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:28 - 16:33 (primo: REG 19614)
+DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:28:30 - 16:33:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 19614 (BOLOGNA CENTRALE -> MODENA)\n
+   - REG 19614 (BOLOGNA CENTRALE -> MODENA)\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
+ er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
+ ima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17418--20261115-S05386@pl-tracker.local
+DTSTAMP:20261116T002034Z
+SEQUENCE:0
+DTSTART:20261116T155430Z
+DTEND:20261116T155900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:54 - 16:59 (primo: REG 17418)
+DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:54:30 - 16:59:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 17418 (BOLOGNA CENTRALE -> PARMA)\n 
+  - REG 17418 (BOLOGNA CENTRALE -> PARMA)\nRitardo massimo rilevato: 0 min\
+ nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per
+  2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
+ a di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3935--20261115-S05386@pl-tracker.local
+DTSTAMP:20261116T002034Z
+SEQUENCE:1
+DTSTART:20261116T170818Z
+DTEND:20261116T171348Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:08 - 18:13 (primo: REG 3935)
+DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:08:18 - 18:13:48\nTre
+ ni coinvolti nella chiusura:\n  - REG 3935 (PIACENZA -> ANCONA) [Transito]
+ \n  - REG 3935 (PIACENZA -> ANCONA) [Transito]\nRitardo massimo rilevato: 
  0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
  ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
   minima di sgombero stradale (120s)
@@ -612,289 +367,16 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-19596--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T122030Z
-DTEND:20261116T122500Z
-SUMMARY:[FERMATA] REG 19596 (BOLOGNA CENTRALE -> MODENA) ore 13:24
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: FERM
- ATA\nChiusura sbarre stimata: 13:20:30 - 13:25:00\nTreni coinvolti nella c
- hiusura:\n  - REG 19596 (BOLOGNA CENTRALE -> MODENA)\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
- e da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2463--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T124517Z
-DTEND:20261116T130000Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 13:45 - 14:00 (primo: REG 2463)
+UID:train-2486--20261115-S05386@pl-tracker.local
+DTSTAMP:20261116T002034Z
+SEQUENCE:0
+DTSTART:20261116T185530Z
+DTEND:20261116T190000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:55 - 20:00 (primo: REG 2486)
 DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
- SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 13:45:17 - 14:00:00\nTre
- ni coinvolti nella chiusura:\n  - REG 2463 (MILANO CENTRALE -> BOLOGNA CEN
- TRALE) [Transito]\n  - REG 2463 (MILANO CENTRALE -> BOLOGNA CENTRALE)\n  -
-  REG 2474 (BOLOGNA CENTRALE -> MILANO CENTRALE)\nRitardo massimo rilevato:
-  0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
- nua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
- a minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-19600--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T132830Z
-DTEND:20261116T133300Z
-SUMMARY:[FERMATA] REG 19600 (BOLOGNA CENTRALE -> MODENA) ore 14:32
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: FERM
- ATA\nChiusura sbarre stimata: 14:28:30 - 14:33:00\nTreni coinvolti nella c
- hiusura:\n  - REG 19600 (BOLOGNA CENTRALE -> MODENA)\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
- e da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17416--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T135530Z
-DTEND:20261116T140000Z
-SUMMARY:[FERMATA] REG 17416 (BOLOGNA CENTRALE -> PARMA) ore 14:59
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: FERM
- ATA\nChiusura sbarre stimata: 14:55:30 - 15:00:00\nTreni coinvolti nella c
- hiusura:\n  - REG 17416 (BOLOGNA CENTRALE -> PARMA)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
-  da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-19604--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T142830Z
-DTEND:20261116T143300Z
-SUMMARY:[FERMATA] REG 19604 (BOLOGNA CENTRALE -> MODENA) ore 15:32
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: FERM
- ATA\nChiusura sbarre stimata: 15:28:30 - 15:33:00\nTreni coinvolti nella c
- hiusura:\n  - REG 19604 (BOLOGNA CENTRALE -> MODENA)\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
- e da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2467--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T144417Z
-DTEND:20261116T144947Z
-SUMMARY:[TRANSITO VELOCE] REG 2467 (MILANO CENTRALE -> BOLOGNA CENTRALE) or
- e 15:48
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 15:44:17 - 15:49:47\nTreni coinvolti
-  nella chiusura:\n  - REG 2467 (MILANO CENTRALE -> BOLOGNA CENTRALE) [Tran
- sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Transito stimato senza fermata (59% tratta CASTELFRANCO 
- EMILIA -> SAMOGGIA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2467--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T145230Z
-DTEND:20261116T150000Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:52 - 16:00 (primo: REG 2467)
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
- SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 15:52:30 - 16:00:00\nTre
- ni coinvolti nella chiusura:\n  - REG 2467 (MILANO CENTRALE -> BOLOGNA CEN
- TRALE)\n  - REG 2478 (BOLOGNA CENTRALE -> MILANO CENTRALE)\n  - REG 2478 (
- BOLOGNA CENTRALE -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAff
- idabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 3 t
- reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
-  sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3929--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:1
-DTSTART:20261116T150633Z
-DTEND:20261116T151203Z
-SUMMARY:[TRANSITO VELOCE] REG 3929 (PIACENZA -> ANCONA) ore 16:10
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 16:06:33 - 16:12:03\nTreni coinvolti
-  nella chiusura:\n  - REG 3929 (PIACENZA -> ANCONA) [Transito]\nRitardo ma
- ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
-  Transito stimato senza fermata (32% tratta CASTELFRANCO EMILIA -> BOLOGNA
-  CENTRALE\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17417--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T154417Z
-DTEND:20261116T154947Z
-SUMMARY:[TRANSITO VELOCE] REG 17417 (PARMA -> BOLOGNA CENTRALE) ore 16:48
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 16:44:17 - 16:49:47\nTreni coinvolti
-  nella chiusura:\n  - REG 17417 (PARMA -> BOLOGNA CENTRALE) [Transito]\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Transito stimato senza fermata (59% tratta CASTELFRANCO EMILIA ->
-  SAMOGGIA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17417--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T155230Z
-DTEND:20261116T155700Z
-SUMMARY:[FERMATA] REG 17417 (PARMA -> BOLOGNA CENTRALE) ore 16:56
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: FERM
- ATA\nChiusura sbarre stimata: 16:52:30 - 16:57:00\nTreni coinvolti nella c
- hiusura:\n  - REG 17417 (PARMA -> BOLOGNA CENTRALE)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
-  da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3931--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:1
-DTSTART:20261116T160633Z
-DTEND:20261116T161203Z
-SUMMARY:[TRANSITO VELOCE] REG 3931 (PIACENZA -> ANCONA) ore 17:10
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 17:06:33 - 17:12:03\nTreni coinvolti
-  nella chiusura:\n  - REG 3931 (PIACENZA -> ANCONA) [Transito]\nRitardo ma
- ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
-  Transito stimato senza fermata (32% tratta CASTELFRANCO EMILIA -> BOLOGNA
-  CENTRALE\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-19616--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T162830Z
-DTEND:20261116T163300Z
-SUMMARY:[FERMATA] REG 19616 (BOLOGNA CENTRALE -> MODENA) ore 17:32
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: FERM
- ATA\nChiusura sbarre stimata: 17:28:30 - 17:33:00\nTreni coinvolti nella c
- hiusura:\n  - REG 19616 (BOLOGNA CENTRALE -> MODENA)\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
- e da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2471--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T164417Z
-DTEND:20261116T164947Z
-SUMMARY:[TRANSITO VELOCE] REG 2471 (MILANO CENTRALE -> BOLOGNA CENTRALE) or
- e 17:48
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 17:44:17 - 17:49:47\nTreni coinvolti
-  nella chiusura:\n  - REG 2471 (MILANO CENTRALE -> BOLOGNA CENTRALE) [Tran
- sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Transito stimato senza fermata (59% tratta CASTELFRANCO 
- EMILIA -> SAMOGGIA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2471--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T165230Z
-DTEND:20261116T170000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:52 - 18:00 (primo: REG 2471)
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:52:30 - 18:00:00\nTre
- ni coinvolti nella chiusura:\n  - REG 2471 (MILANO CENTRALE -> BOLOGNA CEN
- TRALE)\n  - REG 2482 (BOLOGNA CENTRALE -> MILANO CENTRALE)\nRitardo massim
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:55:30 - 20:00:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 2486 (BOLOGNA CENTRALE -> MILANO CEN
+ TRALE)\n  - REG 2486 (BOLOGNA CENTRALE -> MILANO CENTRALE)\nRitardo massim
  o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
  usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
   alla soglia minima di sgombero stradale (120s)
@@ -907,106 +389,19 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3935--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:0
-DTSTART:20261116T170834Z
-DTEND:20261116T171404Z
-SUMMARY:[TRANSITO VELOCE] REG 3935 (PIACENZA -> ANCONA) ore 18:12
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 18:08:34 - 18:14:04\nTreni coinvolti
-  nella chiusura:\n  - REG 3935 (PIACENZA -> ANCONA) [Transito]\nRitardo ma
- ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
-  Transito stimato senza fermata (32% tratta CASTELFRANCO EMILIA -> BOLOGNA
-  CENTRALE\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-22454--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:1
-DTSTART:20261116T174430Z
-DTEND:20261116T174947Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:44 - 18:49 (primo: REG 22454)
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:44:30 - 18:49:47\nTre
- ni coinvolti nella chiusura:\n  - REG 22454 (BOLOGNA CENTRALE -> MANTOVA)\
- n  - REG 17419 (PARMA -> BOLOGNA CENTRALE) [Transito]\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
-  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17419--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:1
-DTSTART:20261116T175230Z
-DTEND:20261116T175700Z
-SUMMARY:[FERMATA] REG 17419 (PARMA -> BOLOGNA CENTRALE) ore 18:56
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: FERM
- ATA\nChiusura sbarre stimata: 18:52:30 - 18:57:00\nTreni coinvolti nella c
- hiusura:\n  - REG 17419 (PARMA -> BOLOGNA CENTRALE)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
-  da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2475--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
+UID:train-2477--20261115-S05386@pl-tracker.local
+DTSTAMP:20261116T002034Z
 SEQUENCE:2
-DTSTART:20261116T185217Z
-DTEND:20261116T191203Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 19:52 - 20:12 (primo: REG 2475)
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 19:52:17 - 20:12:03\nTre
- ni coinvolti nella chiusura:\n  - REG 2475 (MILANO CENTRALE -> BOLOGNA CEN
- TRALE) [Transito]\n  - REG 2486 (BOLOGNA CENTRALE -> MILANO CENTRALE)\n  -
-  REG 2475 (MILANO CENTRALE -> BOLOGNA CENTRALE)\n  - REG 3939 (PIACENZA ->
-  ANCONA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
-  78%\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo 
- utile tra i passaggi (93s) inferiore alla soglia minima di sgombero strada
- le (120s)
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-19622--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T192830Z
+DTSTART:20261116T193317Z
 DTEND:20261116T193847Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:28 - 20:38 (primo: REG 19622)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:33 - 20:38 (primo: REG 2477)
 DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:28:30 - 20:38:47\nTre
- ni coinvolti nella chiusura:\n  - REG 19622 (BOLOGNA CENTRALE -> MODENA)\n
-   - REG 2477 (MILANO CENTRALE -> RIMINI) [Transito]\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (17s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:33:17 - 20:38:47\nTre
+ ni coinvolti nella chiusura:\n  - REG 2477 (MILANO CENTRALE -> RIMINI) [Tr
+ ansito]\n  - REG 2477 (MILANO CENTRALE -> RIMINI) [Transito]\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
+ hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
+ re alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -1017,68 +412,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2477--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:1
+DTSTAMP:20261116T002034Z
+SEQUENCE:2
 DTSTART:20261116T194130Z
 DTEND:20261116T194600Z
-SUMMARY:[FERMATA] REG 2477 (MILANO CENTRALE -> RIMINI) ore 20:45
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: FERM
- ATA\nChiusura sbarre stimata: 20:41:30 - 20:46:00\nTreni coinvolti nella c
- hiusura:\n  - REG 2477 (MILANO CENTRALE -> RIMINI)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
- da traccia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:41 - 20:46 (primo: REG 2477)
+DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:41:30 - 20:46:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 2477 (MILANO CENTRALE -> RIMINI)\n  
+ - REG 2477 (MILANO CENTRALE -> RIMINI)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17422--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:1
-DTSTART:20261116T195530Z
-DTEND:20261116T200000Z
-SUMMARY:[FERMATA] REG 17422 (BOLOGNA CENTRALE -> PARMA) ore 20:59
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: FERM
- ATA\nChiusura sbarre stimata: 20:55:30 - 21:00:00\nTreni coinvolti nella c
- hiusura:\n  - REG 17422 (BOLOGNA CENTRALE -> PARMA)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
-  da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-19624--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:2
-DTSTART:20261116T202830Z
-DTEND:20261116T203300Z
-SUMMARY:[FERMATA] REG 19624 (BOLOGNA CENTRALE -> MODENA) ore 21:32
-DESCRIPTION:Stazione/PL: ANZOLA DELL'EMILIA (S05386)\nRegime chiusura: FERM
- ATA\nChiusura sbarre stimata: 21:28:30 - 21:33:00\nTreni coinvolti nella c
- hiusura:\n  - REG 19624 (BOLOGNA CENTRALE -> MODENA)\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
- e da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione ANZOLA DELL'EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17421--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:1
+DTSTAMP:20261116T002034Z
+SEQUENCE:2
 DTSTART:20261116T213017Z
 DTEND:20261116T213547Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:30 - 22:35 (primo: REG 17421)
@@ -1099,8 +456,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17421--20261115-S05386@pl-tracker.local
-DTSTAMP:20261116T000017Z
-SEQUENCE:1
+DTSTAMP:20261116T002034Z
+SEQUENCE:2
 DTSTART:20261116T213830Z
 DTEND:20261116T214300Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:38 - 22:43 (primo: REG 17421)
