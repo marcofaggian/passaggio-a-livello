@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:a3da4264455d7621f504a2de7cd0dbabe8fa0d466a0f6c74046f8edce343
- 77cb
+X-CONTENT-HASH:7aac1624dec23c3e04386b7edff04bdfd94059cfe8ad4a3caf9218006ee9
+ 493a
 BEGIN:VEVENT
 UID:train-16293--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T044830Z
 DTEND:20261116T045300Z
 SUMMARY:[FERMATA] REG 16293 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) ore 05:
@@ -34,17 +34,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16295--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T050228Z
-DTEND:20261116T050758Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T050221Z
+DTEND:20261116T050751Z
 SUMMARY:[TRANSITO VELOCE] REG 16295 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)
   ore 06:06
 DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: TRANSITO 
- VELOCE\nChiusura sbarre stimata: 06:02:28 - 06:07:58\nTreni coinvolti nell
+ VELOCE\nChiusura sbarre stimata: 06:02:21 - 06:07:51\nTreni coinvolti nell
  a chiusura:\n  - REG 16295 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) [Transi
  to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Transito stimato senza fermata (67% tratta CASTELFRANCO VE
+ tiva/euristica: Transito stimato senza fermata (66% tratta CASTELFRANCO VE
  NETO -> RESANA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
 STATUS:CONFIRMED
@@ -56,8 +56,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16295--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T051030Z
 DTEND:20261116T051500Z
 SUMMARY:[FERMATA] REG 16295 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) ore 06:
@@ -77,15 +77,61 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16291--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
 DTSTART:20261116T054830Z
-DTEND:20261116T055300Z
-SUMMARY:[FERMATA] REG 16291 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) ore 06:
- 52
+DTEND:20261116T055900Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 06:48 - 06:59 (primo: REG 16291) (+5 
+ min)
+DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 3 TRENI\nChiusura sbarre stimata: 06:48:30 - 06:59:00\nTreni co
+ involti nella chiusura:\n  - REG 16291 (BASSANO DEL GRAPPA -> VENEZIA S.LU
+ CIA)\n  - REG 16291 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+5m)\n  - REG
+  16291 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+5m)\nRitardo massimo rile
+ vato: 5 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura 
+ continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16302--20261115-S02509@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T060835Z
+DTEND:20261116T061405Z
+SUMMARY:[TRANSITO VELOCE] REG 16302 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)
+  ore 07:12
+DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: TRANSITO 
+ VELOCE\nChiusura sbarre stimata: 07:08:35 - 07:14:05\nTreni coinvolti nell
+ a chiusura:\n  - REG 16302 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [Transi
+ to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (73% tratta VENEZIA MESTRE 
+ -> SPINEA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16302--20261115-S02509@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T063130Z
+DTEND:20261116T063600Z
+SUMMARY:[FERMATA] REG 16302 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) ore 07:
+ 35
 DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: FERMATA\n
- Chiusura sbarre stimata: 06:48:30 - 06:53:00\nTreni coinvolti nella chiusu
- ra:\n  - REG 16291 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\nRitardo massim
+ Chiusura sbarre stimata: 07:31:30 - 07:36:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 16302 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRitardo massim
  o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pre
  visione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
@@ -97,67 +143,20 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16302--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T060825Z
-DTEND:20261116T061355Z
-SUMMARY:[TRANSITO VELOCE] REG 16302 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)
-  ore 07:12
-DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: TRANSITO 
- VELOCE\nChiusura sbarre stimata: 07:08:25 - 07:13:55\nTreni coinvolti nell
- a chiusura:\n  - REG 16302 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Transito stimato senza fermata (71% tratta VENEZIA MESTRE 
- -> SPINEA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-16404--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
-DTSTART:20261116T062501Z
-DTEND:20261116T063600Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:25 - 07:36 (primo: REG 16404) (+2 
- min)
-DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
- CONTINUA - 3 TRENI\nChiusura sbarre stimata: 07:25:01 - 07:36:00\nTreni co
- involti nella chiusura:\n  - REG 16404 (PADOVA -> TREVISO CENTRALE) (+2m) 
- [Transito]\n  - REG 16404 (PADOVA -> TREVISO CENTRALE) (+2m) [Transito]\n 
-  - REG 16302 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRitardo massimo rile
- vato: 2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
- continua per 3 treni: intervallo utile tra i passaggi (58s) inferiore alla
-  soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:2
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-16306--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T063926Z
-DTEND:20261116T064456Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:39 - 07:44 (primo: REG 16306) (+4 
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T063932Z
+DTEND:20261116T064853Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:39 - 07:48 (primo: REG 16306) (+4 
  min)
 DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:39:26 - 07:44:56\nTreni co
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:39:32 - 07:48:53\nTreni co
  involti nella chiusura:\n  - REG 16306 (VENEZIA S.LUCIA -> BASSANO DEL GRA
- PPA) (+4m) [Transito]\n  - REG 16306 (VENEZIA S.LUCIA -> BASSANO DEL GRAPP
- A) (+4m) [Transito]\nRitardo massimo rilevato: 4 min\nAffidabilità stima:
-  78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
- utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
- e (120s)
+ PPA) (+4m) [Transito]\n  - REG 16404 (PADOVA -> TREVISO CENTRALE) (+2m) [T
+ ransito]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i
+  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -168,80 +167,60 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16306--20261115-S02509@pl-tracker.local-arr
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T070800Z
 DTEND:20261116T072030Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 08:08 - 08:20 (primo: REG 16306) (+5 
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 08:08 - 08:20 (primo: REG 16306) (+5 
  min)
 DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
- CONTINUA - 6 TRENI\nChiusura sbarre stimata: 08:08:00 - 08:20:30\nTreni co
+ CONTINUA - 5 TRENI\nChiusura sbarre stimata: 08:08:00 - 08:20:30\nTreni co
  involti nella chiusura:\n  - REG 16306 (VENEZIA S.LUCIA -> BASSANO DEL GRA
- PPA) (+5m) [Arrivo]\n  - REG 16306 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)
-  (+5m) [Arrivo]\n  - REG 16310 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) (+3
- m) [Transito]\n  - REG 16310 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) (+3m)
-  [Transito]\n  - REG 16306 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) (+5m) [
- Partenza]\n  - REG 16306 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) (+5m) [Pa
- rtenza]\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 78%\nNota n
- ormativa/euristica: Chiusura continua per 6 treni: intervallo utile tra i 
- passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ PPA) (+5m) [Arrivo]\n  - REG 16310 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)
+  (+3m) [Transito]\n  - REG 16310 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) (
+ +3m) [Transito]\n  - REG 16310 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) (+3
+ m) [Transito]\n  - REG 16306 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) (+5m)
+  [Partenza]\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Chiusura continua per 5 treni: intervallo utile tr
+ a i passaggi (96s) inferiore alla soglia minima di sgombero stradale (120s
+ )
 LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16408--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
-DTSTART:20261116T072431Z
-DTEND:20261116T073001Z
-SUMMARY:[TRANSITO VELOCE] REG 16408 (PADOVA -> TREVISO CENTRALE) ore 08:28
-DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: TRANSITO 
- VELOCE\nChiusura sbarre stimata: 08:24:31 - 08:30:01\nTreni coinvolti nell
- a chiusura:\n  - REG 16408 (PADOVA -> TREVISO CENTRALE) [Transito]\nRitard
- o massimo rilevato: -3 min\nAffidabilità stima: 78%\nNota normativa/euris
- tica: Transito stimato senza fermata (18% tratta ALBAREDO -> ISTRANA\; ped
- ale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:-3
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-16310--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T073300Z
 DTEND:20261116T074052Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 08:33 - 08:40 (primo: REG 16310) (+3 
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:33 - 08:40 (primo: REG 16310) (+3 
  min)
 DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
- CONTINUA - 3 TRENI\nChiusura sbarre stimata: 08:33:00 - 08:40:52\nTreni co
+ CONTINUA - 4 TRENI\nChiusura sbarre stimata: 08:33:00 - 08:40:52\nTreni co
  involti nella chiusura:\n  - REG 16310 (VENEZIA S.LUCIA -> BASSANO DEL GRA
  PPA) (+3m)\n  - REG 16310 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) (+3m)\n 
-  - REG 16408 (PADOVA -> TREVISO CENTRALE) [Transito]\nRitardo massimo rile
- vato: 3 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
- continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+  - REG 16310 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) (+3m)\n  - REG 16408 
+ (PADOVA -> TREVISO CENTRALE) [Transito]\nRitardo massimo rilevato: 3 min\n
+ Affidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 
+ 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
+  di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16319--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:3
+DTSTAMP:20261116T205126Z
+SEQUENCE:4
 DTSTART:20261116T084830Z
 DTEND:20261116T085300Z
 SUMMARY:[FERMATA] REG 16319 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) ore 09:
@@ -261,57 +240,60 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16321--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T090256Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T090253Z
 DTEND:20261116T091330Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:02 - 10:13 (primo: REG 16321) (+5 
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 10:02 - 10:13 (primo: REG 16321) (+5 
  min)
 DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
- CONTINUA - 4 TRENI\nChiusura sbarre stimata: 10:02:56 - 10:13:30\nTreni co
+ CONTINUA - 6 TRENI\nChiusura sbarre stimata: 10:02:53 - 10:13:30\nTreni co
  involti nella chiusura:\n  - REG 16321 (BASSANO DEL GRAPPA -> VENEZIA S.LU
  CIA) [Transito]\n  - REG 16321 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) [Tr
- ansito]\n  - REG 16321 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+5m) [Arri
- vo]\n  - REG 16321 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+5m) [Arrivo]\
- nRitardo massimo rilevato: 5 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Chiusura continua per 4 treni: intervallo utile tra i passaggi
-  (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ ansito]\n  - REG 16321 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) [Transito]\
+ n  - REG 16321 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+5m) [Arrivo]\n  -
+  REG 16321 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+5m) [Arrivo]\n  - REG
+  16321 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+5m) [Arrivo]\nRitardo mas
+ simo rilevato: 5 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Chiusura continua per 6 treni: intervallo utile tra i passaggi (0s) inferi
+ ore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16321--20261115-S02509@pl-tracker.local-dep
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T091600Z
 DTEND:20261116T092030Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:16 - 10:20 (primo: REG 16321) (+5 
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 10:16 - 10:20 (primo: REG 16321) (+5 
  min)
 DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:16:00 - 10:20:30\nTreni co
+ CONTINUA - 3 TRENI\nChiusura sbarre stimata: 10:16:00 - 10:20:30\nTreni co
  involti nella chiusura:\n  - REG 16321 (BASSANO DEL GRAPPA -> VENEZIA S.LU
  CIA) (+5m) [Partenza]\n  - REG 16321 (BASSANO DEL GRAPPA -> VENEZIA S.LUCI
- A) (+5m) [Partenza]\nRitardo massimo rilevato: 5 min\nAffidabilità stima:
-  99%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
- utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
- e (120s)
+ A) (+5m) [Partenza]\n  - REG 16321 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)
+  (+5m) [Partenza]\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 9
+ 9%\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo ut
+ ile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale 
+ (120s)
 LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16313--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
 DTSTART:20261116T094830Z
 DTEND:20261116T095300Z
 SUMMARY:[FERMATA] REG 16313 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) ore 10:
@@ -331,34 +313,33 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16329--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
-DTSTART:20261116T100228Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
+DTSTART:20261116T100221Z
 DTEND:20261116T101830Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 11:02 - 11:18 (primo: REG 16329) (+3 
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:02 - 11:18 (primo: REG 16329) (+3 
  min)
 DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
- CONTINUA - 5 TRENI\nChiusura sbarre stimata: 11:02:28 - 11:18:30\nTreni co
+ CONTINUA - 4 TRENI\nChiusura sbarre stimata: 11:02:21 - 11:18:30\nTreni co
  involti nella chiusura:\n  - REG 16329 (BASSANO DEL GRAPPA -> VENEZIA S.LU
  CIA) [Transito]\n  - REG 16326 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [Tr
  ansito]\n  - REG 16329 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\n  - REG 16
- 329 (CASTELFRANCO VENETO -> VENEZIA S.LUCIA) (+3m)\n  - REG 16329 (CASTELF
- RANCO VENETO -> VENEZIA S.LUCIA) (+3m)\nRitardo massimo rilevato: 3 min\nA
- ffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 5
-  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
- di sgombero stradale (120s)
+ 329 (CASTELFRANCO VENETO -> VENEZIA S.LUCIA) (+3m)\nRitardo massimo rileva
+ to: 3 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
+ ntinua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16326--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
 DTSTART:20261116T103130Z
 DTEND:20261116T103600Z
 SUMMARY:[FERMATA] REG 16326 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) ore 11:
@@ -378,17 +359,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16330--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T103925Z
-DTEND:20261116T104455Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T103935Z
+DTEND:20261116T104505Z
 SUMMARY:[TRANSITO VELOCE] REG 16330 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)
   ore 11:43
 DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: TRANSITO 
- VELOCE\nChiusura sbarre stimata: 11:39:25 - 11:44:55\nTreni coinvolti nell
+ VELOCE\nChiusura sbarre stimata: 11:39:35 - 11:45:05\nTreni coinvolti nell
  a chiusura:\n  - REG 16330 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [Transi
  to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Transito stimato senza fermata (71% tratta VENEZIA MESTRE 
+ tiva/euristica: Transito stimato senza fermata (73% tratta VENEZIA MESTRE 
  -> SPINEA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
 STATUS:CONFIRMED
@@ -400,109 +381,104 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16331--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T110330Z
 DTEND:20261116T111500Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 12:03 - 12:15 (primo: REG 16331) (+15
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:03 - 12:15 (primo: REG 16331) (+15
   min)
 DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
- CONTINUA - 5 TRENI\nChiusura sbarre stimata: 12:03:30 - 12:15:00\nTreni co
+ CONTINUA - 3 TRENI\nChiusura sbarre stimata: 12:03:30 - 12:15:00\nTreni co
  involti nella chiusura:\n  - REG 16331 (BASSANO DEL GRAPPA -> VENEZIA S.LU
- CIA) (+15m)\n  - REG 16331 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+15m)\
- n  - REG 16336 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [Transito]\n  - REG
-  16336 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [Transito]\n  - REG 16330 (
- VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRitardo massimo rilevato: 15 min\n
- Affidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 
- 5 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
-  di sgombero stradale (120s)
+ CIA) (+15m)\n  - REG 16336 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [Transi
+ to]\n  - REG 16330 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRitardo massim
+ o rilevato: 15 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 3 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:15
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16336--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T113130Z
 DTEND:20261116T113600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:31 - 12:36 (primo: REG 16336)
-DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:31:30 - 12:36:00\nTreni co
- involti nella chiusura:\n  - REG 16336 (VENEZIA S.LUCIA -> BASSANO DEL GRA
- PPA)\n  - REG 16336 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Ch
- iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 16336 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) ore 12:
+ 35
+DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 12:31:30 - 12:36:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 16336 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pre
+ visione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16157--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
-DTSTART:20261116T114923Z
-DTEND:20261116T120219Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:49 - 13:02 (primo: REG 16157)
-DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:49:23 - 13:02:19\nTreni co
- involti nella chiusura:\n  - REG 16157 (VICENZA -> TREVISO CENTRALE) [Tran
- sito]\n  - REG 16157 (VICENZA -> TREVISO CENTRALE) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (115s) infe
- riore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
+DTSTART:20261116T114921Z
+DTEND:20261116T115451Z
+SUMMARY:[TRANSITO VELOCE] REG 16157 (VICENZA -> TREVISO CENTRALE) ore 12:53
+DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: TRANSITO 
+ VELOCE\nChiusura sbarre stimata: 12:49:21 - 12:54:51\nTreni coinvolti nell
+ a chiusura:\n  - REG 16157 (VICENZA -> TREVISO CENTRALE) [Transito]\nRitar
+ do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Transito stimato senza fermata (9% tratta CASTELFRANCO VENETO -> ALB
+ AREDO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16349--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T134830Z
 DTEND:20261116T135300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:48 - 14:53 (primo: REG 16349)
-DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:48:30 - 14:53:00\nTreni co
- involti nella chiusura:\n  - REG 16349 (BASSANO DEL GRAPPA -> VENEZIA S.LU
- CIA)\n  - REG 16349 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Ch
- iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 16349 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) ore 14:
+ 52
+DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 14:48:30 - 14:53:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 16349 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pre
+ visione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16353--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T140228Z
-DTEND:20261116T140758Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T140221Z
+DTEND:20261116T140751Z
 SUMMARY:[TRANSITO VELOCE] REG 16353 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)
   ore 15:06
 DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: TRANSITO 
- VELOCE\nChiusura sbarre stimata: 15:02:28 - 15:07:58\nTreni coinvolti nell
+ VELOCE\nChiusura sbarre stimata: 15:02:21 - 15:07:51\nTreni coinvolti nell
  a chiusura:\n  - REG 16353 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) [Transi
  to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Transito stimato senza fermata (67% tratta CASTELFRANCO VE
+ tiva/euristica: Transito stimato senza fermata (66% tratta CASTELFRANCO VE
  NETO -> RESANA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
 STATUS:CONFIRMED
@@ -514,8 +490,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16353--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T141030Z
 DTEND:20261116T141500Z
 SUMMARY:[FERMATA] REG 16353 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) ore 15:
@@ -535,107 +511,88 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16360--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:4
-DTSTART:20261116T143925Z
-DTEND:20261116T144455Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:39 - 15:44 (primo: REG 16360)
-DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:39:25 - 15:44:55\nTreni co
- involti nella chiusura:\n  - REG 16360 (VENEZIA S.LUCIA -> BASSANO DEL GRA
- PPA) [Transito]\n  - REG 16360 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [Tr
- ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
- ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
- passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261116T205126Z
+SEQUENCE:5
+DTSTART:20261116T143935Z
+DTEND:20261116T144505Z
+SUMMARY:[TRANSITO VELOCE] REG 16360 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)
+  ore 15:43
+DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: TRANSITO 
+ VELOCE\nChiusura sbarre stimata: 15:39:35 - 15:45:05\nTreni coinvolti nell
+ a chiusura:\n  - REG 16360 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [Transi
+ to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (73% tratta VENEZIA MESTRE 
+ -> SPINEA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16355--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T144830Z
 DTEND:20261116T145300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:48 - 15:53 (primo: REG 16355)
-DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:48:30 - 15:53:00\nTreni co
- involti nella chiusura:\n  - REG 16355 (BASSANO DEL GRAPPA -> VENEZIA S.LU
- CIA)\n  - REG 16355 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Ch
- iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 16355 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) ore 15:
+ 52
+DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 15:48:30 - 15:53:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 16355 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pre
+ visione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16359--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T150228Z
-DTEND:20261116T150758Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:02 - 16:07 (primo: REG 16359)
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T150221Z
+DTEND:20261116T151930Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 16:02 - 16:19 (primo: REG 16359) (+4 
+ min)
 DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:02:28 - 16:07:58\nTreni co
+ CONTINUA - 7 TRENI\nChiusura sbarre stimata: 16:02:21 - 16:19:30\nTreni co
  involti nella chiusura:\n  - REG 16359 (BASSANO DEL GRAPPA -> VENEZIA S.LU
- CIA) [Transito]\n  - REG 16359 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) [Tr
- ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
- ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
- passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-16359--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T151030Z
-DTEND:20261116T151500Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:10 - 16:15 (primo: REG 16359)
-DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
- CONTINUA - 4 TRENI\nChiusura sbarre stimata: 16:10:30 - 16:15:00\nTreni co
- involti nella chiusura:\n  - REG 16359 (BASSANO DEL GRAPPA -> VENEZIA S.LU
- CIA)\n  - REG 16359 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\n  - REG 16360
-  (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\n  - REG 16360 (VENEZIA S.LUCIA -
- > BASSANO DEL GRAPPA)\nRitardo massimo rilevato: 0 min\nAffidabilità stim
- a: 90%\nNota normativa/euristica: Chiusura continua per 4 treni: intervall
+ CIA) [Transito]\n  - REG 16359 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+1
+ m) [Transito]\n  - REG 16359 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+1m)
+  [Transito]\n  - REG 16359 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\n  - RE
+ G 16360 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\n  - REG 16359 (BASSANO DE
+ L GRAPPA -> VENEZIA S.LUCIA) (+4m)\n  - REG 16359 (BASSANO DEL GRAPPA -> V
+ ENEZIA S.LUCIA) (+4m)\nRitardo massimo rilevato: 4 min\nAffidabilità stim
+ a: 78%\nNota normativa/euristica: Chiusura continua per 7 treni: intervall
  o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
  ale (120s)
 LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16366--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
-DTSTART:20261116T153925Z
-DTEND:20261116T154455Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
+DTSTART:20261116T153935Z
+DTEND:20261116T154505Z
 SUMMARY:[TRANSITO VELOCE] REG 16366 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)
   ore 16:43
 DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: TRANSITO 
- VELOCE\nChiusura sbarre stimata: 16:39:25 - 16:44:55\nTreni coinvolti nell
+ VELOCE\nChiusura sbarre stimata: 16:39:35 - 16:45:05\nTreni coinvolti nell
  a chiusura:\n  - REG 16366 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [Transi
  to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Transito stimato senza fermata (71% tratta VENEZIA MESTRE 
+ tiva/euristica: Transito stimato senza fermata (73% tratta VENEZIA MESTRE 
  -> SPINEA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
 STATUS:CONFIRMED
@@ -647,107 +604,39 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16368--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
-DTSTART:20261116T160825Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
+DTSTART:20261116T160835Z
 DTEND:20261116T161500Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:08 - 17:15 (primo: REG 16368)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:08 - 17:15 (primo: REG 16368)
 DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
- CONTINUA - 3 TRENI\nChiusura sbarre stimata: 17:08:25 - 17:15:00\nTreni co
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:08:35 - 17:15:00\nTreni co
  involti nella chiusura:\n  - REG 16368 (VENEZIA S.LUCIA -> BASSANO DEL GRA
- PPA) [Transito]\n  - REG 16368 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [Tr
- ansito]\n  - REG 16366 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRitardo ma
- ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
-  Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) infer
- iore alla soglia minima di sgombero stradale (120s)
+ PPA) [Transito]\n  - REG 16366 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRi
+ tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
+ ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
+ s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16424--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
-DTSTART:20261116T161734Z
-DTEND:20261116T162304Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:17 - 17:23 (primo: REG 16424)
-DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:17:34 - 17:23:04\nTreni co
- involti nella chiusura:\n  - REG 16424 (PADOVA -> TREVISO CENTRALE) [Trans
- ito]\n  - REG 16424 (PADOVA -> TREVISO CENTRALE) [Transito]\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
- iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-16368--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
-DTSTART:20261116T163130Z
-DTEND:20261116T163600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:31 - 17:36 (primo: REG 16368)
-DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:31:30 - 17:36:00\nTreni co
- involti nella chiusura:\n  - REG 16368 (VENEZIA S.LUCIA -> BASSANO DEL GRA
- PPA)\n  - REG 16368 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Ch
- iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-16385--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
-DTSTART:20261116T184830Z
-DTEND:20261116T185300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:48 - 19:53 (primo: REG 16385)
-DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:48:30 - 19:53:00\nTreni co
- involti nella chiusura:\n  - REG 16385 (BASSANO DEL GRAPPA -> VENEZIA S.LU
- CIA)\n  - REG 16385 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Ch
- iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-16389--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:4
-DTSTART:20261116T190228Z
-DTEND:20261116T190758Z
-SUMMARY:[TRANSITO VELOCE] REG 16389 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)
-  ore 20:06
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
+DTSTART:20261116T161731Z
+DTEND:20261116T162301Z
+SUMMARY:[TRANSITO VELOCE] REG 16424 (PADOVA -> TREVISO CENTRALE) ore 17:21
 DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: TRANSITO 
- VELOCE\nChiusura sbarre stimata: 20:02:28 - 20:07:58\nTreni coinvolti nell
- a chiusura:\n  - REG 16389 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Transito stimato senza fermata (67% tratta CASTELFRANCO VE
- NETO -> RESANA\; pedale annuncio fisso Vmax)
+ VELOCE\nChiusura sbarre stimata: 17:17:31 - 17:23:01\nTreni coinvolti nell
+ a chiusura:\n  - REG 16424 (PADOVA -> TREVISO CENTRALE) [Transito]\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Transito stimato senza fermata (9% tratta CASTELFRANCO VENETO -> ALBA
+ REDO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -757,16 +646,16 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16389--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:4
-DTSTART:20261116T191030Z
-DTEND:20261116T191500Z
-SUMMARY:[FERMATA] REG 16389 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) ore 20:
- 14
+UID:train-16368--20261115-S02509@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
+DTSTART:20261116T163130Z
+DTEND:20261116T163600Z
+SUMMARY:[FERMATA] REG 16368 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) ore 17:
+ 35
 DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: FERMATA\n
- Chiusura sbarre stimata: 20:10:30 - 20:15:00\nTreni coinvolti nella chiusu
- ra:\n  - REG 16389 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\nRitardo massim
+ Chiusura sbarre stimata: 17:31:30 - 17:36:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 16368 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRitardo massim
  o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pre
  visione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
@@ -778,19 +667,113 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16394--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T193925Z
-DTEND:20261116T194455Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:39 - 20:44 (primo: REG 16394)
+UID:train-16385--20261115-S02509@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
+DTSTART:20261116T184830Z
+DTEND:20261116T185300Z
+SUMMARY:[FERMATA] REG 16385 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) ore 19:
+ 52
+DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 19:48:30 - 19:53:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 16385 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pre
+ visione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16389--20261115-S02509@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:5
+DTSTART:20261116T190221Z
+DTEND:20261116T192100Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 20:02 - 20:21 (primo: REG 16389) (+5 
+ min)
 DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:39:25 - 20:44:55\nTreni co
- involti nella chiusura:\n  - REG 16394 (VENEZIA S.LUCIA -> BASSANO DEL GRA
- PPA) [Transito]\n  - REG 16394 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [Tr
- ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
- ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
- passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ CONTINUA - 6 TRENI\nChiusura sbarre stimata: 20:02:21 - 20:21:00\nTreni co
+ involti nella chiusura:\n  - REG 16389 (BASSANO DEL GRAPPA -> VENEZIA S.LU
+ CIA) [Transito]\n  - REG 16389 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+1
+ m) [Transito]\n  - REG 16389 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+1m)
+  [Transito]\n  - REG 16389 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\n  - RE
+ G 16389 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+5m)\n  - REG 16389 (BASS
+ ANO DEL GRAPPA -> VENEZIA S.LUCIA) (+5m)\nRitardo massimo rilevato: 5 min\
+ nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per
+  6 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
+ a di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16394--20261115-S02509@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T193935Z
+DTEND:20261116T194505Z
+SUMMARY:[TRANSITO VELOCE] REG 16394 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)
+  ore 20:43
+DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: TRANSITO 
+ VELOCE\nChiusura sbarre stimata: 20:39:35 - 20:45:05\nTreni coinvolti nell
+ a chiusura:\n  - REG 16394 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [Transi
+ to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (73% tratta VENEZIA MESTRE 
+ -> SPINEA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16391--20261115-S02509@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T194830Z
+DTEND:20261116T195700Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:48 - 20:57 (primo: REG 16391) (+3 
+ min)
+DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 3 TRENI\nChiusura sbarre stimata: 20:48:30 - 20:57:00\nTreni co
+ involti nella chiusura:\n  - REG 16391 (BASSANO DEL GRAPPA -> VENEZIA S.LU
+ CIA)\n  - REG 16391 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+3m)\n  - REG
+  16391 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+3m)\nRitardo massimo rile
+ vato: 3 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura 
+ continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16398--20261115-S02509@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
+DTSTART:20261116T200835Z
+DTEND:20261116T201500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:08 - 21:15 (primo: REG 16398)
+DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:08:35 - 21:15:00\nTreni co
+ involti nella chiusura:\n  - REG 16398 (VENEZIA S.LUCIA -> BASSANO DEL GRA
+ PPA) [Transito]\n  - REG 16394 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRi
+ tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
+ ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
+ s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -800,53 +783,9 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16391--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T194830Z
-DTEND:20261116T195300Z
-SUMMARY:[FERMATA] REG 16391 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) ore 20:
- 52
-DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: FERMATA\n
- Chiusura sbarre stimata: 20:48:30 - 20:53:00\nTreni coinvolti nella chiusu
- ra:\n  - REG 16391 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pre
- visione da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-16398--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
-DTSTART:20261116T200825Z
-DTEND:20261116T201500Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:08 - 21:15 (primo: REG 16398)
-DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
- CONTINUA - 3 TRENI\nChiusura sbarre stimata: 21:08:25 - 21:15:00\nTreni co
- involti nella chiusura:\n  - REG 16398 (VENEZIA S.LUCIA -> BASSANO DEL GRA
- PPA) [Transito]\n  - REG 16394 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\n  
- - REG 16394 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
- ontinua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-16398--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
 DTSTART:20261116T203130Z
 DTEND:20261116T203600Z
 SUMMARY:[FERMATA] REG 16398 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) ore 21:
@@ -866,44 +805,43 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16402--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
-DTSTART:20261116T210925Z
-DTEND:20261116T211455Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:09 - 22:14 (primo: REG 16402)
-DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:09:25 - 22:14:55\nTreni co
- involti nella chiusura:\n  - REG 16402 (VENEZIA S.LUCIA -> BASSANO DEL GRA
- PPA) [Transito]\n  - REG 16402 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [Tr
- ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
- ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
- passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
+DTSTART:20261116T210935Z
+DTEND:20261116T211505Z
+SUMMARY:[TRANSITO VELOCE] REG 16402 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)
+  ore 22:13
+DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: TRANSITO 
+ VELOCE\nChiusura sbarre stimata: 22:09:35 - 22:15:05\nTreni coinvolti nell
+ a chiusura:\n  - REG 16402 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [Transi
+ to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (73% tratta VENEZIA MESTRE 
+ -> SPINEA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16402--20261115-S02509@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T213430Z
 DTEND:20261116T213900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:34 - 22:39 (primo: REG 16402)
-DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:34:30 - 22:39:00\nTreni co
- involti nella chiusura:\n  - REG 16402 (VENEZIA S.LUCIA -> BASSANO DEL GRA
- PPA)\n  - REG 16402 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Ch
- iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 16402 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) ore 22:
+ 38
+DESCRIPTION:Stazione/PL: PIOMBINO DESE (S02509)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 22:34:30 - 22:39:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 16402 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pre
+ visione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione PIOMBINO DESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

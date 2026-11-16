@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:4577b3c9476fb2e0069c697b0f242b1cfff5904e4fbc67344e4eaa976b73
- 015b
+X-CONTENT-HASH:42c11fd1c6fde1a6145c0d2aca1920cca510131ba9d0ce6b6015d7b54697
+ c97c
 BEGIN:VEVENT
 UID:train-16121--20261115-S02704@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T042330Z
 DTEND:20261116T042800Z
 SUMMARY:[FERMATA] REG 16121 (UDINE -> VENEZIA S.LUCIA) ore 05:27
@@ -33,8 +33,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16754--20261115-S02704@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T051819Z
 DTEND:20261116T052900Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:18 - 06:29 (primo: REG 16754)
@@ -55,31 +55,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16758--20261115-S02704@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
 DTSTART:20261116T062002Z
 DTEND:20261116T063200Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:20 - 07:32 (primo: REG 16758)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:20 - 07:32 (primo: REG 16758)
 DESCRIPTION:Stazione/PL: ORSAGO (S02704)\nRegime chiusura: CHIUSURA CONTINU
- A - 4 TRENI\nChiusura sbarre stimata: 07:20:02 - 07:32:00\nTreni coinvolti
+ A - 2 TRENI\nChiusura sbarre stimata: 07:20:02 - 07:32:00\nTreni coinvolti
   nella chiusura:\n  - REG 16758 (VENEZIA S.LUCIA -> UDINE) [Transito]\n  -
-  REG 16758 (VENEZIA S.LUCIA -> UDINE) [Transito]\n  - REG 16758 (VENEZIA S
- .LUCIA -> UDINE)\n  - REG 16758 (VENEZIA S.LUCIA -> UDINE)\nRitardo massim
- o rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
- iusura continua per 4 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+  REG 16758 (VENEZIA S.LUCIA -> UDINE)\nRitardo massimo rilevato: -1 min\nA
+ ffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORSAGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16764--20261115-S02704@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
 DTSTART:20261116T072019Z
 DTEND:20261116T073100Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:20 - 08:31 (primo: REG 16764)
@@ -100,123 +99,114 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16770--20261115-S02704@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:4
+DTSTAMP:20261116T205126Z
+SEQUENCE:5
 DTSTART:20261116T082209Z
 DTEND:20261116T082739Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:22 - 09:27 (primo: REG 16770) (+1 
- min)
-DESCRIPTION:Stazione/PL: ORSAGO (S02704)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 09:22:09 - 09:27:39\nTreni coinvolti
-  nella chiusura:\n  - REG 16770 (VENEZIA S.LUCIA -> UDINE) (+1m) [Transito
- ]\n  - REG 16770 (VENEZIA S.LUCIA -> UDINE) (+1m) [Transito]\nRitardo mass
- imo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
- hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 16770 (VENEZIA S.LUCIA -> UDINE) ore 09:26 (+
+ 1 min)
+DESCRIPTION:Stazione/PL: ORSAGO (S02704)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 09:22:09 - 09:27:39\nTreni coinvolti nella chius
+ ura:\n  - REG 16770 (VENEZIA S.LUCIA -> UDINE) (+1m) [Transito]\nRitardo m
+ assimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (76% tratta CONEGLIANO -> PIANZANO\; peda
+ le annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ORSAGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16770--20261115-S02704@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:4
+DTSTAMP:20261116T205126Z
+SEQUENCE:5
 DTSTART:20261116T083130Z
 DTEND:20261116T083630Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:31 - 09:36 (primo: REG 16770) (+5 
- min)
-DESCRIPTION:Stazione/PL: ORSAGO (S02704)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 09:31:30 - 09:36:30\nTreni coinvolti
-  nella chiusura:\n  - REG 16770 (VENEZIA S.LUCIA -> UDINE) (+5m)\n  - REG 
- 16770 (VENEZIA S.LUCIA -> UDINE) (+5m)\nRitardo massimo rilevato: 5 min\nA
- ffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2
-  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
- di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 16770 (VENEZIA S.LUCIA -> UDINE) ore 09:35 (+5 min)
+DESCRIPTION:Stazione/PL: ORSAGO (S02704)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 09:31:30 - 09:36:30\nTreni coinvolti nella chiusura:\n  
+ - REG 16770 (VENEZIA S.LUCIA -> UDINE) (+5m)\nRitardo massimo rilevato: 5 
+ min\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale
+  da circuito di binario
 LOCATION:Passaggio a Livello / Stazione ORSAGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16220--20261115-S02704@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
 DTSTART:20261116T121819Z
 DTEND:20261116T122900Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 13:18 - 13:29 (primo: REG 16220)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:18 - 13:29 (primo: REG 16220)
 DESCRIPTION:Stazione/PL: ORSAGO (S02704)\nRegime chiusura: CHIUSURA CONTINU
- A - 4 TRENI\nChiusura sbarre stimata: 13:18:19 - 13:29:00\nTreni coinvolti
+ A - 2 TRENI\nChiusura sbarre stimata: 13:18:19 - 13:29:00\nTreni coinvolti
   nella chiusura:\n  - REG 16220 (VENEZIA S.LUCIA -> UDINE) [Transito]\n  -
-  REG 16220 (VENEZIA S.LUCIA -> UDINE) [Transito]\n  - REG 16220 (VENEZIA S
- .LUCIA -> UDINE)\n  - REG 16220 (VENEZIA S.LUCIA -> UDINE)\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
- usura continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
+  REG 16220 (VENEZIA S.LUCIA -> UDINE)\nRitardo massimo rilevato: 0 min\nAf
+ fidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 
+ treni: intervallo utile tra i passaggi (40s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORSAGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16790--20261115-S02704@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T132019Z
 DTEND:20261116T133100Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 14:20 - 14:31 (primo: REG 16790)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 14:20 - 14:31 (primo: REG 16790)
 DESCRIPTION:Stazione/PL: ORSAGO (S02704)\nRegime chiusura: CHIUSURA CONTINU
- A - 5 TRENI\nChiusura sbarre stimata: 14:20:19 - 14:31:00\nTreni coinvolti
+ A - 3 TRENI\nChiusura sbarre stimata: 14:20:19 - 14:31:00\nTreni coinvolti
   nella chiusura:\n  - REG 16790 (VENEZIA S.LUCIA -> UDINE) [Transito]\n  -
-  REG 16790 (VENEZIA S.LUCIA -> UDINE) [Transito]\n  - REG 16793 (UDINE -> 
- VENEZIA S.LUCIA)\n  - REG 16790 (VENEZIA S.LUCIA -> UDINE)\n  - REG 16790 
- (VENEZIA S.LUCIA -> UDINE)\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 78%\nNota normativa/euristica: Chiusura continua per 5 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+  REG 16793 (UDINE -> VENEZIA S.LUCIA)\n  - REG 16790 (VENEZIA S.LUCIA -> U
+ DINE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
+ mativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i pa
+ ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORSAGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16801--20261115-S02704@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T142530Z
 DTEND:20261116T143000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:25 - 15:30 (primo: REG 16801)
-DESCRIPTION:Stazione/PL: ORSAGO (S02704)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 15:25:30 - 15:30:00\nTreni coinvolti
-  nella chiusura:\n  - REG 16801 (UDINE -> VENEZIA S.LUCIA)\n  - REG 16801 
- (UDINE -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+SUMMARY:[FERMATA] REG 16801 (UDINE -> VENEZIA S.LUCIA) ore 15:29
+DESCRIPTION:Stazione/PL: ORSAGO (S02704)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 15:25:30 - 15:30:00\nTreni coinvolti nella chiusura:\n  
+ - REG 16801 (UDINE -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
 LOCATION:Passaggio a Livello / Stazione ORSAGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16800--20261115-S02704@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T151819Z
 DTEND:20261116T152900Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:18 - 16:29 (primo: REG 16800)
@@ -237,8 +227,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16806--20261115-S02704@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T161819Z
 DTEND:20261116T162900Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:18 - 17:29 (primo: REG 16806)
@@ -259,8 +249,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16812--20261115-S02704@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:4
+DTSTAMP:20261116T205126Z
+SEQUENCE:5
 DTSTART:20261116T172019Z
 DTEND:20261116T173100Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:20 - 18:31 (primo: REG 16812)
@@ -281,22 +271,20 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16825--20261115-S02704@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T182530Z
 DTEND:20261116T183000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:25 - 19:30 (primo: REG 16825)
-DESCRIPTION:Stazione/PL: ORSAGO (S02704)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 19:25:30 - 19:30:00\nTreni coinvolti
-  nella chiusura:\n  - REG 16825 (UDINE -> VENEZIA S.LUCIA)\n  - REG 16825 
- (UDINE -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+SUMMARY:[FERMATA] REG 16825 (UDINE -> VENEZIA S.LUCIA) ore 19:29
+DESCRIPTION:Stazione/PL: ORSAGO (S02704)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 19:25:30 - 19:30:00\nTreni coinvolti nella chiusura:\n  
+ - REG 16825 (UDINE -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
 LOCATION:Passaggio a Livello / Stazione ORSAGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

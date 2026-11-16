@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:0197220b21a7b9668d40afa7ed072a9f3fcfc139428a3c64a0c763b81c54
- 16a9
+X-CONTENT-HASH:9386f1a81c950be345c75492d9aa7ab844f7d06510305ca02ab8bc3c6fba
+ 7745
 BEGIN:VEVENT
 UID:train-12011--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T041625Z
 DTEND:20261116T042155Z
 SUMMARY:[TRANSITO VELOCE] REG 12011 (NOVI LIGURE -> GENOVA PIAZZA PRINCIPE)
@@ -36,8 +36,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12311--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T050230Z
 DTEND:20261116T050700Z
 SUMMARY:[FERMATA] REG 12311 (SAVONA -> SESTRI LEVANTE) ore 06:06
@@ -56,32 +56,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12306--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T053111Z
 DTEND:20261116T053641Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:31 - 06:36 (primo: REG 12306) (+7 
- min)
+SUMMARY:[TRANSITO VELOCE] REG 12306 (GENOVA BRIGNOLE -> SAVONA) ore 06:35 (
+ +7 min)
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:31:11 - 
- 06:36:41\nTreni coinvolti nella chiusura:\n  - REG 12306 (GENOVA BRIGNOLE 
- -> SAVONA) (+7m) [Transito]\n  - REG 12306 (GENOVA BRIGNOLE -> SAVONA) (+7
- m) [Transito]\nRitardo massimo rilevato: 7 min\nAffidabilità stima: 78%\n
- Nota normativa/euristica: Chiusura continua per 2 treni: intervallo utile 
- tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
- s)
+ hiusura: TRANSITO VELOCE\nChiusura sbarre stimata: 06:31:11 - 06:36:41\nTr
+ eni coinvolti nella chiusura:\n  - REG 12306 (GENOVA BRIGNOLE -> SAVONA) (
+ +7m) [Transito]\nRitardo massimo rilevato: 7 min\nAffidabilità stima: 78%
+ \nNota normativa/euristica: Transito stimato senza fermata (91% tratta GEN
+ OVA PIAZZA PRINCIPE -> GENOVA SAMPIERDARENA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:7
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12306--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T054000Z
 DTEND:20261116T055400Z
 SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:40 - 06:54 (primo: REG 12306) (+10
@@ -89,12 +87,12 @@ SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:40 - 06:54 (primo: REG 12306) (+10
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
  hiusura: CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 06:40:00 - 
  06:54:00\nTreni coinvolti nella chiusura:\n  - REG 12306 (GENOVA BRIGNOLE 
- -> SAVONA) (+10m)\n  - REG 12306 (GENOVA BRIGNOLE -> SAVONA) (+10m)\n  - R
- EG 12310 (LA SPEZIA CENTRALE -> VENTIMIGLIA) [Transito]\n  - REG 12321 (SA
- VONA -> LA SPEZIA CENTRALE)\nRitardo massimo rilevato: 10 min\nAffidabilit
- à stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+ -> SAVONA) (+10m)\n  - REG 12321 (SAVONA -> LA SPEZIA CENTRALE) [Transito]
+ \n  - REG 12310 (LA SPEZIA CENTRALE -> VENTIMIGLIA) [Transito]\n  - REG 12
+ 321 (SAVONA -> LA SPEZIA CENTRALE)\nRitardo massimo rilevato: 10 min\nAffi
+ dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 tr
+ eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -105,124 +103,136 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12310--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:4
+DTSTAMP:20261116T205126Z
+SEQUENCE:5
 DTSTART:20261116T055630Z
 DTEND:20261116T061252Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 06:56 - 07:12 (primo: REG 12310) (+4 
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 06:56 - 07:12 (primo: REG 12310) (+4 
  min)
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 06:56:30 - 
+ hiusura: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 06:56:30 - 
  07:12:52\nTreni coinvolti nella chiusura:\n  - REG 12310 (LA SPEZIA CENTRA
  LE -> VENTIMIGLIA)\n  - REG 22821 (SAVONA -> GENOVA NERVI) (+4m)\n  - REG 
- 22821 (SAVONA -> GENOVA NERVI) (+4m)\n  - REG 12017 (NOVI LIGURE -> GENOVA
-  BRIGNOLE) (+3m) [Transito]\n  - REG 12017 (NOVI LIGURE -> GENOVA BRIGNOLE
- ) (+3m) [Transito]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 
- 78%\nNota normativa/euristica: Chiusura continua per 5 treni: intervallo u
- tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
-  (120s)
+ 12017 (NOVI LIGURE -> GENOVA BRIGNOLE) (+3m) [Transito]\nRitardo massimo r
+ ilevato: 4 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
+ ra continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore al
+ la soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12116--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T061500Z
-DTEND:20261116T062744Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 07:15 - 07:27 (primo: REG 12116)
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T061459Z
+DTEND:20261116T062743Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:14 - 07:27 (primo: REG 12116)
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 07:15:00 - 
- 07:27:44\nTreni coinvolti nella chiusura:\n  - REG 12116 (GENOVA BRIGNOLE 
+ hiusura: CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 07:14:59 - 
+ 07:27:43\nTreni coinvolti nella chiusura:\n  - REG 12116 (GENOVA BRIGNOLE 
  -> ACQUI TERME) [Transito]\n  - REG 12115 (ACQUI TERME -> GENOVA BRIGNOLE)
   [Transito]\n  - REG 3019 (VENTIMIGLIA -> MILANO CENTRALE)\n  - REG 12316 
- (LA SPEZIA CENTRALE -> SAVONA) [Transito]\n  - REG 12316 (LA SPEZIA CENTRA
- LE -> SAVONA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità s
- tima: 78%\nNota normativa/euristica: Chiusura continua per 5 treni: interv
- allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
- radale (120s)
+ (LA SPEZIA CENTRALE -> SAVONA) [Transito]\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
+ r 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12020--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
-DTSTART:20261116T063100Z
-DTEND:20261116T070522Z
-SUMMARY:[CHIUSURA CONTINUA - 18 TRENI] 07:31 - 08:05 (primo: REG 12020) (+5
-  min)
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
+DTSTART:20261116T063059Z
+DTEND:20261116T064241Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:30 - 07:42 (primo: REG 12020) (+3 
+ min)
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 18 TRENI\nChiusura sbarre stimata: 07:31:00 -
-  08:05:22\nTreni coinvolti nella chiusura:\n  - REG 12020 (GENOVA BRIGNOLE
-  -> BUSALLA) [Transito]\n  - REG 12316 (LA SPEZIA CENTRALE -> SAVONA) (+3m
- )\n  - REG 12316 (LA SPEZIA CENTRALE -> SAVONA) (+3m)\n  - REG 22822 (GENO
- VA PIAZZA PRINCIPE -> GENOVA VOLTRI) [Transito]\n  - REG 3357 (VENTIMIGLIA
-  -> GENOVA BRIGNOLE) (+3m) [Transito]\n  - REG 3357 (VENTIMIGLIA -> GENOVA
-  BRIGNOLE) (+3m) [Transito]\n  - REG 3360 (SESTRI LEVANTE -> VENTIMIGLIA) 
- [Transito]\n  - REG 22822 (GENOVA PIAZZA PRINCIPE -> GENOVA VOLTRI)\n  - R
- EG 12021 (BUSALLA -> GENOVA BRIGNOLE) [Transito]\n  - REG 3357 (VENTIMIGLI
- A -> GENOVA BRIGNOLE) (+4m)\n  - REG 3357 (VENTIMIGLIA -> GENOVA BRIGNOLE)
-  (+4m)\n  - REG 3360 (SESTRI LEVANTE -> VENTIMIGLIA)\n  - REG 12320 (SARZA
- NA -> SAVONA) (+2m) [Transito]\n  - REG 12320 (SARZANA -> SAVONA) (+2m) [T
- ransito]\n  - REG 12331 (VENTIMIGLIA -> SESTRI LEVANTE) (+5m)\n  - REG 123
- 31 (VENTIMIGLIA -> SESTRI LEVANTE) (+5m)\n  - REG 12022 (GENOVA BRIGNOLE -
- > ARQUATA SCRIVIA) [Transito]\n  - REG 12022 (GENOVA BRIGNOLE -> ARQUATA S
- CRIVIA) [Transito]\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 
- 78%\nNota normativa/euristica: Chiusura continua per 18 treni: intervallo 
- utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
- e (120s)
+ hiusura: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 07:30:59 - 
+ 07:42:41\nTreni coinvolti nella chiusura:\n  - REG 12020 (GENOVA BRIGNOLE 
+ -> BUSALLA) [Transito]\n  - REG 12316 (LA SPEZIA CENTRALE -> SAVONA) (+3m)
+ \n  - REG 22822 (GENOVA PIAZZA PRINCIPE -> GENOVA VOLTRI) [Transito]\nRita
+ rdo massimo rilevato: 3 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s)
+  inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 18 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3360--20261115-S04537@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:0
+DTSTART:20261116T064454Z
+DTEND:20261116T070522Z
+SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 07:44 - 08:05 (primo: REG 3360) (+5 m
+ in)
+DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
+ hiusura: CHIUSURA CONTINUA - 8 TRENI\nChiusura sbarre stimata: 07:44:54 - 
+ 08:05:22\nTreni coinvolti nella chiusura:\n  - REG 3360 (SESTRI LEVANTE ->
+  VENTIMIGLIA) [Transito]\n  - REG 22822 (GENOVA PIAZZA PRINCIPE -> GENOVA 
+ VOLTRI)\n  - REG 12021 (BUSALLA -> GENOVA BRIGNOLE) [Transito]\n  - REG 33
+ 57 (VENTIMIGLIA -> GENOVA BRIGNOLE) (+4m)\n  - REG 3360 (SESTRI LEVANTE ->
+  VENTIMIGLIA)\n  - REG 12320 (SARZANA -> SAVONA) (+2m) [Transito]\n  - REG
+  12331 (VENTIMIGLIA -> SESTRI LEVANTE) (+5m)\n  - REG 12022 (GENOVA BRIGNO
+ LE -> ARQUATA SCRIVIA) [Transito]\nRitardo massimo rilevato: 5 min\nAffida
+ bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 8 tren
+ i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
+ ombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12320--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T070830Z
-DTEND:20261116T072109Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 08:08 - 08:21 (primo: REG 12320) (+8 
+DTEND:20261116T072116Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:08 - 08:21 (primo: REG 12320) (+8 
  min)
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 08:08:30 - 
- 08:21:09\nTreni coinvolti nella chiusura:\n  - REG 12320 (SARZANA -> SAVON
- A) (+8m)\n  - REG 12320 (SARZANA -> SAVONA) (+8m)\n  - IC 503 (TORINO PORT
- A NUOVA -> SAVONA) [Transito]\nRitardo massimo rilevato: 8 min\nAffidabili
- tà stima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: i
- ntervallo utile tra i passaggi (99s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
+ hiusura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:08:30 - 
+ 08:21:16\nTreni coinvolti nella chiusura:\n  - REG 12320 (SARZANA -> SAVON
+ A) (+8m)\n  - IC 503 (TORINO PORTA NUOVA -> SAVONA) [Transito]\nRitardo ma
+ ssimo rilevato: 8 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Chiusura continua per 2 treni: intervallo utile tra i passaggi (106s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:8
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-505--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T073036Z
-DTEND:20261116T073506Z
-SUMMARY:[TRANSITO VELOCE] IC 505 (VENTIMIGLIA -> ROMA TERMINI) ore 08:34
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T073019Z
+DTEND:20261116T073449Z
+SUMMARY:[TRANSITO VELOCE] IC 505 (VENTIMIGLIA -> ROMA TERMINI) ore 08:33
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: TRANSITO VELOCE\nChiusura sbarre stimata: 08:30:36 - 08:35:06\nTr
+ hiusura: TRANSITO VELOCE\nChiusura sbarre stimata: 08:30:19 - 08:34:49\nTr
  eni coinvolti nella chiusura:\n  - IC 505 (VENTIMIGLIA -> ROMA TERMINI) [T
  ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
  normativa/euristica: Transito stimato senza fermata (66% tratta SAVONA -> 
@@ -237,336 +247,295 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-633--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
-DTSTART:20261116T080444Z
-DTEND:20261116T080914Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:04 - 09:09 (primo: IC 633)
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
+DTSTART:20261116T080447Z
+DTEND:20261116T080917Z
+SUMMARY:[TRANSITO VELOCE] IC 633 (MILANO CENTRALE -> VENTIMIGLIA) ore 09:08
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:04:44 - 
- 09:09:14\nTreni coinvolti nella chiusura:\n  - IC 633 (MILANO CENTRALE -> 
- VENTIMIGLIA) [Transito]\n  - IC 633 (MILANO CENTRALE -> VENTIMIGLIA) [Tran
- sito]\nRitardo massimo rilevato: -8 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i p
- assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ hiusura: TRANSITO VELOCE\nChiusura sbarre stimata: 09:04:47 - 09:09:17\nTr
+ eni coinvolti nella chiusura:\n  - IC 633 (MILANO CENTRALE -> VENTIMIGLIA)
+  [Transito]\nRitardo massimo rilevato: -8 min\nAffidabilità stima: 78%\nN
+ ota normativa/euristica: Transito stimato senza fermata (34% tratta GENOVA
+  PIAZZA PRINCIPE -> SAVONA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-8
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3361--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T085900Z
+UID:train-22833--20261115-S04537@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:0
+DTSTART:20261116T085809Z
 DTEND:20261116T090900Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 09:59 - 10:09 (primo: REG 3361) (+4 m
- in)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 09:58 - 10:09 (primo: REG 22833) (+4 
+ min)
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 09:59:00 - 
- 10:09:00\nTreni coinvolti nella chiusura:\n  - REG 3361 (VENTIMIGLIA -> GE
- NOVA BRIGNOLE) (+4m)\n  - REG 3361 (VENTIMIGLIA -> GENOVA BRIGNOLE) (+4m)\
- n  - REG 22833 (GENOVA VOLTRI -> GENOVA NERVI)\nRitardo massimo rilevato: 
- 4 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura contin
- ua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
+ hiusura: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 09:58:09 - 
+ 10:09:00\nTreni coinvolti nella chiusura:\n  - REG 22833 (GENOVA VOLTRI ->
+  GENOVA NERVI) [Transito]\n  - REG 3361 (VENTIMIGLIA -> GENOVA BRIGNOLE) (
+ +4m)\n  - REG 22833 (GENOVA VOLTRI -> GENOVA NERVI)\nRitardo massimo rilev
+ ato: 4 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
+ ontinua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:4
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12359--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
-DTSTART:20261116T091309Z
-DTEND:20261116T093930Z
-SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 10:13 - 10:39 (primo: REG 12359) (+2 
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
+DTSTART:20261116T091930Z
+DTEND:20261116T093929Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 10:19 - 10:39 (primo: REG 12359) (+2 
  min)
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 7 TRENI\nChiusura sbarre stimata: 10:13:09 - 
- 10:39:30\nTreni coinvolti nella chiusura:\n  - REG 12359 (SAVONA -> SESTRI
-  LEVANTE) [Transito]\n  - REG 12359 (SAVONA -> SESTRI LEVANTE)\n  - REG 12
- 122 (GENOVA BRIGNOLE -> ACQUI TERME) (+2m) [Transito]\n  - REG 12122 (GENO
- VA BRIGNOLE -> ACQUI TERME) (+2m) [Transito]\n  - REG 12032 (GENOVA PIAZZA
-  PRINCIPE -> ARQUATA SCRIVIA) [Transito]\n  - REG 12121 (ACQUI TERME -> GE
- NOVA BRIGNOLE) [Transito]\n  - REG 22834 (GENOVA NERVI -> GENOVA VOLTRI) [
- Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota
-  normativa/euristica: Chiusura continua per 7 treni: intervallo utile tra 
- i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ hiusura: CHIUSURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 10:19:30 - 
+ 10:39:29\nTreni coinvolti nella chiusura:\n  - REG 12359 (SAVONA -> SESTRI
+  LEVANTE)\n  - REG 12122 (GENOVA BRIGNOLE -> ACQUI TERME) (+2m) [Transito]
+ \n  - REG 12032 (GENOVA PIAZZA PRINCIPE -> ARQUATA SCRIVIA) [Transito]\n  
+ - REG 12121 (ACQUI TERME -> GENOVA BRIGNOLE) [Transito]\n  - REG 22834 (GE
+ NOVA NERVI -> GENOVA VOLTRI) [Transito]\nRitardo massimo rilevato: 2 min\n
+ Affidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 
+ 5 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
+  di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-22834--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T094330Z
-DTEND:20261116T100300Z
-SUMMARY:[CHIUSURA CONTINUA - 12 TRENI] 10:43 - 11:03 (primo: REG 22834) (+2
+DTEND:20261116T101946Z
+SUMMARY:[CHIUSURA CONTINUA - 11 TRENI] 10:43 - 11:19 (primo: REG 22834) (+3
   min)
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 12 TRENI\nChiusura sbarre stimata: 10:43:30 -
-  11:03:00\nTreni coinvolti nella chiusura:\n  - REG 22834 (GENOVA NERVI ->
-  GENOVA VOLTRI)\n  - REG 3017 (MILANO CENTRALE -> SAVONA) (+2m) [Transito]
+ hiusura: CHIUSURA CONTINUA - 11 TRENI\nChiusura sbarre stimata: 10:43:30 -
+  11:19:46\nTreni coinvolti nella chiusura:\n  - REG 22834 (GENOVA NERVI ->
+  GENOVA VOLTRI)\n  - REG 12361 (SAVONA -> SESTRI LEVANTE) (+1m) [Transito]
  \n  - REG 3017 (MILANO CENTRALE -> SAVONA) (+2m) [Transito]\n  - IC 631 (V
- ENTIMIGLIA -> MILANO CENTRALE) [Transito]\n  - IC 631 (VENTIMIGLIA -> MILA
- NO CENTRALE) [Transito]\n  - REG 12361 (SAVONA -> SESTRI LEVANTE) (+1m) [A
- rrivo]\n  - REG 12361 (SAVONA -> SESTRI LEVANTE) (+1m) [Arrivo]\n  - IC 65
- 9 (MILANO CENTRALE -> VENTIMIGLIA) [Transito]\n  - REG 12361 (SAVONA -> SE
- STRI LEVANTE) (+1m) [Partenza]\n  - REG 12361 (SAVONA -> SESTRI LEVANTE) (
- +1m) [Partenza]\n  - REG 3017 (MILANO CENTRALE -> SAVONA) (+2m)\n  - REG 3
- 017 (MILANO CENTRALE -> SAVONA) (+2m)\nRitardo massimo rilevato: 2 min\nAf
- fidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 12
-  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
- di sgombero stradale (120s)
+ ENTIMIGLIA -> MILANO CENTRALE) [Transito]\n  - REG 12361 (SAVONA -> SESTRI
+  LEVANTE) (+1m) [Arrivo]\n  - IC 659 (MILANO CENTRALE -> VENTIMIGLIA) [Tra
+ nsito]\n  - REG 12361 (SAVONA -> SESTRI LEVANTE) (+1m) [Partenza]\n  - REG
+  3017 (MILANO CENTRALE -> SAVONA) (+2m)\n  - REG 22837 (GENOVA VOLTRI -> G
+ ENOVA NERVI) [Transito]\n  - REG 22837 (GENOVA VOLTRI -> GENOVA NERVI) (+3
+ m)\n  - REG 12356 (SESTRI LEVANTE -> SAVONA) (+2m) [Transito]\nRitardo mas
+ simo rilevato: 3 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Chiusura continua per 11 treni: intervallo utile tra i passaggi (76s) infe
+ riore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 12 TRENI,FERROVIA
-X-PL-DELAY-MIN:2
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-22837--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
-DTSTART:20261116T100600Z
-DTEND:20261116T101947Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:06 - 11:19 (primo: REG 22837) (+3 
- min)
-DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 11:06:00 - 
- 11:19:47\nTreni coinvolti nella chiusura:\n  - REG 22837 (GENOVA VOLTRI ->
-  GENOVA NERVI) (+3m)\n  - REG 22837 (GENOVA VOLTRI -> GENOVA NERVI) (+3m)\
- n  - REG 12356 (SESTRI LEVANTE -> SAVONA) (+2m) [Transito]\n  - REG 12356 
- (SESTRI LEVANTE -> SAVONA) (+2m) [Transito]\nRitardo massimo rilevato: 3 m
- in\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua 
- per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
- nima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 11 TRENI,FERROVIA
 X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12124--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T102200Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T102159Z
 DTEND:20261116T103200Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:22 - 11:32 (primo: REG 12124) (+1 
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:21 - 11:32 (primo: REG 12124) (+1 
  min)
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 11:22:00 - 
+ hiusura: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 11:21:59 - 
  11:32:00\nTreni coinvolti nella chiusura:\n  - REG 12124 (GENOVA BRIGNOLE 
  -> ACQUI TERME) [Transito]\n  - IC 515 (SAVONA -> TORINO PORTA NUOVA) [Tra
- nsito]\n  - REG 12356 (SESTRI LEVANTE -> SAVONA) (+1m)\n  - REG 12356 (SES
- TRI LEVANTE -> SAVONA) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabilit
- à stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+ nsito]\n  - REG 12356 (SESTRI LEVANTE -> SAVONA) (+1m)\nRitardo massimo ri
+ levato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
+ a continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3368--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T104414Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T104413Z
 DTEND:20261116T105700Z
-SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 11:44 - 11:57 (primo: REG 3368) (+2 m
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:44 - 11:57 (primo: REG 3368) (+2 m
  in)
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 7 TRENI\nChiusura sbarre stimata: 11:44:14 - 
+ hiusura: CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 11:44:13 - 
  11:57:00\nTreni coinvolti nella chiusura:\n  - REG 3368 (GENOVA BRIGNOLE -
- > VENTIMIGLIA) [Transito]\n  - REG 3368 (GENOVA BRIGNOLE -> VENTIMIGLIA) [
- Transito]\n  - REG 12037 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) [Transito]\n
-   - REG 12371 (SAVONA -> SESTRI LEVANTE) (+2m)\n  - REG 12371 (SAVONA -> S
- ESTRI LEVANTE) (+2m)\n  - REG 3368 (GENOVA BRIGNOLE -> VENTIMIGLIA)\n  - R
- EG 3368 (GENOVA BRIGNOLE -> VENTIMIGLIA)\nRitardo massimo rilevato: 2 min\
- nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per
-  7 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
- a di sgombero stradale (120s)
+ > VENTIMIGLIA) [Transito]\n  - REG 12037 (ARQUATA SCRIVIA -> GENOVA BRIGNO
+ LE) [Transito]\n  - REG 12371 (SAVONA -> SESTRI LEVANTE) (+2m)\n  - REG 33
+ 68 (GENOVA BRIGNOLE -> VENTIMIGLIA)\nRitardo massimo rilevato: 2 min\nAffi
+ dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 tr
+ eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12377--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T111609Z
-DTEND:20261116T112730Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:16 - 12:27 (primo: REG 12377) (+3 
+DTEND:20261116T112729Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:16 - 12:27 (primo: REG 12377) (+3 
  min)
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 12:16:09 - 
- 12:27:30\nTreni coinvolti nella chiusura:\n  - REG 12377 (SAVONA -> SESTRI
+ hiusura: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 12:16:09 - 
+ 12:27:29\nTreni coinvolti nella chiusura:\n  - REG 12377 (SAVONA -> SESTRI
   LEVANTE) (+3m) [Transito]\n  - REG 12377 (SAVONA -> SESTRI LEVANTE) (+3m)
- \n  - REG 12377 (SAVONA -> SESTRI LEVANTE) (+3m)\n  - REG 12126 (GENOVA BR
- IGNOLE -> ACQUI TERME) [Transito]\nRitardo massimo rilevato: 3 min\nAffida
- bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 tren
- i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
- ombero stradale (120s)
+ \n  - REG 12126 (GENOVA BRIGNOLE -> ACQUI TERME) [Transito]\nRitardo massi
+ mo rilevato: 3 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 3 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-745--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
-DTSTART:20261116T114959Z
-DTEND:20261116T120007Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:49 - 13:00 (primo: IC 745)
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
+DTSTART:20261116T114947Z
+DTEND:20261116T120012Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:49 - 13:00 (primo: IC 745)
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 12:49:59 - 
- 13:00:07\nTreni coinvolti nella chiusura:\n  - IC 745 (VENTIMIGLIA -> MILA
- NO CENTRALE) [Transito]\n  - IC 745 (VENTIMIGLIA -> MILANO CENTRALE) [Tran
- sito]\n  - IC 637 (MILANO CENTRALE -> VENTIMIGLIA) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Chiusura continua per 3 treni: intervallo utile tra i passaggi (67s) infer
- iore alla soglia minima di sgombero stradale (120s)
+ hiusura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:49:47 - 
+ 13:00:12\nTreni coinvolti nella chiusura:\n  - IC 745 (VENTIMIGLIA -> MILA
+ NO CENTRALE) [Transito]\n  - IC 637 (MILANO CENTRALE -> VENTIMIGLIA) [Tran
+ sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
+ mativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pa
+ ssaggi (84s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12376--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
-DTSTART:20261116T121500Z
-DTEND:20261116T122030Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:15 - 13:20 (primo: REG 12376) (+1 
- min)
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
+DTSTART:20261116T121459Z
+DTEND:20261116T122029Z
+SUMMARY:[TRANSITO VELOCE] REG 12376 (SESTRI LEVANTE -> SAVONA) ore 13:19 (+
+ 1 min)
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:15:00 - 
- 13:20:30\nTreni coinvolti nella chiusura:\n  - REG 12376 (SESTRI LEVANTE -
- > SAVONA) (+1m) [Transito]\n  - REG 12376 (SESTRI LEVANTE -> SAVONA) (+1m)
-  [Transito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNo
- ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
- a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ hiusura: TRANSITO VELOCE\nChiusura sbarre stimata: 13:14:59 - 13:20:29\nTr
+ eni coinvolti nella chiusura:\n  - REG 12376 (SESTRI LEVANTE -> SAVONA) (+
+ 1m) [Transito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\
+ nNota normativa/euristica: Transito stimato senza fermata (91% tratta GENO
+ VA PIAZZA PRINCIPE -> GENOVA SAMPIERDARENA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12376--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T122630Z
 DTEND:20261116T123100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:26 - 13:31 (primo: REG 12376) (+1 
- min)
+SUMMARY:[FERMATA] REG 12376 (SESTRI LEVANTE -> SAVONA) ore 13:30 (+1 min)
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:26:30 - 
- 13:31:00\nTreni coinvolti nella chiusura:\n  - REG 12376 (SESTRI LEVANTE -
- > SAVONA) (+1m)\n  - REG 12376 (SESTRI LEVANTE -> SAVONA) (+1m)\nRitardo m
- assimo rilevato: 1 min\nAffidabilità stima: 90%\nNota normativa/euristica
- : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
- riore alla soglia minima di sgombero stradale (120s)
+ hiusura: FERMATA\nChiusura sbarre stimata: 13:26:30 - 13:31:00\nTreni coin
+ volti nella chiusura:\n  - REG 12376 (SESTRI LEVANTE -> SAVONA) (+1m)\nRit
+ ardo massimo rilevato: 1 min\nAffidabilità stima: 90%\nNota normativa/eur
+ istica: Previsione con ritardo propagato (+1 min)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-22853--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T140130Z
 DTEND:20261116T140600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:01 - 15:06 (primo: REG 22853)
+SUMMARY:[FERMATA] REG 22853 (GENOVA VOLTRI -> GENOVA NERVI) ore 15:05
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:01:30 - 
- 15:06:00\nTreni coinvolti nella chiusura:\n  - REG 22853 (GENOVA VOLTRI ->
-  GENOVA NERVI)\n  - REG 22853 (GENOVA VOLTRI -> GENOVA NERVI)\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
+ hiusura: FERMATA\nChiusura sbarre stimata: 15:01:30 - 15:06:00\nTreni coin
+ volti nella chiusura:\n  - REG 22853 (GENOVA VOLTRI -> GENOVA NERVI)\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euri
+ stica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12407--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
-DTSTART:20261116T141309Z
-DTEND:20261116T143430Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 15:13 - 15:34 (primo: REG 12407)
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
+DTSTART:20261116T141930Z
+DTEND:20261116T143429Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:19 - 15:34 (primo: REG 12407)
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 15:13:09 - 
- 15:34:30\nTreni coinvolti nella chiusura:\n  - REG 12407 (SAVONA -> SESTRI
-  LEVANTE) [Transito]\n  - REG 12407 (SAVONA -> SESTRI LEVANTE)\n  - REG 12
- 407 (SAVONA -> SESTRI LEVANTE)\n  - REG 12132 (GENOVA BRIGNOLE -> ACQUI TE
- RME) [Transito]\n  - REG 12052 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) [Trans
- ito]\n  - REG 12052 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) [Transito]\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
- tica: Chiusura continua per 6 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
+ hiusura: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 15:19:30 - 
+ 15:34:29\nTreni coinvolti nella chiusura:\n  - REG 12407 (SAVONA -> SESTRI
+  LEVANTE)\n  - REG 12132 (GENOVA BRIGNOLE -> ACQUI TERME) [Transito]\n  - 
+ REG 12052 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) [Transito]\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
+ sura continua per 3 treni: intervallo utile tra i passaggi (90s) inferiore
+  alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3376--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
-DTSTART:20261116T144400Z
-DTEND:20261116T144930Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
+DTSTART:20261116T144359Z
+DTEND:20261116T144929Z
 SUMMARY:[TRANSITO VELOCE] REG 3376 (GENOVA BRIGNOLE -> VENTIMIGLIA) ore 15:
  48
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: TRANSITO VELOCE\nChiusura sbarre stimata: 15:44:00 - 15:49:30\nTr
+ hiusura: TRANSITO VELOCE\nChiusura sbarre stimata: 15:43:59 - 15:49:29\nTr
  eni coinvolti nella chiusura:\n  - REG 3376 (GENOVA BRIGNOLE -> VENTIMIGLI
  A) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\n
  Nota normativa/euristica: Transito stimato senza fermata (91% tratta GENOV
@@ -581,132 +550,128 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3376--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
 DTSTART:20261116T145230Z
 DTEND:20261116T150100Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:52 - 16:01 (primo: REG 3376)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:52 - 16:01 (primo: REG 3376)
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 15:52:30 - 
+ hiusura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:52:30 - 
  16:01:00\nTreni coinvolti nella chiusura:\n  - REG 3376 (GENOVA BRIGNOLE -
- > VENTIMIGLIA)\n  - REG 3371 (VENTIMIGLIA -> GENOVA BRIGNOLE)\n  - REG 337
- 1 (VENTIMIGLIA -> GENOVA BRIGNOLE)\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 90%\nNota normativa/euristica: Chiusura continua per 3 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+ > VENTIMIGLIA)\n  - REG 3371 (VENTIMIGLIA -> GENOVA BRIGNOLE)\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: 
+ Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
+ ore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12406--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
-DTSTART:20261116T151400Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
+DTSTART:20261116T151359Z
 DTEND:20261116T153000Z
-SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 16:14 - 16:30 (primo: REG 12406)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:13 - 16:30 (primo: REG 12406)
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 7 TRENI\nChiusura sbarre stimata: 16:14:00 - 
+ hiusura: CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 16:13:59 - 
  16:30:00\nTreni coinvolti nella chiusura:\n  - REG 12406 (SESTRI LEVANTE -
- > SAVONA) [Transito]\n  - REG 12406 (SESTRI LEVANTE -> SAVONA) [Transito]\
- n  - REG 12417 (SAVONA -> SESTRI LEVANTE)\n  - REG 12417 (SAVONA -> SESTRI
-  LEVANTE)\n  - REG 12134 (GENOVA BRIGNOLE -> ACQUI TERME) [Transito]\n  - 
- REG 12406 (SESTRI LEVANTE -> SAVONA)\n  - REG 12406 (SESTRI LEVANTE -> SAV
- ONA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
- ativa/euristica: Chiusura continua per 7 treni: intervallo utile tra i pas
- saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ > SAVONA) [Transito]\n  - REG 12417 (SAVONA -> SESTRI LEVANTE)\n  - REG 12
+ 134 (GENOVA BRIGNOLE -> ACQUI TERME) [Transito]\n  - REG 12406 (SESTRI LEV
+ ANTE -> SAVONA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%
+ \nNota normativa/euristica: Chiusura continua per 4 treni: intervallo util
+ e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
+ 20s)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-22858--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
-DTSTART:20261116T153400Z
-DTEND:20261116T153930Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:34 - 16:39 (primo: REG 22858)
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
+DTSTART:20261116T153359Z
+DTEND:20261116T153929Z
+SUMMARY:[TRANSITO VELOCE] REG 22858 (GENOVA NERVI -> GENOVA VOLTRI) ore 16:
+ 38
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:34:00 - 
- 16:39:30\nTreni coinvolti nella chiusura:\n  - REG 22858 (GENOVA NERVI -> 
- GENOVA VOLTRI) [Transito]\n  - REG 22858 (GENOVA NERVI -> GENOVA VOLTRI) [
- Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
-  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
- i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ hiusura: TRANSITO VELOCE\nChiusura sbarre stimata: 16:33:59 - 16:39:29\nTr
+ eni coinvolti nella chiusura:\n  - REG 22858 (GENOVA NERVI -> GENOVA VOLTR
+ I) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\n
+ Nota normativa/euristica: Transito stimato senza fermata (91% tratta GENOV
+ A PIAZZA PRINCIPE -> GENOVA SAMPIERDARENA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-22858--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T154330Z
 DTEND:20261116T160200Z
-SUMMARY:[CHIUSURA CONTINUA - 9 TRENI] 16:43 - 17:02 (primo: REG 22858)
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 16:43 - 17:02 (primo: REG 22858)
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 9 TRENI\nChiusura sbarre stimata: 16:43:30 - 
+ hiusura: CHIUSURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 16:43:30 - 
  17:02:00\nTreni coinvolti nella chiusura:\n  - REG 22858 (GENOVA NERVI -> 
- GENOVA VOLTRI)\n  - REG 22858 (GENOVA NERVI -> GENOVA VOLTRI)\n  - REG 120
- 57 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) [Transito]\n  - REG 12421 (SAVONA 
- -> SESTRI LEVANTE)\n  - REG 12410 (SESTRI LEVANTE -> SAVONA) [Transito]\n 
-  - REG 12410 (SESTRI LEVANTE -> SAVONA) [Transito]\n  - IC 641 (MILANO CEN
- TRALE -> VENTIMIGLIA) [Transito]\n  - REG 12410 (SESTRI LEVANTE -> SAVONA)
- \n  - REG 12410 (SESTRI LEVANTE -> SAVONA)\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
- er 9 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
+ GENOVA VOLTRI)\n  - REG 12057 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) [Transi
+ to]\n  - REG 12421 (SAVONA -> SESTRI LEVANTE)\n  - REG 12410 (SESTRI LEVAN
+ TE -> SAVONA) [Transito]\n  - IC 641 (MILANO CENTRALE -> VENTIMIGLIA) [Tra
+ nsito]\n  - REG 12410 (SESTRI LEVANTE -> SAVONA)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
+ inua per 6 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 9 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12136--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
-DTSTART:20261116T162200Z
-DTEND:20261116T162730Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:22 - 17:27 (primo: REG 12136)
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
+DTSTART:20261116T162159Z
+DTEND:20261116T162729Z
+SUMMARY:[TRANSITO VELOCE] REG 12136 (GENOVA BRIGNOLE -> ACQUI TERME) ore 17
+ :26
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:22:00 - 
- 17:27:30\nTreni coinvolti nella chiusura:\n  - REG 12136 (GENOVA BRIGNOLE 
- -> ACQUI TERME) [Transito]\n  - REG 12136 (GENOVA BRIGNOLE -> ACQUI TERME)
-  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
- ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
- a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ hiusura: TRANSITO VELOCE\nChiusura sbarre stimata: 17:21:59 - 17:27:29\nTr
+ eni coinvolti nella chiusura:\n  - REG 12136 (GENOVA BRIGNOLE -> ACQUI TER
+ ME) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\
+ nNota normativa/euristica: Transito stimato senza fermata (91% tratta GENO
+ VA PIAZZA PRINCIPE -> GENOVA SAMPIERDARENA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-675--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
-DTSTART:20261116T175537Z
-DTEND:20261116T180007Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
+DTSTART:20261116T175542Z
+DTEND:20261116T180012Z
 SUMMARY:[TRANSITO VELOCE] IC 675 (MILANO CENTRALE -> VENTIMIGLIA) ore 18:59
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: TRANSITO VELOCE\nChiusura sbarre stimata: 18:55:37 - 19:00:07\nTr
+ hiusura: TRANSITO VELOCE\nChiusura sbarre stimata: 18:55:42 - 19:00:12\nTr
  eni coinvolti nella chiusura:\n  - IC 675 (MILANO CENTRALE -> VENTIMIGLIA)
   [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
  ta normativa/euristica: Transito stimato senza fermata (34% tratta GENOVA 
@@ -721,16 +686,38 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12451--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T184930Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T184309Z
 DTEND:20261116T185400Z
-SUMMARY:[FERMATA] REG 12451 (SAVONA -> SESTRI LEVANTE) ore 19:53
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:43 - 19:54 (primo: REG 12451)
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: FERMATA\nChiusura sbarre stimata: 19:49:30 - 19:54:00\nTreni coin
- volti nella chiusura:\n  - REG 12451 (SAVONA -> SESTRI LEVANTE)\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
- : Previsione da traccia oraria regolare
+ hiusura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:43:09 - 
+ 19:54:00\nTreni coinvolti nella chiusura:\n  - REG 12451 (SAVONA -> SESTRI
+  LEVANTE) [Transito]\n  - REG 12451 (SAVONA -> SESTRI LEVANTE)\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Chiusura continua per 2 treni: intervallo utile tra i passaggi (50s) infe
+ riore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3379--20261115-S04537@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
+DTSTART:20261116T185630Z
+DTEND:20261116T190100Z
+SUMMARY:[FERMATA] REG 3379 (VENTIMIGLIA -> GENOVA BRIGNOLE) ore 20:00
+DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
+ hiusura: FERMATA\nChiusura sbarre stimata: 19:56:30 - 20:01:00\nTreni coin
+ volti nella chiusura:\n  - REG 3379 (VENTIMIGLIA -> GENOVA BRIGNOLE)\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euri
+ stica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -740,31 +727,9 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3379--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
-DTSTART:20261116T185630Z
-DTEND:20261116T190100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:56 - 20:01 (primo: REG 3379)
-DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:56:30 - 
- 20:01:00\nTreni coinvolti nella chiusura:\n  - REG 3379 (VENTIMIGLIA -> GE
- NOVA BRIGNOLE)\n  - REG 3379 (VENTIMIGLIA -> GENOVA BRIGNOLE)\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-22873--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T190430Z
 DTEND:20261116T190900Z
 SUMMARY:[FERMATA] REG 22873 (GENOVA VOLTRI -> GENOVA BRIGNOLE) ore 20:08
@@ -783,14 +748,14 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12072--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:4
-DTSTART:20261116T192900Z
-DTEND:20261116T193430Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:5
+DTSTART:20261116T192859Z
+DTEND:20261116T193429Z
 SUMMARY:[TRANSITO VELOCE] REG 12072 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) or
  e 20:33
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: TRANSITO VELOCE\nChiusura sbarre stimata: 20:29:00 - 20:34:30\nTr
+ hiusura: TRANSITO VELOCE\nChiusura sbarre stimata: 20:28:59 - 20:34:29\nTr
  eni coinvolti nella chiusura:\n  - REG 12072 (GENOVA BRIGNOLE -> ARQUATA S
  CRIVIA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
  78%\nNota normativa/euristica: Transito stimato senza fermata (91% tratta 
@@ -806,14 +771,14 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12073--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T194625Z
-DTEND:20261116T200619Z
+DTEND:20261116T200618Z
 SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 20:46 - 21:06 (primo: REG 12073)
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
  hiusura: CHIUSURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 20:46:25 - 
- 21:06:19\nTreni coinvolti nella chiusura:\n  - REG 12073 (ARQUATA SCRIVIA 
+ 21:06:18\nTreni coinvolti nella chiusura:\n  - REG 12073 (ARQUATA SCRIVIA 
  -> GENOVA BRIGNOLE) [Transito]\n  - REG 12450 (SESTRI LEVANTE -> SAVONA) [
  Transito]\n  - IC 639 (VENTIMIGLIA -> MILANO CENTRALE) [Transito]\n  - REG
   12450 (SESTRI LEVANTE -> SAVONA)\n  - REG 12074 (GENOVA BRIGNOLE -> NOVI 
@@ -831,8 +796,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3047--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T201530Z
 DTEND:20261116T202000Z
 SUMMARY:[FERMATA] REG 3047 (ALBENGA -> MILANO CENTRALE) ore 21:19
@@ -851,18 +816,18 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-518--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T204055Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T204058Z
 DTEND:20261116T205155Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:40 - 21:51 (primo: IC 518)
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:40:55 - 
+ hiusura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:40:58 - 
  21:51:55\nTreni coinvolti nella chiusura:\n  - IC 518 (ROMA TERMINI -> VEN
  TIMIGLIA) [Transito]\n  - REG 12143 (ACQUI TERME -> GENOVA BRIGNOLE) [Tran
  sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
  mativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pa
- ssaggi (60s) inferiore alla soglia minima di sgombero stradale (120s)
+ ssaggi (56s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -873,66 +838,62 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-689--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T205537Z
-DTEND:20261116T210007Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:55 - 22:00 (primo: IC 689)
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T205542Z
+DTEND:20261116T210012Z
+SUMMARY:[TRANSITO VELOCE] IC 689 (MILANO CENTRALE -> VENTIMIGLIA) ore 21:59
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:55:37 - 
- 22:00:07\nTreni coinvolti nella chiusura:\n  - IC 689 (MILANO CENTRALE -> 
- VENTIMIGLIA) [Transito]\n  - IC 689 (MILANO CENTRALE -> VENTIMIGLIA) [Tran
- sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pa
- ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ hiusura: TRANSITO VELOCE\nChiusura sbarre stimata: 21:55:42 - 22:00:12\nTr
+ eni coinvolti nella chiusura:\n  - IC 689 (MILANO CENTRALE -> VENTIMIGLIA)
+  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Transito stimato senza fermata (34% tratta GENOVA 
+ PIAZZA PRINCIPE -> SAVONA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3041--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
-DTSTART:20261116T213059Z
-DTEND:20261116T213629Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:30 - 22:36 (primo: REG 3041)
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
+DTSTART:20261116T213057Z
+DTEND:20261116T213627Z
+SUMMARY:[TRANSITO VELOCE] REG 3041 (MILANO CENTRALE -> ALASSIO) ore 22:35
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:30:59 - 
- 22:36:29\nTreni coinvolti nella chiusura:\n  - REG 3041 (MILANO CENTRALE -
- > ALASSIO) [Transito]\n  - REG 3041 (MILANO CENTRALE -> ALASSIO) [Transito
- ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
- va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
- gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ hiusura: TRANSITO VELOCE\nChiusura sbarre stimata: 22:30:57 - 22:36:27\nTr
+ eni coinvolti nella chiusura:\n  - REG 3041 (MILANO CENTRALE -> ALASSIO) [
+ Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Transito stimato senza fermata (91% tratta GENOVA PI
+ AZZA PRINCIPE -> GENOVA SAMPIERDARENA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3041--20261115-S04537@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
 DTSTART:20261116T213930Z
 DTEND:20261116T214400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:39 - 22:44 (primo: REG 3041)
+SUMMARY:[FERMATA] REG 3041 (MILANO CENTRALE -> ALASSIO) ore 22:43
 DESCRIPTION:Stazione/PL: GENOVA SESTRI PONENTE AEROPORTO (S04537)\nRegime c
- hiusura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:39:30 - 
- 22:44:00\nTreni coinvolti nella chiusura:\n  - REG 3041 (MILANO CENTRALE -
- > ALASSIO)\n  - REG 3041 (MILANO CENTRALE -> ALASSIO)\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura
-  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
+ hiusura: FERMATA\nChiusura sbarre stimata: 22:39:30 - 22:44:00\nTreni coin
+ volti nella chiusura:\n  - REG 3041 (MILANO CENTRALE -> ALASSIO)\nRitardo 
+ massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
+ a: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione GENOVA SESTRI PONENTE AEROPORTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

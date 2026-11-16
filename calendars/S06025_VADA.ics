@@ -9,44 +9,64 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:7572390d51aceed3019fd8fb454ff5db95b11c56058202c9b4a0666c4e4b
- 3747
+X-CONTENT-HASH:e75e765079b0f6da50f2665a6399672efd7f54029abdb5349d582791b613
+ 7554
 BEGIN:VEVENT
-UID:train-4014--20261115-S06025@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
-DTSTART:20261116T054400Z
-DTEND:20261116T054930Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:44 - 06:49 (primo: REG 4014) (+7 m
- in)
-DESCRIPTION:Stazione/PL: VADA (S06025)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 06:44:00 - 06:49:30\nTreni coinvolti n
- ella chiusura:\n  - REG 4014 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA) (+7
- m)\n  - REG 4014 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA) (+7m)\nRitardo 
- massimo rilevato: 7 min\nAffidabilità stima: 99%\nNota normativa/euristic
- a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
+UID:train-4125--20261115-S06025@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:0
+DTSTART:20261116T051853Z
+DTEND:20261116T052423Z
+SUMMARY:[TRANSITO VELOCE] REG 4125 (PISA CENTRALE -> ROMA TERMINI) ore 06:2
+ 3 (+3 min)
+DESCRIPTION:Stazione/PL: VADA (S06025)\nRegime chiusura: TRANSITO VELOCE\nC
+ hiusura sbarre stimata: 06:18:53 - 06:24:23\nTreni coinvolti nella chiusur
+ a:\n  - REG 4125 (PISA CENTRALE -> ROMA TERMINI) (+3m) [Transito]\nRitardo
+  massimo rilevato: 3 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (45% tratta ROSIGNANO -> CECINA\; pedal
+ e annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VADA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4014--20261115-S06025@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
+DTSTART:20261116T054400Z
+DTEND:20261116T054930Z
+SUMMARY:[FERMATA] REG 4014 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA) ore 06
+ :48 (+7 min)
+DESCRIPTION:Stazione/PL: VADA (S06025)\nRegime chiusura: FERMATA\nChiusura 
+ sbarre stimata: 06:44:00 - 06:49:30\nTreni coinvolti nella chiusura:\n  - 
+ REG 4014 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA) (+7m)\nRitardo massimo 
+ rilevato: 7 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rilev
+ amento reale da circuito di binario
+LOCATION:Passaggio a Livello / Stazione VADA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:7
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18255--20261115-S06025@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
-DTSTART:20261116T060820Z
-DTEND:20261116T061350Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
+DTSTART:20261116T060823Z
+DTEND:20261116T061353Z
 SUMMARY:[TRANSITO VELOCE] REG 18255 (FIRENZE SANTA MARIA NOVELLA -> PIOMBIN
  O MARITTIMA) ore 07:12
 DESCRIPTION:Stazione/PL: VADA (S06025)\nRegime chiusura: TRANSITO VELOCE\nC
- hiusura sbarre stimata: 07:08:20 - 07:13:50\nTreni coinvolti nella chiusur
+ hiusura sbarre stimata: 07:08:23 - 07:13:53\nTreni coinvolti nella chiusur
  a:\n  - REG 18255 (FIRENZE SANTA MARIA NOVELLA -> PIOMBINO MARITTIMA) [Tra
  nsito]\nRitardo massimo rilevato: -7 min\nAffidabilità stima: 78%\nNota n
- ormativa/euristica: Transito stimato senza fermata (44% tratta ROSIGNANO -
+ ormativa/euristica: Transito stimato senza fermata (45% tratta ROSIGNANO -
  > CECINA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VADA
 STATUS:CONFIRMED
@@ -58,31 +78,51 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19405--20261115-S06025@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
 DTSTART:20261116T065230Z
 DTEND:20261116T065800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:52 - 07:58 (primo: REG 19405) (+1 
- min)
-DESCRIPTION:Stazione/PL: VADA (S06025)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 07:52:30 - 07:58:00\nTreni coinvolti n
- ella chiusura:\n  - REG 19405 (PISA CENTRALE -> CAMPIGLIA MARITTIMA) (+1m)
- \n  - REG 19405 (PISA CENTRALE -> CAMPIGLIA MARITTIMA) (+1m)\nRitardo mass
- imo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: C
- hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 19405 (PISA CENTRALE -> CAMPIGLIA MARITTIMA) ore 07:5
+ 7 (+1 min)
+DESCRIPTION:Stazione/PL: VADA (S06025)\nRegime chiusura: FERMATA\nChiusura 
+ sbarre stimata: 07:52:30 - 07:58:00\nTreni coinvolti nella chiusura:\n  - 
+ REG 19405 (PISA CENTRALE -> CAMPIGLIA MARITTIMA) (+1m)\nRitardo massimo ri
+ levato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevam
+ ento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione VADA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4122--20261115-S06025@pl-tracker.local
-DTSTAMP:20261116T104738Z
+UID:train-4129--20261115-S06025@pl-tracker.local
+DTSTAMP:20261116T205126Z
 SEQUENCE:0
+DTSTART:20261116T071739Z
+DTEND:20261116T072309Z
+SUMMARY:[TRANSITO VELOCE] REG 4129 (PISA CENTRALE -> GROSSETO) ore 08:21 (+
+ 1 min)
+DESCRIPTION:Stazione/PL: VADA (S06025)\nRegime chiusura: TRANSITO VELOCE\nC
+ hiusura sbarre stimata: 08:17:39 - 08:23:09\nTreni coinvolti nella chiusur
+ a:\n  - REG 4129 (PISA CENTRALE -> GROSSETO) (+1m) [Transito]\nRitardo mas
+ simo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Transito stimato senza fermata (45% tratta ROSIGNANO -> CECINA\; pedale an
+ nuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione VADA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4122--20261115-S06025@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T081307Z
 DTEND:20261116T081837Z
 SUMMARY:[TRANSITO VELOCE] REG 4122 (ROMA TERMINI -> PISA CENTRALE) ore 09:1
@@ -103,98 +143,112 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4030--20261115-S06025@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
 DTSTART:20261116T093130Z
 DTEND:20261116T093700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:31 - 10:37 (primo: REG 4030) (+7 m
- in)
-DESCRIPTION:Stazione/PL: VADA (S06025)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 10:31:30 - 10:37:00\nTreni coinvolti n
- ella chiusura:\n  - REG 4030 (PIOMBINO MARITTIMA -> FIRENZE SANTA MARIA NO
- VELLA) (+7m)\n  - REG 4030 (PIOMBINO MARITTIMA -> FIRENZE SANTA MARIA NOVE
- LLA) (+7m)\nRitardo massimo rilevato: 7 min\nAffidabilità stima: 99%\nNot
- a normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra
-  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 4030 (PIOMBINO MARITTIMA -> FIRENZE SANTA MARIA NOVEL
+ LA) ore 10:36 (+7 min)
+DESCRIPTION:Stazione/PL: VADA (S06025)\nRegime chiusura: FERMATA\nChiusura 
+ sbarre stimata: 10:31:30 - 10:37:00\nTreni coinvolti nella chiusura:\n  - 
+ REG 4030 (PIOMBINO MARITTIMA -> FIRENZE SANTA MARIA NOVELLA) (+7m)\nRitard
+ o massimo rilevato: 7 min\nAffidabilità stima: 99%\nNota normativa/eurist
+ ica: Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione VADA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:7
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19415--20261115-S06025@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T103000Z
 DTEND:20261116T103630Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:30 - 11:36 (primo: REG 19415) (+2 
- min)
-DESCRIPTION:Stazione/PL: VADA (S06025)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 11:30:00 - 11:36:30\nTreni coinvolti n
- ella chiusura:\n  - REG 19415 (PISA CENTRALE -> GROSSETO) (+2m)\n  - REG 1
- 9415 (PISA CENTRALE -> GROSSETO) (+2m)\nRitardo massimo rilevato: 2 min\nA
- ffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2
-  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
- di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 19415 (PISA CENTRALE -> GROSSETO) ore 11:35 (+2 min)
+DESCRIPTION:Stazione/PL: VADA (S06025)\nRegime chiusura: FERMATA\nChiusura 
+ sbarre stimata: 11:30:00 - 11:36:30\nTreni coinvolti nella chiusura:\n  - 
+ REG 19415 (PISA CENTRALE -> GROSSETO) (+2m)\nRitardo massimo rilevato: 2 m
+ in\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale 
+ da circuito di binario
 LOCATION:Passaggio a Livello / Stazione VADA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-19473--20261115-S06025@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
-DTSTART:20261116T115130Z
-DTEND:20261116T115600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:51 - 12:56 (primo: REG 19473)
-DESCRIPTION:Stazione/PL: VADA (S06025)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 12:51:30 - 12:56:00\nTreni coinvolti n
- ella chiusura:\n  - REG 19473 (PISA CENTRALE -> PIOMBINO MARITTIMA)\n  - R
- EG 19473 (PISA CENTRALE -> PIOMBINO MARITTIMA)\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura contin
- ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
+UID:train-4131--20261115-S06025@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:0
+DTSTART:20261116T111847Z
+DTEND:20261116T112417Z
+SUMMARY:[TRANSITO VELOCE] REG 4131 (PISA CENTRALE -> ROMA TERMINI) ore 12:2
+ 3
+DESCRIPTION:Stazione/PL: VADA (S06025)\nRegime chiusura: TRANSITO VELOCE\nC
+ hiusura sbarre stimata: 12:18:47 - 12:24:17\nTreni coinvolti nella chiusur
+ a:\n  - REG 4131 (PISA CENTRALE -> ROMA TERMINI) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
+ ansito stimato senza fermata (45% tratta ROSIGNANO -> CECINA\; pedale annu
+ ncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VADA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19473--20261115-S06025@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
+DTSTART:20261116T115130Z
+DTEND:20261116T115600Z
+SUMMARY:[FERMATA] REG 19473 (PISA CENTRALE -> PIOMBINO MARITTIMA) ore 12:55
+DESCRIPTION:Stazione/PL: VADA (S06025)\nRegime chiusura: FERMATA\nChiusura 
+ sbarre stimata: 12:51:30 - 12:56:00\nTreni coinvolti nella chiusura:\n  - 
+ REG 19473 (PISA CENTRALE -> PIOMBINO MARITTIMA)\nRitardo massimo rilevato:
+  0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da 
+ traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione VADA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18308--20261115-S06025@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T140230Z
 DTEND:20261116T140700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:02 - 15:07 (primo: REG 18308)
-DESCRIPTION:Stazione/PL: VADA (S06025)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 15:02:30 - 15:07:00\nTreni coinvolti n
- ella chiusura:\n  - REG 18308 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA)\n 
-  - REG 18308 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 18308 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA) ore 1
+ 5:06
+DESCRIPTION:Stazione/PL: VADA (S06025)\nRegime chiusura: FERMATA\nChiusura 
+ sbarre stimata: 15:02:30 - 15:07:00\nTreni coinvolti nella chiusura:\n  - 
+ REG 18308 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA)\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
+  da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VADA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19423--20261115-S06025@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T154730Z
 DTEND:20261116T155200Z
 SUMMARY:[FERMATA] REG 19423 (PISA CENTRALE -> CAMPIGLIA MARITTIMA) ore 16:5
@@ -213,39 +267,60 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4060--20261115-S06025@pl-tracker.local
-DTSTAMP:20261116T104738Z
+UID:train-4134--20261115-S06025@pl-tracker.local
+DTSTAMP:20261116T205126Z
 SEQUENCE:0
-DTSTART:20261116T184130Z
-DTEND:20261116T184600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:41 - 19:46 (primo: REG 4060)
-DESCRIPTION:Stazione/PL: VADA (S06025)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 19:41:30 - 19:46:00\nTreni coinvolti n
- ella chiusura:\n  - REG 4060 (PIOMBINO MARITTIMA -> FIRENZE SANTA MARIA NO
- VELLA)\n  - REG 4060 (PIOMBINO MARITTIMA -> FIRENZE SANTA MARIA NOVELLA)\n
- Ritardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/
- euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
- (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTART:20261116T163254Z
+DTEND:20261116T163824Z
+SUMMARY:[TRANSITO VELOCE] REG 4134 (ROMA TERMINI -> PISA CENTRALE) ore 17:3
+ 7
+DESCRIPTION:Stazione/PL: VADA (S06025)\nRegime chiusura: TRANSITO VELOCE\nC
+ hiusura sbarre stimata: 17:32:54 - 17:38:24\nTreni coinvolti nella chiusur
+ a:\n  - REG 4134 (ROMA TERMINI -> PISA CENTRALE) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
+ ansito stimato senza fermata (52% tratta CECINA -> ROSIGNANO\; pedale annu
+ ncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VADA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4060--20261115-S06025@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
+DTSTART:20261116T184130Z
+DTEND:20261116T184600Z
+SUMMARY:[FERMATA] REG 4060 (PIOMBINO MARITTIMA -> FIRENZE SANTA MARIA NOVEL
+ LA) ore 19:45
+DESCRIPTION:Stazione/PL: VADA (S06025)\nRegime chiusura: FERMATA\nChiusura 
+ sbarre stimata: 19:41:30 - 19:46:00\nTreni coinvolti nella chiusura:\n  - 
+ REG 4060 (PIOMBINO MARITTIMA -> FIRENZE SANTA MARIA NOVELLA)\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
+ revisione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione VADA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19425--20261115-S06025@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T212816Z
-DTEND:20261116T213346Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T212820Z
+DTEND:20261116T213350Z
 SUMMARY:[TRANSITO VELOCE] REG 19425 (PISA CENTRALE -> GROSSETO) ore 22:32
 DESCRIPTION:Stazione/PL: VADA (S06025)\nRegime chiusura: TRANSITO VELOCE\nC
- hiusura sbarre stimata: 22:28:16 - 22:33:46\nTreni coinvolti nella chiusur
+ hiusura sbarre stimata: 22:28:20 - 22:33:50\nTreni coinvolti nella chiusur
  a:\n  - REG 19425 (PISA CENTRALE -> GROSSETO) [Transito]\nRitardo massimo 
  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
- ito stimato senza fermata (44% tratta ROSIGNANO -> CECINA\; pedale annunci
+ ito stimato senza fermata (45% tratta ROSIGNANO -> CECINA\; pedale annunci
  o fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VADA
 STATUS:CONFIRMED

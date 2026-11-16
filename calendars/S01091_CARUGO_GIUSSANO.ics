@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:c6e139bf49a81dfd62597259f2127f184fb683c960f80a23f9791feee1a3
- 2c82
+X-CONTENT-HASH:ea90ced81858e06388334a106009e350121019f148f82dfc8aa67f418263
+ 0f4b
 BEGIN:VEVENT
 UID:train-612--20261115-S01091@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T050630Z
 DTEND:20261116T051100Z
 SUMMARY:[FERMATA] REG 612 (ASSO -> MILANO CADORNA) ore 06:10
@@ -33,8 +33,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1614--20261115-S01091@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:3
+DTSTAMP:20261116T205126Z
+SEQUENCE:4
 DTSTART:20261116T053630Z
 DTEND:20261116T054100Z
 SUMMARY:[FERMATA] REG 1614 (ERBA -> MILANO CADORNA) ore 06:40
@@ -53,8 +53,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1613--20261115-S01091@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
 DTSTART:20261116T061530Z
 DTEND:20261116T062000Z
 SUMMARY:[FERMATA] REG 1613 (MILANO CADORNA -> ERBA) ore 07:19
@@ -73,174 +73,161 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1615--20261115-S01091@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T065032Z
 DTEND:20261116T065602Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:50 - 07:56 (primo: REG 1615)
-DESCRIPTION:Stazione/PL: CARUGO - GIUSSANO (S01091)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:50:32 - 07:56:02\nTren
- i coinvolti nella chiusura:\n  - REG 1615 (MILANO CADORNA -> ASSO) [Transi
- to]\n  - REG 1615 (MILANO CADORNA -> ASSO) [Transito]\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
-  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 1615 (MILANO CADORNA -> ASSO) ore 07:54
+DESCRIPTION:Stazione/PL: CARUGO - GIUSSANO (S01091)\nRegime chiusura: TRANS
+ ITO VELOCE\nChiusura sbarre stimata: 07:50:32 - 07:56:02\nTreni coinvolti 
+ nella chiusura:\n  - REG 1615 (MILANO CADORNA -> ASSO) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (50% tratta MARIANO COMENSE -> AROSIO\;
+  pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CARUGO - GIUSSANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1630--20261115-S01091@pl-tracker.local-arr
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T083608Z
 DTEND:20261116T084424Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 09:36 - 09:44 (primo: REG 1630) (+2 m
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:36 - 09:44 (primo: REG 1630) (+2 m
  in)
 DESCRIPTION:Stazione/PL: CARUGO - GIUSSANO (S01091)\nRegime chiusura: CHIUS
- URA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 09:36:08 - 09:44:24\nTren
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:36:08 - 09:44:24\nTren
  i coinvolti nella chiusura:\n  - REG 1630 (ERBA -> MILANO CADORNA) (+2m) [
- Arrivo]\n  - REG 1630 (ERBA -> MILANO CADORNA) (+2m) [Arrivo]\n  - REG 163
- 0 (ERBA -> MILANO CADORNA) (+2m) [Partenza]\n  - REG 1630 (ERBA -> MILANO 
- CADORNA) (+2m) [Partenza]\nRitardo massimo rilevato: 2 min\nAffidabilità 
- stima: 99%\nNota normativa/euristica: Chiusura continua per 4 treni: inter
- vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
- tradale (120s)
+ Arrivo]\n  - REG 1630 (ERBA -> MILANO CADORNA) (+2m) [Partenza]\nRitardo m
+ assimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica
+ : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CARUGO - GIUSSANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-632--20261115-S01091@pl-tracker.local-arr
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T090444Z
 DTEND:20261116T091335Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:04 - 10:13 (primo: REG 632) (+2 mi
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:04 - 10:13 (primo: REG 632) (+2 mi
  n)
 DESCRIPTION:Stazione/PL: CARUGO - GIUSSANO (S01091)\nRegime chiusura: CHIUS
- URA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 10:04:44 - 10:13:35\nTren
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:04:44 - 10:13:35\nTren
  i coinvolti nella chiusura:\n  - REG 632 (ASSO -> MILANO CADORNA) (+2m) [A
- rrivo]\n  - REG 632 (ASSO -> MILANO CADORNA) (+2m) [Arrivo]\n  - REG 632 (
- ASSO -> MILANO CADORNA) (+2m) [Partenza]\n  - REG 632 (ASSO -> MILANO CADO
- RNA) (+2m) [Partenza]\nRitardo massimo rilevato: 2 min\nAffidabilità stim
- a: 99%\nNota normativa/euristica: Chiusura continua per 4 treni: intervall
- o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
- ale (120s)
+ rrivo]\n  - REG 632 (ASSO -> MILANO CADORNA) (+2m) [Partenza]\nRitardo mas
+ simo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: 
+ Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
+ ore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CARUGO - GIUSSANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-631--20261115-S01091@pl-tracker.local-arr
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T094440Z
 DTEND:20261116T095302Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:44 - 10:53 (primo: REG 631) (+2 mi
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:44 - 10:53 (primo: REG 631) (+2 mi
  n)
 DESCRIPTION:Stazione/PL: CARUGO - GIUSSANO (S01091)\nRegime chiusura: CHIUS
- URA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 10:44:40 - 10:53:02\nTren
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:44:40 - 10:53:02\nTren
  i coinvolti nella chiusura:\n  - REG 631 (MILANO CADORNA -> ASSO) (+2m) [A
- rrivo]\n  - REG 631 (MILANO CADORNA -> ASSO) (+2m) [Arrivo]\n  - REG 631 (
- MILANO CADORNA -> ASSO) (+2m) [Partenza]\n  - REG 631 (MILANO CADORNA -> A
- SSO) (+2m) [Partenza]\nRitardo massimo rilevato: 2 min\nAffidabilità stim
- a: 99%\nNota normativa/euristica: Chiusura continua per 4 treni: intervall
- o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
- ale (120s)
+ rrivo]\n  - REG 631 (MILANO CADORNA -> ASSO) (+2m) [Partenza]\nRitardo mas
+ simo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: 
+ Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
+ ore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CARUGO - GIUSSANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-636--20261115-S01091@pl-tracker.local-arr
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T100425Z
 DTEND:20261116T101240Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:04 - 11:12 (primo: REG 636) (+1 mi
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:04 - 11:12 (primo: REG 636) (+1 mi
  n)
 DESCRIPTION:Stazione/PL: CARUGO - GIUSSANO (S01091)\nRegime chiusura: CHIUS
- URA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 11:04:25 - 11:12:40\nTren
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:04:25 - 11:12:40\nTren
  i coinvolti nella chiusura:\n  - REG 636 (ASSO -> MILANO CADORNA) (+1m) [A
- rrivo]\n  - REG 636 (ASSO -> MILANO CADORNA) (+1m) [Arrivo]\n  - REG 636 (
- ASSO -> MILANO CADORNA) (+1m) [Partenza]\n  - REG 636 (ASSO -> MILANO CADO
- RNA) (+1m) [Partenza]\nRitardo massimo rilevato: 1 min\nAffidabilità stim
- a: 99%\nNota normativa/euristica: Chiusura continua per 4 treni: intervall
- o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
- ale (120s)
+ rrivo]\n  - REG 636 (ASSO -> MILANO CADORNA) (+1m) [Partenza]\nRitardo mas
+ simo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: 
+ Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
+ ore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CARUGO - GIUSSANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-640--20261115-S01091@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T110430Z
 DTEND:20261116T110900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:04 - 12:09 (primo: REG 640)
-DESCRIPTION:Stazione/PL: CARUGO - GIUSSANO (S01091)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:04:30 - 12:09:00\nTren
- i coinvolti nella chiusura:\n  - REG 640 (ASSO -> MILANO CADORNA)\n  - REG
-  640 (ASSO -> MILANO CADORNA)\nRitardo massimo rilevato: -2 min\nAffidabil
- ità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
+SUMMARY:[FERMATA] REG 640 (ASSO -> MILANO CADORNA) ore 12:08
+DESCRIPTION:Stazione/PL: CARUGO - GIUSSANO (S01091)\nRegime chiusura: FERMA
+ TA\nChiusura sbarre stimata: 12:04:30 - 12:09:00\nTreni coinvolti nella ch
+ iusura:\n  - REG 640 (ASSO -> MILANO CADORNA)\nRitardo massimo rilevato: -
+ 2 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione con 
+ anticipo (-2 min)
 LOCATION:Passaggio a Livello / Stazione CARUGO - GIUSSANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:-2
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-637--20261115-S01091@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T114530Z
 DTEND:20261116T115000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:45 - 12:50 (primo: REG 637)
-DESCRIPTION:Stazione/PL: CARUGO - GIUSSANO (S01091)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:45:30 - 12:50:00\nTren
- i coinvolti nella chiusura:\n  - REG 637 (MILANO CADORNA -> ASSO)\n  - REG
-  637 (MILANO CADORNA -> ASSO)\nRitardo massimo rilevato: 0 min\nAffidabili
- tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
- ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
- ro stradale (120s)
+SUMMARY:[FERMATA] REG 637 (MILANO CADORNA -> ASSO) ore 12:49
+DESCRIPTION:Stazione/PL: CARUGO - GIUSSANO (S01091)\nRegime chiusura: FERMA
+ TA\nChiusura sbarre stimata: 12:45:30 - 12:50:00\nTreni coinvolti nella ch
+ iusura:\n  - REG 637 (MILANO CADORNA -> ASSO)\nRitardo massimo rilevato: 0
+  min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tr
+ accia oraria regolare
 LOCATION:Passaggio a Livello / Stazione CARUGO - GIUSSANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1654--20261115-S01091@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
 DTSTART:20261116T143630Z
 DTEND:20261116T144100Z
 SUMMARY:[FERMATA] REG 1654 (ERBA -> MILANO CADORNA) ore 15:40
@@ -259,8 +246,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-651--20261115-S01091@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
 DTSTART:20261116T144530Z
 DTEND:20261116T145000Z
 SUMMARY:[FERMATA] REG 651 (MILANO CADORNA -> ASSO) ore 15:49
@@ -279,8 +266,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-656--20261115-S01091@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:3
+DTSTAMP:20261116T205126Z
+SEQUENCE:4
 DTSTART:20261116T150630Z
 DTEND:20261116T151100Z
 SUMMARY:[FERMATA] REG 656 (ASSO -> MILANO CADORNA) ore 16:10
@@ -299,8 +286,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-657--20261115-S01091@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:3
+DTSTAMP:20261116T205126Z
+SEQUENCE:4
 DTSTART:20261116T154530Z
 DTEND:20261116T155000Z
 SUMMARY:[FERMATA] REG 657 (MILANO CADORNA -> ASSO) ore 16:49
@@ -319,30 +306,28 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-681--20261115-S01091@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T194530Z
 DTEND:20261116T195000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:45 - 20:50 (primo: REG 681)
-DESCRIPTION:Stazione/PL: CARUGO - GIUSSANO (S01091)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:45:30 - 20:50:00\nTren
- i coinvolti nella chiusura:\n  - REG 681 (MILANO CADORNA -> ASSO)\n  - REG
-  681 (MILANO CADORNA -> ASSO)\nRitardo massimo rilevato: 0 min\nAffidabili
- tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
- ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
- ro stradale (120s)
+SUMMARY:[FERMATA] REG 681 (MILANO CADORNA -> ASSO) ore 20:49
+DESCRIPTION:Stazione/PL: CARUGO - GIUSSANO (S01091)\nRegime chiusura: FERMA
+ TA\nChiusura sbarre stimata: 20:45:30 - 20:50:00\nTreni coinvolti nella ch
+ iusura:\n  - REG 681 (MILANO CADORNA -> ASSO)\nRitardo massimo rilevato: 0
+  min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tr
+ accia oraria regolare
 LOCATION:Passaggio a Livello / Stazione CARUGO - GIUSSANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-680--20261115-S01091@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
 DTSTART:20261116T200630Z
 DTEND:20261116T201100Z
 SUMMARY:[FERMATA] REG 680 (ASSO -> MILANO CADORNA) ore 21:10
@@ -361,8 +346,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2683--20261115-S01091@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T201530Z
 DTEND:20261116T202000Z
 SUMMARY:[FERMATA] REG 2683 (MILANO CADORNA -> ERBA) ore 21:19
@@ -381,8 +366,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-685--20261115-S01091@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T204530Z
 DTEND:20261116T205000Z
 SUMMARY:[FERMATA] REG 685 (MILANO CADORNA -> ASSO) ore 21:49

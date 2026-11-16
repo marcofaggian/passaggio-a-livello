@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:86e394f9e5a9b6a0ace0079369dc1c62f78f0632eef4b840386a43202964
- 0350
+X-CONTENT-HASH:4b75be984f5f687246b0e877c61208cdd488304cf9985677b939a07c610d
+ 576f
 BEGIN:VEVENT
 UID:train-20300--20261115-S08502@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T055030Z
 DTEND:20261116T055500Z
 SUMMARY:[FERMATA] REG 20300 (VAL D'ALA -> TIVOLI TERME) ore 06:54
@@ -32,9 +32,31 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-12752--20261115-S08502@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:0
+DTSTART:20261116T060806Z
+DTEND:20261116T061336Z
+SUMMARY:[TRANSITO VELOCE] REG 12752 (ROMA TIBURTINA -> TIVOLI) ore 07:12 (+
+ 5 min)
+DESCRIPTION:Stazione/PL: SALONE (S08502)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 07:08:06 - 07:13:36\nTreni coinvolti nella chius
+ ura:\n  - REG 12752 (ROMA TIBURTINA -> TIVOLI) (+5m) [Transito]\nRitardo m
+ assimo rilevato: 5 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (43% tratta LA RUSTICA UIR -> PONTE DI NO
+ NA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione SALONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-20302--20261115-S08502@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T065030Z
 DTEND:20261116T065500Z
 SUMMARY:[FERMATA] REG 20302 (VAL D'ALA -> TIVOLI TERME) ore 07:54
@@ -52,100 +74,160 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-20310--20261115-S08502@pl-tracker.local
-DTSTAMP:20261116T104738Z
+UID:train-20286--20261115-S08502@pl-tracker.local
+DTSTAMP:20261116T205126Z
 SEQUENCE:0
-DTSTART:20261116T110330Z
-DTEND:20261116T111115Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:03 - 12:11 (primo: REG 20310) (+3 
- min)
-DESCRIPTION:Stazione/PL: SALONE (S08502)\nRegime chiusura: CHIUSURA CONTINU
- A - 4 TRENI\nChiusura sbarre stimata: 12:03:30 - 12:11:15\nTreni coinvolti
-  nella chiusura:\n  - REG 20310 (VAL D'ALA -> TIVOLI TERME) (+3m)\n  - REG
-  20310 (VAL D'ALA -> TIVOLI TERME) (+3m)\n  - REG 20291 (GUIDONIA-MONTECEL
- IO -> ROMA TIBURTINA) (+1m) [Transito]\n  - REG 20291 (GUIDONIA-MONTECELIO
-  -> ROMA TIBURTINA) (+1m) [Transito]\nRitardo massimo rilevato: 3 min\nAff
- idabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 t
- reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
-  sgombero stradale (120s)
+DTSTART:20261116T065923Z
+DTEND:20261116T070453Z
+SUMMARY:[TRANSITO VELOCE] REG 20286 (ROMA TIBURTINA -> GUIDONIA-MONTECELIO)
+  ore 08:03 (+4 min)
+DESCRIPTION:Stazione/PL: SALONE (S08502)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 07:59:23 - 08:04:53\nTreni coinvolti nella chius
+ ura:\n  - REG 20286 (ROMA TIBURTINA -> GUIDONIA-MONTECELIO) (+4m) [Transit
+ o]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (43% tratta LA RUSTICA UIR -
+ > PONTE DI NONA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SALONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20310--20261115-S08502@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
+DTSTART:20261116T110330Z
+DTEND:20261116T111115Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:03 - 12:11 (primo: REG 20310) (+3 
+ min)
+DESCRIPTION:Stazione/PL: SALONE (S08502)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 12:03:30 - 12:11:15\nTreni coinvolti
+  nella chiusura:\n  - REG 20310 (VAL D'ALA -> TIVOLI TERME) (+3m)\n  - REG
+  20291 (GUIDONIA-MONTECELIO -> ROMA TIBURTINA) (+1m) [Transito]\nRitardo m
+ assimo rilevato: 3 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SALONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20311--20261115-S08502@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T114930Z
 DTEND:20261116T115400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:49 - 12:54 (primo: REG 20311)
-DESCRIPTION:Stazione/PL: SALONE (S08502)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 12:49:30 - 12:54:00\nTreni coinvolti
-  nella chiusura:\n  - REG 20311 (TIVOLI TERME -> VAL D'ALA)\n  - REG 20311
-  (TIVOLI TERME -> VAL D'ALA)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+SUMMARY:[FERMATA] REG 20311 (TIVOLI TERME -> VAL D'ALA) ore 12:53
+DESCRIPTION:Stazione/PL: SALONE (S08502)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 12:49:30 - 12:54:00\nTreni coinvolti nella chiusura:\n  
+ - REG 20311 (TIVOLI TERME -> VAL D'ALA)\nRitardo massimo rilevato: 0 min\n
+ Affidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia 
+ oraria regolare
 LOCATION:Passaggio a Livello / Stazione SALONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20316--20261115-S08502@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
 DTSTART:20261116T150030Z
 DTEND:20261116T150500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:00 - 16:05 (primo: REG 20316)
-DESCRIPTION:Stazione/PL: SALONE (S08502)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 16:00:30 - 16:05:00\nTreni coinvolti
-  nella chiusura:\n  - REG 20316 (VAL D'ALA -> TIVOLI TERME)\n  - REG 20316
-  (VAL D'ALA -> TIVOLI TERME)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+SUMMARY:[FERMATA] REG 20316 (VAL D'ALA -> TIVOLI TERME) ore 16:04
+DESCRIPTION:Stazione/PL: SALONE (S08502)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 16:00:30 - 16:05:00\nTreni coinvolti nella chiusura:\n  
+ - REG 20316 (VAL D'ALA -> TIVOLI TERME)\nRitardo massimo rilevato: 0 min\n
+ Affidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia 
+ oraria regolare
 LOCATION:Passaggio a Livello / Stazione SALONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20294--20261115-S08502@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:0
+DTSTART:20261116T152653Z
+DTEND:20261116T153223Z
+SUMMARY:[TRANSITO VELOCE] REG 20294 (ROMA TIBURTINA -> GUIDONIA-MONTECELIO)
+  ore 16:31
+DESCRIPTION:Stazione/PL: SALONE (S08502)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 16:26:53 - 16:32:23\nTreni coinvolti nella chius
+ ura:\n  - REG 20294 (ROMA TIBURTINA -> GUIDONIA-MONTECELIO) [Transito]\nRi
+ tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
+ ristica: Transito stimato senza fermata (43% tratta LA RUSTICA UIR -> PONT
+ E DI NONA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione SALONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20296--20261115-S08502@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:0
+DTSTART:20261116T160753Z
+DTEND:20261116T161323Z
+SUMMARY:[TRANSITO VELOCE] REG 20296 (ROMA TIBURTINA -> GUIDONIA-MONTECELIO)
+  ore 17:12
+DESCRIPTION:Stazione/PL: SALONE (S08502)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 17:07:53 - 17:13:23\nTreni coinvolti nella chius
+ ura:\n  - REG 20296 (ROMA TIBURTINA -> GUIDONIA-MONTECELIO) [Transito]\nRi
+ tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
+ ristica: Transito stimato senza fermata (43% tratta LA RUSTICA UIR -> PONT
+ E DI NONA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione SALONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20321--20261115-S08502@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
 DTSTART:20261116T193930Z
-DTEND:20261116T194400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:39 - 20:44 (primo: REG 20321)
+DTEND:20261116T194657Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:39 - 20:46 (primo: REG 20321)
 DESCRIPTION:Stazione/PL: SALONE (S08502)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 20:39:30 - 20:44:00\nTreni coinvolti
-  nella chiusura:\n  - REG 20321 (TIVOLI TERME -> VAL D'ALA)\n  - REG 20321
-  (TIVOLI TERME -> VAL D'ALA)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 20:39:30 - 20:46:57\nTreni coinvolti
+  nella chiusura:\n  - REG 20321 (TIVOLI TERME -> VAL D'ALA)\n  - REG 12776
+  (ROMA TIBURTINA -> TIVOLI) [Transito]\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SALONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12778--20261115-S08502@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:4
+DTSTAMP:20261116T205126Z
+SEQUENCE:5
 DTSTART:20261116T211627Z
 DTEND:20261116T212157Z
 SUMMARY:[TRANSITO VELOCE] REG 12778 (ROMA TIBURTINA -> TIVOLI) ore 22:20

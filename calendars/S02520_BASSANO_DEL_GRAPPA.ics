@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:7de84740f1d3a6fdd381a05aaffa028d4857cd6fa71305851b2edffa198f
- 8a71
+X-CONTENT-HASH:d8c1cab43d29b8fe567a0335c295986f68f2957a05f506b85f6a97acb3a8
+ b778
 BEGIN:VEVENT
 UID:train-16293--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T041630Z
 DTEND:20261116T042100Z
 SUMMARY:[FERMATA] REG 16293 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) ore 05:
@@ -34,8 +34,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16295--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T044330Z
 DTEND:20261116T044800Z
 SUMMARY:[FERMATA] REG 16295 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) ore 05:
@@ -55,38 +55,41 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16291--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
 DTSTART:20261116T051630Z
-DTEND:20261116T052100Z
-SUMMARY:[FERMATA] REG 16291 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) ore 06:
- 20
-DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: FERM
- ATA\nChiusura sbarre stimata: 06:16:30 - 06:21:00\nTreni coinvolti nella c
- hiusura:\n  - REG 16291 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
- : Previsione da traccia oraria regolare
+DTEND:20261116T052300Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 06:16 - 06:23 (primo: REG 16291) (+2 
+ min)
+DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 06:16:30 - 06:23:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 16291 (BASSANO DEL GRAPPA -> VENEZIA
+  S.LUCIA)\n  - REG 16291 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+2m)\n  
+ - REG 16291 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+2m)\nRitardo massimo
+  rilevato: 2 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiu
+ sura continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16302--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T064843Z
-DTEND:20261116T065413Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T064839Z
+DTEND:20261116T065409Z
 SUMMARY:[TRANSITO VELOCE] REG 16302 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)
   ore 07:52
 DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 07:48:43 - 07:54:13\nTreni coinvolti
+ SITO VELOCE\nChiusura sbarre stimata: 07:48:39 - 07:54:09\nTreni coinvolti
   nella chiusura:\n  - REG 16302 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [T
  ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Transito stimato senza fermata (82% tratta CASTELFRAN
+ normativa/euristica: Transito stimato senza fermata (81% tratta CASTELFRAN
  CO VENETO -> CASTELLO DI GODEGO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
@@ -98,8 +101,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16302--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T070830Z
 DTEND:20261116T071300Z
 SUMMARY:[FERMATA] REG 16302 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) ore 08:
@@ -119,67 +122,63 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16508--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T071500Z
 DTEND:20261116T071930Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:15 - 08:19 (primo: REG 16508)
-DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:15:00 - 08:19:30\nTre
- ni coinvolti nella chiusura:\n  - REG 16508 (PADOVA -> BASSANO DEL GRAPPA)
- \n  - REG 16508 (PADOVA -> BASSANO DEL GRAPPA)\nRitardo massimo rilevato: 
- -2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura conti
- nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
- a minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 16508 (PADOVA -> BASSANO DEL GRAPPA) ore 08:18
+DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 08:15:00 - 08:19:30\nTreni coinvolti nella c
+ hiusura:\n  - REG 16508 (PADOVA -> BASSANO DEL GRAPPA)\nRitardo massimo ri
+ levato: -2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rileva
+ mento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:-2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16306--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T073025Z
-DTEND:20261116T073555Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:30 - 08:35 (primo: REG 16306) (+4 
- min)
-DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:30:25 - 08:35:55\nTre
- ni coinvolti nella chiusura:\n  - REG 16306 (VENEZIA S.LUCIA -> BASSANO DE
- L GRAPPA) (+4m) [Transito]\n  - REG 16306 (VENEZIA S.LUCIA -> BASSANO DEL 
- GRAPPA) (+4m) [Transito]\nRitardo massimo rilevato: 4 min\nAffidabilità s
- tima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: interv
- allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
- radale (120s)
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T073023Z
+DTEND:20261116T073553Z
+SUMMARY:[TRANSITO VELOCE] REG 16306 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)
+  ore 08:34 (+4 min)
+DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 08:30:23 - 08:35:53\nTreni coinvolti
+  nella chiusura:\n  - REG 16306 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) (+
+ 4m) [Transito]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 78%\
+ nNota normativa/euristica: Transito stimato senza fermata (81% tratta CAST
+ ELFRANCO VENETO -> CASTELLO DI GODEGO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16306--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T074500Z
-DTEND:20261116T075249Z
+DTEND:20261116T075248Z
 SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:45 - 08:52 (primo: REG 16306) (+4 
  min)
 DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 08:45:00 - 08:52:49\nTre
+ SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 08:45:00 - 08:52:48\nTre
  ni coinvolti nella chiusura:\n  - REG 16306 (VENEZIA S.LUCIA -> BASSANO DE
- L GRAPPA) (+4m)\n  - REG 16306 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) (+4
- m)\n  - REG 16310 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) (+3m) [Transito]
- \n  - REG 16310 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) (+3m) [Transito]\n
- Ritardo massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota normativa/
- euristica: Chiusura continua per 4 treni: intervallo utile tra i passaggi 
- (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ L GRAPPA) (+4m)\n  - REG 16310 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) (+3
+ m) [Transito]\n  - REG 16310 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) (+3m)
+  [Transito]\n  - REG 16310 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) (+3m) [
+ Transito]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Chiusura continua per 4 treni: intervallo utile tra 
+ i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -190,55 +189,57 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16310--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T081130Z
 DTEND:20261116T082100Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 09:11 - 09:21 (primo: REG 16310) (+3 
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 09:11 - 09:21 (primo: REG 16310) (+3 
  min)
 DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
- SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 09:11:30 - 09:21:00\nTre
+ SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 09:11:30 - 09:21:00\nTre
  ni coinvolti nella chiusura:\n  - REG 16310 (VENEZIA S.LUCIA -> BASSANO DE
  L GRAPPA) (+3m)\n  - REG 16310 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) (+3
- m)\n  - REG 16319 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\nRitardo massimo
-  rilevato: 3 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiu
- sura continua per 3 treni: intervallo utile tra i passaggi (30s) inferiore
-  alla soglia minima di sgombero stradale (120s)
+ m)\n  - REG 16310 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) (+3m)\n  - REG 1
+ 6319 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 3 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
+  per 4 treni: intervallo utile tra i passaggi (30s) inferiore alla soglia 
+ minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16321--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T084530Z
 DTEND:20261116T085000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:45 - 09:50 (primo: REG 16321) (+2 
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 09:45 - 09:50 (primo: REG 16321) (+2 
  min)
 DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:45:30 - 09:50:00\nTre
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 09:45:30 - 09:50:00\nTre
  ni coinvolti nella chiusura:\n  - REG 16321 (BASSANO DEL GRAPPA -> VENEZIA
   S.LUCIA) (+2m)\n  - REG 16321 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+2
- m)\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normat
- iva/euristica: Chiusura continua per 2 treni: intervallo utile tra i passa
- ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ m)\n  - REG 16321 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+2m)\nRitardo m
+ assimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica
+ : Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16313--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
 DTSTART:20261116T091630Z
 DTEND:20261116T092100Z
 SUMMARY:[FERMATA] REG 16313 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) ore 10:
@@ -258,8 +259,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16329--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
 DTSTART:20261116T094130Z
 DTEND:20261116T094600Z
 SUMMARY:[SOPPRESSO] [FERMATA] REG 16329 (CASTELFRANCO VENETO -> VENEZIA S.L
@@ -279,29 +280,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16329--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
-DTSTART:20261116T094130Z
-DTEND:20261116T094600Z
-SUMMARY:[SOPPRESSO] [FERMATA] REG 16329 (CASTELFRANCO VENETO -> VENEZIA S.L
- UCIA) ore 10:45
-DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: FERM
- ATA\nChiusura sbarre stimata: 10:41:30 - 10:46:00\nTreni coinvolti nella c
- hiusura:\n  - REG 16329 (CASTELFRANCO VENETO -> VENEZIA S.LUCIA)\nRitardo 
- massimo rilevato: -2 min\nAffidabilità stima: 90%\nNota normativa/euristi
- ca: Previsione con anticipo (-2 min)
-LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
-STATUS:CANCELLED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:-2
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-16329--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
 DTSTART:20261116T094330Z
 DTEND:20261116T094800Z
 SUMMARY:[FERMATA] REG 16329 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) ore 10:
@@ -321,40 +301,38 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16331--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T102030Z
 DTEND:20261116T102500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:20 - 11:25 (primo: REG 16331) (+4 
- min)
-DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:20:30 - 11:25:00\nTre
- ni coinvolti nella chiusura:\n  - REG 16331 (BASSANO DEL GRAPPA -> VENEZIA
-  S.LUCIA) (+4m)\n  - REG 16331 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+4
- m)\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 99%\nNota normat
- iva/euristica: Chiusura continua per 2 treni: intervallo utile tra i passa
- ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 16331 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) ore 11:
+ 23 (+4 min)
+DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 11:20:30 - 11:25:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 16331 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+4m)\nRit
+ ardo massimo rilevato: 4 min\nAffidabilità stima: 99%\nNota normativa/eur
+ istica: Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16326--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
-DTSTART:20261116T104843Z
-DTEND:20261116T105413Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
+DTSTART:20261116T104839Z
+DTEND:20261116T105409Z
 SUMMARY:[TRANSITO VELOCE] REG 16326 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)
   ore 11:52
 DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 11:48:43 - 11:54:13\nTreni coinvolti
+ SITO VELOCE\nChiusura sbarre stimata: 11:48:39 - 11:54:09\nTreni coinvolti
   nella chiusura:\n  - REG 16326 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [T
  ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Transito stimato senza fermata (82% tratta CASTELFRAN
+ normativa/euristica: Transito stimato senza fermata (81% tratta CASTELFRAN
  CO VENETO -> CASTELLO DI GODEGO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
@@ -366,8 +344,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16326--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
 DTSTART:20261116T110830Z
 DTEND:20261116T111300Z
 SUMMARY:[FERMATA] REG 16326 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) ore 12:
@@ -387,17 +365,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16330--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T112816Z
-DTEND:20261116T113346Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T112813Z
+DTEND:20261116T113343Z
 SUMMARY:[TRANSITO VELOCE] REG 16330 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)
   ore 12:32
 DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 12:28:16 - 12:33:46\nTreni coinvolti
+ SITO VELOCE\nChiusura sbarre stimata: 12:28:13 - 12:33:43\nTreni coinvolti
   nella chiusura:\n  - REG 16330 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [T
  ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Transito stimato senza fermata (82% tratta CASTELFRAN
+ normativa/euristica: Transito stimato senza fermata (81% tratta CASTELFRAN
  CO VENETO -> CASTELLO DI GODEGO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
@@ -409,42 +387,18 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16157--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
-DTSTART:20261116T113552Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
+DTSTART:20261116T113557Z
 DTEND:20261116T114600Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:35 - 12:46 (primo: REG 16157)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:35 - 12:46 (primo: REG 16157)
 DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
- SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 12:35:52 - 12:46:00\nTre
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:35:57 - 12:46:00\nTre
  ni coinvolti nella chiusura:\n  - REG 16157 (VICENZA -> TREVISO CENTRALE) 
- [Transito]\n  - REG 16157 (VICENZA -> TREVISO CENTRALE) [Transito]\n  - RE
- G 16330 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRitardo massimo rilevato:
-  0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
- nua per 3 treni: intervallo utile tra i passaggi (7s) inferiore alla sogli
- a minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-16336--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
-DTSTART:20261116T114843Z
-DTEND:20261116T115413Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:48 - 12:54 (primo: REG 16336)
-DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:48:43 - 12:54:13\nTre
- ni coinvolti nella chiusura:\n  - REG 16336 (VENEZIA S.LUCIA -> BASSANO DE
- L GRAPPA) [Transito]\n  - REG 16336 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA
- ) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nN
- ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
+ [Transito]\n  - REG 16330 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (2s) in
+ feriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -455,40 +409,81 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16336--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
+DTSTART:20261116T114839Z
+DTEND:20261116T115409Z
+SUMMARY:[TRANSITO VELOCE] REG 16336 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)
+  ore 12:52
+DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 12:48:39 - 12:54:09\nTreni coinvolti
+  nella chiusura:\n  - REG 16336 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [T
+ ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Transito stimato senza fermata (81% tratta CASTELFRAN
+ CO VENETO -> CASTELLO DI GODEGO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16336--20261115-S02520@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T120830Z
 DTEND:20261116T121300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:08 - 13:13 (primo: REG 16336)
-DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:08:30 - 13:13:00\nTre
- ni coinvolti nella chiusura:\n  - REG 16336 (VENEZIA S.LUCIA -> BASSANO DE
- L GRAPPA)\n  - REG 16336 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
- a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 16336 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) ore 13:
+ 12
+DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 13:08:30 - 13:13:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 16336 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
+ : Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16534--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T121630Z
 DTEND:20261116T122100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:16 - 13:21 (primo: REG 16534)
+SUMMARY:[FERMATA] REG 16534 (PADOVA -> BASSANO DEL GRAPPA) ore 13:20
+DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 13:16:30 - 13:21:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 16534 (PADOVA -> BASSANO DEL GRAPPA)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16349--20261115-S02520@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T131630Z
+DTEND:20261116T132100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:16 - 14:21 (primo: REG 16349)
 DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:16:30 - 13:21:00\nTre
- ni coinvolti nella chiusura:\n  - REG 16534 (PADOVA -> BASSANO DEL GRAPPA)
- \n  - REG 16534 (PADOVA -> BASSANO DEL GRAPPA)\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura contin
- ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:16:30 - 14:21:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 16349 (BASSANO DEL GRAPPA -> VENEZIA
+  S.LUCIA)\n  - REG 16544 (PADOVA -> BASSANO DEL GRAPPA)\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
+ ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
+ la soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -498,32 +493,9 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16349--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T131630Z
-DTEND:20261116T132100Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 14:16 - 14:21 (primo: REG 16349)
-DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 14:16:30 - 14:21:00\nTre
- ni coinvolti nella chiusura:\n  - REG 16349 (BASSANO DEL GRAPPA -> VENEZIA
-  S.LUCIA)\n  - REG 16349 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\n  - REG 
- 16544 (PADOVA -> BASSANO DEL GRAPPA)\n  - REG 16544 (PADOVA -> BASSANO DEL
-  GRAPPA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota 
- normativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i
-  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-16353--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T134330Z
 DTEND:20261116T134800Z
 SUMMARY:[FERMATA] REG 16353 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) ore 14:
@@ -543,106 +515,105 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16355--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T141630Z
 DTEND:20261116T142100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:16 - 15:21 (primo: REG 16355)
-DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:16:30 - 15:21:00\nTre
- ni coinvolti nella chiusura:\n  - REG 16355 (BASSANO DEL GRAPPA -> VENEZIA
-  S.LUCIA)\n  - REG 16355 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
- a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 16355 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) ore 15:
+ 20
+DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 15:16:30 - 15:21:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 16355 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
+ : Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16359--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T144330Z
-DTEND:20261116T144800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:43 - 15:48 (primo: REG 16359)
+DTEND:20261116T145300Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:43 - 15:53 (primo: REG 16359) (+5 
+ min)
 DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:43:30 - 15:48:00\nTre
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 15:43:30 - 15:53:00\nTre
  ni coinvolti nella chiusura:\n  - REG 16359 (BASSANO DEL GRAPPA -> VENEZIA
-  S.LUCIA)\n  - REG 16359 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
- a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
+  S.LUCIA)\n  - REG 16359 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+5m)\n  
+ - REG 16359 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+5m)\nRitardo massimo
+  rilevato: 5 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiu
+ sura continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16360--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:4
-DTSTART:20261116T152816Z
-DTEND:20261116T153346Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:28 - 16:33 (primo: REG 16360)
-DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:28:16 - 16:33:46\nTre
- ni coinvolti nella chiusura:\n  - REG 16360 (VENEZIA S.LUCIA -> BASSANO DE
- L GRAPPA) [Transito]\n  - REG 16360 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA
- ) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nN
- ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
+DTSTAMP:20261116T205126Z
+SEQUENCE:5
+DTSTART:20261116T152813Z
+DTEND:20261116T153343Z
+SUMMARY:[TRANSITO VELOCE] REG 16360 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)
+  ore 16:32
+DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 16:28:13 - 16:33:43\nTreni coinvolti
+  nella chiusura:\n  - REG 16360 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [T
+ ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Transito stimato senza fermata (81% tratta CASTELFRAN
+ CO VENETO -> CASTELLO DI GODEGO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16360--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:4
+DTSTAMP:20261116T205126Z
+SEQUENCE:5
 DTSTART:20261116T154130Z
 DTEND:20261116T154600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:41 - 16:46 (primo: REG 16360)
-DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:41:30 - 16:46:00\nTre
- ni coinvolti nella chiusura:\n  - REG 16360 (VENEZIA S.LUCIA -> BASSANO DE
- L GRAPPA)\n  - REG 16360 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
- a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 16360 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) ore 16:
+ 45
+DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 16:41:30 - 16:46:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 16360 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
+ : Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16366--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
-DTSTART:20261116T162816Z
-DTEND:20261116T163346Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
+DTSTART:20261116T162813Z
+DTEND:20261116T163343Z
 SUMMARY:[TRANSITO VELOCE] REG 16366 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)
   ore 17:32
 DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 17:28:16 - 17:33:46\nTreni coinvolti
+ SITO VELOCE\nChiusura sbarre stimata: 17:28:13 - 17:33:43\nTreni coinvolti
   nella chiusura:\n  - REG 16366 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [T
  ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Transito stimato senza fermata (82% tratta CASTELFRAN
+ normativa/euristica: Transito stimato senza fermata (81% tratta CASTELFRAN
  CO VENETO -> CASTELLO DI GODEGO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
@@ -654,8 +625,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16366--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
 DTSTART:20261116T164130Z
 DTEND:20261116T164600Z
 SUMMARY:[FERMATA] REG 16366 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) ore 17:
@@ -675,171 +646,172 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16368--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
-DTSTART:20261116T164843Z
-DTEND:20261116T165413Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:48 - 17:54 (primo: REG 16368)
-DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:48:43 - 17:54:13\nTre
- ni coinvolti nella chiusura:\n  - REG 16368 (VENEZIA S.LUCIA -> BASSANO DE
- L GRAPPA) [Transito]\n  - REG 16368 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA
- ) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nN
- ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
+DTSTART:20261116T164839Z
+DTEND:20261116T165409Z
+SUMMARY:[TRANSITO VELOCE] REG 16368 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)
+  ore 17:52
+DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 17:48:39 - 17:54:09\nTreni coinvolti
+  nella chiusura:\n  - REG 16368 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [T
+ ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Transito stimato senza fermata (81% tratta CASTELFRAN
+ CO VENETO -> CASTELLO DI GODEGO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16368--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
 DTSTART:20261116T170830Z
 DTEND:20261116T171300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:08 - 18:13 (primo: REG 16368)
-DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:08:30 - 18:13:00\nTre
- ni coinvolti nella chiusura:\n  - REG 16368 (VENEZIA S.LUCIA -> BASSANO DE
- L GRAPPA)\n  - REG 16368 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
- a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 16368 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) ore 18:
+ 12
+DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 18:08:30 - 18:13:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 16368 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
+ : Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16385--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
 DTSTART:20261116T181630Z
 DTEND:20261116T182100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:16 - 19:21 (primo: REG 16385)
-DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:16:30 - 19:21:00\nTre
- ni coinvolti nella chiusura:\n  - REG 16385 (BASSANO DEL GRAPPA -> VENEZIA
-  S.LUCIA)\n  - REG 16385 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
- a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 16385 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) ore 19:
+ 20
+DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 19:16:30 - 19:21:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 16385 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
+ : Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16389--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
 DTSTART:20261116T184330Z
-DTEND:20261116T184800Z
-SUMMARY:[FERMATA] REG 16389 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) ore 19:
- 47
-DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: FERM
- ATA\nChiusura sbarre stimata: 19:43:30 - 19:48:00\nTreni coinvolti nella c
- hiusura:\n  - REG 16389 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
- : Previsione da traccia oraria regolare
+DTEND:20261116T185100Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 19:43 - 19:51 (primo: REG 16389) (+3 
+ min)
+DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 19:43:30 - 19:51:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 16389 (BASSANO DEL GRAPPA -> VENEZIA
+  S.LUCIA)\n  - REG 16389 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+3m)\n  
+ - REG 16389 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+3m)\nRitardo massimo
+  rilevato: 3 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiu
+ sura continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16391--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T191630Z
-DTEND:20261116T192100Z
-SUMMARY:[FERMATA] REG 16391 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) ore 20:
- 20
-DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: FERM
- ATA\nChiusura sbarre stimata: 20:16:30 - 20:21:00\nTreni coinvolti nella c
- hiusura:\n  - REG 16391 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
- : Previsione da traccia oraria regolare
+DTEND:20261116T192300Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:16 - 20:23 (primo: REG 16391) (+2 
+ min)
+DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 20:16:30 - 20:23:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 16391 (BASSANO DEL GRAPPA -> VENEZIA
+  S.LUCIA)\n  - REG 16391 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+2m)\n  
+ - REG 16391 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+2m)\nRitardo massimo
+  rilevato: 2 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiu
+ sura continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16394--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T202816Z
-DTEND:20261116T203346Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:28 - 21:33 (primo: REG 16394)
-DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:28:16 - 21:33:46\nTre
- ni coinvolti nella chiusura:\n  - REG 16394 (VENEZIA S.LUCIA -> BASSANO DE
- L GRAPPA) [Transito]\n  - REG 16394 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA
- ) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nN
- ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T202813Z
+DTEND:20261116T203343Z
+SUMMARY:[TRANSITO VELOCE] REG 16394 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)
+  ore 21:32
+DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 21:28:13 - 21:33:43\nTreni coinvolti
+  nella chiusura:\n  - REG 16394 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [T
+ ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Transito stimato senza fermata (81% tratta CASTELFRAN
+ CO VENETO -> CASTELLO DI GODEGO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16394--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T204130Z
 DTEND:20261116T204600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:41 - 21:46 (primo: REG 16394)
-DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:41:30 - 21:46:00\nTre
- ni coinvolti nella chiusura:\n  - REG 16394 (VENEZIA S.LUCIA -> BASSANO DE
- L GRAPPA)\n  - REG 16394 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
- a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 16394 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) ore 21:
+ 45
+DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 21:41:30 - 21:46:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 16394 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
+ : Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16398--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
-DTSTART:20261116T204843Z
-DTEND:20261116T205413Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
+DTSTART:20261116T204839Z
+DTEND:20261116T205409Z
 SUMMARY:[TRANSITO VELOCE] REG 16398 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)
   ore 21:52
 DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 21:48:43 - 21:54:13\nTreni coinvolti
+ SITO VELOCE\nChiusura sbarre stimata: 21:48:39 - 21:54:09\nTreni coinvolti
   nella chiusura:\n  - REG 16398 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [T
  ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Transito stimato senza fermata (82% tratta CASTELFRAN
+ normativa/euristica: Transito stimato senza fermata (81% tratta CASTELFRAN
  CO VENETO -> CASTELLO DI GODEGO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
@@ -851,8 +823,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16398--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
 DTSTART:20261116T210830Z
 DTEND:20261116T211300Z
 SUMMARY:[FERMATA] REG 16398 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) ore 22:
@@ -872,45 +844,43 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16402--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
-DTSTART:20261116T215354Z
-DTEND:20261116T215924Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:53 - 22:59 (primo: REG 16402)
-DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:53:54 - 22:59:24\nTre
- ni coinvolti nella chiusura:\n  - REG 16402 (VENEZIA S.LUCIA -> BASSANO DE
- L GRAPPA) [Transito]\n  - REG 16402 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA
- ) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nN
- ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
+DTSTART:20261116T215351Z
+DTEND:20261116T215921Z
+SUMMARY:[TRANSITO VELOCE] REG 16402 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)
+  ore 22:58
+DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 22:53:51 - 22:59:21\nTreni coinvolti
+  nella chiusura:\n  - REG 16402 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [T
+ ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Transito stimato senza fermata (81% tratta CASTELFRAN
+ CO VENETO -> CASTELLO DI GODEGO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16402--20261115-S02520@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T221130Z
 DTEND:20261116T221600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:11 - 23:16 (primo: REG 16402)
-DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 23:11:30 - 23:16:00\nTre
- ni coinvolti nella chiusura:\n  - REG 16402 (VENEZIA S.LUCIA -> BASSANO DE
- L GRAPPA)\n  - REG 16402 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
- a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 16402 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) ore 23:
+ 15
+DESCRIPTION:Stazione/PL: BASSANO DEL GRAPPA (S02520)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 23:11:30 - 23:16:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 16402 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
+ : Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione BASSANO DEL GRAPPA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

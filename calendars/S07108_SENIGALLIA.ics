@@ -9,12 +9,33 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:e9300f9f7764b3d5c43698e3855a120619b2fcec7b82af83f17b0c809a71
- bcce
+X-CONTENT-HASH:43921f336b55bebe5ef8fc8452c7ae2d77943dc448e7cd0f2b0c6d655c38
+ 8f3e
 BEGIN:VEVENT
 UID:train-3906--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T055422Z
+DTEND:20261116T055952Z
+SUMMARY:[TRANSITO VELOCE] REG 3906 (ANCONA -> PIACENZA) ore 06:58
+DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: TRANSITO VEL
+ OCE\nChiusura sbarre stimata: 06:54:22 - 06:59:52\nTreni coinvolti nella c
+ hiusura:\n  - REG 3906 (ANCONA -> PIACENZA) [Transito]\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transit
+ o stimato senza fermata (66% tratta FALCONARA MARITTIMA -> MARZOCCA\; peda
+ le annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione SENIGALLIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3906--20261115-S07108@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T060230Z
 DTEND:20261116T060700Z
 SUMMARY:[FERMATA] REG 3906 (ANCONA -> PIACENZA) ore 07:06
@@ -33,29 +54,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4232--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T062515Z
-DTEND:20261116T063045Z
-SUMMARY:[TRANSITO VELOCE] REG 4232 (ANCONA -> PESARO) ore 07:29
-DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: TRANSITO VEL
- OCE\nChiusura sbarre stimata: 07:25:15 - 07:30:45\nTreni coinvolti nella c
- hiusura:\n  - REG 4232 (ANCONA -> PESARO) [Transito]\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito 
- stimato senza fermata (55% tratta FALCONARA MARITTIMA -> MONTEMARCIANO\; p
- edale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione SENIGALLIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4232--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T064030Z
 DTEND:20261116T064500Z
 SUMMARY:[FERMATA] REG 4232 (ANCONA -> PESARO) ore 07:44
@@ -74,8 +74,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3901--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
 DTSTART:20261116T073106Z
 DTEND:20261116T073636Z
 SUMMARY:[TRANSITO VELOCE] REG 3901 (BOLOGNA CENTRALE -> ANCONA) ore 08:35
@@ -95,8 +95,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3901--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
 DTSTART:20261116T074830Z
 DTEND:20261116T075500Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:48 - 08:55 (primo: REG 3901)
@@ -117,8 +117,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-603--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:4
+DTSTAMP:20261116T205126Z
+SEQUENCE:5
 DTSTART:20261116T084839Z
 DTEND:20261116T085309Z
 SUMMARY:[TRANSITO VELOCE] IC 603 (MILANO CENTRALE -> LECCE) ore 09:52
@@ -138,8 +138,8 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-603--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:4
+DTSTAMP:20261116T205126Z
+SEQUENCE:5
 DTSTART:20261116T090415Z
 DTEND:20261116T090900Z
 SUMMARY:[FERMATA] IC 603 (MILANO CENTRALE -> LECCE) ore 10:08
@@ -158,32 +158,31 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-534--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
-DTSTART:20261116T101306Z
-DTEND:20261116T102124Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:13 - 11:21 (primo: IC 534) (+5 min
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
+DTSTART:20261116T101304Z
+DTEND:20261116T102121Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:13 - 11:21 (primo: IC 534) (+5 min
  )
 DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: CHIUSURA CON
- TINUA - 3 TRENI\nChiusura sbarre stimata: 11:13:06 - 11:21:24\nTreni coinv
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 11:13:04 - 11:21:21\nTreni coinv
  olti nella chiusura:\n  - IC 534 (ROMA TERMINI -> ANCONA) [Transito]\n  - 
- TRENO 8803 (MILANO CENTRALE -> BARI CENTRALE) (+5m) [Transito]\n  - TRENO 
- 8803 (MILANO CENTRALE -> BARI CENTRALE) (+5m) [Transito]\nRitardo massimo 
- rilevato: 5 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
- ura continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore a
- lla soglia minima di sgombero stradale (120s)
+ TRENO 8803 (MILANO CENTRALE -> BARI CENTRALE) (+5m) [Transito]\nRitardo ma
+ ssimo rilevato: 5 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
+ iore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SENIGALLIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3916--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T105930Z
 DTEND:20261116T110400Z
 SUMMARY:[FERMATA] REG 3916 (ANCONA -> PIACENZA) ore 12:03
@@ -202,8 +201,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3918--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:4
+DTSTAMP:20261116T205126Z
+SEQUENCE:5
 DTSTART:20261116T120030Z
 DTEND:20261116T120500Z
 SUMMARY:[FERMATA] REG 3918 (ANCONA -> PIACENZA) ore 13:04
@@ -222,36 +221,35 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9805--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
-DTSTART:20261116T121702Z
-DTEND:20261116T122232Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:17 - 13:22 (primo: TRENO 9805) (+5
-  min)
-DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 13:17:02 - 13:22:32\nTreni coinv
- olti nella chiusura:\n  - TRENO 9805 (TORINO PORTA NUOVA -> LECCE) (+5m) [
- Transito]\n  - TRENO 9805 (TORINO PORTA NUOVA -> LECCE) (+5m) [Transito]\n
- Ritardo massimo rilevato: 5 min\nAffidabilità stima: 78%\nNota normativa/
- euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
- (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
+DTSTART:20261116T121659Z
+DTEND:20261116T122229Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9805 (TORINO PORTA NUOVA -> LECCE) ore 13:2
+ 1 (+5 min)
+DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: TRANSITO VEL
+ OCE\nChiusura sbarre stimata: 13:16:59 - 13:22:29\nTreni coinvolti nella c
+ hiusura:\n  - TRENO 9805 (TORINO PORTA NUOVA -> LECCE) (+5m) [Transito]\nR
+ itardo massimo rilevato: 5 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Transito stimato senza fermata (48% tratta PESARO -> ANCONA\; pe
+ dale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SENIGALLIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8807--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
-DTSTART:20261116T131036Z
-DTEND:20261116T131606Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
+DTSTART:20261116T131033Z
+DTEND:20261116T131603Z
 SUMMARY:[TRANSITO VELOCE] TRENO 8807 (MILANO CENTRALE -> TARANTO) ore 14:14
 DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: TRANSITO VEL
- OCE\nChiusura sbarre stimata: 14:10:36 - 14:16:06\nTreni coinvolti nella c
+ OCE\nChiusura sbarre stimata: 14:10:33 - 14:16:03\nTreni coinvolti nella c
  hiusura:\n  - TRENO 8807 (MILANO CENTRALE -> TARANTO) [Transito]\nRitardo 
  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
  a: Transito stimato senza fermata (48% tratta PESARO -> ANCONA\; pedale an
@@ -266,8 +264,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1721--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T131854Z
 DTEND:20261116T132424Z
 SUMMARY:[TRANSITO VELOCE] REG 1721 (BOLOGNA CENTRALE -> ANCONA) ore 14:23
@@ -287,8 +285,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3917--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:4
+DTSTAMP:20261116T205126Z
+SEQUENCE:5
 DTSTART:20261116T133306Z
 DTEND:20261116T134000Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:33 - 14:40 (primo: REG 3917)
@@ -309,74 +307,53 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3917--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:4
+DTSTAMP:20261116T205126Z
+SEQUENCE:5
 DTSTART:20261116T134930Z
 DTEND:20261116T135400Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 14:49 - 14:54 (primo: REG 3917)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:49 - 14:54 (primo: REG 3917)
 DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: CHIUSURA CON
- TINUA - 3 TRENI\nChiusura sbarre stimata: 14:49:30 - 14:54:00\nTreni coinv
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 14:49:30 - 14:54:00\nTreni coinv
  olti nella chiusura:\n  - REG 3917 (PIACENZA -> ANCONA)\n  - IC 610 (LECCE
-  -> BOLZANO)\n  - IC 610 (LECCE -> BOLZANO)\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua 
- per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
- nima di sgombero stradale (120s)
+  -> BOLZANO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nN
+ ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
+ ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
+ )
 LOCATION:Passaggio a Livello / Stazione SENIGALLIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4242--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
-DTSTART:20261116T142403Z
-DTEND:20261116T142933Z
-SUMMARY:[TRANSITO VELOCE] REG 4242 (ANCONA -> PESARO) ore 15:28
-DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: TRANSITO VEL
- OCE\nChiusura sbarre stimata: 15:24:03 - 15:29:33\nTreni coinvolti nella c
- hiusura:\n  - REG 4242 (ANCONA -> PESARO) [Transito]\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito 
- stimato senza fermata (55% tratta FALCONARA MARITTIMA -> MONTEMARCIANO\; p
- edale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione SENIGALLIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-3921--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T143154Z
 DTEND:20261116T145400Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 15:31 - 15:54 (primo: REG 3921)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:31 - 15:54 (primo: REG 3921)
 DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: CHIUSURA CON
- TINUA - 5 TRENI\nChiusura sbarre stimata: 15:31:54 - 15:54:00\nTreni coinv
+ TINUA - 4 TRENI\nChiusura sbarre stimata: 15:31:54 - 15:54:00\nTreni coinv
  olti nella chiusura:\n  - REG 3921 (PIACENZA -> ANCONA) [Transito]\n  - RE
- G 4242 (ANCONA -> PESARO)\n  - REG 4242 (ANCONA -> PESARO)\n  - IC 609 (MI
- LANO CENTRALE -> LECCE) [Transito]\n  - REG 3921 (PIACENZA -> ANCONA)\nRit
- ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Chiusura continua per 5 treni: intervallo utile tra i passaggi (80
- s) inferiore alla soglia minima di sgombero stradale (120s)
+ G 4242 (ANCONA -> PESARO)\n  - IC 609 (MILANO CENTRALE -> LECCE) [Transito
+ ]\n  - REG 3921 (PIACENZA -> ANCONA)\nRitardo massimo rilevato: 0 min\nAff
+ idabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 t
+ reni: intervallo utile tra i passaggi (80s) inferiore alla soglia minima d
+ i sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SENIGALLIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-609--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T145715Z
 DTEND:20261116T150200Z
 SUMMARY:[FERMATA] IC 609 (MILANO CENTRALE -> LECCE) ore 16:01
@@ -395,73 +372,49 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8811--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:2
-DTSTART:20261116T151036Z
-DTEND:20261116T151606Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:10 - 16:16 (primo: TRENO 8811)
-DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 16:10:36 - 16:16:06\nTreni coinv
- olti nella chiusura:\n  - TRENO 8811 (MILANO CENTRALE -> LECCE) [Transito]
- \n  - TRENO 8811 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione SENIGALLIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4288--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T152157Z
-DTEND:20261116T152727Z
-SUMMARY:[TRANSITO VELOCE] REG 4288 (ANCONA -> RIMINI) ore 16:26
+DTSTAMP:20261116T205126Z
+SEQUENCE:3
+DTSTART:20261116T151033Z
+DTEND:20261116T151603Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8811 (MILANO CENTRALE -> LECCE) ore 16:14
 DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: TRANSITO VEL
- OCE\nChiusura sbarre stimata: 16:21:57 - 16:27:27\nTreni coinvolti nella c
- hiusura:\n  - REG 4288 (ANCONA -> RIMINI) [Transito]\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito 
- stimato senza fermata (55% tratta FALCONARA MARITTIMA -> MONTEMARCIANO\; p
- edale annuncio fisso Vmax)
+ OCE\nChiusura sbarre stimata: 16:10:33 - 16:16:03\nTreni coinvolti nella c
+ hiusura:\n  - TRENO 8811 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Transito stimato senza fermata (48% tratta PESARO -> ANCONA\; pedale annu
+ ncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SENIGALLIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4288--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T153430Z
 DTEND:20261116T153900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:34 - 16:39 (primo: REG 4288)
-DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 16:34:30 - 16:39:00\nTreni coinv
- olti nella chiusura:\n  - REG 4288 (ANCONA -> RIMINI)\n  - REG 4288 (ANCON
- A -> RIMINI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nN
- ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
+SUMMARY:[FERMATA] REG 4288 (ANCONA -> RIMINI) ore 16:38
+DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: FERMATA\nChi
+ usura sbarre stimata: 16:34:30 - 16:39:00\nTreni coinvolti nella chiusura:
+ \n  - REG 4288 (ANCONA -> RIMINI)\nRitardo massimo rilevato: 0 min\nAffida
+ bilità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria
+  regolare
 LOCATION:Passaggio a Livello / Stazione SENIGALLIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-612--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T155015Z
 DTEND:20261116T155500Z
 SUMMARY:[FERMATA] IC 612 (LECCE -> MILANO CENTRALE) ore 16:54
@@ -480,8 +433,8 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3926--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T155930Z
 DTEND:20261116T160400Z
 SUMMARY:[FERMATA] REG 3926 (ANCONA -> PIACENZA) ore 17:03
@@ -500,79 +453,75 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8813--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
-DTSTART:20261116T161407Z
-DTEND:20261116T161937Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:14 - 17:19 (primo: TRENO 8813)
-DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 17:14:07 - 17:19:37\nTreni coinv
- olti nella chiusura:\n  - TRENO 8813 (MILANO CENTRALE -> LECCE) [Transito]
- \n  - TRENO 8813 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
+DTSTART:20261116T161404Z
+DTEND:20261116T161934Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8813 (MILANO CENTRALE -> LECCE) ore 17:18
+DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: TRANSITO VEL
+ OCE\nChiusura sbarre stimata: 17:14:04 - 17:19:34\nTreni coinvolti nella c
+ hiusura:\n  - TRENO 8813 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Transito stimato senza fermata (48% tratta PESARO -> ANCONA\; pedale annu
+ ncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SENIGALLIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-611--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T164339Z
 DTEND:20261116T164809Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:43 - 17:48 (primo: IC 611)
-DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 17:43:39 - 17:48:09\nTreni coinv
- olti nella chiusura:\n  - IC 611 (BOLZANO -> BARI CENTRALE) [Transito]\n  
- - IC 611 (BOLZANO -> BARI CENTRALE) [Transito]\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
- ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] IC 611 (BOLZANO -> BARI CENTRALE) ore 17:47
+DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: TRANSITO VEL
+ OCE\nChiusura sbarre stimata: 17:43:39 - 17:48:09\nTreni coinvolti nella c
+ hiusura:\n  - IC 611 (BOLZANO -> BARI CENTRALE) [Transito]\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
+ nsito stimato senza fermata (80% tratta PESARO -> FANO\; pedale annuncio f
+ isso Vmax)
 LOCATION:Passaggio a Livello / Stazione SENIGALLIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-611--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T165715Z
 DTEND:20261116T170200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:57 - 18:02 (primo: IC 611)
-DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 17:57:15 - 18:02:00\nTreni coinv
- olti nella chiusura:\n  - IC 611 (BOLZANO -> BARI CENTRALE)\n  - IC 611 (B
- OLZANO -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità s
- tima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interv
- allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
- radale (120s)
+SUMMARY:[FERMATA] IC 611 (BOLZANO -> BARI CENTRALE) ore 18:01
+DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: FERMATA\nChi
+ usura sbarre stimata: 17:57:15 - 18:02:00\nTreni coinvolti nella chiusura:
+ \n  - IC 611 (BOLZANO -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\n
+ Affidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia 
+ oraria regolare
 LOCATION:Passaggio a Livello / Stazione SENIGALLIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8815--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T171133Z
-DTEND:20261116T171703Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T171130Z
+DTEND:20261116T171700Z
 SUMMARY:[TRANSITO VELOCE] TRENO 8815 (VENEZIA S.LUCIA -> LECCE) ore 18:15
 DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: TRANSITO VEL
- OCE\nChiusura sbarre stimata: 18:11:33 - 18:17:03\nTreni coinvolti nella c
+ OCE\nChiusura sbarre stimata: 18:11:30 - 18:17:00\nTreni coinvolti nella c
  hiusura:\n  - TRENO 8815 (VENEZIA S.LUCIA -> LECCE) [Transito]\nRitardo ma
  ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
   Transito stimato senza fermata (48% tratta PESARO -> ANCONA\; pedale annu
@@ -587,8 +536,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3929--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T173506Z
 DTEND:20261116T174036Z
 SUMMARY:[TRANSITO VELOCE] REG 3929 (PIACENZA -> ANCONA) ore 18:39
@@ -607,75 +556,73 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-614--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T175015Z
+UID:train-540--20261115-S07108@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:0
+DTSTART:20261116T174851Z
 DTEND:20261116T175700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:50 - 18:57 (primo: IC 614)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 18:48 - 18:57 (primo: IC 540)
 DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 18:50:15 - 18:57:00\nTreni coinv
- olti nella chiusura:\n  - IC 614 (LECCE -> MILANO CENTRALE)\n  - REG 3929 
- (PIACENZA -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
+ TINUA - 3 TRENI\nChiusura sbarre stimata: 18:48:51 - 18:57:00\nTreni coinv
+ olti nella chiusura:\n  - IC 540 (ROMA TERMINI -> ANCONA) [Transito]\n  - 
+ IC 614 (LECCE -> MILANO CENTRALE)\n  - REG 3929 (PIACENZA -> ANCONA)\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s)
+  inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SENIGALLIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3930--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
 DTSTART:20261116T180030Z
 DTEND:20261116T180500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:00 - 19:05 (primo: REG 3930)
-DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 19:00:30 - 19:05:00\nTreni coinv
- olti nella chiusura:\n  - REG 3930 (ANCONA -> PIACENZA)\n  - REG 3930 (ANC
- ONA -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90
- %\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo uti
- le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
- 120s)
+SUMMARY:[FERMATA] REG 3930 (ANCONA -> PIACENZA) ore 19:04
+DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: FERMATA\nChi
+ usura sbarre stimata: 19:00:30 - 19:05:00\nTreni coinvolti nella chiusura:
+ \n  - REG 3930 (ANCONA -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffi
+ dabilità stima: 90%\nNota normativa/euristica: Previsione da traccia orar
+ ia regolare
 LOCATION:Passaggio a Livello / Stazione SENIGALLIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8819--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
-DTSTART:20261116T181836Z
-DTEND:20261116T182406Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:18 - 19:24 (primo: TRENO 8819)
-DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 19:18:36 - 19:24:06\nTreni coinv
- olti nella chiusura:\n  - TRENO 8819 (MILANO CENTRALE -> BARI CENTRALE) [T
- ransito]\n  - TRENO 8819 (MILANO CENTRALE -> BARI CENTRALE) [Transito]\nRi
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
+DTSTART:20261116T181833Z
+DTEND:20261116T182403Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8819 (MILANO CENTRALE -> BARI CENTRALE) ore
+  19:22
+DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: TRANSITO VEL
+ OCE\nChiusura sbarre stimata: 19:18:33 - 19:24:03\nTreni coinvolti nella c
+ hiusura:\n  - TRENO 8819 (MILANO CENTRALE -> BARI CENTRALE) [Transito]\nRi
  tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
- s) inferiore alla soglia minima di sgombero stradale (120s)
+ ristica: Transito stimato senza fermata (48% tratta PESARO -> ANCONA\; ped
+ ale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SENIGALLIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3931--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T183206Z
 DTEND:20261116T183736Z
 SUMMARY:[TRANSITO VELOCE] REG 3931 (PIACENZA -> ANCONA) ore 19:36
@@ -694,31 +641,31 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4156--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
-DTSTART:20261116T183951Z
+UID:train-613--20261115-S07108@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T184539Z
 DTEND:20261116T185200Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 19:39 - 19:52 (primo: REG 4156)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:45 - 19:52 (primo: IC 613)
 DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: CHIUSURA CON
- TINUA - 3 TRENI\nChiusura sbarre stimata: 19:39:51 - 19:52:00\nTreni coinv
- olti nella chiusura:\n  - REG 4156 (ROMA TERMINI -> ANCONA) [Transito]\n  
- - IC 613 (MILANO CENTRALE -> PESCARA) [Transito]\n  - REG 3931 (PIACENZA -
- > ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
-  normativa/euristica: Chiusura continua per 3 treni: intervallo utile tra 
- i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 19:45:39 - 19:52:00\nTreni coinv
+ olti nella chiusura:\n  - IC 613 (MILANO CENTRALE -> PESCARA) [Transito]\n
+   - REG 3931 (PIACENZA -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffida
+ bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tren
+ i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
+ ombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SENIGALLIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-613--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
 DTSTART:20261116T185915Z
 DTEND:20261116T190400Z
 SUMMARY:[FERMATA] IC 613 (MILANO CENTRALE -> PESCARA) ore 20:03
@@ -737,13 +684,13 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9811--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:5
-DTSTART:20261116T191036Z
-DTEND:20261116T191606Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:6
+DTSTART:20261116T191033Z
+DTEND:20261116T191603Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9811 (MILANO CENTRALE -> PESCARA) ore 20:14
 DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: TRANSITO VEL
- OCE\nChiusura sbarre stimata: 20:10:36 - 20:16:06\nTreni coinvolti nella c
+ OCE\nChiusura sbarre stimata: 20:10:33 - 20:16:03\nTreni coinvolti nella c
  hiusura:\n  - TRENO 9811 (MILANO CENTRALE -> PESCARA) [Transito]\nRitardo 
  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
  a: Transito stimato senza fermata (48% tratta PESARO -> ANCONA\; pedale an
@@ -758,8 +705,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3935--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:4
+DTSTAMP:20261116T205126Z
+SEQUENCE:5
 DTSTART:20261116T193106Z
 DTEND:20261116T193636Z
 SUMMARY:[TRANSITO VELOCE] REG 3935 (PIACENZA -> ANCONA) ore 20:35
@@ -779,8 +726,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3935--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:4
+DTSTAMP:20261116T205126Z
+SEQUENCE:5
 DTSTART:20261116T194830Z
 DTEND:20261116T195300Z
 SUMMARY:[FERMATA] REG 3935 (PIACENZA -> ANCONA) ore 20:52
@@ -799,57 +746,75 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3932--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:1
-DTSTART:20261116T200330Z
-DTEND:20261116T200800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:03 - 21:08 (primo: REG 3932)
-DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 21:03:30 - 21:08:00\nTreni coinv
- olti nella chiusura:\n  - REG 3932 (ANCONA -> BOLOGNA CENTRALE)\n  - REG 3
- 932 (ANCONA -> BOLOGNA CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T195522Z
+DTEND:20261116T200052Z
+SUMMARY:[TRANSITO VELOCE] REG 3932 (ANCONA -> BOLOGNA CENTRALE) ore 20:59
+DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: TRANSITO VEL
+ OCE\nChiusura sbarre stimata: 20:55:22 - 21:00:52\nTreni coinvolti nella c
+ hiusura:\n  - REG 3932 (ANCONA -> BOLOGNA CENTRALE) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Transito stimato senza fermata (66% tratta FALCONARA MARITTIMA -> MARZOCC
+ A\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SENIGALLIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3932--20261115-S07108@pl-tracker.local
+DTSTAMP:20261116T205126Z
+SEQUENCE:2
+DTSTART:20261116T200330Z
+DTEND:20261116T200800Z
+SUMMARY:[FERMATA] REG 3932 (ANCONA -> BOLOGNA CENTRALE) ore 21:07
+DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: FERMATA\nChi
+ usura sbarre stimata: 21:03:30 - 21:08:00\nTreni coinvolti nella chiusura:
+ \n  - REG 3932 (ANCONA -> BOLOGNA CENTRALE)\nRitardo massimo rilevato: 0 m
+ in\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da trac
+ cia oraria regolare
+LOCATION:Passaggio a Livello / Stazione SENIGALLIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8825--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:4
-DTSTART:20261116T212002Z
-DTEND:20261116T212532Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:20 - 22:25 (primo: TRENO 8825)
-DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 22:20:02 - 22:25:32\nTreni coinv
- olti nella chiusura:\n  - TRENO 8825 (MILANO CENTRALE -> ANCONA) [Transito
- ]\n  - TRENO 8825 (MILANO CENTRALE -> ANCONA) [Transito]\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
- ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
- lla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261116T205126Z
+SEQUENCE:5
+DTSTART:20261116T211959Z
+DTEND:20261116T212529Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8825 (MILANO CENTRALE -> ANCONA) ore 22:24
+DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: TRANSITO VEL
+ OCE\nChiusura sbarre stimata: 22:19:59 - 22:25:29\nTreni coinvolti nella c
+ hiusura:\n  - TRENO 8825 (MILANO CENTRALE -> ANCONA) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (48% tratta PESARO -> ANCONA\; pedale ann
+ uncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SENIGALLIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4160--20261115-S07108@pl-tracker.local
-DTSTAMP:20261116T104738Z
-SEQUENCE:0
-DTSTART:20261116T234503Z
-DTEND:20261116T235033Z
+DTSTAMP:20261116T205126Z
+SEQUENCE:1
+DTSTART:20261116T234500Z
+DTEND:20261116T235030Z
 SUMMARY:[TRANSITO VELOCE] REG 4160 (ROMA TERMINI -> ANCONA) ore 00:49
 DESCRIPTION:Stazione/PL: SENIGALLIA (S07108)\nRegime chiusura: TRANSITO VEL
- OCE\nChiusura sbarre stimata: 00:45:03 - 00:50:33\nTreni coinvolti nella c
+ OCE\nChiusura sbarre stimata: 00:45:00 - 00:50:30\nTreni coinvolti nella c
  hiusura:\n  - REG 4160 (ROMA TERMINI -> ANCONA) [Transito]\nRitardo massim
  o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
  nsito stimato senza fermata (30% tratta FALCONARA MARITTIMA -> ANCONA\; pe
