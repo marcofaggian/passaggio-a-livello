@@ -1,0 +1,56 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//PL-Tracker-ICS//Inferenza Passaggi a Livello 1.26//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Passaggi a Livello - MIRA-MIRANO (S02586)
+X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
+ ubblici RFI/ViaggiaTreno
+X-WR-TIMEZONE:Europe/Rome
+REFRESH-INTERVAL;VALUE=DURATION:PT15M
+X-PUBLISHED-TTL:PT15M
+X-CONTENT-HASH:2cb92ae764736f46abb0e5cba685b626b397d86f9188c2515b3e310f18a0
+ 46c7
+BEGIN:VEVENT
+UID:train-2214-S02581-20261115-S02586@pl-tracker.local
+DTSTAMP:20261115T231740Z
+SEQUENCE:0
+DTSTART:20261115T232830Z
+DTEND:20261115T233400Z
+SUMMARY:[FERMATA] REG 2214 (PADOVA -> VENEZIA S. LUCIA) ore 00:32 (+2 min)
+DESCRIPTION:Stazione/PL: MIRA-MIRANO (S02586)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 00:28:30 - 00:34:00\nTreni coinvolti nella chiusura
+ :\n  - REG 2214 (PADOVA -> VENEZIA S. LUCIA) (+2m)\nRitardo massimo rileva
+ to: 2 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
+ con ritardo propagato (+2 min)
+LOCATION:Passaggio a Livello / Stazione MIRA-MIRANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9715-S01700-20261115-S02586@pl-tracker.local
+DTSTAMP:20261115T231740Z
+SEQUENCE:0
+DTSTART:20261115T234115Z
+DTEND:20261115T234500Z
+SUMMARY:[TRANSITO VELOCE] FR 9715 (MILANO CENTRALE -> VENEZIA S. LUCIA) ore
+  00:44 (+4 min)
+DESCRIPTION:Stazione/PL: MIRA-MIRANO (S02586)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 00:41:15 - 00:45:00\nTreni coinvolti nella 
+ chiusura:\n  - FR 9715 (MILANO CENTRALE -> VENEZIA S. LUCIA) (+4m) [Transi
+ to]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (67% tratta PADOVA -> VENEZ
+ IA MESTRE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MIRA-MIRANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:FR
+END:VEVENT
+END:VCALENDAR

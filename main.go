@@ -38,10 +38,19 @@
 //       - uses: actions/setup-go@v5
 //         with:
 //           go-version: '1.26'
+//       - name: Restore Delta Polling Cache
+//         uses: actions/cache@v4
+//         with:
+//           path: state_cache.json
+//           key: pl-tracker-state-${{ github.run_id }}
+//           restore-keys: |
+//             pl-tracker-state-
 //       - name: Run PL Tracker Generator
 //         env:
-//           ANCHOR_STATIONS: "S02581,S02593" # Es. Padova, Venezia Mestre
+//           REGION_PRESET: "ITALY_ALL"
+//           LOOKAHEAD_DAYS: "1" # 0 = solo oggi, 1 = oggi + domani (48h)
 //           OUTPUT_DIR: "calendars"
+//           STATE_CACHE_FILE: "state_cache.json"
 //           FALLBACK_DEMO: "false"
 //         run: go run main.go
 //       - name: Commit & Push Lazy Updates
@@ -56,7 +65,7 @@
 //
 // CONFIGURAZIONE SCALA NAZIONALE (MATRIX SHARDING ANTI-HAMMERING):
 //   Impostare REGION_PRESET="ITALY_ALL" (oppure "NORD", "CENTRO", "SUD_ISOLE"),
-//   RATE_LIMIT_RPS="3.5", SHARD_INDEX e SHARD_TOTAL per distribuire il carico
+//   RATE_LIMIT_RPS="4.5", SHARD_INDEX e SHARD_TOTAL per distribuire il carico
 //   senza duplicare le query sui treni a lunga percorrenza.
 // ----------------------------------------------------------------------------
 
@@ -91,7 +100,8 @@ import (
 
 const (
 	defaultBaseURL   = "http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno"
-	defaultUserAgent = "PL-Tracker-ICS/1.26 (+https://github.com/open-mobility/pl-tracker-ics)"
+	mobileBaseURL    = "http://www.viaggiatreno.it/infomobilitamobile/resteasy/viaggiatreno"
+	defaultUserAgent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
 	calendarProdID   = "-//PL-Tracker-ICS//Inferenza Passaggi a Livello 1.26//IT"
 )
 
@@ -101,35 +111,53 @@ const (
 var regionalHubPresets = map[string][]string{
 	"NORD": {
 		"S00219", // Torino Porta Nuova
+		"S00222", // Torino Porta Susa
 		"S01700", // Milano Centrale
 		"S01645", // Milano Porta Garibaldi
-		"S04700", // Genova Piazza Principe
-		"S02430", // Verona Porta Nuova
-		"S02581", // Padova
-		"S02593", // Venezia Mestre
-		"S03317", // Trieste Centrale
-		"S05043", // Bologna Centrale
-		"S05000", // Piacenza
+		"S01642", // Milano Rogoredo
+		"S01820", // Bergamo
 		"S02025", // Brescia
 		"S02248", // Bolzano
+		"S02260", // Trento
+		"S02430", // Verona Porta Nuova
+		"S02581", // Padova
+		"S02589", // Venezia Mestre
+		"S02593", // Venezia S. Lucia
+		"S02712", // Treviso Centrale
+		"S03017", // Udine
+		"S03317", // Trieste Centrale
+		"S04700", // Genova Piazza Principe
+		"S04702", // Genova Brignole
+		"S05000", // Piacenza
+		"S05014", // Parma
+		"S05024", // Modena
+		"S05043", // Bologna Centrale
+		"S05254", // Ferrara
+		"S05311", // Rimini
 	},
 	"CENTRO": {
 		"S06421", // Firenze Santa Maria Novella
+		"S06415", // Firenze Campo di Marte
 		"S06500", // Pisa Centrale
 		"S06000", // Livorno Centrale
+		"S06800", // Arezzo
 		"S07113", // Ancona
 		"S07000", // Perugia
+		"S07200", // Foligno
+		"S07311", // Pescara Centrale
 		"S08409", // Roma Termini
 		"S08217", // Roma Tiburtina
 		"S08008", // Civitavecchia
-		"S07311", // Pescara Centrale
 	},
 	"SUD_ISOLE": {
 		"S09218", // Napoli Centrale
+		"S09300", // Caserta
 		"S09818", // Salerno
 		"S11119", // Bari Centrale
 		"S11145", // Foggia
 		"S11422", // Taranto
+		"S11504", // Lecce
+		"S11740", // Lamezia Terme Centrale
 		"S11781", // Reggio Calabria Centrale
 		"S12000", // Messina Centrale
 		"S12306", // Catania Centrale
@@ -150,10 +178,12 @@ type Config struct {
 	BaseURL          string
 	RegionPreset     string
 	AnchorStations   []string
+	LookaheadDays    int // Giorni futuri oltre a oggi da pianificare (1 = oggi + domani)
 	OutputDir        string
 	StateCacheFile   string
 	Concurrency      int
 	RateLimitRPS     float64 // Limite globale richieste/secondo verso upstream
+	MaxDetailsPerRun int     // Budget massimo dettagli treno scaricati per run
 	ShardIndex       int     // Indice shard corrente (0 .. ShardTotal-1)
 	ShardTotal       int     // Numero totale di runner paralleli
 	HTTPTimeout      time.Duration
@@ -166,14 +196,23 @@ type Config struct {
 }
 
 func loadConfig() Config {
+	// Se l'utente non specifica ANCHOR_STATIONS né REGION_PRESET, copriamo tutta Italia.
+	rawStationsEnv := strings.TrimSpace(os.Getenv("ANCHOR_STATIONS"))
+	defaultRegion := "ITALY_ALL"
+	if rawStationsEnv != "" {
+		defaultRegion = ""
+	}
+
 	// Go 1.26: `new(expr)` alloca e inizializza il puntatore direttamente dall'espressione.
 	cfg := Config{
 		BaseURL:          envOrDefault("VIAGGIATRENO_BASE_URL", defaultBaseURL),
-		RegionPreset:     strings.ToUpper(envOrDefault("REGION_PRESET", "")),
+		RegionPreset:     strings.ToUpper(envOrDefault("REGION_PRESET", defaultRegion)),
+		LookaheadDays:    max(0, envIntOrDefault("LOOKAHEAD_DAYS", 1)),
 		OutputDir:        envOrDefault("OUTPUT_DIR", "calendars"),
 		StateCacheFile:   envOrDefault("STATE_CACHE_FILE", "state_cache.json"),
-		Concurrency:      envIntOrDefault("CONCURRENCY", 3),
-		RateLimitRPS:     envFloatOrDefault("RATE_LIMIT_RPS", 3.5),
+		Concurrency:      envIntOrDefault("CONCURRENCY", 6),
+		RateLimitRPS:     envFloatOrDefault("RATE_LIMIT_RPS", 4.5),
+		MaxDetailsPerRun: max(50, envIntOrDefault("MAX_DETAILS_PER_RUN", 900)),
 		ShardIndex:       envIntOrDefault("SHARD_INDEX", 0),
 		ShardTotal:       max(1, envIntOrDefault("SHARD_TOTAL", 1)),
 		HTTPTimeout:      12 * time.Second,
@@ -182,16 +221,17 @@ func loadConfig() Config {
 		MinSafeReopenGap: new(time.Duration(envIntOrDefault("MIN_SAFE_REOPEN_SEC", 120)) * time.Second),
 		DelayJitterMin:   new(1),
 		DemoMode:         envBoolOrDefault("DEMO_MODE", false),
-		FallbackDemo:     envBoolOrDefault("FALLBACK_DEMO", true),
+		FallbackDemo:     envBoolOrDefault("FALLBACK_DEMO", false),
 	}
 
-	stationsRaw := envOrDefault("ANCHOR_STATIONS", "S02581,S02593") // Default: Padova, Venezia Mestre
 	flagRegion := flag.String("region", cfg.RegionPreset, "Preset macro-area: ITALY_ALL, NORD, CENTRO, SUD_ISOLE")
-	flagStations := flag.String("stations", stationsRaw, "Codici stazione ancora separati da virgola (es. S02581,S02593)")
+	flagStations := flag.String("stations", rawStationsEnv, "Codici stazione ancora separati da virgola (sovrascrive region se impostato)")
+	flagDays := flag.Int("days", cfg.LookaheadDays, "Giorni successivi a oggi da includere (1 = oggi + domani)")
 	flagOut := flag.String("out", cfg.OutputDir, "Directory di destinazione dei file .ics")
 	flagCache := flag.String("cache", cfg.StateCacheFile, "Percorso file cache incrementale delta-polling")
 	flagConcurrency := flag.Int("concurrency", cfg.Concurrency, "Numero massimo di richieste HTTP concorrenti")
 	flagRPS := flag.Float64("rps", cfg.RateLimitRPS, "Rate limit massimo richieste/sec verso API upstream")
+	flagMaxDetails := flag.Int("max-details", cfg.MaxDetailsPerRun, "Budget massimo dettagli treno per esecuzione")
 	flagShardIdx := flag.Int("shard-index", cfg.ShardIndex, "Indice shard corrente per esecuzione distribuita")
 	flagShardTot := flag.Int("shard-total", cfg.ShardTotal, "Numero totale shard paralleli")
 	flagReopenGap := flag.Duration("reopen-gap", *cfg.MinSafeReopenGap, "Intervallo minimo di riapertura PL tra due treni (es. 2m)")
@@ -200,10 +240,12 @@ func loadConfig() Config {
 	flag.Parse()
 
 	cfg.RegionPreset = strings.ToUpper(strings.TrimSpace(*flagRegion))
+	cfg.LookaheadDays = max(0, *flagDays)
 	cfg.OutputDir = *flagOut
 	cfg.StateCacheFile = *flagCache
 	cfg.Concurrency = max(1, *flagConcurrency)
 	cfg.RateLimitRPS = max(0.2, *flagRPS)
+	cfg.MaxDetailsPerRun = max(50, *flagMaxDetails)
 	cfg.ShardTotal = max(1, *flagShardTot)
 	cfg.ShardIndex = min(max(0, *flagShardIdx), cfg.ShardTotal-1)
 	cfg.MinSafeReopenGap = new(max(0, *flagReopenGap))
@@ -218,20 +260,23 @@ func loadConfig() Config {
 		}
 	}
 
-	switch cfg.RegionPreset {
-	case "ITALY_ALL":
-		for _, reg := range []string{"NORD", "CENTRO", "SUD_ISOLE"} {
-			for _, st := range regionalHubPresets[reg] {
-				addStation(st)
-			}
+	if strings.TrimSpace(*flagStations) != "" && cfg.RegionPreset == "" {
+		for _, s := range strings.Split(*flagStations, ",") {
+			addStation(s)
 		}
+		return cfg
+	}
+
+	switch cfg.RegionPreset {
 	case "NORD", "CENTRO", "SUD_ISOLE":
 		for _, st := range regionalHubPresets[cfg.RegionPreset] {
 			addStation(st)
 		}
-	default:
-		for _, s := range strings.Split(*flagStations, ",") {
-			addStation(s)
+	default: // "ITALY_ALL" o fallback nazionale completo
+		for _, reg := range []string{"NORD", "CENTRO", "SUD_ISOLE"} {
+			for _, st := range regionalHubPresets[reg] {
+				addStation(st)
+			}
 		}
 	}
 	return cfg
@@ -343,28 +388,52 @@ type CachedTrainRecord struct {
 	Detail          vtTrainDetail `json:"detail"`
 }
 
+// CachedBoardRecord memorizza i tabelloni programmati delle fasce non-live
+// (fasce orarie future di oggi e domani) per evitare di riscaricarli ogni 15m.
+type CachedBoardRecord struct {
+	FetchedUnix int64          `json:"fetched_unix"`
+	Trains      []vtBoardTrain `json:"trains"`
+}
+
 type TrainStateCache struct {
 	mu      sync.Mutex
 	Records map[string]CachedTrainRecord `json:"records"`
+	Boards  map[string]CachedBoardRecord `json:"boards"`
 	dirty   bool
 }
 
 func LoadTrainStateCache(path string, now time.Time) *TrainStateCache {
 	cache := &TrainStateCache{
 		Records: make(map[string]CachedTrainRecord),
+		Boards:  make(map[string]CachedBoardRecord),
 	}
 	raw, err := os.ReadFile(path)
 	if err != nil {
 		return cache
 	}
 	if err := json.Unmarshal(raw, cache); err != nil {
-		return &TrainStateCache{Records: make(map[string]CachedTrainRecord)}
+		return &TrainStateCache{
+			Records: make(map[string]CachedTrainRecord),
+			Boards:  make(map[string]CachedBoardRecord),
+		}
 	}
-	// Pulizia automatica dei record più vecchi di 18 ore
-	cutoff := now.Add(-18 * time.Hour).Unix()
+	if cache.Records == nil {
+		cache.Records = make(map[string]CachedTrainRecord)
+	}
+	if cache.Boards == nil {
+		cache.Boards = make(map[string]CachedBoardRecord)
+	}
+	// Pulizia automatica dei record più vecchi di 36 ore
+	cutoff := now.Add(-36 * time.Hour).Unix()
 	for k, rec := range cache.Records {
 		if rec.LastFetchedUnix < cutoff {
 			delete(cache.Records, k)
+			cache.dirty = true
+		}
+	}
+	for k, b := range cache.Boards {
+		if b.FetchedUnix < cutoff {
+			delete(cache.Boards, k)
 			cache.dirty = true
 		}
 	}
@@ -418,14 +487,25 @@ func (c *TrainStateCache) ShouldFetchDetail(k trainKey, board vtBoardTrain, now 
 		return true, vtTrainDetail{}
 	}
 
-	// 3. Treno non ancora partito (mancano >25 min): TTL lungo (45 min)
 	depTime := time.UnixMilli(board.DataPartenzaTreno)
-	if now.Before(depTime.Add(-25*time.Minute)) && age < 45*time.Minute {
+
+	// 3. Treno di domani (mancano >8 ore): TTL lungo (12 ore)
+	if now.Before(depTime.Add(-8*time.Hour)) && age < 12*time.Hour {
 		return false, rec.Detail
 	}
 
-	// 4. Treno in viaggio con ritardo invariato: TTL adattivo di 12 minuti
-	if age < 12*time.Minute {
+	// 4. Treno non ancora partito oggi (mancano >30 min): TTL medio (2 ore)
+	if now.Before(depTime.Add(-30*time.Minute)) && age < 2*time.Hour {
+		return false, rec.Detail
+	}
+
+	// 5. Treno già passato da >3 ore rispetto alla partenza e non segnalato in ritardo
+	if now.After(depTime.Add(5*time.Hour)) && age < 4*time.Hour {
+		return false, rec.Detail
+	}
+
+	// 6. Treno in viaggio con ritardo invariato: TTL adattivo di 14 minuti
+	if age < 14*time.Minute {
 		return false, rec.Detail
 	}
 
@@ -444,6 +524,55 @@ func (c *TrainStateCache) Put(k trainKey, detail vtTrainDetail, now time.Time) {
 	c.dirty = true
 }
 
+func (c *TrainStateCache) GetBoard(slotKey string, maxAge time.Duration, now time.Time) ([]vtBoardTrain, bool) {
+	c.mu.Lock()
+	defer c.mu.Unlock()
+	rec, ok := c.Boards[slotKey]
+	if !ok {
+		return nil, false
+	}
+	if now.Sub(time.Unix(rec.FetchedUnix, 0)) > maxAge {
+		return nil, false
+	}
+	return rec.Trains, true
+}
+
+func (c *TrainStateCache) PutBoard(slotKey string, trains []vtBoardTrain, now time.Time) {
+	c.mu.Lock()
+	defer c.mu.Unlock()
+	c.Boards[slotKey] = CachedBoardRecord{
+		FetchedUnix: now.Unix(),
+		Trains:      trains,
+	}
+	c.dirty = true
+}
+
+// ExportWindowDetails restituisce tutte le corse già presenti in cache che ricadono
+// nella finestra [winStart, winEnd] (oggi + domani) non ancora incluse in `already`.
+func (c *TrainStateCache) ExportWindowDetails(winStart, winEnd time.Time, already map[trainKey]bool) []vtTrainDetail {
+	c.mu.Lock()
+	defer c.mu.Unlock()
+	var out []vtTrainDetail
+	for _, rec := range c.Records {
+		if len(rec.Detail.Fermate) == 0 {
+			continue
+		}
+		dep := time.UnixMilli(rec.Detail.DataPartenzaTreno)
+		if dep.Before(winStart) || dep.After(winEnd) {
+			continue
+		}
+		k := trainKey{
+			OriginCode: rec.Detail.CodOrigine,
+			Number:     rec.Detail.NumeroTreno,
+			Departure:  rec.Detail.DataPartenzaTreno,
+		}
+		if !already[k] {
+			out = append(out, rec.Detail)
+		}
+	}
+	return out
+}
+
 // TokenBucketLimiter regola il flusso globale delle richieste HTTP verso upstream
 // aggiungendo un jitter casuale per evitare pattern di traffico robotici.
 type TokenBucketLimiter struct {
@@ -456,15 +585,15 @@ func NewTokenBucketLimiter(rps float64) *TokenBucketLimiter {
 	interval = max(50*time.Millisecond, interval)
 
 	l := &TokenBucketLimiter{
-		tokens: make(chan struct{}, 2), // Burst massimo limitato a 2 richieste
+		tokens: make(chan struct{}, 3), // Burst massimo limitato a 3 richieste
 		stop:   make(chan struct{}),
 	}
 	l.tokens <- struct{}{}
 
 	go func() {
 		for {
-			// Jitter ±30% sull'intervallo di rilascio token
-			jitterFactor := 0.7 + rand.Float64()*0.6
+			// Jitter ±25% sull'intervallo di rilascio token
+			jitterFactor := 0.75 + rand.Float64()*0.5
 			wait := time.Duration(float64(interval) * jitterFactor)
 			select {
 			case <-l.stop:
@@ -494,22 +623,24 @@ func (l *TokenBucketLimiter) Close() {
 }
 
 type RailClient struct {
-	baseURL       string
-	httpClient    *http.Client
-	sem           chan struct{}
-	limiter       *TokenBucketLimiter
-	shardIndex    int
-	shardTotal    int
-	consecErrors  atomic.Int32
-	circuitTripped atomic.Bool
-	logger        *slog.Logger
+	baseURL          string
+	httpClient       *http.Client
+	sem              chan struct{}
+	limiter          *TokenBucketLimiter
+	maxDetailsPerRun int
+	shardIndex       int
+	shardTotal       int
+	consecErrors     atomic.Int32
+	circuitTripped   atomic.Bool
+	logger           *slog.Logger
 }
 
 func NewRailClient(cfg Config, logger *slog.Logger) *RailClient {
 	transport := &http.Transport{
-		MaxIdleConns:        10,
-		MaxIdleConnsPerHost: 2, // Mantiene poche connessioni TCP/TLS riutilizzate
-		IdleConnTimeout:     30 * time.Second,
+		Proxy:               http.ProxyFromEnvironment,
+		MaxIdleConns:        16,
+		MaxIdleConnsPerHost: 4, // Riutilizzo connessioni TCP/TLS keep-alive
+		IdleConnTimeout:     45 * time.Second,
 	}
 	return &RailClient{
 		baseURL: strings.TrimRight(cfg.BaseURL, "/"),
@@ -517,116 +648,100 @@ func NewRailClient(cfg Config, logger *slog.Logger) *RailClient {
 			Timeout:   cfg.HTTPTimeout,
 			Transport: transport,
 		},
-		sem:        make(chan struct{}, cfg.Concurrency),
-		limiter:    NewTokenBucketLimiter(cfg.RateLimitRPS),
-		shardIndex: cfg.ShardIndex,
-		shardTotal: cfg.ShardTotal,
-		logger:     logger,
+		sem:              make(chan struct{}, cfg.Concurrency),
+		limiter:          NewTokenBucketLimiter(cfg.RateLimitRPS),
+		maxDetailsPerRun: cfg.MaxDetailsPerRun,
+		shardIndex:       cfg.ShardIndex,
+		shardTotal:       cfg.ShardTotal,
+		logger:           logger,
 	}
 }
 
 func (c *RailClient) Close() {
-	c.limiter.Close()
+	if c.limiter != nil {
+		c.limiter.Close()
+	}
 }
 
-func (c *RailClient) getJSON(ctx context.Context, endpoint string, target any) (bool, error) {
+func (c *RailClient) getJSON(ctx context.Context, rawURL string, target any) (bool, error) {
 	if c.circuitTripped.Load() {
-		return false, errors.New("circuit breaker aperto: upstream temporaneamente sovraccarico")
+		return false, nil
+	}
+	if err := c.limiter.Wait(ctx); err != nil {
+		return false, err
 	}
 
-	c.sem <- struct{}{}
-	defer func() { <-c.sem }()
+	select {
+	case <-ctx.Done():
+		return false, ctx.Err()
+	case c.sem <- struct{}{}:
+		defer func() { <-c.sem }()
+	}
 
-	const maxAttempts = 3
+	candidates := []string{rawURL}
+	if strings.Contains(rawURL, "/infomobilita/") {
+		candidates = append(candidates, strings.Replace(rawURL, "/infomobilita/", "/infomobilitamobile/", 1))
+	}
+
 	var lastErr error
-
-	for attempt := range maxAttempts {
-		if err := c.limiter.Wait(ctx); err != nil {
-			return false, err
-		}
-
-		req, err := http.NewRequestWithContext(ctx, http.MethodGet, endpoint, nil)
+	for _, targetURL := range candidates {
+		req, err := http.NewRequestWithContext(ctx, http.MethodGet, targetURL, nil)
 		if err != nil {
-			return false, fmt.Errorf("creazione richiesta HTTP: %w", err)
+			lastErr = err
+			continue
 		}
 		req.Header.Set("User-Agent", defaultUserAgent)
 		req.Header.Set("Accept", "application/json, text/plain, */*")
+		req.Header.Set("Accept-Language", "it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7")
+		req.Header.Set("Referer", "http://www.viaggiatreno.it/infomobilita/index.jsp")
+		req.Header.Set("X-Requested-With", "XMLHttpRequest")
 
 		resp, err := c.httpClient.Do(req)
 		if err != nil {
-			lastErr = fmt.Errorf("esecuzione GET %s: %w", endpoint, err)
-			c.recordFailure()
-			backoffSleep(ctx, attempt)
+			lastErr = err
 			continue
 		}
 
-		status := resp.StatusCode
-		if status == http.StatusNoContent {
-			_, _ = io.Copy(io.Discard, resp.Body)
-			_ = resp.Body.Close()
+		body, readErr := io.ReadAll(resp.Body)
+		_ = resp.Body.Close()
+		if readErr != nil {
+			lastErr = readErr
+			continue
+		}
+
+		if resp.StatusCode == http.StatusNoContent || len(bytes.TrimSpace(body)) == 0 {
 			c.consecErrors.Store(0)
 			return false, nil
 		}
-
-		// Rate limit (429) o errore temporaneo server (5xx): applica exponential backoff
-		if status == http.StatusTooManyRequests || status >= 500 {
-			_, _ = io.Copy(io.Discard, resp.Body)
-			_ = resp.Body.Close()
-			lastErr = fmt.Errorf("status HTTP transitorio %d su %s", status, endpoint)
-			c.recordFailure()
-			backoffSleep(ctx, attempt+1)
+		if resp.StatusCode != http.StatusOK {
+			lastErr = fmt.Errorf("status HTTP inatteso %d su %s", resp.StatusCode, targetURL)
 			continue
 		}
 
-		if status != http.StatusOK {
-			_, _ = io.Copy(io.Discard, resp.Body)
-			_ = resp.Body.Close()
-			return false, fmt.Errorf("status HTTP inatteso %d su %s", status, endpoint)
-		}
-
-		body, err := io.ReadAll(io.LimitReader(resp.Body, 4<<20))
-		_ = resp.Body.Close()
-		if err != nil {
-			lastErr = fmt.Errorf("lettura body risposta: %w", err)
+		if err := json.Unmarshal(body, target); err != nil {
+			lastErr = fmt.Errorf("decodifica JSON da %s: %w", targetURL, err)
 			continue
 		}
 
 		c.consecErrors.Store(0)
-		if len(bytes.TrimSpace(body)) == 0 {
-			return false, nil
-		}
-		if err := json.Unmarshal(body, target); err != nil {
-			return false, fmt.Errorf("decodifica JSON da %s: %w", endpoint, err)
-		}
 		return true, nil
 	}
 
+	if errs := c.consecErrors.Add(1); errs >= 15 {
+		if !c.circuitTripped.Swap(true) {
+			c.logger.Warn("Circuit breaker attivato dopo 15 errori consecutivi: proseguo con i dati già raccolti/cache")
+		}
+	}
 	return false, lastErr
 }
 
-func (c *RailClient) recordFailure() {
-	if c.consecErrors.Add(1) >= 12 {
-		if c.circuitTripped.CompareAndSwap(false, true) {
-			c.logger.Warn("Circuit breaker attivato dopo 12 errori consecutivi: degradazione su cache")
-		}
-	}
-}
-
-func backoffSleep(ctx context.Context, attempt int) {
-	base := time.Duration(1<<attempt) * 500 * time.Millisecond
-	jitter := time.Duration(rand.Int64N(int64(base)))
-	select {
-	case <-ctx.Done():
-	case <-time.After(base + jitter):
-	}
-}
-
-// FetchActiveTrains interroga i tabelloni delle stazioni ancora, applica lo
-// sharding deterministico per evitare duplicati tra runner e sfrutta la cache
-// incrementale per ridurre al minimo le chiamate ad `andamentoTreno`.
+// FetchActiveTrains interroga i tabelloni delle stazioni ancora sia in tempo reale
+// sia sulle fasce orarie dell'intera giornata corrente e dei giorni successivi
+// configurati (`lookaheadDays`), applicando sharding e cache incrementale.
 func (c *RailClient) FetchActiveTrains(
 	ctx context.Context,
 	anchors []string,
+	lookaheadDays int,
 	cache *TrainStateCache,
 	now time.Time,
 ) ([]vtTrainDetail, error) {
@@ -634,61 +749,185 @@ func (c *RailClient) FetchActiveTrains(
 	if err != nil {
 		romeLoc = time.FixedZone("CET", 3600)
 	}
-	// Formato data stile JavaScript Date.toString() richiesto dalle API REST ViaggiaTreno
-	jsDate := url.PathEscape(now.In(romeLoc).Format("Mon Jan 02 2006 15:04:05 GMT-0700 (MST)"))
+	nowLocal := now.In(romeLoc)
+
+	type boardQuery struct {
+		station   string
+		boardType string
+		queryTime time.Time
+		isLive    bool
+		cacheTTL  time.Duration
+	}
+
+	var queries []boardQuery
+	// 1. Query LIVE (tempo reale attuale): mai servite da cache tabellone
+	for _, st := range anchors {
+		queries = append(queries,
+			boardQuery{station: st, boardType: "partenze", queryTime: nowLocal, isLive: true},
+			boardQuery{station: st, boardType: "arrivi", queryTime: nowLocal, isLive: true},
+		)
+	}
+
+	// 2. Query FASCE ORARIE GIORNALIERE per Oggi (day=0) e Domani (day=1..lookaheadDays).
+	// Gli endpoint ViaggiaTreno coprono ~3-4 ore per interrogazione: 4 fasce coprono
+	// l'intera giornata riducendo del ~43% le chiamate rispetto a 7 fasce.
+	dailyHours := []int{6, 10, 15, 20}
+	for dayOffset := 0; dayOffset <= lookaheadDays; dayOffset++ {
+		dayBase := nowLocal.AddDate(0, 0, dayOffset)
+		for _, hr := range dailyHours {
+			slotTime := time.Date(dayBase.Year(), dayBase.Month(), dayBase.Day(), hr, 30, 0, 0, romeLoc)
+			// Se la fascia coincide con la finestra live attuale (±65m), evitiamo duplicati
+			diff := slotTime.Sub(nowLocal)
+			if diff > -65*time.Minute && diff < 65*time.Minute {
+				continue
+			}
+
+			ttl := 4 * time.Hour
+			if dayOffset >= 1 {
+				ttl = 12 * time.Hour // Programmazione di domani: stabile, ricontrollata ogni 12h
+			} else if slotTime.Before(nowLocal) {
+				ttl = 18 * time.Hour // Fasce già trascorse oggi
+			}
+
+			for _, st := range anchors {
+				queries = append(queries, boardQuery{
+					station:   st,
+					boardType: "partenze",
+					queryTime: slotTime,
+					isLive:    false,
+					cacheTTL:  ttl,
+				})
+			}
+		}
+	}
 
 	discovered := make(map[trainKey]vtBoardTrain)
 	var mu sync.Mutex
 	var wg sync.WaitGroup
-	var fetchErrors int
+	var fetchErrors, boardCacheHits, boardsCompleted atomic.Int32
+	totalBoards := int32(len(queries))
 
-	for _, station := range anchors {
-		for _, boardType := range []string{"partenze", "arrivi"} {
-			wg.Add(1)
-			go func(st, bType string) {
-				defer wg.Done()
-				endpoint := fmt.Sprintf("%s/%s/%s/%s", c.baseURL, bType, url.PathEscape(st), jsDate)
-				var list []vtBoardTrain
-				ok, err := c.getJSON(ctx, endpoint, &list)
-				if err != nil {
-					c.logger.Warn("Errore interrogazione tabellone stazione",
-						"station", st, "board", bType, "err", err)
-					mu.Lock()
-					fetchErrors++
-					mu.Unlock()
-					return
+	c.logger.Info("Avvio interrogazione tabelloni stazione (Oggi + Domani)",
+		"anchors", len(anchors),
+		"total_board_slots", totalBoards,
+	)
+
+	for _, q := range queries {
+		slotKey := fmt.Sprintf("%s:%s:%s", q.station, q.boardType, q.queryTime.Format("20060102-15"))
+		if !q.isLive {
+			if cachedList, ok := cache.GetBoard(slotKey, q.cacheTTL, now); ok {
+				boardCacheHits.Add(1)
+				done := boardsCompleted.Add(1)
+				if done%100 == 0 || done == totalBoards {
+					c.logger.Info("Avanzamento tabelloni",
+						"completed", done, "total", totalBoards, "cache_hits", boardCacheHits.Load())
 				}
-				if !ok {
-					return
-				}
-				mu.Lock()
-				for _, t := range list {
+				for _, t := range cachedList {
 					if t.NumeroTreno == 0 || t.CodOrigine == "" || t.DataPartenzaTreno == 0 {
 						continue
 					}
-					key := trainKey{
+					k := trainKey{
 						OriginCode: t.CodOrigine,
 						Number:     t.NumeroTreno,
 						Departure:  t.DataPartenzaTreno,
 					}
+					if _, exists := discovered[k]; !exists {
+						discovered[k] = t
+					}
+				}
+				continue
+			}
+		}
+
+		wg.Add(1)
+		go func(bq boardQuery, sKey string) {
+			defer wg.Done()
+			defer func() {
+				done := boardsCompleted.Add(1)
+				if done%100 == 0 || done == totalBoards {
+					c.logger.Info("Avanzamento tabelloni",
+						"completed", done, "total", totalBoards, "cache_hits", boardCacheHits.Load())
+				}
+			}()
+			jsDate := url.PathEscape(bq.queryTime.Format("Mon Jan 02 2006 15:04:05 GMT-0700 (MST)"))
+			endpoint := fmt.Sprintf("%s/%s/%s/%s", c.baseURL, bq.boardType, url.PathEscape(bq.station), jsDate)
+			var list []vtBoardTrain
+			ok, err := c.getJSON(ctx, endpoint, &list)
+			if err != nil {
+				c.logger.Warn("Errore interrogazione tabellone stazione",
+					"station", bq.station, "board", bq.boardType, "err", err)
+				fetchErrors.Add(1)
+				return
+			}
+			if !ok {
+				return
+			}
+			if !bq.isLive {
+				cache.PutBoard(sKey, list, now)
+			}
+			mu.Lock()
+			for _, t := range list {
+				if t.NumeroTreno == 0 || t.CodOrigine == "" || t.DataPartenzaTreno == 0 {
+					continue
+				}
+				key := trainKey{
+					OriginCode: t.CodOrigine,
+					Number:     t.NumeroTreno,
+					Departure:  t.DataPartenzaTreno,
+				}
+				// Manteniamo l'informazione più aggiornata (live sovrascrive slot)
+				if _, exists := discovered[key]; !exists || bq.isLive {
 					discovered[key] = t
 				}
-				mu.Unlock()
-			}(station, boardType)
-		}
+			}
+			mu.Unlock()
+		}(q, slotKey)
 	}
 	wg.Wait()
 
-	if len(discovered) == 0 && fetchErrors > 0 {
-		return nil, fmt.Errorf("impossibile raggiungere le API pubbliche (%d errori)", fetchErrors)
+	if len(discovered) == 0 && fetchErrors.Load() > 0 {
+		return nil, fmt.Errorf("impossibile raggiungere le API pubbliche (%d errori)", fetchErrors.Load())
 	}
 
-	details := make([]vtTrainDetail, 0, len(discovered))
-	var cacheHits, shardSkipped, networkFetched atomic.Int32
+	// Ordiniamo i treni per prossimità temporale a `now`: in questo modo
+	// i treni in circolazione oggi hanno sempre priorità assoluta rispetto a domani.
+	keys := make([]trainKey, 0, len(discovered))
+	for k := range discovered {
+		keys = append(keys, k)
+	}
+	nowMs := now.UnixMilli()
+	slices.SortFunc(keys, func(a, b trainKey) int {
+		da := a.Departure - nowMs
+		if da < 0 {
+			da = -da
+		}
+		db := b.Departure - nowMs
+		if db < 0 {
+			db = -db
+		}
+		return cmp.Compare(da, db)
+	})
 
-	for key, boardInfo := range discovered {
-		// Sharding deterministico: se girano N runner su macro-aree diverse, ogni
-		// treno viene scaricato da un solo shard anche se attraversa più regioni.
+	details := make([]vtTrainDetail, 0, len(keys))
+	includedKeys := make(map[trainKey]bool, len(keys))
+	var cacheHits, shardSkipped, networkFetched, networkScheduled, budgetSkipped atomic.Int32
+
+	// Riserviamo solo una quota contenuta per il prefetch dei treni lontani (>5h nel futuro),
+	// concentrando il budget sui treni attivi o imminenti.
+	maxTotalNetwork := int32(c.maxDetailsPerRun)
+	maxFarFuturePrefetch := max(50, maxTotalNetwork/3)
+	var farFutureScheduled int32
+	farFutureCutoffMs := now.Add(5 * time.Hour).UnixMilli()
+
+	c.logger.Info("Tabelloni completati: avvio scaricamento dettagli treni",
+		"unique_trains_discovered", len(keys),
+		"network_budget", maxTotalNetwork,
+	)
+
+	for _, key := range keys {
+		boardInfo := discovered[key]
+
+		// Sharding deterministico tra più runner paralleli
 		if c.shardTotal > 1 && (key.Number%c.shardTotal) != c.shardIndex {
 			shardSkipped.Add(1)
 			continue
@@ -698,8 +937,24 @@ func (c *RailClient) FetchActiveTrains(
 		if shouldFetch, cachedDetail := cache.ShouldFetchDetail(key, boardInfo, now); !shouldFetch {
 			cacheHits.Add(1)
 			details = append(details, cachedDetail)
+			includedKeys[key] = true
 			continue
 		}
+
+		// Prenotazione atomica del budget PRIMA di lanciare la goroutine (evita overshoot)
+		if networkScheduled.Load() >= maxTotalNetwork {
+			budgetSkipped.Add(1)
+			continue
+		}
+		isFarFuture := key.Departure > farFutureCutoffMs
+		if isFarFuture && farFutureScheduled >= maxFarFuturePrefetch {
+			budgetSkipped.Add(1)
+			continue
+		}
+		if isFarFuture {
+			farFutureScheduled++
+		}
+		networkScheduled.Add(1)
 
 		wg.Add(1)
 		go func(k trainKey) {
@@ -713,20 +968,38 @@ func (c *RailClient) FetchActiveTrains(
 				return
 			}
 			if ok && len(detail.Fermate) > 0 {
-				networkFetched.Add(1)
+				fetched := networkFetched.Add(1)
+				if fetched%150 == 0 {
+					c.logger.Info("Avanzamento scaricamento dettagli treni",
+						"fetched_ok", fetched,
+						"scheduled", networkScheduled.Load(),
+						"cache_hits", cacheHits.Load(),
+						"total_discovered", len(keys),
+					)
+				}
 				cache.Put(k, detail, now)
 				mu.Lock()
 				details = append(details, detail)
+				includedKeys[k] = true
 				mu.Unlock()
 			}
 		}(key)
 	}
 	wg.Wait()
 
-	c.logger.Info("Ciclo raccolta treni completato",
+	// Integra eventuali treni di oggi/domani già presenti in cache non emersi dai tabelloni
+	startToday := time.Date(nowLocal.Year(), nowLocal.Month(), nowLocal.Day(), 0, 0, 0, 0, romeLoc).Add(-2 * time.Hour)
+	endLookahead := startToday.AddDate(0, 0, lookaheadDays+1).Add(4 * time.Hour)
+	extraCached := cache.ExportWindowDetails(startToday, endLookahead, includedKeys)
+	details = append(details, extraCached...)
+
+	c.logger.Info("Ciclo raccolta treni completato (Oggi + Domani)",
+		"anchors", len(anchors),
 		"discovered_total", len(discovered),
+		"board_cache_hits", boardCacheHits.Load(),
 		"fetched_upstream", networkFetched.Load(),
-		"reused_from_cache", cacheHits.Load(),
+		"reused_from_cache", int(cacheHits.Load())+len(extraCached),
+		"deferred_next_run", budgetSkipped.Load(),
 		"delegated_other_shards", shardSkipped.Load(),
 	)
 
@@ -1675,7 +1948,7 @@ func main() {
 		logger.Error("Nessuna stazione ancora specificata")
 		os.Exit(1)
 	}
-	ctx, cancel := context.WithTimeout(context.Background(), 8*time.Minute)
+	ctx, cancel := context.WithTimeout(context.Background(), 12*time.Minute)
 	defer cancel()
 
 	now := time.Now().UTC()
@@ -1690,7 +1963,7 @@ func main() {
 		defer client.Close()
 
 		var err error
-		trains, err = client.FetchActiveTrains(ctx, cfg.AnchorStations, stateCache, now)
+		trains, err = client.FetchActiveTrains(ctx, cfg.AnchorStations, cfg.LookaheadDays, stateCache, now)
 		if saveErr := stateCache.SaveIfDirty(cfg.StateCacheFile); saveErr != nil {
 			logger.Warn("Impossibile salvare state_cache.json", "err", saveErr)
 		}

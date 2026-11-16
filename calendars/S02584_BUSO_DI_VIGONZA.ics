@@ -1,0 +1,56 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//PL-Tracker-ICS//Inferenza Passaggi a Livello 1.26//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Passaggi a Livello - BUSO DI VIGONZA (S02584)
+X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
+ ubblici RFI/ViaggiaTreno
+X-WR-TIMEZONE:Europe/Rome
+REFRESH-INTERVAL;VALUE=DURATION:PT15M
+X-PUBLISHED-TTL:PT15M
+X-CONTENT-HASH:59d3580951581b3ee41154320a3263e49ff9006231cc233ac1ac02816fd3
+ 5520
+BEGIN:VEVENT
+UID:train-2214-S02581-20261115-S02584@pl-tracker.local
+DTSTAMP:20261115T231740Z
+SEQUENCE:0
+DTSTART:20261115T231630Z
+DTEND:20261115T232200Z
+SUMMARY:[FERMATA] REG 2214 (PADOVA -> VENEZIA S. LUCIA) ore 00:20 (+2 min)
+DESCRIPTION:Stazione/PL: BUSO DI VIGONZA (S02584)\nRegime chiusura: FERMATA
+ \nChiusura sbarre stimata: 00:16:30 - 00:22:00\nTreni coinvolti nella chiu
+ sura:\n  - REG 2214 (PADOVA -> VENEZIA S. LUCIA) (+2m)\nRitardo massimo ri
+ levato: 2 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one con ritardo propagato (+2 min)
+LOCATION:Passaggio a Livello / Stazione BUSO DI VIGONZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9715-S01700-20261115-S02584@pl-tracker.local
+DTSTAMP:20261115T231740Z
+SEQUENCE:0
+DTSTART:20261115T233541Z
+DTEND:20261115T233926Z
+SUMMARY:[TRANSITO VELOCE] FR 9715 (MILANO CENTRALE -> VENEZIA S. LUCIA) ore
+  00:38 (+4 min)
+DESCRIPTION:Stazione/PL: BUSO DI VIGONZA (S02584)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 00:35:41 - 00:39:26\nTreni coinvolti ne
+ lla chiusura:\n  - FR 9715 (MILANO CENTRALE -> VENEZIA S. LUCIA) (+4m) [Tr
+ ansito]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Transito stimato senza fermata (30% tratta PADOVA -> V
+ ENEZIA MESTRE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione BUSO DI VIGONZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:FR
+END:VEVENT
+END:VCALENDAR
