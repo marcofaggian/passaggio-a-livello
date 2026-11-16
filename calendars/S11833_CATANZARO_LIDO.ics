@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:2730204ae8f3ee1937cd7d69ec448e86a634673886c45706304d5ae41469
- 27ba
+X-CONTENT-HASH:8775916bf76a179cb6bdde68fffdd04e956950ac110fb0e9f9c20f659538
+ 1697
 BEGIN:VEVENT
 UID:train-5528--20261115-S11833@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
 DTSTART:20261116T082630Z
 DTEND:20261116T083100Z
 SUMMARY:[FERMATA] REG 5528 (REGGIO DI CALABRIA CENTRALE -> CATANZARO LIDO) 
@@ -34,14 +34,58 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-558--20261115-S11833@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T111515Z
-DTEND:20261116T112000Z
-SUMMARY:[FERMATA] IC 558 (BARI CENTRALE -> VILLA S.GIOVANNI) ore 12:19
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T112515Z
+DTEND:20261116T113000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:25 - 12:30 (primo: IC 558) (+10 mi
+ n)
+DESCRIPTION:Stazione/PL: CATANZARO LIDO (S11833)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:25:15 - 12:30:00\nTreni c
+ oinvolti nella chiusura:\n  - IC 558 (BARI CENTRALE -> VILLA S.GIOVANNI) (
+ +10m)\n  - IC 558 (BARI CENTRALE -> VILLA S.GIOVANNI) (+10m)\nRitardo mass
+ imo rilevato: 10 min\nAffidabilità stima: 90%\nNota normativa/euristica: 
+ Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
+ ore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CATANZARO LIDO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:10
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-5530--20261115-S11833@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T122330Z
+DTEND:20261116T122800Z
+SUMMARY:[FERMATA] REG 5530 (REGGIO DI CALABRIA CENTRALE -> CATANZARO LIDO) 
+ ore 13:27
 DESCRIPTION:Stazione/PL: CATANZARO LIDO (S11833)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 12:15:15 - 12:20:00\nTreni coinvolti nella chius
- ura:\n  - IC 558 (BARI CENTRALE -> VILLA S.GIOVANNI)\nRitardo massimo rile
+ nChiusura sbarre stimata: 13:23:30 - 13:28:00\nTreni coinvolti nella chius
+ ura:\n  - REG 5530 (REGGIO DI CALABRIA CENTRALE -> CATANZARO LIDO)\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
+ ica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione CATANZARO LIDO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-562--20261115-S11833@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T133615Z
+DTEND:20261116T134100Z
+SUMMARY:[FERMATA] IC 562 (VILLA S.GIOVANNI -> BARI CENTRALE) ore 14:40
+DESCRIPTION:Stazione/PL: CATANZARO LIDO (S11833)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 14:36:15 - 14:41:00\nTreni coinvolti nella chius
+ ura:\n  - IC 562 (VILLA S.GIOVANNI -> BARI CENTRALE)\nRitardo massimo rile
  vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
  e da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione CATANZARO LIDO
@@ -53,89 +97,44 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-5530--20261115-S11833@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T122330Z
-DTEND:20261116T122800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:23 - 13:28 (primo: REG 5530)
-DESCRIPTION:Stazione/PL: CATANZARO LIDO (S11833)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:23:30 - 13:28:00\nTreni c
- oinvolti nella chiusura:\n  - REG 5530 (REGGIO DI CALABRIA CENTRALE -> CAT
- ANZARO LIDO)\n  - REG 5530 (REGGIO DI CALABRIA CENTRALE -> CATANZARO LIDO)
- \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativ
- a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
- i (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CATANZARO LIDO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-562--20261115-S11833@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T133615Z
-DTEND:20261116T134100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:36 - 14:41 (primo: IC 562)
-DESCRIPTION:Stazione/PL: CATANZARO LIDO (S11833)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:36:15 - 14:41:00\nTreni c
- oinvolti nella chiusura:\n  - IC 562 (VILLA S.GIOVANNI -> BARI CENTRALE)\n
-   - IC 562 (VILLA S.GIOVANNI -> BARI CENTRALE)\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura contin
- ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CATANZARO LIDO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
 UID:train-566--20261115-S11833@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T155915Z
-DTEND:20261116T160400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:59 - 17:04 (primo: IC 566)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T155615Z
+DTEND:20261116T160100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:56 - 17:01 (primo: IC 566)
 DESCRIPTION:Stazione/PL: CATANZARO LIDO (S11833)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:59:15 - 17:04:00\nTreni c
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:56:15 - 17:01:00\nTreni c
  oinvolti nella chiusura:\n  - IC 566 (LECCE -> REGGIO DI CALABRIA CENTRALE
  )\n  - IC 566 (LECCE -> REGGIO DI CALABRIA CENTRALE)\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura 
- continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+ vato: -3 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura
+  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
+  soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CATANZARO LIDO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:-3
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5536--20261115-S11833@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T182930Z
 DTEND:20261116T183400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:29 - 19:34 (primo: REG 5536)
-DESCRIPTION:Stazione/PL: CATANZARO LIDO (S11833)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:29:30 - 19:34:00\nTreni c
- oinvolti nella chiusura:\n  - REG 5536 (REGGIO DI CALABRIA CENTRALE -> CAT
- ANZARO LIDO)\n  - REG 5536 (REGGIO DI CALABRIA CENTRALE -> CATANZARO LIDO)
- \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativ
- a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
- i (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 5536 (REGGIO DI CALABRIA CENTRALE -> CATANZARO LIDO) 
+ ore 19:33
+DESCRIPTION:Stazione/PL: CATANZARO LIDO (S11833)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 19:29:30 - 19:34:00\nTreni coinvolti nella chius
+ ura:\n  - REG 5536 (REGGIO DI CALABRIA CENTRALE -> CATANZARO LIDO)\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
+ ica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione CATANZARO LIDO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

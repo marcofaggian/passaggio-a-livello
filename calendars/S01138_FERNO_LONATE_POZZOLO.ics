@@ -9,20 +9,63 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:321c9412fdbc55ce4e23206fb333c3a33b981988d65700a74ab86f68cd94
- ac02
+X-CONTENT-HASH:0b644c651b62ccfc63201bf1a463043e37653f91a0e1e37a4ff28cb42371
+ b1c0
 BEGIN:VEVENT
 UID:train-303--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T035542Z
 DTEND:20261116T040112Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 04:55 - 05:01 (primo: REG 303)
+SUMMARY:[TRANSITO VELOCE] REG 303 (MILANO CADORNA -> MALPENSA AEROPORTO TER
+ MINAL 2) ore 04:59
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 04:55:42 - 05:01:12\
- nTreni coinvolti nella chiusura:\n  - REG 303 (MILANO CADORNA -> MALPENSA 
- AEROPORTO TERMINAL 2) [Transito]\n  - REG 303 (MILANO CADORNA -> MALPENSA 
- AEROPORTO TERMINAL 2) [Transito]\nRitardo massimo rilevato: 0 min\nAffidab
+ TRANSITO VELOCE\nChiusura sbarre stimata: 04:55:42 - 05:01:12\nTreni coinv
+ olti nella chiusura:\n  - REG 303 (MILANO CADORNA -> MALPENSA AEROPORTO TE
+ RMINAL 2) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima
+ : 78%\nNota normativa/euristica: Transito stimato senza fermata (55% tratt
+ a BUSTO ARSIZIO NORD -> MALPENSA AEROPORTO TERMINAL 1\; pedale annuncio fi
+ sso Vmax)
+LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2917--20261115-S01138@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T044130Z
+DTEND:20261116T044600Z
+SUMMARY:[FERMATA] REG 2917 (GALLARATE -> MILANO CENTRALE) ore 05:45
+DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
+ FERMATA\nChiusura sbarre stimata: 05:41:30 - 05:46:00\nTreni coinvolti nel
+ la chiusura:\n  - REG 2917 (GALLARATE -> MILANO CENTRALE)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
+ isione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-312--20261115-S01138@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T045548Z
+DTEND:20261116T050118Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:55 - 06:01 (primo: REG 312)
+DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:55:48 - 06:01:18\
+ nTreni coinvolti nella chiusura:\n  - REG 312 (MALPENSA AEROPORTO TERMINAL
+  2 -> MILANO CADORNA) [Transito]\n  - REG 312 (MALPENSA AEROPORTO TERMINAL
+  2 -> MILANO CADORNA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidab
  ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni
  : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
  mbero stradale (120s)
@@ -35,31 +78,9 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2917--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T044130Z
-DTEND:20261116T044600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:41 - 05:46 (primo: REG 2917)
-DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:41:30 - 05:46:00\
- nTreni coinvolti nella chiusura:\n  - REG 2917 (GALLARATE -> MILANO CENTRA
- LE)\n  - REG 2917 (GALLARATE -> MILANO CENTRALE)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura cont
- inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-2919--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
 DTSTART:20261116T051130Z
 DTEND:20261116T051600Z
 SUMMARY:[FERMATA] REG 2919 (GALLARATE -> MILANO CENTRALE) ore 06:15
@@ -78,62 +99,60 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-314--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T052504Z
-DTEND:20261116T053034Z
-SUMMARY:[TRANSITO VELOCE] REG 314 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO 
- CADORNA) ore 06:29
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T052634Z
+DTEND:20261116T053204Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:26 - 06:32 (primo: REG 314)
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 06:25:04 - 06:30:34\nTreni coinv
- olti nella chiusura:\n  - REG 314 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO
-  CADORNA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 78%\nNota normativa/euristica: Transito stimato senza fermata (54% tratt
- a MALPENSA AEROPORTO TERMINAL 1 -> BUSTO ARSIZIO NORD\; pedale annuncio fi
- sso Vmax)
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:26:34 - 06:32:04\
+ nTreni coinvolti nella chiusura:\n  - REG 314 (MALPENSA AEROPORTO TERMINAL
+  2 -> MILANO CADORNA) [Transito]\n  - REG 314 (MALPENSA AEROPORTO TERMINAL
+  2 -> MILANO CADORNA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidab
+ ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2921--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T054130Z
 DTEND:20261116T054600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:41 - 06:46 (primo: REG 2921)
+SUMMARY:[FERMATA] REG 2921 (GALLARATE -> MILANO CENTRALE) ore 06:45
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:41:30 - 06:46:00\
- nTreni coinvolti nella chiusura:\n  - REG 2921 (GALLARATE -> MILANO CENTRA
- LE)\n  - REG 2921 (GALLARATE -> MILANO CENTRALE)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura cont
- inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
+ FERMATA\nChiusura sbarre stimata: 06:41:30 - 06:46:00\nTreni coinvolti nel
+ la chiusura:\n  - REG 2921 (GALLARATE -> MILANO CENTRALE)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
+ isione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-316--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:2
-DTSTART:20261116T055504Z
-DTEND:20261116T060034Z
+DTSTAMP:20261116T104738Z
+SEQUENCE:3
+DTSTART:20261116T055451Z
+DTEND:20261116T060021Z
 SUMMARY:[TRANSITO VELOCE] REG 316 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO 
  CADORNA) ore 06:59
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 06:55:04 - 07:00:34\nTreni coinv
+ TRANSITO VELOCE\nChiusura sbarre stimata: 06:54:51 - 07:00:21\nTreni coinv
  olti nella chiusura:\n  - REG 316 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO
   CADORNA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 78%\nNota normativa/euristica: Transito stimato senza fermata (54% tratt
+ : 78%\nNota normativa/euristica: Transito stimato senza fermata (51% tratt
  a MALPENSA AEROPORTO TERMINAL 1 -> BUSTO ARSIZIO NORD\; pedale annuncio fi
  sso Vmax)
 LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
@@ -146,38 +165,42 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2920--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
 DTSTART:20261116T061030Z
-DTEND:20261116T061500Z
-SUMMARY:[FERMATA] REG 2920 (MILANO CENTRALE -> GALLARATE) ore 07:14
+DTEND:20261116T061805Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:10 - 07:18 (primo: REG 2920) (+1 m
+ in)
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- FERMATA\nChiusura sbarre stimata: 07:10:30 - 07:15:00\nTreni coinvolti nel
- la chiusura:\n  - REG 2920 (MILANO CENTRALE -> GALLARATE)\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
- isione da traccia oraria regolare
+ CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 07:10:30 - 07:18:05\
+ nTreni coinvolti nella chiusura:\n  - REG 2920 (MILANO CENTRALE -> GALLARA
+ TE)\n  - REG 2923 (GALLARATE -> MILANO CENTRALE) (+1m)\n  - REG 2923 (GALL
+ ARATE -> MILANO CENTRALE) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabi
+ lità stima: 90%\nNota normativa/euristica: Chiusura continua per 3 treni:
+  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-318--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:2
-DTSTART:20261116T062504Z
-DTEND:20261116T063112Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:25 - 07:31 (primo: REG 318)
+UID:train-313--20261115-S01138@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T062617Z
+DTEND:20261116T063212Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:26 - 07:32 (primo: REG 313)
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 07:25:04 - 07:31:12\
- nTreni coinvolti nella chiusura:\n  - REG 318 (MALPENSA AEROPORTO TERMINAL
-  2 -> MILANO CADORNA) [Transito]\n  - REG 318 (MALPENSA AEROPORTO TERMINAL
-  2 -> MILANO CADORNA) [Transito]\n  - REG 313 (MILANO CADORNA -> MALPENSA 
+ CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 07:26:17 - 07:32:12\
+ nTreni coinvolti nella chiusura:\n  - REG 313 (MILANO CADORNA -> MALPENSA 
  AEROPORTO TERMINAL 2) [Transito]\n  - REG 313 (MILANO CADORNA -> MALPENSA 
- AEROPORTO TERMINAL 2) [Transito]\nRitardo massimo rilevato: 0 min\nAffidab
+ AEROPORTO TERMINAL 2) [Transito]\n  - REG 318 (MALPENSA AEROPORTO TERMINAL
+  2 -> MILANO CADORNA) [Transito]\n  - REG 318 (MALPENSA AEROPORTO TERMINAL
+  2 -> MILANO CADORNA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidab
  ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni
  : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
  mbero stradale (120s)
@@ -191,38 +214,15 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-315--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T065542Z
 DTEND:20261116T070112Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:55 - 08:01 (primo: REG 315)
+SUMMARY:[TRANSITO VELOCE] REG 315 (MILANO CADORNA -> MALPENSA AEROPORTO TER
+ MINAL 2) ore 07:59
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:55:42 - 08:01:12\
- nTreni coinvolti nella chiusura:\n  - REG 315 (MILANO CADORNA -> MALPENSA 
- AEROPORTO TERMINAL 2) [Transito]\n  - REG 315 (MILANO CADORNA -> MALPENSA 
- AEROPORTO TERMINAL 2) [Transito]\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-319--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T072542Z
-DTEND:20261116T073112Z
-SUMMARY:[TRANSITO VELOCE] REG 319 (MILANO CADORNA -> MALPENSA AEROPORTO TER
- MINAL 2) ore 08:29
-DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 08:25:42 - 08:31:12\nTreni coinv
- olti nella chiusura:\n  - REG 319 (MILANO CADORNA -> MALPENSA AEROPORTO TE
+ TRANSITO VELOCE\nChiusura sbarre stimata: 07:55:42 - 08:01:12\nTreni coinv
+ olti nella chiusura:\n  - REG 315 (MILANO CADORNA -> MALPENSA AEROPORTO TE
  RMINAL 2) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima
  : 78%\nNota normativa/euristica: Transito stimato senza fermata (55% tratt
  a BUSTO ARSIZIO NORD -> MALPENSA AEROPORTO TERMINAL 1\; pedale annuncio fi
@@ -236,9 +236,32 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-319--20261115-S01138@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T073209Z
+DTEND:20261116T073739Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:32 - 08:37 (primo: REG 319)
+DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:32:09 - 08:37:39\
+ nTreni coinvolti nella chiusura:\n  - REG 319 (MILANO CADORNA -> MALPENSA 
+ AEROPORTO TERMINAL 2) [Transito]\n  - REG 319 (MILANO CADORNA -> MALPENSA 
+ AEROPORTO TERMINAL 2) [Transito]\nRitardo massimo rilevato: 0 min\nAffidab
+ ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-2926--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
 DTSTART:20261116T073945Z
 DTEND:20261116T074515Z
 SUMMARY:[TRANSITO VELOCE] REG 2926 (MILANO CENTRALE -> GALLARATE) ore 08:44
@@ -258,57 +281,102 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2933--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T084130Z
-DTEND:20261116T084600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:41 - 09:46 (primo: REG 2933)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T084024Z
+DTEND:20261116T084653Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:40 - 09:46 (primo: REG 2933) (+1 m
+ in)
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:41:30 - 09:46:00\
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:40:24 - 09:46:53\
  nTreni coinvolti nella chiusura:\n  - REG 2933 (GALLARATE -> MILANO CENTRA
- LE)\n  - REG 2933 (GALLARATE -> MILANO CENTRALE)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura cont
- inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
+ LE) (+1m)\n  - REG 2933 (GALLARATE -> MILANO CENTRALE) (+1m)\nRitardo mass
+ imo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: C
+ hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
+ re alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-332--20261115-S01138@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T090104Z
+DTEND:20261116T090634Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:01 - 10:06 (primo: REG 332)
+DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:01:04 - 10:06:34\
+ nTreni coinvolti nella chiusura:\n  - REG 332 (MALPENSA AEROPORTO TERMINAL
+  2 -> MILANO CADORNA) [Transito]\n  - REG 332 (MALPENSA AEROPORTO TERMINAL
+  2 -> MILANO CADORNA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidab
+ ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2937--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-334--20261115-S01138@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T094130Z
-DTEND:20261116T094600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:41 - 10:46 (primo: REG 2937)
+DTSTART:20261116T092903Z
+DTEND:20261116T093433Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:29 - 10:34 (primo: REG 334)
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:41:30 - 10:46:00\
- nTreni coinvolti nella chiusura:\n  - REG 2937 (GALLARATE -> MILANO CENTRA
- LE)\n  - REG 2937 (GALLARATE -> MILANO CENTRALE)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura cont
- inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:29:03 - 10:34:33\
+ nTreni coinvolti nella chiusura:\n  - REG 334 (MALPENSA AEROPORTO TERMINAL
+  2 -> MILANO CADORNA) [Transito]\n  - REG 334 (MALPENSA AEROPORTO TERMINAL
+  2 -> MILANO CADORNA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidab
+ ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2937--20261115-S01138@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T094130Z
+DTEND:20261116T094600Z
+SUMMARY:[FERMATA] REG 2937 (GALLARATE -> MILANO CENTRALE) ore 10:45
+DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
+ FERMATA\nChiusura sbarre stimata: 10:41:30 - 10:46:00\nTreni coinvolti nel
+ la chiusura:\n  - REG 2937 (GALLARATE -> MILANO CENTRALE)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
+ isione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-336--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T095504Z
-DTEND:20261116T100034Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:55 - 11:00 (primo: REG 336)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T095850Z
+DTEND:20261116T100420Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:58 - 11:04 (primo: REG 336)
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:55:04 - 11:00:34\
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:58:50 - 11:04:20\
  nTreni coinvolti nella chiusura:\n  - REG 336 (MALPENSA AEROPORTO TERMINAL
   2 -> MILANO CADORNA) [Transito]\n  - REG 336 (MALPENSA AEROPORTO TERMINAL
   2 -> MILANO CADORNA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidab
@@ -325,43 +393,112 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2939--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T101045Z
-DTEND:20261116T101615Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:10 - 11:16 (primo: REG 2939)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T101024Z
+DTEND:20261116T101554Z
+SUMMARY:[TRANSITO VELOCE] REG 2939 (GALLARATE -> MILANO CENTRALE) ore 11:14
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:10:45 - 11:16:15\
- nTreni coinvolti nella chiusura:\n  - REG 2939 (GALLARATE -> MILANO CENTRA
- LE) [Transito]\n  - REG 2939 (GALLARATE -> MILANO CENTRALE) [Transito]\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
- s) inferiore alla soglia minima di sgombero stradale (120s)
+ TRANSITO VELOCE\nChiusura sbarre stimata: 11:10:24 - 11:15:54\nTreni coinv
+ olti nella chiusura:\n  - REG 2939 (GALLARATE -> MILANO CENTRALE) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (51% tratta MALPENSA AEROPOR
+ TO TERMINAL 1 -> BUSTO ARSIZIO NORD\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-338--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-333--20261115-S01138@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T102504Z
-DTEND:20261116T103112Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:25 - 11:31 (primo: REG 338)
+DTSTART:20261116T102542Z
+DTEND:20261116T103424Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:25 - 11:34 (primo: REG 333) (+5 mi
+ n)
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 11:25:04 - 11:31:12\
- nTreni coinvolti nella chiusura:\n  - REG 338 (MALPENSA AEROPORTO TERMINAL
-  2 -> MILANO CADORNA) [Transito]\n  - REG 338 (MALPENSA AEROPORTO TERMINAL
-  2 -> MILANO CADORNA) [Transito]\n  - REG 333 (MILANO CADORNA -> MALPENSA 
- AEROPORTO TERMINAL 2) [Transito]\n  - REG 333 (MILANO CADORNA -> MALPENSA 
- AEROPORTO TERMINAL 2) [Transito]\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+ CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 11:25:42 - 11:34:24\
+ nTreni coinvolti nella chiusura:\n  - REG 333 (MILANO CADORNA -> MALPENSA 
+ AEROPORTO TERMINAL 2) [Transito]\n  - REG 338 (MALPENSA AEROPORTO TERMINAL
+  2 -> MILANO CADORNA) (+5m) [Transito]\n  - REG 338 (MALPENSA AEROPORTO TE
+ RMINAL 2 -> MILANO CADORNA) (+5m) [Transito]\nRitardo massimo rilevato: 5 
+ min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua
+  per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2938--20261115-S01138@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T103917Z
+DTEND:20261116T104447Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:39 - 11:44 (primo: REG 2938)
+DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:39:17 - 11:44:47\
+ nTreni coinvolti nella chiusura:\n  - REG 2938 (MILANO CENTRALE -> GALLARA
+ TE) [Transito]\n  - REG 2938 (MILANO CENTRALE -> GALLARATE) [Transito]\nRi
+ tardo massimo rilevato: -5 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-335--20261115-S01138@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T105642Z
+DTEND:20261116T110212Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:56 - 12:02 (primo: REG 335) (+1 mi
+ n)
+DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:56:42 - 12:02:12\
+ nTreni coinvolti nella chiusura:\n  - REG 335 (MILANO CADORNA -> MALPENSA 
+ AEROPORTO TERMINAL 2) (+1m) [Transito]\n  - REG 335 (MILANO CADORNA -> MAL
+ PENSA AEROPORTO TERMINAL 2) (+1m) [Transito]\nRitardo massimo rilevato: 1 
+ min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua
+  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2940--20261115-S01138@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T111030Z
+DTEND:20261116T111554Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:10 - 12:15 (primo: REG 2940)
+DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 12:10:30 - 12:15:54\
+ nTreni coinvolti nella chiusura:\n  - REG 2940 (MILANO CENTRALE -> GALLARA
+ TE)\n  - REG 2940 (MILANO CENTRALE -> GALLARATE)\n  - REG 2943 (GALLARATE 
+ -> MILANO CENTRALE) [Transito]\n  - REG 2943 (GALLARATE -> MILANO CENTRALE
+ ) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nN
+ ota normativa/euristica: Chiusura continua per 4 treni: intervallo utile t
+ ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
+ )
 LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -371,60 +508,85 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2938--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T103945Z
-DTEND:20261116T104515Z
-SUMMARY:[TRANSITO VELOCE] REG 2938 (MILANO CENTRALE -> GALLARATE) ore 11:44
+UID:train-342--20261115-S01138@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T112451Z
+DTEND:20261116T113021Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:24 - 12:30 (primo: REG 342)
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 11:39:45 - 11:45:15\nTreni coinv
- olti nella chiusura:\n  - REG 2938 (MILANO CENTRALE -> GALLARATE) [Transit
- o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Transito stimato senza fermata (55% tratta BUSTO ARSIZIO NO
- RD -> MALPENSA AEROPORTO TERMINAL 1\; pedale annuncio fisso Vmax)
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:24:51 - 12:30:21\
+ nTreni coinvolti nella chiusura:\n  - REG 342 (MALPENSA AEROPORTO TERMINAL
+  2 -> MILANO CADORNA) [Transito]\n  - REG 342 (MALPENSA AEROPORTO TERMINAL
+  2 -> MILANO CADORNA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidab
+ ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-335--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T105542Z
-DTEND:20261116T110112Z
-SUMMARY:[TRANSITO VELOCE] REG 335 (MILANO CADORNA -> MALPENSA AEROPORTO TER
- MINAL 2) ore 11:59
-DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 11:55:42 - 12:01:12\nTreni coinv
- olti nella chiusura:\n  - REG 335 (MILANO CADORNA -> MALPENSA AEROPORTO TE
- RMINAL 2) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 78%\nNota normativa/euristica: Transito stimato senza fermata (55% tratt
- a BUSTO ARSIZIO NORD -> MALPENSA AEROPORTO TERMINAL 1\; pedale annuncio fi
- sso Vmax)
-LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2942--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T113945Z
-DTEND:20261116T114515Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:39 - 12:45 (primo: REG 2942)
+DTEND:20261116T114600Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:39 - 12:46 (primo: REG 2942)
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:39:45 - 12:45:15\
+ CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 12:39:45 - 12:46:00\
  nTreni coinvolti nella chiusura:\n  - REG 2942 (MILANO CENTRALE -> GALLARA
- TE) [Transito]\n  - REG 2942 (MILANO CENTRALE -> GALLARATE) [Transito]\nRi
+ TE) [Transito]\n  - REG 2945 (GALLARATE -> MILANO CENTRALE)\n  - REG 2945 
+ (GALLARATE -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabil
+ ità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: 
+ intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
+ ero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-344--20261115-S01138@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T115451Z
+DTEND:20261116T120021Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:54 - 13:00 (primo: REG 344)
+DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:54:51 - 13:00:21\
+ nTreni coinvolti nella chiusura:\n  - REG 344 (MALPENSA AEROPORTO TERMINAL
+  2 -> MILANO CADORNA) [Transito]\n  - REG 344 (MALPENSA AEROPORTO TERMINAL
+  2 -> MILANO CADORNA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidab
+ ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2946--20261115-S01138@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T123945Z
+DTEND:20261116T124515Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:39 - 13:45 (primo: REG 2946)
+DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:39:45 - 13:45:15\
+ nTreni coinvolti nella chiusura:\n  - REG 2946 (MILANO CENTRALE -> GALLARA
+ TE) [Transito]\n  - REG 2946 (MILANO CENTRALE -> GALLARATE) [Transito]\nRi
  tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
  ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
  s) inferiore alla soglia minima di sgombero stradale (120s)
@@ -437,17 +599,39 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2955--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T141045Z
-DTEND:20261116T141615Z
-SUMMARY:[TRANSITO VELOCE] REG 2955 (GALLARATE -> MILANO CENTRALE) ore 15:15
+UID:train-2953--20261115-S01138@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T134130Z
+DTEND:20261116T134600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:41 - 14:46 (primo: REG 2953)
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 15:10:45 - 15:16:15\nTreni coinv
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:41:30 - 14:46:00\
+ nTreni coinvolti nella chiusura:\n  - REG 2953 (GALLARATE -> MILANO CENTRA
+ LE)\n  - REG 2953 (GALLARATE -> MILANO CENTRALE)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2955--20261115-S01138@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T141024Z
+DTEND:20261116T141554Z
+SUMMARY:[TRANSITO VELOCE] REG 2955 (GALLARATE -> MILANO CENTRALE) ore 15:14
+DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
+ TRANSITO VELOCE\nChiusura sbarre stimata: 15:10:24 - 15:15:54\nTreni coinv
  olti nella chiusura:\n  - REG 2955 (GALLARATE -> MILANO CENTRALE) [Transit
  o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Transito stimato senza fermata (54% tratta MALPENSA AEROPOR
+ iva/euristica: Transito stimato senza fermata (51% tratta MALPENSA AEROPOR
  TO TERMINAL 1 -> BUSTO ARSIZIO NORD\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
 STATUS:CONFIRMED
@@ -459,17 +643,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-354--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T142504Z
-DTEND:20261116T143034Z
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T142451Z
+DTEND:20261116T143021Z
 SUMMARY:[TRANSITO VELOCE] REG 354 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO 
  CADORNA) ore 15:29
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 15:25:04 - 15:30:34\nTreni coinv
+ TRANSITO VELOCE\nChiusura sbarre stimata: 15:24:51 - 15:30:21\nTreni coinv
  olti nella chiusura:\n  - REG 354 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO
   CADORNA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 78%\nNota normativa/euristica: Transito stimato senza fermata (54% tratt
+ : 78%\nNota normativa/euristica: Transito stimato senza fermata (51% tratt
  a MALPENSA AEROPORTO TERMINAL 1 -> BUSTO ARSIZIO NORD\; pedale annuncio fi
  sso Vmax)
 LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
@@ -482,62 +666,42 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2957--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
 DTSTART:20261116T144130Z
 DTEND:20261116T144600Z
-SUMMARY:[FERMATA] REG 2957 (GALLARATE -> MILANO CENTRALE) ore 15:45
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:41 - 15:46 (primo: REG 2957)
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- FERMATA\nChiusura sbarre stimata: 15:41:30 - 15:46:00\nTreni coinvolti nel
- la chiusura:\n  - REG 2957 (GALLARATE -> MILANO CENTRALE)\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
- isione da traccia oraria regolare
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:41:30 - 15:46:00\
+ nTreni coinvolti nella chiusura:\n  - REG 2957 (GALLARATE -> MILANO CENTRA
+ LE)\n  - REG 2957 (GALLARATE -> MILANO CENTRALE)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-356--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T145504Z
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T145451Z
 DTEND:20261116T150112Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:55 - 16:01 (primo: REG 356)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:54 - 16:01 (primo: REG 356)
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:55:04 - 16:01:12\
+ CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 15:54:51 - 16:01:12\
  nTreni coinvolti nella chiusura:\n  - REG 356 (MALPENSA AEROPORTO TERMINAL
+  2 -> MILANO CADORNA) [Transito]\n  - REG 356 (MALPENSA AEROPORTO TERMINAL
   2 -> MILANO CADORNA) [Transito]\n  - REG 353 (MILANO CADORNA -> MALPENSA 
  AEROPORTO TERMINAL 2) [Transito]\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni
+ ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni
  : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
  mbero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2956--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T151030Z
-DTEND:20261116T151615Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:10 - 16:16 (primo: REG 2956)
-DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:10:30 - 16:16:15\
- nTreni coinvolti nella chiusura:\n  - REG 2956 (MILANO CENTRALE -> GALLARA
- TE)\n  - REG 2959 (GALLARATE -> MILANO CENTRALE) [Transito]\n  - REG 2959 
- (GALLARATE -> MILANO CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
- r 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
- ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -547,20 +711,19 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-355--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T152542Z
-DTEND:20261116T153112Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:25 - 16:31 (primo: REG 355)
+UID:train-2956--20261115-S01138@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T151030Z
+DTEND:20261116T151554Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:10 - 16:15 (primo: REG 2956)
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:25:42 - 16:31:12\
- nTreni coinvolti nella chiusura:\n  - REG 355 (MILANO CADORNA -> MALPENSA 
- AEROPORTO TERMINAL 2) [Transito]\n  - REG 355 (MILANO CADORNA -> MALPENSA 
- AEROPORTO TERMINAL 2) [Transito]\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:10:30 - 16:15:54\
+ nTreni coinvolti nella chiusura:\n  - REG 2956 (MILANO CENTRALE -> GALLARA
+ TE)\n  - REG 2959 (GALLARATE -> MILANO CENTRALE) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -570,9 +733,33 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-358--20261115-S01138@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T152451Z
+DTEND:20261116T153112Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:24 - 16:31 (primo: REG 358)
+DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:24:51 - 16:31:12\
+ nTreni coinvolti nella chiusura:\n  - REG 358 (MALPENSA AEROPORTO TERMINAL
+  2 -> MILANO CADORNA) [Transito]\n  - REG 358 (MALPENSA AEROPORTO TERMINAL
+  2 -> MILANO CADORNA) [Transito]\n  - REG 355 (MILANO CADORNA -> MALPENSA 
+ AEROPORTO TERMINAL 2) [Transito]\nRitardo massimo rilevato: 0 min\nAffidab
+ ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-357--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
 DTSTART:20261116T155542Z
 DTEND:20261116T160112Z
 SUMMARY:[TRANSITO VELOCE] REG 357 (MILANO CADORNA -> MALPENSA AEROPORTO TER
@@ -593,9 +780,32 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-361--20261115-S01138@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T162542Z
+DTEND:20261116T163112Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:25 - 17:31 (primo: REG 361)
+DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:25:42 - 17:31:12\
+ nTreni coinvolti nella chiusura:\n  - REG 361 (MILANO CADORNA -> MALPENSA 
+ AEROPORTO TERMINAL 2) [Transito]\n  - REG 361 (MILANO CADORNA -> MALPENSA 
+ AEROPORTO TERMINAL 2) [Transito]\nRitardo massimo rilevato: 0 min\nAffidab
+ ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-2973--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
 DTSTART:20261116T184130Z
 DTEND:20261116T184600Z
 SUMMARY:[FERMATA] REG 2973 (GALLARATE -> MILANO CENTRALE) ore 19:45
@@ -614,81 +824,79 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-378--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T185504Z
-DTEND:20261116T190034Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:55 - 20:00 (primo: REG 378)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T185451Z
+DTEND:20261116T190021Z
+SUMMARY:[TRANSITO VELOCE] REG 378 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO 
+ CADORNA) ore 19:59
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:55:04 - 20:00:34\
- nTreni coinvolti nella chiusura:\n  - REG 378 (MALPENSA AEROPORTO TERMINAL
-  2 -> MILANO CADORNA) [Transito]\n  - REG 378 (MALPENSA AEROPORTO TERMINAL
-  2 -> MILANO CADORNA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+ TRANSITO VELOCE\nChiusura sbarre stimata: 19:54:51 - 20:00:21\nTreni coinv
+ olti nella chiusura:\n  - REG 378 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO
+  CADORNA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima
+ : 78%\nNota normativa/euristica: Transito stimato senza fermata (51% tratt
+ a MALPENSA AEROPORTO TERMINAL 1 -> BUSTO ARSIZIO NORD\; pedale annuncio fi
+ sso Vmax)
 LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2977--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T194130Z
 DTEND:20261116T194600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:41 - 20:46 (primo: REG 2977)
+SUMMARY:[FERMATA] REG 2977 (GALLARATE -> MILANO CENTRALE) ore 20:45
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:41:30 - 20:46:00\
- nTreni coinvolti nella chiusura:\n  - REG 2977 (GALLARATE -> MILANO CENTRA
- LE)\n  - REG 2977 (GALLARATE -> MILANO CENTRALE)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura cont
- inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
+ FERMATA\nChiusura sbarre stimata: 20:41:30 - 20:46:00\nTreni coinvolti nel
+ la chiusura:\n  - REG 2977 (GALLARATE -> MILANO CENTRALE)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
+ isione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-382--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T195504Z
-DTEND:20261116T200034Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:55 - 21:00 (primo: REG 382)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T195451Z
+DTEND:20261116T200021Z
+SUMMARY:[TRANSITO VELOCE] REG 382 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO 
+ CADORNA) ore 20:59
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:55:04 - 21:00:34\
- nTreni coinvolti nella chiusura:\n  - REG 382 (MALPENSA AEROPORTO TERMINAL
-  2 -> MILANO CADORNA) [Transito]\n  - REG 382 (MALPENSA AEROPORTO TERMINAL
-  2 -> MILANO CADORNA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+ TRANSITO VELOCE\nChiusura sbarre stimata: 20:54:51 - 21:00:21\nTreni coinv
+ olti nella chiusura:\n  - REG 382 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO
+  CADORNA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima
+ : 78%\nNota normativa/euristica: Transito stimato senza fermata (51% tratt
+ a MALPENSA AEROPORTO TERMINAL 1 -> BUSTO ARSIZIO NORD\; pedale annuncio fi
+ sso Vmax)
 LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2976--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
 DTSTART:20261116T201030Z
-DTEND:20261116T201615Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:10 - 21:16 (primo: REG 2976)
+DTEND:20261116T201554Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:10 - 21:15 (primo: REG 2976)
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:10:30 - 21:16:15\
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:10:30 - 21:15:54\
  nTreni coinvolti nella chiusura:\n  - REG 2976 (MILANO CENTRALE -> GALLARA
  TE)\n  - REG 2979 (GALLARATE -> MILANO CENTRALE) [Transito]\nRitardo massi
  mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
@@ -704,17 +912,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-384--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T202504Z
-DTEND:20261116T203034Z
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T202451Z
+DTEND:20261116T203021Z
 SUMMARY:[TRANSITO VELOCE] REG 384 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO 
  CADORNA) ore 21:29
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 21:25:04 - 21:30:34\nTreni coinv
+ TRANSITO VELOCE\nChiusura sbarre stimata: 21:24:51 - 21:30:21\nTreni coinv
  olti nella chiusura:\n  - REG 384 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO
   CADORNA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 78%\nNota normativa/euristica: Transito stimato senza fermata (54% tratt
+ : 78%\nNota normativa/euristica: Transito stimato senza fermata (51% tratt
  a MALPENSA AEROPORTO TERMINAL 1 -> BUSTO ARSIZIO NORD\; pedale annuncio fi
  sso Vmax)
 LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
@@ -727,29 +935,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2978--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
 DTSTART:20261116T203945Z
 DTEND:20261116T204515Z
-SUMMARY:[TRANSITO VELOCE] REG 2978 (MILANO CENTRALE -> GALLARATE) ore 21:44
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:39 - 21:45 (primo: REG 2978)
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 21:39:45 - 21:45:15\nTreni coinv
- olti nella chiusura:\n  - REG 2978 (MILANO CENTRALE -> GALLARATE) [Transit
- o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Transito stimato senza fermata (55% tratta BUSTO ARSIZIO NO
- RD -> MALPENSA AEROPORTO TERMINAL 1\; pedale annuncio fisso Vmax)
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:39:45 - 21:45:15\
+ nTreni coinvolti nella chiusura:\n  - REG 2978 (MILANO CENTRALE -> GALLARA
+ TE) [Transito]\n  - REG 2978 (MILANO CENTRALE -> GALLARATE) [Transito]\nRi
+ tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
+ ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
+ s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-387--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
 DTSTART:20261116T205542Z
 DTEND:20261116T210112Z
 SUMMARY:[TRANSITO VELOCE] REG 387 (MILANO CADORNA -> MALPENSA AEROPORTO TER
@@ -771,30 +980,28 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2980--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
 DTSTART:20261116T211030Z
 DTEND:20261116T211500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:10 - 22:15 (primo: REG 2980)
+SUMMARY:[FERMATA] REG 2980 (MILANO CENTRALE -> GALLARATE) ore 22:14
 DESCRIPTION:Stazione/PL: FERNO - LONATE POZZOLO (S01138)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:10:30 - 22:15:00\
- nTreni coinvolti nella chiusura:\n  - REG 2980 (MILANO CENTRALE -> GALLARA
- TE)\n  - REG 2980 (MILANO CENTRALE -> GALLARATE)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura cont
- inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
+ FERMATA\nChiusura sbarre stimata: 22:10:30 - 22:15:00\nTreni coinvolti nel
+ la chiusura:\n  - REG 2980 (MILANO CENTRALE -> GALLARATE)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
+ isione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione FERNO - LONATE POZZOLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2982--20261115-S01138@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T213945Z
 DTEND:20261116T214515Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:39 - 22:45 (primo: REG 2982)

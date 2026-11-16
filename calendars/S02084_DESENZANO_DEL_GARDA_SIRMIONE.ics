@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:5ce3752eec611a92a7a587d0137352af69adc8e5813a236a627d7bef13cd
- 13bb
+X-CONTENT-HASH:ec7bb16953e11e155a07aad221e10161d0176a54ca7eb607da2e1b3a32ec
+ 5a1a
 BEGIN:VEVENT
 UID:train-16017--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
 DTSTART:20261116T053255Z
 DTEND:20261116T053825Z
 SUMMARY:[TRANSITO VELOCE] REG 16017 (BRESCIA -> VENEZIA S.LUCIA) ore 06:37
@@ -34,8 +34,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16017--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
 DTSTART:20261116T054930Z
 DTEND:20261116T055400Z
 SUMMARY:[FERMATA] REG 16017 (BRESCIA -> VENEZIA S.LUCIA) ore 06:53
@@ -53,31 +53,56 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2608--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-9700--20261115-S02084@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T061730Z
-DTEND:20261116T062200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:17 - 07:22 (primo: REG 2608)
+DTSTART:20261116T060625Z
+DTEND:20261116T061155Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9700 (VENEZIA S.LUCIA -> MILANO CENTRALE) o
+ re 07:10 (+11 min)
 DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:17:30 - 07:
- 22:00\nTreni coinvolti nella chiusura:\n  - REG 2608 (VERONA PORTA NUOVA -
- > MILANO CENTRALE)\n  - REG 2608 (VERONA PORTA NUOVA -> MILANO CENTRALE)\n
- Ritardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/
- euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
- (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ sura: TRANSITO VELOCE\nChiusura sbarre stimata: 07:06:25 - 07:11:55\nTreni
+  coinvolti nella chiusura:\n  - TRENO 9700 (VENEZIA S.LUCIA -> MILANO CENT
+ RALE) (+11m) [Transito]\nRitardo massimo rilevato: 11 min\nAffidabilità s
+ tima: 78%\nNota normativa/euristica: Transito stimato senza fermata (69% t
+ ratta VERONA PORTA NUOVA -> PESCHIERA DEL GARDA\; pedale annuncio fisso Vm
+ ax)
 LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:11
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2608--20261115-S02084@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T061730Z
+DTEND:20261116T062900Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:17 - 07:29 (primo: REG 2608) (+12 
+ min)
+DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
+ sura: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 07:17:30 - 07:
+ 29:00\nTreni coinvolti nella chiusura:\n  - REG 2608 (VERONA PORTA NUOVA -
+ > MILANO CENTRALE)\n  - TRENO 9700 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+
+ 12m)\n  - TRENO 9700 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+12m)\nRitardo 
+ massimo rilevato: 12 min\nAffidabilità stima: 90%\nNota normativa/euristi
+ ca: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:12
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9703--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
 DTSTART:20261116T063230Z
 DTEND:20261116T063700Z
 SUMMARY:[FERMATA] TRENO 9703 (MILANO CENTRALE -> UDINE) ore 07:36
@@ -96,60 +121,81 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9702--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T064917Z
-DTEND:20261116T065447Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:49 - 07:54 (primo: TRENO 9702)
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T064905Z
+DTEND:20261116T065435Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9702 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA
+ ) ore 07:53
 DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:49:17 - 07:
- 54:47\nTreni coinvolti nella chiusura:\n  - TRENO 9702 (VENEZIA S.LUCIA ->
-  TORINO PORTA NUOVA) [Transito]\n  - TRENO 9702 (VENEZIA S.LUCIA -> TORINO
-  PORTA NUOVA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità s
- tima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: interv
- allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
- radale (120s)
+ sura: TRANSITO VELOCE\nChiusura sbarre stimata: 07:49:05 - 07:54:35\nTreni
+  coinvolti nella chiusura:\n  - TRENO 9702 (VENEZIA S.LUCIA -> TORINO PORT
+ A NUOVA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
+  78%\nNota normativa/euristica: Transito stimato senza fermata (35% tratta
+  PESCHIERA DEL GARDA -> BRESCIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2693--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-9705--20261115-S02084@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T071130Z
-DTEND:20261116T072200Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 08:11 - 08:22 (primo: REG 2693)
+DTSTART:20261116T070345Z
+DTEND:20261116T070915Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:03 - 08:09 (primo: TRENO 9705)
 DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 08:11:30 - 08:
- 22:00\nTreni coinvolti nella chiusura:\n  - REG 2693 (MILANO PORTA GARIBAL
- DI -> BOLZANO)\n  - REG 2693 (MILANO PORTA GARIBALDI -> BOLZANO)\n  - TREN
- O 9706 (VENEZIA S.LUCIA -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua 
- per 3 treni: intervallo utile tra i passaggi (90s) inferiore alla soglia m
- inima di sgombero stradale (120s)
+ sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:03:45 - 08:
+ 09:15\nTreni coinvolti nella chiusura:\n  - TRENO 9705 (MILANO CENTRALE ->
+  VENEZIA S.LUCIA) [Transito]\n  - TRENO 9705 (MILANO CENTRALE -> VENEZIA S
+ .LUCIA) [Transito]\nRitardo massimo rilevato: -5 min\nAffidabilità stima:
+  78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
+ utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
+ e (120s)
 LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2693--20261115-S02084@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T071130Z
+DTEND:20261116T072200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:11 - 08:22 (primo: REG 2693)
+DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
+ sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:11:30 - 08:
+ 22:00\nTreni coinvolti nella chiusura:\n  - REG 2693 (MILANO PORTA GARIBAL
+ DI -> BOLZANO)\n  - TRENO 9706 (VENEZIA S.LUCIA -> MILANO CENTRALE)\nRitar
+ do massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euris
+ tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (90s)
+  inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9707--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T073007Z
-DTEND:20261116T073537Z
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T073010Z
+DTEND:20261116T073540Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9707 (MILANO CENTRALE -> TRIESTE CENTRALE) 
  ore 08:34
 DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: TRANSITO VELOCE\nChiusura sbarre stimata: 08:30:07 - 08:35:37\nTreni
+ sura: TRANSITO VELOCE\nChiusura sbarre stimata: 08:30:10 - 08:35:40\nTreni
   coinvolti nella chiusura:\n  - TRENO 9707 (MILANO CENTRALE -> TRIESTE CEN
  TRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 7
  8%\nNota normativa/euristica: Transito stimato senza fermata (64% tratta B
@@ -164,89 +210,85 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2615--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T074430Z
-DTEND:20261116T080700Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 08:44 - 09:07 (primo: REG 2615)
+DTEND:20261116T074900Z
+SUMMARY:[FERMATA] REG 2615 (MILANO CENTRALE -> VERONA PORTA NUOVA) ore 08:4
+ 8
 DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: CHIUSURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 08:44:30 - 09:
- 07:00\nTreni coinvolti nella chiusura:\n  - REG 2615 (MILANO CENTRALE -> V
- ERONA PORTA NUOVA)\n  - REG 2615 (MILANO CENTRALE -> VERONA PORTA NUOVA)\n
-   - TRENO 9708 (VENEZIA S.LUCIA -> MILANO CENTRALE) [Transito]\n  - TRENO 
- 8503 (BRESCIA -> ROMA TERMINI) [Transito]\n  - TRENO 9709 (MILANO CENTRALE
-  -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 78%\nNota normativa/euristica: Chiusura continua per 5 treni: intervallo
-  utile tra i passaggi (91s) inferiore alla soglia minima di sgombero strad
- ale (120s)
+ sura: FERMATA\nChiusura sbarre stimata: 08:44:30 - 08:49:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 2615 (MILANO CENTRALE -> VERONA PORTA NUOVA)\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/
+ euristica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9713--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-9708--20261115-S02084@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T081730Z
-DTEND:20261116T082200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:17 - 09:22 (primo: TRENO 9713)
+DTSTART:20261116T075134Z
+DTEND:20261116T081223Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:51 - 09:12 (primo: TRENO 9708) (+1
+ 8 min)
 DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:17:30 - 09:
- 22:00\nTreni coinvolti nella chiusura:\n  - TRENO 9713 (UDINE -> MILANO CE
- NTRALE)\n  - TRENO 9713 (UDINE -> MILANO CENTRALE)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura co
- ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
- glia minima di sgombero stradale (120s)
+ sura: CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 08:51:34 - 09:
+ 12:23\nTreni coinvolti nella chiusura:\n  - TRENO 9708 (VENEZIA S.LUCIA ->
+  MILANO CENTRALE) (+18m) [Transito]\n  - TRENO 8503 (BRESCIA -> ROMA TERMI
+ NI) [Transito]\n  - TRENO 9709 (MILANO CENTRALE -> VENEZIA S.LUCIA)\n  - T
+ RENO 9708 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+18m) [Transito]\nRitardo 
+ massimo rilevato: 18 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:18
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9713--20261115-S02084@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T081730Z
+DTEND:20261116T082200Z
+SUMMARY:[FERMATA] TRENO 9713 (UDINE -> MILANO CENTRALE) ore 09:21
+DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
+ sura: FERMATA\nChiusura sbarre stimata: 09:17:30 - 09:22:00\nTreni coinvol
+ ti nella chiusura:\n  - TRENO 9713 (UDINE -> MILANO CENTRALE)\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: 
+ Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9710--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T083007Z
-DTEND:20261116T083537Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:30 - 09:35 (primo: TRENO 9710)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T083010Z
+DTEND:20261116T084218Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:30 - 09:42 (primo: TRENO 9710)
 DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:30:07 - 09:
- 35:37\nTreni coinvolti nella chiusura:\n  - TRENO 9710 (GENOVA BRIGNOLE ->
-  VENEZIA S.LUCIA) [Transito]\n  - TRENO 9710 (GENOVA BRIGNOLE -> VENEZIA S
- .LUCIA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
- 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo u
- tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
-  (120s)
-LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9716--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T084917Z
-DTEND:20261116T085447Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:49 - 09:54 (primo: TRENO 9716)
-DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:49:17 - 09:
- 54:47\nTreni coinvolti nella chiusura:\n  - TRENO 9716 (VENEZIA S.LUCIA ->
-  TORINO PORTA NUOVA) [Transito]\n  - TRENO 9716 (VENEZIA S.LUCIA -> TORINO
-  PORTA NUOVA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità s
- tima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: interv
- allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
- radale (120s)
+ sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:30:10 - 09:
+ 42:18\nTreni coinvolti nella chiusura:\n  - TRENO 9710 (GENOVA BRIGNOLE ->
+  VENEZIA S.LUCIA) [Transito]\n  - TRENO 9716 (VENEZIA S.LUCIA -> TORINO PO
+ RTA NUOVA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stim
+ a: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervall
+ o utile tra i passaggi (68s) inferiore alla soglia minima di sgombero stra
+ dale (120s)
 LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -257,15 +299,60 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9718--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T091730Z
-DTEND:20261116T092200Z
-SUMMARY:[FERMATA] TRENO 9718 (TRIESTE CENTRALE -> MILANO CENTRALE) ore 10:2
- 1
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T092300Z
+DTEND:20261116T093000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:23 - 10:30 (primo: TRENO 9718) (+6
+  min)
 DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: FERMATA\nChiusura sbarre stimata: 10:17:30 - 10:22:00\nTreni coinvol
- ti nella chiusura:\n  - TRENO 9718 (TRIESTE CENTRALE -> MILANO CENTRALE)\n
+ sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:23:00 - 10:
+ 30:00\nTreni coinvolti nella chiusura:\n  - TRENO 9718 (TRIESTE CENTRALE -
+ > MILANO CENTRALE) (+6m)\n  - TRENO 9718 (TRIESTE CENTRALE -> MILANO CENTR
+ ALE) (+6m)\nRitardo massimo rilevato: 6 min\nAffidabilità stima: 99%\nNot
+ a normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra
+  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2626--20261115-S02084@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T094743Z
+DTEND:20261116T095435Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:47 - 10:54 (primo: REG 2626)
+DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
+ sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:47:43 - 10:
+ 54:35\nTreni coinvolti nella chiusura:\n  - REG 2626 (VERONA PORTA NUOVA -
+ > MILANO CENTRALE) [Transito]\n  - TRENO 9721 (BOLZANO -> MILANO CENTRALE)
+  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
+ a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2626--20261115-S02084@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T100230Z
+DTEND:20261116T100700Z
+SUMMARY:[FERMATA] REG 2626 (VERONA PORTA NUOVA -> MILANO CENTRALE) ore 11:0
+ 6
+DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
+ sura: FERMATA\nChiusura sbarre stimata: 11:02:30 - 11:07:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 2626 (VERONA PORTA NUOVA -> MILANO CENTRALE)\n
  Ritardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/
  euristica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
@@ -274,85 +361,111 @@ TRANSP:OPAQUE
 CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9721--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T094917Z
-DTEND:20261116T095447Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9721 (BOLZANO -> MILANO CENTRALE) ore 10:53
+UID:train-2628--20261115-S02084@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T104943Z
+DTEND:20261116T105513Z
+SUMMARY:[TRANSITO VELOCE] REG 2628 (VERONA PORTA NUOVA -> MILANO CENTRALE) 
+ ore 11:53 (+2 min)
 DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: TRANSITO VELOCE\nChiusura sbarre stimata: 10:49:17 - 10:54:47\nTreni
-  coinvolti nella chiusura:\n  - TRENO 9721 (BOLZANO -> MILANO CENTRALE) [T
- ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Transito stimato senza fermata (36% tratta PESCHIERA 
- DEL GARDA -> BRESCIA\; pedale annuncio fisso Vmax)
+ sura: TRANSITO VELOCE\nChiusura sbarre stimata: 11:49:43 - 11:55:13\nTreni
+  coinvolti nella chiusura:\n  - REG 2628 (VERONA PORTA NUOVA -> MILANO CEN
+ TRALE) (+2m) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità st
+ ima: 78%\nNota normativa/euristica: Transito stimato senza fermata (69% tr
+ atta VERONA PORTA NUOVA -> PESCHIERA DEL GARDA\; pedale annuncio fisso Vma
+ x)
 LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2626--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-2628--20261115-S02084@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T100230Z
-DTEND:20261116T100700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:02 - 11:07 (primo: REG 2626)
+DTSTART:20261116T110430Z
+DTEND:20261116T110900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:04 - 12:09 (primo: REG 2628) (+2 m
+ in)
 DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:02:30 - 11:
- 07:00\nTreni coinvolti nella chiusura:\n  - REG 2626 (VERONA PORTA NUOVA -
- > MILANO CENTRALE)\n  - REG 2626 (VERONA PORTA NUOVA -> MILANO CENTRALE)\n
- Ritardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/
- euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
- (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:04:30 - 12:
+ 09:00\nTreni coinvolti nella chiusura:\n  - REG 2628 (VERONA PORTA NUOVA -
+ > MILANO CENTRALE) (+2m)\n  - REG 2628 (VERONA PORTA NUOVA -> MILANO CENTR
+ ALE) (+2m)\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 90%\nNot
+ a normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra
+  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9723--20261115-S02084@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T113230Z
+DTEND:20261116T113700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:32 - 12:37 (primo: TRENO 9723)
+DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
+ sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:32:30 - 12:
+ 37:00\nTreni coinvolti nella chiusura:\n  - TRENO 9723 (MILANO CENTRALE ->
+  VENEZIA S.LUCIA)\n  - TRENO 9723 (MILANO CENTRALE -> VENEZIA S.LUCIA)\nRi
+ tardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eu
+ ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
+ s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-31--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T120052Z
-DTEND:20261116T120522Z
-SUMMARY:[TRANSITO VELOCE] EC 31 (CHIASSO -> VENEZIA S.LUCIA) ore 13:04
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T120455Z
+DTEND:20261116T120925Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:04 - 13:09 (primo: EC 31) (+4 min)
 DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: TRANSITO VELOCE\nChiusura sbarre stimata: 13:00:52 - 13:05:22\nTreni
-  coinvolti nella chiusura:\n  - EC 31 (CHIASSO -> VENEZIA S.LUCIA) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Transito stimato senza fermata (64% tratta BRESCIA -> PESC
- HIERA DEL GARDA\; pedale annuncio fisso Vmax)
+ sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:04:55 - 13:
+ 09:25\nTreni coinvolti nella chiusura:\n  - EC 31 (CHIASSO -> VENEZIA S.LU
+ CIA) (+4m) [Transito]\n  - EC 31 (CHIASSO -> VENEZIA S.LUCIA) (+4m) [Trans
+ ito]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:EC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9728--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T121917Z
-DTEND:20261116T122447Z
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T121905Z
+DTEND:20261116T122435Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9728 (VENEZIA S.LUCIA -> MILANO CENTRALE) o
  re 13:23
 DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: TRANSITO VELOCE\nChiusura sbarre stimata: 13:19:17 - 13:24:47\nTreni
+ sura: TRANSITO VELOCE\nChiusura sbarre stimata: 13:19:05 - 13:24:35\nTreni
   coinvolti nella chiusura:\n  - TRENO 9728 (VENEZIA S.LUCIA -> MILANO CENT
  RALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
- %\nNota normativa/euristica: Transito stimato senza fermata (36% tratta PE
+ %\nNota normativa/euristica: Transito stimato senza fermata (35% tratta PE
  SCHIERA DEL GARDA -> BRESCIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
 STATUS:CONFIRMED
@@ -364,14 +477,14 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9731--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T133007Z
-DTEND:20261116T133537Z
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T133010Z
+DTEND:20261116T133540Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9731 (MILANO CENTRALE -> VENEZIA S.LUCIA) o
  re 14:34
 DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: TRANSITO VELOCE\nChiusura sbarre stimata: 14:30:07 - 14:35:37\nTreni
+ sura: TRANSITO VELOCE\nChiusura sbarre stimata: 14:30:10 - 14:35:40\nTreni
   coinvolti nella chiusura:\n  - TRENO 9731 (MILANO CENTRALE -> VENEZIA S.L
  UCIA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
  %\nNota normativa/euristica: Transito stimato senza fermata (64% tratta BR
@@ -386,17 +499,17 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9731--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T134239Z
-DTEND:20261116T134809Z
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T134227Z
+DTEND:20261116T134757Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9731 (MILANO CENTRALE -> VENEZIA S.LUCIA) o
  re 14:46
 DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: TRANSITO VELOCE\nChiusura sbarre stimata: 14:42:39 - 14:48:09\nTreni
+ sura: TRANSITO VELOCE\nChiusura sbarre stimata: 14:42:27 - 14:47:57\nTreni
   coinvolti nella chiusura:\n  - TRENO 9731 (MILANO CENTRALE -> VENEZIA S.L
  UCIA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
- %\nNota normativa/euristica: Transito stimato senza fermata (31% tratta PE
+ %\nNota normativa/euristica: Transito stimato senza fermata (29% tratta PE
  SCHIERA DEL GARDA -> VERONA PORTA NUOVA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
 STATUS:CONFIRMED
@@ -408,35 +521,33 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9735--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T143230Z
 DTEND:20261116T143700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:32 - 15:37 (primo: TRENO 9735)
+SUMMARY:[FERMATA] TRENO 9735 (MILANO CENTRALE -> VENEZIA S.LUCIA) ore 15:36
 DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:32:30 - 15:
- 37:00\nTreni coinvolti nella chiusura:\n  - TRENO 9735 (MILANO CENTRALE ->
-  VENEZIA S.LUCIA)\n  - TRENO 9735 (MILANO CENTRALE -> VENEZIA S.LUCIA)\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eu
- ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
- s) inferiore alla soglia minima di sgombero stradale (120s)
+ sura: FERMATA\nChiusura sbarre stimata: 15:32:30 - 15:37:00\nTreni coinvol
+ ti nella chiusura:\n  - TRENO 9735 (MILANO CENTRALE -> VENEZIA S.LUCIA)\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/e
+ uristica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9737--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T150007Z
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T150010Z
 DTEND:20261116T150700Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:00 - 16:07 (primo: TRENO 9737)
 DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:00:07 - 16:
+ sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:00:10 - 16:
  07:00\nTreni coinvolti nella chiusura:\n  - TRENO 9737 (MILANO CENTRALE ->
   TRIESTE CENTRALE) [Transito]\n  - REG 2636 (VERONA PORTA NUOVA -> MILANO 
  CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
@@ -452,17 +563,17 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9737--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T151239Z
-DTEND:20261116T151809Z
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T151227Z
+DTEND:20261116T151757Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9737 (MILANO CENTRALE -> TRIESTE CENTRALE) 
  ore 16:16
 DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: TRANSITO VELOCE\nChiusura sbarre stimata: 16:12:39 - 16:18:09\nTreni
+ sura: TRANSITO VELOCE\nChiusura sbarre stimata: 16:12:27 - 16:17:57\nTreni
   coinvolti nella chiusura:\n  - TRENO 9737 (MILANO CENTRALE -> TRIESTE CEN
  TRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 7
- 8%\nNota normativa/euristica: Transito stimato senza fermata (31% tratta P
+ 8%\nNota normativa/euristica: Transito stimato senza fermata (29% tratta P
  ESCHIERA DEL GARDA -> VERONA PORTA NUOVA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
 STATUS:CONFIRMED
@@ -474,105 +585,15 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9741--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T153007Z
-DTEND:20261116T153537Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:30 - 16:35 (primo: TRENO 9741)
-DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:30:07 - 16:
- 35:37\nTreni coinvolti nella chiusura:\n  - TRENO 9741 (MILANO CENTRALE ->
-  VENEZIA S.LUCIA) [Transito]\n  - TRENO 9741 (MILANO CENTRALE -> VENEZIA S
- .LUCIA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
- 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo u
- tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
-  (120s)
-LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2631--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
+DTSTAMP:20261116T104738Z
 SEQUENCE:1
-DTSTART:20261116T154430Z
-DTEND:20261116T155432Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:44 - 16:54 (primo: REG 2631)
+DTSTART:20261116T153010Z
+DTEND:20261116T153540Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9741 (MILANO CENTRALE -> VENEZIA S.LUCIA) o
+ re 16:34
 DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:44:30 - 16:
- 54:32\nTreni coinvolti nella chiusura:\n  - REG 2631 (MILANO CENTRALE -> V
- ERONA PORTA NUOVA)\n  - EC 36 (VENEZIA S.LUCIA -> CHIASSO) [Transito]\n  -
-  EC 36 (VENEZIA S.LUCIA -> CHIASSO) [Transito]\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
- ua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9743--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T160230Z
-DTEND:20261116T160700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:02 - 17:07 (primo: TRENO 9743)
-DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:02:30 - 17:
- 07:00\nTreni coinvolti nella chiusura:\n  - TRENO 9743 (TORINO PORTA NUOVA
-  -> VENEZIA S.LUCIA)\n  - TRENO 9743 (TORINO PORTA NUOVA -> VENEZIA S.LUCI
- A)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normat
- iva/euristica: Chiusura continua per 2 treni: intervallo utile tra i passa
- ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8527--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T161023Z
-DTEND:20261116T162200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:10 - 17:22 (primo: TRENO 8527)
-DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:10:23 - 17:
- 22:00\nTreni coinvolti nella chiusura:\n  - TRENO 8527 (BRESCIA -> ROMA TE
- RMINI) [Transito]\n  - TRENO 9744 (VENEZIA S.LUCIA -> GENOVA BRIGNOLE)\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (9
- 6s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9747--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T163007Z
-DTEND:20261116T163537Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9747 (MILANO CENTRALE -> VENEZIA S.LUCIA) o
- re 17:34
-DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: TRANSITO VELOCE\nChiusura sbarre stimata: 17:30:07 - 17:35:37\nTreni
-  coinvolti nella chiusura:\n  - TRENO 9747 (MILANO CENTRALE -> VENEZIA S.L
+ sura: TRANSITO VELOCE\nChiusura sbarre stimata: 16:30:10 - 16:35:40\nTreni
+  coinvolti nella chiusura:\n  - TRENO 9741 (MILANO CENTRALE -> VENEZIA S.L
  UCIA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
  %\nNota normativa/euristica: Transito stimato senza fermata (64% tratta BR
  ESCIA -> PESCHIERA DEL GARDA\; pedale annuncio fisso Vmax)
@@ -585,43 +606,254 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2633--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T164430Z
-DTEND:20261116T165432Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:44 - 17:54 (primo: REG 2633)
+UID:train-2631--20261115-S02084@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T154430Z
+DTEND:20261116T155420Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:44 - 16:54 (primo: REG 2631)
 DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 17:44:30 - 17:
- 54:32\nTreni coinvolti nella chiusura:\n  - REG 2633 (MILANO CENTRALE -> V
- ERONA PORTA NUOVA)\n  - REG 2633 (MILANO CENTRALE -> VERONA PORTA NUOVA)\n
-   - EC 46 (VENEZIA S.LUCIA -> DOMODOSSOLA) [Transito]\n  - EC 46 (VENEZIA 
- S.LUCIA -> DOMODOSSOLA) [Transito]\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+ sura: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:44:30 - 16:
+ 54:20\nTreni coinvolti nella chiusura:\n  - REG 2631 (MILANO CENTRALE -> V
+ ERONA PORTA NUOVA)\n  - REG 2631 (MILANO CENTRALE -> VERONA PORTA NUOVA)\n
+   - EC 36 (VENEZIA S.LUCIA -> CHIASSO) [Transito]\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
+ tinua per 3 treni: intervallo utile tra i passaggi (50s) inferiore alla so
+ glia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9743--20261115-S02084@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T160230Z
+DTEND:20261116T160700Z
+SUMMARY:[FERMATA] TRENO 9743 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA) ore 17
+ :06
+DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
+ sura: FERMATA\nChiusura sbarre stimata: 17:02:30 - 17:07:00\nTreni coinvol
+ ti nella chiusura:\n  - TRENO 9743 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA)
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativ
+ a/euristica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8527--20261115-S02084@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T161026Z
+DTEND:20261116T162200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:10 - 17:22 (primo: TRENO 8527)
+DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
+ sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:10:26 - 17:
+ 22:00\nTreni coinvolti nella chiusura:\n  - TRENO 8527 (BRESCIA -> ROMA TE
+ RMINI) [Transito]\n  - TRENO 9744 (VENEZIA S.LUCIA -> GENOVA BRIGNOLE)\nRi
+ tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
+ ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (9
+ 3s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8527--20261115-S02084@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T162402Z
+DTEND:20261116T163540Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:24 - 17:35 (primo: TRENO 8527)
+DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
+ sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:24:02 - 17:
+ 35:40\nTreni coinvolti nella chiusura:\n  - TRENO 8527 (BRESCIA -> ROMA TE
+ RMINI) [Transito]\n  - TRENO 9747 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Tr
+ ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
+ passaggi (37s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2633--20261115-S02084@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T164430Z
+DTEND:20261116T165420Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:44 - 17:54 (primo: REG 2633)
+DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
+ sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:44:30 - 17:
+ 54:20\nTreni coinvolti nella chiusura:\n  - REG 2633 (MILANO CENTRALE -> V
+ ERONA PORTA NUOVA)\n  - EC 46 (VENEZIA S.LUCIA -> DOMODOSSOLA) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
+  (50s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16026--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
 DTSTART:20261116T170930Z
 DTEND:20261116T171400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:09 - 18:14 (primo: REG 16026)
+SUMMARY:[FERMATA] REG 16026 (VENEZIA S.LUCIA -> BRESCIA) ore 18:13
 DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:09:30 - 18:
- 14:00\nTreni coinvolti nella chiusura:\n  - REG 16026 (VENEZIA S.LUCIA -> 
- BRESCIA)\n  - REG 16026 (VENEZIA S.LUCIA -> BRESCIA)\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura 
- continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+ sura: FERMATA\nChiusura sbarre stimata: 18:09:30 - 18:14:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 16026 (VENEZIA S.LUCIA -> BRESCIA)\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica:
+  Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9748--20261115-S02084@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T171730Z
+DTEND:20261116T172200Z
+SUMMARY:[FERMATA] TRENO 9748 (VENEZIA S.LUCIA -> MILANO CENTRALE) ore 18:21
+DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
+ sura: FERMATA\nChiusura sbarre stimata: 18:17:30 - 18:22:00\nTreni coinvol
+ ti nella chiusura:\n  - TRENO 9748 (VENEZIA S.LUCIA -> MILANO CENTRALE)\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/e
+ uristica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9753--20261115-S02084@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T180230Z
+DTEND:20261116T180700Z
+SUMMARY:[FERMATA] TRENO 9753 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA) ore 19
+ :06
+DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
+ sura: FERMATA\nChiusura sbarre stimata: 19:02:30 - 19:07:00\nTreni coinvol
+ ti nella chiusura:\n  - TRENO 9753 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA)
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativ
+ a/euristica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9755--20261115-S02084@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T183010Z
+DTEND:20261116T183540Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9755 (MILANO CENTRALE -> UDINE) ore 19:34
+DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
+ sura: TRANSITO VELOCE\nChiusura sbarre stimata: 19:30:10 - 19:35:40\nTreni
+  coinvolti nella chiusura:\n  - TRENO 9755 (MILANO CENTRALE -> UDINE) [Tra
+ nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Transito stimato senza fermata (64% tratta BRESCIA -> P
+ ESCHIERA DEL GARDA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9755--20261115-S02084@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T184227Z
+DTEND:20261116T184757Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9755 (MILANO CENTRALE -> UDINE) ore 19:46
+DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
+ sura: TRANSITO VELOCE\nChiusura sbarre stimata: 19:42:27 - 19:47:57\nTreni
+  coinvolti nella chiusura:\n  - TRENO 9755 (MILANO CENTRALE -> UDINE) [Tra
+ nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Transito stimato senza fermata (29% tratta PESCHIERA DE
+ L GARDA -> VERONA PORTA NUOVA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2646--20261115-S02084@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T194743Z
+DTEND:20261116T195313Z
+SUMMARY:[TRANSITO VELOCE] REG 2646 (VERONA PORTA NUOVA -> MILANO CENTRALE) 
+ ore 20:51
+DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
+ sura: TRANSITO VELOCE\nChiusura sbarre stimata: 20:47:43 - 20:53:13\nTreni
+  coinvolti nella chiusura:\n  - REG 2646 (VERONA PORTA NUOVA -> MILANO CEN
+ TRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 7
+ 8%\nNota normativa/euristica: Transito stimato senza fermata (69% tratta V
+ ERONA PORTA NUOVA -> PESCHIERA DEL GARDA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2646--20261115-S02084@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T200230Z
+DTEND:20261116T200700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:02 - 21:07 (primo: REG 2646)
+DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
+ sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:02:30 - 21:
+ 07:00\nTreni coinvolti nella chiusura:\n  - REG 2646 (VERONA PORTA NUOVA -
+ > MILANO CENTRALE)\n  - REG 2646 (VERONA PORTA NUOVA -> MILANO CENTRALE)\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/
+ euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
+ (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -631,16 +863,16 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9748--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-9762--20261115-S02084@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T171730Z
-DTEND:20261116T172200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:17 - 18:22 (primo: TRENO 9748)
+DTSTART:20261116T201730Z
+DTEND:20261116T202200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:17 - 21:22 (primo: TRENO 9762)
 DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:17:30 - 18:
- 22:00\nTreni coinvolti nella chiusura:\n  - TRENO 9748 (VENEZIA S.LUCIA ->
-  MILANO CENTRALE)\n  - TRENO 9748 (VENEZIA S.LUCIA -> MILANO CENTRALE)\nRi
+ sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:17:30 - 21:
+ 22:00\nTreni coinvolti nella chiusura:\n  - TRENO 9762 (VENEZIA S.LUCIA ->
+  MILANO CENTRALE)\n  - TRENO 9762 (VENEZIA S.LUCIA -> MILANO CENTRALE)\nRi
  tardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eu
  ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
  s) inferiore alla soglia minima di sgombero stradale (120s)
@@ -653,39 +885,17 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9753--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-2641--20261115-S02084@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T180230Z
-DTEND:20261116T180700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:02 - 19:07 (primo: TRENO 9753)
+DTSTART:20261116T204430Z
+DTEND:20261116T204900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:44 - 21:49 (primo: REG 2641)
 DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:02:30 - 19:
- 07:00\nTreni coinvolti nella chiusura:\n  - TRENO 9753 (TORINO PORTA NUOVA
-  -> VENEZIA S.LUCIA)\n  - TRENO 9753 (TORINO PORTA NUOVA -> VENEZIA S.LUCI
- A)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normat
- iva/euristica: Chiusura continua per 2 treni: intervallo utile tra i passa
- ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9755--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T183007Z
-DTEND:20261116T183537Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:30 - 19:35 (primo: TRENO 9755)
-DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:30:07 - 19:
- 35:37\nTreni coinvolti nella chiusura:\n  - TRENO 9755 (MILANO CENTRALE ->
-  UDINE) [Transito]\n  - TRENO 9755 (MILANO CENTRALE -> UDINE) [Transito]\n
- Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:44:30 - 21:
+ 49:00\nTreni coinvolti nella chiusura:\n  - REG 2641 (MILANO CENTRALE -> V
+ ERONA PORTA NUOVA)\n  - REG 2641 (MILANO CENTRALE -> VERONA PORTA NUOVA)\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/
  euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
  (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
@@ -693,35 +903,13 @@ STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9759--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T193019Z
-DTEND:20261116T193549Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9759 (TORINO PORTA NUOVA -> TRIESTE CENTRAL
- E) ore 20:34
-DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: TRANSITO VELOCE\nChiusura sbarre stimata: 20:30:19 - 20:35:49\nTreni
-  coinvolti nella chiusura:\n  - TRENO 9759 (TORINO PORTA NUOVA -> TRIESTE 
- CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 78%\nNota normativa/euristica: Transito stimato senza fermata (42% tratt
- a BRESCIA -> VERONA PORTA NUOVA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2648--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
 DTSTART:20261116T210230Z
 DTEND:20261116T210700Z
 SUMMARY:[FERMATA] REG 2648 (VERONA PORTA NUOVA -> MILANO CENTRALE) ore 22:0
@@ -741,16 +929,16 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8528--20261115-S02084@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T213905Z
-DTEND:20261116T214435Z
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T213850Z
+DTEND:20261116T214420Z
 SUMMARY:[TRANSITO VELOCE] TRENO 8528 (ROMA TERMINI -> BRESCIA) ore 22:43
 DESCRIPTION:Stazione/PL: DESENZANO DEL GARDA-SIRMIONE (S02084)\nRegime chiu
- sura: TRANSITO VELOCE\nChiusura sbarre stimata: 22:39:05 - 22:44:35\nTreni
+ sura: TRANSITO VELOCE\nChiusura sbarre stimata: 22:38:50 - 22:44:20\nTreni
   coinvolti nella chiusura:\n  - TRENO 8528 (ROMA TERMINI -> BRESCIA) [Tran
  sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Transito stimato senza fermata (36% tratta PESCHIERA DEL
+ mativa/euristica: Transito stimato senza fermata (35% tratta PESCHIERA DEL
   GARDA -> BRESCIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione DESENZANO DEL GARDA-SIRMIONE
 STATUS:CONFIRMED

@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:7edf2c2c6714ee4be63d37ee411f6983354f2022d6991a24000d163aa29a
- 722d
+X-CONTENT-HASH:40922fb7def264d7db7c45b6557b34296441b3111d9f65ffa888f8738386
+ dc4c
 BEGIN:VEVENT
 UID:train-4509--20261115-S08003@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
 DTSTART:20261116T054530Z
 DTEND:20261116T055000Z
 SUMMARY:[FERMATA] REG 4509 (GROSSETO -> ROMA TERMINI) ore 06:49
@@ -32,38 +32,64 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4122--20261115-S08003@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T064830Z
-DTEND:20261116T065300Z
-SUMMARY:[FERMATA] REG 4122 (ROMA TERMINI -> PISA CENTRALE) ore 07:52
-DESCRIPTION:Stazione/PL: ALBINIA (S08003)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 07:48:30 - 07:53:00\nTreni coinvolti nella chiusura:\n 
-  - REG 4122 (ROMA TERMINI -> PISA CENTRALE)\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da trac
- cia oraria regolare
+UID:train-4125--20261115-S08003@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T064200Z
+DTEND:20261116T064800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:42 - 07:48 (primo: REG 4125) (+6 m
+ in)
+DESCRIPTION:Stazione/PL: ALBINIA (S08003)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 07:42:00 - 07:48:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 4125 (PISA CENTRALE -> ROMA TERMINI) (+6m)\n  -
+  REG 4125 (PISA CENTRALE -> ROMA TERMINI) (+6m)\nRitardo massimo rilevato:
+  6 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura conti
+ nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ALBINIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4122--20261115-S08003@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T065330Z
+DTEND:20261116T065930Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:53 - 07:59 (primo: REG 4122) (+6 m
+ in)
+DESCRIPTION:Stazione/PL: ALBINIA (S08003)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 07:53:30 - 07:59:30\nTreni coinvolt
+ i nella chiusura:\n  - REG 4122 (ROMA TERMINI -> PISA CENTRALE) (+6m)\n  -
+  REG 4122 (ROMA TERMINI -> PISA CENTRALE) (+6m)\nRitardo massimo rilevato:
+  6 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura conti
+ nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ALBINIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-501--20261115-S08003@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T072631Z
-DTEND:20261116T073101Z
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T072652Z
+DTEND:20261116T073122Z
 SUMMARY:[TRANSITO VELOCE] IC 501 (PISA CENTRALE -> NAPOLI CENTRALE) ore 08:
  30
 DESCRIPTION:Stazione/PL: ALBINIA (S08003)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 08:26:31 - 08:31:01\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 08:26:52 - 08:31:22\nTreni coinvolti nella chiu
  sura:\n  - IC 501 (PISA CENTRALE -> NAPOLI CENTRALE) [Transito]\nRitardo m
  assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (69% tratta GROSSETO -> ORBETELLO-MONTE A
+ : Transito stimato senza fermata (70% tratta GROSSETO -> ORBETELLO-MONTE A
  RGENTARIO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALBINIA
 STATUS:CONFIRMED
@@ -75,39 +101,38 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-510--20261115-S08003@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T105334Z
-DTEND:20261116T105804Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:53 - 11:58 (primo: IC 510)
-DESCRIPTION:Stazione/PL: ALBINIA (S08003)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 11:53:34 - 11:58:04\nTreni coinvolt
- i nella chiusura:\n  - IC 510 (SALERNO -> TORINO PORTA NUOVA) [Transito]\n
-   - IC 510 (SALERNO -> TORINO PORTA NUOVA) [Transito]\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
-  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T105134Z
+DTEND:20261116T105604Z
+SUMMARY:[TRANSITO VELOCE] IC 510 (SALERNO -> TORINO PORTA NUOVA) ore 11:55
+DESCRIPTION:Stazione/PL: ALBINIA (S08003)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 11:51:34 - 11:56:04\nTreni coinvolti nella chiu
+ sura:\n  - IC 510 (SALERNO -> TORINO PORTA NUOVA) [Transito]\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
+ ransito stimato senza fermata (72% tratta CIVITAVECCHIA -> GROSSETO\; peda
+ le annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALBINIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8616--20261115-S08003@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T121500Z
-DTEND:20261116T122030Z
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T121354Z
+DTEND:20261116T121924Z
 SUMMARY:[TRANSITO VELOCE] TRENO 8616 (ROMA TERMINI -> GENOVA PIAZZA PRINCIP
- E) ore 13:19
+ E) ore 13:18
 DESCRIPTION:Stazione/PL: ALBINIA (S08003)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 13:15:00 - 13:20:30\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 13:13:54 - 13:19:24\nTreni coinvolti nella chiu
  sura:\n  - TRENO 8616 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) [Transito]\
  nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Transito stimato senza fermata (75% tratta CIVITAVECCHIA -> GR
+ /euristica: Transito stimato senza fermata (72% tratta CIVITAVECCHIA -> GR
  OSSETO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALBINIA
 STATUS:CONFIRMED
@@ -119,15 +144,35 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4131--20261115-S08003@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
 DTSTART:20261116T124130Z
 DTEND:20261116T124600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:41 - 13:46 (primo: REG 4131)
+SUMMARY:[FERMATA] REG 4131 (PISA CENTRALE -> ROMA TERMINI) ore 13:45
+DESCRIPTION:Stazione/PL: ALBINIA (S08003)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 13:41:30 - 13:46:00\nTreni coinvolti nella chiusura:\n 
+  - REG 4131 (PISA CENTRALE -> ROMA TERMINI)\nRitardo massimo rilevato: 0 m
+ in\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da trac
+ cia oraria regolare
+LOCATION:Passaggio a Livello / Stazione ALBINIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4134--20261115-S08003@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T150730Z
+DTEND:20261116T151200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:07 - 16:12 (primo: REG 4134)
 DESCRIPTION:Stazione/PL: ALBINIA (S08003)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 13:41:30 - 13:46:00\nTreni coinvolt
- i nella chiusura:\n  - REG 4131 (PISA CENTRALE -> ROMA TERMINI)\n  - REG 4
- 131 (PISA CENTRALE -> ROMA TERMINI)\nRitardo massimo rilevato: 0 min\nAffi
+ UA - 2 TRENI\nChiusura sbarre stimata: 16:07:30 - 16:12:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 4134 (ROMA TERMINI -> PISA CENTRALE)\n  - REG 4
+ 134 (ROMA TERMINI -> PISA CENTRALE)\nRitardo massimo rilevato: 0 min\nAffi
  dabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tr
  eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
  sgombero stradale (120s)
@@ -141,85 +186,81 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-518--20261115-S08003@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T161930Z
-DTEND:20261116T162400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:19 - 17:24 (primo: IC 518)
-DESCRIPTION:Stazione/PL: ALBINIA (S08003)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 17:19:30 - 17:24:00\nTreni coinvolt
- i nella chiusura:\n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA) [Transito]\n  
- - IC 518 (ROMA TERMINI -> VENTIMIGLIA) [Transito]\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
- tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
- lia minima di sgombero stradale (120s)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T161822Z
+DTEND:20261116T162252Z
+SUMMARY:[TRANSITO VELOCE] IC 518 (ROMA TERMINI -> VENTIMIGLIA) ore 17:21
+DESCRIPTION:Stazione/PL: ALBINIA (S08003)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 17:18:22 - 17:22:52\nTreni coinvolti nella chiu
+ sura:\n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA) [Transito]\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
+ nsito stimato senza fermata (72% tratta CIVITAVECCHIA -> GROSSETO\; pedale
+  annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALBINIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8626--20261115-S08003@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T171830Z
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T171720Z
 DTEND:20261116T172800Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 18:18 - 18:28 (primo: TRENO 8626)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:17 - 18:28 (primo: TRENO 8626)
 DESCRIPTION:Stazione/PL: ALBINIA (S08003)\nRegime chiusura: CHIUSURA CONTIN
- UA - 4 TRENI\nChiusura sbarre stimata: 18:18:30 - 18:28:00\nTreni coinvolt
+ UA - 2 TRENI\nChiusura sbarre stimata: 18:17:20 - 18:28:00\nTreni coinvolt
  i nella chiusura:\n  - TRENO 8626 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE)
-  [Transito]\n  - TRENO 8626 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) [Tran
- sito]\n  - REG 4039 (FIRENZE SANTA MARIA NOVELLA -> ORBETELLO-MONTE ARGENT
- ARIO)\n  - REG 4039 (FIRENZE SANTA MARIA NOVELLA -> ORBETELLO-MONTE ARGENT
- ARIO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i pa
- ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+  [Transito]\n  - REG 4039 (FIRENZE SANTA MARIA NOVELLA -> ORBETELLO-MONTE 
+ ARGENTARIO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
+ a i passaggi (39s) inferiore alla soglia minima di sgombero stradale (120s
+ )
 LOCATION:Passaggio a Livello / Stazione ALBINIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4502--20261115-S08003@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T180930Z
 DTEND:20261116T181400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:09 - 19:14 (primo: REG 4502)
-DESCRIPTION:Stazione/PL: ALBINIA (S08003)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 19:09:30 - 19:14:00\nTreni coinvolt
- i nella chiusura:\n  - REG 4502 (ROMA TERMINI -> GROSSETO)\n  - REG 4502 (
- ROMA TERMINI -> GROSSETO)\nRitardo massimo rilevato: 0 min\nAffidabilità 
- stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inter
- vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
- tradale (120s)
+SUMMARY:[FERMATA] REG 4502 (ROMA TERMINI -> GROSSETO) ore 19:13
+DESCRIPTION:Stazione/PL: ALBINIA (S08003)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 19:09:30 - 19:14:00\nTreni coinvolti nella chiusura:\n 
+  - REG 4502 (ROMA TERMINI -> GROSSETO)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
 LOCATION:Passaggio a Livello / Stazione ALBINIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8630--20261115-S08003@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T184745Z
-DTEND:20261116T185315Z
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T184637Z
+DTEND:20261116T185207Z
 SUMMARY:[TRANSITO VELOCE] TRENO 8630 (ROMA TERMINI -> GENOVA PIAZZA PRINCIP
- E) ore 19:52
+ E) ore 19:50
 DESCRIPTION:Stazione/PL: ALBINIA (S08003)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 19:47:45 - 19:53:15\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 19:46:37 - 19:52:07\nTreni coinvolti nella chiu
  sura:\n  - TRENO 8630 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) [Transito]\
  nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Transito stimato senza fermata (75% tratta CIVITAVECCHIA -> GR
+ /euristica: Transito stimato senza fermata (72% tratta CIVITAVECCHIA -> GR
  OSSETO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALBINIA
 STATUS:CONFIRMED
@@ -230,24 +271,45 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-794--20261115-S08003@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-99750--20261115-S08003@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261117T062811Z
-DTEND:20261117T063241Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:28 - 07:32 (primo: ICN 794)
+DTSTART:20261117T003109Z
+DTEND:20261117T003539Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 01:31 - 01:35 (primo: ICN 99750)
 DESCRIPTION:Stazione/PL: ALBINIA (S08003)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 07:28:11 - 07:32:41\nTreni coinvolt
- i nella chiusura:\n  - ICN 794 (REGGIO DI CALABRIA CENTRALE -> TORINO PORT
- A NUOVA) [Transito]\n  - ICN 794 (REGGIO DI CALABRIA CENTRALE -> TORINO PO
- RTA NUOVA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stim
- a: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervall
- o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
- ale (120s)
+ UA - 2 TRENI\nChiusura sbarre stimata: 01:31:09 - 01:35:39\nTreni coinvolt
+ i nella chiusura:\n  - ICN 99750 (SALERNO -> TORINO PORTA NUOVA) [Transito
+ ]\n  - ICN 99750 (SALERNO -> TORINO PORTA NUOVA) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ALBINIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:ICN
+END:VEVENT
+BEGIN:VEVENT
+UID:train-794--20261115-S08003@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261117T062646Z
+DTEND:20261117T063116Z
+SUMMARY:[TRANSITO VELOCE] ICN 794 (REGGIO DI CALABRIA CENTRALE -> TORINO PO
+ RTA NUOVA) ore 07:30
+DESCRIPTION:Stazione/PL: ALBINIA (S08003)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 07:26:46 - 07:31:16\nTreni coinvolti nella chiu
+ sura:\n  - ICN 794 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA NUOVA) [Tr
+ ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Transito stimato senza fermata (72% tratta CIVITAVECCH
+ IA -> GROSSETO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ALBINIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:ICN

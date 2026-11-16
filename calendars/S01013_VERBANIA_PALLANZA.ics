@@ -9,55 +9,54 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:c63e2c68bd073734c5a96f73b61d75214527c4a27d8d2842ca083ee924c8
- f435
+X-CONTENT-HASH:3b7e1323c843cf225715fc33c49ccc9b4ceb755bb9398f5878a1d320c9e8
+ e7b8
 BEGIN:VEVENT
 UID:train-60--20261115-S01013@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T071256Z
-DTEND:20261116T071726Z
-SUMMARY:[TRANSITO VELOCE] EC 60 (MILANO CENTRALE -> DOMODOSSOLA) ore 08:16
-DESCRIPTION:Stazione/PL: VERBANIA-PALLANZA (S01013)\nRegime chiusura: TRANS
- ITO VELOCE\nChiusura sbarre stimata: 08:12:56 - 08:17:26\nTreni coinvolti 
- nella chiusura:\n  - EC 60 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Transito stimato senza fermata (22% tratta STRESA -> DOMODOSSOLA\
- ; pedale annuncio fisso Vmax)
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T071218Z
+DTEND:20261116T071648Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:12 - 08:16 (primo: EC 60)
+DESCRIPTION:Stazione/PL: VERBANIA-PALLANZA (S01013)\nRegime chiusura: CHIUS
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:12:18 - 08:16:48\nTren
+ i coinvolti nella chiusura:\n  - EC 60 (MILANO CENTRALE -> DOMODOSSOLA) [T
+ ransito]\n  - EC 60 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRitardo m
+ assimo rilevato: -10 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERBANIA-PALLANZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-10
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:EC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2414--20261115-S01013@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:2
+DTSTAMP:20261116T104738Z
+SEQUENCE:3
 DTSTART:20261116T073930Z
 DTEND:20261116T074400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:39 - 08:44 (primo: REG 2414)
-DESCRIPTION:Stazione/PL: VERBANIA-PALLANZA (S01013)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:39:30 - 08:44:00\nTren
- i coinvolti nella chiusura:\n  - REG 2414 (MILANO CENTRALE -> DOMODOSSOLA)
- \n  - REG 2414 (MILANO CENTRALE -> DOMODOSSOLA)\nRitardo massimo rilevato:
-  0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura conti
- nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
- a minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 2414 (MILANO CENTRALE -> DOMODOSSOLA) ore 08:43
+DESCRIPTION:Stazione/PL: VERBANIA-PALLANZA (S01013)\nRegime chiusura: FERMA
+ TA\nChiusura sbarre stimata: 08:39:30 - 08:44:00\nTreni coinvolti nella ch
+ iusura:\n  - REG 2414 (MILANO CENTRALE -> DOMODOSSOLA)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VERBANIA-PALLANZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10216--20261115-S01013@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
 DTSTART:20261116T081130Z
 DTEND:20261116T081600Z
 SUMMARY:[FERMATA] REG 10216 (MILANO PORTA GARIBALDI -> DOMODOSSOLA) ore 09:
@@ -71,6 +70,50 @@ LOCATION:Passaggio a Livello / Stazione VERBANIA-PALLANZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2430--20261115-S01013@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T153930Z
+DTEND:20261116T154400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:39 - 16:44 (primo: REG 2430)
+DESCRIPTION:Stazione/PL: VERBANIA-PALLANZA (S01013)\nRegime chiusura: CHIUS
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:39:30 - 16:44:00\nTren
+ i coinvolti nella chiusura:\n  - REG 2430 (MILANO CENTRALE -> DOMODOSSOLA)
+ \n  - REG 2430 (MILANO CENTRALE -> DOMODOSSOLA)\nRitardo massimo rilevato:
+  0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura conti
+ nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERBANIA-PALLANZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2440--20261115-S01013@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T203930Z
+DTEND:20261116T204400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:39 - 21:44 (primo: REG 2440)
+DESCRIPTION:Stazione/PL: VERBANIA-PALLANZA (S01013)\nRegime chiusura: CHIUS
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:39:30 - 21:44:00\nTren
+ i coinvolti nella chiusura:\n  - REG 2440 (MILANO CENTRALE -> DOMODOSSOLA)
+ \n  - REG 2440 (MILANO CENTRALE -> DOMODOSSOLA)\nRitardo massimo rilevato:
+  0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura conti
+ nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERBANIA-PALLANZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

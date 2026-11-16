@@ -9,34 +9,81 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:5a4180ec1e5f8d57a744cf7c0a1ecfa090caf1a346ce4e9519d55950385c
- 4e0e
+X-CONTENT-HASH:021440782b5fa0a1490527e4f24f63d7775ac8d6c841740452e90aad8daf
+ 299e
 BEGIN:VEVENT
 UID:train-25919--20261115-S01063@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
-DTSTART:20261116T060330Z
-DTEND:20261116T060800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:03 - 07:08 (primo: REG 25919)
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
+DTSTART:20261116T054809Z
+DTEND:20261116T055515Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:48 - 06:55 (primo: REG 25919) (+1 
+ min)
 DESCRIPTION:Stazione/PL: GAGGIANO (S01063)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 07:03:30 - 07:08:00\nTreni coinvol
+ NUA - 4 TRENI\nChiusura sbarre stimata: 06:48:09 - 06:55:15\nTreni coinvol
+ ti nella chiusura:\n  - REG 25919 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO) 
+ [Transito]\n  - REG 25919 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO) [Transit
+ o]\n  - REG 10019 (MILANO ROGOREDO -> MORTARA) (+1m) [Transito]\n  - REG 1
+ 0019 (MILANO ROGOREDO -> MORTARA) (+1m) [Transito]\nRitardo massimo rileva
+ to: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
+ ntinua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GAGGIANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25919--20261115-S01063@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
+DTSTART:20261116T060230Z
+DTEND:20261116T060700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:02 - 07:07 (primo: REG 25919)
+DESCRIPTION:Stazione/PL: GAGGIANO (S01063)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 07:02:30 - 07:07:00\nTreni coinvol
  ti nella chiusura:\n  - REG 25919 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)\
  n  - REG 25919 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+ levato: -1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
+ ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
+ la soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GAGGIANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25921--20261115-S01063@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
+DTSTART:20261116T061809Z
+DTEND:20261116T062339Z
+SUMMARY:[TRANSITO VELOCE] REG 25921 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)
+  ore 07:22
+DESCRIPTION:Stazione/PL: GAGGIANO (S01063)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 07:18:09 - 07:23:39\nTreni coinvolti nella chi
+ usura:\n  - REG 25921 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (60% tratta MILANO S.CRISTOFORO 
+ -> CORSICO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione GAGGIANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25921--20261115-S01063@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
 DTSTART:20261116T063330Z
 DTEND:20261116T063800Z
 SUMMARY:[FERMATA] REG 25921 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO) ore 07:
@@ -56,52 +103,74 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25935--20261115-S01063@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T100330Z
-DTEND:20261116T100800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:03 - 11:08 (primo: REG 25935)
-DESCRIPTION:Stazione/PL: GAGGIANO (S01063)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 11:03:30 - 11:08:00\nTreni coinvol
- ti nella chiusura:\n  - REG 25935 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)\
- n  - REG 25935 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T094809Z
+DTEND:20261116T095339Z
+SUMMARY:[TRANSITO VELOCE] REG 25935 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)
+  ore 10:52
+DESCRIPTION:Stazione/PL: GAGGIANO (S01063)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 10:48:09 - 10:53:39\nTreni coinvolti nella chi
+ usura:\n  - REG 25935 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (60% tratta MILANO S.CRISTOFORO 
+ -> CORSICO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GAGGIANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25935--20261115-S01063@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T100330Z
+DTEND:20261116T100800Z
+SUMMARY:[FERMATA] REG 25935 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO) ore 11:
+ 07
+DESCRIPTION:Stazione/PL: GAGGIANO (S01063)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 11:03:30 - 11:08:00\nTreni coinvolti nella chiusura:\n
+   - REG 25935 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
+ ne da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione GAGGIANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-10039--20261115-S01063@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T105040Z
-DTEND:20261116T105610Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:50 - 11:56 (primo: REG 10039)
+UID:train-25939--20261115-S01063@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:3
+DTSTART:20261116T104809Z
+DTEND:20261116T105530Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:48 - 11:55 (primo: REG 25939)
 DESCRIPTION:Stazione/PL: GAGGIANO (S01063)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 11:50:40 - 11:56:10\nTreni coinvol
- ti nella chiusura:\n  - REG 10039 (MILANO ROGOREDO -> MORTARA) [Transito]\
- n  - REG 10039 (MILANO ROGOREDO -> MORTARA) [Transito]\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+ NUA - 3 TRENI\nChiusura sbarre stimata: 11:48:09 - 11:55:30\nTreni coinvol
+ ti nella chiusura:\n  - REG 25939 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO) 
+ [Transito]\n  - REG 10039 (MILANO ROGOREDO -> MORTARA) [Transito]\n  - REG
+  10039 (MILANO ROGOREDO -> MORTARA) [Transito]\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
+ ua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+  minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GAGGIANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25939--20261115-S01063@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:2
+DTSTAMP:20261116T104738Z
+SEQUENCE:3
 DTSTART:20261116T110330Z
 DTEND:20261116T110800Z
 SUMMARY:[FERMATA] REG 25939 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO) ore 12:
@@ -121,15 +190,125 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25941--20261115-S01063@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T111809Z
+DTEND:20261116T112339Z
+SUMMARY:[TRANSITO VELOCE] REG 25941 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)
+  ore 12:22
+DESCRIPTION:Stazione/PL: GAGGIANO (S01063)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 12:18:09 - 12:23:39\nTreni coinvolti nella chi
+ usura:\n  - REG 25941 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (60% tratta MILANO S.CRISTOFORO 
+ -> CORSICO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione GAGGIANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25941--20261115-S01063@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T113330Z
 DTEND:20261116T113800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:33 - 12:38 (primo: REG 25941)
+SUMMARY:[FERMATA] REG 25941 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO) ore 12:
+ 37
+DESCRIPTION:Stazione/PL: GAGGIANO (S01063)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 12:33:30 - 12:38:00\nTreni coinvolti nella chiusura:\n
+   - REG 25941 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
+ ne da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione GAGGIANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25946--20261115-S01063@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T114730Z
+DTEND:20261116T115604Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:47 - 12:56 (primo: REG 25946)
 DESCRIPTION:Stazione/PL: GAGGIANO (S01063)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 12:33:30 - 12:38:00\nTreni coinvol
- ti nella chiusura:\n  - REG 25941 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)\
- n  - REG 25941 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)\nRitardo massimo ri
+ NUA - 4 TRENI\nChiusura sbarre stimata: 12:47:30 - 12:56:04\nTreni coinvol
+ ti nella chiusura:\n  - REG 25946 (ALBAIRATE-VERMEZZO -> MILANO ROGOREDO)\
+ n  - REG 25946 (ALBAIRATE-VERMEZZO -> MILANO ROGOREDO)\n  - REG 10043 (MIL
+ ANO ROGOREDO -> MORTARA) [Transito]\n  - REG 10043 (MILANO ROGOREDO -> MOR
+ TARA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
+ %\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo uti
+ le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
+ 120s)
+LOCATION:Passaggio a Livello / Stazione GAGGIANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10055--20261115-S01063@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T145034Z
+DTEND:20261116T145604Z
+SUMMARY:[TRANSITO VELOCE] REG 10055 (MILANO ROGOREDO -> MORTARA) ore 15:54
+DESCRIPTION:Stazione/PL: GAGGIANO (S01063)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 15:50:34 - 15:56:04\nTreni coinvolti nella chi
+ usura:\n  - REG 10055 (MILANO ROGOREDO -> MORTARA) [Transito]\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Transito stimato senza fermata (70% tratta MILANO S.CRISTOFORO -> ALBAIRAT
+ E-VERMEZZO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione GAGGIANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25957--20261115-S01063@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T151809Z
+DTEND:20261116T152339Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:18 - 16:23 (primo: REG 25957)
+DESCRIPTION:Stazione/PL: GAGGIANO (S01063)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 16:18:09 - 16:23:39\nTreni coinvol
+ ti nella chiusura:\n  - REG 25957 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO) 
+ [Transito]\n  - REG 25957 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Chiusura continua per 2 treni: intervallo utile tra i passa
+ ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GAGGIANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25957--20261115-S01063@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T153330Z
+DTEND:20261116T153800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:33 - 16:38 (primo: REG 25957)
+DESCRIPTION:Stazione/PL: GAGGIANO (S01063)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 16:33:30 - 16:38:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 25957 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)\
+ n  - REG 25957 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)\nRitardo massimo ri
  levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
  a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
  a soglia minima di sgombero stradale (120s)
@@ -142,16 +321,16 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-10055--20261115-S01063@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-10059--20261115-S01063@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T145040Z
-DTEND:20261116T145610Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:50 - 15:56 (primo: REG 10055)
+DTSTART:20261116T155034Z
+DTEND:20261116T155604Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:50 - 16:56 (primo: REG 10059)
 DESCRIPTION:Stazione/PL: GAGGIANO (S01063)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 15:50:40 - 15:56:10\nTreni coinvol
- ti nella chiusura:\n  - REG 10055 (MILANO ROGOREDO -> MORTARA) [Transito]\
- n  - REG 10055 (MILANO ROGOREDO -> MORTARA) [Transito]\nRitardo massimo ri
+ NUA - 2 TRENI\nChiusura sbarre stimata: 16:50:34 - 16:56:04\nTreni coinvol
+ ti nella chiusura:\n  - REG 10059 (MILANO ROGOREDO -> MORTARA) [Transito]\
+ n  - REG 10059 (MILANO ROGOREDO -> MORTARA) [Transito]\nRitardo massimo ri
  levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
  a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
  a soglia minima di sgombero stradale (120s)
@@ -165,8 +344,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25961--20261115-S01063@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:2
+DTSTAMP:20261116T104738Z
+SEQUENCE:3
+DTSTART:20261116T161809Z
+DTEND:20261116T162339Z
+SUMMARY:[TRANSITO VELOCE] REG 25961 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)
+  ore 17:22
+DESCRIPTION:Stazione/PL: GAGGIANO (S01063)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 17:18:09 - 17:23:39\nTreni coinvolti nella chi
+ usura:\n  - REG 25961 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (60% tratta MILANO S.CRISTOFORO 
+ -> CORSICO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione GAGGIANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25961--20261115-S01063@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:3
 DTSTART:20261116T163330Z
 DTEND:20261116T163800Z
 SUMMARY:[FERMATA] REG 25961 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO) ore 17:
@@ -182,6 +383,50 @@ TRANSP:OPAQUE
 CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10075--20261115-S01063@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T195034Z
+DTEND:20261116T195604Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:50 - 20:56 (primo: REG 10075)
+DESCRIPTION:Stazione/PL: GAGGIANO (S01063)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 20:50:34 - 20:56:04\nTreni coinvol
+ ti nella chiusura:\n  - REG 10075 (MILANO ROGOREDO -> MORTARA) [Transito]\
+ n  - REG 10075 (MILANO ROGOREDO -> MORTARA) [Transito]\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
+ a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GAGGIANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10079--20261115-S01063@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T205034Z
+DTEND:20261116T205604Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:50 - 21:56 (primo: REG 10079)
+DESCRIPTION:Stazione/PL: GAGGIANO (S01063)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 21:50:34 - 21:56:04\nTreni coinvol
+ ti nella chiusura:\n  - REG 10079 (MILANO ROGOREDO -> MORTARA) [Transito]\
+ n  - REG 10079 (MILANO ROGOREDO -> MORTARA) [Transito]\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
+ a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GAGGIANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

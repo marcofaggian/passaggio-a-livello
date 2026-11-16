@@ -9,60 +9,258 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:cd7b61612a9fb96f86fcf7019b45423f8935c03bc00c49fad0066d188aa7
- 65d6
+X-CONTENT-HASH:f1041bfec8f1fb28e676a6bd5e35327fd74754c6ee209114c0cfea378d34
+ 95d8
 BEGIN:VEVENT
 UID:train-20395--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T042605Z
-DTEND:20261116T043135Z
-SUMMARY:[TRANSITO VELOCE] REG 20395 (ORTE -> FIUMICINO AEROPORTO) ore 05:30
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T042907Z
+DTEND:20261116T043437Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:29 - 05:34 (primo: REG 20395) (+4 
+ min)
 DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: TRANSITO VELOCE\nChiusura sbarre stimata: 05:26:05 - 05:31:35\nTreni co
- involti nella chiusura:\n  - REG 20395 (ORTE -> FIUMICINO AEROPORTO) [Tran
- sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Transito stimato senza fermata (87% tratta STIMIGLIANO -
- > GAVIGNANO SABINO\; pedale annuncio fisso Vmax)
+ a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:29:07 - 05:34:
+ 37\nTreni coinvolti nella chiusura:\n  - REG 20395 (ORTE -> FIUMICINO AERO
+ PORTO) (+4m) [Transito]\n  - REG 20395 (ORTE -> FIUMICINO AEROPORTO) (+4m)
+  [Transito]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
+ a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20395--20261115-S08214@pl-tracker.local-arr
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T044400Z
+DTEND:20261116T045200Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 05:44 - 05:52 (primo: REG 20395) (+1 
+ min)
+DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
+ a: CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 05:44:00 - 05:52:
+ 00\nTreni coinvolti nella chiusura:\n  - REG 20395 (ORTE -> FIUMICINO AERO
+ PORTO) (+1m) [Arrivo]\n  - REG 20395 (ORTE -> FIUMICINO AEROPORTO) (+1m) [
+ Arrivo]\n  - REG 20395 (ORTE -> FIUMICINO AEROPORTO) (+1m) [Partenza]\n  -
+  REG 20395 (ORTE -> FIUMICINO AEROPORTO) (+1m) [Partenza]\nRitardo massimo
+  rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiu
+ sura continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20397--20261115-S08214@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T045911Z
+DTEND:20261116T050600Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 05:59 - 06:06 (primo: REG 20397) (+5 
+ min)
+DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
+ a: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 05:59:11 - 06:06:
+ 00\nTreni coinvolti nella chiusura:\n  - REG 20397 (ORTE -> FIUMICINO AERO
+ PORTO) (+5m) [Transito]\n  - REG 20397 (ORTE -> FIUMICINO AEROPORTO) (+5m)
+  [Transito]\n  - REG 20409 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AEROPOR
+ TO)\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Chiusura continua per 3 treni: intervallo utile tra i pass
+ aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20397--20261115-S08214@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T051500Z
+DTEND:20261116T052348Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:15 - 06:23 (primo: REG 20397) (+4 
+ min)
+DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
+ a: CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 06:15:00 - 06:23:
+ 48\nTreni coinvolti nella chiusura:\n  - REG 20397 (ORTE -> FIUMICINO AERO
+ PORTO) (+1m)\n  - REG 20397 (ORTE -> FIUMICINO AEROPORTO) (+1m)\n  - REG 2
+ 0752 (MONTEROTONDO-MENTANA -> CESANO DI ROMA) (+4m) [Transito]\n  - REG 20
+ 752 (MONTEROTONDO-MENTANA -> CESANO DI ROMA) (+4m) [Transito]\nRitardo mas
+ simo rilevato: 4 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) inferi
+ ore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20405--20261115-S08214@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T052837Z
+DTEND:20261116T053407Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:28 - 06:34 (primo: REG 20405) (+3 
+ min)
+DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
+ a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:28:37 - 06:34:
+ 07\nTreni coinvolti nella chiusura:\n  - REG 20405 (ORTE -> FIUMICINO AERO
+ PORTO) (+3m) [Transito]\n  - REG 20405 (ORTE -> FIUMICINO AEROPORTO) (+3m)
+  [Transito]\nRitardo massimo rilevato: 3 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
+ a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20405--20261115-S08214@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T054500Z
+DTEND:20261116T055230Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:45 - 06:52 (primo: REG 20405) (+2 
+ min)
+DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
+ a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:45:00 - 06:52:
+ 30\nTreni coinvolti nella chiusura:\n  - REG 20405 (ORTE -> FIUMICINO AERO
+ PORTO) (+2m)\n  - REG 20405 (ORTE -> FIUMICINO AEROPORTO) (+2m)\nRitardo m
+ assimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica
+ : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20411--20261115-S08214@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T055602Z
+DTEND:20261116T060600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:56 - 07:06 (primo: REG 20411)
+DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
+ a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:56:02 - 07:06:
+ 00\nTreni coinvolti nella chiusura:\n  - REG 20411 (ORTE -> FIUMICINO AERO
+ PORTO) [Transito]\n  - REG 20421 (POGGIO MIRTETO -> FIUMICINO AEROPORTO)\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
+ (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-20395--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T044530Z
-DTEND:20261116T045000Z
-SUMMARY:[FERMATA] REG 20395 (ORTE -> FIUMICINO AEROPORTO) ore 05:49
+UID:train-20571--20261115-S08214@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T061137Z
+DTEND:20261116T062600Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:11 - 07:26 (primo: REG 20571)
 DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: FERMATA\nChiusura sbarre stimata: 05:45:30 - 05:50:00\nTreni coinvolti 
- nella chiusura:\n  - REG 20395 (ORTE -> FIUMICINO AEROPORTO)\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
- revisione da traccia oraria regolare
+ a: CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 07:11:37 - 07:26:
+ 00\nTreni coinvolti nella chiusura:\n  - REG 20571 (FIUMICINO AEROPORTO ->
+  ORTE) [Transito]\n  - REG 20411 (ORTE -> FIUMICINO AEROPORTO)\n  - REG 20
+ 756 (MONTEROTONDO-MENTANA -> CESANO DI ROMA) [Transito]\n  - REG 20571 (FI
+ UMICINO AEROPORTO -> ORTE)\nRitardo massimo rilevato: 0 min\nAffidabilità
+  stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: inte
+ rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
+ stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-20409--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-20573--20261115-S08214@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:2
-DTSTART:20261116T050130Z
-DTEND:20261116T050600Z
-SUMMARY:[FERMATA] REG 20409 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AEROPOR
- TO) ore 06:05
+DTSTART:20261116T064530Z
+DTEND:20261116T065253Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:45 - 07:52 (primo: REG 20573)
 DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: FERMATA\nChiusura sbarre stimata: 06:01:30 - 06:06:00\nTreni coinvolti 
- nella chiusura:\n  - REG 20409 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AER
+ a: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 07:45:30 - 07:52:
+ 53\nTreni coinvolti nella chiusura:\n  - REG 20573 (FIUMICINO AEROPORTO ->
+  FARA SABINA-MONTELIBRETTI)\n  - REG 20573 (FIUMICINO AEROPORTO -> FARA SA
+ BINA-MONTELIBRETTI)\n  - REG 21382 (MONTEROTONDO-MENTANA -> BRACCIANO) [Tr
+ ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i 
+ passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20325--20261115-S08214@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T070902Z
+DTEND:20261116T072600Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 08:09 - 08:26 (primo: REG 20325) (+2 
+ min)
+DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
+ a: CHIUSURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 08:09:02 - 08:26:
+ 00\nTreni coinvolti nella chiusura:\n  - REG 20325 (CESANO DI ROMA -> FARA
+  SABINA-MONTELIBRETTI) (+2m) [Transito]\n  - REG 20325 (CESANO DI ROMA -> 
+ FARA SABINA-MONTELIBRETTI) (+2m) [Transito]\n  - REG 20579 (FIUMICINO AERO
+ PORTO -> ORTE) [Transito]\n  - REG 20325 (CESANO DI ROMA -> FARA SABINA-MO
+ NTELIBRETTI) (+2m)\n  - REG 20325 (CESANO DI ROMA -> FARA SABINA-MONTELIBR
+ ETTI) (+2m)\n  - REG 20579 (FIUMICINO AEROPORTO -> ORTE)\nRitardo massimo 
+ rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
+ ura continua per 6 treni: intervallo utile tra i passaggi (30s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20449--20261115-S08214@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T083130Z
+DTEND:20261116T083600Z
+SUMMARY:[FERMATA] REG 20449 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AEROPOR
+ TO) ore 09:35
+DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
+ a: FERMATA\nChiusura sbarre stimata: 09:31:30 - 09:36:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 20449 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AER
  OPORTO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota n
  ormativa/euristica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
@@ -74,226 +272,17 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-20752--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T051732Z
-DTEND:20261116T052302Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:17 - 06:23 (primo: REG 20752)
-DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:17:32 - 06:23:
- 02\nTreni coinvolti nella chiusura:\n  - REG 20752 (MONTEROTONDO-MENTANA -
- > CESANO DI ROMA) [Transito]\n  - REG 20752 (MONTEROTONDO-MENTANA -> CESAN
- O DI ROMA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stim
- a: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervall
- o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
- ale (120s)
-LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-20405--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T052605Z
-DTEND:20261116T053135Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:26 - 06:31 (primo: REG 20405)
-DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:26:05 - 06:31:
- 35\nTreni coinvolti nella chiusura:\n  - REG 20405 (ORTE -> FIUMICINO AERO
- PORTO) [Transito]\n  - REG 20405 (ORTE -> FIUMICINO AEROPORTO) [Transito]\
- nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
-  (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-20405--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T054530Z
-DTEND:20261116T055000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:45 - 06:50 (primo: REG 20405)
-DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:45:30 - 06:50:
- 00\nTreni coinvolti nella chiusura:\n  - REG 20405 (ORTE -> FIUMICINO AERO
- PORTO)\n  - REG 20405 (ORTE -> FIUMICINO AEROPORTO)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-20411--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T055605Z
-DTEND:20261116T060600Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 06:56 - 07:06 (primo: REG 20411)
-DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 06:56:05 - 07:06:
- 00\nTreni coinvolti nella chiusura:\n  - REG 20411 (ORTE -> FIUMICINO AERO
- PORTO) [Transito]\n  - REG 20421 (POGGIO MIRTETO -> FIUMICINO AEROPORTO)\n
-   - REG 20421 (POGGIO MIRTETO -> FIUMICINO AEROPORTO)\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
-  continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-20571--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T061159Z
-DTEND:20261116T062600Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 07:11 - 07:26 (primo: REG 20571)
-DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 07:11:59 - 07:26:
- 00\nTreni coinvolti nella chiusura:\n  - REG 20571 (FIUMICINO AEROPORTO ->
-  ORTE) [Transito]\n  - REG 20571 (FIUMICINO AEROPORTO -> ORTE) [Transito]\
- n  - REG 20411 (ORTE -> FIUMICINO AEROPORTO)\n  - REG 20756 (MONTEROTONDO-
- MENTANA -> CESANO DI ROMA) [Transito]\n  - REG 20571 (FIUMICINO AEROPORTO 
- -> ORTE)\n  - REG 20571 (FIUMICINO AEROPORTO -> ORTE)\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
-  continua per 6 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-20573--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T064730Z
-DTEND:20261116T065302Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:47 - 07:53 (primo: REG 20573)
-DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 07:47:30 - 07:53:
- 02\nTreni coinvolti nella chiusura:\n  - REG 20573 (FIUMICINO AEROPORTO ->
-  FARA SABINA-MONTELIBRETTI)\n  - REG 21382 (MONTEROTONDO-MENTANA -> BRACCI
- ANO) [Transito]\n  - REG 21382 (MONTEROTONDO-MENTANA -> BRACCIANO) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 3 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-20325--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T070437Z
-DTEND:20261116T071900Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 08:04 - 08:19 (primo: REG 20325)
-DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 08:04:37 - 08:19:
- 00\nTreni coinvolti nella chiusura:\n  - REG 20325 (CESANO DI ROMA -> FARA
-  SABINA-MONTELIBRETTI) [Transito]\n  - REG 20325 (CESANO DI ROMA -> FARA S
- ABINA-MONTELIBRETTI) [Transito]\n  - REG 20579 (FIUMICINO AEROPORTO -> ORT
- E) [Transito]\n  - REG 20579 (FIUMICINO AEROPORTO -> ORTE) [Transito]\n  -
-  REG 20325 (CESANO DI ROMA -> FARA SABINA-MONTELIBRETTI)\n  - REG 20325 (C
- ESANO DI ROMA -> FARA SABINA-MONTELIBRETTI)\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua 
- per 6 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
- nima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-20579--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T072130Z
-DTEND:20261116T072600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:21 - 08:26 (primo: REG 20579)
-DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:21:30 - 08:26:
- 00\nTreni coinvolti nella chiusura:\n  - REG 20579 (FIUMICINO AEROPORTO ->
-  ORTE)\n  - REG 20579 (FIUMICINO AEROPORTO -> ORTE)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-20449--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T083130Z
-DTEND:20261116T083600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:31 - 09:36 (primo: REG 20449)
-DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:31:30 - 09:36:
- 00\nTreni coinvolti nella chiusura:\n  - REG 20449 (FARA SABINA-MONTELIBRE
- TTI -> FIUMICINO AEROPORTO)\n  - REG 20449 (FARA SABINA-MONTELIBRETTI -> F
- IUMICINO AEROPORTO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
-  90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
- utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
- e (120s)
-LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-20451--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T084530Z
-DTEND:20261116T085000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:45 - 09:50 (primo: REG 20451)
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T084500Z
+DTEND:20261116T085100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:45 - 09:51 (primo: REG 20451)
 DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:45:30 - 09:50:
+ a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:45:00 - 09:51:
  00\nTreni coinvolti nella chiusura:\n  - REG 20451 (POGGIO MIRTETO -> FIUM
  ICINO AEROPORTO)\n  - REG 20451 (POGGIO MIRTETO -> FIUMICINO AEROPORTO)\nR
- itardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/e
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 99%\nNota normativa/e
  uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
  0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
@@ -301,91 +290,94 @@ STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20453--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T090130Z
-DTEND:20261116T090600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:01 - 10:06 (primo: REG 20453)
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T090330Z
+DTEND:20261116T090800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:03 - 10:08 (primo: REG 20453) (+2 
+ min)
 DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:01:30 - 10:06:
+ a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:03:30 - 10:08:
  00\nTreni coinvolti nella chiusura:\n  - REG 20453 (FARA SABINA-MONTELIBRE
- TTI -> FIUMICINO AEROPORTO)\n  - REG 20453 (FARA SABINA-MONTELIBRETTI -> F
- IUMICINO AEROPORTO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
-  90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
- utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
- e (120s)
+ TTI -> FIUMICINO AEROPORTO) (+2m)\n  - REG 20453 (FARA SABINA-MONTELIBRETT
+ I -> FIUMICINO AEROPORTO) (+2m)\nRitardo massimo rilevato: 2 min\nAffidabi
+ lità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni:
+  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20455--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T091630Z
-DTEND:20261116T092100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:16 - 10:21 (primo: REG 20455)
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T091730Z
+DTEND:20261116T092200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:17 - 10:22 (primo: REG 20455) (+1 
+ min)
 DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:16:30 - 10:21:
+ a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:17:30 - 10:22:
  00\nTreni coinvolti nella chiusura:\n  - REG 20455 (FARA SABINA-MONTELIBRE
- TTI -> FIUMICINO AEROPORTO)\n  - REG 20455 (FARA SABINA-MONTELIBRETTI -> F
- IUMICINO AEROPORTO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
-  90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
- utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
- e (120s)
+ TTI -> FIUMICINO AEROPORTO) (+1m)\n  - REG 20455 (FARA SABINA-MONTELIBRETT
+ I -> FIUMICINO AEROPORTO) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabi
+ lità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni:
+  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20457--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T093130Z
-DTEND:20261116T093600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:31 - 10:36 (primo: REG 20457)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T093230Z
+DTEND:20261116T093700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:32 - 10:37 (primo: REG 20457) (+1 
+ min)
 DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:31:30 - 10:36:
+ a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:32:30 - 10:37:
  00\nTreni coinvolti nella chiusura:\n  - REG 20457 (FARA SABINA-MONTELIBRE
- TTI -> FIUMICINO AEROPORTO)\n  - REG 20457 (FARA SABINA-MONTELIBRETTI -> F
- IUMICINO AEROPORTO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
-  90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
- utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
- e (120s)
+ TTI -> FIUMICINO AEROPORTO) (+1m)\n  - REG 20457 (FARA SABINA-MONTELIBRETT
+ I -> FIUMICINO AEROPORTO) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabi
+ lità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni:
+  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20613--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T094159Z
-DTEND:20261116T094729Z
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T094137Z
+DTEND:20261116T094707Z
 SUMMARY:[TRANSITO VELOCE] REG 20613 (FIUMICINO AEROPORTO -> FARA SABINA-MON
- TELIBRETTI) ore 10:46
+ TELIBRETTI) ore 10:45
 DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: TRANSITO VELOCE\nChiusura sbarre stimata: 10:41:59 - 10:47:29\nTreni co
+ a: TRANSITO VELOCE\nChiusura sbarre stimata: 10:41:37 - 10:47:07\nTreni co
  involti nella chiusura:\n  - REG 20613 (FIUMICINO AEROPORTO -> FARA SABINA
  -MONTELIBRETTI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 78%\nNota normativa/euristica: Transito stimato senza fermata (65%
+  stima: 78%\nNota normativa/euristica: Transito stimato senza fermata (57%
   tratta MONTEROTONDO-MENTANA -> PIANA BELLA DI MONTELIBRETTI\; pedale annu
  ncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
@@ -398,58 +390,56 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20613--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
 DTSTART:20261116T095330Z
 DTEND:20261116T100600Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:53 - 11:06 (primo: REG 20613)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 10:53 - 11:06 (primo: REG 20613)
 DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 10:53:30 - 11:06:
+ a: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 10:53:30 - 11:06:
  00\nTreni coinvolti nella chiusura:\n  - REG 20613 (FIUMICINO AEROPORTO ->
   FARA SABINA-MONTELIBRETTI)\n  - REG 20615 (FIUMICINO AEROPORTO -> FARA SA
  BINA-MONTELIBRETTI) [Transito]\n  - REG 20461 (FARA SABINA-MONTELIBRETTI -
- > FIUMICINO AEROPORTO)\n  - REG 20461 (FARA SABINA-MONTELIBRETTI -> FIUMIC
- INO AEROPORTO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\
- nNota normativa/euristica: Chiusura continua per 4 treni: intervallo utile
-  tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (12
- 0s)
+ > FIUMICINO AEROPORTO)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
+ ma: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: interval
+ lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
+ dale (120s)
 LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20615--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
 DTSTART:20261116T100830Z
 DTEND:20261116T102100Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:08 - 11:21 (primo: REG 20615)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:08 - 11:21 (primo: REG 20615)
 DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 11:08:30 - 11:21:
+ a: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 11:08:30 - 11:21:
  00\nTreni coinvolti nella chiusura:\n  - REG 20615 (FIUMICINO AEROPORTO ->
   FARA SABINA-MONTELIBRETTI)\n  - REG 20621 (FIUMICINO AEROPORTO -> FARA SA
  BINA-MONTELIBRETTI) [Transito]\n  - REG 20463 (FARA SABINA-MONTELIBRETTI -
- > FIUMICINO AEROPORTO)\n  - REG 20463 (FARA SABINA-MONTELIBRETTI -> FIUMIC
- INO AEROPORTO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\
- nNota normativa/euristica: Chiusura continua per 4 treni: intervallo utile
-  tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (12
- 0s)
+ > FIUMICINO AEROPORTO)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
+ ma: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: interval
+ lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
+ dale (120s)
 LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20621--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
 DTSTART:20261116T102330Z
 DTEND:20261116T102800Z
 SUMMARY:[FERMATA] REG 20621 (FIUMICINO AEROPORTO -> FARA SABINA-MONTELIBRET
@@ -468,127 +458,136 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-20629--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-20467--20261115-S08214@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T104159Z
-DTEND:20261116T104729Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:41 - 11:47 (primo: REG 20629)
+DTSTART:20261116T103230Z
+DTEND:20261116T103700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:32 - 11:37 (primo: REG 20467) (+1 
+ min)
 DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:41:59 - 11:47:
- 29\nTreni coinvolti nella chiusura:\n  - REG 20629 (FIUMICINO AEROPORTO ->
-  FARA SABINA-MONTELIBRETTI) [Transito]\n  - REG 20629 (FIUMICINO AEROPORTO
-  -> FARA SABINA-MONTELIBRETTI) [Transito]\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
- r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
- ma di sgombero stradale (120s)
+ a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:32:30 - 11:37:
+ 00\nTreni coinvolti nella chiusura:\n  - REG 20467 (FARA SABINA-MONTELIBRE
+ TTI -> FIUMICINO AEROPORTO) (+1m)\n  - REG 20467 (FARA SABINA-MONTELIBRETT
+ I -> FIUMICINO AEROPORTO) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabi
+ lità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni:
+  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20629--20261115-S08214@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T104137Z
+DTEND:20261116T105100Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:41 - 11:51 (primo: REG 20629)
+DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
+ a: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 11:41:37 - 11:51:
+ 00\nTreni coinvolti nella chiusura:\n  - REG 20629 (FIUMICINO AEROPORTO ->
+  FARA SABINA-MONTELIBRETTI) [Transito]\n  - REG 20469 (FARA SABINA-MONTELI
+ BRETTI -> FIUMICINO AEROPORTO)\n  - REG 20469 (FARA SABINA-MONTELIBRETTI -
+ > FIUMICINO AEROPORTO)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
+ ma: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: interval
+ lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
+ dale (120s)
+LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20629--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T105330Z
-DTEND:20261116T110229Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:53 - 12:02 (primo: REG 20629)
+DTEND:20261116T110207Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:53 - 12:02 (primo: REG 20629)
 DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 11:53:30 - 12:02:
- 29\nTreni coinvolti nella chiusura:\n  - REG 20629 (FIUMICINO AEROPORTO ->
-  FARA SABINA-MONTELIBRETTI)\n  - REG 20629 (FIUMICINO AEROPORTO -> FARA SA
- BINA-MONTELIBRETTI)\n  - REG 20633 (FIUMICINO AEROPORTO -> FARA SABINA-MON
- TELIBRETTI) [Transito]\n  - REG 20633 (FIUMICINO AEROPORTO -> FARA SABINA-
- MONTELIBRETTI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità 
- stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: inter
- vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
- tradale (120s)
+ a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:53:30 - 12:02:
+ 07\nTreni coinvolti nella chiusura:\n  - REG 20629 (FIUMICINO AEROPORTO ->
+  FARA SABINA-MONTELIBRETTI)\n  - REG 20633 (FIUMICINO AEROPORTO -> FARA SA
+ BINA-MONTELIBRETTI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabil
+ ità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: 
+ intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
+ ero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20633--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T110830Z
-DTEND:20261116T111846Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:08 - 12:18 (primo: REG 20633)
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T110437Z
+DTEND:20261116T113307Z
+SUMMARY:[CHIUSURA CONTINUA - 11 TRENI] 12:04 - 12:33 (primo: REG 20633) (+8
+  min)
 DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 12:08:30 - 12:18:
- 46\nTreni coinvolti nella chiusura:\n  - REG 20633 (FIUMICINO AEROPORTO ->
-  FARA SABINA-MONTELIBRETTI)\n  - REG 20633 (FIUMICINO AEROPORTO -> FARA SA
- BINA-MONTELIBRETTI)\n  - REG 20635 (FIUMICINO AEROPORTO -> ORTE) [Transito
- ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
- va/euristica: Chiusura continua per 3 treni: intervallo utile tra i passag
- gi (16s) inferiore alla soglia minima di sgombero stradale (120s)
+ a: CHIUSURA CONTINUA - 11 TRENI\nChiusura sbarre stimata: 12:04:37 - 12:33
+ :07\nTreni coinvolti nella chiusura:\n  - REG 20633 (ROMA OSTIENSE -> FARA
+  SABINA-MONTELIBRETTI) (+8m) [Transito]\n  - REG 20633 (ROMA OSTIENSE -> F
+ ARA SABINA-MONTELIBRETTI) (+8m) [Transito]\n  - REG 20633 (FIUMICINO AEROP
+ ORTO -> FARA SABINA-MONTELIBRETTI)\n  - REG 20635 (FIUMICINO AEROPORTO -> 
+ ORTE) [Transito]\n  - REG 20475 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AE
+ ROPORTO)\n  - REG 20475 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AEROPORTO)
+ \n  - REG 20633 (ROMA OSTIENSE -> FARA SABINA-MONTELIBRETTI) (+8m)\n  - RE
+ G 20633 (ROMA OSTIENSE -> FARA SABINA-MONTELIBRETTI) (+8m)\n  - REG 20635 
+ (FIUMICINO AEROPORTO -> ORTE)\n  - REG 20637 (FIUMICINO AEROPORTO -> FARA 
+ SABINA-MONTELIBRETTI) (+1m) [Transito]\n  - REG 20637 (FIUMICINO AEROPORTO
+  -> FARA SABINA-MONTELIBRETTI) (+1m) [Transito]\nRitardo massimo rilevato:
+  8 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
+ nua per 11 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-20635--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T112230Z
-DTEND:20261116T113229Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:22 - 12:32 (primo: REG 20635)
-DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 12:22:30 - 12:32:
- 29\nTreni coinvolti nella chiusura:\n  - REG 20635 (FIUMICINO AEROPORTO ->
-  ORTE)\n  - REG 20637 (FIUMICINO AEROPORTO -> FARA SABINA-MONTELIBRETTI) [
- Transito]\n  - REG 20637 (FIUMICINO AEROPORTO -> FARA SABINA-MONTELIBRETTI
- ) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nN
- ota normativa/euristica: Chiusura continua per 3 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
-LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 11 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20637--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T113830Z
-DTEND:20261116T114300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:38 - 12:43 (primo: REG 20637)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T113930Z
+DTEND:20261116T114400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:39 - 12:44 (primo: REG 20637) (+1 
+ min)
 DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:38:30 - 12:43:
+ a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:39:30 - 12:44:
  00\nTreni coinvolti nella chiusura:\n  - REG 20637 (FIUMICINO AEROPORTO ->
-  FARA SABINA-MONTELIBRETTI)\n  - REG 20637 (FIUMICINO AEROPORTO -> FARA SA
- BINA-MONTELIBRETTI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
-  90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
- utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
- e (120s)
+  FARA SABINA-MONTELIBRETTI) (+1m)\n  - REG 20637 (FIUMICINO AEROPORTO -> F
+ ARA SABINA-MONTELIBRETTI) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabi
+ lità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni:
+  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20495--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
 DTSTART:20261116T133130Z
 DTEND:20261116T133600Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:31 - 14:36 (primo: REG 20495)
@@ -610,60 +609,18 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20493--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T135605Z
-DTEND:20261116T140135Z
-SUMMARY:[TRANSITO VELOCE] REG 20493 (ORTE -> FIUMICINO AEROPORTO) ore 15:00
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T135602Z
+DTEND:20261116T140132Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:56 - 15:01 (primo: REG 20493)
 DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: TRANSITO VELOCE\nChiusura sbarre stimata: 14:56:05 - 15:01:35\nTreni co
- involti nella chiusura:\n  - REG 20493 (ORTE -> FIUMICINO AEROPORTO) [Tran
- sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Transito stimato senza fermata (87% tratta STIMIGLIANO -
- > GAVIGNANO SABINO\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-20493--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T141530Z
-DTEND:20261116T142000Z
-SUMMARY:[FERMATA] REG 20493 (ORTE -> FIUMICINO AEROPORTO) ore 15:19
-DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: FERMATA\nChiusura sbarre stimata: 15:15:30 - 15:20:00\nTreni coinvolti 
- nella chiusura:\n  - REG 20493 (ORTE -> FIUMICINO AEROPORTO)\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
- revisione da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-20503--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T145605Z
-DTEND:20261116T150229Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:56 - 16:02 (primo: REG 20503)
-DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:56:05 - 16:02:
- 29\nTreni coinvolti nella chiusura:\n  - REG 20503 (ORTE -> FIUMICINO AERO
- PORTO) [Transito]\n  - REG 20771 (FIUMICINO AEROPORTO -> FARA SABINA-MONTE
- LIBRETTI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
+ a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:56:02 - 15:01:
+ 32\nTreni coinvolti nella chiusura:\n  - REG 20493 (ORTE -> FIUMICINO AERO
+ PORTO) [Transito]\n  - REG 20493 (ORTE -> FIUMICINO AEROPORTO) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
+  (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -673,9 +630,78 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-20493--20261115-S08214@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T141530Z
+DTEND:20261116T142000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:15 - 15:20 (primo: REG 20493)
+DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
+ a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:15:30 - 15:20:
+ 00\nTreni coinvolti nella chiusura:\n  - REG 20493 (ORTE -> FIUMICINO AERO
+ PORTO)\n  - REG 20493 (ORTE -> FIUMICINO AEROPORTO)\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura c
+ ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20671--20261115-S08214@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T144137Z
+DTEND:20261116T144707Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:41 - 15:47 (primo: REG 20671)
+DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
+ a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:41:37 - 15:47:
+ 07\nTreni coinvolti nella chiusura:\n  - REG 20671 (FIUMICINO AEROPORTO ->
+  POGGIO MIRTETO) [Transito]\n  - REG 20671 (FIUMICINO AEROPORTO -> POGGIO 
+ MIRTETO) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
+  78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
+ utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
+ e (120s)
+LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20671--20261115-S08214@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T145130Z
+DTEND:20261116T150207Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:51 - 16:02 (primo: REG 20671)
+DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
+ a: CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 15:51:30 - 16:02:
+ 07\nTreni coinvolti nella chiusura:\n  - REG 20671 (FIUMICINO AEROPORTO ->
+  POGGIO MIRTETO)\n  - REG 20671 (FIUMICINO AEROPORTO -> POGGIO MIRTETO)\n 
+  - REG 20503 (ORTE -> FIUMICINO AEROPORTO) [Transito]\n  - REG 20771 (FIUM
+ ICINO AEROPORTO -> FARA SABINA-MONTELIBRETTI) [Transito]\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
+ ura continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-20771--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
 DTSTART:20261116T150830Z
 DTEND:20261116T151300Z
 SUMMARY:[FERMATA] REG 20771 (FIUMICINO AEROPORTO -> FARA SABINA-MONTELIBRET
@@ -695,8 +721,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20503--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
 DTSTART:20261116T151530Z
 DTEND:20261116T152000Z
 SUMMARY:[FERMATA] REG 20503 (ORTE -> FIUMICINO AEROPORTO) ore 16:19
@@ -714,20 +740,19 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-20679--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-20677--20261115-S08214@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T154159Z
-DTEND:20261116T154729Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:41 - 16:47 (primo: REG 20679)
+DTSTART:20261116T152637Z
+DTEND:20261116T153207Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:26 - 16:32 (primo: REG 20677)
 DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:41:59 - 16:47:
- 29\nTreni coinvolti nella chiusura:\n  - REG 20679 (FIUMICINO AEROPORTO ->
-  POGGIO MIRTETO) [Transito]\n  - REG 20679 (FIUMICINO AEROPORTO -> POGGIO 
- MIRTETO) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
-  78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
- utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
- e (120s)
+ a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:26:37 - 16:32:
+ 07\nTreni coinvolti nella chiusura:\n  - REG 20677 (FIUMICINO AEROPORTO ->
+  ORTE) [Transito]\n  - REG 20677 (FIUMICINO AEROPORTO -> ORTE) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
+  (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -737,57 +762,79 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-20679--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-20677--20261115-S08214@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T155130Z
-DTEND:20261116T160229Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:51 - 17:02 (primo: REG 20679)
+DTSTART:20261116T153630Z
+DTEND:20261116T154707Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:36 - 16:47 (primo: REG 20677)
 DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 16:51:30 - 17:02:
- 29\nTreni coinvolti nella chiusura:\n  - REG 20679 (FIUMICINO AEROPORTO ->
-  POGGIO MIRTETO)\n  - REG 20679 (FIUMICINO AEROPORTO -> POGGIO MIRTETO)\n 
-  - REG 20681 (FIUMICINO AEROPORTO -> FARA SABINA-MONTELIBRETTI) [Transito]
- \n  - REG 20681 (FIUMICINO AEROPORTO -> FARA SABINA-MONTELIBRETTI) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 4 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ a: CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 16:36:30 - 16:47:
+ 07\nTreni coinvolti nella chiusura:\n  - REG 20677 (FIUMICINO AEROPORTO ->
+  ORTE)\n  - REG 20677 (FIUMICINO AEROPORTO -> ORTE)\n  - REG 20679 (FIUMIC
+ INO AEROPORTO -> POGGIO MIRTETO) [Transito]\n  - REG 20679 (FIUMICINO AERO
+ PORTO -> POGGIO MIRTETO) [Transito]\nRitardo massimo rilevato: 0 min\nAffi
+ dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 tr
+ eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20679--20261115-S08214@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T155130Z
+DTEND:20261116T160207Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:51 - 17:02 (primo: REG 20679)
+DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
+ a: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:51:30 - 17:02:
+ 07\nTreni coinvolti nella chiusura:\n  - REG 20679 (FIUMICINO AEROPORTO ->
+  POGGIO MIRTETO)\n  - REG 20679 (FIUMICINO AEROPORTO -> POGGIO MIRTETO)\n 
+  - REG 20681 (FIUMICINO AEROPORTO -> FARA SABINA-MONTELIBRETTI) [Transito]
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Chiusura continua per 3 treni: intervallo utile tra i passagg
+ i (37s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20681--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T160830Z
-DTEND:20261116T161729Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:08 - 17:17 (primo: REG 20681)
+DTEND:20261116T161707Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:08 - 17:17 (primo: REG 20681)
 DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 17:08:30 - 17:17:
- 29\nTreni coinvolti nella chiusura:\n  - REG 20681 (FIUMICINO AEROPORTO ->
-  FARA SABINA-MONTELIBRETTI)\n  - REG 20681 (FIUMICINO AEROPORTO -> FARA SA
- BINA-MONTELIBRETTI)\n  - REG 20683 (FIUMICINO AEROPORTO -> ORTE) [Transito
- ]\n  - REG 20683 (FIUMICINO AEROPORTO -> ORTE) [Transito]\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
- sura continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
+ a: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 17:08:30 - 17:17:
+ 07\nTreni coinvolti nella chiusura:\n  - REG 20681 (FIUMICINO AEROPORTO ->
+  FARA SABINA-MONTELIBRETTI)\n  - REG 20683 (FIUMICINO AEROPORTO -> ORTE) [
+ Transito]\n  - REG 20683 (FIUMICINO AEROPORTO -> ORTE) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20683--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T162130Z
 DTEND:20261116T162600Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:21 - 17:26 (primo: REG 20683)
@@ -807,31 +854,33 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-20547--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-20551--20261115-S08214@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T185105Z
-DTEND:20261116T185635Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:51 - 19:56 (primo: REG 20547)
+DTSTART:20261116T184630Z
+DTEND:20261116T185632Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 19:46 - 19:56 (primo: REG 20551)
 DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:51:05 - 19:56:
- 35\nTreni coinvolti nella chiusura:\n  - REG 20547 (ORTE -> FIUMICINO AERO
- PORTO) [Transito]\n  - REG 20547 (ORTE -> FIUMICINO AEROPORTO) [Transito]\
- nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
-  (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ a: CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 19:46:30 - 19:56:
+ 32\nTreni coinvolti nella chiusura:\n  - REG 20551 (FARA SABINA-MONTELIBRE
+ TTI -> FIUMICINO AEROPORTO)\n  - REG 20551 (FARA SABINA-MONTELIBRETTI -> F
+ IUMICINO AEROPORTO)\n  - REG 20547 (ORTE -> FIUMICINO AEROPORTO) [Transito
+ ]\n  - REG 20547 (ORTE -> FIUMICINO AEROPORTO) [Transito]\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
+ sura continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20547--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T191030Z
 DTEND:20261116T191500Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:10 - 20:15 (primo: REG 20547)
@@ -852,17 +901,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20727--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T194159Z
-DTEND:20261116T194729Z
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T194137Z
+DTEND:20261116T194707Z
 SUMMARY:[TRANSITO VELOCE] REG 20727 (FIUMICINO AEROPORTO -> POGGIO MIRTETO)
-  ore 20:46
+  ore 20:45
 DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: TRANSITO VELOCE\nChiusura sbarre stimata: 20:41:59 - 20:47:29\nTreni co
+ a: TRANSITO VELOCE\nChiusura sbarre stimata: 20:41:37 - 20:47:07\nTreni co
  involti nella chiusura:\n  - REG 20727 (FIUMICINO AEROPORTO -> POGGIO MIRT
  ETO) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%
- \nNota normativa/euristica: Transito stimato senza fermata (65% tratta MON
+ \nNota normativa/euristica: Transito stimato senza fermata (57% tratta MON
  TEROTONDO-MENTANA -> PIANA BELLA DI MONTELIBRETTI\; pedale annuncio fisso 
  Vmax)
 LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
@@ -875,8 +924,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20727--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
 DTSTART:20261116T195330Z
 DTEND:20261116T195800Z
 SUMMARY:[FERMATA] REG 20727 (FIUMICINO AEROPORTO -> POGGIO MIRTETO) ore 20:
@@ -896,17 +945,60 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20557--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
 DTSTART:20261116T200130Z
 DTEND:20261116T200600Z
-SUMMARY:[FERMATA] REG 20557 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AEROPOR
- TO) ore 21:05
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:01 - 21:06 (primo: REG 20557)
 DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: FERMATA\nChiusura sbarre stimata: 21:01:30 - 21:06:00\nTreni coinvolti 
- nella chiusura:\n  - REG 20557 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AER
- OPORTO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota n
- ormativa/euristica: Previsione da traccia oraria regolare
+ a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:01:30 - 21:06:
+ 00\nTreni coinvolti nella chiusura:\n  - REG 20557 (FARA SABINA-MONTELIBRE
+ TTI -> FIUMICINO AEROPORTO)\n  - REG 20557 (FARA SABINA-MONTELIBRETTI -> F
+ IUMICINO AEROPORTO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
+  90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
+ utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
+ e (120s)
+LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20731--20261115-S08214@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T201137Z
+DTEND:20261116T201707Z
+SUMMARY:[TRANSITO VELOCE] REG 20731 (FIUMICINO AEROPORTO -> ORTE) ore 21:15
+DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
+ a: TRANSITO VELOCE\nChiusura sbarre stimata: 21:11:37 - 21:17:07\nTreni co
+ involti nella chiusura:\n  - REG 20731 (FIUMICINO AEROPORTO -> ORTE) [Tran
+ sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
+ mativa/euristica: Transito stimato senza fermata (57% tratta MONTEROTONDO-
+ MENTANA -> PIANA BELLA DI MONTELIBRETTI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20731--20261115-S08214@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T202130Z
+DTEND:20261116T202600Z
+SUMMARY:[FERMATA] REG 20731 (FIUMICINO AEROPORTO -> ORTE) ore 21:25
+DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
+ a: FERMATA\nChiusura sbarre stimata: 21:21:30 - 21:26:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 20731 (FIUMICINO AEROPORTO -> ORTE)\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
+ revisione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -916,59 +1008,15 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-20731--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T201159Z
-DTEND:20261116T201729Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:11 - 21:17 (primo: REG 20731)
-DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:11:59 - 21:17:
- 29\nTreni coinvolti nella chiusura:\n  - REG 20731 (FIUMICINO AEROPORTO ->
-  ORTE) [Transito]\n  - REG 20731 (FIUMICINO AEROPORTO -> ORTE) [Transito]\
- nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
-  (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-20731--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T202130Z
-DTEND:20261116T202600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:21 - 21:26 (primo: REG 20731)
-DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:21:30 - 21:26:
- 00\nTreni coinvolti nella chiusura:\n  - REG 20731 (FIUMICINO AEROPORTO ->
-  ORTE)\n  - REG 20731 (FIUMICINO AEROPORTO -> ORTE)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-20735--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T205737Z
-DTEND:20261116T210307Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:57 - 22:03 (primo: REG 20735)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T205711Z
+DTEND:20261116T210241Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:57 - 22:02 (primo: REG 20735)
 DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:57:37 - 22:03:
- 07\nTreni coinvolti nella chiusura:\n  - REG 20735 (FIUMICINO AEROPORTO ->
+ a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:57:11 - 22:02:
+ 41\nTreni coinvolti nella chiusura:\n  - REG 20735 (FIUMICINO AEROPORTO ->
   ORTE) [Transito]\n  - REG 20735 (FIUMICINO AEROPORTO -> ORTE) [Transito]\
  nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
  /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
@@ -983,8 +1031,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20735--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T210630Z
 DTEND:20261116T211100Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:06 - 22:11 (primo: REG 20735)
@@ -1005,44 +1053,41 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20739--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T212659Z
-DTEND:20261116T213229Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:26 - 22:32 (primo: REG 20739)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T212637Z
+DTEND:20261116T213207Z
+SUMMARY:[TRANSITO VELOCE] REG 20739 (FIUMICINO AEROPORTO -> ORTE) ore 22:30
 DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:26:59 - 22:32:
- 29\nTreni coinvolti nella chiusura:\n  - REG 20739 (FIUMICINO AEROPORTO ->
-  ORTE) [Transito]\n  - REG 20739 (FIUMICINO AEROPORTO -> ORTE) [Transito]\
- nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
-  (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ a: TRANSITO VELOCE\nChiusura sbarre stimata: 22:26:37 - 22:32:07\nTreni co
+ involti nella chiusura:\n  - REG 20739 (FIUMICINO AEROPORTO -> ORTE) [Tran
+ sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
+ mativa/euristica: Transito stimato senza fermata (57% tratta MONTEROTONDO-
+ MENTANA -> PIANA BELLA DI MONTELIBRETTI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20739--20261115-S08214@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T213630Z
 DTEND:20261116T214100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:36 - 22:41 (primo: REG 20739)
+SUMMARY:[FERMATA] REG 20739 (FIUMICINO AEROPORTO -> ORTE) ore 22:40
 DESCRIPTION:Stazione/PL: FARA SABINA-MONTELIBRETTI (S08214)\nRegime chiusur
- a: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:36:30 - 22:41:
- 00\nTreni coinvolti nella chiusura:\n  - REG 20739 (FIUMICINO AEROPORTO ->
-  ORTE)\n  - REG 20739 (FIUMICINO AEROPORTO -> ORTE)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+ a: FERMATA\nChiusura sbarre stimata: 22:36:30 - 22:41:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 20739 (FIUMICINO AEROPORTO -> ORTE)\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
+ revisione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione FARA SABINA-MONTELIBRETTI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

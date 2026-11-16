@@ -9,33 +9,36 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:00b910fe8822c59e622e52bf742abef45288641e1a25da0855715cdf1a0d
- 1874
+X-CONTENT-HASH:5d6ec916e609fb7a1c7b7b0e040fcc326c72a74266ba9b667ea8002c7cbf
+ b74f
 BEGIN:VEVENT
 UID:train-2012--20261115-S01040@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
 DTSTART:20261116T053630Z
-DTEND:20261116T054100Z
-SUMMARY:[FERMATA] REG 2012 (MILANO CENTRALE -> TORINO PORTA NUOVA) ore 06:4
- 0
-DESCRIPTION:Stazione/PL: MAGENTA (S01040)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 06:36:30 - 06:41:00\nTreni coinvolti nella chiusura:\n 
-  - REG 2012 (MILANO CENTRALE -> TORINO PORTA NUOVA)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
-  da traccia oraria regolare
+DTEND:20261116T054656Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 06:36 - 06:46 (primo: REG 2012) (+2 m
+ in)
+DESCRIPTION:Stazione/PL: MAGENTA (S01040)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 3 TRENI\nChiusura sbarre stimata: 06:36:30 - 06:46:56\nTreni coinvolt
+ i nella chiusura:\n  - REG 2012 (MILANO CENTRALE -> TORINO PORTA NUOVA)\n 
+  - REG 25221 (RHO -> COMO S.GIOVANNI) (+2m) [Transito]\n  - REG 25221 (RHO
+  -> COMO S.GIOVANNI) (+2m) [Transito]\nRitardo massimo rilevato: 2 min\nAf
+ fidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 
+ treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
+ i sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MAGENTA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24614--20261115-S01040@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
 DTSTART:20261116T055030Z
 DTEND:20261116T055500Z
 SUMMARY:[FERMATA] REG 24614 (MILANO PORTA GARIBALDI -> NOVARA) ore 06:54
@@ -54,59 +57,128 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2005--20261115-S01040@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T070537Z
-DTEND:20261116T071107Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:05 - 08:11 (primo: REG 2005)
-DESCRIPTION:Stazione/PL: MAGENTA (S01040)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 08:05:37 - 08:11:07\nTreni coinvolt
- i nella chiusura:\n  - REG 2005 (TORINO PORTA NUOVA -> MILANO PORTA GARIBA
- LDI) [Transito]\n  - REG 2005 (TORINO PORTA NUOVA -> MILANO PORTA GARIBALD
- I) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\n
- Nota normativa/euristica: Chiusura continua per 2 treni: intervallo utile 
- tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
- s)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T070536Z
+DTEND:20261116T071106Z
+SUMMARY:[TRANSITO VELOCE] REG 2005 (TORINO PORTA NUOVA -> MILANO PORTA GARI
+ BALDI) ore 08:09
+DESCRIPTION:Stazione/PL: MAGENTA (S01040)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 08:05:36 - 08:11:06\nTreni coinvolti nella chiu
+ sura:\n  - REG 2005 (TORINO PORTA NUOVA -> MILANO PORTA GARIBALDI) [Transi
+ to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (87% tratta VERCELLI -> NOV
+ ARA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MAGENTA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2022--20261115-S01040@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-2017--20261115-S01040@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T103630Z
-DTEND:20261116T104100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:36 - 11:41 (primo: REG 2022)
+DTSTART:20261116T075910Z
+DTEND:20261116T080440Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:59 - 09:04 (primo: REG 2017) (+2 m
+ in)
 DESCRIPTION:Stazione/PL: MAGENTA (S01040)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 11:36:30 - 11:41:00\nTreni coinvolt
- i nella chiusura:\n  - REG 2022 (MILANO CENTRALE -> TORINO PORTA NUOVA)\n 
-  - REG 2022 (MILANO CENTRALE -> TORINO PORTA NUOVA)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+ UA - 2 TRENI\nChiusura sbarre stimata: 08:59:10 - 09:04:40\nTreni coinvolt
+ i nella chiusura:\n  - REG 2017 (TORINO PORTA NUOVA -> MILANO CENTRALE) (+
+ 2m) [Transito]\n  - REG 2017 (TORINO PORTA NUOVA -> MILANO CENTRALE) (+2m)
+  [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
+ a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MAGENTA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2017--20261115-S01040@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T081630Z
+DTEND:20261116T082300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:16 - 09:23 (primo: REG 2017) (+3 m
+ in)
+DESCRIPTION:Stazione/PL: MAGENTA (S01040)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 09:16:30 - 09:23:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 2017 (TORINO PORTA NUOVA -> MILANO CENTRALE) (+
+ 3m)\n  - REG 2017 (TORINO PORTA NUOVA -> MILANO CENTRALE) (+3m)\nRitardo m
+ assimo rilevato: 3 min\nAffidabilità stima: 99%\nNota normativa/euristica
+ : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MAGENTA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25237--20261115-S01040@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T094143Z
+DTEND:20261116T094713Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:41 - 10:47 (primo: REG 25237) (+1 
+ min)
+DESCRIPTION:Stazione/PL: MAGENTA (S01040)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 10:41:43 - 10:47:13\nTreni coinvolt
+ i nella chiusura:\n  - REG 25237 (RHO -> COMO S.GIOVANNI) (+1m) [Transito]
+ \n  - REG 25237 (RHO -> COMO S.GIOVANNI) (+1m) [Transito]\nRitardo massimo
+  rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
+ sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MAGENTA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2022--20261115-S01040@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T103630Z
+DTEND:20261116T104639Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:36 - 11:46 (primo: REG 2022)
+DESCRIPTION:Stazione/PL: MAGENTA (S01040)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 3 TRENI\nChiusura sbarre stimata: 11:36:30 - 11:46:39\nTreni coinvolt
+ i nella chiusura:\n  - REG 2022 (MILANO CENTRALE -> TORINO PORTA NUOVA)\n 
+  - REG 25241 (RHO -> COMO S.GIOVANNI) [Transito]\n  - REG 25241 (RHO -> CO
+ MO S.GIOVANNI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità 
+ stima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: inter
+ vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
+ tradale (120s)
+LOCATION:Passaggio a Livello / Stazione MAGENTA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2025--20261115-S01040@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
-DTSTART:20261116T115652Z
-DTEND:20261116T120222Z
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
+DTSTART:20261116T115651Z
+DTEND:20261116T120221Z
 SUMMARY:[TRANSITO VELOCE] REG 2025 (TORINO PORTA NUOVA -> MILANO PORTA GARI
  BALDI) ore 13:01
 DESCRIPTION:Stazione/PL: MAGENTA (S01040)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 12:56:52 - 13:02:22\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 12:56:51 - 13:02:21\nTreni coinvolti nella chiu
  sura:\n  - REG 2025 (TORINO PORTA NUOVA -> MILANO PORTA GARIBALDI) [Transi
  to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
  tiva/euristica: Transito stimato senza fermata (87% tratta VERCELLI -> NOV
@@ -121,8 +193,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2025--20261115-S01040@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
 DTSTART:20261116T121430Z
 DTEND:20261116T121900Z
 SUMMARY:[FERMATA] REG 2025 (TORINO PORTA NUOVA -> MILANO PORTA GARIBALDI) o
@@ -142,39 +214,39 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2030--20261115-S01040@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T143630Z
-DTEND:20261116T144746Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:36 - 15:47 (primo: REG 2030)
+DTEND:20261116T144738Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:36 - 15:47 (primo: REG 2030)
 DESCRIPTION:Stazione/PL: MAGENTA (S01040)\nRegime chiusura: CHIUSURA CONTIN
- UA - 4 TRENI\nChiusura sbarre stimata: 15:36:30 - 15:47:46\nTreni coinvolt
+ UA - 3 TRENI\nChiusura sbarre stimata: 15:36:30 - 15:47:38\nTreni coinvolt
  i nella chiusura:\n  - REG 2030 (MILANO CENTRALE -> TORINO PORTA NUOVA)\n 
   - REG 2030 (MILANO CENTRALE -> TORINO PORTA NUOVA)\n  - REG 25257 (RHO ->
-  COMO S.GIOVANNI) [Transito]\n  - REG 25257 (RHO -> COMO S.GIOVANNI) [Tran
- sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i pa
- ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+  COMO S.GIOVANNI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilit
+ à stima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: in
+ tervallo utile tra i passaggi (68s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MAGENTA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25261--20261115-S01040@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T154216Z
-DTEND:20261116T154746Z
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T154208Z
+DTEND:20261116T154738Z
 SUMMARY:[TRANSITO VELOCE] REG 25261 (RHO -> COMO S.GIOVANNI) ore 16:46
 DESCRIPTION:Stazione/PL: MAGENTA (S01040)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 16:42:16 - 16:47:46\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 16:42:08 - 16:47:38\nTreni coinvolti nella chiu
  sura:\n  - REG 25261 (RHO -> COMO S.GIOVANNI) [Transito]\nRitardo massimo 
  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
- ito stimato senza fermata (59% tratta RHO -> RHO FIERA\; pedale annuncio f
+ ito stimato senza fermata (56% tratta RHO -> RHO FIERA\; pedale annuncio f
  isso Vmax)
 LOCATION:Passaggio a Livello / Stazione MAGENTA
 STATUS:CONFIRMED
@@ -185,37 +257,16 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2034--20261115-S01040@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T163630Z
-DTEND:20261116T164100Z
-SUMMARY:[FERMATA] REG 2034 (MILANO CENTRALE -> TORINO PORTA NUOVA) ore 17:4
- 0
-DESCRIPTION:Stazione/PL: MAGENTA (S01040)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 17:36:30 - 17:41:00\nTreni coinvolti nella chiusura:\n 
-  - REG 2034 (MILANO CENTRALE -> TORINO PORTA NUOVA)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
-  da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione MAGENTA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2035--20261115-S01040@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-2033--20261115-S01040@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T165652Z
-DTEND:20261116T170222Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:56 - 18:02 (primo: REG 2035)
+DTSTART:20261116T155651Z
+DTEND:20261116T160221Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:56 - 17:02 (primo: REG 2033)
 DESCRIPTION:Stazione/PL: MAGENTA (S01040)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 17:56:52 - 18:02:22\nTreni coinvolt
- i nella chiusura:\n  - REG 2035 (TORINO PORTA NUOVA -> MILANO CENTRALE) [T
- ransito]\n  - REG 2035 (TORINO PORTA NUOVA -> MILANO CENTRALE) [Transito]\
+ UA - 2 TRENI\nChiusura sbarre stimata: 16:56:51 - 17:02:21\nTreni coinvolt
+ i nella chiusura:\n  - REG 2033 (TORINO PORTA NUOVA -> MILANO CENTRALE) [T
+ ransito]\n  - REG 2033 (TORINO PORTA NUOVA -> MILANO CENTRALE) [Transito]\
  nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
  /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
   (0s) inferiore alla soglia minima di sgombero stradale (120s)
@@ -228,16 +279,16 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2035--20261115-S01040@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-2033--20261115-S01040@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T171430Z
-DTEND:20261116T171900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:14 - 18:19 (primo: REG 2035)
+DTSTART:20261116T161430Z
+DTEND:20261116T161900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:14 - 17:19 (primo: REG 2033)
 DESCRIPTION:Stazione/PL: MAGENTA (S01040)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 18:14:30 - 18:19:00\nTreni coinvolt
- i nella chiusura:\n  - REG 2035 (TORINO PORTA NUOVA -> MILANO CENTRALE)\n 
-  - REG 2035 (TORINO PORTA NUOVA -> MILANO CENTRALE)\nRitardo massimo rilev
+ UA - 2 TRENI\nChiusura sbarre stimata: 17:14:30 - 17:19:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 2033 (TORINO PORTA NUOVA -> MILANO CENTRALE)\n 
+  - REG 2033 (TORINO PORTA NUOVA -> MILANO CENTRALE)\nRitardo massimo rilev
  ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura c
  ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
  oglia minima di sgombero stradale (120s)
@@ -250,14 +301,79 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-797--20261115-S01040@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-2034--20261115-S01040@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T163630Z
+DTEND:20261116T164100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:36 - 17:41 (primo: REG 2034)
+DESCRIPTION:Stazione/PL: MAGENTA (S01040)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 17:36:30 - 17:41:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 2034 (MILANO CENTRALE -> TORINO PORTA NUOVA)\n 
+  - REG 2034 (MILANO CENTRALE -> TORINO PORTA NUOVA)\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura c
+ ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MAGENTA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2035--20261115-S01040@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:1
-DTSTART:20261116T192152Z
-DTEND:20261116T192622Z
+DTSTART:20261116T165651Z
+DTEND:20261116T170221Z
+SUMMARY:[TRANSITO VELOCE] REG 2035 (TORINO PORTA NUOVA -> MILANO CENTRALE) 
+ ore 18:01
+DESCRIPTION:Stazione/PL: MAGENTA (S01040)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 17:56:51 - 18:02:21\nTreni coinvolti nella chiu
+ sura:\n  - REG 2035 (TORINO PORTA NUOVA -> MILANO CENTRALE) [Transito]\nRi
+ tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
+ ristica: Transito stimato senza fermata (87% tratta VERCELLI -> NOVARA\; p
+ edale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MAGENTA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2035--20261115-S01040@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T171430Z
+DTEND:20261116T171900Z
+SUMMARY:[FERMATA] REG 2035 (TORINO PORTA NUOVA -> MILANO CENTRALE) ore 18:1
+ 8
+DESCRIPTION:Stazione/PL: MAGENTA (S01040)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 18:14:30 - 18:19:00\nTreni coinvolti nella chiusura:\n 
+  - REG 2035 (TORINO PORTA NUOVA -> MILANO CENTRALE)\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
+  da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione MAGENTA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-797--20261115-S01040@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T192150Z
+DTEND:20261116T192620Z
 SUMMARY:[TRANSITO VELOCE] ICN 797 (TORINO PORTA NUOVA -> SALERNO) ore 20:25
 DESCRIPTION:Stazione/PL: MAGENTA (S01040)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 20:21:52 - 20:26:22\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 20:21:50 - 20:26:20\nTreni coinvolti nella chiu
  sura:\n  - ICN 797 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRitardo mas
  simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
  Transito stimato senza fermata (87% tratta VERCELLI -> NOVARA\; pedale ann
@@ -272,18 +388,18 @@ X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2040--20261115-S01040@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T193630Z
-DTEND:20261116T194746Z
+DTEND:20261116T194738Z
 SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:36 - 20:47 (primo: REG 2040)
 DESCRIPTION:Stazione/PL: MAGENTA (S01040)\nRegime chiusura: CHIUSURA CONTIN
- UA - 3 TRENI\nChiusura sbarre stimata: 20:36:30 - 20:47:46\nTreni coinvolt
+ UA - 3 TRENI\nChiusura sbarre stimata: 20:36:30 - 20:47:38\nTreni coinvolt
  i nella chiusura:\n  - REG 2040 (MILANO CENTRALE -> TORINO PORTA NUOVA)\n 
   - REG 2040 (MILANO CENTRALE -> TORINO PORTA NUOVA)\n  - REG 25277 (RHO ->
   COMO S.GIOVANNI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilit
  à stima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: in
- tervallo utile tra i passaggi (76s) inferiore alla soglia minima di sgombe
+ tervallo utile tra i passaggi (68s) inferiore alla soglia minima di sgombe
  ro stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MAGENTA
 STATUS:CONFIRMED
@@ -294,15 +410,37 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-2042--20261115-S01040@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T203630Z
+DTEND:20261116T204100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:36 - 21:41 (primo: REG 2042)
+DESCRIPTION:Stazione/PL: MAGENTA (S01040)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 21:36:30 - 21:41:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 2042 (MILANO CENTRALE -> TORINO PORTA NUOVA)\n 
+  - REG 2042 (MILANO CENTRALE -> TORINO PORTA NUOVA)\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura c
+ ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MAGENTA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-2043--20261115-S01040@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T205652Z
-DTEND:20261116T210222Z
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T205651Z
+DTEND:20261116T210221Z
 SUMMARY:[TRANSITO VELOCE] REG 2043 (TORINO PORTA NUOVA -> MILANO CENTRALE) 
  ore 22:01
 DESCRIPTION:Stazione/PL: MAGENTA (S01040)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 21:56:52 - 22:02:22\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 21:56:51 - 22:02:21\nTreni coinvolti nella chiu
  sura:\n  - REG 2043 (TORINO PORTA NUOVA -> MILANO CENTRALE) [Transito]\nRi
  tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
  ristica: Transito stimato senza fermata (87% tratta VERCELLI -> NOVARA\; p
@@ -317,8 +455,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2043--20261115-S01040@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
 DTSTART:20261116T211430Z
 DTEND:20261116T211900Z
 SUMMARY:[FERMATA] REG 2043 (TORINO PORTA NUOVA -> MILANO CENTRALE) ore 22:1

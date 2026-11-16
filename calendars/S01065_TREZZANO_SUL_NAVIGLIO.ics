@@ -9,34 +9,81 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:d7585b861facd17a91dd2db4ae83e443e7c4cbe0692f4f101b77bbd19638
- 3cdb
+X-CONTENT-HASH:9d569844542ec0cfdf2e8a3d7e55a19e08511a8394e26fcc962e246a4bf0
+ 3e9d
+BEGIN:VEVENT
+UID:train-10019--20261115-S01065@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T054712Z
+DTEND:20261116T055354Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:47 - 06:53 (primo: REG 10019) (+1 
+ min)
+DESCRIPTION:Stazione/PL: TREZZANO SUL NAVIGLIO (S01065)\nRegime chiusura: C
+ HIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 06:47:12 - 06:53:54\n
+ Treni coinvolti nella chiusura:\n  - REG 10019 (MILANO ROGOREDO -> MORTARA
+ ) (+1m) [Transito]\n  - REG 10019 (MILANO ROGOREDO -> MORTARA) (+1m) [Tran
+ sito]\n  - REG 25919 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO) [Transito]\n 
+  - REG 25919 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO) [Transito]\nRitardo m
+ assimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione TREZZANO SUL NAVIGLIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
 BEGIN:VEVENT
 UID:train-25919--20261115-S01065@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
-DTSTART:20261116T055730Z
-DTEND:20261116T060200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:57 - 07:02 (primo: REG 25919)
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
+DTSTART:20261116T055630Z
+DTEND:20261116T060100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:56 - 07:01 (primo: REG 25919)
 DESCRIPTION:Stazione/PL: TREZZANO SUL NAVIGLIO (S01065)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:57:30 - 07:02:00\n
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:56:30 - 07:01:00\n
  Treni coinvolti nella chiusura:\n  - REG 25919 (MILANO ROGOREDO -> ALBAIRA
  TE-VERMEZZO)\n  - REG 25919 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euris
- tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
+ do massimo rilevato: -1 min\nAffidabilità stima: 90%\nNota normativa/euri
+ stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
+  inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TREZZANO SUL NAVIGLIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25921--20261115-S01065@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
+DTSTART:20261116T061849Z
+DTEND:20261116T062419Z
+SUMMARY:[TRANSITO VELOCE] REG 25921 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)
+  ore 07:23
+DESCRIPTION:Stazione/PL: TREZZANO SUL NAVIGLIO (S01065)\nRegime chiusura: T
+ RANSITO VELOCE\nChiusura sbarre stimata: 07:18:49 - 07:24:19\nTreni coinvo
+ lti nella chiusura:\n  - REG 25921 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)
+  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Transito stimato senza fermata (77% tratta MILANO 
+ S.CRISTOFORO -> CORSICO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione TREZZANO SUL NAVIGLIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25921--20261115-S01065@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
 DTSTART:20261116T062730Z
 DTEND:20261116T063200Z
 SUMMARY:[FERMATA] REG 25921 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO) ore 07:
@@ -56,52 +103,74 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25935--20261115-S01065@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T095730Z
-DTEND:20261116T100200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:57 - 11:02 (primo: REG 25935)
-DESCRIPTION:Stazione/PL: TREZZANO SUL NAVIGLIO (S01065)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:57:30 - 11:02:00\n
- Treni coinvolti nella chiusura:\n  - REG 25935 (MILANO ROGOREDO -> ALBAIRA
- TE-VERMEZZO)\n  - REG 25935 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euris
- tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T094849Z
+DTEND:20261116T095419Z
+SUMMARY:[TRANSITO VELOCE] REG 25935 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)
+  ore 10:53
+DESCRIPTION:Stazione/PL: TREZZANO SUL NAVIGLIO (S01065)\nRegime chiusura: T
+ RANSITO VELOCE\nChiusura sbarre stimata: 10:48:49 - 10:54:19\nTreni coinvo
+ lti nella chiusura:\n  - REG 25935 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)
+  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Transito stimato senza fermata (77% tratta MILANO 
+ S.CRISTOFORO -> CORSICO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione TREZZANO SUL NAVIGLIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25935--20261115-S01065@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T095730Z
+DTEND:20261116T100200Z
+SUMMARY:[FERMATA] REG 25935 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO) ore 11:
+ 01
+DESCRIPTION:Stazione/PL: TREZZANO SUL NAVIGLIO (S01065)\nRegime chiusura: F
+ ERMATA\nChiusura sbarre stimata: 10:57:30 - 11:02:00\nTreni coinvolti nell
+ a chiusura:\n  - REG 25935 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
+ ica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione TREZZANO SUL NAVIGLIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10039--20261115-S01065@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T104710Z
-DTEND:20261116T105240Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:47 - 11:52 (primo: REG 10039)
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T104648Z
+DTEND:20261116T105419Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:46 - 11:54 (primo: REG 10039)
 DESCRIPTION:Stazione/PL: TREZZANO SUL NAVIGLIO (S01065)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:47:10 - 11:52:40\n
+ HIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 11:46:48 - 11:54:19\n
  Treni coinvolti nella chiusura:\n  - REG 10039 (MILANO ROGOREDO -> MORTARA
- ) [Transito]\n  - REG 10039 (MILANO ROGOREDO -> MORTARA) [Transito]\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
- tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
+ ) [Transito]\n  - REG 10039 (MILANO ROGOREDO -> MORTARA) [Transito]\n  - R
+ EG 25939 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 3 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TREZZANO SUL NAVIGLIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25939--20261115-S01065@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:2
+DTSTAMP:20261116T104738Z
+SEQUENCE:3
 DTSTART:20261116T105730Z
 DTEND:20261116T110200Z
 SUMMARY:[FERMATA] REG 25939 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO) ore 12:
@@ -121,15 +190,126 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25941--20261115-S01065@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T111849Z
+DTEND:20261116T112419Z
+SUMMARY:[TRANSITO VELOCE] REG 25941 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)
+  ore 12:23
+DESCRIPTION:Stazione/PL: TREZZANO SUL NAVIGLIO (S01065)\nRegime chiusura: T
+ RANSITO VELOCE\nChiusura sbarre stimata: 12:18:49 - 12:24:19\nTreni coinvo
+ lti nella chiusura:\n  - REG 25941 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)
+  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Transito stimato senza fermata (77% tratta MILANO 
+ S.CRISTOFORO -> CORSICO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione TREZZANO SUL NAVIGLIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25941--20261115-S01065@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T112730Z
 DTEND:20261116T113200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:27 - 12:32 (primo: REG 25941)
+SUMMARY:[FERMATA] REG 25941 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO) ore 12:
+ 31
+DESCRIPTION:Stazione/PL: TREZZANO SUL NAVIGLIO (S01065)\nRegime chiusura: F
+ ERMATA\nChiusura sbarre stimata: 12:27:30 - 12:32:00\nTreni coinvolti nell
+ a chiusura:\n  - REG 25941 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
+ ica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione TREZZANO SUL NAVIGLIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10043--20261115-S01065@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T114658Z
+DTEND:20261116T115700Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:46 - 12:57 (primo: REG 10043)
 DESCRIPTION:Stazione/PL: TREZZANO SUL NAVIGLIO (S01065)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:27:30 - 12:32:00\n
- Treni coinvolti nella chiusura:\n  - REG 25941 (MILANO ROGOREDO -> ALBAIRA
- TE-VERMEZZO)\n  - REG 25941 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)\nRitar
+ HIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 12:46:58 - 12:57:00\n
+ Treni coinvolti nella chiusura:\n  - REG 10043 (MILANO ROGOREDO -> MORTARA
+ ) [Transito]\n  - REG 10043 (MILANO ROGOREDO -> MORTARA) [Transito]\n  - R
+ EG 25946 (ALBAIRATE-VERMEZZO -> MILANO ROGOREDO)\n  - REG 25946 (ALBAIRATE
+ -VERMEZZO -> MILANO ROGOREDO)\nRitardo massimo rilevato: 0 min\nAffidabili
+ tà stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: i
+ ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
+LOCATION:Passaggio a Livello / Stazione TREZZANO SUL NAVIGLIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10055--20261115-S01065@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T144658Z
+DTEND:20261116T145228Z
+SUMMARY:[TRANSITO VELOCE] REG 10055 (MILANO ROGOREDO -> MORTARA) ore 15:51
+DESCRIPTION:Stazione/PL: TREZZANO SUL NAVIGLIO (S01065)\nRegime chiusura: T
+ RANSITO VELOCE\nChiusura sbarre stimata: 15:46:58 - 15:52:28\nTreni coinvo
+ lti nella chiusura:\n  - REG 10055 (MILANO ROGOREDO -> MORTARA) [Transito]
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Transito stimato senza fermata (45% tratta MILANO S.CRISTOFOR
+ O -> ALBAIRATE-VERMEZZO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione TREZZANO SUL NAVIGLIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25957--20261115-S01065@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T151849Z
+DTEND:20261116T152419Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:18 - 16:24 (primo: REG 25957)
+DESCRIPTION:Stazione/PL: TREZZANO SUL NAVIGLIO (S01065)\nRegime chiusura: C
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:18:49 - 16:24:19\n
+ Treni coinvolti nella chiusura:\n  - REG 25957 (MILANO ROGOREDO -> ALBAIRA
+ TE-VERMEZZO) [Transito]\n  - REG 25957 (MILANO ROGOREDO -> ALBAIRATE-VERME
+ ZZO) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%
+ \nNota normativa/euristica: Chiusura continua per 2 treni: intervallo util
+ e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
+ 20s)
+LOCATION:Passaggio a Livello / Stazione TREZZANO SUL NAVIGLIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25957--20261115-S01065@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T152730Z
+DTEND:20261116T153200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:27 - 16:32 (primo: REG 25957)
+DESCRIPTION:Stazione/PL: TREZZANO SUL NAVIGLIO (S01065)\nRegime chiusura: C
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:27:30 - 16:32:00\n
+ Treni coinvolti nella chiusura:\n  - REG 25957 (MILANO ROGOREDO -> ALBAIRA
+ TE-VERMEZZO)\n  - REG 25957 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)\nRitar
  do massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euris
  tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
  inferiore alla soglia minima di sgombero stradale (120s)
@@ -142,16 +322,16 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-10055--20261115-S01065@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-10059--20261115-S01065@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T144710Z
-DTEND:20261116T145240Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:47 - 15:52 (primo: REG 10055)
+DTSTART:20261116T154658Z
+DTEND:20261116T155228Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:46 - 16:52 (primo: REG 10059)
 DESCRIPTION:Stazione/PL: TREZZANO SUL NAVIGLIO (S01065)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:47:10 - 15:52:40\n
- Treni coinvolti nella chiusura:\n  - REG 10055 (MILANO ROGOREDO -> MORTARA
- ) [Transito]\n  - REG 10055 (MILANO ROGOREDO -> MORTARA) [Transito]\nRitar
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:46:58 - 16:52:28\n
+ Treni coinvolti nella chiusura:\n  - REG 10059 (MILANO ROGOREDO -> MORTARA
+ ) [Transito]\n  - REG 10059 (MILANO ROGOREDO -> MORTARA) [Transito]\nRitar
  do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
  tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
  inferiore alla soglia minima di sgombero stradale (120s)
@@ -165,8 +345,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25961--20261115-S01065@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:2
+DTSTAMP:20261116T104738Z
+SEQUENCE:3
+DTSTART:20261116T161849Z
+DTEND:20261116T162419Z
+SUMMARY:[TRANSITO VELOCE] REG 25961 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)
+  ore 17:23
+DESCRIPTION:Stazione/PL: TREZZANO SUL NAVIGLIO (S01065)\nRegime chiusura: T
+ RANSITO VELOCE\nChiusura sbarre stimata: 17:18:49 - 17:24:19\nTreni coinvo
+ lti nella chiusura:\n  - REG 25961 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO)
+  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Transito stimato senza fermata (77% tratta MILANO 
+ S.CRISTOFORO -> CORSICO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione TREZZANO SUL NAVIGLIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25961--20261115-S01065@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:3
 DTSTART:20261116T162730Z
 DTEND:20261116T163200Z
 SUMMARY:[FERMATA] REG 25961 (MILANO ROGOREDO -> ALBAIRATE-VERMEZZO) ore 17:
@@ -182,6 +384,50 @@ TRANSP:OPAQUE
 CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10075--20261115-S01065@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T194658Z
+DTEND:20261116T195228Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:46 - 20:52 (primo: REG 10075)
+DESCRIPTION:Stazione/PL: TREZZANO SUL NAVIGLIO (S01065)\nRegime chiusura: C
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:46:58 - 20:52:28\n
+ Treni coinvolti nella chiusura:\n  - REG 10075 (MILANO ROGOREDO -> MORTARA
+ ) [Transito]\n  - REG 10075 (MILANO ROGOREDO -> MORTARA) [Transito]\nRitar
+ do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
+ inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione TREZZANO SUL NAVIGLIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10079--20261115-S01065@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T204658Z
+DTEND:20261116T205228Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:46 - 21:52 (primo: REG 10079)
+DESCRIPTION:Stazione/PL: TREZZANO SUL NAVIGLIO (S01065)\nRegime chiusura: C
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:46:58 - 21:52:28\n
+ Treni coinvolti nella chiusura:\n  - REG 10079 (MILANO ROGOREDO -> MORTARA
+ ) [Transito]\n  - REG 10079 (MILANO ROGOREDO -> MORTARA) [Transito]\nRitar
+ do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
+ inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione TREZZANO SUL NAVIGLIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

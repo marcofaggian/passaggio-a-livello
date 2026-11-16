@@ -9,18 +9,41 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:1b75033d1f56e32ccfc6996079ed3d70e5cfcdb1ae933160ee71fc27c097
- d8c9
+X-CONTENT-HASH:46c6b4ef7755b303f5b300988b74fb3ad584da7259ef575369c889e8e2e6
+ 9359
 BEGIN:VEVENT
 UID:train-2070--20261115-S05053@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:2
-DTSTART:20261116T045930Z
-DTEND:20261116T050400Z
-SUMMARY:[FERMATA] REG 2070 (RAVENNA -> GENOVA BRIGNOLE) ore 06:03
+DTSTAMP:20261116T104738Z
+SEQUENCE:3
+DTSTART:20261116T045800Z
+DTEND:20261116T050530Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:58 - 06:05 (primo: REG 2070) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:58:00 - 06:05:30\n
+ Treni coinvolti nella chiusura:\n  - REG 2070 (RAVENNA -> GENOVA BRIGNOLE)
+  (+1m)\n  - REG 2070 (RAVENNA -> GENOVA BRIGNOLE) (+1m)\nRitardo massimo r
+ ilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusu
+ ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
+ la soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3901--20261115-S05053@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T054130Z
+DTEND:20261116T054600Z
+SUMMARY:[FERMATA] REG 3901 (BOLOGNA CENTRALE -> ANCONA) ore 06:45
 DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: F
- ERMATA\nChiusura sbarre stimata: 05:59:30 - 06:04:00\nTreni coinvolti nell
- a chiusura:\n  - REG 2070 (RAVENNA -> GENOVA BRIGNOLE)\nRitardo massimo ri
+ ERMATA\nChiusura sbarre stimata: 06:41:30 - 06:46:00\nTreni coinvolti nell
+ a chiusura:\n  - REG 3901 (BOLOGNA CENTRALE -> ANCONA)\nRitardo massimo ri
  levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
  one da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
@@ -32,31 +55,30 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3901--20261115-S05053@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-17437--20261115-S05053@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:4
-DTSTART:20261116T054130Z
-DTEND:20261116T054600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:41 - 06:46 (primo: REG 3901)
-DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:41:30 - 06:46:00\n
- Treni coinvolti nella chiusura:\n  - REG 3901 (BOLOGNA CENTRALE -> ANCONA)
- \n  - REG 3901 (BOLOGNA CENTRALE -> ANCONA)\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua 
- per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
- nima di sgombero stradale (120s)
+DTSTART:20261116T060905Z
+DTEND:20261116T061435Z
+SUMMARY:[TRANSITO VELOCE] REG 17437 (BOLOGNA CENTRALE -> RIMINI) ore 07:13
+DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: T
+ RANSITO VELOCE\nChiusura sbarre stimata: 07:09:05 - 07:14:35\nTreni coinvo
+ lti nella chiusura:\n  - REG 17437 (BOLOGNA CENTRALE -> RIMINI) [Transito]
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Transito stimato senza fermata (58% tratta OZZANO DELL'EMILIA
+  -> VARIGNANA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17437--20261115-S05053@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
 DTSTART:20261116T061730Z
 DTEND:20261116T062200Z
 SUMMARY:[FERMATA] REG 17437 (BOLOGNA CENTRALE -> RIMINI) ore 07:21
@@ -75,126 +97,16 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17543--20261115-S05053@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T071410Z
-DTEND:20261116T071940Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:14 - 08:19 (primo: REG 17543)
-DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:14:10 - 08:19:40\n
- Treni coinvolti nella chiusura:\n  - REG 17543 (BOLOGNA CENTRALE -> RIMINI
- ) [Transito]\n  - REG 17543 (BOLOGNA CENTRALE -> RIMINI) [Transito]\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
- tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3906--20261115-S05053@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T080430Z
-DTEND:20261116T080900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:04 - 09:09 (primo: REG 3906)
-DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:04:30 - 09:09:00\n
- Treni coinvolti nella chiusura:\n  - REG 3906 (ANCONA -> PIACENZA)\n  - RE
- G 3906 (ANCONA -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17537--20261115-S05053@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T093730Z
-DTEND:20261116T094200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:37 - 10:42 (primo: REG 17537)
-DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:37:30 - 10:42:00\n
- Treni coinvolti nella chiusura:\n  - REG 17537 (FERRARA -> IMOLA)\n  - REG
-  17537 (FERRARA -> IMOLA)\nRitardo massimo rilevato: 0 min\nAffidabilità 
- stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inter
- vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
- tradale (120s)
-LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17549--20261115-S05053@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T101410Z
-DTEND:20261116T101940Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:14 - 11:19 (primo: REG 17549)
-DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:14:10 - 11:19:40\n
- Treni coinvolti nella chiusura:\n  - REG 17549 (BOLOGNA CENTRALE -> RIMINI
- ) [Transito]\n  - REG 17549 (BOLOGNA CENTRALE -> RIMINI) [Transito]\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
- tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17495--20261115-S05053@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:2
-DTSTART:20261116T103730Z
-DTEND:20261116T104200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:37 - 11:42 (primo: REG 17495)
-DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:37:30 - 11:42:00\n
- Treni coinvolti nella chiusura:\n  - REG 17495 (BOLOGNA CENTRALE -> IMOLA)
- \n  - REG 17495 (BOLOGNA CENTRALE -> IMOLA)\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua 
- per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
- nima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17551--20261115-S05053@pl-tracker.local
-DTSTAMP:20261116T024826Z
+DTSTAMP:20261116T104738Z
 SEQUENCE:1
-DTSTART:20261116T111410Z
-DTEND:20261116T111940Z
-SUMMARY:[TRANSITO VELOCE] REG 17551 (BOLOGNA CENTRALE -> RIMINI) ore 12:18
+DTSTART:20261116T071433Z
+DTEND:20261116T072003Z
+SUMMARY:[TRANSITO VELOCE] REG 17543 (BOLOGNA CENTRALE -> RIMINI) ore 08:18
 DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: T
- RANSITO VELOCE\nChiusura sbarre stimata: 12:14:10 - 12:19:40\nTreni coinvo
- lti nella chiusura:\n  - REG 17551 (BOLOGNA CENTRALE -> RIMINI) [Transito]
+ RANSITO VELOCE\nChiusura sbarre stimata: 08:14:33 - 08:20:03\nTreni coinvo
+ lti nella chiusura:\n  - REG 17543 (BOLOGNA CENTRALE -> RIMINI) [Transito]
  \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
- a/euristica: Transito stimato senza fermata (67% tratta BOLOGNA CENTRALE -
+ a/euristica: Transito stimato senza fermata (69% tratta BOLOGNA CENTRALE -
  > IMOLA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
 STATUS:CONFIRMED
@@ -205,105 +117,17 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3917--20261115-S05053@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
-DTSTART:20261116T114130Z
-DTEND:20261116T114600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:41 - 12:46 (primo: REG 3917)
-DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:41:30 - 12:46:00\n
- Treni coinvolti nella chiusura:\n  - REG 3917 (PIACENZA -> ANCONA)\n  - RE
- G 3917 (PIACENZA -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3921--20261115-S05053@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T124130Z
-DTEND:20261116T124600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:41 - 13:46 (primo: REG 3921)
-DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:41:30 - 13:46:00\n
- Treni coinvolti nella chiusura:\n  - REG 3921 (PIACENZA -> ANCONA)\n  - RE
- G 3921 (PIACENZA -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3916--20261115-S05053@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T130330Z
-DTEND:20261116T130800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:03 - 14:08 (primo: REG 3916)
-DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:03:30 - 14:08:00\n
- Treni coinvolti nella chiusura:\n  - REG 3916 (ANCONA -> PIACENZA)\n  - RE
- G 3916 (ANCONA -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3918--20261115-S05053@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-3906--20261115-S05053@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:1
-DTSTART:20261116T140430Z
-DTEND:20261116T140900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:04 - 15:09 (primo: REG 3918)
-DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:04:30 - 15:09:00\n
- Treni coinvolti nella chiusura:\n  - REG 3918 (ANCONA -> PIACENZA)\n  - RE
- G 3918 (ANCONA -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17507--20261115-S05053@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T143730Z
-DTEND:20261116T144200Z
-SUMMARY:[FERMATA] REG 17507 (S.PIETRO IN CASALE -> IMOLA) ore 15:41
+DTSTART:20261116T080430Z
+DTEND:20261116T080900Z
+SUMMARY:[FERMATA] REG 3906 (ANCONA -> PIACENZA) ore 09:08
 DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: F
- ERMATA\nChiusura sbarre stimata: 15:37:30 - 15:42:00\nTreni coinvolti nell
- a chiusura:\n  - REG 17507 (S.PIETRO IN CASALE -> IMOLA)\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previ
- sione da traccia oraria regolare
+ ERMATA\nChiusura sbarre stimata: 09:04:30 - 09:09:00\nTreni coinvolti nell
+ a chiusura:\n  - REG 3906 (ANCONA -> PIACENZA)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
+ raccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -313,16 +137,256 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3929--20261115-S05053@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T154130Z
-DTEND:20261116T154600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:41 - 16:46 (primo: REG 3929)
+UID:train-17537--20261115-S05053@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T093430Z
+DTEND:20261116T094630Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:34 - 10:46 (primo: REG 17537) (+4 
+ min)
 DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:41:30 - 16:46:00\n
- Treni coinvolti nella chiusura:\n  - REG 3929 (PIACENZA -> ANCONA)\n  - RE
- G 3929 (PIACENZA -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilit
+ HIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 10:34:30 - 10:46:30\n
+ Treni coinvolti nella chiusura:\n  - REG 17537 (FERRARA -> IMOLA) [Transit
+ o]\n  - REG 17537 (FERRARA -> IMOLA) [Transito]\n  - REG 17537 (FERRARA ->
+  IMOLA) (+4m)\n  - REG 17537 (FERRARA -> IMOLA) (+4m)\nRitardo massimo ril
+ evato: 4 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
+  continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla
+  soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17549--20261115-S05053@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T101433Z
+DTEND:20261116T102230Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:14 - 11:22 (primo: REG 17549) (+7 
+ min)
+DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
+ HIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 11:14:33 - 11:22:30\n
+ Treni coinvolti nella chiusura:\n  - REG 17549 (BOLOGNA CENTRALE -> RIMINI
+ ) [Transito]\n  - REG 17490 (IMOLA -> BOLOGNA CENTRALE) (+7m)\n  - REG 174
+ 90 (IMOLA -> BOLOGNA CENTRALE) (+7m)\nRitardo massimo rilevato: 7 min\nAff
+ idabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 t
+ reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
+  sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17495--20261115-S05053@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:3
+DTSTART:20261116T102905Z
+DTEND:20261116T103435Z
+SUMMARY:[TRANSITO VELOCE] REG 17495 (BOLOGNA CENTRALE -> IMOLA) ore 11:33
+DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: T
+ RANSITO VELOCE\nChiusura sbarre stimata: 11:29:05 - 11:34:35\nTreni coinvo
+ lti nella chiusura:\n  - REG 17495 (BOLOGNA CENTRALE -> IMOLA) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Transito stimato senza fermata (58% tratta OZZANO DELL'EMILIA 
+ -> VARIGNANA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17495--20261115-S05053@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:3
+DTSTART:20261116T103730Z
+DTEND:20261116T104200Z
+SUMMARY:[FERMATA] REG 17495 (BOLOGNA CENTRALE -> IMOLA) ore 11:41
+DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: F
+ ERMATA\nChiusura sbarre stimata: 11:37:30 - 11:42:00\nTreni coinvolti nell
+ a chiusura:\n  - REG 17495 (BOLOGNA CENTRALE -> IMOLA)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17551--20261115-S05053@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T111433Z
+DTEND:20261116T112003Z
+SUMMARY:[TRANSITO VELOCE] REG 17551 (BOLOGNA CENTRALE -> RIMINI) ore 12:18
+DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: T
+ RANSITO VELOCE\nChiusura sbarre stimata: 12:14:33 - 12:20:03\nTreni coinvo
+ lti nella chiusura:\n  - REG 17551 (BOLOGNA CENTRALE -> RIMINI) [Transito]
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Transito stimato senza fermata (69% tratta BOLOGNA CENTRALE -
+ > IMOLA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17499--20261115-S05053@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T112905Z
+DTEND:20261116T114630Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 12:29 - 12:46 (primo: REG 17499) (+4 
+ min)
+DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
+ HIUSURA CONTINUA - 7 TRENI\nChiusura sbarre stimata: 12:29:05 - 12:46:30\n
+ Treni coinvolti nella chiusura:\n  - REG 17499 (BOLOGNA CENTRALE -> RIMINI
+ ) [Transito]\n  - REG 17499 (BOLOGNA CENTRALE -> RIMINI) [Transito]\n  - R
+ EG 17499 (BOLOGNA CENTRALE -> RIMINI)\n  - REG 17499 (BOLOGNA CENTRALE -> 
+ RIMINI)\n  - REG 3917 (PIACENZA -> ANCONA)\n  - REG 17546 (RAVENNA -> BOLO
+ GNA CENTRALE) (+4m) [Transito]\n  - REG 17546 (RAVENNA -> BOLOGNA CENTRALE
+ ) (+4m) [Transito]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 
+ 78%\nNota normativa/euristica: Chiusura continua per 7 treni: intervallo u
+ tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
+  (120s)
+LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3921--20261115-S05053@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T124130Z
+DTEND:20261116T124600Z
+SUMMARY:[FERMATA] REG 3921 (PIACENZA -> ANCONA) ore 13:45
+DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: F
+ ERMATA\nChiusura sbarre stimata: 13:41:30 - 13:46:00\nTreni coinvolti nell
+ a chiusura:\n  - REG 3921 (PIACENZA -> ANCONA)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
+ raccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3916--20261115-S05053@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T130330Z
+DTEND:20261116T130800Z
+SUMMARY:[FERMATA] REG 3916 (ANCONA -> PIACENZA) ore 14:07
+DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: F
+ ERMATA\nChiusura sbarre stimata: 14:03:30 - 14:08:00\nTreni coinvolti nell
+ a chiusura:\n  - REG 3916 (ANCONA -> PIACENZA)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
+ raccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3918--20261115-S05053@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T140430Z
+DTEND:20261116T140900Z
+SUMMARY:[FERMATA] REG 3918 (ANCONA -> PIACENZA) ore 15:08
+DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: F
+ ERMATA\nChiusura sbarre stimata: 15:04:30 - 15:09:00\nTreni coinvolti nell
+ a chiusura:\n  - REG 3918 (ANCONA -> PIACENZA)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
+ raccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17507--20261115-S05053@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T142905Z
+DTEND:20261116T143435Z
+SUMMARY:[TRANSITO VELOCE] REG 17507 (S.PIETRO IN CASALE -> IMOLA) ore 15:33
+DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: T
+ RANSITO VELOCE\nChiusura sbarre stimata: 15:29:05 - 15:34:35\nTreni coinvo
+ lti nella chiusura:\n  - REG 17507 (S.PIETRO IN CASALE -> IMOLA) [Transito
+ ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
+ va/euristica: Transito stimato senza fermata (58% tratta OZZANO DELL'EMILI
+ A -> VARIGNANA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17507--20261115-S05053@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T143730Z
+DTEND:20261116T144600Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:37 - 15:46 (primo: REG 17507)
+DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
+ HIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 15:37:30 - 15:46:00\n
+ Treni coinvolti nella chiusura:\n  - REG 17507 (S.PIETRO IN CASALE -> IMOL
+ A)\n  - REG 3927 (PIACENZA -> PESARO)\n  - REG 3927 (PIACENZA -> PESARO)\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/
+ euristica: Chiusura continua per 3 treni: intervallo utile tra i passaggi 
+ (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3920--20261115-S05053@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T150330Z
+DTEND:20261116T150800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:03 - 16:08 (primo: REG 3920)
+DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:03:30 - 16:08:00\n
+ Treni coinvolti nella chiusura:\n  - REG 3920 (RIMINI -> PIACENZA)\n  - RE
+ G 3920 (RIMINI -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabilit
  à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
  tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
  o stradale (120s)
@@ -335,14 +399,34 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-3929--20261115-S05053@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T154130Z
+DTEND:20261116T154600Z
+SUMMARY:[FERMATA] REG 3929 (PIACENZA -> ANCONA) ore 16:45
+DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: F
+ ERMATA\nChiusura sbarre stimata: 16:41:30 - 16:46:00\nTreni coinvolti nell
+ a chiusura:\n  - REG 3929 (PIACENZA -> ANCONA)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
+ raccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-17561--20261115-S05053@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T161410Z
-DTEND:20261116T161940Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:14 - 17:19 (primo: REG 17561)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T161433Z
+DTEND:20261116T162003Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:14 - 17:20 (primo: REG 17561)
 DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:14:10 - 17:19:40\n
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:14:33 - 17:20:03\n
  Treni coinvolti nella chiusura:\n  - REG 17561 (BOLOGNA CENTRALE -> RIMINI
  ) [Transito]\n  - REG 17561 (BOLOGNA CENTRALE -> RIMINI) [Transito]\nRitar
  do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
@@ -358,52 +442,69 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3931--20261115-S05053@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T164330Z
-DTEND:20261116T164800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:43 - 17:48 (primo: REG 3931)
-DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:43:30 - 17:48:00\n
- Treni coinvolti nella chiusura:\n  - REG 3931 (PIACENZA -> ANCONA)\n  - RE
- G 3931 (PIACENZA -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T163141Z
+DTEND:20261116T163711Z
+SUMMARY:[TRANSITO VELOCE] REG 3931 (PIACENZA -> ANCONA) ore 17:35
+DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: T
+ RANSITO VELOCE\nChiusura sbarre stimata: 17:31:41 - 17:37:11\nTreni coinvo
+ lti nella chiusura:\n  - REG 3931 (PIACENZA -> ANCONA) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (73% tratta BOLOGNA CENTRALE -> OZZANO 
+ DELL'EMILIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3931--20261115-S05053@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T164330Z
+DTEND:20261116T164800Z
+SUMMARY:[FERMATA] REG 3931 (PIACENZA -> ANCONA) ore 17:47
+DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: F
+ ERMATA\nChiusura sbarre stimata: 17:43:30 - 17:48:00\nTreni coinvolti nell
+ a chiusura:\n  - REG 3931 (PIACENZA -> ANCONA)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
+ raccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3924--20261115-S05053@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T165930Z
 DTEND:20261116T170400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:59 - 18:04 (primo: REG 3924)
-DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:59:30 - 18:04:00\n
- Treni coinvolti nella chiusura:\n  - REG 3924 (RIMINI -> MILANO PORTA GARI
- BALDI)\n  - REG 3924 (RIMINI -> MILANO PORTA GARIBALDI)\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 3924 (RIMINI -> MILANO PORTA GARIBALDI) ore 18:03
+DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: F
+ ERMATA\nChiusura sbarre stimata: 17:59:30 - 18:04:00\nTreni coinvolti nell
+ a chiusura:\n  - REG 3924 (RIMINI -> MILANO PORTA GARIBALDI)\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
+ revisione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3935--20261115-S05053@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
 DTSTART:20261116T174130Z
 DTEND:20261116T174600Z
 SUMMARY:[FERMATA] REG 3935 (PIACENZA -> ANCONA) ore 18:45
@@ -422,30 +523,28 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3926--20261115-S05053@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T180430Z
 DTEND:20261116T180900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:04 - 19:09 (primo: REG 3926)
-DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:04:30 - 19:09:00\n
- Treni coinvolti nella chiusura:\n  - REG 3926 (ANCONA -> PIACENZA)\n  - RE
- G 3926 (ANCONA -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+SUMMARY:[FERMATA] REG 3926 (ANCONA -> PIACENZA) ore 19:08
+DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: F
+ ERMATA\nChiusura sbarre stimata: 19:04:30 - 19:09:00\nTreni coinvolti nell
+ a chiusura:\n  - REG 3926 (ANCONA -> PIACENZA)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
+ raccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3928--20261115-S05053@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
 DTSTART:20261116T190430Z
 DTEND:20261116T190900Z
 SUMMARY:[FERMATA] REG 3928 (PESARO -> PIACENZA) ore 20:08
@@ -463,17 +562,83 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-17531--20261115-S05053@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T192905Z
+DTEND:20261116T193435Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:29 - 20:34 (primo: REG 17531)
+DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:29:05 - 20:34:35\n
+ Treni coinvolti nella chiusura:\n  - REG 17531 (BOLOGNA CENTRALE -> IMOLA)
+  [Transito]\n  - REG 17531 (BOLOGNA CENTRALE -> IMOLA) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17531--20261115-S05053@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T193730Z
+DTEND:20261116T194200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:37 - 20:42 (primo: REG 17531)
+DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:37:30 - 20:42:00\n
+ Treni coinvolti nella chiusura:\n  - REG 17531 (BOLOGNA CENTRALE -> IMOLA)
+ \n  - REG 17531 (BOLOGNA CENTRALE -> IMOLA)\nRitardo massimo rilevato: 0 m
+ in\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua 
+ per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
+ nima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3930--20261115-S05053@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T200430Z
+DTEND:20261116T200900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:04 - 21:09 (primo: REG 3930)
+DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:04:30 - 21:09:00\n
+ Treni coinvolti nella chiusura:\n  - REG 3930 (ANCONA -> PIACENZA)\n  - RE
+ G 3930 (ANCONA -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabilit
+ à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-2477--20261115-S05053@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T201610Z
-DTEND:20261116T202140Z
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T201638Z
+DTEND:20261116T202208Z
 SUMMARY:[TRANSITO VELOCE] REG 2477 (MILANO CENTRALE -> RIMINI) ore 21:20
 DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: T
- RANSITO VELOCE\nChiusura sbarre stimata: 21:16:10 - 21:21:40\nTreni coinvo
+ RANSITO VELOCE\nChiusura sbarre stimata: 21:16:38 - 21:22:08\nTreni coinvo
  lti nella chiusura:\n  - REG 2477 (MILANO CENTRALE -> RIMINI) [Transito]\n
  Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
- euristica: Transito stimato senza fermata (67% tratta BOLOGNA CENTRALE -> 
+ euristica: Transito stimato senza fermata (69% tratta BOLOGNA CENTRALE -> 
  IMOLA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
 STATUS:CONFIRMED
@@ -485,18 +650,40 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17535--20261115-S05053@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
+DTSTART:20261116T202905Z
+DTEND:20261116T203435Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:29 - 21:34 (primo: REG 17535)
+DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:29:05 - 21:34:35\n
+ Treni coinvolti nella chiusura:\n  - REG 17535 (BOLOGNA CENTRALE -> IMOLA)
+  [Transito]\n  - REG 17535 (BOLOGNA CENTRALE -> IMOLA) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17535--20261115-S05053@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
 DTSTART:20261116T203730Z
 DTEND:20261116T204600Z
 SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:37 - 21:46 (primo: REG 17535)
 DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
  HIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 21:37:30 - 21:46:00\n
  Treni coinvolti nella chiusura:\n  - REG 17535 (BOLOGNA CENTRALE -> IMOLA)
- \n  - REG 2090 (GENOVA BRIGNOLE -> RIMINI)\n  - REG 2090 (GENOVA BRIGNOLE 
- -> RIMINI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNot
- a normativa/euristica: Chiusura continua per 3 treni: intervallo utile tra
-  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ \n  - REG 17535 (BOLOGNA CENTRALE -> IMOLA)\n  - REG 2090 (GENOVA BRIGNOLE
+  -> RIMINI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNo
+ ta normativa/euristica: Chiusura continua per 3 treni: intervallo utile tr
+ a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CASTEL S.PIETRO TERME
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -507,13 +694,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3932--20261115-S05053@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T220346Z
-DTEND:20261116T220916Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:03 - 23:09 (primo: REG 3932)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T220300Z
+DTEND:20261116T220830Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:03 - 23:08 (primo: REG 3932)
 DESCRIPTION:Stazione/PL: CASTEL S.PIETRO TERME (S05053)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 23:03:46 - 23:09:16\n
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 23:03:00 - 23:08:30\n
  Treni coinvolti nella chiusura:\n  - REG 3932 (ANCONA -> BOLOGNA CENTRALE)
   [Transito]\n  - REG 3932 (ANCONA -> BOLOGNA CENTRALE) [Transito]\nRitardo
   massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi

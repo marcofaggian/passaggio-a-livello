@@ -9,33 +9,35 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:6f52090e525492e3fde4bd9572dd99a762c3bb881b31575df08b11609395
- 3e05
+X-CONTENT-HASH:8f926acf8c1e9c30db7ffc4f0d371ede81217f4e359ca3d8eac86e858610
+ ca63
 BEGIN:VEVENT
 UID:train-2070--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T044220Z
-DTEND:20261116T044750Z
-SUMMARY:[TRANSITO VELOCE] REG 2070 (RAVENNA -> GENOVA BRIGNOLE) ore 05:46
-DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 05:42:20 - 05:47:50\nTreni coinvolti nella chius
- ura:\n  - REG 2070 (RAVENNA -> GENOVA BRIGNOLE) [Transito]\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
- nsito stimato senza fermata (20% tratta CASTELBOLOGNESE-RIOLO TERME -> IMO
- LA\; pedale annuncio fisso Vmax)
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T044440Z
+DTEND:20261116T045010Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:44 - 05:50 (primo: REG 2070) (+8 m
+ in)
+DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 05:44:40 - 05:50:10\nTreni coinvolti
+  nella chiusura:\n  - REG 2070 (RAVENNA -> GENOVA BRIGNOLE) (+8m) [Transit
+ o]\n  - REG 2070 (RAVENNA -> GENOVA BRIGNOLE) (+8m) [Transito]\nRitardo ma
+ ssimo rilevato: 8 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
+ iore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FAENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8802--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
 DTSTART:20261116T054330Z
 DTEND:20261116T054800Z
 SUMMARY:[FERMATA] TRENO 8802 (ANCONA -> MILANO CENTRALE) ore 06:47
@@ -54,119 +56,131 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3901--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
 DTSTART:20261116T061130Z
 DTEND:20261116T061600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:11 - 07:16 (primo: REG 3901)
-DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 07:11:30 - 07:16:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3901 (BOLOGNA CENTRALE -> ANCONA)\n  - REG 3901 
- (BOLOGNA CENTRALE -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+SUMMARY:[FERMATA] REG 3901 (BOLOGNA CENTRALE -> ANCONA) ore 07:15
+DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 07:11:30 - 07:16:00\nTreni coinvolti nella chiusura:\n  
+ - REG 3901 (BOLOGNA CENTRALE -> ANCONA)\nRitardo massimo rilevato: 0 min\n
+ Affidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia 
+ oraria regolare
 LOCATION:Passaggio a Livello / Stazione FAENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17437--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
 DTSTART:20261116T063630Z
-DTEND:20261116T064136Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:36 - 07:41 (primo: REG 17437)
-DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 07:36:30 - 07:41:36\nTreni coinvolti
-  nella chiusura:\n  - REG 17437 (BOLOGNA CENTRALE -> RIMINI)\n  - TRENO 98
- 02 (PESCARA -> MILANO CENTRALE) [Transito]\n  - TRENO 9802 (PESCARA -> MIL
- ANO CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità s
- tima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: interv
- allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
- radale (120s)
+DTEND:20261116T064100Z
+SUMMARY:[FERMATA] REG 17437 (BOLOGNA CENTRALE -> RIMINI) ore 07:40
+DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 07:36:30 - 07:41:00\nTreni coinvolti nella chiusura:\n  
+ - REG 17437 (BOLOGNA CENTRALE -> RIMINI)\nRitardo massimo rilevato: 0 min\
+ nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia
+  oraria regolare
 LOCATION:Passaggio a Livello / Stazione FAENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-603--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
 DTSTART:20261116T072215Z
 DTEND:20261116T072700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:22 - 08:27 (primo: IC 603)
-DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 08:22:15 - 08:27:00\nTreni coinvolti
-  nella chiusura:\n  - IC 603 (MILANO CENTRALE -> LECCE)\n  - IC 603 (MILAN
- O CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
+SUMMARY:[FERMATA] IC 603 (MILANO CENTRALE -> LECCE) ore 08:26
+DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 08:22:15 - 08:27:00\nTreni coinvolti nella chiusura:\n  
+ - IC 603 (MILANO CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAffi
+ dabilità stima: 90%\nNota normativa/euristica: Previsione da traccia orar
+ ia regolare
 LOCATION:Passaggio a Livello / Stazione FAENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3906--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T073530Z
 DTEND:20261116T074000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:35 - 08:40 (primo: REG 3906)
-DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 08:35:30 - 08:40:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3906 (ANCONA -> PIACENZA)\n  - REG 3906 (ANCONA 
- -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nN
- ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
+SUMMARY:[FERMATA] REG 3906 (ANCONA -> PIACENZA) ore 08:39
+DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 08:35:30 - 08:40:00\nTreni coinvolti nella chiusura:\n  
+ - REG 3906 (ANCONA -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabi
+ lità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria r
+ egolare
 LOCATION:Passaggio a Livello / Stazione FAENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8806--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T074330Z
 DTEND:20261116T074800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:43 - 08:48 (primo: TRENO 8806)
-DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 08:43:30 - 08:48:00\nTreni coinvolti
-  nella chiusura:\n  - TRENO 8806 (PESCARA -> MILANO CENTRALE)\n  - TRENO 8
- 806 (PESCARA -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+SUMMARY:[FERMATA] TRENO 8806 (PESCARA -> MILANO CENTRALE) ore 08:47
+DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 08:43:30 - 08:48:00\nTreni coinvolti nella chiusura:\n  
+ - TRENO 8806 (PESCARA -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
+ a oraria regolare
 LOCATION:Passaggio a Livello / Stazione FAENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
+UID:train-94453--20261115-S05058@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T090300Z
+DTEND:20261116T090800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:03 - 10:08 (primo: REG 94453) (+2 
+ min)
+DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 10:03:00 - 10:08:00\nTreni coinvolti
+  nella chiusura:\n  - REG 94453 (FIRENZE SANTA MARIA NOVELLA -> FAENZA) (+
+ 2m)\n  - REG 94453 (FIRENZE SANTA MARIA NOVELLA -> FAENZA) (+2m)\nRitardo 
+ massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristic
+ a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FAENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-604--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
 DTSTART:20261116T092515Z
 DTEND:20261116T093000Z
 SUMMARY:[FERMATA] IC 604 (PESCARA -> MILANO CENTRALE) ore 10:29
@@ -184,41 +198,63 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8810--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T094408Z
-DTEND:20261116T094938Z
-SUMMARY:[TRANSITO VELOCE] TRENO 8810 (BARI CENTRALE -> MILANO CENTRALE) ore
-  10:48
-DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 10:44:08 - 10:49:38\nTreni coinvolti nella chius
- ura:\n  - TRENO 8810 (BARI CENTRALE -> MILANO CENTRALE) [Transito]\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Transito stimato senza fermata (24% tratta FORLI' -> BOLOGNA CENTRALE
- \; pedale annuncio fisso Vmax)
+UID:train-17546--20261115-S05058@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T112703Z
+DTEND:20261116T113321Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:27 - 12:33 (primo: REG 17546) (+4 
+ min)
+DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
+ A - 3 TRENI\nChiusura sbarre stimata: 12:27:03 - 12:33:21\nTreni coinvolti
+  nella chiusura:\n  - REG 17546 (RAVENNA -> BOLOGNA CENTRALE) (+4m) [Trans
+ ito]\n  - REG 17546 (RAVENNA -> BOLOGNA CENTRALE) (+4m) [Transito]\n  - RE
+ G 1721 (BOLOGNA CENTRALE -> ANCONA) [Transito]\nRitardo massimo rilevato: 
+ 4 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
+ ua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+  minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FAENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1721--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T114330Z
 DTEND:20261116T114800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:43 - 12:48 (primo: REG 1721)
+SUMMARY:[FERMATA] REG 1721 (BOLOGNA CENTRALE -> ANCONA) ore 12:47
+DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 12:43:30 - 12:48:00\nTreni coinvolti nella chiusura:\n  
+ - REG 1721 (BOLOGNA CENTRALE -> ANCONA)\nRitardo massimo rilevato: 0 min\n
+ Affidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia 
+ oraria regolare
+LOCATION:Passaggio a Livello / Stazione FAENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17499--20261115-S05058@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T115830Z
+DTEND:20261116T120300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:58 - 13:03 (primo: REG 17499)
 DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 12:43:30 - 12:48:00\nTreni coinvolti
-  nella chiusura:\n  - REG 1721 (BOLOGNA CENTRALE -> ANCONA)\n  - REG 1721 
- (BOLOGNA CENTRALE -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 12:58:30 - 13:03:00\nTreni coinvolti
+  nella chiusura:\n  - REG 17499 (BOLOGNA CENTRALE -> RIMINI)\n  - REG 1749
+ 9 (BOLOGNA CENTRALE -> RIMINI)\nRitardo massimo rilevato: 0 min\nAffidabil
+ ità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: 
+ intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
+ ero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FAENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -229,52 +265,48 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3917--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
 DTSTART:20261116T121130Z
 DTEND:20261116T121600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:11 - 13:16 (primo: REG 3917)
-DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 13:11:30 - 13:16:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3917 (PIACENZA -> ANCONA)\n  - REG 3917 (PIACENZ
- A -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nN
- ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
+SUMMARY:[FERMATA] REG 3917 (PIACENZA -> ANCONA) ore 13:15
+DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 13:11:30 - 13:16:00\nTreni coinvolti nella chiusura:\n  
+ - REG 3917 (PIACENZA -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabi
+ lità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria r
+ egolare
 LOCATION:Passaggio a Livello / Stazione FAENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3916--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T123530Z
 DTEND:20261116T124000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:35 - 13:40 (primo: REG 3916)
-DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 13:35:30 - 13:40:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3916 (ANCONA -> PIACENZA)\n  - REG 3916 (ANCONA 
- -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nN
- ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
+SUMMARY:[FERMATA] REG 3916 (ANCONA -> PIACENZA) ore 13:39
+DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 13:35:30 - 13:40:00\nTreni coinvolti nella chiusura:\n  
+ - REG 3916 (ANCONA -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabi
+ lità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria r
+ egolare
 LOCATION:Passaggio a Livello / Stazione FAENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-94455--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
 DTSTART:20261116T130430Z
 DTEND:20261116T130900Z
 SUMMARY:[FERMATA] REG 94455 (FIRENZE SANTA MARIA NOVELLA -> FAENZA) ore 14:
@@ -294,104 +326,36 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3921--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T131130Z
 DTEND:20261116T131600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:11 - 14:16 (primo: REG 3921)
-DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 14:11:30 - 14:16:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3921 (PIACENZA -> ANCONA)\n  - REG 3921 (PIACENZ
- A -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nN
- ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
+SUMMARY:[FERMATA] REG 3921 (PIACENZA -> ANCONA) ore 14:15
+DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 14:11:30 - 14:16:00\nTreni coinvolti nella chiusura:\n  
+ - REG 3921 (PIACENZA -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabi
+ lità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria r
+ egolare
 LOCATION:Passaggio a Livello / Stazione FAENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-609--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T132215Z
 DTEND:20261116T132700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:22 - 14:27 (primo: IC 609)
-DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 14:22:15 - 14:27:00\nTreni coinvolti
-  nella chiusura:\n  - IC 609 (MILANO CENTRALE -> LECCE)\n  - IC 609 (MILAN
- O CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
-LOCATION:Passaggio a Livello / Stazione FAENZA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3918--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
-DTSTART:20261116T133530Z
-DTEND:20261116T134000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:35 - 14:40 (primo: REG 3918)
-DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 14:35:30 - 14:40:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3918 (ANCONA -> PIACENZA)\n  - REG 3918 (ANCONA 
- -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nN
- ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
-LOCATION:Passaggio a Livello / Stazione FAENZA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8818--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T134408Z
-DTEND:20261116T134938Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:44 - 14:49 (primo: TRENO 8818)
-DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 14:44:08 - 14:49:38\nTreni coinvolti
-  nella chiusura:\n  - TRENO 8818 (LECCE -> MILANO CENTRALE) [Transito]\n  
- - TRENO 8818 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
- ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
- glia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione FAENZA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-610--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T152315Z
-DTEND:20261116T152800Z
-SUMMARY:[FERMATA] IC 610 (LECCE -> BOLZANO) ore 16:27
+SUMMARY:[FERMATA] IC 609 (MILANO CENTRALE -> LECCE) ore 14:26
 DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 16:23:15 - 16:28:00\nTreni coinvolti nella chiusura:\n  
- - IC 610 (LECCE -> BOLZANO)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Previsione da traccia oraria rego
- lare
+ a sbarre stimata: 14:22:15 - 14:27:00\nTreni coinvolti nella chiusura:\n  
+ - IC 609 (MILANO CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAffi
+ dabilità stima: 90%\nNota normativa/euristica: Previsione da traccia orar
+ ia regolare
 LOCATION:Passaggio a Livello / Stazione FAENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -401,104 +365,35 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3929--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T161130Z
-DTEND:20261116T161600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:11 - 17:16 (primo: REG 3929)
-DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 17:11:30 - 17:16:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3929 (PIACENZA -> ANCONA)\n  - REG 3929 (PIACENZ
- A -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nN
- ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
+UID:train-3918--20261115-S05058@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
+DTSTART:20261116T133530Z
+DTEND:20261116T134000Z
+SUMMARY:[FERMATA] REG 3918 (ANCONA -> PIACENZA) ore 14:39
+DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 14:35:30 - 14:40:00\nTreni coinvolti nella chiusura:\n  
+ - REG 3918 (ANCONA -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabi
+ lità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria r
+ egolare
 LOCATION:Passaggio a Livello / Stazione FAENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3924--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-3920--20261115-S05058@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T163030Z
-DTEND:20261116T163500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:30 - 17:35 (primo: REG 3924)
+DTSTART:20261116T143430Z
+DTEND:20261116T143900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:34 - 15:39 (primo: REG 3920)
 DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 17:30:30 - 17:35:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3924 (RIMINI -> MILANO PORTA GARIBALDI)\n  - REG
-  3924 (RIMINI -> MILANO PORTA GARIBALDI)\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per
-  2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
- a di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione FAENZA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3931--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T171130Z
-DTEND:20261116T171600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:11 - 18:16 (primo: REG 3931)
-DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 18:11:30 - 18:16:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3931 (PIACENZA -> ANCONA)\n  - REG 3931 (PIACENZ
- A -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nN
- ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
-LOCATION:Passaggio a Livello / Stazione FAENZA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-613--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T172215Z
-DTEND:20261116T172800Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 18:22 - 18:28 (primo: IC 613)
-DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
- A - 4 TRENI\nChiusura sbarre stimata: 18:22:15 - 18:28:00\nTreni coinvolti
-  nella chiusura:\n  - IC 613 (MILANO CENTRALE -> PESCARA)\n  - IC 613 (MIL
- ANO CENTRALE -> PESCARA)\n  - IC 612 (LECCE -> MILANO CENTRALE)\n  - IC 61
- 2 (LECCE -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 4 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
-LOCATION:Passaggio a Livello / Stazione FAENZA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3926--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T173530Z
-DTEND:20261116T174000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:35 - 18:40 (primo: REG 3926)
-DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 18:35:30 - 18:40:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3926 (ANCONA -> PIACENZA)\n  - REG 3926 (ANCONA 
+ A - 2 TRENI\nChiusura sbarre stimata: 15:34:30 - 15:39:00\nTreni coinvolti
+  nella chiusura:\n  - REG 3920 (RIMINI -> PIACENZA)\n  - REG 3920 (RIMINI 
  -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nN
  ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
  ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
@@ -512,17 +407,185 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9811--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-3927--20261115-S05058@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T180056Z
-DTEND:20261116T180626Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9811 (MILANO CENTRALE -> PESCARA) ore 19:05
+DTSTART:20261116T151130Z
+DTEND:20261116T151600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:11 - 16:16 (primo: REG 3927)
+DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 16:11:30 - 16:16:00\nTreni coinvolti
+  nella chiusura:\n  - REG 3927 (PIACENZA -> PESARO)\n  - REG 3927 (PIACENZ
+ A -> PESARO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nN
+ ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
+ ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
+ )
+LOCATION:Passaggio a Livello / Stazione FAENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-610--20261115-S05058@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T152215Z
+DTEND:20261116T152700Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:22 - 16:27 (primo: IC 610)
+DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 16:22:15 - 16:27:00\nTreni coinvolti
+  nella chiusura:\n  - IC 610 (LECCE -> BOLZANO)\n  - IC 610 (LECCE -> BOLZ
+ ANO)\n  - IC 611 (BOLZANO -> BARI CENTRALE)\n  - IC 611 (BOLZANO -> BARI C
+ ENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota 
+ normativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i
+  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FAENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3929--20261115-S05058@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T161130Z
+DTEND:20261116T161600Z
+SUMMARY:[FERMATA] REG 3929 (PIACENZA -> ANCONA) ore 17:15
+DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 17:11:30 - 17:16:00\nTreni coinvolti nella chiusura:\n  
+ - REG 3929 (PIACENZA -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabi
+ lità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria r
+ egolare
+LOCATION:Passaggio a Livello / Stazione FAENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3924--20261115-S05058@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T163030Z
+DTEND:20261116T163500Z
+SUMMARY:[FERMATA] REG 3924 (RIMINI -> MILANO PORTA GARIBALDI) ore 17:34
+DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 17:30:30 - 17:35:00\nTreni coinvolti nella chiusura:\n  
+ - REG 3924 (RIMINI -> MILANO PORTA GARIBALDI)\nRitardo massimo rilevato: 0
+  min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tr
+ accia oraria regolare
+LOCATION:Passaggio a Livello / Stazione FAENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8819--20261115-S05058@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T170230Z
+DTEND:20261116T170700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:02 - 18:07 (primo: TRENO 8819)
+DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 18:02:30 - 18:07:00\nTreni coinvolti
+  nella chiusura:\n  - TRENO 8819 (MILANO CENTRALE -> BARI CENTRALE)\n  - T
+ RENO 8819 (MILANO CENTRALE -> BARI CENTRALE)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
+  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FAENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3931--20261115-S05058@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T171130Z
+DTEND:20261116T171600Z
+SUMMARY:[FERMATA] REG 3931 (PIACENZA -> ANCONA) ore 18:15
+DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 18:11:30 - 18:16:00\nTreni coinvolti nella chiusura:\n  
+ - REG 3931 (PIACENZA -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabi
+ lità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria r
+ egolare
+LOCATION:Passaggio a Livello / Stazione FAENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-613--20261115-S05058@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T172215Z
+DTEND:20261116T172800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:22 - 18:28 (primo: IC 613)
+DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 18:22:15 - 18:28:00\nTreni coinvolti
+  nella chiusura:\n  - IC 613 (MILANO CENTRALE -> PESCARA)\n  - IC 612 (LEC
+ CE -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
+ ma: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
+ lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
+ dale (120s)
+LOCATION:Passaggio a Livello / Stazione FAENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3926--20261115-S05058@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T173530Z
+DTEND:20261116T174000Z
+SUMMARY:[FERMATA] REG 3926 (ANCONA -> PIACENZA) ore 18:39
+DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 18:35:30 - 18:40:00\nTreni coinvolti nella chiusura:\n  
+ - REG 3926 (ANCONA -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabi
+ lità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria r
+ egolare
+LOCATION:Passaggio a Livello / Stazione FAENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9811--20261115-S05058@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T180026Z
+DTEND:20261116T180556Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9811 (MILANO CENTRALE -> PESCARA) ore 19:04
 DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 19:00:56 - 19:06:26\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 19:00:26 - 19:05:56\nTreni coinvolti nella chius
  ura:\n  - TRENO 9811 (MILANO CENTRALE -> PESCARA) [Transito]\nRitardo mass
  imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (72% tratta BOLOGNA CENTRALE -> FORLI'\; ped
+ ransito stimato senza fermata (71% tratta BOLOGNA CENTRALE -> FORLI'\; ped
  ale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione FAENZA
 STATUS:CONFIRMED
@@ -534,8 +597,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3935--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
 DTSTART:20261116T181130Z
 DTEND:20261116T181600Z
 SUMMARY:[FERMATA] REG 3935 (PIACENZA -> ANCONA) ore 19:15
@@ -554,8 +617,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3928--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
 DTSTART:20261116T183730Z
 DTEND:20261116T184200Z
 SUMMARY:[FERMATA] REG 3928 (PESARO -> PIACENZA) ore 19:41
@@ -574,30 +637,50 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-614--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
 DTSTART:20261116T192315Z
 DTEND:20261116T192800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:23 - 20:28 (primo: IC 614)
+SUMMARY:[FERMATA] IC 614 (LECCE -> MILANO CENTRALE) ore 20:27
+DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 20:23:15 - 20:28:00\nTreni coinvolti nella chiusura:\n  
+ - IC 614 (LECCE -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffi
+ dabilità stima: 90%\nNota normativa/euristica: Previsione da traccia orar
+ ia regolare
+LOCATION:Passaggio a Livello / Stazione FAENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3930--20261115-S05058@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T193530Z
+DTEND:20261116T194000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:35 - 20:40 (primo: REG 3930)
 DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 20:23:15 - 20:28:00\nTreni coinvolti
-  nella chiusura:\n  - IC 614 (LECCE -> MILANO CENTRALE)\n  - IC 614 (LECCE
-  -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 20:35:30 - 20:40:00\nTreni coinvolti
+  nella chiusura:\n  - REG 3930 (ANCONA -> PIACENZA)\n  - REG 3930 (ANCONA 
+ -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nN
+ ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
+ ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
+ )
 LOCATION:Passaggio a Livello / Stazione FAENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8825--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
 DTSTART:20261116T200230Z
 DTEND:20261116T200700Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:02 - 21:07 (primo: TRENO 8825)
@@ -618,30 +701,28 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2090--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
 DTSTART:20261116T211130Z
 DTEND:20261116T211600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:11 - 22:16 (primo: REG 2090)
-DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 22:11:30 - 22:16:00\nTreni coinvolti
-  nella chiusura:\n  - REG 2090 (GENOVA BRIGNOLE -> RIMINI)\n  - REG 2090 (
- GENOVA BRIGNOLE -> RIMINI)\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+SUMMARY:[FERMATA] REG 2090 (GENOVA BRIGNOLE -> RIMINI) ore 22:15
+DESCRIPTION:Stazione/PL: FAENZA (S05058)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 22:11:30 - 22:16:00\nTreni coinvolti nella chiusura:\n  
+ - REG 2090 (GENOVA BRIGNOLE -> RIMINI)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
 LOCATION:Passaggio a Livello / Stazione FAENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3932--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T214130Z
 DTEND:20261116T214600Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:41 - 22:46 (primo: REG 3932)
@@ -662,8 +743,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-754--20261115-S05058@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
 DTSTART:20261117T042915Z
 DTEND:20261117T043400Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:29 - 05:34 (primo: ICN 754)

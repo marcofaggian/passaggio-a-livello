@@ -9,86 +9,67 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:d94f0c19e7e2177f093baba1cd28d3481fabdc1a0364f0ad3cc5390f59b7
- eb77
+X-CONTENT-HASH:6790805e200856eecfb4b7678b690f2e6b041f97612fd9e5839a6c4d8828
+ 0e0d
 BEGIN:VEVENT
 UID:train-20395--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T035730Z
-DTEND:20261116T040200Z
-SUMMARY:[FERMATA] REG 20395 (ORTE -> FIUMICINO AEROPORTO) ore 05:01
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: FERMATA\nChiusura 
- sbarre stimata: 04:57:30 - 05:02:00\nTreni coinvolti nella chiusura:\n  - 
- REG 20395 (ORTE -> FIUMICINO AEROPORTO)\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia 
- oraria regolare
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T035830Z
+DTEND:20261116T040300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 04:58 - 05:03 (primo: REG 20395) (+1 
+ min)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 04:58:30 - 05:03:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 20395 (ORTE -> FIUMICINO AEROPORTO) (+1m)\n  - REG
+  20395 (ORTE -> FIUMICINO AEROPORTO) (+1m)\nRitardo massimo rilevato: 1 mi
+ n\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua p
+ er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
+ ima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9504--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T040922Z
-DTEND:20261116T041452Z
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T040840Z
+DTEND:20261116T041410Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9504 (ROMA TERMINI -> MILANO CENTRALE) ore 
- 05:13
+ 05:12
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: TRANSITO VELOCE\nC
- hiusura sbarre stimata: 05:09:22 - 05:14:52\nTreni coinvolti nella chiusur
+ hiusura sbarre stimata: 05:08:40 - 05:14:10\nTreni coinvolti nella chiusur
  a:\n  - TRENO 9504 (ROMA TERMINI -> MILANO CENTRALE) [Transito]\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (52% tratta ROMA TERMINI -> ROMA TIBURTIN
- A\; pedale annuncio fisso Vmax)
+ assimo rilevato: -3 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Transito stimato senza fermata (53% tratta ROMA TERMINI -> ROMA TIBURTI
+ NA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:-3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4151--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T042913Z
-DTEND:20261116T043952Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 05:29 - 05:39 (primo: REG 4151)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 3 TRENI\nChiusura sbarre stimata: 05:29:13 - 05:39:52\nTreni coinvolti n
- ella chiusura:\n  - REG 4151 (ANCONA -> ROMA TERMINI) [Transito]\n  - TREN
- O 9504 (ROMA TERMINI -> MILANO CENTRALE) [Transito]\n  - TRENO 9400 (ROMA 
- TERMINI -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo rilevato: 0 min\nA
- ffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3
-  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
- di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-20405--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-20397--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T045530Z
-DTEND:20261116T050240Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 05:55 - 06:02 (primo: REG 20405)
+DTSTART:20261116T042630Z
+DTEND:20261116T043941Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 05:26 - 05:39 (primo: REG 20397) (+1 
+ min)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 4 TRENI\nChiusura sbarre stimata: 05:55:30 - 06:02:40\nTreni coinvolti n
- ella chiusura:\n  - REG 20405 (ORTE -> FIUMICINO AEROPORTO)\n  - REG 20405
-  (ORTE -> FIUMICINO AEROPORTO)\n  - REG 4095 (CHIUSI-CHIANCIANO TERME -> R
- OMA TERMINI) [Transito]\n  - REG 4095 (CHIUSI-CHIANCIANO TERME -> ROMA TER
- MINI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
+ - 4 TRENI\nChiusura sbarre stimata: 05:26:30 - 05:39:41\nTreni coinvolti n
+ ella chiusura:\n  - REG 20397 (ORTE -> FIUMICINO AEROPORTO) (+1m)\n  - REG
+  20397 (ORTE -> FIUMICINO AEROPORTO) (+1m)\n  - TRENO 9504 (ROMA TERMINI -
+ > MILANO CENTRALE) [Transito]\n  - TRENO 9400 (ROMA TERMINI -> VENEZIA S.L
+ UCIA) [Transito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78
  %\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo uti
  le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
  120s)
@@ -96,176 +77,163 @@ LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4096--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-20405--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:1
-DTSTART:20261116T050851Z
-DTEND:20261116T051421Z
-SUMMARY:[TRANSITO VELOCE] REG 4096 (ROMA TERMINI -> FIRENZE SANTA MARIA NOV
- ELLA) ore 06:13
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: TRANSITO VELOCE\nC
- hiusura sbarre stimata: 06:08:51 - 06:14:21\nTreni coinvolti nella chiusur
- a:\n  - REG 4096 (ROMA TERMINI -> FIRENZE SANTA MARIA NOVELLA) [Transito]\
- nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Transito stimato senza fermata (52% tratta ROMA TERMINI -> ROM
- A TIBURTINA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-20752--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T051903Z
-DTEND:20261116T054503Z
-SUMMARY:[CHIUSURA CONTINUA - 15 TRENI] 06:19 - 06:45 (primo: REG 20752)
+DTSTART:20261116T045630Z
+DTEND:20261116T050514Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 05:56 - 06:05 (primo: REG 20405) (+1 
+ min)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 15 TRENI\nChiusura sbarre stimata: 06:19:03 - 06:45:03\nTreni coinvolti 
- nella chiusura:\n  - REG 20752 (MONTEROTONDO-MENTANA -> CESANO DI ROMA) [T
- ransito]\n  - REG 20752 (MONTEROTONDO-MENTANA -> CESANO DI ROMA) [Transito
- ]\n  - REG 4095 (CHIUSI-CHIANCIANO TERME -> ROMA TERMINI)\n  - REG 4095 (C
- HIUSI-CHIANCIANO TERME -> ROMA TERMINI)\n  - TRENO 8588 (ROMA TERMINI -> G
- ENOVA PIAZZA PRINCIPE) [Transito]\n  - REG 20411 (ORTE -> FIUMICINO AEROPO
- RTO)\n  - REG 20409 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AEROPORTO) [Tr
- ansito]\n  - REG 4151 (ANCONA -> ROMA TERMINI)\n  - TRENO 9404 (ROMA TERMI
- NI -> VENEZIA S.LUCIA) [Transito]\n  - TRENO 9606 (NAPOLI CENTRALE -> MILA
- NO CENTRALE) [Transito]\n  - TRENO 9606 (NAPOLI CENTRALE -> MILANO CENTRAL
- E) [Transito]\n  - TRENO 9508 (ROMA TERMINI -> TORINO PORTA NUOVA)\n  - TR
- ENO 9508 (ROMA TERMINI -> TORINO PORTA NUOVA)\n  - TRENO 8502 (NAPOLI CENT
- RALE -> BOLZANO) [Transito]\n  - TRENO 8502 (NAPOLI CENTRALE -> BOLZANO) [
- Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
-  normativa/euristica: Chiusura continua per 15 treni: intervallo utile tra
-  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 15 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4712--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T055051Z
-DTEND:20261116T060116Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 06:50 - 07:01 (primo: REG 4712)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 8 TRENI\nChiusura sbarre stimata: 06:50:51 - 07:01:16\nTreni coinvolti n
- ella chiusura:\n  - REG 4712 (ROMA TERMINI -> PERUGIA) [Transito]\n  - REG
-  4712 (ROMA TERMINI -> PERUGIA) [Transito]\n  - REG 4521 (VITERBO PORTA FI
- ORENTINA -> ROMA TERMINI)\n  - REG 4521 (VITERBO PORTA FIORENTINA -> ROMA 
- TERMINI)\n  - REG 20421 (POGGIO MIRTETO -> FIUMICINO AEROPORTO) [Transito]
- \n  - REG 20421 (POGGIO MIRTETO -> FIUMICINO AEROPORTO) [Transito]\n  - RE
- G 4097 (TERONTOLA CORTONA -> ROMA TERMINI) [Transito]\n  - REG 4097 (TERON
- TOLA CORTONA -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per
-  8 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
- a di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9512--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T060922Z
-DTEND:20261116T062700Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 07:09 - 07:27 (primo: TRENO 9512)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 8 TRENI\nChiusura sbarre stimata: 07:09:22 - 07:27:00\nTreni coinvolti n
- ella chiusura:\n  - TRENO 9512 (ROMA TERMINI -> MILANO CENTRALE) [Transito
- ]\n  - IC 534 (ROMA TERMINI -> ANCONA) [Transito]\n  - REG 7453 (TERONTOLA
-  CORTONA -> FOLIGNO) [Transito]\n  - REG 7453 (TERONTOLA CORTONA -> FOLIGN
- O) [Transito]\n  - TRENO 9503 (FIRENZE SANTA MARIA NOVELLA -> NAPOLI CENTR
- ALE) [Transito]\n  - REG 20756 (MONTEROTONDO-MENTANA -> CESANO DI ROMA) [T
- ransito]\n  - REG 4097 (TERONTOLA CORTONA -> ROMA TERMINI)\n  - REG 4097 (
- TERONTOLA CORTONA -> ROMA TERMINI)\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 8 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9512--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T063015Z
-DTEND:20261116T064400Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 07:30 - 07:44 (primo: TRENO 9512)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 6 TRENI\nChiusura sbarre stimata: 07:30:15 - 07:44:00\nTreni coinvolti n
- ella chiusura:\n  - TRENO 9512 (ROMA TERMINI -> MILANO CENTRALE) [Transito
- ]\n  - REG 4712 (ROMA TERMINI -> PERUGIA)\n  - REG 4712 (ROMA TERMINI -> P
- ERUGIA)\n  - TRENO 9610 (ROMA TERMINI -> MILANO CENTRALE) [Transito]\n  - 
- TRENO 9610 (ROMA TERMINI -> MILANO CENTRALE) [Transito]\n  - REG 4096 (ROM
- A TERMINI -> FIRENZE SANTA MARIA NOVELLA)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
- r 6 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
- ma di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-21382--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T064903Z
-DTEND:20261116T071244Z
-SUMMARY:[CHIUSURA CONTINUA - 10 TRENI] 07:49 - 08:12 (primo: REG 21382)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 10 TRENI\nChiusura sbarre stimata: 07:49:03 - 08:12:44\nTreni coinvolti 
- nella chiusura:\n  - REG 21382 (MONTEROTONDO-MENTANA -> BRACCIANO) [Transi
- to]\n  - REG 21382 (MONTEROTONDO-MENTANA -> BRACCIANO) [Transito]\n  - REG
-  20571 (FIUMICINO AEROPORTO -> ORTE) [Transito]\n  - REG 20571 (FIUMICINO 
- AEROPORTO -> ORTE) [Transito]\n  - REG 4720 (CHIUSI-CHIANCIANO TERME -> FO
- LIGNO) [Transito]\n  - REG 20571 (FIUMICINO AEROPORTO -> ORTE)\n  - REG 20
- 571 (FIUMICINO AEROPORTO -> ORTE)\n  - TRENO 9591 (FIRENZE SANTA MARIA NOV
- ELLA -> ROMA TERMINI) [Transito]\n  - TRENO 9591 (FIRENZE SANTA MARIA NOVE
- LLA -> ROMA TERMINI) [Transito]\n  - TRENO 9601 (MILANO CENTRALE -> NAPOLI
-  CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stim
- a: 78%\nNota normativa/euristica: Chiusura continua per 10 treni: interval
+ - 4 TRENI\nChiusura sbarre stimata: 05:56:30 - 06:05:14\nTreni coinvolti n
+ ella chiusura:\n  - REG 20405 (ORTE -> FIUMICINO AEROPORTO) (+1m)\n  - REG
+  20405 (ORTE -> FIUMICINO AEROPORTO) (+1m)\n  - REG 4095 (CHIUSI-CHIANCIAN
+ O TERME -> ROMA TERMINI) [Transito]\n  - TRENO 9400 (ROMA TERMINI -> VENEZ
+ IA S.LUCIA) [Transito]\nRitardo massimo rilevato: 1 min\nAffidabilità sti
+ ma: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: interval
  lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
  dale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 10 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4151--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T051123Z
+DTEND:20261116T051653Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:11 - 06:16 (primo: REG 4151)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 06:11:23 - 06:16:53\nTreni coinvolti n
+ ella chiusura:\n  - REG 4151 (ANCONA -> ROMA TERMINI) [Transito]\n  - REG 
+ 4151 (ANCONA -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato: -1 min
+ \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
+ r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ORTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20752--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T051943Z
+DTEND:20261116T060200Z
+SUMMARY:[CHIUSURA CONTINUA - 22 TRENI] 06:19 - 07:02 (primo: REG 20752) (+6
+  min)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 22 TRENI\nChiusura sbarre stimata: 06:19:43 - 07:02:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 20752 (MONTEROTONDO-MENTANA -> CESANO DI ROMA) (+
+ 4m) [Transito]\n  - REG 20752 (MONTEROTONDO-MENTANA -> CESANO DI ROMA) (+4
+ m) [Transito]\n  - REG 4095 (CHIUSI-CHIANCIANO TERME -> ROMA TERMINI)\n  -
+  REG 20411 (ORTE -> FIUMICINO AEROPORTO)\n  - REG 20409 (FARA SABINA-MONTE
+ LIBRETTI -> FIUMICINO AEROPORTO) [Transito]\n  - REG 4151 (ANCONA -> ROMA 
+ TERMINI) (+3m)\n  - REG 4151 (ANCONA -> ROMA TERMINI) (+3m)\n  - TRENO 950
+ 8 (ROMA TERMINI -> TORINO PORTA NUOVA) (+2m) [Arrivo]\n  - TRENO 9508 (ROM
+ A TERMINI -> TORINO PORTA NUOVA) (+2m) [Arrivo]\n  - TRENO 9606 (NAPOLI CE
+ NTRALE -> MILANO CENTRALE) [Transito]\n  - TRENO 9508 (ROMA TERMINI -> TOR
+ INO PORTA NUOVA) (+2m) [Partenza]\n  - TRENO 9508 (ROMA TERMINI -> TORINO 
+ PORTA NUOVA) (+2m) [Partenza]\n  - TRENO 8588 (ROMA TERMINI -> GENOVA PIAZ
+ ZA PRINCIPE) [Transito]\n  - TRENO 8588 (ROMA TERMINI -> GENOVA PIAZZA PRI
+ NCIPE) [Transito]\n  - REG 4565 (FOLIGNO -> ROMA TERMINI) [Transito]\n  - 
+ REG 4565 (FOLIGNO -> ROMA TERMINI) [Transito]\n  - TRENO 8502 (NAPOLI CENT
+ RALE -> BOLZANO) (+6m) [Transito]\n  - TRENO 9404 (ROMA TERMINI -> VENEZIA
+  S.LUCIA) [Transito]\n  - REG 20421 (POGGIO MIRTETO -> FIUMICINO AEROPORTO
+ ) [Transito]\n  - REG 4097 (TERONTOLA CORTONA -> ROMA TERMINI) [Transito]\
+ n  - REG 4521 (VITERBO PORTA FIORENTINA -> ROMA TERMINI) (+1m)\n  - REG 45
+ 21 (VITERBO PORTA FIORENTINA -> ROMA TERMINI) (+1m)\nRitardo massimo rilev
+ ato: 6 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
+ ontinua per 22 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ORTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 22 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9512--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T061011Z
+DTEND:20261116T062700Z
+SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 07:10 - 07:27 (primo: TRENO 9512) (+6
+  min)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 8 TRENI\nChiusura sbarre stimata: 07:10:11 - 07:27:00\nTreni coinvolti n
+ ella chiusura:\n  - TRENO 9512 (ROMA TERMINI -> MILANO CENTRALE) (+5m) [Tr
+ ansito]\n  - TRENO 9608 (SALERNO -> MILANO CENTRALE) [Transito]\n  - TRENO
+  9608 (SALERNO -> MILANO CENTRALE) [Transito]\n  - TRENO 8502 (NAPOLI CENT
+ RALE -> BOLZANO) (+6m) [Transito]\n  - REG 7453 (TERONTOLA CORTONA -> FOLI
+ GNO) [Transito]\n  - TRENO 9503 (FIRENZE SANTA MARIA NOVELLA -> NAPOLI CEN
+ TRALE) [Transito]\n  - REG 20756 (MONTEROTONDO-MENTANA -> CESANO DI ROMA) 
+ [Transito]\n  - REG 4097 (TERONTOLA CORTONA -> ROMA TERMINI)\nRitardo mass
+ imo rilevato: 6 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
+ hiusura continua per 8 treni: intervallo utile tra i passaggi (0s) inferio
+ re alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ORTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4712--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T063230Z
+DTEND:20261116T071412Z
+SUMMARY:[CHIUSURA CONTINUA - 15 TRENI] 07:32 - 08:14 (primo: REG 4712) (+17
+  min)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 15 TRENI\nChiusura sbarre stimata: 07:32:30 - 08:14:12\nTreni coinvolti 
+ nella chiusura:\n  - REG 4712 (ROMA TERMINI -> PERUGIA)\n  - TRENO 9512 (R
+ OMA TERMINI -> MILANO CENTRALE) (+5m) [Transito]\n  - TRENO 9610 (ROMA TER
+ MINI -> MILANO CENTRALE) [Transito]\n  - REG 4096 (ROMA TERMINI -> FIRENZE
+  SANTA MARIA NOVELLA)\n  - REG 4724 (ROMA TERMINI -> PERUGIA) [Transito]\n
+   - REG 21382 (MONTEROTONDO-MENTANA -> BRACCIANO) [Transito]\n  - REG 2057
+ 1 (FIUMICINO AEROPORTO -> ORTE) [Transito]\n  - TRENO 9406 (NAPOLI CENTRAL
+ E -> VENEZIA S.LUCIA) (+3m) [Transito]\n  - TRENO 9406 (NAPOLI CENTRALE ->
+  VENEZIA S.LUCIA) (+3m) [Transito]\n  - REG 4720 (CHIUSI-CHIANCIANO TERME 
+ -> FOLIGNO) [Transito]\n  - TRENO 9304 (NAPOLI CENTRALE -> TORINO PORTA NU
+ OVA) (+17m) [Transito]\n  - TRENO 9304 (NAPOLI CENTRALE -> TORINO PORTA NU
+ OVA) (+17m) [Transito]\n  - REG 20571 (FIUMICINO AEROPORTO -> ORTE)\n  - T
+ RENO 9591 (FIRENZE SANTA MARIA NOVELLA -> ROMA TERMINI) [Transito]\n  - TR
+ ENO 9601 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\nRitardo massimo 
+ rilevato: 17 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
+ sura continua per 15 treni: intervallo utile tra i passaggi (0s) inferiore
+  alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ORTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 15 TRENI,FERROVIA
+X-PL-DELAY-MIN:17
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-534--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
 DTSTART:20261116T072415Z
 DTEND:20261116T072900Z
 SUMMARY:[FERMATA] IC 534 (ROMA TERMINI -> ANCONA) ore 08:28
@@ -284,366 +252,355 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9505--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T073124Z
-DTEND:20261116T073654Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9505 (MILANO CENTRALE -> SALERNO) ore 08:35
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: TRANSITO VELOCE\nC
- hiusura sbarre stimata: 08:31:24 - 08:36:54\nTreni coinvolti nella chiusur
- a:\n  - TRENO 9505 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
- nsito stimato senza fermata (72% tratta AREZZO -> ROMA TIBURTINA\; pedale 
- annuncio fisso Vmax)
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T073153Z
+DTEND:20261116T074103Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 08:31 - 08:41 (primo: TRENO 9505) (+1
+ 8 min)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 3 TRENI\nChiusura sbarre stimata: 08:31:53 - 08:41:03\nTreni coinvolti n
+ ella chiusura:\n  - TRENO 9505 (MILANO CENTRALE -> SALERNO) [Transito]\n  
+ - TRENO 9516 (SALERNO -> TORINO PORTA NUOVA) (+18m) [Transito]\n  - TRENO 
+ 9516 (SALERNO -> TORINO PORTA NUOVA) (+18m) [Transito]\nRitardo massimo ri
+ levato: 18 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
+ ra continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore al
+ la soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:18
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9618--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-4724--20261115-S08209@pl-tracker.local-arr
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T074642Z
-DTEND:20261116T081003Z
-SUMMARY:[CHIUSURA CONTINUA - 11 TRENI] 08:46 - 09:10 (primo: TRENO 9618)
+DTSTART:20261116T074700Z
+DTEND:20261116T081800Z
+SUMMARY:[CHIUSURA CONTINUA - 12 TRENI] 08:47 - 09:18 (primo: REG 4724) (+4 
+ min)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 11 TRENI\nChiusura sbarre stimata: 08:46:42 - 09:10:03\nTreni coinvolti 
- nella chiusura:\n  - TRENO 9618 (NAPOLI CENTRALE -> MILANO CENTRALE) [Tran
- sito]\n  - TRENO 9401 (VENEZIA S.LUCIA -> ROMA TERMINI) [Transito]\n  - TR
- ENO 9401 (VENEZIA S.LUCIA -> ROMA TERMINI) [Transito]\n  - REG 20579 (FIUM
- ICINO AEROPORTO -> ORTE) [Transito]\n  - REG 20579 (FIUMICINO AEROPORTO ->
-  ORTE) [Transito]\n  - REG 34221 (FIRENZE SANTA MARIA NOVELLA -> ROMA TIBU
- RTINA) [Transito]\n  - REG 34221 (FIRENZE SANTA MARIA NOVELLA -> ROMA TIBU
- RTINA) [Transito]\n  - TRENO 8506 (NAPOLI CENTRALE -> BOLZANO) [Transito]\
- n  - TRENO 8506 (NAPOLI CENTRALE -> BOLZANO) [Transito]\n  - TRENO 9520 (N
- APOLI CENTRALE -> MILANO CENTRALE) [Transito]\n  - TRENO 9520 (NAPOLI CENT
- RALE -> MILANO CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffi
- dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 11 t
- reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
-  sgombero stradale (120s)
+ - 12 TRENI\nChiusura sbarre stimata: 08:47:00 - 09:18:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 4724 (ROMA TERMINI -> PERUGIA) (+4m) [Arrivo]\n  
+ - REG 4724 (ROMA TERMINI -> PERUGIA) (+4m) [Arrivo]\n  - TRENO 9618 (NAPOL
+ I CENTRALE -> MILANO CENTRALE) [Transito]\n  - TRENO 9401 (VENEZIA S.LUCIA
+  -> ROMA TERMINI) [Transito]\n  - REG 4724 (ROMA TERMINI -> PERUGIA) (+4m)
+  [Partenza]\n  - REG 4724 (ROMA TERMINI -> PERUGIA) (+4m) [Partenza]\n  - 
+ REG 20579 (FIUMICINO AEROPORTO -> ORTE) [Transito]\n  - REG 34221 (FIRENZE
+  SANTA MARIA NOVELLA -> ROMA TIBURTINA) [Transito]\n  - TRENO 8506 (NAPOLI
+  CENTRALE -> BOLZANO) [Transito]\n  - TRENO 9520 (NAPOLI CENTRALE -> MILAN
+ O CENTRALE) [Transito]\n  - REG 4519 (TERNI -> ROMA TERMINI) [Transito]\n 
+  - REG 20579 (FIUMICINO AEROPORTO -> ORTE)\nRitardo massimo rilevato: 4 mi
+ n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
+ er 12 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
+ nima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 11 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-20579--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T081330Z
-DTEND:20261116T081849Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 09:13 - 09:18 (primo: REG 20579)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 4 TRENI\nChiusura sbarre stimata: 09:13:30 - 09:18:49\nTreni coinvolti n
- ella chiusura:\n  - REG 20579 (FIUMICINO AEROPORTO -> ORTE)\n  - REG 20579
-  (FIUMICINO AEROPORTO -> ORTE)\n  - REG 4519 (TERNI -> ROMA TERMINI) [Tran
- sito]\n  - REG 4519 (TERNI -> ROMA TERMINI) [Transito]\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
- a continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 12 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4519--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T082630Z
 DTEND:20261116T083100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:26 - 09:31 (primo: REG 4519)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 09:26:30 - 09:31:00\nTreni coinvolti n
- ella chiusura:\n  - REG 4519 (TERNI -> ROMA TERMINI)\n  - REG 4519 (TERNI 
- -> ROMA TERMINI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90
- %\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo uti
- le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
- 120s)
+SUMMARY:[FERMATA] REG 4519 (TERNI -> ROMA TERMINI) ore 09:30
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: FERMATA\nChiusura 
+ sbarre stimata: 09:26:30 - 09:31:00\nTreni coinvolti nella chiusura:\n  - 
+ REG 4519 (TERNI -> ROMA TERMINI)\nRitardo massimo rilevato: 0 min\nAffidab
+ ilità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria 
+ regolare
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-34221--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T083430Z
-DTEND:20261116T084859Z
-SUMMARY:[CHIUSURA CONTINUA - 9 TRENI] 09:34 - 09:48 (primo: REG 34221)
+DTEND:20261116T085459Z
+SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 09:34 - 09:54 (primo: REG 34221) (+1 
+ min)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 9 TRENI\nChiusura sbarre stimata: 09:34:30 - 09:48:59\nTreni coinvolti n
+ - 8 TRENI\nChiusura sbarre stimata: 09:34:30 - 09:54:59\nTreni coinvolti n
  ella chiusura:\n  - REG 34221 (FIRENZE SANTA MARIA NOVELLA -> ROMA TIBURTI
- NA)\n  - REG 34221 (FIRENZE SANTA MARIA NOVELLA -> ROMA TIBURTINA)\n  - TR
- ENO 8505 (BOLZANO -> ROMA TERMINI) [Transito]\n  - TRENO 8505 (BOLZANO -> 
- ROMA TERMINI) [Transito]\n  - TRENO 9607 (TORINO PORTA NUOVA -> NAPOLI CEN
- TRALE) [Transito]\n  - REG 20451 (POGGIO MIRTETO -> FIUMICINO AEROPORTO) [
- Transito]\n  - REG 20451 (POGGIO MIRTETO -> FIUMICINO AEROPORTO) [Transito
- ]\n  - TRENO 9414 (SALERNO -> VENEZIA S.LUCIA) [Transito]\n  - TRENO 9414 
- (SALERNO -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 
- 9 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
-  di sgombero stradale (120s)
+ NA)\n  - TRENO 8505 (BOLZANO -> ROMA TERMINI) [Transito]\n  - REG 20451 (P
+ OGGIO MIRTETO -> FIUMICINO AEROPORTO) [Transito]\n  - REG 20451 (POGGIO MI
+ RTETO -> FIUMICINO AEROPORTO) [Transito]\n  - TRENO 9607 (TORINO PORTA NUO
+ VA -> NAPOLI CENTRALE) [Transito]\n  - TRENO 9414 (SALERNO -> VENEZIA S.LU
+ CIA) [Transito]\n  - TRENO 9620 (FOGGIA -> MILANO CENTRALE) (+1m) [Transit
+ o]\n  - TRENO 9620 (FOGGIA -> MILANO CENTRALE) (+1m) [Transito]\nRitardo m
+ assimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Chiusura continua per 8 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ORTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20449--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T085700Z
+DTEND:20261116T090310Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 09:57 - 10:03 (primo: REG 20449) (+7 
+ min)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 3 TRENI\nChiusura sbarre stimata: 09:57:00 - 10:03:10\nTreni coinvolti n
+ ella chiusura:\n  - REG 20449 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AERO
+ PORTO) [Transito]\n  - TRENO 9403 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) (+7
+ m) [Transito]\n  - TRENO 9403 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) (+7m) [
+ Transito]\nRitardo massimo rilevato: 7 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Chiusura continua per 3 treni: intervallo utile tra 
+ i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ORTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9524--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T091053Z
+DTEND:20261116T092251Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:10 - 10:22 (primo: TRENO 9524) (+8
+  min)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 4 TRENI\nChiusura sbarre stimata: 10:10:53 - 10:22:51\nTreni coinvolti n
+ ella chiusura:\n  - TRENO 9524 (SALERNO -> MILANO CENTRALE) [Transito]\n  
+ - TRENO 9604 (BRESCIA -> NAPOLI CENTRALE) (+8m) [Transito]\n  - TRENO 9604
+  (BRESCIA -> NAPOLI CENTRALE) (+8m) [Transito]\n  - TRENO 9515 (MILANO CEN
+ TRALE -> SALERNO) [Transito]\nRitardo massimo rilevato: 8 min\nAffidabilit
+ à stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ORTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20453--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T092643Z
+DTEND:20261116T093213Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:26 - 10:32 (primo: REG 20453) (+6 
+ min)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 10:26:43 - 10:32:13\nTreni coinvolti n
+ ella chiusura:\n  - REG 20453 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AERO
+ PORTO) (+6m) [Transito]\n  - REG 20453 (FARA SABINA-MONTELIBRETTI -> FIUMI
+ CINO AEROPORTO) (+6m) [Transito]\nRitardo massimo rilevato: 6 min\nAffidab
+ ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ORTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4073--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T093420Z
+DTEND:20261116T095027Z
+SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 10:34 - 10:50 (primo: REG 4073) (+6 m
+ in)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 8 TRENI\nChiusura sbarre stimata: 10:34:20 - 10:50:27\nTreni coinvolti n
+ ella chiusura:\n  - REG 4073 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO) [Tra
+ nsito]\n  - TRENO 9624 (ROMA TERMINI -> MILANO CENTRALE) [Transito]\n  - R
+ EG 20455 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AEROPORTO) (+6m) [Transit
+ o]\n  - REG 20455 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AEROPORTO) (+6m)
+  [Transito]\n  - TRENO 9310 (NAPOLI CENTRALE -> TORINO PORTA NUOVA) [Trans
+ ito]\n  - TRENO 9310 (NAPOLI CENTRALE -> TORINO PORTA NUOVA) [Transito]\n 
+  - TRENO 9611 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) (+4m) [Transito]\n  
+ - TRENO 9611 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) (+4m) [Transito]\nRit
+ ardo massimo rilevato: 6 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Chiusura continua per 8 treni: intervallo utile tra i passaggi (0s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ORTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9416--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T095501Z
+DTEND:20261116T100143Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:55 - 11:01 (primo: TRENO 9416) (+6
+  min)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 4 TRENI\nChiusura sbarre stimata: 10:55:01 - 11:01:43\nTreni coinvolti n
+ ella chiusura:\n  - TRENO 9416 (ROMA TERMINI -> VENEZIA S.LUCIA) [Transito
+ ]\n  - IC 588 (ROMA TERMINI -> TRIESTE CENTRALE)\n  - REG 20457 (FARA SABI
+ NA-MONTELIBRETTI -> FIUMICINO AEROPORTO) (+6m) [Transito]\n  - REG 20457 (
+ FARA SABINA-MONTELIBRETTI -> FIUMICINO AEROPORTO) (+6m) [Transito]\nRitard
+ o massimo rilevato: 6 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ORTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9626--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T100823Z
+DTEND:20261116T101418Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:08 - 11:14 (primo: TRENO 9626)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 3 TRENI\nChiusura sbarre stimata: 11:08:23 - 11:14:18\nTreni coinvolti n
+ ella chiusura:\n  - TRENO 9626 (ROMA TERMINI -> TORINO PORTA NUOVA) [Trans
+ ito]\n  - TRENO 89311 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI) [Transito]\
+ n  - TRENO 89311 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s)
+  inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ORTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9519--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T101721Z
+DTEND:20261116T104913Z
+SUMMARY:[CHIUSURA CONTINUA - 9 TRENI] 11:17 - 11:49 (primo: TRENO 9519)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 9 TRENI\nChiusura sbarre stimata: 11:17:21 - 11:49:13\nTreni coinvolti n
+ ella chiusura:\n  - TRENO 9519 (TORINO PORTA NUOVA -> SALERNO) [Transito]\
+ n  - TRENO 9466 (TRIESTE CENTRALE -> ROMA TERMINI) [Transito]\n  - TRENO 9
+ 466 (TRIESTE CENTRALE -> ROMA TERMINI) [Transito]\n  - REG 20461 (FARA SAB
+ INA-MONTELIBRETTI -> FIUMICINO AEROPORTO) [Transito]\n  - TRENO 9514 (TARA
+ NTO -> TORINO PORTA NUOVA) [Transito]\n  - TRENO 8507 (BOLZANO -> ROMA TER
+ MINI) [Transito]\n  - REG 20463 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AE
+ ROPORTO) [Transito]\n  - REG 4100 (ROMA TIBURTINA -> FIRENZE SANTA MARIA N
+ OVELLA)\n  - TRENO 8418 (REGGIO DI CALABRIA CENTRALE -> VENEZIA S.LUCIA) [
+ Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Chiusura continua per 9 treni: intervallo utile tra 
+ i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 9 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-20449--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T085703Z
-DTEND:20261116T090233Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:57 - 10:02 (primo: REG 20449)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 09:57:03 - 10:02:33\nTreni coinvolti n
- ella chiusura:\n  - REG 20449 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AERO
- PORTO) [Transito]\n  - REG 20449 (FARA SABINA-MONTELIBRETTI -> FIUMICINO A
- EROPORTO) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9604--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T090436Z
-DTEND:20261116T092126Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:04 - 10:21 (primo: TRENO 9604)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 4 TRENI\nChiusura sbarre stimata: 10:04:36 - 10:21:26\nTreni coinvolti n
- ella chiusura:\n  - TRENO 9604 (BRESCIA -> NAPOLI CENTRALE) [Transito]\n  
- - TRENO 9524 (SALERNO -> MILANO CENTRALE) [Transito]\n  - TRENO 9515 (MILA
- NO CENTRALE -> SALERNO) [Transito]\n  - TRENO 9515 (MILANO CENTRALE -> SAL
- ERNO) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
- %\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo uti
- le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
- 120s)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-20453--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T092703Z
-DTEND:20261116T094733Z
-SUMMARY:[CHIUSURA CONTINUA - 14 TRENI] 10:27 - 10:47 (primo: REG 20453)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 14 TRENI\nChiusura sbarre stimata: 10:27:03 - 10:47:33\nTreni coinvolti 
- nella chiusura:\n  - REG 20453 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AER
- OPORTO) [Transito]\n  - REG 20453 (FARA SABINA-MONTELIBRETTI -> FIUMICINO 
- AEROPORTO) [Transito]\n  - TRENO 9310 (NAPOLI CENTRALE -> TORINO PORTA NUO
- VA) [Transito]\n  - TRENO 9310 (NAPOLI CENTRALE -> TORINO PORTA NUOVA) [Tr
- ansito]\n  - REG 4073 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO) [Transito]\
- n  - REG 4073 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO) [Transito]\n  - TRE
- NO 9416 (ROMA TERMINI -> VENEZIA S.LUCIA) [Transito]\n  - TRENO 9416 (ROMA
-  TERMINI -> VENEZIA S.LUCIA) [Transito]\n  - TRENO 9611 (TORINO PORTA NUOV
- A -> NAPOLI CENTRALE) [Transito]\n  - TRENO 9611 (TORINO PORTA NUOVA -> NA
- POLI CENTRALE) [Transito]\n  - TRENO 9624 (ROMA TERMINI -> MILANO CENTRALE
- ) [Transito]\n  - TRENO 9624 (ROMA TERMINI -> MILANO CENTRALE) [Transito]\
- n  - REG 20455 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AEROPORTO) [Transit
- o]\n  - REG 20455 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AEROPORTO) [Tran
- sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Chiusura continua per 14 treni: intervallo utile tra i p
- assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 14 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-588--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T095615Z
-DTEND:20261116T101249Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 10:56 - 11:12 (primo: IC 588)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 8 TRENI\nChiusura sbarre stimata: 10:56:15 - 11:12:49\nTreni coinvolti n
- ella chiusura:\n  - IC 588 (ROMA TERMINI -> TRIESTE CENTRALE)\n  - IC 588 
- (ROMA TERMINI -> TRIESTE CENTRALE)\n  - REG 20457 (FARA SABINA-MONTELIBRET
- TI -> FIUMICINO AEROPORTO) [Transito]\n  - REG 20457 (FARA SABINA-MONTELIB
- RETTI -> FIUMICINO AEROPORTO) [Transito]\n  - TRENO 89311 (GENOVA PIAZZA P
- RINCIPE -> ROMA TERMINI) [Transito]\n  - TRENO 9514 (TARANTO -> TORINO POR
- TA NUOVA) [Transito]\n  - TRENO 9626 (ROMA TERMINI -> TORINO PORTA NUOVA) 
- [Transito]\n  - TRENO 9626 (ROMA TERMINI -> TORINO PORTA NUOVA) [Transito]
- \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
- a/euristica: Chiusura continua per 8 treni: intervallo utile tra i passagg
- i (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9519--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T101556Z
-DTEND:20261116T102126Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:15 - 11:21 (primo: TRENO 9519)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 11:15:56 - 11:21:26\nTreni coinvolti n
- ella chiusura:\n  - TRENO 9519 (TORINO PORTA NUOVA -> SALERNO) [Transito]\
- n  - TRENO 9519 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
- usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-20461--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T102703Z
-DTEND:20261116T103947Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:27 - 11:39 (primo: REG 20461)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 4 TRENI\nChiusura sbarre stimata: 11:27:03 - 11:39:47\nTreni coinvolti n
- ella chiusura:\n  - REG 20461 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AERO
- PORTO) [Transito]\n  - REG 20461 (FARA SABINA-MONTELIBRETTI -> FIUMICINO A
- EROPORTO) [Transito]\n  - TRENO 8507 (BOLZANO -> ROMA TERMINI) [Transito]\
- n  - TRENO 8507 (BOLZANO -> ROMA TERMINI) [Transito]\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
- continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-20463--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T104203Z
-DTEND:20261116T104859Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:42 - 11:48 (primo: REG 20463)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 4 TRENI\nChiusura sbarre stimata: 11:42:03 - 11:48:59\nTreni coinvolti n
- ella chiusura:\n  - REG 20463 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AERO
- PORTO) [Transito]\n  - REG 20463 (FARA SABINA-MONTELIBRETTI -> FIUMICINO A
- EROPORTO) [Transito]\n  - REG 4100 (ROMA TIBURTINA -> FIRENZE SANTA MARIA 
- NOVELLA)\n  - TRENO 8418 (REGGIO DI CALABRIA CENTRALE -> VENEZIA S.LUCIA) 
- [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
- a normativa/euristica: Chiusura continua per 4 treni: intervallo utile tra
-  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9409--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T105139Z
-DTEND:20261116T111003Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 11:51 - 12:10 (primo: TRENO 9409)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 5 TRENI\nChiusura sbarre stimata: 11:51:39 - 12:10:03\nTreni coinvolti n
- ella chiusura:\n  - TRENO 9409 (GORIZIA CENTRALE -> NAPOLI CENTRALE) [Tran
- sito]\n  - TRENO 9409 (GORIZIA CENTRALE -> NAPOLI CENTRALE) [Transito]\n  
- - TRENO 9630 (NAPOLI CENTRALE -> MILANO CENTRALE) [Transito]\n  - TRENO 93
- 91 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\n  - TRENO 9532 (NAP
- OLI CENTRALE -> TORINO PORTA NUOVA) [Transito]\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
- ua per 5 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9583--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
+DTSTAMP:20261116T104738Z
 SEQUENCE:1
-DTSTART:20261116T111505Z
-DTEND:20261116T112035Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9583 (TORINO PORTA NUOVA -> REGGIO DI CALAB
- RIA CENTRALE) ore 12:19
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: TRANSITO VELOCE\nC
- hiusura sbarre stimata: 12:15:05 - 12:20:35\nTreni coinvolti nella chiusur
- a:\n  - TRENO 9583 (TORINO PORTA NUOVA -> REGGIO DI CALABRIA CENTRALE) [Tr
- ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
- ormativa/euristica: Transito stimato senza fermata (78% tratta FIRENZE SAN
- TA MARIA NOVELLA -> ROMA TIBURTINA\; pedale annuncio fisso Vmax)
+DTSTART:20261116T105306Z
+DTEND:20261116T110544Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 11:53 - 12:05 (primo: TRENO 9409) (+2
+  min)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 7 TRENI\nChiusura sbarre stimata: 11:53:06 - 12:05:44\nTreni coinvolti n
+ ella chiusura:\n  - TRENO 9409 (GORIZIA CENTRALE -> NAPOLI CENTRALE) [Tran
+ sito]\n  - REG 4153 (ANCONA -> ROMA TERMINI) (+2m) [Transito]\n  - REG 415
+ 3 (ANCONA -> ROMA TERMINI) (+2m) [Transito]\n  - REG 20467 (FARA SABINA-MO
+ NTELIBRETTI -> FIUMICINO AEROPORTO) (+1m) [Transito]\n  - REG 20467 (FARA 
+ SABINA-MONTELIBRETTI -> FIUMICINO AEROPORTO) (+1m) [Transito]\n  - TRENO 9
+ 391 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\n  - TRENO 9630 (NA
+ POLI CENTRALE -> MILANO CENTRALE) [Transito]\nRitardo massimo rilevato: 2 
+ min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua
+  per 7 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9632--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-4153--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T112904Z
-DTEND:20261116T113434Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:29 - 12:34 (primo: TRENO 9632)
+DTSTART:20261116T111230Z
+DTEND:20261116T112112Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 12:12 - 12:21 (primo: REG 4153) (+8 m
+ in)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 12:29:04 - 12:34:34\nTreni coinvolti n
- ella chiusura:\n  - TRENO 9632 (NAPOLI CENTRALE -> MILANO CENTRALE) [Trans
- ito]\n  - TRENO 9632 (NAPOLI CENTRALE -> MILANO CENTRALE) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
-  inferiore alla soglia minima di sgombero stradale (120s)
+ - 7 TRENI\nChiusura sbarre stimata: 12:12:30 - 12:21:12\nTreni coinvolti n
+ ella chiusura:\n  - REG 4153 (ANCONA -> ROMA TERMINI) (+2m)\n  - REG 4153 
+ (ANCONA -> ROMA TERMINI) (+2m)\n  - REG 20469 (FARA SABINA-MONTELIBRETTI -
+ > FIUMICINO AEROPORTO) [Transito]\n  - REG 20469 (FARA SABINA-MONTELIBRETT
+ I -> FIUMICINO AEROPORTO) [Transito]\n  - TRENO 9617 (MILANO CENTRALE -> R
+ OMA TERMINI) (+8m) [Transito]\n  - TRENO 9617 (MILANO CENTRALE -> ROMA TER
+ MINI) (+8m) [Transito]\n  - TRENO 9583 (TORINO PORTA NUOVA -> REGGIO DI CA
+ LABRIA CENTRALE) [Transito]\nRitardo massimo rilevato: 8 min\nAffidabilit
+ à stima: 78%\nNota normativa/euristica: Chiusura continua per 7 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ORTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9532--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T113001Z
+DTEND:20261116T113544Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:30 - 12:35 (primo: TRENO 9532)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 12:30:01 - 12:35:44\nTreni coinvolti n
+ ella chiusura:\n  - TRENO 9532 (NAPOLI CENTRALE -> TORINO PORTA NUOVA) [Tr
+ ansito]\n  - TRENO 9632 (NAPOLI CENTRALE -> MILANO CENTRALE) [Transito]\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -654,108 +611,135 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8503--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T113639Z
-DTEND:20261116T115000Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 12:36 - 12:50 (primo: TRENO 8503)
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T113806Z
+DTEND:20261116T114730Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:38 - 12:47 (primo: TRENO 8503)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 5 TRENI\nChiusura sbarre stimata: 12:36:39 - 12:50:00\nTreni coinvolti n
+ - 4 TRENI\nChiusura sbarre stimata: 12:38:06 - 12:47:30\nTreni coinvolti n
  ella chiusura:\n  - TRENO 8503 (BRESCIA -> ROMA TERMINI) [Transito]\n  - T
- RENO 9420 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) [Transito]\n  - TRENO 9420 
- (NAPOLI CENTRALE -> VENEZIA S.LUCIA) [Transito]\n  - IC 583 (MILANO CENTRA
- LE -> NAPOLI CENTRALE)\n  - IC 583 (MILANO CENTRALE -> NAPOLI CENTRALE)\nR
- itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Chiusura continua per 5 treni: intervallo utile tra i passaggi (
- 0s) inferiore alla soglia minima di sgombero stradale (120s)
+ RENO 9420 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) [Transito]\n  - REG 20475 (
+ FARA SABINA-MONTELIBRETTI -> FIUMICINO AEROPORTO) [Transito]\n  - REG 2047
+ 5 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AEROPORTO) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-20635--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T115548Z
-DTEND:20261116T120500Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:55 - 13:05 (primo: REG 20635)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 3 TRENI\nChiusura sbarre stimata: 12:55:48 - 13:05:00\nTreni coinvolti n
- ella chiusura:\n  - REG 20635 (FIUMICINO AEROPORTO -> ORTE) [Transito]\n  
- - REG 4512 (ROMA TERMINI -> FOLIGNO)\n  - REG 4512 (ROMA TERMINI -> FOLIGN
- O)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Chiusura continua per 3 treni: intervallo utile tra i passa
- ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-20635--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T121330Z
-DTEND:20261116T122359Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 13:13 - 13:23 (primo: REG 20635)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 3 TRENI\nChiusura sbarre stimata: 13:13:30 - 13:23:59\nTreni coinvolti n
- ella chiusura:\n  - REG 20635 (FIUMICINO AEROPORTO -> ORTE)\n  - TRENO 952
- 7 (MILANO CENTRALE -> SALERNO) [Transito]\n  - TRENO 9584 (REGGIO DI CALAB
- RIA CENTRALE -> TORINO PORTA NUOVA) [Transito]\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
- ua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4103--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-583--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T123010Z
-DTEND:20261116T124503Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 13:30 - 13:45 (primo: REG 4103)
+DTSTART:20261116T115115Z
+DTEND:20261116T120555Z
+SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 12:51 - 13:05 (primo: IC 583) (+6 min
+ )
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 6 TRENI\nChiusura sbarre stimata: 13:30:10 - 13:45:03\nTreni coinvolti n
- ella chiusura:\n  - REG 4103 (FIRENZE SANTA MARIA NOVELLA -> ORTE) [Transi
- to]\n  - REG 4103 (FIRENZE SANTA MARIA NOVELLA -> ORTE) [Transito]\n  - TR
- ENO 9623 (MILANO CENTRALE -> REGGIO DI CALABRIA CENTRALE) [Transito]\n  - 
- TRENO 9623 (MILANO CENTRALE -> REGGIO DI CALABRIA CENTRALE) [Transito]\n  
- - TRENO 9422 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) [Transito]\n  - TRENO 94
- 22 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
- ntinua per 6 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ - 8 TRENI\nChiusura sbarre stimata: 12:51:15 - 13:05:55\nTreni coinvolti n
+ ella chiusura:\n  - IC 583 (MILANO CENTRALE -> NAPOLI CENTRALE) (+6m)\n  -
+  IC 583 (MILANO CENTRALE -> NAPOLI CENTRALE) (+6m)\n  - REG 20635 (FIUMICI
+ NO AEROPORTO -> ORTE) [Transito]\n  - TRENO 9311 (TORINO PORTA NUOVA -> NA
+ POLI CENTRALE) [Transito]\n  - TRENO 9311 (TORINO PORTA NUOVA -> NAPOLI CE
+ NTRALE) [Transito]\n  - REG 4512 (ROMA TERMINI -> FOLIGNO)\n  - TRENO 9634
+  (NAPOLI CENTRALE -> MILANO CENTRALE) (+1m) [Transito]\n  - TRENO 9634 (NA
+ POLI CENTRALE -> MILANO CENTRALE) (+1m) [Transito]\nRitardo massimo rileva
+ to: 6 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
+ ntinua per 8 treni: intervallo utile tra i passaggi (0s) inferiore alla so
  glia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20635--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T121330Z
+DTEND:20261116T122413Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 13:13 - 13:24 (primo: REG 20635) (+1 
+ min)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 4 TRENI\nChiusura sbarre stimata: 13:13:30 - 13:24:13\nTreni coinvolti n
+ ella chiusura:\n  - REG 20635 (FIUMICINO AEROPORTO -> ORTE)\n  - TRENO 952
+ 7 (MILANO CENTRALE -> SALERNO) (+1m) [Transito]\n  - TRENO 9527 (MILANO CE
+ NTRALE -> SALERNO) (+1m) [Transito]\n  - TRENO 9584 (REGGIO DI CALABRIA CE
+ NTRALE -> TORINO PORTA NUOVA) [Transito]\nRitardo massimo rilevato: 1 min\
+ nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per
+  4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
+ a di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ORTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9638--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-9636--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T125904Z
-DTEND:20261116T130434Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:59 - 14:04 (primo: TRENO 9638)
+DTSTART:20261116T122834Z
+DTEND:20261116T123540Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 13:28 - 13:35 (primo: TRENO 9636)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 13:59:04 - 14:04:34\nTreni coinvolti n
+ - 3 TRENI\nChiusura sbarre stimata: 13:28:34 - 13:35:40\nTreni coinvolti n
+ ella chiusura:\n  - TRENO 9636 (NAPOLI CENTRALE -> MILANO CENTRALE) [Trans
+ ito]\n  - TRENO 9636 (NAPOLI CENTRALE -> MILANO CENTRALE) [Transito]\n  - 
+ REG 4103 (FIRENZE SANTA MARIA NOVELLA -> ORTE) [Transito]\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
+ sura continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ORTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9623--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T123842Z
+DTEND:20261116T124518Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:38 - 13:45 (primo: TRENO 9623)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 13:38:42 - 13:45:18\nTreni coinvolti n
+ ella chiusura:\n  - TRENO 9623 (MILANO CENTRALE -> REGGIO DI CALABRIA CENT
+ RALE) [Transito]\n  - TRENO 9422 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) [Tra
+ nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i p
+ assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ORTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9638--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T130014Z
+DTEND:20261116T130544Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:00 - 14:05 (primo: TRENO 9638)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 14:00:14 - 14:05:44\nTreni coinvolti n
  ella chiusura:\n  - TRENO 9638 (NAPOLI CENTRALE -> MILANO CENTRALE) [Trans
  ito]\n  - TRENO 9638 (NAPOLI CENTRALE -> MILANO CENTRALE) [Transito]\nRita
  rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
@@ -771,61 +755,62 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4103--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T130930Z
-DTEND:20261116T131503Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 14:09 - 14:15 (primo: REG 4103)
+DTEND:20261116T131633Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 14:09 - 14:16 (primo: REG 4103)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 4 TRENI\nChiusura sbarre stimata: 14:09:30 - 14:15:03\nTreni coinvolti n
- ella chiusura:\n  - REG 4103 (FIRENZE SANTA MARIA NOVELLA -> ORTE)\n  - RE
- G 4103 (FIRENZE SANTA MARIA NOVELLA -> ORTE)\n  - TRENO 9625 (MILANO CENTR
- ALE -> NAPOLI CENTRALE) [Transito]\n  - TRENO 9625 (MILANO CENTRALE -> NAP
- OLI CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità s
- tima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: interv
- allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
- radale (120s)
+ - 3 TRENI\nChiusura sbarre stimata: 14:09:30 - 14:16:33\nTreni coinvolti n
+ ella chiusura:\n  - REG 4103 (FIRENZE SANTA MARIA NOVELLA -> ORTE)\n  - TR
+ ENO 9625 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\n  - TRENO 9625 (
+ MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
+ ua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+  minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20493--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
 DTSTART:20261116T132530Z
 DTEND:20261116T133000Z
-SUMMARY:[FERMATA] REG 20493 (ORTE -> FIUMICINO AEROPORTO) ore 14:29
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: FERMATA\nChiusura 
- sbarre stimata: 14:25:30 - 14:30:00\nTreni coinvolti nella chiusura:\n  - 
- REG 20493 (ORTE -> FIUMICINO AEROPORTO)\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia 
- oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:25 - 14:30 (primo: REG 20493)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 14:25:30 - 14:30:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 20493 (ORTE -> FIUMICINO AEROPORTO)\n  - REG 20493
+  (ORTE -> FIUMICINO AEROPORTO)\nRitardo massimo rilevato: 0 min\nAffidabil
+ ità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: 
+ intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
+ ero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9627--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-584--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T133714Z
-DTEND:20261116T134400Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 14:37 - 14:44 (primo: TRENO 9627)
+DTSTART:20261116T133515Z
+DTEND:20261116T134412Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 14:35 - 14:44 (primo: IC 584)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 4 TRENI\nChiusura sbarre stimata: 14:37:14 - 14:44:00\nTreni coinvolti n
- ella chiusura:\n  - TRENO 9627 (MILANO CENTRALE -> NAPOLI CENTRALE) [Trans
- ito]\n  - TRENO 9627 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\n  - 
- IC 584 (TRIESTE CENTRALE -> ROMA TERMINI)\n  - IC 584 (TRIESTE CENTRALE ->
-  ROMA TERMINI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\
+ - 4 TRENI\nChiusura sbarre stimata: 14:35:15 - 14:44:12\nTreni coinvolti n
+ ella chiusura:\n  - IC 584 (TRIESTE CENTRALE -> ROMA TERMINI)\n  - IC 584 
+ (TRIESTE CENTRALE -> ROMA TERMINI)\n  - TRENO 9627 (MILANO CENTRALE -> NAP
+ OLI CENTRALE) [Transito]\n  - TRENO 9627 (MILANO CENTRALE -> NAPOLI CENTRA
+ LE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\
  nNota normativa/euristica: Chiusura continua per 4 treni: intervallo utile
   tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (12
  0s)
@@ -835,178 +820,159 @@ TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9415--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T134917Z
-DTEND:20261116T135447Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:49 - 14:54 (primo: TRENO 9415)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T134955Z
+DTEND:20261116T140344Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 14:49 - 15:03 (primo: TRENO 9415)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 14:49:17 - 14:54:47\nTreni coinvolti n
+ - 5 TRENI\nChiusura sbarre stimata: 14:49:55 - 15:03:44\nTreni coinvolti n
  ella chiusura:\n  - TRENO 9415 (VENEZIA S.LUCIA -> ROMA TERMINI) [Transito
- ]\n  - TRENO 9415 (VENEZIA S.LUCIA -> ROMA TERMINI) [Transito]\nRitardo ma
- ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
-  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
- iore alla soglia minima di sgombero stradale (120s)
+ ]\n  - REG 20495 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AEROPORTO) [Trans
+ ito]\n  - REG 20495 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AEROPORTO) [Tr
+ ansito]\n  - TRENO 9642 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA NUOVA
+ ) [Transito]\n  - TRENO 9642 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA 
+ NUOVA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 7
+ 8%\nNota normativa/euristica: Chiusura continua per 5 treni: intervallo ut
+ ile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale 
+ (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-20495--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T135703Z
-DTEND:20261116T140233Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:57 - 15:02 (primo: REG 20495)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 14:57:03 - 15:02:33\nTreni coinvolti n
- ella chiusura:\n  - REG 20495 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AERO
- PORTO) [Transito]\n  - REG 20495 (FARA SABINA-MONTELIBRETTI -> FIUMICINO A
- EROPORTO) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-9544--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T141433Z
-DTEND:20261116T142035Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:14 - 15:20 (primo: TRENO 9544)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T141448Z
+DTEND:20261116T142112Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:14 - 15:21 (primo: TRENO 9544)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 3 TRENI\nChiusura sbarre stimata: 15:14:33 - 15:20:35\nTreni coinvolti n
+ - 4 TRENI\nChiusura sbarre stimata: 15:14:48 - 15:21:12\nTreni coinvolti n
  ella chiusura:\n  - TRENO 9544 (SALERNO -> MILANO CENTRALE) [Transito]\n  
  - TRENO 9544 (SALERNO -> MILANO CENTRALE) [Transito]\n  - TRENO 9535 (TORI
- NO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
- a per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+ NO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\n  - TRENO 9535 (TORINO PORT
+ A NUOVA -> NAPOLI CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20503--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
 DTSTART:20261116T142530Z
-DTEND:20261116T143000Z
-SUMMARY:[FERMATA] REG 20503 (ORTE -> FIUMICINO AEROPORTO) ore 15:29
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: FERMATA\nChiusura 
- sbarre stimata: 15:25:30 - 15:30:00\nTreni coinvolti nella chiusura:\n  - 
- REG 20503 (ORTE -> FIUMICINO AEROPORTO)\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia 
- oraria regolare
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4105--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T143310Z
-DTEND:20261116T144539Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:33 - 15:45 (primo: REG 4105)
+DTEND:20261116T143840Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:25 - 15:38 (primo: REG 20503)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 3 TRENI\nChiusura sbarre stimata: 15:33:10 - 15:45:39\nTreni coinvolti n
- ella chiusura:\n  - REG 4105 (FIRENZE SANTA MARIA NOVELLA -> ROMA TERMINI)
-  [Transito]\n  - TRENO 9644 (ROMA TERMINI -> MILANO CENTRALE) [Transito]\n
-   - TRENO 9644 (ROMA TERMINI -> MILANO CENTRALE) [Transito]\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
- iusura continua per 3 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+ - 4 TRENI\nChiusura sbarre stimata: 15:25:30 - 15:38:40\nTreni coinvolti n
+ ella chiusura:\n  - REG 20503 (ORTE -> FIUMICINO AEROPORTO)\n  - TRENO 932
+ 0 (NAPOLI CENTRALE -> TORINO PORTA NUOVA) [Transito]\n  - TRENO 9320 (NAPO
+ LI CENTRALE -> TORINO PORTA NUOVA) [Transito]\n  - REG 4105 (FIRENZE SANTA
+  MARIA NOVELLA -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
+ er 4 treni: intervallo utile tra i passaggi (107s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-540--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:2
-DTSTART:20261116T145115Z
-DTEND:20261116T145626Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:51 - 15:56 (primo: IC 540)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 3 TRENI\nChiusura sbarre stimata: 15:51:15 - 15:56:26\nTreni coinvolti n
- ella chiusura:\n  - IC 540 (ROMA TERMINI -> ANCONA)\n  - TRENO 8419 (VENEZ
- IA S.LUCIA -> REGGIO DI CALABRIA CENTRALE) [Transito]\n  - TRENO 8419 (VEN
- EZIA S.LUCIA -> REGGIO DI CALABRIA CENTRALE) [Transito]\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
- ra continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+UID:train-9644--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T144125Z
+DTEND:20261116T144655Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9644 (ROMA TERMINI -> MILANO CENTRALE) ore 
+ 15:45
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: TRANSITO VELOCE\nC
+ hiusura sbarre stimata: 15:41:25 - 15:46:55\nTreni coinvolti nella chiusur
+ a:\n  - TRENO 9644 (ROMA TERMINI -> MILANO CENTRALE) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (14% tratta ROMA TERMINI -> MILANO ROGORE
+ DO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-540--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:3
+DTSTART:20261116T145115Z
+DTEND:20261116T145751Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:51 - 15:57 (primo: IC 540)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 15:51:15 - 15:57:51\nTreni coinvolti n
+ ella chiusura:\n  - IC 540 (ROMA TERMINI -> ANCONA)\n  - TRENO 8419 (VENEZ
+ IA S.LUCIA -> REGGIO DI CALABRIA CENTRALE) [Transito]\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
+  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
+  soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ORTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4156--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T145851Z
+UID:train-9646--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T150014Z
 DTEND:20261116T151200Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 15:58 - 16:12 (primo: REG 4156)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:00 - 16:12 (primo: TRENO 9646)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 8 TRENI\nChiusura sbarre stimata: 15:58:51 - 16:12:00\nTreni coinvolti n
- ella chiusura:\n  - REG 4156 (ROMA TERMINI -> ANCONA) [Transito]\n  - TREN
- O 9646 (NAPOLI CENTRALE -> MILANO CENTRALE) [Transito]\n  - TRENO 9646 (NA
- POLI CENTRALE -> MILANO CENTRALE) [Transito]\n  - TRENO 9588 (REGGIO DI CA
- LABRIA CENTRALE -> TORINO PORTA NUOVA) [Transito]\n  - TRENO 9633 (MILANO 
- CENTRALE -> NAPOLI CENTRALE) [Transito]\n  - TRENO 9633 (MILANO CENTRALE -
- > NAPOLI CENTRALE) [Transito]\n  - REG 4105 (FIRENZE SANTA MARIA NOVELLA -
- > ROMA TERMINI)\n  - IC 592 (ROMA TERMINI -> TRIESTE CENTRALE)\nRitardo ma
- ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
-  Chiusura continua per 8 treni: intervallo utile tra i passaggi (0s) infer
- iore alla soglia minima di sgombero stradale (120s)
+ - 4 TRENI\nChiusura sbarre stimata: 16:00:14 - 16:12:00\nTreni coinvolti n
+ ella chiusura:\n  - TRENO 9646 (NAPOLI CENTRALE -> MILANO CENTRALE) [Trans
+ ito]\n  - REG 4105 (FIRENZE SANTA MARIA NOVELLA -> ROMA TERMINI)\n  - TREN
+ O 9633 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\n  - IC 592 (ROMA T
+ ERMINI -> TRIESTE CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilit
+ à stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9539--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T151505Z
-DTEND:20261116T152035Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:15 - 16:20 (primo: TRENO 9539)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T151542Z
+DTEND:20261116T152112Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:15 - 16:21 (primo: TRENO 9539)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 16:15:05 - 16:20:35\nTreni coinvolti n
+ - 2 TRENI\nChiusura sbarre stimata: 16:15:42 - 16:21:12\nTreni coinvolti n
  ella chiusura:\n  - TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE) [Trans
  ito]\n  - TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\nRita
  rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
@@ -1021,20 +987,44 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9428--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T152709Z
-DTEND:20261116T153545Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:27 - 16:35 (primo: TRENO 9428)
+UID:train-9588--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T153001Z
+DTEND:20261116T154300Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:30 - 16:43 (primo: TRENO 9588)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 3 TRENI\nChiusura sbarre stimata: 16:27:09 - 16:35:45\nTreni coinvolti n
- ella chiusura:\n  - TRENO 9428 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) [Trans
+ - 4 TRENI\nChiusura sbarre stimata: 16:30:01 - 16:43:00\nTreni coinvolti n
+ ella chiusura:\n  - TRENO 9588 (REGGIO DI CALABRIA CENTRALE -> TORINO PORT
+ A NUOVA) [Transito]\n  - TRENO 9648 (NAPOLI CENTRALE -> MILANO CENTRALE) [
+ Transito]\n  - TRENO 9648 (NAPOLI CENTRALE -> MILANO CENTRALE) [Transito]\
+ n  - REG 4156 (ROMA TERMINI -> ANCONA)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ORTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9421--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T154955Z
+DTEND:20261116T160031Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:49 - 17:00 (primo: TRENO 9421)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 3 TRENI\nChiusura sbarre stimata: 16:49:55 - 17:00:31\nTreni coinvolti n
+ ella chiusura:\n  - TRENO 9421 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Trans
  ito]\n  - TRENO 9480 (ROMA TERMINI -> TRIESTE CENTRALE) [Transito]\n  - TR
- ENO 9588 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA NUOVA) [Transito]\nR
- itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (
- 0s) inferiore alla soglia minima di sgombero stradale (120s)
+ ENO 9428 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
+ ura continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -1044,214 +1034,125 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4156--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T153830Z
-DTEND:20261116T154300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:38 - 16:43 (primo: REG 4156)
+UID:train-9639--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T160842Z
+DTEND:20261116T162600Z
+SUMMARY:[CHIUSURA CONTINUA - 10 TRENI] 17:08 - 17:26 (primo: TRENO 9639)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 16:38:30 - 16:43:00\nTreni coinvolti n
- ella chiusura:\n  - REG 4156 (ROMA TERMINI -> ANCONA)\n  - REG 4156 (ROMA 
- TERMINI -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
- 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo u
- tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
-  (120s)
+ - 10 TRENI\nChiusura sbarre stimata: 17:08:42 - 17:26:00\nTreni coinvolti 
+ nella chiusura:\n  - TRENO 9639 (MILANO CENTRALE -> REGGIO DI CALABRIA CEN
+ TRALE) [Transito]\n  - TRENO 9639 (MILANO CENTRALE -> REGGIO DI CALABRIA C
+ ENTRALE) [Transito]\n  - REG 20677 (FIUMICINO AEROPORTO -> ORTE) [Transito
+ ]\n  - REG 20677 (FIUMICINO AEROPORTO -> ORTE) [Transito]\n  - TRENO 8524 
+ (ROMA TERMINI -> BOLZANO) [Transito]\n  - TRENO 9543 (TORINO PORTA NUOVA -
+ > SALERNO) [Transito]\n  - TRENO 9543 (TORINO PORTA NUOVA -> SALERNO) [Tra
+ nsito]\n  - TRENO 9552 (SALERNO -> TORINO PORTA NUOVA) [Transito]\n  - REG
+  20677 (FIUMICINO AEROPORTO -> ORTE)\n  - REG 20677 (FIUMICINO AEROPORTO -
+ > ORTE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Chiusura continua per 10 treni: intervallo utile tra i
+  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9421--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T154917Z
-DTEND:20261116T155738Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:49 - 16:57 (primo: TRENO 9421)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 16:49:17 - 16:57:38\nTreni coinvolti n
- ella chiusura:\n  - TRENO 9421 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Trans
- ito]\n  - TRENO 9480 (ROMA TERMINI -> TRIESTE CENTRALE) [Transito]\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
- nferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 10 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4514--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T160127Z
-DTEND:20261116T162359Z
-SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 17:01 - 17:23 (primo: REG 4514)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 7 TRENI\nChiusura sbarre stimata: 17:01:27 - 17:23:59\nTreni coinvolti n
- ella chiusura:\n  - REG 4514 (ROMA TERMINI -> FOLIGNO) [Transito]\n  - TRE
- NO 9639 (MILANO CENTRALE -> REGGIO DI CALABRIA CENTRALE) [Transito]\n  - T
- RENO 9639 (MILANO CENTRALE -> REGGIO DI CALABRIA CENTRALE) [Transito]\n  -
-  TRENO 8524 (ROMA TERMINI -> BOLZANO) [Transito]\n  - TRENO 9543 (TORINO P
- ORTA NUOVA -> SALERNO) [Transito]\n  - TRENO 9552 (SALERNO -> TORINO PORTA
-  NUOVA) [Transito]\n  - TRENO 9552 (SALERNO -> TORINO PORTA NUOVA) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 7 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-8519--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T163639Z
-DTEND:20261116T164600Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 17:36 - 17:46 (primo: TRENO 8519)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T163806Z
+DTEND:20261116T164633Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:38 - 17:46 (primo: TRENO 8519)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 8 TRENI\nChiusura sbarre stimata: 17:36:39 - 17:46:00\nTreni coinvolti n
- ella chiusura:\n  - TRENO 8519 (BOLZANO -> SIBARI) [Transito]\n  - TRENO 8
- 519 (BOLZANO -> SIBARI) [Transito]\n  - TRENO 9641 (TORINO PORTA NUOVA -> 
- ROMA TERMINI) [Transito]\n  - TRENO 9641 (TORINO PORTA NUOVA -> ROMA TERMI
- NI) [Transito]\n  - TRENO 9430 (NAPOLI CENTRALE -> GORIZIA CENTRALE) [Tran
- sito]\n  - TRENO 9430 (NAPOLI CENTRALE -> GORIZIA CENTRALE) [Transito]\n  
- - REG 4514 (ROMA TERMINI -> FOLIGNO)\n  - REG 4514 (ROMA TERMINI -> FOLIGN
- O)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Chiusura continua per 8 treni: intervallo utile tra i passa
- ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ - 4 TRENI\nChiusura sbarre stimata: 17:38:06 - 17:46:33\nTreni coinvolti n
+ ella chiusura:\n  - TRENO 8519 (BOLZANO -> SIBARI) [Transito]\n  - TRENO 9
+ 430 (NAPOLI CENTRALE -> GORIZIA CENTRALE) [Transito]\n  - REG 4514 (ROMA T
+ ERMINI -> FOLIGNO)\n  - TRENO 9641 (TORINO PORTA NUOVA -> ROMA TERMINI) [T
+ ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i
+  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4735--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T165031Z
-DTEND:20261116T171300Z
-SUMMARY:[CHIUSURA CONTINUA - 12 TRENI] 17:50 - 18:13 (primo: REG 4735)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T165041Z
+DTEND:20261116T172112Z
+SUMMARY:[CHIUSURA CONTINUA - 14 TRENI] 17:50 - 18:21 (primo: REG 4735)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 12 TRENI\nChiusura sbarre stimata: 17:50:31 - 18:13:00\nTreni coinvolti 
+ - 14 TRENI\nChiusura sbarre stimata: 17:50:41 - 18:21:12\nTreni coinvolti 
  nella chiusura:\n  - REG 4735 (PERUGIA -> ROMA TERMINI) [Transito]\n  - RE
  G 4735 (PERUGIA -> ROMA TERMINI) [Transito]\n  - TRENO 9425 (VENEZIA S.LUC
- IA -> NAPOLI CENTRALE) [Transito]\n  - REG 20683 (FIUMICINO AEROPORTO -> O
- RTE) [Transito]\n  - REG 20683 (FIUMICINO AEROPORTO -> ORTE) [Transito]\n 
-  - TRENO 9658 (REGGIO DI CALABRIA CENTRALE -> MILANO CENTRALE) [Transito]\
- n  - TRENO 9658 (REGGIO DI CALABRIA CENTRALE -> MILANO CENTRALE) [Transito
- ]\n  - TRENO 9321 (TORINO PORTA NUOVA -> ROMA TERMINI) [Transito]\n  - TRE
- NO 9643 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\n  - TRENO 9643 (M
- ILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\n  - REG 20683 (FIUMICINO AE
- ROPORTO -> ORTE)\n  - REG 20683 (FIUMICINO AEROPORTO -> ORTE)\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Chiusura continua per 12 treni: intervallo utile tra i passaggi (0s) infer
- iore alla soglia minima di sgombero stradale (120s)
+ IA -> NAPOLI CENTRALE) [Transito]\n  - TRENO 9425 (VENEZIA S.LUCIA -> NAPO
+ LI CENTRALE) [Transito]\n  - REG 20683 (FIUMICINO AEROPORTO -> ORTE) [Tran
+ sito]\n  - REG 20683 (FIUMICINO AEROPORTO -> ORTE) [Transito]\n  - TRENO 9
+ 658 (REGGIO DI CALABRIA CENTRALE -> MILANO CENTRALE) [Transito]\n  - TRENO
+  9321 (TORINO PORTA NUOVA -> ROMA TERMINI) [Transito]\n  - REG 20683 (FIUM
+ ICINO AEROPORTO -> ORTE)\n  - REG 20683 (FIUMICINO AEROPORTO -> ORTE)\n  -
+  TRENO 9643 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\n  - TRENO 955
+ 6 (NAPOLI CENTRALE -> MILANO CENTRALE) [Transito]\n  - TRENO 9556 (NAPOLI 
+ CENTRALE -> MILANO CENTRALE) [Transito]\n  - TRENO 9547 (MILANO CENTRALE -
+ > TARANTO) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stim
+ a: 78%\nNota normativa/euristica: Chiusura continua per 14 treni: interval
+ lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
+ dale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 12 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 14 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9547--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T171505Z
-DTEND:20261116T172035Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9547 (MILANO CENTRALE -> TARANTO) ore 18:19
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: TRANSITO VELOCE\nC
- hiusura sbarre stimata: 18:15:05 - 18:20:35\nTreni coinvolti nella chiusur
- a:\n  - TRENO 9547 (MILANO CENTRALE -> TARANTO) [Transito]\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
- nsito stimato senza fermata (78% tratta FIRENZE SANTA MARIA NOVELLA -> ROM
- A TIBURTINA\; pedale annuncio fisso Vmax)
+UID:train-9660--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T172609Z
+DTEND:20261116T173139Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:26 - 18:31 (primo: TRENO 9660)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 18:26:09 - 18:31:39\nTreni coinvolti n
+ ella chiusura:\n  - TRENO 9660 (NAPOLI CENTRALE -> BRESCIA) [Transito]\n  
+ - TRENO 9660 (NAPOLI CENTRALE -> BRESCIA) [Transito]\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
+ continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9645--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T174106Z
-DTEND:20261116T180026Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 18:41 - 19:00 (primo: TRENO 9645)
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T174237Z
+DTEND:20261116T175031Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 18:42 - 18:50 (primo: TRENO 9645)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 5 TRENI\nChiusura sbarre stimata: 18:41:06 - 19:00:26\nTreni coinvolti n
+ - 3 TRENI\nChiusura sbarre stimata: 18:42:37 - 18:50:31\nTreni coinvolti n
  ella chiusura:\n  - TRENO 9645 (TORINO PORTA NUOVA -> ROMA TERMINI) [Trans
- ito]\n  - TRENO 9326 (ROMA TERMINI -> TORINO PORTA NUOVA) [Transito]\n  - 
- TRENO 8528 (ROMA TERMINI -> BRESCIA) [Transito]\n  - TRENO 9662 (NAPOLI CE
- NTRALE -> MILANO CENTRALE) [Transito]\n  - TRENO 9662 (NAPOLI CENTRALE -> 
- MILANO CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 78%\nNota normativa/euristica: Chiusura continua per 5 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9647--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T180714Z
-DTEND:20261116T181244Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:07 - 19:12 (primo: TRENO 9647)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 19:07:14 - 19:12:44\nTreni coinvolti n
- ella chiusura:\n  - TRENO 9647 (MILANO CENTRALE -> FOGGIA) [Transito]\n  -
-  TRENO 9647 (MILANO CENTRALE -> FOGGIA) [Transito]\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
- ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
- glia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9551--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T181556Z
-DTEND:20261116T182700Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 19:15 - 19:27 (primo: TRENO 9551)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 3 TRENI\nChiusura sbarre stimata: 19:15:56 - 19:27:00\nTreni coinvolti n
- ella chiusura:\n  - TRENO 9551 (MILANO CENTRALE -> SALERNO) [Transito]\n  
- - REG 20547 (ORTE -> FIUMICINO AEROPORTO)\n  - REG 20547 (ORTE -> FIUMICIN
- O AEROPORTO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nN
- ota normativa/euristica: Chiusura continua per 3 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
+ ito]\n  - TRENO 9645 (TORINO PORTA NUOVA -> ROMA TERMINI) [Transito]\n  - 
+ TRENO 9326 (ROMA TERMINI -> TORINO PORTA NUOVA) [Transito]\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
+ usura continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore
+  alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -1261,44 +1162,124 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4735--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
+UID:train-9662--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
 SEQUENCE:0
-DTSTART:20261116T183330Z
-DTEND:20261116T183800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:33 - 19:38 (primo: REG 4735)
+DTSTART:20261116T175609Z
+DTEND:20261116T182700Z
+SUMMARY:[CHIUSURA CONTINUA - 11 TRENI] 18:56 - 19:27 (primo: TRENO 9662)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 19:33:30 - 19:38:00\nTreni coinvolti n
- ella chiusura:\n  - REG 4735 (PERUGIA -> ROMA TERMINI)\n  - REG 4735 (PERU
- GIA -> ROMA TERMINI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
+ - 11 TRENI\nChiusura sbarre stimata: 18:56:09 - 19:27:00\nTreni coinvolti 
+ nella chiusura:\n  - TRENO 9662 (NAPOLI CENTRALE -> MILANO CENTRALE) [Tran
+ sito]\n  - TRENO 9323 (TORINO PORTA NUOVA -> ROMA TERMINI) [Transito]\n  -
+  TRENO 9323 (TORINO PORTA NUOVA -> ROMA TERMINI) [Transito]\n  - TRENO 956
+ 0 (LECCE -> MILANO CENTRALE) [Transito]\n  - IC 541 (ANCONA -> ROMA TERMIN
+ I)\n  - IC 541 (ANCONA -> ROMA TERMINI)\n  - TRENO 9647 (MILANO CENTRALE -
+ > FOGGIA) [Transito]\n  - TRENO 8528 (ROMA TERMINI -> BRESCIA) [Transito]\
+ n  - TRENO 9551 (MILANO CENTRALE -> SALERNO) [Transito]\n  - REG 20547 (OR
+ TE -> FIUMICINO AEROPORTO)\n  - REG 20547 (ORTE -> FIUMICINO AEROPORTO)\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Chiusura continua per 11 treni: intervallo utile tra i passaggi 
+ (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 11 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9649--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T184106Z
-DTEND:20261116T190434Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 19:41 - 20:04 (primo: TRENO 9649)
+UID:train-9560--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T183001Z
+DTEND:20261116T185100Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 19:30 - 19:51 (primo: TRENO 9560)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 5 TRENI\nChiusura sbarre stimata: 19:41:06 - 20:04:34\nTreni coinvolti n
- ella chiusura:\n  - TRENO 9649 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Tr
- ansito]\n  - IC 597 (MILANO CENTRALE -> SALERNO)\n  - TRENO 9431 (VENEZIA 
- S.LUCIA -> NAPOLI CENTRALE) [Transito]\n  - TRENO 9668 (NAPOLI CENTRALE ->
-  MILANO CENTRALE) [Transito]\n  - TRENO 9668 (NAPOLI CENTRALE -> MILANO CE
- NTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
- 78%\nNota normativa/euristica: Chiusura continua per 5 treni: intervallo u
- tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
-  (120s)
+ - 7 TRENI\nChiusura sbarre stimata: 19:30:01 - 19:51:00\nTreni coinvolti n
+ ella chiusura:\n  - TRENO 9560 (LECCE -> MILANO CENTRALE) [Transito]\n  - 
+ REG 4735 (PERUGIA -> ROMA TERMINI)\n  - REG 4735 (PERUGIA -> ROMA TERMINI)
+ \n  - TRENO 8525 (BOLZANO -> NAPOLI CENTRALE) [Transito]\n  - TRENO 8525 (
+ BOLZANO -> NAPOLI CENTRALE) [Transito]\n  - TRENO 9649 (TORINO PORTA NUOVA
+  -> NAPOLI CENTRALE) [Transito]\n  - IC 597 (MILANO CENTRALE -> SALERNO)\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Chiusura continua per 7 treni: intervallo utile tra i passaggi 
+ (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ORTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9431--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T185306Z
+DTEND:20261116T190544Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 19:53 - 20:05 (primo: TRENO 9431)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 4 TRENI\nChiusura sbarre stimata: 19:53:06 - 20:05:44\nTreni coinvolti n
+ ella chiusura:\n  - TRENO 9431 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Trans
+ ito]\n  - TRENO 9325 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\n 
+  - TRENO 9325 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\n  - TREN
+ O 9668 (NAPOLI CENTRALE -> MILANO CENTRALE) [Transito]\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
+ a continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ORTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9330--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T191012Z
+DTEND:20261116T192336Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 20:10 - 20:23 (primo: TRENO 9330)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 6 TRENI\nChiusura sbarre stimata: 20:10:12 - 20:23:36\nTreni coinvolti n
+ ella chiusura:\n  - TRENO 9330 (ROMA TERMINI -> MILANO CENTRALE) [Transito
+ ]\n  - REG 20551 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AEROPORTO) [Trans
+ ito]\n  - REG 20551 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AEROPORTO) [Tr
+ ansito]\n  - TRENO 9592 (SALERNO -> MILANO CENTRALE) [Transito]\n  - TRENO
+  9592 (SALERNO -> MILANO CENTRALE) [Transito]\n  - TRENO 9555 (MILANO CENT
+ RALE -> BATTIPAGLIA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabi
+ lità stima: 78%\nNota normativa/euristica: Chiusura continua per 6 treni:
+  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ORTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8527--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T193455Z
+DTEND:20261116T194639Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 20:34 - 20:46 (primo: TRENO 8527)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 5 TRENI\nChiusura sbarre stimata: 20:34:55 - 20:46:39\nTreni coinvolti n
+ ella chiusura:\n  - TRENO 8527 (BRESCIA -> ROMA TERMINI) [Transito]\n  - T
+ RENO 8527 (BRESCIA -> ROMA TERMINI) [Transito]\n  - TRENO 9653 (MILANO CEN
+ TRALE -> SALERNO) [Transito]\n  - TRENO 9653 (MILANO CENTRALE -> SALERNO) 
+ [Transito]\n  - TRENO 8596 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) [Trans
+ ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 5 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -1308,64 +1289,111 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4110--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T191024Z
-DTEND:20261116T192752Z
-SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 20:10 - 20:27 (primo: REG 4110)
+UID:train-9433--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T194955Z
+DTEND:20261116T195700Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:49 - 20:57 (primo: TRENO 9433)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 7 TRENI\nChiusura sbarre stimata: 20:10:24 - 20:27:52\nTreni coinvolti n
- ella chiusura:\n  - REG 4110 (ROMA TERMINI -> FIRENZE SANTA MARIA NOVELLA)
-  [Transito]\n  - TRENO 9330 (ROMA TERMINI -> MILANO CENTRALE) [Transito]\n
-   - TRENO 9592 (SALERNO -> MILANO CENTRALE) [Transito]\n  - TRENO 9592 (SA
- LERNO -> MILANO CENTRALE) [Transito]\n  - TRENO 9555 (MILANO CENTRALE -> B
- ATTIPAGLIA) [Transito]\n  - TRENO 9555 (MILANO CENTRALE -> BATTIPAGLIA) [T
- ransito]\n  - TRENO 8596 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) [Transit
- o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Chiusura continua per 7 treni: intervallo utile tra i passa
- ggi (12s) inferiore alla soglia minima di sgombero stradale (120s)
+ - 3 TRENI\nChiusura sbarre stimata: 20:49:55 - 20:57:00\nTreni coinvolti n
+ ella chiusura:\n  - TRENO 9433 (VENEZIA S.LUCIA -> ROMA TERMINI) [Transito
+ ]\n  - TRENO 9433 (VENEZIA S.LUCIA -> ROMA TERMINI) [Transito]\n  - REG 41
+ 10 (ROMA TERMINI -> FIRENZE SANTA MARIA NOVELLA)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
+ inua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8527--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T193417Z
-DTEND:20261116T194244Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:34 - 20:42 (primo: TRENO 8527)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 20:34:17 - 20:42:44\nTreni coinvolti n
- ella chiusura:\n  - TRENO 8527 (BRESCIA -> ROMA TERMINI) [Transito]\n  - T
- RENO 9653 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
- tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
- lia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9433--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T194917Z
-DTEND:20261116T195700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:49 - 20:57 (primo: TRENO 9433)
+UID:train-9657--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:0
+DTSTART:20261116T200842Z
+DTEND:20261116T202126Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 21:08 - 21:21 (primo: TRENO 9657)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 20:49:17 - 20:57:00\nTreni coinvolti n
- ella chiusura:\n  - TRENO 9433 (VENEZIA S.LUCIA -> ROMA TERMINI) [Transito
- ]\n  - REG 4110 (ROMA TERMINI -> FIRENZE SANTA MARIA NOVELLA)\nRitardo mas
+ - 4 TRENI\nChiusura sbarre stimata: 21:08:42 - 21:21:26\nTreni coinvolti n
+ ella chiusura:\n  - TRENO 9657 (MILANO CENTRALE -> NAPOLI CENTRALE) [Trans
+ ito]\n  - TRENO 9657 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\n  - 
+ REG 4262 (ROMA TIBURTINA -> RIETI)\n  - REG 4160 (ROMA TERMINI -> ANCONA) 
+ [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Chiusura continua per 4 treni: intervallo utile tra
+  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ORTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20557--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T202700Z
+DTEND:20261116T203412Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 21:27 - 21:34 (primo: REG 20557)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 4 TRENI\nChiusura sbarre stimata: 21:27:00 - 21:34:12\nTreni coinvolti n
+ ella chiusura:\n  - REG 20557 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AERO
+ PORTO) [Transito]\n  - REG 20557 (FARA SABINA-MONTELIBRETTI -> FIUMICINO A
+ EROPORTO) [Transito]\n  - TRENO 9568 (NAPOLI CENTRALE -> FIRENZE SANTA MAR
+ IA NOVELLA) [Transito]\n  - TRENO 9568 (NAPOLI CENTRALE -> FIRENZE SANTA M
+ ARIA NOVELLA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità s
+ tima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: interv
+ allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
+ radale (120s)
+LOCATION:Passaggio a Livello / Stazione ORTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4108--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T204807Z
+DTEND:20261116T210100Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 21:48 - 22:01 (primo: REG 4108)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 4 TRENI\nChiusura sbarre stimata: 21:48:07 - 22:01:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 4108 (ROMA TERMINI -> CHIUSI-CHIANCIANO TERME) [Tr
+ ansito]\n  - TRENO 9435 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Transito]\n 
+  - REG 20731 (FIUMICINO AEROPORTO -> ORTE) [Transito]\n  - REG 4160 (ROMA 
+ TERMINI -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
+ 78%\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo u
+ tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
+  (120s)
+LOCATION:Passaggio a Livello / Stazione ORTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9674--20261115-S08209@pl-tracker.local
+DTSTAMP:20261116T104738Z
+SEQUENCE:2
+DTSTART:20261116T210449Z
+DTEND:20261116T211300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:04 - 22:13 (primo: TRENO 9674)
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 22:04:49 - 22:13:00\nTreni coinvolti n
+ ella chiusura:\n  - TRENO 9674 (NAPOLI CENTRALE -> FIRENZE SANTA MARIA NOV
+ ELLA) [Transito]\n  - REG 20731 (FIUMICINO AEROPORTO -> ORTE)\nRitardo mas
  simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
  ore alla soglia minima di sgombero stradale (120s)
@@ -1378,125 +1406,9 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9568--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T200209Z
-DTEND:20261116T202121Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 21:02 - 21:21 (primo: TRENO 9568)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 5 TRENI\nChiusura sbarre stimata: 21:02:09 - 21:21:21\nTreni coinvolti n
- ella chiusura:\n  - TRENO 9568 (NAPOLI CENTRALE -> FIRENZE SANTA MARIA NOV
- ELLA) [Transito]\n  - TRENO 9657 (MILANO CENTRALE -> NAPOLI CENTRALE) [Tra
- nsito]\n  - TRENO 9657 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\n  
- - REG 4262 (ROMA TIBURTINA -> RIETI)\n  - REG 4160 (ROMA TERMINI -> ANCONA
- ) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nN
- ota normativa/euristica: Chiusura continua per 5 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-20557--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T202703Z
-DTEND:20261116T203233Z
-SUMMARY:[TRANSITO VELOCE] REG 20557 (FARA SABINA-MONTELIBRETTI -> FIUMICINO
-  AEROPORTO) ore 21:31
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: TRANSITO VELOCE\nC
- hiusura sbarre stimata: 21:27:03 - 21:32:33\nTreni coinvolti nella chiusur
- a:\n  - REG 20557 (FARA SABINA-MONTELIBRETTI -> FIUMICINO AEROPORTO) [Tran
- sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Transito stimato senza fermata (58% tratta FIDENE -> NUO
- VO SALARIO\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9674--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:1
-DTSTART:20261116T204100Z
-DTEND:20261116T204630Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9674 (NAPOLI CENTRALE -> FIRENZE SANTA MARI
- A NOVELLA) ore 21:45
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: TRANSITO VELOCE\nC
- hiusura sbarre stimata: 21:41:00 - 21:46:30\nTreni coinvolti nella chiusur
- a:\n  - TRENO 9674 (NAPOLI CENTRALE -> FIRENZE SANTA MARIA NOVELLA) [Trans
- ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
- ativa/euristica: Transito stimato senza fermata (52% tratta ROMA TERMINI -
- > ROMA TIBURTINA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9435--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
-DTSTART:20261116T205139Z
-DTEND:20261116T210100Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 21:51 - 22:01 (primo: TRENO 9435)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 6 TRENI\nChiusura sbarre stimata: 21:51:39 - 22:01:00\nTreni coinvolti n
- ella chiusura:\n  - TRENO 9435 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Trans
- ito]\n  - TRENO 9435 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Transito]\n  - 
- REG 20731 (FIUMICINO AEROPORTO -> ORTE) [Transito]\n  - REG 20731 (FIUMICI
- NO AEROPORTO -> ORTE) [Transito]\n  - REG 4160 (ROMA TERMINI -> ANCONA)\n 
-  - REG 4160 (ROMA TERMINI -> ANCONA)\nRitardo massimo rilevato: 0 min\nAff
- idabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 6 t
- reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
-  sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-20731--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T210830Z
-DTEND:20261116T211300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:08 - 22:13 (primo: REG 20731)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 22:08:30 - 22:13:00\nTreni coinvolti n
- ella chiusura:\n  - REG 20731 (FIUMICINO AEROPORTO -> ORTE)\n  - REG 20731
-  (FIUMICINO AEROPORTO -> ORTE)\nRitardo massimo rilevato: 0 min\nAffidabil
- ità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ORTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-4108--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T213030Z
 DTEND:20261116T213500Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:30 - 22:35 (primo: REG 4108)
@@ -1517,111 +1429,106 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20735--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T214830Z
-DTEND:20261116T215704Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 22:48 - 22:57 (primo: REG 20735)
+DTEND:20261116T215835Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 22:48 - 22:58 (primo: REG 20735)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 6 TRENI\nChiusura sbarre stimata: 22:48:30 - 22:57:04\nTreni coinvolti n
+ - 4 TRENI\nChiusura sbarre stimata: 22:48:30 - 22:58:35\nTreni coinvolti n
  ella chiusura:\n  - REG 20735 (FIUMICINO AEROPORTO -> ORTE)\n  - REG 20735
   (FIUMICINO AEROPORTO -> ORTE)\n  - TRENO 9437 (VENEZIA S.LUCIA -> ROMA TE
- RMINI) [Transito]\n  - TRENO 9437 (VENEZIA S.LUCIA -> ROMA TERMINI) [Trans
- ito]\n  - TRENO 9681 (MILANO CENTRALE -> ROMA TERMINI) [Transito]\n  - TRE
- NO 9681 (MILANO CENTRALE -> ROMA TERMINI) [Transito]\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
- continua per 6 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+ RMINI) [Transito]\n  - TRENO 9681 (MILANO CENTRALE -> ROMA TERMINI) [Trans
+ ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-774--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:4
-DTSTART:20261116T220525Z
-DTEND:20261116T222035Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 23:05 - 23:20 (primo: ICN 774)
+DTSTAMP:20261116T104738Z
+SEQUENCE:5
+DTSTART:20261116T220543Z
+DTEND:20261116T222112Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 23:05 - 23:21 (primo: ICN 774)
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 5 TRENI\nChiusura sbarre stimata: 23:05:25 - 23:20:35\nTreni coinvolti n
+ - 4 TRENI\nChiusura sbarre stimata: 23:05:43 - 23:21:12\nTreni coinvolti n
  ella chiusura:\n  - ICN 774 (ROMA TERMINI -> TRIESTE CENTRALE) [Transito]\
  n  - ICN 774 (ROMA TERMINI -> TRIESTE CENTRALE) [Transito]\n  - REG 20739 
- (FIUMICINO AEROPORTO -> ORTE) [Transito]\n  - REG 20739 (FIUMICINO AEROPOR
- TO -> ORTE) [Transito]\n  - TRENO 9567 (TORINO PORTA NUOVA -> ROMA TERMINI
- ) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nN
- ota normativa/euristica: Chiusura continua per 5 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
+ (FIUMICINO AEROPORTO -> ORTE) [Transito]\n  - TRENO 9567 (TORINO PORTA NUO
+ VA -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabil
+ ità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: 
+ intervallo utile tra i passaggi (25s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20739--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
 DTSTART:20261116T222330Z
 DTEND:20261116T222800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:23 - 23:28 (primo: REG 20739)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 23:23:30 - 23:28:00\nTreni coinvolti n
- ella chiusura:\n  - REG 20739 (FIUMICINO AEROPORTO -> ORTE)\n  - REG 20739
-  (FIUMICINO AEROPORTO -> ORTE)\nRitardo massimo rilevato: 0 min\nAffidabil
- ità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
+SUMMARY:[FERMATA] REG 20739 (FIUMICINO AEROPORTO -> ORTE) ore 23:27
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: FERMATA\nChiusura 
+ sbarre stimata: 23:23:30 - 23:28:00\nTreni coinvolti nella chiusura:\n  - 
+ REG 20739 (FIUMICINO AEROPORTO -> ORTE)\nRitardo massimo rilevato: 0 min\n
+ Affidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia 
+ oraria regolare
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4113--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:0
-DTSTART:20261116T225450Z
-DTEND:20261116T230020Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:54 - 00:00 (primo: REG 4113)
-DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 23:54:50 - 00:00:20\nTreni coinvolti n
- ella chiusura:\n  - REG 4113 (FIRENZE SANTA MARIA NOVELLA -> ROMA TERMINI)
-  [Transito]\n  - REG 4113 (FIRENZE SANTA MARIA NOVELLA -> ROMA TERMINI) [T
- ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i
-  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261116T104738Z
+SEQUENCE:1
+DTSTART:20261116T225537Z
+DTEND:20261116T230107Z
+SUMMARY:[TRANSITO VELOCE] REG 4113 (FIRENZE SANTA MARIA NOVELLA -> ROMA TER
+ MINI) ore 23:59
+DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: TRANSITO VELOCE\nC
+ hiusura sbarre stimata: 23:55:37 - 00:01:07\nTreni coinvolti nella chiusur
+ a:\n  - REG 4113 (FIRENZE SANTA MARIA NOVELLA -> ROMA TERMINI) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Transito stimato senza fermata (48% tratta ORVIETO -> ROMA TIB
+ URTINA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-35678--20261115-S08209@pl-tracker.local
-DTSTAMP:20261116T024826Z
-SEQUENCE:3
-DTSTART:20261117T044846Z
-DTEND:20261117T045316Z
+DTSTAMP:20261116T104738Z
+SEQUENCE:4
+DTSTART:20261117T045028Z
+DTEND:20261117T045458Z
 SUMMARY:[TRANSITO VELOCE] ICN 35678 (TRIESTE CENTRALE -> ROMA TERMINI) ore 
- 05:52
+ 05:53
 DESCRIPTION:Stazione/PL: ORTE (S08209)\nRegime chiusura: TRANSITO VELOCE\nC
- hiusura sbarre stimata: 05:48:46 - 05:53:16\nTreni coinvolti nella chiusur
+ hiusura sbarre stimata: 05:50:28 - 05:54:58\nTreni coinvolti nella chiusur
  a:\n  - ICN 35678 (TRIESTE CENTRALE -> ROMA TERMINI) [Transito]\nRitardo m
  assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (53% tratta CHIUSI-CHIANCIANO TERME -> RO
+ : Transito stimato senza fermata (54% tratta CHIUSI-CHIANCIANO TERME -> RO
  MA TERMINI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ORTE
 STATUS:CONFIRMED
