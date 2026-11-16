@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:aa694409d8dae0eb018752b4104c7692ce91e06426ec21b3edabe7163b7b
- 65eb
+X-CONTENT-HASH:35ee74274fefe367db09874571c6057c0aada2c57443cf201b757939fe19
+ 89a9
 BEGIN:VEVENT
 UID:train-9300--20261115-S07001@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
 DTSTART:20261116T044229Z
 DTEND:20261116T044759Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:42 - 05:47 (primo: TRENO 9300)
@@ -34,9 +34,53 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
+UID:train-7453--20261115-S07001@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261116T051936Z
+DTEND:20261116T052506Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:19 - 06:25 (primo: REG 7453)
+DESCRIPTION:Stazione/PL: PASSIGNANO SUL TRASIMENO (S07001)\nRegime chiusura
+ : CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:19:36 - 06:25:0
+ 6\nTreni coinvolti nella chiusura:\n  - REG 7453 (TERONTOLA CORTONA -> FOL
+ IGNO) [Transito]\n  - REG 7453 (TERONTOLA CORTONA -> FOLIGNO) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
+ (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PASSIGNANO SUL TRASIMENO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-7453--20261115-S07001@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261116T052830Z
+DTEND:20261116T053300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:28 - 06:33 (primo: REG 7453)
+DESCRIPTION:Stazione/PL: PASSIGNANO SUL TRASIMENO (S07001)\nRegime chiusura
+ : CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:28:30 - 06:33:0
+ 0\nTreni coinvolti nella chiusura:\n  - REG 7453 (TERONTOLA CORTONA -> FOL
+ IGNO)\n  - REG 7453 (TERONTOLA CORTONA -> FOLIGNO)\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura co
+ ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PASSIGNANO SUL TRASIMENO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-580--20261115-S07001@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:2
+DTSTAMP:20261116T024826Z
+SEQUENCE:3
 DTSTART:20261116T055630Z
 DTEND:20261116T060100Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:56 - 07:01 (primo: IC 580)
@@ -57,18 +101,60 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4720--20261115-S07001@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:1
+DTSTAMP:20261116T024826Z
+SEQUENCE:2
+DTSTART:20261116T060523Z
+DTEND:20261116T061053Z
+SUMMARY:[TRANSITO VELOCE] REG 4720 (CHIUSI-CHIANCIANO TERME -> FOLIGNO) ore
+  07:09
+DESCRIPTION:Stazione/PL: PASSIGNANO SUL TRASIMENO (S07001)\nRegime chiusura
+ : TRANSITO VELOCE\nChiusura sbarre stimata: 07:05:23 - 07:10:53\nTreni coi
+ nvolti nella chiusura:\n  - REG 4720 (CHIUSI-CHIANCIANO TERME -> FOLIGNO) 
+ [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Transito stimato senza fermata (64% tratta TERONTOL
+ A CORTONA -> TUORO SUL TRASIMENO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PASSIGNANO SUL TRASIMENO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4720--20261115-S07001@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:2
 DTSTART:20261116T061630Z
 DTEND:20261116T062100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:16 - 07:21 (primo: REG 4720)
+SUMMARY:[FERMATA] REG 4720 (CHIUSI-CHIANCIANO TERME -> FOLIGNO) ore 07:20
 DESCRIPTION:Stazione/PL: PASSIGNANO SUL TRASIMENO (S07001)\nRegime chiusura
- : CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:16:30 - 07:21:0
- 0\nTreni coinvolti nella chiusura:\n  - REG 4720 (CHIUSI-CHIANCIANO TERME 
- -> FOLIGNO)\n  - REG 4720 (CHIUSI-CHIANCIANO TERME -> FOLIGNO)\nRitardo ma
- ssimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica:
-  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
- iore alla soglia minima di sgombero stradale (120s)
+ : FERMATA\nChiusura sbarre stimata: 07:16:30 - 07:21:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 4720 (CHIUSI-CHIANCIANO TERME -> FOLIGNO)\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristi
+ ca: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PASSIGNANO SUL TRASIMENO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4073--20261115-S07001@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261116T085130Z
+DTEND:20261116T085600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:51 - 09:56 (primo: REG 4073)
+DESCRIPTION:Stazione/PL: PASSIGNANO SUL TRASIMENO (S07001)\nRegime chiusura
+ : CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:51:30 - 09:56:0
+ 0\nTreni coinvolti nella chiusura:\n  - REG 4073 (FIRENZE SANTA MARIA NOVE
+ LLA -> FOLIGNO)\n  - REG 4073 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO)\nRi
+ tardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eu
+ ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
+ s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PASSIGNANO SUL TRASIMENO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -79,46 +165,65 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-6736--20261115-S07001@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:0
-DTSTART:20261116T150937Z
-DTEND:20261116T151507Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:09 - 16:15 (primo: REG 6736)
+DTSTAMP:20261116T024826Z
+SEQUENCE:1
+DTSTART:20261116T150919Z
+DTEND:20261116T151449Z
+SUMMARY:[TRANSITO VELOCE] REG 6736 (FOLIGNO -> TERONTOLA CORTONA) ore 16:13
 DESCRIPTION:Stazione/PL: PASSIGNANO SUL TRASIMENO (S07001)\nRegime chiusura
- : CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:09:37 - 16:15:0
- 7\nTreni coinvolti nella chiusura:\n  - REG 6736 (FOLIGNO -> TERONTOLA COR
- TONA) [Transito]\n  - REG 6736 (FOLIGNO -> TERONTOLA CORTONA) [Transito]\n
- Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
- euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
- (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ : TRANSITO VELOCE\nChiusura sbarre stimata: 16:09:19 - 16:14:49\nTreni coi
+ nvolti nella chiusura:\n  - REG 6736 (FOLIGNO -> TERONTOLA CORTONA) [Trans
+ ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Transito stimato senza fermata (52% tratta PERUGIA -> PER
+ UGIA UNIVERSITA'\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PASSIGNANO SUL TRASIMENO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-6736--20261115-S07001@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:0
+DTSTAMP:20261116T024826Z
+SEQUENCE:1
 DTSTART:20261116T155530Z
 DTEND:20261116T160000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:55 - 17:00 (primo: REG 6736)
+SUMMARY:[FERMATA] REG 6736 (FOLIGNO -> TERONTOLA CORTONA) ore 16:59
 DESCRIPTION:Stazione/PL: PASSIGNANO SUL TRASIMENO (S07001)\nRegime chiusura
- : CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:55:30 - 17:00:0
- 0\nTreni coinvolti nella chiusura:\n  - REG 6736 (FOLIGNO -> TERONTOLA COR
- TONA)\n  - REG 6736 (FOLIGNO -> TERONTOLA CORTONA)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura co
- ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
- glia minima di sgombero stradale (120s)
+ : FERMATA\nChiusura sbarre stimata: 16:55:30 - 17:00:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 6736 (FOLIGNO -> TERONTOLA CORTONA)\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pr
+ evisione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PASSIGNANO SUL TRASIMENO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9329--20261115-S07001@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261116T205511Z
+DTEND:20261116T210041Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:55 - 22:00 (primo: TRENO 9329)
+DESCRIPTION:Stazione/PL: PASSIGNANO SUL TRASIMENO (S07001)\nRegime chiusura
+ : CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:55:11 - 22:00:4
+ 1\nTreni coinvolti nella chiusura:\n  - TRENO 9329 (TORINO PORTA NUOVA -> 
+ PERUGIA) [Transito]\n  - TRENO 9329 (TORINO PORTA NUOVA -> PERUGIA) [Trans
+ ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PASSIGNANO SUL TRASIMENO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 END:VCALENDAR

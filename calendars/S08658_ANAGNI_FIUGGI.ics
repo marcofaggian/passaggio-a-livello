@@ -9,34 +9,55 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:aca216b7902e834139e2916d03acb2f42f3df83beaead264224a741519f3
- 33f5
+X-CONTENT-HASH:f81347447e9190d0db0dded045217473a6afaa630dcac2b2ae07d29b0a4d
+ 8da5
 BEGIN:VEVENT
 UID:train-12601--20261115-S08658@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:0
-DTSTART:20261116T073828Z
-DTEND:20261116T074358Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:38 - 08:43 (primo: REG 12601)
-DESCRIPTION:Stazione/PL: ANAGNI-FIUGGI (S08658)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:38:28 - 08:43:58\nTreni co
- involti nella chiusura:\n  - REG 12601 (ROMA TERMINI -> CASSINO) [Transito
- ]\n  - REG 12601 (ROMA TERMINI -> CASSINO) [Transito]\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
-  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
+DTSTAMP:20261116T024826Z
+SEQUENCE:1
+DTSTART:20261116T073834Z
+DTEND:20261116T074404Z
+SUMMARY:[TRANSITO VELOCE] REG 12601 (ROMA TERMINI -> CASSINO) ore 08:42
+DESCRIPTION:Stazione/PL: ANAGNI-FIUGGI (S08658)\nRegime chiusura: TRANSITO 
+ VELOCE\nChiusura sbarre stimata: 08:38:34 - 08:44:04\nTreni coinvolti nell
+ a chiusura:\n  - REG 12601 (ROMA TERMINI -> CASSINO) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (24% tratta COLLEFERRO-SEGNI-PALIANO -> F
+ ROSINONE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ANAGNI-FIUGGI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-12701--20261115-S08658@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261116T080030Z
+DTEND:20261116T080500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:00 - 09:05 (primo: REG 12701)
+DESCRIPTION:Stazione/PL: ANAGNI-FIUGGI (S08658)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:00:30 - 09:05:00\nTreni co
+ involti nella chiusura:\n  - REG 12701 (ROMA TERMINI -> FROSINONE)\n  - RE
+ G 12701 (ROMA TERMINI -> FROSINONE)\nRitardo massimo rilevato: 0 min\nAffi
+ dabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tr
+ eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ANAGNI-FIUGGI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-12705--20261115-S08658@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
 DTSTART:20261116T121130Z
 DTEND:20261116T121600Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:11 - 13:16 (primo: REG 12705)
@@ -57,8 +78,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12623--20261115-S08658@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
 DTSTART:20261116T152530Z
 DTEND:20261116T153000Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:25 - 16:30 (primo: REG 12623)
@@ -79,18 +100,38 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5839--20261115-S08658@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:0
+DTSTAMP:20261116T024826Z
+SEQUENCE:1
 DTSTART:20261116T162630Z
 DTEND:20261116T163100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:26 - 17:31 (primo: REG 5839)
+SUMMARY:[FERMATA] REG 5839 (ROMA TERMINI -> CASERTA) ore 17:30
+DESCRIPTION:Stazione/PL: ANAGNI-FIUGGI (S08658)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 17:26:30 - 17:31:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 5839 (ROMA TERMINI -> CASERTA)\nRitardo massimo rilevato: 0 m
+ in\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da trac
+ cia oraria regolare
+LOCATION:Passaggio a Livello / Stazione ANAGNI-FIUGGI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12647--20261115-S08658@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261116T202830Z
+DTEND:20261116T203300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:28 - 21:33 (primo: REG 12647)
 DESCRIPTION:Stazione/PL: ANAGNI-FIUGGI (S08658)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:26:30 - 17:31:00\nTreni co
- involti nella chiusura:\n  - REG 5839 (ROMA TERMINI -> CASERTA)\n  - REG 5
- 839 (ROMA TERMINI -> CASERTA)\nRitardo massimo rilevato: 0 min\nAffidabili
- tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
- ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
- ro stradale (120s)
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:28:30 - 21:33:00\nTreni co
+ involti nella chiusura:\n  - REG 12647 (ROMA TERMINI -> CASSINO)\n  - REG 
+ 12647 (ROMA TERMINI -> CASSINO)\nRitardo massimo rilevato: 0 min\nAffidabi
+ lità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni:
+  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ANAGNI-FIUGGI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -101,22 +142,20 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12651--20261115-S08658@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
 DTSTART:20261116T212430Z
 DTEND:20261116T212900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:24 - 22:29 (primo: REG 12651)
-DESCRIPTION:Stazione/PL: ANAGNI-FIUGGI (S08658)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:24:30 - 22:29:00\nTreni co
- involti nella chiusura:\n  - REG 12651 (ROMA TERMINI -> CASSINO)\n  - REG 
- 12651 (ROMA TERMINI -> CASSINO)\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
+SUMMARY:[FERMATA] REG 12651 (ROMA TERMINI -> CASSINO) ore 22:28
+DESCRIPTION:Stazione/PL: ANAGNI-FIUGGI (S08658)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 22:24:30 - 22:29:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 12651 (ROMA TERMINI -> CASSINO)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
+ ccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione ANAGNI-FIUGGI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

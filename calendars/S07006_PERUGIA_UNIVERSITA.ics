@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:e1d05c249b761b307a3875b5707966c35d871e361128d1036942575d129c
- 8bf1
+X-CONTENT-HASH:cb261ae9ca9fd6d81d9c9300fffe4f43c92b649e5f59702138b87c0a42de
+ 24d6
 BEGIN:VEVENT
 UID:train-9300--20261115-S07006@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
 DTSTART:20261116T042112Z
 DTEND:20261116T042642Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:21 - 05:26 (primo: TRENO 9300)
@@ -35,66 +35,109 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-580--20261115-S07006@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:2
+DTSTAMP:20261116T024826Z
+SEQUENCE:3
 DTSTART:20261116T053305Z
-DTEND:20261116T053735Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:33 - 06:37 (primo: IC 580)
+DTEND:20261116T054442Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:33 - 06:44 (primo: IC 580)
 DESCRIPTION:Stazione/PL: PERUGIA UNIVERSITA' (S07006)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:33:05 - 06:37:35\nTr
+ USURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 06:33:05 - 06:44:42\nTr
  eni coinvolti nella chiusura:\n  - IC 580 (TERNI -> MILANO CENTRALE) [Tran
- sito]\n  - IC 580 (TERNI -> MILANO CENTRALE) [Transito]\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+ sito]\n  - IC 580 (TERNI -> MILANO CENTRALE) [Transito]\n  - REG 7453 (TER
+ ONTOLA CORTONA -> FOLIGNO) [Transito]\n  - REG 7453 (TERONTOLA CORTONA -> 
+ FOLIGNO) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
+  78%\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo 
+ utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
+ e (120s)
 LOCATION:Passaggio a Livello / Stazione PERUGIA UNIVERSITA'
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4720--20261115-S07006@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:1
-DTSTART:20261116T064730Z
-DTEND:20261116T065200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:47 - 07:52 (primo: REG 4720)
-DESCRIPTION:Stazione/PL: PERUGIA UNIVERSITA' (S07006)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:47:30 - 07:52:00\nTr
- eni coinvolti nella chiusura:\n  - REG 4720 (CHIUSI-CHIANCIANO TERME -> FO
- LIGNO)\n  - REG 4720 (CHIUSI-CHIANCIANO TERME -> FOLIGNO)\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiu
- sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261116T024826Z
+SEQUENCE:2
+DTSTART:20261116T062206Z
+DTEND:20261116T062736Z
+SUMMARY:[TRANSITO VELOCE] REG 4720 (CHIUSI-CHIANCIANO TERME -> FOLIGNO) ore
+  07:26
+DESCRIPTION:Stazione/PL: PERUGIA UNIVERSITA' (S07006)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 07:22:06 - 07:27:36\nTreni coinvolt
+ i nella chiusura:\n  - REG 4720 (CHIUSI-CHIANCIANO TERME -> FOLIGNO) [Tran
+ sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
+ mativa/euristica: Transito stimato senza fermata (64% tratta PASSIGNANO SU
+ L TRASIMENO -> MAGIONE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PERUGIA UNIVERSITA'
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4720--20261115-S07006@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:2
+DTSTART:20261116T064730Z
+DTEND:20261116T065200Z
+SUMMARY:[FERMATA] REG 4720 (CHIUSI-CHIANCIANO TERME -> FOLIGNO) ore 07:51
+DESCRIPTION:Stazione/PL: PERUGIA UNIVERSITA' (S07006)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 07:47:30 - 07:52:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 4720 (CHIUSI-CHIANCIANO TERME -> FOLIGNO)\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
+ revisione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PERUGIA UNIVERSITA'
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-6736--20261115-S07006@pl-tracker.local
-DTSTAMP:20261116T002034Z
+UID:train-4073--20261115-S07006@pl-tracker.local
+DTSTAMP:20261116T024826Z
 SEQUENCE:0
-DTSTART:20261116T151130Z
-DTEND:20261116T151600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:11 - 16:16 (primo: REG 6736)
+DTSTART:20261116T085745Z
+DTEND:20261116T090315Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:57 - 10:03 (primo: REG 4073)
 DESCRIPTION:Stazione/PL: PERUGIA UNIVERSITA' (S07006)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:11:30 - 16:16:00\nTr
- eni coinvolti nella chiusura:\n  - REG 6736 (FOLIGNO -> TERONTOLA CORTONA)
- \n  - REG 6736 (FOLIGNO -> TERONTOLA CORTONA)\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continu
- a per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:57:45 - 10:03:15\nTr
+ eni coinvolti nella chiusura:\n  - REG 4073 (FIRENZE SANTA MARIA NOVELLA -
+ > FOLIGNO) [Transito]\n  - REG 4073 (FIRENZE SANTA MARIA NOVELLA -> FOLIGN
+ O) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\n
+ Nota normativa/euristica: Chiusura continua per 2 treni: intervallo utile 
+ tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
+ s)
 LOCATION:Passaggio a Livello / Stazione PERUGIA UNIVERSITA'
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-6736--20261115-S07006@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:1
+DTSTART:20261116T151130Z
+DTEND:20261116T151600Z
+SUMMARY:[FERMATA] REG 6736 (FOLIGNO -> TERONTOLA CORTONA) ore 16:15
+DESCRIPTION:Stazione/PL: PERUGIA UNIVERSITA' (S07006)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 16:11:30 - 16:16:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 6736 (FOLIGNO -> TERONTOLA CORTONA)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PERUGIA UNIVERSITA'
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

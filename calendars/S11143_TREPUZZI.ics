@@ -9,19 +9,80 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:f6f6d5718ecf0c46b853625964d9484a766e060cc8f56da15f0113340938
- 28fe
+X-CONTENT-HASH:a679fd2bece4c9d0a414b65ae865b6ac8b12f9ab12f11a181c30d40f28d5
+ dd7a
+BEGIN:VEVENT
+UID:train-4386--20261115-S11143@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261116T053325Z
+DTEND:20261116T053855Z
+SUMMARY:[TRANSITO VELOCE] REG 4386 (LECCE -> BARI CENTRALE) ore 06:37
+DESCRIPTION:Stazione/PL: TREPUZZI (S11143)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 06:33:25 - 06:38:55\nTreni coinvolti nella chi
+ usura:\n  - REG 4386 (LECCE -> BARI CENTRALE) [Transito]\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
+ ito stimato senza fermata (67% tratta LECCE -> SQUINZANO\; pedale annuncio
+  fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione TREPUZZI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
 BEGIN:VEVENT
 UID:train-4388--20261115-S11143@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:0
+DTSTAMP:20261116T024826Z
+SEQUENCE:1
 DTSTART:20261116T062930Z
 DTEND:20261116T063400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:29 - 07:34 (primo: REG 4388)
+SUMMARY:[FERMATA] REG 4388 (LECCE -> BARI CENTRALE) ore 07:33
+DESCRIPTION:Stazione/PL: TREPUZZI (S11143)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 07:29:30 - 07:34:00\nTreni coinvolti nella chiusura:\n
+   - REG 4388 (LECCE -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAf
+ fidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia or
+ aria regolare
+LOCATION:Passaggio a Livello / Stazione TREPUZZI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4381--20261115-S11143@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:3
+DTSTART:20261116T070030Z
+DTEND:20261116T070500Z
+SUMMARY:[FERMATA] REG 4381 (BARI CENTRALE -> LECCE) ore 08:04
+DESCRIPTION:Stazione/PL: TREPUZZI (S11143)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 08:00:30 - 08:05:00\nTreni coinvolti nella chiusura:\n
+   - REG 4381 (BARI CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAf
+ fidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia or
+ aria regolare
+LOCATION:Passaggio a Livello / Stazione TREPUZZI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4385--20261115-S11143@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261116T080030Z
+DTEND:20261116T080500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:00 - 09:05 (primo: REG 4385)
 DESCRIPTION:Stazione/PL: TREPUZZI (S11143)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 07:29:30 - 07:34:00\nTreni coinvol
- ti nella chiusura:\n  - REG 4388 (LECCE -> BARI CENTRALE)\n  - REG 4388 (L
- ECCE -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
+ NUA - 2 TRENI\nChiusura sbarre stimata: 09:00:30 - 09:05:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 4385 (BARI CENTRALE -> LECCE)\n  - REG 4385 (B
+ ARI CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
  ma: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
  lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
  dale (120s)
@@ -34,54 +95,30 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4381--20261115-S11143@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:2
-DTSTART:20261116T065345Z
-DTEND:20261116T070500Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:53 - 08:05 (primo: REG 4381)
-DESCRIPTION:Stazione/PL: TREPUZZI (S11143)\nRegime chiusura: CHIUSURA CONTI
- NUA - 4 TRENI\nChiusura sbarre stimata: 07:53:45 - 08:05:00\nTreni coinvol
- ti nella chiusura:\n  - REG 4381 (BARI CENTRALE -> LECCE) [Transito]\n  - 
- REG 4381 (BARI CENTRALE -> LECCE) [Transito]\n  - REG 4381 (BARI CENTRALE 
- -> LECCE)\n  - REG 4381 (BARI CENTRALE -> LECCE)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
- inua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione TREPUZZI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4387--20261115-S11143@pl-tracker.local
-DTSTAMP:20261116T002034Z
+UID:train-4398--20261115-S11143@pl-tracker.local
+DTSTAMP:20261116T024826Z
 SEQUENCE:0
-DTSTART:20261116T082545Z
-DTEND:20261116T083703Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:25 - 09:37 (primo: REG 4387)
-DESCRIPTION:Stazione/PL: TREPUZZI (S11143)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 09:25:45 - 09:37:03\nTreni coinvol
- ti nella chiusura:\n  - REG 4387 (BARI CENTRALE -> LECCE) [Transito]\n  - 
- REG 4387 (BARI CENTRALE -> LECCE) [Transito]\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (18s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+DTSTART:20261116T091925Z
+DTEND:20261116T092455Z
+SUMMARY:[TRANSITO VELOCE] REG 4398 (LECCE -> BARI CENTRALE) ore 10:23
+DESCRIPTION:Stazione/PL: TREPUZZI (S11143)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 10:19:25 - 10:24:55\nTreni coinvolti nella chi
+ usura:\n  - REG 4398 (LECCE -> BARI CENTRALE) [Transito]\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
+ ito stimato senza fermata (67% tratta LECCE -> SQUINZANO\; pedale annuncio
+  fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione TREPUZZI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4404--20261115-S11143@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
 DTSTART:20261116T102130Z
 DTEND:20261116T102600Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:21 - 11:26 (primo: REG 4404)
@@ -101,31 +138,9 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4422--20261115-S11143@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
-DTSTART:20261116T142425Z
-DTEND:20261116T142955Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:24 - 15:29 (primo: REG 4422)
-DESCRIPTION:Stazione/PL: TREPUZZI (S11143)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 15:24:25 - 15:29:55\nTreni coinvol
- ti nella chiusura:\n  - REG 4422 (LECCE -> BARI CENTRALE) [Transito]\n  - 
- REG 4422 (LECCE -> BARI CENTRALE) [Transito]\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione TREPUZZI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-4426--20261115-S11143@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
 DTSTART:20261116T145130Z
 DTEND:20261116T145600Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:51 - 15:56 (primo: REG 4426)
@@ -146,14 +161,54 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4428--20261115-S11143@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:1
+DTSTAMP:20261116T024826Z
+SEQUENCE:2
 DTSTART:20261116T152130Z
 DTEND:20261116T152600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:21 - 16:26 (primo: REG 4428)
+SUMMARY:[FERMATA] REG 4428 (LECCE -> BARI CENTRALE) ore 16:25
+DESCRIPTION:Stazione/PL: TREPUZZI (S11143)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 16:21:30 - 16:26:00\nTreni coinvolti nella chiusura:\n
+   - REG 4428 (LECCE -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAf
+ fidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia or
+ aria regolare
+LOCATION:Passaggio a Livello / Stazione TREPUZZI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4419--20261115-S11143@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
+DTSTART:20261116T162930Z
+DTEND:20261116T163400Z
+SUMMARY:[FERMATA] REG 4419 (BARI CENTRALE -> LECCE) ore 17:33
+DESCRIPTION:Stazione/PL: TREPUZZI (S11143)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 17:29:30 - 17:34:00\nTreni coinvolti nella chiusura:\n
+   - REG 4419 (BARI CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAf
+ fidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia or
+ aria regolare
+LOCATION:Passaggio a Livello / Stazione TREPUZZI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4442--20261115-S11143@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261116T192130Z
+DTEND:20261116T192600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:21 - 20:26 (primo: REG 4442)
 DESCRIPTION:Stazione/PL: TREPUZZI (S11143)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 16:21:30 - 16:26:00\nTreni coinvol
- ti nella chiusura:\n  - REG 4428 (LECCE -> BARI CENTRALE)\n  - REG 4428 (L
+ NUA - 2 TRENI\nChiusura sbarre stimata: 20:21:30 - 20:26:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 4442 (LECCE -> BARI CENTRALE)\n  - REG 4442 (L
  ECCE -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
  ma: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
  lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
@@ -167,45 +222,21 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4419--20261115-S11143@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
-DTSTART:20261116T162930Z
-DTEND:20261116T163400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:29 - 17:34 (primo: REG 4419)
-DESCRIPTION:Stazione/PL: TREPUZZI (S11143)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 17:29:30 - 17:34:00\nTreni coinvol
- ti nella chiusura:\n  - REG 4419 (BARI CENTRALE -> LECCE)\n  - REG 4419 (B
- ARI CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
- ma: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
- lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
- dale (120s)
-LOCATION:Passaggio a Livello / Stazione TREPUZZI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-4441--20261115-S11143@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:2
+DTSTAMP:20261116T024826Z
+SEQUENCE:3
 DTSTART:20261116T212930Z
 DTEND:20261116T213400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:29 - 22:34 (primo: REG 4441)
-DESCRIPTION:Stazione/PL: TREPUZZI (S11143)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 22:29:30 - 22:34:00\nTreni coinvol
- ti nella chiusura:\n  - REG 4441 (BARI CENTRALE -> LECCE)\n  - REG 4441 (B
- ARI CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
- ma: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
- lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
- dale (120s)
+SUMMARY:[FERMATA] REG 4441 (BARI CENTRALE -> LECCE) ore 22:33
+DESCRIPTION:Stazione/PL: TREPUZZI (S11143)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 22:29:30 - 22:34:00\nTreni coinvolti nella chiusura:\n
+   - REG 4441 (BARI CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAf
+ fidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia or
+ aria regolare
 LOCATION:Passaggio a Livello / Stazione TREPUZZI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

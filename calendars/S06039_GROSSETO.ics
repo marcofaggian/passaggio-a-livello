@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:37d9c6ce79065c64417e972dfb00e549349f8e9b4ff43a83655018df7518
- 1bf2
+X-CONTENT-HASH:e6e116d4d774d1fd4e8578978eb05a4f2f04169253c4e2c32b4d6014212d
+ fe0a
 BEGIN:VEVENT
 UID:train-4014--20261115-S06039@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:0
+DTSTAMP:20261116T024826Z
+SEQUENCE:1
 DTSTART:20261116T042930Z
 DTEND:20261116T043400Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:29 - 05:34 (primo: REG 4014)
@@ -35,18 +35,123 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4509--20261115-S06039@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:0
+DTSTAMP:20261116T024826Z
+SEQUENCE:1
 DTSTART:20261116T052530Z
 DTEND:20261116T053000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:25 - 06:30 (primo: REG 4509)
+SUMMARY:[FERMATA] REG 4509 (GROSSETO -> ROMA TERMINI) ore 06:29
+DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 06:25:30 - 06:30:00\nTreni coinvolti nella chiusura:\n
+   - REG 4509 (GROSSETO -> ROMA TERMINI)\nRitardo massimo rilevato: 0 min\n
+ Affidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia 
+ oraria regolare
+LOCATION:Passaggio a Livello / Stazione GROSSETO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4122--20261115-S06039@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
+DTSTART:20261116T070430Z
+DTEND:20261116T070900Z
+SUMMARY:[FERMATA] REG 4122 (ROMA TERMINI -> PISA CENTRALE) ore 08:08
+DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 08:04:30 - 08:09:00\nTreni coinvolti nella chiusura:\n
+   - REG 4122 (ROMA TERMINI -> PISA CENTRALE)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
+ ccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione GROSSETO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-501--20261115-S06039@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
+DTSTART:20261116T071315Z
+DTEND:20261116T072300Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 08:13 - 08:23 (primo: IC 501)
 DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 06:25:30 - 06:30:00\nTreni coinvol
- ti nella chiusura:\n  - REG 4509 (GROSSETO -> ROMA TERMINI)\n  - REG 4509 
- (GROSSETO -> ROMA TERMINI)\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+ NUA - 3 TRENI\nChiusura sbarre stimata: 08:13:15 - 08:23:00\nTreni coinvol
+ ti nella chiusura:\n  - IC 501 (PISA CENTRALE -> NAPOLI CENTRALE)\n  - TRE
+ NO 8601 (PISA CENTRALE -> ROMA TERMINI)\n  - TRENO 8601 (PISA CENTRALE -> 
+ ROMA TERMINI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\n
+ Nota normativa/euristica: Chiusura continua per 3 treni: intervallo utile 
+ tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
+ s)
+LOCATION:Passaggio a Livello / Stazione GROSSETO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4129--20261115-S06039@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261116T075156Z
+DTEND:20261116T075726Z
+SUMMARY:[TRANSITO VELOCE] REG 4129 (PISA CENTRALE -> GROSSETO) ore 08:56
+DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 08:51:56 - 08:57:26\nTreni coinvolti nella chi
+ usura:\n  - REG 4129 (PISA CENTRALE -> GROSSETO) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
+ ansito stimato senza fermata (56% tratta CAMPIGLIA MARITTIMA -> FOLLONICA\
+ ; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione GROSSETO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4129--20261115-S06039@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261116T080953Z
+DTEND:20261116T081523Z
+SUMMARY:[TRANSITO VELOCE] REG 4129 (PISA CENTRALE -> GROSSETO) ore 09:14
+DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 09:09:53 - 09:15:23\nTreni coinvolti nella chi
+ usura:\n  - REG 4129 (PISA CENTRALE -> GROSSETO) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
+ ansito stimato senza fermata (73% tratta FOLLONICA -> MONTEPESCALI\; pedal
+ e annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione GROSSETO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4129--20261115-S06039@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261116T082430Z
+DTEND:20261116T082900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:24 - 09:29 (primo: REG 4129)
+DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 09:24:30 - 09:29:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 4129 (PISA CENTRALE -> GROSSETO)\n  - REG 4129
+  (PISA CENTRALE -> GROSSETO)\nRitardo massimo rilevato: 0 min\nAffidabilit
+ à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GROSSETO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -56,41 +161,85 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-501--20261115-S06039@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
-DTSTART:20261116T064751Z
-DTEND:20261116T065221Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:47 - 07:52 (primo: IC 501)
+UID:train-19415--20261115-S06039@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261116T110830Z
+DTEND:20261116T111400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:08 - 12:14 (primo: REG 19415)
 DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 07:47:51 - 07:52:21\nTreni coinvol
- ti nella chiusura:\n  - IC 501 (PISA CENTRALE -> NAPOLI CENTRALE) [Transit
- o]\n  - IC 501 (PISA CENTRALE -> NAPOLI CENTRALE) [Transito]\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
- hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
+ NUA - 2 TRENI\nChiusura sbarre stimata: 12:08:30 - 12:14:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 19415 (PISA CENTRALE -> GROSSETO) [Transito]\n
+   - REG 19415 (PISA CENTRALE -> GROSSETO) [Transito]\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
+ continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GROSSETO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-510--20261115-S06039@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261116T111615Z
+DTEND:20261116T112100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:16 - 12:21 (primo: IC 510)
+DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 12:16:15 - 12:21:00\nTreni coinvol
+ ti nella chiusura:\n  - IC 510 (SALERNO -> TORINO PORTA NUOVA)\n  - IC 510
+  (SALERNO -> TORINO PORTA NUOVA)\nRitardo massimo rilevato: 0 min\nAffidab
+ ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GROSSETO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4122--20261115-S06039@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
-DTSTART:20261116T070430Z
-DTEND:20261116T070900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:04 - 08:09 (primo: REG 4122)
+UID:train-505--20261115-S06039@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261116T112915Z
+DTEND:20261116T113400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:29 - 12:34 (primo: IC 505)
 DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 08:04:30 - 08:09:00\nTreni coinvol
- ti nella chiusura:\n  - REG 4122 (ROMA TERMINI -> PISA CENTRALE)\n  - REG 
- 4122 (ROMA TERMINI -> PISA CENTRALE)\nRitardo massimo rilevato: 0 min\nAff
- idabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 t
- reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
-  sgombero stradale (120s)
+ NUA - 2 TRENI\nChiusura sbarre stimata: 12:29:15 - 12:34:00\nTreni coinvol
+ ti nella chiusura:\n  - IC 505 (VENTIMIGLIA -> ROMA TERMINI)\n  - IC 505 (
+ VENTIMIGLIA -> ROMA TERMINI)\nRitardo massimo rilevato: 0 min\nAffidabilit
+ à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GROSSETO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19415--20261115-S06039@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261116T120030Z
+DTEND:20261116T120500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:00 - 13:05 (primo: REG 19415)
+DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 13:00:30 - 13:05:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 19415 (PISA CENTRALE -> GROSSETO)\n  - REG 194
+ 15 (PISA CENTRALE -> GROSSETO)\nRitardo massimo rilevato: 0 min\nAffidabil
+ ità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: 
+ intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
+ ero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GROSSETO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -100,37 +249,14 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-501--20261115-S06039@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
-DTSTART:20261116T071315Z
-DTEND:20261116T072300Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:13 - 08:23 (primo: IC 501)
-DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: CHIUSURA CONTI
- NUA - 4 TRENI\nChiusura sbarre stimata: 08:13:15 - 08:23:00\nTreni coinvol
- ti nella chiusura:\n  - IC 501 (PISA CENTRALE -> NAPOLI CENTRALE)\n  - IC 
- 501 (PISA CENTRALE -> NAPOLI CENTRALE)\n  - TRENO 8601 (PISA CENTRALE -> R
- OMA TERMINI)\n  - TRENO 8601 (PISA CENTRALE -> ROMA TERMINI)\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: C
- hiusura continua per 4 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione GROSSETO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
 UID:train-4131--20261115-S06039@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:2
-DTSTART:20261116T115206Z
-DTEND:20261116T115736Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:52 - 12:57 (primo: REG 4131)
+DTSTAMP:20261116T024826Z
+SEQUENCE:3
+DTSTART:20261116T120953Z
+DTEND:20261116T121523Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:09 - 13:15 (primo: REG 4131)
 DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 12:52:06 - 12:57:36\nTreni coinvol
+ NUA - 2 TRENI\nChiusura sbarre stimata: 13:09:53 - 13:15:23\nTreni coinvol
  ti nella chiusura:\n  - REG 4131 (PISA CENTRALE -> ROMA TERMINI) [Transito
  ]\n  - REG 4131 (PISA CENTRALE -> ROMA TERMINI) [Transito]\nRitardo massim
  o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
@@ -146,99 +272,118 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4131--20261115-S06039@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:2
+DTSTAMP:20261116T024826Z
+SEQUENCE:3
 DTSTART:20261116T122430Z
 DTEND:20261116T123300Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 13:24 - 13:33 (primo: REG 4131)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 13:24 - 13:33 (primo: REG 4131)
 DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: CHIUSURA CONTI
- NUA - 4 TRENI\nChiusura sbarre stimata: 13:24:30 - 13:33:00\nTreni coinvol
+ NUA - 3 TRENI\nChiusura sbarre stimata: 13:24:30 - 13:33:00\nTreni coinvol
  ti nella chiusura:\n  - REG 4131 (PISA CENTRALE -> ROMA TERMINI)\n  - REG 
  4131 (PISA CENTRALE -> ROMA TERMINI)\n  - TRENO 8616 (ROMA TERMINI -> GENO
- VA PIAZZA PRINCIPE)\n  - TRENO 8616 (ROMA TERMINI -> GENOVA PIAZZA PRINCIP
- E)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normat
- iva/euristica: Chiusura continua per 4 treni: intervallo utile tra i passa
- ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ VA PIAZZA PRINCIPE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
+  90%\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo 
+ utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
+ e (120s)
 LOCATION:Passaggio a Livello / Stazione GROSSETO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18308--20261115-S06039@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261116T124630Z
+DTEND:20261116T125100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:46 - 13:51 (primo: REG 18308)
+DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 13:46:30 - 13:51:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 18308 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA
+ )\n  - REG 18308 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA)\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
+ usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
+  alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GROSSETO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-511--20261115-S06039@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:1
-DTSTART:20261116T144351Z
-DTEND:20261116T144821Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:43 - 15:48 (primo: IC 511)
-DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 15:43:51 - 15:48:21\nTreni coinvol
- ti nella chiusura:\n  - IC 511 (TORINO PORTA NUOVA -> SALERNO) [Transito]\
- n  - IC 511 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+DTSTAMP:20261116T024826Z
+SEQUENCE:2
+DTSTART:20261116T144341Z
+DTEND:20261116T144811Z
+SUMMARY:[TRANSITO VELOCE] IC 511 (TORINO PORTA NUOVA -> SALERNO) ore 15:47
+DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 15:43:41 - 15:48:11\nTreni coinvolti nella chi
+ usura:\n  - IC 511 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Transito stimato senza fermata (56% tratta CAMPIGLIA MARITTIMA -> FOLLONIC
+ A\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GROSSETO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-684--20261115-S06039@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:0
+DTSTAMP:20261116T024826Z
+SEQUENCE:1
 DTSTART:20261116T150615Z
 DTEND:20261116T151400Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:06 - 16:14 (primo: IC 684)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:06 - 16:14 (primo: IC 684)
 DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: CHIUSURA CONTI
- NUA - 4 TRENI\nChiusura sbarre stimata: 16:06:15 - 16:14:00\nTreni coinvol
- ti nella chiusura:\n  - IC 684 (GROSSETO -> MILANO CENTRALE)\n  - IC 684 (
- GROSSETO -> MILANO CENTRALE)\n  - IC 511 (TORINO PORTA NUOVA -> SALERNO)\n
-   - IC 511 (TORINO PORTA NUOVA -> SALERNO)\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
- er 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
+ NUA - 2 TRENI\nChiusura sbarre stimata: 16:06:15 - 16:14:00\nTreni coinvol
+ ti nella chiusura:\n  - IC 684 (GROSSETO -> MILANO CENTRALE)\n  - IC 511 (
+ TORINO PORTA NUOVA -> SALERNO)\nRitardo massimo rilevato: 0 min\nAffidabil
+ ità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: 
+ intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
+ ero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GROSSETO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-518--20261115-S06039@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261116T163215Z
+DTEND:20261116T163700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:32 - 17:37 (primo: IC 518)
+DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 17:32:15 - 17:37:00\nTreni coinvol
+ ti nella chiusura:\n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA)\n  - IC 518 (
+ ROMA TERMINI -> VENTIMIGLIA)\nRitardo massimo rilevato: 0 min\nAffidabilit
+ à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GROSSETO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4039--20261115-S06039@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:2
-DTSTART:20261116T163231Z
-DTEND:20261116T163801Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:32 - 17:38 (primo: REG 4039)
-DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 17:32:31 - 17:38:01\nTreni coinvol
- ti nella chiusura:\n  - REG 4039 (FIRENZE SANTA MARIA NOVELLA -> ORBETELLO
- -MONTE ARGENTARIO) [Transito]\n  - REG 4039 (FIRENZE SANTA MARIA NOVELLA -
- > ORBETELLO-MONTE ARGENTARIO) [Transito]\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per
-  2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
- a di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione GROSSETO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4039--20261115-S06039@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:2
+DTSTAMP:20261116T024826Z
+SEQUENCE:3
 DTSTART:20261116T170130Z
 DTEND:20261116T170600Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:01 - 18:06 (primo: REG 4039)
@@ -260,8 +405,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8626--20261115-S06039@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
 DTSTART:20261116T173230Z
 DTEND:20261116T173700Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:32 - 18:37 (primo: TRENO 8626)
@@ -281,69 +426,153 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8630--20261115-S06039@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
-DTSTART:20261116T190130Z
-DTEND:20261116T190600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:01 - 20:06 (primo: TRENO 8630)
+UID:train-4502--20261115-S06039@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261116T182830Z
+DTEND:20261116T183300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:28 - 19:33 (primo: REG 4502)
 DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 20:01:30 - 20:06:00\nTreni coinvol
- ti nella chiusura:\n  - TRENO 8630 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE
- )\n  - TRENO 8630 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE)\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
- usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
+ NUA - 2 TRENI\nChiusura sbarre stimata: 19:28:30 - 19:33:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 4502 (ROMA TERMINI -> GROSSETO)\n  - REG 4502 
+ (ROMA TERMINI -> GROSSETO)\nRitardo massimo rilevato: 0 min\nAffidabilità
+  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
+ rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
+ stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GROSSETO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8630--20261115-S06039@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
+DTSTART:20261116T190130Z
+DTEND:20261116T190600Z
+SUMMARY:[FERMATA] TRENO 8630 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) ore 2
+ 0:05
+DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 20:01:30 - 20:06:00\nTreni coinvolti nella chiusura:\n
+   - TRENO 8630 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE)\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previs
+ ione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione GROSSETO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-19425--20261115-S06039@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
-DTSTART:20261116T220706Z
-DTEND:20261116T221236Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:07 - 23:12 (primo: REG 19425)
+UID:train-795--20261115-S06039@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261116T203615Z
+DTEND:20261116T204100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:36 - 21:41 (primo: ICN 795)
 DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 23:07:06 - 23:12:36\nTreni coinvol
- ti nella chiusura:\n  - REG 19425 (PISA CENTRALE -> GROSSETO) [Transito]\n
-   - REG 19425 (PISA CENTRALE -> GROSSETO) [Transito]\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
- continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+ NUA - 2 TRENI\nChiusura sbarre stimata: 21:36:15 - 21:41:00\nTreni coinvol
+ ti nella chiusura:\n  - ICN 795 (TORINO PORTA NUOVA -> REGGIO DI CALABRIA 
+ CENTRALE)\n  - ICN 795 (TORINO PORTA NUOVA -> REGGIO DI CALABRIA CENTRALE)
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativ
+ a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
+ i (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GROSSETO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:ICN
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19425--20261115-S06039@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
+DTSTART:20261116T222453Z
+DTEND:20261116T223023Z
+SUMMARY:[TRANSITO VELOCE] REG 19425 (PISA CENTRALE -> GROSSETO) ore 23:29
+DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 23:24:53 - 23:30:23\nTreni coinvolti nella chi
+ usura:\n  - REG 19425 (PISA CENTRALE -> GROSSETO) [Transito]\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
+ ransito stimato senza fermata (73% tratta FOLLONICA -> MONTEPESCALI\; peda
+ le annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione GROSSETO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19425--20261115-S06039@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
 DTSTART:20261116T224130Z
 DTEND:20261116T224600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:41 - 23:46 (primo: REG 19425)
+SUMMARY:[FERMATA] REG 19425 (PISA CENTRALE -> GROSSETO) ore 23:45
+DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 23:41:30 - 23:46:00\nTreni coinvolti nella chiusura:\n
+   - REG 19425 (PISA CENTRALE -> GROSSETO)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
+ a oraria regolare
+LOCATION:Passaggio a Livello / Stazione GROSSETO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-799--20261115-S06039@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261117T030115Z
+DTEND:20261117T030600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 04:01 - 04:06 (primo: ICN 799)
 DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 23:41:30 - 23:46:00\nTreni coinvol
- ti nella chiusura:\n  - REG 19425 (PISA CENTRALE -> GROSSETO)\n  - REG 194
- 25 (PISA CENTRALE -> GROSSETO)\nRitardo massimo rilevato: 0 min\nAffidabil
- ità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
+ NUA - 2 TRENI\nChiusura sbarre stimata: 04:01:15 - 04:06:00\nTreni coinvol
+ ti nella chiusura:\n  - ICN 799 (TORINO PORTA NUOVA -> SALERNO)\n  - ICN 7
+ 99 (TORINO PORTA NUOVA -> SALERNO)\nRitardo massimo rilevato: 0 min\nAffid
+ abilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tre
+ ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
+ gombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GROSSETO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:ICN
+END:VEVENT
+BEGIN:VEVENT
+UID:train-794--20261115-S06039@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261117T064415Z
+DTEND:20261117T064900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:44 - 07:49 (primo: ICN 794)
+DESCRIPTION:Stazione/PL: GROSSETO (S06039)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 07:44:15 - 07:49:00\nTreni coinvol
+ ti nella chiusura:\n  - ICN 794 (REGGIO DI CALABRIA CENTRALE -> TORINO POR
+ TA NUOVA)\n  - ICN 794 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA NUOVA)
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativ
+ a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
+ i (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GROSSETO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 END:VCALENDAR

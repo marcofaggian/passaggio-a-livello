@@ -9,22 +9,22 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:a0f81e9c8c401a574fd55e74a009f323da3f9928d2f12141728ad66c2ce8
- 2c16
+X-CONTENT-HASH:120b1750950a98eca6fdb62d5790975f551dfa42757f0b11690f1526f950
+ 0b2e
 BEGIN:VEVENT
-UID:train-24318--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
+UID:train-24316--20261115-S01803@pl-tracker.local
+DTSTAMP:20261116T024826Z
 SEQUENCE:0
-DTSTART:20261116T054230Z
-DTEND:20261116T054700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:42 - 06:47 (primo: REG 24318)
+DTSTART:20261116T051230Z
+DTEND:20261116T051700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:12 - 06:17 (primo: REG 24316)
 DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:42:30 - 06:47:00\nTreni
-  coinvolti nella chiusura:\n  - REG 24318 (PAVIA -> GARBAGNATE MILANESE)\n
-   - REG 24318 (PAVIA -> GARBAGNATE MILANESE)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:12:30 - 06:17:00\nTreni
+  coinvolti nella chiusura:\n  - REG 24316 (PAVIA -> MILANO BOVISA POLITECN
+ ICO)\n  - REG 24316 (PAVIA -> MILANO BOVISA POLITECNICO)\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chius
+ ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CERTOSA DI PAVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -34,54 +34,74 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-24315--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:2
-DTSTART:20261116T055311Z
-DTEND:20261116T055841Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:53 - 06:58 (primo: REG 24315)
-DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:53:11 - 06:58:41\nTreni
-  coinvolti nella chiusura:\n  - REG 24315 (MILANO BOVISA POLITECNICO -> PA
- VIA) [Transito]\n  - REG 24315 (MILANO BOVISA POLITECNICO -> PAVIA) [Trans
- ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
- ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
- saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+UID:train-24318--20261115-S01803@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:1
+DTSTART:20261116T054230Z
+DTEND:20261116T054700Z
+SUMMARY:[FERMATA] REG 24318 (PAVIA -> GARBAGNATE MILANESE) ore 06:46
+DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: FERMAT
+ A\nChiusura sbarre stimata: 06:42:30 - 06:47:00\nTreni coinvolti nella chi
+ usura:\n  - REG 24318 (PAVIA -> GARBAGNATE MILANESE)\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
+ e da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione CERTOSA DI PAVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24315--20261115-S01803@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:3
+DTSTART:20261116T055311Z
+DTEND:20261116T055841Z
+SUMMARY:[TRANSITO VELOCE] REG 24315 (MILANO BOVISA POLITECNICO -> PAVIA) or
+ e 06:57
+DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 06:53:11 - 06:58:41\nTreni coinvolti n
+ ella chiusura:\n  - REG 24315 (MILANO BOVISA POLITECNICO -> PAVIA) [Transi
+ to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (68% tratta MILANO ROGOREDO
+  -> LOCATE TRIULZI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione CERTOSA DI PAVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24315--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:2
+DTSTAMP:20261116T024826Z
+SEQUENCE:3
 DTSTART:20261116T060830Z
 DTEND:20261116T061700Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:08 - 07:17 (primo: REG 24315)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:08 - 07:17 (primo: REG 24315)
 DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: CHIUSU
- RA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 07:08:30 - 07:17:00\nTreni
+ RA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 07:08:30 - 07:17:00\nTreni
   coinvolti nella chiusura:\n  - REG 24315 (MILANO BOVISA POLITECNICO -> PA
- VIA)\n  - REG 24315 (MILANO BOVISA POLITECNICO -> PAVIA)\n  - REG 24320 (P
- AVIA -> GARBAGNATE MILANESE)\n  - REG 24320 (PAVIA -> GARBAGNATE MILANESE)
- \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativ
- a/euristica: Chiusura continua per 4 treni: intervallo utile tra i passagg
- i (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ VIA)\n  - REG 24320 (PAVIA -> GARBAGNATE MILANESE)\n  - REG 24320 (PAVIA -
+ > GARBAGNATE MILANESE)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
+ ma: 90%\nNota normativa/euristica: Chiusura continua per 3 treni: interval
+ lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
+ dale (120s)
 LOCATION:Passaggio a Livello / Stazione CERTOSA DI PAVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24317--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:0
+DTSTAMP:20261116T024826Z
+SEQUENCE:1
 DTSTART:20261116T062311Z
 DTEND:20261116T062841Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:23 - 07:28 (primo: REG 24317)
@@ -102,8 +122,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24317--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:0
+DTSTAMP:20261116T024826Z
+SEQUENCE:1
 DTSTART:20261116T063830Z
 DTEND:20261116T064300Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:38 - 07:43 (primo: REG 24317)
@@ -124,37 +144,57 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24321--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
 DTSTART:20261116T072311Z
 DTEND:20261116T072841Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:23 - 08:28 (primo: REG 24321)
-DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:23:11 - 08:28:41\nTreni
-  coinvolti nella chiusura:\n  - REG 24321 (GARBAGNATE MILANESE -> PAVIA) [
- Transito]\n  - REG 24321 (GARBAGNATE MILANESE -> PAVIA) [Transito]\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
- nferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 24321 (GARBAGNATE MILANESE -> PAVIA) ore 08:2
+ 7
+DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 08:23:11 - 08:28:41\nTreni coinvolti n
+ ella chiusura:\n  - REG 24321 (GARBAGNATE MILANESE -> PAVIA) [Transito]\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Transito stimato senza fermata (68% tratta MILANO ROGOREDO -> LO
+ CATE TRIULZI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CERTOSA DI PAVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24321--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
 DTSTART:20261116T073830Z
 DTEND:20261116T074300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:38 - 08:43 (primo: REG 24321)
+SUMMARY:[FERMATA] REG 24321 (GARBAGNATE MILANESE -> PAVIA) ore 08:42
+DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: FERMAT
+ A\nChiusura sbarre stimata: 08:38:30 - 08:43:00\nTreni coinvolti nella chi
+ usura:\n  - REG 24321 (GARBAGNATE MILANESE -> PAVIA)\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
+ e da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione CERTOSA DI PAVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24332--20261115-S01803@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261116T091230Z
+DTEND:20261116T091700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:12 - 10:17 (primo: REG 24332)
 DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:38:30 - 08:43:00\nTreni
-  coinvolti nella chiusura:\n  - REG 24321 (GARBAGNATE MILANESE -> PAVIA)\n
-   - REG 24321 (GARBAGNATE MILANESE -> PAVIA)\nRitardo massimo rilevato: 0 
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:12:30 - 10:17:00\nTreni
+  coinvolti nella chiusura:\n  - REG 24332 (PAVIA -> GARBAGNATE MILANESE)\n
+   - REG 24332 (PAVIA -> GARBAGNATE MILANESE)\nRitardo massimo rilevato: 0 
  min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
   per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
  inima di sgombero stradale (120s)
@@ -168,8 +208,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24334--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:0
+DTSTAMP:20261116T024826Z
+SEQUENCE:1
 DTSTART:20261116T094230Z
 DTEND:20261116T094700Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:42 - 10:47 (primo: REG 24334)
@@ -189,141 +229,158 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-24336--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
+UID:train-24331--20261115-S01803@pl-tracker.local
+DTSTAMP:20261116T024826Z
 SEQUENCE:0
-DTSTART:20261116T101230Z
-DTEND:20261116T101700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:12 - 11:17 (primo: REG 24336)
+DTSTART:20261116T095311Z
+DTEND:20261116T095841Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:53 - 10:58 (primo: REG 24331)
 DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:12:30 - 11:17:00\nTreni
-  coinvolti nella chiusura:\n  - REG 24336 (PAVIA -> GARBAGNATE MILANESE)\n
-   - REG 24336 (PAVIA -> GARBAGNATE MILANESE)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:53:11 - 10:58:41\nTreni
+  coinvolti nella chiusura:\n  - REG 24331 (GARBAGNATE MILANESE -> PAVIA) [
+ Transito]\n  - REG 24331 (GARBAGNATE MILANESE -> PAVIA) [Transito]\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CERTOSA DI PAVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24331--20261115-S01803@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261116T100830Z
+DTEND:20261116T101700Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:08 - 11:17 (primo: REG 24331)
+DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 11:08:30 - 11:17:00\nTreni
+  coinvolti nella chiusura:\n  - REG 24331 (GARBAGNATE MILANESE -> PAVIA)\n
+   - REG 24331 (GARBAGNATE MILANESE -> PAVIA)\n  - REG 24336 (PAVIA -> GARB
+ AGNATE MILANESE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90
+ %\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo uti
+ le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
+ 120s)
+LOCATION:Passaggio a Livello / Stazione CERTOSA DI PAVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24333--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
 DTSTART:20261116T102311Z
 DTEND:20261116T102841Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:23 - 11:28 (primo: REG 24333)
-DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:23:11 - 11:28:41\nTreni
-  coinvolti nella chiusura:\n  - REG 24333 (GARBAGNATE MILANESE -> PAVIA) [
- Transito]\n  - REG 24333 (GARBAGNATE MILANESE -> PAVIA) [Transito]\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
- nferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 24333 (GARBAGNATE MILANESE -> PAVIA) ore 11:2
+ 7
+DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 11:23:11 - 11:28:41\nTreni coinvolti n
+ ella chiusura:\n  - REG 24333 (GARBAGNATE MILANESE -> PAVIA) [Transito]\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Transito stimato senza fermata (68% tratta MILANO ROGOREDO -> LO
+ CATE TRIULZI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CERTOSA DI PAVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24333--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
 DTSTART:20261116T103830Z
 DTEND:20261116T104300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:38 - 11:43 (primo: REG 24333)
-DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:38:30 - 11:43:00\nTreni
-  coinvolti nella chiusura:\n  - REG 24333 (GARBAGNATE MILANESE -> PAVIA)\n
-   - REG 24333 (GARBAGNATE MILANESE -> PAVIA)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 24333 (GARBAGNATE MILANESE -> PAVIA) ore 11:42
+DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: FERMAT
+ A\nChiusura sbarre stimata: 11:38:30 - 11:43:00\nTreni coinvolti nella chi
+ usura:\n  - REG 24333 (GARBAGNATE MILANESE -> PAVIA)\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
+ e da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione CERTOSA DI PAVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24337--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
 DTSTART:20261116T112311Z
 DTEND:20261116T112841Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:23 - 12:28 (primo: REG 24337)
-DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:23:11 - 12:28:41\nTreni
-  coinvolti nella chiusura:\n  - REG 24337 (GARBAGNATE MILANESE -> PAVIA) [
- Transito]\n  - REG 24337 (GARBAGNATE MILANESE -> PAVIA) [Transito]\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
- nferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 24337 (GARBAGNATE MILANESE -> PAVIA) ore 12:2
+ 7
+DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 12:23:11 - 12:28:41\nTreni coinvolti n
+ ella chiusura:\n  - REG 24337 (GARBAGNATE MILANESE -> PAVIA) [Transito]\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Transito stimato senza fermata (68% tratta MILANO ROGOREDO -> LO
+ CATE TRIULZI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CERTOSA DI PAVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24337--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
 DTSTART:20261116T113830Z
 DTEND:20261116T114300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:38 - 12:43 (primo: REG 24337)
-DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:38:30 - 12:43:00\nTreni
-  coinvolti nella chiusura:\n  - REG 24337 (GARBAGNATE MILANESE -> PAVIA)\n
-   - REG 24337 (GARBAGNATE MILANESE -> PAVIA)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 24337 (GARBAGNATE MILANESE -> PAVIA) ore 12:42
+DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: FERMAT
+ A\nChiusura sbarre stimata: 12:38:30 - 12:43:00\nTreni coinvolti nella chi
+ usura:\n  - REG 24337 (GARBAGNATE MILANESE -> PAVIA)\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
+ e da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione CERTOSA DI PAVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24352--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:0
+DTSTAMP:20261116T024826Z
+SEQUENCE:1
 DTSTART:20261116T141230Z
 DTEND:20261116T141700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:12 - 15:17 (primo: REG 24352)
-DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:12:30 - 15:17:00\nTreni
-  coinvolti nella chiusura:\n  - REG 24352 (PAVIA -> GARBAGNATE MILANESE)\n
-   - REG 24352 (PAVIA -> GARBAGNATE MILANESE)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 24352 (PAVIA -> GARBAGNATE MILANESE) ore 15:16
+DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: FERMAT
+ A\nChiusura sbarre stimata: 15:12:30 - 15:17:00\nTreni coinvolti nella chi
+ usura:\n  - REG 24352 (PAVIA -> GARBAGNATE MILANESE)\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
+ e da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione CERTOSA DI PAVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24349--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:2
+DTSTAMP:20261116T024826Z
+SEQUENCE:3
 DTSTART:20261116T142311Z
 DTEND:20261116T142841Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:23 - 15:28 (primo: REG 24349)
@@ -344,8 +401,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24349--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:2
+DTSTAMP:20261116T024826Z
+SEQUENCE:3
 DTSTART:20261116T143830Z
 DTEND:20261116T144300Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:38 - 15:43 (primo: REG 24349)
@@ -366,169 +423,206 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24351--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
 DTSTART:20261116T145311Z
 DTEND:20261116T145841Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:53 - 15:58 (primo: REG 24351)
-DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:53:11 - 15:58:41\nTreni
-  coinvolti nella chiusura:\n  - REG 24351 (GARBAGNATE MILANESE -> PAVIA) [
- Transito]\n  - REG 24351 (GARBAGNATE MILANESE -> PAVIA) [Transito]\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
- nferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 24351 (GARBAGNATE MILANESE -> PAVIA) ore 15:5
+ 7
+DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 15:53:11 - 15:58:41\nTreni coinvolti n
+ ella chiusura:\n  - REG 24351 (GARBAGNATE MILANESE -> PAVIA) [Transito]\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Transito stimato senza fermata (68% tratta MILANO ROGOREDO -> LO
+ CATE TRIULZI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CERTOSA DI PAVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24351--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
 DTSTART:20261116T150830Z
 DTEND:20261116T151300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:08 - 16:13 (primo: REG 24351)
-DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:08:30 - 16:13:00\nTreni
-  coinvolti nella chiusura:\n  - REG 24351 (GARBAGNATE MILANESE -> PAVIA)\n
-   - REG 24351 (GARBAGNATE MILANESE -> PAVIA)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 24351 (GARBAGNATE MILANESE -> PAVIA) ore 16:12
+DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: FERMAT
+ A\nChiusura sbarre stimata: 16:08:30 - 16:13:00\nTreni coinvolti nella chi
+ usura:\n  - REG 24351 (GARBAGNATE MILANESE -> PAVIA)\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
+ e da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione CERTOSA DI PAVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24358--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:0
+DTSTAMP:20261116T024826Z
+SEQUENCE:1
 DTSTART:20261116T154230Z
 DTEND:20261116T154700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:42 - 16:47 (primo: REG 24358)
-DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:42:30 - 16:47:00\nTreni
-  coinvolti nella chiusura:\n  - REG 24358 (PAVIA -> GARBAGNATE MILANESE)\n
-   - REG 24358 (PAVIA -> GARBAGNATE MILANESE)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 24358 (PAVIA -> GARBAGNATE MILANESE) ore 16:46
+DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: FERMAT
+ A\nChiusura sbarre stimata: 16:42:30 - 16:47:00\nTreni coinvolti nella chi
+ usura:\n  - REG 24358 (PAVIA -> GARBAGNATE MILANESE)\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
+ e da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione CERTOSA DI PAVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24357--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:2
+DTSTAMP:20261116T024826Z
+SEQUENCE:3
 DTSTART:20261116T162311Z
 DTEND:20261116T162841Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:23 - 17:28 (primo: REG 24357)
-DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:23:11 - 17:28:41\nTreni
-  coinvolti nella chiusura:\n  - REG 24357 (GARBAGNATE MILANESE -> PAVIA) [
- Transito]\n  - REG 24357 (GARBAGNATE MILANESE -> PAVIA) [Transito]\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
- nferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 24357 (GARBAGNATE MILANESE -> PAVIA) ore 17:2
+ 7
+DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 17:23:11 - 17:28:41\nTreni coinvolti n
+ ella chiusura:\n  - REG 24357 (GARBAGNATE MILANESE -> PAVIA) [Transito]\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Transito stimato senza fermata (68% tratta MILANO ROGOREDO -> LO
+ CATE TRIULZI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CERTOSA DI PAVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24357--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:2
+DTSTAMP:20261116T024826Z
+SEQUENCE:3
 DTSTART:20261116T163830Z
 DTEND:20261116T164300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:38 - 17:43 (primo: REG 24357)
-DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:38:30 - 17:43:00\nTreni
-  coinvolti nella chiusura:\n  - REG 24357 (GARBAGNATE MILANESE -> PAVIA)\n
-   - REG 24357 (GARBAGNATE MILANESE -> PAVIA)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 24357 (GARBAGNATE MILANESE -> PAVIA) ore 17:42
+DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: FERMAT
+ A\nChiusura sbarre stimata: 17:38:30 - 17:43:00\nTreni coinvolti nella chi
+ usura:\n  - REG 24357 (GARBAGNATE MILANESE -> PAVIA)\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
+ e da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione CERTOSA DI PAVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24373--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
 DTSTART:20261116T202311Z
 DTEND:20261116T202841Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:23 - 21:28 (primo: REG 24373)
-DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:23:11 - 21:28:41\nTreni
-  coinvolti nella chiusura:\n  - REG 24373 (MILANO BOVISA POLITECNICO -> PA
- VIA) [Transito]\n  - REG 24373 (MILANO BOVISA POLITECNICO -> PAVIA) [Trans
- ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
- ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
- saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 24373 (MILANO BOVISA POLITECNICO -> PAVIA) or
+ e 21:27
+DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 21:23:11 - 21:28:41\nTreni coinvolti n
+ ella chiusura:\n  - REG 24373 (MILANO BOVISA POLITECNICO -> PAVIA) [Transi
+ to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (68% tratta MILANO ROGOREDO
+  -> LOCATE TRIULZI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CERTOSA DI PAVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24373--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
 DTSTART:20261116T203830Z
-DTEND:20261116T204300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:38 - 21:43 (primo: REG 24373)
+DTEND:20261116T204700Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:38 - 21:47 (primo: REG 24373)
 DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:38:30 - 21:43:00\nTreni
+ RA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 21:38:30 - 21:47:00\nTreni
   coinvolti nella chiusura:\n  - REG 24373 (MILANO BOVISA POLITECNICO -> PA
- VIA)\n  - REG 24373 (MILANO BOVISA POLITECNICO -> PAVIA)\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chius
- ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
- lla soglia minima di sgombero stradale (120s)
+ VIA)\n  - REG 24378 (PAVIA -> MILANO BOVISA POLITECNICO)\n  - REG 24378 (P
+ AVIA -> MILANO BOVISA POLITECNICO)\nRitardo massimo rilevato: 0 min\nAffid
+ abilità stima: 90%\nNota normativa/euristica: Chiusura continua per 3 tre
+ ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
+ gombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CERTOSA DI PAVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24375--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
 DTSTART:20261116T205311Z
 DTEND:20261116T205841Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:53 - 21:58 (primo: REG 24375)
+SUMMARY:[TRANSITO VELOCE] REG 24375 (MILANO BOVISA POLITECNICO -> PAVIA) or
+ e 21:57
+DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 21:53:11 - 21:58:41\nTreni coinvolti n
+ ella chiusura:\n  - REG 24375 (MILANO BOVISA POLITECNICO -> PAVIA) [Transi
+ to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (68% tratta MILANO ROGOREDO
+  -> LOCATE TRIULZI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione CERTOSA DI PAVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24375--20261115-S01803@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:4
+DTSTART:20261116T210830Z
+DTEND:20261116T211300Z
+SUMMARY:[FERMATA] REG 24375 (MILANO BOVISA POLITECNICO -> PAVIA) ore 22:12
+DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: FERMAT
+ A\nChiusura sbarre stimata: 22:08:30 - 22:13:00\nTreni coinvolti nella chi
+ usura:\n  - REG 24375 (MILANO BOVISA POLITECNICO -> PAVIA)\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pre
+ visione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione CERTOSA DI PAVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24377--20261115-S01803@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261116T212311Z
+DTEND:20261116T212841Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:23 - 22:28 (primo: REG 24377)
 DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:53:11 - 21:58:41\nTreni
-  coinvolti nella chiusura:\n  - REG 24375 (MILANO BOVISA POLITECNICO -> PA
- VIA) [Transito]\n  - REG 24375 (MILANO BOVISA POLITECNICO -> PAVIA) [Trans
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:23:11 - 22:28:41\nTreni
+  coinvolti nella chiusura:\n  - REG 24377 (MILANO BOVISA POLITECNICO -> PA
+ VIA) [Transito]\n  - REG 24377 (MILANO BOVISA POLITECNICO -> PAVIA) [Trans
  ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
  ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
  saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
@@ -541,16 +635,16 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-24375--20261115-S01803@pl-tracker.local
-DTSTAMP:20261116T002034Z
-SEQUENCE:3
-DTSTART:20261116T210830Z
-DTEND:20261116T211300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:08 - 22:13 (primo: REG 24375)
+UID:train-24377--20261115-S01803@pl-tracker.local
+DTSTAMP:20261116T024826Z
+SEQUENCE:0
+DTSTART:20261116T213830Z
+DTEND:20261116T214300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:38 - 22:43 (primo: REG 24377)
 DESCRIPTION:Stazione/PL: CERTOSA DI PAVIA (S01803)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:08:30 - 22:13:00\nTreni
-  coinvolti nella chiusura:\n  - REG 24375 (MILANO BOVISA POLITECNICO -> PA
- VIA)\n  - REG 24375 (MILANO BOVISA POLITECNICO -> PAVIA)\nRitardo massimo 
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:38:30 - 22:43:00\nTreni
+  coinvolti nella chiusura:\n  - REG 24377 (MILANO BOVISA POLITECNICO -> PA
+ VIA)\n  - REG 24377 (MILANO BOVISA POLITECNICO -> PAVIA)\nRitardo massimo 
  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chius
  ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
  lla soglia minima di sgombero stradale (120s)
