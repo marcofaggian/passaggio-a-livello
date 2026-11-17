@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:bf1cf82654c1325de4753eaef9219e13215ba082cbdb729f770d4f7d0b17
- b7eb
+X-CONTENT-HASH:a3908d5dfb9562f4f7119db86ebe52c41dacfd25225f5b4535d28352c646
+ 914f
 BEGIN:VEVENT
 UID:train-18931--20261116-S06902@pl-tracker.local
-DTSTAMP:20261117T123134Z
-SEQUENCE:1
+DTSTAMP:20261117T212227Z
+SEQUENCE:2
 DTSTART:20261117T042400Z
 DTEND:20261117T042830Z
 SUMMARY:[FERMATA] REG 18931 (FIRENZE SANTA MARIA NOVELLA -> BORGO S.LORENZO
@@ -33,99 +33,117 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18745--20261116-S06902@pl-tracker.local
-DTSTAMP:20261117T123134Z
+UID:train-18733--20261116-S06902@pl-tracker.local
+DTSTAMP:20261117T212227Z
 SEQUENCE:0
-DTSTART:20261117T064406Z
-DTEND:20261117T064936Z
-SUMMARY:[TRANSITO VELOCE] REG 18745 (FIRENZE SANTA MARIA NOVELLA -> CHIUSI-
- CHIANCIANO TERME) ore 07:48
+DTSTART:20261117T043818Z
+DTEND:20261117T044348Z
+SUMMARY:[TRANSITO VELOCE] REG 18733 (FIRENZE SANTA MARIA NOVELLA -> CHIUSI-
+ CHIANCIANO TERME) ore 05:42
 DESCRIPTION:Stazione/PL: COMPIOBBI (S06902)\nRegime chiusura: TRANSITO VELO
- CE\nChiusura sbarre stimata: 07:44:06 - 07:49:36\nTreni coinvolti nella ch
- iusura:\n  - REG 18745 (FIRENZE SANTA MARIA NOVELLA -> CHIUSI-CHIANCIANO T
- ERME) [Transito]\nRitardo massimo rilevato: -2 min\nAffidabilità stima: 7
- 8%\nNota normativa/euristica: Transito stimato senza fermata (62% tratta F
- IRENZE CAMPO MARTE -> SIECI\; pedale annuncio fisso Vmax)
+ CE\nChiusura sbarre stimata: 05:38:18 - 05:43:48\nTreni coinvolti nella ch
+ iusura:\n  - REG 18733 (FIRENZE SANTA MARIA NOVELLA -> CHIUSI-CHIANCIANO T
+ ERME) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
+ %\nNota normativa/euristica: Transito stimato senza fermata (63% tratta FI
+ RENZE CAMPO MARTE -> SIECI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione COMPIOBBI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18745--20261116-S06902@pl-tracker.local
+DTSTAMP:20261117T212227Z
+SEQUENCE:1
+DTSTART:20261117T064409Z
+DTEND:20261117T064939Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:44 - 07:49 (primo: REG 18745)
+DESCRIPTION:Stazione/PL: COMPIOBBI (S06902)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 07:44:09 - 07:49:39\nTreni coinvo
+ lti nella chiusura:\n  - REG 18745 (FIRENZE SANTA MARIA NOVELLA -> CHIUSI-
+ CHIANCIANO TERME) [Transito]\n  - REG 18745 (FIRENZE SANTA MARIA NOVELLA -
+ > CHIUSI-CHIANCIANO TERME) [Transito]\nRitardo massimo rilevato: -2 min\nA
+ ffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione COMPIOBBI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:-2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18757--20261116-S06902@pl-tracker.local
-DTSTAMP:20261117T123134Z
-SEQUENCE:1
+DTSTAMP:20261117T212227Z
+SEQUENCE:2
 DTSTART:20261117T104330Z
 DTEND:20261117T105000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:43 - 11:50 (primo: REG 18757) (+1 
- min)
-DESCRIPTION:Stazione/PL: COMPIOBBI (S06902)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 11:43:30 - 11:50:00\nTreni coinvo
- lti nella chiusura:\n  - REG 18757 (FIRENZE SANTA MARIA NOVELLA -> STIA) (
- +1m)\n  - REG 18757 (FIRENZE SANTA MARIA NOVELLA -> STIA) (+1m)\nRitardo m
- assimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica
- : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
- riore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 18757 (FIRENZE SANTA MARIA NOVELLA -> STIA) ore 11:49
+  (+1 min)
+DESCRIPTION:Stazione/PL: COMPIOBBI (S06902)\nRegime chiusura: FERMATA\nChiu
+ sura sbarre stimata: 11:43:30 - 11:50:00\nTreni coinvolti nella chiusura:\
+ n  - REG 18757 (FIRENZE SANTA MARIA NOVELLA -> STIA) (+1m)\nRitardo massim
+ o rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Ril
+ evamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione COMPIOBBI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18763--20261116-S06902@pl-tracker.local
-DTSTAMP:20261117T123134Z
-SEQUENCE:0
+DTSTAMP:20261117T212227Z
+SEQUENCE:1
 DTSTART:20261117T123930Z
 DTEND:20261117T124400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:39 - 13:44 (primo: REG 18763) (+6 
- min)
-DESCRIPTION:Stazione/PL: COMPIOBBI (S06902)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 13:39:30 - 13:44:00\nTreni coinvo
- lti nella chiusura:\n  - REG 18763 (FIRENZE SANTA MARIA NOVELLA -> AREZZO)
-  (+6m)\n  - REG 18763 (FIRENZE SANTA MARIA NOVELLA -> AREZZO) (+6m)\nRitar
- do massimo rilevato: 6 min\nAffidabilità stima: 90%\nNota normativa/euris
- tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 18763 (FIRENZE SANTA MARIA NOVELLA -> AREZZO) ore 13:
+ 43 (+6 min)
+DESCRIPTION:Stazione/PL: COMPIOBBI (S06902)\nRegime chiusura: FERMATA\nChiu
+ sura sbarre stimata: 13:39:30 - 13:44:00\nTreni coinvolti nella chiusura:\
+ n  - REG 18763 (FIRENZE SANTA MARIA NOVELLA -> AREZZO) (+6m)\nRitardo mass
+ imo rilevato: 6 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
+ revisione con ritardo propagato (+6 min)
 LOCATION:Passaggio a Livello / Stazione COMPIOBBI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18771--20261116-S06902@pl-tracker.local
-DTSTAMP:20261117T123134Z
-SEQUENCE:1
+DTSTAMP:20261117T212227Z
+SEQUENCE:2
 DTSTART:20261117T143330Z
 DTEND:20261117T143800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:33 - 15:38 (primo: REG 18771)
-DESCRIPTION:Stazione/PL: COMPIOBBI (S06902)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 15:33:30 - 15:38:00\nTreni coinvo
- lti nella chiusura:\n  - REG 18771 (FIRENZE SANTA MARIA NOVELLA -> AREZZO)
- \n  - REG 18771 (FIRENZE SANTA MARIA NOVELLA -> AREZZO)\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 18771 (FIRENZE SANTA MARIA NOVELLA -> AREZZO) ore 15:
+ 37
+DESCRIPTION:Stazione/PL: COMPIOBBI (S06902)\nRegime chiusura: FERMATA\nChiu
+ sura sbarre stimata: 15:33:30 - 15:38:00\nTreni coinvolti nella chiusura:\
+ n  - REG 18771 (FIRENZE SANTA MARIA NOVELLA -> AREZZO)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione COMPIOBBI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18845--20261116-S06902@pl-tracker.local
-DTSTAMP:20261117T123134Z
-SEQUENCE:1
+DTSTAMP:20261117T212227Z
+SEQUENCE:2
 DTSTART:20261117T155630Z
 DTEND:20261117T160100Z
 SUMMARY:[FERMATA] REG 18845 (PISTOIA -> MONTEVARCHI TERRANUOVA) ore 17:00
@@ -144,22 +162,21 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18803--20261116-S06902@pl-tracker.local
-DTSTAMP:20261117T123134Z
-SEQUENCE:1
+DTSTAMP:20261117T212227Z
+SEQUENCE:2
 DTSTART:20261117T211930Z
 DTEND:20261117T212400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:19 - 22:24 (primo: REG 18803)
-DESCRIPTION:Stazione/PL: COMPIOBBI (S06902)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 22:19:30 - 22:24:00\nTreni coinvo
- lti nella chiusura:\n  - REG 18803 (FIRENZE SANTA MARIA NOVELLA -> AREZZO)
- \n  - REG 18803 (FIRENZE SANTA MARIA NOVELLA -> AREZZO)\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 18803 (FIRENZE SANTA MARIA NOVELLA -> AREZZO) ore 22:
+ 23
+DESCRIPTION:Stazione/PL: COMPIOBBI (S06902)\nRegime chiusura: FERMATA\nChiu
+ sura sbarre stimata: 22:19:30 - 22:24:00\nTreni coinvolti nella chiusura:\
+ n  - REG 18803 (FIRENZE SANTA MARIA NOVELLA -> AREZZO)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione COMPIOBBI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

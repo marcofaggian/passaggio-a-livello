@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:c98dc913114fe48fd633cb8150ba2d08f4152702ea3c3dc1d8cf8729b8f6
- 7fe8
+X-CONTENT-HASH:caf40523c89ebda13e3ad9174b6221b52a321273f491afdb10304beddab9
+ 19cd
 BEGIN:VEVENT
 UID:train-4521--20261116-S08206@pl-tracker.local
-DTSTAMP:20261117T123134Z
-SEQUENCE:0
+DTSTAMP:20261117T212227Z
+SEQUENCE:1
 DTSTART:20261117T054422Z
 DTEND:20261117T054952Z
 SUMMARY:[TRANSITO VELOCE] REG 4521 (VITERBO PORTA FIORENTINA -> ROMA TERMIN
@@ -35,8 +35,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4096--20261116-S08206@pl-tracker.local
-DTSTAMP:20261117T123134Z
-SEQUENCE:1
+DTSTAMP:20261117T212227Z
+SEQUENCE:2
 DTSTART:20261117T064813Z
 DTEND:20261117T065343Z
 SUMMARY:[TRANSITO VELOCE] REG 4096 (ROMA TERMINI -> FIRENZE SANTA MARIA NOV
@@ -57,8 +57,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4096--20261116-S08206@pl-tracker.local
-DTSTAMP:20261117T123134Z
-SEQUENCE:1
+DTSTAMP:20261117T212227Z
+SEQUENCE:2
 DTSTART:20261117T065830Z
 DTEND:20261117T070300Z
 SUMMARY:[FERMATA] REG 4096 (ROMA TERMINI -> FIRENZE SANTA MARIA NOVELLA) or
@@ -78,62 +78,60 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4103--20261116-S08206@pl-tracker.local
-DTSTAMP:20261117T123134Z
-SEQUENCE:1
+DTSTAMP:20261117T212227Z
+SEQUENCE:2
 DTSTART:20261117T123730Z
 DTEND:20261117T124200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:37 - 13:42 (primo: REG 4103) (+1 m
- in)
-DESCRIPTION:Stazione/PL: ALVIANO (S08206)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 13:37:30 - 13:42:00\nTreni coinvolt
- i nella chiusura:\n  - REG 4103 (FIRENZE SANTA MARIA NOVELLA -> ORTE) (+1m
- )\n  - REG 4103 (FIRENZE SANTA MARIA NOVELLA -> ORTE) (+1m)\nRitardo massi
- mo rilevato: 1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Ch
- iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 4103 (FIRENZE SANTA MARIA NOVELLA -> ORTE) ore 13:41 
+ (+1 min)
+DESCRIPTION:Stazione/PL: ALVIANO (S08206)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 13:37:30 - 13:42:00\nTreni coinvolti nella chiusura:\n 
+  - REG 4103 (FIRENZE SANTA MARIA NOVELLA -> ORTE) (+1m)\nRitardo massimo r
+ ilevato: 1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previs
+ ione con ritardo propagato (+1 min)
 LOCATION:Passaggio a Livello / Stazione ALVIANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-592--20261116-S08206@pl-tracker.local
-DTSTAMP:20261117T123134Z
-SEQUENCE:1
-DTSTART:20261117T152738Z
-DTEND:20261117T153208Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:27 - 16:32 (primo: IC 592)
-DESCRIPTION:Stazione/PL: ALVIANO (S08206)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 16:27:38 - 16:32:08\nTreni coinvolt
- i nella chiusura:\n  - IC 592 (ROMA TERMINI -> TRIESTE CENTRALE) [Transito
- ]\n  - IC 592 (ROMA TERMINI -> TRIESTE CENTRALE) [Transito]\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
- iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261117T212227Z
+SEQUENCE:2
+DTSTART:20261117T152730Z
+DTEND:20261117T153200Z
+SUMMARY:[TRANSITO VELOCE] IC 592 (ROMA TERMINI -> TRIESTE CENTRALE) ore 16:
+ 31
+DESCRIPTION:Stazione/PL: ALVIANO (S08206)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 16:27:30 - 16:32:00\nTreni coinvolti nella chiu
+ sura:\n  - IC 592 (ROMA TERMINI -> TRIESTE CENTRALE) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (57% tratta ORTE -> ORVIETO\; pedale annu
+ ncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALVIANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-596--20261116-S08206@pl-tracker.local
-DTSTAMP:20261117T123134Z
-SEQUENCE:1
-DTSTART:20261117T162122Z
-DTEND:20261117T162552Z
+DTSTAMP:20261117T212227Z
+SEQUENCE:2
+DTSTART:20261117T162112Z
+DTEND:20261117T162542Z
 SUMMARY:[TRANSITO VELOCE] IC 596 (NAPOLI CENTRALE -> MILANO CENTRALE) ore 1
  7:24
 DESCRIPTION:Stazione/PL: ALVIANO (S08206)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 17:21:22 - 17:25:52\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 17:21:12 - 17:25:42\nTreni coinvolti nella chiu
  sura:\n  - IC 596 (NAPOLI CENTRALE -> MILANO CENTRALE) [Transito]\nRitardo
   massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Transito stimato senza fermata (58% tratta ORTE -> ORVIETO\; pedale an
+ ca: Transito stimato senza fermata (57% tratta ORTE -> ORVIETO\; pedale an
  nuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALVIANO
 STATUS:CONFIRMED
@@ -145,88 +143,85 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-597--20261116-S08206@pl-tracker.local
-DTSTAMP:20261117T123134Z
-SEQUENCE:0
-DTSTART:20261117T182515Z
-DTEND:20261117T182945Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:25 - 19:29 (primo: IC 597)
-DESCRIPTION:Stazione/PL: ALVIANO (S08206)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 19:25:15 - 19:29:45\nTreni coinvolt
- i nella chiusura:\n  - IC 597 (MILANO CENTRALE -> SALERNO) [Transito]\n  -
-  IC 597 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo massimo rilevato:
-  0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
- nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
- a minima di sgombero stradale (120s)
+DTSTAMP:20261117T212227Z
+SEQUENCE:1
+DTSTART:20261117T182550Z
+DTEND:20261117T183020Z
+SUMMARY:[TRANSITO VELOCE] IC 597 (MILANO CENTRALE -> SALERNO) ore 19:29
+DESCRIPTION:Stazione/PL: ALVIANO (S08206)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 19:25:50 - 19:30:20\nTreni coinvolti nella chiu
+ sura:\n  - IC 597 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
+ sito stimato senza fermata (33% tratta ORVIETO -> ORTE\; pedale annuncio f
+ isso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALVIANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4110--20261116-S08206@pl-tracker.local
-DTSTAMP:20261117T123134Z
-SEQUENCE:1
+DTSTAMP:20261117T212227Z
+SEQUENCE:2
 DTSTART:20261117T200256Z
 DTEND:20261117T200826Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:02 - 21:08 (primo: REG 4110)
-DESCRIPTION:Stazione/PL: ALVIANO (S08206)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 21:02:56 - 21:08:26\nTreni coinvolt
- i nella chiusura:\n  - REG 4110 (ROMA TERMINI -> FIRENZE SANTA MARIA NOVEL
- LA) [Transito]\n  - REG 4110 (ROMA TERMINI -> FIRENZE SANTA MARIA NOVELLA)
-  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
- ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
- a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 4110 (ROMA TERMINI -> FIRENZE SANTA MARIA NOV
+ ELLA) ore 21:07
+DESCRIPTION:Stazione/PL: ALVIANO (S08206)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 21:02:56 - 21:08:26\nTreni coinvolti nella chiu
+ sura:\n  - REG 4110 (ROMA TERMINI -> FIRENZE SANTA MARIA NOVELLA) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (86% tratta ORTE -> ATTIGLIA
+ NO-BOMARZO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALVIANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4110--20261116-S08206@pl-tracker.local
-DTSTAMP:20261117T123134Z
-SEQUENCE:1
+DTSTAMP:20261117T212227Z
+SEQUENCE:2
 DTSTART:20261117T201330Z
 DTEND:20261117T201800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:13 - 21:18 (primo: REG 4110)
-DESCRIPTION:Stazione/PL: ALVIANO (S08206)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 21:13:30 - 21:18:00\nTreni coinvolt
- i nella chiusura:\n  - REG 4110 (ROMA TERMINI -> FIRENZE SANTA MARIA NOVEL
- LA)\n  - REG 4110 (ROMA TERMINI -> FIRENZE SANTA MARIA NOVELLA)\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
- : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
- riore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 4110 (ROMA TERMINI -> FIRENZE SANTA MARIA NOVELLA) or
+ e 21:17
+DESCRIPTION:Stazione/PL: ALVIANO (S08206)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 21:13:30 - 21:18:00\nTreni coinvolti nella chiusura:\n 
+  - REG 4110 (ROMA TERMINI -> FIRENZE SANTA MARIA NOVELLA)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
+ isione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione ALVIANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-798--20261116-S08206@pl-tracker.local
-DTSTAMP:20261117T123134Z
-SEQUENCE:0
-DTSTART:20261117T234147Z
-DTEND:20261117T234617Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 00:41 - 00:46 (primo: ICN 798)
-DESCRIPTION:Stazione/PL: ALVIANO (S08206)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 00:41:47 - 00:46:17\nTreni coinvolt
- i nella chiusura:\n  - ICN 798 (SALERNO -> TORINO PORTA NUOVA) [Transito]\
- n  - ICN 798 (SALERNO -> TORINO PORTA NUOVA) [Transito]\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+DTSTAMP:20261117T212227Z
+SEQUENCE:1
+DTSTART:20261117T234138Z
+DTEND:20261117T234608Z
+SUMMARY:[TRANSITO VELOCE] ICN 798 (SALERNO -> TORINO PORTA NUOVA) ore 00:45
+DESCRIPTION:Stazione/PL: ALVIANO (S08206)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 00:41:38 - 00:46:08\nTreni coinvolti nella chiu
+ sura:\n  - ICN 798 (SALERNO -> TORINO PORTA NUOVA) [Transito]\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Transito stimato senza fermata (57% tratta ORTE -> ORVIETO\; pedale annunc
+ io fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALVIANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:ICN
