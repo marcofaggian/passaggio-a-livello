@@ -9,27 +9,50 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:fcbe7ff388fe4a5c77f50dbb4c67e9cdb0095c4f76ab1d1c9f33fc2dc334
- 1e88
+X-CONTENT-HASH:d516b5f3764557f61125144a98ff57f7ac663dce9ed80e9abf8452c6d1bc
+ b854
 BEGIN:VEVENT
-UID:train-3357--20261115-S04518@pl-tracker.local
-DTSTAMP:20261116T205126Z
-SEQUENCE:3
-DTSTART:20261116T054130Z
-DTEND:20261116T054630Z
-SUMMARY:[FERMATA] REG 3357 (VENTIMIGLIA -> GENOVA BRIGNOLE) ore 06:45 (+2 m
- in)
-DESCRIPTION:Stazione/PL: BORGHETTO S.SPIRITO (S04518)\nRegime chiusura: FER
- MATA\nChiusura sbarre stimata: 06:41:30 - 06:46:30\nTreni coinvolti nella 
- chiusura:\n  - REG 3357 (VENTIMIGLIA -> GENOVA BRIGNOLE) (+2m)\nRitardo ma
- ssimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica:
-  Rilevamento reale da circuito di binario
+UID:train-3357--20261116-S04518@pl-tracker.local
+DTSTAMP:20261117T033028Z
+SEQUENCE:0
+DTSTART:20261117T053930Z
+DTEND:20261117T054400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:39 - 06:44 (primo: REG 3357)
+DESCRIPTION:Stazione/PL: BORGHETTO S.SPIRITO (S04518)\nRegime chiusura: CHI
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:39:30 - 06:44:00\nTr
+ eni coinvolti nella chiusura:\n  - REG 3357 (VENTIMIGLIA -> GENOVA BRIGNOL
+ E)\n  - REG 3357 (VENTIMIGLIA -> GENOVA BRIGNOLE)\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
+ tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BORGHETTO S.SPIRITO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:2
-X-PL-CONFIDENCE:0.99
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3371--20261116-S04518@pl-tracker.local
+DTSTAMP:20261117T033028Z
+SEQUENCE:0
+DTSTART:20261117T135538Z
+DTEND:20261117T140108Z
+SUMMARY:[TRANSITO VELOCE] REG 3371 (VENTIMIGLIA -> GENOVA BRIGNOLE) ore 14:
+ 59
+DESCRIPTION:Stazione/PL: BORGHETTO S.SPIRITO (S04518)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 14:55:38 - 15:01:08\nTreni coinvolt
+ i nella chiusura:\n  - REG 3371 (VENTIMIGLIA -> GENOVA BRIGNOLE) [Transito
+ ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
+ va/euristica: Transito stimato senza fermata (74% tratta ALBENGA -> LOANO\
+ ; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione BORGHETTO S.SPIRITO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR
