@@ -9,22 +9,84 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:0399a977e63a044f366b9472681f3d4d7ba42038913a3da38ff2c1768571
- 22ef
+X-CONTENT-HASH:8bcad972b961d62988871ffb428e2a1ab36887199b3878de1c4f781b7eef
+ acbc
 BEGIN:VEVENT
 UID:train-17800--20261116-S05130@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T045630Z
 DTEND:20261117T050100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:56 - 06:01 (primo: REG 17800) (+2 
+SUMMARY:[FERMATA] REG 17800 (FIRENZE SANTA MARIA NOVELLA -> BOLOGNA CENTRAL
+ E) ore 06:00 (+2 min)
+DESCRIPTION:Stazione/PL: BOLOGNA S.RUFFILLO (S05130)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 05:56:30 - 06:01:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 17800 (FIRENZE SANTA MARIA NOVELLA -> BOLOGNA CENTRALE) 
+ (+2m)\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 90%\nNota nor
+ mativa/euristica: Previsione con ritardo propagato (+2 min)
+LOCATION:Passaggio a Livello / Stazione BOLOGNA S.RUFFILLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17803--20261116-S05130@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T051130Z
+DTEND:20261117T051600Z
+SUMMARY:[FERMATA] REG 17803 (BOLOGNA CENTRALE -> FIRENZE CAMPO MARTE) ore 0
+ 6:15
+DESCRIPTION:Stazione/PL: BOLOGNA S.RUFFILLO (S05130)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 06:11:30 - 06:16:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 17803 (BOLOGNA CENTRALE -> FIRENZE CAMPO MARTE)\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristi
+ ca: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione BOLOGNA S.RUFFILLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17652--20261116-S05130@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T052330Z
+DTEND:20261117T052800Z
+SUMMARY:[FERMATA] REG 17652 (PORRETTA  TERME -> PIANORO) ore 06:27
+DESCRIPTION:Stazione/PL: BOLOGNA S.RUFFILLO (S05130)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 06:23:30 - 06:28:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 17652 (PORRETTA  TERME -> PIANORO)\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
+ e da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione BOLOGNA S.RUFFILLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17807--20261116-S05130@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T054200Z
+DTEND:20261117T054830Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:42 - 06:48 (primo: REG 17807) (+2 
  min)
 DESCRIPTION:Stazione/PL: BOLOGNA S.RUFFILLO (S05130)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:56:30 - 06:01:00\nTre
- ni coinvolti nella chiusura:\n  - REG 17800 (FIRENZE SANTA MARIA NOVELLA -
- > BOLOGNA CENTRALE) (+2m)\n  - REG 17800 (FIRENZE SANTA MARIA NOVELLA -> B
- OLOGNA CENTRALE) (+2m)\nRitardo massimo rilevato: 2 min\nAffidabilità sti
- ma: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:42:00 - 06:48:30\nTre
+ ni coinvolti nella chiusura:\n  - REG 17807 (BOLOGNA CENTRALE -> FIRENZE S
+ ANTA MARIA NOVELLA) (+2m)\n  - REG 17807 (BOLOGNA CENTRALE -> FIRENZE SANT
+ A MARIA NOVELLA) (+2m)\nRitardo massimo rilevato: 2 min\nAffidabilità sti
+ ma: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
  lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
  dale (120s)
 LOCATION:Passaggio a Livello / Stazione BOLOGNA S.RUFFILLO
@@ -32,197 +94,216 @@ STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:2
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-17803--20261116-S05130@pl-tracker.local
-DTSTAMP:20261117T033028Z
+UID:train-17654--20261116-S05130@pl-tracker.local
+DTSTAMP:20261117T123134Z
 SEQUENCE:0
-DTSTART:20261117T051130Z
-DTEND:20261117T051600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:11 - 06:16 (primo: REG 17803)
+DTSTART:20261117T055200Z
+DTEND:20261117T055930Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:52 - 06:59 (primo: REG 17654) (+1 
+ min)
 DESCRIPTION:Stazione/PL: BOLOGNA S.RUFFILLO (S05130)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:11:30 - 06:16:00\nTre
- ni coinvolti nella chiusura:\n  - REG 17803 (BOLOGNA CENTRALE -> FIRENZE C
- AMPO MARTE)\n  - REG 17803 (BOLOGNA CENTRALE -> FIRENZE CAMPO MARTE)\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euri
- stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
-  inferiore alla soglia minima di sgombero stradale (120s)
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:52:00 - 06:59:30\nTre
+ ni coinvolti nella chiusura:\n  - REG 17654 (PORRETTA  TERME -> PIANORO) (
+ +1m)\n  - REG 17654 (PORRETTA  TERME -> PIANORO) (+1m)\nRitardo massimo ri
+ levato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusur
+ a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BOLOGNA S.RUFFILLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17652--20261116-S05130@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T052330Z
-DTEND:20261117T052800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:23 - 06:28 (primo: REG 17652)
-DESCRIPTION:Stazione/PL: BOLOGNA S.RUFFILLO (S05130)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:23:30 - 06:28:00\nTre
- ni coinvolti nella chiusura:\n  - REG 17652 (PORRETTA  TERME -> PIANORO)\n
-   - REG 17652 (PORRETTA  TERME -> PIANORO)\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
- er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione BOLOGNA S.RUFFILLO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17807--20261116-S05130@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T054130Z
-DTEND:20261117T054600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:41 - 06:46 (primo: REG 17807)
-DESCRIPTION:Stazione/PL: BOLOGNA S.RUFFILLO (S05130)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:41:30 - 06:46:00\nTre
- ni coinvolti nella chiusura:\n  - REG 17807 (BOLOGNA CENTRALE -> FIRENZE S
- ANTA MARIA NOVELLA)\n  - REG 17807 (BOLOGNA CENTRALE -> FIRENZE SANTA MARI
- A NOVELLA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNot
- a normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra
-  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione BOLOGNA S.RUFFILLO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17809--20261116-S05130@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T061130Z
-DTEND:20261117T061600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:11 - 07:16 (primo: REG 17809)
+DTEND:20261117T061730Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:11 - 07:17 (primo: REG 17809) (+1 
+ min)
 DESCRIPTION:Stazione/PL: BOLOGNA S.RUFFILLO (S05130)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:11:30 - 07:16:00\nTre
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:11:30 - 07:17:30\nTre
  ni coinvolti nella chiusura:\n  - REG 17809 (BOLOGNA CENTRALE -> PRATO CEN
- TRALE)\n  - REG 17809 (BOLOGNA CENTRALE -> PRATO CENTRALE)\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
- usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
+ TRALE) (+1m)\n  - REG 17809 (BOLOGNA CENTRALE -> PRATO CENTRALE) (+1m)\nRi
+ tardo massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/eu
+ ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
+ s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BOLOGNA S.RUFFILLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17656--20261116-S05130@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T062530Z
 DTEND:20261117T063000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:25 - 07:30 (primo: REG 17656)
-DESCRIPTION:Stazione/PL: BOLOGNA S.RUFFILLO (S05130)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:25:30 - 07:30:00\nTre
- ni coinvolti nella chiusura:\n  - REG 17656 (PORRETTA  TERME -> PIANORO)\n
-   - REG 17656 (PORRETTA  TERME -> PIANORO)\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
- er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 17656 (PORRETTA  TERME -> PIANORO) ore 07:29
+DESCRIPTION:Stazione/PL: BOLOGNA S.RUFFILLO (S05130)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 07:25:30 - 07:30:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 17656 (PORRETTA  TERME -> PIANORO)\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
+ e da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione BOLOGNA S.RUFFILLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17658--20261116-S05130@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T065530Z
-DTEND:20261117T070000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:55 - 08:00 (primo: REG 17658)
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T070230Z
+DTEND:20261117T070900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:02 - 08:09 (primo: REG 17658) (+8 
+ min)
 DESCRIPTION:Stazione/PL: BOLOGNA S.RUFFILLO (S05130)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:55:30 - 08:00:00\nTre
- ni coinvolti nella chiusura:\n  - REG 17658 (PORRETTA  TERME -> PIANORO)\n
-   - REG 17658 (PORRETTA  TERME -> PIANORO)\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
- er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:02:30 - 08:09:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 17658 (PORRETTA  TERME -> PIANORO) (
+ +8m)\n  - REG 17658 (PORRETTA  TERME -> PIANORO) (+8m)\nRitardo massimo ri
+ levato: 8 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusur
+ a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BOLOGNA S.RUFFILLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17813--20261116-S05130@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T071400Z
+DTEND:20261117T072000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:14 - 08:20 (primo: REG 17813) (+3 
+ min)
+DESCRIPTION:Stazione/PL: BOLOGNA S.RUFFILLO (S05130)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:14:00 - 08:20:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 17813 (BOLOGNA CENTRALE -> PRATO CEN
+ TRALE) (+3m)\n  - REG 17813 (BOLOGNA CENTRALE -> PRATO CENTRALE) (+3m)\nRi
+ tardo massimo rilevato: 3 min\nAffidabilità stima: 99%\nNota normativa/eu
+ ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
+ s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BOLOGNA S.RUFFILLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17750--20261116-S05130@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T092530Z
 DTEND:20261117T093000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:25 - 10:30 (primo: REG 17750)
-DESCRIPTION:Stazione/PL: BOLOGNA S.RUFFILLO (S05130)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:25:30 - 10:30:00\nTre
- ni coinvolti nella chiusura:\n  - REG 17750 (PIANORO -> MARZABOTTO)\n  - R
- EG 17750 (PIANORO -> MARZABOTTO)\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+SUMMARY:[FERMATA] REG 17750 (PIANORO -> MARZABOTTO) ore 10:29
+DESCRIPTION:Stazione/PL: BOLOGNA S.RUFFILLO (S05130)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 10:25:30 - 10:30:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 17750 (PIANORO -> MARZABOTTO)\nRitardo massimo rilevato:
+  0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da 
+ traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione BOLOGNA S.RUFFILLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17823--20261116-S05130@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T101130Z
 DTEND:20261117T101600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:11 - 11:16 (primo: REG 17823)
-DESCRIPTION:Stazione/PL: BOLOGNA S.RUFFILLO (S05130)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:11:30 - 11:16:00\nTre
- ni coinvolti nella chiusura:\n  - REG 17823 (BOLOGNA CENTRALE -> S.BENEDET
- TO SAMBRO-CASTIGLIONE PEPOLI)\n  - REG 17823 (BOLOGNA CENTRALE -> S.BENEDE
- TTO SAMBRO-CASTIGLIONE PEPOLI)\nRitardo massimo rilevato: 0 min\nAffidabil
- ità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
+SUMMARY:[FERMATA] REG 17823 (BOLOGNA CENTRALE -> S.BENEDETTO SAMBRO-CASTIGL
+ IONE PEPOLI) ore 11:15
+DESCRIPTION:Stazione/PL: BOLOGNA S.RUFFILLO (S05130)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 11:11:30 - 11:16:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 17823 (BOLOGNA CENTRALE -> S.BENEDETTO SAMBRO-CASTIGLION
+ E PEPOLI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota
+  normativa/euristica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione BOLOGNA S.RUFFILLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17674--20261116-S05130@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T105330Z
 DTEND:20261117T105800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:53 - 11:58 (primo: REG 17674)
+SUMMARY:[FERMATA] REG 17674 (PORRETTA  TERME -> PIANORO) ore 11:57
+DESCRIPTION:Stazione/PL: BOLOGNA S.RUFFILLO (S05130)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 11:53:30 - 11:58:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 17674 (PORRETTA  TERME -> PIANORO)\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
+ e da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione BOLOGNA S.RUFFILLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17762--20261116-S05130@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T122630Z
+DTEND:20261117T123300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:26 - 13:33 (primo: REG 17762) (+2 
+ min)
 DESCRIPTION:Stazione/PL: BOLOGNA S.RUFFILLO (S05130)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:53:30 - 11:58:00\nTre
- ni coinvolti nella chiusura:\n  - REG 17674 (PORRETTA  TERME -> PIANORO)\n
-   - REG 17674 (PORRETTA  TERME -> PIANORO)\nRitardo massimo rilevato: 0 mi
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:26:30 - 13:33:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 17762 (PIANORO -> MARZABOTTO) (+2m)\
+ n  - REG 17762 (PIANORO -> MARZABOTTO) (+2m)\nRitardo massimo rilevato: 2 
+ min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua
+  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BOLOGNA S.RUFFILLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17764--20261116-S05130@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T125530Z
+DTEND:20261117T130000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:55 - 14:00 (primo: REG 17764)
+DESCRIPTION:Stazione/PL: BOLOGNA S.RUFFILLO (S05130)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:55:30 - 14:00:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 17764 (PIANORO -> PORRETTA  TERME)\n
+   - REG 17764 (PIANORO -> PORRETTA  TERME)\nRitardo massimo rilevato: 0 mi
  n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
  er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
  ima di sgombero stradale (120s)
@@ -236,8 +317,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17768--20261116-S05130@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T135530Z
 DTEND:20261117T140000Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:55 - 15:00 (primo: REG 17768)
@@ -257,24 +338,89 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-17692--20261116-S05130@pl-tracker.local
-DTSTAMP:20261117T033028Z
+UID:train-17833--20261116-S05130@pl-tracker.local
+DTSTAMP:20261117T123134Z
 SEQUENCE:0
-DTSTART:20261117T152330Z
-DTEND:20261117T153000Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:23 - 16:30 (primo: REG 17692)
+DTSTART:20261117T141130Z
+DTEND:20261117T141600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:11 - 15:16 (primo: REG 17833)
 DESCRIPTION:Stazione/PL: BOLOGNA S.RUFFILLO (S05130)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 16:23:30 - 16:30:00\nTre
- ni coinvolti nella chiusura:\n  - REG 17692 (MARZABOTTO -> PIANORO)\n  - R
- EG 17692 (MARZABOTTO -> PIANORO)\n  - REG 17774 (PIANORO -> MARZABOTTO)\n 
-  - REG 17774 (PIANORO -> MARZABOTTO)\nRitardo massimo rilevato: 0 min\nAff
- idabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 4 t
- reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
-  sgombero stradale (120s)
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:11:30 - 15:16:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 17833 (BOLOGNA CENTRALE -> PRATO CEN
+ TRALE)\n  - REG 17833 (BOLOGNA CENTRALE -> PRATO CENTRALE)\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
+ usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
+  alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BOLOGNA S.RUFFILLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17772--20261116-S05130@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T145530Z
+DTEND:20261117T150000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:55 - 16:00 (primo: REG 17772)
+DESCRIPTION:Stazione/PL: BOLOGNA S.RUFFILLO (S05130)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:55:30 - 16:00:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 17772 (PIANORO -> PORRETTA  TERME)\n
+   - REG 17772 (PIANORO -> PORRETTA  TERME)\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
+ er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
+ ima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BOLOGNA S.RUFFILLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17692--20261116-S05130@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T152330Z
+DTEND:20261117T153000Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:23 - 16:30 (primo: REG 17692)
+DESCRIPTION:Stazione/PL: BOLOGNA S.RUFFILLO (S05130)\nRegime chiusura: CHIU
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:23:30 - 16:30:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 17692 (MARZABOTTO -> PIANORO)\n  - R
+ EG 17774 (PIANORO -> MARZABOTTO)\n  - REG 17774 (PIANORO -> MARZABOTTO)\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/e
+ uristica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BOLOGNA S.RUFFILLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17694--20261116-S05130@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T155330Z
+DTEND:20261117T155800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:53 - 16:58 (primo: REG 17694)
+DESCRIPTION:Stazione/PL: BOLOGNA S.RUFFILLO (S05130)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:53:30 - 16:58:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 17694 (PORRETTA  TERME -> PIANORO)\n
+   - REG 17694 (PORRETTA  TERME -> PIANORO)\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
+ er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
+ ima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BOLOGNA S.RUFFILLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

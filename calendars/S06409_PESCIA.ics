@@ -9,132 +9,436 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:587ee4e37a5a4503838d1dba07e4346c2b24737fb780aeefe6ec7693365e
- 942d
+X-CONTENT-HASH:5fee851155596d6bfce35438ddc1f93907716c9ab2f04a75fd6ef014efbf
+ 7255
 BEGIN:VEVENT
 UID:train-18501--20261116-S06409@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T051930Z
-DTEND:20261117T052400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:19 - 06:24 (primo: REG 18501)
-DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 06:19:30 - 06:24:00\nTreni coinvolti
-  nella chiusura:\n  - REG 18501 (VIAREGGIO -> FIRENZE SANTA MARIA NOVELLA)
- \n  - REG 18501 (VIAREGGIO -> FIRENZE SANTA MARIA NOVELLA)\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
- usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T051122Z
+DTEND:20261117T051652Z
+SUMMARY:[TRANSITO VELOCE] REG 18501 (VIAREGGIO -> FIRENZE SANTA MARIA NOVEL
+ LA) ore 06:15
+DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 06:11:22 - 06:16:52\nTreni coinvolti nella chius
+ ura:\n  - REG 18501 (VIAREGGIO -> FIRENZE SANTA MARIA NOVELLA) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Transito stimato senza fermata (48% tratta ALTOPASCIO -> MONTE
+ CARLO S.SALVATORE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18501--20261116-S06409@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T051930Z
+DTEND:20261117T052400Z
+SUMMARY:[FERMATA] REG 18501 (VIAREGGIO -> FIRENZE SANTA MARIA NOVELLA) ore 
+ 06:23
+DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 06:19:30 - 06:24:00\nTreni coinvolti nella chiusura:\n  
+ - REG 18501 (VIAREGGIO -> FIRENZE SANTA MARIA NOVELLA)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PESCIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18488--20261116-S06409@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T055435Z
-DTEND:20261117T060600Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:54 - 07:06 (primo: REG 18488)
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T055401Z
+DTEND:20261117T055931Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:54 - 06:59 (primo: REG 18488) (+3 
+ min)
 DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: CHIUSURA CONTINU
- A - 4 TRENI\nChiusura sbarre stimata: 06:54:35 - 07:06:00\nTreni coinvolti
+ A - 2 TRENI\nChiusura sbarre stimata: 06:54:01 - 06:59:31\nTreni coinvolti
   nella chiusura:\n  - REG 18488 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTR
- ALE) [Transito]\n  - REG 18488 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRA
- LE) [Transito]\n  - REG 18488 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRAL
- E)\n  - REG 18488 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE)\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
+ ALE) (+3m) [Transito]\n  - REG 18488 (FIRENZE SANTA MARIA NOVELLA -> PISA 
+ CENTRALE) (+3m) [Transito]\nRitardo massimo rilevato: 3 min\nAffidabilità
+  stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
+ rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
+ stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PESCIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18488--20261116-S06409@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T060400Z
+DTEND:20261117T061130Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:04 - 07:11 (primo: REG 18488) (+5 
+ min)
+DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 07:04:00 - 07:11:30\nTreni coinvolti
+  nella chiusura:\n  - REG 18488 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTR
+ ALE) (+5m)\n  - REG 18488 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE) (
+ +5m)\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 99%\nNota norm
+ ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PESCIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18502--20261116-S06409@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T070354Z
+DTEND:20261117T070924Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:03 - 08:09 (primo: REG 18502) (+4 
+ min)
+DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 08:03:54 - 08:09:24\nTreni coinvolti
+  nella chiusura:\n  - REG 18502 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)
+  (+4m) [Transito]\n  - REG 18502 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO
+ ) (+4m) [Transito]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 
+ 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo u
+ tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
+  (120s)
+LOCATION:Passaggio a Livello / Stazione PESCIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18502--20261116-S06409@pl-tracker.local-arr
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T071200Z
+DTEND:20261117T072000Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:12 - 08:20 (primo: REG 18502) (+10
+  min)
+DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 08:12:00 - 08:20:00\nTreni coinvolti
+  nella chiusura:\n  - REG 18502 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)
+  (+10m) [Arrivo]\n  - REG 18502 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)
+  (+10m) [Arrivo]\n  - REG 18502 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)
+  (+10m) [Partenza]\n  - REG 18502 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGI
+ O) (+10m) [Partenza]\nRitardo massimo rilevato: 10 min\nAffidabilità stim
+ a: 99%\nNota normativa/euristica: Chiusura continua per 4 treni: intervall
+ o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
+ ale (120s)
 LOCATION:Passaggio a Livello / Stazione PESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+X-PL-DELAY-MIN:10
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18462--20261116-S06409@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T072956Z
-DTEND:20261117T073526Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:29 - 08:35 (primo: REG 18462)
-DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 08:29:56 - 08:35:26\nTreni coinvolti
-  nella chiusura:\n  - REG 18462 (FIRENZE SANTA MARIA NOVELLA -> LUCCA) [Tr
- ansito]\n  - REG 18462 (FIRENZE SANTA MARIA NOVELLA -> LUCCA) [Transito]\n
- Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
- euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
- (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T072618Z
+DTEND:20261117T073148Z
+SUMMARY:[TRANSITO VELOCE] REG 18462 (FIRENZE SANTA MARIA NOVELLA -> LUCCA) 
+ ore 08:30
+DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 08:26:18 - 08:31:48\nTreni coinvolti nella chius
+ ura:\n  - REG 18462 (FIRENZE SANTA MARIA NOVELLA -> LUCCA) [Transito]\nRit
+ ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Transito stimato senza fermata (89% tratta MONTECATINI TERME-MONSU
+ MMANO -> MONTECATINI CENTRO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18462--20261116-S06409@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T073930Z
 DTEND:20261117T074400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:39 - 08:44 (primo: REG 18462)
-DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 08:39:30 - 08:44:00\nTreni coinvolti
-  nella chiusura:\n  - REG 18462 (FIRENZE SANTA MARIA NOVELLA -> LUCCA)\n  
+SUMMARY:[FERMATA] REG 18462 (FIRENZE SANTA MARIA NOVELLA -> LUCCA) ore 08:4
+ 3
+DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 08:39:30 - 08:44:00\nTreni coinvolti nella chiusura:\n  
  - REG 18462 (FIRENZE SANTA MARIA NOVELLA -> LUCCA)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura co
- ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
- glia minima di sgombero stradale (120s)
+ to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
+ da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione PESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18504--20261116-S06409@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T080730Z
-DTEND:20261117T081200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:07 - 09:12 (primo: REG 18504)
-DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 09:07:30 - 09:12:00\nTreni coinvolti
-  nella chiusura:\n  - REG 18504 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)
- \n  - REG 18504 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
- usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T075518Z
+DTEND:20261117T080048Z
+SUMMARY:[TRANSITO VELOCE] REG 18504 (FIRENZE SANTA MARIA NOVELLA -> VIAREGG
+ IO) ore 08:59
+DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 08:55:18 - 09:00:48\nTreni coinvolti nella chius
+ ura:\n  - REG 18504 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Transito stimato senza fermata (89% tratta MONTECATINI TERME-M
+ ONSUMMANO -> MONTECATINI CENTRO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18504--20261116-S06409@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T080730Z
+DTEND:20261117T081200Z
+SUMMARY:[FERMATA] REG 18504 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) ore 
+ 09:11
+DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 09:07:30 - 09:12:00\nTreni coinvolti nella chiusura:\n  
+ - REG 18504 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PESCIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18490--20261116-S06409@pl-tracker.local
-DTSTAMP:20261117T033028Z
+UID:train-18489--20261116-S06409@pl-tracker.local
+DTSTAMP:20261117T123134Z
 SEQUENCE:0
-DTSTART:20261117T112956Z
-DTEND:20261117T113526Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:29 - 12:35 (primo: REG 18490)
+DTSTART:20261117T085725Z
+DTEND:20261117T090255Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:57 - 10:02 (primo: REG 18489) (+13
+  min)
 DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 12:29:56 - 12:35:26\nTreni coinvolti
-  nella chiusura:\n  - REG 18490 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTR
- ALE) [Transito]\n  - REG 18490 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRA
- LE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\
+ A - 2 TRENI\nChiusura sbarre stimata: 09:57:25 - 10:02:55\nTreni coinvolti
+  nella chiusura:\n  - REG 18489 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVE
+ LLA) (+13m) [Transito]\n  - REG 18489 (PISA CENTRALE -> FIRENZE SANTA MARI
+ A NOVELLA) (+13m) [Transito]\nRitardo massimo rilevato: 13 min\nAffidabili
+ tà stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: i
+ ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PESCIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:13
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18489--20261116-S06409@pl-tracker.local-arr
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T090600Z
+DTEND:20261117T091430Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:06 - 10:14 (primo: REG 18489) (+5 
+ min)
+DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 10:06:00 - 10:14:30\nTreni coinvolti
+  nella chiusura:\n  - REG 18489 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVE
+ LLA) (+5m) [Arrivo]\n  - REG 18489 (PISA CENTRALE -> FIRENZE SANTA MARIA N
+ OVELLA) (+5m) [Arrivo]\n  - REG 18489 (PISA CENTRALE -> FIRENZE SANTA MARI
+ A NOVELLA) (+5m) [Partenza]\n  - REG 18489 (PISA CENTRALE -> FIRENZE SANTA
+  MARIA NOVELLA) (+5m) [Partenza]\nRitardo massimo rilevato: 5 min\nAffidab
+ ilità stima: 99%\nNota normativa/euristica: Chiusura continua per 4 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PESCIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18490--20261116-S06409@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T112618Z
+DTEND:20261117T113148Z
+SUMMARY:[TRANSITO VELOCE] REG 18490 (FIRENZE SANTA MARIA NOVELLA -> PISA CE
+ NTRALE) ore 12:30
+DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 12:26:18 - 12:31:48\nTreni coinvolti nella chius
+ ura:\n  - REG 18490 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE) [Transi
+ to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (89% tratta MONTECATINI TER
+ ME-MONSUMMANO -> MONTECATINI CENTRO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PESCIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18490--20261116-S06409@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T113930Z
+DTEND:20261117T114400Z
+SUMMARY:[FERMATA] REG 18490 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE) 
+ ore 12:43
+DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 12:39:30 - 12:44:00\nTreni coinvolti nella chiusura:\n  
+ - REG 18490 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE)\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pre
+ visione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PESCIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18512--20261116-S06409@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T115518Z
+DTEND:20261117T120153Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:55 - 13:01 (primo: REG 18512) (+4 
+ min)
+DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: CHIUSURA CONTINU
+ A - 3 TRENI\nChiusura sbarre stimata: 12:55:18 - 13:01:53\nTreni coinvolti
+  nella chiusura:\n  - REG 18512 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)
+  [Transito]\n  - REG 18473 (LUCCA -> FIRENZE SANTA MARIA NOVELLA) (+4m) [T
+ ransito]\n  - REG 18473 (LUCCA -> FIRENZE SANTA MARIA NOVELLA) (+4m) [Tran
+ sito]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota nor
+ mativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i pa
+ ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PESCIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18473--20261116-S06409@pl-tracker.local-arr
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T120630Z
+DTEND:20261117T121730Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 13:06 - 13:17 (primo: REG 18473) (+8 
+ min)
+DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: CHIUSURA CONTINU
+ A - 5 TRENI\nChiusura sbarre stimata: 13:06:30 - 13:17:30\nTreni coinvolti
+  nella chiusura:\n  - REG 18473 (LUCCA -> FIRENZE SANTA MARIA NOVELLA) (+8
+ m) [Arrivo]\n  - REG 18473 (LUCCA -> FIRENZE SANTA MARIA NOVELLA) (+8m) [A
+ rrivo]\n  - REG 18512 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)\n  - REG 
+ 18473 (LUCCA -> FIRENZE SANTA MARIA NOVELLA) (+8m) [Partenza]\n  - REG 184
+ 73 (LUCCA -> FIRENZE SANTA MARIA NOVELLA) (+8m) [Partenza]\nRitardo massim
+ o rilevato: 8 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
+ usura continua per 5 treni: intervallo utile tra i passaggi (0s) inferiore
+  alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PESCIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18491--20261116-S06409@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T125036Z
+DTEND:20261117T125700Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 13:50 - 13:57 (primo: REG 18491) (+6 
+ min)
+DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 13:50:36 - 13:57:00\nTreni coinvolti
+  nella chiusura:\n  - REG 18491 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVE
+ LLA) [Transito]\n  - REG 18491 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVEL
+ LA) [Transito]\n  - REG 18517 (VIAREGGIO -> FIRENZE SANTA MARIA NOVELLA) (
+ +6m)\n  - REG 18517 (VIAREGGIO -> FIRENZE SANTA MARIA NOVELLA) (+6m)\nRita
+ rdo massimo rilevato: 6 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s)
+  inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PESCIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18491--20261116-S06409@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T130230Z
+DTEND:20261117T130700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:02 - 14:07 (primo: REG 18491)
+DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 14:02:30 - 14:07:00\nTreni coinvolti
+  nella chiusura:\n  - REG 18491 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVE
+ LLA)\n  - REG 18491 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVELLA)\nRitard
+ o massimo rilevato: -2 min\nAffidabilità stima: 90%\nNota normativa/euris
+ tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
+ inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PESCIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-2
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18493--20261116-S06409@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T145236Z
+DTEND:20261117T145806Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:52 - 15:58 (primo: REG 18493)
+DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 15:52:36 - 15:58:06\nTreni coinvolti
+  nella chiusura:\n  - REG 18493 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVE
+ LLA) [Transito]\n  - REG 18493 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVEL
+ LA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\
  nNota normativa/euristica: Chiusura continua per 2 treni: intervallo utile
   tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (12
  0s)
@@ -147,16 +451,16 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18490--20261116-S06409@pl-tracker.local
-DTSTAMP:20261117T033028Z
+UID:train-18493--20261116-S06409@pl-tracker.local
+DTSTAMP:20261117T123134Z
 SEQUENCE:0
-DTSTART:20261117T113930Z
-DTEND:20261117T114400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:39 - 12:44 (primo: REG 18490)
+DTSTART:20261117T150430Z
+DTEND:20261117T150900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:04 - 16:09 (primo: REG 18493)
 DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 12:39:30 - 12:44:00\nTreni coinvolti
-  nella chiusura:\n  - REG 18490 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTR
- ALE)\n  - REG 18490 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE)\nRitard
+ A - 2 TRENI\nChiusura sbarre stimata: 16:04:30 - 16:09:00\nTreni coinvolti
+  nella chiusura:\n  - REG 18493 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVE
+ LLA)\n  - REG 18493 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVELLA)\nRitard
  o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
  ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
  nferiore alla soglia minima di sgombero stradale (120s)
@@ -169,38 +473,102 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18512--20261116-S06409@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T120730Z
-DTEND:20261117T121200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:07 - 13:12 (primo: REG 18512)
-DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 13:07:30 - 13:12:00\nTreni coinvolti
-  nella chiusura:\n  - REG 18512 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)
- \n  - REG 18512 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
- usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
+UID:train-18476--20261116-S06409@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T152618Z
+DTEND:20261117T153148Z
+SUMMARY:[TRANSITO VELOCE] REG 18476 (FIRENZE SANTA MARIA NOVELLA -> LUCCA) 
+ ore 16:30
+DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 16:26:18 - 16:31:48\nTreni coinvolti nella chius
+ ura:\n  - REG 18476 (FIRENZE SANTA MARIA NOVELLA -> LUCCA) [Transito]\nRit
+ ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Transito stimato senza fermata (89% tratta MONTECATINI TERME-MONSU
+ MMANO -> MONTECATINI CENTRO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18476--20261116-S06409@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T153930Z
+DTEND:20261117T154400Z
+SUMMARY:[FERMATA] REG 18476 (FIRENZE SANTA MARIA NOVELLA -> LUCCA) ore 16:4
+ 3
+DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 16:39:30 - 16:44:00\nTreni coinvolti nella chiusura:\n  
+ - REG 18476 (FIRENZE SANTA MARIA NOVELLA -> LUCCA)\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
+ da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PESCIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18476--20261116-S06409@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T152956Z
-DTEND:20261117T153526Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:29 - 16:35 (primo: REG 18476)
+UID:train-18524--20261116-S06409@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T165518Z
+DTEND:20261117T170048Z
+SUMMARY:[TRANSITO VELOCE] REG 18524 (FIRENZE SANTA MARIA NOVELLA -> VIAREGG
+ IO) ore 17:59
+DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 17:55:18 - 18:00:48\nTreni coinvolti nella chius
+ ura:\n  - REG 18524 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Transito stimato senza fermata (89% tratta MONTECATINI TERME-M
+ ONSUMMANO -> MONTECATINI CENTRO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PESCIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18524--20261116-S06409@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T170730Z
+DTEND:20261117T171200Z
+SUMMARY:[FERMATA] REG 18524 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) ore 
+ 18:11
+DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 18:07:30 - 18:12:00\nTreni coinvolti nella chiusura:\n  
+ - REG 18524 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PESCIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18485--20261116-S06409@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T185236Z
+DTEND:20261117T185806Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:52 - 19:58 (primo: REG 18485)
 DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 16:29:56 - 16:35:26\nTreni coinvolti
-  nella chiusura:\n  - REG 18476 (FIRENZE SANTA MARIA NOVELLA -> LUCCA) [Tr
- ansito]\n  - REG 18476 (FIRENZE SANTA MARIA NOVELLA -> LUCCA) [Transito]\n
+ A - 2 TRENI\nChiusura sbarre stimata: 19:52:36 - 19:58:06\nTreni coinvolti
+  nella chiusura:\n  - REG 18485 (LUCCA -> FIRENZE SANTA MARIA NOVELLA) [Tr
+ ansito]\n  - REG 18485 (LUCCA -> FIRENZE SANTA MARIA NOVELLA) [Transito]\n
  Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
  euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
  (0s) inferiore alla soglia minima di sgombero stradale (120s)
@@ -213,53 +581,9 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18476--20261116-S06409@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T153930Z
-DTEND:20261117T154400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:39 - 16:44 (primo: REG 18476)
-DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 16:39:30 - 16:44:00\nTreni coinvolti
-  nella chiusura:\n  - REG 18476 (FIRENZE SANTA MARIA NOVELLA -> LUCCA)\n  
- - REG 18476 (FIRENZE SANTA MARIA NOVELLA -> LUCCA)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura co
- ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
- glia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PESCIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18524--20261116-S06409@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T170730Z
-DTEND:20261117T171200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:07 - 18:12 (primo: REG 18524)
-DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 18:07:30 - 18:12:00\nTreni coinvolti
-  nella chiusura:\n  - REG 18524 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)
- \n  - REG 18524 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
- usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PESCIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-18485--20261116-S06409@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T190430Z
 DTEND:20261117T190900Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:04 - 20:09 (primo: REG 18485)
@@ -279,27 +603,68 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18534--20261116-S06409@pl-tracker.local
-DTSTAMP:20261117T033028Z
+UID:train-18486--20261116-S06409@pl-tracker.local
+DTSTAMP:20261117T123134Z
 SEQUENCE:0
-DTSTART:20261117T210517Z
-DTEND:20261117T211700Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 22:05 - 22:17 (primo: REG 18534)
+DTSTART:20261117T203041Z
+DTEND:20261117T203611Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:30 - 21:36 (primo: REG 18486)
 DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: CHIUSURA CONTINU
- A - 4 TRENI\nChiusura sbarre stimata: 22:05:17 - 22:17:00\nTreni coinvolti
-  nella chiusura:\n  - REG 18534 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)
-  [Transito]\n  - REG 18534 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) [Tra
- nsito]\n  - REG 18534 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)\n  - REG 
- 18534 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
- inua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 21:30:41 - 21:36:11\nTreni coinvolti
+  nella chiusura:\n  - REG 18486 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)
+  [Transito]\n  - REG 18486 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) [Tra
+ nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i p
+ assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18534--20261116-S06409@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T210124Z
+DTEND:20261117T210654Z
+SUMMARY:[TRANSITO VELOCE] REG 18534 (FIRENZE SANTA MARIA NOVELLA -> VIAREGG
+ IO) ore 22:05
+DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 22:01:24 - 22:06:54\nTreni coinvolti nella chius
+ ura:\n  - REG 18534 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Transito stimato senza fermata (89% tratta MONTECATINI TERME-M
+ ONSUMMANO -> MONTECATINI CENTRO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PESCIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18534--20261116-S06409@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T211230Z
+DTEND:20261117T211700Z
+SUMMARY:[FERMATA] REG 18534 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) ore 
+ 22:16
+DESCRIPTION:Stazione/PL: PESCIA (S06409)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 22:12:30 - 22:17:00\nTreni coinvolti nella chiusura:\n  
+ - REG 18534 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PESCIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

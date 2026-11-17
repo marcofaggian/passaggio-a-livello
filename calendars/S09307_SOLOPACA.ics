@@ -9,48 +9,68 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:baf272b53c51fc02da2d929e1efe3e02c7aaf33c786609d173cf8371d4f4
- 4be5
+X-CONTENT-HASH:f1f601b7702827e162df9111aec567c19002f633a477d591ebd135590db1
+ c8a9
 BEGIN:VEVENT
-UID:train-21179--20261116-S09307@pl-tracker.local
-DTSTAMP:20261117T033028Z
+UID:train-9511--20261116-S09307@pl-tracker.local
+DTSTAMP:20261117T123134Z
 SEQUENCE:0
-DTSTART:20261117T121730Z
-DTEND:20261117T122200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:17 - 13:22 (primo: REG 21179)
+DTSTART:20261117T103535Z
+DTEND:20261117T104105Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:35 - 11:41 (primo: TRENO 9511) (+2
+  min)
 DESCRIPTION:Stazione/PL: SOLOPACA (S09307)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 13:17:30 - 13:22:00\nTreni coinvol
- ti nella chiusura:\n  - REG 21179 (NAPOLI CENTRALE -> BENEVENTO)\n  - REG 
- 21179 (NAPOLI CENTRALE -> BENEVENTO)\nRitardo massimo rilevato: 0 min\nAff
- idabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 t
- reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
-  sgombero stradale (120s)
+ NUA - 2 TRENI\nChiusura sbarre stimata: 11:35:35 - 11:41:05\nTreni coinvol
+ ti nella chiusura:\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) (+2m) [Trans
+ ito]\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) (+2m) [Transito]\nRitardo 
+ massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SOLOPACA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21179--20261116-S09307@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T121730Z
+DTEND:20261117T122200Z
+SUMMARY:[FERMATA] REG 21179 (NAPOLI CENTRALE -> BENEVENTO) ore 13:21
+DESCRIPTION:Stazione/PL: SOLOPACA (S09307)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 13:17:30 - 13:22:00\nTreni coinvolti nella chiusura:\n
+   - REG 21179 (NAPOLI CENTRALE -> BENEVENTO)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
+ ccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione SOLOPACA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9647--20261116-S09307@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T202431Z
 DTEND:20261117T203001Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:24 - 21:30 (primo: TRENO 9647)
-DESCRIPTION:Stazione/PL: SOLOPACA (S09307)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 21:24:31 - 21:30:01\nTreni coinvol
- ti nella chiusura:\n  - TRENO 9647 (MILANO CENTRALE -> FOGGIA) [Transito]\
- n  - TRENO 9647 (MILANO CENTRALE -> FOGGIA) [Transito]\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] TRENO 9647 (MILANO CENTRALE -> FOGGIA) ore 21:28
+DESCRIPTION:Stazione/PL: SOLOPACA (S09307)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 21:24:31 - 21:30:01\nTreni coinvolti nella chi
+ usura:\n  - TRENO 9647 (MILANO CENTRALE -> FOGGIA) [Transito]\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Transito stimato senza fermata (56% tratta CASERTA -> BENEVENTO\; pedale a
+ nnuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SOLOPACA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO

@@ -9,44 +9,65 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:28cb20208e24b84aa529b91ef3240415d014bf609659c482c33818bc497a
- 9805
+X-CONTENT-HASH:a6bcd5095a7b3d7ee22401c0cc62ecdc567eb261743e1b9ae791b7f28055
+ d844
 BEGIN:VEVENT
 UID:train-3477--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T042901Z
-DTEND:20261117T043431Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:29 - 05:34 (primo: REG 3477)
-DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 05:29:01 - 05:34:31\nTreni coin
- volti nella chiusura:\n  - REG 3477 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA
- ) [Transito]\n  - REG 3477 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T044330Z
+DTEND:20261117T044800Z
+SUMMARY:[FERMATA] REG 3477 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) ore 05:4
+ 7
+DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 05:43:30 - 05:48:00\nTreni coinvolti nella chiusura
+ :\n  - REG 3477 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previs
+ ione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17176--20261116-S02440@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T050906Z
+DTEND:20261117T051436Z
+SUMMARY:[TRANSITO VELOCE] REG 17176 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
+  ore 06:13
+DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 06:09:06 - 06:14:36\nTreni coinvolti nella 
+ chiusura:\n  - REG 17176 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Transito
+ ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
+ va/euristica: Transito stimato senza fermata (48% tratta VICENZA -> ALTAVI
+ LLA TAVERNELLE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3477--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T044330Z
-DTEND:20261117T044800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:43 - 05:48 (primo: REG 3477)
+UID:train-17176--20261116-S02440@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T053030Z
+DTEND:20261117T053900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:30 - 06:39 (primo: REG 17176)
 DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 05:43:30 - 05:48:00\nTreni coin
- volti nella chiusura:\n  - REG 3477 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA
- )\n  - REG 3477 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 06:30:30 - 06:39:00\nTreni coin
+ volti nella chiusura:\n  - REG 17176 (VENEZIA S.LUCIA -> VERONA PORTA NUOV
+ A)\n  - REG 3479 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chius
+ ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -56,334 +77,430 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-17176--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T050854Z
-DTEND:20261117T051424Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:08 - 06:14 (primo: REG 17176)
+UID:train-16277--20261116-S02440@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T054158Z
+DTEND:20261117T054728Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:41 - 06:47 (primo: REG 16277)
 DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 06:08:54 - 06:14:24\nTreni coin
- volti nella chiusura:\n  - REG 17176 (VENEZIA S.LUCIA -> VERONA PORTA NUOV
- A) [Transito]\n  - REG 17176 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Tran
- sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pa
- ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 06:41:58 - 06:47:28\nTreni coin
+ volti nella chiusura:\n  - REG 16277 (BRESCIA -> VENEZIA S.LUCIA) [Transit
+ o]\n  - REG 16277 (BRESCIA -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo
+  rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
+ usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
+  alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3479--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T051926Z
-DTEND:20261117T052456Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:19 - 06:24 (primo: REG 3479)
-DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 06:19:26 - 06:24:56\nTreni coin
- volti nella chiusura:\n  - REG 3479 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA
- ) [Transito]\n  - REG 3479 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17176--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T053030Z
-DTEND:20261117T053900Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 06:30 - 06:39 (primo: REG 17176)
-DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 6 TRENI\nChiusura sbarre stimata: 06:30:30 - 06:39:00\nTreni coin
- volti nella chiusura:\n  - REG 17176 (VENEZIA S.LUCIA -> VERONA PORTA NUOV
- A)\n  - REG 17176 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\n  - REG 16277 (
- BRESCIA -> VENEZIA S.LUCIA) [Transito]\n  - REG 16277 (BRESCIA -> VENEZIA 
- S.LUCIA) [Transito]\n  - REG 3479 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\
- n  - REG 3479 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
-  continua per 6 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16277--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T055430Z
-DTEND:20261117T055900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:54 - 06:59 (primo: REG 16277)
-DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 06:54:30 - 06:59:00\nTreni coin
- volti nella chiusura:\n  - REG 16277 (BRESCIA -> VENEZIA S.LUCIA)\n  - REG
-  16277 (BRESCIA -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\nAffi
- dabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tr
- eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
- sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3483--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T060430Z
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T055630Z
 DTEND:20261117T061300Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:04 - 07:13 (primo: REG 3483)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:56 - 07:13 (primo: REG 16277) (+4 
+ min)
 DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 4 TRENI\nChiusura sbarre stimata: 07:04:30 - 07:13:00\nTreni coin
- volti nella chiusura:\n  - REG 3483 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA
- )\n  - REG 3483 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - REG 3478 (VEN
- EZIA S.LUCIA -> VERONA PORTA NUOVA)\n  - REG 3478 (VENEZIA S.LUCIA -> VERO
- NA PORTA NUOVA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%
- \nNota normativa/euristica: Chiusura continua per 4 treni: intervallo util
- e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
- 20s)
+ NTINUA - 4 TRENI\nChiusura sbarre stimata: 06:56:30 - 07:13:00\nTreni coin
+ volti nella chiusura:\n  - REG 16277 (BRESCIA -> VENEZIA S.LUCIA) (+4m)\n 
+  - REG 16277 (BRESCIA -> VENEZIA S.LUCIA) (+4m)\n  - REG 3483 (VERONA PORT
+ A NUOVA -> VENEZIA S.LUCIA)\n  - REG 3478 (VENEZIA S.LUCIA -> VERONA PORTA
+  NUOVA)\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 90%\nNota n
+ ormativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i 
+ passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-17162--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
+UID:train-17181--20261116-S02440@pl-tracker.local
+DTSTAMP:20261117T123134Z
 SEQUENCE:0
-DTSTART:20261117T061654Z
-DTEND:20261117T062224Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:16 - 07:22 (primo: REG 17162)
+DTSTART:20261117T061558Z
+DTEND:20261117T062236Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:15 - 07:22 (primo: REG 17181)
 DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 07:16:54 - 07:22:24\nTreni coin
- volti nella chiusura:\n  - REG 17162 (VENEZIA S.LUCIA -> VERONA PORTA NUOV
- A) [Transito]\n  - REG 17162 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Tran
- sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pa
- ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ NTINUA - 3 TRENI\nChiusura sbarre stimata: 07:15:58 - 07:22:36\nTreni coin
+ volti nella chiusura:\n  - REG 17181 (VERONA PORTA NUOVA -> VENEZIA S.LUCI
+ A) [Transito]\n  - REG 17181 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Tran
+ sito]\n  - REG 17162 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Transito]\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-17162--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
+UID:train-17181--20261116-S02440@pl-tracker.local-arr
+DTSTAMP:20261117T123134Z
 SEQUENCE:0
-DTSTART:20261117T063730Z
-DTEND:20261117T064200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:37 - 07:42 (primo: REG 17162)
+DTSTART:20261117T063100Z
+DTEND:20261117T064501Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 07:31 - 07:45 (primo: REG 17181) (+10
+  min)
 DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 07:37:30 - 07:42:00\nTreni coin
- volti nella chiusura:\n  - REG 17162 (VENEZIA S.LUCIA -> VERONA PORTA NUOV
- A)\n  - REG 17162 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiu
- sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
+ NTINUA - 7 TRENI\nChiusura sbarre stimata: 07:31:00 - 07:45:01\nTreni coin
+ volti nella chiusura:\n  - REG 17181 (VERONA PORTA NUOVA -> VENEZIA S.LUCI
+ A) (+10m) [Arrivo]\n  - REG 17181 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) 
+ (+10m) [Arrivo]\n  - REG 17097 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+4
+ m) [Transito]\n  - REG 17181 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+10m
+ ) [Partenza]\n  - REG 17181 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+10m)
+  [Partenza]\n  - REG 17162 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\n  - RE
+ G 17097 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+4m) [Transito]\nRitardo 
+ massimo rilevato: 10 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Chiusura continua per 7 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+X-PL-DELAY-MIN:10
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17097--20261116-S02440@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T065330Z
+DTEND:20261117T070030Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:53 - 08:00 (primo: REG 17097) (+3 
+ min)
+DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 07:53:30 - 08:00:30\nTreni coin
+ volti nella chiusura:\n  - REG 17097 (VERONA PORTA NUOVA -> VENEZIA S.LUCI
+ A) (+3m)\n  - REG 17097 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+3m)\nRit
+ ardo massimo rilevato: 3 min\nAffidabilità stima: 99%\nNota normativa/eur
+ istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9708--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
+UID:train-17164--20261116-S02440@pl-tracker.local
+DTSTAMP:20261117T123134Z
 SEQUENCE:0
-DTSTART:20261117T070627Z
-DTEND:20261117T071157Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:06 - 08:11 (primo: TRENO 9708)
+DTSTART:20261117T073125Z
+DTEND:20261117T073655Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:31 - 08:36 (primo: REG 17164) (+3 
+ min)
 DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 08:06:27 - 08:11:57\nTreni coin
- volti nella chiusura:\n  - TRENO 9708 (VENEZIA S.LUCIA -> MILANO CENTRALE)
-  [Transito]\n  - TRENO 9708 (VENEZIA S.LUCIA -> MILANO CENTRALE) [Transito
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 08:31:25 - 08:36:55\nTreni coin
+ volti nella chiusura:\n  - REG 17164 (VENEZIA S.LUCIA -> VERONA PORTA NUOV
+ A) (+3m) [Transito]\n  - REG 17164 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
+  (+3m) [Transito]\nRitardo massimo rilevato: 3 min\nAffidabilità stima: 7
+ 8%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo ut
+ ile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale 
+ (120s)
+LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17257--20261116-S02440@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T074258Z
+DTEND:20261117T074828Z
+SUMMARY:[TRANSITO VELOCE] REG 17257 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)
+  ore 08:47
+DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 08:42:58 - 08:48:28\nTreni coinvolti nella 
+ chiusura:\n  - REG 17257 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito
  ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
- va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
- gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ va/euristica: Transito stimato senza fermata (45% tratta VERONA PORTA VESC
+ OVO -> S.MARTINO BUONALBERGO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17257--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T073826Z
-DTEND:20261117T074356Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:38 - 08:43 (primo: REG 17257)
-DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 08:38:26 - 08:43:56\nTreni coin
- volti nella chiusura:\n  - REG 17257 (VERONA PORTA NUOVA -> VENEZIA S.LUCI
- A) [Transito]\n  - REG 17257 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Tran
- sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pa
- ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17257--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T080330Z
 DTEND:20261117T081300Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 09:03 - 09:13 (primo: REG 17257)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 09:03 - 09:13 (primo: REG 17257)
 DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 8 TRENI\nChiusura sbarre stimata: 09:03:30 - 09:13:00\nTreni coin
+ NTINUA - 3 TRENI\nChiusura sbarre stimata: 09:03:30 - 09:13:00\nTreni coin
  volti nella chiusura:\n  - REG 17257 (VERONA PORTA NUOVA -> VENEZIA S.LUCI
- A)\n  - REG 17257 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - TRENO 9707 
- (MILANO CENTRALE -> TRIESTE CENTRALE) [Transito]\n  - TRENO 9707 (MILANO C
- ENTRALE -> TRIESTE CENTRALE) [Transito]\n  - TRENO 9716 (VENEZIA S.LUCIA -
- > TORINO PORTA NUOVA) [Transito]\n  - TRENO 9716 (VENEZIA S.LUCIA -> TORIN
- O PORTA NUOVA) [Transito]\n  - REG 3486 (VENEZIA S.LUCIA -> VERONA PORTA N
- UOVA)\n  - REG 3486 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
- iusura continua per 8 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+ A)\n  - TRENO 9707 (MILANO CENTRALE -> TRIESTE CENTRALE) [Transito]\n  - R
+ EG 3486 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitardo massimo rilevato:
+  0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
+ nua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17250--20261116-S02440@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T082124Z
+DTEND:20261117T082654Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:21 - 09:26 (primo: REG 17250)
+DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 09:21:24 - 09:26:54\nTreni coin
+ volti nella chiusura:\n  - REG 17250 (VENEZIA S.LUCIA -> VERONA PORTA NUOV
+ A) [Transito]\n  - REG 17250 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Tran
+ sito]\nRitardo massimo rilevato: -4 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i p
+ assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17250--20261116-S02440@pl-tracker.local-arr
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T084330Z
+DTEND:20261117T084800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:43 - 09:48 (primo: REG 17250) (+9 
+ min)
+DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 09:43:30 - 09:48:00\nTreni coin
+ volti nella chiusura:\n  - REG 17250 (VENEZIA S.LUCIA -> VERONA PORTA NUOV
+ A) (+9m) [Arrivo]\n  - REG 17250 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (
+ +9m) [Arrivo]\nRitardo massimo rilevato: 9 min\nAffidabilità stima: 99%\n
+ Nota normativa/euristica: Chiusura continua per 2 treni: intervallo utile 
+ tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
+ s)
+LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:9
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17250--20261116-S02440@pl-tracker.local-dep
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T085300Z
+DTEND:20261117T085730Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:53 - 09:57 (primo: REG 17250) (+9 
+ min)
+DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 09:53:00 - 09:57:30\nTreni coin
+ volti nella chiusura:\n  - REG 17250 (VENEZIA S.LUCIA -> VERONA PORTA NUOV
+ A) (+9m) [Partenza]\n  - REG 17250 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
+  (+9m) [Partenza]\nRitardo massimo rilevato: 9 min\nAffidabilità stima: 9
+ 9%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo ut
+ ile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale 
+ (120s)
+LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:9
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9710--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T090435Z
-DTEND:20261117T091005Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:04 - 10:10 (primo: TRENO 9710)
-DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 10:04:35 - 10:10:05\nTreni coin
- volti nella chiusura:\n  - TRENO 9710 (GENOVA BRIGNOLE -> VENEZIA S.LUCIA)
-  [Transito]\n  - TRENO 9710 (GENOVA BRIGNOLE -> VENEZIA S.LUCIA) [Transito
- ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
- va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
- gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T090426Z
+DTEND:20261117T090956Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9710 (GENOVA BRIGNOLE -> VENEZIA S.LUCIA) o
+ re 10:08
+DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 10:04:26 - 10:09:56\nTreni coinvolti nella 
+ chiusura:\n  - TRENO 9710 (GENOVA BRIGNOLE -> VENEZIA S.LUCIA) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Transito stimato senza fermata (40% tratta VERONA PORTA NUOVA 
+ -> VICENZA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3495--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T091926Z
-DTEND:20261117T092456Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:19 - 10:24 (primo: REG 3495)
-DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 10:19:26 - 10:24:56\nTreni coin
- volti nella chiusura:\n  - REG 3495 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA
- ) [Transito]\n  - REG 3495 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3495--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T093430Z
 DTEND:20261117T093900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:34 - 10:39 (primo: REG 3495)
-DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 10:34:30 - 10:39:00\nTreni coin
- volti nella chiusura:\n  - REG 3495 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA
- )\n  - REG 3495 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 3495 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) ore 10:3
+ 8
+DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 10:34:30 - 10:39:00\nTreni coinvolti nella chiusura
+ :\n  - REG 3495 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previs
+ ione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9723--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T120435Z
-DTEND:20261117T121005Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:04 - 13:10 (primo: TRENO 9723)
-DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 13:04:35 - 13:10:05\nTreni coin
- volti nella chiusura:\n  - TRENO 9723 (MILANO CENTRALE -> VENEZIA S.LUCIA)
-  [Transito]\n  - TRENO 9723 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Transito
- ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
- va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
- gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T120426Z
+DTEND:20261117T120956Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9723 (MILANO CENTRALE -> VENEZIA S.LUCIA) o
+ re 13:08
+DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 13:04:26 - 13:09:56\nTreni coinvolti nella 
+ chiusura:\n  - TRENO 9723 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Transito stimato senza fermata (40% tratta VERONA PORTA NUOVA 
+ -> VICENZA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17196--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T121654Z
-DTEND:20261117T122224Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:16 - 13:22 (primo: REG 17196)
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T122324Z
+DTEND:20261117T122854Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:23 - 13:28 (primo: REG 17196) (+7 
+ min)
 DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 13:16:54 - 13:22:24\nTreni coin
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 13:23:24 - 13:28:54\nTreni coin
  volti nella chiusura:\n  - REG 17196 (VENEZIA S.LUCIA -> VERONA PORTA NUOV
- A) [Transito]\n  - REG 17196 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Tran
+ A) (+7m) [Transito]\n  - REG 17196 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
+  (+7m) [Transito]\nRitardo massimo rilevato: 7 min\nAffidabilità stima: 7
+ 8%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo ut
+ ile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale 
+ (120s)
+LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3497--20261116-S02440@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T123430Z
+DTEND:20261117T123900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:34 - 13:39 (primo: REG 3497)
+DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 13:34:30 - 13:39:00\nTreni coin
+ volti nella chiusura:\n  - REG 3497 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA
+ )\n  - REG 3497 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
+ ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
+ la soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17196--20261116-S02440@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T124430Z
+DTEND:20261117T124900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:44 - 13:49 (primo: REG 17196) (+7 
+ min)
+DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 13:44:30 - 13:49:00\nTreni coin
+ volti nella chiusura:\n  - REG 17196 (VENEZIA S.LUCIA -> VERONA PORTA NUOV
+ A) (+7m)\n  - REG 17196 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+7m)\nRit
+ ardo massimo rilevato: 7 min\nAffidabilità stima: 90%\nNota normativa/eur
+ istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3499--20261116-S02440@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T133430Z
+DTEND:20261117T133900Z
+SUMMARY:[FERMATA] REG 3499 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) ore 14:3
+ 8
+DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 14:34:30 - 14:39:00\nTreni coinvolti nella chiusura
+ :\n  - REG 3499 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previs
+ ione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16281--20261116-S02440@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T134258Z
+DTEND:20261117T134828Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:42 - 14:48 (primo: REG 16281)
+DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 14:42:58 - 14:48:28\nTreni coin
+ volti nella chiusura:\n  - REG 16281 (VERONA PORTA NUOVA -> VENEZIA S.LUCI
+ A) [Transito]\n  - REG 16281 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Tran
  sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
  mativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pa
  ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
@@ -396,77 +513,9 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-17196--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T123730Z
-DTEND:20261117T124200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:37 - 13:42 (primo: REG 17196)
-DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 13:37:30 - 13:42:00\nTreni coin
- volti nella chiusura:\n  - REG 17196 (VENEZIA S.LUCIA -> VERONA PORTA NUOV
- A)\n  - REG 17196 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiu
- sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3499--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T131926Z
-DTEND:20261117T132456Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:19 - 14:24 (primo: REG 3499)
-DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 14:19:26 - 14:24:56\nTreni coin
- volti nella chiusura:\n  - REG 3499 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA
- ) [Transito]\n  - REG 3499 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3499--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T133430Z
-DTEND:20261117T134356Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 14:34 - 14:43 (primo: REG 3499)
-DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 4 TRENI\nChiusura sbarre stimata: 14:34:30 - 14:43:56\nTreni coin
- volti nella chiusura:\n  - REG 3499 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA
- )\n  - REG 3499 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - REG 16281 (VE
- RONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\n  - REG 16281 (VERONA POR
- TA NUOVA -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 
- 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
-  di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-16281--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T140330Z
 DTEND:20261117T140800Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:03 - 15:08 (primo: REG 16281)
@@ -487,44 +536,64 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9733--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T143435Z
-DTEND:20261117T144356Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:34 - 15:43 (primo: TRENO 9733)
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T143426Z
+DTEND:20261117T143956Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:34 - 15:39 (primo: TRENO 9733)
 DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 4 TRENI\nChiusura sbarre stimata: 15:34:35 - 15:43:56\nTreni coin
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 15:34:26 - 15:39:56\nTreni coin
  volti nella chiusura:\n  - TRENO 9733 (MILANO CENTRALE -> VENEZIA S.LUCIA)
   [Transito]\n  - TRENO 9733 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Transito
- ]\n  - REG 17221 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\n  - R
- EG 17221 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
- iusura continua per 4 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+ ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
+ va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
+ gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17221--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T144258Z
+DTEND:20261117T144828Z
+SUMMARY:[TRANSITO VELOCE] REG 17221 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)
+  ore 15:47
+DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 15:42:58 - 15:48:28\nTreni coinvolti nella 
+ chiusura:\n  - REG 17221 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito
+ ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
+ va/euristica: Transito stimato senza fermata (45% tratta VERONA PORTA VESC
+ OVO -> S.MARTINO BUONALBERGO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17221--20261116-S02440@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T150330Z
-DTEND:20261117T151005Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:03 - 16:10 (primo: REG 17221)
+DTEND:20261117T151300Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:03 - 16:13 (primo: REG 17221)
 DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 4 TRENI\nChiusura sbarre stimata: 16:03:30 - 16:10:05\nTreni coin
+ NTINUA - 4 TRENI\nChiusura sbarre stimata: 16:03:30 - 16:13:00\nTreni coin
  volti nella chiusura:\n  - REG 17221 (VERONA PORTA NUOVA -> VENEZIA S.LUCI
- A)\n  - REG 17221 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - TRENO 9735 
- (MILANO CENTRALE -> VENEZIA S.LUCIA) [Transito]\n  - TRENO 9735 (MILANO CE
- NTRALE -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo rilevato: 0 min\nAf
- fidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 
- treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
- i sgombero stradale (120s)
+ A)\n  - TRENO 9735 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Transito]\n  - RE
+ G 3498 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\n  - REG 3498 (VENEZIA S.LU
+ CIA -> VERONA PORTA NUOVA)\nRitardo massimo rilevato: 0 min\nAffidabilità
+  stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: inte
+ rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
+ stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -535,57 +604,54 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3505--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T151926Z
 DTEND:20261117T152456Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:19 - 16:24 (primo: REG 3505)
-DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 16:19:26 - 16:24:56\nTreni coin
- volti nella chiusura:\n  - REG 3505 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA
- ) [Transito]\n  - REG 3505 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 3505 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) 
+ ore 16:23
+DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 16:19:26 - 16:24:56\nTreni coinvolti nella 
+ chiusura:\n  - REG 3505 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Transito stimato senza fermata (42% tratta VERONA PORTA NUOVA
+  -> VERONA PORTA VESCOVO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17227--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T153152Z
-DTEND:20261117T154157Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 16:31 - 16:41 (primo: REG 17227)
+DTEND:20261117T154228Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:31 - 16:42 (primo: REG 17227)
 DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 8 TRENI\nChiusura sbarre stimata: 16:31:52 - 16:41:57\nTreni coin
+ NTINUA - 4 TRENI\nChiusura sbarre stimata: 16:31:52 - 16:42:28\nTreni coin
  volti nella chiusura:\n  - REG 17227 (VERONA PORTA NUOVA -> VENEZIA S.LUCI
- A) [Transito]\n  - REG 17227 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Tran
- sito]\n  - REG 3505 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - REG 3505 
- (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - TRENO 9737 (MILANO CENTRALE -
- > TRIESTE CENTRALE) [Transito]\n  - TRENO 9737 (MILANO CENTRALE -> TRIESTE
-  CENTRALE) [Transito]\n  - TRENO 9744 (VENEZIA S.LUCIA -> GENOVA BRIGNOLE)
-  [Transito]\n  - TRENO 9744 (VENEZIA S.LUCIA -> GENOVA BRIGNOLE) [Transito
- ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
- va/euristica: Chiusura continua per 8 treni: intervallo utile tra i passag
- gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ A) [Transito]\n  - REG 3505 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - T
+ RENO 9737 (MILANO CENTRALE -> TRIESTE CENTRALE) [Transito]\n  - REG 17227 
+ (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
+ ntinua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17227--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T155230Z
 DTEND:20261117T155700Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:52 - 16:57 (primo: REG 17227)
@@ -606,59 +672,36 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-85--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T160921Z
-DTEND:20261117T161351Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:09 - 17:13 (primo: EC 85)
-DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 17:09:21 - 17:13:51\nTreni coin
- volti nella chiusura:\n  - EC 85 (BRENNERO -> VENEZIA S.LUCIA) [Transito]\
- n  - EC 85 (BRENNERO -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T160909Z
+DTEND:20261117T161339Z
+SUMMARY:[TRANSITO VELOCE] EC 85 (BRENNERO -> VENEZIA S.LUCIA) ore 17:12
+DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 17:09:09 - 17:13:39\nTreni coinvolti nella 
+ chiusura:\n  - EC 85 (BRENNERO -> VENEZIA S.LUCIA) [Transito]\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Transito stimato senza fermata (40% tratta VERONA PORTA NUOVA -> VICENZA\;
+  pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:EC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9748--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
+UID:train-17208--20261116-S02440@pl-tracker.local
+DTSTAMP:20261117T123134Z
 SEQUENCE:0
-DTSTART:20261117T163627Z
-DTEND:20261117T164157Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:36 - 17:41 (primo: TRENO 9748)
+DTSTART:20261117T161706Z
+DTEND:20261117T162236Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:17 - 17:22 (primo: REG 17208)
 DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 17:36:27 - 17:41:57\nTreni coin
- volti nella chiusura:\n  - TRENO 9748 (VENEZIA S.LUCIA -> MILANO CENTRALE)
-  [Transito]\n  - TRENO 9748 (VENEZIA S.LUCIA -> MILANO CENTRALE) [Transito
- ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
- va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
- gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-16309--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T173826Z
-DTEND:20261117T174356Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:38 - 18:43 (primo: REG 16309)
-DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 18:38:26 - 18:43:56\nTreni coin
- volti nella chiusura:\n  - REG 16309 (VERONA PORTA NUOVA -> VENEZIA S.LUCI
- A) [Transito]\n  - REG 16309 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Tran
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 17:17:06 - 17:22:36\nTreni coin
+ volti nella chiusura:\n  - REG 17208 (VENEZIA S.LUCIA -> VERONA PORTA NUOV
+ A) [Transito]\n  - REG 17208 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Tran
  sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
  mativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pa
  ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
@@ -671,16 +714,16 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16309--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
+UID:train-17208--20261116-S02440@pl-tracker.local
+DTSTAMP:20261117T123134Z
 SEQUENCE:0
-DTSTART:20261117T180330Z
-DTEND:20261117T180800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:03 - 19:08 (primo: REG 16309)
+DTSTART:20261117T163730Z
+DTEND:20261117T164200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:37 - 17:42 (primo: REG 17208)
 DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 19:03:30 - 19:08:00\nTreni coin
- volti nella chiusura:\n  - REG 16309 (VERONA PORTA NUOVA -> VENEZIA S.LUCI
- A)\n  - REG 16309 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo massimo
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 17:37:30 - 17:42:00\nTreni coin
+ volti nella chiusura:\n  - REG 17208 (VENEZIA S.LUCIA -> VERONA PORTA NUOV
+ A)\n  - REG 17208 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitardo massimo
   rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiu
  sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
  alla soglia minima di sgombero stradale (120s)
@@ -693,84 +736,82 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3523--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T181926Z
-DTEND:20261117T182456Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:19 - 19:24 (primo: REG 3523)
-DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 19:19:26 - 19:24:56\nTreni coin
- volti nella chiusura:\n  - REG 3523 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA
- ) [Transito]\n  - REG 3523 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+UID:train-16309--20261116-S02440@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T174258Z
+DTEND:20261117T174828Z
+SUMMARY:[TRANSITO VELOCE] REG 16309 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)
+  ore 18:47
+DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 18:42:58 - 18:48:28\nTreni coinvolti nella 
+ chiusura:\n  - REG 16309 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito
+ ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
+ va/euristica: Transito stimato senza fermata (45% tratta VERONA PORTA VESC
+ OVO -> S.MARTINO BUONALBERGO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-16309--20261116-S02440@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T180330Z
+DTEND:20261117T180800Z
+SUMMARY:[FERMATA] REG 16309 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) ore 19:
+ 07
+DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 19:03:30 - 19:08:00\nTreni coinvolti nella chiusura
+ :\n  - REG 16309 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previ
+ sione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-3523--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T183430Z
-DTEND:20261117T184005Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 19:34 - 19:40 (primo: REG 3523)
+DTEND:20261117T183956Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 19:34 - 19:39 (primo: REG 3523)
 DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 4 TRENI\nChiusura sbarre stimata: 19:34:30 - 19:40:05\nTreni coin
+ NTINUA - 3 TRENI\nChiusura sbarre stimata: 19:34:30 - 19:39:56\nTreni coin
  volti nella chiusura:\n  - REG 3523 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA
- )\n  - REG 3523 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - TRENO 9753 (T
- ORINO PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\n  - TRENO 9753 (TORINO P
- ORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
- r 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
- ma di sgombero stradale (120s)
+ )\n  - TRENO 9753 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\n  - 
+ TRENO 9753 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) inferi
+ ore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9755--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
+UID:train-17245--20261116-S02440@pl-tracker.local
+DTSTAMP:20261117T123134Z
 SEQUENCE:0
-DTSTART:20261117T190435Z
-DTEND:20261117T191005Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:04 - 20:10 (primo: TRENO 9755)
+DTSTART:20261117T184258Z
+DTEND:20261117T184828Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:42 - 19:48 (primo: REG 17245)
 DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 20:04:35 - 20:10:05\nTreni coin
- volti nella chiusura:\n  - TRENO 9755 (MILANO CENTRALE -> UDINE) [Transito
- ]\n  - TRENO 9755 (MILANO CENTRALE -> UDINE) [Transito]\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17247--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T193826Z
-DTEND:20261117T194356Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:38 - 20:43 (primo: REG 17247)
-DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 20:38:26 - 20:43:56\nTreni coin
- volti nella chiusura:\n  - REG 17247 (VERONA PORTA NUOVA -> VENEZIA S.LUCI
- A) [Transito]\n  - REG 17247 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Tran
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 19:42:58 - 19:48:28\nTreni coin
+ volti nella chiusura:\n  - REG 17245 (VERONA PORTA NUOVA -> VENEZIA S.LUCI
+ A) [Transito]\n  - REG 17245 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Tran
  sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
  mativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pa
  ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
@@ -783,38 +824,82 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9759--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
+UID:train-17245--20261116-S02440@pl-tracker.local
+DTSTAMP:20261117T123134Z
 SEQUENCE:0
-DTSTART:20261117T200023Z
-DTEND:20261117T200800Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 21:00 - 21:08 (primo: TRENO 9759)
+DTSTART:20261117T190330Z
+DTEND:20261117T190956Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:03 - 20:09 (primo: REG 17245)
 DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 4 TRENI\nChiusura sbarre stimata: 21:00:23 - 21:08:00\nTreni coin
- volti nella chiusura:\n  - TRENO 9759 (TORINO PORTA NUOVA -> TRIESTE CENTR
- ALE) [Transito]\n  - TRENO 9759 (TORINO PORTA NUOVA -> TRIESTE CENTRALE) [
- Transito]\n  - REG 17247 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - REG 
- 17247 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
- a per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+ NTINUA - 4 TRENI\nChiusura sbarre stimata: 20:03:30 - 20:09:56\nTreni coin
+ volti nella chiusura:\n  - REG 17245 (VERONA PORTA NUOVA -> VENEZIA S.LUCI
+ A)\n  - REG 17245 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - TRENO 9755 
+ (MILANO CENTRALE -> UDINE) [Transito]\n  - TRENO 9755 (MILANO CENTRALE -> 
+ UDINE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 7
+ 8%\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo ut
+ ile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale 
+ (120s)
 LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17247--20261116-S02440@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T194258Z
+DTEND:20261117T194828Z
+SUMMARY:[TRANSITO VELOCE] REG 17247 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)
+  ore 20:47
+DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 20:42:58 - 20:48:28\nTreni coinvolti nella 
+ chiusura:\n  - REG 17247 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito
+ ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
+ va/euristica: Transito stimato senza fermata (45% tratta VERONA PORTA VESC
+ OVO -> S.MARTINO BUONALBERGO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9759--20261116-S02440@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T200014Z
+DTEND:20261117T200800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:00 - 21:08 (primo: TRENO 9759)
+DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 21:00:14 - 21:08:00\nTreni coin
+ volti nella chiusura:\n  - TRENO 9759 (TORINO PORTA NUOVA -> TRIESTE CENTR
+ ALE) [Transito]\n  - REG 17247 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRi
+ tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
+ ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
+ s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17254--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T201654Z
-DTEND:20261117T202224Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:16 - 21:22 (primo: REG 17254)
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T201706Z
+DTEND:20261117T202236Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:17 - 21:22 (primo: REG 17254)
 DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 21:16:54 - 21:22:24\nTreni coin
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 21:17:06 - 21:22:36\nTreni coin
  volti nella chiusura:\n  - REG 17254 (VENEZIA S.LUCIA -> VERONA PORTA NUOV
  A) [Transito]\n  - REG 17254 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Tran
  sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
@@ -830,8 +915,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17254--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T203730Z
 DTEND:20261117T204200Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:37 - 21:42 (primo: REG 17254)
@@ -851,19 +936,65 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3518--20261116-S02440@pl-tracker.local
-DTSTAMP:20261117T033028Z
+UID:train-9763--20261116-S02440@pl-tracker.local
+DTSTAMP:20261117T123134Z
 SEQUENCE:0
-DTSTART:20261117T210830Z
+DTSTART:20261117T210726Z
 DTEND:20261117T211300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:08 - 22:13 (primo: REG 3518)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 22:07 - 22:13 (primo: TRENO 9763)
 DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 22:08:30 - 22:13:00\nTreni coin
- volti nella chiusura:\n  - REG 3518 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA
- )\n  - REG 3518 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+ NTINUA - 4 TRENI\nChiusura sbarre stimata: 22:07:26 - 22:13:00\nTreni coin
+ volti nella chiusura:\n  - TRENO 9763 (MILANO CENTRALE -> VENEZIA S.LUCIA)
+  [Transito]\n  - TRENO 9763 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Transito
+ ]\n  - REG 3518 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\n  - REG 3518 (VEN
+ EZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitardo massimo rilevato: 0 min\nAffi
+ dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 tr
+ eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17124--20261116-S02440@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T211706Z
+DTEND:20261117T212236Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:17 - 22:22 (primo: REG 17124)
+DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 22:17:06 - 22:22:36\nTreni coin
+ volti nella chiusura:\n  - REG 17124 (VENEZIA S.LUCIA -> VERONA PORTA NUOV
+ A) [Transito]\n  - REG 17124 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Tran
+ sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
+ mativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pa
+ ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17124--20261116-S02440@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T213730Z
+DTEND:20261117T214200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:37 - 22:42 (primo: REG 17124)
+DESCRIPTION:Stazione/PL: S.BONIFACIO (S02440)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 22:37:30 - 22:42:00\nTreni coin
+ volti nella chiusura:\n  - REG 17124 (VENEZIA S.LUCIA -> VERONA PORTA NUOV
+ A)\n  - REG 17124 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiu
+ sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.BONIFACIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE

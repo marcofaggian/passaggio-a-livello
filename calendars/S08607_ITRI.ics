@@ -9,21 +9,42 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:5f96ca6cf8079d1fd25d78998e594fced27c2c979bf13669433ed1f2738a
- 6385
+X-CONTENT-HASH:50567d6d81548ec88cc09469ffe894be2516bceb762c087a32d7fa3a55f0
+ cfc9
 BEGIN:VEVENT
 UID:train-21132--20261116-S08607@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T031000Z
 DTEND:20261117T031630Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 04:10 - 04:16 (primo: REG 21132) (+2 
+SUMMARY:[FERMATA] REG 21132 (SESSA AURUNCA-ROCCAMONFINA -> ROMA TERMINI) or
+ e 04:15 (+2 min)
+DESCRIPTION:Stazione/PL: ITRI (S08607)\nRegime chiusura: FERMATA\nChiusura 
+ sbarre stimata: 04:10:00 - 04:16:30\nTreni coinvolti nella chiusura:\n  - 
+ REG 21132 (SESSA AURUNCA-ROCCAMONFINA -> ROMA TERMINI) (+2m)\nRitardo mass
+ imo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: R
+ ilevamento reale da circuito di binario
+LOCATION:Passaggio a Livello / Stazione ITRI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21060--20261116-S08607@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T064017Z
+DTEND:20261117T064547Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:40 - 07:45 (primo: REG 21060) (+2 
  min)
 DESCRIPTION:Stazione/PL: ITRI (S08607)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 04:10:00 - 04:16:30\nTreni coinvolti n
- ella chiusura:\n  - REG 21132 (SESSA AURUNCA-ROCCAMONFINA -> ROMA TERMINI)
-  (+2m)\n  - REG 21132 (SESSA AURUNCA-ROCCAMONFINA -> ROMA TERMINI) (+2m)\n
- Ritardo massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/
+ - 2 TRENI\nChiusura sbarre stimata: 07:40:17 - 07:45:47\nTreni coinvolti n
+ ella chiusura:\n  - REG 21060 (NAPOLI CENTRALE -> ROMA TERMINI) (+2m) [Tra
+ nsito]\n  - REG 21060 (NAPOLI CENTRALE -> ROMA TERMINI) (+2m) [Transito]\n
+ Ritardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/
  euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
  (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ITRI
@@ -31,20 +52,85 @@ STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:2
-X-PL-CONFIDENCE:0.99
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12727--20261116-S08607@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T065830Z
 DTEND:20261117T070300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:58 - 08:03 (primo: REG 12727)
+SUMMARY:[FERMATA] REG 12727 (ROMA TERMINI -> MINTURNO-SCAURI) ore 08:02
+DESCRIPTION:Stazione/PL: ITRI (S08607)\nRegime chiusura: FERMATA\nChiusura 
+ sbarre stimata: 07:58:30 - 08:03:00\nTreni coinvolti nella chiusura:\n  - 
+ REG 12727 (ROMA TERMINI -> MINTURNO-SCAURI)\nRitardo massimo rilevato: 0 m
+ in\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da trac
+ cia oraria regolare
+LOCATION:Passaggio a Livello / Stazione ITRI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21055--20261116-S08607@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T070728Z
+DTEND:20261117T071258Z
+SUMMARY:[TRANSITO VELOCE] REG 21055 (ROMA TERMINI -> NAPOLI CENTRALE) ore 0
+ 8:11
+DESCRIPTION:Stazione/PL: ITRI (S08607)\nRegime chiusura: TRANSITO VELOCE\nC
+ hiusura sbarre stimata: 08:07:28 - 08:12:58\nTreni coinvolti nella chiusur
+ a:\n  - REG 21055 (ROMA TERMINI -> NAPOLI CENTRALE) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Transito stimato senza fermata (55% tratta FONDI-SPERLONGA -> FORMIA-GAET
+ A\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ITRI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21057--20261116-S08607@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T080230Z
+DTEND:20261117T080900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:02 - 09:09 (primo: REG 21057) (+4 
+ min)
 DESCRIPTION:Stazione/PL: ITRI (S08607)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 07:58:30 - 08:03:00\nTreni coinvolti n
- ella chiusura:\n  - REG 12727 (ROMA TERMINI -> MINTURNO-SCAURI)\n  - REG 1
- 2727 (ROMA TERMINI -> MINTURNO-SCAURI)\nRitardo massimo rilevato: 0 min\nA
+ - 2 TRENI\nChiusura sbarre stimata: 09:02:30 - 09:09:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 21057 (ROMA TERMINI -> NAPOLI CENTRALE) (+4m)\n  -
+  REG 21057 (ROMA TERMINI -> NAPOLI CENTRALE) (+4m)\nRitardo massimo rileva
+ to: 4 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura co
+ ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ITRI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12737--20261116-S08607@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T145630Z
+DTEND:20261117T150100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:56 - 16:01 (primo: REG 12737)
+DESCRIPTION:Stazione/PL: ITRI (S08607)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 15:56:30 - 16:01:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 12737 (ROMA TERMINI -> MINTURNO-SCAURI)\n  - REG 1
+ 2737 (ROMA TERMINI -> MINTURNO-SCAURI)\nRitardo massimo rilevato: 0 min\nA
  ffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2
   treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
  di sgombero stradale (120s)
@@ -57,102 +143,78 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-21055--20261116-S08607@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T070657Z
-DTEND:20261117T071227Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:06 - 08:12 (primo: REG 21055)
-DESCRIPTION:Stazione/PL: ITRI (S08607)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 08:06:57 - 08:12:27\nTreni coinvolti n
- ella chiusura:\n  - REG 21055 (ROMA TERMINI -> NAPOLI CENTRALE) [Transito]
- \n  - REG 21055 (ROMA TERMINI -> NAPOLI CENTRALE) [Transito]\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
- hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ITRI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-21090--20261116-S08607@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T153727Z
 DTEND:20261117T154257Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:37 - 16:42 (primo: REG 21090)
-DESCRIPTION:Stazione/PL: ITRI (S08607)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 16:37:27 - 16:42:57\nTreni coinvolti n
- ella chiusura:\n  - REG 21090 (NAPOLI CENTRALE -> ROMA TERMINI) [Transito]
- \n  - REG 21090 (NAPOLI CENTRALE -> ROMA TERMINI) [Transito]\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
- hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 21090 (NAPOLI CENTRALE -> ROMA TERMINI) ore 1
+ 6:41
+DESCRIPTION:Stazione/PL: ITRI (S08607)\nRegime chiusura: TRANSITO VELOCE\nC
+ hiusura sbarre stimata: 16:37:27 - 16:42:57\nTreni coinvolti nella chiusur
+ a:\n  - REG 21090 (NAPOLI CENTRALE -> ROMA TERMINI) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Transito stimato senza fermata (48% tratta FORMIA-GAETA -> FONDI-SPERLONG
+ A\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ITRI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12661--20261116-S08607@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T160030Z
 DTEND:20261117T160500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:00 - 17:05 (primo: REG 12661)
-DESCRIPTION:Stazione/PL: ITRI (S08607)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 17:00:30 - 17:05:00\nTreni coinvolti n
- ella chiusura:\n  - REG 12661 (ROMA TERMINI -> FORMIA-GAETA)\n  - REG 1266
- 1 (ROMA TERMINI -> FORMIA-GAETA)\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+SUMMARY:[FERMATA] REG 12661 (ROMA TERMINI -> FORMIA-GAETA) ore 17:04
+DESCRIPTION:Stazione/PL: ITRI (S08607)\nRegime chiusura: FERMATA\nChiusura 
+ sbarre stimata: 17:00:30 - 17:05:00\nTreni coinvolti nella chiusura:\n  - 
+ REG 12661 (ROMA TERMINI -> FORMIA-GAETA)\nRitardo massimo rilevato: 0 min\
+ nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia
+  oraria regolare
 LOCATION:Passaggio a Livello / Stazione ITRI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21083--20261116-S08607@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T170657Z
-DTEND:20261117T171227Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:06 - 18:12 (primo: REG 21083)
-DESCRIPTION:Stazione/PL: ITRI (S08607)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 18:06:57 - 18:12:27\nTreni coinvolti n
- ella chiusura:\n  - REG 21083 (ROMA TERMINI -> NAPOLI CENTRALE) [Transito]
- \n  - REG 21083 (ROMA TERMINI -> NAPOLI CENTRALE) [Transito]\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
- hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T170728Z
+DTEND:20261117T171258Z
+SUMMARY:[TRANSITO VELOCE] REG 21083 (ROMA TERMINI -> NAPOLI CENTRALE) ore 1
+ 8:11
+DESCRIPTION:Stazione/PL: ITRI (S08607)\nRegime chiusura: TRANSITO VELOCE\nC
+ hiusura sbarre stimata: 18:07:28 - 18:12:58\nTreni coinvolti nella chiusur
+ a:\n  - REG 21083 (ROMA TERMINI -> NAPOLI CENTRALE) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Transito stimato senza fermata (55% tratta FONDI-SPERLONGA -> FORMIA-GAET
+ A\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ITRI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12749--20261116-S08607@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T205527Z
-DTEND:20261117T210057Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:55 - 22:00 (primo: REG 12749)
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T205555Z
+DTEND:20261117T210125Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:55 - 22:01 (primo: REG 12749)
 DESCRIPTION:Stazione/PL: ITRI (S08607)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 21:55:27 - 22:00:57\nTreni coinvolti n
+ - 2 TRENI\nChiusura sbarre stimata: 21:55:55 - 22:01:25\nTreni coinvolti n
  ella chiusura:\n  - REG 12749 (ROMA TERMINI -> MINTURNO-SCAURI) [Transito]
  \n  - REG 12749 (ROMA TERMINI -> MINTURNO-SCAURI) [Transito]\nRitardo mass
  imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
@@ -168,24 +230,46 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21038--20261116-S08607@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T210856Z
 DTEND:20261117T211426Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:08 - 22:14 (primo: REG 21038)
-DESCRIPTION:Stazione/PL: ITRI (S08607)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 22:08:56 - 22:14:26\nTreni coinvolti n
- ella chiusura:\n  - REG 21038 (NAPOLI CENTRALE -> ROMA TIBURTINA) [Transit
- o]\n  - REG 21038 (NAPOLI CENTRALE -> ROMA TIBURTINA) [Transito]\nRitardo 
+SUMMARY:[TRANSITO VELOCE] REG 21038 (NAPOLI CENTRALE -> ROMA TIBURTINA) ore
+  22:13
+DESCRIPTION:Stazione/PL: ITRI (S08607)\nRegime chiusura: TRANSITO VELOCE\nC
+ hiusura sbarre stimata: 22:08:56 - 22:14:26\nTreni coinvolti nella chiusur
+ a:\n  - REG 21038 (NAPOLI CENTRALE -> ROMA TIBURTINA) [Transito]\nRitardo 
  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
+ a: Transito stimato senza fermata (48% tratta FORMIA-GAETA -> FONDI-SPERLO
+ NGA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ITRI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-83135--20261116-S08607@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T220130Z
+DTEND:20261117T220600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:01 - 23:06 (primo: REG 83135)
+DESCRIPTION:Stazione/PL: ITRI (S08607)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 23:01:30 - 23:06:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 83135 (ROMA TERMINI -> FORMIA-GAETA)\n  - REG 8313
+ 5 (ROMA TERMINI -> FORMIA-GAETA)\nRitardo massimo rilevato: 0 min\nAffidab
+ ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ITRI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

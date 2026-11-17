@@ -9,28 +9,71 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:b8484c5817b660a752f87727e109a9549954180be07c1b7433e2aeefa2aa
- 622e
+X-CONTENT-HASH:fdab4cd1fff2222765fffeaec915bd8b6f10910c2217b12e776f42ebc0df
+ cbf0
 BEGIN:VEVENT
 UID:train-23751--20261116-S07550@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T064930Z
 DTEND:20261117T065400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:49 - 07:54 (primo: REG 23751)
+SUMMARY:[FERMATA] REG 23751 (ANCONA -> ASCOLI PICENO) ore 07:53
+DESCRIPTION:Stazione/PL: ASCOLI PICENO (S07550)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 07:49:30 - 07:54:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 23751 (ANCONA -> ASCOLI PICENO)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
+ ccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione ASCOLI PICENO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23761--20261116-S07550@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T113600Z
+DTEND:20261117T114030Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:36 - 12:40 (primo: REG 23761)
 DESCRIPTION:Stazione/PL: ASCOLI PICENO (S07550)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:49:30 - 07:54:00\nTreni co
- involti nella chiusura:\n  - REG 23751 (ANCONA -> ASCOLI PICENO)\n  - REG 
- 23751 (ANCONA -> ASCOLI PICENO)\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:36:00 - 12:40:30\nTreni co
+ involti nella chiusura:\n  - REG 23761 (ANCONA -> ASCOLI PICENO)\n  - REG 
+ 23761 (ANCONA -> ASCOLI PICENO)\nRitardo massimo rilevato: -3 min\nAffidab
+ ilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ASCOLI PICENO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:-3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23768--20261116-S07550@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T120730Z
+DTEND:20261117T121200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:07 - 13:12 (primo: REG 23768) (+1 
+ min)
+DESCRIPTION:Stazione/PL: ASCOLI PICENO (S07550)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:07:30 - 13:12:00\nTreni co
+ involti nella chiusura:\n  - REG 23768 (ASCOLI PICENO -> ANCONA) (+1m)\n  
+ - REG 23768 (ASCOLI PICENO -> ANCONA) (+1m)\nRitardo massimo rilevato: 1 m
+ in\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua 
+ per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
+ nima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ASCOLI PICENO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

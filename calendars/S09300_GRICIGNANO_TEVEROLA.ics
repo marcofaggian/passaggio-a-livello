@@ -9,19 +9,84 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:d137394c96208038fc055223f6bb0963ab658a663cbcc1a1ef84dfe0a839
- c4f6
+X-CONTENT-HASH:6091b24ba98d5cabfa9aeedb42badef74406005a23fa9afdc504f9e8d934
+ 8d0d
 BEGIN:VEVENT
 UID:train-94880--20261116-S09300@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T061330Z
 DTEND:20261117T061800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:13 - 07:18 (primo: REG 94880)
+SUMMARY:[FERMATA] REG 94880 (NAPOLI CENTRALE -> CASERTA) ore 07:17
+DESCRIPTION:Stazione/PL: GRICIGNANO-TEVEROLA (S09300)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 07:13:30 - 07:18:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 94880 (NAPOLI CENTRALE -> CASERTA)\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
+ ne da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione GRICIGNANO-TEVEROLA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21410--20261116-S09300@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T091800Z
+DTEND:20261117T092500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:18 - 10:25 (primo: REG 21410) (+2 
+ min)
 DESCRIPTION:Stazione/PL: GRICIGNANO-TEVEROLA (S09300)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:13:30 - 07:18:00\nTr
- eni coinvolti nella chiusura:\n  - REG 94880 (NAPOLI CENTRALE -> CASERTA)\
- n  - REG 94880 (NAPOLI CENTRALE -> CASERTA)\nRitardo massimo rilevato: 0 m
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:18:00 - 10:25:00\nTr
+ eni coinvolti nella chiusura:\n  - REG 21410 (CASERTA -> NAPOLI CENTRALE) 
+ (+2m)\n  - REG 21410 (CASERTA -> NAPOLI CENTRALE) (+2m)\nRitardo massimo r
+ ilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusu
+ ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
+ la soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GRICIGNANO-TEVEROLA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21179--20261116-S09300@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T111932Z
+DTEND:20261117T112502Z
+SUMMARY:[TRANSITO VELOCE] REG 21179 (NAPOLI CENTRALE -> BENEVENTO) ore 12:2
+ 3
+DESCRIPTION:Stazione/PL: GRICIGNANO-TEVEROLA (S09300)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 12:19:32 - 12:25:02\nTreni coinvolt
+ i nella chiusura:\n  - REG 21179 (NAPOLI CENTRALE -> BENEVENTO) [Transito]
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Transito stimato senza fermata (58% tratta AVERSA -> MARCIANI
+ SE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione GRICIGNANO-TEVEROLA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21158--20261116-S09300@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T131730Z
+DTEND:20261117T132200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:17 - 14:22 (primo: REG 21158)
+DESCRIPTION:Stazione/PL: GRICIGNANO-TEVEROLA (S09300)\nRegime chiusura: CHI
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:17:30 - 14:22:00\nTr
+ eni coinvolti nella chiusura:\n  - REG 21158 (CASERTA -> NAPOLI CENTRALE)\
+ n  - REG 21158 (CASERTA -> NAPOLI CENTRALE)\nRitardo massimo rilevato: 0 m
  in\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua 
  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
  nima di sgombero stradale (120s)
@@ -34,82 +99,99 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-21179--20261116-S09300@pl-tracker.local
-DTSTAMP:20261117T033028Z
+UID:train-21160--20261116-S09300@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
+DTSTART:20261117T141730Z
+DTEND:20261117T142200Z
+SUMMARY:[FERMATA] REG 21160 (CASERTA -> AVERSA) ore 15:21
+DESCRIPTION:Stazione/PL: GRICIGNANO-TEVEROLA (S09300)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 15:17:30 - 15:22:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 21160 (CASERTA -> AVERSA)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
+ ccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione GRICIGNANO-TEVEROLA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8314--20261116-S09300@pl-tracker.local
+DTSTAMP:20261117T123134Z
 SEQUENCE:0
-DTSTART:20261117T111932Z
-DTEND:20261117T112502Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:19 - 12:25 (primo: REG 21179)
+DTSTART:20261117T145424Z
+DTEND:20261117T145954Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:54 - 15:59 (primo: TRENO 8314) (+3
+  min)
 DESCRIPTION:Stazione/PL: GRICIGNANO-TEVEROLA (S09300)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:19:32 - 12:25:02\nTr
- eni coinvolti nella chiusura:\n  - REG 21179 (NAPOLI CENTRALE -> BENEVENTO
- ) [Transito]\n  - REG 21179 (NAPOLI CENTRALE -> BENEVENTO) [Transito]\nRit
- ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:54:24 - 15:59:54\nTr
+ eni coinvolti nella chiusura:\n  - TRENO 8314 (LECCE -> ROMA TERMINI) (+3m
+ ) [Transito]\n  - TRENO 8314 (LECCE -> ROMA TERMINI) (+3m) [Transito]\nRit
+ ardo massimo rilevato: 3 min\nAffidabilità stima: 78%\nNota normativa/eur
  istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
  ) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GRICIGNANO-TEVEROLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-21160--20261116-S09300@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
-DTSTART:20261117T141730Z
-DTEND:20261117T142200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:17 - 15:22 (primo: REG 21160)
-DESCRIPTION:Stazione/PL: GRICIGNANO-TEVEROLA (S09300)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:17:30 - 15:22:00\nTr
- eni coinvolti nella chiusura:\n  - REG 21160 (CASERTA -> AVERSA)\n  - REG 
- 21160 (CASERTA -> AVERSA)\nRitardo massimo rilevato: 0 min\nAffidabilità 
- stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inter
- vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
- tradale (120s)
-LOCATION:Passaggio a Livello / Stazione GRICIGNANO-TEVEROLA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21157--20261116-S09300@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T162930Z
 DTEND:20261117T163400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:29 - 17:34 (primo: REG 21157)
-DESCRIPTION:Stazione/PL: GRICIGNANO-TEVEROLA (S09300)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:29:30 - 17:34:00\nTr
- eni coinvolti nella chiusura:\n  - REG 21157 (NAPOLI CENTRALE -> CASERTA)\
- n  - REG 21157 (NAPOLI CENTRALE -> CASERTA)\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua 
- per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
- nima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 21157 (NAPOLI CENTRALE -> CASERTA) ore 17:33
+DESCRIPTION:Stazione/PL: GRICIGNANO-TEVEROLA (S09300)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 17:29:30 - 17:34:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 21157 (NAPOLI CENTRALE -> CASERTA)\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
+ ne da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione GRICIGNANO-TEVEROLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21169--20261116-S09300@pl-tracker.local
-DTSTAMP:20261117T033028Z
-SEQUENCE:0
+DTSTAMP:20261117T123134Z
+SEQUENCE:1
 DTSTART:20261117T193130Z
 DTEND:20261117T193600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:31 - 20:36 (primo: REG 21169)
+SUMMARY:[FERMATA] REG 21169 (NAPOLI CENTRALE -> CASERTA) ore 20:35
+DESCRIPTION:Stazione/PL: GRICIGNANO-TEVEROLA (S09300)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 20:31:30 - 20:36:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 21169 (NAPOLI CENTRALE -> CASERTA)\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
+ ne da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione GRICIGNANO-TEVEROLA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21172--20261116-S09300@pl-tracker.local
+DTSTAMP:20261117T123134Z
+SEQUENCE:0
+DTSTART:20261117T201730Z
+DTEND:20261117T202200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:17 - 21:22 (primo: REG 21172)
 DESCRIPTION:Stazione/PL: GRICIGNANO-TEVEROLA (S09300)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:31:30 - 20:36:00\nTr
- eni coinvolti nella chiusura:\n  - REG 21169 (NAPOLI CENTRALE -> CASERTA)\
- n  - REG 21169 (NAPOLI CENTRALE -> CASERTA)\nRitardo massimo rilevato: 0 m
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:17:30 - 21:22:00\nTr
+ eni coinvolti nella chiusura:\n  - REG 21172 (CASERTA -> NAPOLI CENTRALE)\
+ n  - REG 21172 (CASERTA -> NAPOLI CENTRALE)\nRitardo massimo rilevato: 0 m
  in\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua 
  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
  nima di sgombero stradale (120s)
@@ -122,25 +204,26 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-21171--20261116-S09300@pl-tracker.local
-DTSTAMP:20261117T033028Z
+UID:train-8326--20261116-S09300@pl-tracker.local
+DTSTAMP:20261117T123134Z
 SEQUENCE:0
-DTSTART:20261117T205530Z
+DTSTART:20261117T204936Z
 DTEND:20261117T210000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:55 - 22:00 (primo: REG 21171)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:49 - 22:00 (primo: TRENO 8326)
 DESCRIPTION:Stazione/PL: GRICIGNANO-TEVEROLA (S09300)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:55:30 - 22:00:00\nTr
- eni coinvolti nella chiusura:\n  - REG 21171 (NAPOLI CENTRALE -> CASERTA)\
- n  - REG 21171 (NAPOLI CENTRALE -> CASERTA)\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua 
- per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
- nima di sgombero stradale (120s)
+ USURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 21:49:36 - 22:00:00\nTr
+ eni coinvolti nella chiusura:\n  - TRENO 8326 (LECCE -> ROMA TERMINI) [Tra
+ nsito]\n  - TRENO 8326 (LECCE -> ROMA TERMINI) [Transito]\n  - REG 21171 (
+ NAPOLI CENTRALE -> CASERTA)\nRitardo massimo rilevato: 0 min\nAffidabilit
+ à stima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: in
+ tervallo utile tra i passaggi (23s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GRICIGNANO-TEVEROLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 END:VCALENDAR
