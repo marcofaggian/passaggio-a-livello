@@ -9,26 +9,95 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:718e75d8c8185aa331d9440155d65b6ce434dcab40f9066e15d8953631e0
- 98c7
+X-CONTENT-HASH:7f113e9dfb70972aeb922cfb541253232ad0d296e8a6d68e89780865578d
+ cbcf
 BEGIN:VEVENT
-UID:train-703--20261115-S09316@pl-tracker.local
-DTSTAMP:20261116T205126Z
-SEQUENCE:2
-DTSTART:20261116T103915Z
-DTEND:20261116T104400Z
-SUMMARY:[FERMATA] IC 703 (ROMA TERMINI -> BARI CENTRALE) ore 11:43
-DESCRIPTION:Stazione/PL: ARIANO IRPINO (S09316)\nRegime chiusura: FERMATA\n
- Chiusura sbarre stimata: 11:39:15 - 11:44:00\nTreni coinvolti nella chiusu
- ra:\n  - IC 703 (ROMA TERMINI -> BARI CENTRALE)\nRitardo massimo rilevato:
-  0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da 
- traccia oraria regolare
+UID:train-8303--20261117-S09316@pl-tracker.local
+DTSTAMP:20261118T114552Z
+SEQUENCE:0
+DTSTART:20261118T093150Z
+DTEND:20261118T093720Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8303 (ROMA TERMINI -> LECCE) ore 10:36
+DESCRIPTION:Stazione/PL: ARIANO IRPINO (S09316)\nRegime chiusura: TRANSITO 
+ VELOCE\nChiusura sbarre stimata: 10:31:50 - 10:37:20\nTreni coinvolti nell
+ a chiusura:\n  - TRENO 8303 (ROMA TERMINI -> LECCE) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Transito stimato senza fermata (42% tratta BENEVENTO -> FOGGIA\; pedale a
+ nnuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ARIANO IRPINO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-703--20261117-S09316@pl-tracker.local-arr
+DTSTAMP:20261118T114552Z
+SEQUENCE:0
+DTSTART:20261118T103315Z
+DTEND:20261118T103800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:33 - 11:38 (primo: IC 703) (+2 min
+ )
+DESCRIPTION:Stazione/PL: ARIANO IRPINO (S09316)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:33:15 - 11:38:00\nTreni co
+ involti nella chiusura:\n  - IC 703 (ROMA TERMINI -> BARI CENTRALE) (+2m) 
+ [Arrivo]\n  - IC 703 (ROMA TERMINI -> BARI CENTRALE) (+2m) [Arrivo]\nRitar
+ do massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euris
+ tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
+ inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ARIANO IRPINO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-703--20261117-S09316@pl-tracker.local-dep
+DTSTAMP:20261118T114552Z
+SEQUENCE:0
+DTSTART:20261118T104315Z
+DTEND:20261118T104800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:43 - 11:48 (primo: IC 703) (+2 min
+ )
+DESCRIPTION:Stazione/PL: ARIANO IRPINO (S09316)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:43:15 - 11:48:00\nTreni co
+ involti nella chiusura:\n  - IC 703 (ROMA TERMINI -> BARI CENTRALE) (+2m) 
+ [Partenza]\n  - IC 703 (ROMA TERMINI -> BARI CENTRALE) (+2m) [Partenza]\nR
+ itardo massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/e
+ uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ARIANO IRPINO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9511--20261117-S09316@pl-tracker.local
+DTSTAMP:20261118T114552Z
+SEQUENCE:0
+DTSTART:20261118T112559Z
+DTEND:20261118T113129Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:25 - 12:31 (primo: TRENO 9511)
+DESCRIPTION:Stazione/PL: ARIANO IRPINO (S09316)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:25:59 - 12:31:29\nTreni co
+ involti nella chiusura:\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) [Transi
+ to]\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massimo
+  rilevato: -5 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
+ usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
+  alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ARIANO IRPINO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 END:VCALENDAR

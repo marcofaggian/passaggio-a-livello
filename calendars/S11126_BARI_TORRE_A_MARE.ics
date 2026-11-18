@@ -9,43 +9,131 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:ce8e8288cf5ccaacf7ac44a6fd5be201c04aa58e9516c3685f6298ab2f6e
- aa6a
+X-CONTENT-HASH:66dc4d2353d7dd86246e876a84f6a038bdc78fa7fdf9ae2c6d1af9b0de34
+ be62
 BEGIN:VEVENT
 UID:train-23501--20261117-S11126@pl-tracker.local
-DTSTAMP:20261118T030446Z
-SEQUENCE:0
-DTSTART:20261118T044330Z
-DTEND:20261118T044800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:43 - 05:48 (primo: REG 23501)
-DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:43:30 - 05:48:00\nTren
- i coinvolti nella chiusura:\n  - REG 23501 (BARI CENTRALE -> FASANO)\n  - 
- REG 23501 (BARI CENTRALE -> FASANO)\nRitardo massimo rilevato: 0 min\nAffi
- dabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tr
- eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
- sgombero stradale (120s)
+DTSTAMP:20261118T114552Z
+SEQUENCE:1
+DTSTART:20261118T042730Z
+DTEND:20261118T043300Z
+SUMMARY:[TRANSITO VELOCE] REG 23501 (BARI CENTRALE -> FASANO) ore 05:31
+DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: TRANS
+ ITO VELOCE\nChiusura sbarre stimata: 05:27:30 - 05:33:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 23501 (BARI CENTRALE -> FASANO) [Transito]\nRitar
+ do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Transito stimato senza fermata (38% tratta BARI CENTRALE -> MARCONI\
+ ; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23501--20261117-S11126@pl-tracker.local
+DTSTAMP:20261118T114552Z
+SEQUENCE:1
+DTSTART:20261118T044330Z
+DTEND:20261118T044800Z
+SUMMARY:[FERMATA] REG 23501 (BARI CENTRALE -> FASANO) ore 05:47
+DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: FERMA
+ TA\nChiusura sbarre stimata: 05:43:30 - 05:48:00\nTreni coinvolti nella ch
+ iusura:\n  - REG 23501 (BARI CENTRALE -> FASANO)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da
+  traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-23509--20261117-S11126@pl-tracker.local
-DTSTAMP:20261118T030446Z
+UID:train-23507--20261117-S11126@pl-tracker.local
+DTSTAMP:20261118T114552Z
 SEQUENCE:0
-DTSTART:20261118T062224Z
-DTEND:20261118T062754Z
-SUMMARY:[TRANSITO VELOCE] REG 23509 (BARLETTA -> FASANO) ore 07:26
+DTSTART:20261118T051752Z
+DTEND:20261118T052322Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:17 - 06:23 (primo: REG 23507) (+1 
+ min)
+DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: CHIUS
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:17:52 - 06:23:22\nTren
+ i coinvolti nella chiusura:\n  - REG 23507 (BARI CENTRALE -> FASANO) (+1m)
+  [Transito]\n  - REG 23507 (BARI CENTRALE -> FASANO) (+1m) [Transito]\nRit
+ ardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23507--20261117-S11126@pl-tracker.local-arr
+DTSTAMP:20261118T114552Z
+SEQUENCE:0
+DTSTART:20261118T053030Z
+DTEND:20261118T053500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:30 - 06:35 (primo: REG 23507) (+3 
+ min)
+DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: CHIUS
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:30:30 - 06:35:00\nTren
+ i coinvolti nella chiusura:\n  - REG 23507 (BARI CENTRALE -> FASANO) (+3m)
+  [Arrivo]\n  - REG 23507 (BARI CENTRALE -> FASANO) (+3m) [Arrivo]\nRitardo
+  massimo rilevato: 3 min\nAffidabilità stima: 99%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23507--20261117-S11126@pl-tracker.local-dep
+DTSTAMP:20261118T114552Z
+SEQUENCE:0
+DTSTART:20261118T054700Z
+DTEND:20261118T055130Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:47 - 06:51 (primo: REG 23507) (+3 
+ min)
+DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: CHIUS
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:47:00 - 06:51:30\nTren
+ i coinvolti nella chiusura:\n  - REG 23507 (BARI CENTRALE -> FASANO) (+3m)
+  [Partenza]\n  - REG 23507 (BARI CENTRALE -> FASANO) (+3m) [Partenza]\nRit
+ ardo massimo rilevato: 3 min\nAffidabilità stima: 99%\nNota normativa/eur
+ istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23509--20261117-S11126@pl-tracker.local
+DTSTAMP:20261118T114552Z
+SEQUENCE:1
+DTSTART:20261118T061515Z
+DTEND:20261118T062045Z
+SUMMARY:[TRANSITO VELOCE] REG 23509 (BARLETTA -> FASANO) ore 07:19
 DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: TRANS
- ITO VELOCE\nChiusura sbarre stimata: 07:22:24 - 07:27:54\nTreni coinvolti 
+ ITO VELOCE\nChiusura sbarre stimata: 07:15:15 - 07:20:45\nTreni coinvolti 
  nella chiusura:\n  - REG 23509 (BARLETTA -> FASANO) [Transito]\nRitardo ma
  ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
-  Transito stimato senza fermata (55% tratta BARI PARCO SUD -> BARI TORRE Q
- UETTA\; pedale annuncio fisso Vmax)
+  Transito stimato senza fermata (38% tratta BARI CENTRALE -> MARCONI\; ped
+ ale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -56,107 +144,253 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23509--20261117-S11126@pl-tracker.local
-DTSTAMP:20261118T030446Z
-SEQUENCE:0
+DTSTAMP:20261118T114552Z
+SEQUENCE:1
 DTSTART:20261118T063230Z
 DTEND:20261118T063700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:32 - 07:37 (primo: REG 23509)
-DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:32:30 - 07:37:00\nTren
- i coinvolti nella chiusura:\n  - REG 23509 (BARLETTA -> FASANO)\n  - REG 2
- 3509 (BARLETTA -> FASANO)\nRitardo massimo rilevato: 0 min\nAffidabilità 
- stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inter
- vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
- tradale (120s)
+SUMMARY:[FERMATA] REG 23509 (BARLETTA -> FASANO) ore 07:36
+DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: FERMA
+ TA\nChiusura sbarre stimata: 07:32:30 - 07:37:00\nTreni coinvolti nella ch
+ iusura:\n  - REG 23509 (BARLETTA -> FASANO)\nRitardo massimo rilevato: 0 m
+ in\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da trac
+ cia oraria regolare
 LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-608--20261117-S11126@pl-tracker.local
-DTSTAMP:20261118T030446Z
-SEQUENCE:0
-DTSTART:20261118T064540Z
-DTEND:20261118T065010Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:45 - 07:50 (primo: IC 608)
-DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:45:40 - 07:50:10\nTren
- i coinvolti nella chiusura:\n  - IC 608 (LECCE -> MILANO CENTRALE) [Transi
- to]\n  - IC 608 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
-  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
+DTSTAMP:20261118T114552Z
+SEQUENCE:1
+DTSTART:20261118T064520Z
+DTEND:20261118T064950Z
+SUMMARY:[TRANSITO VELOCE] IC 608 (LECCE -> MILANO CENTRALE) ore 07:48
+DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: TRANS
+ ITO VELOCE\nChiusura sbarre stimata: 07:45:20 - 07:49:50\nTreni coinvolti 
+ nella chiusura:\n  - IC 608 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (58% tratta MONOPOLI -> BARI CENTRALE\;
+  pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4392--20261117-S11126@pl-tracker.local
-DTSTAMP:20261118T030446Z
-SEQUENCE:0
-DTSTART:20261118T065259Z
-DTEND:20261118T070052Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:52 - 08:00 (primo: REG 4392)
+DTSTAMP:20261118T114552Z
+SEQUENCE:1
+DTSTART:20261118T065459Z
+DTEND:20261118T070105Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:54 - 08:01 (primo: REG 4392) (+1 m
+ in)
 DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: CHIUS
- URA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 07:52:59 - 08:00:52\nTren
- i coinvolti nella chiusura:\n  - REG 4392 (LECCE -> BARI CENTRALE) [Transi
- to]\n  - REG 4392 (LECCE -> BARI CENTRALE) [Transito]\n  - REG 4386 (LECCE
-  -> BARI CENTRALE) [Transito]\n  - REG 4386 (LECCE -> BARI CENTRALE) [Tran
- sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i pa
- ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ URA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 07:54:59 - 08:01:05\nTren
+ i coinvolti nella chiusura:\n  - REG 4392 (LECCE -> BARI CENTRALE) (+1m) [
+ Transito]\n  - REG 4392 (LECCE -> BARI CENTRALE) (+1m) [Transito]\n  - REG
+  4386 (LECCE -> BARI CENTRALE) [Transito]\nRitardo massimo rilevato: 1 min
+ \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
+ r 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4450--20261117-S11126@pl-tracker.local
-DTSTAMP:20261118T030446Z
-SEQUENCE:0
-DTSTART:20261118T073024Z
-DTEND:20261118T073554Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:30 - 08:35 (primo: REG 4450)
-DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:30:24 - 08:35:54\nTren
- i coinvolti nella chiusura:\n  - REG 4450 (LECCE -> BARI CENTRALE) [Transi
- to]\n  - REG 4450 (LECCE -> BARI CENTRALE) [Transito]\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
-  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
+DTSTAMP:20261118T114552Z
+SEQUENCE:1
+DTSTART:20261118T073008Z
+DTEND:20261118T073538Z
+SUMMARY:[TRANSITO VELOCE] REG 4450 (LECCE -> BARI CENTRALE) ore 08:34
+DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: TRANS
+ ITO VELOCE\nChiusura sbarre stimata: 08:30:08 - 08:35:38\nTreni coinvolti 
+ nella chiusura:\n  - REG 4450 (LECCE -> BARI CENTRALE) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (58% tratta MONOPOLI -> BARI CENTRALE\;
+  pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4388--20261117-S11126@pl-tracker.local
-DTSTAMP:20261118T030446Z
-SEQUENCE:0
+DTSTAMP:20261118T114552Z
+SEQUENCE:1
 DTSTART:20261118T075030Z
 DTEND:20261118T075500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:50 - 08:55 (primo: REG 4388)
+SUMMARY:[FERMATA] REG 4388 (LECCE -> BARI CENTRALE) ore 08:54
+DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: FERMA
+ TA\nChiusura sbarre stimata: 08:50:30 - 08:55:00\nTreni coinvolti nella ch
+ iusura:\n  - REG 4388 (LECCE -> BARI CENTRALE)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
+ raccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4394--20261117-S11126@pl-tracker.local
+DTSTAMP:20261118T114552Z
+SEQUENCE:1
+DTSTART:20261118T083503Z
+DTEND:20261118T084033Z
+SUMMARY:[TRANSITO VELOCE] REG 4394 (LECCE -> BARI CENTRALE) ore 09:39
+DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: TRANS
+ ITO VELOCE\nChiusura sbarre stimata: 09:35:03 - 09:40:33\nTreni coinvolti 
+ nella chiusura:\n  - REG 4394 (LECCE -> BARI CENTRALE) [Transito]\nRitardo
+  massimo rilevato: -2 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Transito stimato senza fermata (36% tratta BARI TORRE QUETTA -> BARI 
+ CENTRALE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4398--20261117-S11126@pl-tracker.local
+DTSTAMP:20261118T114552Z
+SEQUENCE:1
+DTSTART:20261118T104230Z
+DTEND:20261118T104700Z
+SUMMARY:[FERMATA] REG 4398 (LECCE -> BARI CENTRALE) ore 11:46
+DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: FERMA
+ TA\nChiusura sbarre stimata: 11:42:30 - 11:47:00\nTreni coinvolti nella ch
+ iusura:\n  - REG 4398 (LECCE -> BARI CENTRALE)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
+ raccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4404--20261117-S11126@pl-tracker.local-arr
+DTSTAMP:20261118T114552Z
+SEQUENCE:0
+DTSTART:20261118T114300Z
+DTEND:20261118T115100Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:43 - 12:51 (primo: REG 4404) (+3 m
+ in)
 DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:50:30 - 08:55:00\nTren
- i coinvolti nella chiusura:\n  - REG 4388 (LECCE -> BARI CENTRALE)\n  - RE
- G 4388 (LECCE -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
+ URA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 12:43:00 - 12:51:00\nTren
+ i coinvolti nella chiusura:\n  - REG 4404 (LECCE -> BARI CENTRALE) (+3m) [
+ Arrivo]\n  - REG 4404 (LECCE -> BARI CENTRALE) (+3m) [Arrivo]\n  - REG 440
+ 4 (LECCE -> BARI CENTRALE) (+3m) [Partenza]\n  - REG 4404 (LECCE -> BARI C
+ ENTRALE) (+3m) [Partenza]\nRitardo massimo rilevato: 3 min\nAffidabilità 
+ stima: 99%\nNota normativa/euristica: Chiusura continua per 4 treni: inter
+ vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
+ tradale (120s)
+LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23536--20261117-S11126@pl-tracker.local
+DTSTAMP:20261118T114552Z
+SEQUENCE:1
+DTSTART:20261118T135719Z
+DTEND:20261118T140249Z
+SUMMARY:[TRANSITO VELOCE] REG 23536 (FASANO -> BARLETTA) ore 15:01
+DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: TRANS
+ ITO VELOCE\nChiusura sbarre stimata: 14:57:19 - 15:02:49\nTreni coinvolti 
+ nella chiusura:\n  - REG 23536 (FASANO -> BARLETTA) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Transito stimato senza fermata (73% tratta POLIGNANO A MARE -> MOLA DI BA
+ RI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23536--20261117-S11126@pl-tracker.local
+DTSTAMP:20261118T114552Z
+SEQUENCE:1
+DTSTART:20261118T140730Z
+DTEND:20261118T141200Z
+SUMMARY:[FERMATA] REG 23536 (FASANO -> BARLETTA) ore 15:11
+DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: FERMA
+ TA\nChiusura sbarre stimata: 15:07:30 - 15:12:00\nTreni coinvolti nella ch
+ iusura:\n  - REG 23536 (FASANO -> BARLETTA)\nRitardo massimo rilevato: 0 m
+ in\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da trac
+ cia oraria regolare
+LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23541--20261117-S11126@pl-tracker.local
+DTSTAMP:20261118T114552Z
+SEQUENCE:0
+DTSTART:20261118T141515Z
+DTEND:20261118T142045Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:15 - 15:20 (primo: REG 23541)
+DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: CHIUS
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:15:15 - 15:20:45\nTren
+ i coinvolti nella chiusura:\n  - REG 23541 (BARLETTA -> FASANO) [Transito]
+ \n  - REG 23541 (BARLETTA -> FASANO) [Transito]\nRitardo massimo rilevato:
+  0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
+ nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23541--20261117-S11126@pl-tracker.local
+DTSTAMP:20261118T114552Z
+SEQUENCE:0
+DTSTART:20261118T143230Z
+DTEND:20261118T143700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:32 - 15:37 (primo: REG 23541)
+DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: CHIUS
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:32:30 - 15:37:00\nTren
+ i coinvolti nella chiusura:\n  - REG 23541 (BARLETTA -> FASANO)\n  - REG 2
+ 3541 (BARLETTA -> FASANO)\nRitardo massimo rilevato: 0 min\nAffidabilità 
+ stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inter
+ vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
+ tradale (120s)
 LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -166,16 +400,100 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4394--20261117-S11126@pl-tracker.local
-DTSTAMP:20261118T030446Z
-SEQUENCE:0
-DTSTART:20261118T083345Z
-DTEND:20261118T083915Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:33 - 09:39 (primo: REG 4394)
+UID:train-23540--20261117-S11126@pl-tracker.local
+DTSTAMP:20261118T114552Z
+SEQUENCE:1
+DTSTART:20261118T145730Z
+DTEND:20261118T150300Z
+SUMMARY:[TRANSITO VELOCE] REG 23540 (FASANO -> BARLETTA) ore 16:01
+DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: TRANS
+ ITO VELOCE\nChiusura sbarre stimata: 15:57:30 - 16:03:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 23540 (FASANO -> BARLETTA) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Transito stimato senza fermata (75% tratta POLIGNANO A MARE -> MOLA DI BA
+ RI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23540--20261117-S11126@pl-tracker.local
+DTSTAMP:20261118T114552Z
+SEQUENCE:1
+DTSTART:20261118T150730Z
+DTEND:20261118T151200Z
+SUMMARY:[FERMATA] REG 23540 (FASANO -> BARLETTA) ore 16:11
+DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: FERMA
+ TA\nChiusura sbarre stimata: 16:07:30 - 16:12:00\nTreni coinvolti nella ch
+ iusura:\n  - REG 23540 (FASANO -> BARLETTA)\nRitardo massimo rilevato: 0 m
+ in\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da trac
+ cia oraria regolare
+LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23542--20261117-S11126@pl-tracker.local
+DTSTAMP:20261118T114552Z
+SEQUENCE:1
+DTSTART:20261118T152730Z
+DTEND:20261118T153300Z
+SUMMARY:[TRANSITO VELOCE] REG 23542 (FASANO -> BARLETTA) ore 16:31
+DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: TRANS
+ ITO VELOCE\nChiusura sbarre stimata: 16:27:30 - 16:33:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 23542 (FASANO -> BARLETTA) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Transito stimato senza fermata (75% tratta POLIGNANO A MARE -> MOLA DI BA
+ RI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23542--20261117-S11126@pl-tracker.local
+DTSTAMP:20261118T114552Z
+SEQUENCE:1
+DTSTART:20261118T153730Z
+DTEND:20261118T154700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:37 - 16:47 (primo: REG 23542)
 DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:33:45 - 09:39:15\nTren
- i coinvolti nella chiusura:\n  - REG 4394 (LECCE -> BARI CENTRALE) [Transi
- to]\n  - REG 4394 (LECCE -> BARI CENTRALE) [Transito]\nRitardo massimo ril
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:37:30 - 16:47:00\nTren
+ i coinvolti nella chiusura:\n  - REG 23542 (FASANO -> BARLETTA)\n  - REG 4
+ 422 (LECCE -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilit
+ à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (30s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4449--20261117-S11126@pl-tracker.local
+DTSTAMP:20261118T114552Z
+SEQUENCE:0
+DTSTART:20261118T155852Z
+DTEND:20261118T160422Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:58 - 17:04 (primo: REG 4449)
+DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: CHIUS
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:58:52 - 17:04:22\nTren
+ i coinvolti nella chiusura:\n  - REG 4449 (BARI CENTRALE -> LECCE) [Transi
+ to]\n  - REG 4449 (BARI CENTRALE -> LECCE) [Transito]\nRitardo massimo ril
  evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
   continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
   soglia minima di sgombero stradale (120s)
@@ -188,152 +506,20 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4398--20261117-S11126@pl-tracker.local
-DTSTAMP:20261118T030446Z
+UID:train-4449--20261117-S11126@pl-tracker.local
+DTSTAMP:20261118T114552Z
 SEQUENCE:0
-DTSTART:20261118T104230Z
-DTEND:20261118T104700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:42 - 11:47 (primo: REG 4398)
+DTSTART:20261118T160830Z
+DTEND:20261118T161700Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:08 - 17:17 (primo: REG 4449)
 DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:42:30 - 11:47:00\nTren
- i coinvolti nella chiusura:\n  - REG 4398 (LECCE -> BARI CENTRALE)\n  - RE
- G 4398 (LECCE -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-23536--20261117-S11126@pl-tracker.local
-DTSTAMP:20261118T030446Z
-SEQUENCE:0
-DTSTART:20261118T135705Z
-DTEND:20261118T140235Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:57 - 15:02 (primo: REG 23536)
-DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:57:05 - 15:02:35\nTren
- i coinvolti nella chiusura:\n  - REG 23536 (FASANO -> BARLETTA) [Transito]
- \n  - REG 23536 (FASANO -> BARLETTA) [Transito]\nRitardo massimo rilevato:
-  0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
- nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
- a minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-23536--20261117-S11126@pl-tracker.local
-DTSTAMP:20261118T030446Z
-SEQUENCE:0
-DTSTART:20261118T140730Z
-DTEND:20261118T141200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:07 - 15:12 (primo: REG 23536)
-DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:07:30 - 15:12:00\nTren
- i coinvolti nella chiusura:\n  - REG 23536 (FASANO -> BARLETTA)\n  - REG 2
- 3536 (FASANO -> BARLETTA)\nRitardo massimo rilevato: 0 min\nAffidabilità 
- stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inter
- vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
- tradale (120s)
-LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-23540--20261117-S11126@pl-tracker.local
-DTSTAMP:20261118T030446Z
-SEQUENCE:0
-DTSTART:20261118T145705Z
-DTEND:20261118T150249Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:57 - 16:02 (primo: REG 23540)
-DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:57:05 - 16:02:49\nTren
- i coinvolti nella chiusura:\n  - REG 23540 (FASANO -> BARLETTA) [Transito]
- \n  - REG 23540 (FASANO -> BARLETTA) [Transito]\nRitardo massimo rilevato:
-  0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
- nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
- a minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-23540--20261117-S11126@pl-tracker.local
-DTSTAMP:20261118T030446Z
-SEQUENCE:0
-DTSTART:20261118T150730Z
-DTEND:20261118T151200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:07 - 16:12 (primo: REG 23540)
-DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:07:30 - 16:12:00\nTren
- i coinvolti nella chiusura:\n  - REG 23540 (FASANO -> BARLETTA)\n  - REG 2
- 3540 (FASANO -> BARLETTA)\nRitardo massimo rilevato: 0 min\nAffidabilità 
- stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inter
- vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
- tradale (120s)
-LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-23542--20261117-S11126@pl-tracker.local
-DTSTAMP:20261118T030446Z
-SEQUENCE:0
-DTSTART:20261118T152705Z
-DTEND:20261118T153235Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:27 - 16:32 (primo: REG 23542)
-DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:27:05 - 16:32:35\nTren
- i coinvolti nella chiusura:\n  - REG 23542 (FASANO -> BARLETTA) [Transito]
- \n  - REG 23542 (FASANO -> BARLETTA) [Transito]\nRitardo massimo rilevato:
-  0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
- nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
- a minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-23542--20261117-S11126@pl-tracker.local
-DTSTAMP:20261118T030446Z
-SEQUENCE:0
-DTSTART:20261118T153730Z
-DTEND:20261118T154700Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:37 - 16:47 (primo: REG 23542)
-DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: CHIUS
- URA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 16:37:30 - 16:47:00\nTren
- i coinvolti nella chiusura:\n  - REG 23542 (FASANO -> BARLETTA)\n  - REG 2
- 3542 (FASANO -> BARLETTA)\n  - REG 4422 (LECCE -> BARI CENTRALE)\n  - REG 
- 4422 (LECCE -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabili
- tà stima: 90%\nNota normativa/euristica: Chiusura continua per 4 treni: i
- ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
- ro stradale (120s)
+ URA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 17:08:30 - 17:17:00\nTren
+ i coinvolti nella chiusura:\n  - REG 4449 (BARI CENTRALE -> LECCE)\n  - RE
+ G 4449 (BARI CENTRALE -> LECCE)\n  - REG 4426 (LECCE -> BARI CENTRALE)\n  
+ - REG 4426 (LECCE -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffi
+ dabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 4 tr
+ eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -343,60 +529,99 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4426--20261117-S11126@pl-tracker.local
-DTSTAMP:20261118T030446Z
-SEQUENCE:0
-DTSTART:20261118T161230Z
-DTEND:20261118T161700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:12 - 17:17 (primo: REG 4426)
-DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:12:30 - 17:17:00\nTren
- i coinvolti nella chiusura:\n  - REG 4426 (LECCE -> BARI CENTRALE)\n  - RE
- G 4426 (LECCE -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
+UID:train-4439--20261117-S11126@pl-tracker.local
+DTSTAMP:20261118T114552Z
+SEQUENCE:1
+DTSTART:20261118T194530Z
+DTEND:20261118T195000Z
+SUMMARY:[FERMATA] REG 4439 (BARI CENTRALE -> LECCE) ore 20:49
+DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: FERMA
+ TA\nChiusura sbarre stimata: 20:45:30 - 20:50:00\nTreni coinvolti nella ch
+ iusura:\n  - REG 4439 (BARI CENTRALE -> LECCE)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
+ raccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4439--20261117-S11126@pl-tracker.local
-DTSTAMP:20261118T030446Z
+UID:train-609--20261117-S11126@pl-tracker.local
+DTSTAMP:20261118T114552Z
 SEQUENCE:0
-DTSTART:20261118T194530Z
-DTEND:20261118T195000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:45 - 20:50 (primo: REG 4439)
-DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:45:30 - 20:50:00\nTren
- i coinvolti nella chiusura:\n  - REG 4439 (BARI CENTRALE -> LECCE)\n  - RE
- G 4439 (BARI CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
+DTSTART:20261118T201218Z
+DTEND:20261118T201648Z
+SUMMARY:[TRANSITO VELOCE] IC 609 (MILANO CENTRALE -> LECCE) ore 21:15
+DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: TRANS
+ ITO VELOCE\nChiusura sbarre stimata: 21:12:18 - 21:16:48\nTreni coinvolti 
+ nella chiusura:\n  - IC 609 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (36% tratta BARI CENTRALE -> MONOPOLI\;
+  pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4442--20261117-S11126@pl-tracker.local
-DTSTAMP:20261118T030446Z
-SEQUENCE:0
+DTSTAMP:20261118T114552Z
+SEQUENCE:1
 DTSTART:20261118T204230Z
 DTEND:20261118T204700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:42 - 21:47 (primo: REG 4442)
+SUMMARY:[FERMATA] REG 4442 (LECCE -> BARI CENTRALE) ore 21:46
+DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: FERMA
+ TA\nChiusura sbarre stimata: 21:42:30 - 21:47:00\nTreni coinvolti nella ch
+ iusura:\n  - REG 4442 (LECCE -> BARI CENTRALE)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
+ raccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4446--20261117-S11126@pl-tracker.local
+DTSTAMP:20261118T114552Z
+SEQUENCE:0
+DTSTART:20261118T213919Z
+DTEND:20261118T214500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:39 - 22:45 (primo: REG 4446)
 DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:42:30 - 21:47:00\nTren
- i coinvolti nella chiusura:\n  - REG 4442 (LECCE -> BARI CENTRALE)\n  - RE
- G 4442 (LECCE -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabi
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:39:19 - 22:45:00\nTren
+ i coinvolti nella chiusura:\n  - REG 4446 (LECCE -> BARI CENTRALE) [Transi
+ to]\n  - REG 4446 (LECCE -> BARI CENTRALE) [Transito]\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
+  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
+  soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BARI TORRE A MARE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4446--20261117-S11126@pl-tracker.local
+DTSTAMP:20261118T114552Z
+SEQUENCE:0
+DTSTART:20261118T214930Z
+DTEND:20261118T215400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:49 - 22:54 (primo: REG 4446)
+DESCRIPTION:Stazione/PL: BARI TORRE A MARE (S11126)\nRegime chiusura: CHIUS
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:49:30 - 22:54:00\nTren
+ i coinvolti nella chiusura:\n  - REG 4446 (LECCE -> BARI CENTRALE)\n  - RE
+ G 4446 (LECCE -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabi
  lità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni:
   intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
  bero stradale (120s)
