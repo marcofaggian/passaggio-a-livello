@@ -9,26 +9,50 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:ed16942bdc11b696c4d4b862305ce6adc55d328926564c455a6506b6979a
- 3d29
+X-CONTENT-HASH:3df528c9bf02fbfe86d8bb3960d0bded9eb7b7a498f7830f2f6956bec13f
+ db09
 BEGIN:VEVENT
-UID:train-6577--20261116-S11740@pl-tracker.local
-DTSTAMP:20261117T212227Z
-SEQUENCE:2
-DTSTART:20261117T145830Z
-DTEND:20261117T150300Z
-SUMMARY:[FERMATA] REG 6577 (PAOLA -> REGGIO DI CALABRIA CENTRALE) ore 16:02
-DESCRIPTION:Stazione/PL: S.LUCIDO MARINA (S11740)\nRegime chiusura: FERMATA
- \nChiusura sbarre stimata: 15:58:30 - 16:03:00\nTreni coinvolti nella chiu
- sura:\n  - REG 6577 (PAOLA -> REGGIO DI CALABRIA CENTRALE)\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pre
- visione da traccia oraria regolare
+UID:train-5560--20261117-S11740@pl-tracker.local
+DTSTAMP:20261118T030446Z
+SEQUENCE:0
+DTSTART:20261118T125330Z
+DTEND:20261118T125800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:53 - 13:58 (primo: REG 5560)
+DESCRIPTION:Stazione/PL: S.LUCIDO MARINA (S11740)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:53:30 - 13:58:00\nTreni 
+ coinvolti nella chiusura:\n  - REG 5560 (REGGIO DI CALABRIA CENTRALE -> PA
+ OLA)\n  - REG 5560 (REGGIO DI CALABRIA CENTRALE -> PAOLA)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiu
+ sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.LUCIDO MARINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-1962--20261117-S11740@pl-tracker.local
+DTSTAMP:20261118T030446Z
+SEQUENCE:0
+DTSTART:20261118T193812Z
+DTEND:20261118T194242Z
+SUMMARY:[TRANSITO VELOCE] ICN 1962 (CATANIA CENTRALE -> MILANO CENTRALE) or
+ e 20:41
+DESCRIPTION:Stazione/PL: S.LUCIDO MARINA (S11740)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 20:38:12 - 20:42:42\nTreni coinvolti ne
+ lla chiusura:\n  - ICN 1962 (CATANIA CENTRALE -> MILANO CENTRALE) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (57% tratta AMANTEA -> PAOLA
+ \; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione S.LUCIDO MARINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 END:VCALENDAR
