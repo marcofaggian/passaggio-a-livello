@@ -9,88 +9,378 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:74ece7e4232502043256ccd296756d3f169f084fcec77ee00c9089e6cbac
- d347
+X-CONTENT-HASH:2b789d9581298a68a4faecba09aa0d0949345c2ac740d852b70cb5eb39f2
+ 09f5
 BEGIN:VEVENT
 UID:train-4300--20261118-S11101@pl-tracker.local
-DTSTAMP:20261119T015346Z
-SEQUENCE:0
-DTSTART:20261119T043330Z
-DTEND:20261119T043800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:33 - 05:38 (primo: REG 4300)
-DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 05:33:30 - 05:38:00\nTreni coinv
- olti nella chiusura:\n  - REG 4300 (BARI CENTRALE -> FOGGIA)\n  - REG 4300
-  (BARI CENTRALE -> FOGGIA)\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T040332Z
+DTEND:20261119T040902Z
+SUMMARY:[TRANSITO VELOCE] REG 4300 (BARI CENTRALE -> FOGGIA) ore 05:07
+DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: TRANSITO VEL
+ OCE\nChiusura sbarre stimata: 05:03:32 - 05:09:02\nTreni coinvolti nella c
+ hiusura:\n  - REG 4300 (BARI CENTRALE -> FOGGIA) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
+ ansito stimato senza fermata (64% tratta BARLETTA -> TRINITAPOLI-S.FERDINA
+ NDO DI PUGLIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione INCORONATA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4300--20261118-S11101@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T043330Z
+DTEND:20261119T043800Z
+SUMMARY:[FERMATA] REG 4300 (BARI CENTRALE -> FOGGIA) ore 05:37
+DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: FERMATA\nChi
+ usura sbarre stimata: 05:33:30 - 05:38:00\nTreni coinvolti nella chiusura:
+ \n  - REG 4300 (BARI CENTRALE -> FOGGIA)\nRitardo massimo rilevato: 0 min\
+ nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia
+  oraria regolare
+LOCATION:Passaggio a Livello / Stazione INCORONATA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-608--20261118-S11101@pl-tracker.local
-DTSTAMP:20261119T015346Z
+UID:train-606--20261118-S11101@pl-tracker.local
+DTSTAMP:20261119T100017Z
 SEQUENCE:0
-DTSTART:20261119T080746Z
-DTEND:20261119T081216Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:07 - 09:12 (primo: IC 608)
+DTSTART:20261119T060305Z
+DTEND:20261119T060735Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:03 - 07:07 (primo: IC 606) (+2 min
+ )
 DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 09:07:46 - 09:12:16\nTreni coinv
- olti nella chiusura:\n  - IC 608 (LECCE -> MILANO CENTRALE) [Transito]\n  
- - IC 608 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
- ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 07:03:05 - 07:07:35\nTreni coinv
+ olti nella chiusura:\n  - IC 606 (BARI CENTRALE -> MILANO CENTRALE) (+2m) 
+ [Transito]\n  - IC 606 (BARI CENTRALE -> MILANO CENTRALE) (+2m) [Transito]
+ \nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
+ i (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione INCORONATA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-610--20261118-S11101@pl-tracker.local
-DTSTAMP:20261119T015346Z
+UID:train-8302--20261118-S11101@pl-tracker.local
+DTSTAMP:20261119T100017Z
 SEQUENCE:0
-DTSTART:20261119T095618Z
-DTEND:20261119T100048Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:56 - 11:00 (primo: IC 610)
+DTSTART:20261119T073247Z
+DTEND:20261119T073817Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:32 - 08:38 (primo: TRENO 8302)
 DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 10:56:18 - 11:00:48\nTreni coinv
- olti nella chiusura:\n  - IC 610 (LECCE -> BOLZANO) [Transito]\n  - IC 610
-  (LECCE -> BOLZANO) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabil
- ità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 08:32:47 - 08:38:17\nTreni coinv
+ olti nella chiusura:\n  - TRENO 8302 (LECCE -> ROMA TERMINI) [Transito]\n 
+  - TRENO 8302 (LECCE -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato
+ : -3 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
+ tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione INCORONATA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4312--20261118-S11101@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:0
+DTSTART:20261119T080532Z
+DTEND:20261119T081606Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 09:05 - 09:16 (primo: REG 4312) (+7 m
+ in)
+DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: CHIUSURA CON
+ TINUA - 4 TRENI\nChiusura sbarre stimata: 09:05:32 - 09:16:06\nTreni coinv
+ olti nella chiusura:\n  - REG 4312 (BARI CENTRALE -> FOGGIA) [Transito]\n 
+  - REG 4312 (BARI CENTRALE -> FOGGIA) [Transito]\n  - IC 608 (LECCE -> MIL
+ ANO CENTRALE) (+7m) [Transito]\n  - IC 608 (LECCE -> MILANO CENTRALE) (+7m
+ ) [Transito]\nRitardo massimo rilevato: 7 min\nAffidabilità stima: 78%\nN
+ ota normativa/euristica: Chiusura continua per 4 treni: intervallo utile t
+ ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
+ )
+LOCATION:Passaggio a Livello / Stazione INCORONATA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8382--20261118-S11101@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:0
+DTSTART:20261119T082346Z
+DTEND:20261119T082935Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 09:23 - 09:29 (primo: TRENO 8382) (+2
+  min)
+DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: CHIUSURA CON
+ TINUA - 4 TRENI\nChiusura sbarre stimata: 09:23:46 - 09:29:35\nTreni coinv
+ olti nella chiusura:\n  - TRENO 8382 (NAPOLI CENTRALE -> LECCE) [Transito]
+ \n  - TRENO 8382 (NAPOLI CENTRALE -> LECCE) [Transito]\n  - TRENO 8816 (LE
+ CCE -> VENEZIA S.LUCIA) (+2m) [Transito]\n  - TRENO 8816 (LECCE -> VENEZIA
+  S.LUCIA) (+2m) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità
+  stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: inte
+ rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
+ stradale (120s)
+LOCATION:Passaggio a Livello / Stazione INCORONATA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4312--20261118-S11101@pl-tracker.local-arr
+DTSTAMP:20261119T100017Z
+SEQUENCE:0
+DTSTART:20261119T084900Z
+DTEND:20261119T085700Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 09:49 - 09:57 (primo: REG 4312) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: CHIUSURA CON
+ TINUA - 4 TRENI\nChiusura sbarre stimata: 09:49:00 - 09:57:00\nTreni coinv
+ olti nella chiusura:\n  - REG 4312 (BARI CENTRALE -> FOGGIA) (+1m) [Arrivo
+ ]\n  - REG 4312 (BARI CENTRALE -> FOGGIA) (+1m) [Arrivo]\n  - REG 4312 (BA
+ RI CENTRALE -> FOGGIA) (+1m) [Partenza]\n  - REG 4312 (BARI CENTRALE -> FO
+ GGIA) (+1m) [Partenza]\nRitardo massimo rilevato: 1 min\nAffidabilità sti
+ ma: 99%\nNota normativa/euristica: Chiusura continua per 4 treni: interval
+ lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
+ dale (120s)
+LOCATION:Passaggio a Livello / Stazione INCORONATA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4331--20261118-S11101@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:0
+DTSTART:20261119T093700Z
+DTEND:20261119T094330Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:37 - 10:43 (primo: REG 4331) (+3 m
+ in)
+DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: CHIUSURA CON
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 10:37:00 - 10:43:30\nTreni coinv
+ olti nella chiusura:\n  - REG 4331 (FOGGIA -> BARI CENTRALE) (+3m)\n  - RE
+ G 4331 (FOGGIA -> BARI CENTRALE) (+3m)\nRitardo massimo rilevato: 3 min\nA
+ ffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione INCORONATA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-610--20261118-S11101@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T095628Z
+DTEND:20261119T100058Z
+SUMMARY:[TRANSITO VELOCE] IC 610 (LECCE -> BOLZANO) ore 10:59
+DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: TRANSITO VEL
+ OCE\nChiusura sbarre stimata: 10:56:28 - 11:00:58\nTreni coinvolti nella c
+ hiusura:\n  - IC 610 (LECCE -> BOLZANO) [Transito]\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito st
+ imato senza fermata (77% tratta BARLETTA -> FOGGIA\; pedale annuncio fisso
+  Vmax)
+LOCATION:Passaggio a Livello / Stazione INCORONATA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8820--20261118-S11101@pl-tracker.local
-DTSTAMP:20261119T015346Z
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T102210Z
+DTEND:20261119T102740Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8820 (TARANTO -> MILANO CENTRALE) ore 11:26
+DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: TRANSITO VEL
+ OCE\nChiusura sbarre stimata: 11:22:10 - 11:27:40\nTreni coinvolti nella c
+ hiusura:\n  - TRENO 8820 (TARANTO -> MILANO CENTRALE) [Transito]\nRitardo 
+ massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Transito stimato senza fermata (77% tratta BARLETTA -> FOGGIA\; pedale 
+ annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione INCORONATA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-603--20261118-S11101@pl-tracker.local
+DTSTAMP:20261119T100017Z
 SEQUENCE:0
-DTSTART:20261119T102201Z
-DTEND:20261119T102731Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:22 - 11:27 (primo: TRENO 8820)
+DTSTART:20261119T125043Z
+DTEND:20261119T125513Z
+SUMMARY:[TRANSITO VELOCE] IC 603 (MILANO CENTRALE -> LECCE) ore 13:54
+DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: TRANSITO VEL
+ OCE\nChiusura sbarre stimata: 13:50:43 - 13:55:13\nTreni coinvolti nella c
+ hiusura:\n  - IC 603 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
+ nsito stimato senza fermata (17% tratta FOGGIA -> BARLETTA\; pedale annunc
+ io fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione INCORONATA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8801--20261118-S11101@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:0
+DTSTART:20261119T125729Z
+DTEND:20261119T130259Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:57 - 14:02 (primo: TRENO 8801) (+3
+ 7 min)
 DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 11:22:01 - 11:27:31\nTreni coinv
- olti nella chiusura:\n  - TRENO 8820 (TARANTO -> MILANO CENTRALE) [Transit
- o]\n  - TRENO 8820 (TARANTO -> MILANO CENTRALE) [Transito]\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
- usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 13:57:29 - 14:02:59\nTreni coinv
+ olti nella chiusura:\n  - TRENO 8801 (VENEZIA S.LUCIA -> LECCE) (+37m) [Tr
+ ansito]\n  - TRENO 8801 (VENEZIA S.LUCIA -> LECCE) (+37m) [Transito]\nRita
+ rdo massimo rilevato: 37 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione INCORONATA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:37
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-614--20261118-S11101@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T135628Z
+DTEND:20261119T140727Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:56 - 15:07 (primo: IC 614)
+DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: CHIUSURA CON
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 14:56:28 - 15:07:27\nTreni coinv
+ olti nella chiusura:\n  - IC 614 (LECCE -> MILANO CENTRALE) [Transito]\n  
+ - TRENO 9560 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
+ ntinua per 2 treni: intervallo utile tra i passaggi (58s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione INCORONATA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8828--20261118-S11101@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T142210Z
+DTEND:20261119T142740Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8828 (LECCE -> VENEZIA S.LUCIA) ore 15:26
+DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: TRANSITO VEL
+ OCE\nChiusura sbarre stimata: 15:22:10 - 15:27:40\nTreni coinvolti nella c
+ hiusura:\n  - TRENO 8828 (LECCE -> VENEZIA S.LUCIA) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Transito stimato senza fermata (77% tratta BARLETTA -> FOGGIA\; pedale an
+ nuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione INCORONATA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9805--20261118-S11101@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:0
+DTSTART:20261119T151958Z
+DTEND:20261119T152528Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9805 (TORINO PORTA NUOVA -> LECCE) ore 16:2
+ 4
+DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: TRANSITO VEL
+ OCE\nChiusura sbarre stimata: 16:19:58 - 16:25:28\nTreni coinvolti nella c
+ hiusura:\n  - TRENO 9805 (TORINO PORTA NUOVA -> LECCE) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (17% tratta FOGGIA -> BARLETTA\; pedale
+  annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione INCORONATA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8807--20261118-S11101@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:0
+DTSTART:20261119T161958Z
+DTEND:20261119T162528Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8807 (MILANO CENTRALE -> TARANTO) ore 17:24
+DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: TRANSITO VEL
+ OCE\nChiusura sbarre stimata: 17:19:58 - 17:25:28\nTreni coinvolti nella c
+ hiusura:\n  - TRENO 8807 (MILANO CENTRALE -> TARANTO) [Transito]\nRitardo 
+ massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Transito stimato senza fermata (17% tratta FOGGIA -> BARLETTA\; pedale 
+ annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione INCORONATA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8317--20261118-S11101@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:0
+DTSTART:20261119T180731Z
+DTEND:20261119T181301Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:07 - 19:13 (primo: TRENO 8317)
+DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: CHIUSURA CON
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 19:07:31 - 19:13:01\nTreni coinv
+ olti nella chiusura:\n  - TRENO 8317 (ROMA TERMINI -> LECCE) [Transito]\n 
+  - TRENO 8317 (ROMA TERMINI -> LECCE) [Transito]\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione INCORONATA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -100,39 +390,60 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-614--20261118-S11101@pl-tracker.local
-DTSTAMP:20261119T015346Z
+UID:train-8811--20261118-S11101@pl-tracker.local
+DTSTAMP:20261119T100017Z
 SEQUENCE:0
-DTSTART:20261119T135618Z
-DTEND:20261119T140717Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 14:56 - 15:07 (primo: IC 614)
+DTSTART:20261119T181958Z
+DTEND:20261119T182727Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 19:19 - 19:27 (primo: TRENO 8811)
 DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: CHIUSURA CON
- TINUA - 4 TRENI\nChiusura sbarre stimata: 14:56:18 - 15:07:17\nTreni coinv
- olti nella chiusura:\n  - IC 614 (LECCE -> MILANO CENTRALE) [Transito]\n  
- - IC 614 (LECCE -> MILANO CENTRALE) [Transito]\n  - TRENO 9560 (LECCE -> M
- ILANO CENTRALE) [Transito]\n  - TRENO 9560 (LECCE -> MILANO CENTRALE) [Tra
- nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i p
- assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ TINUA - 4 TRENI\nChiusura sbarre stimata: 19:19:58 - 19:27:27\nTreni coinv
+ olti nella chiusura:\n  - TRENO 8811 (MILANO CENTRALE -> LECCE) [Transito]
+ \n  - TRENO 8811 (MILANO CENTRALE -> LECCE) [Transito]\n  - TRENO 8326 (LE
+ CCE -> ROMA TERMINI) [Transito]\n  - TRENO 8326 (LECCE -> ROMA TERMINI) [T
+ ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i
+  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione INCORONATA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-609--20261118-S11101@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:0
+DTSTART:20261119T185043Z
+DTEND:20261119T185513Z
+SUMMARY:[TRANSITO VELOCE] IC 609 (MILANO CENTRALE -> LECCE) ore 19:54
+DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: TRANSITO VEL
+ OCE\nChiusura sbarre stimata: 19:50:43 - 19:55:13\nTreni coinvolti nella c
+ hiusura:\n  - IC 609 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
+ nsito stimato senza fermata (17% tratta FOGGIA -> BARLETTA\; pedale annunc
+ io fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione INCORONATA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8828--20261118-S11101@pl-tracker.local
-DTSTAMP:20261119T015346Z
+UID:train-8813--20261118-S11101@pl-tracker.local
+DTSTAMP:20261119T100017Z
 SEQUENCE:0
-DTSTART:20261119T142201Z
-DTEND:20261119T142731Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:22 - 15:27 (primo: TRENO 8828)
+DTSTART:20261119T192158Z
+DTEND:20261119T192728Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:21 - 20:27 (primo: TRENO 8813)
 DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 15:22:01 - 15:27:31\nTreni coinv
- olti nella chiusura:\n  - TRENO 8828 (LECCE -> VENEZIA S.LUCIA) [Transito]
- \n  - TRENO 8828 (LECCE -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo ri
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 20:21:58 - 20:27:28\nTreni coinv
+ olti nella chiusura:\n  - TRENO 8813 (MILANO CENTRALE -> LECCE) [Transito]
+ \n  - TRENO 8813 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massimo ri
  levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
  a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
  a soglia minima di sgombero stradale (120s)
@@ -146,8 +457,30 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4360--20261118-S11101@pl-tracker.local
-DTSTAMP:20261119T015346Z
-SEQUENCE:0
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T201432Z
+DTEND:20261119T202002Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:14 - 21:20 (primo: REG 4360)
+DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: CHIUSURA CON
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 21:14:32 - 21:20:02\nTreni coinv
+ olti nella chiusura:\n  - REG 4360 (BARI CENTRALE -> FOGGIA) [Transito]\n 
+  - REG 4360 (BARI CENTRALE -> FOGGIA) [Transito]\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione INCORONATA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4360--20261118-S11101@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
 DTSTART:20261119T204430Z
 DTEND:20261119T204900Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:44 - 21:49 (primo: REG 4360)
@@ -167,19 +500,103 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-758--20261118-S11101@pl-tracker.local
-DTSTAMP:20261119T015346Z
+UID:train-611--20261118-S11101@pl-tracker.local
+DTSTAMP:20261119T100017Z
 SEQUENCE:0
-DTSTART:20261119T213641Z
-DTEND:20261119T214111Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:36 - 22:41 (primo: ICN 758)
+DTSTART:20261119T205416Z
+DTEND:20261119T205846Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:54 - 21:58 (primo: IC 611)
 DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 22:36:41 - 22:41:11\nTreni coinv
- olti nella chiusura:\n  - ICN 758 (LECCE -> MILANO CENTRALE) [Transito]\n 
-  - ICN 758 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
- inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 21:54:16 - 21:58:46\nTreni coinv
+ olti nella chiusura:\n  - IC 611 (BOLZANO -> BARI CENTRALE) [Transito]\n  
+ - IC 611 (BOLZANO -> BARI CENTRALE) [Transito]\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
+ ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+  minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione INCORONATA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-758--20261118-S11101@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T213653Z
+DTEND:20261119T214123Z
+SUMMARY:[TRANSITO VELOCE] ICN 758 (LECCE -> MILANO CENTRALE) ore 22:40
+DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: TRANSITO VEL
+ OCE\nChiusura sbarre stimata: 22:36:53 - 22:41:23\nTreni coinvolti nella c
+ hiusura:\n  - ICN 758 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
+ ansito stimato senza fermata (77% tratta BARLETTA -> FOGGIA\; pedale annun
+ cio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione INCORONATA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:ICN
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4370--20261118-S11101@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T220511Z
+DTEND:20261119T221041Z
+SUMMARY:[TRANSITO VELOCE] REG 4370 (BARI CENTRALE -> FOGGIA) ore 23:09
+DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: TRANSITO VEL
+ OCE\nChiusura sbarre stimata: 23:05:11 - 23:10:41\nTreni coinvolti nella c
+ hiusura:\n  - REG 4370 (BARI CENTRALE -> FOGGIA) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
+ ansito stimato senza fermata (64% tratta BARLETTA -> TRINITAPOLI-S.FERDINA
+ NDO DI PUGLIA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione INCORONATA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4370--20261118-S11101@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T223530Z
+DTEND:20261119T224000Z
+SUMMARY:[FERMATA] REG 4370 (BARI CENTRALE -> FOGGIA) ore 23:39
+DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: FERMATA\nChi
+ usura sbarre stimata: 23:35:30 - 23:40:00\nTreni coinvolti nella chiusura:
+ \n  - REG 4370 (BARI CENTRALE -> FOGGIA)\nRitardo massimo rilevato: 0 min\
+ nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia
+  oraria regolare
+LOCATION:Passaggio a Livello / Stazione INCORONATA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-35051--20261118-S11101@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:0
+DTSTART:20261120T044403Z
+DTEND:20261120T044833Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:44 - 05:48 (primo: ICN 35051)
+DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: CHIUSURA CON
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 05:44:03 - 05:48:33\nTreni coinv
+ olti nella chiusura:\n  - ICN 35051 (MILANO CENTRALE -> LECCE) [Transito]\
+ n  - ICN 35051 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
+ continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione INCORONATA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -187,27 +604,5 @@ CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:ICN
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4370--20261118-S11101@pl-tracker.local
-DTSTAMP:20261119T015346Z
-SEQUENCE:0
-DTSTART:20261119T223530Z
-DTEND:20261119T224000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:35 - 23:40 (primo: REG 4370)
-DESCRIPTION:Stazione/PL: INCORONATA (S11101)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 23:35:30 - 23:40:00\nTreni coinv
- olti nella chiusura:\n  - REG 4370 (BARI CENTRALE -> FOGGIA)\n  - REG 4370
-  (BARI CENTRALE -> FOGGIA)\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
-LOCATION:Passaggio a Livello / Stazione INCORONATA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

@@ -9,34 +9,36 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:e475edef546496f5e69b61449fb9d3ac7938fb3b70bfe03b2f47d8bd526a
- 0872
+X-CONTENT-HASH:5f85a141bfaa1e6c0f6d0940cdd460f0671fa442cce59b860f109fcc01cf
+ 3dcb
 BEGIN:VEVENT
 UID:train-12599--20261118-S08668@pl-tracker.local
-DTSTAMP:20261119T015346Z
-SEQUENCE:0
-DTSTART:20261119T082230Z
-DTEND:20261119T082700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:22 - 09:27 (primo: REG 12599)
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T083600Z
+DTEND:20261119T084730Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 09:36 - 09:47 (primo: REG 12599) (+15
+  min)
 DESCRIPTION:Stazione/PL: ROCCASECCA (S08668)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 09:22:30 - 09:27:00\nTreni coinv
- olti nella chiusura:\n  - REG 12599 (ROMA TERMINI -> CASSINO)\n  - REG 125
- 99 (ROMA TERMINI -> CASSINO)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+ TINUA - 4 TRENI\nChiusura sbarre stimata: 09:36:00 - 09:47:30\nTreni coinv
+ olti nella chiusura:\n  - REG 12599 (ROMA TERMINI -> CASSINO) (+15m)\n  - 
+ REG 12599 (ROMA TERMINI -> CASSINO) (+15m)\n  - REG 12601 (ROMA TERMINI ->
+  CASSINO) (+15m)\n  - REG 12601 (ROMA TERMINI -> CASSINO) (+15m)\nRitardo 
+ massimo rilevato: 15 min\nAffidabilità stima: 99%\nNota normativa/euristi
+ ca: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROCCASECCA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:15
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12623--20261118-S08668@pl-tracker.local
-DTSTAMP:20261119T015346Z
-SEQUENCE:0
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
 DTSTART:20261119T161930Z
 DTEND:20261119T162400Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:19 - 17:24 (primo: REG 12623)
@@ -56,38 +58,80 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9539--20261118-S08668@pl-tracker.local
-DTSTAMP:20261119T015346Z
+UID:train-12627--20261118-S08668@pl-tracker.local
+DTSTAMP:20261119T100017Z
 SEQUENCE:0
-DTSTART:20261119T165612Z
-DTEND:20261119T170142Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:56 - 18:01 (primo: TRENO 9539)
+DTSTART:20261119T162930Z
+DTEND:20261119T163400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:29 - 17:34 (primo: REG 12627)
 DESCRIPTION:Stazione/PL: ROCCASECCA (S08668)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 17:56:12 - 18:01:42\nTreni coinv
- olti nella chiusura:\n  - TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE) 
- [Transito]\n  - TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]
- \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
- a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
- i (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 17:29:30 - 17:34:00\nTreni coinv
+ olti nella chiusura:\n  - REG 12627 (ROMA TERMINI -> CASSINO)\n  - REG 126
+ 27 (ROMA TERMINI -> CASSINO)\nRitardo massimo rilevato: 0 min\nAffidabilit
+ à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROCCASECCA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9539--20261118-S08668@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T165721Z
+DTEND:20261119T170251Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE) o
+ re 18:01
+DESCRIPTION:Stazione/PL: ROCCASECCA (S08668)\nRegime chiusura: TRANSITO VEL
+ OCE\nChiusura sbarre stimata: 17:57:21 - 18:02:51\nTreni coinvolti nella c
+ hiusura:\n  - TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (69% tratta FROSINONE -> CASSINO
+ \; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ROCCASECCA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12629--20261118-S08668@pl-tracker.local
-DTSTAMP:20261119T015346Z
-SEQUENCE:0
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
 DTSTART:20261119T172730Z
 DTEND:20261119T173200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:27 - 18:32 (primo: REG 12629)
+SUMMARY:[FERMATA] REG 12629 (ROMA TERMINI -> CASSINO) ore 18:31
+DESCRIPTION:Stazione/PL: ROCCASECCA (S08668)\nRegime chiusura: FERMATA\nChi
+ usura sbarre stimata: 18:27:30 - 18:32:00\nTreni coinvolti nella chiusura:
+ \n  - REG 12629 (ROMA TERMINI -> CASSINO)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
+ a oraria regolare
+LOCATION:Passaggio a Livello / Stazione ROCCASECCA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12647--20261118-S08668@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:0
+DTSTART:20261119T212730Z
+DTEND:20261119T213200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:27 - 22:32 (primo: REG 12647)
 DESCRIPTION:Stazione/PL: ROCCASECCA (S08668)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 18:27:30 - 18:32:00\nTreni coinv
- olti nella chiusura:\n  - REG 12629 (ROMA TERMINI -> CASSINO)\n  - REG 126
- 29 (ROMA TERMINI -> CASSINO)\nRitardo massimo rilevato: 0 min\nAffidabilit
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 22:27:30 - 22:32:00\nTreni coinv
+ olti nella chiusura:\n  - REG 12647 (ROMA TERMINI -> CASSINO)\n  - REG 126
+ 47 (ROMA TERMINI -> CASSINO)\nRitardo massimo rilevato: 0 min\nAffidabilit
  à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
  tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
  o stradale (120s)

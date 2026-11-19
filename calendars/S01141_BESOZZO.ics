@@ -9,28 +9,52 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:f25c9a6c28c770cd4e841a91ed2dda625bb250d57fd137ae21b98dc04f38
- f2d6
+X-CONTENT-HASH:265e5de0a0e4c809b10746478fd0e80beed2ca5fe94f0fff37e1f5e0c98b
+ b47b
 BEGIN:VEVENT
-UID:train-25302--20261118-S01141@pl-tracker.local
-DTSTAMP:20261119T015346Z
+UID:train-25302--20261118-S01141@pl-tracker.local-arr
+DTSTAMP:20261119T100017Z
 SEQUENCE:0
-DTSTART:20261119T080230Z
-DTEND:20261119T080700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:02 - 09:07 (primo: REG 25302)
+DTSTART:20261119T081130Z
+DTEND:20261119T081600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:11 - 09:16 (primo: REG 25302) (+16
+  min)
 DESCRIPTION:Stazione/PL: BESOZZO (S01141)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 09:02:30 - 09:07:00\nTreni coinvolt
- i nella chiusura:\n  - REG 25302 (MILANO PORTA GARIBALDI -> LUINO)\n  - RE
- G 25302 (MILANO PORTA GARIBALDI -> LUINO)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua pe
- r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
- ma di sgombero stradale (120s)
+ UA - 2 TRENI\nChiusura sbarre stimata: 09:11:30 - 09:16:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 25302 (MILANO PORTA GARIBALDI -> LUINO) (+16m) 
+ [Arrivo]\n  - REG 25302 (MILANO PORTA GARIBALDI -> LUINO) (+16m) [Arrivo]\
+ nRitardo massimo rilevato: 16 min\nAffidabilità stima: 99%\nNota normativ
+ a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
+ i (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BESOZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:16
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25302--20261118-S01141@pl-tracker.local-dep
+DTSTAMP:20261119T100017Z
+SEQUENCE:0
+DTSTART:20261119T082330Z
+DTEND:20261119T082800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:23 - 09:28 (primo: REG 25302) (+16
+  min)
+DESCRIPTION:Stazione/PL: BESOZZO (S01141)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 09:23:30 - 09:28:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 25302 (MILANO PORTA GARIBALDI -> LUINO) (+16m) 
+ [Partenza]\n  - REG 25302 (MILANO PORTA GARIBALDI -> LUINO) (+16m) [Parten
+ za]\nRitardo massimo rilevato: 16 min\nAffidabilità stima: 99%\nNota norm
+ ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BESOZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:16
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

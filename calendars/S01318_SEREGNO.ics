@@ -9,22 +9,22 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:38068d2820924156d0a740bb53894ecd2aa72f4780458ef845d9c564b993
- de7f
+X-CONTENT-HASH:d2ed53f1a42a8613881ff91d287c1de05508de879750fa45b130d0815519
+ e13b
 BEGIN:VEVENT
-UID:train-612--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
+UID:train-10610--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
 SEQUENCE:0
-DTSTART:20261119T052313Z
-DTEND:20261119T052843Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:23 - 06:28 (primo: REG 612)
+DTSTART:20261119T045830Z
+DTEND:20261119T050400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:58 - 06:04 (primo: REG 10610)
 DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 06:23:13 - 06:28:43\nTreni coinvolt
- i nella chiusura:\n  - REG 612 (ASSO -> MILANO CADORNA) [Transito]\n  - RE
- G 612 (ASSO -> MILANO CADORNA) [Transito]\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
- r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
- ma di sgombero stradale (120s)
+ UA - 2 TRENI\nChiusura sbarre stimata: 05:58:30 - 06:04:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 10610 (SEVESO -> MILANO CADORNA) [Transito]\n  
+ - REG 10610 (SEVESO -> MILANO CADORNA) [Transito]\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
+ tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SEREGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -34,177 +34,282 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-1614--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
-SEQUENCE:0
-DTSTART:20261119T055313Z
-DTEND:20261119T060200Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:53 - 07:02 (primo: REG 1614)
-DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 4 TRENI\nChiusura sbarre stimata: 06:53:13 - 07:02:00\nTreni coinvolt
- i nella chiusura:\n  - REG 1614 (ERBA -> MILANO CADORNA) [Transito]\n  - R
- EG 1614 (ERBA -> MILANO CADORNA) [Transito]\n  - REG 25506 (MILANO CENTRAL
- E -> CHIASSO)\n  - REG 25506 (MILANO CENTRALE -> CHIASSO)\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
- sura continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
+UID:train-612--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T052307Z
+DTEND:20261119T052837Z
+SUMMARY:[TRANSITO VELOCE] REG 612 (ASSO -> MILANO CADORNA) ore 06:27
+DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 06:23:07 - 06:28:37\nTreni coinvolti nella chiu
+ sura:\n  - REG 612 (ASSO -> MILANO CADORNA) [Transito]\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transit
+ o stimato senza fermata (12% tratta SEVESO -> CESANO MADERNO\; pedale annu
+ ncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SEREGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25506--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:0
+DTSTART:20261119T055730Z
+DTEND:20261119T060449Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 06:57 - 07:04 (primo: REG 25506)
+DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 5 TRENI\nChiusura sbarre stimata: 06:57:30 - 07:04:49\nTreni coinvolt
+ i nella chiusura:\n  - REG 25506 (MILANO CENTRALE -> CHIASSO)\n  - REG 161
+ 4 (ERBA -> MILANO CADORNA) [Transito]\n  - REG 1614 (ERBA -> MILANO CADORN
+ A) [Transito]\n  - REG 715 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito]\
+ n  - REG 715 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 5 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SEREGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-720--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
-SEQUENCE:0
-DTSTART:20261119T062058Z
-DTEND:20261119T062953Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 07:20 - 07:29 (primo: REG 720)
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T062057Z
+DTEND:20261119T063857Z
+SUMMARY:[CHIUSURA CONTINUA - 9 TRENI] 07:20 - 07:38 (primo: REG 720) (+8 mi
+ n)
 DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 6 TRENI\nChiusura sbarre stimata: 07:20:58 - 07:29:53\nTreni coinvolt
+ UA - 9 TRENI\nChiusura sbarre stimata: 07:20:57 - 07:38:57\nTreni coinvolt
  i nella chiusura:\n  - REG 720 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transi
- to]\n  - REG 720 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transito]\n  - EC 10
-  (MILANO CENTRALE -> CHIASSO) [Transito]\n  - EC 10 (MILANO CENTRALE -> CH
- IASSO) [Transito]\n  - REG 25221 (RHO -> COMO S.GIOVANNI) [Transito]\n  - 
- REG 25221 (RHO -> COMO S.GIOVANNI) [Transito]\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
- a per 6 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+ to]\n  - EC 10 (MILANO CENTRALE -> CHIASSO) (+3m) [Transito]\n  - EC 10 (M
+ ILANO CENTRALE -> CHIASSO) (+3m) [Transito]\n  - REG 24218 (MILANO ROGORED
+ O -> SEVESO) [Transito]\n  - REG 24218 (MILANO ROGOREDO -> SEVESO) [Transi
+ to]\n  - REG 717 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito]\n  - REG 7
+ 17 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito]\n  - REG 25221 (RHO -> C
+ OMO S.GIOVANNI) (+8m) [Transito]\n  - REG 25221 (RHO -> COMO S.GIOVANNI) (
+ +8m) [Transito]\nRitardo massimo rilevato: 8 min\nAffidabilità stima: 78%
+ \nNota normativa/euristica: Chiusura continua per 9 treni: intervallo util
+ e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
+ 20s)
 LOCATION:Passaggio a Livello / Stazione SEREGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 9 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25221--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
-SEQUENCE:0
-DTSTART:20261119T063630Z
-DTEND:20261119T064100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:36 - 07:41 (primo: REG 25221)
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T064230Z
+DTEND:20261119T065155Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:42 - 07:51 (primo: REG 25221) (+7 
+ min)
 DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 07:36:30 - 07:41:00\nTreni coinvolt
- i nella chiusura:\n  - REG 25221 (RHO -> COMO S.GIOVANNI)\n  - REG 25221 (
- RHO -> COMO S.GIOVANNI)\nRitardo massimo rilevato: 0 min\nAffidabilità st
- ima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
- llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
- adale (120s)
+ UA - 4 TRENI\nChiusura sbarre stimata: 07:42:30 - 07:51:55\nTreni coinvolt
+ i nella chiusura:\n  - REG 25221 (RHO -> COMO S.GIOVANNI) (+7m)\n  - REG 2
+ 5221 (RHO -> COMO S.GIOVANNI) (+7m)\n  - REG 1617 (MILANO CADORNA -> ERBA)
+  [Transito]\n  - REG 1617 (MILANO CADORNA -> ERBA) [Transito]\nRitardo mas
+ simo rilevato: 7 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) inferi
+ ore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SEREGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25508--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T065730Z
+DTEND:20261119T070200Z
+SUMMARY:[FERMATA] REG 25508 (MILANO CENTRALE -> CHIASSO) ore 08:01
+DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 07:57:30 - 08:02:00\nTreni coinvolti nella chiusura:\n 
+  - REG 25508 (MILANO CENTRALE -> CHIASSO)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
+ a oraria regolare
+LOCATION:Passaggio a Livello / Stazione SEREGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-25508--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
+UID:train-25024--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
 SEQUENCE:0
-DTSTART:20261119T065730Z
-DTEND:20261119T070857Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:57 - 08:08 (primo: REG 25508)
+DTSTART:20261119T070514Z
+DTEND:20261119T071044Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:05 - 08:10 (primo: REG 25024) (+8 
+ min)
 DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 3 TRENI\nChiusura sbarre stimata: 07:57:30 - 08:08:57\nTreni coinvolt
- i nella chiusura:\n  - REG 25508 (MILANO CENTRALE -> CHIASSO)\n  - REG 255
- 08 (MILANO CENTRALE -> CHIASSO)\n  - REG 2926 (MILANO CENTRALE -> GALLARAT
- E) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\n
- Nota normativa/euristica: Chiusura continua per 3 treni: intervallo utile 
- tra i passaggi (87s) inferiore alla soglia minima di sgombero stradale (12
- 0s)
+ UA - 2 TRENI\nChiusura sbarre stimata: 08:05:14 - 08:10:44\nTreni coinvolt
+ i nella chiusura:\n  - REG 25024 (MILANO PORTA GARIBALDI -> COMO S.GIOVANN
+ I) (+8m) [Transito]\n  - REG 25024 (MILANO PORTA GARIBALDI -> COMO S.GIOVA
+ NNI) (+8m) [Transito]\nRitardo massimo rilevato: 8 min\nAffidabilità stim
+ a: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervall
+ o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
+ ale (120s)
 LOCATION:Passaggio a Livello / Stazione SEREGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-24220--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
+UID:train-25024--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
 SEQUENCE:0
-DTSTART:20261119T071754Z
-DTEND:20261119T072907Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:17 - 08:29 (primo: REG 24220)
+DTSTART:20261119T071400Z
+DTEND:20261119T072752Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 08:14 - 08:27 (primo: REG 25024) (+28
+  min)
 DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 4 TRENI\nChiusura sbarre stimata: 08:17:54 - 08:29:07\nTreni coinvolt
- i nella chiusura:\n  - REG 24220 (MILANO ROGOREDO -> SEVESO) [Transito]\n 
-  - REG 24220 (MILANO ROGOREDO -> SEVESO) [Transito]\n  - EC 12 (MILANO CEN
- TRALE -> CHIASSO) [Transito]\n  - EC 12 (MILANO CENTRALE -> CHIASSO) [Tran
- sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i pa
- ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ UA - 5 TRENI\nChiusura sbarre stimata: 08:14:00 - 08:27:52\nTreni coinvolt
+ i nella chiusura:\n  - REG 25024 (MILANO PORTA GARIBALDI -> COMO S.GIOVANN
+ I) (+9m)\n  - REG 25024 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI) (+9m)\
+ n  - REG 24220 (MILANO ROGOREDO -> SEVESO) [Transito]\n  - REG 719 (MILANO
+  CADORNA -> CESANO MADERNO) (+28m) [Transito]\n  - REG 719 (MILANO CADORNA
+  -> CESANO MADERNO) (+28m) [Transito]\nRitardo massimo rilevato: 28 min\nA
+ ffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 5
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SEREGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:28
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:0
+DTSTART:20261119T074426Z
+DTEND:20261119T074856Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:44 - 08:48 (primo: EC 12) (+18 min
+ )
+DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 08:44:26 - 08:48:56\nTreni coinvolt
+ i nella chiusura:\n  - EC 12 (MILANO CENTRALE -> CHIASSO) (+18m) [Transito
+ ]\n  - EC 12 (MILANO CENTRALE -> CHIASSO) (+18m) [Transito]\nRitardo massi
+ mo rilevato: 18 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
+ hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
+ re alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SEREGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:18
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:EC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25235--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T084855Z
+DTEND:20261119T085425Z
+SUMMARY:[TRANSITO VELOCE] REG 25235 (COMO S.GIOVANNI -> RHO) ore 09:53
+DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 09:48:55 - 09:54:25\nTreni coinvolti nella chiu
+ sura:\n  - REG 25235 (COMO S.GIOVANNI -> RHO) [Transito]\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
+ ito stimato senza fermata (79% tratta COMO S.GIOVANNI -> COMO CAMERLATA\; 
+ pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione SEREGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25235--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
-SEQUENCE:0
-DTSTART:20261119T084855Z
-DTEND:20261119T085425Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:48 - 09:54 (primo: REG 25235)
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T091430Z
+DTEND:20261119T093909Z
+SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 10:14 - 10:39 (primo: REG 25235) (+6 
+ min)
 DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 09:48:55 - 09:54:25\nTreni coinvolt
- i nella chiusura:\n  - REG 25235 (COMO S.GIOVANNI -> RHO) [Transito]\n  - 
- REG 25235 (COMO S.GIOVANNI -> RHO) [Transito]\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
- a per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+ UA - 8 TRENI\nChiusura sbarre stimata: 10:14:30 - 10:39:09\nTreni coinvolt
+ i nella chiusura:\n  - REG 25235 (COMO S.GIOVANNI -> RHO)\n  - REG 25037 (
+ COMO S.GIOVANNI -> MILANO PORTA GARIBALDI) (+2m) [Transito]\n  - REG 25037
+  (COMO S.GIOVANNI -> MILANO PORTA GARIBALDI) (+2m) [Transito]\n  - REG 632
+  (ASSO -> MILANO CADORNA) (+1m) [Transito]\n  - REG 632 (ASSO -> MILANO CA
+ DORNA) (+1m) [Transito]\n  - REG 2731 (MILANO CADORNA -> PALAZZOLO MILANES
+ E) [Transito]\n  - REG 24233 (SEVESO -> MILANO ROGOREDO) (+6m) [Transito]\
+ n  - REG 24233 (SEVESO -> MILANO ROGOREDO) (+6m) [Transito]\nRitardo massi
+ mo rilevato: 6 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 8 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SEREGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-24233--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
+UID:train-25037--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
 SEQUENCE:0
-DTSTART:20261119T090808Z
-DTEND:20261119T091900Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:08 - 10:19 (primo: REG 24233)
+DTSTART:20261119T094430Z
+DTEND:20261119T095350Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 10:44 - 10:53 (primo: REG 25037) (+2 
+ min)
 DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 4 TRENI\nChiusura sbarre stimata: 10:08:08 - 10:19:00\nTreni coinvolt
- i nella chiusura:\n  - REG 24233 (SEVESO -> MILANO ROGOREDO) [Transito]\n 
-  - REG 24233 (SEVESO -> MILANO ROGOREDO) [Transito]\n  - REG 25235 (COMO S
- .GIOVANNI -> RHO)\n  - REG 25235 (COMO S.GIOVANNI -> RHO)\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
- sura continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
+ UA - 5 TRENI\nChiusura sbarre stimata: 10:44:30 - 10:53:50\nTreni coinvolt
+ i nella chiusura:\n  - REG 25037 (COMO S.GIOVANNI -> MILANO PORTA GARIBALD
+ I) (+1m)\n  - REG 25037 (COMO S.GIOVANNI -> MILANO PORTA GARIBALDI) (+1m)\
+ n  - REG 24230 (MILANO ROGOREDO -> SEVESO) [Transito]\n  - REG 25239 (COMO
+  S.GIOVANNI -> RHO) (+2m) [Transito]\n  - REG 25239 (COMO S.GIOVANNI -> RH
+ O) (+2m) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima:
+  78%\nNota normativa/euristica: Chiusura continua per 5 treni: intervallo 
+ utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
+ e (120s)
 LOCATION:Passaggio a Livello / Stazione SEREGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2731--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
+UID:train-2733--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
 SEQUENCE:0
-DTSTART:20261119T092736Z
-DTEND:20261119T093306Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:27 - 10:33 (primo: REG 2731)
+DTSTART:20261119T095738Z
+DTEND:20261119T100308Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:57 - 11:03 (primo: REG 2733)
 DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 10:27:36 - 10:33:06\nTreni coinvolt
- i nella chiusura:\n  - REG 2731 (MILANO CADORNA -> PALAZZOLO MILANESE) [Tr
- ansito]\n  - REG 2731 (MILANO CADORNA -> PALAZZOLO MILANESE) [Transito]\nR
+ UA - 2 TRENI\nChiusura sbarre stimata: 10:57:38 - 11:03:08\nTreni coinvolt
+ i nella chiusura:\n  - REG 2733 (MILANO CADORNA -> PALAZZOLO MILANESE) [Tr
+ ansito]\n  - REG 2733 (MILANO CADORNA -> PALAZZOLO MILANESE) [Transito]\nR
  itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
  uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
  0s) inferiore alla soglia minima di sgombero stradale (120s)
@@ -217,67 +322,72 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-24230--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
+UID:train-25239--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
 SEQUENCE:0
-DTSTART:20261119T094754Z
-DTEND:20261119T095324Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:47 - 10:53 (primo: REG 24230)
+DTSTART:20261119T101630Z
+DTEND:20261119T103308Z
+SUMMARY:[CHIUSURA CONTINUA - 11 TRENI] 11:16 - 11:33 (primo: REG 25239) (+3
+  min)
 DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 10:47:54 - 10:53:24\nTreni coinvolt
- i nella chiusura:\n  - REG 24230 (MILANO ROGOREDO -> SEVESO) [Transito]\n 
-  - REG 24230 (MILANO ROGOREDO -> SEVESO) [Transito]\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+ UA - 11 TRENI\nChiusura sbarre stimata: 11:16:30 - 11:33:08\nTreni coinvol
+ ti nella chiusura:\n  - REG 25239 (COMO S.GIOVANNI -> RHO) (+2m)\n  - REG 
+ 25239 (COMO S.GIOVANNI -> RHO) (+2m)\n  - REG 2736 (PALAZZOLO MILANESE -> 
+ MILANO CADORNA) [Transito]\n  - REG 2736 (PALAZZOLO MILANESE -> MILANO CAD
+ ORNA) [Transito]\n  - REG 636 (ASSO -> MILANO CADORNA) [Transito]\n  - EC 
+ 150 (MILANO CENTRALE -> CHIASSO) [Transito]\n  - EC 150 (MILANO CENTRALE -
+ > CHIASSO) [Transito]\n  - EC 31 (CHIASSO -> VENEZIA S.LUCIA) [Transito]\n
+   - REG 25237 (RHO -> COMO S.GIOVANNI) (+3m) [Transito]\n  - REG 25237 (RH
+ O -> COMO S.GIOVANNI) (+3m) [Transito]\n  - REG 2735 (MILANO CADORNA -> PA
+ LAZZOLO MILANESE) [Transito]\nRitardo massimo rilevato: 3 min\nAffidabilit
+ à stima: 78%\nNota normativa/euristica: Chiusura continua per 11 treni: i
+ ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SEREGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-636--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
-SEQUENCE:0
-DTSTART:20261119T102313Z
-DTEND:20261119T103306Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 11:23 - 11:33 (primo: REG 636)
-DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 8 TRENI\nChiusura sbarre stimata: 11:23:13 - 11:33:06\nTreni coinvolt
- i nella chiusura:\n  - REG 636 (ASSO -> MILANO CADORNA) [Transito]\n  - RE
- G 636 (ASSO -> MILANO CADORNA) [Transito]\n  - EC 150 (MILANO CENTRALE -> 
- CHIASSO) [Transito]\n  - EC 150 (MILANO CENTRALE -> CHIASSO) [Transito]\n 
-  - REG 25237 (RHO -> COMO S.GIOVANNI) [Transito]\n  - REG 25237 (RHO -> CO
- MO S.GIOVANNI) [Transito]\n  - REG 2735 (MILANO CADORNA -> PALAZZOLO MILAN
- ESE) [Transito]\n  - REG 2735 (MILANO CADORNA -> PALAZZOLO MILANESE) [Tran
- sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Chiusura continua per 8 treni: intervallo utile tra i pa
- ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione SEREGNO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 11 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25237--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
-SEQUENCE:0
-DTSTART:20261119T103630Z
-DTEND:20261119T104100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:36 - 11:41 (primo: REG 25237)
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T103930Z
+DTEND:20261119T104400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:39 - 11:44 (primo: REG 25237) (+3 
+ min)
 DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 11:36:30 - 11:41:00\nTreni coinvolt
- i nella chiusura:\n  - REG 25237 (RHO -> COMO S.GIOVANNI)\n  - REG 25237 (
- RHO -> COMO S.GIOVANNI)\nRitardo massimo rilevato: 0 min\nAffidabilità st
- ima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
- llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
- adale (120s)
+ UA - 2 TRENI\nChiusura sbarre stimata: 11:39:30 - 11:44:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 25237 (RHO -> COMO S.GIOVANNI) (+3m)\n  - REG 2
+ 5237 (RHO -> COMO S.GIOVANNI) (+3m)\nRitardo massimo rilevato: 3 min\nAffi
+ dabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tr
+ eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SEREGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25516--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:0
+DTSTART:20261119T105730Z
+DTEND:20261119T110200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:57 - 12:02 (primo: REG 25516)
+DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 11:57:30 - 12:02:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 25516 (MILANO CENTRALE -> CHIASSO)\n  - REG 255
+ 16 (MILANO CENTRALE -> CHIASSO)\nRitardo massimo rilevato: 0 min\nAffidabi
+ lità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni:
+  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SEREGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -287,19 +397,19 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-25241--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
+UID:train-637--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
 SEQUENCE:0
-DTSTART:20261119T112423Z
-DTEND:20261119T112953Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:24 - 12:29 (primo: REG 25241)
+DTSTART:20261119T111338Z
+DTEND:20261119T111908Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:13 - 12:19 (primo: REG 637)
 DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 12:24:23 - 12:29:53\nTreni coinvolt
- i nella chiusura:\n  - REG 25241 (RHO -> COMO S.GIOVANNI) [Transito]\n  - 
- REG 25241 (RHO -> COMO S.GIOVANNI) [Transito]\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
- a per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+ UA - 2 TRENI\nChiusura sbarre stimata: 12:13:38 - 12:19:08\nTreni coinvolt
+ i nella chiusura:\n  - REG 637 (MILANO CADORNA -> ASSO) [Transito]\n  - RE
+ G 637 (MILANO CADORNA -> ASSO) [Transito]\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
+ r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SEREGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -309,70 +419,99 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-25241--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
+UID:train-640--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
 SEQUENCE:0
-DTSTART:20261119T113630Z
-DTEND:20261119T114100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:36 - 12:41 (primo: REG 25241)
+DTSTART:20261119T112307Z
+DTEND:20261119T113005Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:23 - 12:30 (primo: REG 640)
 DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 12:36:30 - 12:41:00\nTreni coinvolt
- i nella chiusura:\n  - REG 25241 (RHO -> COMO S.GIOVANNI)\n  - REG 25241 (
- RHO -> COMO S.GIOVANNI)\nRitardo massimo rilevato: 0 min\nAffidabilità st
- ima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
- llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
- adale (120s)
+ UA - 3 TRENI\nChiusura sbarre stimata: 12:23:07 - 12:30:05\nTreni coinvolt
+ i nella chiusura:\n  - REG 640 (ASSO -> MILANO CADORNA) [Transito]\n  - RE
+ G 640 (ASSO -> MILANO CADORNA) [Transito]\n  - REG 25241 (RHO -> COMO S.GI
+ OVANNI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
+ 78%\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo u
+ tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
+  (120s)
 LOCATION:Passaggio a Livello / Stazione SEREGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-24248--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
-SEQUENCE:0
-DTSTART:20261119T141754Z
-DTEND:20261119T142324Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:17 - 15:23 (primo: REG 24248)
+UID:train-25241--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T113630Z
+DTEND:20261119T114259Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:36 - 12:42 (primo: REG 25241) (+14
+  min)
 DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 15:17:54 - 15:23:24\nTreni coinvolt
- i nella chiusura:\n  - REG 24248 (MILANO ROGOREDO -> SEVESO) [Transito]\n 
-  - REG 24248 (MILANO ROGOREDO -> SEVESO) [Transito]\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+ UA - 3 TRENI\nChiusura sbarre stimata: 12:36:30 - 12:42:59\nTreni coinvolt
+ i nella chiusura:\n  - REG 25241 (RHO -> COMO S.GIOVANNI)\n  - REG 2823 (T
+ IRANO -> MILANO CENTRALE) (+14m) [Transito]\n  - REG 2823 (TIRANO -> MILAN
+ O CENTRALE) (+14m) [Transito]\nRitardo massimo rilevato: 14 min\nAffidabil
+ ità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: 
+ intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
+ ero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SEREGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:14
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24253--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:0
+DTSTART:20261119T140803Z
+DTEND:20261119T142618Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 15:08 - 15:26 (primo: REG 24253)
+DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 7 TRENI\nChiusura sbarre stimata: 15:08:03 - 15:26:18\nTreni coinvolt
+ i nella chiusura:\n  - REG 24253 (SEVESO -> MILANO ROGOREDO) [Transito]\n 
+  - REG 24253 (SEVESO -> MILANO ROGOREDO) [Transito]\n  - REG 651 (MILANO C
+ ADORNA -> ASSO) [Transito]\n  - REG 651 (MILANO CADORNA -> ASSO) [Transito
+ ]\n  - REG 24248 (MILANO ROGOREDO -> SEVESO) [Transito]\n  - REG 2752 (PAL
+ AZZOLO MILANESE -> MILANO CADORNA) [Transito]\n  - REG 2752 (PALAZZOLO MIL
+ ANESE -> MILANO CADORNA) [Transito]\nRitardo massimo rilevato: 0 min\nAffi
+ dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 7 tr
+ eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SEREGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2655--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
-SEQUENCE:0
-DTSTART:20261119T144336Z
-DTEND:20261119T150306Z
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T144338Z
+DTEND:20261119T150308Z
 SUMMARY:[CHIUSURA CONTINUA - 12 TRENI] 15:43 - 16:03 (primo: REG 2655)
 DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 12 TRENI\nChiusura sbarre stimata: 15:43:36 - 16:03:06\nTreni coinvol
+ UA - 12 TRENI\nChiusura sbarre stimata: 15:43:38 - 16:03:08\nTreni coinvol
  ti nella chiusura:\n  - REG 2655 (MILANO CADORNA -> ERBA) [Transito]\n  - 
  REG 2655 (MILANO CADORNA -> ERBA) [Transito]\n  - REG 24250 (MILANO ROGORE
  DO -> SEVESO) [Transito]\n  - REG 24250 (MILANO ROGOREDO -> SEVESO) [Trans
  ito]\n  - REG 25259 (COMO S.GIOVANNI -> RHO) [Transito]\n  - REG 25259 (CO
- MO S.GIOVANNI -> RHO) [Transito]\n  - REG 1654 (ERBA -> MILANO CADORNA) [T
- ransito]\n  - REG 1654 (ERBA -> MILANO CADORNA) [Transito]\n  - REG 25524 
- (MILANO CENTRALE -> CHIASSO)\n  - REG 25524 (MILANO CENTRALE -> CHIASSO)\n
-   - REG 2757 (MILANO CADORNA -> PALAZZOLO MILANESE) [Transito]\n  - REG 27
- 57 (MILANO CADORNA -> PALAZZOLO MILANESE) [Transito]\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
- continua per 12 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
+ MO S.GIOVANNI -> RHO) [Transito]\n  - REG 2754 (PALAZZOLO MILANESE -> MILA
+ NO CADORNA) [Transito]\n  - REG 2754 (PALAZZOLO MILANESE -> MILANO CADORNA
+ ) [Transito]\n  - REG 1654 (ERBA -> MILANO CADORNA) [Transito]\n  - REG 16
+ 54 (ERBA -> MILANO CADORNA) [Transito]\n  - REG 25524 (MILANO CENTRALE -> 
+ CHIASSO)\n  - REG 2757 (MILANO CADORNA -> PALAZZOLO MILANESE) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Chiusura continua per 12 treni: intervallo utile tra i passaggi
+  (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SEREGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -383,85 +522,47 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24257--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
-SEQUENCE:0
-DTSTART:20261119T150808Z
-DTEND:20261119T151900Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:08 - 16:19 (primo: REG 24257)
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T150803Z
+DTEND:20261119T153308Z
+SUMMARY:[CHIUSURA CONTINUA - 12 TRENI] 16:08 - 16:33 (primo: REG 24257)
 DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 4 TRENI\nChiusura sbarre stimata: 16:08:08 - 16:19:00\nTreni coinvolt
- i nella chiusura:\n  - REG 24257 (SEVESO -> MILANO ROGOREDO) [Transito]\n 
-  - REG 24257 (SEVESO -> MILANO ROGOREDO) [Transito]\n  - REG 25259 (COMO S
- .GIOVANNI -> RHO)\n  - REG 25259 (COMO S.GIOVANNI -> RHO)\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
- sura continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
+ UA - 12 TRENI\nChiusura sbarre stimata: 16:08:03 - 16:33:08\nTreni coinvol
+ ti nella chiusura:\n  - REG 24257 (SEVESO -> MILANO ROGOREDO) [Transito]\n
+   - REG 657 (MILANO CADORNA -> ASSO) [Transito]\n  - REG 657 (MILANO CADOR
+ NA -> ASSO) [Transito]\n  - REG 25259 (COMO S.GIOVANNI -> RHO)\n  - REG 25
+ 259 (COMO S.GIOVANNI -> RHO)\n  - REG 24252 (MILANO ROGOREDO -> SEVESO) [T
+ ransito]\n  - REG 24252 (MILANO ROGOREDO -> SEVESO) [Transito]\n  - EC 22 
+ (MILANO CENTRALE -> CHIASSO) [Transito]\n  - REG 25257 (RHO -> COMO S.GIOV
+ ANNI) [Transito]\n  - REG 25257 (RHO -> COMO S.GIOVANNI) [Transito]\n  - R
+ EG 2759 (MILANO CADORNA -> PALAZZOLO MILANESE) [Transito]\n  - REG 2759 (M
+ ILANO CADORNA -> PALAZZOLO MILANESE) [Transito]\nRitardo massimo rilevato:
+  0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
+ nua per 12 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SEREGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 12 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-22--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
+UID:train-25257--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
 SEQUENCE:0
-DTSTART:20261119T152437Z
-DTEND:20261119T152907Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:24 - 16:29 (primo: EC 22)
+DTSTART:20261119T153630Z
+DTEND:20261119T154100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:36 - 16:41 (primo: REG 25257)
 DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 16:24:37 - 16:29:07\nTreni coinvolt
- i nella chiusura:\n  - EC 22 (MILANO CENTRALE -> CHIASSO) [Transito]\n  - 
- EC 22 (MILANO CENTRALE -> CHIASSO) [Transito]\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
- a per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
- minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione SEREGNO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:EC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-25060--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
-SEQUENCE:0
-DTSTART:20261119T155423Z
-DTEND:20261119T155953Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:54 - 16:59 (primo: REG 25060)
-DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 16:54:23 - 16:59:53\nTreni coinvolt
- i nella chiusura:\n  - REG 25060 (MILANO PORTA GARIBALDI -> COMO S.GIOVANN
- I) [Transito]\n  - REG 25060 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI) [
- Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
-  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
- i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione SEREGNO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-25060--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
-SEQUENCE:0
-DTSTART:20261119T160630Z
-DTEND:20261119T161100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:06 - 17:11 (primo: REG 25060)
-DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 17:06:30 - 17:11:00\nTreni coinvolt
- i nella chiusura:\n  - REG 25060 (MILANO PORTA GARIBALDI -> COMO S.GIOVANN
- I)\n  - REG 25060 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
+ UA - 2 TRENI\nChiusura sbarre stimata: 16:36:30 - 16:41:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 25257 (RHO -> COMO S.GIOVANNI)\n  - REG 25257 (
+ RHO -> COMO S.GIOVANNI)\nRitardo massimo rilevato: 0 min\nAffidabilità st
+ ima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
+ llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
+ adale (120s)
 LOCATION:Passaggio a Livello / Stazione SEREGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -471,19 +572,19 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-24256--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
+UID:train-1659--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
 SEQUENCE:0
-DTSTART:20261119T161754Z
-DTEND:20261119T162324Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:17 - 17:23 (primo: REG 24256)
+DTSTART:20261119T154338Z
+DTEND:20261119T154908Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:43 - 16:49 (primo: REG 1659)
 DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 17:17:54 - 17:23:24\nTreni coinvolt
- i nella chiusura:\n  - REG 24256 (MILANO ROGOREDO -> SEVESO) [Transito]\n 
-  - REG 24256 (MILANO ROGOREDO -> SEVESO) [Transito]\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+ UA - 2 TRENI\nChiusura sbarre stimata: 16:43:38 - 16:49:08\nTreni coinvolt
+ i nella chiusura:\n  - REG 1659 (MILANO CADORNA -> ERBA) [Transito]\n  - R
+ EG 1659 (MILANO CADORNA -> ERBA) [Transito]\nRitardo massimo rilevato: 0 m
+ in\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua 
+ per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
+ nima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SEREGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -493,14 +594,102 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-36--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
-SEQUENCE:0
-DTSTART:20261119T171635Z
-DTEND:20261119T172105Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:16 - 18:21 (primo: EC 36)
+UID:train-25060--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T155435Z
+DTEND:20261119T160005Z
+SUMMARY:[TRANSITO VELOCE] REG 25060 (MILANO PORTA GARIBALDI -> COMO S.GIOVA
+ NNI) ore 16:58
+DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 16:54:35 - 17:00:05\nTreni coinvolti nella chiu
+ sura:\n  - REG 25060 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI) [Transito
+ ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
+ va/euristica: Transito stimato senza fermata (57% tratta MONZA -> LISSONE-
+ MUGGIO'\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione SEREGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25060--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T160630Z
+DTEND:20261119T161100Z
+SUMMARY:[FERMATA] REG 25060 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI) ore
+  17:10
+DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 17:06:30 - 17:11:00\nTreni coinvolti nella chiusura:\n 
+  - REG 25060 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previ
+ sione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione SEREGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24256--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T161756Z
+DTEND:20261119T163005Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:17 - 17:30 (primo: REG 24256)
 DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 18:16:35 - 18:21:05\nTreni coinvolt
+ UA - 3 TRENI\nChiusura sbarre stimata: 17:17:56 - 17:30:05\nTreni coinvolt
+ i nella chiusura:\n  - REG 24256 (MILANO ROGOREDO -> SEVESO) [Transito]\n 
+  - REG 25261 (RHO -> COMO S.GIOVANNI) [Transito]\n  - REG 25261 (RHO -> CO
+ MO S.GIOVANNI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità 
+ stima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: inter
+ vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
+ tradale (120s)
+LOCATION:Passaggio a Livello / Stazione SEREGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25261--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:0
+DTSTART:20261119T163630Z
+DTEND:20261119T164100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:36 - 17:41 (primo: REG 25261)
+DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 17:36:30 - 17:41:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 25261 (RHO -> COMO S.GIOVANNI)\n  - REG 25261 (
+ RHO -> COMO S.GIOVANNI)\nRitardo massimo rilevato: 0 min\nAffidabilità st
+ ima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
+ llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
+ adale (120s)
+LOCATION:Passaggio a Livello / Stazione SEREGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-36--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T171719Z
+DTEND:20261119T172149Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:17 - 18:21 (primo: EC 36)
+DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 18:17:19 - 18:21:49\nTreni coinvolt
  i nella chiusura:\n  - EC 36 (VENEZIA S.LUCIA -> CHIASSO) [Transito]\n  - 
  EC 36 (VENEZIA S.LUCIA -> CHIASSO) [Transito]\nRitardo massimo rilevato: 0
   min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
@@ -516,35 +705,35 @@ X-PL-TRAIN-CATEGORY:EC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-778--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
-SEQUENCE:0
-DTSTART:20261119T185058Z
-DTEND:20261119T185628Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:50 - 19:56 (primo: REG 778)
-DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 19:50:58 - 19:56:28\nTreni coinvolt
- i nella chiusura:\n  - REG 778 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transi
- to]\n  - REG 778 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transito]\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
- riore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T185057Z
+DTEND:20261119T185627Z
+SUMMARY:[TRANSITO VELOCE] REG 778 (CAMNAGO-LENTATE -> MILANO CADORNA) ore 1
+ 9:55
+DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 19:50:57 - 19:56:27\nTreni coinvolti nella chiu
+ sura:\n  - REG 778 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (5% tratta CAMNAGO-LENTATE -> SEVESO\; 
+ pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SEREGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24273--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
-SEQUENCE:0
-DTSTART:20261119T190808Z
-DTEND:20261119T191338Z
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T190803Z
+DTEND:20261119T191333Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:08 - 20:13 (primo: REG 24273)
 DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 20:08:08 - 20:13:38\nTreni coinvolt
+ UA - 2 TRENI\nChiusura sbarre stimata: 20:08:03 - 20:13:33\nTreni coinvolt
  i nella chiusura:\n  - REG 24273 (SEVESO -> MILANO ROGOREDO) [Transito]\n 
   - REG 24273 (SEVESO -> MILANO ROGOREDO) [Transito]\nRitardo massimo rilev
  ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
@@ -559,43 +748,21 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-783--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
+UID:train-780--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
 SEQUENCE:0
-DTSTART:20261119T192736Z
-DTEND:20261119T193306Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:27 - 20:33 (primo: REG 783)
+DTSTART:20261119T192057Z
+DTEND:20261119T193308Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:20 - 20:33 (primo: REG 780)
 DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 20:27:36 - 20:33:06\nTreni coinvolt
- i nella chiusura:\n  - REG 783 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transi
- to]\n  - REG 783 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito]\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
- riore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione SEREGNO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-24270--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
-SEQUENCE:0
-DTSTART:20261119T194754Z
-DTEND:20261119T195628Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:47 - 20:56 (primo: REG 24270)
-DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 4 TRENI\nChiusura sbarre stimata: 20:47:54 - 20:56:28\nTreni coinvolt
- i nella chiusura:\n  - REG 24270 (MILANO ROGOREDO -> SEVESO) [Transito]\n 
-  - REG 24270 (MILANO ROGOREDO -> SEVESO) [Transito]\n  - REG 782 (CAMNAGO-
- LENTATE -> MILANO CADORNA) [Transito]\n  - REG 782 (CAMNAGO-LENTATE -> MIL
- ANO CADORNA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità st
- ima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: interva
- llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
- adale (120s)
+ UA - 4 TRENI\nChiusura sbarre stimata: 20:20:57 - 20:33:08\nTreni coinvolt
+ i nella chiusura:\n  - REG 780 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transi
+ to]\n  - REG 780 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transito]\n  - REG 7
+ 83 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito]\n  - REG 783 (MILANO CAD
+ ORNA -> CAMNAGO-LENTATE) [Transito]\nRitardo massimo rilevato: 0 min\nAffi
+ dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 tr
+ eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SEREGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -605,94 +772,138 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-24272--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
-SEQUENCE:0
-DTSTART:20261119T201754Z
-DTEND:20261119T204100Z
-SUMMARY:[CHIUSURA CONTINUA - 9 TRENI] 21:17 - 21:41 (primo: REG 24272)
+UID:train-24270--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T194756Z
+DTEND:20261119T200200Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 20:47 - 21:02 (primo: REG 24270)
 DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 9 TRENI\nChiusura sbarre stimata: 21:17:54 - 21:41:00\nTreni coinvolt
- i nella chiusura:\n  - REG 24272 (MILANO ROGOREDO -> SEVESO) [Transito]\n 
-  - REG 24272 (MILANO ROGOREDO -> SEVESO) [Transito]\n  - REG 25277 (RHO ->
-  COMO S.GIOVANNI) [Transito]\n  - REG 25277 (RHO -> COMO S.GIOVANNI) [Tran
- sito]\n  - REG 787 (MILANO CADORNA -> PALAZZOLO MILANESE) [Transito]\n  - 
- REG 787 (MILANO CADORNA -> PALAZZOLO MILANESE) [Transito]\n  - REG 2980 (M
- ILANO CENTRALE -> GALLARATE) [Transito]\n  - REG 25277 (RHO -> COMO S.GIOV
- ANNI)\n  - REG 25277 (RHO -> COMO S.GIOVANNI)\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
- a per 9 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+ UA - 5 TRENI\nChiusura sbarre stimata: 20:47:56 - 21:02:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 24270 (MILANO ROGOREDO -> SEVESO) [Transito]\n 
+  - REG 782 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transito]\n  - REG 782 (CA
+ MNAGO-LENTATE -> MILANO CADORNA) [Transito]\n  - REG 25534 (MILANO CENTRAL
+ E -> CHIASSO)\n  - REG 25534 (MILANO CENTRALE -> CHIASSO)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
+ sura continua per 5 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SEREGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 9 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-25536--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
-SEQUENCE:0
-DTSTART:20261119T205730Z
-DTEND:20261119T210200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:57 - 22:02 (primo: REG 25536)
+UID:train-24272--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T201756Z
+DTEND:20261119T203308Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 21:17 - 21:33 (primo: REG 24272)
 DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 21:57:30 - 22:02:00\nTreni coinvolt
- i nella chiusura:\n  - REG 25536 (MILANO CENTRALE -> CHIASSO)\n  - REG 255
- 36 (MILANO CENTRALE -> CHIASSO)\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
+ UA - 4 TRENI\nChiusura sbarre stimata: 21:17:56 - 21:33:08\nTreni coinvolt
+ i nella chiusura:\n  - REG 24272 (MILANO ROGOREDO -> SEVESO) [Transito]\n 
+  - REG 25277 (RHO -> COMO S.GIOVANNI) [Transito]\n  - REG 787 (MILANO CADO
+ RNA -> PALAZZOLO MILANESE) [Transito]\n  - REG 787 (MILANO CADORNA -> PALA
+ ZZOLO MILANESE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità
+  stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: inte
+ rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
+ stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SEREGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25277--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:0
+DTSTART:20261119T203630Z
+DTEND:20261119T204100Z
+SUMMARY:[FERMATA] REG 25277 (RHO -> COMO S.GIOVANNI) ore 21:40
+DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 21:36:30 - 21:41:00\nTreni coinvolti nella chiusura:\n 
+  - REG 25277 (RHO -> COMO S.GIOVANNI)\nRitardo massimo rilevato: 0 min\nAf
+ fidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia or
+ aria regolare
+LOCATION:Passaggio a Livello / Stazione SEREGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-25082--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
+UID:train-25080--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
 SEQUENCE:0
-DTSTART:20261119T212423Z
-DTEND:20261119T212953Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:24 - 22:29 (primo: REG 25082)
+DTSTART:20261119T205435Z
+DTEND:20261119T211100Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 21:54 - 22:11 (primo: REG 25080)
 DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 22:24:23 - 22:29:53\nTreni coinvolt
- i nella chiusura:\n  - REG 25082 (MILANO PORTA GARIBALDI -> COMO S.GIOVANN
- I) [Transito]\n  - REG 25082 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI) [
- Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
-  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
- i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ UA - 7 TRENI\nChiusura sbarre stimata: 21:54:35 - 22:11:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 25080 (MILANO PORTA GARIBALDI -> COMO S.GIOVANN
+ I) [Transito]\n  - REG 25080 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI) [
+ Transito]\n  - REG 25536 (MILANO CENTRALE -> CHIASSO)\n  - REG 2982 (MILAN
+ O CENTRALE -> GALLARATE) [Transito]\n  - REG 2982 (MILANO CENTRALE -> GALL
+ ARATE) [Transito]\n  - REG 25080 (MILANO PORTA GARIBALDI -> COMO S.GIOVANN
+ I)\n  - REG 25080 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Chiusura continua per 7 treni: intervallo utile tra i passaggi (0s) inferi
+ ore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SEREGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25082--20261118-S01318@pl-tracker.local
-DTSTAMP:20261119T015346Z
-SEQUENCE:0
-DTSTART:20261119T213630Z
-DTEND:20261119T214100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:36 - 22:41 (primo: REG 25082)
-DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 22:36:30 - 22:41:00\nTreni coinvolt
- i nella chiusura:\n  - REG 25082 (MILANO PORTA GARIBALDI -> COMO S.GIOVANN
- I)\n  - REG 25082 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T212435Z
+DTEND:20261119T213005Z
+SUMMARY:[TRANSITO VELOCE] REG 25082 (MILANO PORTA GARIBALDI -> COMO S.GIOVA
+ NNI) ore 22:28
+DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 22:24:35 - 22:30:05\nTreni coinvolti nella chiu
+ sura:\n  - REG 25082 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI) [Transito
+ ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
+ va/euristica: Transito stimato senza fermata (57% tratta MONZA -> LISSONE-
+ MUGGIO'\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SEREGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25082--20261118-S01318@pl-tracker.local
+DTSTAMP:20261119T100017Z
+SEQUENCE:1
+DTSTART:20261119T213630Z
+DTEND:20261119T214100Z
+SUMMARY:[FERMATA] REG 25082 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI) ore
+  22:40
+DESCRIPTION:Stazione/PL: SEREGNO (S01318)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 22:36:30 - 22:41:00\nTreni coinvolti nella chiusura:\n 
+  - REG 25082 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previ
+ sione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione SEREGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
