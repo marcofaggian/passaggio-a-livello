@@ -9,17 +9,17 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:7e627be29f1c064f25072d92b727d7e7ec534b13ae8d32d623301b1091c5
- e1b9
+X-CONTENT-HASH:65f3d96058394c99bd5fa4dd4d65a36b1dc33e33b12a823a479050e1687d
+ aac1
 BEGIN:VEVENT
 UID:train-17072--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
-DTSTART:20261119T043523Z
-DTEND:20261119T044053Z
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
+DTSTART:20261119T043529Z
+DTEND:20261119T044059Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:35 - 05:40 (primo: REG 17072)
 DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 05:35:23 - 05:40:53\nTreni coinvo
+ INUA - 2 TRENI\nChiusura sbarre stimata: 05:35:29 - 05:40:59\nTreni coinvo
  lti nella chiusura:\n  - REG 17072 (ROVIGO -> VENEZIA S.LUCIA) [Transito]\
  n  - REG 17072 (ROVIGO -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo ril
  evato: -1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
@@ -35,8 +35,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17072--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
 DTSTART:20261119T045000Z
 DTEND:20261119T045700Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:50 - 05:57 (primo: REG 17072) (+4 
@@ -57,34 +57,76 @@ X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3998--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
-DTSTART:20261119T052530Z
-DTEND:20261119T053957Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:25 - 06:39 (primo: REG 3998) (+4 m
- in)
-DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: CHIUSURA CONT
- INUA - 4 TRENI\nChiusura sbarre stimata: 06:25:30 - 06:39:57\nTreni coinvo
- lti nella chiusura:\n  - REG 3998 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) (+
- 4m)\n  - REG 3998 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) (+4m)\n  - REG 170
- 74 (FERRARA -> VENEZIA S.LUCIA) [Transito]\n  - REG 17074 (FERRARA -> VENE
- ZIA S.LUCIA) [Transito]\nRitardo massimo rilevato: 4 min\nAffidabilità st
- ima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: interva
- llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
- adale (120s)
+UID:train-9401--20261118-S05703@pl-tracker.local
+DTSTAMP:20261119T185738Z
+SEQUENCE:0
+DTSTART:20261119T050358Z
+DTEND:20261119T050928Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9401 (VENEZIA S.LUCIA -> ROMA TERMINI) ore 
+ 06:08 (+6 min)
+DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: TRANSITO VELO
+ CE\nChiusura sbarre stimata: 06:03:58 - 06:09:28\nTreni coinvolti nella ch
+ iusura:\n  - TRENO 9401 (VENEZIA S.LUCIA -> ROMA TERMINI) (+6m) [Transito]
+ \nRitardo massimo rilevato: 6 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Transito stimato senza fermata (61% tratta PADOVA -> ROVIGO\;
+  pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONSELICE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3998--20261118-S05703@pl-tracker.local
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
+DTSTART:20261119T052530Z
+DTEND:20261119T053230Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:25 - 06:32 (primo: REG 3998) (+4 m
+ in)
+DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 06:25:30 - 06:32:30\nTreni coinvo
+ lti nella chiusura:\n  - REG 3998 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) (+
+ 4m)\n  - REG 3998 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) (+4m)\nRitardo mas
+ simo rilevato: 4 min\nAffidabilità stima: 99%\nNota normativa/euristica: 
+ Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
+ ore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MONSELICE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17074--20261118-S05703@pl-tracker.local
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
+DTSTART:20261119T053432Z
+DTEND:20261119T054002Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:34 - 06:40 (primo: REG 17074)
+DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 06:34:32 - 06:40:02\nTreni coinvo
+ lti nella chiusura:\n  - REG 17074 (FERRARA -> VENEZIA S.LUCIA) [Transito]
+ \n  - REG 17074 (FERRARA -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo r
+ ilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
+ ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MONSELICE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17074--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
 DTSTART:20261119T054930Z
 DTEND:20261119T055835Z
 SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:49 - 06:58 (primo: REG 17074) (+4 
@@ -107,8 +149,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17081--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
 DTSTART:20261119T060100Z
 DTEND:20261119T060830Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:01 - 07:08 (primo: REG 17081) (+4 
@@ -130,8 +172,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3963--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
+DTSTART:20261119T061117Z
+DTEND:20261119T061647Z
+SUMMARY:[TRANSITO VELOCE] REG 3963 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) or
+ e 07:15
+DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: TRANSITO VELO
+ CE\nChiusura sbarre stimata: 07:11:17 - 07:16:47\nTreni coinvolti nella ch
+ iusura:\n  - REG 3963 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) [Transito]\nRi
+ tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
+ ristica: Transito stimato senza fermata (78% tratta PADOVA -> TERME EUGANE
+ E-ABANO-MONTEGROTTO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MONSELICE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3963--20261118-S05703@pl-tracker.local
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
 DTSTART:20261119T062430Z
 DTEND:20261119T062900Z
 SUMMARY:[FERMATA] REG 3963 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) ore 07:28
@@ -150,8 +214,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17017--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
 DTSTART:20261119T065145Z
 DTEND:20261119T065715Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:51 - 07:57 (primo: REG 17017)
@@ -172,8 +236,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17017--20261118-S05703@pl-tracker.local-arr
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
 DTSTART:20261119T070100Z
 DTEND:20261119T070530Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:01 - 08:05 (primo: REG 17017) (+5 
@@ -195,8 +259,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17017--20261118-S05703@pl-tracker.local-dep
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
 DTSTART:20261119T071000Z
 DTEND:20261119T071430Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:10 - 08:14 (primo: REG 17017) (+5 
@@ -218,8 +282,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3965--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
+DTSTART:20261119T071854Z
+DTEND:20261119T072424Z
+SUMMARY:[TRANSITO VELOCE] REG 3965 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) or
+ e 08:23 (+1 min)
+DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: TRANSITO VELO
+ CE\nChiusura sbarre stimata: 08:18:54 - 08:24:24\nTreni coinvolti nella ch
+ iusura:\n  - REG 3965 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) (+1m) [Transit
+ o]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (78% tratta PADOVA -> TERME 
+ EUGANEE-ABANO-MONTEGROTTO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MONSELICE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3965--20261118-S05703@pl-tracker.local
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
 DTSTART:20261119T072900Z
 DTEND:20261119T073530Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:29 - 08:35 (primo: REG 3965) (+8 m
@@ -241,8 +327,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3966--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
 DTSTART:20261119T082230Z
 DTEND:20261119T082700Z
 SUMMARY:[FERMATA] REG 3966 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) ore 09:26
@@ -261,8 +347,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3970--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
 DTSTART:20261119T092230Z
 DTEND:20261119T092700Z
 SUMMARY:[FERMATA] REG 3970 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) ore 10:26
@@ -280,39 +366,38 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3972--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
-DTSTART:20261119T101930Z
-DTEND:20261119T102800Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:19 - 11:28 (primo: REG 3972)
-DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: CHIUSURA CONT
- INUA - 3 TRENI\nChiusura sbarre stimata: 11:19:30 - 11:28:00\nTreni coinvo
- lti nella chiusura:\n  - REG 3972 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA)\n 
-  - REG 3972 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA)\n  - REG 3971 (VENEZIA S
- .LUCIA -> BOLOGNA CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 3 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+UID:train-3971--20261118-S05703@pl-tracker.local
+DTSTAMP:20261119T185738Z
+SEQUENCE:0
+DTSTART:20261119T101030Z
+DTEND:20261119T101600Z
+SUMMARY:[TRANSITO VELOCE] REG 3971 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) or
+ e 11:14
+DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: TRANSITO VELO
+ CE\nChiusura sbarre stimata: 11:10:30 - 11:16:00\nTreni coinvolti nella ch
+ iusura:\n  - REG 3971 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) [Transito]\nRi
+ tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
+ ristica: Transito stimato senza fermata (78% tratta PADOVA -> TERME EUGANE
+ E-ABANO-MONTEGROTTO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONSELICE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3974--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
-DTSTART:20261119T122230Z
-DTEND:20261119T122700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:22 - 13:27 (primo: REG 3974)
+UID:train-3972--20261118-S05703@pl-tracker.local
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
+DTSTART:20261119T101930Z
+DTEND:20261119T102800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:19 - 11:28 (primo: REG 3972)
 DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 13:22:30 - 13:27:00\nTreni coinvo
- lti nella chiusura:\n  - REG 3974 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA)\n 
-  - REG 3974 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA)\nRitardo massimo rilevat
+ INUA - 2 TRENI\nChiusura sbarre stimata: 11:19:30 - 11:28:00\nTreni coinvo
+ lti nella chiusura:\n  - REG 3972 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA)\n 
+  - REG 3971 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE)\nRitardo massimo rilevat
  o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
  tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
  lia minima di sgombero stradale (120s)
@@ -325,171 +410,182 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8816--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
-DTSTART:20261119T141358Z
-DTEND:20261119T143000Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:13 - 15:30 (primo: TRENO 8816) (+2
-  min)
-DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: CHIUSURA CONT
- INUA - 4 TRENI\nChiusura sbarre stimata: 15:13:58 - 15:30:00\nTreni coinvo
- lti nella chiusura:\n  - TRENO 8816 (LECCE -> VENEZIA S.LUCIA) (+2m) [Tran
- sito]\n  - TRENO 8816 (LECCE -> VENEZIA S.LUCIA) (+2m) [Transito]\n  - REG
-  17084 (ROVIGO -> VENEZIA S.LUCIA) [Transito]\n  - REG 3980 (BOLOGNA CENTR
- ALE -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 2 min\nAffidabilità st
- ima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: interva
- llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
- adale (120s)
+UID:train-3974--20261118-S05703@pl-tracker.local
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
+DTSTART:20261119T122230Z
+DTEND:20261119T122700Z
+SUMMARY:[FERMATA] REG 3974 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) ore 13:26
+DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: FERMATA\nChiu
+ sura sbarre stimata: 13:22:30 - 13:27:00\nTreni coinvolti nella chiusura:\
+ n  - REG 3974 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA)\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
+  da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione MONSELICE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8816--20261118-S05703@pl-tracker.local
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
+DTSTART:20261119T141326Z
+DTEND:20261119T143000Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:13 - 15:30 (primo: TRENO 8816) (+2
+  min)
+DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: CHIUSURA CONT
+ INUA - 3 TRENI\nChiusura sbarre stimata: 15:13:26 - 15:30:00\nTreni coinvo
+ lti nella chiusura:\n  - TRENO 8816 (LECCE -> VENEZIA S.LUCIA) (+2m) [Tran
+ sito]\n  - REG 17084 (ROVIGO -> VENEZIA S.LUCIA) [Transito]\n  - REG 3980 
+ (BOLOGNA CENTRALE -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 2 min\nAf
+ fidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 
+ treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
+ i sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MONSELICE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-588--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
 DTSTART:20261119T143915Z
-DTEND:20261119T144900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:39 - 15:49 (primo: IC 588)
+DTEND:20261119T145656Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:39 - 15:56 (primo: IC 588)
 DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 15:39:15 - 15:49:00\nTreni coinvo
+ INUA - 4 TRENI\nChiusura sbarre stimata: 15:39:15 - 15:56:56\nTreni coinvo
  lti nella chiusura:\n  - IC 588 (ROMA TERMINI -> TRIESTE CENTRALE)\n  - RE
- G 17084 (ROVIGO -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\nAffi
- dabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tr
- eni: intervallo utile tra i passaggi (30s) inferiore alla soglia minima di
-  sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MONSELICE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9420--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
-DTSTART:20261119T145107Z
-DTEND:20261119T145655Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:51 - 15:56 (primo: TRENO 9420)
-DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: CHIUSURA CONT
- INUA - 4 TRENI\nChiusura sbarre stimata: 15:51:07 - 15:56:55\nTreni coinvo
- lti nella chiusura:\n  - TRENO 9420 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) [
- Transito]\n  - TRENO 9420 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) [Transito]\
- n  - REG 17093 (VENEZIA S.LUCIA -> ROVIGO) [Transito]\n  - REG 17093 (VENE
- ZIA S.LUCIA -> ROVIGO) [Transito]\nRitardo massimo rilevato: 0 min\nAffida
- bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 tren
- i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
- ombero stradale (120s)
+ G 17084 (ROVIGO -> VENEZIA S.LUCIA)\n  - TRENO 9420 (NAPOLI CENTRALE -> VE
+ NEZIA S.LUCIA) [Transito]\n  - REG 17093 (VENEZIA S.LUCIA -> ROVIGO) [Tran
+ sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
+ mativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i pa
+ ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONSELICE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17093--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
 DTSTART:20261119T145930Z
 DTEND:20261119T150400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:59 - 16:04 (primo: REG 17093)
-DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 15:59:30 - 16:04:00\nTreni coinvo
- lti nella chiusura:\n  - REG 17093 (VENEZIA S.LUCIA -> ROVIGO)\n  - REG 17
- 093 (VENEZIA S.LUCIA -> ROVIGO)\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
+SUMMARY:[FERMATA] REG 17093 (VENEZIA S.LUCIA -> ROVIGO) ore 16:03
+DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: FERMATA\nChiu
+ sura sbarre stimata: 15:59:30 - 16:04:00\nTreni coinvolti nella chiusura:\
+ n  - REG 17093 (VENEZIA S.LUCIA -> ROVIGO)\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracc
+ ia oraria regolare
 LOCATION:Passaggio a Livello / Stazione MONSELICE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-594--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
 DTSTART:20261119T151015Z
-DTEND:20261119T151558Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:10 - 16:15 (primo: IC 594)
-DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: CHIUSURA CONT
- INUA - 3 TRENI\nChiusura sbarre stimata: 16:10:15 - 16:15:58\nTreni coinvo
- lti nella chiusura:\n  - IC 594 (TRIESTE CENTRALE -> ROMA TERMINI)\n  - IC
-  594 (TRIESTE CENTRALE -> ROMA TERMINI)\n  - REG 3981 (VENEZIA S.LUCIA -> 
- BOLOGNA CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+DTEND:20261119T151500Z
+SUMMARY:[FERMATA] IC 594 (TRIESTE CENTRALE -> ROMA TERMINI) ore 16:14
+DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: FERMATA\nChiu
+ sura sbarre stimata: 16:10:15 - 16:15:00\nTreni coinvolti nella chiusura:\
+ n  - IC 594 (TRIESTE CENTRALE -> ROMA TERMINI)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
+ raccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione MONSELICE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3982--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
 DTSTART:20261119T152230Z
 DTEND:20261119T152800Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:22 - 16:28 (primo: REG 3982)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:22 - 16:28 (primo: REG 3982)
 DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: CHIUSURA CONT
- INUA - 3 TRENI\nChiusura sbarre stimata: 16:22:30 - 16:28:00\nTreni coinvo
+ INUA - 2 TRENI\nChiusura sbarre stimata: 16:22:30 - 16:28:00\nTreni coinvo
  lti nella chiusura:\n  - REG 3982 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA)\n 
-  - REG 3982 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA)\n  - REG 3981 (VENEZIA S
- .LUCIA -> BOLOGNA CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 3 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+  - REG 3981 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE)\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
+ tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONSELICE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17019--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
-DTSTART:20261119T155205Z
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
+DTSTART:20261119T155207Z
 DTEND:20261119T160400Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:52 - 17:04 (primo: REG 17019)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:52 - 17:04 (primo: REG 17019)
 DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: CHIUSURA CONT
- INUA - 4 TRENI\nChiusura sbarre stimata: 16:52:05 - 17:04:00\nTreni coinvo
+ INUA - 2 TRENI\nChiusura sbarre stimata: 16:52:07 - 17:04:00\nTreni coinvo
  lti nella chiusura:\n  - REG 17019 (VENEZIA S.LUCIA -> ROVIGO) [Transito]\
- n  - REG 17019 (VENEZIA S.LUCIA -> ROVIGO) [Transito]\n  - REG 17019 (VENE
- ZIA S.LUCIA -> ROVIGO)\n  - REG 17019 (VENEZIA S.LUCIA -> ROVIGO)\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) in
- feriore alla soglia minima di sgombero stradale (120s)
+ n  - REG 17019 (VENEZIA S.LUCIA -> ROVIGO)\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
+ er 2 treni: intervallo utile tra i passaggi (113s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONSELICE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3983--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
+DTSTART:20261119T161030Z
+DTEND:20261119T161600Z
+SUMMARY:[TRANSITO VELOCE] REG 3983 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) or
+ e 17:14
+DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: TRANSITO VELO
+ CE\nChiusura sbarre stimata: 17:10:30 - 17:16:00\nTreni coinvolti nella ch
+ iusura:\n  - REG 3983 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) [Transito]\nRi
+ tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
+ ristica: Transito stimato senza fermata (78% tratta PADOVA -> TERME EUGANE
+ E-ABANO-MONTEGROTTO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MONSELICE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3983--20261118-S05703@pl-tracker.local
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
 DTSTART:20261119T162330Z
 DTEND:20261119T162800Z
 SUMMARY:[FERMATA] REG 3983 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) ore 17:27
@@ -508,105 +604,100 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9423--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
-DTSTART:20261119T165107Z
-DTEND:20261119T165637Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:51 - 17:56 (primo: TRENO 9423)
-DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 17:51:07 - 17:56:37\nTreni coinvo
- lti nella chiusura:\n  - TRENO 9423 (ROMA TERMINI -> VENEZIA S.LUCIA) [Tra
- nsito]\n  - TRENO 9423 (ROMA TERMINI -> VENEZIA S.LUCIA) [Transito]\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
- tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
+DTSTART:20261119T165049Z
+DTEND:20261119T165619Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9423 (ROMA TERMINI -> VENEZIA S.LUCIA) ore 
+ 17:55
+DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: TRANSITO VELO
+ CE\nChiusura sbarre stimata: 17:50:49 - 17:56:19\nTreni coinvolti nella ch
+ iusura:\n  - TRENO 9423 (ROMA TERMINI -> VENEZIA S.LUCIA) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Transito stimato senza fermata (57% tratta ROVIGO -> PADOVA\; pedal
+ e annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONSELICE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3986--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
 DTSTART:20261119T172230Z
 DTEND:20261119T172700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:22 - 18:27 (primo: REG 3986)
-DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 18:22:30 - 18:27:00\nTreni coinvo
- lti nella chiusura:\n  - REG 3986 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA)\n 
-  - REG 3986 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
- tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
- lia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 3986 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) ore 18:26
+DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: FERMATA\nChiu
+ sura sbarre stimata: 18:22:30 - 18:27:00\nTreni coinvolti nella chiusura:\
+ n  - REG 3986 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA)\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
+  da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione MONSELICE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17090--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
-DTSTART:20261119T182627Z
-DTEND:20261119T183157Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:26 - 19:31 (primo: REG 17090)
-DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 19:26:27 - 19:31:57\nTreni coinvo
- lti nella chiusura:\n  - REG 17090 (ROVIGO -> VENEZIA S.LUCIA) [Transito]\
- n  - REG 17090 (ROVIGO -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
-  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
+DTSTART:20261119T182632Z
+DTEND:20261119T183202Z
+SUMMARY:[TRANSITO VELOCE] REG 17090 (ROVIGO -> VENEZIA S.LUCIA) ore 19:30
+DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: TRANSITO VELO
+ CE\nChiusura sbarre stimata: 19:26:32 - 19:32:02\nTreni coinvolti nella ch
+ iusura:\n  - REG 17090 (ROVIGO -> VENEZIA S.LUCIA) [Transito]\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Transito stimato senza fermata (63% tratta ROVIGO -> STANGHELLA\; pedale a
+ nnuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONSELICE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17090--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
 DTSTART:20261119T184530Z
 DTEND:20261119T185000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:45 - 19:50 (primo: REG 17090)
-DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 19:45:30 - 19:50:00\nTreni coinvo
- lti nella chiusura:\n  - REG 17090 (ROVIGO -> VENEZIA S.LUCIA)\n  - REG 17
- 090 (ROVIGO -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
+SUMMARY:[FERMATA] REG 17090 (ROVIGO -> VENEZIA S.LUCIA) ore 19:49
+DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: FERMATA\nChiu
+ sura sbarre stimata: 19:45:30 - 19:50:00\nTreni coinvolti nella chiusura:\
+ n  - REG 17090 (ROVIGO -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracc
+ ia oraria regolare
 LOCATION:Passaggio a Livello / Stazione MONSELICE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9430--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
-DTSTART:20261119T195107Z
-DTEND:20261119T195637Z
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
+DTSTART:20261119T195049Z
+DTEND:20261119T195619Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9430 (NAPOLI CENTRALE -> GORIZIA CENTRALE) 
  ore 20:55
 DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: TRANSITO VELO
- CE\nChiusura sbarre stimata: 20:51:07 - 20:56:37\nTreni coinvolti nella ch
+ CE\nChiusura sbarre stimata: 20:50:49 - 20:56:19\nTreni coinvolti nella ch
  iusura:\n  - TRENO 9430 (NAPOLI CENTRALE -> GORIZIA CENTRALE) [Transito]\n
  Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
- euristica: Transito stimato senza fermata (59% tratta ROVIGO -> PADOVA\; p
+ euristica: Transito stimato senza fermata (57% tratta ROVIGO -> PADOVA\; p
  edale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONSELICE
 STATUS:CONFIRMED
@@ -617,18 +708,39 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3993--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
+UID:train-8828--20261118-S05703@pl-tracker.local
+DTSTAMP:20261119T185738Z
 SEQUENCE:0
-DTSTART:20261119T211301Z
-DTEND:20261119T211831Z
+DTSTART:20261119T202008Z
+DTEND:20261119T202538Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8828 (LECCE -> VENEZIA S.LUCIA) ore 21:24
+DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: TRANSITO VELO
+ CE\nChiusura sbarre stimata: 21:20:08 - 21:25:38\nTreni coinvolti nella ch
+ iusura:\n  - TRENO 8828 (LECCE -> VENEZIA S.LUCIA) [Transito]\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Transito stimato senza fermata (57% tratta ROVIGO -> PADOVA\; pedale annun
+ cio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MONSELICE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3993--20261118-S05703@pl-tracker.local
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
+DTSTART:20261119T211303Z
+DTEND:20261119T211833Z
 SUMMARY:[TRANSITO VELOCE] REG 3993 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) or
  e 22:17
 DESCRIPTION:Stazione/PL: MONSELICE (S05703)\nRegime chiusura: TRANSITO VELO
- CE\nChiusura sbarre stimata: 22:13:01 - 22:18:31\nTreni coinvolti nella ch
+ CE\nChiusura sbarre stimata: 22:13:03 - 22:18:33\nTreni coinvolti nella ch
  iusura:\n  - REG 3993 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) [Transito]\nRi
  tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Transito stimato senza fermata (77% tratta PADOVA -> TERME EUGANE
+ ristica: Transito stimato senza fermata (78% tratta PADOVA -> TERME EUGANE
  E-ABANO-MONTEGROTTO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONSELICE
 STATUS:CONFIRMED
@@ -640,8 +752,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3992--20261118-S05703@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
 DTSTART:20261119T212230Z
 DTEND:20261119T213000Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:22 - 22:30 (primo: REG 3992)

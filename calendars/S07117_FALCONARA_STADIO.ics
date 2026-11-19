@@ -9,33 +9,35 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:0733a2483ed329a59319958691843156f038e2fda8968b5903948bcb1e7d
- 87e8
+X-CONTENT-HASH:0198f52d8a04d973d29e14cbd8b873678b6f5a9593df8bc9fc4d669a6672
+ 7be4
 BEGIN:VEVENT
 UID:train-19793--20261118-S07117@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
-DTSTART:20261119T052041Z
-DTEND:20261119T052611Z
-SUMMARY:[TRANSITO VELOCE] REG 19793 (ANCONA -> FABRIANO) ore 06:24 (+8 min)
-DESCRIPTION:Stazione/PL: FALCONARA STADIO (S07117)\nRegime chiusura: TRANSI
- TO VELOCE\nChiusura sbarre stimata: 06:20:41 - 06:26:11\nTreni coinvolti n
- ella chiusura:\n  - REG 19793 (ANCONA -> FABRIANO) (+8m) [Transito]\nRitar
- do massimo rilevato: 8 min\nAffidabilità stima: 78%\nNota normativa/euris
- tica: Transito stimato senza fermata (47% tratta FALCONARA MARITTIMA -> CA
- STELFERRETTI-FALCONARA AEROPORTO\; pedale annuncio fisso Vmax)
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
+DTSTART:20261119T052047Z
+DTEND:20261119T052617Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:20 - 06:26 (primo: REG 19793) (+8 
+ min)
+DESCRIPTION:Stazione/PL: FALCONARA STADIO (S07117)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:20:47 - 06:26:17\nTreni
+  coinvolti nella chiusura:\n  - REG 19793 (ANCONA -> FABRIANO) (+8m) [Tran
+ sito]\n  - REG 19793 (ANCONA -> FABRIANO) (+8m) [Transito]\nRitardo massim
+ o rilevato: 8 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
+ usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
+  alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FALCONARA STADIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:8
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19795--20261118-S07117@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
 DTSTART:20261119T060230Z
 DTEND:20261119T060700Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:02 - 07:07 (primo: REG 19795) (+2 
@@ -56,9 +58,30 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-19757--20261118-S07117@pl-tracker.local
-DTSTAMP:20261119T100017Z
+UID:train-19797--20261118-S07117@pl-tracker.local
+DTSTAMP:20261119T185738Z
 SEQUENCE:0
+DTSTART:20261119T063934Z
+DTEND:20261119T064504Z
+SUMMARY:[TRANSITO VELOCE] REG 19797 (ANCONA -> JESI) ore 07:43
+DESCRIPTION:Stazione/PL: FALCONARA STADIO (S07117)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 07:39:34 - 07:45:04\nTreni coinvolti n
+ ella chiusura:\n  - REG 19797 (ANCONA -> JESI) [Transito]\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
+ sito stimato senza fermata (48% tratta FALCONARA MARITTIMA -> CASTELFERRET
+ TI-FALCONARA AEROPORTO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione FALCONARA STADIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19757--20261118-S07117@pl-tracker.local
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
 DTSTART:20261119T065929Z
 DTEND:20261119T070459Z
 SUMMARY:[TRANSITO VELOCE] REG 19757 (ANCONA -> JESI) ore 08:03
@@ -66,7 +89,7 @@ DESCRIPTION:Stazione/PL: FALCONARA STADIO (S07117)\nRegime chiusura: TRANSI
  TO VELOCE\nChiusura sbarre stimata: 07:59:29 - 08:04:59\nTreni coinvolti n
  ella chiusura:\n  - REG 19757 (ANCONA -> JESI) [Transito]\nRitardo massimo
   rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
- nsito stimato senza fermata (47% tratta FALCONARA MARITTIMA -> CASTELFERRE
+ nsito stimato senza fermata (48% tratta FALCONARA MARITTIMA -> CASTELFERRE
  TTI-FALCONARA AEROPORTO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione FALCONARA STADIO
 STATUS:CONFIRMED
@@ -77,23 +100,63 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-19813--20261118-S07117@pl-tracker.local
-DTSTAMP:20261119T100017Z
+UID:train-19799--20261118-S07117@pl-tracker.local
+DTSTAMP:20261119T185738Z
 SEQUENCE:0
-DTSTART:20261119T153030Z
-DTEND:20261119T153500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:30 - 16:35 (primo: REG 19813)
-DESCRIPTION:Stazione/PL: FALCONARA STADIO (S07117)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:30:30 - 16:35:00\nTreni
-  coinvolti nella chiusura:\n  - REG 19813 (ANCONA -> FABRIANO)\n  - REG 19
- 813 (ANCONA -> FABRIANO)\nRitardo massimo rilevato: 0 min\nAffidabilità s
- tima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interv
- allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
- radale (120s)
+DTSTART:20261119T101508Z
+DTEND:20261119T102038Z
+SUMMARY:[TRANSITO VELOCE] REG 19799 (ANCONA -> FABRIANO) ore 11:19
+DESCRIPTION:Stazione/PL: FALCONARA STADIO (S07117)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 11:15:08 - 11:20:38\nTreni coinvolti n
+ ella chiusura:\n  - REG 19799 (ANCONA -> FABRIANO) [Transito]\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Transito stimato senza fermata (48% tratta FALCONARA MARITTIMA -> CASTELFE
+ RRETTI-FALCONARA AEROPORTO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione FALCONARA STADIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19801--20261118-S07117@pl-tracker.local
+DTSTAMP:20261119T185738Z
+SEQUENCE:0
+DTSTART:20261119T111608Z
+DTEND:20261119T112138Z
+SUMMARY:[TRANSITO VELOCE] REG 19801 (ANCONA -> FABRIANO) ore 12:20
+DESCRIPTION:Stazione/PL: FALCONARA STADIO (S07117)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 12:16:08 - 12:21:38\nTreni coinvolti n
+ ella chiusura:\n  - REG 19801 (ANCONA -> FABRIANO) [Transito]\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Transito stimato senza fermata (48% tratta FALCONARA MARITTIMA -> CASTELFE
+ RRETTI-FALCONARA AEROPORTO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione FALCONARA STADIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19813--20261118-S07117@pl-tracker.local
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
+DTSTART:20261119T153030Z
+DTEND:20261119T153500Z
+SUMMARY:[FERMATA] REG 19813 (ANCONA -> FABRIANO) ore 16:34
+DESCRIPTION:Stazione/PL: FALCONARA STADIO (S07117)\nRegime chiusura: FERMAT
+ A\nChiusura sbarre stimata: 16:30:30 - 16:35:00\nTreni coinvolti nella chi
+ usura:\n  - REG 19813 (ANCONA -> FABRIANO)\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracc
+ ia oraria regolare
+LOCATION:Passaggio a Livello / Stazione FALCONARA STADIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

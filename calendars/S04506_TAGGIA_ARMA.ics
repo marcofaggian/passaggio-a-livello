@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:4d45c723a30e53b24b13192741ff8c48f337aaf569bea16d07911e63d9a9
- 0a5d
+X-CONTENT-HASH:033e4756b4658d5dcb866b7438f51f46c7fb3e30e886d4eb1fb0d58119ae
+ deb9
 BEGIN:VEVENT
 UID:train-653--20261118-S04506@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
 DTSTART:20261119T040415Z
 DTEND:20261119T040900Z
 SUMMARY:[FERMATA] IC 653 (VENTIMIGLIA -> MILANO CENTRALE) ore 05:08
@@ -33,8 +33,8 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3357--20261118-S04506@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
 DTSTART:20261119T044600Z
 DTEND:20261119T045300Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:46 - 05:53 (primo: REG 3357) (+1 m
@@ -56,8 +56,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12331--20261118-S04506@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
 DTSTART:20261119T051200Z
 DTEND:20261119T051830Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:12 - 06:18 (primo: REG 12331) (+6 
@@ -79,54 +79,50 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-505--20261118-S04506@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
 DTSTART:20261119T055445Z
 DTEND:20261119T060200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:54 - 07:02 (primo: IC 505) (+1 min
- )
-DESCRIPTION:Stazione/PL: TAGGIA ARMA (S04506)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 06:54:45 - 07:02:00\nTreni coin
- volti nella chiusura:\n  - IC 505 (VENTIMIGLIA -> ROMA TERMINI) (+1m)\n  -
-  IC 505 (VENTIMIGLIA -> ROMA TERMINI) (+1m)\nRitardo massimo rilevato: 1 m
- in\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua 
- per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
- nima di sgombero stradale (120s)
+SUMMARY:[FERMATA] IC 505 (VENTIMIGLIA -> ROMA TERMINI) ore 07:01 (+1 min)
+DESCRIPTION:Stazione/PL: TAGGIA ARMA (S04506)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 06:54:45 - 07:02:00\nTreni coinvolti nella chiusura
+ :\n  - IC 505 (VENTIMIGLIA -> ROMA TERMINI) (+1m)\nRitardo massimo rilevat
+ o: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento 
+ reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione TAGGIA ARMA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-631--20261118-S04506@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
 DTSTART:20261119T082522Z
 DTEND:20261119T082952Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:25 - 09:29 (primo: IC 631) (+7 min
- )
-DESCRIPTION:Stazione/PL: TAGGIA ARMA (S04506)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 09:25:22 - 09:29:52\nTreni coin
- volti nella chiusura:\n  - IC 631 (VENTIMIGLIA -> MILANO CENTRALE) (+7m) [
- Transito]\n  - IC 631 (VENTIMIGLIA -> MILANO CENTRALE) (+7m) [Transito]\nR
+SUMMARY:[TRANSITO VELOCE] IC 631 (VENTIMIGLIA -> MILANO CENTRALE) ore 09:28
+  (+7 min)
+DESCRIPTION:Stazione/PL: TAGGIA ARMA (S04506)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 09:25:22 - 09:29:52\nTreni coinvolti nella 
+ chiusura:\n  - IC 631 (VENTIMIGLIA -> MILANO CENTRALE) (+7m) [Transito]\nR
  itardo massimo rilevato: 7 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
- 0s) inferiore alla soglia minima di sgombero stradale (120s)
+ uristica: Transito stimato senza fermata (30% tratta SANREMO -> IMPERIA\; 
+ pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione TAGGIA ARMA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:7
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3360--20261118-S04506@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
 DTSTART:20261119T083500Z
 DTEND:20261119T084130Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:35 - 09:41 (primo: REG 3360) (+3 m
@@ -148,8 +144,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3115--20261118-S04506@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
 DTSTART:20261119T092100Z
 DTEND:20261119T092800Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:21 - 10:28 (primo: REG 3115) (+3 m
@@ -171,16 +167,16 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-633--20261118-S04506@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
-DTSTART:20261119T093106Z
-DTEND:20261119T093536Z
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
+DTSTART:20261119T093116Z
+DTEND:20261119T093546Z
 SUMMARY:[TRANSITO VELOCE] IC 633 (MILANO CENTRALE -> VENTIMIGLIA) ore 10:34
 DESCRIPTION:Stazione/PL: TAGGIA ARMA (S04506)\nRegime chiusura: TRANSITO VE
- LOCE\nChiusura sbarre stimata: 10:31:06 - 10:35:36\nTreni coinvolti nella 
+ LOCE\nChiusura sbarre stimata: 10:31:16 - 10:35:46\nTreni coinvolti nella 
  chiusura:\n  - IC 633 (MILANO CENTRALE -> VENTIMIGLIA) [Transito]\nRitardo
   massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Transito stimato senza fermata (62% tratta IMPERIA -> SANREMO\; pedale
+ ca: Transito stimato senza fermata (63% tratta IMPERIA -> SANREMO\; pedale
   annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione TAGGIA ARMA
 STATUS:CONFIRMED
@@ -192,8 +188,8 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3368--20261118-S04506@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
 DTSTART:20261119T123730Z
 DTEND:20261119T124200Z
 SUMMARY:[FERMATA] REG 3368 (GENOVA BRIGNOLE -> VENTIMIGLIA) ore 13:41
@@ -212,88 +208,82 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3376--20261118-S04506@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
 DTSTART:20261119T163330Z
 DTEND:20261119T163800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:33 - 17:38 (primo: REG 3376)
-DESCRIPTION:Stazione/PL: TAGGIA ARMA (S04506)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 17:33:30 - 17:38:00\nTreni coin
- volti nella chiusura:\n  - REG 3376 (GENOVA BRIGNOLE -> VENTIMIGLIA)\n  - 
- REG 3376 (GENOVA BRIGNOLE -> VENTIMIGLIA)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua pe
- r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
- ma di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 3376 (GENOVA BRIGNOLE -> VENTIMIGLIA) ore 17:37
+DESCRIPTION:Stazione/PL: TAGGIA ARMA (S04506)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 17:33:30 - 17:38:00\nTreni coinvolti nella chiusura
+ :\n  - REG 3376 (GENOVA BRIGNOLE -> VENTIMIGLIA)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da
+  traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione TAGGIA ARMA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-641--20261118-S04506@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
-DTSTART:20261119T173106Z
-DTEND:20261119T173536Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:31 - 18:35 (primo: IC 641)
-DESCRIPTION:Stazione/PL: TAGGIA ARMA (S04506)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 18:31:06 - 18:35:36\nTreni coin
- volti nella chiusura:\n  - IC 641 (MILANO CENTRALE -> VENTIMIGLIA) [Transi
- to]\n  - IC 641 (MILANO CENTRALE -> VENTIMIGLIA) [Transito]\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
- iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
+DTSTART:20261119T173116Z
+DTEND:20261119T173546Z
+SUMMARY:[TRANSITO VELOCE] IC 641 (MILANO CENTRALE -> VENTIMIGLIA) ore 18:34
+DESCRIPTION:Stazione/PL: TAGGIA ARMA (S04506)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 18:31:16 - 18:35:46\nTreni coinvolti nella 
+ chiusura:\n  - IC 641 (MILANO CENTRALE -> VENTIMIGLIA) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (63% tratta IMPERIA -> SANREMO\; pedale
+  annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione TAGGIA ARMA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-639--20261118-S04506@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
-DTSTART:20261119T182049Z
-DTEND:20261119T182519Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:20 - 19:25 (primo: IC 639)
-DESCRIPTION:Stazione/PL: TAGGIA ARMA (S04506)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 19:20:49 - 19:25:19\nTreni coin
- volti nella chiusura:\n  - IC 639 (VENTIMIGLIA -> MILANO CENTRALE) [Transi
- to]\n  - IC 639 (VENTIMIGLIA -> MILANO CENTRALE) [Transito]\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
- iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
+DTSTART:20261119T182050Z
+DTEND:20261119T182520Z
+SUMMARY:[TRANSITO VELOCE] IC 639 (VENTIMIGLIA -> MILANO CENTRALE) ore 19:24
+DESCRIPTION:Stazione/PL: TAGGIA ARMA (S04506)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 19:20:50 - 19:25:20\nTreni coinvolti nella 
+ chiusura:\n  - IC 639 (VENTIMIGLIA -> MILANO CENTRALE) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (30% tratta SANREMO -> IMPERIA\; pedale
+  annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione TAGGIA ARMA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-518--20261118-S04506@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
 DTSTART:20261119T220715Z
 DTEND:20261119T221200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:07 - 23:12 (primo: IC 518)
-DESCRIPTION:Stazione/PL: TAGGIA ARMA (S04506)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 23:07:15 - 23:12:00\nTreni coin
- volti nella chiusura:\n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA)\n  - IC 51
- 8 (ROMA TERMINI -> VENTIMIGLIA)\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
+SUMMARY:[FERMATA] IC 518 (ROMA TERMINI -> VENTIMIGLIA) ore 23:11
+DESCRIPTION:Stazione/PL: TAGGIA ARMA (S04506)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 23:07:15 - 23:12:00\nTreni coinvolti nella chiusura
+ :\n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA)\nRitardo massimo rilevato: 0 m
+ in\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da trac
+ cia oraria regolare
 LOCATION:Passaggio a Livello / Stazione TAGGIA ARMA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC

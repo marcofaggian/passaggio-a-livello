@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:c27b34ba455339d5d75029997e3e8222ed334ad8e25a75826693eb5dbcdb
- db36
+X-CONTENT-HASH:59da536dc3a3dd592e2e3a1af43f1ef4ae4e89b35793b02b93d9221d0519
+ 6458
 BEGIN:VEVENT
 UID:train-24114--20261118-S01824@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
 DTSTART:20261119T045430Z
 DTEND:20261119T045900Z
 SUMMARY:[FERMATA] REG 24114 (LODI -> SARONNO) ore 05:58
@@ -33,17 +33,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24115--20261118-S01824@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
-DTSTART:20261119T054949Z
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
+DTSTART:20261119T054945Z
 DTEND:20261119T060100Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:49 - 07:01 (primo: REG 24115)
 DESCRIPTION:Stazione/PL: TAVAZZANO (S01824)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 06:49:49 - 07:01:00\nTreni coinvo
+ INUA - 2 TRENI\nChiusura sbarre stimata: 06:49:45 - 07:01:00\nTreni coinvo
  lti nella chiusura:\n  - REG 24115 (MILANO BOVISA POLITECNICO -> LODI) [Tr
  ansito]\n  - REG 24115 (MILANO BOVISA POLITECNICO -> LODI)\nRitardo massim
  o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
- usura continua per 2 treni: intervallo utile tra i passaggi (70s) inferior
+ usura continua per 2 treni: intervallo utile tra i passaggi (74s) inferior
  e alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TAVAZZANO
 STATUS:CONFIRMED
@@ -55,36 +55,56 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2293--20261118-S01824@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
-DTSTART:20261119T061904Z
-DTEND:20261119T062434Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:19 - 07:24 (primo: REG 2293)
-DESCRIPTION:Stazione/PL: TAVAZZANO (S01824)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 07:19:04 - 07:24:34\nTreni coinvo
- lti nella chiusura:\n  - REG 2293 (MILANO CENTRALE -> SARZANA) [Transito]\
- n  - REG 2293 (MILANO CENTRALE -> SARZANA) [Transito]\nRitardo massimo ril
- evato: -6 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
+DTSTART:20261119T061044Z
+DTEND:20261119T061614Z
+SUMMARY:[TRANSITO VELOCE] REG 2293 (MILANO CENTRALE -> SARZANA) ore 07:14
+DESCRIPTION:Stazione/PL: TAVAZZANO (S01824)\nRegime chiusura: TRANSITO VELO
+ CE\nChiusura sbarre stimata: 07:10:44 - 07:16:14\nTreni coinvolti nella ch
+ iusura:\n  - REG 2293 (MILANO CENTRALE -> SARZANA) [Transito]\nRitardo mas
+ simo rilevato: -6 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Transito stimato senza fermata (71% tratta MILANO ROGOREDO -> MELEGNANO\;
+  pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione TAVAZZANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2293--20261118-S01824@pl-tracker.local
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
+DTSTART:20261119T061900Z
+DTEND:20261119T062430Z
+SUMMARY:[TRANSITO VELOCE] REG 2293 (MILANO CENTRALE -> SARZANA) ore 07:23
+DESCRIPTION:Stazione/PL: TAVAZZANO (S01824)\nRegime chiusura: TRANSITO VELO
+ CE\nChiusura sbarre stimata: 07:19:00 - 07:24:30\nTreni coinvolti nella ch
+ iusura:\n  - REG 2293 (MILANO CENTRALE -> SARZANA) [Transito]\nRitardo mas
+ simo rilevato: -6 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Transito stimato senza fermata (53% tratta MELEGNANO -> LODI\; pedale ann
+ uncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione TAVAZZANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-6
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24119--20261118-S01824@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
-DTSTART:20261119T065010Z
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
+DTSTART:20261119T065008Z
 DTEND:20261119T070230Z
 SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:50 - 08:02 (primo: REG 24119) (+1 
  min)
 DESCRIPTION:Stazione/PL: TAVAZZANO (S01824)\nRegime chiusura: CHIUSURA CONT
- INUA - 4 TRENI\nChiusura sbarre stimata: 07:50:10 - 08:02:30\nTreni coinvo
+ INUA - 4 TRENI\nChiusura sbarre stimata: 07:50:08 - 08:02:30\nTreni coinvo
  lti nella chiusura:\n  - REG 24119 (SARONNO -> LODI) [Transito]\n  - REG 2
  4119 (SARONNO -> LODI) [Transito]\n  - REG 24119 (SARONNO -> LODI) (+1m)\n
    - REG 24119 (SARONNO -> LODI) (+1m)\nRitardo massimo rilevato: 1 min\nAf
@@ -101,14 +121,14 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24121--20261118-S01824@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
-DTSTART:20261119T072340Z
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
+DTSTART:20261119T072338Z
 DTEND:20261119T073530Z
 SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:23 - 08:35 (primo: REG 24121) (+4 
  min)
 DESCRIPTION:Stazione/PL: TAVAZZANO (S01824)\nRegime chiusura: CHIUSURA CONT
- INUA - 4 TRENI\nChiusura sbarre stimata: 08:23:40 - 08:35:30\nTreni coinvo
+ INUA - 4 TRENI\nChiusura sbarre stimata: 08:23:38 - 08:35:30\nTreni coinvo
  lti nella chiusura:\n  - REG 24121 (SARONNO -> LODI) (+3m) [Transito]\n  -
   REG 24121 (SARONNO -> LODI) (+3m) [Transito]\n  - REG 24121 (SARONNO -> L
  ODI) (+4m)\n  - REG 24121 (SARONNO -> LODI) (+4m)\nRitardo massimo rilevat
@@ -125,8 +145,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24128--20261118-S01824@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
 DTSTART:20261119T082430Z
 DTEND:20261119T082900Z
 SUMMARY:[FERMATA] REG 24128 (LODI -> SARONNO) ore 09:28
@@ -145,13 +165,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24131--20261118-S01824@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
-DTSTART:20261119T094949Z
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
+DTSTART:20261119T094945Z
 DTEND:20261119T100100Z
 SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 10:49 - 11:01 (primo: REG 24131)
 DESCRIPTION:Stazione/PL: TAVAZZANO (S01824)\nRegime chiusura: CHIUSURA CONT
- INUA - 3 TRENI\nChiusura sbarre stimata: 10:49:49 - 11:01:00\nTreni coinvo
+ INUA - 3 TRENI\nChiusura sbarre stimata: 10:49:45 - 11:01:00\nTreni coinvo
  lti nella chiusura:\n  - REG 24131 (SARONNO -> LODI) [Transito]\n  - REG 2
  4134 (LODI -> SARONNO)\n  - REG 24131 (SARONNO -> LODI)\nRitardo massimo r
  ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
@@ -167,63 +187,60 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24136--20261118-S01824@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
 DTSTART:20261119T102430Z
 DTEND:20261119T103600Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 11:24 - 11:36 (primo: REG 24136) (+5 
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:24 - 11:36 (primo: REG 24136) (+5 
  min)
 DESCRIPTION:Stazione/PL: TAVAZZANO (S01824)\nRegime chiusura: CHIUSURA CONT
- INUA - 6 TRENI\nChiusura sbarre stimata: 11:24:30 - 11:36:00\nTreni coinvo
- lti nella chiusura:\n  - REG 24136 (LODI -> SARONNO)\n  - REG 24136 (LODI 
- -> SARONNO)\n  - REG 24133 (SARONNO -> LODI) (+5m) [Transito]\n  - REG 241
- 33 (SARONNO -> LODI) (+5m) [Transito]\n  - REG 24133 (SARONNO -> LODI) (+5
- m)\n  - REG 24133 (SARONNO -> LODI) (+5m)\nRitardo massimo rilevato: 5 min
- \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
- r 6 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
- ma di sgombero stradale (120s)
+ INUA - 3 TRENI\nChiusura sbarre stimata: 11:24:30 - 11:36:00\nTreni coinvo
+ lti nella chiusura:\n  - REG 24136 (LODI -> SARONNO)\n  - REG 24133 (SARON
+ NO -> LODI) (+5m) [Transito]\n  - REG 24133 (SARONNO -> LODI) (+5m)\nRitar
+ do massimo rilevato: 5 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (74s)
+  inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TAVAZZANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24138--20261118-S01824@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
 DTSTART:20261119T105430Z
 DTEND:20261119T105900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:54 - 11:59 (primo: REG 24138)
-DESCRIPTION:Stazione/PL: TAVAZZANO (S01824)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 11:54:30 - 11:59:00\nTreni coinvo
- lti nella chiusura:\n  - REG 24138 (LODI -> SARONNO)\n  - REG 24138 (LODI 
- -> SARONNO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNo
- ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
- a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 24138 (LODI -> SARONNO) ore 11:58
+DESCRIPTION:Stazione/PL: TAVAZZANO (S01824)\nRegime chiusura: FERMATA\nChiu
+ sura sbarre stimata: 11:54:30 - 11:59:00\nTreni coinvolti nella chiusura:\
+ n  - REG 24138 (LODI -> SARONNO)\nRitardo massimo rilevato: 0 min\nAffidab
+ ilità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria 
+ regolare
 LOCATION:Passaggio a Livello / Stazione TAVAZZANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24139--20261118-S01824@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
-DTSTART:20261119T114949Z
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
+DTSTART:20261119T114945Z
 DTEND:20261119T120100Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:49 - 13:01 (primo: REG 24139)
 DESCRIPTION:Stazione/PL: TAVAZZANO (S01824)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 12:49:49 - 13:01:00\nTreni coinvo
+ INUA - 2 TRENI\nChiusura sbarre stimata: 12:49:45 - 13:01:00\nTreni coinvo
  lti nella chiusura:\n  - REG 24139 (SARONNO -> LODI) [Transito]\n  - REG 2
  4139 (SARONNO -> LODI)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
  ma: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
- lo utile tra i passaggi (70s) inferiore alla soglia minima di sgombero str
+ lo utile tra i passaggi (74s) inferiore alla soglia minima di sgombero str
  adale (120s)
 LOCATION:Passaggio a Livello / Stazione TAVAZZANO
 STATUS:CONFIRMED
@@ -235,29 +252,28 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24150--20261118-S01824@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
 DTSTART:20261119T135430Z
 DTEND:20261119T135900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:54 - 14:59 (primo: REG 24150)
-DESCRIPTION:Stazione/PL: TAVAZZANO (S01824)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 14:54:30 - 14:59:00\nTreni coinvo
- lti nella chiusura:\n  - REG 24150 (LODI -> SARONNO)\n  - REG 24150 (LODI 
- -> SARONNO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNo
- ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
- a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 24150 (LODI -> SARONNO) ore 14:58
+DESCRIPTION:Stazione/PL: TAVAZZANO (S01824)\nRegime chiusura: FERMATA\nChiu
+ sura sbarre stimata: 14:54:30 - 14:59:00\nTreni coinvolti nella chiusura:\
+ n  - REG 24150 (LODI -> SARONNO)\nRitardo massimo rilevato: 0 min\nAffidab
+ ilità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria 
+ regolare
 LOCATION:Passaggio a Livello / Stazione TAVAZZANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24152--20261118-S01824@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
 DTSTART:20261119T142430Z
 DTEND:20261119T142900Z
 SUMMARY:[FERMATA] REG 24152 (LODI -> SARONNO) ore 15:28
@@ -276,13 +292,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24151--20261118-S01824@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
-DTSTART:20261119T144949Z
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
+DTSTART:20261119T144945Z
 DTEND:20261119T150100Z
 SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:49 - 16:01 (primo: REG 24151)
 DESCRIPTION:Stazione/PL: TAVAZZANO (S01824)\nRegime chiusura: CHIUSURA CONT
- INUA - 3 TRENI\nChiusura sbarre stimata: 15:49:49 - 16:01:00\nTreni coinvo
+ INUA - 3 TRENI\nChiusura sbarre stimata: 15:49:45 - 16:01:00\nTreni coinvo
  lti nella chiusura:\n  - REG 24151 (SARONNO -> LODI) [Transito]\n  - REG 2
  4154 (LODI -> SARONNO)\n  - REG 24151 (SARONNO -> LODI)\nRitardo massimo r
  ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
@@ -298,40 +314,39 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24153--20261118-S01824@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
-DTSTART:20261119T151949Z
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
+DTSTART:20261119T151945Z
 DTEND:20261119T153100Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:19 - 16:31 (primo: REG 24153)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:19 - 16:31 (primo: REG 24153)
 DESCRIPTION:Stazione/PL: TAVAZZANO (S01824)\nRegime chiusura: CHIUSURA CONT
- INUA - 4 TRENI\nChiusura sbarre stimata: 16:19:49 - 16:31:00\nTreni coinvo
+ INUA - 2 TRENI\nChiusura sbarre stimata: 16:19:45 - 16:31:00\nTreni coinvo
  lti nella chiusura:\n  - REG 24153 (SARONNO -> LODI) [Transito]\n  - REG 2
- 4153 (SARONNO -> LODI) [Transito]\n  - REG 24153 (SARONNO -> LODI)\n  - RE
- G 24153 (SARONNO -> LODI)\nRitardo massimo rilevato: 0 min\nAffidabilità 
- stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: inter
- vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
- tradale (120s)
+ 4153 (SARONNO -> LODI)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
+ ma: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
+ lo utile tra i passaggi (74s) inferiore alla soglia minima di sgombero str
+ adale (120s)
 LOCATION:Passaggio a Livello / Stazione TAVAZZANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24157--20261118-S01824@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
-DTSTART:20261119T161949Z
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
+DTSTART:20261119T161945Z
 DTEND:20261119T163100Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:19 - 17:31 (primo: REG 24157)
 DESCRIPTION:Stazione/PL: TAVAZZANO (S01824)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 17:19:49 - 17:31:00\nTreni coinvo
+ INUA - 2 TRENI\nChiusura sbarre stimata: 17:19:45 - 17:31:00\nTreni coinvo
  lti nella chiusura:\n  - REG 24157 (SARONNO -> LODI) [Transito]\n  - REG 2
  4157 (SARONNO -> LODI)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
  ma: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
- lo utile tra i passaggi (70s) inferiore alla soglia minima di sgombero str
+ lo utile tra i passaggi (74s) inferiore alla soglia minima di sgombero str
  adale (120s)
 LOCATION:Passaggio a Livello / Stazione TAVAZZANO
 STATUS:CONFIRMED
@@ -343,55 +358,53 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24159--20261118-S01824@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
-DTSTART:20261119T164949Z
-DTEND:20261119T170421Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:49 - 18:04 (primo: REG 24159)
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
+DTSTART:20261119T164945Z
+DTEND:20261119T170414Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:49 - 18:04 (primo: REG 24159)
 DESCRIPTION:Stazione/PL: TAVAZZANO (S01824)\nRegime chiusura: CHIUSURA CONT
- INUA - 4 TRENI\nChiusura sbarre stimata: 17:49:49 - 18:04:21\nTreni coinvo
+ INUA - 3 TRENI\nChiusura sbarre stimata: 17:49:45 - 18:04:14\nTreni coinvo
  lti nella chiusura:\n  - REG 24159 (SARONNO -> LODI) [Transito]\n  - REG 2
  4159 (SARONNO -> LODI)\n  - REG 2295 (MILANO PORTA GARIBALDI -> LIVORNO CE
- NTRALE) [Transito]\n  - REG 2295 (MILANO PORTA GARIBALDI -> LIVORNO CENTRA
- LE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\
- nNota normativa/euristica: Chiusura continua per 4 treni: intervallo utile
-  tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (12
- 0s)
+ NTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
+ 78%\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo u
+ tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
+  (120s)
 LOCATION:Passaggio a Livello / Stazione TAVAZZANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24171--20261118-S01824@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
-DTSTART:20261119T194949Z
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
+DTSTART:20261119T194945Z
 DTEND:20261119T200100Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 20:49 - 21:01 (primo: REG 24171)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:49 - 21:01 (primo: REG 24171)
 DESCRIPTION:Stazione/PL: TAVAZZANO (S01824)\nRegime chiusura: CHIUSURA CONT
- INUA - 5 TRENI\nChiusura sbarre stimata: 20:49:49 - 21:01:00\nTreni coinvo
+ INUA - 3 TRENI\nChiusura sbarre stimata: 20:49:45 - 21:01:00\nTreni coinvo
  lti nella chiusura:\n  - REG 24171 (SARONNO -> LODI) [Transito]\n  - REG 2
- 4171 (SARONNO -> LODI) [Transito]\n  - REG 24174 (LODI -> MILANO BOVISA PO
- LITECNICO)\n  - REG 24171 (SARONNO -> LODI)\n  - REG 24171 (SARONNO -> LOD
- I)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Chiusura continua per 5 treni: intervallo utile tra i passa
- ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ 4174 (LODI -> MILANO BOVISA POLITECNICO)\n  - REG 24171 (SARONNO -> LODI)\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Chiusura continua per 3 treni: intervallo utile tra i passaggi
+  (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TAVAZZANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24176--20261118-S01824@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:1
+DTSTAMP:20261119T185738Z
+SEQUENCE:2
 DTSTART:20261119T202430Z
 DTEND:20261119T202900Z
 SUMMARY:[FERMATA] REG 24176 (LODI -> MILANO BOVISA POLITECNICO) ore 21:28
@@ -410,24 +423,22 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24179--20261118-S01824@pl-tracker.local
-DTSTAMP:20261119T100017Z
-SEQUENCE:0
-DTSTART:20261119T214949Z
+DTSTAMP:20261119T185738Z
+SEQUENCE:1
+DTSTART:20261119T214945Z
 DTEND:20261119T220100Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 22:49 - 23:01 (primo: REG 24179)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:49 - 23:01 (primo: REG 24179)
 DESCRIPTION:Stazione/PL: TAVAZZANO (S01824)\nRegime chiusura: CHIUSURA CONT
- INUA - 4 TRENI\nChiusura sbarre stimata: 22:49:49 - 23:01:00\nTreni coinvo
+ INUA - 2 TRENI\nChiusura sbarre stimata: 22:49:45 - 23:01:00\nTreni coinvo
  lti nella chiusura:\n  - REG 24179 (MILANO BOVISA POLITECNICO -> LODI) [Tr
- ansito]\n  - REG 24179 (MILANO BOVISA POLITECNICO -> LODI) [Transito]\n  -
-  REG 24179 (MILANO BOVISA POLITECNICO -> LODI)\n  - REG 24179 (MILANO BOVI
- SA POLITECNICO -> LODI)\nRitardo massimo rilevato: 0 min\nAffidabilità st
- ima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: interva
- llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
- adale (120s)
+ ansito]\n  - REG 24179 (MILANO BOVISA POLITECNICO -> LODI)\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
+ usura continua per 2 treni: intervallo utile tra i passaggi (74s) inferior
+ e alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TAVAZZANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
