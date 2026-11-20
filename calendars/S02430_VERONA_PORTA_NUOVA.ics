@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:5a65a3ede35edd0a5d9984927a296d453d83678b753f02085937da57f4f3
- 2a71
+X-CONTENT-HASH:97fea47fd14315ec00a987e69d74f18d79e19dc9608db8198670f86fcc9f
+ c82f
 BEGIN:VEVENT
 UID:train-9702--20261118-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
 DTSTART:20261119T063200Z
 DTEND:20261119T063930Z
 SUMMARY:[FERMATA] TRENO 9702 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA) ore 07
@@ -34,327 +34,403 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3477--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
 DTSTART:20261120T042830Z
 DTEND:20261120T043300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:28 - 05:33 (primo: REG 3477)
-DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:28:30 - 05:33:00\nTre
- ni coinvolti nella chiusura:\n  - REG 3477 (VERONA PORTA NUOVA -> VENEZIA 
- S.LUCIA)\n  - REG 3477 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo ma
+SUMMARY:[FERMATA] REG 3477 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) ore 05:3
+ 2
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 05:28:30 - 05:33:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 3477 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo ma
  ssimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica:
-  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
- iore alla soglia minima di sgombero stradale (120s)
+  Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3461--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
+UID:train-16325--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
 SEQUENCE:0
-DTSTART:20261120T045058Z
-DTEND:20261120T045628Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:50 - 05:56 (primo: REG 3461)
+DTSTART:20261120T043830Z
+DTEND:20261120T044300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:38 - 05:43 (primo: REG 16325) (+1 
+ min)
 DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:50:58 - 05:56:28\nTre
- ni coinvolti nella chiusura:\n  - REG 3461 (BOLZANO -> BOLOGNA CENTRALE) [
- Transito]\n  - REG 3461 (BOLZANO -> BOLOGNA CENTRALE) [Transito]\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:38:30 - 05:43:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 16325 (VERONA PORTA NUOVA -> VENEZIA
+  S.LUCIA) (+1m)\n  - REG 16325 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+1
+ m)\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normat
+ iva/euristica: Chiusura continua per 2 treni: intervallo utile tra i passa
+ ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3461--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T045054Z
+DTEND:20261120T045624Z
+SUMMARY:[TRANSITO VELOCE] REG 3461 (BOLZANO -> BOLOGNA CENTRALE) ore 05:55
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 05:50:54 - 05:56:24\nTreni coinvolti
+  nella chiusura:\n  - REG 3461 (BOLZANO -> BOLOGNA CENTRALE) [Transito]\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Transito stimato senza fermata (52% tratta ROVERETO -> ALA\; ped
+ ale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-91505--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
+UID:train-16027--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
 SEQUENCE:0
-DTSTART:20261120T053430Z
-DTEND:20261120T054700Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 06:34 - 06:47 (primo: REG 91505)
+DTSTART:20261120T050330Z
+DTEND:20261120T050800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:03 - 06:08 (primo: REG 16027) (+2 
+ min)
 DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 06:34:30 - 06:47:00\nTre
- ni coinvolti nella chiusura:\n  - REG 91505 (VERONA PORTA NUOVA -> ROVIGO)
- \n  - REG 91505 (VERONA PORTA NUOVA -> ROVIGO)\n  - TRENO 8505 (BOLZANO ->
-  ROMA TERMINI)\n  - TRENO 8505 (BOLZANO -> ROMA TERMINI)\n  - REG 3461 (BO
- LZANO -> BOLOGNA CENTRALE)\n  - REG 3461 (BOLZANO -> BOLOGNA CENTRALE)\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eu
- ristica: Chiusura continua per 6 treni: intervallo utile tra i passaggi (0
- s) inferiore alla soglia minima di sgombero stradale (120s)
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:03:30 - 06:08:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 16027 (VERONA PORTA NUOVA -> BOLOGNA
+  CENTRALE) (+2m)\n  - REG 16027 (VERONA PORTA NUOVA -> BOLOGNA CENTRALE) (
+ +2m)\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota norm
+ ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-91505--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T053430Z
+DTEND:20261120T054700Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 06:34 - 06:47 (primo: REG 91505)
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 06:34:30 - 06:47:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 91505 (VERONA PORTA NUOVA -> ROVIGO)
+ \n  - TRENO 8505 (BOLZANO -> ROMA TERMINI)\n  - REG 3461 (BOLZANO -> BOLOG
+ NA CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nN
+ ota normativa/euristica: Chiusura continua per 3 treni: intervallo utile t
+ ra i passaggi (90s) inferiore alla soglia minima di sgombero stradale (120
+ s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3483--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T055030Z
-DTEND:20261120T055500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:50 - 06:55 (primo: REG 3483)
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T055130Z
+DTEND:20261120T055600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:51 - 06:56 (primo: REG 3483) (+1 m
+ in)
 DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:50:30 - 06:55:00\nTre
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:51:30 - 06:56:00\nTre
  ni coinvolti nella chiusura:\n  - REG 3483 (VERONA PORTA NUOVA -> VENEZIA 
- S.LUCIA)\n  - REG 3483 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo ma
- ssimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica:
-  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
- iore alla soglia minima di sgombero stradale (120s)
+ S.LUCIA) (+1m)\n  - REG 3483 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+1m)
+ \nRitardo massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativ
+ a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
+ i (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-91507--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
+UID:train-16017--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
 SEQUENCE:0
-DTSTART:20261120T063430Z
-DTEND:20261120T064400Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:34 - 07:44 (primo: REG 91507)
+DTSTART:20261120T055931Z
+DTEND:20261120T061306Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:59 - 07:13 (primo: REG 16017) (+1 
+ min)
 DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 07:34:30 - 07:44:00\nTre
- ni coinvolti nella chiusura:\n  - REG 91507 (VERONA PORTA NUOVA -> ROVIGO)
- \n  - REG 91507 (VERONA PORTA NUOVA -> ROVIGO)\n  - REG 2620 (VERONA PORTA
-  NUOVA -> MILANO CENTRALE)\n  - REG 2620 (VERONA PORTA NUOVA -> MILANO CEN
- TRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota no
- rmativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i p
- assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 06:59:31 - 07:13:06\nTre
+ ni coinvolti nella chiusura:\n  - REG 16017 (BRESCIA -> VENEZIA S.LUCIA) (
+ +1m) [Transito]\n  - REG 17181 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+1
+ m)\n  - REG 17181 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+1m)\n  - REG 1
+ 6017 (BRESCIA -> VENEZIA S.LUCIA) (+1m) [Transito]\nRitardo massimo rileva
+ to: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
+ ntinua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3462--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
+UID:train-16032--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
 SEQUENCE:0
-DTSTART:20261120T064630Z
-DTEND:20261120T065100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:46 - 07:51 (primo: REG 3462)
+DTSTART:20261120T062228Z
+DTEND:20261120T062930Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:22 - 07:29 (primo: REG 16032) (+7 
+ min)
 DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:46:30 - 07:51:00\nTre
- ni coinvolti nella chiusura:\n  - REG 3462 (VERONA PORTA NUOVA -> BRENNERO
- )\n  - REG 3462 (VERONA PORTA NUOVA -> BRENNERO)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura cont
- inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
+ SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 07:22:28 - 07:29:30\nTre
+ ni coinvolti nella chiusura:\n  - REG 16032 (BOLOGNA CENTRALE -> VERONA PO
+ RTA NUOVA) (+1m) [Transito]\n  - REG 16032 (BOLOGNA CENTRALE -> VERONA POR
+ TA NUOVA) (+1m) [Transito]\n  - REG 16017 (BRESCIA -> VENEZIA S.LUCIA) (+7
+ m)\n  - REG 16017 (BRESCIA -> VENEZIA S.LUCIA) (+7m)\nRitardo massimo rile
+ vato: 7 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
+ continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9706--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T065630Z
+UID:train-91507--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T063430Z
 DTEND:20261120T070100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:56 - 08:01 (primo: TRENO 9706)
+SUMMARY:[CHIUSURA CONTINUA - 10 TRENI] 07:34 - 08:01 (primo: REG 91507) (+2
+  min)
 DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:56:30 - 08:01:00\nTre
- ni coinvolti nella chiusura:\n  - TRENO 9706 (VENEZIA S.LUCIA -> MILANO CE
- NTRALE)\n  - TRENO 9706 (VENEZIA S.LUCIA -> MILANO CENTRALE)\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: C
+ SURA CONTINUA - 10 TRENI\nChiusura sbarre stimata: 07:34:30 - 08:01:00\nTr
+ eni coinvolti nella chiusura:\n  - REG 91507 (VERONA PORTA NUOVA -> ROVIGO
+ )\n  - REG 16032 (BOLOGNA CENTRALE -> VERONA PORTA NUOVA) (+1m)\n  - REG 1
+ 6032 (BOLOGNA CENTRALE -> VERONA PORTA NUOVA) (+1m)\n  - REG 2620 (VERONA 
+ PORTA NUOVA -> MILANO CENTRALE) (+1m)\n  - REG 2620 (VERONA PORTA NUOVA ->
+  MILANO CENTRALE) (+1m)\n  - REG 2613 (MILANO CENTRALE -> VERONA PORTA NUO
+ VA) [Transito]\n  - REG 3462 (VERONA PORTA NUOVA -> BRENNERO) (+2m)\n  - R
+ EG 3462 (VERONA PORTA NUOVA -> BRENNERO) (+2m)\n  - REG 2613 (MILANO CENTR
+ ALE -> VERONA PORTA NUOVA) [Transito]\n  - TRENO 9706 (VENEZIA S.LUCIA -> 
+ MILANO CENTRALE)\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78
+ %\nNota normativa/euristica: Chiusura continua per 10 treni: intervallo ut
+ ile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale 
+ (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 10 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16674--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:0
+DTSTART:20261120T070330Z
+DTEND:20261120T070800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:03 - 08:08 (primo: REG 16674) (+1 
+ min)
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:03:30 - 08:08:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 16674 (VERONA PORTA NUOVA -> BOLZANO
+ ) (+1m)\n  - REG 16674 (VERONA PORTA NUOVA -> BOLZANO) (+1m)\nRitardo mass
+ imo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: C
  hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
  re alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17162--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T072430Z
-DTEND:20261120T072900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:24 - 08:29 (primo: REG 17162)
-DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:24:30 - 08:29:00\nTre
- ni coinvolti nella chiusura:\n  - REG 17162 (VENEZIA S.LUCIA -> VERONA POR
- TA NUOVA)\n  - REG 17162 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
- a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9712--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
+UID:train-2613--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
 SEQUENCE:0
-DTSTART:20261120T074030Z
-DTEND:20261120T074500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:40 - 08:45 (primo: TRENO 9712)
+DTSTART:20261120T071230Z
+DTEND:20261120T073600Z
+SUMMARY:[CHIUSURA CONTINUA - 10 TRENI] 08:12 - 08:36 (primo: REG 2613) (+10
+  min)
 DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:40:30 - 08:45:00\nTre
- ni coinvolti nella chiusura:\n  - TRENO 9712 (TRIESTE CENTRALE -> TORINO P
- ORTA NUOVA)\n  - TRENO 9712 (TRIESTE CENTRALE -> TORINO PORTA NUOVA)\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euri
- stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
-  inferiore alla soglia minima di sgombero stradale (120s)
+ SURA CONTINUA - 10 TRENI\nChiusura sbarre stimata: 08:12:30 - 08:36:00\nTr
+ eni coinvolti nella chiusura:\n  - REG 2613 (MILANO CENTRALE -> VERONA POR
+ TA NUOVA)\n  - REG 2613 (MILANO CENTRALE -> VERONA PORTA NUOVA)\n  - REG 3
+ 482 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+10m) [Transito]\n  - REG 348
+ 2 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+10m) [Transito]\n  - REG 3458 
+ (BOLOGNA CENTRALE -> VERONA PORTA NUOVA) [Transito]\n  - REG 3458 (BOLOGNA
+  CENTRALE -> VERONA PORTA NUOVA) [Transito]\n  - REG 17162 (VENEZIA S.LUCI
+ A -> VERONA PORTA NUOVA)\n  - REG 3463 (BRENNERO -> VERONA PORTA NUOVA) [T
+ ransito]\n  - REG 3458 (BOLOGNA CENTRALE -> VERONA PORTA NUOVA)\n  - REG 3
+ 458 (BOLOGNA CENTRALE -> VERONA PORTA NUOVA)\nRitardo massimo rilevato: 10
+  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
+ a per 10 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+  minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2615--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T074851Z
-DTEND:20261120T075421Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:48 - 08:54 (primo: REG 2615)
-DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:48:51 - 08:54:21\nTre
- ni coinvolti nella chiusura:\n  - REG 2615 (MILANO CENTRALE -> VERONA PORT
- A NUOVA) [Transito]\n  - REG 2615 (MILANO CENTRALE -> VERONA PORTA NUOVA) 
- [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
- a normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra
-  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 10 TRENI,FERROVIA
+X-PL-DELAY-MIN:10
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2615--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T081330Z
-DTEND:20261120T081800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:13 - 09:18 (primo: REG 2615)
+UID:train-9712--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T074030Z
+DTEND:20261120T080500Z
+SUMMARY:[CHIUSURA CONTINUA - 14 TRENI] 08:40 - 09:05 (primo: TRENO 9712) (+
+ 10 min)
 DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:13:30 - 09:18:00\nTre
- ni coinvolti nella chiusura:\n  - REG 2615 (MILANO CENTRALE -> VERONA PORT
- A NUOVA)\n  - REG 2615 (MILANO CENTRALE -> VERONA PORTA NUOVA)\nRitardo ma
- ssimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica:
-  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
- iore alla soglia minima di sgombero stradale (120s)
+ SURA CONTINUA - 14 TRENI\nChiusura sbarre stimata: 08:40:30 - 09:05:00\nTr
+ eni coinvolti nella chiusura:\n  - TRENO 9712 (TRIESTE CENTRALE -> TORINO 
+ PORTA NUOVA)\n  - EC 88 (BOLOGNA CENTRALE -> BRENNERO) (+3m) [Arrivo]\n  -
+  EC 88 (BOLOGNA CENTRALE -> BRENNERO) (+3m) [Arrivo]\n  - REG 3482 (VENEZI
+ A S.LUCIA -> VERONA PORTA NUOVA) (+10m)\n  - REG 3482 (VENEZIA S.LUCIA -> 
+ VERONA PORTA NUOVA) (+10m)\n  - TRENO 8507 (BOLZANO -> ROMA TERMINI) (+8m)
+  [Arrivo]\n  - TRENO 8507 (BOLZANO -> ROMA TERMINI) (+8m) [Arrivo]\n  - RE
+ G 2615 (MILANO CENTRALE -> VERONA PORTA NUOVA) (+7m) [Transito]\n  - REG 2
+ 615 (MILANO CENTRALE -> VERONA PORTA NUOVA) (+7m) [Transito]\n  - REG 3463
+  (BRENNERO -> VERONA PORTA NUOVA) [Transito]\n  - TRENO 8507 (BOLZANO -> R
+ OMA TERMINI) (+8m) [Partenza]\n  - TRENO 8507 (BOLZANO -> ROMA TERMINI) (+
+ 8m) [Partenza]\n  - EC 88 (BOLOGNA CENTRALE -> BRENNERO) (+3m) [Partenza]\
+ n  - EC 88 (BOLOGNA CENTRALE -> BRENNERO) (+3m) [Partenza]\nRitardo massim
+ o rilevato: 10 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 14 treni: intervallo utile tra i passaggi (0s) inferio
+ re alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 14 TRENI,FERROVIA
+X-PL-DELAY-MIN:10
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3463--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:0
+DTSTART:20261120T081300Z
+DTEND:20261120T084200Z
+SUMMARY:[CHIUSURA CONTINUA - 17 TRENI] 09:13 - 09:42 (primo: REG 3463) (+15
+  min)
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
+ SURA CONTINUA - 17 TRENI\nChiusura sbarre stimata: 09:13:00 - 09:42:00\nTr
+ eni coinvolti nella chiusura:\n  - REG 3463 (BRENNERO -> VERONA PORTA NUOV
+ A)\n  - REG 3463 (BRENNERO -> VERONA PORTA NUOVA)\n  - REG 16472 (MANTOVA 
+ -> VERONA PORTA NUOVA) (+2m)\n  - REG 16472 (MANTOVA -> VERONA PORTA NUOVA
+ ) (+2m)\n  - REG 2615 (MILANO CENTRALE -> VERONA PORTA NUOVA) (+7m)\n  - R
+ EG 2615 (MILANO CENTRALE -> VERONA PORTA NUOVA) (+7m)\n  - REG 3466 (BOLOG
+ NA CENTRALE -> VERONA PORTA NUOVA) (+15m) [Transito]\n  - REG 3466 (BOLOGN
+ A CENTRALE -> VERONA PORTA NUOVA) (+15m) [Transito]\n  - REG 17135 (VERONA
+  PORTA NUOVA -> MANTOVA) (+2m)\n  - REG 17135 (VERONA PORTA NUOVA -> MANTO
+ VA) (+2m)\n  - TRENO 9710 (GENOVA BRIGNOLE -> VENEZIA S.LUCIA) [Transito]\
+ n  - TRENO 9716 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA) (+6m)\n  - TRENO 9
+ 716 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA) (+6m)\n  - REG 2617 (MILANO CE
+ NTRALE -> VERONA PORTA NUOVA) [Transito]\n  - REG 2617 (MILANO CENTRALE ->
+  VERONA PORTA NUOVA) [Transito]\n  - REG 17299 (VERONA PORTA NUOVA -> VENE
+ ZIA S.LUCIA)\n  - REG 17299 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitar
+ do massimo rilevato: 15 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Chiusura continua per 17 treni: intervallo utile tra i passaggi (0s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 17 TRENI,FERROVIA
+X-PL-DELAY-MIN:15
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3466--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:0
+DTSTART:20261120T084630Z
+DTEND:20261120T085100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:46 - 09:51 (primo: REG 3466) (+15 
+ min)
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:46:30 - 09:51:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 3466 (BOLOGNA CENTRALE -> VERONA POR
+ TA NUOVA) (+15m)\n  - REG 3466 (BOLOGNA CENTRALE -> VERONA PORTA NUOVA) (+
+ 15m)\nRitardo massimo rilevato: 15 min\nAffidabilità stima: 90%\nNota nor
+ mativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pa
+ ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17166--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T082430Z
-DTEND:20261120T083100Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 09:24 - 09:31 (primo: REG 17166)
-DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 09:24:30 - 09:31:00\nTre
- ni coinvolti nella chiusura:\n  - REG 17166 (VENEZIA S.LUCIA -> VERONA POR
- TA NUOVA)\n  - REG 17166 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\n  - TREN
- O 9716 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA)\n  - TRENO 9716 (VENEZIA S.
- LUCIA -> TORINO PORTA NUOVA)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 4 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:15
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9710--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
 DTSTART:20261120T085430Z
-DTEND:20261120T085900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:54 - 09:59 (primo: TRENO 9710)
-DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:54:30 - 09:59:00\nTre
- ni coinvolti nella chiusura:\n  - TRENO 9710 (GENOVA BRIGNOLE -> VENEZIA S
- .LUCIA)\n  - TRENO 9710 (GENOVA BRIGNOLE -> VENEZIA S.LUCIA)\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: C
- hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9721--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T091630Z
 DTEND:20261120T092100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:16 - 10:21 (primo: TRENO 9721)
+SUMMARY:[CHIUSURA CONTINUA - 12 TRENI] 09:54 - 10:21 (primo: TRENO 9710) (+
+ 33 min)
 DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:16:30 - 10:21:00\nTre
- ni coinvolti nella chiusura:\n  - TRENO 9721 (BOLZANO -> MILANO CENTRALE)\
- n  - TRENO 9721 (BOLZANO -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
+ SURA CONTINUA - 12 TRENI\nChiusura sbarre stimata: 09:54:30 - 10:21:00\nTr
+ eni coinvolti nella chiusura:\n  - TRENO 9710 (GENOVA BRIGNOLE -> VENEZIA 
+ S.LUCIA)\n  - REG 17166 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+33m)\n  
+ - REG 17166 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+33m)\n  - REG 16663 
+ (BOLZANO -> VERONA PORTA NUOVA) (+7m)\n  - REG 16663 (BOLZANO -> VERONA PO
+ RTA NUOVA) (+7m)\n  - REG 3428 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+6
+ m) [Transito]\n  - REG 3428 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+6m) 
+ [Transito]\n  - REG 2617 (MILANO CENTRALE -> VERONA PORTA NUOVA)\n  - REG 
+ 2617 (MILANO CENTRALE -> VERONA PORTA NUOVA)\n  - REG 16474 (MANTOVA -> VE
+ RONA PORTA NUOVA) (+1m)\n  - REG 16474 (MANTOVA -> VERONA PORTA NUOVA) (+1
+ m)\n  - TRENO 9721 (BOLZANO -> MILANO CENTRALE)\nRitardo massimo rilevato:
+  33 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
+ inua per 12 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 12 TRENI,FERROVIA
+X-PL-DELAY-MIN:33
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9717--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T093032Z
-DTEND:20261120T093602Z
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T093035Z
+DTEND:20261120T093605Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9717 (MILANO CENTRALE -> VENEZIA S.LUCIA) o
  re 10:34
 DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 10:30:32 - 10:36:02\nTreni coinvolti
+ SITO VELOCE\nChiusura sbarre stimata: 10:30:35 - 10:36:05\nTreni coinvolti
   nella chiusura:\n  - TRENO 9717 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Tra
  nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
  rmativa/euristica: Transito stimato senza fermata (66% tratta BRESCIA -> P
@@ -369,310 +445,512 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2626--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
 DTSTART:20261120T093930Z
-DTEND:20261120T094400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:39 - 10:44 (primo: REG 2626)
+DTEND:20261120T094700Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 10:39 - 10:47 (primo: REG 2626) (+6 m
+ in)
 DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:39:30 - 10:44:00\nTre
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 10:39:30 - 10:47:00\nTre
  ni coinvolti nella chiusura:\n  - REG 2626 (VERONA PORTA NUOVA -> MILANO C
- ENTRALE)\n  - REG 2626 (VERONA PORTA NUOVA -> MILANO CENTRALE)\nRitardo ma
- ssimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica:
-  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
- iore alla soglia minima di sgombero stradale (120s)
+ ENTRALE)\n  - REG 3428 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+6m)\n  - 
+ REG 3428 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+6m)\nRitardo massimo ri
+ levato: 6 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
+ a continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9717--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
 DTSTART:20261120T095430Z
 DTEND:20261120T095900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:54 - 10:59 (primo: TRENO 9717)
-DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:54:30 - 10:59:00\nTre
- ni coinvolti nella chiusura:\n  - TRENO 9717 (MILANO CENTRALE -> VENEZIA S
- .LUCIA)\n  - TRENO 9717 (MILANO CENTRALE -> VENEZIA S.LUCIA)\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: C
- hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] TRENO 9717 (MILANO CENTRALE -> VENEZIA S.LUCIA) ore 10:58
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 10:54:30 - 10:59:00\nTreni coinvolti nella c
+ hiusura:\n  - TRENO 9717 (MILANO CENTRALE -> VENEZIA S.LUCIA)\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: 
+ Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16684--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
+UID:train-41--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
 SEQUENCE:0
-DTSTART:20261120T100230Z
-DTEND:20261120T100757Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:02 - 11:07 (primo: REG 16684)
+DTSTART:20261120T100220Z
+DTEND:20261120T100900Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 11:02 - 11:09 (primo: EC 41) (+5 min)
 DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 11:02:30 - 11:07:57\nTre
- ni coinvolti nella chiusura:\n  - REG 16684 (VERONA PORTA NUOVA -> BOLZANO
- )\n  - REG 16684 (VERONA PORTA NUOVA -> BOLZANO)\n  - REG 3632 (VENEZIA S.
- LUCIA -> VERONA PORTA NUOVA) [Transito]\n  - REG 3632 (VENEZIA S.LUCIA -> 
- VERONA PORTA NUOVA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabil
- ità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
+ SURA CONTINUA - 7 TRENI\nChiusura sbarre stimata: 11:02:20 - 11:09:00\nTre
+ ni coinvolti nella chiusura:\n  - EC 41 (DOMODOSSOLA -> VENEZIA S.LUCIA) (
+ +1m) [Transito]\n  - REG 16684 (VERONA PORTA NUOVA -> BOLZANO)\n  - REG 16
+ 684 (VERONA PORTA NUOVA -> BOLZANO)\n  - REG 3632 (VENEZIA S.LUCIA -> VERO
+ NA PORTA NUOVA) [Transito]\n  - REG 3632 (VENEZIA S.LUCIA -> VERONA PORTA 
+ NUOVA) [Transito]\n  - REG 16667 (BOLZANO -> VERONA PORTA NUOVA) (+5m)\n  
+ - REG 16667 (BOLZANO -> VERONA PORTA NUOVA) (+5m)\nRitardo massimo rilevat
+ o: 5 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
+ tinua per 7 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:EC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-41--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:0
+DTSTART:20261120T102515Z
+DTEND:20261120T103000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:25 - 11:30 (primo: EC 41) (+1 min)
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:25:15 - 11:30:00\nTre
+ ni coinvolti nella chiusura:\n  - EC 41 (DOMODOSSOLA -> VENEZIA S.LUCIA) (
+ +1m)\n  - EC 41 (DOMODOSSOLA -> VENEZIA S.LUCIA) (+1m)\nRitardo massimo ri
+ levato: 1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
+ a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:EC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3632--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
 DTSTART:20261120T103430Z
 DTEND:20261120T104400Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:34 - 11:44 (primo: REG 3632)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:34 - 11:44 (primo: REG 3632)
 DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 11:34:30 - 11:44:00\nTre
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 11:34:30 - 11:44:00\nTre
  ni coinvolti nella chiusura:\n  - REG 3632 (VENEZIA S.LUCIA -> VERONA PORT
  A NUOVA)\n  - REG 3632 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\n  - REG 26
- 28 (VERONA PORTA NUOVA -> MILANO CENTRALE)\n  - REG 2628 (VERONA PORTA NUO
- VA -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
- ma: 90%\nNota normativa/euristica: Chiusura continua per 4 treni: interval
- lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
- dale (120s)
+ 28 (VERONA PORTA NUOVA -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
+ er 3 treni: intervallo utile tra i passaggi (30s) inferiore alla soglia mi
+ nima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8506--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
 DTSTART:20261120T110430Z
 DTEND:20261120T110900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:04 - 12:09 (primo: TRENO 8506)
-DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:04:30 - 12:09:00\nTre
- ni coinvolti nella chiusura:\n  - TRENO 8506 (NAPOLI CENTRALE -> BOLZANO)\
- n  - TRENO 8506 (NAPOLI CENTRALE -> BOLZANO)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
+SUMMARY:[FERMATA] TRENO 8506 (NAPOLI CENTRALE -> BOLZANO) ore 12:08
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 12:04:30 - 12:09:00\nTreni coinvolti nella c
+ hiusura:\n  - TRENO 8506 (NAPOLI CENTRALE -> BOLZANO)\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
+ ne da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9728--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
+UID:train-9726--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
 SEQUENCE:0
-DTSTART:20261120T115630Z
-DTEND:20261120T120757Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 12:56 - 13:07 (primo: TRENO 9728)
+DTSTART:20261120T112730Z
+DTEND:20261120T113200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:27 - 12:32 (primo: TRENO 9726) (+1
+  min)
 DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 12:56:30 - 13:07:57\nTre
- ni coinvolti nella chiusura:\n  - TRENO 9728 (VENEZIA S.LUCIA -> MILANO CE
- NTRALE)\n  - TRENO 9728 (VENEZIA S.LUCIA -> MILANO CENTRALE)\n  - EC 31 (C
- HIASSO -> VENEZIA S.LUCIA) [Transito]\n  - REG 3490 (VENEZIA S.LUCIA -> VE
- RONA PORTA NUOVA) [Transito]\n  - REG 3490 (VENEZIA S.LUCIA -> VERONA PORT
- A NUOVA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
-  78%\nNota normativa/euristica: Chiusura continua per 5 treni: intervallo 
- utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
- e (120s)
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:27:30 - 12:32:00\nTre
+ ni coinvolti nella chiusura:\n  - TRENO 9726 (TRIESTE CENTRALE -> MILANO C
+ ENTRALE) (+1m)\n  - TRENO 9726 (TRIESTE CENTRALE -> MILANO CENTRALE) (+1m)
+ \nRitardo massimo rilevato: 1 min\nAffidabilità stima: 90%\nNota normativ
+ a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
+ i (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9728--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T115630Z
+DTEND:20261120T120720Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:56 - 13:07 (primo: TRENO 9728)
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 12:56:30 - 13:07:20\nTre
+ ni coinvolti nella chiusura:\n  - TRENO 9728 (VENEZIA S.LUCIA -> MILANO CE
+ NTRALE)\n  - EC 31 (CHIASSO -> VENEZIA S.LUCIA) [Transito]\n  - REG 3490 (
+ VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Transito]\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
+ tinua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-31--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
 DTSTART:20261120T122415Z
 DTEND:20261120T122900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:24 - 13:29 (primo: EC 31)
-DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:24:15 - 13:29:00\nTre
- ni coinvolti nella chiusura:\n  - EC 31 (CHIASSO -> VENEZIA S.LUCIA)\n  - 
- EC 31 (CHIASSO -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+SUMMARY:[FERMATA] EC 31 (CHIASSO -> VENEZIA S.LUCIA) ore 13:28
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 13:24:15 - 13:29:00\nTreni coinvolti nella c
+ hiusura:\n  - EC 31 (CHIASSO -> VENEZIA S.LUCIA)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da
+  traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:EC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3490--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
 DTSTART:20261120T123430Z
 DTEND:20261120T124200Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 13:34 - 13:42 (primo: REG 3490)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:34 - 13:42 (primo: REG 3490)
 DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 13:34:30 - 13:42:00\nTre
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:34:30 - 13:42:00\nTre
  ni coinvolti nella chiusura:\n  - REG 3490 (VENEZIA S.LUCIA -> VERONA PORT
- A NUOVA)\n  - REG 3490 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\n  - REG 17
- 209 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - REG 17209 (VERONA PORTA N
- UOVA -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\nAffidabilità s
- tima: 90%\nNota normativa/euristica: Chiusura continua per 4 treni: interv
- allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
- radale (120s)
+ A NUOVA)\n  - REG 17209 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
+ : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-611--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
 DTSTART:20261120T125815Z
 DTEND:20261120T130300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:58 - 14:03 (primo: IC 611)
-DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:58:15 - 14:03:00\nTre
- ni coinvolti nella chiusura:\n  - IC 611 (BOLZANO -> BARI CENTRALE)\n  - I
- C 611 (BOLZANO -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+SUMMARY:[FERMATA] IC 611 (BOLZANO -> BARI CENTRALE) ore 14:02
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 13:58:15 - 14:03:00\nTreni coinvolti nella c
+ hiusura:\n  - IC 611 (BOLZANO -> BARI CENTRALE)\nRitardo massimo rilevato:
+  0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da 
+ traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9733--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T135548Z
-DTEND:20261120T140118Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9733 (MILANO CENTRALE -> VENEZIA S.LUCIA) o
- re 15:00
-DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 14:55:48 - 15:01:18\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9733 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Tra
- nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Transito stimato senza fermata (60% tratta BRESCIA -> D
- ESENZANO DEL GARDA-SIRMIONE\; pedale annuncio fisso Vmax)
+UID:train-3844--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T141055Z
+DTEND:20261120T141700Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:10 - 15:17 (primo: REG 3844)
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 15:10:55 - 15:17:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 3844 (BOLOGNA CENTRALE -> BRENNERO) 
+ [Transito]\n  - REG 16113 (VERONA PORTA NUOVA -> BOLOGNA CENTRALE)\n  - RE
+ G 16113 (VERONA PORTA NUOVA -> BOLOGNA CENTRALE)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
+ inua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9733--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T142430Z
+DTEND:20261120T143600Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:24 - 15:36 (primo: TRENO 9733)
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
+ SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 15:24:30 - 15:36:00\nTre
+ ni coinvolti nella chiusura:\n  - TRENO 9733 (MILANO CENTRALE -> VENEZIA S
+ .LUCIA)\n  - TRENO 9733 (MILANO CENTRALE -> VENEZIA S.LUCIA)\n  - TRENO 97
+ 35 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Transito]\n  - REG 3844 (BOLOGNA 
+ CENTRALE -> BRENNERO)\nRitardo massimo rilevato: 0 min\nAffidabilità stim
+ a: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: intervall
+ o utile tra i passaggi (11s) inferiore alla soglia minima di sgombero stra
+ dale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9733--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
+UID:train-9735--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
 SEQUENCE:0
-DTSTART:20261120T142430Z
-DTEND:20261120T142900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:24 - 15:29 (primo: TRENO 9733)
-DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:24:30 - 15:29:00\nTre
- ni coinvolti nella chiusura:\n  - TRENO 9733 (MILANO CENTRALE -> VENEZIA S
- .LUCIA)\n  - TRENO 9733 (MILANO CENTRALE -> VENEZIA S.LUCIA)\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: C
- hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3844--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T143130Z
-DTEND:20261120T143600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:31 - 15:36 (primo: REG 3844)
-DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:31:30 - 15:36:00\nTre
- ni coinvolti nella chiusura:\n  - REG 3844 (BOLOGNA CENTRALE -> BRENNERO)\
- n  - REG 3844 (BOLOGNA CENTRALE -> BRENNERO)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9740--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T145630Z
+DTSTART:20261120T145430Z
 DTEND:20261120T150100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:56 - 16:01 (primo: TRENO 9740)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:54 - 16:01 (primo: TRENO 9735)
 DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:56:30 - 16:01:00\nTre
- ni coinvolti nella chiusura:\n  - TRENO 9740 (VENEZIA S.LUCIA -> MILANO CE
- NTRALE)\n  - TRENO 9740 (VENEZIA S.LUCIA -> MILANO CENTRALE)\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: C
- hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 15:54:30 - 16:01:00\nTre
+ ni coinvolti nella chiusura:\n  - TRENO 9735 (MILANO CENTRALE -> VENEZIA S
+ .LUCIA)\n  - TRENO 9735 (MILANO CENTRALE -> VENEZIA S.LUCIA)\n  - TRENO 97
+ 40 (VENEZIA S.LUCIA -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\n
+ Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
+ 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
+  di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3505--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
 DTSTART:20261120T151830Z
-DTEND:20261120T152300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:18 - 16:23 (primo: REG 3505)
+DTEND:20261120T153200Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 16:18 - 16:32 (primo: REG 3505)
 DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:18:30 - 16:23:00\nTre
+ SURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 16:18:30 - 16:32:00\nTre
  ni coinvolti nella chiusura:\n  - REG 3505 (VERONA PORTA NUOVA -> VENEZIA 
- S.LUCIA)\n  - REG 3505 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo ma
+ S.LUCIA)\n  - TRENO 9737 (MILANO CENTRALE -> VENEZIA S.LUCIA)\n  - TRENO 9
+ 737 (MILANO CENTRALE -> VENEZIA S.LUCIA)\n  - EC 36 (VENEZIA S.LUCIA -> CH
+ IASSO)\n  - REG 16477 (VERONA PORTA NUOVA -> MANTOVA)\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura
+  continua per 5 treni: intervallo utile tra i passaggi (0s) inferiore alla
+  soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8525--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T153630Z
+DTEND:20261120T154400Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:36 - 16:44 (primo: TRENO 8525)
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:36:30 - 16:44:00\nTre
+ ni coinvolti nella chiusura:\n  - TRENO 8525 (BOLZANO -> NAPOLI CENTRALE)\
+ n  - REG 91521 (VERONA PORTA NUOVA -> ROVIGO)\n  - REG 91521 (VERONA PORTA
+  NUOVA -> ROVIGO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 9
+ 0%\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo ut
+ ile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale 
+ (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-80--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T154815Z
+DTEND:20261120T155300Z
+SUMMARY:[FERMATA] EC 80 (VENEZIA S.LUCIA -> BRENNERO) ore 16:52
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 16:48:15 - 16:53:00\nTreni coinvolti nella c
+ hiusura:\n  - EC 80 (VENEZIA S.LUCIA -> BRENNERO)\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
+ a traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:EC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16712--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T160230Z
+DTEND:20261120T160720Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:02 - 17:07 (primo: REG 16712)
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 17:02:30 - 17:07:20\nTre
+ ni coinvolti nella chiusura:\n  - REG 16712 (VERONA PORTA NUOVA -> BOLZANO
+ )\n  - REG 16026 (VENEZIA S.LUCIA -> BRESCIA) [Transito]\n  - REG 16026 (V
+ ENEZIA S.LUCIA -> BRESCIA) [Transito]\nRitardo massimo rilevato: 0 min\nAf
+ fidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 
+ treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
+ i sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3529--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T161130Z
+DTEND:20261120T161625Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:11 - 17:16 (primo: REG 3529)
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
+ SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 17:11:30 - 17:16:25\nTre
+ ni coinvolti nella chiusura:\n  - REG 3529 (VERONA PORTA NUOVA -> VICENZA)
+ \n  - REG 3529 (VERONA PORTA NUOVA -> VICENZA)\n  - REG 3846 (BOLOGNA CENT
+ RALE -> BRENNERO) [Transito]\n  - REG 3846 (BOLOGNA CENTRALE -> BRENNERO) 
+ [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Chiusura continua per 4 treni: intervallo utile tra
+  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17204--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T162430Z
+DTEND:20261120T164230Z
+SUMMARY:[CHIUSURA CONTINUA - 12 TRENI] 17:24 - 17:42 (primo: REG 17204)
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
+ SURA CONTINUA - 12 TRENI\nChiusura sbarre stimata: 17:24:30 - 17:42:30\nTr
+ eni coinvolti nella chiusura:\n  - REG 17204 (VENEZIA S.LUCIA -> VERONA PO
+ RTA NUOVA)\n  - REG 17204 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\n  - EC 
+ 146 (VENEZIA S.LUCIA -> DOMODOSSOLA)\n  - EC 146 (VENEZIA S.LUCIA -> DOMOD
+ OSSOLA)\n  - TRENO 9747 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Transito]\n 
+  - TRENO 9747 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Transito]\n  - REG 384
+ 6 (BOLOGNA CENTRALE -> BRENNERO)\n  - REG 3846 (BOLOGNA CENTRALE -> BRENNE
+ RO)\n  - REG 16026 (VENEZIA S.LUCIA -> BRESCIA)\n  - REG 16026 (VENEZIA S.
+ LUCIA -> BRESCIA)\n  - REG 2633 (MILANO CENTRALE -> VERONA PORTA NUOVA) [T
+ ransito]\n  - REG 2633 (MILANO CENTRALE -> VERONA PORTA NUOVA) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Chiusura continua per 12 treni: intervallo utile tra i passagg
+ i (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 12 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9747--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:0
+DTSTART:20261120T165430Z
+DTEND:20261120T165900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:54 - 17:59 (primo: TRENO 9747)
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:54:30 - 17:59:00\nTre
+ ni coinvolti nella chiusura:\n  - TRENO 9747 (MILANO CENTRALE -> VENEZIA S
+ .LUCIA)\n  - TRENO 9747 (MILANO CENTRALE -> VENEZIA S.LUCIA)\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: C
+ hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
+ re alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8520--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T170430Z
+DTEND:20261120T170900Z
+SUMMARY:[FERMATA] TRENO 8520 (ROMA TERMINI -> BOLZANO) ore 18:08
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 18:04:30 - 18:09:00\nTreni coinvolti nella c
+ hiusura:\n  - TRENO 8520 (ROMA TERMINI -> BOLZANO)\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
+ da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2633--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:0
+DTSTART:20261120T171330Z
+DTEND:20261120T171800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:13 - 18:18 (primo: REG 2633)
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:13:30 - 18:18:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 2633 (MILANO CENTRALE -> VERONA PORT
+ A NUOVA)\n  - REG 2633 (MILANO CENTRALE -> VERONA PORTA NUOVA)\nRitardo ma
  ssimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica:
   Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
  iore alla soglia minima di sgombero stradale (120s)
@@ -685,186 +963,9 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-36--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T152615Z
-DTEND:20261120T153200Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:26 - 16:32 (primo: EC 36)
-DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 16:26:15 - 16:32:00\nTre
- ni coinvolti nella chiusura:\n  - EC 36 (VENEZIA S.LUCIA -> CHIASSO)\n  - 
- EC 36 (VENEZIA S.LUCIA -> CHIASSO)\n  - REG 16477 (VERONA PORTA NUOVA -> M
- ANTOVA)\n  - REG 16477 (VERONA PORTA NUOVA -> MANTOVA)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
- a continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:EC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8525--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T153630Z
-DTEND:20261120T154100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:36 - 16:41 (primo: TRENO 8525)
-DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:36:30 - 16:41:00\nTre
- ni coinvolti nella chiusura:\n  - TRENO 8525 (BOLZANO -> NAPOLI CENTRALE)\
- n  - TRENO 8525 (BOLZANO -> NAPOLI CENTRALE)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-80--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T154815Z
-DTEND:20261120T155300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:48 - 16:53 (primo: EC 80)
-DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:48:15 - 16:53:00\nTre
- ni coinvolti nella chiusura:\n  - EC 80 (VENEZIA S.LUCIA -> BRENNERO)\n  -
-  EC 80 (VENEZIA S.LUCIA -> BRENNERO)\nRitardo massimo rilevato: 0 min\nAff
- idabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 t
- reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
-  sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:EC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-16712--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T160230Z
-DTEND:20261120T160700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:02 - 17:07 (primo: REG 16712)
-DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:02:30 - 17:07:00\nTre
- ni coinvolti nella chiusura:\n  - REG 16712 (VERONA PORTA NUOVA -> BOLZANO
- )\n  - REG 16712 (VERONA PORTA NUOVA -> BOLZANO)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura cont
- inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3529--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T161130Z
-DTEND:20261120T161600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:11 - 17:16 (primo: REG 3529)
-DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:11:30 - 17:16:00\nTre
- ni coinvolti nella chiusura:\n  - REG 3529 (VERONA PORTA NUOVA -> VICENZA)
- \n  - REG 3529 (VERONA PORTA NUOVA -> VICENZA)\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura contin
- ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17204--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T162430Z
-DTEND:20261120T162900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:24 - 17:29 (primo: REG 17204)
-DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:24:30 - 17:29:00\nTre
- ni coinvolti nella chiusura:\n  - REG 17204 (VENEZIA S.LUCIA -> VERONA POR
- TA NUOVA)\n  - REG 17204 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
- a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3846--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T163130Z
-DTEND:20261120T163600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:31 - 17:36 (primo: REG 3846)
-DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:31:30 - 17:36:00\nTre
- ni coinvolti nella chiusura:\n  - REG 3846 (BOLOGNA CENTRALE -> BRENNERO)\
- n  - REG 3846 (BOLOGNA CENTRALE -> BRENNERO)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8520--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T170430Z
-DTEND:20261120T170900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:04 - 18:09 (primo: TRENO 8520)
-DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:04:30 - 18:09:00\nTre
- ni coinvolti nella chiusura:\n  - TRENO 8520 (ROMA TERMINI -> BOLZANO)\n  
- - TRENO 8520 (ROMA TERMINI -> BOLZANO)\nRitardo massimo rilevato: 0 min\nA
- ffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2
-  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
- di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
 UID:train-8529--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
 DTSTART:20261120T173630Z
 DTEND:20261120T174200Z
 SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 18:36 - 18:42 (primo: TRENO 8529)
@@ -886,18 +987,18 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3523--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
 DTSTART:20261120T181830Z
-DTEND:20261120T183602Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 19:18 - 19:36 (primo: REG 3523)
+DTEND:20261120T184200Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 19:18 - 19:42 (primo: REG 3523)
 DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 19:18:30 - 19:36:02\nTre
+ SURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 19:18:30 - 19:42:00\nTre
  ni coinvolti nella chiusura:\n  - REG 3523 (VERONA PORTA NUOVA -> VENEZIA 
- S.LUCIA)\n  - REG 3523 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - REG 38
- 47 (BRENNERO -> BOLOGNA CENTRALE) [Transito]\n  - REG 3847 (BRENNERO -> BO
- LOGNA CENTRALE) [Transito]\n  - TRENO 9755 (MILANO CENTRALE -> UDINE) [Tra
- nsito]\n  - TRENO 9755 (MILANO CENTRALE -> UDINE) [Transito]\nRitardo mass
+ S.LUCIA)\n  - REG 3847 (BRENNERO -> BOLOGNA CENTRALE) [Transito]\n  - TREN
+ O 9755 (MILANO CENTRALE -> UDINE) [Transito]\n  - TRENO 9755 (MILANO CENTR
+ ALE -> UDINE) [Transito]\n  - REG 17245 (VERONA PORTA NUOVA -> VENEZIA S.L
+ UCIA)\n  - REG 17245 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo mass
  imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
  hiusura continua per 6 treni: intervallo utile tra i passaggi (0s) inferio
  re alla soglia minima di sgombero stradale (120s)
@@ -910,134 +1011,197 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9755--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T185430Z
-DTEND:20261120T185900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:54 - 19:59 (primo: TRENO 9755)
-DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:54:30 - 19:59:00\nTre
- ni coinvolti nella chiusura:\n  - TRENO 9755 (MILANO CENTRALE -> UDINE)\n 
-  - TRENO 9755 (MILANO CENTRALE -> UDINE)\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per
-  2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
- a di sgombero stradale (120s)
+UID:train-3847--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T184450Z
+DTEND:20261120T185020Z
+SUMMARY:[TRANSITO VELOCE] REG 3847 (BRENNERO -> BOLOGNA CENTRALE) ore 19:49
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 19:44:50 - 19:50:20\nTreni coinvolti
+  nella chiusura:\n  - REG 3847 (BRENNERO -> BOLOGNA CENTRALE) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (72% tratta ALA -> DOMEGLIARA-S.
+ AMBROGIO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9755--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T185430Z
+DTEND:20261120T190100Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 19:54 - 20:01 (primo: TRENO 9755)
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
+ SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 19:54:30 - 20:01:00\nTre
+ ni coinvolti nella chiusura:\n  - TRENO 9755 (MILANO CENTRALE -> UDINE)\n 
+  - TRENO 9755 (MILANO CENTRALE -> UDINE)\n  - TRENO 9758 (TRIESTE CENTRALE
+  -> MILANO CENTRALE)\n  - TRENO 9758 (TRIESTE CENTRALE -> MILANO CENTRALE)
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativ
+ a/euristica: Chiusura continua per 4 treni: intervallo utile tra i passagg
+ i (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3847--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
+UID:train-8524--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
 SEQUENCE:0
-DTSTART:20261120T191030Z
+DTSTART:20261120T190430Z
 DTEND:20261120T191500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:10 - 20:15 (primo: REG 3847)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:04 - 20:15 (primo: TRENO 8524)
 DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:10:30 - 20:15:00\nTre
- ni coinvolti nella chiusura:\n  - REG 3847 (BRENNERO -> BOLOGNA CENTRALE)\
- n  - REG 3847 (BRENNERO -> BOLOGNA CENTRALE)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9757--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T192430Z
-DTEND:20261120T193200Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:24 - 20:32 (primo: TRENO 9757)
-DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 20:24:30 - 20:32:00\nTre
- ni coinvolti nella chiusura:\n  - TRENO 9757 (MILANO CENTRALE -> VENEZIA S
- .LUCIA)\n  - TRENO 9757 (MILANO CENTRALE -> VENEZIA S.LUCIA)\n  - REG 1641
- 3 (VERONA PORTA NUOVA -> MANTOVA)\n  - REG 16413 (VERONA PORTA NUOVA -> MA
- NTOVA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota no
- rmativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i p
- assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 20:04:30 - 20:15:00\nTre
+ ni coinvolti nella chiusura:\n  - TRENO 8524 (ROMA TERMINI -> BOLZANO)\n  
+ - TRENO 8524 (ROMA TERMINI -> BOLZANO)\n  - REG 3847 (BRENNERO -> BOLOGNA 
+ CENTRALE)\n  - REG 3847 (BRENNERO -> BOLOGNA CENTRALE)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
+ a continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9757--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T192430Z
+DTEND:20261120T193200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:24 - 20:32 (primo: TRENO 9757)
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:24:30 - 20:32:00\nTre
+ ni coinvolti nella chiusura:\n  - TRENO 9757 (MILANO CENTRALE -> VENEZIA S
+ .LUCIA)\n  - REG 16413 (VERONA PORTA NUOVA -> MANTOVA)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
+ a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-91529--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
 DTSTART:20261120T193630Z
 DTEND:20261120T194400Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 20:36 - 20:44 (primo: REG 91529)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:36 - 20:44 (primo: REG 91529)
 DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 20:36:30 - 20:44:00\nTre
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 20:36:30 - 20:44:00\nTre
  ni coinvolti nella chiusura:\n  - REG 91529 (VERONA PORTA NUOVA -> ROVIGO)
- \n  - REG 91529 (VERONA PORTA NUOVA -> ROVIGO)\n  - REG 17247 (VERONA PORT
- A NUOVA -> VENEZIA S.LUCIA)\n  - REG 17247 (VERONA PORTA NUOVA -> VENEZIA 
- S.LUCIA)\n  - REG 2646 (VERONA PORTA NUOVA -> MILANO CENTRALE)\n  - REG 26
- 46 (VERONA PORTA NUOVA -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
- er 6 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
+ \n  - REG 17247 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - REG 2646 (VER
+ ONA PORTA NUOVA -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffi
+ dabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 3 tr
+ eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9759--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
 DTSTART:20261120T194930Z
 DTEND:20261120T195400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:49 - 20:54 (primo: TRENO 9759)
-DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:49:30 - 20:54:00\nTre
- ni coinvolti nella chiusura:\n  - TRENO 9759 (TORINO PORTA NUOVA -> VENEZI
- A S.LUCIA)\n  - TRENO 9759 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA)\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
- ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
- nferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] TRENO 9759 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA) ore 20
+ :53
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 20:49:30 - 20:54:00\nTreni coinvolti nella c
+ hiusura:\n  - TRENO 9759 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo 
+ massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
+ a: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3574--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T200227Z
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T200150Z
 DTEND:20261120T200900Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 21:02 - 21:09 (primo: REG 3574)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:01 - 21:09 (primo: REG 3574)
 DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 21:02:27 - 21:09:00\nTre
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:01:50 - 21:09:00\nTre
  ni coinvolti nella chiusura:\n  - REG 3574 (VENEZIA S.LUCIA -> BRESCIA) [T
- ransito]\n  - REG 3574 (VENEZIA S.LUCIA -> BRESCIA) [Transito]\n  - TRENO 
- 8526 (ROMA TERMINI -> BOLZANO)\n  - TRENO 8526 (ROMA TERMINI -> BOLZANO)\n
- Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
- euristica: Chiusura continua per 4 treni: intervallo utile tra i passaggi 
- (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ ransito]\n  - TRENO 8526 (ROMA TERMINI -> BOLZANO)\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
+ ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3760--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:0
+DTSTART:20261120T201155Z
+DTEND:20261120T201725Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:11 - 21:17 (primo: REG 3760)
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:11:55 - 21:17:25\nTre
+ ni coinvolti nella chiusura:\n  - REG 3760 (BOLOGNA CENTRALE -> BOLZANO) [
+ Transito]\n  - REG 3760 (BOLOGNA CENTRALE -> BOLZANO) [Transito]\nRitardo 
+ massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3760--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:0
+DTSTART:20261120T203130Z
+DTEND:20261120T204230Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 21:31 - 21:42 (primo: REG 3760)
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
+ SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 21:31:30 - 21:42:30\nTre
+ ni coinvolti nella chiusura:\n  - REG 3760 (BOLOGNA CENTRALE -> BOLZANO)\n
+   - REG 3760 (BOLOGNA CENTRALE -> BOLZANO)\n  - REG 3574 (VENEZIA S.LUCIA 
+ -> BRESCIA)\n  - REG 2641 (MILANO CENTRALE -> VERONA PORTA NUOVA) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Chiusura continua per 4 treni: intervallo utile tra i passa
+ ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -1047,79 +1211,100 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3574--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
+UID:train-2641--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
 SEQUENCE:0
-DTSTART:20261120T203430Z
-DTEND:20261120T203900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:34 - 21:39 (primo: REG 3574)
-DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:34:30 - 21:39:00\nTre
- ni coinvolti nella chiusura:\n  - REG 3574 (VENEZIA S.LUCIA -> BRESCIA)\n 
-  - REG 3574 (VENEZIA S.LUCIA -> BRESCIA)\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per
-  2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
- a di sgombero stradale (120s)
+DTSTART:20261120T204853Z
+DTEND:20261120T205423Z
+SUMMARY:[TRANSITO VELOCE] REG 2641 (MILANO CENTRALE -> VERONA PORTA NUOVA) 
+ ore 21:53
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 21:48:53 - 21:54:23\nTreni coinvolti
+  nella chiusura:\n  - REG 2641 (MILANO CENTRALE -> VERONA PORTA NUOVA) [Tr
+ ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Transito stimato senza fermata (57% tratta DESENZANO D
+ EL GARDA-SIRMIONE -> PESCHIERA DEL GARDA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3518--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T210227Z
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T210150Z
 DTEND:20261120T210900Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 22:02 - 22:09 (primo: REG 3518)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 22:01 - 22:09 (primo: REG 3518)
 DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 22:02:27 - 22:09:00\nTre
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 22:01:50 - 22:09:00\nTre
  ni coinvolti nella chiusura:\n  - REG 3518 (VENEZIA S.LUCIA -> VERONA PORT
  A NUOVA) [Transito]\n  - REG 3518 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) 
- [Transito]\n  - TRENO 8528 (ROMA TERMINI -> BRESCIA)\n  - TRENO 8528 (ROMA
-  TERMINI -> BRESCIA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 78%\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
+ [Transito]\n  - TRENO 8528 (ROMA TERMINI -> BRESCIA)\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
+ continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3470--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T213130Z
-DTEND:20261120T213900Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 22:31 - 22:39 (primo: REG 3470)
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T211155Z
+DTEND:20261120T211800Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 22:11 - 22:18 (primo: REG 3470)
 DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 22:31:30 - 22:39:00\nTre
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 22:11:55 - 22:18:00\nTre
  ni coinvolti nella chiusura:\n  - REG 3470 (BOLOGNA CENTRALE -> VERONA POR
- TA NUOVA)\n  - REG 3470 (BOLOGNA CENTRALE -> VERONA PORTA NUOVA)\n  - REG 
- 3518 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\n  - REG 3518 (VENEZIA S.LUCI
- A -> VERONA PORTA NUOVA)\nRitardo massimo rilevato: 0 min\nAffidabilità s
- tima: 90%\nNota normativa/euristica: Chiusura continua per 4 treni: interv
- allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
- radale (120s)
+ TA NUOVA) [Transito]\n  - REG 2641 (MILANO CENTRALE -> VERONA PORTA NUOVA)
+ \n  - REG 2641 (MILANO CENTRALE -> VERONA PORTA NUOVA)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
+ a continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3470--20261119-S02430@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T213130Z
+DTEND:20261120T213900Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 22:31 - 22:39 (primo: REG 3470)
+DESCRIPTION:Stazione/PL: VERONA PORTA NUOVA (S02430)\nRegime chiusura: CHIU
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 22:31:30 - 22:39:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 3470 (BOLOGNA CENTRALE -> VERONA POR
+ TA NUOVA)\n  - REG 3518 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\n  - REG 3
+ 518 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitardo massimo rilevato: 0 m
+ in\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua 
+ per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
+ nima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA NUOVA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17124--20261119-S02430@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
 DTSTART:20261120T222430Z
 DTEND:20261120T222900Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:24 - 23:29 (primo: REG 17124)

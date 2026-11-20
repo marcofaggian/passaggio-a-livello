@@ -9,18 +9,41 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:ccc86392341c6f5845771ff0294ff981dabaef657dd959b530a9932b41f5
- aa13
+X-CONTENT-HASH:b414d7e1e25103dc3f66bdfa0a47bab352e9039f3cfaf94f0dca402e67c9
+ 79f8
 BEGIN:VEVENT
-UID:train-10824--20261119-S01843@pl-tracker.local
-DTSTAMP:20261120T011046Z
+UID:train-10817--20261119-S01843@pl-tracker.local
+DTSTAMP:20261120T083617Z
 SEQUENCE:0
-DTSTART:20261120T113000Z
-DTEND:20261120T113430Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:30 - 12:34 (primo: REG 10824)
+DTSTART:20261120T071800Z
+DTEND:20261120T072300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:18 - 08:23 (primo: REG 10817) (+2 
+ min)
 DESCRIPTION:Stazione/PL: CALVISANO (S01843)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 12:30:00 - 12:34:30\nTreni coinvo
- lti nella chiusura:\n  - REG 10824 (PARMA -> BRESCIA)\n  - REG 10824 (PARM
+ INUA - 2 TRENI\nChiusura sbarre stimata: 08:18:00 - 08:23:00\nTreni coinvo
+ lti nella chiusura:\n  - REG 10817 (BRESCIA -> PARMA) (+2m)\n  - REG 10817
+  (BRESCIA -> PARMA) (+2m)\nRitardo massimo rilevato: 2 min\nAffidabilità 
+ stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: inter
+ vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
+ tradale (120s)
+LOCATION:Passaggio a Livello / Stazione CALVISANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10822--20261119-S01843@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:0
+DTSTART:20261120T103000Z
+DTEND:20261120T103430Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:30 - 11:34 (primo: REG 10822)
+DESCRIPTION:Stazione/PL: CALVISANO (S01843)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 11:30:00 - 11:34:30\nTreni coinvo
+ lti nella chiusura:\n  - REG 10822 (PARMA -> BRESCIA)\n  - REG 10822 (PARM
  A -> BRESCIA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\n
  Nota normativa/euristica: Chiusura continua per 2 treni: intervallo utile 
  tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
@@ -34,23 +57,41 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-10834--20261119-S01843@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T163000Z
-DTEND:20261120T163430Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:30 - 17:34 (primo: REG 10834)
-DESCRIPTION:Stazione/PL: CALVISANO (S01843)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 17:30:00 - 17:34:30\nTreni coinvo
- lti nella chiusura:\n  - REG 10834 (PARMA -> BRESCIA)\n  - REG 10834 (PARM
- A -> BRESCIA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\n
- Nota normativa/euristica: Chiusura continua per 2 treni: intervallo utile 
- tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
- s)
+UID:train-10824--20261119-S01843@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T113000Z
+DTEND:20261120T113430Z
+SUMMARY:[FERMATA] REG 10824 (PARMA -> BRESCIA) ore 12:33
+DESCRIPTION:Stazione/PL: CALVISANO (S01843)\nRegime chiusura: FERMATA\nChiu
+ sura sbarre stimata: 12:30:00 - 12:34:30\nTreni coinvolti nella chiusura:\
+ n  - REG 10824 (PARMA -> BRESCIA)\nRitardo massimo rilevato: 0 min\nAffida
+ bilità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria
+  regolare
 LOCATION:Passaggio a Livello / Stazione CALVISANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10834--20261119-S01843@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T163000Z
+DTEND:20261120T163430Z
+SUMMARY:[FERMATA] REG 10834 (PARMA -> BRESCIA) ore 17:33
+DESCRIPTION:Stazione/PL: CALVISANO (S01843)\nRegime chiusura: FERMATA\nChiu
+ sura sbarre stimata: 17:30:00 - 17:34:30\nTreni coinvolti nella chiusura:\
+ n  - REG 10834 (PARMA -> BRESCIA)\nRitardo massimo rilevato: 0 min\nAffida
+ bilità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria
+  regolare
+LOCATION:Passaggio a Livello / Stazione CALVISANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

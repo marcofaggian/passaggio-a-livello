@@ -9,18 +9,41 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:96bb7d1a2a519b3ec0956d4d1a076b394df22b0a838f72f079d55dc68b3e
- 1059
+X-CONTENT-HASH:34d64cc643fd3b14f6bd9e112c943cc33f64561cd7747561dc3904a34357
+ 7ebb
 BEGIN:VEVENT
-UID:train-10824--20261119-S01841@pl-tracker.local
-DTSTAMP:20261120T011046Z
+UID:train-10817--20261119-S01841@pl-tracker.local
+DTSTAMP:20261120T083617Z
 SEQUENCE:0
-DTSTART:20261120T114000Z
-DTEND:20261120T114430Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:40 - 12:44 (primo: REG 10824)
+DTSTART:20261120T070700Z
+DTEND:20261120T071300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:07 - 08:13 (primo: REG 10817) (+1 
+ min)
 DESCRIPTION:Stazione/PL: GHEDI (S01841)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 12:40:00 - 12:44:30\nTreni coinvolti 
- nella chiusura:\n  - REG 10824 (PARMA -> BRESCIA)\n  - REG 10824 (PARMA ->
+  - 2 TRENI\nChiusura sbarre stimata: 08:07:00 - 08:13:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 10817 (BRESCIA -> PARMA) (+1m)\n  - REG 10817 (BR
+ ESCIA -> PARMA) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabilità stim
+ a: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: intervall
+ o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
+ ale (120s)
+LOCATION:Passaggio a Livello / Stazione GHEDI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10822--20261119-S01841@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:0
+DTSTART:20261120T104000Z
+DTEND:20261120T104430Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:40 - 11:44 (primo: REG 10822)
+DESCRIPTION:Stazione/PL: GHEDI (S01841)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 11:40:00 - 11:44:30\nTreni coinvolti 
+ nella chiusura:\n  - REG 10822 (PARMA -> BRESCIA)\n  - REG 10822 (PARMA ->
   BRESCIA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota
   normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
@@ -33,22 +56,41 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-10834--20261119-S01841@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T164000Z
-DTEND:20261120T164430Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:40 - 17:44 (primo: REG 10834)
-DESCRIPTION:Stazione/PL: GHEDI (S01841)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 17:40:00 - 17:44:30\nTreni coinvolti 
- nella chiusura:\n  - REG 10834 (PARMA -> BRESCIA)\n  - REG 10834 (PARMA ->
-  BRESCIA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota
-  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
- i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+UID:train-10824--20261119-S01841@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T114000Z
+DTEND:20261120T114430Z
+SUMMARY:[FERMATA] REG 10824 (PARMA -> BRESCIA) ore 12:43
+DESCRIPTION:Stazione/PL: GHEDI (S01841)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 12:40:00 - 12:44:30\nTreni coinvolti nella chiusura:\n  -
+  REG 10824 (PARMA -> BRESCIA)\nRitardo massimo rilevato: 0 min\nAffidabili
+ tà stima: 90%\nNota normativa/euristica: Previsione da traccia oraria reg
+ olare
 LOCATION:Passaggio a Livello / Stazione GHEDI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10834--20261119-S01841@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T164000Z
+DTEND:20261120T164430Z
+SUMMARY:[FERMATA] REG 10834 (PARMA -> BRESCIA) ore 17:43
+DESCRIPTION:Stazione/PL: GHEDI (S01841)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 17:40:00 - 17:44:30\nTreni coinvolti nella chiusura:\n  -
+  REG 10834 (PARMA -> BRESCIA)\nRitardo massimo rilevato: 0 min\nAffidabili
+ tà stima: 90%\nNota normativa/euristica: Previsione da traccia oraria reg
+ olare
+LOCATION:Passaggio a Livello / Stazione GHEDI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

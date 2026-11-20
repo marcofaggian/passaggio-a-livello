@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:72c43bbcfe46b64e9b42af4e1fec15e0c65c2bcba4a746d1516469693cc7
- e58a
+X-CONTENT-HASH:722423843d047f5b7ceaacec0d739df5d65fc04041125a3207f0b90d58d6
+ f1d4
 BEGIN:VEVENT
 UID:train-9702--20261118-S02088@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:3
+DTSTAMP:20261120T083617Z
+SEQUENCE:4
 DTSTART:20261119T064900Z
 DTEND:20261119T065630Z
 SUMMARY:[FERMATA] TRENO 9702 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA) ore 07
@@ -33,38 +33,308 @@ X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2620--20261119-S02088@pl-tracker.local
-DTSTAMP:20261120T011046Z
+UID:train-16017--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
 SEQUENCE:0
-DTSTART:20261120T065230Z
-DTEND:20261120T065700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:52 - 07:57 (primo: REG 2620)
+DTSTART:20261120T060330Z
+DTEND:20261120T061030Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:03 - 07:10 (primo: REG 16017) (+7 
+ min)
 DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:52:30 - 07:57:00\nTr
- eni coinvolti nella chiusura:\n  - REG 2620 (VERONA PORTA NUOVA -> MILANO 
- CENTRALE)\n  - REG 2620 (VERONA PORTA NUOVA -> MILANO CENTRALE)\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
- : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
- riore alla soglia minima di sgombero stradale (120s)
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:03:30 - 07:10:30\nTr
+ eni coinvolti nella chiusura:\n  - REG 16017 (BRESCIA -> VENEZIA S.LUCIA) 
+ (+7m)\n  - REG 16017 (BRESCIA -> VENEZIA S.LUCIA) (+7m)\nRitardo massimo r
+ ilevato: 7 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusu
+ ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
+ la soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2613--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:0
+DTSTART:20261120T064305Z
+DTEND:20261120T064835Z
+SUMMARY:[TRANSITO VELOCE] REG 2613 (MILANO CENTRALE -> VERONA PORTA NUOVA) 
+ ore 07:47
+DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 07:43:05 - 07:48:35\nTreni coinvolt
+ i nella chiusura:\n  - REG 2613 (MILANO CENTRALE -> VERONA PORTA NUOVA) [T
+ ransito]\nRitardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Transito stimato senza fermata (70% tratta BRESCIA -
+ > DESENZANO DEL GARDA-SIRMIONE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2613--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:0
+DTSTART:20261120T065700Z
+DTEND:20261120T070600Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:57 - 08:06 (primo: REG 2613) (+8 m
+ in)
+DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: CHI
+ USURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 07:57:00 - 08:06:00\nTr
+ eni coinvolti nella chiusura:\n  - REG 2613 (MILANO CENTRALE -> VERONA POR
+ TA NUOVA) (+5m)\n  - REG 2613 (MILANO CENTRALE -> VERONA PORTA NUOVA) (+5m
+ )\n  - REG 2620 (VERONA PORTA NUOVA -> MILANO CENTRALE) (+8m)\n  - REG 262
+ 0 (VERONA PORTA NUOVA -> MILANO CENTRALE) (+8m)\nRitardo massimo rilevato:
+  8 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura conti
+ nua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9706--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T070925Z
+DTEND:20261120T071455Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9706 (VENEZIA S.LUCIA -> MILANO CENTRALE) o
+ re 08:13
+DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 08:09:25 - 08:14:55\nTreni coinvolt
+ i nella chiusura:\n  - TRENO 9706 (VENEZIA S.LUCIA -> MILANO CENTRALE) [Tr
+ ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Transito stimato senza fermata (65% tratta VERONA PORT
+ A NUOVA -> DESENZANO DEL GARDA-SIRMIONE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2615--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T080330Z
+DTEND:20261120T081000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:03 - 09:10 (primo: REG 2615) (+11 
+ min)
+DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: CHI
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:03:30 - 09:10:00\nTr
+ eni coinvolti nella chiusura:\n  - REG 2615 (MILANO CENTRALE -> VERONA POR
+ TA NUOVA) (+11m)\n  - REG 2615 (MILANO CENTRALE -> VERONA PORTA NUOVA) (+1
+ 1m)\nRitardo massimo rilevato: 11 min\nAffidabilità stima: 99%\nNota norm
+ ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:11
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9710--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T083830Z
+DTEND:20261120T084300Z
+SUMMARY:[FERMATA] TRENO 9710 (GENOVA BRIGNOLE -> VENEZIA S.LUCIA) ore 09:42
+DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 09:38:30 - 09:43:00\nTreni coinvolti nella 
+ chiusura:\n  - TRENO 9710 (GENOVA BRIGNOLE -> VENEZIA S.LUCIA)\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica:
+  Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9716--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:0
+DTSTART:20261120T084830Z
+DTEND:20261120T085500Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 09:48 - 09:55 (primo: TRENO 9716) (+6
+  min)
+DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: CHI
+ USURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 09:48:30 - 09:55:00\nTr
+ eni coinvolti nella chiusura:\n  - TRENO 9716 (VENEZIA S.LUCIA -> TORINO P
+ ORTA NUOVA) (+6m)\n  - TRENO 9716 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA) 
+ (+6m)\n  - REG 2617 (MILANO CENTRALE -> VERONA PORTA NUOVA)\n  - REG 2617 
+ (MILANO CENTRALE -> VERONA PORTA NUOVA)\nRitardo massimo rilevato: 6 min\n
+ Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
+ 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
+  di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9717--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T093830Z
+DTEND:20261120T094700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:38 - 10:47 (primo: TRENO 9717)
+DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: CHI
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:38:30 - 10:47:00\nTr
+ eni coinvolti nella chiusura:\n  - TRENO 9717 (MILANO CENTRALE -> VENEZIA 
+ S.LUCIA)\n  - TRENO 9721 (BOLZANO -> MILANO CENTRALE)\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura
+  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
+  soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2626--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T095230Z
+DTEND:20261120T095700Z
+SUMMARY:[FERMATA] REG 2626 (VERONA PORTA NUOVA -> MILANO CENTRALE) ore 10:5
+ 6
+DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 10:52:30 - 10:57:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 2626 (VERONA PORTA NUOVA -> MILANO CENTRALE)\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
+ : Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9706--20261119-S02088@pl-tracker.local
-DTSTAMP:20261120T011046Z
+UID:train-41--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
 SEQUENCE:0
-DTSTART:20261120T070859Z
-DTEND:20261120T071429Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:08 - 08:14 (primo: TRENO 9706)
+DTSTART:20261120T100915Z
+DTEND:20261120T101400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:09 - 11:14 (primo: EC 41) (+1 min)
 DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:08:59 - 08:14:29\nTr
- eni coinvolti nella chiusura:\n  - TRENO 9706 (VENEZIA S.LUCIA -> MILANO C
- ENTRALE) [Transito]\n  - TRENO 9706 (VENEZIA S.LUCIA -> MILANO CENTRALE) [
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:09:15 - 11:14:00\nTr
+ eni coinvolti nella chiusura:\n  - EC 41 (DOMODOSSOLA -> VENEZIA S.LUCIA) 
+ (+1m)\n  - EC 41 (DOMODOSSOLA -> VENEZIA S.LUCIA) (+1m)\nRitardo massimo r
+ ilevato: 1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
+ ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
+ la soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:EC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2628--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T105230Z
+DTEND:20261120T105700Z
+SUMMARY:[FERMATA] REG 2628 (VERONA PORTA NUOVA -> MILANO CENTRALE) ore 11:5
+ 6
+DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 11:52:30 - 11:57:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 2628 (VERONA PORTA NUOVA -> MILANO CENTRALE)\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
+ : Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9726--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:0
+DTSTART:20261120T114025Z
+DTEND:20261120T114555Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:40 - 12:45 (primo: TRENO 9726) (+1
+  min)
+DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: CHI
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:40:25 - 12:45:55\nTr
+ eni coinvolti nella chiusura:\n  - TRENO 9726 (TRIESTE CENTRALE -> MILANO 
+ CENTRALE) (+1m) [Transito]\n  - TRENO 9726 (TRIESTE CENTRALE -> MILANO CEN
+ TRALE) (+1m) [Transito]\nRitardo massimo rilevato: 1 min\nAffidabilità st
+ ima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
+ llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
+ adale (120s)
+LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-31--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T120815Z
+DTEND:20261120T121700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:08 - 13:17 (primo: EC 31)
+DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: CHI
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:08:15 - 13:17:00\nTr
+ eni coinvolti nella chiusura:\n  - EC 31 (CHIASSO -> VENEZIA S.LUCIA)\n  -
+  TRENO 9728 (VENEZIA S.LUCIA -> MILANO CENTRALE)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:EC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9733--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T135717Z
+DTEND:20261120T140247Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:57 - 15:02 (primo: TRENO 9733)
+DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: CHI
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:57:17 - 15:02:47\nTr
+ eni coinvolti nella chiusura:\n  - TRENO 9733 (MILANO CENTRALE -> VENEZIA 
+ S.LUCIA) [Transito]\n  - TRENO 9733 (MILANO CENTRALE -> VENEZIA S.LUCIA) [
  Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
   normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
@@ -77,87 +347,105 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2615--20261119-S02088@pl-tracker.local
-DTSTAMP:20261120T011046Z
+UID:train-9735--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
 SEQUENCE:0
-DTSTART:20261120T073820Z
-DTEND:20261120T074350Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:38 - 08:43 (primo: REG 2615)
-DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:38:20 - 08:43:50\nTr
- eni coinvolti nella chiusura:\n  - REG 2615 (MILANO CENTRALE -> VERONA POR
- TA NUOVA) [Transito]\n  - REG 2615 (MILANO CENTRALE -> VERONA PORTA NUOVA)
-  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
- ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
- a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTART:20261120T142717Z
+DTEND:20261120T143247Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9735 (MILANO CENTRALE -> VENEZIA S.LUCIA) o
+ re 15:31
+DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 15:27:17 - 15:32:47\nTreni coinvolt
+ i nella chiusura:\n  - TRENO 9735 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Tr
+ ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Transito stimato senza fermata (70% tratta BRESCIA -> 
+ DESENZANO DEL GARDA-SIRMIONE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2615--20261119-S02088@pl-tracker.local
-DTSTAMP:20261120T011046Z
+UID:train-9735--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
 SEQUENCE:0
-DTSTART:20261120T075330Z
-DTEND:20261120T080018Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 08:53 - 09:00 (primo: REG 2615)
+DTSTART:20261120T143848Z
+DTEND:20261120T144418Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9735 (MILANO CENTRALE -> VENEZIA S.LUCIA) o
+ re 15:43
+DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 15:38:48 - 15:44:18\nTreni coinvolt
+ i nella chiusura:\n  - TRENO 9735 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Tr
+ ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Transito stimato senza fermata (32% tratta DESENZANO D
+ EL GARDA-SIRMIONE -> VERONA PORTA NUOVA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9737--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:0
+DTSTART:20261120T150830Z
+DTEND:20261120T151455Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:08 - 16:14 (primo: TRENO 9737)
 DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: CHI
- USURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 08:53:30 - 09:00:18\nTr
- eni coinvolti nella chiusura:\n  - REG 2615 (MILANO CENTRALE -> VERONA POR
- TA NUOVA)\n  - REG 2615 (MILANO CENTRALE -> VERONA PORTA NUOVA)\n  - TRENO
-  9712 (TRIESTE CENTRALE -> TORINO PORTA NUOVA) [Transito]\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
- sura continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
+ USURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:08:30 - 16:14:55\nTr
+ eni coinvolti nella chiusura:\n  - TRENO 9737 (MILANO CENTRALE -> VENEZIA 
+ S.LUCIA)\n  - TRENO 9737 (MILANO CENTRALE -> VENEZIA S.LUCIA)\n  - TRENO 9
+ 740 (VENEZIA S.LUCIA -> MILANO CENTRALE) [Transito]\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
+ ontinua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9710--20261119-S02088@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T083830Z
-DTEND:20261120T084700Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 09:38 - 09:47 (primo: TRENO 9710)
-DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: CHI
- USURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 09:38:30 - 09:47:00\nTr
- eni coinvolti nella chiusura:\n  - TRENO 9710 (GENOVA BRIGNOLE -> VENEZIA 
- S.LUCIA)\n  - TRENO 9710 (GENOVA BRIGNOLE -> VENEZIA S.LUCIA)\n  - TRENO 9
- 716 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA)\n  - TRENO 9716 (VENEZIA S.LUC
- IA -> TORINO PORTA NUOVA)\nRitardo massimo rilevato: 0 min\nAffidabilità 
- stima: 90%\nNota normativa/euristica: Chiusura continua per 4 treni: inter
- vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
- tradale (120s)
-LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9717--20261119-S02088@pl-tracker.local
-DTSTAMP:20261120T011046Z
+UID:train-36--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T154215Z
+DTEND:20261120T154700Z
+SUMMARY:[FERMATA] EC 36 (VENEZIA S.LUCIA -> CHIASSO) ore 16:46
+DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 16:42:15 - 16:47:00\nTreni coinvolti nella 
+ chiusura:\n  - EC 36 (VENEZIA S.LUCIA -> CHIASSO)\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
+ a traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:EC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9747--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
 SEQUENCE:0
-DTSTART:20261120T093830Z
-DTEND:20261120T094700Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:38 - 10:47 (primo: TRENO 9717)
+DTSTART:20261120T163830Z
+DTEND:20261120T164700Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:38 - 17:47 (primo: TRENO 9747)
 DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: CHI
- USURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 10:38:30 - 10:47:00\nTr
- eni coinvolti nella chiusura:\n  - TRENO 9717 (MILANO CENTRALE -> VENEZIA 
- S.LUCIA)\n  - TRENO 9717 (MILANO CENTRALE -> VENEZIA S.LUCIA)\n  - TRENO 9
- 721 (BOLZANO -> MILANO CENTRALE)\n  - TRENO 9721 (BOLZANO -> MILANO CENTRA
- LE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota norma
+ USURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 17:38:30 - 17:47:00\nTr
+ eni coinvolti nella chiusura:\n  - TRENO 9747 (MILANO CENTRALE -> VENEZIA 
+ S.LUCIA)\n  - TRENO 9747 (MILANO CENTRALE -> VENEZIA S.LUCIA)\n  - EC 146 
+ (VENEZIA S.LUCIA -> DOMODOSSOLA)\n  - EC 146 (VENEZIA S.LUCIA -> DOMODOSSO
+ LA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota norma
  tiva/euristica: Chiusura continua per 4 treni: intervallo utile tra i pass
  aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
@@ -169,142 +457,55 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2626--20261119-S02088@pl-tracker.local
-DTSTAMP:20261120T011046Z
+UID:train-16026--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
 SEQUENCE:0
-DTSTART:20261120T095230Z
-DTEND:20261120T095700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:52 - 10:57 (primo: REG 2626)
+DTSTART:20261120T164930Z
+DTEND:20261120T165800Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:49 - 17:58 (primo: REG 16026)
 DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:52:30 - 10:57:00\nTr
- eni coinvolti nella chiusura:\n  - REG 2626 (VERONA PORTA NUOVA -> MILANO 
- CENTRALE)\n  - REG 2626 (VERONA PORTA NUOVA -> MILANO CENTRALE)\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
- : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
- riore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2628--20261119-S02088@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T105230Z
-DTEND:20261120T105700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:52 - 11:57 (primo: REG 2628)
-DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:52:30 - 11:57:00\nTr
- eni coinvolti nella chiusura:\n  - REG 2628 (VERONA PORTA NUOVA -> MILANO 
- CENTRALE)\n  - REG 2628 (VERONA PORTA NUOVA -> MILANO CENTRALE)\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
- : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
- riore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-31--20261119-S02088@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T120815Z
-DTEND:20261120T121700Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 13:08 - 13:17 (primo: EC 31)
-DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: CHI
- USURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 13:08:15 - 13:17:00\nTr
- eni coinvolti nella chiusura:\n  - EC 31 (CHIASSO -> VENEZIA S.LUCIA)\n  -
-  EC 31 (CHIASSO -> VENEZIA S.LUCIA)\n  - TRENO 9728 (VENEZIA S.LUCIA -> MI
- LANO CENTRALE)\n  - TRENO 9728 (VENEZIA S.LUCIA -> MILANO CENTRALE)\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euris
- tica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
+ USURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 17:49:30 - 17:58:00\nTr
+ eni coinvolti nella chiusura:\n  - REG 16026 (VENEZIA S.LUCIA -> BRESCIA) 
+ [Transito]\n  - REG 16026 (VENEZIA S.LUCIA -> BRESCIA) [Transito]\n  - REG
+  2633 (MILANO CENTRALE -> VERONA PORTA NUOVA)\n  - REG 2633 (MILANO CENTRA
+ LE -> VERONA PORTA NUOVA)\nRitardo massimo rilevato: 0 min\nAffidabilità 
+ stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: inter
+ vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
+ tradale (120s)
 LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:EC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9733--20261119-S02088@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T135658Z
-DTEND:20261120T140228Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9733 (MILANO CENTRALE -> VENEZIA S.LUCIA) o
- re 15:01
-DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 14:56:58 - 15:02:28\nTreni coinvolt
- i nella chiusura:\n  - TRENO 9733 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Tr
- ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
- ormativa/euristica: Transito stimato senza fermata (68% tratta BRESCIA -> 
- DESENZANO DEL GARDA-SIRMIONE\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9740--20261119-S02088@pl-tracker.local
-DTSTAMP:20261120T011046Z
+UID:train-16026--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
 SEQUENCE:0
-DTSTART:20261120T150859Z
-DTEND:20261120T151429Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:08 - 16:14 (primo: TRENO 9740)
+DTSTART:20261120T170030Z
+DTEND:20261120T170500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:00 - 18:05 (primo: REG 16026)
 DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:08:59 - 16:14:29\nTr
- eni coinvolti nella chiusura:\n  - TRENO 9740 (VENEZIA S.LUCIA -> MILANO C
- ENTRALE) [Transito]\n  - TRENO 9740 (VENEZIA S.LUCIA -> MILANO CENTRALE) [
- Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
-  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
- i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-36--20261119-S02088@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T154215Z
-DTEND:20261120T154700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:42 - 16:47 (primo: EC 36)
-DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:42:15 - 16:47:00\nTr
- eni coinvolti nella chiusura:\n  - EC 36 (VENEZIA S.LUCIA -> CHIASSO)\n  -
-  EC 36 (VENEZIA S.LUCIA -> CHIASSO)\nRitardo massimo rilevato: 0 min\nAffi
- dabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tr
- eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
- sgombero stradale (120s)
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:00:30 - 18:05:00\nTr
+ eni coinvolti nella chiusura:\n  - REG 16026 (VENEZIA S.LUCIA -> BRESCIA)\
+ n  - REG 16026 (VENEZIA S.LUCIA -> BRESCIA)\nRitardo massimo rilevato: 0 m
+ in\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua 
+ per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
+ nima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:EC
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9755--20261119-S02088@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
 DTSTART:20261120T183830Z
 DTEND:20261120T184300Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:38 - 19:43 (primo: TRENO 9755)
@@ -325,37 +526,37 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9757--20261119-S02088@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T185658Z
-DTEND:20261120T190228Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:56 - 20:02 (primo: TRENO 9757)
-DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:56:58 - 20:02:28\nTr
- eni coinvolti nella chiusura:\n  - TRENO 9757 (MILANO CENTRALE -> VENEZIA 
- S.LUCIA) [Transito]\n  - TRENO 9757 (MILANO CENTRALE -> VENEZIA S.LUCIA) [
- Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
-  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
- i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T185717Z
+DTEND:20261120T190247Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9757 (MILANO CENTRALE -> VENEZIA S.LUCIA) o
+ re 20:01
+DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 19:57:17 - 20:02:47\nTreni coinvolt
+ i nella chiusura:\n  - TRENO 9757 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Tr
+ ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Transito stimato senza fermata (70% tratta BRESCIA -> 
+ DESENZANO DEL GARDA-SIRMIONE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2646--20261119-S02088@pl-tracker.local
-DTSTAMP:20261120T011046Z
+UID:train-9758--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
 SEQUENCE:0
-DTSTART:20261120T195230Z
-DTEND:20261120T195700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:52 - 20:57 (primo: REG 2646)
+DTSTART:20261120T191230Z
+DTEND:20261120T191700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:12 - 20:17 (primo: TRENO 9758)
 DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:52:30 - 20:57:00\nTr
- eni coinvolti nella chiusura:\n  - REG 2646 (VERONA PORTA NUOVA -> MILANO 
- CENTRALE)\n  - REG 2646 (VERONA PORTA NUOVA -> MILANO CENTRALE)\nRitardo m
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:12:30 - 20:17:00\nTr
+ eni coinvolti nella chiusura:\n  - TRENO 9758 (TRIESTE CENTRALE -> MILANO 
+ CENTRALE)\n  - TRENO 9758 (TRIESTE CENTRALE -> MILANO CENTRALE)\nRitardo m
  assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
  : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
  riore alla soglia minima di sgombero stradale (120s)
@@ -365,48 +566,110 @@ TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2646--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T195230Z
+DTEND:20261120T195700Z
+SUMMARY:[FERMATA] REG 2646 (VERONA PORTA NUOVA -> MILANO CENTRALE) ore 20:5
+ 6
+DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 20:52:30 - 20:57:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 2646 (VERONA PORTA NUOVA -> MILANO CENTRALE)\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
+ : Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2641--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:0
+DTSTART:20261120T203842Z
+DTEND:20261120T204412Z
+SUMMARY:[TRANSITO VELOCE] REG 2641 (MILANO CENTRALE -> VERONA PORTA NUOVA) 
+ ore 21:42
+DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 21:38:42 - 21:44:12\nTreni coinvolt
+ i nella chiusura:\n  - REG 2641 (MILANO CENTRALE -> VERONA PORTA NUOVA) [T
+ ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Transito stimato senza fermata (70% tratta BRESCIA ->
+  DESENZANO DEL GARDA-SIRMIONE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3574--20261119-S02088@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
-DTSTART:20261120T210430Z
-DTEND:20261120T210900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:04 - 22:09 (primo: REG 3574)
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T205230Z
+DTEND:20261120T205800Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:52 - 21:58 (primo: REG 3574)
 DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:04:30 - 22:09:00\nTr
- eni coinvolti nella chiusura:\n  - REG 3574 (VENEZIA S.LUCIA -> BRESCIA)\n
-   - REG 3574 (VENEZIA S.LUCIA -> BRESCIA)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua pe
- r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
- ma di sgombero stradale (120s)
+ USURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 21:52:30 - 21:58:00\nTr
+ eni coinvolti nella chiusura:\n  - REG 3574 (VENEZIA S.LUCIA -> BRESCIA) [
+ Transito]\n  - REG 2641 (MILANO CENTRALE -> VERONA PORTA NUOVA)\n  - REG 2
+ 641 (MILANO CENTRALE -> VERONA PORTA NUOVA)\nRitardo massimo rilevato: 0 m
+ in\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua 
+ per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
+ nima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3574--20261119-S02088@pl-tracker.local
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
+DTSTART:20261120T210430Z
+DTEND:20261120T210900Z
+SUMMARY:[FERMATA] REG 3574 (VENEZIA S.LUCIA -> BRESCIA) ore 22:08
+DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 22:04:30 - 22:09:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 3574 (VENEZIA S.LUCIA -> BRESCIA)\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
+ e da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8528--20261119-S02088@pl-tracker.local
-DTSTAMP:20261120T011046Z
-SEQUENCE:0
+DTSTAMP:20261120T083617Z
+SEQUENCE:1
 DTSTART:20261120T213030Z
 DTEND:20261120T213500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:30 - 22:35 (primo: TRENO 8528)
-DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:30:30 - 22:35:00\nTr
- eni coinvolti nella chiusura:\n  - TRENO 8528 (ROMA TERMINI -> BRESCIA)\n 
-  - TRENO 8528 (ROMA TERMINI -> BRESCIA)\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
- 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
-  di sgombero stradale (120s)
+SUMMARY:[FERMATA] TRENO 8528 (ROMA TERMINI -> BRESCIA) ore 22:34
+DESCRIPTION:Stazione/PL: PESCHIERA DEL GARDA (S02088)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 22:30:30 - 22:35:00\nTreni coinvolti nella 
+ chiusura:\n  - TRENO 8528 (ROMA TERMINI -> BRESCIA)\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
+  da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione PESCHIERA DEL GARDA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
