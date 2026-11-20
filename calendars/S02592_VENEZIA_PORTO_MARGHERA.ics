@@ -9,21 +9,21 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:9ef2ed416ede10a7f0ce495e2b403195583d2e697a78452c14325c776335
- 5872
+X-CONTENT-HASH:beb40cd37b0365af205bd4e82c3a650d1cdcac5312f674a6b48ef0f50752
+ 91a5
 BEGIN:VEVENT
 UID:train-9702--20261118-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261119T052257Z
-DTEND:20261119T052827Z
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261119T052238Z
+DTEND:20261119T052808Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9702 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA
- ) ore 06:27 (+9 min)
+ ) ore 06:26 (+9 min)
 DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 06:22:57 - 06:28:27\nTreni coinv
+ TRANSITO VELOCE\nChiusura sbarre stimata: 06:22:38 - 06:28:08\nTreni coinv
  olti nella chiusura:\n  - TRENO 9702 (VENEZIA S.LUCIA -> TORINO PORTA NUOV
  A) (+9m) [Transito]\nRitardo massimo rilevato: 9 min\nAffidabilità stima:
-  78%\nNota normativa/euristica: Transito stimato senza fermata (69% tratta
+  78%\nNota normativa/euristica: Transito stimato senza fermata (66% tratta
   VENEZIA S.LUCIA -> VENEZIA MESTRE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
 STATUS:CONFIRMED
@@ -34,21 +34,45 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16048--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T050536Z
-DTEND:20261120T051200Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 06:05 - 06:12 (primo: REG 16048) (+2 
+UID:train-9700--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T044119Z
+DTEND:20261120T044649Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:41 - 05:46 (primo: TRENO 9700) (+2
+ 6 min)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:41:19 - 05:46:49\
+ nTreni coinvolti nella chiusura:\n  - TRENO 9700 (VENEZIA S.LUCIA -> MILAN
+ O CENTRALE) (+26m) [Transito]\n  - TRENO 9700 (VENEZIA S.LUCIA -> MILANO C
+ ENTRALE) (+26m) [Transito]\nRitardo massimo rilevato: 26 min\nAffidabilit
+ à stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:26
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17162--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T050330Z
+DTEND:20261120T051048Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 06:03 - 06:10 (primo: REG 17162) (+2 
  min)
 DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 06:05:36 - 06:12:00\
- nTreni coinvolti nella chiusura:\n  - REG 16048 (VENEZIA S.LUCIA -> UDINE)
-  (+2m) [Transito]\n  - REG 16048 (VENEZIA S.LUCIA -> UDINE) (+2m) [Transit
- o]\n  - REG 17162 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitardo massimo
-  rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
- sura continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
+ CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 06:03:30 - 06:10:48\
+ nTreni coinvolti nella chiusura:\n  - REG 17162 (VENEZIA S.LUCIA -> VERONA
+  PORTA NUOVA)\n  - REG 17162 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\n  - 
+ REG 16048 (VENEZIA S.LUCIA -> UDINE) (+2m) [Transito]\nRitardo massimo ril
+ evato: 2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
+  continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla
+  soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -59,282 +83,796 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16758--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T051630Z
-DTEND:20261120T054806Z
-SUMMARY:[CHIUSURA CONTINUA - 12 TRENI] 06:16 - 06:48 (primo: REG 16758) (+9
-  min)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 12 TRENI\nChiusura sbarre stimata: 06:16:30 - 06:48:06
- \nTreni coinvolti nella chiusura:\n  - REG 16758 (VENEZIA S.LUCIA -> UDINE
- )\n  - REG 17031 (VENEZIA S.LUCIA -> PORTOGRUARO CAORLE) (+9m)\n  - REG 17
- 031 (VENEZIA S.LUCIA -> PORTOGRUARO CAORLE) (+9m)\n  - REG 3552 (MONFALCON
- E -> VENEZIA S.LUCIA) (+5m) [Transito]\n  - REG 7213 (VICENZA -> VENEZIA S
- .LUCIA)\n  - REG 16293 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+5m) [Tran
- sito]\n  - REG 16293 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+5m) [Transi
- to]\n  - REG 16298 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) (+1m)\n  - REG 
- 16298 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) (+1m)\n  - REG 16121 (UDINE 
- -> VENEZIA S.LUCIA)\n  - REG 3477 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) 
- [Transito]\n  - REG 3963 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) [Transito]\
- nRitardo massimo rilevato: 9 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Chiusura continua per 12 treni: intervallo utile tra i passagg
- i (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 12 TRENI,FERROVIA
-X-PL-DELAY-MIN:9
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9706--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
+DTSTAMP:20261120T171953Z
 SEQUENCE:1
-DTSTART:20261120T055036Z
-DTEND:20261120T055700Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 06:50 - 06:57 (primo: TRENO 9706) (+6
-  min)
+DTSTART:20261120T051630Z
+DTEND:20261120T054000Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 06:16 - 06:40 (primo: REG 16758) (+9 
+ min)
 DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 06:50:36 - 06:57:00\
- nTreni coinvolti nella chiusura:\n  - TRENO 9706 (VENEZIA S.LUCIA -> MILAN
- O CENTRALE) [Transito]\n  - REG 16836 (VENEZIA S.LUCIA -> TREVISO CENTRALE
- ) (+6m)\n  - REG 16836 (VENEZIA S.LUCIA -> TREVISO CENTRALE) (+6m)\nRitard
- o massimo rilevato: 6 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) i
- nferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:6
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17072--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T060130Z
-DTEND:20261120T062609Z
-SUMMARY:[CHIUSURA CONTINUA - 16 TRENI] 07:01 - 07:26 (primo: REG 17072) (+1
- 0 min)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 16 TRENI\nChiusura sbarre stimata: 07:01:30 - 07:26:09
- \nTreni coinvolti nella chiusura:\n  - REG 17072 (ROVIGO -> VENEZIA S.LUCI
- A) (+4m)\n  - REG 17072 (ROVIGO -> VENEZIA S.LUCIA) (+4m)\n  - REG 16757 (
- TREVISO CENTRALE -> VENEZIA S.LUCIA)\n  - REG 16757 (TREVISO CENTRALE -> V
- ENEZIA S.LUCIA)\n  - REG 3872 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) (+1m) 
- [Transito]\n  - REG 3872 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) (+1m) [Tran
- sito]\n  - REG 3605 (UDINE -> VENEZIA S.LUCIA) (+3m) [Transito]\n  - REG 3
- 605 (UDINE -> VENEZIA S.LUCIA) (+3m) [Transito]\n  - REG 3998 (BOLOGNA CEN
- TRALE -> VENEZIA S.LUCIA) [Transito]\n  - REG 17169 (VICENZA -> VENEZIA S.
- LUCIA)\n  - REG 17169 (VICENZA -> VENEZIA S.LUCIA)\n  - REG 3482 (VENEZIA 
- S.LUCIA -> VERONA PORTA NUOVA) (+10m) [Transito]\n  - REG 3482 (VENEZIA S.
- LUCIA -> VERONA PORTA NUOVA) (+10m) [Transito]\n  - REG 3432 (TRIESTE CENT
- RALE -> VENEZIA S.LUCIA) [Transito]\n  - REG 3432 (TRIESTE CENTRALE -> VEN
- EZIA S.LUCIA) [Transito]\n  - REG 16291 (BASSANO DEL GRAPPA -> VENEZIA S.L
- UCIA) [Transito]\nRitardo massimo rilevato: 10 min\nAffidabilità stima: 7
- 8%\nNota normativa/euristica: Chiusura continua per 16 treni: intervallo u
- tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
-  (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 16 TRENI,FERROVIA
-X-PL-DELAY-MIN:10
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-16306--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T063030Z
-DTEND:20261120T071000Z
-SUMMARY:[CHIUSURA CONTINUA - 24 TRENI] 07:30 - 08:10 (primo: REG 16306) (+3
- 3 min)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 24 TRENI\nChiusura sbarre stimata: 07:30:30 - 08:10:00
- \nTreni coinvolti nella chiusura:\n  - REG 16306 (VENEZIA S.LUCIA -> BASSA
- NO DEL GRAPPA)\n  - TRENO 9405 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) (+22m)
-  [Transito]\n  - TRENO 9405 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) (+22m) [T
- ransito]\n  - REG 3644 (VENEZIA S.LUCIA -> SACILE) [Transito]\n  - REG 364
- 4 (VENEZIA S.LUCIA -> SACILE) [Transito]\n  - REG 16759 (UDINE -> VENEZIA 
- S.LUCIA)\n  - REG 17166 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+33m)\n  
- - REG 17166 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+33m)\n  - REG 3433 (
- VENEZIA S.LUCIA -> TRIESTE CENTRALE) [Transito]\n  - REG 16325 (VERONA POR
- TA NUOVA -> VENEZIA S.LUCIA)\n  - REG 16325 (VERONA PORTA NUOVA -> VENEZIA
-  S.LUCIA)\n  - REG 3965 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) (+6m) [Trans
- ito]\n  - REG 3965 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) (+6m) [Transito]\
- n  - REG 3865 (UDINE -> VENEZIA S.LUCIA) [Transito]\n  - REG 3865 (UDINE -
- > VENEZIA S.LUCIA) [Transito]\n  - REG 16301 (BASSANO DEL GRAPPA -> VENEZI
- A S.LUCIA) (+2m)\n  - REG 16301 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+
- 2m)\n  - REG 17074 (FERRARA -> VENEZIA S.LUCIA)\n  - REG 17074 (FERRARA ->
-  VENEZIA S.LUCIA)\n  - REG 16310 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) (
- +2m) [Transito]\n  - REG 16310 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) (+2
- m) [Transito]\n  - REG 3604 (VENEZIA S.LUCIA -> UDINE) [Transito]\n  - REG
-  3483 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+1m) [Transito]\n  - REG 16
- 870 (BELLUNO -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 33 min\nAffida
- bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 24 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 24 TRENI,FERROVIA
-X-PL-DELAY-MIN:33
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3960--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T071311Z
-DTEND:20261120T072808Z
-SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 08:13 - 08:28 (primo: REG 3960) (+6 m
- in)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 7 TRENI\nChiusura sbarre stimata: 08:13:11 - 08:28:08\
- nTreni coinvolti nella chiusura:\n  - REG 3960 (BOLOGNA CENTRALE -> VENEZI
- A S.LUCIA) (+3m) [Transito]\n  - REG 3960 (BOLOGNA CENTRALE -> VENEZIA S.L
- UCIA) (+3m) [Transito]\n  - REG 3641 (SACILE -> VENEZIA S.LUCIA) [Transito
- ]\n  - REG 17175 (VICENZA -> VENEZIA S.LUCIA) (+3m)\n  - REG 17175 (VICENZ
- A -> VENEZIA S.LUCIA) (+3m)\n  - TRENO 9716 (VENEZIA S.LUCIA -> TORINO POR
- TA NUOVA) (+6m) [Transito]\n  - TRENO 9716 (VENEZIA S.LUCIA -> TORINO PORT
- A NUOVA) (+6m) [Transito]\nRitardo massimo rilevato: 6 min\nAffidabilità 
- stima: 78%\nNota normativa/euristica: Chiusura continua per 7 treni: inter
- vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
- tradale (120s)
+ CHIUSURA CONTINUA - 7 TRENI\nChiusura sbarre stimata: 06:16:30 - 06:40:00\
+ nTreni coinvolti nella chiusura:\n  - REG 16758 (VENEZIA S.LUCIA -> UDINE)
+ \n  - REG 17031 (VENEZIA S.LUCIA -> PORTOGRUARO CAORLE) (+9m)\n  - REG 170
+ 31 (VENEZIA S.LUCIA -> PORTOGRUARO CAORLE) (+9m)\n  - REG 7213 (VICENZA ->
+  VENEZIA S.LUCIA)\n  - REG 16298 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) (
+ +1m)\n  - REG 16298 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) (+1m)\n  - REG
+  16121 (UDINE -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 9 min\nAffida
+ bilità stima: 90%\nNota normativa/euristica: Chiusura continua per 7 tren
+ i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
+ ombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+X-PL-DELAY-MIN:9
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17164--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T054430Z
+DTEND:20261120T055800Z
+SUMMARY:[CHIUSURA CONTINUA - 9 TRENI] 06:44 - 06:58 (primo: REG 17164) (+7 
+ min)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 9 TRENI\nChiusura sbarre stimata: 06:44:30 - 06:58:00\
+ nTreni coinvolti nella chiusura:\n  - REG 17164 (VENEZIA S.LUCIA -> VERONA
+  PORTA NUOVA) (+7m)\n  - REG 17164 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
+  (+7m)\n  - REG 3963 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) (+3m) [Transito
+ ]\n  - REG 3963 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) (+3m) [Transito]\n  
+ - TRENO 9706 (VENEZIA S.LUCIA -> MILANO CENTRALE) [Transito]\n  - REG 1683
+ 6 (VENEZIA S.LUCIA -> TREVISO CENTRALE) (+6m)\n  - REG 16836 (VENEZIA S.LU
+ CIA -> TREVISO CENTRALE) (+6m)\n  - REG 16295 (BASSANO DEL GRAPPA -> VENEZ
+ IA S.LUCIA) (+2m)\n  - REG 16295 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (
+ +2m)\nRitardo massimo rilevato: 7 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 9 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 9 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17072--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T060130Z
+DTEND:20261120T065007Z
+SUMMARY:[CHIUSURA CONTINUA - 30 TRENI] 07:01 - 07:50 (primo: REG 17072) (+3
+ 4 min)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 30 TRENI\nChiusura sbarre stimata: 07:01:30 - 07:50:07
+ \nTreni coinvolti nella chiusura:\n  - REG 17072 (ROVIGO -> VENEZIA S.LUCI
+ A) (+4m)\n  - REG 17072 (ROVIGO -> VENEZIA S.LUCIA) (+4m)\n  - REG 16757 (
+ TREVISO CENTRALE -> VENEZIA S.LUCIA)\n  - REG 16757 (TREVISO CENTRALE -> V
+ ENEZIA S.LUCIA)\n  - REG 3872 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) (+1m) 
+ [Transito]\n  - REG 3998 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [Transito]\
+ n  - REG 17169 (VICENZA -> VENEZIA S.LUCIA)\n  - REG 17169 (VICENZA -> VEN
+ EZIA S.LUCIA)\n  - REG 3482 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+10m)
+  [Transito]\n  - REG 3482 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+10m) [
+ Transito]\n  - REG 3432 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) [Transito]\n
+   - REG 16291 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) [Transito]\n  - TREN
+ O 9708 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+10m) [Transito]\n  - TRENO 9
+ 708 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+10m) [Transito]\n  - REG 3637 (
+ TREVISO CENTRALE -> VENEZIA S.LUCIA) [Transito]\n  - TRENO 9405 (VENEZIA S
+ .LUCIA -> NAPOLI CENTRALE) (+34m) [Transito]\n  - TRENO 9405 (VENEZIA S.LU
+ CIA -> NAPOLI CENTRALE) (+34m) [Transito]\n  - REG 16306 (VENEZIA S.LUCIA 
+ -> BASSANO DEL GRAPPA) (+1m)\n  - REG 16306 (VENEZIA S.LUCIA -> BASSANO DE
+ L GRAPPA) (+1m)\n  - REG 3644 (VENEZIA S.LUCIA -> SACILE) [Transito]\n  - 
+ REG 3644 (VENEZIA S.LUCIA -> SACILE) [Transito]\n  - REG 16759 (UDINE -> V
+ ENEZIA S.LUCIA)\n  - REG 17166 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+3
+ 3m)\n  - REG 3479 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\n  - 
+ REG 3433 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) [Transito]\n  - REG 16325 (
+ VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - REG 16325 (VERONA PORTA NUOVA 
+ -> VENEZIA S.LUCIA)\n  - REG 3965 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) (+
+ 6m) [Transito]\n  - REG 16854 (VENEZIA S.LUCIA -> BELLUNO)\n  - REG 16854 
+ (VENEZIA S.LUCIA -> BELLUNO)\nRitardo massimo rilevato: 34 min\nAffidabili
+ tà stima: 78%\nNota normativa/euristica: Chiusura continua per 30 treni: 
+ intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
+ ero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 30 TRENI,FERROVIA
+X-PL-DELAY-MIN:34
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16301--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T065330Z
+DTEND:20261120T071000Z
+SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 07:53 - 08:10 (primo: REG 16301) (+2 
+ min)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 8 TRENI\nChiusura sbarre stimata: 07:53:30 - 08:10:00\
+ nTreni coinvolti nella chiusura:\n  - REG 16301 (BASSANO DEL GRAPPA -> VEN
+ EZIA S.LUCIA) (+2m)\n  - REG 16301 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)
+  (+2m)\n  - REG 17074 (FERRARA -> VENEZIA S.LUCIA)\n  - REG 17074 (FERRARA
+  -> VENEZIA S.LUCIA)\n  - REG 16310 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA
+ ) (+2m) [Transito]\n  - REG 16310 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) 
+ (+2m) [Transito]\n  - REG 3604 (VENEZIA S.LUCIA -> UDINE) [Transito]\n  - 
+ REG 16870 (BELLUNO -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 2 min\nA
+ ffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 8
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16770--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T071330Z
+DTEND:20261120T072747Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 08:13 - 08:27 (primo: REG 16770) (+6 
+ min)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 08:13:30 - 08:27:47\
+ nTreni coinvolti nella chiusura:\n  - REG 16770 (VENEZIA S.LUCIA -> UDINE)
+ \n  - REG 16770 (VENEZIA S.LUCIA -> UDINE)\n  - REG 3960 (BOLOGNA CENTRALE
+  -> VENEZIA S.LUCIA) (+3m) [Transito]\n  - REG 17175 (VICENZA -> VENEZIA S
+ .LUCIA) (+3m)\n  - REG 17175 (VICENZA -> VENEZIA S.LUCIA) (+3m)\n  - TRENO
+  9716 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA) (+6m) [Transito]\nRitardo ma
+ ssimo rilevato: 6 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Chiusura continua per 6 treni: intervallo utile tra i passaggi (17s) infe
+ riore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
 X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17182--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T074230Z
-DTEND:20261120T075129Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 08:42 - 08:51 (primo: REG 17182) (+5 
+DTEND:20261120T075107Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:42 - 08:51 (primo: REG 17182) (+5 
  min)
 DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 08:42:30 - 08:51:29\
+ CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 08:42:30 - 08:51:07\
  nTreni coinvolti nella chiusura:\n  - REG 17182 (VENEZIA S.LUCIA -> VICENZ
- A) (+5m)\n  - REG 17182 (VENEZIA S.LUCIA -> VICENZA) (+5m)\n  - REG 16017 
- (BRESCIA -> VENEZIA S.LUCIA) (+1m) [Transito]\n  - REG 16017 (BRESCIA -> V
- ENEZIA S.LUCIA) (+1m) [Transito]\n  - REG 3967 (VENEZIA S.LUCIA -> BOLOGNA
-  CENTRALE) [Transito]\n  - REG 3967 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) 
- [Transito]\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 78%\nNot
- a normativa/euristica: Chiusura continua per 6 treni: intervallo utile tra
-  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ A) (+5m)\n  - REG 16277 (BRESCIA -> VENEZIA S.LUCIA)\n  - REG 16277 (BRESC
+ IA -> VENEZIA S.LUCIA)\n  - REG 3967 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE)
+  [Transito]\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Chiusura continua per 4 treni: intervallo utile tr
+ a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16874--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
+UID:train-3608--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
 SEQUENCE:0
-DTSTART:20261120T080630Z
-DTEND:20261120T081129Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 09:06 - 09:11 (primo: REG 16874) (+1 
- min)
+DTSTART:20261120T080537Z
+DTEND:20261120T081107Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:05 - 09:11 (primo: REG 3608) (+1 m
+ in)
 DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 09:06:30 - 09:11:29\
- nTreni coinvolti nella chiusura:\n  - REG 16874 (BELLUNO -> VENEZIA S.LUCI
- A) (+1m)\n  - REG 16874 (BELLUNO -> VENEZIA S.LUCIA) (+1m)\n  - REG 3608 (
- VENEZIA S.LUCIA -> UDINE) (+1m) [Transito]\n  - REG 3608 (VENEZIA S.LUCIA 
- -> UDINE) (+1m) [Transito]\nRitardo massimo rilevato: 1 min\nAffidabilità
-  stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:05:37 - 09:11:07\
+ nTreni coinvolti nella chiusura:\n  - REG 3608 (VENEZIA S.LUCIA -> UDINE) 
+ (+1m) [Transito]\n  - REG 16874 (BELLUNO -> VENEZIA S.LUCIA) (+1m)\nRitard
+ o massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3962--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
+UID:train-3428--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
 SEQUENCE:0
-DTSTART:20261120T081422Z
-DTEND:20261120T082006Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 09:14 - 09:20 (primo: REG 3962) (+6 m
+DTSTART:20261120T081418Z
+DTEND:20261120T082000Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 09:14 - 09:20 (primo: REG 3428) (+6 m
  in)
 DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 09:14:22 - 09:20:06\
- nTreni coinvolti nella chiusura:\n  - REG 3962 (BOLOGNA CENTRALE -> VENEZI
- A S.LUCIA) (+3m) [Transito]\n  - REG 3962 (BOLOGNA CENTRALE -> VENEZIA S.L
- UCIA) (+3m) [Transito]\n  - REG 3428 (VENEZIA S.LUCIA -> VERONA PORTA NUOV
- A) (+6m) [Transito]\n  - REG 3428 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) 
- (+6m) [Transito]\n  - REG 17181 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+
- 1m)\n  - REG 17181 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+1m)\nRitardo 
- massimo rilevato: 6 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Chiusura continua per 6 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
+ CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 09:14:18 - 09:20:00\
+ nTreni coinvolti nella chiusura:\n  - REG 3428 (VENEZIA S.LUCIA -> VERONA 
+ PORTA NUOVA) (+6m) [Transito]\n  - REG 17181 (VERONA PORTA NUOVA -> VENEZI
+ A S.LUCIA) (+1m)\n  - REG 17181 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+
+ 1m)\nRitardo massimo rilevato: 6 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Chiusura continua per 3 treni: intervallo utile tra i pass
+ aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3558--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
+UID:train-9400--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
 SEQUENCE:0
-DTSTART:20261120T082331Z
-DTEND:20261120T083750Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 09:23 - 09:37 (primo: REG 3558) (+6 m
- in)
+DTSTART:20261120T082406Z
+DTEND:20261120T082936Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9400 (ROMA TERMINI -> VENEZIA S.LUCIA) ore 
+ 09:28
 DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 09:23:31 - 09:37:50\
- nTreni coinvolti nella chiusura:\n  - REG 3558 (TRIESTE CENTRALE -> VENEZI
- A S.LUCIA) (+6m) [Transito]\n  - REG 3558 (TRIESTE CENTRALE -> VENEZIA S.L
- UCIA) (+6m) [Transito]\n  - REG 16311 (BASSANO DEL GRAPPA -> VENEZIA S.LUC
- IA) (+6m) [Transito]\n  - REG 17183 (PADOVA -> VENEZIA S.LUCIA) [Transito]
- \n  - REG 17183 (PADOVA -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo ri
- levato: 6 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
- a continua per 5 treni: intervallo utile tra i passaggi (0s) inferiore all
+ TRANSITO VELOCE\nChiusura sbarre stimata: 09:24:06 - 09:29:36\nTreni coinv
+ olti nella chiusura:\n  - TRENO 9400 (ROMA TERMINI -> VENEZIA S.LUCIA) [Tr
+ ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Transito stimato senza fermata (30% tratta VENEZIA MES
+ TRE -> VENEZIA S.LUCIA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3997--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T084218Z
+DTEND:20261120T085100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:42 - 09:51 (primo: REG 3997)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:42:18 - 09:51:00\
+ nTreni coinvolti nella chiusura:\n  - REG 3997 (VENEZIA S.LUCIA -> BOLOGNA
+  CENTRALE) [Transito]\n  - REG 16466 (VENEZIA S.LUCIA -> TREVISO CENTRALE)
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
+ i (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3876--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T090318Z
+DTEND:20261120T090949Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 10:03 - 10:09 (primo: REG 3876)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 10:03:18 - 10:09:49\
+ nTreni coinvolti nella chiusura:\n  - REG 3876 (VENEZIA S.LUCIA -> TRIESTE
+  CENTRALE) [Transito]\n  - REG 16680 (BELLUNO -> VENEZIA S.LUCIA)\n  - REG
+  3858 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
+ a continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore all
  a soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
-X-PL-DELAY-MIN:6
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3997--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
+UID:train-16782--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
 SEQUENCE:0
-DTSTART:20261120T084236Z
-DTEND:20261120T085100Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 09:42 - 09:51 (primo: REG 3997)
+DTSTART:20261120T091630Z
+DTEND:20261120T092200Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 10:16 - 10:22 (primo: REG 16782) (+10
+  min)
 DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 09:42:36 - 09:51:00\
- nTreni coinvolti nella chiusura:\n  - REG 3997 (VENEZIA S.LUCIA -> BOLOGNA
-  CENTRALE) [Transito]\n  - REG 3997 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) 
- [Transito]\n  - REG 16466 (VENEZIA S.LUCIA -> TREVISO CENTRALE)\n  - REG 1
- 6466 (VENEZIA S.LUCIA -> TREVISO CENTRALE)\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
- er 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
+ CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 10:16:30 - 10:22:00\
+ nTreni coinvolti nella chiusura:\n  - REG 16782 (VENEZIA S.LUCIA -> CONEGL
+ IANO)\n  - REG 17180 (VENEZIA S.LUCIA -> PADOVA) (+10m)\n  - REG 17180 (VE
+ NEZIA S.LUCIA -> PADOVA) (+10m)\nRitardo massimo rilevato: 10 min\nAffidab
+ ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 3 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:10
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3632--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T092415Z
+DTEND:20261120T093348Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 10:24 - 10:33 (primo: REG 3632) (+9 m
+ in)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 10:24:15 - 10:33:48\
+ nTreni coinvolti nella chiusura:\n  - REG 3632 (VENEZIA S.LUCIA -> VERONA 
+ PORTA NUOVA) (+9m) [Transito]\n  - REG 3632 (VENEZIA S.LUCIA -> VERONA POR
+ TA NUOVA) (+9m) [Transito]\n  - TRENO 9413 (VENEZIA S.LUCIA -> NAPOLI CENT
+ RALE) [Transito]\nRitardo massimo rilevato: 9 min\nAffidabilità stima: 78
+ %\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo uti
+ le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
+ 120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:9
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17188--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T093730Z
+DTEND:20261120T095600Z
+SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 10:37 - 10:56 (primo: REG 17188)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 8 TRENI\nChiusura sbarre stimata: 10:37:30 - 10:56:00\
+ nTreni coinvolti nella chiusura:\n  - REG 17188 (VENEZIA S.LUCIA -> PADOVA
+ )\n  - REG 3485 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\n  - RE
+ G 3971 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) [Transito]\n  - REG 17028 (PO
+ RTOGRUARO CAORLE -> VENEZIA S.LUCIA)\n  - REG 17028 (PORTOGRUARO CAORLE ->
+  VENEZIA S.LUCIA)\n  - REG 3437 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) [Tra
+ nsito]\n  - REG 3437 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) [Transito]\n  -
+  REG 16321 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
+ ntinua per 8 treni: intervallo utile tra i passaggi (102s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16326--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T100236Z
+DTEND:20261120T100806Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:02 - 11:08 (primo: REG 16326)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:02:36 - 11:08:06\
+ nTreni coinvolti nella chiusura:\n  - REG 16326 (VENEZIA S.LUCIA -> BASSAN
+ O DEL GRAPPA) [Transito]\n  - REG 16326 (VENEZIA S.LUCIA -> BASSANO DEL GR
+ APPA) [Transito]\nRitardo massimo rilevato: -5 min\nAffidabilità stima: 7
+ 8%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo ut
+ ile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale 
+ (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17187--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T101430Z
+DTEND:20261120T101900Z
+SUMMARY:[FERMATA] REG 17187 (VICENZA -> VENEZIA S.LUCIA) ore 11:18
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ FERMATA\nChiusura sbarre stimata: 11:14:30 - 11:19:00\nTreni coinvolti nel
+ la chiusura:\n  - REG 17187 (VICENZA -> VENEZIA S.LUCIA)\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previ
+ sione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9406--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T102200Z
+DTEND:20261120T103348Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:22 - 11:33 (primo: TRENO 9406)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:22:00 - 11:33:48\
+ nTreni coinvolti nella chiusura:\n  - TRENO 9406 (NAPOLI CENTRALE -> VENEZ
+ IA S.LUCIA) [Transito]\n  - TRENO 9415 (VENEZIA S.LUCIA -> ROMA TERMINI) [
+ Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
+ i passaggi (48s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17299--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T104430Z
+DTEND:20261120T104900Z
+SUMMARY:[FERMATA] REG 17299 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) ore 11:
+ 48
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ FERMATA\nChiusura sbarre stimata: 11:44:30 - 11:49:00\nTreni coinvolti nel
+ la chiusura:\n  - REG 17299 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitar
+ do massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euris
+ tica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9728--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T105217Z
+DTEND:20261120T112100Z
+SUMMARY:[CHIUSURA CONTINUA - 11 TRENI] 11:52 - 12:21 (primo: TRENO 9728) (+
+ 5 min)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 11 TRENI\nChiusura sbarre stimata: 11:52:17 - 12:21:00
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9728 (VENEZIA S.LUCIA -> MILA
+ NO CENTRALE) (+5m) [Transito]\n  - TRENO 9728 (VENEZIA S.LUCIA -> MILANO C
+ ENTRALE) (+5m) [Transito]\n  - REG 17010 (ROVIGO -> VENEZIA S.LUCIA) (+1m)
+ \n  - REG 17010 (ROVIGO -> VENEZIA S.LUCIA) (+1m)\n  - REG 16336 (VENEZIA 
+ S.LUCIA -> BASSANO DEL GRAPPA) (+1m) [Transito]\n  - REG 16336 (VENEZIA S.
+ LUCIA -> BASSANO DEL GRAPPA) (+1m) [Transito]\n  - REG 3438 (VENEZIA S.LUC
+ IA -> TRIESTE CENTRALE) (+2m) [Transito]\n  - REG 3438 (VENEZIA S.LUCIA ->
+  TRIESTE CENTRALE) (+2m) [Transito]\n  - REG 3490 (VENEZIA S.LUCIA -> VERO
+ NA PORTA NUOVA) [Transito]\n  - REG 17195 (VICENZA -> VENEZIA S.LUCIA)\n  
+ - REG 16220 (VENEZIA S.LUCIA -> UDINE)\nRitardo massimo rilevato: 5 min\nA
+ ffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 1
+ 1 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
+  di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 11 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8419--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T113138Z
+DTEND:20261120T114000Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:31 - 12:40 (primo: TRENO 8419) (+8
+  min)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 12:31:38 - 12:40:00\
+ nTreni coinvolti nella chiusura:\n  - TRENO 8419 (VENEZIA S.LUCIA -> REGGI
+ O DI CALABRIA CENTRALE) (+8m) [Transito]\n  - TRENO 8419 (VENEZIA S.LUCIA 
+ -> REGGIO DI CALABRIA CENTRALE) (+8m) [Transito]\n  - REG 16775 (CONEGLIAN
+ O -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 8 min\nAffidabilità stim
+ a: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: intervall
+ o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
+ ale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17197--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T114930Z
+DTEND:20261120T115400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:49 - 12:54 (primo: REG 17197) (+5 
+ min)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:49:30 - 12:54:00\
+ nTreni coinvolti nella chiusura:\n  - REG 17197 (PADOVA -> VENEZIA S.LUCIA
+ ) (+5m)\n  - REG 17197 (PADOVA -> VENEZIA S.LUCIA) (+5m)\nRitardo massimo 
+ rilevato: 5 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chius
+ ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9425--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T132818Z
+DTEND:20261120T133348Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9425 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) o
+ re 14:32
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ TRANSITO VELOCE\nChiusura sbarre stimata: 14:28:18 - 14:33:48\nTreni coinv
+ olti nella chiusura:\n  - TRENO 9425 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) 
+ [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Transito stimato senza fermata (66% tratta VENEZIA 
+ S.LUCIA -> VENEZIA MESTRE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9740--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T135018Z
+DTEND:20261120T135948Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:50 - 14:59 (primo: TRENO 9740)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:50:18 - 14:59:48\
+ nTreni coinvolti nella chiusura:\n  - TRENO 9740 (VENEZIA S.LUCIA -> MILAN
+ O CENTRALE) [Transito]\n  - TRENO 8815 (VENEZIA S.LUCIA -> LECCE) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Chiusura continua per 2 treni: intervallo utile tra i passa
+ ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17204--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T141130Z
+DTEND:20261120T141600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:11 - 15:16 (primo: REG 17204) (+4 
+ min)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:11:30 - 15:16:00\
+ nTreni coinvolti nella chiusura:\n  - REG 17204 (VENEZIA S.LUCIA -> VERONA
+  PORTA NUOVA) (+4m)\n  - REG 17204 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
+  (+4m)\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 90%\nNota no
+ rmativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i p
+ assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16800--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T141930Z
+DTEND:20261120T142533Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:19 - 15:25 (primo: REG 16800) (+3 
+ min)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 15:19:30 - 15:25:33\
+ nTreni coinvolti nella chiusura:\n  - REG 16800 (VENEZIA S.LUCIA -> UDINE)
+  (+3m)\n  - REG 16800 (VENEZIA S.LUCIA -> UDINE) (+3m)\n  - EC 36 (VENEZIA
+  S.LUCIA -> CHIASSO) [Transito]\nRitardo massimo rilevato: 3 min\nAffidabi
+ lità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni:
+  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9427--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T142818Z
+DTEND:20261120T145100Z
+SUMMARY:[CHIUSURA CONTINUA - 11 TRENI] 15:28 - 15:51 (primo: TRENO 9427) (+
+ 11 min)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 11 TRENI\nChiusura sbarre stimata: 15:28:18 - 15:51:00
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9427 (VENEZIA S.LUCIA -> SALE
+ RNO) [Transito]\n  - REG 16360 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\n  
+ - REG 3662 (VENEZIA S.LUCIA -> CONEGLIANO) (+4m) [Transito]\n  - REG 3662 
+ (VENEZIA S.LUCIA -> CONEGLIANO) (+4m) [Transito]\n  - EC 80 (VENEZIA S.LUC
+ IA -> BRENNERO) (+11m) [Transito]\n  - EC 80 (VENEZIA S.LUCIA -> BRENNERO)
+  (+11m) [Transito]\n  - REG 3441 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) [Tr
+ ansito]\n  - REG 3981 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) [Transito]\n  
+ - REG 3981 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) [Transito]\n  - REG 17209
+  (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - REG 16804 (VENEZIA S.LUCIA -
+ > TREVISO CENTRALE)\nRitardo massimo rilevato: 11 min\nAffidabilità stima
+ : 78%\nNota normativa/euristica: Chiusura continua per 11 treni: intervall
+ o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
+ ale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 11 TRENI,FERROVIA
+X-PL-DELAY-MIN:11
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17019--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T145430Z
+DTEND:20261120T150000Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:54 - 16:00 (primo: REG 17019) (+4 
+ min)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 15:54:30 - 16:00:00\
+ nTreni coinvolti nella chiusura:\n  - REG 17019 (VENEZIA S.LUCIA -> ROVIGO
+ )\n  - REG 16353 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+4m)\n  - REG 16
+ 353 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) (+4m)\nRitardo massimo rilevat
+ o: 4 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
+ tinua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3888--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T150318Z
+DTEND:20261120T151000Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:03 - 16:10 (primo: REG 3888) (+4 m
+ in)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:03:18 - 16:10:00\
+ nTreni coinvolti nella chiusura:\n  - REG 3888 (VENEZIA S.LUCIA -> TRIESTE
+  CENTRALE) [Transito]\n  - REG 3886 (TRIESTE CENTRALE -> CASARSA) (+4m) [T
+ ransito]\n  - REG 16768 (BELLUNO -> VENEZIA S.LUCIA)\nRitardo massimo rile
+ vato: 4 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
+ continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3442--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T151333Z
+DTEND:20261120T152730Z
+SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 16:13 - 16:27 (primo: REG 3442) (+12 
+ min)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 8 TRENI\nChiusura sbarre stimata: 16:13:33 - 16:27:30\
+ nTreni coinvolti nella chiusura:\n  - REG 3442 (TRIESTE CENTRALE -> VENEZI
+ A S.LUCIA) [Transito]\n  - REG 17213 (VICENZA -> VENEZIA S.LUCIA)\n  - REG
+  16026 (VENEZIA S.LUCIA -> BRESCIA) (+12m) [Transito]\n  - REG 16026 (VENE
+ ZIA S.LUCIA -> BRESCIA) (+12m) [Transito]\n  - REG 16806 (VENEZIA S.LUCIA 
+ -> UDINE)\n  - REG 3657 (CONEGLIANO -> VENEZIA S.LUCIA) [Transito]\n  - EC
+  146 (VENEZIA S.LUCIA -> DOMODOSSOLA) [Transito]\n  - TRENO 9420 (NAPOLI C
+ ENTRALE -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo rilevato: 12 min\n
+ Affidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 
+ 8 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
+  di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+X-PL-DELAY-MIN:12
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9431--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T153104Z
+DTEND:20261120T154000Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:31 - 16:40 (primo: TRENO 9431) (+9
+  min)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:31:04 - 16:40:00\
+ nTreni coinvolti nella chiusura:\n  - TRENO 9431 (VENEZIA S.LUCIA -> NAPOL
+ I CENTRALE) (+9m) [Transito]\n  - TRENO 9431 (VENEZIA S.LUCIA -> NAPOLI CE
+ NTRALE) (+9m) [Transito]\n  - REG 16801 (UDINE -> VENEZIA S.LUCIA)\nRitard
+ o massimo rilevato: 9 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:9
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17103--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T155430Z
+DTEND:20261120T155900Z
+SUMMARY:[FERMATA] REG 17103 (VENEZIA S.LUCIA -> FERRARA) ore 16:58
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ FERMATA\nChiusura sbarre stimata: 16:54:30 - 16:59:00\nTreni coinvolti nel
+ la chiusura:\n  - REG 17103 (VENEZIA S.LUCIA -> FERRARA)\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previ
+ sione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9422--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T162200Z
+DTEND:20261120T164000Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:22 - 17:40 (primo: TRENO 9422)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 17:22:00 - 17:40:00\
+ nTreni coinvolti nella chiusura:\n  - TRENO 9422 (NAPOLI CENTRALE -> VENEZ
+ IA S.LUCIA) [Transito]\n  - TRENO 9433 (VENEZIA S.LUCIA -> ROMA TERMINI) [
+ Transito]\n  - TRENO 9737 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Transito]\
+ n  - REG 16809 (UDINE -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
+ r 4 treni: intervallo utile tra i passaggi (42s) inferiore alla soglia min
  ima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
 STATUS:CONFIRMED
@@ -342,125 +880,143 @@ TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3876--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T090336Z
-DTEND:20261120T092100Z
-SUMMARY:[CHIUSURA CONTINUA - 11 TRENI] 10:03 - 10:21 (primo: REG 3876) (+5 
- min)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 11 TRENI\nChiusura sbarre stimata: 10:03:36 - 10:21:00
- \nTreni coinvolti nella chiusura:\n  - REG 3876 (VENEZIA S.LUCIA -> TRIEST
- E CENTRALE) [Transito]\n  - REG 16680 (BELLUNO -> VENEZIA S.LUCIA)\n  - RE
- G 16680 (BELLUNO -> VENEZIA S.LUCIA)\n  - REG 17180 (VENEZIA S.LUCIA -> PA
- DOVA)\n  - REG 17180 (VENEZIA S.LUCIA -> PADOVA)\n  - REG 3966 (BOLOGNA CE
- NTRALE -> VENEZIA S.LUCIA) (+5m) [Transito]\n  - REG 3966 (BOLOGNA CENTRAL
- E -> VENEZIA S.LUCIA) (+5m) [Transito]\n  - REG 3632 (VENEZIA S.LUCIA -> V
- ERONA PORTA NUOVA) [Transito]\n  - REG 3632 (VENEZIA S.LUCIA -> VERONA POR
- TA NUOVA) [Transito]\n  - REG 16782 (VENEZIA S.LUCIA -> CONEGLIANO)\n  - R
- EG 16782 (VENEZIA S.LUCIA -> CONEGLIANO)\nRitardo massimo rilevato: 5 min\
- nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per
-  11 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
- ma di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 11 TRENI,FERROVIA
-X-PL-DELAY-MIN:5
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9404--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T092420Z
-DTEND:20261120T093406Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:24 - 10:34 (primo: TRENO 9404) (+2
-  min)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 10:24:20 - 10:34:06\
- nTreni coinvolti nella chiusura:\n  - TRENO 9404 (ROMA TERMINI -> VENEZIA 
- S.LUCIA) (+2m) [Transito]\n  - TRENO 9404 (ROMA TERMINI -> VENEZIA S.LUCIA
- ) (+2m) [Transito]\n  - TRENO 9413 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [T
- ransito]\n  - TRENO 9413 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Transito]\n
- Ritardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/
- euristica: Chiusura continua per 4 treni: intervallo utile tra i passaggi 
- (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:2
-X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-17188--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T093730Z
-DTEND:20261120T094806Z
-SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 10:37 - 10:48 (primo: REG 17188)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 7 TRENI\nChiusura sbarre stimata: 10:37:30 - 10:48:06\
- nTreni coinvolti nella chiusura:\n  - REG 17188 (VENEZIA S.LUCIA -> PADOVA
- )\n  - REG 3437 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) [Transito]\n  - REG 
- 3437 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) [Transito]\n  - REG 3971 (VENEZ
- IA S.LUCIA -> BOLOGNA CENTRALE) [Transito]\n  - REG 3971 (VENEZIA S.LUCIA 
- -> BOLOGNA CENTRALE) [Transito]\n  - REG 17028 (PORTOGRUARO CAORLE -> VENE
- ZIA S.LUCIA)\n  - REG 17028 (PORTOGRUARO CAORLE -> VENEZIA S.LUCIA)\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
- tica: Chiusura continua per 7 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-16321--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
+UID:train-16812--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
 SEQUENCE:0
-DTSTART:20261120T095130Z
-DTEND:20261120T095600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:51 - 10:56 (primo: REG 16321)
+DTSTART:20261120T164730Z
+DTEND:20261120T165200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:47 - 17:52 (primo: REG 16812) (+31
+  min)
 DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:51:30 - 10:56:00\
- nTreni coinvolti nella chiusura:\n  - REG 16321 (BASSANO DEL GRAPPA -> VEN
- EZIA S.LUCIA)\n  - REG 16321 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA)\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euri
- stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
-  inferiore alla soglia minima di sgombero stradale (120s)
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:47:30 - 17:52:00\
+ nTreni coinvolti nella chiusura:\n  - REG 16812 (VENEZIA S.LUCIA -> UDINE)
+  (+31m)\n  - REG 16812 (VENEZIA S.LUCIA -> UDINE) (+31m)\nRitardo massimo 
+ rilevato: 31 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiu
+ sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:31
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16326--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T095936Z
-DTEND:20261120T100506Z
-SUMMARY:[TRANSITO VELOCE] REG 16326 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)
-  ore 11:03
+UID:train-9752--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T165754Z
+DTEND:20261120T170500Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:57 - 18:05 (primo: TRENO 9752) (+1
+ 1 min)
 DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 10:59:36 - 11:05:06\nTreni coinv
- olti nella chiusura:\n  - REG 16326 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA
- ) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nN
- ota normativa/euristica: Transito stimato senza fermata (69% tratta VENEZI
- A S.LUCIA -> VENEZIA MESTRE\; pedale annuncio fisso Vmax)
+ CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 17:57:54 - 18:05:00\
+ nTreni coinvolti nella chiusura:\n  - TRENO 9752 (VENEZIA S.LUCIA -> MILAN
+ O CENTRALE) (+11m) [Transito]\n  - TRENO 9752 (VENEZIA S.LUCIA -> MILANO C
+ ENTRALE) (+11m) [Transito]\n  - REG 17006 (ROVIGO -> VENEZIA S.LUCIA) (+3m
+ )\n  - REG 17006 (ROVIGO -> VENEZIA S.LUCIA) (+3m)\nRitardo massimo rileva
+ to: 11 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
+ ontinua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:11
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3506--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T171518Z
+DTEND:20261120T172048Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:15 - 18:20 (primo: REG 3506) (+3 m
+ in)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:15:18 - 18:20:48\
+ nTreni coinvolti nella chiusura:\n  - REG 3506 (VENEZIA S.LUCIA -> VERONA 
+ PORTA NUOVA) (+3m) [Transito]\n  - REG 3506 (VENEZIA S.LUCIA -> VERONA POR
+ TA NUOVA) (+3m) [Transito]\nRitardo massimo rilevato: 3 min\nAffidabilità
+  stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
+ rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
+ stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3524--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T172418Z
+DTEND:20261120T173848Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 18:24 - 18:38 (primo: REG 3524)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 18:24:18 - 18:38:48\
+ nTreni coinvolti nella chiusura:\n  - REG 3524 (VENEZIA S.LUCIA -> VERONA 
+ PORTA NUOVA) [Transito]\n  - REG 3524 (VENEZIA S.LUCIA -> VERONA PORTA NUO
+ VA) [Transito]\n  - TRENO 9435 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Trans
+ ito]\n  - TRENO 9435 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Transito]\n  - 
+ REG 3674 (VENEZIA S.LUCIA -> SACILE) [Transito]\n  - REG 3674 (VENEZIA S.L
+ UCIA -> SACILE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità
+  stima: 78%\nNota normativa/euristica: Chiusura continua per 6 treni: inte
+ rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
+ stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17088--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T175830Z
+DTEND:20261120T180300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:58 - 19:03 (primo: REG 17088) (+1 
+ min)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:58:30 - 19:03:00\
+ nTreni coinvolti nella chiusura:\n  - REG 17088 (FERRARA -> VENEZIA S.LUCI
+ A) (+1m)\n  - REG 17088 (FERRARA -> VENEZIA S.LUCIA) (+1m)\nRitardo massim
+ o rilevato: 1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
+ usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
+  alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3986--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T180635Z
+DTEND:20261120T181205Z
+SUMMARY:[TRANSITO VELOCE] REG 3986 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) or
+ e 19:10
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ TRANSITO VELOCE\nChiusura sbarre stimata: 19:06:35 - 19:12:05\nTreni coinv
+ olti nella chiusura:\n  - REG 3986 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [
+ Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Transito stimato senza fermata (30% tratta VENEZIA M
+ ESTRE -> VENEZIA S.LUCIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -470,299 +1026,19 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3970--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
+UID:train-9437--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
 SEQUENCE:0
-DTSTART:20261120T100759Z
-DTEND:20261120T103406Z
-SUMMARY:[CHIUSURA CONTINUA - 9 TRENI] 11:07 - 11:34 (primo: REG 3970) (+1 m
- in)
+DTSTART:20261120T182818Z
+DTEND:20261120T184200Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 19:28 - 19:42 (primo: TRENO 9437)
 DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 9 TRENI\nChiusura sbarre stimata: 11:07:59 - 11:34:06\
- nTreni coinvolti nella chiusura:\n  - REG 3970 (BOLOGNA CENTRALE -> VENEZI
- A S.LUCIA) (+1m) [Transito]\n  - REG 17187 (VICENZA -> VENEZIA S.LUCIA)\n 
-  - REG 17187 (VICENZA -> VENEZIA S.LUCIA)\n  - REG 3414 (TRIESTE CENTRALE 
- -> VENEZIA S.LUCIA) (+1m) [Transito]\n  - REG 3414 (TRIESTE CENTRALE -> VE
- NEZIA S.LUCIA) (+1m) [Transito]\n  - REG 16313 (BASSANO DEL GRAPPA -> VENE
- ZIA S.LUCIA) [Transito]\n  - TRENO 9406 (NAPOLI CENTRALE -> VENEZIA S.LUCI
- A) [Transito]\n  - TRENO 9415 (VENEZIA S.LUCIA -> ROMA TERMINI) [Transito]
- \n  - TRENO 9415 (VENEZIA S.LUCIA -> ROMA TERMINI) [Transito]\nRitardo mas
- simo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Chiusura continua per 9 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 9 TRENI,FERROVIA
-X-PL-DELAY-MIN:1
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17299--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T104430Z
-DTEND:20261120T110548Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 11:44 - 12:05 (primo: REG 17299)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 11:44:30 - 12:05:48\
- nTreni coinvolti nella chiusura:\n  - REG 17299 (VERONA PORTA NUOVA -> VEN
- EZIA S.LUCIA)\n  - REG 17299 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - 
- TRENO 9728 (VENEZIA S.LUCIA -> MILANO CENTRALE) [Transito]\n  - REG 17010 
- (ROVIGO -> VENEZIA S.LUCIA)\n  - REG 16336 (VENEZIA S.LUCIA -> BASSANO DEL
-  GRAPPA) [Transito]\n  - TRENO 9717 (MILANO CENTRALE -> VENEZIA S.LUCIA) [
- Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
-  normativa/euristica: Chiusura continua per 6 treni: intervallo utile tra 
- i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3490--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T111236Z
-DTEND:20261120T112250Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 12:12 - 12:22 (primo: REG 3490)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 12:12:36 - 12:22:50\
- nTreni coinvolti nella chiusura:\n  - REG 3490 (VENEZIA S.LUCIA -> VERONA 
- PORTA NUOVA) [Transito]\n  - REG 17195 (VICENZA -> VENEZIA S.LUCIA)\n  - R
- EG 16220 (VENEZIA S.LUCIA -> UDINE)\n  - TRENO 9490 (SALERNO -> VENEZIA S.
- LUCIA) [Transito]\n  - TRENO 9490 (SALERNO -> VENEZIA S.LUCIA) [Transito]\
- nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Chiusura continua per 5 treni: intervallo utile tra i passaggi
-  (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8419--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T112836Z
-DTEND:20261120T114000Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:28 - 12:40 (primo: TRENO 8419) (+1
-  min)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 12:28:36 - 12:40:00\
- nTreni coinvolti nella chiusura:\n  - TRENO 8419 (VENEZIA S.LUCIA -> REGGI
- O DI CALABRIA CENTRALE) [Transito]\n  - TRENO 8419 (VENEZIA S.LUCIA -> REG
- GIO DI CALABRIA CENTRALE) [Transito]\n  - EC 41 (DOMODOSSOLA -> VENEZIA S.
- LUCIA) (+1m) [Transito]\n  - REG 16775 (CONEGLIANO -> VENEZIA S.LUCIA)\nRi
- tardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0
- s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:1
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3994--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T120659Z
-DTEND:20261120T121229Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:06 - 13:12 (primo: REG 3994)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:06:59 - 13:12:29\
- nTreni coinvolti nella chiusura:\n  - REG 3994 (BOLOGNA CENTRALE -> VENEZI
- A S.LUCIA) [Transito]\n  - REG 3994 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) 
- [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
- a normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra
-  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9425--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T132836Z
-DTEND:20261120T133533Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:28 - 14:35 (primo: TRENO 9425)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:28:36 - 14:35:33\
- nTreni coinvolti nella chiusura:\n  - TRENO 9425 (VENEZIA S.LUCIA -> NAPOL
- I CENTRALE) [Transito]\n  - EC 31 (CHIASSO -> VENEZIA S.LUCIA) [Transito]\
- nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
-  (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9740--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T135036Z
-DTEND:20261120T140006Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 14:50 - 15:00 (primo: TRENO 9740)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 14:50:36 - 15:00:06\
- nTreni coinvolti nella chiusura:\n  - TRENO 9740 (VENEZIA S.LUCIA -> MILAN
- O CENTRALE) [Transito]\n  - TRENO 8815 (VENEZIA S.LUCIA -> LECCE) [Transit
- o]\n  - TRENO 8815 (VENEZIA S.LUCIA -> LECCE) [Transito]\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
- ura continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore a
- lla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17204--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T140730Z
-DTEND:20261120T141200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:07 - 15:12 (primo: REG 17204)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:07:30 - 15:12:00\
- nTreni coinvolti nella chiusura:\n  - REG 17204 (VENEZIA S.LUCIA -> VERONA
-  PORTA NUOVA)\n  - REG 17204 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euri
- stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
-  inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-36--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T142121Z
-DTEND:20261120T142609Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:21 - 15:26 (primo: EC 36)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:21:21 - 15:26:09\
- nTreni coinvolti nella chiusura:\n  - EC 36 (VENEZIA S.LUCIA -> CHIASSO) [
- Transito]\n  - REG 16349 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) [Transito
- ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
- va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
- gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:EC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9427--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T142836Z
-DTEND:20261120T145100Z
-SUMMARY:[CHIUSURA CONTINUA - 12 TRENI] 15:28 - 15:51 (primo: TRENO 9427)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 12 TRENI\nChiusura sbarre stimata: 15:28:36 - 15:51:00
- \nTreni coinvolti nella chiusura:\n  - TRENO 9427 (VENEZIA S.LUCIA -> SALE
- RNO) [Transito]\n  - TRENO 9427 (VENEZIA S.LUCIA -> SALERNO) [Transito]\n 
-  - REG 16360 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA)\n  - REG 16360 (VENEZ
- IA S.LUCIA -> BASSANO DEL GRAPPA)\n  - REG 3662 (VENEZIA S.LUCIA -> CONEGL
- IANO) [Transito]\n  - EC 80 (VENEZIA S.LUCIA -> BRENNERO) [Transito]\n  - 
- REG 3441 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) [Transito]\n  - REG 3441 (V
- ENEZIA S.LUCIA -> TRIESTE CENTRALE) [Transito]\n  - REG 3981 (VENEZIA S.LU
- CIA -> BOLOGNA CENTRALE) [Transito]\n  - REG 17209 (VERONA PORTA NUOVA -> 
- VENEZIA S.LUCIA)\n  - REG 16804 (VENEZIA S.LUCIA -> TREVISO CENTRALE)\n  -
-  REG 16804 (VENEZIA S.LUCIA -> TREVISO CENTRALE)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
- inua per 12 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
- lia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 12 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17019--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T145430Z
-DTEND:20261120T152609Z
-SUMMARY:[CHIUSURA CONTINUA - 21 TRENI] 15:54 - 16:26 (primo: REG 17019)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 21 TRENI\nChiusura sbarre stimata: 15:54:30 - 16:26:09
- \nTreni coinvolti nella chiusura:\n  - REG 17019 (VENEZIA S.LUCIA -> ROVIG
- O)\n  - REG 17019 (VENEZIA S.LUCIA -> ROVIGO)\n  - TRENO 8816 (LECCE -> VE
- NEZIA S.LUCIA) [Transito]\n  - REG 3886 (TRIESTE CENTRALE -> VENEZIA S.LUC
- IA) [Transito]\n  - REG 3888 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) [Transi
- to]\n  - REG 16768 (BELLUNO -> VENEZIA S.LUCIA)\n  - REG 3980 (BOLOGNA CEN
- TRALE -> VENEZIA S.LUCIA) [Transito]\n  - REG 3980 (BOLOGNA CENTRALE -> VE
- NEZIA S.LUCIA) [Transito]\n  - REG 16026 (VENEZIA S.LUCIA -> BRESCIA) [Tra
- nsito]\n  - REG 16026 (VENEZIA S.LUCIA -> BRESCIA) [Transito]\n  - REG 344
- 2 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) [Transito]\n  - REG 17213 (VICENZA
-  -> VENEZIA S.LUCIA)\n  - REG 17213 (VICENZA -> VENEZIA S.LUCIA)\n  - REG 
- 16806 (VENEZIA S.LUCIA -> UDINE)\n  - REG 16806 (VENEZIA S.LUCIA -> UDINE)
- \n  - REG 3657 (CONEGLIANO -> VENEZIA S.LUCIA) [Transito]\n  - REG 3657 (C
- ONEGLIANO -> VENEZIA S.LUCIA) [Transito]\n  - EC 146 (VENEZIA S.LUCIA -> D
- OMODOSSOLA) [Transito]\n  - EC 146 (VENEZIA S.LUCIA -> DOMODOSSOLA) [Trans
- ito]\n  - REG 16355 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) [Transito]\n  
- - REG 16355 (BASSANO DEL GRAPPA -> VENEZIA S.LUCIA) [Transito]\nRitardo ma
- ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
-  Chiusura continua per 21 treni: intervallo utile tra i passaggi (0s) infe
- riore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 21 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9431--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T152836Z
-DTEND:20261120T154000Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 16:28 - 16:40 (primo: TRENO 9431)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 16:28:36 - 16:40:00\
- nTreni coinvolti nella chiusura:\n  - TRENO 9431 (VENEZIA S.LUCIA -> NAPOL
- I CENTRALE) [Transito]\n  - TRENO 9431 (VENEZIA S.LUCIA -> NAPOLI CENTRALE
- ) [Transito]\n  - TRENO 9733 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Transit
- o]\n  - REG 16801 (UDINE -> VENEZIA S.LUCIA)\n  - REG 16801 (UDINE -> VENE
- ZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nN
+ CHIUSURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 19:28:18 - 19:42:00\
+ nTreni coinvolti nella chiusura:\n  - TRENO 9437 (VENEZIA S.LUCIA -> ROMA 
+ TERMINI) [Transito]\n  - TRENO 9437 (VENEZIA S.LUCIA -> ROMA TERMINI) [Tra
+ nsito]\n  - REG 16850 (VENEZIA S.LUCIA -> BELLUNO) [Transito]\n  - REG 168
+ 50 (VENEZIA S.LUCIA -> BELLUNO) [Transito]\n  - REG 17232 (VENEZIA S.LUCIA
+  -> VICENZA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nN
  ota normativa/euristica: Chiusura continua per 5 treni: intervallo utile t
  ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
  )
@@ -775,218 +1051,56 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-17103--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T155430Z
-DTEND:20261120T160548Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:54 - 17:05 (primo: REG 17103)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 16:54:30 - 17:05:48\
- nTreni coinvolti nella chiusura:\n  - REG 17103 (VENEZIA S.LUCIA -> FERRAR
- A)\n  - REG 17103 (VENEZIA S.LUCIA -> FERRARA)\n  - TRENO 9735 (MILANO CEN
- TRALE -> VENEZIA S.LUCIA) [Transito]\n  - TRENO 9735 (MILANO CENTRALE -> V
- ENEZIA S.LUCIA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3406--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T161318Z
-DTEND:20261120T164308Z
-SUMMARY:[CHIUSURA CONTINUA - 11 TRENI] 17:13 - 17:43 (primo: REG 3406)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 11 TRENI\nChiusura sbarre stimata: 17:13:18 - 17:43:08
- \nTreni coinvolti nella chiusura:\n  - REG 3406 (TRIESTE CENTRALE -> VENEZ
- IA S.LUCIA) [Transito]\n  - REG 3406 (TRIESTE CENTRALE -> VENEZIA S.LUCIA)
-  [Transito]\n  - REG 16812 (VENEZIA S.LUCIA -> UDINE)\n  - TRENO 9422 (NAP
- OLI CENTRALE -> VENEZIA S.LUCIA) [Transito]\n  - TRENO 9433 (VENEZIA S.LUC
- IA -> ROMA TERMINI) [Transito]\n  - TRENO 9433 (VENEZIA S.LUCIA -> ROMA TE
- RMINI) [Transito]\n  - TRENO 9737 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Tr
- ansito]\n  - TRENO 9737 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Transito]\n 
-  - REG 16809 (UDINE -> VENEZIA S.LUCIA)\n  - REG 16809 (UDINE -> VENEZIA S
- .LUCIA)\n  - REG 3505 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\n
- Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
- euristica: Chiusura continua per 11 treni: intervallo utile tra i passaggi
-  (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 11 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3984--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
+UID:train-16824--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
 SEQUENCE:0
-DTSTART:20261120T170659Z
-DTEND:20261120T171229Z
-SUMMARY:[TRANSITO VELOCE] REG 3984 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) or
- e 18:11
+DTSTART:20261120T184630Z
+DTEND:20261120T185100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:46 - 19:51 (primo: REG 16824)
 DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 18:06:59 - 18:12:29\nTreni coinv
- olti nella chiusura:\n  - REG 3984 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [
- Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
-  normativa/euristica: Transito stimato senza fermata (33% tratta VENEZIA M
- ESTRE -> VENEZIA S.LUCIA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9423--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T172220Z
-DTEND:20261120T173406Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:22 - 18:34 (primo: TRENO 9423)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:22:20 - 18:34:06\
- nTreni coinvolti nella chiusura:\n  - TRENO 9423 (ROMA TERMINI -> VENEZIA 
- S.LUCIA) [Transito]\n  - TRENO 9435 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [
- Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
-  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
- i passaggi (46s) inferiore alla soglia minima di sgombero stradale (120s)
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:46:30 - 19:51:00\
+ nTreni coinvolti nella chiusura:\n  - REG 16824 (VENEZIA S.LUCIA -> TREVIS
+ O CENTRALE)\n  - REG 16824 (VENEZIA S.LUCIA -> TREVISO CENTRALE)\nRitardo 
+ massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
+ a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9747--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T180018Z
-DTEND:20261120T181229Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 19:00 - 19:12 (primo: TRENO 9747)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 19:00:18 - 19:12:29\
- nTreni coinvolti nella chiusura:\n  - TRENO 9747 (MILANO CENTRALE -> VENEZ
- IA S.LUCIA) [Transito]\n  - TRENO 9747 (MILANO CENTRALE -> VENEZIA S.LUCIA
- ) [Transito]\n  - REG 3986 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [Transito
- ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
- va/euristica: Chiusura continua per 3 treni: intervallo utile tra i passag
- gi (70s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17232--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T183730Z
-DTEND:20261120T184200Z
-SUMMARY:[FERMATA] REG 17232 (VENEZIA S.LUCIA -> VICENZA) ore 19:41
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- FERMATA\nChiusura sbarre stimata: 19:37:30 - 19:42:00\nTreni coinvolti nel
- la chiusura:\n  - REG 17232 (VENEZIA S.LUCIA -> VICENZA)\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previ
- sione da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9480--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T185539Z
-DTEND:20261120T190548Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 19:55 - 20:05 (primo: TRENO 9480)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 19:55:39 - 20:05:48\
- nTreni coinvolti nella chiusura:\n  - TRENO 9480 (ROMA TERMINI -> VENEZIA 
- S.LUCIA) [Transito]\n  - TRENO 9480 (ROMA TERMINI -> VENEZIA S.LUCIA) [Tra
- nsito]\n  - REG 3894 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) [Transito]\n  -
-  REG 3894 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) [Transito]\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
- usura continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
 UID:train-3574--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T191236Z
-DTEND:20261120T191900Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:12 - 20:19 (primo: REG 3574)
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T191218Z
+DTEND:20261120T192547Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 20:12 - 20:25 (primo: REG 3574)
 DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 20:12:36 - 20:19:00\
+ CHIUSURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 20:12:18 - 20:25:47\
  nTreni coinvolti nella chiusura:\n  - REG 3574 (VENEZIA S.LUCIA -> BRESCIA
- ) [Transito]\n  - REG 3446 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) [Transito
- ]\n  - REG 17235 (VICENZA -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
- a per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+ ) [Transito]\n  - REG 3574 (VENEZIA S.LUCIA -> BRESCIA) [Transito]\n  - RE
+ G 17235 (VICENZA -> VENEZIA S.LUCIA)\n  - REG 16385 (BASSANO DEL GRAPPA ->
+  VENEZIA S.LUCIA) [Transito]\n  - REG 16385 (BASSANO DEL GRAPPA -> VENEZIA
+  S.LUCIA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima
+ : 78%\nNota normativa/euristica: Chiusura continua per 5 treni: intervallo
+  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
+ le (120s)
 LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9428--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T192220Z
-DTEND:20261120T192750Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9428 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) o
- re 20:26
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 20:22:20 - 20:27:50\nTreni coinv
- olti nella chiusura:\n  - TRENO 9428 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) 
- [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
- a normativa/euristica: Transito stimato senza fermata (33% tratta VENEZIA 
- MESTRE -> VENEZIA S.LUCIA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
 UID:train-16394--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T193030Z
 DTEND:20261120T193500Z
 SUMMARY:[FERMATA] REG 16394 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) ore 20:
@@ -1006,18 +1120,38 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17236--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T193730Z
 DTEND:20261120T194200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:37 - 20:42 (primo: REG 17236)
+SUMMARY:[FERMATA] REG 17236 (VENEZIA S.LUCIA -> VICENZA) ore 20:41
 DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:37:30 - 20:42:00\
- nTreni coinvolti nella chiusura:\n  - REG 17236 (VENEZIA S.LUCIA -> VICENZ
- A)\n  - REG 17236 (VENEZIA S.LUCIA -> VICENZA)\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura contin
- ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
+ FERMATA\nChiusura sbarre stimata: 20:37:30 - 20:42:00\nTreni coinvolti nel
+ la chiusura:\n  - REG 17236 (VENEZIA S.LUCIA -> VICENZA)\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previ
+ sione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16309--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T194430Z
+DTEND:20261120T195100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:44 - 20:51 (primo: REG 16309)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:44:30 - 20:51:00\
+ nTreni coinvolti nella chiusura:\n  - REG 16309 (VERONA PORTA NUOVA -> VEN
+ EZIA S.LUCIA)\n  - REG 16826 (VENEZIA S.LUCIA -> TREVISO CENTRALE)\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
+ ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -1027,192 +1161,116 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16309--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T194430Z
-DTEND:20261120T195129Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 20:44 - 20:51 (primo: REG 16309)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 20:44:30 - 20:51:29\
- nTreni coinvolti nella chiusura:\n  - REG 16309 (VERONA PORTA NUOVA -> VEN
- EZIA S.LUCIA)\n  - REG 16309 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - 
- REG 16826 (VENEZIA S.LUCIA -> TREVISO CENTRALE)\n  - REG 16826 (VENEZIA S.
- LUCIA -> TREVISO CENTRALE)\n  - REG 3626 (TRIESTE CENTRALE -> VENEZIA S.LU
- CIA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%
- \nNota normativa/euristica: Chiusura continua per 5 treni: intervallo util
- e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
- 20s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-17090--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T195730Z
-DTEND:20261120T205208Z
-SUMMARY:[CHIUSURA CONTINUA - 21 TRENI] 20:57 - 21:52 (primo: REG 17090)
+DTEND:20261120T201900Z
+SUMMARY:[CHIUSURA CONTINUA - 10 TRENI] 20:57 - 21:19 (primo: REG 17090)
 DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 21 TRENI\nChiusura sbarre stimata: 20:57:30 - 21:52:08
+ CHIUSURA CONTINUA - 10 TRENI\nChiusura sbarre stimata: 20:57:30 - 21:19:00
  \nTreni coinvolti nella chiusura:\n  - REG 17090 (ROVIGO -> VENEZIA S.LUCI
  A)\n  - REG 16398 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [Transito]\n  - 
  REG 16398 (VENEZIA S.LUCIA -> BASSANO DEL GRAPPA) [Transito]\n  - REG 3861
   (VENEZIA S.LUCIA -> TRIESTE CENTRALE) [Transito]\n  - REG 3861 (VENEZIA S
  .LUCIA -> TRIESTE CENTRALE) [Transito]\n  - REG 17124 (VENEZIA S.LUCIA -> 
- VERONA PORTA NUOVA)\n  - REG 17124 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
- \n  - REG 3518 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Transito]\n  - REG
-  3518 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Transito]\n  - REG 3448 (TR
- IESTE CENTRALE -> VENEZIA S.LUCIA) [Transito]\n  - REG 16391 (BASSANO DEL 
- GRAPPA -> VENEZIA S.LUCIA) [Transito]\n  - REG 3515 (SACILE -> VENEZIA S.L
- UCIA) [Transito]\n  - IC 35678 (TRIESTE CENTRALE -> ROMA TERMINI) [Transit
- o]\n  - IC 35678 (TRIESTE CENTRALE -> ROMA TERMINI) [Transito]\n  - REG 16
- 831 (UDINE -> VENEZIA S.LUCIA)\n  - REG 17240 (VENEZIA S.LUCIA -> PADOVA)\
- n  - REG 3993 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) [Transito]\n  - REG 17
- 245 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - REG 17245 (VERONA PORTA N
- UOVA -> VENEZIA S.LUCIA)\n  - REG 3898 (TRIESTE CENTRALE -> VENEZIA S.LUCI
- A) [Transito]\n  - REG 3898 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) [Transit
- o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Chiusura continua per 21 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ VERONA PORTA NUOVA)\n  - REG 3518 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) 
+ [Transito]\n  - REG 3448 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) [Transito]\
+ n  - REG 17243 (VICENZA -> VENEZIA S.LUCIA)\n  - REG 17243 (VICENZA -> VEN
+ EZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\n
+ Nota normativa/euristica: Chiusura continua per 10 treni: intervallo utile
+  tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (12
+ 0s)
 LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 21 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 10 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8828--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
+UID:train-35678--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
 SEQUENCE:0
-DTSTART:20261120T205559Z
-DTEND:20261120T210129Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:55 - 22:01 (primo: TRENO 8828)
+DTSTART:20261120T202812Z
+DTEND:20261120T203242Z
+SUMMARY:[TRANSITO VELOCE] IC 35678 (TRIESTE CENTRALE -> ROMA TERMINI) ore 2
+ 1:31
 DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:55:59 - 22:01:29\
- nTreni coinvolti nella chiusura:\n  - TRENO 8828 (LECCE -> VENEZIA S.LUCIA
- ) [Transito]\n  - TRENO 8828 (LECCE -> VENEZIA S.LUCIA) [Transito]\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
- nferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9432--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T214159Z
-DTEND:20261120T214900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:41 - 22:49 (primo: TRENO 9432)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:41:59 - 22:49:00\
- nTreni coinvolti nella chiusura:\n  - TRENO 9432 (NAPOLI CENTRALE -> VENEZ
- IA S.LUCIA) [Transito]\n  - REG 17247 (VERONA PORTA NUOVA -> VENEZIA S.LUC
- IA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3992--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T220718Z
-DTEND:20261120T221248Z
-SUMMARY:[TRANSITO VELOCE] REG 3992 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) or
- e 23:11
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 23:07:18 - 23:12:48\nTreni coinv
- olti nella chiusura:\n  - REG 3992 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [
- Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
-  normativa/euristica: Transito stimato senza fermata (33% tratta VENEZIA M
- ESTRE -> VENEZIA S.LUCIA\; pedale annuncio fisso Vmax)
+ TRANSITO VELOCE\nChiusura sbarre stimata: 21:28:12 - 21:32:42\nTreni coinv
+ olti nella chiusura:\n  - IC 35678 (TRIESTE CENTRALE -> ROMA TERMINI) [Tra
+ nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Transito stimato senza fermata (66% tratta VENEZIA S.LU
+ CIA -> VENEZIA MESTRE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16831--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T203530Z
+DTEND:20261120T205140Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 21:35 - 21:51 (primo: REG 16831)
+DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 7 TRENI\nChiusura sbarre stimata: 21:35:30 - 21:51:40\
+ nTreni coinvolti nella chiusura:\n  - REG 16831 (UDINE -> VENEZIA S.LUCIA)
+ \n  - REG 17240 (VENEZIA S.LUCIA -> PADOVA)\n  - REG 17056 (PORTOGRUARO CA
+ ORLE -> VENEZIA S.LUCIA)\n  - REG 17056 (PORTOGRUARO CAORLE -> VENEZIA S.L
+ UCIA)\n  - REG 3993 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) [Transito]\n  - 
+ REG 17245 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - REG 3898 (TRIESTE C
+ ENTRALE -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 7
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9434--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
+UID:train-17247--20261119-S02592@pl-tracker.local
+DTSTAMP:20261120T171953Z
 SEQUENCE:0
-DTSTART:20261120T222220Z
-DTEND:20261120T222750Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:22 - 23:27 (primo: TRENO 9434)
+DTSTART:20261120T214430Z
+DTEND:20261120T214900Z
+SUMMARY:[FERMATA] REG 17247 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) ore 22:
+ 48
 DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 23:22:20 - 23:27:50\
- nTreni coinvolti nella chiusura:\n  - TRENO 9434 (NAPOLI CENTRALE -> VENEZ
- IA S.LUCIA) [Transito]\n  - TRENO 9434 (NAPOLI CENTRALE -> VENEZIA S.LUCIA
- ) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nN
- ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
+ FERMATA\nChiusura sbarre stimata: 22:44:30 - 22:49:00\nTreni coinvolti nel
+ la chiusura:\n  - REG 17247 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitar
+ do massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euris
+ tica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-16022--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T224559Z
-DTEND:20261120T225129Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:45 - 23:51 (primo: REG 16022)
-DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 23:45:59 - 23:51:29\
- nTreni coinvolti nella chiusura:\n  - REG 16022 (TRIESTE CENTRALE -> VENEZ
- IA S.LUCIA) [Transito]\n  - REG 16022 (TRIESTE CENTRALE -> VENEZIA S.LUCIA
- ) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nN
- ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
-LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-774--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261121T050824Z
-DTEND:20261121T051254Z
-SUMMARY:[TRANSITO VELOCE] IC 774 (ROMA TERMINI -> TRIESTE CENTRALE) ore 06:
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261121T050802Z
+DTEND:20261121T051232Z
+SUMMARY:[TRANSITO VELOCE] IC 774 (ROMA TERMINI -> GORIZIA CENTRALE) ore 06:
  11
 DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 06:08:24 - 06:12:54\nTreni coinv
- olti nella chiusura:\n  - IC 774 (ROMA TERMINI -> TRIESTE CENTRALE) [Trans
+ TRANSITO VELOCE\nChiusura sbarre stimata: 06:08:02 - 06:12:32\nTreni coinv
+ olti nella chiusura:\n  - IC 774 (ROMA TERMINI -> GORIZIA CENTRALE) [Trans
  ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
- ativa/euristica: Transito stimato senza fermata (33% tratta VENEZIA MESTRE
+ ativa/euristica: Transito stimato senza fermata (30% tratta VENEZIA MESTRE
   -> VENEZIA S.LUCIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
 STATUS:CONFIRMED
@@ -1224,17 +1282,17 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-774--20261119-S02592@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261121T053339Z
-DTEND:20261121T053809Z
-SUMMARY:[TRANSITO VELOCE] IC 774 (ROMA TERMINI -> TRIESTE CENTRALE) ore 06:
- 37
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261121T053253Z
+DTEND:20261121T053723Z
+SUMMARY:[TRANSITO VELOCE] IC 774 (ROMA TERMINI -> GORIZIA CENTRALE) ore 06:
+ 36
 DESCRIPTION:Stazione/PL: VENEZIA PORTO MARGHERA (S02592)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 06:33:39 - 06:38:09\nTreni coinv
- olti nella chiusura:\n  - IC 774 (ROMA TERMINI -> TRIESTE CENTRALE) [Trans
+ TRANSITO VELOCE\nChiusura sbarre stimata: 06:32:53 - 06:37:23\nTreni coinv
+ olti nella chiusura:\n  - IC 774 (ROMA TERMINI -> GORIZIA CENTRALE) [Trans
  ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
- ativa/euristica: Transito stimato senza fermata (69% tratta VENEZIA S.LUCI
+ ativa/euristica: Transito stimato senza fermata (66% tratta VENEZIA S.LUCI
  A -> VENEZIA MESTRE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VENEZIA PORTO MARGHERA
 STATUS:CONFIRMED

@@ -9,32 +9,37 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:e6b2c9f599aee80f5075d60e9ff79f42079649c963998dfb6cfd36408ae2
- 6e1e
+X-CONTENT-HASH:a88a4196150beb4186831c357e23893cefe29298ff48a4bcf2f9a11779b2
+ cbe9
 BEGIN:VEVENT
-UID:train-12113--20261119-S04106@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T045330Z
-DTEND:20261120T045800Z
-SUMMARY:[FERMATA] REG 12113 (ACQUI TERME -> GENOVA BRIGNOLE) ore 05:57
-DESCRIPTION:Stazione/PL: MELE (S04106)\nRegime chiusura: FERMATA\nChiusura 
- sbarre stimata: 05:53:30 - 05:58:00\nTreni coinvolti nella chiusura:\n  - 
- REG 12113 (ACQUI TERME -> GENOVA BRIGNOLE)\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracc
- ia oraria regolare
+UID:train-12113--20261119-S04106@pl-tracker.local-arr
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T045700Z
+DTEND:20261120T050730Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 05:57 - 06:07 (primo: REG 12113) (+9 
+ min)
+DESCRIPTION:Stazione/PL: MELE (S04106)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 4 TRENI\nChiusura sbarre stimata: 05:57:00 - 06:07:30\nTreni coinvolti n
+ ella chiusura:\n  - REG 12113 (ACQUI TERME -> GENOVA BRIGNOLE) (+9m) [Arri
+ vo]\n  - REG 12113 (ACQUI TERME -> GENOVA BRIGNOLE) (+9m) [Arrivo]\n  - RE
+ G 12113 (ACQUI TERME -> GENOVA BRIGNOLE) (+9m) [Partenza]\n  - REG 12113 (
+ ACQUI TERME -> GENOVA BRIGNOLE) (+9m) [Partenza]\nRitardo massimo rilevato
+ : 9 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura cont
+ inua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MELE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:9
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12115--20261119-S04106@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T054700Z
 DTEND:20261120T055330Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:47 - 06:53 (primo: REG 12115) (+1 
@@ -56,8 +61,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12116--20261119-S04106@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T064600Z
 DTEND:20261120T065230Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:46 - 07:52 (primo: REG 12116) (+5 
@@ -79,30 +84,74 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12121--20261119-S04106@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T085530Z
 DTEND:20261120T090000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:55 - 10:00 (primo: REG 12121)
-DESCRIPTION:Stazione/PL: MELE (S04106)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 09:55:30 - 10:00:00\nTreni coinvolti n
- ella chiusura:\n  - REG 12121 (ACQUI TERME -> GENOVA BRIGNOLE)\n  - REG 12
- 121 (ACQUI TERME -> GENOVA BRIGNOLE)\nRitardo massimo rilevato: -2 min\nAf
- fidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 
- treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
- i sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 12121 (ACQUI TERME -> GENOVA BRIGNOLE) ore 09:59
+DESCRIPTION:Stazione/PL: MELE (S04106)\nRegime chiusura: FERMATA\nChiusura 
+ sbarre stimata: 09:55:30 - 10:00:00\nTreni coinvolti nella chiusura:\n  - 
+ REG 12121 (ACQUI TERME -> GENOVA BRIGNOLE)\nRitardo massimo rilevato: -2 m
+ in\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione con ant
+ icipo (-2 min)
 LOCATION:Passaggio a Livello / Stazione MELE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:-2
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-12122--20261119-S04106@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T095030Z
+DTEND:20261120T095600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:50 - 10:56 (primo: REG 12122) (+2 
+ min)
+DESCRIPTION:Stazione/PL: MELE (S04106)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 10:50:30 - 10:56:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 12122 (GENOVA BRIGNOLE -> ACQUI TERME) (+2m)\n  - 
+ REG 12122 (GENOVA BRIGNOLE -> ACQUI TERME) (+2m)\nRitardo massimo rilevato
+ : 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MELE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12132--20261119-S04106@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T145430Z
+DTEND:20261120T150100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:54 - 16:01 (primo: REG 12132) (+6 
+ min)
+DESCRIPTION:Stazione/PL: MELE (S04106)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 15:54:30 - 16:01:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 12132 (GENOVA BRIGNOLE -> ACQUI TERME) (+6m)\n  - 
+ REG 12132 (GENOVA BRIGNOLE -> ACQUI TERME) (+6m)\nRitardo massimo rilevato
+ : 6 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MELE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-12134--20261119-S04106@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T154830Z
 DTEND:20261120T155300Z
 SUMMARY:[FERMATA] REG 12134 (GENOVA BRIGNOLE -> ACQUI TERME) ore 16:52
@@ -121,8 +170,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12142--20261119-S04106@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T201030Z
 DTEND:20261120T201500Z
 SUMMARY:[FERMATA] REG 12142 (GENOVA BRIGNOLE -> ACQUI TERME) ore 21:14
@@ -141,22 +190,20 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12143--20261119-S04106@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T201930Z
 DTEND:20261120T202400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:19 - 21:24 (primo: REG 12143)
-DESCRIPTION:Stazione/PL: MELE (S04106)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 21:19:30 - 21:24:00\nTreni coinvolti n
- ella chiusura:\n  - REG 12143 (ACQUI TERME -> GENOVA BRIGNOLE)\n  - REG 12
- 143 (ACQUI TERME -> GENOVA BRIGNOLE)\nRitardo massimo rilevato: 0 min\nAff
- idabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 t
- reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
-  sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 12143 (ACQUI TERME -> GENOVA BRIGNOLE) ore 21:23
+DESCRIPTION:Stazione/PL: MELE (S04106)\nRegime chiusura: FERMATA\nChiusura 
+ sbarre stimata: 21:19:30 - 21:24:00\nTreni coinvolti nella chiusura:\n  - 
+ REG 12143 (ACQUI TERME -> GENOVA BRIGNOLE)\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracc
+ ia oraria regolare
 LOCATION:Passaggio a Livello / Stazione MELE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

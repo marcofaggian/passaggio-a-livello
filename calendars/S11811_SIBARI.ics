@@ -9,32 +9,37 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:c99f047af1d82c1f6c0b7a6be2d2589ca24202a498a2bb77cb6f28f3bcf0
- 6526
+X-CONTENT-HASH:05c8ca27b6e0c91fba40d514345d3bc6a3cca66d0146cdb2051008f45e5e
+ 6667
 BEGIN:VEVENT
-UID:train-558--20261119-S11811@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T085715Z
-DTEND:20261120T090200Z
-SUMMARY:[FERMATA] IC 558 (BARI CENTRALE -> VILLA S.GIOVANNI) ore 10:01
-DESCRIPTION:Stazione/PL: SIBARI (S11811)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 09:57:15 - 10:02:00\nTreni coinvolti nella chiusura:\n  
- - IC 558 (BARI CENTRALE -> VILLA S.GIOVANNI)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
- ccia oraria regolare
+UID:train-558--20261119-S11811@pl-tracker.local-arr
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T090015Z
+DTEND:20261120T090900Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:00 - 10:09 (primo: IC 558) (+4 min
+ )
+DESCRIPTION:Stazione/PL: SIBARI (S11811)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 10:00:15 - 10:09:00\nTreni coinvolti
+  nella chiusura:\n  - IC 558 (BARI CENTRALE -> VILLA S.GIOVANNI) (+4m) [Ar
+ rivo]\n  - IC 558 (BARI CENTRALE -> VILLA S.GIOVANNI) (+4m) [Arrivo]\n  - 
+ IC 558 (BARI CENTRALE -> VILLA S.GIOVANNI) (+4m) [Partenza]\n  - IC 558 (B
+ ARI CENTRALE -> VILLA S.GIOVANNI) (+4m) [Partenza]\nRitardo massimo rileva
+ to: 4 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura co
+ ntinua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SIBARI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-564--20261119-S11811@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T120115Z
 DTEND:20261120T120600Z
 SUMMARY:[FERMATA] IC 564 (REGGIO DI CALABRIA CENTRALE -> LECCE) ore 13:05
@@ -50,5 +55,28 @@ CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8519--20261119-S11811@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T213430Z
+DTEND:20261120T213900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:34 - 22:39 (primo: TRENO 8519) (+5
+  min)
+DESCRIPTION:Stazione/PL: SIBARI (S11811)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 22:34:30 - 22:39:00\nTreni coinvolti
+  nella chiusura:\n  - TRENO 8519 (BOLZANO -> SIBARI) (+5m)\n  - TRENO 8519
+  (BOLZANO -> SIBARI) (+5m)\nRitardo massimo rilevato: 5 min\nAffidabilità
+  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
+ rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
+ stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SIBARI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 END:VCALENDAR

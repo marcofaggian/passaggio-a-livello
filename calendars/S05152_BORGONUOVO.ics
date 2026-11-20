@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:f5a3ae027c978b01bcdfce0c3986b92900ffd0fcc0a5c6b8b4c0dfa8ff5d
- 7922
+X-CONTENT-HASH:cc3ad44c721155cfe6ec489d3f4bab40098e9a211671271cf5f9288f8608
+ 43c0
 BEGIN:VEVENT
 UID:train-17652--20261119-S05152@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T044530Z
 DTEND:20261120T045000Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:45 - 05:50 (primo: REG 17652) (+2 
@@ -36,8 +36,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17656--20261119-S05152@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T054446Z
 DTEND:20261120T055400Z
 SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:44 - 06:54 (primo: REG 17656) (+3 
@@ -60,50 +60,55 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17735--20261119-S05152@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T060100Z
-DTEND:20261120T060530Z
-SUMMARY:[FERMATA] REG 17735 (BOLOGNA CENTRALE -> PORRETTA  TERME) ore 07:04
-DESCRIPTION:Stazione/PL: BORGONUOVO (S05152)\nRegime chiusura: FERMATA\nChi
- usura sbarre stimata: 07:01:00 - 07:05:30\nTreni coinvolti nella chiusura:
- \n  - REG 17735 (BOLOGNA CENTRALE -> PORRETTA  TERME)\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
- ne da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione BORGONUOVO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17658--20261119-S05152@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T060942Z
-DTEND:20261120T061930Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:09 - 07:19 (primo: REG 17658)
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T060000Z
+DTEND:20261120T060430Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:00 - 07:04 (primo: REG 17735)
 DESCRIPTION:Stazione/PL: BORGONUOVO (S05152)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 07:09:42 - 07:19:30\nTreni coinv
- olti nella chiusura:\n  - REG 17658 (PORRETTA  TERME -> PIANORO) [Transito
- ]\n  - REG 17658 (PORRETTA  TERME -> PIANORO)\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
- a per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 07:00:00 - 07:04:30\nTreni coinv
+ olti nella chiusura:\n  - REG 17735 (BOLOGNA CENTRALE -> PORRETTA  TERME)\
+ n  - REG 17735 (BOLOGNA CENTRALE -> PORRETTA  TERME)\nRitardo massimo rile
+ vato: -2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura
+  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
+  soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BORGONUOVO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:-2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17658--20261119-S05152@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T061907Z
+DTEND:20261120T062830Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:19 - 07:28 (primo: REG 17658) (+21
+  min)
+DESCRIPTION:Stazione/PL: BORGONUOVO (S05152)\nRegime chiusura: CHIUSURA CON
+ TINUA - 4 TRENI\nChiusura sbarre stimata: 07:19:07 - 07:28:30\nTreni coinv
+ olti nella chiusura:\n  - REG 17658 (PORRETTA  TERME -> BOLOGNA CENTRALE) 
+ (+21m) [Transito]\n  - REG 17658 (PORRETTA  TERME -> BOLOGNA CENTRALE) (+2
+ 1m) [Transito]\n  - REG 17658 (PORRETTA  TERME -> BOLOGNA CENTRALE) (+9m)\
+ n  - REG 17658 (PORRETTA  TERME -> BOLOGNA CENTRALE) (+9m)\nRitardo massim
+ o rilevato: 21 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 4 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BORGONUOVO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:21
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17738--20261119-S05152@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T070630Z
 DTEND:20261120T071100Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:06 - 08:11 (primo: REG 17738) (+2 
@@ -125,120 +130,132 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17668--20261119-S05152@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T084700Z
 DTEND:20261120T085130Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:47 - 09:51 (primo: REG 17668)
-DESCRIPTION:Stazione/PL: BORGONUOVO (S05152)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 09:47:00 - 09:51:30\nTreni coinv
- olti nella chiusura:\n  - REG 17668 (MARZABOTTO -> PIANORO)\n  - REG 17668
-  (MARZABOTTO -> PIANORO)\nRitardo massimo rilevato: 0 min\nAffidabilità s
- tima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interv
- allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
- radale (120s)
+SUMMARY:[FERMATA] REG 17668 (MARZABOTTO -> PIANORO) ore 09:50
+DESCRIPTION:Stazione/PL: BORGONUOVO (S05152)\nRegime chiusura: FERMATA\nChi
+ usura sbarre stimata: 09:47:00 - 09:51:30\nTreni coinvolti nella chiusura:
+ \n  - REG 17668 (MARZABOTTO -> PIANORO)\nRitardo massimo rilevato: 0 min\n
+ Affidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia 
+ oraria regolare
 LOCATION:Passaggio a Livello / Stazione BORGONUOVO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17746--20261119-S05152@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T090600Z
 DTEND:20261120T091030Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:06 - 10:10 (primo: REG 17746) (+2 
- min)
-DESCRIPTION:Stazione/PL: BORGONUOVO (S05152)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 10:06:00 - 10:10:30\nTreni coinv
- olti nella chiusura:\n  - REG 17746 (BOLOGNA S.RUFFILLO -> MARZABOTTO) (+2
- m)\n  - REG 17746 (BOLOGNA S.RUFFILLO -> MARZABOTTO) (+2m)\nRitardo massim
- o rilevato: 2 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
- usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 17746 (BOLOGNA S.RUFFILLO -> MARZABOTTO) ore 10:09 (+
+ 2 min)
+DESCRIPTION:Stazione/PL: BORGONUOVO (S05152)\nRegime chiusura: FERMATA\nChi
+ usura sbarre stimata: 10:06:00 - 10:10:30\nTreni coinvolti nella chiusura:
+ \n  - REG 17746 (BOLOGNA S.RUFFILLO -> MARZABOTTO) (+2m)\nRitardo massimo 
+ rilevato: 2 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previ
+ sione con ritardo propagato (+2 min)
 LOCATION:Passaggio a Livello / Stazione BORGONUOVO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17670--20261119-S05152@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T092200Z
 DTEND:20261120T092630Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:22 - 10:26 (primo: REG 17670) (+5 
- min)
-DESCRIPTION:Stazione/PL: BORGONUOVO (S05152)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 10:22:00 - 10:26:30\nTreni coinv
- olti nella chiusura:\n  - REG 17670 (PORRETTA  TERME -> PIANORO) (+5m)\n  
- - REG 17670 (PORRETTA  TERME -> PIANORO) (+5m)\nRitardo massimo rilevato: 
- 5 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura contin
- ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 17670 (PORRETTA  TERME -> PIANORO) ore 10:25 (+5 min)
+DESCRIPTION:Stazione/PL: BORGONUOVO (S05152)\nRegime chiusura: FERMATA\nChi
+ usura sbarre stimata: 10:22:00 - 10:26:30\nTreni coinvolti nella chiusura:
+ \n  - REG 17670 (PORRETTA  TERME -> PIANORO) (+5m)\nRitardo massimo rileva
+ to: 5 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
+ con ritardo propagato (+5 min)
 LOCATION:Passaggio a Livello / Stazione BORGONUOVO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17748--20261119-S05152@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T093400Z
 DTEND:20261120T093830Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:34 - 10:38 (primo: REG 17748)
-DESCRIPTION:Stazione/PL: BORGONUOVO (S05152)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 10:34:00 - 10:38:30\nTreni coinv
- olti nella chiusura:\n  - REG 17748 (PIANORO -> PORRETTA  TERME)\n  - REG 
- 17748 (PIANORO -> PORRETTA  TERME)\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+SUMMARY:[FERMATA] REG 17748 (PIANORO -> PORRETTA  TERME) ore 10:37
+DESCRIPTION:Stazione/PL: BORGONUOVO (S05152)\nRegime chiusura: FERMATA\nChi
+ usura sbarre stimata: 10:34:00 - 10:38:30\nTreni coinvolti nella chiusura:
+ \n  - REG 17748 (PIANORO -> PORRETTA  TERME)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
+ ccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione BORGONUOVO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17672--20261119-S05152@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T094700Z
 DTEND:20261120T095130Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:47 - 10:51 (primo: REG 17672)
-DESCRIPTION:Stazione/PL: BORGONUOVO (S05152)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 10:47:00 - 10:51:30\nTreni coinv
- olti nella chiusura:\n  - REG 17672 (MARZABOTTO -> PIANORO)\n  - REG 17672
-  (MARZABOTTO -> PIANORO)\nRitardo massimo rilevato: 0 min\nAffidabilità s
- tima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interv
- allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
- radale (120s)
+SUMMARY:[FERMATA] REG 17672 (MARZABOTTO -> PIANORO) ore 10:50
+DESCRIPTION:Stazione/PL: BORGONUOVO (S05152)\nRegime chiusura: FERMATA\nChi
+ usura sbarre stimata: 10:47:00 - 10:51:30\nTreni coinvolti nella chiusura:
+ \n  - REG 17672 (MARZABOTTO -> PIANORO)\nRitardo massimo rilevato: 0 min\n
+ Affidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia 
+ oraria regolare
 LOCATION:Passaggio a Livello / Stazione BORGONUOVO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-17674--20261119-S05152@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T102600Z
+DTEND:20261120T103030Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:26 - 11:30 (primo: REG 17674) (+9 
+ min)
+DESCRIPTION:Stazione/PL: BORGONUOVO (S05152)\nRegime chiusura: CHIUSURA CON
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 11:26:00 - 11:30:30\nTreni coinv
+ olti nella chiusura:\n  - REG 17674 (PORRETTA  TERME -> PIANORO) (+9m)\n  
+ - REG 17674 (PORRETTA  TERME -> PIANORO) (+9m)\nRitardo massimo rilevato: 
+ 9 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura contin
+ ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+  minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BORGONUOVO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:9
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-17752--20261119-S05152@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T103400Z
 DTEND:20261120T103830Z
 SUMMARY:[FERMATA] REG 17752 (PIANORO -> PORRETTA  TERME) ore 11:37
@@ -257,8 +274,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17688--20261119-S05152@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T134700Z
 DTEND:20261120T135130Z
 SUMMARY:[FERMATA] REG 17688 (MARZABOTTO -> PIANORO) ore 14:50
@@ -276,9 +293,32 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-17768--20261119-S05152@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T143500Z
+DTEND:20261120T143930Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:35 - 15:39 (primo: REG 17768) (+1 
+ min)
+DESCRIPTION:Stazione/PL: BORGONUOVO (S05152)\nRegime chiusura: CHIUSURA CON
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 15:35:00 - 15:39:30\nTreni coinv
+ olti nella chiusura:\n  - REG 17768 (PIANORO -> PORRETTA  TERME) (+1m)\n  
+ - REG 17768 (PIANORO -> PORRETTA  TERME) (+1m)\nRitardo massimo rilevato: 
+ 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura contin
+ ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+  minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BORGONUOVO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-17770--20261119-S05152@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T150400Z
 DTEND:20261120T150830Z
 SUMMARY:[FERMATA] REG 17770 (PIANORO -> MARZABOTTO) ore 16:07
@@ -297,15 +337,35 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17694--20261119-S05152@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T151700Z
 DTEND:20261120T152130Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:17 - 16:21 (primo: REG 17694)
+SUMMARY:[FERMATA] REG 17694 (PORRETTA  TERME -> PIANORO) ore 16:20
+DESCRIPTION:Stazione/PL: BORGONUOVO (S05152)\nRegime chiusura: FERMATA\nChi
+ usura sbarre stimata: 16:17:00 - 16:21:30\nTreni coinvolti nella chiusura:
+ \n  - REG 17694 (PORRETTA  TERME -> PIANORO)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
+ ccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione BORGONUOVO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17784--20261119-S05152@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T183400Z
+DTEND:20261120T183830Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:34 - 19:38 (primo: REG 17784)
 DESCRIPTION:Stazione/PL: BORGONUOVO (S05152)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 16:17:00 - 16:21:30\nTreni coinv
- olti nella chiusura:\n  - REG 17694 (PORRETTA  TERME -> PIANORO)\n  - REG 
- 17694 (PORRETTA  TERME -> PIANORO)\nRitardo massimo rilevato: 0 min\nAffid
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 19:34:00 - 19:38:30\nTreni coinv
+ olti nella chiusura:\n  - REG 17784 (PIANORO -> PORRETTA  TERME)\n  - REG 
+ 17784 (PIANORO -> PORRETTA  TERME)\nRitardo massimo rilevato: 0 min\nAffid
  abilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tre
  ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
  gombero stradale (120s)
@@ -319,44 +379,40 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17712--20261119-S05152@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T191700Z
 DTEND:20261120T192130Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:17 - 20:21 (primo: REG 17712)
-DESCRIPTION:Stazione/PL: BORGONUOVO (S05152)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 20:17:00 - 20:21:30\nTreni coinv
- olti nella chiusura:\n  - REG 17712 (PORRETTA  TERME -> PIANORO)\n  - REG 
- 17712 (PORRETTA  TERME -> PIANORO)\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+SUMMARY:[FERMATA] REG 17712 (PORRETTA  TERME -> PIANORO) ore 20:20
+DESCRIPTION:Stazione/PL: BORGONUOVO (S05152)\nRegime chiusura: FERMATA\nChi
+ usura sbarre stimata: 20:17:00 - 20:21:30\nTreni coinvolti nella chiusura:
+ \n  - REG 17712 (PORRETTA  TERME -> PIANORO)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
+ ccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione BORGONUOVO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17788--20261119-S05152@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T193400Z
 DTEND:20261120T193830Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:34 - 20:38 (primo: REG 17788)
-DESCRIPTION:Stazione/PL: BORGONUOVO (S05152)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 20:34:00 - 20:38:30\nTreni coinv
- olti nella chiusura:\n  - REG 17788 (PIANORO -> PORRETTA  TERME)\n  - REG 
- 17788 (PIANORO -> PORRETTA  TERME)\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+SUMMARY:[FERMATA] REG 17788 (PIANORO -> PORRETTA  TERME) ore 20:37
+DESCRIPTION:Stazione/PL: BORGONUOVO (S05152)\nRegime chiusura: FERMATA\nChi
+ usura sbarre stimata: 20:34:00 - 20:38:30\nTreni coinvolti nella chiusura:
+ \n  - REG 17788 (PIANORO -> PORRETTA  TERME)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
+ ccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione BORGONUOVO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

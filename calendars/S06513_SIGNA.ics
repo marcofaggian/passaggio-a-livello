@@ -9,21 +9,21 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:4dd6dcaae2bfd8d0ed34b2231c2ebc2ec9ba6011e46371fbf6eaac2c5d4b
- 481d
+X-CONTENT-HASH:9f9c2219c6b1688bba8a5d86f0a382058c098c2ad80f891149bed1c78163
+ 4154
 BEGIN:VEVENT
 UID:train-18201--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T053147Z
-DTEND:20261120T053717Z
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T052723Z
+DTEND:20261120T053253Z
 SUMMARY:[TRANSITO VELOCE] REG 18201 (FIRENZE SANTA MARIA NOVELLA -> SIENA) 
- ore 06:36
+ ore 06:31
 DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 06:31:47 - 06:37:17\nTreni coinvolti nella chiusu
+ Chiusura sbarre stimata: 06:27:23 - 06:32:53\nTreni coinvolti nella chiusu
  ra:\n  - REG 18201 (FIRENZE SANTA MARIA NOVELLA -> SIENA) [Transito]\nRita
  rdo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Transito stimato senza fermata (58% tratta FIRENZE RIFREDI -> LAST
+ istica: Transito stimato senza fermata (31% tratta FIRENZE RIFREDI -> LAST
  RA A SIGNA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SIGNA
 STATUS:CONFIRMED
@@ -35,8 +35,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18261--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T054445Z
 DTEND:20261120T055015Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:44 - 06:50 (primo: REG 18261)
@@ -56,41 +56,61 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18260--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
+UID:train-18263--20261119-S06513@pl-tracker.local
+DTSTAMP:20261120T171953Z
 SEQUENCE:0
-DTSTART:20261120T060214Z
-DTEND:20261120T061522Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:02 - 07:15 (primo: REG 18260)
-DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: CHIUSURA CONTINUA
-  - 3 TRENI\nChiusura sbarre stimata: 07:02:14 - 07:15:22\nTreni coinvolti 
- nella chiusura:\n  - REG 18260 (LIVORNO CENTRALE -> FIRENZE SANTA MARIA NO
- VELLA) [Transito]\n  - REG 18263 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO C
- ENTRALE)\n  - REG 4011 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE) [
- Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
-  normativa/euristica: Chiusura continua per 3 treni: intervallo utile tra 
- i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTART:20261120T060730Z
+DTEND:20261120T061200Z
+SUMMARY:[FERMATA] REG 18263 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRAL
+ E) ore 07:11
+DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 07:07:30 - 07:12:00\nTreni coinvolti nella chiusura:\n  -
+  REG 18263 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE)\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
+ revisione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione SIGNA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18271--20261119-S06513@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T062027Z
+DTEND:20261120T062557Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:20 - 07:25 (primo: REG 18271)
+DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 07:20:27 - 07:25:57\nTreni coinvolti 
+ nella chiusura:\n  - REG 18271 (FIRENZE SANTA MARIA NOVELLA -> EMPOLI) [Tr
+ ansito]\n  - REG 18271 (FIRENZE SANTA MARIA NOVELLA -> EMPOLI) [Transito]\
+ nRitardo massimo rilevato: -2 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
+ i (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SIGNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4013--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T063628Z
-DTEND:20261120T064158Z
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T063623Z
+DTEND:20261120T064153Z
 SUMMARY:[TRANSITO VELOCE] REG 4013 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO 
  CENTRALE) ore 07:40 (+4 min)
 DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 07:36:28 - 07:41:58\nTreni coinvolti nella chiusu
+ Chiusura sbarre stimata: 07:36:23 - 07:41:53\nTreni coinvolti nella chiusu
  ra:\n  - REG 4013 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE) (+4m) 
  [Transito]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 78%\nNot
- a normativa/euristica: Transito stimato senza fermata (58% tratta FIRENZE 
+ a normativa/euristica: Transito stimato senza fermata (57% tratta FIRENZE 
  RIFREDI -> LASTRA A SIGNA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SIGNA
 STATUS:CONFIRMED
@@ -101,31 +121,32 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4014--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T070626Z
-DTEND:20261120T071156Z
-SUMMARY:[TRANSITO VELOCE] REG 4014 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA
- ) ore 08:10
-DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 08:06:26 - 08:11:56\nTreni coinvolti nella chiusu
- ra:\n  - REG 4014 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA) [Transito]\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Transito stimato senza fermata (37% tratta EMPOLI -> LASTRA A SIG
- NA\; pedale annuncio fisso Vmax)
+UID:train-18264--20261119-S06513@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T064530Z
+DTEND:20261120T065030Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:45 - 07:50 (primo: REG 18264) (+5 
+ min)
+DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 07:45:30 - 07:50:30\nTreni coinvolti 
+ nella chiusura:\n  - REG 18264 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVEL
+ LA) (+5m)\n  - REG 18264 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVELLA) (+
+ 5m)\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 99%\nNota norma
+ tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
+ aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SIGNA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18425--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T072430Z
 DTEND:20261120T072900Z
 SUMMARY:[FERMATA] REG 18425 (BORGO VAL DI TARO -> FIRENZE SANTA MARIA NOVEL
@@ -144,111 +165,87 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18214--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
+UID:train-18270--20261119-S06513@pl-tracker.local
+DTSTAMP:20261120T171953Z
 SEQUENCE:0
-DTSTART:20261120T082221Z
-DTEND:20261120T082751Z
-SUMMARY:[TRANSITO VELOCE] REG 18214 (SIENA -> FIRENZE SANTA MARIA NOVELLA) 
- ore 09:26
-DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 09:22:21 - 09:27:51\nTreni coinvolti nella chiusu
- ra:\n  - REG 18214 (SIENA -> FIRENZE SANTA MARIA NOVELLA) [Transito]\nRita
- rdo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Transito stimato senza fermata (60% tratta EMPOLI -> MONTELUPO CAP
- RAIA\; pedale annuncio fisso Vmax)
+DTSTART:20261120T074330Z
+DTEND:20261120T074900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:43 - 08:49 (primo: REG 18270) (+1 
+ min)
+DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 08:43:30 - 08:49:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 18270 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA) (
+ +1m)\n  - REG 18270 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA) (+1m)\nRitar
+ do massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euris
+ tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
+ inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SIGNA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:-1
-X-PL-CONFIDENCE:0.78
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18272--20261119-S06513@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T080330Z
+DTEND:20261120T080830Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:03 - 09:08 (primo: REG 18272) (+5 
+ min)
+DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 09:03:30 - 09:08:30\nTreni coinvolti 
+ nella chiusura:\n  - REG 18272 (LIVORNO CENTRALE -> FIRENZE SANTA MARIA NO
+ VELLA) (+5m)\n  - REG 18272 (LIVORNO CENTRALE -> FIRENZE SANTA MARIA NOVEL
+ LA) (+5m)\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 99%\nNota
+  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
+ i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SIGNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18214--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T083049Z
-DTEND:20261120T084902Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 09:30 - 09:49 (primo: REG 18214)
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T083046Z
+DTEND:20261120T083740Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:30 - 09:37 (primo: REG 18214)
 DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: CHIUSURA CONTINUA
-  - 5 TRENI\nChiusura sbarre stimata: 09:30:49 - 09:49:02\nTreni coinvolti 
+  - 2 TRENI\nChiusura sbarre stimata: 09:30:46 - 09:37:40\nTreni coinvolti 
  nella chiusura:\n  - REG 18214 (SIENA -> FIRENZE SANTA MARIA NOVELLA) [Tra
  nsito]\n  - REG 4019 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE) [Tr
- ansito]\n  - REG 18278 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA) [Transito
- ]\n  - REG 18285 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE) [Transito]
- \n  - REG 18285 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE) [Transito]\
- nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Chiusura continua per 5 treni: intervallo utile tra i passaggi
-  (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
+ passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SIGNA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18285--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T085230Z
-DTEND:20261120T085700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:52 - 09:57 (primo: REG 18285)
-DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 09:52:30 - 09:57:00\nTreni coinvolti 
- nella chiusura:\n  - REG 18285 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRA
- LE)\n  - REG 18285 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE)\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristi
- ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
- feriore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione SIGNA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4026--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T100249Z
-DTEND:20261120T101243Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:02 - 11:12 (primo: REG 4026)
-DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 11:02:49 - 11:12:43\nTreni coinvolti 
- nella chiusura:\n  - REG 4026 (LIVORNO CENTRALE -> FIRENZE SANTA MARIA NOV
- ELLA) [Transito]\n  - REG 4023 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CEN
- TRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 7
- 8%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo ut
- ile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale 
- (120s)
-LOCATION:Passaggio a Livello / Stazione SIGNA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18209--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
+DTSTAMP:20261120T171953Z
 SEQUENCE:1
-DTSTART:20261120T101913Z
-DTEND:20261120T102443Z
-SUMMARY:[TRANSITO VELOCE] REG 18209 (FIRENZE SANTA MARIA NOVELLA -> SIENA) 
- ore 11:23
+DTSTART:20261120T084329Z
+DTEND:20261120T084859Z
+SUMMARY:[TRANSITO VELOCE] REG 18285 (FIRENZE SANTA MARIA NOVELLA -> PISA CE
+ NTRALE) ore 09:47
 DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 11:19:13 - 11:24:43\nTreni coinvolti nella chiusu
- ra:\n  - REG 18209 (FIRENZE SANTA MARIA NOVELLA -> SIENA) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (57% tratta FIRENZE RIFREDI -> MONTE
- LUPO CAPRAIA\; pedale annuncio fisso Vmax)
+ Chiusura sbarre stimata: 09:43:29 - 09:48:59\nTreni coinvolti nella chiusu
+ ra:\n  - REG 18285 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (68% tratta FIRENZE RIFREDI 
+ -> LE PIAGGE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SIGNA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -258,9 +255,75 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18367--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
+UID:train-18285--20261119-S06513@pl-tracker.local
+DTSTAMP:20261120T171953Z
 SEQUENCE:1
+DTSTART:20261120T085230Z
+DTEND:20261120T085700Z
+SUMMARY:[FERMATA] REG 18285 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE) 
+ ore 09:56
+DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 09:52:30 - 09:57:00\nTreni coinvolti nella chiusura:\n  -
+  REG 18285 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
+ isione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione SIGNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18361--20261119-S06513@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T090830Z
+DTEND:20261120T091400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:08 - 10:14 (primo: REG 18361) (+1 
+ min)
+DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 10:08:30 - 10:14:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 18361 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) 
+ (+1m)\n  - REG 18361 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) (+1m)\nRit
+ ardo massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/eur
+ istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SIGNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18209--20261119-S06513@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T102903Z
+DTEND:20261120T104032Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:29 - 11:40 (primo: REG 18209)
+DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 11:29:03 - 11:40:32\nTreni coinvolti 
+ nella chiusura:\n  - REG 18209 (FIRENZE SANTA MARIA NOVELLA -> SIENA) [Tra
+ nsito]\n  - REG 4027 (FIRENZE SANTA MARIA NOVELLA -> GROSSETO) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
+  (28s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SIGNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18367--20261119-S06513@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T110730Z
 DTEND:20261120T111200Z
 SUMMARY:[FERMATA] REG 18367 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTR
@@ -280,18 +343,18 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18211--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T111913Z
-DTEND:20261120T112443Z
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T112903Z
+DTEND:20261120T113433Z
 SUMMARY:[TRANSITO VELOCE] REG 18211 (FIRENZE SANTA MARIA NOVELLA -> SIENA) 
- ore 12:23
+ ore 12:33
 DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 12:19:13 - 12:24:43\nTreni coinvolti nella chiusu
+ Chiusura sbarre stimata: 12:29:03 - 12:34:33\nTreni coinvolti nella chiusu
  ra:\n  - REG 18211 (FIRENZE SANTA MARIA NOVELLA -> SIENA) [Transito]\nRita
  rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (57% tratta FIRENZE RIFREDI -> MONTE
- LUPO CAPRAIA\; pedale annuncio fisso Vmax)
+ stica: Transito stimato senza fermata (37% tratta MONTELUPO CAPRAIA -> EMP
+ OLI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SIGNA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -301,19 +364,64 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4037--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
+UID:train-18290--20261119-S06513@pl-tracker.local
+DTSTAMP:20261120T171953Z
 SEQUENCE:0
-DTSTART:20261120T140713Z
-DTEND:20261120T141243Z
-SUMMARY:[TRANSITO VELOCE] REG 4037 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO 
- CENTRALE) ore 15:11
+DTSTART:20261120T114705Z
+DTEND:20261120T115235Z
+SUMMARY:[TRANSITO VELOCE] REG 18290 (PISA CENTRALE -> FIRENZE SANTA MARIA N
+ OVELLA) ore 12:51
 DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 15:07:13 - 15:12:43\nTreni coinvolti nella chiusu
- ra:\n  - REG 4037 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE) [Trans
- ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
- ativa/euristica: Transito stimato senza fermata (52% tratta FIRENZE SANTA 
- MARIA NOVELLA -> EMPOLI\; pedale annuncio fisso Vmax)
+ Chiusura sbarre stimata: 12:47:05 - 12:52:35\nTreni coinvolti nella chiusu
+ ra:\n  - REG 18290 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVELLA) [Transit
+ o]\nRitardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (59% tratta EMPOLI -> MONTE
+ LUPO CAPRAIA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione SIGNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18290--20261119-S06513@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T115930Z
+DTEND:20261120T120500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:59 - 13:05 (primo: REG 18290) (+1 
+ min)
+DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 12:59:30 - 13:05:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 18290 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVEL
+ LA) (+1m)\n  - REG 18290 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVELLA) (+
+ 1m)\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota norma
+ tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
+ aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SIGNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18303--20261119-S06513@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T144329Z
+DTEND:20261120T144859Z
+SUMMARY:[TRANSITO VELOCE] REG 18303 (FIRENZE SANTA MARIA NOVELLA -> PISA CE
+ NTRALE) ore 15:47
+DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: TRANSITO VELOCE\n
+ Chiusura sbarre stimata: 15:43:29 - 15:48:59\nTreni coinvolti nella chiusu
+ ra:\n  - REG 18303 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (68% tratta FIRENZE RIFREDI 
+ -> LE PIAGGE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SIGNA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -324,15 +432,261 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18303--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T144332Z
-DTEND:20261120T144902Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:43 - 15:49 (primo: REG 18303)
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T145230Z
+DTEND:20261120T145700Z
+SUMMARY:[FERMATA] REG 18303 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE) 
+ ore 15:56
+DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 15:52:30 - 15:57:00\nTreni coinvolti nella chiusura:\n  -
+  REG 18303 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
+ isione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione SIGNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18221--20261119-S06513@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T152903Z
+DTEND:20261120T153433Z
+SUMMARY:[TRANSITO VELOCE] REG 18221 (FIRENZE SANTA MARIA NOVELLA -> SIENA) 
+ ore 16:33
+DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: TRANSITO VELOCE\n
+ Chiusura sbarre stimata: 16:29:03 - 16:34:33\nTreni coinvolti nella chiusu
+ ra:\n  - REG 18221 (FIRENZE SANTA MARIA NOVELLA -> SIENA) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Transito stimato senza fermata (37% tratta MONTELUPO CAPRAIA -> EMP
+ OLI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione SIGNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18415--20261119-S06513@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T154230Z
+DTEND:20261120T155047Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:42 - 16:50 (primo: REG 18415)
 DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 15:43:32 - 15:49:02\nTreni coinvolti 
- nella chiusura:\n  - REG 18303 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRA
- LE) [Transito]\n  - REG 18303 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRAL
+  - 2 TRENI\nChiusura sbarre stimata: 16:42:30 - 16:50:47\nTreni coinvolti 
+ nella chiusura:\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA 
+ NOVELLA)\n  - REG 18308 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Chiusura continua per 2 treni: intervallo utile tra i passa
+ ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SIGNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18308--20261119-S06513@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T155830Z
+DTEND:20261120T160300Z
+SUMMARY:[FERMATA] REG 18308 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA) ore 1
+ 7:02
+DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 16:58:30 - 17:03:00\nTreni coinvolti nella chiusura:\n  -
+  REG 18308 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA)\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
+ e da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione SIGNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18223--20261119-S06513@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T162903Z
+DTEND:20261120T163433Z
+SUMMARY:[TRANSITO VELOCE] REG 18223 (FIRENZE SANTA MARIA NOVELLA -> SIENA) 
+ ore 17:33
+DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: TRANSITO VELOCE\n
+ Chiusura sbarre stimata: 17:29:03 - 17:34:33\nTreni coinvolti nella chiusu
+ ra:\n  - REG 18223 (FIRENZE SANTA MARIA NOVELLA -> SIENA) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Transito stimato senza fermata (37% tratta MONTELUPO CAPRAIA -> EMP
+ OLI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione SIGNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18311--20261119-S06513@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T170930Z
+DTEND:20261120T171500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:09 - 18:15 (primo: REG 18311) (+2 
+ min)
+DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 18:09:30 - 18:15:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 18311 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRA
+ LE) (+2m)\n  - REG 18311 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE) (+
+ 2m)\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota norma
+ tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
+ aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SIGNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18225--20261119-S06513@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T171815Z
+DTEND:20261120T172345Z
+SUMMARY:[TRANSITO VELOCE] REG 18225 (FIRENZE SANTA MARIA NOVELLA -> SIENA) 
+ ore 18:22
+DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: TRANSITO VELOCE\n
+ Chiusura sbarre stimata: 18:18:15 - 18:23:45\nTreni coinvolti nella chiusu
+ ra:\n  - REG 18225 (FIRENZE SANTA MARIA NOVELLA -> SIENA) [Transito]\nRita
+ rdo massimo rilevato: -2 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Transito stimato senza fermata (54% tratta FIRENZE RIFREDI -> MONT
+ ELUPO CAPRAIA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione SIGNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18225--20261119-S06513@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T172703Z
+DTEND:20261120T173233Z
+SUMMARY:[TRANSITO VELOCE] REG 18225 (FIRENZE SANTA MARIA NOVELLA -> SIENA) 
+ ore 18:31
+DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: TRANSITO VELOCE\n
+ Chiusura sbarre stimata: 18:27:03 - 18:32:33\nTreni coinvolti nella chiusu
+ ra:\n  - REG 18225 (FIRENZE SANTA MARIA NOVELLA -> SIENA) [Transito]\nRita
+ rdo massimo rilevato: -2 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Transito stimato senza fermata (37% tratta MONTELUPO CAPRAIA -> EM
+ POLI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione SIGNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18401--20261119-S06513@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T174630Z
+DTEND:20261120T175100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:46 - 18:51 (primo: REG 18401) (+4 
+ min)
+DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 18:46:30 - 18:51:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 18401 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA 
+ NOVELLA) (+4m)\n  - REG 18401 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA N
+ OVELLA) (+4m)\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 90%\n
+ Nota normativa/euristica: Chiusura continua per 2 treni: intervallo utile 
+ tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
+ s)
+LOCATION:Passaggio a Livello / Stazione SIGNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18314--20261119-S06513@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T175517Z
+DTEND:20261120T180047Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:55 - 19:00 (primo: REG 18314) (+10
+  min)
+DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 18:55:17 - 19:00:47\nTreni coinvolti 
+ nella chiusura:\n  - REG 18314 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVEL
+ LA) (+10m) [Transito]\n  - REG 18314 (PISA CENTRALE -> FIRENZE SANTA MARIA
+  NOVELLA) (+10m) [Transito]\nRitardo massimo rilevato: 10 min\nAffidabilit
+ à stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SIGNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:10
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18314--20261119-S06513@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T180830Z
+DTEND:20261120T181300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:08 - 19:13 (primo: REG 18314) (+10
+  min)
+DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 19:08:30 - 19:13:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 18314 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVEL
+ LA) (+10m)\n  - REG 18314 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVELLA) (
+ +10m)\nRitardo massimo rilevato: 10 min\nAffidabilità stima: 90%\nNota no
+ rmativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i p
+ assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SIGNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:10
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18323--20261119-S06513@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T193502Z
+DTEND:20261120T194032Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:35 - 20:40 (primo: REG 18323)
+DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 20:35:02 - 20:40:32\nTreni coinvolti 
+ nella chiusura:\n  - REG 18323 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRA
+ LE) [Transito]\n  - REG 18323 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRAL
  E) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\n
  Nota normativa/euristica: Chiusura continua per 2 treni: intervallo utile 
  tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
@@ -346,190 +700,15 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18303--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T145230Z
-DTEND:20261120T145700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:52 - 15:57 (primo: REG 18303)
-DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 15:52:30 - 15:57:00\nTreni coinvolti 
- nella chiusura:\n  - REG 18303 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRA
- LE)\n  - REG 18303 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE)\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristi
- ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
- feriore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione SIGNA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18221--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T151913Z
-DTEND:20261120T152443Z
-SUMMARY:[TRANSITO VELOCE] REG 18221 (FIRENZE SANTA MARIA NOVELLA -> SIENA) 
- ore 16:23
-DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 16:19:13 - 16:24:43\nTreni coinvolti nella chiusu
- ra:\n  - REG 18221 (FIRENZE SANTA MARIA NOVELLA -> SIENA) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (57% tratta FIRENZE RIFREDI -> MONTE
- LUPO CAPRAIA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione SIGNA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18415--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T154230Z
-DTEND:20261120T154700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:42 - 16:47 (primo: REG 18415)
-DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 16:42:30 - 16:47:00\nTreni coinvolti 
- nella chiusura:\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA 
- NOVELLA)\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELLA
- )\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normati
- va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
- gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione SIGNA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18308--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T155830Z
-DTEND:20261120T160300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:58 - 17:03 (primo: REG 18308)
-DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 16:58:30 - 17:03:00\nTreni coinvolti 
- nella chiusura:\n  - REG 18308 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA)\n
-   - REG 18308 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA)\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione SIGNA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4045--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T160713Z
-DTEND:20261120T161243Z
-SUMMARY:[TRANSITO VELOCE] REG 4045 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO 
- CENTRALE) ore 17:11
-DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 17:07:13 - 17:12:43\nTreni coinvolti nella chiusu
- ra:\n  - REG 4045 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE) [Trans
- ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
- ativa/euristica: Transito stimato senza fermata (52% tratta FIRENZE SANTA 
- MARIA NOVELLA -> EMPOLI\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione SIGNA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18223--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T161913Z
-DTEND:20261120T162443Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:19 - 17:24 (primo: REG 18223)
-DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 17:19:13 - 17:24:43\nTreni coinvolti 
- nella chiusura:\n  - REG 18223 (FIRENZE SANTA MARIA NOVELLA -> SIENA) [Tra
- nsito]\n  - REG 18223 (FIRENZE SANTA MARIA NOVELLA -> SIENA) [Transito]\nR
- itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
- 0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione SIGNA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18401--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T174230Z
-DTEND:20261120T174700Z
-SUMMARY:[FERMATA] REG 18401 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVE
- LLA) ore 18:46
-DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: FERMATA\nChiusura
-  sbarre stimata: 18:42:30 - 18:47:00\nTreni coinvolti nella chiusura:\n  -
-  REG 18401 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELLA)\nRitardo ma
- ssimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica:
-  Previsione da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione SIGNA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4051--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T183506Z
-DTEND:20261120T184036Z
-SUMMARY:[TRANSITO VELOCE] REG 4051 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO 
- CENTRALE) ore 19:39
-DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 19:35:06 - 19:40:36\nTreni coinvolti nella chiusu
- ra:\n  - REG 4051 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE) [Trans
- ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
- ativa/euristica: Transito stimato senza fermata (58% tratta FIRENZE RIFRED
- I -> LASTRA A SIGNA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione SIGNA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-18327--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T194332Z
-DTEND:20261120T194902Z
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T194329Z
+DTEND:20261120T194859Z
 SUMMARY:[TRANSITO VELOCE] REG 18327 (FIRENZE SANTA MARIA NOVELLA -> PISA CE
  NTRALE) ore 20:47
 DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 20:43:32 - 20:49:02\nTreni coinvolti nella chiusu
+ Chiusura sbarre stimata: 20:43:29 - 20:48:59\nTreni coinvolti nella chiusu
  ra:\n  - REG 18327 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE) [Transit
  o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
  iva/euristica: Transito stimato senza fermata (68% tratta FIRENZE RIFREDI 
@@ -544,8 +723,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18327--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T195230Z
 DTEND:20261120T195700Z
 SUMMARY:[FERMATA] REG 18327 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE) 
@@ -564,63 +743,45 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18407--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
+UID:train-18331--20261119-S06513@pl-tracker.local
+DTSTAMP:20261120T171953Z
 SEQUENCE:0
-DTSTART:20261120T202830Z
-DTEND:20261120T203300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:28 - 21:33 (primo: REG 18407)
+DTSTART:20261120T202129Z
+DTEND:20261120T204032Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 21:21 - 21:40 (primo: REG 18331)
 DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 21:28:30 - 21:33:00\nTreni coinvolti 
- nella chiusura:\n  - REG 18407 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA 
- NOVELLA)\n  - REG 18407 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELLA
- )\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normati
- va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
- gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+  - 7 TRENI\nChiusura sbarre stimata: 21:21:29 - 21:40:32\nTreni coinvolti 
+ nella chiusura:\n  - REG 18331 (FIRENZE SANTA MARIA NOVELLA -> EMPOLI) [Tr
+ ansito]\n  - REG 18331 (FIRENZE SANTA MARIA NOVELLA -> EMPOLI) [Transito]\
+ n  - REG 18407 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELLA)\n  - RE
+ G 18407 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELLA)\n  - REG 18331
+  (FIRENZE SANTA MARIA NOVELLA -> EMPOLI)\n  - REG 18331 (FIRENZE SANTA MAR
+ IA NOVELLA -> EMPOLI)\n  - REG 18333 (FIRENZE SANTA MARIA NOVELLA -> LIVOR
+ NO CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità st
+ ima: 78%\nNota normativa/euristica: Chiusura continua per 7 treni: interva
+ llo utile tra i passaggi (2s) inferiore alla soglia minima di sgombero str
+ adale (120s)
 LOCATION:Passaggio a Livello / Stazione SIGNA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18333--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T203506Z
-DTEND:20261120T204036Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:35 - 21:40 (primo: REG 18333)
-DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 21:35:06 - 21:40:36\nTreni coinvolti 
- nella chiusura:\n  - REG 18333 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CEN
- TRALE) [Transito]\n  - REG 18333 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO C
- ENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
-  78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
- utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
- e (120s)
-LOCATION:Passaggio a Livello / Stazione SIGNA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18322--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T204521Z
-DTEND:20261120T205051Z
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T204517Z
+DTEND:20261120T205047Z
 SUMMARY:[TRANSITO VELOCE] REG 18322 (PISA CENTRALE -> FIRENZE SANTA MARIA N
  OVELLA) ore 21:49
 DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 21:45:21 - 21:50:51\nTreni coinvolti nella chiusu
+ Chiusura sbarre stimata: 21:45:17 - 21:50:47\nTreni coinvolti nella chiusu
  ra:\n  - REG 18322 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVELLA) [Transit
  o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Transito stimato senza fermata (60% tratta EMPOLI -> MONTEL
+ iva/euristica: Transito stimato senza fermata (59% tratta EMPOLI -> MONTEL
  UPO CAPRAIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SIGNA
 STATUS:CONFIRMED
@@ -632,25 +793,24 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18322--20261119-S06513@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T205830Z
-DTEND:20261120T210819Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:58 - 22:08 (primo: REG 18322)
+DTEND:20261120T210300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:58 - 22:03 (primo: REG 18322)
 DESCRIPTION:Stazione/PL: SIGNA (S06513)\nRegime chiusura: CHIUSURA CONTINUA
-  - 3 TRENI\nChiusura sbarre stimata: 21:58:30 - 22:08:19\nTreni coinvolti 
+  - 2 TRENI\nChiusura sbarre stimata: 21:58:30 - 22:03:00\nTreni coinvolti 
  nella chiusura:\n  - REG 18322 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVEL
- LA)\n  - REG 18322 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVELLA)\n  - REG
-  4062 (LIVORNO CENTRALE -> FIRENZE SANTA MARIA NOVELLA) [Transito]\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) i
- nferiore alla soglia minima di sgombero stradale (120s)
+ LA)\n  - REG 18322 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVELLA)\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SIGNA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:d6e43aec3509ac60011c6c126df61c21a32a0e3bd9ffb6b02c86e999ad28
- 7d19
+X-CONTENT-HASH:9760d829fd056f5745cd91945cc9070844a9225e0d7c8413489375e0203d
+ c1a6
 BEGIN:VEVENT
 UID:train-19341--20261119-S06003@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T054730Z
 DTEND:20261120T055200Z
 SUMMARY:[FERMATA] REG 19341 (LA SPEZIA CENTRALE -> PISA CENTRALE) ore 06:51
@@ -32,9 +32,33 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-19343--20261119-S06003@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T061649Z
+DTEND:20261120T062602Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:16 - 07:26 (primo: REG 19343) (+4 
+ min)
+DESCRIPTION:Stazione/PL: LUNI (S06003)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 3 TRENI\nChiusura sbarre stimata: 07:16:49 - 07:26:02\nTreni coinvolti n
+ ella chiusura:\n  - REG 19343 (LA SPEZIA CENTRALE -> PISA CENTRALE) [Trans
+ ito]\n  - REG 19343 (LA SPEZIA CENTRALE -> PISA CENTRALE) [Transito]\n  - 
+ REG 19330 (PISA CENTRALE -> LA SPEZIA CENTRALE) (+4m) [Transito]\nRitardo 
+ massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LUNI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-19347--20261119-S06003@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T063430Z
 DTEND:20261120T063930Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:34 - 07:39 (primo: REG 19347) (+2 
@@ -56,8 +80,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19332--20261119-S06003@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T065830Z
 DTEND:20261120T070330Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:58 - 08:03 (primo: REG 19332) (+7 
@@ -78,19 +102,19 @@ X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18367--20261119-S06003@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T124925Z
-DTEND:20261120T125455Z
-SUMMARY:[TRANSITO VELOCE] REG 18367 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZ
- IA CENTRALE) ore 13:53
+UID:train-18415--20261119-S06003@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T140036Z
+DTEND:20261120T140606Z
+SUMMARY:[TRANSITO VELOCE] REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA MA
+ RIA NOVELLA) ore 15:04
 DESCRIPTION:Stazione/PL: LUNI (S06003)\nRegime chiusura: TRANSITO VELOCE\nC
- hiusura sbarre stimata: 13:49:25 - 13:54:55\nTreni coinvolti nella chiusur
- a:\n  - REG 18367 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE) [Tra
+ hiusura sbarre stimata: 15:00:36 - 15:06:06\nTreni coinvolti nella chiusur
+ a:\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELLA) [Tra
  nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Transito stimato senza fermata (58% tratta CARRARA AVEN
- ZA -> SARZANA\; pedale annuncio fisso Vmax)
+ rmativa/euristica: Transito stimato senza fermata (61% tratta SARZANA -> C
+ ARRARA AVENZA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LUNI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -101,89 +125,92 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18401--20261119-S06003@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T155936Z
-DTEND:20261120T160506Z
-SUMMARY:[TRANSITO VELOCE] REG 18401 (LA SPEZIA CENTRALE -> FIRENZE SANTA MA
- RIA NOVELLA) ore 17:03
-DESCRIPTION:Stazione/PL: LUNI (S06003)\nRegime chiusura: TRANSITO VELOCE\nC
- hiusura sbarre stimata: 16:59:36 - 17:05:06\nTreni coinvolti nella chiusur
- a:\n  - REG 18401 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELLA) [Tra
- nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Transito stimato senza fermata (61% tratta SARZANA -> C
- ARRARA AVENZA\; pedale annuncio fisso Vmax)
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T160036Z
+DTEND:20261120T160606Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:00 - 17:06 (primo: REG 18401) (+4 
+ min)
+DESCRIPTION:Stazione/PL: LUNI (S06003)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 17:00:36 - 17:06:06\nTreni coinvolti n
+ ella chiusura:\n  - REG 18401 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA N
+ OVELLA) (+4m) [Transito]\n  - REG 18401 (LA SPEZIA CENTRALE -> FIRENZE SAN
+ TA MARIA NOVELLA) (+4m) [Transito]\nRitardo massimo rilevato: 4 min\nAffid
+ abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tre
+ ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
+ gombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LUNI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18446--20261119-S06003@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T162305Z
+DTEND:20261120T162835Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:23 - 17:28 (primo: REG 18446) (+1 
+ min)
+DESCRIPTION:Stazione/PL: LUNI (S06003)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 17:23:05 - 17:28:35\nTreni coinvolti n
+ ella chiusura:\n  - REG 18446 (PISA CENTRALE -> PONTREMOLI) (+1m) [Transit
+ o]\n  - REG 18446 (PISA CENTRALE -> PONTREMOLI) (+1m) [Transito]\nRitardo 
+ massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LUNI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18407--20261119-S06003@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T183312Z
-DTEND:20261120T183842Z
-SUMMARY:[TRANSITO VELOCE] REG 18407 (LA SPEZIA CENTRALE -> FIRENZE SANTA MA
- RIA NOVELLA) ore 19:37
-DESCRIPTION:Stazione/PL: LUNI (S06003)\nRegime chiusura: TRANSITO VELOCE\nC
- hiusura sbarre stimata: 19:33:12 - 19:38:42\nTreni coinvolti nella chiusur
- a:\n  - REG 18407 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELLA) [Tra
- nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Transito stimato senza fermata (61% tratta SARZANA -> C
- ARRARA AVENZA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione LUNI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-19380--20261119-S06003@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T202310Z
-DTEND:20261120T202840Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:23 - 21:28 (primo: REG 19380)
+DTEND:20261120T184055Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 19:33 - 19:40 (primo: REG 18407)
 DESCRIPTION:Stazione/PL: LUNI (S06003)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 21:23:10 - 21:28:40\nTreni coinvolti n
- ella chiusura:\n  - REG 19380 (PISA CENTRALE -> LA SPEZIA CENTRALE) [Trans
- ito]\n  - REG 19380 (PISA CENTRALE -> LA SPEZIA CENTRALE) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
-  inferiore alla soglia minima di sgombero stradale (120s)
+ - 3 TRENI\nChiusura sbarre stimata: 19:33:12 - 19:40:55\nTreni coinvolti n
+ ella chiusura:\n  - REG 18407 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA N
+ OVELLA) [Transito]\n  - REG 18407 (LA SPEZIA CENTRALE -> FIRENZE SANTA MAR
+ IA NOVELLA) [Transito]\n  - REG 2296 (PISA CENTRALE -> MILANO CENTRALE) [T
+ ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i
+  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LUNI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19382--20261119-S06003@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T213025Z
 DTEND:20261120T213851Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 22:30 - 22:38 (primo: REG 19382)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:30 - 22:38 (primo: REG 19382)
 DESCRIPTION:Stazione/PL: LUNI (S06003)\nRegime chiusura: CHIUSURA CONTINUA 
- - 3 TRENI\nChiusura sbarre stimata: 22:30:25 - 22:38:51\nTreni coinvolti n
+ - 2 TRENI\nChiusura sbarre stimata: 22:30:25 - 22:38:51\nTreni coinvolti n
  ella chiusura:\n  - REG 19382 (PISA CENTRALE -> LA SPEZIA CENTRALE) [Trans
- ito]\n  - REG 19382 (PISA CENTRALE -> LA SPEZIA CENTRALE) [Transito]\n  - 
- IC 685 (MILANO CENTRALE -> LIVORNO CENTRALE) [Transito]\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
- ra continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+ ito]\n  - IC 685 (MILANO CENTRALE -> LIVORNO CENTRALE) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LUNI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG

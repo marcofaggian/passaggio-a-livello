@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:0a026a5e4549a62b7c8bb4a3a1b44f20360ee2aad18b319cc279c64a4830
- 92ec
+X-CONTENT-HASH:d3e72ce1e40c38b7343558e8b42dd89c9c51ecf7b03f099ad16565d6938e
+ 008d
 BEGIN:VEVENT
 UID:train-2154--20261119-S01915@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T050930Z
 DTEND:20261120T051400Z
 SUMMARY:[FERMATA] REG 2154 (BOZZOLO -> MILANO CENTRALE) ore 06:13
@@ -32,37 +32,42 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2156--20261119-S01915@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T054730Z
-DTEND:20261120T055200Z
-SUMMARY:[FERMATA] REG 2156 (BOZZOLO -> MILANO CENTRALE) ore 06:51
-DESCRIPTION:Stazione/PL: CREMONA (S01915)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 06:47:30 - 06:52:00\nTreni coinvolti nella chiusura:\n 
-  - REG 2156 (BOZZOLO -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia
-  oraria regolare
+UID:train-2156--20261119-S01915@pl-tracker.local-arr
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T054630Z
+DTEND:20261120T055430Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:46 - 06:54 (primo: REG 2156) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: CREMONA (S01915)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 4 TRENI\nChiusura sbarre stimata: 06:46:30 - 06:54:30\nTreni coinvolt
+ i nella chiusura:\n  - REG 2156 (BOZZOLO -> MILANO CENTRALE) (+1m) [Arrivo
+ ]\n  - REG 2156 (BOZZOLO -> MILANO CENTRALE) (+1m) [Arrivo]\n  - REG 2156 
+ (BOZZOLO -> MILANO CENTRALE) (+1m) [Partenza]\n  - REG 2156 (BOZZOLO -> MI
+ LANO CENTRALE) (+1m) [Partenza]\nRitardo massimo rilevato: 1 min\nAffidabi
+ lità stima: 99%\nNota normativa/euristica: Chiusura continua per 4 treni:
+  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CREMONA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2153--20261119-S01915@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T060559Z
-DTEND:20261120T061129Z
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T060603Z
+DTEND:20261120T061133Z
 SUMMARY:[TRANSITO VELOCE] REG 2153 (MILANO CENTRALE -> BOZZOLO) ore 07:10
 DESCRIPTION:Stazione/PL: CREMONA (S01915)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 07:05:59 - 07:11:29\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 07:06:03 - 07:11:33\nTreni coinvolti nella chiu
  sura:\n  - REG 2153 (MILANO CENTRALE -> BOZZOLO) [Transito]\nRitardo massi
  mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
- ansito stimato senza fermata (84% tratta CODOGNO -> PONTE D'ADDA\; pedale 
+ ansito stimato senza fermata (85% tratta CODOGNO -> PONTE D'ADDA\; pedale 
  annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CREMONA
 STATUS:CONFIRMED
@@ -74,8 +79,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2153--20261119-S01915@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T062430Z
 DTEND:20261120T062900Z
 SUMMARY:[FERMATA] REG 2153 (MILANO CENTRALE -> BOZZOLO) ore 07:28
@@ -94,31 +99,29 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10817--20261119-S01915@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T080134Z
-DTEND:20261120T080704Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:01 - 09:07 (primo: REG 10817) (+2 
- min)
-DESCRIPTION:Stazione/PL: CREMONA (S01915)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 09:01:34 - 09:07:04\nTreni coinvolt
- i nella chiusura:\n  - REG 10817 (BRESCIA -> PARMA) (+2m) [Transito]\n  - 
- REG 10817 (BRESCIA -> PARMA) (+2m) [Transito]\nRitardo massimo rilevato: 2
-  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
- a per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T080130Z
+DTEND:20261120T080700Z
+SUMMARY:[TRANSITO VELOCE] REG 10817 (BRESCIA -> PARMA) ore 09:05 (+2 min)
+DESCRIPTION:Stazione/PL: CREMONA (S01915)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 09:01:30 - 09:07:00\nTreni coinvolti nella chiu
+ sura:\n  - REG 10817 (BRESCIA -> PARMA) (+2m) [Transito]\nRitardo massimo 
+ rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
+ ito stimato senza fermata (15% tratta PIADENA -> S.GIOVANNI IN CROCE\; ped
+ ale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CREMONA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2162--20261119-S01915@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T082430Z
 DTEND:20261120T082900Z
 SUMMARY:[FERMATA] REG 2162 (BOZZOLO -> MILANO CENTRALE) ore 09:28
@@ -137,74 +140,72 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10822--20261119-S01915@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T090756Z
 DTEND:20261120T091326Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:07 - 10:13 (primo: REG 10822)
-DESCRIPTION:Stazione/PL: CREMONA (S01915)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 10:07:56 - 10:13:26\nTreni coinvolt
- i nella chiusura:\n  - REG 10822 (PARMA -> BRESCIA) [Transito]\n  - REG 10
- 822 (PARMA -> BRESCIA) [Transito]\nRitardo massimo rilevato: 0 min\nAffida
- bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tren
- i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
- ombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 10822 (PARMA -> BRESCIA) ore 10:12
+DESCRIPTION:Stazione/PL: CREMONA (S01915)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 10:07:56 - 10:13:26\nTreni coinvolti nella chiu
+ sura:\n  - REG 10822 (PARMA -> BRESCIA) [Transito]\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito st
+ imato senza fermata (58% tratta PARMA -> TORRILE S.POLO\; pedale annuncio 
+ fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CREMONA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-11008--20261119-S01915@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T092030Z
 DTEND:20261120T092500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:20 - 10:25 (primo: REG 11008)
-DESCRIPTION:Stazione/PL: CREMONA (S01915)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 10:20:30 - 10:25:00\nTreni coinvolt
- i nella chiusura:\n  - REG 11008 (PARMA -> CREMONA)\n  - REG 11008 (PARMA 
- -> CREMONA)\nRitardo massimo rilevato: -1 min\nAffidabilità stima: 90%\nN
- ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
+SUMMARY:[FERMATA] REG 11008 (PARMA -> CREMONA) ore 10:24
+DESCRIPTION:Stazione/PL: CREMONA (S01915)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 10:20:30 - 10:25:00\nTreni coinvolti nella chiusura:\n 
+  - REG 11008 (PARMA -> CREMONA)\nRitardo massimo rilevato: -1 min\nAffidab
+ ilità stima: 90%\nNota normativa/euristica: Previsione con anticipo (-1 m
+ in)
 LOCATION:Passaggio a Livello / Stazione CREMONA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2161--20261119-S01915@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T100559Z
-DTEND:20261120T101326Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:05 - 11:13 (primo: REG 2161)
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T100603Z
+DTEND:20261120T101518Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:06 - 11:15 (primo: REG 2161)
 DESCRIPTION:Stazione/PL: CREMONA (S01915)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 11:05:59 - 11:13:26\nTreni coinvolt
+ UA - 3 TRENI\nChiusura sbarre stimata: 11:06:03 - 11:15:18\nTreni coinvolt
  i nella chiusura:\n  - REG 2161 (MILANO CENTRALE -> BOZZOLO) [Transito]\n 
-  - REG 10824 (PARMA -> BRESCIA) [Transito]\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
- er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
+  - REG 10824 (PARMA -> BRESCIA) [Transito]\n  - REG 10824 (PARMA -> BRESCI
+ A) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\n
+ Nota normativa/euristica: Chiusura continua per 3 treni: intervallo utile 
+ tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
+ s)
 LOCATION:Passaggio a Livello / Stazione CREMONA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2161--20261119-S01915@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T102430Z
 DTEND:20261120T102900Z
 SUMMARY:[FERMATA] REG 2161 (MILANO CENTRALE -> BOZZOLO) ore 11:28
@@ -223,8 +224,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10601--20261119-S01915@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T111530Z
 DTEND:20261120T112000Z
 SUMMARY:[FERMATA] REG 10601 (MILANO PORTA GARIBALDI -> CREMONA) ore 12:19
@@ -243,8 +244,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2174--20261119-S01915@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T142430Z
 DTEND:20261120T142900Z
 SUMMARY:[FERMATA] REG 2174 (BOZZOLO -> MILANO CENTRALE) ore 15:28
@@ -263,8 +264,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10834--20261119-S01915@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T150756Z
 DTEND:20261120T151326Z
 SUMMARY:[TRANSITO VELOCE] REG 10834 (PARMA -> BRESCIA) ore 16:12
@@ -284,36 +285,167 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2173--20261119-S01915@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T160559Z
-DTEND:20261120T161129Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:05 - 17:11 (primo: REG 2173)
-DESCRIPTION:Stazione/PL: CREMONA (S01915)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 17:05:59 - 17:11:29\nTreni coinvolt
- i nella chiusura:\n  - REG 2173 (MILANO CENTRALE -> BOZZOLO) [Transito]\n 
-  - REG 2173 (MILANO CENTRALE -> BOZZOLO) [Transito]\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T160603Z
+DTEND:20261120T161133Z
+SUMMARY:[TRANSITO VELOCE] REG 2173 (MILANO CENTRALE -> BOZZOLO) ore 17:10
+DESCRIPTION:Stazione/PL: CREMONA (S01915)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 17:06:03 - 17:11:33\nTreni coinvolti nella chiu
+ sura:\n  - REG 2173 (MILANO CENTRALE -> BOZZOLO) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
+ ansito stimato senza fermata (85% tratta CODOGNO -> PONTE D'ADDA\; pedale 
+ annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CREMONA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2173--20261119-S01915@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T162430Z
 DTEND:20261120T162900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:24 - 17:29 (primo: REG 2173)
+SUMMARY:[FERMATA] REG 2173 (MILANO CENTRALE -> BOZZOLO) ore 17:28
+DESCRIPTION:Stazione/PL: CREMONA (S01915)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 17:24:30 - 17:29:00\nTreni coinvolti nella chiusura:\n 
+  - REG 2173 (MILANO CENTRALE -> BOZZOLO)\nRitardo massimo rilevato: 0 min\
+ nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia
+  oraria regolare
+LOCATION:Passaggio a Livello / Stazione CREMONA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2175--20261119-S01915@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T170103Z
+DTEND:20261120T170633Z
+SUMMARY:[TRANSITO VELOCE] REG 2175 (MILANO CENTRALE -> BOZZOLO) ore 18:05
+DESCRIPTION:Stazione/PL: CREMONA (S01915)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 18:01:03 - 18:06:33\nTreni coinvolti nella chiu
+ sura:\n  - REG 2175 (MILANO CENTRALE -> BOZZOLO) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
+ ansito stimato senza fermata (85% tratta CODOGNO -> PONTE D'ADDA\; pedale 
+ annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione CREMONA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10605--20261119-S01915@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T171830Z
+DTEND:20261120T172400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:18 - 18:24 (primo: REG 10605)
 DESCRIPTION:Stazione/PL: CREMONA (S01915)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 17:24:30 - 17:29:00\nTreni coinvolt
- i nella chiusura:\n  - REG 2173 (MILANO CENTRALE -> BOZZOLO)\n  - REG 2173
+ UA - 2 TRENI\nChiusura sbarre stimata: 18:18:30 - 18:24:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 10605 (MILANO PORTA GARIBALDI -> CREMONA)\n  - 
+ REG 2175 (MILANO CENTRALE -> BOZZOLO)\nRitardo massimo rilevato: 0 min\nAf
+ fidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 
+ treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
+ i sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CREMONA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2177--20261119-S01915@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T181003Z
+DTEND:20261120T181533Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:10 - 19:15 (primo: REG 2177) (+4 m
+ in)
+DESCRIPTION:Stazione/PL: CREMONA (S01915)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 19:10:03 - 19:15:33\nTreni coinvolt
+ i nella chiusura:\n  - REG 2177 (MILANO CENTRALE -> BOZZOLO) (+4m) [Transi
+ to]\n  - REG 2177 (MILANO CENTRALE -> BOZZOLO) (+4m) [Transito]\nRitardo m
+ assimo rilevato: 4 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CREMONA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2182--20261119-S01915@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T182430Z
+DTEND:20261120T183300Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 19:24 - 19:33 (primo: REG 2182) (+4 m
+ in)
+DESCRIPTION:Stazione/PL: CREMONA (S01915)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 3 TRENI\nChiusura sbarre stimata: 19:24:30 - 19:33:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 2182 (BOZZOLO -> MILANO CENTRALE)\n  - REG 2177
+  (MILANO CENTRALE -> BOZZOLO) (+4m)\n  - REG 2177 (MILANO CENTRALE -> BOZZ
+ OLO) (+4m)\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 90%\nNot
+ a normativa/euristica: Chiusura continua per 3 treni: intervallo utile tra
+  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CREMONA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2181--20261119-S01915@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T200603Z
+DTEND:20261120T201326Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 21:06 - 21:13 (primo: REG 2181)
+DESCRIPTION:Stazione/PL: CREMONA (S01915)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 4 TRENI\nChiusura sbarre stimata: 21:06:03 - 21:13:26\nTreni coinvolt
+ i nella chiusura:\n  - REG 2181 (MILANO CENTRALE -> BOZZOLO) [Transito]\n 
+  - REG 2181 (MILANO CENTRALE -> BOZZOLO) [Transito]\n  - REG 10844 (PARMA 
+ -> PIADENA) [Transito]\n  - REG 10844 (PARMA -> PIADENA) [Transito]\nRitar
+ do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) 
+ inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CREMONA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2181--20261119-S01915@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T202430Z
+DTEND:20261120T202900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:24 - 21:29 (primo: REG 2181)
+DESCRIPTION:Stazione/PL: CREMONA (S01915)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 21:24:30 - 21:29:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 2181 (MILANO CENTRALE -> BOZZOLO)\n  - REG 2181
   (MILANO CENTRALE -> BOZZOLO)\nRitardo massimo rilevato: 0 min\nAffidabili
  tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
  ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
@@ -322,114 +454,6 @@ LOCATION:Passaggio a Livello / Stazione CREMONA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2175--20261119-S01915@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T170059Z
-DTEND:20261120T170629Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:00 - 18:06 (primo: REG 2175)
-DESCRIPTION:Stazione/PL: CREMONA (S01915)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 18:00:59 - 18:06:29\nTreni coinvolt
- i nella chiusura:\n  - REG 2175 (MILANO CENTRALE -> BOZZOLO) [Transito]\n 
-  - REG 2175 (MILANO CENTRALE -> BOZZOLO) [Transito]\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CREMONA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-10605--20261119-S01915@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T171830Z
-DTEND:20261120T172400Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 18:18 - 18:24 (primo: REG 10605)
-DESCRIPTION:Stazione/PL: CREMONA (S01915)\nRegime chiusura: CHIUSURA CONTIN
- UA - 3 TRENI\nChiusura sbarre stimata: 18:18:30 - 18:24:00\nTreni coinvolt
- i nella chiusura:\n  - REG 10605 (MILANO PORTA GARIBALDI -> CREMONA)\n  - 
- REG 2175 (MILANO CENTRALE -> BOZZOLO)\n  - REG 2175 (MILANO CENTRALE -> BO
- ZZOLO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota no
- rmativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i p
- assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CREMONA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2182--20261119-S01915@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T182430Z
-DTEND:20261120T182900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:24 - 19:29 (primo: REG 2182)
-DESCRIPTION:Stazione/PL: CREMONA (S01915)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 19:24:30 - 19:29:00\nTreni coinvolt
- i nella chiusura:\n  - REG 2182 (BOZZOLO -> MILANO CENTRALE)\n  - REG 2182
-  (BOZZOLO -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabili
- tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
- ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
- ro stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CREMONA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2181--20261119-S01915@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T200559Z
-DTEND:20261120T201326Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:05 - 21:13 (primo: REG 2181)
-DESCRIPTION:Stazione/PL: CREMONA (S01915)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 21:05:59 - 21:13:26\nTreni coinvolt
- i nella chiusura:\n  - REG 2181 (MILANO CENTRALE -> BOZZOLO) [Transito]\n 
-  - REG 10844 (PARMA -> PIADENA) [Transito]\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
- er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CREMONA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2181--20261119-S01915@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T202430Z
-DTEND:20261120T202900Z
-SUMMARY:[FERMATA] REG 2181 (MILANO CENTRALE -> BOZZOLO) ore 21:28
-DESCRIPTION:Stazione/PL: CREMONA (S01915)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 21:24:30 - 21:29:00\nTreni coinvolti nella chiusura:\n 
-  - REG 2181 (MILANO CENTRALE -> BOZZOLO)\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia
-  oraria regolare
-LOCATION:Passaggio a Livello / Stazione CREMONA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

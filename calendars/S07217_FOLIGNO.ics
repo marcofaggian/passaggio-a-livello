@@ -9,12 +9,33 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:9cb290044fe7abcdd4998e347eaab925dabf5b9265cacbf874021e7cfcb5
- 6553
+X-CONTENT-HASH:acdc118369412d86da482ce1248ff264d909158e4d13422b47249b31191e
+ 0966
 BEGIN:VEVENT
 UID:train-4151--20261119-S07217@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T034529Z
+DTEND:20261120T035059Z
+SUMMARY:[TRANSITO VELOCE] REG 4151 (ANCONA -> ROMA TERMINI) ore 04:49
+DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 04:45:29 - 04:50:59\nTreni coinvolti nella chiu
+ sura:\n  - REG 4151 (ANCONA -> ROMA TERMINI) [Transito]\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transi
+ to stimato senza fermata (53% tratta FOSSATO DI VICO GUBBIO -> GUALDO TADI
+ NO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione FOLIGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4151--20261119-S07217@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T041630Z
 DTEND:20261120T042100Z
 SUMMARY:[FERMATA] REG 4151 (ANCONA -> ROMA TERMINI) ore 05:20
@@ -33,33 +54,120 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-580--20261119-S07217@pl-tracker.local-arr
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T044745Z
 DTEND:20261120T045800Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 05:47 - 05:58 (primo: IC 580) (+22 mi
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 05:47 - 05:58 (primo: IC 580) (+22 mi
  n)
 DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
- UA - 5 TRENI\nChiusura sbarre stimata: 05:47:45 - 05:58:00\nTreni coinvolt
+ UA - 4 TRENI\nChiusura sbarre stimata: 05:47:45 - 05:58:00\nTreni coinvolt
  i nella chiusura:\n  - IC 580 (TERNI -> MILANO CENTRALE) (+22m) [Arrivo]\n
-   - IC 580 (TERNI -> MILANO CENTRALE) (+22m) [Arrivo]\n  - REG 4565 (FOLIG
- NO -> ROMA TERMINI)\n  - IC 580 (TERNI -> MILANO CENTRALE) (+22m) [Partenz
- a]\n  - IC 580 (TERNI -> MILANO CENTRALE) (+22m) [Partenza]\nRitardo massi
- mo rilevato: 22 min\nAffidabilità stima: 90%\nNota normativa/euristica: C
- hiusura continua per 5 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
+   - REG 4565 (FOLIGNO -> ROMA TERMINI) (+1m)\n  - REG 4565 (FOLIGNO -> ROM
+ A TERMINI) (+1m)\n  - IC 580 (TERNI -> MILANO CENTRALE) (+22m) [Partenza]\
+ nRitardo massimo rilevato: 22 min\nAffidabilità stima: 99%\nNota normativ
+ a/euristica: Chiusura continua per 4 treni: intervallo utile tra i passagg
+ i (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FOLIGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:22
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
+UID:train-7453--20261119-S07217@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T062555Z
+DTEND:20261120T063125Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:25 - 07:31 (primo: REG 7453)
+DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 07:25:55 - 07:31:25\nTreni coinvolt
+ i nella chiusura:\n  - REG 7453 (TERONTOLA CORTONA -> FOLIGNO) [Transito]\
+ n  - REG 7453 (TERONTOLA CORTONA -> FOLIGNO) [Transito]\nRitardo massimo r
+ ilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
+ ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FOLIGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-7453--20261119-S07217@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T065400Z
+DTEND:20261120T065830Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:54 - 07:58 (primo: REG 7453)
+DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 07:54:00 - 07:58:30\nTreni coinvolt
+ i nella chiusura:\n  - REG 7453 (TERONTOLA CORTONA -> FOLIGNO)\n  - REG 74
+ 53 (TERONTOLA CORTONA -> FOLIGNO)\nRitardo massimo rilevato: -1 min\nAffid
+ abilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 tre
+ ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
+ gombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FOLIGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4720--20261119-S07217@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T070946Z
+DTEND:20261120T071516Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:09 - 08:15 (primo: REG 4720)
+DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 08:09:46 - 08:15:16\nTreni coinvolt
+ i nella chiusura:\n  - REG 4720 (CHIUSI-CHIANCIANO TERME -> FOLIGNO) [Tran
+ sito]\n  - REG 4720 (CHIUSI-CHIANCIANO TERME -> FOLIGNO) [Transito]\nRitar
+ do massimo rilevato: -2 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
+  inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FOLIGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4720--20261119-S07217@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T074430Z
+DTEND:20261120T074900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:44 - 08:49 (primo: REG 4720)
+DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 08:44:30 - 08:49:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 4720 (CHIUSI-CHIANCIANO TERME -> FOLIGNO)\n  - 
+ REG 4720 (CHIUSI-CHIANCIANO TERME -> FOLIGNO)\nRitardo massimo rilevato: -
+ 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura contin
+ ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+  minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FOLIGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-534--20261119-S07217@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T082915Z
 DTEND:20261120T083400Z
 SUMMARY:[FERMATA] IC 534 (ROMA TERMINI -> ANCONA) ore 09:33
@@ -78,254 +186,337 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4724--20261119-S07217@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T085830Z
 DTEND:20261120T090300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:58 - 10:03 (primo: REG 4724)
-DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 09:58:30 - 10:03:00\nTreni coinvolt
- i nella chiusura:\n  - REG 4724 (ROMA TERMINI -> PERUGIA)\n  - REG 4724 (R
- OMA TERMINI -> PERUGIA)\nRitardo massimo rilevato: -7 min\nAffidabilità s
- tima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interv
- allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
- radale (120s)
+SUMMARY:[FERMATA] REG 4724 (ROMA TERMINI -> PERUGIA) ore 10:02
+DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 09:58:30 - 10:03:00\nTreni coinvolti nella chiusura:\n 
+  - REG 4724 (ROMA TERMINI -> PERUGIA)\nRitardo massimo rilevato: -7 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione con anticipo
+  (-7 min)
 LOCATION:Passaggio a Livello / Stazione FOLIGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:-7
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4073--20261119-S07217@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T092806Z
-DTEND:20261120T093336Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:28 - 10:33 (primo: REG 4073)
-DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 10:28:06 - 10:33:36\nTreni coinvolt
- i nella chiusura:\n  - REG 4073 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO) [
- Transito]\n  - REG 4073 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO) [Transito
- ]\nRitardo massimo rilevato: -10 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T092804Z
+DTEND:20261120T093334Z
+SUMMARY:[TRANSITO VELOCE] REG 4073 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO)
+  ore 10:32
+DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 10:28:04 - 10:33:34\nTreni coinvolti nella chiu
+ sura:\n  - REG 4073 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO) [Transito]\nR
+ itardo massimo rilevato: -10 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Transito stimato senza fermata (86% tratta PERUGIA -> PERUGIA 
+ PONTE S.GIOVANNI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione FOLIGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-10
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4073--20261119-S07217@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T100130Z
 DTEND:20261120T100600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:01 - 11:06 (primo: REG 4073)
-DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 11:01:30 - 11:06:00\nTreni coinvolt
- i nella chiusura:\n  - REG 4073 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO)\n
-   - REG 4073 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO)\nRitardo massimo ril
- evato: -10 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 4073 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO) ore 11:
+ 05
+DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 11:01:30 - 11:06:00\nTreni coinvolti nella chiusura:\n 
+  - REG 4073 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO)\nRitardo massimo rile
+ vato: -10 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one con anticipo (-10 min)
 LOCATION:Passaggio a Livello / Stazione FOLIGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:-10
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-19816--20261119-S07217@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T131630Z
-DTEND:20261120T132100Z
-SUMMARY:[FERMATA] REG 19816 (FOLIGNO -> ANCONA) ore 14:20
-DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 14:16:30 - 14:21:00\nTreni coinvolti nella chiusura:\n 
-  - REG 19816 (FOLIGNO -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria 
- regolare
+UID:train-4512--20261119-S07217@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T125757Z
+DTEND:20261120T130327Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:57 - 14:03 (primo: REG 4512) (+4 m
+ in)
+DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 13:57:57 - 14:03:27\nTreni coinvolt
+ i nella chiusura:\n  - REG 4512 (ROMA TERMINI -> FOLIGNO) (+4m) [Transito]
+ \n  - REG 4512 (ROMA TERMINI -> FOLIGNO) (+4m) [Transito]\nRitardo massimo
+  rilevato: 4 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
+ sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FOLIGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4512--20261119-S07217@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T131000Z
+DTEND:20261120T131500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:10 - 14:15 (primo: REG 4512) (+4 m
+ in)
+DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 14:10:00 - 14:15:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 4512 (ROMA TERMINI -> FOLIGNO) (+4m)\n  - REG 4
+ 512 (ROMA TERMINI -> FOLIGNO) (+4m)\nRitardo massimo rilevato: 4 min\nAffi
+ dabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 tr
+ eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FOLIGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19816--20261119-S07217@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T131730Z
+DTEND:20261120T132200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:17 - 14:22 (primo: REG 19816) (+1 
+ min)
+DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 14:17:30 - 14:22:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 19816 (FOLIGNO -> ANCONA) (+1m)\n  - REG 19816 
+ (FOLIGNO -> ANCONA) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabilità 
+ stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: inter
+ vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
+ tradale (120s)
+LOCATION:Passaggio a Livello / Stazione FOLIGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-6736--20261119-S07217@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T143130Z
-DTEND:20261120T143600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:31 - 15:36 (primo: REG 6736)
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T143430Z
+DTEND:20261120T143900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:34 - 15:39 (primo: REG 6736) (+3 m
+ in)
 DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 15:31:30 - 15:36:00\nTreni coinvolt
- i nella chiusura:\n  - REG 6736 (FOLIGNO -> TERONTOLA CORTONA)\n  - REG 67
- 36 (FOLIGNO -> TERONTOLA CORTONA)\nRitardo massimo rilevato: 0 min\nAffida
- bilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tren
- i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
- ombero stradale (120s)
+ UA - 2 TRENI\nChiusura sbarre stimata: 15:34:30 - 15:39:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 6736 (FOLIGNO -> TERONTOLA CORTONA) (+3m)\n  - 
+ REG 6736 (FOLIGNO -> TERONTOLA CORTONA) (+3m)\nRitardo massimo rilevato: 3
+  min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continu
+ a per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
+ minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FOLIGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-93646--20261119-S07217@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T155230Z
+DTEND:20261120T155700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:52 - 16:57 (primo: REG 93646) (+1 
+ min)
+DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 16:52:30 - 16:57:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 93646 (FOLIGNO -> FIRENZE SANTA MARIA NOVELLA) 
+ (+1m)\n  - REG 93646 (FOLIGNO -> FIRENZE SANTA MARIA NOVELLA) (+1m)\nRitar
+ do massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euris
+ tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
+ inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FOLIGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4156--20261119-S07217@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T164145Z
-DTEND:20261120T164715Z
-SUMMARY:[TRANSITO VELOCE] REG 4156 (ROMA TERMINI -> ANCONA) ore 17:46
-DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 17:41:45 - 17:47:15\nTreni coinvolti nella chiu
- sura:\n  - REG 4156 (ROMA TERMINI -> ANCONA) [Transito]\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transi
- to stimato senza fermata (73% tratta SPOLETO -> TREVI\; pedale annuncio fi
- sso Vmax)
-LOCATION:Passaggio a Livello / Stazione FOLIGNO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-541--20261119-S07217@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T165215Z
-DTEND:20261120T165800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:52 - 17:58 (primo: IC 541)
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T164147Z
+DTEND:20261120T164723Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:41 - 17:47 (primo: REG 4156) (+3 m
+ in)
 DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 17:52:15 - 17:58:00\nTreni coinvolt
- i nella chiusura:\n  - IC 541 (ANCONA -> ROMA TERMINI)\n  - REG 4156 (ROMA
-  TERMINI -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
-  90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
- utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
- e (120s)
-LOCATION:Passaggio a Livello / Stazione FOLIGNO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-19811--20261119-S07217@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T172830Z
-DTEND:20261120T174015Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 18:28 - 18:40 (primo: REG 19811)
-DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
- UA - 4 TRENI\nChiusura sbarre stimata: 18:28:30 - 18:40:15\nTreni coinvolt
- i nella chiusura:\n  - REG 19811 (ANCONA -> FOLIGNO)\n  - REG 19811 (ANCON
- A -> FOLIGNO)\n  - REG 4514 (ROMA TERMINI -> FOLIGNO) [Transito]\n  - REG 
- 4514 (ROMA TERMINI -> FOLIGNO) [Transito]\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
- r 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
- ma di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione FOLIGNO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4081--20261119-S07217@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T174315Z
-DTEND:20261120T174845Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:43 - 18:48 (primo: REG 4081)
-DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 18:43:15 - 18:48:45\nTreni coinvolt
- i nella chiusura:\n  - REG 4081 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO) [
- Transito]\n  - REG 4081 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO) [Transito
- ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
- va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
- gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione FOLIGNO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4514--20261119-S07217@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T175230Z
-DTEND:20261120T175700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:52 - 18:57 (primo: REG 4514)
-DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 18:52:30 - 18:57:00\nTreni coinvolt
- i nella chiusura:\n  - REG 4514 (ROMA TERMINI -> FOLIGNO)\n  - REG 4514 (R
- OMA TERMINI -> FOLIGNO)\nRitardo massimo rilevato: 0 min\nAffidabilità st
- ima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
+ UA - 3 TRENI\nChiusura sbarre stimata: 17:41:47 - 17:47:23\nTreni coinvolt
+ i nella chiusura:\n  - REG 4156 (ROMA TERMINI -> ANCONA) [Transito]\n  - R
+ EG 19811 (ANCONA -> FOLIGNO) (+3m) [Transito]\n  - REG 19811 (ANCONA -> FO
+ LIGNO) (+3m) [Transito]\nRitardo massimo rilevato: 3 min\nAffidabilità st
+ ima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: interva
  llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
  adale (120s)
 LOCATION:Passaggio a Livello / Stazione FOLIGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-541--20261119-S07217@pl-tracker.local-arr
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T165015Z
+DTEND:20261120T165930Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 17:50 - 17:59 (primo: IC 541) (+2 min
+ )
+DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 7 TRENI\nChiusura sbarre stimata: 17:50:15 - 17:59:30\nTreni coinvolt
+ i nella chiusura:\n  - IC 541 (ANCONA -> ROMA TERMINI) (+1m) [Arrivo]\n  -
+  IC 541 (ANCONA -> ROMA TERMINI) (+1m) [Arrivo]\n  - REG 4156 (ROMA TERMIN
+ I -> ANCONA)\n  - REG 4735 (PERUGIA -> ROMA TERMINI) (+2m) [Transito]\n  -
+  REG 4735 (PERUGIA -> ROMA TERMINI) (+2m) [Transito]\n  - IC 541 (ANCONA -
+ > ROMA TERMINI) (+1m) [Partenza]\n  - IC 541 (ANCONA -> ROMA TERMINI) (+1m
+ ) [Partenza]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nN
+ ota normativa/euristica: Chiusura continua per 7 treni: intervallo utile t
+ ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
+ )
+LOCATION:Passaggio a Livello / Stazione FOLIGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4735--20261119-S07217@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T172830Z
+DTEND:20261120T174017Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 18:28 - 18:40 (primo: REG 4735) (+3 m
+ in)
+DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 5 TRENI\nChiusura sbarre stimata: 18:28:30 - 18:40:17\nTreni coinvolt
+ i nella chiusura:\n  - REG 4735 (PERUGIA -> ROMA TERMINI) (+2m)\n  - REG 4
+ 735 (PERUGIA -> ROMA TERMINI) (+2m)\n  - REG 19811 (ANCONA -> FOLIGNO) (+3
+ m)\n  - REG 19811 (ANCONA -> FOLIGNO) (+3m)\n  - REG 4514 (ROMA TERMINI ->
+  FOLIGNO) [Transito]\nRitardo massimo rilevato: 3 min\nAffidabilità stima
+ : 78%\nNota normativa/euristica: Chiusura continua per 5 treni: intervallo
+  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
+ le (120s)
+LOCATION:Passaggio a Livello / Stazione FOLIGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4081--20261119-S07217@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T182130Z
-DTEND:20261120T182600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:21 - 19:26 (primo: REG 4081)
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T174712Z
+DTEND:20261120T175700Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 18:47 - 18:57 (primo: REG 4081) (+4 m
+ in)
 DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 19:21:30 - 19:26:00\nTreni coinvolt
- i nella chiusura:\n  - REG 4081 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO)\n
-   - REG 4081 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO)\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura
-  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
+ UA - 3 TRENI\nChiusura sbarre stimata: 18:47:12 - 18:57:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 4081 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO) (
+ +4m) [Transito]\n  - REG 4081 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO) (+4
+ m) [Transito]\n  - REG 4514 (ROMA TERMINI -> FOLIGNO)\nRitardo massimo ril
+ evato: 4 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
+  continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla
   soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FOLIGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4081--20261119-S07217@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T182530Z
+DTEND:20261120T183000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:25 - 19:30 (primo: REG 4081) (+4 m
+ in)
+DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 19:25:30 - 19:30:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 4081 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO) (
+ +4m)\n  - REG 4081 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO) (+4m)\nRitardo
+  massimo rilevato: 4 min\nAffidabilità stima: 90%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FOLIGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4158--20261119-S07217@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T190647Z
+DTEND:20261120T191217Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:06 - 20:12 (primo: REG 4158)
+DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 20:06:47 - 20:12:17\nTreni coinvolt
+ i nella chiusura:\n  - REG 4158 (ROMA TERMINI -> ANCONA) [Transito]\n  - R
+ EG 4158 (ROMA TERMINI -> ANCONA) [Transito]\nRitardo massimo rilevato: 0 m
+ in\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua 
+ per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
+ nima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FOLIGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4160--20261119-S07217@pl-tracker.local
-DTSTAMP:20261120T083617Z
+UID:train-4158--20261119-S07217@pl-tracker.local
+DTSTAMP:20261120T171953Z
 SEQUENCE:0
-DTSTART:20261120T220030Z
-DTEND:20261120T220500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:00 - 23:05 (primo: REG 4160)
+DTSTART:20261120T191830Z
+DTEND:20261120T192300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:18 - 20:23 (primo: REG 4158)
 DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 23:00:30 - 23:05:00\nTreni coinvolt
- i nella chiusura:\n  - REG 4160 (ROMA TERMINI -> ANCONA)\n  - REG 4160 (RO
+ UA - 2 TRENI\nChiusura sbarre stimata: 20:18:30 - 20:23:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 4158 (ROMA TERMINI -> ANCONA)\n  - REG 4158 (RO
  MA TERMINI -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilità stim
  a: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervall
  o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
@@ -339,36 +530,85 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-599--20261119-S07217@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T222208Z
-DTEND:20261120T222638Z
-SUMMARY:[TRANSITO VELOCE] IC 599 (MILANO CENTRALE -> TERNI) ore 23:25
-DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 23:22:08 - 23:26:38\nTreni coinvolti nella chiu
- sura:\n  - IC 599 (MILANO CENTRALE -> TERNI) [Transito]\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transi
- to stimato senza fermata (86% tratta PERUGIA -> PERUGIA PONTE S.GIOVANNI\;
-  pedale annuncio fisso Vmax)
+UID:train-4734--20261119-S07217@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T194047Z
+DTEND:20261120T194642Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:40 - 20:46 (primo: REG 4734) (+4 m
+ in)
+DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 4 TRENI\nChiusura sbarre stimata: 20:40:47 - 20:46:42\nTreni coinvolt
+ i nella chiusura:\n  - REG 4734 (ROMA TERMINI -> PERUGIA) [Transito]\n  - 
+ REG 4734 (ROMA TERMINI -> PERUGIA) [Transito]\n  - REG 4085 (FIRENZE SANTA
+  MARIA NOVELLA -> FOLIGNO) (+4m) [Transito]\n  - REG 4085 (FIRENZE SANTA M
+ ARIA NOVELLA -> FOLIGNO) (+4m) [Transito]\nRitardo massimo rilevato: 4 min
+ \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
+ r 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FOLIGNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-599--20261119-S07217@pl-tracker.local
-DTSTAMP:20261120T083617Z
+UID:train-4734--20261119-S07217@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T195130Z
+DTEND:20261120T195600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:51 - 20:56 (primo: REG 4734)
+DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 20:51:30 - 20:56:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 4734 (ROMA TERMINI -> PERUGIA)\n  - REG 4734 (R
+ OMA TERMINI -> PERUGIA)\nRitardo massimo rilevato: 0 min\nAffidabilità st
+ ima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
+ llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
+ adale (120s)
+LOCATION:Passaggio a Livello / Stazione FOLIGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4085--20261119-S07217@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T201330Z
+DTEND:20261120T201800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:13 - 21:18 (primo: REG 4085) (+4 m
+ in)
+DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 21:13:30 - 21:18:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 4085 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO) (
+ +4m)\n  - REG 4085 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO) (+4m)\nRitardo
+  massimo rilevato: 4 min\nAffidabilità stima: 90%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FOLIGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4160--20261119-S07217@pl-tracker.local
+DTSTAMP:20261120T171953Z
 SEQUENCE:1
-DTSTART:20261120T224615Z
-DTEND:20261120T225100Z
-SUMMARY:[FERMATA] IC 599 (MILANO CENTRALE -> TERNI) ore 23:50
+DTSTART:20261120T220030Z
+DTEND:20261120T220500Z
+SUMMARY:[FERMATA] REG 4160 (ROMA TERMINI -> ANCONA) ore 23:04
 DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 23:46:15 - 23:51:00\nTreni coinvolti nella chiusura:\n 
-  - IC 599 (MILANO CENTRALE -> TERNI)\nRitardo massimo rilevato: 0 min\nAff
+ ra sbarre stimata: 23:00:30 - 23:05:00\nTreni coinvolti nella chiusura:\n 
+  - REG 4160 (ROMA TERMINI -> ANCONA)\nRitardo massimo rilevato: 0 min\nAff
  idabilità stima: 90%\nNota normativa/euristica: Previsione da traccia ora
  ria regolare
 LOCATION:Passaggio a Livello / Stazione FOLIGNO
@@ -376,6 +616,52 @@ STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-599--20261119-S07217@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T222806Z
+DTEND:20261120T223236Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:28 - 23:32 (primo: IC 599) (+6 min
+ )
+DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 23:28:06 - 23:32:36\nTreni coinvolt
+ i nella chiusura:\n  - IC 599 (MILANO CENTRALE -> TERNI) (+6m) [Transito]\
+ n  - IC 599 (MILANO CENTRALE -> TERNI) (+6m) [Transito]\nRitardo massimo r
+ ilevato: 6 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
+ ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
+ la soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FOLIGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-599--20261119-S07217@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T225215Z
+DTEND:20261120T225700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:52 - 23:57 (primo: IC 599) (+6 min
+ )
+DESCRIPTION:Stazione/PL: FOLIGNO (S07217)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 23:52:15 - 23:57:00\nTreni coinvolt
+ i nella chiusura:\n  - IC 599 (MILANO CENTRALE -> TERNI) (+6m)\n  - IC 599
+  (MILANO CENTRALE -> TERNI) (+6m)\nRitardo massimo rilevato: 6 min\nAffida
+ bilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tren
+ i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
+ ombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FOLIGNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT

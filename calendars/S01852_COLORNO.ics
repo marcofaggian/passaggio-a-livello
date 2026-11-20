@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:30e3fa837905004f3a2903dbec68181c65e28e9aaaab67213d11ecea0440
- 33a2
+X-CONTENT-HASH:2571816d96b40a2fc1766087594bbead52e5d198598825c57f8f89b104c1
+ 84c6
 BEGIN:VEVENT
 UID:train-2154--20261119-S01852@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T051405Z
 DTEND:20261120T051935Z
 SUMMARY:[TRANSITO VELOCE] REG 2154 (BOZZOLO -> MILANO CENTRALE) ore 06:18
@@ -34,37 +34,39 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2156--20261119-S01852@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T055142Z
-DTEND:20261120T055712Z
-SUMMARY:[TRANSITO VELOCE] REG 2156 (BOZZOLO -> MILANO CENTRALE) ore 06:55
-DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 06:51:42 - 06:57:12\nTreni coinvolti nella chiu
- sura:\n  - REG 2156 (BOZZOLO -> MILANO CENTRALE) [Transito]\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
- ansito stimato senza fermata (38% tratta CREMONA -> PONTE D'ADDA\; pedale 
- annuncio fisso Vmax)
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T055337Z
+DTEND:20261120T055907Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:53 - 06:59 (primo: REG 2156) (+2 m
+ in)
+DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 06:53:37 - 06:59:07\nTreni coinvolt
+ i nella chiusura:\n  - REG 2156 (BOZZOLO -> MILANO CENTRALE) (+2m) [Transi
+ to]\n  - REG 2156 (BOZZOLO -> MILANO CENTRALE) (+2m) [Transito]\nRitardo m
+ assimo rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione COLORNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2153--20261119-S01852@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T063932Z
-DTEND:20261120T064502Z
-SUMMARY:[TRANSITO VELOCE] REG 2153 (MILANO CENTRALE -> BOZZOLO) ore 07:43
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T063956Z
+DTEND:20261120T064526Z
+SUMMARY:[TRANSITO VELOCE] REG 2153 (MILANO CENTRALE -> BOZZOLO) ore 07:44
 DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 07:39:32 - 07:45:02\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 07:39:56 - 07:45:26\nTreni coinvolti nella chiu
  sura:\n  - REG 2153 (MILANO CENTRALE -> BOZZOLO) [Transito]\nRitardo massi
  mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
- ansito stimato senza fermata (75% tratta CREMONA -> PIADENA\; pedale annun
+ ansito stimato senza fermata (77% tratta CREMONA -> PIADENA\; pedale annun
  cio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione COLORNO
 STATUS:CONFIRMED
@@ -76,103 +78,58 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10817--20261119-S01852@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T080458Z
-DTEND:20261120T081028Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:04 - 09:10 (primo: REG 10817) (+2 
- min)
-DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 09:04:58 - 09:10:28\nTreni coinvolt
- i nella chiusura:\n  - REG 10817 (BRESCIA -> PARMA) (+2m) [Transito]\n  - 
- REG 10817 (BRESCIA -> PARMA) (+2m) [Transito]\nRitardo massimo rilevato: 2
-  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
- a per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T080501Z
+DTEND:20261120T081031Z
+SUMMARY:[TRANSITO VELOCE] REG 10817 (BRESCIA -> PARMA) ore 09:09 (+2 min)
+DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 09:05:01 - 09:10:31\nTreni coinvolti nella chiu
+ sura:\n  - REG 10817 (BRESCIA -> PARMA) (+2m) [Transito]\nRitardo massimo 
+ rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
+ ito stimato senza fermata (85% tratta PIADENA -> S.GIOVANNI IN CROCE\; ped
+ ale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione COLORNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2162--20261119-S01852@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T082927Z
 DTEND:20261120T083530Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 09:29 - 09:35 (primo: REG 2162) (+9 m
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:29 - 09:35 (primo: REG 2162) (+9 m
  in)
 DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: CHIUSURA CONTIN
- UA - 3 TRENI\nChiusura sbarre stimata: 09:29:27 - 09:35:30\nTreni coinvolt
+ UA - 2 TRENI\nChiusura sbarre stimata: 09:29:27 - 09:35:30\nTreni coinvolt
  i nella chiusura:\n  - REG 2162 (BOZZOLO -> MILANO CENTRALE) [Transito]\n 
-  - REG 10817 (BRESCIA -> PARMA) (+9m)\n  - REG 10817 (BRESCIA -> PARMA) (+
- 9m)\nRitardo massimo rilevato: 9 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 3 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+  - REG 10817 (BRESCIA -> PARMA) (+9m)\nRitardo massimo rilevato: 9 min\nAf
+ fidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 
+ treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
+ i sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione COLORNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:9
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10822--20261119-S01852@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T091123Z
 DTEND:20261120T091653Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:11 - 10:16 (primo: REG 10822)
-DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 10:11:23 - 10:16:53\nTreni coinvolt
- i nella chiusura:\n  - REG 10822 (PARMA -> BRESCIA) [Transito]\n  - REG 10
- 822 (PARMA -> BRESCIA) [Transito]\nRitardo massimo rilevato: 0 min\nAffida
- bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tren
- i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
- ombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione COLORNO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-10822--20261119-S01852@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T092430Z
-DTEND:20261120T092900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:24 - 10:29 (primo: REG 10822)
-DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 10:24:30 - 10:29:00\nTreni coinvolt
- i nella chiusura:\n  - REG 10822 (PARMA -> BRESCIA)\n  - REG 10822 (PARMA 
- -> BRESCIA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNo
- ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
- a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione COLORNO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-10824--20261119-S01852@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T101123Z
-DTEND:20261120T101653Z
-SUMMARY:[TRANSITO VELOCE] REG 10824 (PARMA -> BRESCIA) ore 11:15
+SUMMARY:[TRANSITO VELOCE] REG 10822 (PARMA -> BRESCIA) ore 10:15
 DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 11:11:23 - 11:16:53\nTreni coinvolti nella chiu
- sura:\n  - REG 10824 (PARMA -> BRESCIA) [Transito]\nRitardo massimo rileva
+ \nChiusura sbarre stimata: 10:11:23 - 10:16:53\nTreni coinvolti nella chiu
+ sura:\n  - REG 10822 (PARMA -> BRESCIA) [Transito]\nRitardo massimo rileva
  to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito st
  imato senza fermata (96% tratta PARMA -> TORRILE S.POLO\; pedale annuncio 
  fisso Vmax)
@@ -185,15 +142,15 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-10824--20261119-S01852@pl-tracker.local
-DTSTAMP:20261120T083617Z
+UID:train-10822--20261119-S01852@pl-tracker.local
+DTSTAMP:20261120T171953Z
 SEQUENCE:1
-DTSTART:20261120T102430Z
-DTEND:20261120T102900Z
-SUMMARY:[FERMATA] REG 10824 (PARMA -> BRESCIA) ore 11:28
+DTSTART:20261120T092430Z
+DTEND:20261120T092900Z
+SUMMARY:[FERMATA] REG 10822 (PARMA -> BRESCIA) ore 10:28
 DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 11:24:30 - 11:29:00\nTreni coinvolti nella chiusura:\n 
-  - REG 10824 (PARMA -> BRESCIA)\nRitardo massimo rilevato: 0 min\nAffidabi
+ ra sbarre stimata: 10:24:30 - 10:29:00\nTreni coinvolti nella chiusura:\n 
+  - REG 10822 (PARMA -> BRESCIA)\nRitardo massimo rilevato: 0 min\nAffidabi
  lità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria r
  egolare
 LOCATION:Passaggio a Livello / Stazione COLORNO
@@ -205,17 +162,85 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-10824--20261119-S01852@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T101350Z
+DTEND:20261120T101920Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:13 - 11:19 (primo: REG 10824)
+DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 11:13:50 - 11:19:20\nTreni coinvolt
+ i nella chiusura:\n  - REG 10824 (PARMA -> BRESCIA) [Transito]\n  - REG 10
+ 824 (PARMA -> BRESCIA) [Transito]\nRitardo massimo rilevato: -2 min\nAffid
+ abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tre
+ ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
+ gombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione COLORNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10824--20261119-S01852@pl-tracker.local-arr
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T102300Z
+DTEND:20261120T102730Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:23 - 11:27 (primo: REG 10824) (+7 
+ min)
+DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 11:23:00 - 11:27:30\nTreni coinvolt
+ i nella chiusura:\n  - REG 10824 (PARMA -> BRESCIA) (+7m) [Arrivo]\n  - RE
+ G 10824 (PARMA -> BRESCIA) (+7m) [Arrivo]\nRitardo massimo rilevato: 7 min
+ \nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua pe
+ r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione COLORNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10824--20261119-S01852@pl-tracker.local-dep
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T103200Z
+DTEND:20261120T103630Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:32 - 11:36 (primo: REG 10824) (+7 
+ min)
+DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 11:32:00 - 11:36:30\nTreni coinvolt
+ i nella chiusura:\n  - REG 10824 (PARMA -> BRESCIA) (+7m) [Partenza]\n  - 
+ REG 10824 (PARMA -> BRESCIA) (+7m) [Partenza]\nRitardo massimo rilevato: 7
+  min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continu
+ a per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
+ minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione COLORNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-2161--20261119-S01852@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T103932Z
-DTEND:20261120T104502Z
-SUMMARY:[TRANSITO VELOCE] REG 2161 (MILANO CENTRALE -> BOZZOLO) ore 11:43
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T103956Z
+DTEND:20261120T104526Z
+SUMMARY:[TRANSITO VELOCE] REG 2161 (MILANO CENTRALE -> BOZZOLO) ore 11:44
 DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 11:39:32 - 11:45:02\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 11:39:56 - 11:45:26\nTreni coinvolti nella chiu
  sura:\n  - REG 2161 (MILANO CENTRALE -> BOZZOLO) [Transito]\nRitardo massi
  mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
- ansito stimato senza fermata (75% tratta CREMONA -> PIADENA\; pedale annun
+ ansito stimato senza fermata (77% tratta CREMONA -> PIADENA\; pedale annun
  cio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione COLORNO
 STATUS:CONFIRMED
@@ -227,8 +252,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2174--20261119-S01852@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T142927Z
 DTEND:20261120T143457Z
 SUMMARY:[TRANSITO VELOCE] REG 2174 (BOZZOLO -> MILANO CENTRALE) ore 15:33
@@ -248,8 +273,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10834--20261119-S01852@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T151123Z
 DTEND:20261120T151653Z
 SUMMARY:[TRANSITO VELOCE] REG 10834 (PARMA -> BRESCIA) ore 16:15
@@ -269,8 +294,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10834--20261119-S01852@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T152430Z
 DTEND:20261120T152900Z
 SUMMARY:[FERMATA] REG 10834 (PARMA -> BRESCIA) ore 16:28
@@ -289,62 +314,104 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2173--20261119-S01852@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T163932Z
-DTEND:20261120T164502Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:39 - 17:45 (primo: REG 2173)
-DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 17:39:32 - 17:45:02\nTreni coinvolt
- i nella chiusura:\n  - REG 2173 (MILANO CENTRALE -> BOZZOLO) [Transito]\n 
-  - REG 2173 (MILANO CENTRALE -> BOZZOLO) [Transito]\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T163956Z
+DTEND:20261120T164526Z
+SUMMARY:[TRANSITO VELOCE] REG 2173 (MILANO CENTRALE -> BOZZOLO) ore 17:44
+DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 17:39:56 - 17:45:26\nTreni coinvolti nella chiu
+ sura:\n  - REG 2173 (MILANO CENTRALE -> BOZZOLO) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
+ ansito stimato senza fermata (77% tratta CREMONA -> PIADENA\; pedale annun
+ cio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione COLORNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2175--20261119-S01852@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T173432Z
-DTEND:20261120T174002Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:34 - 18:40 (primo: REG 2175)
-DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 18:34:32 - 18:40:02\nTreni coinvolt
- i nella chiusura:\n  - REG 2175 (MILANO CENTRALE -> BOZZOLO) [Transito]\n 
-  - REG 2175 (MILANO CENTRALE -> BOZZOLO) [Transito]\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T173456Z
+DTEND:20261120T174026Z
+SUMMARY:[TRANSITO VELOCE] REG 2175 (MILANO CENTRALE -> BOZZOLO) ore 18:39
+DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 18:34:56 - 18:40:26\nTreni coinvolti nella chiu
+ sura:\n  - REG 2175 (MILANO CENTRALE -> BOZZOLO) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
+ ansito stimato senza fermata (77% tratta CREMONA -> PIADENA\; pedale annun
+ cio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione COLORNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2182--20261119-S01852@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T182927Z
 DTEND:20261120T183457Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:29 - 19:34 (primo: REG 2182)
+SUMMARY:[TRANSITO VELOCE] REG 2182 (BOZZOLO -> MILANO CENTRALE) ore 19:33
+DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 19:29:27 - 19:34:57\nTreni coinvolti nella chiu
+ sura:\n  - REG 2182 (BOZZOLO -> MILANO CENTRALE) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
+ ansito stimato senza fermata (38% tratta CREMONA -> PONTE D'ADDA\; pedale 
+ annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione COLORNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2177--20261119-S01852@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T184356Z
+DTEND:20261120T184926Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:43 - 19:49 (primo: REG 2177) (+4 m
+ in)
 DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 19:29:27 - 19:34:57\nTreni coinvolt
- i nella chiusura:\n  - REG 2182 (BOZZOLO -> MILANO CENTRALE) [Transito]\n 
-  - REG 2182 (BOZZOLO -> MILANO CENTRALE) [Transito]\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+ UA - 2 TRENI\nChiusura sbarre stimata: 19:43:56 - 19:49:26\nTreni coinvolt
+ i nella chiusura:\n  - REG 2177 (MILANO CENTRALE -> BOZZOLO) (+4m) [Transi
+ to]\n  - REG 2177 (MILANO CENTRALE -> BOZZOLO) (+4m) [Transito]\nRitardo m
+ assimo rilevato: 4 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione COLORNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10844--20261119-S01852@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T201123Z
+DTEND:20261120T201653Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:11 - 21:16 (primo: REG 10844)
+DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 21:11:23 - 21:16:53\nTreni coinvolt
+ i nella chiusura:\n  - REG 10844 (PARMA -> PIADENA) [Transito]\n  - REG 10
+ 844 (PARMA -> PIADENA) [Transito]\nRitardo massimo rilevato: 0 min\nAffida
+ bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tren
+ i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
+ ombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione COLORNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -355,62 +422,43 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10844--20261119-S01852@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T201123Z
-DTEND:20261120T201653Z
-SUMMARY:[TRANSITO VELOCE] REG 10844 (PARMA -> PIADENA) ore 21:15
-DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 21:11:23 - 21:16:53\nTreni coinvolti nella chiu
- sura:\n  - REG 10844 (PARMA -> PIADENA) [Transito]\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito st
- imato senza fermata (96% tratta PARMA -> TORRILE S.POLO\; pedale annuncio 
- fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione COLORNO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-10844--20261119-S01852@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T202430Z
 DTEND:20261120T202900Z
-SUMMARY:[FERMATA] REG 10844 (PARMA -> PIADENA) ore 21:28
-DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 21:24:30 - 21:29:00\nTreni coinvolti nella chiusura:\n 
-  - REG 10844 (PARMA -> PIADENA)\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria r
- egolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:24 - 21:29 (primo: REG 10844)
+DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 21:24:30 - 21:29:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 10844 (PARMA -> PIADENA)\n  - REG 10844 (PARMA 
+ -> PIADENA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNo
+ ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
+ a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione COLORNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2181--20261119-S01852@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T203932Z
-DTEND:20261120T204502Z
-SUMMARY:[TRANSITO VELOCE] REG 2181 (MILANO CENTRALE -> BOZZOLO) ore 21:43
-DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 21:39:32 - 21:45:02\nTreni coinvolti nella chiu
- sura:\n  - REG 2181 (MILANO CENTRALE -> BOZZOLO) [Transito]\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
- ansito stimato senza fermata (75% tratta CREMONA -> PIADENA\; pedale annun
- cio fisso Vmax)
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T203956Z
+DTEND:20261120T204526Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:39 - 21:45 (primo: REG 2181)
+DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 21:39:56 - 21:45:26\nTreni coinvolt
+ i nella chiusura:\n  - REG 2181 (MILANO CENTRALE -> BOZZOLO) [Transito]\n 
+  - REG 2181 (MILANO CENTRALE -> BOZZOLO) [Transito]\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
+ ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione COLORNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG

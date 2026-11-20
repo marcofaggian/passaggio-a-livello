@@ -9,17 +9,17 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:3b0499767be3e37fb45294b9a77629aa6e93b3513969fc6c6c11e40958cc
- cd45
+X-CONTENT-HASH:fdf7f8be293933953764fd2b897c66d9f2d044bf8ee87594dc47dca483a4
+ 950b
 BEGIN:VEVENT
 UID:train-2414--20261119-S01017@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T073155Z
-DTEND:20261120T073725Z
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T073139Z
+DTEND:20261120T073709Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:31 - 08:37 (primo: REG 2414)
 DESCRIPTION:Stazione/PL: BELGIRATE (S01017)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 08:31:55 - 08:37:25\nTreni coinvo
+ INUA - 2 TRENI\nChiusura sbarre stimata: 08:31:39 - 08:37:09\nTreni coinvo
  lti nella chiusura:\n  - REG 2414 (MILANO CENTRALE -> DOMODOSSOLA) [Transi
  to]\n  - REG 2414 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRitardo mas
  simo rilevato: -3 min\nAffidabilità stima: 78%\nNota normativa/euristica:
@@ -34,9 +34,32 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-10216--20261119-S01017@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T075800Z
+DTEND:20261120T080400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:58 - 09:04 (primo: REG 10216) (+4 
+ min)
+DESCRIPTION:Stazione/PL: BELGIRATE (S01017)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 08:58:00 - 09:04:00\nTreni coinvo
+ lti nella chiusura:\n  - REG 10216 (MILANO PORTA GARIBALDI -> DOMODOSSOLA)
+  (+4m)\n  - REG 10216 (MILANO PORTA GARIBALDI -> DOMODOSSOLA) (+4m)\nRitar
+ do massimo rilevato: 4 min\nAffidabilità stima: 99%\nNota normativa/euris
+ tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
+ inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BELGIRATE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-10232--20261119-S01017@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T155430Z
 DTEND:20261120T155900Z
 SUMMARY:[FERMATA] REG 10232 (MILANO PORTA GARIBALDI -> DOMODOSSOLA) ore 16:
@@ -55,45 +78,67 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2440--20261119-S01017@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T202745Z
-DTEND:20261120T203315Z
-SUMMARY:[TRANSITO VELOCE] REG 2440 (MILANO CENTRALE -> DOMODOSSOLA) ore 21:
- 32
-DESCRIPTION:Stazione/PL: BELGIRATE (S01017)\nRegime chiusura: TRANSITO VELO
- CE\nChiusura sbarre stimata: 21:27:45 - 21:33:15\nTreni coinvolti nella ch
- iusura:\n  - REG 2440 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Transito stimato senza fermata (67% tratta ARONA -> STRESA\; pedale an
- nuncio fisso Vmax)
+UID:train-2438--20261119-S01017@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T192725Z
+DTEND:20261120T193255Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:27 - 20:32 (primo: REG 2438)
+DESCRIPTION:Stazione/PL: BELGIRATE (S01017)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 20:27:25 - 20:32:55\nTreni coinvo
+ lti nella chiusura:\n  - REG 2438 (MILANO CENTRALE -> DOMODOSSOLA) [Transi
+ to]\n  - REG 2438 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
+ ore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BELGIRATE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2440--20261119-S01017@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T202725Z
+DTEND:20261120T203255Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:27 - 21:32 (primo: REG 2440)
+DESCRIPTION:Stazione/PL: BELGIRATE (S01017)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 21:27:25 - 21:32:55\nTreni coinvo
+ lti nella chiusura:\n  - REG 2440 (MILANO CENTRALE -> DOMODOSSOLA) [Transi
+ to]\n  - REG 2440 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
+ ore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BELGIRATE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2442--20261119-S01017@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T212745Z
-DTEND:20261120T213315Z
-SUMMARY:[TRANSITO VELOCE] REG 2442 (MILANO CENTRALE -> DOMODOSSOLA) ore 22:
- 32
-DESCRIPTION:Stazione/PL: BELGIRATE (S01017)\nRegime chiusura: TRANSITO VELO
- CE\nChiusura sbarre stimata: 22:27:45 - 22:33:15\nTreni coinvolti nella ch
- iusura:\n  - REG 2442 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Transito stimato senza fermata (67% tratta ARONA -> STRESA\; pedale an
- nuncio fisso Vmax)
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T212725Z
+DTEND:20261120T213255Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:27 - 22:32 (primo: REG 2442)
+DESCRIPTION:Stazione/PL: BELGIRATE (S01017)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 22:27:25 - 22:32:55\nTreni coinvo
+ lti nella chiusura:\n  - REG 2442 (MILANO CENTRALE -> DOMODOSSOLA) [Transi
+ to]\n  - REG 2442 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
+ ore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BELGIRATE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG

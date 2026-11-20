@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:9f5fad4fb7e9ed4a577cfe96137d029b61e8176c87112bc0cde5b7db0653
- 9c24
+X-CONTENT-HASH:9d30508c3fef7a0b0bc524930c743b2f4d51a494d89411f67fa46688441f
+ b107
 BEGIN:VEVENT
 UID:train-2070--20261119-S05903@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T041130Z
 DTEND:20261120T041600Z
 SUMMARY:[FERMATA] REG 2070 (RAVENNA -> GENOVA BRIGNOLE) ore 05:15
@@ -32,17 +32,41 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-2462--20261119-S05903@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T052722Z
+DTEND:20261120T054100Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:27 - 06:41 (primo: REG 2462) (+2 m
+ in)
+DESCRIPTION:Stazione/PL: RUSSI (S05903)\nRegime chiusura: CHIUSURA CONTINUA
+  - 4 TRENI\nChiusura sbarre stimata: 06:27:22 - 06:41:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 2462 (RIMINI -> MILANO CENTRALE) (+2m) [Transito]
+ \n  - REG 2462 (RIMINI -> MILANO CENTRALE) (+2m) [Transito]\n  - REG 2462 
+ (RIMINI -> MILANO CENTRALE) (+2m)\n  - REG 2462 (RIMINI -> MILANO CENTRALE
+ ) (+2m)\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i 
+ passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione RUSSI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-17541--20261119-S05903@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T063143Z
-DTEND:20261120T063713Z
-SUMMARY:[TRANSITO VELOCE] REG 17541 (BOLOGNA CENTRALE -> RAVENNA) ore 07:35
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T063155Z
+DTEND:20261120T063725Z
+SUMMARY:[TRANSITO VELOCE] REG 17541 (BOLOGNA CENTRALE -> RAVENNA) ore 07:36
 DESCRIPTION:Stazione/PL: RUSSI (S05903)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 07:31:43 - 07:37:13\nTreni coinvolti nella chiusu
+ Chiusura sbarre stimata: 07:31:55 - 07:37:25\nTreni coinvolti nella chiusu
  ra:\n  - REG 17541 (BOLOGNA CENTRALE -> RAVENNA) [Transito]\nRitardo massi
  mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
- ansito stimato senza fermata (79% tratta LUGO -> BAGNACAVALLO\; pedale ann
+ ansito stimato senza fermata (83% tratta LUGO -> BAGNACAVALLO\; pedale ann
  uncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione RUSSI
 STATUS:CONFIRMED
@@ -54,8 +78,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17541--20261119-S05903@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T064130Z
 DTEND:20261120T064600Z
 SUMMARY:[FERMATA] REG 17541 (BOLOGNA CENTRALE -> RAVENNA) ore 07:45
@@ -74,15 +98,148 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17542--20261119-S05903@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T083830Z
 DTEND:20261120T084400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:38 - 09:44 (primo: REG 17542)
+SUMMARY:[TRANSITO VELOCE] REG 17542 (RIMINI -> BOLOGNA CENTRALE) ore 09:42
+DESCRIPTION:Stazione/PL: RUSSI (S05903)\nRegime chiusura: TRANSITO VELOCE\n
+ Chiusura sbarre stimata: 09:38:30 - 09:44:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 17542 (RIMINI -> BOLOGNA CENTRALE) [Transito]\nRitardo massim
+ o rilevato: -2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
+ ansito stimato senza fermata (75% tratta RAVENNA -> GODO\; pedale annuncio
+  fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione RUSSI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17542--20261119-S05903@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T084830Z
+DTEND:20261120T085300Z
+SUMMARY:[FERMATA] REG 17542 (RIMINI -> BOLOGNA CENTRALE) ore 09:52
+DESCRIPTION:Stazione/PL: RUSSI (S05903)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 09:48:30 - 09:53:00\nTreni coinvolti nella chiusura:\n  -
+  REG 17542 (RIMINI -> BOLOGNA CENTRALE)\nRitardo massimo rilevato: -2 min\
+ nAffidabilità stima: 90%\nNota normativa/euristica: Previsione con antici
+ po (-2 min)
+LOCATION:Passaggio a Livello / Stazione RUSSI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:-2
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17547--20261119-S05903@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T094645Z
+DTEND:20261120T095800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:46 - 10:58 (primo: REG 17547)
 DESCRIPTION:Stazione/PL: RUSSI (S05903)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 09:38:30 - 09:44:00\nTreni coinvolti 
- nella chiusura:\n  - REG 17542 (RIMINI -> BOLOGNA CENTRALE) [Transito]\n  
- - REG 17542 (RIMINI -> BOLOGNA CENTRALE) [Transito]\nRitardo massimo rilev
+  - 2 TRENI\nChiusura sbarre stimata: 10:46:45 - 10:58:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 17547 (BOLOGNA CENTRALE -> RAVENNA) [Transito]\n 
+  - REG 17547 (BOLOGNA CENTRALE -> RAVENNA)\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
+ er 2 treni: intervallo utile tra i passaggi (74s) inferiore alla soglia mi
+ nima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione RUSSI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17549--20261119-S05903@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T105645Z
+DTEND:20261120T111030Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:56 - 12:10 (primo: REG 17549) (+12
+  min)
+DESCRIPTION:Stazione/PL: RUSSI (S05903)\nRegime chiusura: CHIUSURA CONTINUA
+  - 4 TRENI\nChiusura sbarre stimata: 11:56:45 - 12:10:30\nTreni coinvolti 
+ nella chiusura:\n  - REG 17549 (BOLOGNA CENTRALE -> RIMINI) [Transito]\n  
+ - REG 17549 (BOLOGNA CENTRALE -> RIMINI) [Transito]\n  - REG 17549 (BOLOGN
+ A CENTRALE -> RIMINI) (+12m)\n  - REG 17549 (BOLOGNA CENTRALE -> RIMINI) (
+ +12m)\nRitardo massimo rilevato: 12 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i p
+ assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione RUSSI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:12
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17559--20261119-S05903@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T154910Z
+DTEND:20261120T155440Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:49 - 16:54 (primo: REG 17559) (+3 
+ min)
+DESCRIPTION:Stazione/PL: RUSSI (S05903)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 16:49:10 - 16:54:40\nTreni coinvolti 
+ nella chiusura:\n  - REG 17559 (BOLOGNA CENTRALE -> RIMINI) (+3m) [Transit
+ o]\n  - REG 17559 (BOLOGNA CENTRALE -> RIMINI) (+3m) [Transito]\nRitardo m
+ assimo rilevato: 3 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione RUSSI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17559--20261119-S05903@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T160030Z
+DTEND:20261120T160700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:00 - 17:07 (primo: REG 17559) (+8 
+ min)
+DESCRIPTION:Stazione/PL: RUSSI (S05903)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 17:00:30 - 17:07:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 17559 (BOLOGNA CENTRALE -> RIMINI) (+8m)\n  - REG
+  17559 (BOLOGNA CENTRALE -> RIMINI) (+8m)\nRitardo massimo rilevato: 8 min
+ \nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua pe
+ r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione RUSSI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4001--20261119-S05903@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T163311Z
+DTEND:20261120T163841Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:33 - 17:38 (primo: REG 4001)
+DESCRIPTION:Stazione/PL: RUSSI (S05903)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 17:33:11 - 17:38:41\nTreni coinvolti 
+ nella chiusura:\n  - REG 4001 (BOLOGNA CENTRALE -> RAVENNA) [Transito]\n  
+ - REG 4001 (BOLOGNA CENTRALE -> RAVENNA) [Transito]\nRitardo massimo rilev
  ato: -2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
  soglia minima di sgombero stradale (120s)
@@ -95,135 +252,47 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-17542--20261119-S05903@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T084830Z
-DTEND:20261120T085300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:48 - 09:53 (primo: REG 17542)
-DESCRIPTION:Stazione/PL: RUSSI (S05903)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 09:48:30 - 09:53:00\nTreni coinvolti 
- nella chiusura:\n  - REG 17542 (RIMINI -> BOLOGNA CENTRALE)\n  - REG 17542
-  (RIMINI -> BOLOGNA CENTRALE)\nRitardo massimo rilevato: -2 min\nAffidabil
- ità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione RUSSI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:-2
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17547--20261119-S05903@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T094630Z
-DTEND:20261120T095800Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:46 - 10:58 (primo: REG 17547)
-DESCRIPTION:Stazione/PL: RUSSI (S05903)\nRegime chiusura: CHIUSURA CONTINUA
-  - 4 TRENI\nChiusura sbarre stimata: 10:46:30 - 10:58:00\nTreni coinvolti 
- nella chiusura:\n  - REG 17547 (BOLOGNA CENTRALE -> RAVENNA) [Transito]\n 
-  - REG 17547 (BOLOGNA CENTRALE -> RAVENNA) [Transito]\n  - REG 17547 (BOLO
- GNA CENTRALE -> RAVENNA)\n  - REG 17547 (BOLOGNA CENTRALE -> RAVENNA)\nRit
- ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s
- ) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione RUSSI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17549--20261119-S05903@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T104630Z
-DTEND:20261120T105800Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:46 - 11:58 (primo: REG 17549)
-DESCRIPTION:Stazione/PL: RUSSI (S05903)\nRegime chiusura: CHIUSURA CONTINUA
-  - 4 TRENI\nChiusura sbarre stimata: 11:46:30 - 11:58:00\nTreni coinvolti 
- nella chiusura:\n  - REG 17549 (BOLOGNA CENTRALE -> RIMINI) [Transito]\n  
- - REG 17549 (BOLOGNA CENTRALE -> RIMINI) [Transito]\n  - REG 17549 (BOLOGN
- A CENTRALE -> RIMINI)\n  - REG 17549 (BOLOGNA CENTRALE -> RIMINI)\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) in
- feriore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione RUSSI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17559--20261119-S05903@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T154630Z
-DTEND:20261120T155800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:46 - 16:58 (primo: REG 17559)
-DESCRIPTION:Stazione/PL: RUSSI (S05903)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 16:46:30 - 16:58:00\nTreni coinvolti 
- nella chiusura:\n  - REG 17559 (BOLOGNA CENTRALE -> RIMINI) [Transito]\n  
- - REG 17559 (BOLOGNA CENTRALE -> RIMINI)\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per
-  2 treni: intervallo utile tra i passaggi (89s) inferiore alla soglia mini
- ma di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione RUSSI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4001--20261119-S05903@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T163223Z
-DTEND:20261120T163753Z
-SUMMARY:[TRANSITO VELOCE] REG 4001 (BOLOGNA CENTRALE -> RAVENNA) ore 17:36
-DESCRIPTION:Stazione/PL: RUSSI (S05903)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 17:32:23 - 17:37:53\nTreni coinvolti nella chiusu
- ra:\n  - REG 4001 (BOLOGNA CENTRALE -> RAVENNA) [Transito]\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
- nsito stimato senza fermata (36% tratta LUGO -> RAVENNA\; pedale annuncio 
- fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione RUSSI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-17561--20261119-S05903@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T164630Z
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T164645Z
 DTEND:20261120T165800Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:46 - 17:58 (primo: REG 17561)
 DESCRIPTION:Stazione/PL: RUSSI (S05903)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 17:46:30 - 17:58:00\nTreni coinvolti 
+  - 2 TRENI\nChiusura sbarre stimata: 17:46:45 - 17:58:00\nTreni coinvolti 
  nella chiusura:\n  - REG 17561 (BOLOGNA CENTRALE -> RIMINI) [Transito]\n  
  - REG 17561 (BOLOGNA CENTRALE -> RIMINI)\nRitardo massimo rilevato: 0 min\
  nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per
-  2 treni: intervallo utile tra i passaggi (89s) inferiore alla soglia mini
+  2 treni: intervallo utile tra i passaggi (74s) inferiore alla soglia mini
  ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione RUSSI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17563--20261119-S05903@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T174545Z
+DTEND:20261120T175700Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 18:45 - 18:57 (primo: REG 17563)
+DESCRIPTION:Stazione/PL: RUSSI (S05903)\nRegime chiusura: CHIUSURA CONTINUA
+  - 4 TRENI\nChiusura sbarre stimata: 18:45:45 - 18:57:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 17563 (BOLOGNA CENTRALE -> RIMINI) [Transito]\n  
+ - REG 17563 (BOLOGNA CENTRALE -> RIMINI) [Transito]\n  - REG 17563 (BOLOGN
+ A CENTRALE -> RIMINI)\n  - REG 17563 (BOLOGNA CENTRALE -> RIMINI)\nRitardo
+  massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione RUSSI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT

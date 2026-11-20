@@ -9,26 +9,51 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:17e510ed628f176accfba726612c18dab8147f873c8748f3ee063f7b886c
- 213f
+X-CONTENT-HASH:602f4d25c15dc345c217e87edb3d7301f69a57c401ea33a88a880728a624
+ 7b7f
 BEGIN:VEVENT
-UID:train-26655--20261116-S00463@pl-tracker.local
-DTSTAMP:20261117T212227Z
-SEQUENCE:2
-DTSTART:20261117T060830Z
-DTEND:20261117T061300Z
-SUMMARY:[FERMATA] REG 26655 (TORINO PORTA NUOVA -> ASTI) ore 07:12
-DESCRIPTION:Stazione/PL: S.PAOLO SOLBRITO (S00463)\nRegime chiusura: FERMAT
- A\nChiusura sbarre stimata: 07:08:30 - 07:13:00\nTreni coinvolti nella chi
- usura:\n  - REG 26655 (TORINO PORTA NUOVA -> ASTI)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
- da traccia oraria regolare
+UID:train-26655--20261119-S00463@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T061000Z
+DTEND:20261120T061530Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:10 - 07:15 (primo: REG 26655) (+2 
+ min)
+DESCRIPTION:Stazione/PL: S.PAOLO SOLBRITO (S00463)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:10:00 - 07:15:30\nTreni
+  coinvolti nella chiusura:\n  - REG 26655 (TORINO PORTA NUOVA -> ASTI) (+2
+ m)\n  - REG 26655 (TORINO PORTA NUOVA -> ASTI) (+2m)\nRitardo massimo rile
+ vato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura 
+ continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.PAOLO SOLBRITO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2146--20261119-S00463@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T215737Z
+DTEND:20261120T220307Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:57 - 23:03 (primo: REG 2146)
+DESCRIPTION:Stazione/PL: S.PAOLO SOLBRITO (S00463)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:57:37 - 23:03:07\nTreni
+  coinvolti nella chiusura:\n  - REG 2146 (GENOVA BRIGNOLE -> TORINO PORTA 
+ NUOVA) [Transito]\n  - REG 2146 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) [T
+ ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i
+  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione S.PAOLO SOLBRITO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

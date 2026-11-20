@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:013b066197b3295d69a355e4574d1ec2d66a1f7081dc7be5aaaabd97ce2a
- 7f60
+X-CONTENT-HASH:275ad1a1862b72392ceb75563cc1af83d4763320e218e2ef747adb267d37
+ 8806
 BEGIN:VEVENT
 UID:train-2218--20261119-S01748@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T054330Z
 DTEND:20261120T054800Z
 SUMMARY:[FERMATA] REG 2218 (NOVARA NORD -> MILANO CADORNA) ore 06:47
@@ -32,15 +32,40 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-1211--20261119-S01748@pl-tracker.local
-DTSTAMP:20261120T083617Z
+UID:train-1211--20261119-S01748@pl-tracker.local-arr
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T061352Z
+DTEND:20261120T062217Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:13 - 07:22 (primo: REG 1211) (+3 m
+ in)
+DESCRIPTION:Stazione/PL: GALLIATE (S01748)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 4 TRENI\nChiusura sbarre stimata: 07:13:52 - 07:22:17\nTreni coinvol
+ ti nella chiusura:\n  - REG 1211 (MILANO CADORNA -> NOVARA NORD) (+3m) [Ar
+ rivo]\n  - REG 1211 (MILANO CADORNA -> NOVARA NORD) (+3m) [Arrivo]\n  - RE
+ G 1211 (MILANO CADORNA -> NOVARA NORD) (+3m) [Partenza]\n  - REG 1211 (MIL
+ ANO CADORNA -> NOVARA NORD) (+3m) [Partenza]\nRitardo massimo rilevato: 3 
+ min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua
+  per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GALLIATE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2232--20261119-S01748@pl-tracker.local
+DTSTAMP:20261120T171953Z
 SEQUENCE:1
-DTSTART:20261120T060630Z
-DTEND:20261120T061100Z
-SUMMARY:[FERMATA] REG 1211 (MILANO CADORNA -> NOVARA NORD) ore 07:10
+DTSTART:20261120T081330Z
+DTEND:20261120T081800Z
+SUMMARY:[FERMATA] REG 2232 (NOVARA NORD -> MILANO CADORNA) ore 09:17
 DESCRIPTION:Stazione/PL: GALLIATE (S01748)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 07:06:30 - 07:11:00\nTreni coinvolti nella chiusura:\n
-   - REG 1211 (MILANO CADORNA -> NOVARA NORD)\nRitardo massimo rilevato: 0 
+ ura sbarre stimata: 09:13:30 - 09:18:00\nTreni coinvolti nella chiusura:\n
+   - REG 2232 (NOVARA NORD -> MILANO CADORNA)\nRitardo massimo rilevato: 0 
  min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
  ccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione GALLIATE
@@ -52,31 +77,9 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2232--20261119-S01748@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T081330Z
-DTEND:20261120T081800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:13 - 09:18 (primo: REG 2232)
-DESCRIPTION:Stazione/PL: GALLIATE (S01748)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 09:13:30 - 09:18:00\nTreni coinvol
- ti nella chiusura:\n  - REG 2232 (NOVARA NORD -> MILANO CADORNA)\n  - REG 
- 2232 (NOVARA NORD -> MILANO CADORNA)\nRitardo massimo rilevato: 0 min\nAff
- idabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 t
- reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
-  sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione GALLIATE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-2236--20261119-S01748@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T091330Z
 DTEND:20261120T091800Z
 SUMMARY:[FERMATA] REG 2236 (NOVARA NORD -> MILANO CADORNA) ore 10:17
@@ -95,8 +98,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2231--20261119-S01748@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T103630Z
 DTEND:20261120T104100Z
 SUMMARY:[FERMATA] REG 2231 (MILANO CADORNA -> NOVARA NORD) ore 11:40
@@ -114,75 +117,115 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2254--20261119-S01748@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T141330Z
-DTEND:20261120T141800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:13 - 15:18 (primo: REG 2254)
+UID:train-2235--20261119-S01748@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T113702Z
+DTEND:20261120T114358Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:37 - 12:43 (primo: REG 2235) (+1 m
+ in)
 DESCRIPTION:Stazione/PL: GALLIATE (S01748)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 15:13:30 - 15:18:00\nTreni coinvol
- ti nella chiusura:\n  - REG 2254 (NOVARA NORD -> MILANO CADORNA)\n  - REG 
- 2254 (NOVARA NORD -> MILANO CADORNA)\nRitardo massimo rilevato: 0 min\nAff
- idabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 t
- reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
-  sgombero stradale (120s)
+ NUA - 2 TRENI\nChiusura sbarre stimata: 12:37:02 - 12:43:58\nTreni coinvol
+ ti nella chiusura:\n  - REG 2235 (MILANO CADORNA -> NOVARA NORD) (+1m)\n  
+ - REG 2235 (MILANO CADORNA -> NOVARA NORD) (+1m)\nRitardo massimo rilevato
+ : 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GALLIATE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2254--20261119-S01748@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T141330Z
+DTEND:20261120T141800Z
+SUMMARY:[FERMATA] REG 2254 (NOVARA NORD -> MILANO CADORNA) ore 15:17
+DESCRIPTION:Stazione/PL: GALLIATE (S01748)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 15:13:30 - 15:18:00\nTreni coinvolti nella chiusura:\n
+   - REG 2254 (NOVARA NORD -> MILANO CADORNA)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
+ ccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione GALLIATE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2260--20261119-S01748@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T151330Z
 DTEND:20261120T151800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:13 - 16:18 (primo: REG 2260)
-DESCRIPTION:Stazione/PL: GALLIATE (S01748)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 16:13:30 - 16:18:00\nTreni coinvol
- ti nella chiusura:\n  - REG 2260 (NOVARA NORD -> MILANO CADORNA)\n  - REG 
- 2260 (NOVARA NORD -> MILANO CADORNA)\nRitardo massimo rilevato: 0 min\nAff
- idabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 t
- reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
-  sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 2260 (NOVARA NORD -> MILANO CADORNA) ore 16:17
+DESCRIPTION:Stazione/PL: GALLIATE (S01748)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 16:13:30 - 16:18:00\nTreni coinvolti nella chiusura:\n
+   - REG 2260 (NOVARA NORD -> MILANO CADORNA)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
+ ccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione GALLIATE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2255--20261119-S01748@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T153630Z
 DTEND:20261120T154100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:36 - 16:41 (primo: REG 2255)
-DESCRIPTION:Stazione/PL: GALLIATE (S01748)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 16:36:30 - 16:41:00\nTreni coinvol
- ti nella chiusura:\n  - REG 2255 (MILANO CADORNA -> NOVARA NORD)\n  - REG 
- 2255 (MILANO CADORNA -> NOVARA NORD)\nRitardo massimo rilevato: 0 min\nAff
- idabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 t
- reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
-  sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 2255 (MILANO CADORNA -> NOVARA NORD) ore 16:40
+DESCRIPTION:Stazione/PL: GALLIATE (S01748)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 16:36:30 - 16:41:00\nTreni coinvolti nella chiusura:\n
+   - REG 2255 (MILANO CADORNA -> NOVARA NORD)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
+ ccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione GALLIATE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-2270--20261119-S01748@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T171522Z
+DTEND:20261120T172129Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:15 - 18:21 (primo: REG 2270) (+2 m
+ in)
+DESCRIPTION:Stazione/PL: GALLIATE (S01748)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 18:15:22 - 18:21:29\nTreni coinvol
+ ti nella chiusura:\n  - REG 2270 (NOVARA NORD -> MILANO CADORNA) (+2m)\n  
+ - REG 2270 (NOVARA NORD -> MILANO CADORNA) (+2m)\nRitardo massimo rilevato
+ : 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GALLIATE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-2283--20261119-S01748@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T203630Z
 DTEND:20261120T204100Z
 SUMMARY:[FERMATA] REG 2283 (MILANO CADORNA -> NOVARA NORD) ore 21:40

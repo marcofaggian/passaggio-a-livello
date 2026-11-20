@@ -9,26 +9,51 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:f85d66edf82dc9a492cfc27d374d1626c68ea28988f27f995e18b7042e5f
- 95d4
+X-CONTENT-HASH:b76d9c26941ce50bbdffff18cbebcbcfc656d5fe57455407fdd8e54fb624
+ 2469
 BEGIN:VEVENT
-UID:train-26655--20261116-S00456@pl-tracker.local
-DTSTAMP:20261117T212227Z
-SEQUENCE:2
-DTSTART:20261117T055230Z
-DTEND:20261117T055700Z
-SUMMARY:[FERMATA] REG 26655 (TORINO PORTA NUOVA -> ASTI) ore 06:56
-DESCRIPTION:Stazione/PL: CAMBIANO SANTENA (S00456)\nRegime chiusura: FERMAT
- A\nChiusura sbarre stimata: 06:52:30 - 06:57:00\nTreni coinvolti nella chi
- usura:\n  - REG 26655 (TORINO PORTA NUOVA -> ASTI)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
- da traccia oraria regolare
+UID:train-26655--20261119-S00456@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T055330Z
+DTEND:20261120T060000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:53 - 07:00 (primo: REG 26655) (+2 
+ min)
+DESCRIPTION:Stazione/PL: CAMBIANO SANTENA (S00456)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:53:30 - 07:00:00\nTreni
+  coinvolti nella chiusura:\n  - REG 26655 (TORINO PORTA NUOVA -> ASTI) (+2
+ m)\n  - REG 26655 (TORINO PORTA NUOVA -> ASTI) (+2m)\nRitardo massimo rile
+ vato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura 
+ continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CAMBIANO SANTENA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2146--20261119-S00456@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T215523Z
+DTEND:20261120T220053Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:55 - 23:00 (primo: REG 2146)
+DESCRIPTION:Stazione/PL: CAMBIANO SANTENA (S00456)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:55:23 - 23:00:53\nTreni
+  coinvolti nella chiusura:\n  - REG 2146 (GENOVA BRIGNOLE -> TORINO PORTA 
+ NUOVA) [Transito]\n  - REG 2146 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) [T
+ ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i
+  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CAMBIANO SANTENA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

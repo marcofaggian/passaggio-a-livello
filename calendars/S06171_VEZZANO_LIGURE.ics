@@ -9,21 +9,21 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:418f6486aef286363b516d0c7f01c7c82ad5afc58af3cfe5717b42577c36
- 1d52
+X-CONTENT-HASH:eb5c32d68d1f0dde0479783f76e4c21cc742507df4873408e85a9814b0a8
+ e435
 BEGIN:VEVENT
 UID:train-18425--20261119-S06171@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T052948Z
-DTEND:20261120T053518Z
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T052930Z
+DTEND:20261120T053500Z
 SUMMARY:[TRANSITO VELOCE] REG 18425 (BORGO VAL DI TARO -> FIRENZE SANTA MAR
- IA NOVELLA) ore 06:34
+ IA NOVELLA) ore 06:33
 DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 06:29:48 - 06:35:18\nTreni coinvolti nel
+  VELOCE\nChiusura sbarre stimata: 06:29:30 - 06:35:00\nTreni coinvolti nel
  la chiusura:\n  - REG 18425 (BORGO VAL DI TARO -> FIRENZE SANTA MARIA NOVE
  LLA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%
- \nNota normativa/euristica: Transito stimato senza fermata (45% tratta S.S
+ \nNota normativa/euristica: Transito stimato senza fermata (42% tratta S.S
  TEFANO DI MAGRA -> SARZANA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VEZZANO LIGURE
 STATUS:CONFIRMED
@@ -35,8 +35,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19343--20261119-S06171@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T060330Z
 DTEND:20261120T060900Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:03 - 07:09 (primo: REG 19343) (+1 
@@ -58,14 +58,14 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19347--20261119-S06171@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T061430Z
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T061423Z
 DTEND:20261120T062600Z
 SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:14 - 07:26 (primo: REG 19347) (+9 
  min)
 DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: CHIUSURA
-  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 07:14:30 - 07:26:00\nTreni c
+  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 07:14:23 - 07:26:00\nTreni c
  oinvolti nella chiusura:\n  - REG 19347 (LA SPEZIA CENTRALE -> PISA CENTRA
  LE) (+9m) [Transito]\n  - REG 19347 (LA SPEZIA CENTRALE -> PISA CENTRALE) 
  (+9m) [Transito]\n  - REG 19347 (LA SPEZIA CENTRALE -> PISA CENTRALE) (+9m
@@ -82,35 +82,60 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-19349--20261119-S06171@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T064630Z
-DTEND:20261120T065100Z
-SUMMARY:[FERMATA] REG 19349 (LA SPEZIA CENTRALE -> PISA CENTRALE) ore 07:50
-DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 07:46:30 - 07:51:00\nTreni coinvolti nella chius
- ura:\n  - REG 19349 (LA SPEZIA CENTRALE -> PISA CENTRALE)\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
- isione da traccia oraria regolare
+UID:train-19330--20261119-S06171@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T063739Z
+DTEND:20261120T064309Z
+SUMMARY:[TRANSITO VELOCE] REG 19330 (PISA CENTRALE -> LA SPEZIA CENTRALE) o
+ re 07:41 (+4 min)
+DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: TRANSITO
+  VELOCE\nChiusura sbarre stimata: 07:37:39 - 07:43:09\nTreni coinvolti nel
+ la chiusura:\n  - REG 19330 (PISA CENTRALE -> LA SPEZIA CENTRALE) (+4m) [T
+ ransito]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Transito stimato senza fermata (54% tratta SARZANA ->
+  LA SPEZIA MIGLIARINA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VEZZANO LIGURE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19330--20261119-S06171@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T064533Z
+DTEND:20261120T065103Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:45 - 07:51 (primo: REG 19330) (+4 
+ min)
+DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:45:33 - 07:51:03\nTreni c
+ oinvolti nella chiusura:\n  - REG 19330 (PISA CENTRALE -> LA SPEZIA CENTRA
+ LE) (+4m) [Transito]\n  - REG 19349 (LA SPEZIA CENTRALE -> PISA CENTRALE)\
+ nRitardo massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
+  (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VEZZANO LIGURE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19332--20261119-S06171@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T070522Z
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T070518Z
 DTEND:20261120T071630Z
 SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:05 - 08:16 (primo: REG 19332) (+4 
  min)
 DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: CHIUSURA
-  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 08:05:22 - 08:16:30\nTreni c
+  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 08:05:18 - 08:16:30\nTreni c
  oinvolti nella chiusura:\n  - REG 19332 (PISA CENTRALE -> LA SPEZIA CENTRA
  LE) (+2m) [Transito]\n  - REG 19332 (PISA CENTRALE -> LA SPEZIA CENTRALE) 
  (+2m) [Transito]\n  - REG 19332 (PISA CENTRALE -> LA SPEZIA CENTRALE) (+4m
@@ -128,8 +153,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19233--20261119-S06171@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T073630Z
 DTEND:20261120T074100Z
 SUMMARY:[FERMATA] REG 19233 (PARMA -> LA SPEZIA CENTRALE) ore 08:40
@@ -147,39 +172,60 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-19242--20261119-S06171@pl-tracker.local
-DTSTAMP:20261120T083617Z
+UID:train-3261--20261119-S06171@pl-tracker.local
+DTSTAMP:20261120T171953Z
 SEQUENCE:0
-DTSTART:20261120T091030Z
-DTEND:20261120T091500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:10 - 10:15 (primo: REG 19242)
+DTSTART:20261120T083430Z
+DTEND:20261120T084030Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:34 - 09:40 (primo: REG 3261) (+2 m
+ in)
 DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:10:30 - 10:15:00\nTreni c
- oinvolti nella chiusura:\n  - REG 19242 (LA SPEZIA CENTRALE -> PONTREMOLI)
- \n  - REG 19242 (LA SPEZIA CENTRALE -> PONTREMOLI)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura co
- ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
- glia minima di sgombero stradale (120s)
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:34:30 - 09:40:30\nTreni c
+ oinvolti nella chiusura:\n  - REG 3261 (PARMA -> GENOVA BRIGNOLE) (+2m)\n 
+  - REG 3261 (PARMA -> GENOVA BRIGNOLE) (+2m)\nRitardo massimo rilevato: 2 
+ min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua
+  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VEZZANO LIGURE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19242--20261119-S06171@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T091030Z
+DTEND:20261120T091500Z
+SUMMARY:[FERMATA] REG 19242 (LA SPEZIA CENTRALE -> PONTREMOLI) ore 10:14
+DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 10:10:30 - 10:15:00\nTreni coinvolti nella chius
+ ura:\n  - REG 19242 (LA SPEZIA CENTRALE -> PONTREMOLI)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione VEZZANO LIGURE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2293--20261119-S06171@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T092825Z
-DTEND:20261120T093355Z
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T092750Z
+DTEND:20261120T093320Z
 SUMMARY:[TRANSITO VELOCE] REG 2293 (MILANO CENTRALE -> SARZANA) ore 10:32
 DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 10:28:25 - 10:33:55\nTreni coinvolti nel
+  VELOCE\nChiusura sbarre stimata: 10:27:50 - 10:33:20\nTreni coinvolti nel
  la chiusura:\n  - REG 2293 (MILANO CENTRALE -> SARZANA) [Transito]\nRitard
  o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Transito stimato senza fermata (45% tratta S.STEFANO DI MAGRA -> SARZ
+ ica: Transito stimato senza fermata (42% tratta S.STEFANO DI MAGRA -> SARZ
  ANA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VEZZANO LIGURE
 STATUS:CONFIRMED
@@ -190,9 +236,32 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-19241--20261119-S06171@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T123930Z
+DTEND:20261120T124500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:39 - 13:45 (primo: REG 19241) (+1 
+ min)
+DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:39:30 - 13:45:00\nTreni c
+ oinvolti nella chiusura:\n  - REG 19241 (PARMA -> LA SPEZIA CENTRALE) (+1m
+ )\n  - REG 19241 (PARMA -> LA SPEZIA CENTRALE) (+1m)\nRitardo massimo rile
+ vato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura 
+ continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VEZZANO LIGURE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-18367--20261119-S06171@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T130130Z
 DTEND:20261120T130600Z
 SUMMARY:[FERMATA] REG 18367 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTR
@@ -212,84 +281,37 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18415--20261119-S06171@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T133719Z
-DTEND:20261120T134249Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:37 - 14:42 (primo: REG 18415)
-DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:37:19 - 14:42:49\nTreni c
- oinvolti nella chiusura:\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SAN
- TA MARIA NOVELLA) [Transito]\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRENZE
-  SANTA MARIA NOVELLA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T133711Z
+DTEND:20261120T134241Z
+SUMMARY:[TRANSITO VELOCE] REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA MA
+ RIA NOVELLA) ore 14:41
+DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: TRANSITO
+  VELOCE\nChiusura sbarre stimata: 14:37:11 - 14:42:41\nTreni coinvolti nel
+ la chiusura:\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOV
+ ELLA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
+ %\nNota normativa/euristica: Transito stimato senza fermata (61% tratta LA
+  SPEZIA MIGLIARINA -> CA` DI BOSCHETTI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VEZZANO LIGURE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18415--20261119-S06171@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T134530Z
 DTEND:20261120T135000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:45 - 14:50 (primo: REG 18415)
-DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:45:30 - 14:50:00\nTreni c
- oinvolti nella chiusura:\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SAN
- TA MARIA NOVELLA)\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARI
- A NOVELLA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNot
- a normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra
-  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VEZZANO LIGURE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-19371--20261119-S06171@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T153140Z
-DTEND:20261120T154300Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:31 - 16:43 (primo: REG 19371)
-DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: CHIUSURA
-  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 16:31:40 - 16:43:00\nTreni c
- oinvolti nella chiusura:\n  - REG 19371 (LA SPEZIA CENTRALE -> SARZANA) [T
- ransito]\n  - REG 19371 (LA SPEZIA CENTRALE -> SARZANA) [Transito]\n  - RE
- G 19371 (LA SPEZIA CENTRALE -> SARZANA)\n  - REG 19371 (LA SPEZIA CENTRALE
-  -> SARZANA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nN
- ota normativa/euristica: Chiusura continua per 4 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
-LOCATION:Passaggio a Livello / Stazione VEZZANO LIGURE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18401--20261119-S06171@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T154630Z
-DTEND:20261120T155100Z
-SUMMARY:[FERMATA] REG 18401 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVE
- LLA) ore 16:50
+SUMMARY:[FERMATA] REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVE
+ LLA) ore 14:49
 DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 16:46:30 - 16:51:00\nTreni coinvolti nella chius
- ura:\n  - REG 18401 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELLA)\nR
+ nChiusura sbarre stimata: 14:45:30 - 14:50:00\nTreni coinvolti nella chius
+ ura:\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELLA)\nR
  itardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/e
  uristica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VEZZANO LIGURE
@@ -301,59 +323,181 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-19249--20261119-S06171@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T163830Z
-DTEND:20261120T164300Z
-SUMMARY:[FERMATA] REG 19249 (PARMA -> LA SPEZIA CENTRALE) ore 17:42
-DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 17:38:30 - 17:43:00\nTreni coinvolti nella chius
- ura:\n  - REG 19249 (PARMA -> LA SPEZIA CENTRALE)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
- a traccia oraria regolare
+UID:train-19371--20261119-S06171@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T153334Z
+DTEND:20261120T154330Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:33 - 16:43 (primo: REG 19371)
+DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: CHIUSURA
+  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 16:33:34 - 16:43:30\nTreni c
+ oinvolti nella chiusura:\n  - REG 19371 (LA SPEZIA CENTRALE -> SARZANA) [T
+ ransito]\n  - REG 19371 (LA SPEZIA CENTRALE -> SARZANA) [Transito]\n  - RE
+ G 19371 (LA SPEZIA CENTRALE -> SARZANA)\n  - REG 19371 (LA SPEZIA CENTRALE
+  -> SARZANA)\nRitardo massimo rilevato: -1 min\nAffidabilità stima: 78%\n
+ Nota normativa/euristica: Chiusura continua per 4 treni: intervallo utile 
+ tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
+ s)
 LOCATION:Passaggio a Livello / Stazione VEZZANO LIGURE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18401--20261119-S06171@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T154630Z
+DTEND:20261120T155200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:46 - 16:52 (primo: REG 18401) (+4 
+ min)
+DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:46:30 - 16:52:00\nTreni c
+ oinvolti nella chiusura:\n  - REG 18401 (LA SPEZIA CENTRALE -> FIRENZE SAN
+ TA MARIA NOVELLA) (+4m)\n  - REG 18401 (LA SPEZIA CENTRALE -> FIRENZE SANT
+ A MARIA NOVELLA) (+4m)\nRitardo massimo rilevato: 4 min\nAffidabilità sti
+ ma: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
+ lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
+ dale (120s)
+LOCATION:Passaggio a Livello / Stazione VEZZANO LIGURE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12236--20261119-S06171@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T160503Z
+DTEND:20261120T161033Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:05 - 17:10 (primo: REG 12236)
+DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:05:03 - 17:10:33\nTreni c
+ oinvolti nella chiusura:\n  - REG 12236 (LA SPEZIA MIGLIARINA -> SESTRI LE
+ VANTE) [Transito]\n  - REG 12236 (LA SPEZIA MIGLIARINA -> SESTRI LEVANTE) 
+ [Transito]\nRitardo massimo rilevato: -9 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
+ a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VEZZANO LIGURE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-9
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18446--20261119-S06171@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T163213Z
+DTEND:20261120T164300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:32 - 17:43 (primo: REG 18446) (+1 
+ min)
+DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:32:13 - 17:43:00\nTreni c
+ oinvolti nella chiusura:\n  - REG 18446 (PISA CENTRALE -> PONTREMOLI) (+1m
+ ) [Transito]\n  - REG 19249 (PARMA -> LA SPEZIA CENTRALE)\nRitardo massimo
+  rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
+ sura continua per 2 treni: intervallo utile tra i passaggi (46s) inferiore
+  alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VEZZANO LIGURE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19258--20261119-S06171@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T171249Z
+DTEND:20261120T171819Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:12 - 18:18 (primo: REG 19258) (+6 
+ min)
+DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:12:49 - 18:18:19\nTreni c
+ oinvolti nella chiusura:\n  - REG 19258 (LA SPEZIA CENTRALE -> PARMA) (+6m
+ ) [Transito]\n  - REG 19258 (LA SPEZIA CENTRALE -> PARMA) (+6m) [Transito]
+ \nRitardo massimo rilevato: 6 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
+ i (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VEZZANO LIGURE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19258--20261119-S06171@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T172100Z
+DTEND:20261120T172530Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:21 - 18:25 (primo: REG 19258) (+6 
+ min)
+DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:21:00 - 18:25:30\nTreni c
+ oinvolti nella chiusura:\n  - REG 19258 (LA SPEZIA CENTRALE -> PARMA) (+6m
+ )\n  - REG 19258 (LA SPEZIA CENTRALE -> PARMA) (+6m)\nRitardo massimo rile
+ vato: 6 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura 
+ continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VEZZANO LIGURE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19251--20261119-S06171@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T173430Z
-DTEND:20261120T173900Z
-SUMMARY:[FERMATA] REG 19251 (PARMA -> LA SPEZIA CENTRALE) ore 18:38
-DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 18:34:30 - 18:39:00\nTreni coinvolti nella chius
- ura:\n  - REG 19251 (PARMA -> LA SPEZIA CENTRALE)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
- a traccia oraria regolare
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T173530Z
+DTEND:20261120T174000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:35 - 18:40 (primo: REG 19251) (+1 
+ min)
+DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:35:30 - 18:40:00\nTreni c
+ oinvolti nella chiusura:\n  - REG 19251 (PARMA -> LA SPEZIA CENTRALE) (+1m
+ )\n  - REG 19251 (PARMA -> LA SPEZIA CENTRALE) (+1m)\nRitardo massimo rile
+ vato: 1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura 
+ continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VEZZANO LIGURE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18407--20261119-S06171@pl-tracker.local
-DTSTAMP:20261120T083617Z
+UID:train-2296--20261119-S06171@pl-tracker.local
+DTSTAMP:20261120T171953Z
 SEQUENCE:0
-DTSTART:20261120T182100Z
-DTEND:20261120T182630Z
-SUMMARY:[TRANSITO VELOCE] REG 18407 (LA SPEZIA CENTRALE -> FIRENZE SANTA MA
- RIA NOVELLA) ore 19:25
+DTSTART:20261120T184809Z
+DTEND:20261120T185339Z
+SUMMARY:[TRANSITO VELOCE] REG 2296 (PISA CENTRALE -> MILANO CENTRALE) ore 1
+ 9:52
 DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 19:21:00 - 19:26:30\nTreni coinvolti nel
- la chiusura:\n  - REG 18407 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOV
- ELLA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
- %\nNota normativa/euristica: Transito stimato senza fermata (44% tratta LA
-  SPEZIA MIGLIARINA -> SARZANA\; pedale annuncio fisso Vmax)
+  VELOCE\nChiusura sbarre stimata: 19:48:09 - 19:53:39\nTreni coinvolti nel
+ la chiusura:\n  - REG 2296 (PISA CENTRALE -> MILANO CENTRALE) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (59% tratta SARZANA -> S.STEFANO
+  DI MAGRA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VEZZANO LIGURE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -363,31 +507,31 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3283--20261119-S06171@pl-tracker.local
-DTSTAMP:20261120T083617Z
+UID:train-19380--20261119-S06171@pl-tracker.local
+DTSTAMP:20261120T171953Z
 SEQUENCE:0
-DTSTART:20261120T201525Z
-DTEND:20261120T202055Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:15 - 21:20 (primo: REG 3283)
-DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:15:25 - 21:20:55\nTreni c
- oinvolti nella chiusura:\n  - REG 3283 (GENOVA BRIGNOLE -> PARMA) [Transit
- o]\n  - REG 3283 (GENOVA BRIGNOLE -> PARMA) [Transito]\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+DTSTART:20261120T203433Z
+DTEND:20261120T204003Z
+SUMMARY:[TRANSITO VELOCE] REG 19380 (PISA CENTRALE -> LA SPEZIA CENTRALE) o
+ re 21:38
+DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: TRANSITO
+  VELOCE\nChiusura sbarre stimata: 21:34:33 - 21:40:03\nTreni coinvolti nel
+ la chiusura:\n  - REG 19380 (PISA CENTRALE -> LA SPEZIA CENTRALE) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (40% tratta SARZANA -> LA SP
+ EZIA CENTRALE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VEZZANO LIGURE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19308--20261119-S06171@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T211530Z
 DTEND:20261120T212000Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:15 - 22:20 (primo: REG 19308)
@@ -404,6 +548,28 @@ TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19382--20261119-S06171@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T214151Z
+DTEND:20261120T214721Z
+SUMMARY:[TRANSITO VELOCE] REG 19382 (PISA CENTRALE -> LA SPEZIA CENTRALE) o
+ re 22:46
+DESCRIPTION:Stazione/PL: VEZZANO LIGURE (S06171)\nRegime chiusura: TRANSITO
+  VELOCE\nChiusura sbarre stimata: 22:41:51 - 22:47:21\nTreni coinvolti nel
+ la chiusura:\n  - REG 19382 (PISA CENTRALE -> LA SPEZIA CENTRALE) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (54% tratta SARZANA -> LA SP
+ EZIA MIGLIARINA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione VEZZANO LIGURE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

@@ -9,21 +9,21 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:c094feba294e0689acf7e00d7aea66adcbac3886cd5b2c1eecc15d8b9bf5
- 576f
+X-CONTENT-HASH:3068f994bc104f1160eaa3af24a62bdf7e20e1310800ba2631ae406422d4
+ 9687
 BEGIN:VEVENT
 UID:train-19233--20261119-S06153@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T054709Z
-DTEND:20261120T055239Z
-SUMMARY:[TRANSITO VELOCE] REG 19233 (PARMA -> LA SPEZIA CENTRALE) ore 06:51
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T055842Z
+DTEND:20261120T060412Z
+SUMMARY:[TRANSITO VELOCE] REG 19233 (PARMA -> LA SPEZIA CENTRALE) ore 07:02
 DESCRIPTION:Stazione/PL: FORNOVO (S06153)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 06:47:09 - 06:52:39\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 06:58:42 - 07:04:12\nTreni coinvolti nella chiu
  sura:\n  - REG 19233 (PARMA -> LA SPEZIA CENTRALE) [Transito]\nRitardo mas
  simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Transito stimato senza fermata (63% tratta PARMA -> VICOFERTILE\; pedale a
- nnuncio fisso Vmax)
+ Transito stimato senza fermata (57% tratta COLLECCHIO -> OZZANO TARO\; ped
+ ale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione FORNOVO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -34,8 +34,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19233--20261119-S06153@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T060830Z
 DTEND:20261120T061300Z
 SUMMARY:[FERMATA] REG 19233 (PARMA -> LA SPEZIA CENTRALE) ore 07:12
@@ -53,9 +53,34 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-3261--20261119-S06153@pl-tracker.local-arr
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T070600Z
+DTEND:20261120T071530Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:06 - 08:15 (primo: REG 3261) (+2 m
+ in)
+DESCRIPTION:Stazione/PL: FORNOVO (S06153)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 4 TRENI\nChiusura sbarre stimata: 08:06:00 - 08:15:30\nTreni coinvolt
+ i nella chiusura:\n  - REG 3261 (PARMA -> GENOVA BRIGNOLE) (+2m) [Arrivo]\
+ n  - REG 3261 (PARMA -> GENOVA BRIGNOLE) (+2m) [Arrivo]\n  - REG 3261 (PAR
+ MA -> GENOVA BRIGNOLE) (+2m) [Partenza]\n  - REG 3261 (PARMA -> GENOVA BRI
+ GNOLE) (+2m) [Partenza]\nRitardo massimo rilevato: 2 min\nAffidabilità st
+ ima: 99%\nNota normativa/euristica: Chiusura continua per 4 treni: interva
+ llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
+ adale (120s)
+LOCATION:Passaggio a Livello / Stazione FORNOVO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-2293--20261119-S06153@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T073230Z
 DTEND:20261120T073700Z
 SUMMARY:[FERMATA] REG 2293 (MILANO CENTRALE -> SARZANA) ore 08:36
@@ -73,18 +98,45 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-19241--20261119-S06153@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T110034Z
+DTEND:20261120T111500Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 12:00 - 12:15 (primo: REG 19241) (+2 
+ min)
+DESCRIPTION:Stazione/PL: FORNOVO (S06153)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 6 TRENI\nChiusura sbarre stimata: 12:00:34 - 12:15:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 19241 (PARMA -> LA SPEZIA CENTRALE) (+2m) [Tran
+ sito]\n  - REG 19241 (PARMA -> LA SPEZIA CENTRALE) (+2m) [Transito]\n  - R
+ EG 19241 (PARMA -> LA SPEZIA CENTRALE) (+1m) [Arrivo]\n  - REG 19241 (PARM
+ A -> LA SPEZIA CENTRALE) (+1m) [Arrivo]\n  - REG 19241 (PARMA -> LA SPEZIA
+  CENTRALE) (+1m) [Partenza]\n  - REG 19241 (PARMA -> LA SPEZIA CENTRALE) (
+ +1m) [Partenza]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%
+ \nNota normativa/euristica: Chiusura continua per 6 treni: intervallo util
+ e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
+ 20s)
+LOCATION:Passaggio a Livello / Stazione FORNOVO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-19249--20261119-S06153@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T144709Z
-DTEND:20261120T145239Z
-SUMMARY:[TRANSITO VELOCE] REG 19249 (PARMA -> LA SPEZIA CENTRALE) ore 15:51
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T145842Z
+DTEND:20261120T150412Z
+SUMMARY:[TRANSITO VELOCE] REG 19249 (PARMA -> LA SPEZIA CENTRALE) ore 16:02
 DESCRIPTION:Stazione/PL: FORNOVO (S06153)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 15:47:09 - 15:52:39\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 15:58:42 - 16:04:12\nTreni coinvolti nella chiu
  sura:\n  - REG 19249 (PARMA -> LA SPEZIA CENTRALE) [Transito]\nRitardo mas
  simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Transito stimato senza fermata (63% tratta PARMA -> VICOFERTILE\; pedale a
- nnuncio fisso Vmax)
+ Transito stimato senza fermata (57% tratta COLLECCHIO -> OZZANO TARO\; ped
+ ale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione FORNOVO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -95,8 +147,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19249--20261119-S06153@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T150830Z
 DTEND:20261120T151300Z
 SUMMARY:[FERMATA] REG 19249 (PARMA -> LA SPEZIA CENTRALE) ore 16:12
@@ -115,54 +167,85 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19251--20261119-S06153@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T154709Z
-DTEND:20261120T155239Z
-SUMMARY:[TRANSITO VELOCE] REG 19251 (PARMA -> LA SPEZIA CENTRALE) ore 16:51
-DESCRIPTION:Stazione/PL: FORNOVO (S06153)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 16:47:09 - 16:52:39\nTreni coinvolti nella chiu
- sura:\n  - REG 19251 (PARMA -> LA SPEZIA CENTRALE) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Transito stimato senza fermata (63% tratta PARMA -> VICOFERTILE\; pedale a
- nnuncio fisso Vmax)
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T160100Z
+DTEND:20261120T161500Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 17:01 - 17:15 (primo: REG 19251) (+1 
+ min)
+DESCRIPTION:Stazione/PL: FORNOVO (S06153)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 6 TRENI\nChiusura sbarre stimata: 17:01:00 - 17:15:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 19251 (PARMA -> LA SPEZIA CENTRALE) (+1m) [Tran
+ sito]\n  - REG 19251 (PARMA -> LA SPEZIA CENTRALE) (+1m) [Transito]\n  - R
+ EG 19251 (PARMA -> LA SPEZIA CENTRALE) (+1m) [Arrivo]\n  - REG 19251 (PARM
+ A -> LA SPEZIA CENTRALE) (+1m) [Arrivo]\n  - REG 19251 (PARMA -> LA SPEZIA
+  CENTRALE) (+1m) [Partenza]\n  - REG 19251 (PARMA -> LA SPEZIA CENTRALE) (
+ +1m) [Partenza]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%
+ \nNota normativa/euristica: Chiusura continua per 6 treni: intervallo util
+ e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
+ 20s)
 LOCATION:Passaggio a Livello / Stazione FORNOVO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-19251--20261119-S06153@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T160830Z
-DTEND:20261120T161300Z
-SUMMARY:[FERMATA] REG 19251 (PARMA -> LA SPEZIA CENTRALE) ore 17:12
-DESCRIPTION:Stazione/PL: FORNOVO (S06153)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 17:08:30 - 17:13:00\nTreni coinvolti nella chiusura:\n 
-  - REG 19251 (PARMA -> LA SPEZIA CENTRALE)\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracc
- ia oraria regolare
+UID:train-19258--20261119-S06153@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T184830Z
+DTEND:20261120T185300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:48 - 19:53 (primo: REG 19258) (+6 
+ min)
+DESCRIPTION:Stazione/PL: FORNOVO (S06153)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 19:48:30 - 19:53:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 19258 (LA SPEZIA CENTRALE -> PARMA) (+6m)\n  - 
+ REG 19258 (LA SPEZIA CENTRALE -> PARMA) (+6m)\nRitardo massimo rilevato: 6
+  min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continu
+ a per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
+ minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FORNOVO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2296--20261119-S06153@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T203130Z
+DTEND:20261120T203600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:31 - 21:36 (primo: REG 2296)
+DESCRIPTION:Stazione/PL: FORNOVO (S06153)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 21:31:30 - 21:36:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 2296 (PISA CENTRALE -> MILANO CENTRALE)\n  - RE
+ G 2296 (PISA CENTRALE -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua pe
+ r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FORNOVO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19261--20261119-S06153@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T204709Z
-DTEND:20261120T205239Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:47 - 21:52 (primo: REG 19261)
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T205842Z
+DTEND:20261120T210412Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:58 - 22:04 (primo: REG 19261)
 DESCRIPTION:Stazione/PL: FORNOVO (S06153)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 21:47:09 - 21:52:39\nTreni coinvolt
+ UA - 2 TRENI\nChiusura sbarre stimata: 21:58:42 - 22:04:12\nTreni coinvolt
  i nella chiusura:\n  - REG 19261 (PARMA -> PONTREMOLI) [Transito]\n  - REG
   19261 (PARMA -> PONTREMOLI) [Transito]\nRitardo massimo rilevato: 0 min\n
  Affidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 
@@ -178,8 +261,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19261--20261119-S06153@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T210830Z
 DTEND:20261120T211300Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:08 - 22:13 (primo: REG 19261)
@@ -200,8 +283,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3283--20261119-S06153@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T214230Z
 DTEND:20261120T214700Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:42 - 22:47 (primo: REG 3283)

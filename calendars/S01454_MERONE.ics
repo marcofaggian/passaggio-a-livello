@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:6106024a10b750db57323e6dfff24b83a0767fbabcd3146ce590d58ef169
- ad11
+X-CONTENT-HASH:b8d2030519e67078f7dba4ff9a4702e4c5463e6563e9162e470b3322d280
+ c1da
 BEGIN:VEVENT
 UID:train-612--20261119-S01454@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T044845Z
 DTEND:20261120T045444Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:48 - 05:54 (primo: REG 612) (+2 mi
@@ -36,8 +36,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1614--20261119-S01454@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T051832Z
 DTEND:20261120T052437Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:18 - 06:24 (primo: REG 1614) (+2 m
@@ -59,8 +59,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-618--20261119-S01454@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T054942Z
 DTEND:20261120T055602Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:49 - 06:56 (primo: REG 618) (+3 mi
@@ -81,9 +81,32 @@ X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-1611--20261119-S01454@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T060540Z
+DTEND:20261120T061201Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:05 - 07:12 (primo: REG 1611) (+2 m
+ in)
+DESCRIPTION:Stazione/PL: MERONE (S01454)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 07:05:40 - 07:12:01\nTreni coinvolti
+  nella chiusura:\n  - REG 1611 (MILANO CADORNA -> ASSO) (+2m)\n  - REG 161
+ 1 (MILANO CADORNA -> ASSO) (+2m)\nRitardo massimo rilevato: 2 min\nAffidab
+ ilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MERONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-1615--20261119-S01454@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T070230Z
 DTEND:20261120T070700Z
 SUMMARY:[FERMATA] REG 1615 (MILANO CADORNA -> ASSO) ore 08:06
@@ -102,39 +125,37 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1626--20261119-S01454@pl-tracker.local-arr
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T071758Z
 DTEND:20261120T072601Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:17 - 08:26 (primo: REG 1626) (+3 m
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:17 - 08:26 (primo: REG 1626) (+3 m
  in)
 DESCRIPTION:Stazione/PL: MERONE (S01454)\nRegime chiusura: CHIUSURA CONTINU
- A - 4 TRENI\nChiusura sbarre stimata: 08:17:58 - 08:26:01\nTreni coinvolti
+ A - 2 TRENI\nChiusura sbarre stimata: 08:17:58 - 08:26:01\nTreni coinvolti
   nella chiusura:\n  - REG 1626 (ERBA -> MILANO CADORNA) (+3m) [Arrivo]\n  
- - REG 1626 (ERBA -> MILANO CADORNA) (+3m) [Arrivo]\n  - REG 1626 (ERBA -> 
- MILANO CADORNA) (+3m) [Partenza]\n  - REG 1626 (ERBA -> MILANO CADORNA) (+
- 3m) [Partenza]\nRitardo massimo rilevato: 3 min\nAffidabilità stima: 99%\
- nNota normativa/euristica: Chiusura continua per 4 treni: intervallo utile
-  tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (12
- 0s)
+ - REG 1626 (ERBA -> MILANO CADORNA) (+3m) [Partenza]\nRitardo massimo rile
+ vato: 3 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura 
+ continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MERONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1617--20261119-S01454@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T073358Z
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T073352Z
 DTEND:20261120T074643Z
 SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:33 - 08:46 (primo: REG 1617) (+7 m
  in)
 DESCRIPTION:Stazione/PL: MERONE (S01454)\nRegime chiusura: CHIUSURA CONTINU
- A - 4 TRENI\nChiusura sbarre stimata: 08:33:58 - 08:46:43\nTreni coinvolti
+ A - 4 TRENI\nChiusura sbarre stimata: 08:33:52 - 08:46:43\nTreni coinvolti
   nella chiusura:\n  - REG 1617 (MILANO CADORNA -> ERBA) [Transito]\n  - RE
  G 1617 (MILANO CADORNA -> ERBA) [Transito]\n  - REG 1617 (MILANO CADORNA -
  > ERBA) (+7m)\n  - REG 1617 (MILANO CADORNA -> ERBA) (+7m)\nRitardo massim
@@ -151,31 +172,28 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-628--20261119-S01454@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T075218Z
 DTEND:20261120T075809Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:52 - 08:58 (primo: REG 628) (+5 mi
- n)
-DESCRIPTION:Stazione/PL: MERONE (S01454)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 08:52:18 - 08:58:09\nTreni coinvolti
-  nella chiusura:\n  - REG 628 (ASSO -> MILANO CADORNA) (+5m)\n  - REG 628 
- (ASSO -> MILANO CADORNA) (+5m)\nRitardo massimo rilevato: 5 min\nAffidabil
- ità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
+SUMMARY:[FERMATA] REG 628 (ASSO -> MILANO CADORNA) ore 08:57 (+5 min)
+DESCRIPTION:Stazione/PL: MERONE (S01454)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 08:52:18 - 08:58:09\nTreni coinvolti nella chiusura:\n  
+ - REG 628 (ASSO -> MILANO CADORNA) (+5m)\nRitardo massimo rilevato: 5 min\
+ nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale da 
+ circuito di binario
 LOCATION:Passaggio a Livello / Stazione MERONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1630--20261119-S01454@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T081730Z
 DTEND:20261120T082200Z
 SUMMARY:[FERMATA] REG 1630 (ERBA -> MILANO CADORNA) ore 09:21
@@ -194,32 +212,31 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-625--20261119-S01454@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T090054Z
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T090027Z
 DTEND:20261120T091200Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:00 - 10:12 (primo: REG 625) (+3 mi
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:00 - 10:12 (primo: REG 625) (+3 mi
  n)
 DESCRIPTION:Stazione/PL: MERONE (S01454)\nRegime chiusura: CHIUSURA CONTINU
- A - 4 TRENI\nChiusura sbarre stimata: 10:00:54 - 10:12:00\nTreni coinvolti
+ A - 2 TRENI\nChiusura sbarre stimata: 10:00:27 - 10:12:00\nTreni coinvolti
   nella chiusura:\n  - REG 625 (MILANO CADORNA -> ASSO) (+3m) [Transito]\n 
-  - REG 625 (MILANO CADORNA -> ASSO) (+3m) [Transito]\n  - REG 625 (MILANO 
- CADORNA -> ASSO) (+3m)\n  - REG 625 (MILANO CADORNA -> ASSO) (+3m)\nRitard
- o massimo rilevato: 3 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) i
- nferiore alla soglia minima di sgombero stradale (120s)
+  - REG 625 (MILANO CADORNA -> ASSO) (+3m)\nRitardo massimo rilevato: 3 min
+ \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
+ r 2 treni: intervallo utile tra i passaggi (92s) inferiore alla soglia min
+ ima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MERONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-636--20261119-S01454@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T094730Z
 DTEND:20261120T095200Z
 SUMMARY:[FERMATA] REG 636 (ASSO -> MILANO CADORNA) ore 10:51
@@ -238,17 +255,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-631--20261119-S01454@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T095754Z
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T095727Z
 DTEND:20261120T100900Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:57 - 11:09 (primo: REG 631)
 DESCRIPTION:Stazione/PL: MERONE (S01454)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 10:57:54 - 11:09:00\nTreni coinvolti
+ A - 2 TRENI\nChiusura sbarre stimata: 10:57:27 - 11:09:00\nTreni coinvolti
   nella chiusura:\n  - REG 631 (MILANO CADORNA -> ASSO) [Transito]\n  - REG
   631 (MILANO CADORNA -> ASSO)\nRitardo massimo rilevato: 0 min\nAffidabili
  tà stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: i
- ntervallo utile tra i passaggi (65s) inferiore alla soglia minima di sgomb
+ ntervallo utile tra i passaggi (92s) inferiore alla soglia minima di sgomb
  ero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MERONE
 STATUS:CONFIRMED
@@ -260,17 +277,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-635--20261119-S01454@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T105754Z
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T105727Z
 DTEND:20261120T110900Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:57 - 12:09 (primo: REG 635)
 DESCRIPTION:Stazione/PL: MERONE (S01454)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 11:57:54 - 12:09:00\nTreni coinvolti
+ A - 2 TRENI\nChiusura sbarre stimata: 11:57:27 - 12:09:00\nTreni coinvolti
   nella chiusura:\n  - REG 635 (MILANO CADORNA -> ASSO) [Transito]\n  - REG
   635 (MILANO CADORNA -> ASSO)\nRitardo massimo rilevato: 0 min\nAffidabili
  tà stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: i
- ntervallo utile tra i passaggi (65s) inferiore alla soglia minima di sgomb
+ ntervallo utile tra i passaggi (92s) inferiore alla soglia minima di sgomb
  ero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MERONE
 STATUS:CONFIRMED
@@ -282,30 +299,28 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-652--20261119-S01454@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
 DTSTART:20261120T134730Z
 DTEND:20261120T135200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:47 - 14:52 (primo: REG 652)
-DESCRIPTION:Stazione/PL: MERONE (S01454)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 14:47:30 - 14:52:00\nTreni coinvolti
-  nella chiusura:\n  - REG 652 (ASSO -> MILANO CADORNA)\n  - REG 652 (ASSO 
- -> MILANO CADORNA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
- 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo u
- tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
-  (120s)
+SUMMARY:[FERMATA] REG 652 (ASSO -> MILANO CADORNA) ore 14:51
+DESCRIPTION:Stazione/PL: MERONE (S01454)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 14:47:30 - 14:52:00\nTreni coinvolti nella chiusura:\n  
+ - REG 652 (ASSO -> MILANO CADORNA)\nRitardo massimo rilevato: 0 min\nAffid
+ abilità stima: 90%\nNota normativa/euristica: Previsione da traccia orari
+ a regolare
 LOCATION:Passaggio a Livello / Stazione MERONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1654--20261119-S01454@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T141730Z
 DTEND:20261120T142200Z
 SUMMARY:[FERMATA] REG 1654 (ERBA -> MILANO CADORNA) ore 15:21
@@ -324,40 +339,39 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2655--20261119-S01454@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T152754Z
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T152727Z
 DTEND:20261120T153900Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:27 - 16:39 (primo: REG 2655)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:27 - 16:39 (primo: REG 2655)
 DESCRIPTION:Stazione/PL: MERONE (S01454)\nRegime chiusura: CHIUSURA CONTINU
- A - 4 TRENI\nChiusura sbarre stimata: 16:27:54 - 16:39:00\nTreni coinvolti
+ A - 2 TRENI\nChiusura sbarre stimata: 16:27:27 - 16:39:00\nTreni coinvolti
   nella chiusura:\n  - REG 2655 (MILANO CADORNA -> ERBA) [Transito]\n  - RE
- G 2655 (MILANO CADORNA -> ERBA) [Transito]\n  - REG 2655 (MILANO CADORNA -
- > ERBA)\n  - REG 2655 (MILANO CADORNA -> ERBA)\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
- ua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
+ G 2655 (MILANO CADORNA -> ERBA)\nRitardo massimo rilevato: 0 min\nAffidabi
+ lità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni:
+  intervallo utile tra i passaggi (92s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MERONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-657--20261119-S01454@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T155754Z
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T155727Z
 DTEND:20261120T160900Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:57 - 17:09 (primo: REG 657)
 DESCRIPTION:Stazione/PL: MERONE (S01454)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 16:57:54 - 17:09:00\nTreni coinvolti
+ A - 2 TRENI\nChiusura sbarre stimata: 16:57:27 - 17:09:00\nTreni coinvolti
   nella chiusura:\n  - REG 657 (MILANO CADORNA -> ASSO) [Transito]\n  - REG
   657 (MILANO CADORNA -> ASSO)\nRitardo massimo rilevato: 0 min\nAffidabili
  tà stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: i
- ntervallo utile tra i passaggi (65s) inferiore alla soglia minima di sgomb
+ ntervallo utile tra i passaggi (92s) inferiore alla soglia minima di sgomb
  ero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MERONE
 STATUS:CONFIRMED
@@ -369,8 +383,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2676--20261119-S01454@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T181730Z
 DTEND:20261120T182200Z
 SUMMARY:[FERMATA] REG 2676 (ASSO -> MILANO CADORNA) ore 19:21
@@ -388,40 +402,61 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-680--20261119-S01454@pl-tracker.local
-DTSTAMP:20261120T083617Z
+UID:train-2679--20261119-S01454@pl-tracker.local
+DTSTAMP:20261120T171953Z
 SEQUENCE:0
-DTSTART:20261120T194730Z
-DTEND:20261120T195200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:47 - 20:52 (primo: REG 680)
+DTSTART:20261120T192727Z
+DTEND:20261120T193900Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:27 - 20:39 (primo: REG 2679)
 DESCRIPTION:Stazione/PL: MERONE (S01454)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 20:47:30 - 20:52:00\nTreni coinvolti
-  nella chiusura:\n  - REG 680 (ASSO -> MILANO CADORNA)\n  - REG 680 (ASSO 
- -> MILANO CADORNA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
- 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo u
- tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
-  (120s)
+ A - 4 TRENI\nChiusura sbarre stimata: 20:27:27 - 20:39:00\nTreni coinvolti
+  nella chiusura:\n  - REG 2679 (MILANO CADORNA -> ASSO) [Transito]\n  - RE
+ G 2679 (MILANO CADORNA -> ASSO) [Transito]\n  - REG 2679 (MILANO CADORNA -
+ > ASSO)\n  - REG 2679 (MILANO CADORNA -> ASSO)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
+ ua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+  minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MERONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-680--20261119-S01454@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T194730Z
+DTEND:20261120T195200Z
+SUMMARY:[FERMATA] REG 680 (ASSO -> MILANO CADORNA) ore 20:51
+DESCRIPTION:Stazione/PL: MERONE (S01454)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 20:47:30 - 20:52:00\nTreni coinvolti nella chiusura:\n  
+ - REG 680 (ASSO -> MILANO CADORNA)\nRitardo massimo rilevato: 0 min\nAffid
+ abilità stima: 90%\nNota normativa/euristica: Previsione da traccia orari
+ a regolare
+LOCATION:Passaggio a Livello / Stazione MERONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-681--20261119-S01454@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T195754Z
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T195727Z
 DTEND:20261120T200900Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:57 - 21:09 (primo: REG 681)
 DESCRIPTION:Stazione/PL: MERONE (S01454)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 20:57:54 - 21:09:00\nTreni coinvolti
+ A - 2 TRENI\nChiusura sbarre stimata: 20:57:27 - 21:09:00\nTreni coinvolti
   nella chiusura:\n  - REG 681 (MILANO CADORNA -> ASSO) [Transito]\n  - REG
   681 (MILANO CADORNA -> ASSO)\nRitardo massimo rilevato: 0 min\nAffidabili
  tà stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: i
- ntervallo utile tra i passaggi (65s) inferiore alla soglia minima di sgomb
+ ntervallo utile tra i passaggi (92s) inferiore alla soglia minima di sgomb
  ero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MERONE
 STATUS:CONFIRMED
@@ -433,23 +468,22 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-685--20261119-S01454@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:0
-DTSTART:20261120T205754Z
+DTSTAMP:20261120T171953Z
+SEQUENCE:1
+DTSTART:20261120T205727Z
 DTEND:20261120T210900Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 21:57 - 22:09 (primo: REG 685)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:57 - 22:09 (primo: REG 685)
 DESCRIPTION:Stazione/PL: MERONE (S01454)\nRegime chiusura: CHIUSURA CONTINU
- A - 4 TRENI\nChiusura sbarre stimata: 21:57:54 - 22:09:00\nTreni coinvolti
+ A - 2 TRENI\nChiusura sbarre stimata: 21:57:27 - 22:09:00\nTreni coinvolti
   nella chiusura:\n  - REG 685 (MILANO CADORNA -> ASSO) [Transito]\n  - REG
-  685 (MILANO CADORNA -> ASSO) [Transito]\n  - REG 685 (MILANO CADORNA -> A
- SSO)\n  - REG 685 (MILANO CADORNA -> ASSO)\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
- er 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
+  685 (MILANO CADORNA -> ASSO)\nRitardo massimo rilevato: 0 min\nAffidabili
+ tà stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: i
+ ntervallo utile tra i passaggi (92s) inferiore alla soglia minima di sgomb
+ ero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MERONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG

@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:c0ea945eb6b554775c598d1b553e1760ebc48f53ed1d0d3f5daca1161570
- 53d6
+X-CONTENT-HASH:eae5327a7d5fd6348550d78f596703ae1a3169c3a0ce3f43ec9cd1133773
+ 8a77
 BEGIN:VEVENT
 UID:train-16519--20261119-S02762@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
 DTSTART:20261120T053730Z
 DTEND:20261120T054200Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:37 - 06:42 (primo: REG 16519) (+1 
@@ -36,23 +36,93 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16485--20261119-S02762@pl-tracker.local
-DTSTAMP:20261120T083617Z
-SEQUENCE:1
-DTSTART:20261120T071530Z
-DTEND:20261120T072000Z
-SUMMARY:[FERMATA] REG 16485 (TREVISO CENTRALE -> PORTOGRUARO CAORLE) ore 08
- :19
-DESCRIPTION:Stazione/PL: FAGARE' (S02762)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 08:15:30 - 08:20:00\nTreni coinvolti nella chiusura:\n 
-  - REG 16485 (TREVISO CENTRALE -> PORTOGRUARO CAORLE)\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
- ne da traccia oraria regolare
+DTSTAMP:20261120T171953Z
+SEQUENCE:2
+DTSTART:20261120T072400Z
+DTEND:20261120T072900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:24 - 08:29 (primo: REG 16485) (+8 
+ min)
+DESCRIPTION:Stazione/PL: FAGARE' (S02762)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 08:24:00 - 08:29:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 16485 (TREVISO CENTRALE -> PORTOGRUARO CAORLE) 
+ (+8m)\n  - REG 16485 (TREVISO CENTRALE -> PORTOGRUARO CAORLE) (+8m)\nRitar
+ do massimo rilevato: 8 min\nAffidabilità stima: 99%\nNota normativa/euris
+ tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
+ inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FAGARE'
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16493--20261119-S02762@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T144630Z
+DTEND:20261120T145100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:46 - 15:51 (primo: REG 16493)
+DESCRIPTION:Stazione/PL: FAGARE' (S02762)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 15:46:30 - 15:51:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 16493 (TREVISO CENTRALE -> PORTOGRUARO CAORLE)\
+ n  - REG 16493 (TREVISO CENTRALE -> PORTOGRUARO CAORLE)\nRitardo massimo r
+ ilevato: -1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chius
+ ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FAGARE'
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16500--20261119-S02762@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T163616Z
+DTEND:20261120T164146Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:36 - 17:41 (primo: REG 16500) (+2 
+ min)
+DESCRIPTION:Stazione/PL: FAGARE' (S02762)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 17:36:16 - 17:41:46\nTreni coinvolt
+ i nella chiusura:\n  - REG 16500 (PORTOGRUARO CAORLE -> TREVISO CENTRALE) 
+ (+2m) [Transito]\n  - REG 16500 (PORTOGRUARO CAORLE -> TREVISO CENTRALE) (
+ +2m) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%
+ \nNota normativa/euristica: Chiusura continua per 2 treni: intervallo util
+ e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
+ 20s)
+LOCATION:Passaggio a Livello / Stazione FAGARE'
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16500--20261119-S02762@pl-tracker.local
+DTSTAMP:20261120T171953Z
+SEQUENCE:0
+DTSTART:20261120T170800Z
+DTEND:20261120T171230Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:08 - 18:12 (primo: REG 16500)
+DESCRIPTION:Stazione/PL: FAGARE' (S02762)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 18:08:00 - 18:12:30\nTreni coinvolt
+ i nella chiusura:\n  - REG 16500 (PORTOGRUARO CAORLE -> TREVISO CENTRALE)\
+ n  - REG 16500 (PORTOGRUARO CAORLE -> TREVISO CENTRALE)\nRitardo massimo r
+ ilevato: -1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chius
+ ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FAGARE'
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR
