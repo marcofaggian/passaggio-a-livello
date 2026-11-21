@@ -9,12 +9,35 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:c2c507aeb6f8e7d18ecad3b214edbb2ff267e77e9729b6b077c6fbcff023
- c5eb
+X-CONTENT-HASH:8bf57911cbcab9ec119ca266cedb1d33c312f3306ff9ce0a2b8e5fd2878e
+ cbcb
+BEGIN:VEVENT
+UID:train-19789--20261120-S07207@pl-tracker.local
+DTSTAMP:20261121T041232Z
+SEQUENCE:0
+DTSTART:20261121T045532Z
+DTEND:20261121T050102Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:55 - 06:01 (primo: REG 19789) (+2 
+ min)
+DESCRIPTION:Stazione/PL: ALBACINA (S07207)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 05:55:32 - 06:01:02\nTreni coinvol
+ ti nella chiusura:\n  - REG 19789 (ANCONA -> FOLIGNO) (+2m) [Transito]\n  
+ - REG 19789 (ANCONA -> FOLIGNO) (+2m) [Transito]\nRitardo massimo rilevato
+ : 2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ALBACINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
 BEGIN:VEVENT
 UID:train-19711--20261120-S07207@pl-tracker.local
-DTSTAMP:20261120T231755Z
-SEQUENCE:0
+DTSTAMP:20261121T041232Z
+SEQUENCE:1
 DTSTART:20261121T061130Z
 DTEND:20261121T061600Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:11 - 07:16 (primo: REG 19711)
@@ -34,19 +57,19 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-19816--20261120-S07207@pl-tracker.local
-DTSTAMP:20261120T231755Z
+UID:train-23849--20261120-S07207@pl-tracker.local
+DTSTAMP:20261121T041232Z
 SEQUENCE:0
-DTSTART:20261121T142730Z
-DTEND:20261121T143200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:27 - 15:32 (primo: REG 19816)
+DTSTART:20261121T132630Z
+DTEND:20261121T133100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:26 - 14:31 (primo: REG 23849)
 DESCRIPTION:Stazione/PL: ALBACINA (S07207)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 15:27:30 - 15:32:00\nTreni coinvol
- ti nella chiusura:\n  - REG 19816 (FOLIGNO -> ANCONA)\n  - REG 19816 (FOLI
- GNO -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\
- nNota normativa/euristica: Chiusura continua per 2 treni: intervallo utile
-  tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (12
- 0s)
+ NUA - 2 TRENI\nChiusura sbarre stimata: 14:26:30 - 14:31:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 23849 (ANCONA -> FABRIANO)\n  - REG 23849 (ANC
+ ONA -> FABRIANO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90
+ %\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo uti
+ le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
+ 120s)
 LOCATION:Passaggio a Livello / Stazione ALBACINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -56,9 +79,29 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-19816--20261120-S07207@pl-tracker.local
+DTSTAMP:20261121T041232Z
+SEQUENCE:1
+DTSTART:20261121T142730Z
+DTEND:20261121T143200Z
+SUMMARY:[FERMATA] REG 19816 (FOLIGNO -> ANCONA) ore 15:31
+DESCRIPTION:Stazione/PL: ALBACINA (S07207)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 15:27:30 - 15:32:00\nTreni coinvolti nella chiusura:\n
+   - REG 19816 (FOLIGNO -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffida
+ bilità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria
+  regolare
+LOCATION:Passaggio a Livello / Stazione ALBACINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-4156--20261120-S07207@pl-tracker.local
-DTSTAMP:20261120T231755Z
-SEQUENCE:0
+DTSTAMP:20261121T041232Z
+SEQUENCE:1
 DTSTART:20261121T174915Z
 DTEND:20261121T175445Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:49 - 18:54 (primo: REG 4156)
@@ -79,44 +122,40 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23865--20261120-S07207@pl-tracker.local
-DTSTAMP:20261120T231755Z
-SEQUENCE:0
+DTSTAMP:20261121T041232Z
+SEQUENCE:1
 DTSTART:20261121T181530Z
 DTEND:20261121T182000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:15 - 19:20 (primo: REG 23865)
-DESCRIPTION:Stazione/PL: ALBACINA (S07207)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 19:15:30 - 19:20:00\nTreni coinvol
- ti nella chiusura:\n  - REG 23865 (ANCONA -> FABRIANO)\n  - REG 23865 (ANC
- ONA -> FABRIANO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90
- %\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo uti
- le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
- 120s)
+SUMMARY:[FERMATA] REG 23865 (ANCONA -> FABRIANO) ore 19:19
+DESCRIPTION:Stazione/PL: ALBACINA (S07207)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 19:15:30 - 19:20:00\nTreni coinvolti nella chiusura:\n
+   - REG 23865 (ANCONA -> FABRIANO)\nRitardo massimo rilevato: 0 min\nAffid
+ abilità stima: 90%\nNota normativa/euristica: Previsione da traccia orari
+ a regolare
 LOCATION:Passaggio a Livello / Stazione ALBACINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19823--20261120-S07207@pl-tracker.local
-DTSTAMP:20261120T231755Z
-SEQUENCE:0
+DTSTAMP:20261121T041232Z
+SEQUENCE:1
 DTSTART:20261121T212230Z
 DTEND:20261121T212700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:22 - 22:27 (primo: REG 19823)
-DESCRIPTION:Stazione/PL: ALBACINA (S07207)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 22:22:30 - 22:27:00\nTreni coinvol
- ti nella chiusura:\n  - REG 19823 (ANCONA -> FOLIGNO)\n  - REG 19823 (ANCO
- NA -> FOLIGNO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\
- nNota normativa/euristica: Chiusura continua per 2 treni: intervallo utile
-  tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (12
- 0s)
+SUMMARY:[FERMATA] REG 19823 (ANCONA -> FOLIGNO) ore 22:26
+DESCRIPTION:Stazione/PL: ALBACINA (S07207)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 22:22:30 - 22:27:00\nTreni coinvolti nella chiusura:\n
+   - REG 19823 (ANCONA -> FOLIGNO)\nRitardo massimo rilevato: 0 min\nAffida
+ bilità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria
+  regolare
 LOCATION:Passaggio a Livello / Stazione ALBACINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

@@ -9,22 +9,42 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:dd083ed1ed7f3a2fdb49b021400a918d04f7120fb7bdac902fc9229dfa11
- f9e6
+X-CONTENT-HASH:b1270ef29674edbd219d12df2361641b937eeb3e3f8be92b15263a5ee5d8
+ a25f
 BEGIN:VEVENT
 UID:train-21181--20261120-S09826@pl-tracker.local
-DTSTAMP:20261120T231755Z
-SEQUENCE:0
+DTSTAMP:20261121T041232Z
+SEQUENCE:1
 DTSTART:20261121T070530Z
 DTEND:20261121T071000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:05 - 08:10 (primo: REG 21181)
+SUMMARY:[FERMATA] REG 21181 (SALERNO -> SICIGNANO DEGLI ALBURNI) ore 08:09
+DESCRIPTION:Stazione/PL: CONTURSI TERME (S09826)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 08:05:30 - 08:10:00\nTreni coinvolti nella chius
+ ura:\n  - REG 21181 (SALERNO -> SICIGNANO DEGLI ALBURNI)\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previ
+ sione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione CONTURSI TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21111--20261120-S09826@pl-tracker.local
+DTSTAMP:20261121T041232Z
+SEQUENCE:0
+DTSTART:20261121T154330Z
+DTEND:20261121T154800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:43 - 16:48 (primo: REG 21111)
 DESCRIPTION:Stazione/PL: CONTURSI TERME (S09826)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:05:30 - 08:10:00\nTreni c
- oinvolti nella chiusura:\n  - REG 21181 (SALERNO -> SICIGNANO DEGLI ALBURN
- I)\n  - REG 21181 (SALERNO -> SICIGNANO DEGLI ALBURNI)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:43:30 - 16:48:00\nTreni c
+ oinvolti nella chiusura:\n  - REG 21111 (SALERNO -> POTENZA CENTRALE)\n  -
+  REG 21111 (SALERNO -> POTENZA CENTRALE)\nRitardo massimo rilevato: 0 min\
+ nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per
+  2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
+ a di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CONTURSI TERME
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -32,26 +52,5 @@ CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-701--20261120-S09826@pl-tracker.local
-DTSTAMP:20261120T231755Z
-SEQUENCE:0
-DTSTART:20261121T085224Z
-DTEND:20261121T085654Z
-SUMMARY:[TRANSITO VELOCE] IC 701 (ROMA TERMINI -> TARANTO) ore 09:55
-DESCRIPTION:Stazione/PL: CONTURSI TERME (S09826)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 09:52:24 - 09:56:54\nTreni coinvolti nel
- la chiusura:\n  - IC 701 (ROMA TERMINI -> TARANTO) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Transito stimato senza fermata (57% tratta EBOLI -> SICIGNANO DEGLI ALBURN
- I\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione CONTURSI TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 END:VCALENDAR

@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:2538e884236512888893d7155f3ff536f49f3eff0ab0e3f3b0ea95ab8cc8
- c180
+X-CONTENT-HASH:2ef8f665de455273ba75922c549a0b6c5521ac900b991b76b772ece48092
+ 8dd5
 BEGIN:VEVENT
 UID:train-5820--20261120-S09203@pl-tracker.local
-DTSTAMP:20261120T231755Z
-SEQUENCE:0
+DTSTAMP:20261121T041232Z
+SEQUENCE:1
 DTSTART:20261121T072830Z
 DTEND:20261121T073300Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:28 - 08:33 (primo: REG 5820)
@@ -34,18 +34,41 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8303--20261120-S09203@pl-tracker.local
-DTSTAMP:20261120T231755Z
-SEQUENCE:0
-DTSTART:20261121T074546Z
-DTEND:20261121T075116Z
-SUMMARY:[TRANSITO VELOCE] TRENO 8303 (ROMA TERMINI -> LECCE) ore 08:50
+UID:train-703--20261120-S09203@pl-tracker.local
+DTSTAMP:20261121T041232Z
+SEQUENCE:1
+DTSTART:20261121T082515Z
+DTEND:20261121T083300Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 09:25 - 09:33 (primo: IC 703)
+DESCRIPTION:Stazione/PL: VAIRANO-CAIANELLO (S09203)\nRegime chiusura: CHIUS
+ URA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 09:25:15 - 09:33:00\nTren
+ i coinvolti nella chiusura:\n  - IC 703 (ROMA TERMINI -> BARI CENTRALE)\n 
+  - IC 703 (ROMA TERMINI -> BARI CENTRALE)\n  - REG 5806 (NAPOLI CENTRALE -
+ > CASSINO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNot
+ a normativa/euristica: Chiusura continua per 3 treni: intervallo utile tra
+  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VAIRANO-CAIANELLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9539--20261120-S09203@pl-tracker.local
+DTSTAMP:20261121T041232Z
+SEQUENCE:1
+DTSTART:20261121T171454Z
+DTEND:20261121T172024Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE) o
+ re 18:19
 DESCRIPTION:Stazione/PL: VAIRANO-CAIANELLO (S09203)\nRegime chiusura: TRANS
- ITO VELOCE\nChiusura sbarre stimata: 08:45:46 - 08:51:16\nTreni coinvolti 
- nella chiusura:\n  - TRENO 8303 (ROMA TERMINI -> LECCE) [Transito]\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Transito stimato senza fermata (77% tratta ROMA TERMINI -> CASERTA\; 
- pedale annuncio fisso Vmax)
+ ITO VELOCE\nChiusura sbarre stimata: 18:14:54 - 18:20:24\nTreni coinvolti 
+ nella chiusura:\n  - TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE) [Tran
+ sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
+ mativa/euristica: Transito stimato senza fermata (19% tratta CASSINO -> NA
+ POLI CENTRALE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VAIRANO-CAIANELLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -55,90 +78,21 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-703--20261120-S09203@pl-tracker.local
-DTSTAMP:20261120T231755Z
-SEQUENCE:0
-DTSTART:20261121T082515Z
-DTEND:20261121T083300Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 09:25 - 09:33 (primo: IC 703)
-DESCRIPTION:Stazione/PL: VAIRANO-CAIANELLO (S09203)\nRegime chiusura: CHIUS
- URA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 09:25:15 - 09:33:00\nTren
- i coinvolti nella chiusura:\n  - IC 703 (ROMA TERMINI -> BARI CENTRALE)\n 
-  - IC 703 (ROMA TERMINI -> BARI CENTRALE)\n  - REG 5806 (NAPOLI CENTRALE -
- > CASSINO)\n  - REG 5806 (NAPOLI CENTRALE -> CASSINO)\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura
-  continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VAIRANO-CAIANELLO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9511--20261120-S09203@pl-tracker.local
-DTSTAMP:20261120T231755Z
-SEQUENCE:0
-DTSTART:20261121T094141Z
-DTEND:20261121T094711Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:41 - 10:47 (primo: TRENO 9511)
-DESCRIPTION:Stazione/PL: VAIRANO-CAIANELLO (S09203)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:41:41 - 10:47:11\nTren
- i coinvolti nella chiusura:\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) [Tr
- ansito]\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VAIRANO-CAIANELLO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9539--20261120-S09203@pl-tracker.local
-DTSTAMP:20261120T231755Z
-SEQUENCE:0
-DTSTART:20261121T171449Z
-DTEND:20261121T172019Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:14 - 18:20 (primo: TRENO 9539)
-DESCRIPTION:Stazione/PL: VAIRANO-CAIANELLO (S09203)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:14:49 - 18:20:19\nTren
- i coinvolti nella chiusura:\n  - TRENO 9539 (MILANO CENTRALE -> NAPOLI CEN
- TRALE) [Transito]\n  - TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE) [Tr
- ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
- ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
- passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VAIRANO-CAIANELLO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
 UID:train-5196--20261120-S09203@pl-tracker.local
-DTSTAMP:20261120T231755Z
-SEQUENCE:0
+DTSTAMP:20261121T041232Z
+SEQUENCE:1
 DTSTART:20261121T173330Z
 DTEND:20261121T173800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:33 - 18:38 (primo: REG 5196)
-DESCRIPTION:Stazione/PL: VAIRANO-CAIANELLO (S09203)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:33:30 - 18:38:00\nTren
- i coinvolti nella chiusura:\n  - REG 5196 (NAPOLI CENTRALE -> BOIANO)\n  -
-  REG 5196 (NAPOLI CENTRALE -> BOIANO)\nRitardo massimo rilevato: 0 min\nAf
- fidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 
- treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
- i sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 5196 (NAPOLI CENTRALE -> BOIANO) ore 18:37
+DESCRIPTION:Stazione/PL: VAIRANO-CAIANELLO (S09203)\nRegime chiusura: FERMA
+ TA\nChiusura sbarre stimata: 18:33:30 - 18:38:00\nTreni coinvolti nella ch
+ iusura:\n  - REG 5196 (NAPOLI CENTRALE -> BOIANO)\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
+ a traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VAIRANO-CAIANELLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
