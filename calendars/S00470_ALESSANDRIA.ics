@@ -9,33 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:c64992310254910ca3dafc884d08822875a441edfa102de90887ee6700b4
- b858
+X-CONTENT-HASH:31f10c62a7e57e51d881fa2b1bbb1f9f38aca6b1ec5ffdd58f8dd746294b
+ 9e68
 BEGIN:VEVENT
 UID:train-2152--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T041130Z
-DTEND:20261121T041600Z
-SUMMARY:[SOPPRESSO] [FERMATA] REG 2152 (ALESSANDRIA -> TORINO PORTA NUOVA) 
- ore 05:15
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: FERMATA\nCh
- iusura sbarre stimata: 05:11:30 - 05:16:00\nTreni coinvolti nella chiusura
- :\n  - REG 2152 (ALESSANDRIA -> TORINO PORTA NUOVA)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
-  da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
-STATUS:CANCELLED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2152--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
 DTSTART:20261121T041130Z
 DTEND:20261121T041600Z
 SUMMARY:[SOPPRESSO] [FERMATA] REG 2152 (ALESSANDRIA -> TORINO PORTA NUOVA) 
@@ -55,41 +34,62 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2713--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T041815Z
-DTEND:20261121T043613Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 05:18 - 05:36 (primo: REG 2713)
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 5 TRENI\nChiusura sbarre stimata: 05:18:15 - 05:36:13\nTreni coin
- volti nella chiusura:\n  - REG 2713 (TORINO PORTA NUOVA -> IVREA) [Transit
- o]\n  - REG 2713 (TORINO PORTA NUOVA -> IVREA) [Transito]\n  - REG 3211 (T
- ORINO PORTA NUOVA -> CUNEO) [Transito]\n  - REG 3211 (TORINO PORTA NUOVA -
- > CUNEO) [Transito]\n  - REG 2113 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) 
- [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
- a normativa/euristica: Chiusura continua per 5 treni: intervallo utile tra
-  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T041818Z
+DTEND:20261121T042348Z
+SUMMARY:[TRANSITO VELOCE] REG 2713 (TORINO PORTA NUOVA -> IVREA) ore 05:22
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 05:18:18 - 05:23:48\nTreni coinvolti nella 
+ chiusura:\n  - REG 2713 (TORINO PORTA NUOVA -> IVREA) [Transito]\nRitardo 
+ massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Transito stimato senza fermata (32% tratta TORINO PORTA NUOVA -> TORINO
+  PORTA SUSA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-3211--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:0
+DTSTART:20261121T042550Z
+DTEND:20261121T043731Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 05:25 - 05:37 (primo: REG 3211) (+6 m
+ in)
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 3 TRENI\nChiusura sbarre stimata: 05:25:50 - 05:37:31\nTreni coin
+ volti nella chiusura:\n  - REG 3211 (TORINO PORTA NUOVA -> CUNEO) [Transit
+ o]\n  - REG 2113 (TORINO PORTA NUOVA -> ALESSANDRIA) (+6m) [Transito]\n  -
+  REG 2113 (TORINO PORTA NUOVA -> ALESSANDRIA) (+6m) [Transito]\nRitardo ma
+ ssimo rilevato: 6 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) infer
+ iore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-9607--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T044815Z
-DTEND:20261121T045345Z
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T044818Z
+DTEND:20261121T045348Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9607 (TORINO PORTA NUOVA -> NAPOLI CENTRALE
  ) ore 05:52
 DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: TRANSITO VE
- LOCE\nChiusura sbarre stimata: 05:48:15 - 05:53:45\nTreni coinvolti nella 
+ LOCE\nChiusura sbarre stimata: 05:48:18 - 05:53:48\nTreni coinvolti nella 
  chiusura:\n  - TRENO 9607 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transit
  o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Transito stimato senza fermata (31% tratta TORINO PORTA NUO
+ iva/euristica: Transito stimato senza fermata (32% tratta TORINO PORTA NUO
  VA -> TORINO PORTA SUSA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
@@ -101,283 +101,261 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-503--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T050628Z
-DTEND:20261121T051058Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:06 - 06:10 (primo: IC 503)
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 06:06:28 - 06:10:58\nTreni coin
- volti nella chiusura:\n  - IC 503 (TORINO PORTA NUOVA -> SAVONA) [Transito
- ]\n  - IC 503 (TORINO PORTA NUOVA -> SAVONA) [Transito]\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2312--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T052122Z
-DTEND:20261121T053613Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 06:21 - 06:36 (primo: REG 2312)
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 6 TRENI\nChiusura sbarre stimata: 06:21:22 - 06:36:13\nTreni coin
- volti nella chiusura:\n  - REG 2312 (ARQUATA SCRIVIA -> MILANO GRECO PIREL
- LI) [Transito]\n  - REG 2113 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\n  - 
- REG 3115 (TORINO PORTA NUOVA -> VENTIMIGLIA) [Transito]\n  - REG 3115 (TOR
- INO PORTA NUOVA -> VENTIMIGLIA) [Transito]\n  - REG 2115 (TORINO PORTA NUO
- VA -> GENOVA BRIGNOLE) [Transito]\n  - REG 2115 (TORINO PORTA NUOVA -> GEN
- OVA BRIGNOLE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità s
- tima: 78%\nNota normativa/euristica: Chiusura continua per 6 treni: interv
- allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
- radale (120s)
-LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9611--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T054815Z
-DTEND:20261121T060345Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 06:48 - 07:03 (primo: TRENO 9611)
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 8 TRENI\nChiusura sbarre stimata: 06:48:15 - 07:03:45\nTreni coin
- volti nella chiusura:\n  - TRENO 9611 (TORINO PORTA NUOVA -> NAPOLI CENTRA
- LE) [Transito]\n  - TRENO 9611 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Tr
- ansito]\n  - REG 2015 (TORINO PORTA NUOVA -> MILANO CENTRALE) [Transito]\n
-   - REG 2015 (TORINO PORTA NUOVA -> MILANO CENTRALE) [Transito]\n  - IC 50
- 3 (TORINO PORTA NUOVA -> SAVONA)\n  - IC 503 (TORINO PORTA NUOVA -> SAVONA
- )\n  - TRENO 9519 (TORINO PORTA NUOVA -> SALERNO) [Transito]\n  - TRENO 95
- 19 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
- a per 8 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
- minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2717--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T061815Z
-DTEND:20261121T063613Z
-SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 07:18 - 07:36 (primo: REG 2717)
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 7 TRENI\nChiusura sbarre stimata: 07:18:15 - 07:36:13\nTreni coin
- volti nella chiusura:\n  - REG 2717 (TORINO PORTA NUOVA -> IVREA) [Transit
- o]\n  - REG 2717 (TORINO PORTA NUOVA -> IVREA) [Transito]\n  - REG 2115 (T
- ORINO PORTA NUOVA -> GENOVA BRIGNOLE)\n  - REG 2115 (TORINO PORTA NUOVA ->
-  GENOVA BRIGNOLE)\n  - REG 2116 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA)\n 
-  - REG 2117 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) [Transito]\n  - REG 21
- 17 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) [Transito]\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
-  continua per 7 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9391--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T063815Z
-DTEND:20261121T064345Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:38 - 07:43 (primo: TRENO 9391)
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 07:38:15 - 07:43:45\nTreni coin
- volti nella chiusura:\n  - TRENO 9391 (TORINO PORTA NUOVA -> NAPOLI CENTRA
- LE) [Transito]\n  - TRENO 9391 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Tr
- ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
- ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
- passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2017--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T065233Z
-DTEND:20261121T070553Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 07:52 - 08:05 (primo: REG 2017)
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 5 TRENI\nChiusura sbarre stimata: 07:52:33 - 08:05:53\nTreni coin
- volti nella chiusura:\n  - REG 2017 (TORINO PORTA NUOVA -> MILANO CENTRALE
- ) [Transito]\n  - REG 2313 (MILANO GRECO PIRELLI -> NOVI LIGURE) [Transito
- ]\n  - REG 2313 (MILANO GRECO PIRELLI -> NOVI LIGURE) [Transito]\n  - REG 
- 2118 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) [Transito]\n  - REG 2012 (MIL
- ANO CENTRALE -> TORINO PORTA NUOVA) [Transito]\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
- ua per 5 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2117--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T072530Z
-DTEND:20261121T073613Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 08:25 - 08:36 (primo: REG 2117)
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 6 TRENI\nChiusura sbarre stimata: 08:25:30 - 08:36:13\nTreni coin
- volti nella chiusura:\n  - REG 2117 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE
- )\n  - REG 2117 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\n  - REG 2118 (GEN
- OVA BRIGNOLE -> TORINO PORTA NUOVA)\n  - REG 2118 (GENOVA BRIGNOLE -> TORI
- NO PORTA NUOVA)\n  - REG 2119 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) [Tra
- nsito]\n  - REG 2119 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) [Transito]\nR
- itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Chiusura continua per 6 treni: intervallo utile tra i passaggi (
- 0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9600--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T074643Z
-DTEND:20261121T075213Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9600 (MILANO CENTRALE -> TORINO PORTA NUOVA
- ) ore 08:50
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T050635Z
+DTEND:20261121T051105Z
+SUMMARY:[TRANSITO VELOCE] IC 503 (TORINO PORTA NUOVA -> SAVONA) ore 06:10
 DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: TRANSITO VE
- LOCE\nChiusura sbarre stimata: 08:46:43 - 08:52:13\nTreni coinvolti nella 
- chiusura:\n  - TRENO 9600 (MILANO CENTRALE -> TORINO PORTA NUOVA) [Transit
- o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Transito stimato senza fermata (67% tratta TORINO PORTA SUS
- A -> TORINO PORTA NUOVA\; pedale annuncio fisso Vmax)
+ LOCE\nChiusura sbarre stimata: 06:06:35 - 06:11:05\nTreni coinvolti nella 
+ chiusura:\n  - IC 503 (TORINO PORTA NUOVA -> SAVONA) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (73% tratta TORINO PORTA NUOVA -> TORINO 
+ LINGOTTO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2119--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
+UID:train-3115--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
 SEQUENCE:0
-DTSTART:20261121T082530Z
-DTEND:20261121T083000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:25 - 09:30 (primo: REG 2119)
+DTSTART:20261121T052550Z
+DTEND:20261121T053843Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 06:25 - 06:38 (primo: REG 3115) (+6 m
+ in)
 DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 09:25:30 - 09:30:00\nTreni coin
- volti nella chiusura:\n  - REG 2119 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE
- )\n  - REG 2119 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+ NTINUA - 5 TRENI\nChiusura sbarre stimata: 06:25:50 - 06:38:43\nTreni coin
+ volti nella chiusura:\n  - REG 3115 (TORINO PORTA NUOVA -> VENTIMIGLIA) [T
+ ransito]\n  - REG 2113 (TORINO PORTA NUOVA -> ALESSANDRIA) (+6m)\n  - REG 
+ 2113 (TORINO PORTA NUOVA -> ALESSANDRIA) (+6m)\n  - REG 2115 (TORINO PORTA
+  NUOVA -> GENOVA BRIGNOLE) [Transito]\n  - REG 2312 (ARQUATA SCRIVIA -> MI
+ LANO GRECO PIRELLI) [Transito]\nRitardo massimo rilevato: 6 min\nAffidabil
+ ità stima: 78%\nNota normativa/euristica: Chiusura continua per 5 treni: 
+ intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
+ ero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9702--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T085523Z
-DTEND:20261121T090553Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 09:55 - 10:05 (primo: TRENO 9702)
+UID:train-9611--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T054818Z
+DTEND:20261121T060348Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:48 - 07:03 (primo: TRENO 9611)
 DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 6 TRENI\nChiusura sbarre stimata: 09:55:23 - 10:05:53\nTreni coin
- volti nella chiusura:\n  - TRENO 9702 (VENEZIA S.LUCIA -> TORINO PORTA NUO
- VA) [Transito]\n  - TRENO 9702 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA) [Tr
- ansito]\n  - TRENO 9587 (TORINO PORTA NUOVA -> REGGIO DI CALABRIA CENTRALE
- ) [Transito]\n  - TRENO 9587 (TORINO PORTA NUOVA -> REGGIO DI CALABRIA CEN
- TRALE) [Transito]\n  - REG 2016 (MILANO CENTRALE -> TORINO PORTA NUOVA) [T
- ransito]\n  - REG 2016 (MILANO CENTRALE -> TORINO PORTA NUOVA) [Transito]\
- nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Chiusura continua per 6 treni: intervallo utile tra i passaggi
-  (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3121--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T092543Z
-DTEND:20261121T093613Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:25 - 10:36 (primo: REG 3121)
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 4 TRENI\nChiusura sbarre stimata: 10:25:43 - 10:36:13\nTreni coin
- volti nella chiusura:\n  - REG 3121 (TORINO PORTA NUOVA -> SAVONA) [Transi
- to]\n  - REG 3121 (TORINO PORTA NUOVA -> SAVONA) [Transito]\n  - REG 2123 
- (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) [Transito]\n  - REG 2123 (TORINO P
- ORTA NUOVA -> GENOVA BRIGNOLE) [Transito]\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
- r 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
- ma di sgombero stradale (120s)
+ NTINUA - 4 TRENI\nChiusura sbarre stimata: 06:48:18 - 07:03:48\nTreni coin
+ volti nella chiusura:\n  - TRENO 9611 (TORINO PORTA NUOVA -> NAPOLI CENTRA
+ LE) [Transito]\n  - REG 2015 (TORINO PORTA NUOVA -> MILANO CENTRALE) [Tran
+ sito]\n  - IC 503 (TORINO PORTA NUOVA -> SAVONA)\n  - TRENO 9519 (TORINO P
+ ORTA NUOVA -> SALERNO) [Transito]\nRitardo massimo rilevato: 0 min\nAffida
+ bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 tren
+ i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
+ ombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2717--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T061840Z
+DTEND:20261121T064348Z
+SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 07:18 - 07:43 (primo: REG 2717)
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 8 TRENI\nChiusura sbarre stimata: 07:18:40 - 07:43:48\nTreni coin
+ volti nella chiusura:\n  - REG 2717 (TORINO PORTA NUOVA -> IVREA) [Transit
+ o]\n  - REG 2717 (TORINO PORTA NUOVA -> IVREA) [Transito]\n  - REG 3215 (T
+ ORINO PORTA NUOVA -> CUNEO) [Transito]\n  - REG 3215 (TORINO PORTA NUOVA -
+ > CUNEO) [Transito]\n  - REG 2115 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\
+ n  - REG 2116 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA)\n  - REG 2117 (TORIN
+ O PORTA NUOVA -> GENOVA BRIGNOLE) [Transito]\n  - TRENO 9391 (TORINO PORTA
+  NUOVA -> NAPOLI CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAf
+ fidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 8 
+ treni: intervallo utile tra i passaggi (118s) inferiore alla soglia minima
+  di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2017--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T065237Z
+DTEND:20261121T070615Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 07:52 - 08:06 (primo: REG 2017) (+18 
+ min)
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 6 TRENI\nChiusura sbarre stimata: 07:52:37 - 08:06:15\nTreni coin
+ volti nella chiusura:\n  - REG 2017 (TORINO PORTA NUOVA -> MILANO CENTRALE
+ ) [Transito]\n  - TRENO 9583 (TORINO PORTA NUOVA -> REGGIO DI CALABRIA CEN
+ TRALE) (+18m) [Transito]\n  - TRENO 9583 (TORINO PORTA NUOVA -> REGGIO DI 
+ CALABRIA CENTRALE) (+18m) [Transito]\n  - REG 2313 (MILANO GRECO PIRELLI -
+ > NOVI LIGURE) [Transito]\n  - REG 2313 (MILANO GRECO PIRELLI -> NOVI LIGU
+ RE) [Transito]\n  - REG 2012 (MILANO CENTRALE -> TORINO PORTA NUOVA) [Tran
+ sito]\nRitardo massimo rilevato: 18 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Chiusura continua per 6 treni: intervallo utile tra i p
+ assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:18
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2117--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T072530Z
+DTEND:20261121T073620Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 08:25 - 08:36 (primo: REG 2117)
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 3 TRENI\nChiusura sbarre stimata: 08:25:30 - 08:36:20\nTreni coin
+ volti nella chiusura:\n  - REG 2117 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE
+ )\n  - REG 2118 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA)\n  - REG 2119 (TOR
+ INO PORTA NUOVA -> GENOVA BRIGNOLE) [Transito]\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
+ ua per 3 treni: intervallo utile tra i passaggi (50s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9600--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T075622Z
+DTEND:20261121T080152Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:56 - 09:01 (primo: TRENO 9600) (+8
+  min)
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 08:56:22 - 09:01:52\nTreni coin
+ volti nella chiusura:\n  - TRENO 9600 (MILANO CENTRALE -> TORINO PORTA NUO
+ VA) (+8m) [Transito]\n  - TRENO 9600 (MILANO CENTRALE -> TORINO PORTA NUOV
+ A) (+8m) [Transito]\nRitardo massimo rilevato: 8 min\nAffidabilità stima:
+  78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
+ utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
+ e (120s)
+LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2119--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T082530Z
+DTEND:20261121T083000Z
+SUMMARY:[FERMATA] REG 2119 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) ore 09:2
+ 9
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 09:25:30 - 09:30:00\nTreni coinvolti nella chiusura
+ :\n  - REG 2119 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previs
+ ione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9702--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T085745Z
+DTEND:20261121T091843Z
+SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 09:57 - 10:18 (primo: TRENO 9702) (+7
+ 2 min)
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 8 TRENI\nChiusura sbarre stimata: 09:57:45 - 10:18:43\nTreni coin
+ volti nella chiusura:\n  - TRENO 9702 (VENEZIA S.LUCIA -> TORINO PORTA NUO
+ VA) [Transito]\n  - TRENO 9702 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA) [Tr
+ ansito]\n  - TRENO 9587 (TORINO PORTA NUOVA -> REGGIO DI CALABRIA CENTRALE
+ ) (+13m) [Transito]\n  - TRENO 9587 (TORINO PORTA NUOVA -> REGGIO DI CALAB
+ RIA CENTRALE) (+13m) [Transito]\n  - REG 2016 (MILANO CENTRALE -> TORINO P
+ ORTA NUOVA) (+4m) [Transito]\n  - REG 2016 (MILANO CENTRALE -> TORINO PORT
+ A NUOVA) (+4m) [Transito]\n  - REG 2014 (MILANO CENTRALE -> TORINO PORTA N
+ UOVA) (+72m) [Transito]\n  - REG 2014 (MILANO CENTRALE -> TORINO PORTA NUO
+ VA) (+72m) [Transito]\nRitardo massimo rilevato: 72 min\nAffidabilità sti
+ ma: 78%\nNota normativa/euristica: Chiusura continua per 8 treni: interval
+ lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
+ dale (120s)
+LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+X-PL-DELAY-MIN:72
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3121--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T092550Z
+DTEND:20261121T093620Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:25 - 10:36 (primo: REG 3121)
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 10:25:50 - 10:36:20\nTreni coin
+ volti nella chiusura:\n  - REG 3121 (TORINO PORTA NUOVA -> SAVONA) [Transi
+ to]\n  - REG 2123 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
+  inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-511--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T094045Z
-DTEND:20261121T094515Z
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T094051Z
+DTEND:20261121T094521Z
 SUMMARY:[TRANSITO VELOCE] IC 511 (TORINO PORTA NUOVA -> SALERNO) ore 10:44
 DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: TRANSITO VE
- LOCE\nChiusura sbarre stimata: 10:40:45 - 10:45:15\nTreni coinvolti nella 
+ LOCE\nChiusura sbarre stimata: 10:40:51 - 10:45:21\nTreni coinvolti nella 
  chiusura:\n  - IC 511 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRitardo 
  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Transito stimato senza fermata (71% tratta TORINO PORTA NUOVA -> TORINO
+ a: Transito stimato senza fermata (73% tratta TORINO PORTA NUOVA -> TORINO
   LINGOTTO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
@@ -389,154 +367,175 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9712--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T095143Z
-DTEND:20261121T100428Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 10:51 - 11:04 (primo: TRENO 9712)
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T095200Z
+DTEND:20261121T100348Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:52 - 11:03 (primo: TRENO 9712)
 DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 8 TRENI\nChiusura sbarre stimata: 10:51:43 - 11:04:28\nTreni coin
+ NTINUA - 4 TRENI\nChiusura sbarre stimata: 10:52:00 - 11:03:48\nTreni coin
  volti nella chiusura:\n  - TRENO 9712 (VENEZIA S.LUCIA -> TORINO PORTA NUO
- VA) [Transito]\n  - TRENO 9712 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA) [Tr
- ansito]\n  - REG 2023 (TORINO PORTA NUOVA -> MILANO CENTRALE) [Transito]\n
-   - REG 2023 (TORINO PORTA NUOVA -> MILANO CENTRALE) [Transito]\n  - TRENO
-  9508 (ROMA TERMINI -> TORINO PORTA NUOVA) [Transito]\n  - TRENO 9535 (TOR
- INO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\n  - TRENO 9535 (TORINO POR
- TA NUOVA -> NAPOLI CENTRALE) [Transito]\n  - REG 2124 (GENOVA BRIGNOLE -> 
- TORINO PORTA NUOVA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabil
- ità stima: 78%\nNota normativa/euristica: Chiusura continua per 8 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
+ VA) [Transito]\n  - REG 2023 (TORINO PORTA NUOVA -> MILANO CENTRALE) [Tran
+ sito]\n  - REG 2023 (TORINO PORTA NUOVA -> MILANO CENTRALE) [Transito]\n  
+ - TRENO 9535 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Chiusura continua per 4 treni: intervallo utile tra i passaggi (27s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9508--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:0
+DTSTART:20261121T100801Z
+DTEND:20261121T101331Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:08 - 11:13 (primo: TRENO 9508) (+9
+  min)
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 11:08:01 - 11:13:31\nTreni coin
+ volti nella chiusura:\n  - TRENO 9508 (ROMA TERMINI -> TORINO PORTA NUOVA)
+  (+9m) [Transito]\n  - TRENO 9508 (ROMA TERMINI -> TORINO PORTA NUOVA) (+9
+ m) [Transito]\nRitardo massimo rilevato: 9 min\nAffidabilità stima: 78%\n
+ Nota normativa/euristica: Chiusura continua per 2 treni: intervallo utile 
+ tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
+ s)
+LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:9
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2725--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T101815Z
-DTEND:20261121T103613Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 11:18 - 11:36 (primo: REG 2725)
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T101818Z
+DTEND:20261121T103620Z
+SUMMARY:[CHIUSURA CONTINUA - 9 TRENI] 11:18 - 11:36 (primo: REG 2725) (+1 m
+ in)
 DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 8 TRENI\nChiusura sbarre stimata: 11:18:15 - 11:36:13\nTreni coin
+ NTINUA - 9 TRENI\nChiusura sbarre stimata: 11:18:18 - 11:36:20\nTreni coin
  volti nella chiusura:\n  - REG 2725 (TORINO PORTA NUOVA -> IVREA) [Transit
- o]\n  - REG 2123 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\n  - REG 2123 (TO
- RINO PORTA NUOVA -> GENOVA BRIGNOLE)\n  - REG 2124 (GENOVA BRIGNOLE -> TOR
- INO PORTA NUOVA)\n  - REG 3223 (TORINO PORTA NUOVA -> CUNEO) [Transito]\n 
-  - IC 511 (TORINO PORTA NUOVA -> SALERNO)\n  - REG 2125 (TORINO PORTA NUOV
- A -> GENOVA PIAZZA PRINCIPE) [Transito]\n  - REG 2125 (TORINO PORTA NUOVA 
- -> GENOVA PIAZZA PRINCIPE) [Transito]\nRitardo massimo rilevato: 0 min\nAf
- fidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 8 
- treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
- i sgombero stradale (120s)
+ o]\n  - REG 2124 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) (+1m) [Arrivo]\n 
+  - REG 2124 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) (+1m) [Arrivo]\n  - RE
+ G 2123 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\n  - REG 3223 (TORINO PORTA
+  NUOVA -> CUNEO) [Transito]\n  - REG 2124 (GENOVA BRIGNOLE -> TORINO PORTA
+  NUOVA) (+1m) [Partenza]\n  - REG 2124 (GENOVA BRIGNOLE -> TORINO PORTA NU
+ OVA) (+1m) [Partenza]\n  - IC 511 (TORINO PORTA NUOVA -> SALERNO)\n  - REG
+  2125 (TORINO PORTA NUOVA -> GENOVA PIAZZA PRINCIPE) [Transito]\nRitardo m
+ assimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Chiusura continua per 9 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 9 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9716--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
+UID:train-2025--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
 SEQUENCE:0
-DTSTART:20261121T104643Z
-DTEND:20261121T105803Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:46 - 11:58 (primo: TRENO 9716)
+DTSTART:20261121T105237Z
+DTEND:20261121T105952Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:52 - 11:59 (primo: REG 2025) (+6 m
+ in)
 DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 3 TRENI\nChiusura sbarre stimata: 11:46:43 - 11:58:03\nTreni coin
- volti nella chiusura:\n  - TRENO 9716 (VENEZIA S.LUCIA -> TORINO PORTA NUO
- VA) [Transito]\n  - TRENO 9716 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA) [Tr
- ansito]\n  - REG 2025 (TORINO PORTA NUOVA -> MILANO CENTRALE) [Transito]\n
- Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
- euristica: Chiusura continua per 3 treni: intervallo utile tra i passaggi 
- (20s) inferiore alla soglia minima di sgombero stradale (120s)
+ NTINUA - 3 TRENI\nChiusura sbarre stimata: 11:52:37 - 11:59:52\nTreni coin
+ volti nella chiusura:\n  - REG 2025 (TORINO PORTA NUOVA -> MILANO CENTRALE
+ ) [Transito]\n  - TRENO 9716 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA) (+6m)
+  [Transito]\n  - TRENO 9716 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA) (+6m) 
+ [Transito]\nRitardo massimo rilevato: 6 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Chiusura continua per 3 treni: intervallo utile tra
+  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9612--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T110623Z
-DTEND:20261121T111153Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:06 - 12:11 (primo: TRENO 9612) (+1
-  min)
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 12:06:23 - 12:11:53\nTreni coin
- volti nella chiusura:\n  - TRENO 9612 (BATTIPAGLIA -> TORINO PORTA NUOVA) 
- (+1m) [Transito]\n  - TRENO 9612 (BATTIPAGLIA -> TORINO PORTA NUOVA) (+1m)
-  [Transito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNo
- ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
- a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T110645Z
+DTEND:20261121T111215Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9612 (BATTIPAGLIA -> TORINO PORTA NUOVA) or
+ e 12:11 (+1 min)
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 12:06:45 - 12:12:15\nTreni coinvolti nella 
+ chiusura:\n  - TRENO 9612 (BATTIPAGLIA -> TORINO PORTA NUOVA) (+1m) [Trans
+ ito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Transito stimato senza fermata (69% tratta TORINO PORTA S
+ USA -> TORINO PORTA NUOVA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-515--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T111939Z
-DTEND:20261121T113000Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:19 - 12:30 (primo: IC 515)
+UID:train-2125--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:0
+DTSTART:20261121T112530Z
+DTEND:20261121T113300Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:25 - 12:33 (primo: REG 2125) (+1 m
+ in)
 DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 3 TRENI\nChiusura sbarre stimata: 12:19:39 - 12:30:00\nTreni coin
- volti nella chiusura:\n  - IC 515 (SAVONA -> TORINO PORTA NUOVA) [Transito
- ]\n  - REG 2125 (TORINO PORTA NUOVA -> GENOVA PIAZZA PRINCIPE)\n  - REG 21
- 25 (TORINO PORTA NUOVA -> GENOVA PIAZZA PRINCIPE)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
- tinua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
- lia minima di sgombero stradale (120s)
+ NTINUA - 3 TRENI\nChiusura sbarre stimata: 12:25:30 - 12:33:00\nTreni coin
+ volti nella chiusura:\n  - REG 2125 (TORINO PORTA NUOVA -> GENOVA PIAZZA P
+ RINCIPE)\n  - REG 2126 (ALESSANDRIA -> TORINO PORTA NUOVA) (+1m)\n  - REG 
+ 2126 (ALESSANDRIA -> TORINO PORTA NUOVA) (+1m)\nRitardo massimo rilevato: 
+ 1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura contin
+ ua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+  minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2363--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
 DTSTART:20261121T114030Z
 DTEND:20261121T114500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:40 - 12:45 (primo: REG 2363)
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 12:40:30 - 12:45:00\nTreni coin
- volti nella chiusura:\n  - REG 2363 (MILANO CENTRALE -> ASTI)\n  - REG 236
- 3 (MILANO CENTRALE -> ASTI)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+SUMMARY:[FERMATA] REG 2363 (MILANO CENTRALE -> ASTI) ore 12:44
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 12:40:30 - 12:45:00\nTreni coinvolti nella chiusura
+ :\n  - REG 2363 (MILANO CENTRALE -> ASTI)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
+ a oraria regolare
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-515--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
 DTSTART:20261121T114915Z
 DTEND:20261121T115400Z
 SUMMARY:[FERMATA] IC 515 (SAVONA -> TORINO PORTA NUOVA) ore 12:53
@@ -555,128 +554,283 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9543--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T115815Z
-DTEND:20261121T120553Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:58 - 13:05 (primo: TRENO 9543)
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T115818Z
+DTEND:20261121T120615Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:58 - 13:06 (primo: TRENO 9543)
 DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 3 TRENI\nChiusura sbarre stimata: 12:58:15 - 13:05:53\nTreni coin
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 12:58:18 - 13:06:15\nTreni coin
  volti nella chiusura:\n  - TRENO 9543 (TORINO PORTA NUOVA -> SALERNO) [Tra
- nsito]\n  - REG 2022 (MILANO CENTRALE -> TORINO PORTA NUOVA) [Transito]\n 
-  - REG 2022 (MILANO CENTRALE -> TORINO PORTA NUOVA) [Transito]\nRitardo ma
- ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
-  Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) infer
- iore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9321--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T123815Z
-DTEND:20261121T124345Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9321 (TORINO PORTA NUOVA -> ROMA TERMINI) o
- re 13:42
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: TRANSITO VE
- LOCE\nChiusura sbarre stimata: 13:38:15 - 13:43:45\nTreni coinvolti nella 
- chiusura:\n  - TRENO 9321 (TORINO PORTA NUOVA -> ROMA TERMINI) [Transito]\
- nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Transito stimato senza fermata (31% tratta TORINO PORTA NUOVA 
- -> TORINO PORTA SUSA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2024--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T130023Z
-DTEND:20261121T130553Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:00 - 14:05 (primo: REG 2024)
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 14:00:23 - 14:05:53\nTreni coin
- volti nella chiusura:\n  - REG 2024 (MILANO CENTRALE -> TORINO PORTA NUOVA
- ) [Transito]\n  - REG 2024 (MILANO CENTRALE -> TORINO PORTA NUOVA) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ nsito]\n  - REG 2022 (MILANO CENTRALE -> TORINO PORTA NUOVA) [Transito]\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-7443--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:0
+DTSTART:20261121T121030Z
+DTEND:20261121T121500Z
+SUMMARY:[SOPPRESSO] [FERMATA] REG 7443 (ASTI -> MILANO CENTRALE) ore 13:14
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 13:10:30 - 13:15:00\nTreni coinvolti nella chiusura
+ :\n  - REG 7443 (ASTI -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
+ a oraria regolare
+LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
+STATUS:CANCELLED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9645--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T134815Z
-DTEND:20261121T135345Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9645 (TORINO PORTA NUOVA -> ROMA TERMINI) o
- re 14:52
+UID:train-7443--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:0
+DTSTART:20261121T121030Z
+DTEND:20261121T121500Z
+SUMMARY:[SOPPRESSO] [FERMATA] REG 7443 (ASTI -> MILANO CENTRALE) ore 13:14
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 13:10:30 - 13:15:00\nTreni coinvolti nella chiusura
+ :\n  - REG 7443 (ASTI -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
+ a oraria regolare
+LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
+STATUS:CANCELLED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2128--20261120-S00470@pl-tracker.local-arr
+DTSTAMP:20261121T124444Z
+SEQUENCE:0
+DTSTART:20261121T122100Z
+DTEND:20261121T122530Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:21 - 13:25 (primo: REG 2128)
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 13:21:00 - 13:25:30\nTreni coin
+ volti nella chiusura:\n  - REG 2128 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA
+ ) [Arrivo]\n  - REG 2128 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) [Arrivo]\
+ nRitardo massimo rilevato: -5 min\nAffidabilità stima: 99%\nNota normativ
+ a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
+ i (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-5
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2128--20261120-S00470@pl-tracker.local-dep
+DTSTAMP:20261121T124444Z
+SEQUENCE:0
+DTSTART:20261121T122730Z
+DTEND:20261121T124348Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 13:27 - 13:43 (primo: REG 2128)
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 7 TRENI\nChiusura sbarre stimata: 13:27:30 - 13:43:48\nTreni coin
+ volti nella chiusura:\n  - REG 2128 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA
+ ) [Partenza]\n  - REG 2128 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) [Parten
+ za]\n  - REG 3126 (SAVONA -> TORINO PORTA NUOVA) [Transito]\n  - REG 3126 
+ (SAVONA -> TORINO PORTA NUOVA) [Transito]\n  - REG 2129 (TORINO PORTA NUOV
+ A -> GENOVA PIAZZA PRINCIPE) [Transito]\n  - REG 2129 (TORINO PORTA NUOVA 
+ -> GENOVA PIAZZA PRINCIPE) [Transito]\n  - TRENO 9321 (TORINO PORTA NUOVA 
+ -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilit
+ à stima: 78%\nNota normativa/euristica: Chiusura continua per 7 treni: in
+ tervallo utile tra i passaggi (118s) inferiore alla soglia minima di sgomb
+ ero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2024--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T130045Z
+DTEND:20261121T130615Z
+SUMMARY:[TRANSITO VELOCE] REG 2024 (MILANO CENTRALE -> TORINO PORTA NUOVA) 
+ ore 14:05
 DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: TRANSITO VE
- LOCE\nChiusura sbarre stimata: 14:48:15 - 14:53:45\nTreni coinvolti nella 
- chiusura:\n  - TRENO 9645 (TORINO PORTA NUOVA -> ROMA TERMINI) [Transito]\
- nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Transito stimato senza fermata (31% tratta TORINO PORTA NUOVA 
- -> TORINO PORTA SUSA\; pedale annuncio fisso Vmax)
+ LOCE\nChiusura sbarre stimata: 14:00:45 - 14:06:15\nTreni coinvolti nella 
+ chiusura:\n  - REG 2024 (MILANO CENTRALE -> TORINO PORTA NUOVA) [Transito]
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Transito stimato senza fermata (69% tratta TORINO PORTA SUSA 
+ -> TORINO PORTA NUOVA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9743--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
+UID:train-2731--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
 SEQUENCE:0
-DTSTART:20261121T140815Z
-DTEND:20261121T142030Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 15:08 - 15:20 (primo: TRENO 9743)
+DTSTART:20261121T131818Z
+DTEND:20261121T133620Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 14:18 - 14:36 (primo: REG 2731)
 DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 6 TRENI\nChiusura sbarre stimata: 15:08:15 - 15:20:30\nTreni coin
- volti nella chiusura:\n  - TRENO 9743 (TORINO PORTA NUOVA -> VENEZIA S.LUC
- IA) [Transito]\n  - TRENO 9743 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA) [Tr
- ansito]\n  - TRENO 9310 (NAPOLI CENTRALE -> TORINO PORTA NUOVA) [Transito]
- \n  - TRENO 9310 (NAPOLI CENTRALE -> TORINO PORTA NUOVA) [Transito]\n  - T
- RENO 8623 (TORINO PORTA NUOVA -> ROMA TERMINI) [Transito]\n  - TRENO 8623 
- (TORINO PORTA NUOVA -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato:
-  0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
- nua per 6 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
- a minima di sgombero stradale (120s)
+ NTINUA - 6 TRENI\nChiusura sbarre stimata: 14:18:18 - 14:36:20\nTreni coin
+ volti nella chiusura:\n  - REG 2731 (TORINO PORTA NUOVA -> IVREA) [Transit
+ o]\n  - REG 2731 (TORINO PORTA NUOVA -> IVREA) [Transito]\n  - REG 2129 (T
+ ORINO PORTA NUOVA -> GENOVA PIAZZA PRINCIPE)\n  - REG 2129 (TORINO PORTA N
+ UOVA -> GENOVA PIAZZA PRINCIPE)\n  - REG 88021 (TORINO PORTA NUOVA -> GENO
+ VA PIAZZA PRINCIPE) [Transito]\n  - REG 88021 (TORINO PORTA NUOVA -> GENOV
+ A PIAZZA PRINCIPE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabili
+ tà stima: 78%\nNota normativa/euristica: Chiusura continua per 6 treni: i
+ ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2367--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:0
+DTSTART:20261121T134030Z
+DTEND:20261121T134500Z
+SUMMARY:[SOPPRESSO] [FERMATA] REG 2367 (MILANO CENTRALE -> ASTI) ore 14:44
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 14:40:30 - 14:45:00\nTreni coinvolti nella chiusura
+ :\n  - REG 2367 (MILANO CENTRALE -> ASTI)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
+ a oraria regolare
+LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
+STATUS:CANCELLED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2367--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:0
+DTSTART:20261121T134030Z
+DTEND:20261121T134500Z
+SUMMARY:[SOPPRESSO] [FERMATA] REG 2367 (MILANO CENTRALE -> ASTI) ore 14:44
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 14:40:30 - 14:45:00\nTreni coinvolti nella chiusura
+ :\n  - REG 2367 (MILANO CENTRALE -> ASTI)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
+ a oraria regolare
+LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
+STATUS:CANCELLED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9645--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T134818Z
+DTEND:20261121T135348Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:48 - 14:53 (primo: TRENO 9645)
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 14:48:18 - 14:53:48\nTreni coin
+ volti nella chiusura:\n  - TRENO 9645 (TORINO PORTA NUOVA -> ROMA TERMINI)
+  [Transito]\n  - TRENO 9645 (TORINO PORTA NUOVA -> ROMA TERMINI) [Transito
+ ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
+ va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
+ gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9325--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
+UID:train-9743--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
 SEQUENCE:1
-DTSTART:20261121T143815Z
-DTEND:20261121T144345Z
+DTSTART:20261121T140818Z
+DTEND:20261121T142036Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:08 - 15:20 (primo: TRENO 9743)
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 15:08:18 - 15:20:36\nTreni coin
+ volti nella chiusura:\n  - TRENO 9743 (TORINO PORTA NUOVA -> VENEZIA S.LUC
+ IA) [Transito]\n  - TRENO 8623 (TORINO PORTA NUOVA -> ROMA TERMINI) [Trans
+ ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
+ saggi (78s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-88021--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:0
+DTSTART:20261121T142530Z
+DTEND:20261121T143120Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 15:25 - 15:31 (primo: REG 88021) (+13
+  min)
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 6 TRENI\nChiusura sbarre stimata: 15:25:30 - 15:31:20\nTreni coin
+ volti nella chiusura:\n  - REG 88021 (TORINO PORTA NUOVA -> GENOVA PIAZZA 
+ PRINCIPE)\n  - REG 88021 (TORINO PORTA NUOVA -> GENOVA PIAZZA PRINCIPE)\n 
+  - TRENO 9310 (NAPOLI CENTRALE -> TORINO PORTA NUOVA) (+13m) [Transito]\n 
+  - TRENO 9310 (NAPOLI CENTRALE -> TORINO PORTA NUOVA) (+13m) [Transito]\n 
+  - REG 3231 (TORINO PORTA NUOVA -> CUNEO) [Transito]\n  - REG 3231 (TORINO
+  PORTA NUOVA -> CUNEO) [Transito]\nRitardo massimo rilevato: 13 min\nAffid
+ abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 6 tre
+ ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
+ gombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:13
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9325--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T143818Z
+DTEND:20261121T144348Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:38 - 15:43 (primo: TRENO 9325)
 DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 15:38:15 - 15:43:45\nTreni coin
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 15:38:18 - 15:43:48\nTreni coin
  volti nella chiusura:\n  - TRENO 9325 (TORINO PORTA NUOVA -> NAPOLI CENTRA
  LE) [Transito]\n  - TRENO 9325 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Tr
  ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
@@ -692,13 +846,13 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9514--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T145204Z
-DTEND:20261121T145803Z
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T145218Z
+DTEND:20261121T145807Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:52 - 15:58 (primo: TRENO 9514)
 DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 15:52:04 - 15:58:03\nTreni coin
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 15:52:18 - 15:58:07\nTreni coin
  volti nella chiusura:\n  - TRENO 9514 (TARANTO -> TORINO PORTA NUOVA) [Tra
  nsito]\n  - REG 2033 (TORINO PORTA NUOVA -> MILANO CENTRALE) [Transito]\nR
  itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
@@ -714,70 +868,128 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8623--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
 DTSTART:20261121T151030Z
 DTEND:20261121T151500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:10 - 16:15 (primo: TRENO 8623)
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 16:10:30 - 16:15:00\nTreni coin
- volti nella chiusura:\n  - TRENO 8623 (TORINO PORTA NUOVA -> ROMA TERMINI)
- \n  - TRENO 8623 (TORINO PORTA NUOVA -> ROMA TERMINI)\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura
-  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] TRENO 8623 (TORINO PORTA NUOVA -> ROMA TERMINI) ore 16:14
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 16:10:30 - 16:15:00\nTreni coinvolti nella chiusura
+ :\n  - TRENO 8623 (TORINO PORTA NUOVA -> ROMA TERMINI)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2735--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T151815Z
-DTEND:20261121T153613Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 16:18 - 16:36 (primo: REG 2735)
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 6 TRENI\nChiusura sbarre stimata: 16:18:15 - 16:36:13\nTreni coin
- volti nella chiusura:\n  - REG 2735 (TORINO PORTA NUOVA -> IVREA) [Transit
- o]\n  - REG 2735 (TORINO PORTA NUOVA -> IVREA) [Transito]\n  - REG 3133 (T
- ORINO PORTA NUOVA -> SAVONA) [Transito]\n  - REG 3133 (TORINO PORTA NUOVA 
- -> SAVONA) [Transito]\n  - IC 510 (SALERNO -> TORINO PORTA NUOVA)\n  - REG
-  2135 (TORINO PORTA NUOVA -> ALESSANDRIA) [Transito]\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
- continua per 6 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T151818Z
+DTEND:20261121T152348Z
+SUMMARY:[TRANSITO VELOCE] REG 2735 (TORINO PORTA NUOVA -> IVREA) ore 16:22
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 16:18:18 - 16:23:48\nTreni coinvolti nella 
+ chiusura:\n  - REG 2735 (TORINO PORTA NUOVA -> IVREA) [Transito]\nRitardo 
+ massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Transito stimato senza fermata (32% tratta TORINO PORTA NUOVA -> TORINO
+  PORTA SUSA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9532--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T155204Z
-DTEND:20261121T160553Z
-SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 16:52 - 17:05 (primo: TRENO 9532)
+UID:train-3133--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:0
+DTSTART:20261121T152550Z
+DTEND:20261121T153620Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 16:25 - 16:36 (primo: REG 3133)
 DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 7 TRENI\nChiusura sbarre stimata: 16:52:04 - 17:05:53\nTreni coin
+ NTINUA - 5 TRENI\nChiusura sbarre stimata: 16:25:50 - 16:36:20\nTreni coin
+ volti nella chiusura:\n  - REG 3133 (TORINO PORTA NUOVA -> SAVONA) [Transi
+ to]\n  - REG 3133 (TORINO PORTA NUOVA -> SAVONA) [Transito]\n  - IC 510 (S
+ ALERNO -> TORINO PORTA NUOVA)\n  - REG 2135 (TORINO PORTA NUOVA -> ALESSAN
+ DRIA) [Transito]\n  - REG 2135 (TORINO PORTA NUOVA -> ALESSANDRIA) [Transi
+ to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Chiusura continua per 5 treni: intervallo utile tra i pass
+ aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2371--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:0
+DTSTART:20261121T154030Z
+DTEND:20261121T154500Z
+SUMMARY:[SOPPRESSO] [FERMATA] REG 2371 (MILANO CENTRALE -> ASTI) ore 16:44
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 16:40:30 - 16:45:00\nTreni coinvolti nella chiusura
+ :\n  - REG 2371 (MILANO CENTRALE -> ASTI)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
+ a oraria regolare
+LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
+STATUS:CANCELLED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2371--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:0
+DTSTART:20261121T154030Z
+DTEND:20261121T154500Z
+SUMMARY:[SOPPRESSO] [FERMATA] REG 2371 (MILANO CENTRALE -> ASTI) ore 16:44
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 16:40:30 - 16:45:00\nTreni coinvolti nella chiusura
+ :\n  - REG 2371 (MILANO CENTRALE -> ASTI)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
+ a oraria regolare
+LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
+STATUS:CANCELLED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9532--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T155018Z
+DTEND:20261121T160848Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 16:50 - 17:08 (primo: TRENO 9532)
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 7 TRENI\nChiusura sbarre stimata: 16:50:18 - 17:08:48\nTreni coin
  volti nella chiusura:\n  - TRENO 9532 (NAPOLI CENTRALE -> TORINO PORTA NUO
- VA) [Transito]\n  - REG 2035 (TORINO PORTA NUOVA -> MILANO CENTRALE) [Tran
- sito]\n  - REG 2035 (TORINO PORTA NUOVA -> MILANO CENTRALE) [Transito]\n  
- - TRENO 9559 (TORINO PORTA NUOVA -> ROMA TERMINI) [Transito]\n  - TRENO 95
- 59 (TORINO PORTA NUOVA -> ROMA TERMINI) [Transito]\n  - REG 2030 (MILANO C
- ENTRALE -> TORINO PORTA NUOVA) [Transito]\n  - REG 2030 (MILANO CENTRALE -
- > TORINO PORTA NUOVA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 7 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+ VA) [Transito]\n  - TRENO 9532 (NAPOLI CENTRALE -> TORINO PORTA NUOVA) [Tr
+ ansito]\n  - REG 2035 (TORINO PORTA NUOVA -> MILANO CENTRALE) [Transito]\n
+   - TRENO 9559 (TORINO PORTA NUOVA -> ROMA TERMINI) [Transito]\n  - REG 20
+ 30 (MILANO CENTRALE -> TORINO PORTA NUOVA) [Transito]\n  - TRENO 9753 (TOR
+ INO PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\n  - TRENO 9753 (TORINO POR
+ TA NUOVA -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo rilevato: 0 min\n
+ Affidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 
+ 7 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
+  di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -788,154 +1000,155 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2135--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
 DTSTART:20261121T162530Z
 DTEND:20261121T163000Z
-SUMMARY:[FERMATA] REG 2135 (TORINO PORTA NUOVA -> ALESSANDRIA) ore 17:29
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: FERMATA\nCh
- iusura sbarre stimata: 17:25:30 - 17:30:00\nTreni coinvolti nella chiusura
- :\n  - REG 2135 (TORINO PORTA NUOVA -> ALESSANDRIA)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
-  da traccia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:25 - 17:30 (primo: REG 2135)
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 17:25:30 - 17:30:00\nTreni coin
+ volti nella chiusura:\n  - REG 2135 (TORINO PORTA NUOVA -> ALESSANDRIA)\n 
+  - REG 2135 (TORINO PORTA NUOVA -> ALESSANDRIA)\nRitardo massimo rilevato:
+  0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura conti
+ nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9584--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T165204Z
-DTEND:20261121T165734Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:52 - 17:57 (primo: TRENO 9584)
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 17:52:04 - 17:57:34\nTreni coin
- volti nella chiusura:\n  - TRENO 9584 (REGGIO DI CALABRIA CENTRALE -> TORI
- NO PORTA NUOVA) [Transito]\n  - TRENO 9584 (REGGIO DI CALABRIA CENTRALE ->
-  TORINO PORTA NUOVA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T165218Z
+DTEND:20261121T165748Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9584 (REGGIO DI CALABRIA CENTRALE -> TORINO
+  PORTA NUOVA) ore 17:56
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 17:52:18 - 17:57:48\nTreni coinvolti nella 
+ chiusura:\n  - TRENO 9584 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA NUO
+ VA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\
+ nNota normativa/euristica: Transito stimato senza fermata (69% tratta TORI
+ NO PORTA SUSA -> TORINO PORTA NUOVA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2032--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T170023Z
-DTEND:20261121T170553Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:00 - 18:05 (primo: REG 2032)
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 18:00:23 - 18:05:53\nTreni coin
- volti nella chiusura:\n  - REG 2032 (MILANO CENTRALE -> TORINO PORTA NUOVA
- ) [Transito]\n  - REG 2032 (MILANO CENTRALE -> TORINO PORTA NUOVA) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T170045Z
+DTEND:20261121T170615Z
+SUMMARY:[TRANSITO VELOCE] REG 2032 (MILANO CENTRALE -> TORINO PORTA NUOVA) 
+ ore 18:05
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 18:00:45 - 18:06:15\nTreni coinvolti nella 
+ chiusura:\n  - REG 2032 (MILANO CENTRALE -> TORINO PORTA NUOVA) [Transito]
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Transito stimato senza fermata (69% tratta TORINO PORTA SUSA 
+ -> TORINO PORTA NUOVA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2139--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T173043Z
-DTEND:20261121T173613Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:30 - 18:36 (primo: REG 2139)
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 18:30:43 - 18:36:13\nTreni coin
- volti nella chiusura:\n  - REG 2139 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE
- ) [Transito]\n  - REG 2139 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T173050Z
+DTEND:20261121T173620Z
+SUMMARY:[TRANSITO VELOCE] REG 2139 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) 
+ ore 18:35
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 18:30:50 - 18:36:20\nTreni coinvolti nella 
+ chiusura:\n  - REG 2139 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) [Transito]
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Transito stimato senza fermata (73% tratta TORINO PORTA NUOVA
+  -> TORINO LINGOTTO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9642--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T180523Z
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T180745Z
 DTEND:20261121T181500Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 19:05 - 19:15 (primo: TRENO 9642)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 19:07 - 19:15 (primo: TRENO 9642) (+2
+  min)
 DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 3 TRENI\nChiusura sbarre stimata: 19:05:23 - 19:15:00\nTreni coin
+ NTINUA - 3 TRENI\nChiusura sbarre stimata: 19:07:45 - 19:15:00\nTreni coin
  volti nella chiusura:\n  - TRENO 9642 (REGGIO DI CALABRIA CENTRALE -> TORI
- NO PORTA NUOVA) [Transito]\n  - REG 7447 (ASTI -> MILANO CENTRALE)\n  - RE
- G 7447 (ASTI -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+ NO PORTA NUOVA) (+2m) [Transito]\n  - TRENO 9642 (REGGIO DI CALABRIA CENTR
+ ALE -> TORINO PORTA NUOVA) (+2m) [Transito]\n  - REG 7447 (ASTI -> MILANO 
+ CENTRALE)\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Chiusura continua per 3 treni: intervallo utile tra 
+ i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2139--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
 DTSTART:20261121T182530Z
-DTEND:20261121T183613Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 19:25 - 19:36 (primo: REG 2139)
+DTEND:20261121T183620Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:25 - 19:36 (primo: REG 2139)
 DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 3 TRENI\nChiusura sbarre stimata: 19:25:30 - 19:36:13\nTreni coin
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 19:25:30 - 19:36:20\nTreni coin
  volti nella chiusura:\n  - REG 2139 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE
- )\n  - REG 2139 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\n  - REG 2141 (TOR
- INO PORTA NUOVA -> GENOVA BRIGNOLE) [Transito]\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
- ua per 3 treni: intervallo utile tra i passaggi (43s) inferiore alla sogli
- a minima di sgombero stradale (120s)
+ )\n  - REG 2141 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) [Transito]\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (50s) 
+ inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9320--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T191143Z
-DTEND:20261121T193613Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 20:11 - 20:36 (primo: TRENO 9320)
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T191200Z
+DTEND:20261121T194306Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 20:12 - 20:43 (primo: TRENO 9320)
 DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 6 TRENI\nChiusura sbarre stimata: 20:11:43 - 20:36:13\nTreni coin
+ NTINUA - 6 TRENI\nChiusura sbarre stimata: 20:12:00 - 20:43:06\nTreni coin
  volti nella chiusura:\n  - TRENO 9320 (NAPOLI CENTRALE -> TORINO PORTA NUO
  VA) [Transito]\n  - REG 2743 (TORINO PORTA NUOVA -> IVREA) [Transito]\n  -
   REG 2141 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\n  - REG 3143 (TORINO PO
- RTA NUOVA -> SAVONA) [Transito]\n  - REG 3143 (TORINO PORTA NUOVA -> SAVON
- A) [Transito]\n  - REG 2143 (TORINO PORTA NUOVA -> ALESSANDRIA) [Transito]
- \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
- a/euristica: Chiusura continua per 6 treni: intervallo utile tra i passagg
- i (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ RTA NUOVA -> SAVONA) [Transito]\n  - REG 2143 (TORINO PORTA NUOVA -> ALESS
+ ANDRIA) [Transito]\n  - REG 2344 (NOVI LIGURE -> MILANO GRECO PIRELLI) [Tr
+ ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Chiusura continua per 6 treni: intervallo utile tra i 
+ passaggi (76s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -946,21 +1159,21 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9588--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T195204Z
-DTEND:20261121T200341Z
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T195218Z
+DTEND:20261121T200343Z
 SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 20:52 - 21:03 (primo: TRENO 9588)
 DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 5 TRENI\nChiusura sbarre stimata: 20:52:04 - 21:03:41\nTreni coin
+ NTINUA - 5 TRENI\nChiusura sbarre stimata: 20:52:18 - 21:03:43\nTreni coin
  volti nella chiusura:\n  - TRENO 9588 (REGGIO DI CALABRIA CENTRALE -> TORI
- NO PORTA NUOVA) [Transito]\n  - TRENO 9588 (REGGIO DI CALABRIA CENTRALE ->
-  TORINO PORTA NUOVA) [Transito]\n  - REG 2043 (TORINO PORTA NUOVA -> MILAN
- O CENTRALE) [Transito]\n  - REG 2043 (TORINO PORTA NUOVA -> MILANO CENTRAL
- E) [Transito]\n  - REG 2144 (GENOVA PIAZZA PRINCIPE -> TORINO PORTA NUOVA)
-  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
- ta normativa/euristica: Chiusura continua per 5 treni: intervallo utile tr
- a i passaggi (7s) inferiore alla soglia minima di sgombero stradale (120s)
+ NO PORTA NUOVA) [Transito]\n  - REG 2043 (TORINO PORTA NUOVA -> MILANO CEN
+ TRALE) [Transito]\n  - REG 2043 (TORINO PORTA NUOVA -> MILANO CENTRALE) [T
+ ransito]\n  - REG 2144 (GENOVA PIAZZA PRINCIPE -> TORINO PORTA NUOVA) [Tra
+ nsito]\n  - REG 2144 (GENOVA PIAZZA PRINCIPE -> TORINO PORTA NUOVA) [Trans
+ ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 5 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -971,128 +1184,143 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2143--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
 DTSTART:20261121T202530Z
-DTEND:20261121T203613Z
-SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 21:25 - 21:36 (primo: REG 2143)
+DTEND:20261121T203620Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 21:25 - 21:36 (primo: REG 2143)
 DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 7 TRENI\nChiusura sbarre stimata: 21:25:30 - 21:36:13\nTreni coin
+ NTINUA - 5 TRENI\nChiusura sbarre stimata: 21:25:30 - 21:36:20\nTreni coin
  volti nella chiusura:\n  - REG 2143 (TORINO PORTA NUOVA -> ALESSANDRIA)\n 
   - REG 2144 (GENOVA PIAZZA PRINCIPE -> TORINO PORTA NUOVA)\n  - REG 2144 (
  GENOVA PIAZZA PRINCIPE -> TORINO PORTA NUOVA)\n  - REG 3247 (TORINO PORTA 
- NUOVA -> CUNEO) [Transito]\n  - REG 3247 (TORINO PORTA NUOVA -> CUNEO) [Tr
- ansito]\n  - REG 2145 (TORINO PORTA NUOVA -> GENOVA PIAZZA PRINCIPE) [Tran
- sito]\n  - REG 2145 (TORINO PORTA NUOVA -> GENOVA PIAZZA PRINCIPE) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 7 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ NUOVA -> CUNEO) [Transito]\n  - REG 2145 (TORINO PORTA NUOVA -> GENOVA PIA
+ ZZA PRINCIPE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità s
+ tima: 78%\nNota normativa/euristica: Chiusura continua per 5 treni: interv
+ allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
+ radale (120s)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9808--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T204143Z
-DTEND:20261121T204713Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:41 - 21:47 (primo: TRENO 9808)
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 21:41:43 - 21:47:13\nTreni coin
- volti nella chiusura:\n  - TRENO 9808 (LECCE -> TORINO PORTA NUOVA) [Trans
- ito]\n  - TRENO 9808 (LECCE -> TORINO PORTA NUOVA) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T204200Z
+DTEND:20261121T204730Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9808 (LECCE -> TORINO PORTA NUOVA) ore 21:4
+ 6
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 21:42:00 - 21:47:30\nTreni coinvolti nella 
+ chiusura:\n  - TRENO 9808 (LECCE -> TORINO PORTA NUOVA) [Transito]\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Transito stimato senza fermata (69% tratta TORINO PORTA SUSA -> TORIN
+ O PORTA NUOVA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9552--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T205204Z
-DTEND:20261121T211028Z
-SUMMARY:[CHIUSURA CONTINUA - 9 TRENI] 21:52 - 22:10 (primo: TRENO 9552)
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T205218Z
+DTEND:20261121T210615Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 21:52 - 22:06 (primo: TRENO 9552)
 DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 9 TRENI\nChiusura sbarre stimata: 21:52:04 - 22:10:28\nTreni coin
+ NTINUA - 5 TRENI\nChiusura sbarre stimata: 21:52:18 - 22:06:15\nTreni coin
  volti nella chiusura:\n  - TRENO 9552 (SALERNO -> TORINO PORTA NUOVA) [Tra
- nsito]\n  - TRENO 9552 (SALERNO -> TORINO PORTA NUOVA) [Transito]\n  - REG
-  2045 (TORINO PORTA NUOVA -> MILANO CENTRALE) [Transito]\n  - REG 2045 (TO
- RINO PORTA NUOVA -> MILANO CENTRALE) [Transito]\n  - ICN 799 (TORINO PORTA
-  NUOVA -> SALERNO) [Transito]\n  - ICN 799 (TORINO PORTA NUOVA -> SALERNO)
-  [Transito]\n  - REG 2040 (MILANO CENTRALE -> TORINO PORTA NUOVA) [Transit
- o]\n  - REG 2040 (MILANO CENTRALE -> TORINO PORTA NUOVA) [Transito]\n  - R
- EG 12074 (GENOVA BRIGNOLE -> NOVI LIGURE) [Transito]\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
- continua per 9 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+ nsito]\n  - REG 2045 (TORINO PORTA NUOVA -> MILANO CENTRALE) [Transito]\n 
+  - ICN 799 (TORINO PORTA NUOVA -> SALERNO) [Transito]\n  - ICN 799 (TORINO
+  PORTA NUOVA -> SALERNO) [Transito]\n  - REG 2040 (MILANO CENTRALE -> TORI
+ NO PORTA NUOVA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità
+  stima: 78%\nNota normativa/euristica: Chiusura continua per 5 treni: inte
+ rvallo utile tra i passaggi (23s) inferiore alla soglia minima di sgombero
+  stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 9 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2145--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T212530Z
-DTEND:20261121T213000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:25 - 22:30 (primo: REG 2145)
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 22:25:30 - 22:30:00\nTreni coin
- volti nella chiusura:\n  - REG 2145 (TORINO PORTA NUOVA -> GENOVA PIAZZA P
- RINCIPE)\n  - REG 2145 (TORINO PORTA NUOVA -> GENOVA PIAZZA PRINCIPE)\nRit
- ardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eur
- istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
- ) inferiore alla soglia minima di sgombero stradale (120s)
+UID:train-12074--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:0
+DTSTART:20261121T211335Z
+DTEND:20261121T211905Z
+SUMMARY:[TRANSITO VELOCE] REG 12074 (GENOVA BRIGNOLE -> NOVI LIGURE) ore 22
+ :17
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 22:13:35 - 22:19:05\nTreni coinvolti nella 
+ chiusura:\n  - REG 12074 (GENOVA BRIGNOLE -> NOVI LIGURE) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Transito stimato senza fermata (73% tratta SERRAVALLE SCRIVIA -> NO
+ VI LIGURE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2145--20261120-S00470@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T212530Z
+DTEND:20261121T213000Z
+SUMMARY:[FERMATA] REG 2145 (TORINO PORTA NUOVA -> GENOVA PIAZZA PRINCIPE) o
+ re 22:29
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 22:25:30 - 22:30:00\nTreni coinvolti nella chiusura
+ :\n  - REG 2145 (TORINO PORTA NUOVA -> GENOVA PIAZZA PRINCIPE)\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica:
+  Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2383--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
 DTSTART:20261121T214030Z
 DTEND:20261121T214500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:40 - 22:45 (primo: REG 2383)
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 22:40:30 - 22:45:00\nTreni coin
- volti nella chiusura:\n  - REG 2383 (MILANO CENTRALE -> ALESSANDRIA)\n  - 
- REG 2383 (MILANO CENTRALE -> ALESSANDRIA)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua pe
- r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
- ma di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 2383 (MILANO CENTRALE -> ALESSANDRIA) ore 22:44
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 22:40:30 - 22:45:00\nTreni coinvolti nella chiusura
+ :\n  - REG 2383 (MILANO CENTRALE -> ALESSANDRIA)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da
+  traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-799--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
 DTSTART:20261121T215315Z
 DTEND:20261121T215800Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:53 - 22:58 (primo: ICN 799)
@@ -1113,79 +1341,77 @@ X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2042--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T220023Z
-DTEND:20261121T220553Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:00 - 23:05 (primo: REG 2042)
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 23:00:23 - 23:05:53\nTreni coin
- volti nella chiusura:\n  - REG 2042 (MILANO CENTRALE -> TORINO PORTA NUOVA
- ) [Transito]\n  - REG 2042 (MILANO CENTRALE -> TORINO PORTA NUOVA) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T220045Z
+DTEND:20261121T220615Z
+SUMMARY:[TRANSITO VELOCE] REG 2042 (MILANO CENTRALE -> TORINO PORTA NUOVA) 
+ ore 23:05
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 23:00:45 - 23:06:15\nTreni coinvolti nella 
+ chiusura:\n  - REG 2042 (MILANO CENTRALE -> TORINO PORTA NUOVA) [Transito]
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Transito stimato senza fermata (69% tratta TORINO PORTA SUSA 
+ -> TORINO PORTA NUOVA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9326--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T221143Z
-DTEND:20261121T221713Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:11 - 23:17 (primo: TRENO 9326)
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 23:11:43 - 23:17:13\nTreni coin
- volti nella chiusura:\n  - TRENO 9326 (ROMA TERMINI -> TORINO PORTA NUOVA)
-  [Transito]\n  - TRENO 9326 (ROMA TERMINI -> TORINO PORTA NUOVA) [Transito
- ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
- va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
- gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T221200Z
+DTEND:20261121T221730Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9326 (ROMA TERMINI -> TORINO PORTA NUOVA) o
+ re 23:16
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 23:12:00 - 23:17:30\nTreni coinvolti nella 
+ chiusura:\n  - TRENO 9326 (ROMA TERMINI -> TORINO PORTA NUOVA) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Transito stimato senza fermata (69% tratta TORINO PORTA SUSA -
+ > TORINO PORTA NUOVA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-796--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
 DTSTART:20261122T055115Z
 DTEND:20261122T055600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:51 - 06:56 (primo: ICN 796)
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 06:51:15 - 06:56:00\nTreni coin
- volti nella chiusura:\n  - ICN 796 (SALERNO -> TORINO PORTA NUOVA)\n  - IC
- N 796 (SALERNO -> TORINO PORTA NUOVA)\nRitardo massimo rilevato: 0 min\nAf
- fidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 
- treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
- i sgombero stradale (120s)
+SUMMARY:[FERMATA] ICN 796 (SALERNO -> TORINO PORTA NUOVA) ore 06:55
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 06:51:15 - 06:56:00\nTreni coinvolti nella chiusura
+ :\n  - ICN 796 (SALERNO -> TORINO PORTA NUOVA)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
+ raccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-798--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261122T094728Z
-DTEND:20261122T095158Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:47 - 10:51 (primo: ICN 798)
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261122T094745Z
+DTEND:20261122T095215Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:47 - 10:52 (primo: ICN 798)
 DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 10:47:28 - 10:51:58\nTreni coin
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 10:47:45 - 10:52:15\nTreni coin
  volti nella chiusura:\n  - ICN 798 (SALERNO -> TORINO PORTA NUOVA) [Transi
  to]\n  - ICN 798 (SALERNO -> TORINO PORTA NUOVA) [Transito]\nRitardo massi
  mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
@@ -1201,22 +1427,21 @@ X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-794--20261120-S00470@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
 DTSTART:20261122T133115Z
 DTEND:20261122T133600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:31 - 14:36 (primo: ICN 794)
-DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 14:31:15 - 14:36:00\nTreni coin
- volti nella chiusura:\n  - ICN 794 (REGGIO DI CALABRIA CENTRALE -> TORINO 
- PORTA NUOVA)\n  - ICN 794 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA NUO
- VA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] ICN 794 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA NUOV
+ A) ore 14:35
+DESCRIPTION:Stazione/PL: ALESSANDRIA (S00470)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 14:31:15 - 14:36:00\nTreni coinvolti nella chiusura
+ :\n  - ICN 794 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA NUOVA)\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
+ ica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione ALESSANDRIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:ICN

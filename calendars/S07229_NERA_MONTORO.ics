@@ -9,20 +9,20 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:6880bf3a28d80a6f05009cef92b960c20a5d522da2ccea38c303396f8f26
- 9893
+X-CONTENT-HASH:8014214aeacc16f52ee8f5e2d3dbb5b36934b0bcee97e2e5e4d4abdc2746
+ 5b14
 BEGIN:VEVENT
 UID:train-4150--20261120-S07229@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T053354Z
-DTEND:20261121T053924Z
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T053410Z
+DTEND:20261121T053940Z
 SUMMARY:[TRANSITO VELOCE] REG 4150 (ROMA TERMINI -> FOLIGNO) ore 06:38
 DESCRIPTION:Stazione/PL: NERA MONTORO (S07229)\nRegime chiusura: TRANSITO V
- ELOCE\nChiusura sbarre stimata: 06:33:54 - 06:39:24\nTreni coinvolti nella
+ ELOCE\nChiusura sbarre stimata: 06:34:10 - 06:39:40\nTreni coinvolti nella
   chiusura:\n  - REG 4150 (ROMA TERMINI -> FOLIGNO) [Transito]\nRitardo mas
  simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Transito stimato senza fermata (62% tratta ORTE -> NARNI AMELIA\; pedale a
+ Transito stimato senza fermata (64% tratta ORTE -> NARNI AMELIA\; pedale a
  nnuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione NERA MONTORO
 STATUS:CONFIRMED
@@ -34,58 +34,80 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4565--20261120-S07229@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T055830Z
-DTEND:20261121T060300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:58 - 07:03 (primo: REG 4565)
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T055330Z
+DTEND:20261121T055800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:53 - 06:58 (primo: REG 4565)
 DESCRIPTION:Stazione/PL: NERA MONTORO (S07229)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:58:30 - 07:03:00\nTreni coi
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:53:30 - 06:58:00\nTreni coi
  nvolti nella chiusura:\n  - REG 4565 (FOLIGNO -> ROMA TERMINI)\n  - REG 45
- 65 (FOLIGNO -> ROMA TERMINI)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+ 65 (FOLIGNO -> ROMA TERMINI)\nRitardo massimo rilevato: -5 min\nAffidabili
+ tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
+ ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
 LOCATION:Passaggio a Livello / Stazione NERA MONTORO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-5
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4512--20261120-S07229@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T121230Z
+DTEND:20261121T121700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:12 - 13:17 (primo: REG 4512) (+4 m
+ in)
+DESCRIPTION:Stazione/PL: NERA MONTORO (S07229)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:12:30 - 13:17:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 4512 (ROMA TERMINI -> FOLIGNO) (+4m)\n  - 
+ REG 4512 (ROMA TERMINI -> FOLIGNO) (+4m)\nRitardo massimo rilevato: 4 min\
+ nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per
+  2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
+ a di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione NERA MONTORO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4156--20261120-S07229@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T154630Z
+DTEND:20261121T155100Z
+SUMMARY:[FERMATA] REG 4156 (ROMA TERMINI -> ANCONA) ore 16:50
+DESCRIPTION:Stazione/PL: NERA MONTORO (S07229)\nRegime chiusura: FERMATA\nC
+ hiusura sbarre stimata: 16:46:30 - 16:51:00\nTreni coinvolti nella chiusur
+ a:\n  - REG 4156 (ROMA TERMINI -> ANCONA)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
+ a oraria regolare
+LOCATION:Passaggio a Livello / Stazione NERA MONTORO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4712--20261120-S07229@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T063908Z
-DTEND:20261121T064438Z
-SUMMARY:[TRANSITO VELOCE] REG 4712 (ROMA TERMINI -> PERUGIA) ore 07:43
-DESCRIPTION:Stazione/PL: NERA MONTORO (S07229)\nRegime chiusura: TRANSITO V
- ELOCE\nChiusura sbarre stimata: 07:39:08 - 07:44:38\nTreni coinvolti nella
-  chiusura:\n  - REG 4712 (ROMA TERMINI -> PERUGIA) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Transito stimato senza fermata (62% tratta ORTE -> NARNI AMELIA\; pedale a
- nnuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione NERA MONTORO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4724--20261120-S07229@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T075831Z
-DTEND:20261121T080401Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:58 - 09:04 (primo: REG 4724)
+UID:train-4514--20261120-S07229@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T164710Z
+DTEND:20261121T165240Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:47 - 17:52 (primo: REG 4514)
 DESCRIPTION:Stazione/PL: NERA MONTORO (S07229)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:58:31 - 09:04:01\nTreni coi
- nvolti nella chiusura:\n  - REG 4724 (ROMA TERMINI -> PERUGIA) [Transito]\
- n  - REG 4724 (ROMA TERMINI -> PERUGIA) [Transito]\nRitardo massimo rileva
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:47:10 - 17:52:40\nTreni coi
+ nvolti nella chiusura:\n  - REG 4514 (ROMA TERMINI -> FOLIGNO) [Transito]\
+ n  - REG 4514 (ROMA TERMINI -> FOLIGNO) [Transito]\nRitardo massimo rileva
  to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
  ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
  glia minima di sgombero stradale (120s)
@@ -93,71 +115,6 @@ LOCATION:Passaggio a Livello / Stazione NERA MONTORO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4512--20261120-S07229@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T120830Z
-DTEND:20261121T121300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:08 - 13:13 (primo: REG 4512)
-DESCRIPTION:Stazione/PL: NERA MONTORO (S07229)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:08:30 - 13:13:00\nTreni coi
- nvolti nella chiusura:\n  - REG 4512 (ROMA TERMINI -> FOLIGNO)\n  - REG 45
- 12 (ROMA TERMINI -> FOLIGNO)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
-LOCATION:Passaggio a Livello / Stazione NERA MONTORO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4156--20261120-S07229@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T154630Z
-DTEND:20261121T155100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:46 - 16:51 (primo: REG 4156)
-DESCRIPTION:Stazione/PL: NERA MONTORO (S07229)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:46:30 - 16:51:00\nTreni coi
- nvolti nella chiusura:\n  - REG 4156 (ROMA TERMINI -> ANCONA)\n  - REG 415
- 6 (ROMA TERMINI -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
-LOCATION:Passaggio a Livello / Stazione NERA MONTORO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4514--20261120-S07229@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T164654Z
-DTEND:20261121T165224Z
-SUMMARY:[TRANSITO VELOCE] REG 4514 (ROMA TERMINI -> FOLIGNO) ore 17:51
-DESCRIPTION:Stazione/PL: NERA MONTORO (S07229)\nRegime chiusura: TRANSITO V
- ELOCE\nChiusura sbarre stimata: 17:46:54 - 17:52:24\nTreni coinvolti nella
-  chiusura:\n  - REG 4514 (ROMA TERMINI -> FOLIGNO) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Transito stimato senza fermata (62% tratta ORTE -> NARNI AMELIA\; pedale a
- nnuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione NERA MONTORO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG

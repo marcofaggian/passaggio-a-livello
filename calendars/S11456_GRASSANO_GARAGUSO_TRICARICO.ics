@@ -9,21 +9,21 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:76769f9b86b81c7059eb06f986d59bc0c93b8a47213eef56cb8df4e4e2cf
- 16b6
+X-CONTENT-HASH:6f39fa262f8bb2bc3d61d545026a7fc2a9b2ce2a3dc58747b36e2100794c
+ 8efc
 BEGIN:VEVENT
 UID:train-9514--20261120-S11456@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T060633Z
-DTEND:20261121T061203Z
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T060414Z
+DTEND:20261121T060944Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9514 (TARANTO -> TORINO PORTA NUOVA) ore 07
- :10
+ :08
 DESCRIPTION:Stazione/PL: GRASSANO-GARAGUSO-TRICARICO (S11456)\nRegime chius
- ura: TRANSITO VELOCE\nChiusura sbarre stimata: 07:06:33 - 07:12:03\nTreni 
+ ura: TRANSITO VELOCE\nChiusura sbarre stimata: 07:04:14 - 07:09:44\nTreni 
  coinvolti nella chiusura:\n  - TRENO 9514 (TARANTO -> TORINO PORTA NUOVA) 
  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
- a normativa/euristica: Transito stimato senza fermata (30% tratta FERRANDI
+ a normativa/euristica: Transito stimato senza fermata (25% tratta FERRANDI
  NA SCALO-MATERA -> POTENZA CENTRALE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GRASSANO-GARAGUSO-TRICARICO
 STATUS:CONFIRMED
@@ -35,8 +35,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-700--20261120-S11456@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
 DTSTART:20261121T081015Z
 DTEND:20261121T081500Z
 SUMMARY:[FERMATA] IC 700 (TARANTO -> ROMA TERMINI) ore 09:14
@@ -54,15 +54,82 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-701--20261120-S11456@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T103315Z
-DTEND:20261121T103800Z
-SUMMARY:[FERMATA] IC 701 (ROMA TERMINI -> TARANTO) ore 11:37
+UID:train-4296--20261120-S11456@pl-tracker.local-arr
+DTSTAMP:20261121T124444Z
+SEQUENCE:0
+DTSTART:20261121T102430Z
+DTEND:20261121T102900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:24 - 11:29 (primo: REG 4296) (+1 m
+ in)
 DESCRIPTION:Stazione/PL: GRASSANO-GARAGUSO-TRICARICO (S11456)\nRegime chius
- ura: FERMATA\nChiusura sbarre stimata: 11:33:15 - 11:38:00\nTreni coinvolt
- i nella chiusura:\n  - IC 701 (ROMA TERMINI -> TARANTO)\nRitardo massimo r
+ ura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:24:30 - 11:2
+ 9:00\nTreni coinvolti nella chiusura:\n  - REG 4296 (TARANTO -> NAPOLI CEN
+ TRALE) (+1m) [Arrivo]\n  - REG 4296 (TARANTO -> NAPOLI CENTRALE) (+1m) [Ar
+ rivo]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota nor
+ mativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pa
+ ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GRASSANO-GARAGUSO-TRICARICO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4296--20261120-S11456@pl-tracker.local-dep
+DTSTAMP:20261121T124444Z
+SEQUENCE:0
+DTSTART:20261121T103130Z
+DTEND:20261121T103800Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:31 - 11:38 (primo: REG 4296) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: GRASSANO-GARAGUSO-TRICARICO (S11456)\nRegime chius
+ ura: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 11:31:30 - 11:3
+ 8:00\nTreni coinvolti nella chiusura:\n  - REG 4296 (TARANTO -> NAPOLI CEN
+ TRALE) (+1m) [Partenza]\n  - REG 4296 (TARANTO -> NAPOLI CENTRALE) (+1m) [
+ Partenza]\n  - IC 701 (ROMA TERMINI -> TARANTO)\nRitardo massimo rilevato:
+  1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura conti
+ nua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GRASSANO-GARAGUSO-TRICARICO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4297--20261120-S11456@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T182430Z
+DTEND:20261121T182900Z
+SUMMARY:[FERMATA] REG 4297 (NAPOLI CENTRALE -> TARANTO) ore 19:28
+DESCRIPTION:Stazione/PL: GRASSANO-GARAGUSO-TRICARICO (S11456)\nRegime chius
+ ura: FERMATA\nChiusura sbarre stimata: 19:24:30 - 19:29:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 4297 (NAPOLI CENTRALE -> TARANTO)\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
+ revisione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione GRASSANO-GARAGUSO-TRICARICO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-707--20261120-S11456@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T194715Z
+DTEND:20261121T195200Z
+SUMMARY:[FERMATA] IC 707 (ROMA TERMINI -> TARANTO) ore 20:51
+DESCRIPTION:Stazione/PL: GRASSANO-GARAGUSO-TRICARICO (S11456)\nRegime chius
+ ura: FERMATA\nChiusura sbarre stimata: 20:47:15 - 20:52:00\nTreni coinvolt
+ i nella chiusura:\n  - IC 707 (ROMA TERMINI -> TARANTO)\nRitardo massimo r
  ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previs
  ione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione GRASSANO-GARAGUSO-TRICARICO
@@ -74,67 +141,22 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4297--20261120-S11456@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T182430Z
-DTEND:20261121T182900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:24 - 19:29 (primo: REG 4297)
-DESCRIPTION:Stazione/PL: GRASSANO-GARAGUSO-TRICARICO (S11456)\nRegime chius
- ura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:24:30 - 19:2
- 9:00\nTreni coinvolti nella chiusura:\n  - REG 4297 (NAPOLI CENTRALE -> TA
- RANTO)\n  - REG 4297 (NAPOLI CENTRALE -> TARANTO)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
- tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
- lia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione GRASSANO-GARAGUSO-TRICARICO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-707--20261120-S11456@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T194715Z
-DTEND:20261121T195200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:47 - 20:52 (primo: IC 707)
-DESCRIPTION:Stazione/PL: GRASSANO-GARAGUSO-TRICARICO (S11456)\nRegime chius
- ura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:47:15 - 20:5
- 2:00\nTreni coinvolti nella chiusura:\n  - IC 707 (ROMA TERMINI -> TARANTO
- )\n  - IC 707 (ROMA TERMINI -> TARANTO)\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
- 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
-  di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione GRASSANO-GARAGUSO-TRICARICO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
 UID:train-9547--20261120-S11456@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T213333Z
-DTEND:20261121T213903Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:33 - 22:39 (primo: TRENO 9547)
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T213318Z
+DTEND:20261121T213848Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9547 (MILANO CENTRALE -> TARANTO) ore 22:37
 DESCRIPTION:Stazione/PL: GRASSANO-GARAGUSO-TRICARICO (S11456)\nRegime chius
- ura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:33:33 - 22:3
- 9:03\nTreni coinvolti nella chiusura:\n  - TRENO 9547 (MILANO CENTRALE -> 
- TARANTO) [Transito]\n  - TRENO 9547 (MILANO CENTRALE -> TARANTO) [Transito
- ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
- va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
- gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ ura: TRANSITO VELOCE\nChiusura sbarre stimata: 22:33:18 - 22:38:48\nTreni 
+ coinvolti nella chiusura:\n  - TRENO 9547 (MILANO CENTRALE -> TARANTO) [Tr
+ ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Transito stimato senza fermata (71% tratta POTENZA CEN
+ TRALE -> FERRANDINA SCALO-MATERA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GRASSANO-GARAGUSO-TRICARICO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO

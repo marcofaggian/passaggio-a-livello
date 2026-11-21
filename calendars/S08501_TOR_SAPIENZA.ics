@@ -9,45 +9,63 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:337e3c8971d838c518405137b23b9d356e37c841f9d9fea3d1182c2f9df3
- f370
+X-CONTENT-HASH:e5a015e4d75d57bb60e2888560e30a2bc2d40d79aa336eb841a58dcc47e5
+ 2a76
 BEGIN:VEVENT
 UID:train-12752--20261120-S08501@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T055830Z
-DTEND:20261121T060300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:58 - 07:03 (primo: REG 12752)
-DESCRIPTION:Stazione/PL: TOR SAPIENZA (S08501)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:58:30 - 07:03:00\nTreni coi
- nvolti nella chiusura:\n  - REG 12752 (ROMA TIBURTINA -> TIVOLI)\n  - REG 
- 12752 (ROMA TIBURTINA -> TIVOLI)\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T054738Z
+DTEND:20261121T055308Z
+SUMMARY:[TRANSITO VELOCE] REG 12752 (ROMA TIBURTINA -> TIVOLI) ore 06:51
+DESCRIPTION:Stazione/PL: TOR SAPIENZA (S08501)\nRegime chiusura: TRANSITO V
+ ELOCE\nChiusura sbarre stimata: 06:47:38 - 06:53:08\nTreni coinvolti nella
+  chiusura:\n  - REG 12752 (ROMA TIBURTINA -> TIVOLI) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (72% tratta ROMA TIBURTINA -> ROMA PRENES
+ TINA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione TOR SAPIENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12752--20261120-S08501@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T055830Z
+DTEND:20261121T060300Z
+SUMMARY:[FERMATA] REG 12752 (ROMA TIBURTINA -> TIVOLI) ore 07:02
+DESCRIPTION:Stazione/PL: TOR SAPIENZA (S08501)\nRegime chiusura: FERMATA\nC
+ hiusura sbarre stimata: 06:58:30 - 07:03:00\nTreni coinvolti nella chiusur
+ a:\n  - REG 12752 (ROMA TIBURTINA -> TIVOLI)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
+ ccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione TOR SAPIENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20052--20261120-S08501@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T061823Z
-DTEND:20261121T062353Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:18 - 07:23 (primo: REG 20052)
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T061005Z
+DTEND:20261121T062118Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:10 - 07:21 (primo: REG 20052)
 DESCRIPTION:Stazione/PL: TOR SAPIENZA (S08501)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:18:23 - 07:23:53\nTreni coi
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:10:05 - 07:21:18\nTreni coi
  nvolti nella chiusura:\n  - REG 20052 (ROMA TIBURTINA -> VALLE DELL'ANIENE
- -MANDELA-SAMBUCI) [Transito]\n  - REG 20052 (ROMA TIBURTINA -> VALLE DELL'
- ANIENE-MANDELA-SAMBUCI) [Transito]\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+ -MANDELA-SAMBUCI) [Transito]\n  - REG 20788 (ROMA TIBURTINA -> AVEZZANO) [
+ Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
+ i passaggi (13s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TOR SAPIENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -58,30 +76,50 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20788--20261120-S08501@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
 DTSTART:20261121T062730Z
 DTEND:20261121T063200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:27 - 07:32 (primo: REG 20788)
-DESCRIPTION:Stazione/PL: TOR SAPIENZA (S08501)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:27:30 - 07:32:00\nTreni coi
- nvolti nella chiusura:\n  - REG 20788 (ROMA TIBURTINA -> AVEZZANO)\n  - RE
- G 20788 (ROMA TIBURTINA -> AVEZZANO)\nRitardo massimo rilevato: 0 min\nAff
- idabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 t
- reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
-  sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 20788 (ROMA TIBURTINA -> AVEZZANO) ore 07:31
+DESCRIPTION:Stazione/PL: TOR SAPIENZA (S08501)\nRegime chiusura: FERMATA\nC
+ hiusura sbarre stimata: 07:27:30 - 07:32:00\nTreni coinvolti nella chiusur
+ a:\n  - REG 20788 (ROMA TIBURTINA -> AVEZZANO)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
+ raccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione TOR SAPIENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20286--20261120-S08501@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T063721Z
+DTEND:20261121T064251Z
+SUMMARY:[TRANSITO VELOCE] REG 20286 (ROMA TIBURTINA -> GUIDONIA-MONTECELIO)
+  ore 07:41
+DESCRIPTION:Stazione/PL: TOR SAPIENZA (S08501)\nRegime chiusura: TRANSITO V
+ ELOCE\nChiusura sbarre stimata: 07:37:21 - 07:42:51\nTreni coinvolti nella
+  chiusura:\n  - REG 20286 (ROMA TIBURTINA -> GUIDONIA-MONTECELIO) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (72% tratta ROMA TIBURTINA -
+ > ROMA PRENESTINA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione TOR SAPIENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20286--20261120-S08501@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
 DTSTART:20261121T065130Z
 DTEND:20261121T065600Z
 SUMMARY:[FERMATA] REG 20286 (ROMA TIBURTINA -> GUIDONIA-MONTECELIO) ore 07:
@@ -101,29 +139,122 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20290--20261120-S08501@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T093030Z
-DTEND:20261121T093500Z
-SUMMARY:[FERMATA] REG 20290 (ROMA TIBURTINA -> GUIDONIA-MONTECELIO) ore 10:
- 34
-DESCRIPTION:Stazione/PL: TOR SAPIENZA (S08501)\nRegime chiusura: FERMATA\nC
- hiusura sbarre stimata: 10:30:30 - 10:35:00\nTreni coinvolti nella chiusur
- a:\n  - REG 20290 (ROMA TIBURTINA -> GUIDONIA-MONTECELIO)\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
- isione da traccia oraria regolare
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T091855Z
+DTEND:20261121T092425Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:18 - 10:24 (primo: REG 20290)
+DESCRIPTION:Stazione/PL: TOR SAPIENZA (S08501)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:18:55 - 10:24:25\nTreni coi
+ nvolti nella chiusura:\n  - REG 20290 (ROMA TIBURTINA -> GUIDONIA-MONTECEL
+ IO) [Transito]\n  - REG 20290 (ROMA TIBURTINA -> GUIDONIA-MONTECELIO) [Tra
+ nsito]\nRitardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
+ passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TOR SAPIENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20290--20261120-S08501@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T092930Z
+DTEND:20261121T093700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:29 - 10:37 (primo: REG 20290) (+1 
+ min)
+DESCRIPTION:Stazione/PL: TOR SAPIENZA (S08501)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:29:30 - 10:37:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 20290 (ROMA TIBURTINA -> GUIDONIA-MONTECEL
+ IO) (+1m)\n  - REG 20290 (ROMA TIBURTINA -> GUIDONIA-MONTECELIO) (+1m)\nRi
+ tardo massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/eu
+ ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
+ s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione TOR SAPIENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12767--20261120-S08501@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:0
+DTSTART:20261121T130430Z
+DTEND:20261121T130900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:04 - 14:09 (primo: REG 12767) (+1 
+ min)
+DESCRIPTION:Stazione/PL: TOR SAPIENZA (S08501)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:04:30 - 14:09:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 12767 (TIVOLI -> ROMA TIBURTINA) (+1m)\n  
+ - REG 12767 (TIVOLI -> ROMA TIBURTINA) (+1m)\nRitardo massimo rilevato: 1 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
+  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione TOR SAPIENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-12764--20261120-S08501@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:0
+DTSTART:20261121T133921Z
+DTEND:20261121T135500Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 14:39 - 14:55 (primo: REG 12764)
+DESCRIPTION:Stazione/PL: TOR SAPIENZA (S08501)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 6 TRENI\nChiusura sbarre stimata: 14:39:21 - 14:55:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 12764 (ROMA TIBURTINA -> TIVOLI) [Transito
+ ]\n  - REG 12764 (ROMA TIBURTINA -> TIVOLI) [Transito]\n  - REG 12769 (TIV
+ OLI -> ROMA TIBURTINA)\n  - REG 12769 (TIVOLI -> ROMA TIBURTINA)\n  - REG 
+ 12764 (ROMA TIBURTINA -> TIVOLI)\n  - REG 12764 (ROMA TIBURTINA -> TIVOLI)
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Chiusura continua per 6 treni: intervallo utile tra i passagg
+ i (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione TOR SAPIENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-12768--20261120-S08501@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T144921Z
+DTEND:20261121T145451Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:49 - 15:54 (primo: REG 12768)
+DESCRIPTION:Stazione/PL: TOR SAPIENZA (S08501)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:49:21 - 15:54:51\nTreni coi
+ nvolti nella chiusura:\n  - REG 12768 (ROMA TIBURTINA -> TIVOLI) [Transito
+ ]\n  - REG 12768 (ROMA TIBURTINA -> TIVOLI) [Transito]\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
+ a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione TOR SAPIENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12768--20261120-S08501@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
 DTSTART:20261121T150030Z
 DTEND:20261121T150500Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:00 - 16:05 (primo: REG 12768)
@@ -144,8 +275,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20296--20261120-S08501@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T154838Z
+DTEND:20261121T155408Z
+SUMMARY:[TRANSITO VELOCE] REG 20296 (ROMA TIBURTINA -> GUIDONIA-MONTECELIO)
+  ore 16:52
+DESCRIPTION:Stazione/PL: TOR SAPIENZA (S08501)\nRegime chiusura: TRANSITO V
+ ELOCE\nChiusura sbarre stimata: 16:48:38 - 16:54:08\nTreni coinvolti nella
+  chiusura:\n  - REG 20296 (ROMA TIBURTINA -> GUIDONIA-MONTECELIO) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (72% tratta ROMA TIBURTINA -
+ > ROMA PRENESTINA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione TOR SAPIENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20296--20261120-S08501@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
 DTSTART:20261121T155930Z
 DTEND:20261121T160400Z
 SUMMARY:[FERMATA] REG 20296 (ROMA TIBURTINA -> GUIDONIA-MONTECELIO) ore 17:
@@ -165,31 +318,72 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20056--20261120-S08501@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T201830Z
-DTEND:20261121T202300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:18 - 21:23 (primo: REG 20056)
-DESCRIPTION:Stazione/PL: TOR SAPIENZA (S08501)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:18:30 - 21:23:00\nTreni coi
- nvolti nella chiusura:\n  - REG 20056 (ROMA TIBURTINA -> VALLE DELL'ANIENE
- -MANDELA-SAMBUCI)\n  - REG 20056 (ROMA TIBURTINA -> VALLE DELL'ANIENE-MAND
- ELA-SAMBUCI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nN
- ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T200721Z
+DTEND:20261121T201251Z
+SUMMARY:[TRANSITO VELOCE] REG 20056 (ROMA TIBURTINA -> VALLE DELL'ANIENE-MA
+ NDELA-SAMBUCI) ore 21:11
+DESCRIPTION:Stazione/PL: TOR SAPIENZA (S08501)\nRegime chiusura: TRANSITO V
+ ELOCE\nChiusura sbarre stimata: 21:07:21 - 21:12:51\nTreni coinvolti nella
+  chiusura:\n  - REG 20056 (ROMA TIBURTINA -> VALLE DELL'ANIENE-MANDELA-SAM
+ BUCI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
+ %\nNota normativa/euristica: Transito stimato senza fermata (72% tratta RO
+ MA TIBURTINA -> ROMA PRENESTINA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione TOR SAPIENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20056--20261120-S08501@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T201830Z
+DTEND:20261121T202300Z
+SUMMARY:[FERMATA] REG 20056 (ROMA TIBURTINA -> VALLE DELL'ANIENE-MANDELA-SA
+ MBUCI) ore 21:22
+DESCRIPTION:Stazione/PL: TOR SAPIENZA (S08501)\nRegime chiusura: FERMATA\nC
+ hiusura sbarre stimata: 21:18:30 - 21:23:00\nTreni coinvolti nella chiusur
+ a:\n  - REG 20056 (ROMA TIBURTINA -> VALLE DELL'ANIENE-MANDELA-SAMBUCI)\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/e
+ uristica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione TOR SAPIENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12778--20261120-S08501@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T205721Z
+DTEND:20261121T210251Z
+SUMMARY:[TRANSITO VELOCE] REG 12778 (ROMA TIBURTINA -> TIVOLI) ore 22:01
+DESCRIPTION:Stazione/PL: TOR SAPIENZA (S08501)\nRegime chiusura: TRANSITO V
+ ELOCE\nChiusura sbarre stimata: 21:57:21 - 22:02:51\nTreni coinvolti nella
+  chiusura:\n  - REG 12778 (ROMA TIBURTINA -> TIVOLI) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (72% tratta ROMA TIBURTINA -> ROMA PRENES
+ TINA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione TOR SAPIENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12778--20261120-S08501@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
 DTSTART:20261121T210830Z
 DTEND:20261121T211300Z
 SUMMARY:[FERMATA] REG 12778 (ROMA TIBURTINA -> TIVOLI) ore 22:12

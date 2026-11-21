@@ -9,23 +9,23 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:d9c8f3a19a5d232b93c172a3330ca4dad87b67a187af31fe50473d66fe67
- e8e6
+X-CONTENT-HASH:76570eafaf3e78b3ccdfb6e2c4f3195553476f945f8ed7f69c5de2a4ded9
+ 8d0a
 BEGIN:VEVENT
-UID:train-19690--20261120-S07021@pl-tracker.local
-DTSTAMP:20261121T041232Z
+UID:train-4207--20261120-S07021@pl-tracker.local
+DTSTAMP:20261121T124444Z
 SEQUENCE:0
-DTSTART:20261121T041611Z
-DTEND:20261121T042308Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:16 - 05:23 (primo: REG 19690) (+1 
- min)
+DTSTART:20261121T053113Z
+DTEND:20261121T053643Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:31 - 06:36 (primo: REG 4207) (+1 m
+ in)
 DESCRIPTION:Stazione/PL: CAMERANO ASPIO (S07021)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:16:11 - 05:23:08\nTreni c
- oinvolti nella chiusura:\n  - REG 19690 (S.BENEDETTO DEL TRONTO -> ANCONA)
-  (+1m) [Transito]\n  - REG 4205 (ANCONA -> PESCARA) [Transito]\nRitardo ma
- ssimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica:
-  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
- iore alla soglia minima di sgombero stradale (120s)
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:31:13 - 06:36:43\nTreni c
+ oinvolti nella chiusura:\n  - REG 4207 (ANCONA -> PESCARA) (+1m) [Transito
+ ]\n  - REG 4207 (ANCONA -> PESCARA) (+1m) [Transito]\nRitardo massimo rile
+ vato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
+ continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CAMERANO ASPIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -36,8 +36,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23761--20261120-S07021@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
 DTSTART:20261121T095030Z
 DTEND:20261121T095500Z
 SUMMARY:[FERMATA] REG 23761 (ANCONA -> ASCOLI PICENO) ore 10:54
@@ -56,51 +56,71 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2493--20261120-S07021@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T110030Z
-DTEND:20261121T110500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:00 - 12:05 (primo: REG 2493)
-DESCRIPTION:Stazione/PL: CAMERANO ASPIO (S07021)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:00:30 - 12:05:00\nTreni c
- oinvolti nella chiusura:\n  - REG 2493 (REGGIO EMILIA -> PESCARA)\n  - REG
-  2493 (REGGIO EMILIA -> PESCARA)\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T110530Z
+DTEND:20261121T111000Z
+SUMMARY:[SOPPRESSO] [FERMATA] REG 2493 (REGGIO EMILIA -> ANCONA) ore 12:09 
+ (+5 min)
+DESCRIPTION:Stazione/PL: CAMERANO ASPIO (S07021)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 12:05:30 - 12:10:00\nTreni coinvolti nella chius
+ ura:\n  - REG 2493 (REGGIO EMILIA -> ANCONA) (+5m)\nRitardo massimo rileva
+ to: 5 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
+ con ritardo propagato (+5 min)
 LOCATION:Passaggio a Livello / Stazione CAMERANO ASPIO
-STATUS:CONFIRMED
+STATUS:CANCELLED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-23849--20261120-S07021@pl-tracker.local
-DTSTAMP:20261121T041232Z
+UID:train-2493--20261120-S07021@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T110530Z
+DTEND:20261121T111000Z
+SUMMARY:[SOPPRESSO] [FERMATA] REG 2493 (REGGIO EMILIA -> ANCONA) ore 12:09 
+ (+5 min)
+DESCRIPTION:Stazione/PL: CAMERANO ASPIO (S07021)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 12:05:30 - 12:10:00\nTreni coinvolti nella chius
+ ura:\n  - REG 2493 (REGGIO EMILIA -> ANCONA) (+5m)\nRitardo massimo rileva
+ to: 5 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
+ con ritardo propagato (+5 min)
+LOCATION:Passaggio a Livello / Stazione CAMERANO ASPIO
+STATUS:CANCELLED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-605--20261120-S07021@pl-tracker.local
+DTSTAMP:20261121T124444Z
 SEQUENCE:0
-DTSTART:20261121T110845Z
-DTEND:20261121T111415Z
-SUMMARY:[TRANSITO VELOCE] REG 23849 (ANCONA -> FABRIANO) ore 12:13
+DTSTART:20261121T112800Z
+DTEND:20261121T113230Z
+SUMMARY:[TRANSITO VELOCE] IC 605 (MILANO CENTRALE -> LECCE) ore 12:31
 DESCRIPTION:Stazione/PL: CAMERANO ASPIO (S07021)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 12:08:45 - 12:14:15\nTreni coinvolti nel
- la chiusura:\n  - REG 23849 (ANCONA -> FABRIANO) [Transito]\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
- ansito stimato senza fermata (50% tratta ANCONA -> LORETO\; pedale annunci
- o fisso Vmax)
+  VELOCE\nChiusura sbarre stimata: 12:28:00 - 12:32:30\nTreni coinvolti nel
+ la chiusura:\n  - IC 605 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Transito stimato senza fermata (50% tratta ANCONA -> LORETO\; pedale annu
+ ncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CAMERANO ASPIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1775--20261120-S07021@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
 DTSTART:20261121T130330Z
 DTEND:20261121T130800Z
 SUMMARY:[FERMATA] REG 1775 (BOLOGNA CENTRALE -> S.BENEDETTO DEL TRONTO) ore
@@ -119,65 +139,64 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-1545--20261120-S07021@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T140000Z
-DTEND:20261121T140430Z
-SUMMARY:[TRANSITO VELOCE] IC 1545 (MILANO CENTRALE -> LECCE) ore 15:03
-DESCRIPTION:Stazione/PL: CAMERANO ASPIO (S07021)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 15:00:00 - 15:04:30\nTreni coinvolti nel
- la chiusura:\n  - IC 1545 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (50% tratta ANCONA -> LORETO\; pedale ann
- uncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione CAMERANO ASPIO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-612--20261120-S07021@pl-tracker.local
-DTSTAMP:20261121T041232Z
+UID:train-4221--20261120-S07021@pl-tracker.local
+DTSTAMP:20261121T124444Z
 SEQUENCE:0
-DTSTART:20261121T152204Z
-DTEND:20261121T152634Z
-SUMMARY:[TRANSITO VELOCE] IC 612 (LECCE -> MILANO CENTRALE) ore 16:25
-DESCRIPTION:Stazione/PL: CAMERANO ASPIO (S07021)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 16:22:04 - 16:26:34\nTreni coinvolti nel
- la chiusura:\n  - IC 612 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo ma
- ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
-  Transito stimato senza fermata (48% tratta LORETO -> ANCONA\; pedale annu
- ncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione CAMERANO ASPIO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2494--20261120-S07021@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T164030Z
-DTEND:20261121T164500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:40 - 17:45 (primo: REG 2494)
+DTSTART:20261121T134530Z
+DTEND:20261121T135000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:45 - 14:50 (primo: REG 4221)
 DESCRIPTION:Stazione/PL: CAMERANO ASPIO (S07021)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:40:30 - 17:45:00\nTreni c
- oinvolti nella chiusura:\n  - REG 2494 (PESCARA -> REGGIO EMILIA)\n  - REG
-  2494 (PESCARA -> REGGIO EMILIA)\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:45:30 - 14:50:00\nTreni c
+ oinvolti nella chiusura:\n  - REG 4221 (ANCONA -> PESCARA)\n  - REG 4221 (
+ ANCONA -> PESCARA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
+ 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo u
+ tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
+  (120s)
 LOCATION:Passaggio a Livello / Stazione CAMERANO ASPIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23865--20261120-S07021@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:0
+DTSTART:20261121T160815Z
+DTEND:20261121T161345Z
+SUMMARY:[TRANSITO VELOCE] REG 23865 (ANCONA -> FABRIANO) ore 17:12
+DESCRIPTION:Stazione/PL: CAMERANO ASPIO (S07021)\nRegime chiusura: TRANSITO
+  VELOCE\nChiusura sbarre stimata: 17:08:15 - 17:13:45\nTreni coinvolti nel
+ la chiusura:\n  - REG 23865 (ANCONA -> FABRIANO) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
+ ansito stimato senza fermata (50% tratta ANCONA -> LORETO\; pedale annunci
+ o fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione CAMERANO ASPIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2494--20261120-S07021@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T164030Z
+DTEND:20261121T164500Z
+SUMMARY:[FERMATA] REG 2494 (PESCARA -> REGGIO EMILIA) ore 17:44
+DESCRIPTION:Stazione/PL: CAMERANO ASPIO (S07021)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 17:40:30 - 17:45:00\nTreni coinvolti nella chius
+ ura:\n  - REG 2494 (PESCARA -> REGGIO EMILIA)\nRitardo massimo rilevato: 0
+  min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tr
+ accia oraria regolare
+LOCATION:Passaggio a Livello / Stazione CAMERANO ASPIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

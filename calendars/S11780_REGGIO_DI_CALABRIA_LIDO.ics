@@ -9,33 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:9d841e37821ec2f2ca19d680ec4b739ebb5ef9c6fb7dad061932658898ad
- cbad
+X-CONTENT-HASH:1d8b2280c0f2a130fbf2574aad718b0ad494d37f35cf2b8935c0fc08bdad
+ dadb
 BEGIN:VEVENT
 UID:train-5550--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T035830Z
-DTEND:20261121T040300Z
-SUMMARY:[SOPPRESSO] [FERMATA] REG 5550 (REGGIO DI CALABRIA CENTRALE -> COSE
- NZA) ore 05:02
-DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
-  FERMATA\nChiusura sbarre stimata: 04:58:30 - 05:03:00\nTreni coinvolti ne
- lla chiusura:\n  - REG 5550 (REGGIO DI CALABRIA CENTRALE -> COSENZA)\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euri
- stica: Previsione da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
-STATUS:CANCELLED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-5550--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
 DTSTART:20261121T035830Z
 DTEND:20261121T040300Z
 SUMMARY:[SOPPRESSO] [FERMATA] REG 5550 (REGGIO DI CALABRIA CENTRALE -> COSE
@@ -55,19 +34,63 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8418--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T045843Z
-DTEND:20261121T050413Z
-SUMMARY:[TRANSITO VELOCE] TRENO 8418 (REGGIO DI CALABRIA CENTRALE -> VENEZI
- A S.LUCIA) ore 06:02
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T045817Z
+DTEND:20261121T050347Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:58 - 06:03 (primo: TRENO 8418)
 DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
-  TRANSITO VELOCE\nChiusura sbarre stimata: 05:58:43 - 06:04:13\nTreni coin
- volti nella chiusura:\n  - TRENO 8418 (REGGIO DI CALABRIA CENTRALE -> VENE
- ZIA S.LUCIA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità st
- ima: 78%\nNota normativa/euristica: Transito stimato senza fermata (25% tr
- atta REGGIO DI CALABRIA CENTRALE -> VILLA S.GIOVANNI\; pedale annuncio fis
- so Vmax)
+  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:58:17 - 06:03:47
+ \nTreni coinvolti nella chiusura:\n  - TRENO 8418 (REGGIO DI CALABRIA CENT
+ RALE -> VENEZIA S.LUCIA) [Transito]\n  - TRENO 8418 (REGGIO DI CALABRIA CE
+ NTRALE -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo rilevato: -6 min\nA
+ ffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-550--20261120-S11780@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T051415Z
+DTEND:20261121T051900Z
+SUMMARY:[FERMATA] IC 550 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI) ore 
+ 06:18
+DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
+  FERMATA\nChiusura sbarre stimata: 06:14:15 - 06:19:00\nTreni coinvolti ne
+ lla chiusura:\n  - IC 550 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI)\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/e
+ uristica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9584--20261120-S11780@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T053128Z
+DTEND:20261121T053658Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9584 (REGGIO DI CALABRIA CENTRALE -> TORINO
+  PORTA NUOVA) ore 06:35
+DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
+  TRANSITO VELOCE\nChiusura sbarre stimata: 06:31:28 - 06:36:58\nTreni coin
+ volti nella chiusura:\n  - TRENO 9584 (REGGIO DI CALABRIA CENTRALE -> TORI
+ NO PORTA NUOVA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità
+  stima: 78%\nNota normativa/euristica: Transito stimato senza fermata (26%
+  tratta REGGIO DI CALABRIA CENTRALE -> VILLA S.GIOVANNI\; pedale annuncio 
+ fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -77,76 +100,29 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-550--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T051415Z
-DTEND:20261121T051900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:14 - 06:19 (primo: IC 550)
-DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:14:15 - 06:19:00
- \nTreni coinvolti nella chiusura:\n  - IC 550 (REGGIO DI CALABRIA CENTRALE
-  -> ROMA TERMINI)\n  - IC 550 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI
- )\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normati
- va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
- gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9584--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T053113Z
-DTEND:20261121T053643Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:31 - 06:36 (primo: TRENO 9584)
-DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:31:13 - 06:36:43
- \nTreni coinvolti nella chiusura:\n  - TRENO 9584 (REGGIO DI CALABRIA CENT
- RALE -> TORINO PORTA NUOVA) [Transito]\n  - TRENO 9584 (REGGIO DI CALABRIA
-  CENTRALE -> TORINO PORTA NUOVA) [Transito]\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua 
- per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
- nima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
 UID:train-5644--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
 DTSTART:20261121T055030Z
 DTEND:20261121T055500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:50 - 06:55 (primo: REG 5644)
+SUMMARY:[FERMATA] REG 5644 (REGGIO DI CALABRIA CENTRALE -> PAOLA) ore 06:54
 DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:50:30 - 06:55:00
- \nTreni coinvolti nella chiusura:\n  - REG 5644 (REGGIO DI CALABRIA CENTRA
- LE -> PAOLA)\n  - REG 5644 (REGGIO DI CALABRIA CENTRALE -> PAOLA)\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristi
- ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
- feriore alla soglia minima di sgombero stradale (120s)
+  FERMATA\nChiusura sbarre stimata: 06:50:30 - 06:55:00\nTreni coinvolti ne
+ lla chiusura:\n  - REG 5644 (REGGIO DI CALABRIA CENTRALE -> PAOLA)\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
+ ica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21909--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
 DTSTART:20261121T061630Z
 DTEND:20261121T062100Z
 SUMMARY:[FERMATA] REG 21909 (MELITO DI PORTO SALVO -> VILLA S.GIOVANNI) ore
@@ -166,192 +142,258 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-552--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T065428Z
-DTEND:20261121T065858Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:54 - 07:58 (primo: IC 552)
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T065559Z
+DTEND:20261121T070029Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:55 - 08:00 (primo: IC 552) (+3 min
+ )
 DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:54:28 - 07:58:58
+  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:55:59 - 08:00:29
  \nTreni coinvolti nella chiusura:\n  - IC 552 (REGGIO DI CALABRIA CENTRALE
-  -> ROMA TERMINI) [Transito]\n  - IC 552 (REGGIO DI CALABRIA CENTRALE -> R
- OMA TERMINI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità st
- ima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
- llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
- adale (120s)
+  -> ROMA TERMINI) (+3m) [Transito]\n  - IC 552 (REGGIO DI CALABRIA CENTRAL
+ E -> ROMA TERMINI) (+3m) [Transito]\nRitardo massimo rilevato: 3 min\nAffi
+ dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tr
+ eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9642--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T075213Z
-DTEND:20261121T075743Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9642 (REGGIO DI CALABRIA CENTRALE -> TORINO
-  PORTA NUOVA) ore 08:56
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T075448Z
+DTEND:20261121T080018Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:54 - 09:00 (primo: TRENO 9642) (+2
+  min)
 DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
-  TRANSITO VELOCE\nChiusura sbarre stimata: 08:52:13 - 08:57:43\nTreni coin
- volti nella chiusura:\n  - TRENO 9642 (REGGIO DI CALABRIA CENTRALE -> TORI
- NO PORTA NUOVA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 78%\nNota normativa/euristica: Transito stimato senza fermata (25%
-  tratta REGGIO DI CALABRIA CENTRALE -> VILLA S.GIOVANNI\; pedale annuncio 
- fisso Vmax)
+  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:54:48 - 09:00:18
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9642 (REGGIO DI CALABRIA CENT
+ RALE -> TORINO PORTA NUOVA) (+2m) [Transito]\n  - TRENO 9642 (REGGIO DI CA
+ LABRIA CENTRALE -> TORINO PORTA NUOVA) (+2m) [Transito]\nRitardo massimo r
+ ilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
+ ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
+ la soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-556--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T085828Z
-DTEND:20261121T091013Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 09:58 - 10:10 (primo: IC 556)
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T085841Z
+DTEND:20261121T091026Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:58 - 10:10 (primo: IC 556)
 DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
-  CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 09:58:28 - 10:10:13
+  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:58:41 - 10:10:26
  \nTreni coinvolti nella chiusura:\n  - IC 556 (REGGIO DI CALABRIA CENTRALE
-  -> ROMA TERMINI) [Transito]\n  - IC 556 (REGGIO DI CALABRIA CENTRALE -> R
- OMA TERMINI) [Transito]\n  - TRENO 9588 (REGGIO DI CALABRIA CENTRALE -> TO
- RINO PORTA NUOVA) [Transito]\n  - TRENO 9588 (REGGIO DI CALABRIA CENTRALE 
+  -> ROMA TERMINI) [Transito]\n  - TRENO 9588 (REGGIO DI CALABRIA CENTRALE 
  -> TORINO PORTA NUOVA) [Transito]\nRitardo massimo rilevato: 0 min\nAffida
- bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 tren
- i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
- ombero stradale (120s)
+ bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tren
+ i: intervallo utile tra i passaggi (105s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21913--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
 DTSTART:20261121T091630Z
 DTEND:20261121T092100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:16 - 10:21 (primo: REG 21913)
+SUMMARY:[FERMATA] REG 21913 (MELITO DI PORTO SALVO -> VILLA S.GIOVANNI) ore
+  10:20
 DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:16:30 - 10:21:00
- \nTreni coinvolti nella chiusura:\n  - REG 21913 (MELITO DI PORTO SALVO ->
-  VILLA S.GIOVANNI)\n  - REG 21913 (MELITO DI PORTO SALVO -> VILLA S.GIOVAN
- NI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+  FERMATA\nChiusura sbarre stimata: 10:16:30 - 10:21:00\nTreni coinvolti ne
+ lla chiusura:\n  - REG 21913 (MELITO DI PORTO SALVO -> VILLA S.GIOVANNI)\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/
+ euristica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5464--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
 DTSTART:20261121T093030Z
 DTEND:20261121T093500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:30 - 10:35 (primo: REG 5464)
+SUMMARY:[SOPPRESSO] [FERMATA] REG 5464 (REGGIO DI CALABRIA CENTRALE -> LAME
+ ZIA TERME CENTRALE) ore 10:34
 DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:30:30 - 10:35:00
- \nTreni coinvolti nella chiusura:\n  - REG 5464 (REGGIO DI CALABRIA CENTRA
- LE -> LAMEZIA TERME CENTRALE)\n  - REG 5464 (REGGIO DI CALABRIA CENTRALE -
- > LAMEZIA TERME CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità 
- stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inter
- vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
- tradale (120s)
+  FERMATA\nChiusura sbarre stimata: 10:30:30 - 10:35:00\nTreni coinvolti ne
+ lla chiusura:\n  - REG 5464 (REGGIO DI CALABRIA CENTRALE -> LAMEZIA TERME 
+ CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota
+  normativa/euristica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
-STATUS:CONFIRMED
+STATUS:CANCELLED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-5464--20261120-S11780@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T093030Z
+DTEND:20261121T093500Z
+SUMMARY:[SOPPRESSO] [FERMATA] REG 5464 (REGGIO DI CALABRIA CENTRALE -> LAME
+ ZIA TERME CENTRALE) ore 10:34
+DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
+  FERMATA\nChiusura sbarre stimata: 10:30:30 - 10:35:00\nTreni coinvolti ne
+ lla chiusura:\n  - REG 5464 (REGGIO DI CALABRIA CENTRALE -> LAMEZIA TERME 
+ CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota
+  normativa/euristica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
+STATUS:CANCELLED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5560--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
 DTSTART:20261121T105330Z
 DTEND:20261121T105800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:53 - 11:58 (primo: REG 5560)
+SUMMARY:[FERMATA] REG 5560 (REGGIO DI CALABRIA CENTRALE -> PAOLA) ore 11:57
 DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:53:30 - 11:58:00
- \nTreni coinvolti nella chiusura:\n  - REG 5560 (REGGIO DI CALABRIA CENTRA
- LE -> PAOLA)\n  - REG 5560 (REGGIO DI CALABRIA CENTRALE -> PAOLA)\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristi
- ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
- feriore alla soglia minima di sgombero stradale (120s)
+  FERMATA\nChiusura sbarre stimata: 11:53:30 - 11:58:00\nTreni coinvolti ne
+ lla chiusura:\n  - REG 5560 (REGGIO DI CALABRIA CENTRALE -> PAOLA)\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
+ ica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8333--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T120234Z
-DTEND:20261121T120804Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:02 - 13:08 (primo: TRENO 8333)
+UID:train-9658--20261120-S11780@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:0
+DTSTART:20261121T110725Z
+DTEND:20261121T111255Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:07 - 12:12 (primo: TRENO 9658) (+2
+  min)
 DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:02:34 - 13:08:04
- \nTreni coinvolti nella chiusura:\n  - TRENO 8333 (ROMA TERMINI -> REGGIO 
- DI CALABRIA CENTRALE) [Transito]\n  - TRENO 8333 (ROMA TERMINI -> REGGIO D
- I CALABRIA CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
+  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:07:25 - 12:12:55
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9658 (REGGIO DI CALABRIA CENT
+ RALE -> MILANO CENTRALE) (+2m) [Transito]\n  - TRENO 9658 (REGGIO DI CALAB
+ RIA CENTRALE -> MILANO CENTRALE) (+2m) [Transito]\nRitardo massimo rilevat
+ o: 2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
+ tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-560--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T140228Z
-DTEND:20261121T140658Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:02 - 15:06 (primo: IC 560)
+UID:train-8333--20261120-S11780@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T120434Z
+DTEND:20261121T121054Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 13:04 - 13:10 (primo: TRENO 8333) (+2
+  min)
 DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:02:28 - 15:06:58
- \nTreni coinvolti nella chiusura:\n  - IC 560 (REGGIO DI CALABRIA CENTRALE
-  -> ROMA TERMINI) [Transito]\n  - IC 560 (REGGIO DI CALABRIA CENTRALE -> R
- OMA TERMINI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità st
- ima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
- llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
- adale (120s)
+  CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 13:04:34 - 13:10:54
+ \nTreni coinvolti nella chiusura:\n  - TRENO 8333 (ROMA TERMINI -> REGGIO 
+ DI CALABRIA CENTRALE) [Transito]\n  - REG 22383 (VILLA S.GIOVANNI -> MELIT
+ O DI PORTO SALVO) (+2m) [Transito]\n  - REG 22383 (VILLA S.GIOVANNI -> MEL
+ ITO DI PORTO SALVO) (+2m) [Transito]\nRitardo massimo rilevato: 2 min\nAff
+ idabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 t
+ reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
+  sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-22383--20261120-S11780@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:0
+DTSTART:20261121T122530Z
+DTEND:20261121T123000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:25 - 13:30 (primo: REG 22383) (+2 
+ min)
+DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
+  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:25:30 - 13:30:00
+ \nTreni coinvolti nella chiusura:\n  - REG 22383 (VILLA S.GIOVANNI -> MELI
+ TO DI PORTO SALVO) (+2m)\n  - REG 22383 (VILLA S.GIOVANNI -> MELITO DI POR
+ TO SALVO) (+2m)\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 90%
+ \nNota normativa/euristica: Chiusura continua per 2 treni: intervallo util
+ e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
+ 20s)
 LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-560--20261120-S11780@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T140241Z
+DTEND:20261121T140711Z
+SUMMARY:[TRANSITO VELOCE] IC 560 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMI
+ NI) ore 15:06
+DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
+  TRANSITO VELOCE\nChiusura sbarre stimata: 15:02:41 - 15:07:11\nTreni coin
+ volti nella chiusura:\n  - IC 560 (REGGIO DI CALABRIA CENTRALE -> ROMA TER
+ MINI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
+ %\nNota normativa/euristica: Transito stimato senza fermata (26% tratta RE
+ GGIO DI CALABRIA CENTRALE -> VILLA S.GIOVANNI\; pedale annuncio fisso Vmax
+ )
+LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5482--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
 DTSTART:20261121T143030Z
 DTEND:20261121T143500Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:30 - 15:35 (primo: REG 5482)
@@ -373,19 +415,19 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8332--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T144758Z
-DTEND:20261121T145328Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:47 - 15:53 (primo: TRENO 8332)
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T144812Z
+DTEND:20261121T150000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:48 - 16:00 (primo: TRENO 8332)
 DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:47:58 - 15:53:28
+  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:48:12 - 16:00:00
  \nTreni coinvolti nella chiusura:\n  - TRENO 8332 (REGGIO DI CALABRIA CENT
- RALE -> ROMA TERMINI) [Transito]\n  - TRENO 8332 (REGGIO DI CALABRIA CENTR
- ALE -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
+ RALE -> ROMA TERMINI) [Transito]\n  - REG 5570 (REGGIO DI CALABRIA CENTRAL
+ E -> COSENZA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\n
+ Nota normativa/euristica: Chiusura continua per 2 treni: intervallo utile 
+ tra i passaggi (107s) inferiore alla soglia minima di sgombero stradale (1
+ 20s)
 LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -395,40 +437,18 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-5570--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T145530Z
-DTEND:20261121T150000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:55 - 16:00 (primo: REG 5570)
-DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:55:30 - 16:00:00
- \nTreni coinvolti nella chiusura:\n  - REG 5570 (REGGIO DI CALABRIA CENTRA
- LE -> COSENZA)\n  - REG 5570 (REGGIO DI CALABRIA CENTRALE -> COSENZA)\nRit
- ardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eur
- istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
- ) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-21943--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T150609Z
-DTEND:20261121T151139Z
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T150611Z
+DTEND:20261121T151141Z
 SUMMARY:[TRANSITO VELOCE] REG 21943 (VILLA S.GIOVANNI -> MELITO DI PORTO SA
  LVO) ore 16:10
 DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
-  TRANSITO VELOCE\nChiusura sbarre stimata: 16:06:09 - 16:11:39\nTreni coin
+  TRANSITO VELOCE\nChiusura sbarre stimata: 16:06:11 - 16:11:41\nTreni coin
  volti nella chiusura:\n  - REG 21943 (VILLA S.GIOVANNI -> MELITO DI PORTO 
  SALVO) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 7
- 8%\nNota normativa/euristica: Transito stimato senza fermata (60% tratta V
+ 8%\nNota normativa/euristica: Transito stimato senza fermata (61% tratta V
  ILLA S.GIOVANNI -> REGGIO DI CALABRIA CATONA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
 STATUS:CONFIRMED
@@ -440,8 +460,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21943--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
 DTSTART:20261121T152730Z
 DTEND:20261121T153200Z
 SUMMARY:[FERMATA] REG 21943 (VILLA S.GIOVANNI -> MELITO DI PORTO SALVO) ore
@@ -461,138 +481,161 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-551--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T160454Z
-DTEND:20261121T160924Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:04 - 17:09 (primo: IC 551)
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T160704Z
+DTEND:20261121T161134Z
+SUMMARY:[TRANSITO VELOCE] IC 551 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRA
+ LE) ore 17:10
 DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:04:54 - 17:09:24
- \nTreni coinvolti nella chiusura:\n  - IC 551 (ROMA TERMINI -> REGGIO DI C
- ALABRIA CENTRALE) [Transito]\n  - IC 551 (ROMA TERMINI -> REGGIO DI CALABR
- IA CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità st
- ima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
- llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
- adale (120s)
+  TRANSITO VELOCE\nChiusura sbarre stimata: 17:07:04 - 17:11:34\nTreni coin
+ volti nella chiusura:\n  - IC 551 (ROMA TERMINI -> REGGIO DI CALABRIA CENT
+ RALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
+ %\nNota normativa/euristica: Transito stimato senza fermata (87% tratta VI
+ LLA S.GIOVANNI -> REGGIO DI CALABRIA CENTRALE\; pedale annuncio fisso Vmax
+ )
 LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-553--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:1
-DTSTART:20261121T190609Z
-DTEND:20261121T191039Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:06 - 20:10 (primo: IC 553)
+UID:train-9583--20261120-S11780@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:0
+DTSTART:20261121T181942Z
+DTEND:20261121T182512Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:19 - 19:25 (primo: TRENO 9583) (+1
+ 8 min)
 DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:06:09 - 20:10:39
- \nTreni coinvolti nella chiusura:\n  - IC 553 (ROMA TERMINI -> REGGIO DI C
- ALABRIA CENTRALE) [Transito]\n  - IC 553 (ROMA TERMINI -> REGGIO DI CALABR
- IA CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità st
- ima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
- llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
- adale (120s)
+  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:19:42 - 19:25:12
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9583 (TORINO PORTA NUOVA -> R
+ EGGIO DI CALABRIA CENTRALE) (+18m) [Transito]\n  - TRENO 9583 (TORINO PORT
+ A NUOVA -> REGGIO DI CALABRIA CENTRALE) (+18m) [Transito]\nRitardo massimo
+  rilevato: 18 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
+ usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
+  alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:18
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-553--20261120-S11780@pl-tracker.local
+DTSTAMP:20261121T124444Z
+SEQUENCE:2
+DTSTART:20261121T190750Z
+DTEND:20261121T191220Z
+SUMMARY:[TRANSITO VELOCE] IC 553 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRA
+ LE) ore 20:11
+DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
+  TRANSITO VELOCE\nChiusura sbarre stimata: 20:07:50 - 20:12:20\nTreni coin
+ volti nella chiusura:\n  - IC 553 (ROMA TERMINI -> REGGIO DI CALABRIA CENT
+ RALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
+ %\nNota normativa/euristica: Transito stimato senza fermata (87% tratta VI
+ LLA S.GIOVANNI -> REGGIO DI CALABRIA CENTRALE\; pedale annuncio fisso Vmax
+ )
+LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9587--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T202847Z
-DTEND:20261121T203417Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:28 - 21:34 (primo: TRENO 9587)
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T204342Z
+DTEND:20261121T204912Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:43 - 21:49 (primo: TRENO 9587) (+1
+ 3 min)
 DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:28:47 - 21:34:17
+  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:43:42 - 21:49:12
  \nTreni coinvolti nella chiusura:\n  - TRENO 9587 (TORINO PORTA NUOVA -> R
- EGGIO DI CALABRIA CENTRALE) [Transito]\n  - TRENO 9587 (TORINO PORTA NUOVA
-  -> REGGIO DI CALABRIA CENTRALE) [Transito]\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua 
- per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
- nima di sgombero stradale (120s)
+ EGGIO DI CALABRIA CENTRALE) (+13m) [Transito]\n  - TRENO 9587 (TORINO PORT
+ A NUOVA -> REGGIO DI CALABRIA CENTRALE) (+13m) [Transito]\nRitardo massimo
+  rilevato: 13 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
+ usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
+  alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:13
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8419--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T210047Z
-DTEND:20261121T210617Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:00 - 22:06 (primo: TRENO 8419)
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T210242Z
+DTEND:20261121T210812Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8419 (VENEZIA S.LUCIA -> REGGIO DI CALABRIA
+  CENTRALE) ore 22:06
 DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:00:47 - 22:06:17
- \nTreni coinvolti nella chiusura:\n  - TRENO 8419 (VENEZIA S.LUCIA -> REGG
- IO DI CALABRIA CENTRALE) [Transito]\n  - TRENO 8419 (VENEZIA S.LUCIA -> RE
- GGIO DI CALABRIA CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAf
- fidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 
- treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
- i sgombero stradale (120s)
+  TRANSITO VELOCE\nChiusura sbarre stimata: 22:02:42 - 22:08:12\nTreni coin
+ volti nella chiusura:\n  - TRENO 8419 (VENEZIA S.LUCIA -> REGGIO DI CALABR
+ IA CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità st
+ ima: 78%\nNota normativa/euristica: Transito stimato senza fermata (87% tr
+ atta VILLA S.GIOVANNI -> REGGIO DI CALABRIA CENTRALE\; pedale annuncio fis
+ so Vmax)
 LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-794--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
 DTSTART:20261121T211515Z
 DTEND:20261121T212000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:15 - 22:20 (primo: ICN 794)
+SUMMARY:[FERMATA] ICN 794 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA NUOV
+ A) ore 22:19
 DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:15:15 - 22:20:00
- \nTreni coinvolti nella chiusura:\n  - ICN 794 (REGGIO DI CALABRIA CENTRAL
- E -> TORINO PORTA NUOVA)\n  - ICN 794 (REGGIO DI CALABRIA CENTRALE -> TORI
- NO PORTA NUOVA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%
- \nNota normativa/euristica: Chiusura continua per 2 treni: intervallo util
- e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
- 20s)
+  FERMATA\nChiusura sbarre stimata: 22:15:15 - 22:20:00\nTreni coinvolti ne
+ lla chiusura:\n  - ICN 794 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA NU
+ OVA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota norm
+ ativa/euristica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-561--20261120-S11780@pl-tracker.local
-DTSTAMP:20261121T041232Z
-SEQUENCE:0
-DTSTART:20261121T225221Z
-DTEND:20261121T225651Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:52 - 23:56 (primo: IC 561)
+DTSTAMP:20261121T124444Z
+SEQUENCE:1
+DTSTART:20261121T225357Z
+DTEND:20261121T225827Z
+SUMMARY:[TRANSITO VELOCE] IC 561 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRA
+ LE) ore 23:57
 DESCRIPTION:Stazione/PL: REGGIO DI CALABRIA LIDO (S11780)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 23:52:21 - 23:56:51
- \nTreni coinvolti nella chiusura:\n  - IC 561 (ROMA TERMINI -> REGGIO DI C
- ALABRIA CENTRALE) [Transito]\n  - IC 561 (ROMA TERMINI -> REGGIO DI CALABR
- IA CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità st
- ima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
- llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
- adale (120s)
+  TRANSITO VELOCE\nChiusura sbarre stimata: 23:53:57 - 23:58:27\nTreni coin
+ volti nella chiusura:\n  - IC 561 (ROMA TERMINI -> REGGIO DI CALABRIA CENT
+ RALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
+ %\nNota normativa/euristica: Transito stimato senza fermata (87% tratta VI
+ LLA S.GIOVANNI -> REGGIO DI CALABRIA CENTRALE\; pedale annuncio fisso Vmax
+ )
 LOCATION:Passaggio a Livello / Stazione REGGIO DI CALABRIA LIDO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
