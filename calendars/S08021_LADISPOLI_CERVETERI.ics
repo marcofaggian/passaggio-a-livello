@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:701de6079dece2dbeed2686bb2f186b9d683fac649ebba210b1c15bc5530
- 7fe3
+X-CONTENT-HASH:40823fc87f2b3c3c009b7fc99e2b6619a22e3b93465117fb5db546537e2b
+ f062
 BEGIN:VEVENT
 UID:train-4124--20261121-S08021@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T054830Z
 DTEND:20261122T055300Z
 SUMMARY:[FERMATA] REG 4124 (ROMA TERMINI -> PISA CENTRALE) ore 06:52
@@ -33,54 +33,52 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4507--20261121-S08021@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T063715Z
-DTEND:20261122T064245Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:37 - 07:42 (primo: REG 4507)
-DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:37:15 - 07:42:45\nTr
- eni coinvolti nella chiusura:\n  - REG 4507 (GROSSETO -> ROMA TERMINI) [Tr
- ansito]\n  - REG 4507 (GROSSETO -> ROMA TERMINI) [Transito]\nRitardo massi
- mo rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
- hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T063714Z
+DTEND:20261122T064244Z
+SUMMARY:[TRANSITO VELOCE] REG 4507 (GROSSETO -> ROMA TERMINI) ore 07:41
+DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 07:37:14 - 07:42:44\nTreni coinvolt
+ i nella chiusura:\n  - REG 4507 (GROSSETO -> ROMA TERMINI) [Transito]\nRit
+ ardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/eu
+ ristica: Transito stimato senza fermata (80% tratta CIVITAVECCHIA -> S.MAR
+ INELLA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LADISPOLI-CERVETERI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4507--20261121-S08021@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T065300Z
 DTEND:20261122T070655Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:53 - 08:06 (primo: REG 4507) (+2 m
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:53 - 08:06 (primo: REG 4507) (+2 m
  in)
 DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: CHI
- USURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 07:53:00 - 08:06:55\nTr
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:53:00 - 08:06:55\nTr
  eni coinvolti nella chiusura:\n  - REG 4507 (GROSSETO -> ROMA TERMINI) (+2
- m)\n  - REG 4507 (GROSSETO -> ROMA TERMINI) (+2m)\n  - REG 12504 (ROMA TER
- MINI -> CIVITAVECCHIA) [Transito]\nRitardo massimo rilevato: 2 min\nAffida
- bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 tren
- i: intervallo utile tra i passaggi (115s) inferiore alla soglia minima di 
- sgombero stradale (120s)
+ m)\n  - REG 12504 (ROMA TERMINI -> CIVITAVECCHIA) [Transito]\nRitardo mass
+ imo rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
+ hiusura continua per 2 treni: intervallo utile tra i passaggi (115s) infer
+ iore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LADISPOLI-CERVETERI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12504--20261121-S08021@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T071030Z
 DTEND:20261122T071500Z
 SUMMARY:[FERMATA] REG 12504 (ROMA TERMINI -> CIVITAVECCHIA) ore 08:14
@@ -99,190 +97,179 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4125--20261121-S08021@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T073839Z
-DTEND:20261122T074409Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:38 - 08:44 (primo: REG 4125)
-DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:38:39 - 08:44:09\nTr
- eni coinvolti nella chiusura:\n  - REG 4125 (PISA CENTRALE -> ROMA TERMINI
- ) [Transito]\n  - REG 4125 (PISA CENTRALE -> ROMA TERMINI) [Transito]\nRit
- ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
- ) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T073838Z
+DTEND:20261122T074408Z
+SUMMARY:[TRANSITO VELOCE] REG 4125 (PISA CENTRALE -> ROMA TERMINI) ore 08:4
+ 2
+DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 08:38:38 - 08:44:08\nTreni coinvolt
+ i nella chiusura:\n  - REG 4125 (PISA CENTRALE -> ROMA TERMINI) [Transito]
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Transito stimato senza fermata (80% tratta CIVITAVECCHIA -> S
+ .MARINELLA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LADISPOLI-CERVETERI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4125--20261121-S08021@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T075700Z
 DTEND:20261122T080430Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:57 - 09:04 (primo: REG 4125) (+7 m
- in)
-DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:57:00 - 09:04:30\nTr
- eni coinvolti nella chiusura:\n  - REG 4125 (PISA CENTRALE -> ROMA TERMINI
- ) (+7m)\n  - REG 4125 (PISA CENTRALE -> ROMA TERMINI) (+7m)\nRitardo massi
- mo rilevato: 7 min\nAffidabilità stima: 99%\nNota normativa/euristica: Ch
- iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 4125 (PISA CENTRALE -> ROMA TERMINI) ore 09:03 (+7 mi
+ n)
+DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 08:57:00 - 09:04:30\nTreni coinvolti nella 
+ chiusura:\n  - REG 4125 (PISA CENTRALE -> ROMA TERMINI) (+7m)\nRitardo mas
+ simo rilevato: 7 min\nAffidabilità stima: 99%\nNota normativa/euristica: 
+ Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione LADISPOLI-CERVETERI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:7
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4127--20261121-S08021@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T094339Z
-DTEND:20261122T094909Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:43 - 10:49 (primo: REG 4127)
-DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:43:39 - 10:49:09\nTr
- eni coinvolti nella chiusura:\n  - REG 4127 (PISA CENTRALE -> ROMA TERMINI
- ) [Transito]\n  - REG 4127 (PISA CENTRALE -> ROMA TERMINI) [Transito]\nRit
- ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
- ) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T094338Z
+DTEND:20261122T094908Z
+SUMMARY:[TRANSITO VELOCE] REG 4127 (PISA CENTRALE -> ROMA TERMINI) ore 10:4
+ 7
+DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 10:43:38 - 10:49:08\nTreni coinvolt
+ i nella chiusura:\n  - REG 4127 (PISA CENTRALE -> ROMA TERMINI) [Transito]
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Transito stimato senza fermata (80% tratta CIVITAVECCHIA -> S
+ .MARINELLA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LADISPOLI-CERVETERI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4128--20261121-S08021@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T095230Z
 DTEND:20261122T095930Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:52 - 10:59 (primo: REG 4128) (+8 m
- in)
-DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:52:30 - 10:59:30\nTr
- eni coinvolti nella chiusura:\n  - REG 4128 (ROMA TERMINI -> PISA CENTRALE
- ) (+8m)\n  - REG 4128 (ROMA TERMINI -> PISA CENTRALE) (+8m)\nRitardo massi
- mo rilevato: 8 min\nAffidabilità stima: 99%\nNota normativa/euristica: Ch
- iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 4128 (ROMA TERMINI -> PISA CENTRALE) ore 10:58 (+8 mi
+ n)
+DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 10:52:30 - 10:59:30\nTreni coinvolti nella 
+ chiusura:\n  - REG 4128 (ROMA TERMINI -> PISA CENTRALE) (+8m)\nRitardo mas
+ simo rilevato: 8 min\nAffidabilità stima: 99%\nNota normativa/euristica: 
+ Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione LADISPOLI-CERVETERI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:8
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4127--20261121-S08021@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T100230Z
 DTEND:20261122T100900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:02 - 11:09 (primo: REG 4127) (+5 m
- in)
-DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:02:30 - 11:09:00\nTr
- eni coinvolti nella chiusura:\n  - REG 4127 (PISA CENTRALE -> ROMA TERMINI
- ) (+5m)\n  - REG 4127 (PISA CENTRALE -> ROMA TERMINI) (+5m)\nRitardo massi
- mo rilevato: 5 min\nAffidabilità stima: 99%\nNota normativa/euristica: Ch
- iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 4127 (PISA CENTRALE -> ROMA TERMINI) ore 11:08 (+5 mi
+ n)
+DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 11:02:30 - 11:09:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 4127 (PISA CENTRALE -> ROMA TERMINI) (+5m)\nRitardo mas
+ simo rilevato: 5 min\nAffidabilità stima: 99%\nNota normativa/euristica: 
+ Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione LADISPOLI-CERVETERI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12518--20261121-S08021@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T105145Z
 DTEND:20261122T105715Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:51 - 11:57 (primo: REG 12518) (+1 
- min)
-DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:51:45 - 11:57:15\nTr
- eni coinvolti nella chiusura:\n  - REG 12518 (ROMA TERMINI -> CIVITAVECCHI
- A) (+1m) [Transito]\n  - REG 12518 (ROMA TERMINI -> CIVITAVECCHIA) (+1m) [
- Transito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota
-  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
- i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 12518 (ROMA TERMINI -> CIVITAVECCHIA) ore 11:
+ 56 (+1 min)
+DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 11:51:45 - 11:57:15\nTreni coinvolt
+ i nella chiusura:\n  - REG 12518 (ROMA TERMINI -> CIVITAVECCHIA) (+1m) [Tr
+ ansito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Transito stimato senza fermata (78% tratta MACCARESE-F
+ REGENE -> TORRE IN PIETRA-PALIDORO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LADISPOLI-CERVETERI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12518--20261121-S08021@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T110100Z
 DTEND:20261122T110800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:01 - 12:08 (primo: REG 12518) (+5 
- min)
-DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:01:00 - 12:08:00\nTr
- eni coinvolti nella chiusura:\n  - REG 12518 (ROMA TERMINI -> CIVITAVECCHI
- A) (+5m)\n  - REG 12518 (ROMA TERMINI -> CIVITAVECCHIA) (+5m)\nRitardo mas
- simo rilevato: 5 min\nAffidabilità stima: 99%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 12518 (ROMA TERMINI -> CIVITAVECCHIA) ore 12:07 (+5 m
+ in)
+DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 12:01:00 - 12:08:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 12518 (ROMA TERMINI -> CIVITAVECCHIA) (+5m)\nRitardo ma
+ ssimo rilevato: 5 min\nAffidabilità stima: 99%\nNota normativa/euristica:
+  Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione LADISPOLI-CERVETERI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4132--20261121-S08021@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T114800Z
 DTEND:20261122T115500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:48 - 12:55 (primo: REG 4132) (+2 m
- in)
-DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:48:00 - 12:55:00\nTr
- eni coinvolti nella chiusura:\n  - REG 4132 (ROMA TERMINI -> PISA CENTRALE
- ) (+2m)\n  - REG 4132 (ROMA TERMINI -> PISA CENTRALE) (+2m)\nRitardo massi
- mo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Ch
- iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 4132 (ROMA TERMINI -> PISA CENTRALE) ore 12:54 (+2 mi
+ n)
+DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 12:48:00 - 12:55:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 4132 (ROMA TERMINI -> PISA CENTRALE) (+2m)\nRitardo mas
+ simo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: 
+ Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione LADISPOLI-CERVETERI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4134--20261121-S08021@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T134630Z
 DTEND:20261122T135100Z
 SUMMARY:[FERMATA] REG 4134 (ROMA TERMINI -> PISA CENTRALE) ore 14:50
@@ -301,8 +288,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4136--20261121-S08021@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T154630Z
 DTEND:20261122T155100Z
 SUMMARY:[FERMATA] REG 4136 (ROMA TERMINI -> PISA CENTRALE) ore 16:50
@@ -321,14 +308,14 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4135--20261121-S08021@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T174210Z
-DTEND:20261122T174740Z
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T174208Z
+DTEND:20261122T174738Z
 SUMMARY:[TRANSITO VELOCE] REG 4135 (PISA CENTRALE -> ROMA TERMINI) ore 18:4
  6
 DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 18:42:10 - 18:47:40\nTreni coinvolt
+ NSITO VELOCE\nChiusura sbarre stimata: 18:42:08 - 18:47:38\nTreni coinvolt
  i nella chiusura:\n  - REG 4135 (PISA CENTRALE -> ROMA TERMINI) [Transito]
  \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
  a/euristica: Transito stimato senza fermata (80% tratta CIVITAVECCHIA -> S
@@ -343,8 +330,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4135--20261121-S08021@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T175830Z
 DTEND:20261122T180300Z
 SUMMARY:[FERMATA] REG 4135 (PISA CENTRALE -> ROMA TERMINI) ore 19:02
@@ -363,14 +350,14 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4137--20261121-S08021@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T194210Z
-DTEND:20261122T194740Z
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T194208Z
+DTEND:20261122T194738Z
 SUMMARY:[TRANSITO VELOCE] REG 4137 (PISA CENTRALE -> ROMA TERMINI) ore 20:4
  6
 DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 20:42:10 - 20:47:40\nTreni coinvolt
+ NSITO VELOCE\nChiusura sbarre stimata: 20:42:08 - 20:47:38\nTreni coinvolt
  i nella chiusura:\n  - REG 4137 (PISA CENTRALE -> ROMA TERMINI) [Transito]
  \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
  a/euristica: Transito stimato senza fermata (80% tratta CIVITAVECCHIA -> S
@@ -385,8 +372,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4137--20261121-S08021@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T195830Z
 DTEND:20261122T200300Z
 SUMMARY:[FERMATA] REG 4137 (PISA CENTRALE -> ROMA TERMINI) ore 21:02
@@ -405,8 +392,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12550--20261121-S08021@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T201625Z
 DTEND:20261122T202155Z
 SUMMARY:[TRANSITO VELOCE] REG 12550 (ROMA TERMINI -> CIVITAVECCHIA) ore 21:
@@ -427,8 +414,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12550--20261121-S08021@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T202530Z
 DTEND:20261122T203000Z
 SUMMARY:[FERMATA] REG 12550 (ROMA TERMINI -> CIVITAVECCHIA) ore 21:29
@@ -447,44 +434,41 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4508--20261121-S08021@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T214625Z
 DTEND:20261122T215155Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:46 - 22:51 (primo: REG 4508)
-DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:46:25 - 22:51:55\nTr
- eni coinvolti nella chiusura:\n  - REG 4508 (ROMA TERMINI -> GROSSETO) [Tr
- ansito]\n  - REG 4508 (ROMA TERMINI -> GROSSETO) [Transito]\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
- iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 4508 (ROMA TERMINI -> GROSSETO) ore 22:50
+DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 22:46:25 - 22:51:55\nTreni coinvolt
+ i nella chiusura:\n  - REG 4508 (ROMA TERMINI -> GROSSETO) [Transito]\nRit
+ ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Transito stimato senza fermata (78% tratta MACCARESE-FREGENE -> TO
+ RRE IN PIETRA-PALIDORO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LADISPOLI-CERVETERI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4508--20261121-S08021@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T215530Z
 DTEND:20261122T220000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:55 - 23:00 (primo: REG 4508)
-DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:55:30 - 23:00:00\nTr
- eni coinvolti nella chiusura:\n  - REG 4508 (ROMA TERMINI -> GROSSETO)\n  
- - REG 4508 (ROMA TERMINI -> GROSSETO)\nRitardo massimo rilevato: 0 min\nAf
- fidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 
- treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
- i sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 4508 (ROMA TERMINI -> GROSSETO) ore 22:59
+DESCRIPTION:Stazione/PL: LADISPOLI-CERVETERI (S08021)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 22:55:30 - 23:00:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 4508 (ROMA TERMINI -> GROSSETO)\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
+ da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione LADISPOLI-CERVETERI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

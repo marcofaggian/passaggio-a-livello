@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:5251f2bc5a30facc2846e0256b685f853c81f906141280521372cca06582
- 7704
+X-CONTENT-HASH:825ee4f0b411a2404a7f010a1e40bd053786942dcd225f50e2697ee45a5c
+ efb9
 BEGIN:VEVENT
 UID:train-17162--20261121-S02437@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T064930Z
 DTEND:20261122T065400Z
 SUMMARY:[FERMATA] REG 17162 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) ore 07:
@@ -34,89 +34,105 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17257--20261121-S02437@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T074858Z
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T074900Z
 DTEND:20261122T080300Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:48 - 09:03 (primo: REG 17257) (+6 
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:49 - 09:03 (primo: REG 17257) (+6 
  min)
 DESCRIPTION:Stazione/PL: CALDIERO (S02437)\nRegime chiusura: CHIUSURA CONTI
- NUA - 4 TRENI\nChiusura sbarre stimata: 08:48:58 - 09:03:00\nTreni coinvol
+ NUA - 2 TRENI\nChiusura sbarre stimata: 08:49:00 - 09:03:00\nTreni coinvol
  ti nella chiusura:\n  - REG 17257 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) 
  (+2m) [Transito]\n  - REG 17257 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+
- 2m) [Transito]\n  - REG 17257 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+6m
- )\n  - REG 17257 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+6m)\nRitardo ma
- ssimo rilevato: 6 min\nAffidabilità stima: 78%\nNota normativa/euristica:
-  Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) infer
- iore alla soglia minima di sgombero stradale (120s)
+ 6m)\nRitardo massimo rilevato: 6 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
+ aggi (59s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CALDIERO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-17250--20261121-S02437@pl-tracker.local
-DTSTAMP:20261122T150820Z
+UID:train-3486--20261121-S02437@pl-tracker.local
+DTSTAMP:20261122T210441Z
 SEQUENCE:0
-DTSTART:20261122T090400Z
-DTEND:20261122T091100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:04 - 10:11 (primo: REG 17250) (+16
-  min)
-DESCRIPTION:Stazione/PL: CALDIERO (S02437)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 10:04:00 - 10:11:00\nTreni coinvol
- ti nella chiusura:\n  - REG 17250 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) 
- (+16m)\n  - REG 17250 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+16m)\nRita
- rdo massimo rilevato: 16 min\nAffidabilità stima: 99%\nNota normativa/eur
- istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
- ) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTART:20261122T081729Z
+DTEND:20261122T082259Z
+SUMMARY:[TRANSITO VELOCE] REG 3486 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) 
+ ore 09:21
+DESCRIPTION:Stazione/PL: CALDIERO (S02437)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 09:17:29 - 09:22:59\nTreni coinvolti nella chi
+ usura:\n  - REG 3486 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Transito]\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Transito stimato senza fermata (51% tratta S.BONIFACIO -> VERONA
+  PORTA VESCOVO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CALDIERO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17250--20261121-S02437@pl-tracker.local
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T090400Z
+DTEND:20261122T091100Z
+SUMMARY:[FERMATA] REG 17250 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) ore 10:
+ 10 (+16 min)
+DESCRIPTION:Stazione/PL: CALDIERO (S02437)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 10:04:00 - 10:11:00\nTreni coinvolti nella chiusura:\n
+   - REG 17250 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+16m)\nRitardo mass
+ imo rilevato: 16 min\nAffidabilità stima: 99%\nNota normativa/euristica: 
+ Rilevamento reale da circuito di binario
+LOCATION:Passaggio a Livello / Stazione CALDIERO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:16
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-22469--20261121-S02437@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T091739Z
-DTEND:20261122T092309Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:17 - 10:23 (primo: REG 22469) (+3 
- min)
-DESCRIPTION:Stazione/PL: CALDIERO (S02437)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 10:17:39 - 10:23:09\nTreni coinvol
- ti nella chiusura:\n  - REG 22469 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) 
- (+3m) [Transito]\n  - REG 22469 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+
- 3m) [Transito]\nRitardo massimo rilevato: 3 min\nAffidabilità stima: 78%\
- nNota normativa/euristica: Chiusura continua per 2 treni: intervallo utile
-  tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (12
- 0s)
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T091717Z
+DTEND:20261122T092247Z
+SUMMARY:[TRANSITO VELOCE] REG 22469 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)
+  ore 10:21 (+3 min)
+DESCRIPTION:Stazione/PL: CALDIERO (S02437)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 10:17:17 - 10:22:47\nTreni coinvolti nella chi
+ usura:\n  - REG 22469 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+3m) [Trans
+ ito]\nRitardo massimo rilevato: 3 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Transito stimato senza fermata (52% tratta VERONA PORTA V
+ ESCOVO -> S.BONIFACIO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CALDIERO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3513--20261121-S02437@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T102822Z
-DTEND:20261122T103352Z
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T102802Z
+DTEND:20261122T103332Z
 SUMMARY:[TRANSITO VELOCE] REG 3513 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) 
  ore 11:32
 DESCRIPTION:Stazione/PL: CALDIERO (S02437)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 11:28:22 - 11:33:52\nTreni coinvolti nella chi
+ E\nChiusura sbarre stimata: 11:28:02 - 11:33:32\nTreni coinvolti nella chi
  usura:\n  - REG 3513 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\nR
  itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Transito stimato senza fermata (55% tratta VERONA PORTA VESCOVO 
+ uristica: Transito stimato senza fermata (52% tratta VERONA PORTA VESCOVO 
  -> S.BONIFACIO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CALDIERO
 STATUS:CONFIRMED
@@ -128,17 +144,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3499--20261121-S02437@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T133352Z
-DTEND:20261122T133922Z
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T133332Z
+DTEND:20261122T133902Z
 SUMMARY:[TRANSITO VELOCE] REG 3499 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) 
- ore 14:38 (+3 min)
+ ore 14:37 (+3 min)
 DESCRIPTION:Stazione/PL: CALDIERO (S02437)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 14:33:52 - 14:39:22\nTreni coinvolti nella chi
+ E\nChiusura sbarre stimata: 14:33:32 - 14:39:02\nTreni coinvolti nella chi
  usura:\n  - REG 3499 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+3m) [Transi
  to]\nRitardo massimo rilevato: 3 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Transito stimato senza fermata (55% tratta VERONA PORTA VE
+ tiva/euristica: Transito stimato senza fermata (52% tratta VERONA PORTA VE
  SCOVO -> S.BONIFACIO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CALDIERO
 STATUS:CONFIRMED
@@ -150,57 +166,56 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17227--20261121-S02437@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T153847Z
-DTEND:20261122T154417Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:38 - 16:44 (primo: REG 17227)
-DESCRIPTION:Stazione/PL: CALDIERO (S02437)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 16:38:47 - 16:44:17\nTreni coinvol
- ti nella chiusura:\n  - REG 17227 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) 
- [Transito]\n  - REG 17227 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transit
- o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Chiusura continua per 2 treni: intervallo utile tra i passa
- ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T153849Z
+DTEND:20261122T154419Z
+SUMMARY:[TRANSITO VELOCE] REG 17227 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)
+  ore 16:43
+DESCRIPTION:Stazione/PL: CALDIERO (S02437)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 16:38:49 - 16:44:19\nTreni coinvolti nella chi
+ usura:\n  - REG 17227 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (81% tratta VERONA PORTA VESCOVO
+  -> S.MARTINO BUONALBERGO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CALDIERO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17227--20261121-S02437@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T154630Z
 DTEND:20261122T155100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:46 - 16:51 (primo: REG 17227)
-DESCRIPTION:Stazione/PL: CALDIERO (S02437)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 16:46:30 - 16:51:00\nTreni coinvol
- ti nella chiusura:\n  - REG 17227 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\
- n  - REG 17227 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 17227 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) ore 16:
+ 50
+DESCRIPTION:Stazione/PL: CALDIERO (S02437)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 16:46:30 - 16:51:00\nTreni coinvolti nella chiusura:\n
+   - REG 17227 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
+ ne da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione CALDIERO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16309--20261121-S02437@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T174447Z
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T174449Z
 DTEND:20261122T175600Z
 SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 18:44 - 18:56 (primo: REG 16309)
 DESCRIPTION:Stazione/PL: CALDIERO (S02437)\nRegime chiusura: CHIUSURA CONTI
- NUA - 3 TRENI\nChiusura sbarre stimata: 18:44:47 - 18:56:00\nTreni coinvol
+ NUA - 3 TRENI\nChiusura sbarre stimata: 18:44:49 - 18:56:00\nTreni coinvol
  ti nella chiusura:\n  - REG 16309 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) 
  [Transito]\n  - REG 17216 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\n  - REG
   16309 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 
@@ -217,39 +232,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3523--20261121-S02437@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T182822Z
-DTEND:20261122T183352Z
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T182802Z
+DTEND:20261122T183332Z
 SUMMARY:[TRANSITO VELOCE] REG 3523 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) 
  ore 19:32
 DESCRIPTION:Stazione/PL: CALDIERO (S02437)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 19:28:22 - 19:33:52\nTreni coinvolti nella chi
+ E\nChiusura sbarre stimata: 19:28:02 - 19:33:32\nTreni coinvolti nella chi
  usura:\n  - REG 3523 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\nR
  itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Transito stimato senza fermata (55% tratta VERONA PORTA VESCOVO 
- -> S.BONIFACIO\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione CALDIERO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3501--20261121-S02437@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T192822Z
-DTEND:20261122T193352Z
-SUMMARY:[TRANSITO VELOCE] REG 3501 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) 
- ore 20:32
-DESCRIPTION:Stazione/PL: CALDIERO (S02437)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 20:28:22 - 20:33:52\nTreni coinvolti nella chi
- usura:\n  - REG 3501 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\nR
- itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Transito stimato senza fermata (55% tratta VERONA PORTA VESCOVO 
+ uristica: Transito stimato senza fermata (52% tratta VERONA PORTA VESCOVO 
  -> S.BONIFACIO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CALDIERO
 STATUS:CONFIRMED
@@ -261,22 +254,44 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17247--20261121-S02437@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T194447Z
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T194449Z
 DTEND:20261122T195600Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:44 - 20:56 (primo: REG 17247)
 DESCRIPTION:Stazione/PL: CALDIERO (S02437)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 20:44:47 - 20:56:00\nTreni coinvol
+ NUA - 2 TRENI\nChiusura sbarre stimata: 20:44:49 - 20:56:00\nTreni coinvol
  ti nella chiusura:\n  - REG 17247 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) 
  [Transito]\n  - REG 17247 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo
   massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (72s) i
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (70s) i
  nferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CALDIERO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3518--20261121-S02437@pl-tracker.local
+DTSTAMP:20261122T210441Z
+SEQUENCE:0
+DTSTART:20261122T211729Z
+DTEND:20261122T212259Z
+SUMMARY:[TRANSITO VELOCE] REG 3518 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) 
+ ore 22:21
+DESCRIPTION:Stazione/PL: CALDIERO (S02437)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 22:17:29 - 22:22:59\nTreni coinvolti nella chi
+ usura:\n  - REG 3518 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Transito]\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Transito stimato senza fermata (51% tratta S.BONIFACIO -> VERONA
+  PORTA VESCOVO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione CALDIERO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG

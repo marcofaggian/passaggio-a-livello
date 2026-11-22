@@ -9,57 +9,55 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:217df1bf0332818b5c0272eee2c3063726b8763d72a7111f0564dbc18c60
- a5b4
+X-CONTENT-HASH:34cb4f6fdb3529ea922e134f2fc6db52b3e99ab61a773b643ac0c9e61fda
+ 27bf
 BEGIN:VEVENT
 UID:train-3016--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T040230Z
-DTEND:20261122T040730Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:02 - 05:07 (primo: REG 3016) (+6 m
- in)
-DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:02:30 - 05:07:30\nTr
- eni coinvolti nella chiusura:\n  - REG 3016 (SESTRI LEVANTE -> MILANO CENT
- RALE) (+6m)\n  - REG 3016 (SESTRI LEVANTE -> MILANO CENTRALE) (+6m)\nRitar
- do massimo rilevato: 6 min\nAffidabilità stima: 99%\nNota normativa/euris
- tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T035106Z
+DTEND:20261122T035636Z
+SUMMARY:[TRANSITO VELOCE] REG 3016 (SESTRI LEVANTE -> MILANO CENTRALE) ore 
+ 04:55 (+1 min)
+DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 04:51:06 - 04:56:36\nTreni coinvolt
+ i nella chiusura:\n  - REG 3016 (SESTRI LEVANTE -> MILANO CENTRALE) (+1m) 
+ [Transito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Transito stimato senza fermata (67% tratta RAPALLO 
+ -> S.MARGHERITA LIGURE PORTOFINO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3016--20261121-S04716@pl-tracker.local
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T040230Z
+DTEND:20261122T040730Z
+SUMMARY:[FERMATA] REG 3016 (SESTRI LEVANTE -> MILANO CENTRALE) ore 05:06 (+
+ 6 min)
+DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 05:02:30 - 05:07:30\nTreni coinvolti nella 
+ chiusura:\n  - REG 3016 (SESTRI LEVANTE -> MILANO CENTRALE) (+6m)\nRitardo
+  massimo rilevato: 6 min\nAffidabilità stima: 99%\nNota normativa/euristi
+ ca: Rilevamento reale da circuito di binario
+LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-652--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T050733Z
-DTEND:20261122T051203Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:07 - 06:12 (primo: IC 652)
-DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:07:33 - 06:12:03\nTr
- eni coinvolti nella chiusura:\n  - IC 652 (LA SPEZIA CENTRALE -> MILANO CE
- NTRALE) [Transito]\n  - IC 652 (LA SPEZIA CENTRALE -> MILANO CENTRALE) [Tr
- ansito]\nRitardo massimo rilevato: -2 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i
-  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:-2
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
 UID:train-12316--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T053330Z
 DTEND:20261122T053800Z
 SUMMARY:[FERMATA] REG 12316 (LA SPEZIA CENTRALE -> SAVONA) ore 06:37
@@ -77,83 +75,56 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8605--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
+UID:train-12322--20261121-S04716@pl-tracker.local
+DTSTAMP:20261122T210441Z
 SEQUENCE:0
-DTSTART:20261122T062031Z
-DTEND:20261122T062601Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:20 - 07:26 (primo: TRENO 8605) (+1
- 0 min)
-DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:20:31 - 07:26:01\nTr
- eni coinvolti nella chiusura:\n  - TRENO 8605 (GENOVA PIAZZA PRINCIPE -> R
- OMA TERMINI) (+10m) [Transito]\n  - REG 12322 (LA SPEZIA CENTRALE -> SAVON
- A)\nRitardo massimo rilevato: 10 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTART:20261122T062130Z
+DTEND:20261122T062600Z
+SUMMARY:[FERMATA] REG 12322 (LA SPEZIA CENTRALE -> SAVONA) ore 07:25
+DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 07:21:30 - 07:26:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 12322 (LA SPEZIA CENTRALE -> SAVONA)\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previs
+ ione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:10
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-658--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T063946Z
-DTEND:20261122T064416Z
-SUMMARY:[TRANSITO VELOCE] IC 658 (LIVORNO CENTRALE -> MILANO CENTRALE) ore 
- 07:43
-DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 07:39:46 - 07:44:16\nTreni coinvolt
- i nella chiusura:\n  - IC 658 (LIVORNO CENTRALE -> MILANO CENTRALE) [Trans
- ito]\nRitardo massimo rilevato: -8 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Transito stimato senza fermata (20% tratta S.MARGHERITA 
- LIGURE PORTOFINO -> GENOVA BRIGNOLE\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:-8
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12323--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T065130Z
 DTEND:20261122T065700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:51 - 07:57 (primo: REG 12323) (+2 
- min)
-DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:51:30 - 07:57:00\nTr
- eni coinvolti nella chiusura:\n  - REG 12323 (SAVONA -> LA SPEZIA CENTRALE
- ) (+2m)\n  - REG 12323 (SAVONA -> LA SPEZIA CENTRALE) (+2m)\nRitardo massi
- mo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Ch
- iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 12323 (SAVONA -> LA SPEZIA CENTRALE) ore 07:56 (+2 mi
+ n)
+DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 07:51:30 - 07:57:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 12323 (SAVONA -> LA SPEZIA CENTRALE) (+2m)\nRitardo mas
+ simo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: 
+ Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3258--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T074345Z
-DTEND:20261122T074915Z
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T074344Z
+DTEND:20261122T074914Z
 SUMMARY:[TRANSITO VELOCE] REG 3258 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) 
- ore 08:48
+ ore 08:47
 DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 08:43:45 - 08:49:15\nTreni coinvolt
+ NSITO VELOCE\nChiusura sbarre stimata: 08:43:44 - 08:49:14\nTreni coinvolt
  i nella chiusura:\n  - REG 3258 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) [T
  ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
  normativa/euristica: Transito stimato senza fermata (57% tratta S.MARGHERI
@@ -168,8 +139,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12352--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T085330Z
 DTEND:20261122T085800Z
 SUMMARY:[FERMATA] REG 12352 (SESTRI LEVANTE -> SAVONA) ore 09:57
@@ -188,13 +159,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-657--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T091802Z
-DTEND:20261122T092232Z
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T091804Z
+DTEND:20261122T092234Z
 SUMMARY:[TRANSITO VELOCE] IC 657 (MILANO CENTRALE -> GROSSETO) ore 10:21
 DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 10:18:02 - 10:22:32\nTreni coinvolt
+ NSITO VELOCE\nChiusura sbarre stimata: 10:18:04 - 10:22:34\nTreni coinvolt
  i nella chiusura:\n  - IC 657 (MILANO CENTRALE -> GROSSETO) [Transito]\nRi
  tardo massimo rilevato: -10 min\nAffidabilità stima: 78%\nNota normativa/
  euristica: Transito stimato senza fermata (39% tratta S.MARGHERITA LIGURE 
@@ -209,31 +180,29 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3063--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T094530Z
 DTEND:20261122T095100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:45 - 10:51 (primo: REG 3063) (+4 m
- in)
-DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:45:30 - 10:51:00\nTr
- eni coinvolti nella chiusura:\n  - REG 3063 (MILANO GRECO PIRELLI -> SESTR
- I LEVANTE) (+4m)\n  - REG 3063 (MILANO GRECO PIRELLI -> SESTRI LEVANTE) (+
- 4m)\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 99%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 3063 (MILANO GRECO PIRELLI -> SESTRI LEVANTE) ore 10:
+ 50 (+4 min)
+DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 10:45:30 - 10:51:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 3063 (MILANO GRECO PIRELLI -> SESTRI LEVANTE) (+4m)\nRi
+ tardo massimo rilevato: 4 min\nAffidabilità stima: 99%\nNota normativa/eu
+ ristica: Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12353--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T095430Z
 DTEND:20261122T095900Z
 SUMMARY:[FERMATA] REG 12353 (SAVONA -> SESTRI LEVANTE) ore 10:58
@@ -252,17 +221,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3265--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T100622Z
-DTEND:20261122T101152Z
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T100618Z
+DTEND:20261122T101148Z
 SUMMARY:[TRANSITO VELOCE] REG 3265 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) 
  ore 11:10
 DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 11:06:22 - 11:11:52\nTreni coinvolt
+ NSITO VELOCE\nChiusura sbarre stimata: 11:06:18 - 11:11:48\nTreni coinvolt
  i nella chiusura:\n  - REG 3265 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) [T
  ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Transito stimato senza fermata (52% tratta RECCO -> S
+ normativa/euristica: Transito stimato senza fermata (51% tratta RECCO -> S
  .MARGHERITA LIGURE PORTOFINO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
 STATUS:CONFIRMED
@@ -274,8 +243,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-666--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T104115Z
 DTEND:20261122T104600Z
 SUMMARY:[FERMATA] IC 666 (LIVORNO CENTRALE -> MILANO CENTRALE) ore 11:45
@@ -294,122 +263,72 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3266--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T114636Z
 DTEND:20261122T115206Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:46 - 12:52 (primo: REG 3266)
-DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:46:36 - 12:52:06\nTr
- eni coinvolti nella chiusura:\n  - REG 3266 (LA SPEZIA CENTRALE -> GENOVA 
- BRIGNOLE) [Transito]\n  - REG 3266 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE)
-  [Transito]\nRitardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nN
- ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
+SUMMARY:[TRANSITO VELOCE] REG 3266 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) 
+ ore 12:50
+DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 12:46:36 - 12:52:06\nTreni coinvolt
+ i nella chiusura:\n  - REG 3266 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) [T
+ ransito]\nRitardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Transito stimato senza fermata (57% tratta S.MARGHER
+ ITA LIGURE PORTOFINO -> RECCO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12373--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T115930Z
 DTEND:20261122T120500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:59 - 13:05 (primo: REG 12373) (+8 
- min)
-DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:59:30 - 13:05:00\nTr
- eni coinvolti nella chiusura:\n  - REG 12373 (SAVONA -> SESTRI LEVANTE) (+
- 8m)\n  - REG 12373 (SAVONA -> SESTRI LEVANTE) (+8m)\nRitardo massimo rilev
- ato: 8 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 12373 (SAVONA -> SESTRI LEVANTE) ore 13:04 (+8 min)
+DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 12:59:30 - 13:05:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 12373 (SAVONA -> SESTRI LEVANTE) (+8m)\nRitardo massimo
+  rilevato: 8 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rile
+ vamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:8
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-670--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T124503Z
-DTEND:20261122T124933Z
-SUMMARY:[TRANSITO VELOCE] IC 670 (LIVORNO CENTRALE -> MILANO CENTRALE) ore 
- 13:48
+UID:train-665--20261121-S04716@pl-tracker.local
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T131107Z
+DTEND:20261122T131537Z
+SUMMARY:[TRANSITO VELOCE] IC 665 (MILANO CENTRALE -> LA SPEZIA CENTRALE) or
+ e 14:14 (+2 min)
 DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 13:45:03 - 13:49:33\nTreni coinvolt
- i nella chiusura:\n  - IC 670 (LIVORNO CENTRALE -> MILANO CENTRALE) [Trans
- ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
- ativa/euristica: Transito stimato senza fermata (20% tratta S.MARGHERITA L
- IGURE PORTOFINO -> GENOVA BRIGNOLE\; pedale annuncio fisso Vmax)
+ NSITO VELOCE\nChiusura sbarre stimata: 14:11:07 - 14:15:37\nTreni coinvolt
+ i nella chiusura:\n  - IC 665 (MILANO CENTRALE -> LA SPEZIA CENTRALE) (+2m
+ ) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nN
+ ota normativa/euristica: Transito stimato senza fermata (84% tratta GENOVA
+  BRIGNOLE -> S.MARGHERITA LIGURE PORTOFINO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-665--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T131902Z
-DTEND:20261122T132332Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:19 - 14:23 (primo: IC 665) (+2 min
- )
-DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:19:02 - 14:23:32\nTr
- eni coinvolti nella chiusura:\n  - IC 665 (MILANO CENTRALE -> LA SPEZIA CE
- NTRALE) (+2m) [Transito]\n  - IC 665 (MILANO CENTRALE -> LA SPEZIA CENTRAL
- E) (+2m) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima:
-  78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
- utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
- e (120s)
-LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-510--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T140104Z
-DTEND:20261122T140534Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:01 - 15:05 (primo: IC 510)
-DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:01:04 - 15:05:34\nTr
- eni coinvolti nella chiusura:\n  - IC 510 (SALERNO -> TORINO PORTA NUOVA) 
- [Transito]\n  - IC 510 (SALERNO -> TORINO PORTA NUOVA) [Transito]\nRitardo
-  massimo rilevato: -7 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
- nferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:-7
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
 UID:train-12403--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T145630Z
 DTEND:20261122T150100Z
 SUMMARY:[FERMATA] REG 12403 (SAVONA -> SESTRI LEVANTE) ore 16:00
@@ -428,127 +347,101 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12412--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T150430Z
 DTEND:20261122T151200Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:04 - 16:12 (primo: REG 12412) (+8 
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:04 - 16:12 (primo: REG 12412) (+8 
  min)
 DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: CHI
- USURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:04:30 - 16:12:00\nTr
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:04:30 - 16:12:00\nTr
  eni coinvolti nella chiusura:\n  - REG 12412 (SESTRI LEVANTE -> SAVONA) (+
- 8m)\n  - REG 12412 (SESTRI LEVANTE -> SAVONA) (+8m)\n  - IC 669 (MILANO CE
- NTRALE -> LIVORNO CENTRALE)\nRitardo massimo rilevato: 8 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 3 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+ 8m)\n  - IC 669 (MILANO CENTRALE -> LIVORNO CENTRALE)\nRitardo massimo ril
+ evato: 8 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura
+  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
+  soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:8
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3274--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T154445Z
-DTEND:20261122T155342Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:44 - 16:53 (primo: REG 3274)
-DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: CHI
- USURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:44:45 - 16:53:42\nTr
- eni coinvolti nella chiusura:\n  - REG 3274 (LA SPEZIA CENTRALE -> GENOVA 
- BRIGNOLE) [Transito]\n  - REG 3277 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE)
-  [Transito]\n  - REG 3277 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) [Transit
- o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Chiusura continua per 3 treni: intervallo utile tra i passa
- ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T153925Z
+DTEND:20261122T154455Z
+SUMMARY:[TRANSITO VELOCE] REG 3274 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) 
+ ore 16:43
+DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 16:39:25 - 16:44:55\nTreni coinvolt
+ i nella chiusura:\n  - REG 3274 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) [T
+ ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Transito stimato senza fermata (67% tratta RAPALLO ->
+  S.MARGHERITA LIGURE PORTOFINO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3277--20261121-S04716@pl-tracker.local
+DTSTAMP:20261122T210441Z
+SEQUENCE:0
+DTSTART:20261122T154758Z
+DTEND:20261122T155328Z
+SUMMARY:[TRANSITO VELOCE] REG 3277 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) 
+ ore 16:52
+DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 16:47:58 - 16:53:28\nTreni coinvolt
+ i nella chiusura:\n  - REG 3277 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) [T
+ ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Transito stimato senza fermata (60% tratta GENOVA BRI
+ GNOLE -> GENOVA NERVI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12422--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T155830Z
 DTEND:20261122T160300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:58 - 17:03 (primo: REG 12422)
-DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:58:30 - 17:03:00\nTr
- eni coinvolti nella chiusura:\n  - REG 12422 (SESTRI LEVANTE -> SAVONA)\n 
-  - REG 12422 (SESTRI LEVANTE -> SAVONA)\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
- 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
-  di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 12422 (SESTRI LEVANTE -> SAVONA) ore 17:02
+DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 16:58:30 - 17:03:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 12422 (SESTRI LEVANTE -> SAVONA)\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
+  da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8623--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T162421Z
-DTEND:20261122T162951Z
-SUMMARY:[TRANSITO VELOCE] TRENO 8623 (TORINO PORTA NUOVA -> ROMA TERMINI) o
- re 17:28 (+1 min)
-DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 17:24:21 - 17:29:51\nTreni coinvolt
- i nella chiusura:\n  - TRENO 8623 (TORINO PORTA NUOVA -> ROMA TERMINI) (+1
- m) [Transito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\n
- Nota normativa/euristica: Transito stimato senza fermata (70% tratta GENOV
- A BRIGNOLE -> RAPALLO\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:1
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-680--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T164452Z
-DTEND:20261122T164922Z
-SUMMARY:[TRANSITO VELOCE] IC 680 (LA SPEZIA CENTRALE -> MILANO CENTRALE) or
- e 17:48
-DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 17:44:52 - 17:49:22\nTreni coinvolt
- i nella chiusura:\n  - IC 680 (LA SPEZIA CENTRALE -> MILANO CENTRALE) [Tra
- nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Transito stimato senza fermata (20% tratta S.MARGHERITA
-  LIGURE PORTOFINO -> GENOVA BRIGNOLE\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
 UID:train-673--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T171225Z
-DTEND:20261122T171655Z
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T171227Z
+DTEND:20261122T171657Z
 SUMMARY:[TRANSITO VELOCE] IC 673 (MILANO CENTRALE -> LIVORNO CENTRALE) ore 
  18:15
 DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 18:12:25 - 18:16:55\nTreni coinvolt
+ NSITO VELOCE\nChiusura sbarre stimata: 18:12:27 - 18:16:57\nTreni coinvolt
  i nella chiusura:\n  - IC 673 (MILANO CENTRALE -> LIVORNO CENTRALE) [Trans
  ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
  ativa/euristica: Transito stimato senza fermata (39% tratta S.MARGHERITA L
@@ -563,39 +456,39 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12448--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T182930Z
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T182225Z
 DTEND:20261122T183400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:29 - 19:34 (primo: REG 12448)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:22 - 19:34 (primo: REG 12448)
 DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:29:30 - 19:34:00\nTr
- eni coinvolti nella chiusura:\n  - REG 12448 (SESTRI LEVANTE -> SAVONA)\n 
-  - REG 12448 (SESTRI LEVANTE -> SAVONA)\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
- 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
-  di sgombero stradale (120s)
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:22:25 - 19:34:00\nTr
+ eni coinvolti nella chiusura:\n  - REG 12448 (SESTRI LEVANTE -> SAVONA) [T
+ ransito]\n  - REG 12448 (SESTRI LEVANTE -> SAVONA)\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
+ ntinua per 2 treni: intervallo utile tra i passaggi (94s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-684--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:1
-DTSTART:20261122T184503Z
-DTEND:20261122T184933Z
-SUMMARY:[TRANSITO VELOCE] IC 684 (GROSSETO -> MILANO CENTRALE) ore 19:48
+DTSTAMP:20261122T210441Z
+SEQUENCE:2
+DTSTART:20261122T183851Z
+DTEND:20261122T184321Z
+SUMMARY:[TRANSITO VELOCE] IC 684 (GROSSETO -> MILANO CENTRALE) ore 19:42
 DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 19:45:03 - 19:49:33\nTreni coinvolt
+ NSITO VELOCE\nChiusura sbarre stimata: 19:38:51 - 19:43:21\nTreni coinvolt
  i nella chiusura:\n  - IC 684 (GROSSETO -> MILANO CENTRALE) [Transito]\nRi
  tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Transito stimato senza fermata (20% tratta S.MARGHERITA LIGURE PO
- RTOFINO -> GENOVA BRIGNOLE\; pedale annuncio fisso Vmax)
+ ristica: Transito stimato senza fermata (67% tratta RAPALLO -> S.MARGHERIT
+ A LIGURE PORTOFINO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -606,126 +499,141 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12452--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T185630Z
-DTEND:20261122T190400Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 19:56 - 20:04 (primo: REG 12452)
-DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: CHI
- USURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 19:56:30 - 20:04:00\nTr
- eni coinvolti nella chiusura:\n  - REG 12452 (SESTRI LEVANTE -> SAVONA)\n 
-  - REG 12452 (SESTRI LEVANTE -> SAVONA)\n  - REG 3283 (GENOVA BRIGNOLE -> 
- PARMA)\n  - REG 3283 (GENOVA BRIGNOLE -> PARMA)\nRitardo massimo rilevato:
-  0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura conti
- nua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
- a minima di sgombero stradale (120s)
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T184825Z
+DTEND:20261122T185355Z
+SUMMARY:[TRANSITO VELOCE] REG 12452 (SESTRI LEVANTE -> SAVONA) ore 19:52
+DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 19:48:25 - 19:53:55\nTreni coinvolt
+ i nella chiusura:\n  - REG 12452 (SESTRI LEVANTE -> SAVONA) [Transito]\nRi
+ tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
+ ristica: Transito stimato senza fermata (67% tratta RAPALLO -> S.MARGHERIT
+ A LIGURE PORTOFINO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12452--20261121-S04716@pl-tracker.local
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T185630Z
+DTEND:20261122T190400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:56 - 20:04 (primo: REG 12452)
+DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: CHI
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:56:30 - 20:04:00\nTr
+ eni coinvolti nella chiusura:\n  - REG 12452 (SESTRI LEVANTE -> SAVONA)\n 
+  - REG 3283 (GENOVA BRIGNOLE -> PARMA)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-679--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T190705Z
-DTEND:20261122T191135Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:07 - 20:11 (primo: IC 679)
-DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:07:05 - 20:11:35\nTr
- eni coinvolti nella chiusura:\n  - IC 679 (MILANO CENTRALE -> LIVORNO CENT
- RALE) [Transito]\n  - IC 679 (MILANO CENTRALE -> LIVORNO CENTRALE) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T191227Z
+DTEND:20261122T191657Z
+SUMMARY:[TRANSITO VELOCE] IC 679 (MILANO CENTRALE -> LIVORNO CENTRALE) ore 
+ 20:15
+DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 20:12:27 - 20:16:57\nTreni coinvolt
+ i nella chiusura:\n  - IC 679 (MILANO CENTRALE -> LIVORNO CENTRALE) [Trans
+ ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Transito stimato senza fermata (39% tratta S.MARGHERITA L
+ IGURE PORTOFINO -> RAPALLO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12453--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T195530Z
-DTEND:20261122T200652Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:55 - 21:06 (primo: REG 12453)
+DTEND:20261122T200648Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:55 - 21:06 (primo: REG 12453)
 DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: CHI
- USURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 20:55:30 - 21:06:52\nTr
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:55:30 - 21:06:48\nTr
  eni coinvolti nella chiusura:\n  - REG 12453 (SAVONA -> SESTRI LEVANTE)\n 
-  - REG 12453 (SAVONA -> SESTRI LEVANTE)\n  - REG 3287 (GENOVA BRIGNOLE -> 
- LA SPEZIA CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabil
- ità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: 
- intervallo utile tra i passaggi (82s) inferiore alla soglia minima di sgom
- bero stradale (120s)
+  - REG 3287 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Chiusura continua per 2 treni: intervallo utile tra i passaggi (78s) infe
+ riore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-685--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T201115Z
 DTEND:20261122T201600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:11 - 21:16 (primo: IC 685)
-DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:11:15 - 21:16:00\nTr
- eni coinvolti nella chiusura:\n  - IC 685 (MILANO CENTRALE -> LIVORNO CENT
- RALE)\n  - IC 685 (MILANO CENTRALE -> LIVORNO CENTRALE)\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] IC 685 (MILANO CENTRALE -> LIVORNO CENTRALE) ore 21:15
+DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 21:11:15 - 21:16:00\nTreni coinvolti nella 
+ chiusura:\n  - IC 685 (MILANO CENTRALE -> LIVORNO CENTRALE)\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pr
+ evisione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12463--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T205730Z
 DTEND:20261122T210200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:57 - 22:02 (primo: REG 12463)
-DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:57:30 - 22:02:00\nTr
- eni coinvolti nella chiusura:\n  - REG 12463 (SAVONA -> SESTRI LEVANTE)\n 
-  - REG 12463 (SAVONA -> SESTRI LEVANTE)\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
- 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
-  di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 12463 (SAVONA -> SESTRI LEVANTE) ore 22:01
+DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 21:57:30 - 22:02:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 12463 (SAVONA -> SESTRI LEVANTE)\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
+  da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3286--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T214145Z
-DTEND:20261122T214715Z
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T214144Z
+DTEND:20261122T214714Z
 SUMMARY:[TRANSITO VELOCE] REG 3286 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) 
- ore 22:46
+ ore 22:45
 DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 22:41:45 - 22:47:15\nTreni coinvolt
+ NSITO VELOCE\nChiusura sbarre stimata: 22:41:44 - 22:47:14\nTreni coinvolt
  i nella chiusura:\n  - REG 3286 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) [T
  ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
  normativa/euristica: Transito stimato senza fermata (57% tratta S.MARGHERI
@@ -740,45 +648,24 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-687--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T221525Z
-DTEND:20261122T221955Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:15 - 23:19 (primo: IC 687)
-DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 23:15:25 - 23:19:55\nTr
- eni coinvolti nella chiusura:\n  - IC 687 (MILANO CENTRALE -> LA SPEZIA CE
- NTRALE) [Transito]\n  - IC 687 (MILANO CENTRALE -> LA SPEZIA CENTRALE) [Tr
- ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
- ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
- passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-799--20261121-S04716@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T231431Z
-DTEND:20261122T231901Z
-SUMMARY:[TRANSITO VELOCE] ICN 799 (TORINO PORTA NUOVA -> SALERNO) ore 00:18
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T221527Z
+DTEND:20261122T221957Z
+SUMMARY:[TRANSITO VELOCE] IC 687 (MILANO CENTRALE -> LA SPEZIA CENTRALE) or
+ e 23:18
 DESCRIPTION:Stazione/PL: CAMOGLI S.FRUTTUOSO (S04716)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 00:14:31 - 00:19:01\nTreni coinvolt
- i nella chiusura:\n  - ICN 799 (TORINO PORTA NUOVA -> SALERNO) [Transito]\
- nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Transito stimato senza fermata (70% tratta GENOVA BRIGNOLE -> 
- RAPALLO\; pedale annuncio fisso Vmax)
+ NSITO VELOCE\nChiusura sbarre stimata: 23:15:27 - 23:19:57\nTreni coinvolt
+ i nella chiusura:\n  - IC 687 (MILANO CENTRALE -> LA SPEZIA CENTRALE) [Tra
+ nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Transito stimato senza fermata (39% tratta S.MARGHERITA
+  LIGURE PORTOFINO -> RAPALLO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CAMOGLI S.FRUTTUOSO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:ICN
+X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 END:VCALENDAR

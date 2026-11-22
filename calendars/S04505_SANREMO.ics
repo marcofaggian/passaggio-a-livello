@@ -9,17 +9,17 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:1dd569ab5cb69de8d76c42e719d0a5a0b3414995396ebdbce3bcb70cacc4
- 54e5
+X-CONTENT-HASH:4dbe5aa79ea9f633f0a0a5a3da9ca7a94deef75fec5fc7c322869df629c6
+ 0ac2
 BEGIN:VEVENT
 UID:train-653--20261121-S04505@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T034513Z
-DTEND:20261122T034943Z
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T034511Z
+DTEND:20261122T034941Z
 SUMMARY:[TRANSITO VELOCE] IC 653 (VENTIMIGLIA -> MILANO CENTRALE) ore 04:48
 DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 04:45:13 - 04:49:43\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 04:45:11 - 04:49:41\nTreni coinvolti nella chiu
  sura:\n  - IC 653 (VENTIMIGLIA -> MILANO CENTRALE) [Transito]\nRitardo mas
  simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
  Transito stimato senza fermata (53% tratta VENTIMIGLIA -> BORDIGHERA\; ped
@@ -34,8 +34,8 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-653--20261121-S04505@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T035815Z
 DTEND:20261122T040300Z
 SUMMARY:[FERMATA] IC 653 (VENTIMIGLIA -> MILANO CENTRALE) ore 05:02
@@ -54,8 +54,8 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-633--20261121-S04505@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T093615Z
 DTEND:20261122T094100Z
 SUMMARY:[FERMATA] IC 633 (MILANO CENTRALE -> VENTIMIGLIA) ore 10:40
@@ -74,40 +74,58 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-659--20261121-S04505@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T114746Z
-DTEND:20261122T120130Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:47 - 13:01 (primo: IC 659)
-DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: CHIUSURA CONTIN
- UA - 4 TRENI\nChiusura sbarre stimata: 12:47:46 - 13:01:30\nTreni coinvolt
- i nella chiusura:\n  - IC 659 (MILANO CENTRALE -> VENTIMIGLIA) [Transito]\
- n  - IC 659 (MILANO CENTRALE -> VENTIMIGLIA) [Transito]\n  - IC 659 (MILAN
- O CENTRALE -> VENTIMIGLIA)\n  - IC 659 (MILANO CENTRALE -> VENTIMIGLIA)\nR
- itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (
- 0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T114739Z
+DTEND:20261122T115209Z
+SUMMARY:[TRANSITO VELOCE] IC 659 (MILANO CENTRALE -> VENTIMIGLIA) ore 12:51
+DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 12:47:39 - 12:52:09\nTreni coinvolti nella chiu
+ sura:\n  - IC 659 (MILANO CENTRALE -> VENTIMIGLIA) [Transito]\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Transito stimato senza fermata (72% tratta IMPERIA -> TAGGIA ARMA\; pedale
+  annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SANREMO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
+UID:train-659--20261121-S04505@pl-tracker.local
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T115415Z
+DTEND:20261122T120130Z
+SUMMARY:[FERMATA] IC 659 (MILANO CENTRALE -> VENTIMIGLIA) ore 13:00
+DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 12:54:15 - 13:01:30\nTreni coinvolti nella chiusura:\n 
+  - IC 659 (MILANO CENTRALE -> VENTIMIGLIA)\nRitardo massimo rilevato: -1 m
+ in\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale 
+ da circuito di binario
+LOCATION:Passaggio a Livello / Stazione SANREMO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
 UID:train-3368--20261121-S04505@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T123406Z
-DTEND:20261122T123936Z
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T123354Z
+DTEND:20261122T123924Z
 SUMMARY:[TRANSITO VELOCE] REG 3368 (GENOVA BRIGNOLE -> VENTIMIGLIA) ore 13:
  38
 DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 13:34:06 - 13:39:36\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 13:33:54 - 13:39:24\nTreni coinvolti nella chiu
  sura:\n  - REG 3368 (GENOVA BRIGNOLE -> VENTIMIGLIA) [Transito]\nRitardo m
  assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (74% tratta IMPERIA -> TAGGIA ARMA\; peda
+ : Transito stimato senza fermata (72% tratta IMPERIA -> TAGGIA ARMA\; peda
  le annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SANREMO
 STATUS:CONFIRMED
@@ -119,8 +137,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3368--20261121-S04505@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T124430Z
 DTEND:20261122T124900Z
 SUMMARY:[FERMATA] REG 3368 (GENOVA BRIGNOLE -> VENTIMIGLIA) ore 13:48
@@ -139,85 +157,81 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3371--20261121-S04505@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T125724Z
-DTEND:20261122T130254Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:57 - 14:02 (primo: REG 3371)
-DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 13:57:24 - 14:02:54\nTreni coinvolt
- i nella chiusura:\n  - REG 3371 (VENTIMIGLIA -> GENOVA BRIGNOLE) [Transito
- ]\n  - REG 3371 (VENTIMIGLIA -> GENOVA BRIGNOLE) [Transito]\nRitardo massi
- mo rilevato: -2 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
- hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T125723Z
+DTEND:20261122T130253Z
+SUMMARY:[TRANSITO VELOCE] REG 3371 (VENTIMIGLIA -> GENOVA BRIGNOLE) ore 14:
+ 01
+DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 13:57:23 - 14:02:53\nTreni coinvolti nella chiu
+ sura:\n  - REG 3371 (VENTIMIGLIA -> GENOVA BRIGNOLE) [Transito]\nRitardo m
+ assimo rilevato: -2 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Transito stimato senza fermata (53% tratta VENTIMIGLIA -> BORDIGHERA\; 
+ pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SANREMO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3371--20261121-S04505@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T131130Z
 DTEND:20261122T131630Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:11 - 14:16 (primo: REG 3371) (+4 m
+SUMMARY:[FERMATA] REG 3371 (VENTIMIGLIA -> GENOVA BRIGNOLE) ore 14:15 (+4 m
  in)
-DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 14:11:30 - 14:16:30\nTreni coinvolt
- i nella chiusura:\n  - REG 3371 (VENTIMIGLIA -> GENOVA BRIGNOLE) (+4m)\n  
- - REG 3371 (VENTIMIGLIA -> GENOVA BRIGNOLE) (+4m)\nRitardo massimo rilevat
- o: 4 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura con
- tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
- lia minima di sgombero stradale (120s)
+DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 14:11:30 - 14:16:30\nTreni coinvolti nella chiusura:\n 
+  - REG 3371 (VENTIMIGLIA -> GENOVA BRIGNOLE) (+4m)\nRitardo massimo rileva
+ to: 4 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento
+  reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione SANREMO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-637--20261121-S04505@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T134315Z
 DTEND:20261122T134930Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:43 - 14:49 (primo: IC 637) (+7 min
+SUMMARY:[FERMATA] IC 637 (MILANO CENTRALE -> VENTIMIGLIA) ore 14:48 (+7 min
  )
-DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 14:43:15 - 14:49:30\nTreni coinvolt
- i nella chiusura:\n  - IC 637 (MILANO CENTRALE -> VENTIMIGLIA) (+7m)\n  - 
- IC 637 (MILANO CENTRALE -> VENTIMIGLIA) (+7m)\nRitardo massimo rilevato: 7
-  min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continu
- a per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 14:43:15 - 14:49:30\nTreni coinvolti nella chiusura:\n 
+  - IC 637 (MILANO CENTRALE -> VENTIMIGLIA) (+7m)\nRitardo massimo rilevato
+ : 7 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento r
+ eale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione SANREMO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:7
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3376--20261121-S04505@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T163006Z
-DTEND:20261122T163536Z
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T162954Z
+DTEND:20261122T163524Z
 SUMMARY:[TRANSITO VELOCE] REG 3376 (GENOVA BRIGNOLE -> VENTIMIGLIA) ore 17:
  34
 DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 17:30:06 - 17:35:36\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 17:29:54 - 17:35:24\nTreni coinvolti nella chiu
  sura:\n  - REG 3376 (GENOVA BRIGNOLE -> VENTIMIGLIA) [Transito]\nRitardo m
  assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (74% tratta IMPERIA -> TAGGIA ARMA\; peda
+ : Transito stimato senza fermata (72% tratta IMPERIA -> TAGGIA ARMA\; peda
  le annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SANREMO
 STATUS:CONFIRMED
@@ -229,8 +243,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3376--20261121-S04505@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T164030Z
 DTEND:20261122T164500Z
 SUMMARY:[FERMATA] REG 3376 (GENOVA BRIGNOLE -> VENTIMIGLIA) ore 17:44
@@ -249,14 +263,14 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3379--20261121-S04505@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T165556Z
-DTEND:20261122T170126Z
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T165554Z
+DTEND:20261122T170124Z
 SUMMARY:[TRANSITO VELOCE] REG 3379 (VENTIMIGLIA -> GENOVA BRIGNOLE) ore 18:
  00
 DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 17:55:56 - 18:01:26\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 17:55:54 - 18:01:24\nTreni coinvolti nella chiu
  sura:\n  - REG 3379 (VENTIMIGLIA -> GENOVA BRIGNOLE) [Transito]\nRitardo m
  assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
  : Transito stimato senza fermata (53% tratta VENTIMIGLIA -> BORDIGHERA\; p
@@ -271,8 +285,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3379--20261121-S04505@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T170730Z
 DTEND:20261122T171200Z
 SUMMARY:[FERMATA] REG 3379 (VENTIMIGLIA -> GENOVA BRIGNOLE) ore 18:11
@@ -291,8 +305,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-641--20261121-S04505@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T173615Z
 DTEND:20261122T174100Z
 SUMMARY:[FERMATA] IC 641 (MILANO CENTRALE -> VENTIMIGLIA) ore 18:40
@@ -311,156 +325,145 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-639--20261121-S04505@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T181715Z
 DTEND:20261122T182200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:17 - 19:22 (primo: IC 639)
-DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 19:17:15 - 19:22:00\nTreni coinvolt
- i nella chiusura:\n  - IC 639 (VENTIMIGLIA -> MILANO CENTRALE)\n  - IC 639
-  (VENTIMIGLIA -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffida
- bilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tren
- i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
- ombero stradale (120s)
+SUMMARY:[FERMATA] IC 639 (VENTIMIGLIA -> MILANO CENTRALE) ore 19:21
+DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 19:17:15 - 19:22:00\nTreni coinvolti nella chiusura:\n 
+  - IC 639 (VENTIMIGLIA -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracc
+ ia oraria regolare
 LOCATION:Passaggio a Livello / Stazione SANREMO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3380--20261121-S04505@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T183006Z
-DTEND:20261122T183536Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:30 - 19:35 (primo: REG 3380)
-DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 19:30:06 - 19:35:36\nTreni coinvolt
- i nella chiusura:\n  - REG 3380 (GENOVA BRIGNOLE -> VENTIMIGLIA) [Transito
- ]\n  - REG 3380 (GENOVA BRIGNOLE -> VENTIMIGLIA) [Transito]\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
- iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T182954Z
+DTEND:20261122T183524Z
+SUMMARY:[TRANSITO VELOCE] REG 3380 (GENOVA BRIGNOLE -> VENTIMIGLIA) ore 19:
+ 34
+DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 19:29:54 - 19:35:24\nTreni coinvolti nella chiu
+ sura:\n  - REG 3380 (GENOVA BRIGNOLE -> VENTIMIGLIA) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (72% tratta IMPERIA -> TAGGIA ARMA\; peda
+ le annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SANREMO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3380--20261121-S04505@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T184030Z
 DTEND:20261122T184500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:40 - 19:45 (primo: REG 3380)
-DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 19:40:30 - 19:45:00\nTreni coinvolt
- i nella chiusura:\n  - REG 3380 (GENOVA BRIGNOLE -> VENTIMIGLIA)\n  - REG 
- 3380 (GENOVA BRIGNOLE -> VENTIMIGLIA)\nRitardo massimo rilevato: 0 min\nAf
- fidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 
- treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
- i sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 3380 (GENOVA BRIGNOLE -> VENTIMIGLIA) ore 19:44
+DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 19:40:30 - 19:45:00\nTreni coinvolti nella chiusura:\n 
+  - REG 3380 (GENOVA BRIGNOLE -> VENTIMIGLIA)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
+ ccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione SANREMO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-675--20261121-S04505@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T192935Z
-DTEND:20261122T193405Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:29 - 20:34 (primo: IC 675)
-DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 20:29:35 - 20:34:05\nTreni coinvolt
- i nella chiusura:\n  - IC 675 (MILANO CENTRALE -> VENTIMIGLIA) [Transito]\
- n  - IC 675 (MILANO CENTRALE -> VENTIMIGLIA) [Transito]\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T192922Z
+DTEND:20261122T193352Z
+SUMMARY:[TRANSITO VELOCE] IC 675 (MILANO CENTRALE -> VENTIMIGLIA) ore 20:32
+DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 20:29:22 - 20:33:52\nTreni coinvolti nella chiu
+ sura:\n  - IC 675 (MILANO CENTRALE -> VENTIMIGLIA) [Transito]\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Transito stimato senza fermata (72% tratta IMPERIA -> TAGGIA ARMA\; pedale
+  annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SANREMO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-675--20261121-S04505@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T193915Z
 DTEND:20261122T194400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:39 - 20:44 (primo: IC 675)
-DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 20:39:15 - 20:44:00\nTreni coinvolt
- i nella chiusura:\n  - IC 675 (MILANO CENTRALE -> VENTIMIGLIA)\n  - IC 675
-  (MILANO CENTRALE -> VENTIMIGLIA)\nRitardo massimo rilevato: 0 min\nAffida
- bilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tren
- i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
- ombero stradale (120s)
+SUMMARY:[FERMATA] IC 675 (MILANO CENTRALE -> VENTIMIGLIA) ore 20:43
+DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 20:39:15 - 20:44:00\nTreni coinvolti nella chiusura:\n 
+  - IC 675 (MILANO CENTRALE -> VENTIMIGLIA)\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracc
+ ia oraria regolare
 LOCATION:Passaggio a Livello / Stazione SANREMO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-518--20261121-S04505@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T221035Z
-DTEND:20261122T221505Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:10 - 23:15 (primo: IC 518) (+6 min
- )
-DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 23:10:35 - 23:15:05\nTreni coinvolt
- i nella chiusura:\n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA) (+6m) [Transit
- o]\n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA) (+6m) [Transito]\nRitardo mas
- simo rilevato: 6 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T221022Z
+DTEND:20261122T221452Z
+SUMMARY:[TRANSITO VELOCE] IC 518 (ROMA TERMINI -> VENTIMIGLIA) ore 23:13 (+
+ 6 min)
+DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 23:10:22 - 23:14:52\nTreni coinvolti nella chiu
+ sura:\n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA) (+6m) [Transito]\nRitardo 
+ massimo rilevato: 6 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Transito stimato senza fermata (72% tratta IMPERIA -> TAGGIA ARMA\; ped
+ ale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SANREMO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-518--20261121-S04505@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T222115Z
 DTEND:20261122T222600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:21 - 23:26 (primo: IC 518) (+6 min
- )
-DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 23:21:15 - 23:26:00\nTreni coinvolt
- i nella chiusura:\n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA) (+6m)\n  - IC 
- 518 (ROMA TERMINI -> VENTIMIGLIA) (+6m)\nRitardo massimo rilevato: 6 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
- 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
-  di sgombero stradale (120s)
+SUMMARY:[FERMATA] IC 518 (ROMA TERMINI -> VENTIMIGLIA) ore 23:25 (+6 min)
+DESCRIPTION:Stazione/PL: SANREMO (S04505)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 23:21:15 - 23:26:00\nTreni coinvolti nella chiusura:\n 
+  - IC 518 (ROMA TERMINI -> VENTIMIGLIA) (+6m)\nRitardo massimo rilevato: 6
+  min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione con r
+ itardo propagato (+6 min)
 LOCATION:Passaggio a Livello / Stazione SANREMO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC

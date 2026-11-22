@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:c6d9a1bd15fac908b9b9b002ef0ff8333332ae47c63415df71803f5d3fae
- 9234
+X-CONTENT-HASH:a966ed93e6c065994b794d606a2888abb4d7221e41da562c8472266e09ef
+ 0ce8
 BEGIN:VEVENT
 UID:train-12210--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T000030Z
 DTEND:20261122T000500Z
 SUMMARY:[FERMATA] REG 12210 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) ore 01:0
@@ -34,30 +34,28 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-652--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T035015Z
 DTEND:20261122T035700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 04:50 - 04:57 (primo: IC 652)
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 04:50:15 - 04:57:00\nTre
- ni coinvolti nella chiusura:\n  - IC 652 (LA SPEZIA CENTRALE -> MILANO CEN
- TRALE)\n  - IC 652 (LA SPEZIA CENTRALE -> MILANO CENTRALE)\nRitardo massim
- o rilevato: -2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Ch
- iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] IC 652 (LA SPEZIA CENTRALE -> MILANO CENTRALE) ore 04:56
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 04:50:15 - 04:57:00\nTreni coinvolti nella c
+ hiusura:\n  - IC 652 (LA SPEZIA CENTRALE -> MILANO CENTRALE)\nRitardo mass
+ imo rilevato: -2 min\nAffidabilità stima: 99%\nNota normativa/euristica: 
+ Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:-2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12316--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T040430Z
 DTEND:20261122T040900Z
 SUMMARY:[FERMATA] REG 12316 (LA SPEZIA CENTRALE -> SAVONA) ore 05:08
@@ -76,55 +74,51 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-501--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T041551Z
 DTEND:20261122T042021Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:15 - 05:20 (primo: IC 501) (+11 mi
- n)
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:15:51 - 05:20:21\nTre
- ni coinvolti nella chiusura:\n  - IC 501 (SESTRI LEVANTE -> NAPOLI CENTRAL
- E) (+11m) [Transito]\n  - IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) (+11m
- ) [Transito]\nRitardo massimo rilevato: 11 min\nAffidabilità stima: 78%\n
- Nota normativa/euristica: Chiusura continua per 2 treni: intervallo utile 
- tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
- s)
+SUMMARY:[TRANSITO VELOCE] IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) ore 05
+ :19 (+11 min)
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 05:15:51 - 05:20:21\nTreni coinvolti
+  nella chiusura:\n  - IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) (+11m) [T
+ ransito]\nRitardo massimo rilevato: 11 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Transito stimato senza fermata (67% tratta SESTRI LE
+ VANTE -> LEVANTO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:11
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-501--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T043945Z
 DTEND:20261122T044530Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:39 - 05:45 (primo: IC 501) (+1 min
- )
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:39:45 - 05:45:30\nTre
- ni coinvolti nella chiusura:\n  - IC 501 (SESTRI LEVANTE -> NAPOLI CENTRAL
- E) (+1m)\n  - IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) (+1m)\nRitardo ma
+SUMMARY:[FERMATA] IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) ore 05:44 (+1 
+ min)
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 05:39:45 - 05:45:30\nTreni coinvolti nella c
+ hiusura:\n  - IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) (+1m)\nRitardo ma
  ssimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica:
-  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
- iore alla soglia minima di sgombero stradale (120s)
+  Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12322--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T045630Z
 DTEND:20261122T050100Z
 SUMMARY:[FERMATA] REG 12322 (LA SPEZIA CENTRALE -> SAVONA) ore 06:00
@@ -143,8 +137,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-658--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T050421Z
 DTEND:20261122T050851Z
 SUMMARY:[TRANSITO VELOCE] IC 658 (LIVORNO CENTRALE -> MILANO CENTRALE) ore 
@@ -165,34 +159,32 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-658--20261121-S06000@pl-tracker.local-arr
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T052915Z
 DTEND:20261122T053930Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 06:29 - 06:39 (primo: IC 658) (+1 min
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 06:29 - 06:39 (primo: IC 658) (+1 min
  )
 DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 06:29:15 - 06:39:30\nTre
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 06:29:15 - 06:39:30\nTre
  ni coinvolti nella chiusura:\n  - IC 658 (LIVORNO CENTRALE -> MILANO CENTR
- ALE) (+1m) [Arrivo]\n  - IC 658 (LIVORNO CENTRALE -> MILANO CENTRALE) (+1m
- ) [Arrivo]\n  - REG 2294 (LIVORNO CENTRALE -> MILANO PORTA GARIBALDI) [Tra
- nsito]\n  - IC 658 (LIVORNO CENTRALE -> MILANO CENTRALE) (+1m) [Partenza]\
- n  - IC 658 (LIVORNO CENTRALE -> MILANO CENTRALE) (+1m) [Partenza]\nRitard
- o massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Chiusura continua per 5 treni: intervallo utile tra i passaggi (0s) i
- nferiore alla soglia minima di sgombero stradale (120s)
+ ALE) (+1m) [Arrivo]\n  - REG 2294 (LIVORNO CENTRALE -> MILANO PORTA GARIBA
+ LDI) [Transito]\n  - IC 658 (LIVORNO CENTRALE -> MILANO CENTRALE) (+1m) [P
+ artenza]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i
+  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3258--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T064130Z
 DTEND:20261122T064600Z
 SUMMARY:[FERMATA] REG 3258 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) ore 07:4
@@ -212,107 +204,120 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19238--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T070430Z
-DTEND:20261122T072736Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 08:04 - 08:27 (primo: REG 19238) (+5 
+DTEND:20261122T072735Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:04 - 08:27 (primo: REG 19238) (+5 
  min)
 DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 8 TRENI\nChiusura sbarre stimata: 08:04:30 - 08:27:36\nTre
+ SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 08:04:30 - 08:27:35\nTre
  ni coinvolti nella chiusura:\n  - REG 19238 (LA SPEZIA CENTRALE -> PARMA) 
- (+2m)\n  - REG 19238 (LA SPEZIA CENTRALE -> PARMA) (+2m)\n  - REG 12218 (L
- A SPEZIA CENTRALE -> SESTRI LEVANTE) (+2m)\n  - REG 12218 (LA SPEZIA CENTR
- ALE -> SESTRI LEVANTE) (+2m)\n  - TRENO 8605 (GENOVA PIAZZA PRINCIPE -> RO
- MA TERMINI) (+5m)\n  - TRENO 8605 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI)
-  (+5m)\n  - REG 18355 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE) 
- (+3m) [Transito]\n  - REG 18355 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA 
- CENTRALE) (+3m) [Transito]\nRitardo massimo rilevato: 5 min\nAffidabilità
-  stima: 78%\nNota normativa/euristica: Chiusura continua per 8 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+ (+2m)\n  - REG 12218 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) (+2m)\n  - TRE
+ NO 8605 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI) (+5m)\n  - REG 18355 (FIR
+ ENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE) (+3m) [Transito]\nRitardo 
+ massimo rilevato: 5 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Chiusura continua per 4 treni: intervallo utile tra i passaggi (35s) in
+ feriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12323--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T074438Z
-DTEND:20261122T075008Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:44 - 08:50 (primo: REG 12323)
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:44:38 - 08:50:08\nTre
- ni coinvolti nella chiusura:\n  - REG 12323 (SAVONA -> LA SPEZIA CENTRALE)
-  [Transito]\n  - REG 12323 (SAVONA -> LA SPEZIA CENTRALE) [Transito]\nRita
- rdo massimo rilevato: -4 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
- ) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T074437Z
+DTEND:20261122T075007Z
+SUMMARY:[TRANSITO VELOCE] REG 12323 (SAVONA -> LA SPEZIA CENTRALE) ore 08:4
+ 8
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 08:44:37 - 08:50:07\nTreni coinvolti
+  nella chiusura:\n  - REG 12323 (SAVONA -> LA SPEZIA CENTRALE) [Transito]\
+ nRitardo massimo rilevato: -4 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Transito stimato senza fermata (79% tratta LEVANTO -> MONTERO
+ SSO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-4
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19233--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T075330Z
 DTEND:20261122T080300Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:53 - 09:03 (primo: REG 19233) (+3 
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:53 - 09:03 (primo: REG 19233) (+3 
  min)
 DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 08:53:30 - 09:03:00\nTre
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:53:30 - 09:03:00\nTre
  ni coinvolti nella chiusura:\n  - REG 19233 (PARMA -> LA SPEZIA CENTRALE) 
- (+3m)\n  - REG 19233 (PARMA -> LA SPEZIA CENTRALE) (+3m)\n  - REG 18355 (F
- IRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE) (+3m)\n  - REG 18355 (FI
- RENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE) (+3m)\nRitardo massimo ri
- levato: 3 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusur
- a continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+ (+3m)\n  - REG 18355 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE) (
+ +3m)\nRitardo massimo rilevato: 3 min\nAffidabilità stima: 99%\nNota norm
+ ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12323--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T081230Z
-DTEND:20261122T082221Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 09:12 - 09:22 (primo: REG 12323)
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 09:12:30 - 09:22:21\nTre
- ni coinvolti nella chiusura:\n  - REG 12323 (SAVONA -> LA SPEZIA CENTRALE)
- \n  - REG 12323 (SAVONA -> LA SPEZIA CENTRALE)\n  - IC 666 (LIVORNO CENTRA
- LE -> MILANO CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffida
- bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 tren
- i: intervallo utile tra i passaggi (51s) inferiore alla soglia minima di s
- gombero stradale (120s)
+DTEND:20261122T081700Z
+SUMMARY:[FERMATA] REG 12323 (SAVONA -> LA SPEZIA CENTRALE) ore 09:16
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 09:12:30 - 09:17:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 12323 (SAVONA -> LA SPEZIA CENTRALE)\nRitardo massimo ri
+ levato: -4 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rileva
+ mento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:-4
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-666--20261121-S06000@pl-tracker.local
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T082618Z
+DTEND:20261122T083048Z
+SUMMARY:[TRANSITO VELOCE] IC 666 (LIVORNO CENTRALE -> MILANO CENTRALE) ore 
+ 09:29
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 09:26:18 - 09:30:48\nTreni coinvolti
+  nella chiusura:\n  - IC 666 (LIVORNO CENTRALE -> MILANO CENTRALE) [Transi
+ to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (54% tratta MASSA CENTRO ->
+  CARRARA AVENZA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
 UID:train-8588--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T083330Z
 DTEND:20261122T083800Z
 SUMMARY:[FERMATA] TRENO 8588 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) ore 0
@@ -332,8 +337,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-666--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T090415Z
 DTEND:20261122T090900Z
 SUMMARY:[FERMATA] IC 666 (LIVORNO CENTRALE -> MILANO CENTRALE) ore 10:08
@@ -352,8 +357,8 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12222--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T091130Z
 DTEND:20261122T092200Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:11 - 10:22 (primo: REG 12222)
@@ -374,32 +379,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-657--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T093355Z
-DTEND:20261122T094711Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:33 - 10:47 (primo: IC 657)
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T093356Z
+DTEND:20261122T094200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:33 - 10:42 (primo: IC 657)
 DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 10:33:55 - 10:47:11\nTre
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:33:56 - 10:42:00\nTre
  ni coinvolti nella chiusura:\n  - IC 657 (MILANO CENTRALE -> GROSSETO) [Tr
- ansito]\n  - IC 657 (MILANO CENTRALE -> GROSSETO) [Transito]\n  - TRENO 86
- 06 (ROMA TERMINI -> TORINO PORTA NUOVA)\n  - REG 2293 (MILANO CENTRALE -> 
- PISA CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità 
- stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: inter
- vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
- tradale (120s)
+ ansito]\n  - TRENO 8606 (ROMA TERMINI -> TORINO PORTA NUOVA)\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
+ hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
+ re alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12224--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T100830Z
 DTEND:20261122T101300Z
 SUMMARY:[FERMATA] REG 12224 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) ore 11:1
@@ -419,102 +422,76 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-657--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T101645Z
 DTEND:20261122T102330Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:16 - 11:23 (primo: IC 657)
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:16:45 - 11:23:30\nTre
- ni coinvolti nella chiusura:\n  - IC 657 (MILANO CENTRALE -> GROSSETO)\n  
- - IC 657 (MILANO CENTRALE -> GROSSETO)\nRitardo massimo rilevato: -1 min\n
- Affidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 
- 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
-  di sgombero stradale (120s)
+SUMMARY:[FERMATA] IC 657 (MILANO CENTRALE -> GROSSETO) ore 11:22
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 11:16:45 - 11:23:30\nTreni coinvolti nella c
+ hiusura:\n  - IC 657 (MILANO CENTRALE -> GROSSETO)\nRitardo massimo rileva
+ to: -1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevament
+ o reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3265--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T102603Z
-DTEND:20261122T103133Z
-SUMMARY:[TRANSITO VELOCE] REG 3265 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) 
- ore 11:30
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 11:26:03 - 11:31:33\nTreni coinvolti
-  nella chiusura:\n  - REG 3265 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) [Tr
- ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
- ormativa/euristica: Transito stimato senza fermata (54% tratta CHIAVARI ->
-  SESTRI LEVANTE\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-3266--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T103730Z
-DTEND:20261122T104731Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:37 - 11:47 (primo: REG 3266) (+1 m
+DTEND:20261122T104730Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:37 - 11:47 (primo: REG 3266) (+1 m
  in)
 DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 11:37:30 - 11:47:31\nTre
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:37:30 - 11:47:30\nTre
  ni coinvolti nella chiusura:\n  - REG 3266 (LA SPEZIA CENTRALE -> GENOVA B
- RIGNOLE) (+1m)\n  - REG 3266 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) (+1m)
- \n  - REG 19340 (PISA CENTRALE -> LA SPEZIA CENTRALE) [Transito]\nRitardo 
- massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Chiusura continua per 3 treni: intervallo utile tra i passaggi (1s) inf
- eriore alla soglia minima di sgombero stradale (120s)
+ RIGNOLE) (+1m)\n  - REG 19340 (PISA CENTRALE -> LA SPEZIA CENTRALE) [Trans
+ ito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12226--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T110930Z
 DTEND:20261122T112600Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 12:09 - 12:26 (primo: REG 12226) (+1 
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:09 - 12:26 (primo: REG 12226) (+1 
  min)
 DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 12:09:30 - 12:26:00\nTre
+ SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 12:09:30 - 12:26:00\nTre
  ni coinvolti nella chiusura:\n  - REG 12226 (LA SPEZIA CENTRALE -> SESTRI 
- LEVANTE) (+1m)\n  - REG 12226 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) (+1m)
- \n  - IC 670 (LIVORNO CENTRALE -> MILANO CENTRALE) [Transito]\n  - REG 193
- 40 (PISA CENTRALE -> LA SPEZIA CENTRALE)\n  - REG 3265 (GENOVA BRIGNOLE ->
-  LA SPEZIA CENTRALE)\nRitardo massimo rilevato: 1 min\nAffidabilità stima
- : 78%\nNota normativa/euristica: Chiusura continua per 5 treni: intervallo
-  utile tra i passaggi (30s) inferiore alla soglia minima di sgombero strad
- ale (120s)
+ LEVANTE) (+1m)\n  - IC 670 (LIVORNO CENTRALE -> MILANO CENTRALE) [Transito
+ ]\n  - REG 19340 (PISA CENTRALE -> LA SPEZIA CENTRALE)\n  - REG 3265 (GENO
+ VA BRIGNOLE -> LA SPEZIA CENTRALE)\nRitardo massimo rilevato: 1 min\nAffid
+ abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 tre
+ ni: intervallo utile tra i passaggi (30s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-670--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T113215Z
 DTEND:20261122T113700Z
 SUMMARY:[FERMATA] IC 670 (LIVORNO CENTRALE -> MILANO CENTRALE) ore 12:36
@@ -533,8 +510,8 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8613--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T121030Z
 DTEND:20261122T121500Z
 SUMMARY:[FERMATA] TRENO 8613 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI) ore 1
@@ -554,53 +531,31 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-510--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T122231Z
-DTEND:20261122T122701Z
-SUMMARY:[TRANSITO VELOCE] IC 510 (SALERNO -> TORINO PORTA NUOVA) ore 13:26
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 13:22:31 - 13:27:01\nTreni coinvolti
-  nella chiusura:\n  - IC 510 (SALERNO -> TORINO PORTA NUOVA) [Transito]\nR
- itardo massimo rilevato: -7 min\nAffidabilità stima: 78%\nNota normativa/
- euristica: Transito stimato senza fermata (67% tratta VIAREGGIO -> MASSA C
- ENTRO\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:-7
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-510--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T123151Z
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T123150Z
 DTEND:20261122T123700Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 13:31 - 13:37 (primo: IC 510) (+1 min
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:31 - 13:37 (primo: IC 510) (+1 min
  )
 DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 13:31:51 - 13:37:00\nTre
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:31:50 - 13:37:00\nTre
  ni coinvolti nella chiusura:\n  - IC 510 (SALERNO -> TORINO PORTA NUOVA) [
  Transito]\n  - REG 18395 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELL
- A) (+1m)\n  - REG 18395 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELLA
- ) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota n
- ormativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i 
- passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ A) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i
+  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19241--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T125030Z
 DTEND:20261122T125500Z
 SUMMARY:[FERMATA] REG 19241 (PARMA -> LA SPEZIA CENTRALE) ore 13:54
@@ -619,191 +574,218 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-510--20261121-S06000@pl-tracker.local-arr
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T125915Z
 DTEND:20261122T130730Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 13:59 - 14:07 (primo: IC 510) (+2 min
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:59 - 14:07 (primo: IC 510) (+2 min
  )
 DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 13:59:15 - 14:07:30\nTre
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:59:15 - 14:07:30\nTre
  ni coinvolti nella chiusura:\n  - IC 510 (SALERNO -> TORINO PORTA NUOVA) (
- +2m) [Arrivo]\n  - IC 510 (SALERNO -> TORINO PORTA NUOVA) (+2m) [Arrivo]\n
-   - IC 510 (SALERNO -> TORINO PORTA NUOVA) (+2m) [Partenza]\n  - IC 510 (S
- ALERNO -> TORINO PORTA NUOVA) (+2m) [Partenza]\nRitardo massimo rilevato: 
- 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura contin
- ua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
+ +2m) [Arrivo]\n  - IC 510 (SALERNO -> TORINO PORTA NUOVA) (+2m) [Partenza]
+ \nRitardo massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativ
+ a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
+ i (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18415--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T133130Z
-DTEND:20261122T134055Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 14:31 - 14:40 (primo: REG 18415) (+2 
- min)
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 14:31:30 - 14:40:55\nTre
- ni coinvolti nella chiusura:\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRENZE
-  SANTA MARIA NOVELLA)\n  - IC 665 (MILANO CENTRALE -> LA SPEZIA CENTRALE) 
- (+2m) [Transito]\n  - IC 665 (MILANO CENTRALE -> LA SPEZIA CENTRALE) (+2m)
+DTEND:20261122T133600Z
+SUMMARY:[FERMATA] REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVE
+ LLA) ore 14:35
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 14:31:30 - 14:36:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELLA
+ )\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normati
+ va/euristica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-665--20261121-S06000@pl-tracker.local
+DTSTAMP:20261122T210441Z
+SEQUENCE:0
+DTSTART:20261122T135203Z
+DTEND:20261122T135633Z
+SUMMARY:[TRANSITO VELOCE] IC 665 (MILANO CENTRALE -> LA SPEZIA CENTRALE) or
+ e 14:55 (+2 min)
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 14:52:03 - 14:56:33\nTreni coinvolti
+  nella chiusura:\n  - IC 665 (MILANO CENTRALE -> LA SPEZIA CENTRALE) (+2m)
   [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNo
- ta normativa/euristica: Chiusura continua per 3 treni: intervallo utile tr
- a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ ta normativa/euristica: Transito stimato senza fermata (67% tratta SESTRI 
+ LEVANTE -> LEVANTO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19392--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T141147Z
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T141146Z
 DTEND:20261122T142400Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:11 - 15:24 (primo: REG 19392) (+2 
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:11 - 15:24 (primo: REG 19392) (+2 
  min)
 DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 15:11:47 - 15:24:00\nTre
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:11:46 - 15:24:00\nTre
  ni coinvolti nella chiusura:\n  - REG 19392 (LIVORNO CENTRALE -> LA SPEZIA
-  CENTRALE) [Transito]\n  - REG 19392 (LIVORNO CENTRALE -> LA SPEZIA CENTRA
- LE) [Transito]\n  - IC 665 (MILANO CENTRALE -> LA SPEZIA CENTRALE) (+2m)\n
-   - IC 665 (MILANO CENTRALE -> LA SPEZIA CENTRALE) (+2m)\nRitardo massimo 
- rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
- ura continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore a
- lla soglia minima di sgombero stradale (120s)
+  CENTRALE) [Transito]\n  - IC 665 (MILANO CENTRALE -> LA SPEZIA CENTRALE) 
+ (+2m)\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota nor
+ mativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pa
+ ssaggi (118s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19392--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T143530Z
 DTEND:20261122T144100Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:35 - 15:41 (primo: REG 19392)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:35 - 15:41 (primo: REG 19392)
 DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 15:35:30 - 15:41:00\nTre
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:35:30 - 15:41:00\nTre
  ni coinvolti nella chiusura:\n  - REG 19392 (LIVORNO CENTRALE -> LA SPEZIA
-  CENTRALE)\n  - REG 19392 (LIVORNO CENTRALE -> LA SPEZIA CENTRALE)\n  - RE
- G 18399 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELLA)\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Ch
- iusura continua per 3 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+  CENTRALE)\n  - REG 18399 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVEL
+ LA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota norma
+ tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
+ aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8616--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T144300Z
 DTEND:20261122T145100Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:43 - 15:51 (primo: TRENO 8616) (+6
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:43 - 15:51 (primo: TRENO 8616) (+6
   min)
 DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 15:43:00 - 15:51:00\nTre
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:43:00 - 15:51:00\nTre
  ni coinvolti nella chiusura:\n  - TRENO 8616 (ROMA TERMINI -> GENOVA PIAZZ
- A PRINCIPE) (+6m)\n  - TRENO 8616 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE)
-  (+6m)\n  - REG 3274 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE)\nRitardo mass
- imo rilevato: 6 min\nAffidabilità stima: 90%\nNota normativa/euristica: C
- hiusura continua per 3 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
+ A PRINCIPE) (+6m)\n  - REG 3274 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE)\nR
+ itardo massimo rilevato: 6 min\nAffidabilità stima: 90%\nNota normativa/e
+ uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19254--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T150330Z
 DTEND:20261122T152200Z
-SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 16:03 - 16:22 (primo: REG 19254) (+1 
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 16:03 - 16:22 (primo: REG 19254) (+1 
  min)
 DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 7 TRENI\nChiusura sbarre stimata: 16:03:30 - 16:22:00\nTre
+ SURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 16:03:30 - 16:22:00\nTre
  ni coinvolti nella chiusura:\n  - REG 19254 (LA SPEZIA CENTRALE -> PARMA) 
- (+1m)\n  - REG 19254 (LA SPEZIA CENTRALE -> PARMA) (+1m)\n  - REG 12234 (L
- A SPEZIA CENTRALE -> SESTRI LEVANTE)\n  - TRENO 8619 (MILANO CENTRALE -> R
- OMA TERMINI)\n  - REG 19358 (PISA CENTRALE -> LA SPEZIA CENTRALE) [Transit
- o]\n  - REG 19358 (PISA CENTRALE -> LA SPEZIA CENTRALE) [Transito]\n  - RE
- G 19367 (LA SPEZIA CENTRALE -> PISA CENTRALE)\nRitardo massimo rilevato: 1
-  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
- a per 7 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+ (+1m)\n  - REG 12234 (LA SPEZIA CENTRALE -> SESTRI LEVANTE)\n  - TRENO 861
+ 9 (MILANO CENTRALE -> ROMA TERMINI)\n  - REG 19358 (PISA CENTRALE -> LA SP
+ EZIA CENTRALE) [Transito]\n  - REG 19367 (LA SPEZIA CENTRALE -> PISA CENTR
+ ALE)\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 5 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19371--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T152630Z
-DTEND:20261122T153900Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:26 - 16:39 (primo: REG 19371)
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 16:26:30 - 16:39:00\nTre
- ni coinvolti nella chiusura:\n  - REG 19371 (LA SPEZIA CENTRALE -> SARZANA
- )\n  - IC 669 (MILANO CENTRALE -> LIVORNO CENTRALE) [Transito]\n  - IC 680
-  (LA SPEZIA CENTRALE -> MILANO CENTRALE)\n  - IC 680 (LA SPEZIA CENTRALE -
- > MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
- 78%\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo u
- tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
-  (120s)
+DTEND:20261122T153100Z
+SUMMARY:[FERMATA] REG 19371 (LA SPEZIA CENTRALE -> SARZANA) ore 16:30
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 16:26:30 - 16:31:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 19371 (LA SPEZIA CENTRALE -> SARZANA)\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previs
+ ione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-680--20261121-S06000@pl-tracker.local
+DTSTAMP:20261122T210441Z
+SEQUENCE:0
+DTSTART:20261122T153415Z
+DTEND:20261122T153900Z
+SUMMARY:[FERMATA] IC 680 (LA SPEZIA CENTRALE -> MILANO CENTRALE) ore 16:38
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 16:34:15 - 16:39:00\nTreni coinvolti nella c
+ hiusura:\n  - IC 680 (LA SPEZIA CENTRALE -> MILANO CENTRALE)\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
+ revisione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
 UID:train-18377--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T154201Z
-DTEND:20261122T155000Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:42 - 16:50 (primo: REG 18377)
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T154200Z
+DTEND:20261122T155227Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:42 - 16:52 (primo: REG 18377)
 DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:42:01 - 16:50:00\nTre
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:42:00 - 16:52:27\nTre
  ni coinvolti nella chiusura:\n  - REG 18377 (FIRENZE SANTA MARIA NOVELLA -
  > LA SPEZIA CENTRALE) [Transito]\n  - REG 19358 (PISA CENTRALE -> LA SPEZI
- A CENTRALE)\n  - REG 19358 (PISA CENTRALE -> LA SPEZIA CENTRALE)\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
+ A CENTRALE)\n  - IC 669 (MILANO CENTRALE -> LIVORNO CENTRALE) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Chiusura continua per 3 treni: intervallo utile tra i passaggi 
+ (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -814,140 +796,91 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12236--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T160830Z
-DTEND:20261122T163133Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 17:08 - 17:31 (primo: REG 12236) (+5 
- min)
+DTEND:20261122T162300Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:08 - 17:23 (primo: REG 12236)
 DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 8 TRENI\nChiusura sbarre stimata: 17:08:30 - 17:31:33\nTre
+ SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 17:08:30 - 17:23:00\nTre
  ni coinvolti nella chiusura:\n  - REG 12236 (LA SPEZIA CENTRALE -> SESTRI 
- LEVANTE)\n  - REG 12236 (LA SPEZIA CENTRALE -> SESTRI LEVANTE)\n  - REG 19
- 362 (PISA CENTRALE -> LA SPEZIA CENTRALE) [Transito]\n  - REG 18377 (FIREN
- ZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE)\n  - IC 669 (MILANO CENTRALE
-  -> LIVORNO CENTRALE)\n  - TRENO 8620 (ROMA TERMINI -> MILANO CENTRALE) (+
- 5m) [Transito]\n  - REG 3277 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) [Tran
- sito]\n  - REG 3277 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) [Transito]\nRi
- tardo massimo rilevato: 5 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Chiusura continua per 8 treni: intervallo utile tra i passaggi (0
- s) inferiore alla soglia minima di sgombero stradale (120s)
+ LEVANTE)\n  - REG 19362 (PISA CENTRALE -> LA SPEZIA CENTRALE) [Transito]\n
+   - REG 18377 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE)\n  - IC 
+ 669 (MILANO CENTRALE -> LIVORNO CENTRALE)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
+ r 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
-X-PL-DELAY-MIN:5
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-19362--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T164530Z
+UID:train-3277--20261121-S06000@pl-tracker.local
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T163949Z
 DTEND:20261122T165500Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:45 - 17:55 (primo: REG 19362) (+5 
- min)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:39 - 17:55 (primo: REG 3277) (+5 m
+ in)
 DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 17:45:30 - 17:55:00\nTre
- ni coinvolti nella chiusura:\n  - REG 19362 (PISA CENTRALE -> LA SPEZIA CE
- NTRALE)\n  - TRENO 8620 (ROMA TERMINI -> MILANO CENTRALE) (+5m)\n  - TRENO
-  8620 (ROMA TERMINI -> MILANO CENTRALE) (+5m)\n  - REG 19249 (PARMA -> LA 
- SPEZIA CENTRALE)\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 90
- %\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo uti
- le tra i passaggi (30s) inferiore alla soglia minima di sgombero stradale 
- (120s)
+ SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 17:39:49 - 17:55:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 3277 (GENOVA BRIGNOLE -> LA SPEZIA C
+ ENTRALE) [Transito]\n  - REG 19362 (PISA CENTRALE -> LA SPEZIA CENTRALE)\n
+   - TRENO 8620 (ROMA TERMINI -> MILANO CENTRALE) (+5m)\n  - REG 19249 (PAR
+ MA -> LA SPEZIA CENTRALE)\nRitardo massimo rilevato: 5 min\nAffidabilità 
+ stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: inter
+ vallo utile tra i passaggi (30s) inferiore alla soglia minima di sgombero 
+ stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:5
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3277--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T170630Z
 DTEND:20261122T171600Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 18:06 - 18:16 (primo: REG 3277) (+1 m
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 18:06 - 18:16 (primo: REG 3277) (+1 m
  in)
 DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 18:06:30 - 18:16:00\nTre
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 18:06:30 - 18:16:00\nTre
  ni coinvolti nella chiusura:\n  - REG 3277 (GENOVA BRIGNOLE -> LA SPEZIA C
- ENTRALE)\n  - REG 3277 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE)\n  - IC 684
-  (GROSSETO -> MILANO CENTRALE) [Transito]\n  - TRENO 8623 (TORINO PORTA NU
- OVA -> ROMA TERMINI) (+1m)\n  - TRENO 8623 (TORINO PORTA NUOVA -> ROMA TER
- MINI) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNo
- ta normativa/euristica: Chiusura continua per 5 treni: intervallo utile tr
- a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ ENTRALE)\n  - IC 684 (GROSSETO -> MILANO CENTRALE) [Transito]\n  - TRENO 8
+ 623 (TORINO PORTA NUOVA -> ROMA TERMINI) (+1m)\nRitardo massimo rilevato: 
+ 1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
+ ua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+  minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19370--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T172001Z
-DTEND:20261122T172531Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:20 - 18:25 (primo: REG 19370)
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:20:01 - 18:25:31\nTre
- ni coinvolti nella chiusura:\n  - REG 19370 (PISA CENTRALE -> LA SPEZIA CE
- NTRALE) [Transito]\n  - REG 19370 (PISA CENTRALE -> LA SPEZIA CENTRALE) [T
- ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i
-  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-673--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T172848Z
-DTEND:20261122T173700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:28 - 18:37 (primo: IC 673)
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:28:48 - 18:37:00\nTre
- ni coinvolti nella chiusura:\n  - IC 673 (MILANO CENTRALE -> LIVORNO CENTR
- ALE) [Transito]\n  - IC 684 (GROSSETO -> MILANO CENTRALE)\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
- sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18385--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T174201Z
-DTEND:20261122T174731Z
-SUMMARY:[TRANSITO VELOCE] REG 18385 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZ
- IA CENTRALE) ore 18:46
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T172000Z
+DTEND:20261122T172530Z
+SUMMARY:[TRANSITO VELOCE] REG 19370 (PISA CENTRALE -> LA SPEZIA CENTRALE) o
+ re 18:24
 DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 18:42:01 - 18:47:31\nTreni coinvolti
-  nella chiusura:\n  - REG 18385 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA 
- CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 78%\nNota normativa/euristica: Transito stimato senza fermata (55% tratt
- a MASSA CENTRO -> CARRARA AVENZA\; pedale annuncio fisso Vmax)
+ SITO VELOCE\nChiusura sbarre stimata: 18:20:00 - 18:25:30\nTreni coinvolti
+  nella chiusura:\n  - REG 19370 (PISA CENTRALE -> LA SPEZIA CENTRALE) [Tra
+ nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Transito stimato senza fermata (54% tratta MASSA CENTRO
+  -> CARRARA AVENZA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -957,32 +890,53 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-19251--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T175030Z
-DTEND:20261122T175900Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 18:50 - 18:59 (primo: REG 19251)
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 18:50:30 - 18:59:00\nTre
- ni coinvolti nella chiusura:\n  - REG 19251 (PARMA -> LA SPEZIA CENTRALE)\
- n  - REG 19370 (PISA CENTRALE -> LA SPEZIA CENTRALE)\n  - REG 19370 (PISA 
- CENTRALE -> LA SPEZIA CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 90%\nNota normativa/euristica: Chiusura continua per 3 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
+UID:train-684--20261121-S06000@pl-tracker.local
+DTSTAMP:20261122T210441Z
+SEQUENCE:0
+DTSTART:20261122T173215Z
+DTEND:20261122T173700Z
+SUMMARY:[FERMATA] IC 684 (GROSSETO -> MILANO CENTRALE) ore 18:36
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 18:32:15 - 18:37:00\nTreni coinvolti nella c
+ hiusura:\n  - IC 684 (GROSSETO -> MILANO CENTRALE)\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
+ da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18385--20261121-S06000@pl-tracker.local
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T174200Z
+DTEND:20261122T175900Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 18:42 - 18:59 (primo: REG 18385)
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
+ SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 18:42:00 - 18:59:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 18385 (FIRENZE SANTA MARIA NOVELLA -
+ > LA SPEZIA CENTRALE) [Transito]\n  - IC 673 (MILANO CENTRALE -> LIVORNO C
+ ENTRALE) [Transito]\n  - REG 19251 (PARMA -> LA SPEZIA CENTRALE)\n  - REG 
+ 19370 (PISA CENTRALE -> LA SPEZIA CENTRALE)\nRitardo massimo rilevato: 0 m
+ in\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua 
+ per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
+ nima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18385--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T181630Z
 DTEND:20261122T182200Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:16 - 19:22 (primo: REG 18385)
@@ -1002,76 +956,72 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8591--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T184230Z
-DTEND:20261122T184700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:42 - 19:47 (primo: TRENO 8591)
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:42:30 - 19:47:00\nTre
- ni coinvolti nella chiusura:\n  - TRENO 8591 (GENOVA PIAZZA PRINCIPE -> RO
- MA TERMINI)\n  - TRENO 8591 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI)\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euri
- stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
-  inferiore alla soglia minima di sgombero stradale (120s)
+UID:train-518--20261121-S06000@pl-tracker.local
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T183012Z
+DTEND:20261122T183442Z
+SUMMARY:[TRANSITO VELOCE] IC 518 (ROMA TERMINI -> VENTIMIGLIA) ore 19:33 (+
+ 6 min)
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 19:30:12 - 19:34:42\nTreni coinvolti
+  nella chiusura:\n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA) (+6m) [Transito
+ ]\nRitardo massimo rilevato: 6 min\nAffidabilità stima: 78%\nNota normati
+ va/euristica: Transito stimato senza fermata (67% tratta VIAREGGIO -> MASS
+ A CENTRO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8591--20261121-S06000@pl-tracker.local
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T184230Z
+DTEND:20261122T184700Z
+SUMMARY:[FERMATA] TRENO 8591 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI) ore 1
+ 9:46
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 19:42:30 - 19:47:00\nTreni coinvolti nella c
+ hiusura:\n  - TRENO 8591 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI)\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristi
+ ca: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-518--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T190315Z
 DTEND:20261122T190800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:03 - 20:08 (primo: IC 518) (+6 min
- )
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:03:15 - 20:08:00\nTre
- ni coinvolti nella chiusura:\n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA) (+6
- m)\n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA) (+6m)\nRitardo massimo rileva
- to: 6 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura co
- ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
- glia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] IC 518 (ROMA TERMINI -> VENTIMIGLIA) ore 20:07 (+6 min)
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 20:03:15 - 20:08:00\nTreni coinvolti nella c
+ hiusura:\n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA) (+6m)\nRitardo massimo 
+ rilevato: 6 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previ
+ sione con ritardo propagato (+6 min)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-679--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T192848Z
-DTEND:20261122T193318Z
-SUMMARY:[TRANSITO VELOCE] IC 679 (MILANO CENTRALE -> LIVORNO CENTRALE) ore 
- 20:32
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 20:28:48 - 20:33:18\nTreni coinvolti
-  nella chiusura:\n  - IC 679 (MILANO CENTRALE -> LIVORNO CENTRALE) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Transito stimato senza fermata (54% tratta CHIAVARI -> SES
- TRI LEVANTE\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
 UID:train-8626--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T194030Z
 DTEND:20261122T194500Z
 SUMMARY:[FERMATA] TRENO 8626 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) ore 2
@@ -1091,155 +1041,143 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-679--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T194717Z
-DTEND:20261122T200257Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:47 - 21:02 (primo: IC 679)
+DTEND:20261122T195611Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:47 - 20:56 (primo: IC 679)
 DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 20:47:17 - 21:02:57\nTre
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:47:17 - 20:56:11\nTre
  ni coinvolti nella chiusura:\n  - IC 679 (MILANO CENTRALE -> LIVORNO CENTR
- ALE) [Transito]\n  - REG 3283 (GENOVA BRIGNOLE -> PARMA) [Transito]\n  - R
- EG 3283 (GENOVA BRIGNOLE -> PARMA) [Transito]\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
- a per 3 treni: intervallo utile tra i passaggi (73s) inferiore alla soglia
-  minima di sgombero stradale (120s)
+ ALE) [Transito]\n  - REG 3283 (GENOVA BRIGNOLE -> PARMA) [Transito]\nRitar
+ do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
+ inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3283--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T200830Z
-DTEND:20261122T201445Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 21:08 - 21:14 (primo: REG 3283)
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 21:08:30 - 21:14:45\nTre
- ni coinvolti nella chiusura:\n  - REG 3283 (GENOVA BRIGNOLE -> PARMA)\n  -
-  REG 3283 (GENOVA BRIGNOLE -> PARMA)\n  - REG 2295 (MILANO PORTA GARIBALDI
-  -> LIVORNO CENTRALE) [Transito]\n  - REG 2295 (MILANO PORTA GARIBALDI -> 
- LIVORNO CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+DTEND:20261122T201300Z
+SUMMARY:[FERMATA] REG 3283 (GENOVA BRIGNOLE -> PARMA) ore 21:12
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 21:08:30 - 21:13:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 3283 (GENOVA BRIGNOLE -> PARMA)\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
+ a traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-679--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T201715Z
-DTEND:20261122T202838Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:17 - 21:28 (primo: IC 679)
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 21:17:15 - 21:28:38\nTre
- ni coinvolti nella chiusura:\n  - IC 679 (MILANO CENTRALE -> LIVORNO CENTR
- ALE)\n  - IC 679 (MILANO CENTRALE -> LIVORNO CENTRALE)\n  - REG 3287 (GENO
- VA BRIGNOLE -> LA SPEZIA CENTRALE) [Transito]\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
- a per 3 treni: intervallo utile tra i passaggi (68s) inferiore alla soglia
-  minima di sgombero stradale (120s)
+DTEND:20261122T202200Z
+SUMMARY:[FERMATA] IC 679 (MILANO CENTRALE -> LIVORNO CENTRALE) ore 21:21
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 21:17:15 - 21:22:00\nTreni coinvolti nella c
+ hiusura:\n  - IC 679 (MILANO CENTRALE -> LIVORNO CENTRALE)\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pre
+ visione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3286--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T203130Z
-DTEND:20261122T203746Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:31 - 21:37 (primo: REG 3286)
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:31:30 - 21:37:46\nTre
- ni coinvolti nella chiusura:\n  - REG 3286 (LA SPEZIA CENTRALE -> GENOVA B
- RIGNOLE)\n  - IC 685 (MILANO CENTRALE -> LIVORNO CENTRALE) [Transito]\nRit
- ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
- ) inferiore alla soglia minima di sgombero stradale (120s)
+DTEND:20261122T203600Z
+SUMMARY:[FERMATA] REG 3286 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) ore 21:3
+ 5
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 21:31:30 - 21:36:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 3286 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE)\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica:
+  Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-19308--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T210230Z
-DTEND:20261122T210700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:02 - 22:07 (primo: REG 19308)
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:02:30 - 22:07:00\nTre
- ni coinvolti nella chiusura:\n  - REG 19308 (LA SPEZIA CENTRALE -> PONTREM
- OLI)\n  - REG 19308 (LA SPEZIA CENTRALE -> PONTREMOLI)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3287--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T211130Z
-DTEND:20261122T212200Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 22:11 - 22:22 (primo: REG 3287)
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 22:11:30 - 22:22:00\nTre
- ni coinvolti nella chiusura:\n  - REG 3287 (GENOVA BRIGNOLE -> LA SPEZIA C
- ENTRALE)\n  - IC 685 (MILANO CENTRALE -> LIVORNO CENTRALE)\n  - IC 685 (MI
- LANO CENTRALE -> LIVORNO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 90%\nNota normativa/euristica: Chiusura continua per 3 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T204941Z
+DTEND:20261122T205511Z
+SUMMARY:[TRANSITO VELOCE] REG 3287 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) 
+ ore 21:53
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 21:49:41 - 21:55:11\nTreni coinvolti
+  nella chiusura:\n  - REG 3287 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) [Tr
+ ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Transito stimato senza fermata (79% tratta LEVANTO -> 
+ MONTEROSSO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19308--20261121-S06000@pl-tracker.local
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T210230Z
+DTEND:20261122T210700Z
+SUMMARY:[FERMATA] REG 19308 (LA SPEZIA CENTRALE -> PONTREMOLI) ore 22:06
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 22:02:30 - 22:07:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 19308 (LA SPEZIA CENTRALE -> PONTREMOLI)\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pre
+ visione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-19259--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
-DTSTART:20261122T215030Z
-DTEND:20261122T215500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:50 - 22:55 (primo: REG 19259)
+UID:train-3287--20261121-S06000@pl-tracker.local
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T211130Z
+DTEND:20261122T212200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:11 - 22:22 (primo: REG 3287)
 DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:50:30 - 22:55:00\nTre
- ni coinvolti nella chiusura:\n  - REG 19259 (PARMA -> LA SPEZIA CENTRALE)\
- n  - REG 19259 (PARMA -> LA SPEZIA CENTRALE)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:11:30 - 22:22:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 3287 (GENOVA BRIGNOLE -> LA SPEZIA C
+ ENTRALE)\n  - IC 685 (MILANO CENTRALE -> LIVORNO CENTRALE)\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
+ usura continua per 2 treni: intervallo utile tra i passaggi (75s) inferior
+ e alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -1249,9 +1187,29 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-19259--20261121-S06000@pl-tracker.local
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
+DTSTART:20261122T215030Z
+DTEND:20261122T215500Z
+SUMMARY:[FERMATA] REG 19259 (PARMA -> LA SPEZIA CENTRALE) ore 22:54
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 22:50:30 - 22:55:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 19259 (PARMA -> LA SPEZIA CENTRALE)\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
+ ne da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-8596--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T222130Z
 DTEND:20261122T222600Z
 SUMMARY:[FERMATA] TRENO 8596 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) ore 2
@@ -1271,74 +1229,70 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-687--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T225015Z
 DTEND:20261122T225445Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:50 - 23:54 (primo: IC 687)
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 23:50:15 - 23:54:45\nTre
- ni coinvolti nella chiusura:\n  - IC 687 (MILANO CENTRALE -> LA SPEZIA CEN
- TRALE) [Transito]\n  - IC 687 (MILANO CENTRALE -> LA SPEZIA CENTRALE) [Tra
- nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i p
- assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] IC 687 (MILANO CENTRALE -> LA SPEZIA CENTRALE) or
+ e 23:53
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 23:50:15 - 23:54:45\nTreni coinvolti
+  nella chiusura:\n  - IC 687 (MILANO CENTRALE -> LA SPEZIA CENTRALE) [Tran
+ sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
+ mativa/euristica: Transito stimato senza fermata (67% tratta SESTRI LEVANT
+ E -> LEVANTO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-687--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T232115Z
 DTEND:20261122T232600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 00:21 - 00:26 (primo: IC 687)
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 00:21:15 - 00:26:00\nTre
- ni coinvolti nella chiusura:\n  - IC 687 (MILANO CENTRALE -> LA SPEZIA CEN
- TRALE)\n  - IC 687 (MILANO CENTRALE -> LA SPEZIA CENTRALE)\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
- usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] IC 687 (MILANO CENTRALE -> LA SPEZIA CENTRALE) ore 00:25
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 00:21:15 - 00:26:00\nTreni coinvolti nella c
+ hiusura:\n  - IC 687 (MILANO CENTRALE -> LA SPEZIA CENTRALE)\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
+ revisione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-799--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261123T002015Z
 DTEND:20261123T002500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 01:20 - 01:25 (primo: ICN 799)
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 01:20:15 - 01:25:00\nTre
- ni coinvolti nella chiusura:\n  - ICN 799 (TORINO PORTA NUOVA -> SALERNO)\
- n  - ICN 799 (TORINO PORTA NUOVA -> SALERNO)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
+SUMMARY:[FERMATA] ICN 799 (TORINO PORTA NUOVA -> SALERNO) ore 01:24
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 01:20:15 - 01:25:00\nTreni coinvolti nella c
+ hiusura:\n  - ICN 799 (TORINO PORTA NUOVA -> SALERNO)\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
+ ne da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-796--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261123T031915Z
 DTEND:20261123T032400Z
 SUMMARY:[FERMATA] ICN 796 (SALERNO -> TORINO PORTA NUOVA) ore 04:23
@@ -1357,22 +1311,21 @@ X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-812--20261121-S06000@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261123T120315Z
 DTEND:20261123T120800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:03 - 13:08 (primo: ICN 812)
-DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:03:15 - 13:08:00\nTre
- ni coinvolti nella chiusura:\n  - ICN 812 (REGGIO DI CALABRIA CENTRALE -> 
- TORINO PORTA NUOVA)\n  - ICN 812 (REGGIO DI CALABRIA CENTRALE -> TORINO PO
- RTA NUOVA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNot
- a normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra
-  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] ICN 812 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA NUOV
+ A) ore 13:07
+DESCRIPTION:Stazione/PL: LA SPEZIA CENTRALE (S06000)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 13:03:15 - 13:08:00\nTreni coinvolti nella c
+ hiusura:\n  - ICN 812 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA NUOVA)\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa
+ /euristica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione LA SPEZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:ICN

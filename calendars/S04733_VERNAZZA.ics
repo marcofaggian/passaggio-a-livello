@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:9d7ca25d01827b545cf8136d242a89e80d3f05e245c9426546cd2844b624
- a733
+X-CONTENT-HASH:7ee4d34e4233e0f54a45d876c188bb9af7c737f3127d342f87103302c4f5
+ 10d9
 BEGIN:VEVENT
 UID:train-12210--20261121-S04733@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T002230Z
 DTEND:20261122T002700Z
 SUMMARY:[FERMATA] REG 12210 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) ore 01:2
@@ -33,29 +33,32 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-12316--20261121-S04733@pl-tracker.local
-DTSTAMP:20261122T150820Z
+UID:train-501--20261121-S04733@pl-tracker.local
+DTSTAMP:20261122T210441Z
 SEQUENCE:0
-DTSTART:20261122T042330Z
+DTSTART:20261122T042252Z
 DTEND:20261122T042800Z
-SUMMARY:[FERMATA] REG 12316 (LA SPEZIA CENTRALE -> SAVONA) ore 05:27
-DESCRIPTION:Stazione/PL: VERNAZZA (S04733)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 05:23:30 - 05:28:00\nTreni coinvolti nella chiusura:\n
-   - REG 12316 (LA SPEZIA CENTRALE -> SAVONA)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
- ccia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:22 - 05:28 (primo: IC 501) (+11 mi
+ n)
+DESCRIPTION:Stazione/PL: VERNAZZA (S04733)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 05:22:52 - 05:28:00\nTreni coinvol
+ ti nella chiusura:\n  - IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) (+11m) 
+ [Transito]\n  - REG 12316 (LA SPEZIA CENTRALE -> SAVONA)\nRitardo massimo 
+ rilevato: 11 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
+ sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERNAZZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:11
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12322--20261121-S04733@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T051430Z
 DTEND:20261122T051900Z
 SUMMARY:[FERMATA] REG 12322 (LA SPEZIA CENTRALE -> SAVONA) ore 06:18
@@ -74,54 +77,50 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12218--20261121-S04733@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T073130Z
 DTEND:20261122T073630Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:31 - 08:36 (primo: REG 12218) (+5 
- min)
-DESCRIPTION:Stazione/PL: VERNAZZA (S04733)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 08:31:30 - 08:36:30\nTreni coinvol
- ti nella chiusura:\n  - REG 12218 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) (
- +5m)\n  - REG 12218 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) (+5m)\nRitardo 
- massimo rilevato: 5 min\nAffidabilità stima: 99%\nNota normativa/euristic
- a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 12218 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) ore 08:3
+ 5 (+5 min)
+DESCRIPTION:Stazione/PL: VERNAZZA (S04733)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 08:31:30 - 08:36:30\nTreni coinvolti nella chiusura:\n
+   - REG 12218 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) (+5m)\nRitardo massim
+ o rilevato: 5 min\nAffidabilità stima: 99%\nNota normativa/euristica: Ril
+ evamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione VERNAZZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12323--20261121-S04733@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T075330Z
 DTEND:20261122T075830Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:53 - 08:58 (primo: REG 12323) (+1 
- min)
-DESCRIPTION:Stazione/PL: VERNAZZA (S04733)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 08:53:30 - 08:58:30\nTreni coinvol
- ti nella chiusura:\n  - REG 12323 (SAVONA -> LA SPEZIA CENTRALE) (+1m)\n  
- - REG 12323 (SAVONA -> LA SPEZIA CENTRALE) (+1m)\nRitardo massimo rilevato
- : 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura cont
- inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 12323 (SAVONA -> LA SPEZIA CENTRALE) ore 08:57 (+1 mi
+ n)
+DESCRIPTION:Stazione/PL: VERNAZZA (S04733)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 08:53:30 - 08:58:30\nTreni coinvolti nella chiusura:\n
+   - REG 12323 (SAVONA -> LA SPEZIA CENTRALE) (+1m)\nRitardo massimo rileva
+ to: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento
+  reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione VERNAZZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12222--20261121-S04733@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T092930Z
 DTEND:20261122T093400Z
 SUMMARY:[FERMATA] REG 12222 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) ore 10:3
@@ -140,9 +139,30 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-657--20261121-S04733@pl-tracker.local
+DTSTAMP:20261122T210441Z
+SEQUENCE:0
+DTSTART:20261122T095816Z
+DTEND:20261122T100246Z
+SUMMARY:[TRANSITO VELOCE] IC 657 (MILANO CENTRALE -> GROSSETO) ore 11:01
+DESCRIPTION:Stazione/PL: VERNAZZA (S04733)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 10:58:16 - 11:02:46\nTreni coinvolti nella chi
+ usura:\n  - IC 657 (MILANO CENTRALE -> GROSSETO) [Transito]\nRitardo massi
+ mo rilevato: -10 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Transito stimato senza fermata (79% tratta LEVANTO -> MONTEROSSO\; pedale 
+ annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione VERNAZZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-10
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
 UID:train-12224--20261121-S04733@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T102630Z
 DTEND:20261122T103100Z
 SUMMARY:[FERMATA] REG 12224 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) ore 11:3
@@ -161,41 +181,19 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3266--20261121-S04733@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T105300Z
-DTEND:20261122T105830Z
-SUMMARY:[TRANSITO VELOCE] REG 3266 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) 
- ore 11:57
-DESCRIPTION:Stazione/PL: VERNAZZA (S04733)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 11:53:00 - 11:58:30\nTreni coinvolti nella chi
- usura:\n  - REG 3266 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) [Transito]\nR
- itardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/
- euristica: Transito stimato senza fermata (32% tratta CORNIGLIA -> LEVANTO
- \; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione VERNAZZA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:-1
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-3265--20261121-S04733@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T110030Z
-DTEND:20261122T110600Z
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T110443Z
+DTEND:20261122T111013Z
 SUMMARY:[TRANSITO VELOCE] REG 3265 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) 
- ore 12:04
+ ore 12:08
 DESCRIPTION:Stazione/PL: VERNAZZA (S04733)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 12:00:30 - 12:06:00\nTreni coinvolti nella chi
+ E\nChiusura sbarre stimata: 12:04:43 - 12:10:13\nTreni coinvolti nella chi
  usura:\n  - REG 3265 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) [Transito]\nR
  itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Transito stimato senza fermata (73% tratta LEVANTO -> CORNIGLIA\
- ; pedale annuncio fisso Vmax)
+ uristica: Transito stimato senza fermata (24% tratta CORNIGLIA -> RIOMAGGI
+ ORE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VERNAZZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -206,31 +204,29 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12226--20261121-S04733@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
 DTSTART:20261122T113130Z
 DTEND:20261122T113700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:31 - 12:37 (primo: REG 12226) (+5 
- min)
-DESCRIPTION:Stazione/PL: VERNAZZA (S04733)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 12:31:30 - 12:37:00\nTreni coinvol
- ti nella chiusura:\n  - REG 12226 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) (
- +5m)\n  - REG 12226 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) (+5m)\nRitardo 
- massimo rilevato: 5 min\nAffidabilità stima: 99%\nNota normativa/euristic
- a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 12226 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) ore 12:3
+ 6 (+5 min)
+DESCRIPTION:Stazione/PL: VERNAZZA (S04733)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 12:31:30 - 12:37:00\nTreni coinvolti nella chiusura:\n
+   - REG 12226 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) (+5m)\nRitardo massim
+ o rilevato: 5 min\nAffidabilità stima: 99%\nNota normativa/euristica: Ril
+ evamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione VERNAZZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12234--20261121-S04733@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T152630Z
 DTEND:20261122T153100Z
 SUMMARY:[FERMATA] REG 12234 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) ore 16:3
@@ -250,39 +246,38 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12236--20261121-S04733@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:2
+DTSTAMP:20261122T210441Z
+SEQUENCE:3
 DTSTART:20261122T162730Z
 DTEND:20261122T163200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:27 - 17:32 (primo: REG 12236)
-DESCRIPTION:Stazione/PL: VERNAZZA (S04733)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 17:27:30 - 17:32:00\nTreni coinvol
- ti nella chiusura:\n  - REG 12236 (LA SPEZIA CENTRALE -> SESTRI LEVANTE)\n
+SUMMARY:[FERMATA] REG 12236 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) ore 17:3
+ 1
+DESCRIPTION:Stazione/PL: VERNAZZA (S04733)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 17:27:30 - 17:32:00\nTreni coinvolti nella chiusura:\n
    - REG 12236 (LA SPEZIA CENTRALE -> SESTRI LEVANTE)\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura 
- continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+ vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
+ e da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VERNAZZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3277--20261121-S04733@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:0
-DTSTART:20261122T164846Z
-DTEND:20261122T165416Z
+DTSTAMP:20261122T210441Z
+SEQUENCE:1
+DTSTART:20261122T164842Z
+DTEND:20261122T165412Z
 SUMMARY:[TRANSITO VELOCE] REG 3277 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) 
- ore 17:53
+ ore 17:52
 DESCRIPTION:Stazione/PL: VERNAZZA (S04733)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 17:48:46 - 17:54:16\nTreni coinvolti nella chi
+ E\nChiusura sbarre stimata: 17:48:42 - 17:54:12\nTreni coinvolti nella chi
  usura:\n  - REG 3277 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) [Transito]\nR
  itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Transito stimato senza fermata (80% tratta LEVANTO -> MONTEROSSO
+ uristica: Transito stimato senza fermata (79% tratta LEVANTO -> MONTEROSSO
  \; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VERNAZZA
 STATUS:CONFIRMED
@@ -293,24 +288,25 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3283--20261121-S04733@pl-tracker.local
-DTSTAMP:20261122T150820Z
-SEQUENCE:1
-DTSTART:20261122T195046Z
-DTEND:20261122T195616Z
-SUMMARY:[TRANSITO VELOCE] REG 3283 (GENOVA BRIGNOLE -> PARMA) ore 20:55
+UID:train-679--20261121-S04733@pl-tracker.local
+DTSTAMP:20261122T210441Z
+SEQUENCE:0
+DTSTART:20261122T200002Z
+DTEND:20261122T200432Z
+SUMMARY:[TRANSITO VELOCE] IC 679 (MILANO CENTRALE -> LIVORNO CENTRALE) ore 
+ 21:03
 DESCRIPTION:Stazione/PL: VERNAZZA (S04733)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 20:50:46 - 20:56:16\nTreni coinvolti nella chi
- usura:\n  - REG 3283 (GENOVA BRIGNOLE -> PARMA) [Transito]\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
- nsito stimato senza fermata (80% tratta LEVANTO -> MONTEROSSO\; pedale ann
- uncio fisso Vmax)
+ E\nChiusura sbarre stimata: 21:00:02 - 21:04:32\nTreni coinvolti nella chi
+ usura:\n  - IC 679 (MILANO CENTRALE -> LIVORNO CENTRALE) [Transito]\nRitar
+ do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Transito stimato senza fermata (79% tratta LEVANTO -> MONTEROSSO\; p
+ edale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VERNAZZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 END:VCALENDAR
