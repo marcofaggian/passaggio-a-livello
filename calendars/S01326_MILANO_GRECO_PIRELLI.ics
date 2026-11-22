@@ -9,20 +9,20 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:6e9921b88e678cce662d82e3d3f52b46b309e5e64a6d269cf75e534eeb05
- 06e3
+X-CONTENT-HASH:6edeae760102915266c0301a9d959a719278672e91050233b535445110ed
+ 26ba
 BEGIN:VEVENT
 UID:train-2814--20261120-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:3
-DTSTART:20261121T062614Z
-DTEND:20261121T063144Z
+DTSTAMP:20261122T065144Z
+SEQUENCE:4
+DTSTART:20261121T062622Z
+DTEND:20261121T063152Z
 SUMMARY:[TRANSITO VELOCE] REG 2814 (MILANO CENTRALE -> SONDRIO) ore 07:30
 DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: TR
- ANSITO VELOCE\nChiusura sbarre stimata: 07:26:14 - 07:31:44\nTreni coinvol
+ ANSITO VELOCE\nChiusura sbarre stimata: 07:26:22 - 07:31:52\nTreni coinvol
  ti nella chiusura:\n  - REG 2814 (MILANO CENTRALE -> SONDRIO) [Transito]\n
  Ritardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Transito stimato senza fermata (62% tratta MILANO CENTRALE -> 
+ /euristica: Transito stimato senza fermata (63% tratta MILANO CENTRALE -> 
  MONZA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
 STATUS:CONFIRMED
@@ -33,40 +33,108 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2832--20261120-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:2
-DTSTART:20261121T151933Z
-DTEND:20261121T152503Z
-SUMMARY:[TRANSITO VELOCE] REG 2832 (SONDRIO -> TIRANO) ore 16:23
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: TR
- ANSITO VELOCE\nChiusura sbarre stimata: 16:19:33 - 16:25:03\nTreni coinvol
- ti nella chiusura:\n  - REG 2832 (SONDRIO -> TIRANO) [Transito]\nRitardo m
- assimo rilevato: -3 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Transito stimato senza fermata (62% tratta MILANO CENTRALE -> MONZA\; p
- edale annuncio fisso Vmax)
+UID:train-24918--20261121-S01326@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T052830Z
+DTEND:20261122T053900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:28 - 06:39 (primo: REG 24918)
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:28:30 - 06:39:00\nT
+ reni coinvolti nella chiusura:\n  - REG 24918 (MILANO PORTA GARIBALDI -> S
+ ARONNO)\n  - REG 25819 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO)\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (90s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:-3
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10198--20261121-S01326@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T062430Z
+DTEND:20261122T062900Z
+SUMMARY:[FERMATA] REG 10198 (MILANO PORTA GARIBALDI -> CHIAVENNA) ore 07:28
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 07:24:30 - 07:29:00\nTreni coinvolti nella
+  chiusura:\n  - REG 10198 (MILANO PORTA GARIBALDI -> CHIAVENNA)\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
+ : Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25823--20261121-S01326@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T063430Z
+DTEND:20261122T065112Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 07:34 - 07:51 (primo: REG 25823)
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
+ IUSURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 07:34:30 - 07:51:12\nT
+ reni coinvolti nella chiusura:\n  - REG 25823 (MILANO PORTA GARIBALDI -> P
+ ONTE S.PIETRO)\n  - REG 10857 (MILANO GRECO PIRELLI -> PIACENZA)\n  - REG 
+ 3063 (MILANO GRECO PIRELLI -> SESTRI LEVANTE)\n  - REG 25024 (MILANO PORTA
+  GARIBALDI -> COMO S.GIOVANNI)\n  - REG 25298 (MILANO CENTRALE -> CHIASSO)
+  [Transito]\n  - REG 2655 (MILANO PORTA GARIBALDI -> VERONA PORTA NUOVA) [
+ Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Chiusura continua per 6 treni: intervallo utile tra 
+ i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-10455--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T051910Z
-DTEND:20261122T052440Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:19 - 06:24 (primo: REG 10455)
+UID:train-2314--20261121-S01326@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T071130Z
+DTEND:20261122T072100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:11 - 08:21 (primo: REG 2314)
 DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:19:10 - 06:24:40\nT
- reni coinvolti nella chiusura:\n  - REG 10455 (MILANO PORTA GARIBALDI -> S
- TRADELLA) [Transito]\n  - REG 10455 (MILANO PORTA GARIBALDI -> STRADELLA) 
- [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
- a normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra
-  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:11:30 - 08:21:00\nT
+ reni coinvolti nella chiusura:\n  - REG 2314 (TORTONA -> MILANO GRECO PIRE
+ LLI)\n  - REG 10856 (PIACENZA -> MILANO GRECO PIRELLI)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
+ a continua per 2 treni: intervallo utile tra i passaggi (30s) inferiore al
+ la soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24707--20261121-S01326@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T091930Z
+DTEND:20261122T092811Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:19 - 10:28 (primo: REG 24707)
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:19:30 - 10:28:11\nT
+ reni coinvolti nella chiusura:\n  - REG 24707 (MILANO PORTA GARIBALDI -> V
+ ILLASANTA PARCO)\n  - REG 2820 (MILANO CENTRALE -> TIRANO) [Transito]\nRit
+ ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -76,40 +144,335 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-24918--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T052830Z
-DTEND:20261122T053900Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:28 - 06:39 (primo: REG 24918)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 06:28:30 - 06:39:00\nT
- reni coinvolti nella chiusura:\n  - REG 24918 (MILANO PORTA GARIBALDI -> S
- ARONNO)\n  - REG 24918 (MILANO PORTA GARIBALDI -> SARONNO)\n  - REG 25819 
- (MILANO PORTA GARIBALDI -> PONTE S.PIETRO)\n  - REG 25819 (MILANO PORTA GA
- RIBALDI -> PONTE S.PIETRO)\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 90%\nNota normativa/euristica: Chiusura continua per 4 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+UID:train-25835--20261121-S01326@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T093430Z
+DTEND:20261122T093900Z
+SUMMARY:[FERMATA] REG 25835 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO) ore 
+ 10:38
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 10:34:30 - 10:39:00\nTreni coinvolti nella
+  chiusura:\n  - REG 25835 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO)\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euri
+ stica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-10198--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T062430Z
-DTEND:20261122T062900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:24 - 07:29 (primo: REG 10198)
+UID:train-25036--20261121-S01326@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T094230Z
+DTEND:20261122T094955Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:42 - 10:49 (primo: REG 25036)
 DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:24:30 - 07:29:00\nT
- reni coinvolti nella chiusura:\n  - REG 10198 (MILANO PORTA GARIBALDI -> C
- HIAVENNA)\n  - REG 10198 (MILANO PORTA GARIBALDI -> CHIAVENNA)\nRitardo ma
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:42:30 - 10:49:55\nT
+ reni coinvolti nella chiusura:\n  - REG 25036 (MILANO PORTA GARIBALDI -> C
+ OMO S.GIOVANNI)\n  - REG 32936 (MILANO CENTRALE -> CHIASSO) [Transito]\nRi
+ tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
+ ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
+ s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25038--20261121-S01326@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T101230Z
+DTEND:20261122T101700Z
+SUMMARY:[FERMATA] REG 25038 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI) ore
+  11:16
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 11:12:30 - 11:17:00\nTreni coinvolti nella
+  chiusura:\n  - REG 25038 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)\nRit
+ ardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eur
+ istica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24709--20261121-S01326@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T101930Z
+DTEND:20261122T102400Z
+SUMMARY:[FERMATA] REG 24709 (MILANO PORTA GARIBALDI -> VILLASANTA PARCO) or
+ e 11:23
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 11:19:30 - 11:24:00\nTreni coinvolti nella
+  chiusura:\n  - REG 24709 (MILANO PORTA GARIBALDI -> VILLASANTA PARCO)\nRi
+ tardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eu
+ ristica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25839--20261121-S01326@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T103430Z
+DTEND:20261122T103900Z
+SUMMARY:[FERMATA] REG 25839 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO) ore 
+ 11:38
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 11:34:30 - 11:39:00\nTreni coinvolti nella
+  chiusura:\n  - REG 25839 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO)\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euri
+ stica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25040--20261121-S01326@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T104230Z
+DTEND:20261122T104700Z
+SUMMARY:[FERMATA] REG 25040 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI) ore
+  11:46
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 11:42:30 - 11:47:00\nTreni coinvolti nella
+  chiusura:\n  - REG 25040 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)\nRit
+ ardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eur
+ istica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24840--20261121-S01326@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T105430Z
+DTEND:20261122T105900Z
+SUMMARY:[FERMATA] REG 24840 (MILANO PORTA GARIBALDI -> LECCO) ore 11:58
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 11:54:30 - 11:59:00\nTreni coinvolti nella
+  chiusura:\n  - REG 24840 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pr
+ evisione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25042--20261121-S01326@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T111230Z
+DTEND:20261122T111700Z
+SUMMARY:[FERMATA] REG 25042 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI) ore
+  12:16
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 12:12:30 - 12:17:00\nTreni coinvolti nella
+  chiusura:\n  - REG 25042 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)\nRit
+ ardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eur
+ istica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3026--20261121-S01326@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T121530Z
+DTEND:20261122T122000Z
+SUMMARY:[FERMATA] REG 3026 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO PIRELLI)
+  ore 13:19
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 13:15:30 - 13:20:00\nTreni coinvolti nella
+  chiusura:\n  - REG 3026 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO PIRELLI)\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa
+ /euristica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24789--20261121-S01326@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T141930Z
+DTEND:20261122T143900Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 15:19 - 15:39 (primo: REG 24789)
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
+ IUSURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 15:19:30 - 15:39:00\nT
+ reni coinvolti nella chiusura:\n  - REG 24789 (MILANO PORTA GARIBALDI -> V
+ ILLASANTA PARCO)\n  - REG 2830 (MILANO CENTRALE -> TIRANO) [Transito]\n  -
+  REG 10370 (MILANO PORTA GARIBALDI -> SONDRIO)\n  - REG 10473 (MILANO PORT
+ A GARIBALDI -> STRADELLA) [Transito]\n  - REG 25855 (MILANO PORTA GARIBALD
+ I -> PONTE S.PIETRO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
+ : 78%\nNota normativa/euristica: Chiusura continua per 5 treni: intervallo
+  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
+ le (120s)
+LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25354--20261121-S01326@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T144425Z
+DTEND:20261122T144955Z
+SUMMARY:[TRANSITO VELOCE] REG 25354 (MILANO CENTRALE -> CHIASSO) ore 15:48
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: TR
+ ANSITO VELOCE\nChiusura sbarre stimata: 15:44:25 - 15:49:55\nTreni coinvol
+ ti nella chiusura:\n  - REG 25354 (MILANO CENTRALE -> CHIASSO) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Transito stimato senza fermata (63% tratta MILANO CENTRALE -> 
+ MONZA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24856--20261121-S01326@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T145430Z
+DTEND:20261122T145900Z
+SUMMARY:[FERMATA] REG 24856 (MILANO PORTA GARIBALDI -> LECCO) ore 15:58
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 15:54:30 - 15:59:00\nTreni coinvolti nella
+  chiusura:\n  - REG 24856 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pr
+ evisione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2332--20261121-S01326@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T151530Z
+DTEND:20261122T152400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:15 - 16:24 (primo: REG 2332)
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:15:30 - 16:24:00\nT
+ reni coinvolti nella chiusura:\n  - REG 2332 (NOVI LIGURE -> MILANO GRECO 
+ PIRELLI)\n  - REG 24791 (MILANO PORTA GARIBALDI -> VILLASANTA PARCO)\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euri
+ stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
+  inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2333--20261121-S01326@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T154130Z
+DTEND:20261122T154700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:41 - 16:47 (primo: REG 2333)
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:41:30 - 16:47:00\nT
+ reni coinvolti nella chiusura:\n  - REG 2333 (MILANO GRECO PIRELLI -> NOVI
+  LIGURE)\n  - REG 25060 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)\nRitar
+ do massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euris
+ tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
+ inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24860--20261121-S01326@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T155430Z
+DTEND:20261122T155900Z
+SUMMARY:[FERMATA] REG 24860 (MILANO PORTA GARIBALDI -> LECCO) ore 16:58
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 16:54:30 - 16:59:00\nTreni coinvolti nella
+  chiusura:\n  - REG 24860 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pr
+ evisione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3034--20261121-S01326@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:0
+DTSTART:20261122T161530Z
+DTEND:20261122T162100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:15 - 17:21 (primo: REG 3034)
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:15:30 - 17:21:00\nT
+ reni coinvolti nella chiusura:\n  - REG 3034 (GENOVA BRIGNOLE -> MILANO GR
+ ECO PIRELLI)\n  - REG 10874 (PIACENZA -> MILANO GRECO PIRELLI)\nRitardo ma
  ssimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica:
   Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
  iore alla soglia minima di sgombero stradale (120s)
@@ -122,668 +485,228 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-25823--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T063430Z
-DTEND:20261122T065112Z
-SUMMARY:[CHIUSURA CONTINUA - 12 TRENI] 07:34 - 07:51 (primo: REG 25823)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 12 TRENI\nChiusura sbarre stimata: 07:34:30 - 07:51:12\n
- Treni coinvolti nella chiusura:\n  - REG 25823 (MILANO PORTA GARIBALDI -> 
- PONTE S.PIETRO)\n  - REG 25823 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO)\
- n  - REG 10857 (MILANO GRECO PIRELLI -> PIACENZA)\n  - REG 10857 (MILANO G
- RECO PIRELLI -> PIACENZA)\n  - REG 3063 (MILANO GRECO PIRELLI -> SESTRI LE
- VANTE)\n  - REG 3063 (MILANO GRECO PIRELLI -> SESTRI LEVANTE)\n  - REG 250
- 24 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)\n  - REG 25024 (MILANO PORT
- A GARIBALDI -> COMO S.GIOVANNI)\n  - REG 25298 (MILANO CENTRALE -> CHIASSO
- ) [Transito]\n  - REG 25298 (MILANO CENTRALE -> CHIASSO) [Transito]\n  - R
- EG 2655 (MILANO PORTA GARIBALDI -> VERONA PORTA NUOVA) [Transito]\n  - REG
-  2655 (MILANO PORTA GARIBALDI -> VERONA PORTA NUOVA) [Transito]\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Chiusura continua per 12 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 12 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2314--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T071130Z
-DTEND:20261122T072100Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:11 - 08:21 (primo: REG 2314)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 08:11:30 - 08:21:00\nT
- reni coinvolti nella chiusura:\n  - REG 2314 (TORTONA -> MILANO GRECO PIRE
- LLI)\n  - REG 2314 (TORTONA -> MILANO GRECO PIRELLI)\n  - REG 10856 (PIACE
- NZA -> MILANO GRECO PIRELLI)\n  - REG 10856 (PIACENZA -> MILANO GRECO PIRE
- LLI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota norm
- ativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i pas
- saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-24707--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T091930Z
-DTEND:20261122T092803Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:19 - 10:28 (primo: REG 24707)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 10:19:30 - 10:28:03\nT
- reni coinvolti nella chiusura:\n  - REG 24707 (MILANO PORTA GARIBALDI -> V
- ILLASANTA PARCO)\n  - REG 24707 (MILANO PORTA GARIBALDI -> VILLASANTA PARC
- O)\n  - REG 2820 (MILANO CENTRALE -> TIRANO) [Transito]\n  - REG 2820 (MIL
- ANO CENTRALE -> TIRANO) [Transito]\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-25835--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T093430Z
-DTEND:20261122T093900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:34 - 10:39 (primo: REG 25835)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:34:30 - 10:39:00\nT
- reni coinvolti nella chiusura:\n  - REG 25835 (MILANO PORTA GARIBALDI -> P
- ONTE S.PIETRO)\n  - REG 25835 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO)\n
- Ritardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/
- euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
- (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-25036--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T094230Z
-DTEND:20261122T094949Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:42 - 10:49 (primo: REG 25036)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 10:42:30 - 10:49:49\nT
- reni coinvolti nella chiusura:\n  - REG 25036 (MILANO PORTA GARIBALDI -> C
- OMO S.GIOVANNI)\n  - REG 25036 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)
- \n  - REG 32936 (MILANO CENTRALE -> CHIASSO) [Transito]\n  - REG 32936 (MI
- LANO CENTRALE -> CHIASSO) [Transito]\nRitardo massimo rilevato: 0 min\nAff
- idabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 t
- reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
-  sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-25038--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T101230Z
-DTEND:20261122T101700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:12 - 11:17 (primo: REG 25038)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:12:30 - 11:17:00\nT
- reni coinvolti nella chiusura:\n  - REG 25038 (MILANO PORTA GARIBALDI -> C
- OMO S.GIOVANNI)\n  - REG 25038 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)
- \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativ
- a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
- i (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-24709--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T101930Z
-DTEND:20261122T102400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:19 - 11:24 (primo: REG 24709)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:19:30 - 11:24:00\nT
- reni coinvolti nella chiusura:\n  - REG 24709 (MILANO PORTA GARIBALDI -> V
- ILLASANTA PARCO)\n  - REG 24709 (MILANO PORTA GARIBALDI -> VILLASANTA PARC
- O)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normat
- iva/euristica: Chiusura continua per 2 treni: intervallo utile tra i passa
- ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-25839--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T103430Z
-DTEND:20261122T103900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:34 - 11:39 (primo: REG 25839)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:34:30 - 11:39:00\nT
- reni coinvolti nella chiusura:\n  - REG 25839 (MILANO PORTA GARIBALDI -> P
- ONTE S.PIETRO)\n  - REG 25839 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO)\n
- Ritardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/
- euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
- (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-25040--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T104230Z
-DTEND:20261122T104700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:42 - 11:47 (primo: REG 25040)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:42:30 - 11:47:00\nT
- reni coinvolti nella chiusura:\n  - REG 25040 (MILANO PORTA GARIBALDI -> C
- OMO S.GIOVANNI)\n  - REG 25040 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)
- \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativ
- a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
- i (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-24840--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T105430Z
-DTEND:20261122T105900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:54 - 11:59 (primo: REG 24840)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:54:30 - 11:59:00\nT
- reni coinvolti nella chiusura:\n  - REG 24840 (MILANO PORTA GARIBALDI -> L
- ECCO)\n  - REG 24840 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-25042--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T111230Z
-DTEND:20261122T111700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:12 - 12:17 (primo: REG 25042)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:12:30 - 12:17:00\nT
- reni coinvolti nella chiusura:\n  - REG 25042 (MILANO PORTA GARIBALDI -> C
- OMO S.GIOVANNI)\n  - REG 25042 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)
- \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativ
- a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
- i (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3026--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T121530Z
-DTEND:20261122T122000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:15 - 13:20 (primo: REG 3026)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:15:30 - 13:20:00\nT
- reni coinvolti nella chiusura:\n  - REG 3026 (GENOVA PIAZZA PRINCIPE -> MI
- LANO GRECO PIRELLI)\n  - REG 3026 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO 
- PIRELLI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota 
- normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i
-  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-24789--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T141930Z
-DTEND:20261122T143900Z
-SUMMARY:[CHIUSURA CONTINUA - 9 TRENI] 15:19 - 15:39 (primo: REG 24789)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 9 TRENI\nChiusura sbarre stimata: 15:19:30 - 15:39:00\nT
- reni coinvolti nella chiusura:\n  - REG 24789 (MILANO PORTA GARIBALDI -> V
- ILLASANTA PARCO)\n  - REG 24789 (MILANO PORTA GARIBALDI -> VILLASANTA PARC
- O)\n  - REG 2830 (MILANO CENTRALE -> TIRANO) [Transito]\n  - REG 2830 (MIL
- ANO CENTRALE -> TIRANO) [Transito]\n  - REG 10370 (MILANO PORTA GARIBALDI 
- -> SONDRIO)\n  - REG 10370 (MILANO PORTA GARIBALDI -> SONDRIO)\n  - REG 10
- 473 (MILANO PORTA GARIBALDI -> STRADELLA) [Transito]\n  - REG 25855 (MILAN
- O PORTA GARIBALDI -> PONTE S.PIETRO)\n  - REG 25855 (MILANO PORTA GARIBALD
- I -> PONTE S.PIETRO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 78%\nNota normativa/euristica: Chiusura continua per 9 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
-LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 9 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-25354--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T144419Z
-DTEND:20261122T144949Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:44 - 15:49 (primo: REG 25354)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:44:19 - 15:49:49\nT
- reni coinvolti nella chiusura:\n  - REG 25354 (MILANO CENTRALE -> CHIASSO)
-  [Transito]\n  - REG 25354 (MILANO CENTRALE -> CHIASSO) [Transito]\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
- nferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-24856--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T145430Z
-DTEND:20261122T145900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:54 - 15:59 (primo: REG 24856)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:54:30 - 15:59:00\nT
- reni coinvolti nella chiusura:\n  - REG 24856 (MILANO PORTA GARIBALDI -> L
- ECCO)\n  - REG 24856 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2332--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T151530Z
-DTEND:20261122T152400Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:15 - 16:24 (primo: REG 2332)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 16:15:30 - 16:24:00\nT
- reni coinvolti nella chiusura:\n  - REG 2332 (NOVI LIGURE -> MILANO GRECO 
- PIRELLI)\n  - REG 2332 (NOVI LIGURE -> MILANO GRECO PIRELLI)\n  - REG 2479
- 1 (MILANO PORTA GARIBALDI -> VILLASANTA PARCO)\n  - REG 24791 (MILANO PORT
- A GARIBALDI -> VILLASANTA PARCO)\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 4 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2333--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T154130Z
-DTEND:20261122T154700Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:41 - 16:47 (primo: REG 2333)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 16:41:30 - 16:47:00\nT
- reni coinvolti nella chiusura:\n  - REG 2333 (MILANO GRECO PIRELLI -> NOVI
-  LIGURE)\n  - REG 2333 (MILANO GRECO PIRELLI -> NOVI LIGURE)\n  - REG 2506
- 0 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)\n  - REG 25060 (MILANO PORTA
-  GARIBALDI -> COMO S.GIOVANNI)\nRitardo massimo rilevato: 0 min\nAffidabil
- ità stima: 90%\nNota normativa/euristica: Chiusura continua per 4 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-24860--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T155430Z
-DTEND:20261122T155900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:54 - 16:59 (primo: REG 24860)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:54:30 - 16:59:00\nT
- reni coinvolti nella chiusura:\n  - REG 24860 (MILANO PORTA GARIBALDI -> L
- ECCO)\n  - REG 24860 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2295--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T160940Z
-DTEND:20261122T162100Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 17:09 - 17:21 (primo: REG 2295)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 17:09:40 - 17:21:00\nT
- reni coinvolti nella chiusura:\n  - REG 2295 (MILANO PORTA GARIBALDI -> LI
- VORNO CENTRALE) [Transito]\n  - REG 3034 (GENOVA BRIGNOLE -> MILANO GRECO 
- PIRELLI)\n  - REG 3034 (GENOVA BRIGNOLE -> MILANO GRECO PIRELLI)\n  - REG 
- 10874 (PIACENZA -> MILANO GRECO PIRELLI)\n  - REG 10874 (PIACENZA -> MILAN
- O GRECO PIRELLI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
- %\nNota normativa/euristica: Chiusura continua per 5 treni: intervallo uti
- le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
- 120s)
-LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-10876--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T171630Z
 DTEND:20261122T172100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:16 - 18:21 (primo: REG 10876)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:16:30 - 18:21:00\nT
- reni coinvolti nella chiusura:\n  - REG 10876 (PIACENZA -> MILANO GRECO PI
- RELLI)\n  - REG 10876 (PIACENZA -> MILANO GRECO PIRELLI)\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chius
- ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
- lla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 10876 (PIACENZA -> MILANO GRECO PIRELLI) ore 18:20
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 18:16:30 - 18:21:00\nTreni coinvolti nella
+  chiusura:\n  - REG 10876 (PIACENZA -> MILANO GRECO PIRELLI)\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
+ revisione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3039--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T184130Z
 DTEND:20261122T184600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:41 - 19:46 (primo: REG 3039)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:41:30 - 19:46:00\nT
- reni coinvolti nella chiusura:\n  - REG 3039 (MILANO GRECO PIRELLI -> GENO
- VA BRIGNOLE)\n  - REG 3039 (MILANO GRECO PIRELLI -> GENOVA BRIGNOLE)\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euri
- stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
-  inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 3039 (MILANO GRECO PIRELLI -> GENOVA BRIGNOLE) ore 19
+ :45
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 19:41:30 - 19:46:00\nTreni coinvolti nella
+  chiusura:\n  - REG 3039 (MILANO GRECO PIRELLI -> GENOVA BRIGNOLE)\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
+ ica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10380--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T192430Z
-DTEND:20261122T193453Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:24 - 20:34 (primo: REG 10380)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 20:24:30 - 20:34:53\nT
- reni coinvolti nella chiusura:\n  - REG 10380 (MILANO PORTA GARIBALDI -> L
- ECCO)\n  - REG 10380 (MILANO PORTA GARIBALDI -> LECCO)\n  - REG 10483 (MIL
- ANO PORTA GARIBALDI -> PIACENZA) [Transito]\n  - REG 10483 (MILANO PORTA G
- ARIBALDI -> PIACENZA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+DTEND:20261122T192900Z
+SUMMARY:[FERMATA] REG 10380 (MILANO PORTA GARIBALDI -> LECCO) ore 20:28
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 20:24:30 - 20:29:00\nTreni coinvolti nella
+  chiusura:\n  - REG 10380 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pr
+ evisione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2341--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T194130Z
-DTEND:20261122T194949Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:41 - 20:49 (primo: REG 2341)
+DTEND:20261122T194955Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:41 - 20:49 (primo: REG 2341)
 DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 20:41:30 - 20:49:49\nT
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:41:30 - 20:49:55\nT
  reni coinvolti nella chiusura:\n  - REG 2341 (MILANO GRECO PIRELLI -> TORT
- ONA)\n  - REG 2341 (MILANO GRECO PIRELLI -> TORTONA)\n  - REG 25294 (MILAN
- O CENTRALE -> CHIASSO) [Transito]\n  - REG 25294 (MILANO CENTRALE -> CHIAS
- SO) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\
- nNota normativa/euristica: Chiusura continua per 4 treni: intervallo utile
-  tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (12
- 0s)
+ ONA)\n  - REG 25294 (MILANO CENTRALE -> CHIASSO) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24876--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T195430Z
 DTEND:20261122T195900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:54 - 20:59 (primo: REG 24876)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:54:30 - 20:59:00\nT
- reni coinvolti nella chiusura:\n  - REG 24876 (MILANO PORTA GARIBALDI -> L
- ECCO)\n  - REG 24876 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 24876 (MILANO PORTA GARIBALDI -> LECCO) ore 20:58
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 20:54:30 - 20:59:00\nTreni coinvolti nella
+  chiusura:\n  - REG 24876 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pr
+ evisione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10885--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T200630Z
 DTEND:20261122T202000Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 21:06 - 21:20 (primo: REG 10885)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:06 - 21:20 (primo: REG 10885)
 DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 21:06:30 - 21:20:00\nT
+ IUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 21:06:30 - 21:20:00\nT
  reni coinvolti nella chiusura:\n  - REG 10885 (MILANO GRECO PIRELLI -> PIA
- CENZA)\n  - REG 10885 (MILANO GRECO PIRELLI -> PIACENZA)\n  - REG 25078 (M
- ILANO PORTA GARIBALDI -> COMO S.GIOVANNI)\n  - REG 25078 (MILANO PORTA GAR
- IBALDI -> COMO S.GIOVANNI)\n  - REG 3042 (GENOVA PIAZZA PRINCIPE -> MILANO
-  GRECO PIRELLI)\n  - REG 3042 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO PIRE
- LLI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota norm
- ativa/euristica: Chiusura continua per 6 treni: intervallo utile tra i pas
- saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ CENZA)\n  - REG 25078 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)\n  - REG
+  3042 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO PIRELLI)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
+ a continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2842--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T202233Z
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T202241Z
 DTEND:20261122T202811Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:22 - 21:28 (primo: REG 2842)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:22:33 - 21:28:11\nT
- reni coinvolti nella chiusura:\n  - REG 2842 (MILANO CENTRALE -> SONDRIO) 
- [Transito]\n  - REG 2842 (MILANO CENTRALE -> SONDRIO) [Transito]\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 2842 (MILANO CENTRALE -> SONDRIO) ore 21:26
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: TR
+ ANSITO VELOCE\nChiusura sbarre stimata: 21:22:41 - 21:28:11\nTreni coinvol
+ ti nella chiusura:\n  - REG 2842 (MILANO CENTRALE -> SONDRIO) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (63% tratta MILANO CENTRALE -> M
+ ONZA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25879--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T203430Z
 DTEND:20261122T203900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:34 - 21:39 (primo: REG 25879)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:34:30 - 21:39:00\nT
- reni coinvolti nella chiusura:\n  - REG 25879 (MILANO PORTA GARIBALDI -> P
- ONTE S.PIETRO)\n  - REG 25879 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO)\n
- Ritardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/
- euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
- (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 25879 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO) ore 
+ 21:38
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 21:34:30 - 21:39:00\nTreni coinvolti nella
+  chiusura:\n  - REG 25879 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO)\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euri
+ stica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3043--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T204130Z
 DTEND:20261122T204600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:41 - 21:46 (primo: REG 3043)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:41:30 - 21:46:00\nT
- reni coinvolti nella chiusura:\n  - REG 3043 (MILANO GRECO PIRELLI -> GENO
- VA BRIGNOLE)\n  - REG 3043 (MILANO GRECO PIRELLI -> GENOVA BRIGNOLE)\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euri
- stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
-  inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 3043 (MILANO GRECO PIRELLI -> GENOVA BRIGNOLE) ore 21
+ :45
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 21:41:30 - 21:46:00\nTreni coinvolti nella
+  chiusura:\n  - REG 3043 (MILANO GRECO PIRELLI -> GENOVA BRIGNOLE)\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
+ ica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24880--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T205430Z
 DTEND:20261122T205900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:54 - 21:59 (primo: REG 24880)
+SUMMARY:[FERMATA] REG 24880 (MILANO PORTA GARIBALDI -> LECCO) ore 21:58
+DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 21:54:30 - 21:59:00\nTreni coinvolti nella
+  chiusura:\n  - REG 24880 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pr
+ evisione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2344--20261121-S01326@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T211530Z
+DTEND:20261122T212100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:15 - 22:21 (primo: REG 2344)
 DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:54:30 - 21:59:00\nT
- reni coinvolti nella chiusura:\n  - REG 24880 (MILANO PORTA GARIBALDI -> L
- ECCO)\n  - REG 24880 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:15:30 - 22:21:00\nT
+ reni coinvolti nella chiusura:\n  - REG 2344 (NOVI LIGURE -> MILANO GRECO 
+ PIRELLI)\n  - REG 10884 (PIACENZA -> MILANO GRECO PIRELLI)\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
+ usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
+  alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -793,49 +716,23 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2344--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T211530Z
-DTEND:20261122T212100Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 22:15 - 22:21 (primo: REG 2344)
-DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 22:15:30 - 22:21:00\nT
- reni coinvolti nella chiusura:\n  - REG 2344 (NOVI LIGURE -> MILANO GRECO 
- PIRELLI)\n  - REG 2344 (NOVI LIGURE -> MILANO GRECO PIRELLI)\n  - REG 1088
- 4 (PIACENZA -> MILANO GRECO PIRELLI)\n  - REG 10884 (PIACENZA -> MILANO GR
- ECO PIRELLI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nN
- ota normativa/euristica: Chiusura continua per 4 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
-LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-3046--20261121-S01326@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T221530Z
 DTEND:20261122T222100Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 23:15 - 23:21 (primo: REG 3046)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:15 - 23:21 (primo: REG 3046)
 DESCRIPTION:Stazione/PL: MILANO GRECO PIRELLI (S01326)\nRegime chiusura: CH
- IUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 23:15:30 - 23:21:00\nT
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 23:15:30 - 23:21:00\nT
  reni coinvolti nella chiusura:\n  - REG 3046 (GENOVA PIAZZA PRINCIPE -> MI
- LANO GRECO PIRELLI)\n  - REG 3046 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO 
- PIRELLI)\n  - REG 10886 (PIACENZA -> MILANO GRECO PIRELLI)\n  - REG 10886 
- (PIACENZA -> MILANO GRECO PIRELLI)\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 90%\nNota normativa/euristica: Chiusura continua per 4 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+ LANO GRECO PIRELLI)\n  - REG 10886 (PIACENZA -> MILANO GRECO PIRELLI)\nRit
+ ardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eur
+ istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MILANO GRECO PIRELLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:7c8561d76433c359140b82e50420d61d80144e6aa8d742d727bc71fab592
- 51cf
+X-CONTENT-HASH:89fe7fdf9c6f063861e795e562a7645441fb4e736f2810f3804b42916e41
+ 767f
 BEGIN:VEVENT
 UID:train-4611--20261121-S01083@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T052121Z
 DTEND:20261122T052651Z
 SUMMARY:[TRANSITO VELOCE] REG 4611 (MILANO CADORNA -> ASSO) ore 06:25
@@ -34,17 +34,39 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-712--20261121-S01083@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T053201Z
 DTEND:20261122T054400Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:32 - 06:44 (primo: REG 712)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:32 - 06:44 (primo: REG 712)
 DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 06:32:01 - 06:44:00\nTre
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:32:01 - 06:44:00\nTre
  ni coinvolti nella chiusura:\n  - REG 712 (CAMNAGO-LENTATE -> MILANO CADOR
- NA) [Transito]\n  - REG 712 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transito]
- \n  - REG 712 (CAMNAGO-LENTATE -> MILANO CADORNA)\n  - REG 712 (CAMNAGO-LE
- NTATE -> MILANO CADORNA)\nRitardo massimo rilevato: 0 min\nAffidabilità s
+ NA) [Transito]\n  - REG 712 (CAMNAGO-LENTATE -> MILANO CADORNA)\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Chiusura continua per 2 treni: intervallo utile tra i passaggi (118s) in
+ feriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PALAZZOLO MILANESE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-717--20261121-S01083@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T063050Z
+DTEND:20261122T064500Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:30 - 07:45 (primo: REG 717)
+DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: CHIU
+ SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 07:30:50 - 07:45:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 717 (MILANO CADORNA -> CAMNAGO-LENTA
+ TE) [Transito]\n  - REG 720 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transito]
+ \n  - REG 720 (CAMNAGO-LENTATE -> MILANO CADORNA)\n  - REG 717 (MILANO CAD
+ ORNA -> CAMNAGO-LENTATE)\nRitardo massimo rilevato: 0 min\nAffidabilità s
  tima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: interv
  allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
  radale (120s)
@@ -57,60 +79,31 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-717--20261121-S01083@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T063050Z
-DTEND:20261122T064500Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 07:30 - 07:45 (primo: REG 717)
-DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: CHIU
- SURA CONTINUA - 8 TRENI\nChiusura sbarre stimata: 07:30:50 - 07:45:00\nTre
- ni coinvolti nella chiusura:\n  - REG 717 (MILANO CADORNA -> CAMNAGO-LENTA
- TE) [Transito]\n  - REG 717 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito]
- \n  - REG 720 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transito]\n  - REG 720 
- (CAMNAGO-LENTATE -> MILANO CADORNA) [Transito]\n  - REG 720 (CAMNAGO-LENTA
- TE -> MILANO CADORNA)\n  - REG 720 (CAMNAGO-LENTATE -> MILANO CADORNA)\n  
- - REG 717 (MILANO CADORNA -> CAMNAGO-LENTATE)\n  - REG 717 (MILANO CADORNA
-  -> CAMNAGO-LENTATE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 78%\nNota normativa/euristica: Chiusura continua per 8 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
-LOCATION:Passaggio a Livello / Stazione PALAZZOLO MILANESE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-4732--20261121-S01083@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T090201Z
 DTEND:20261122T091400Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:02 - 10:14 (primo: REG 4732)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:02 - 10:14 (primo: REG 4732)
 DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 10:02:01 - 10:14:00\nTre
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:02:01 - 10:14:00\nTre
  ni coinvolti nella chiusura:\n  - REG 4732 (CAMNAGO-LENTATE -> MILANO CADO
- RNA) [Transito]\n  - REG 4732 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transit
- o]\n  - REG 4732 (CAMNAGO-LENTATE -> MILANO CADORNA)\n  - REG 4732 (CAMNAG
- O-LENTATE -> MILANO CADORNA)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+ RNA) [Transito]\n  - REG 4732 (CAMNAGO-LENTATE -> MILANO CADORNA)\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (118s) 
+ inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PALAZZOLO MILANESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-631--20261121-S01083@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T092121Z
 DTEND:20261122T092651Z
 SUMMARY:[TRANSITO VELOCE] REG 631 (MILANO CADORNA -> ASSO) ore 10:25
@@ -130,132 +123,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4731--20261121-S01083@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T093050Z
 DTEND:20261122T094500Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 10:30 - 10:45 (primo: REG 4731)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:30 - 10:45 (primo: REG 4731)
 DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: CHIU
- SURA CONTINUA - 8 TRENI\nChiusura sbarre stimata: 10:30:50 - 10:45:00\nTre
+ SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 10:30:50 - 10:45:00\nTre
  ni coinvolti nella chiusura:\n  - REG 4731 (MILANO CADORNA -> CAMNAGO-LENT
- ATE) [Transito]\n  - REG 4731 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transit
- o]\n  - REG 4734 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transito]\n  - REG 4
- 734 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transito]\n  - REG 4734 (CAMNAGO-
- LENTATE -> MILANO CADORNA)\n  - REG 4734 (CAMNAGO-LENTATE -> MILANO CADORN
- A)\n  - REG 4731 (MILANO CADORNA -> CAMNAGO-LENTATE)\n  - REG 4731 (MILANO
+ ATE) [Transito]\n  - REG 4734 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transit
+ o]\n  - REG 4734 (CAMNAGO-LENTATE -> MILANO CADORNA)\n  - REG 4731 (MILANO
   CADORNA -> CAMNAGO-LENTATE)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 78%\nNota normativa/euristica: Chiusura continua per 8 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PALAZZOLO MILANESE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4733--20261121-S01083@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T100050Z
-DTEND:20261122T100620Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:00 - 11:06 (primo: REG 4733)
-DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:00:50 - 11:06:20\nTre
- ni coinvolti nella chiusura:\n  - REG 4733 (MILANO CADORNA -> CAMNAGO-LENT
- ATE) [Transito]\n  - REG 4733 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transit
- o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Chiusura continua per 2 treni: intervallo utile tra i passa
- ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PALAZZOLO MILANESE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4733--20261121-S01083@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T101030Z
-DTEND:20261122T101500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:10 - 11:15 (primo: REG 4733)
-DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:10:30 - 11:15:00\nTre
- ni coinvolti nella chiusura:\n  - REG 4733 (MILANO CADORNA -> CAMNAGO-LENT
- ATE)\n  - REG 4733 (MILANO CADORNA -> CAMNAGO-LENTATE)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PALAZZOLO MILANESE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4735--20261121-S01083@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T103050Z
-DTEND:20261122T103620Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:30 - 11:36 (primo: REG 4735)
-DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:30:50 - 11:36:20\nTre
- ni coinvolti nella chiusura:\n  - REG 4735 (MILANO CADORNA -> CAMNAGO-LENT
- ATE) [Transito]\n  - REG 4735 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transit
- o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Chiusura continua per 2 treni: intervallo utile tra i passa
- ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PALAZZOLO MILANESE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4735--20261121-S01083@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T104030Z
-DTEND:20261122T104500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:40 - 11:45 (primo: REG 4735)
-DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:40:30 - 11:45:00\nTre
- ni coinvolti nella chiusura:\n  - REG 4735 (MILANO CADORNA -> CAMNAGO-LENT
- ATE)\n  - REG 4735 (MILANO CADORNA -> CAMNAGO-LENTATE)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PALAZZOLO MILANESE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4752--20261121-S01083@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
-DTSTART:20261122T140201Z
-DTEND:20261122T141400Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:02 - 15:14 (primo: REG 4752)
-DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 15:02:01 - 15:14:00\nTre
- ni coinvolti nella chiusura:\n  - REG 4752 (CAMNAGO-LENTATE -> MILANO CADO
- RNA) [Transito]\n  - REG 4752 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transit
- o]\n  - REG 4752 (CAMNAGO-LENTATE -> MILANO CADORNA)\n  - REG 4752 (CAMNAG
- O-LENTATE -> MILANO CADORNA)\nRitardo massimo rilevato: 0 min\nAffidabilit
  à stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: in
  tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
  o stradale (120s)
@@ -268,63 +146,163 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-4733--20261121-S01083@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T100050Z
+DTEND:20261122T100620Z
+SUMMARY:[TRANSITO VELOCE] REG 4733 (MILANO CADORNA -> CAMNAGO-LENTATE) ore 
+ 11:05
+DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 11:00:50 - 11:06:20\nTreni coinvolti
+  nella chiusura:\n  - REG 4733 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transi
+ to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (70% tratta MILANO AFFORI -
+ > MILANO BRUZZANO PARCO NORD\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PALAZZOLO MILANESE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4733--20261121-S01083@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T101030Z
+DTEND:20261122T101500Z
+SUMMARY:[FERMATA] REG 4733 (MILANO CADORNA -> CAMNAGO-LENTATE) ore 11:14
+DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 11:10:30 - 11:15:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 4733 (MILANO CADORNA -> CAMNAGO-LENTATE)\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pre
+ visione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PALAZZOLO MILANESE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4735--20261121-S01083@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T103050Z
+DTEND:20261122T103620Z
+SUMMARY:[TRANSITO VELOCE] REG 4735 (MILANO CADORNA -> CAMNAGO-LENTATE) ore 
+ 11:35
+DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 11:30:50 - 11:36:20\nTreni coinvolti
+  nella chiusura:\n  - REG 4735 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transi
+ to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (70% tratta MILANO AFFORI -
+ > MILANO BRUZZANO PARCO NORD\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PALAZZOLO MILANESE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4735--20261121-S01083@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T104030Z
+DTEND:20261122T104500Z
+SUMMARY:[FERMATA] REG 4735 (MILANO CADORNA -> CAMNAGO-LENTATE) ore 11:44
+DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 11:40:30 - 11:45:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 4735 (MILANO CADORNA -> CAMNAGO-LENTATE)\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pre
+ visione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PALAZZOLO MILANESE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4752--20261121-S01083@pl-tracker.local
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
+DTSTART:20261122T140201Z
+DTEND:20261122T141400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:02 - 15:14 (primo: REG 4752)
+DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:02:01 - 15:14:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 4752 (CAMNAGO-LENTATE -> MILANO CADO
+ RNA) [Transito]\n  - REG 4752 (CAMNAGO-LENTATE -> MILANO CADORNA)\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (118s) 
+ inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PALAZZOLO MILANESE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-4755--20261121-S01083@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T143050Z
 DTEND:20261122T144500Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 15:30 - 15:45 (primo: REG 4755)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:30 - 15:45 (primo: REG 4755)
 DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: CHIU
- SURA CONTINUA - 8 TRENI\nChiusura sbarre stimata: 15:30:50 - 15:45:00\nTre
+ SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 15:30:50 - 15:45:00\nTre
  ni coinvolti nella chiusura:\n  - REG 4755 (MILANO CADORNA -> CAMNAGO-LENT
- ATE) [Transito]\n  - REG 4755 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transit
- o]\n  - REG 4754 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transito]\n  - REG 4
- 754 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transito]\n  - REG 4754 (CAMNAGO-
- LENTATE -> MILANO CADORNA)\n  - REG 4754 (CAMNAGO-LENTATE -> MILANO CADORN
- A)\n  - REG 4755 (MILANO CADORNA -> CAMNAGO-LENTATE)\n  - REG 4755 (MILANO
+ ATE) [Transito]\n  - REG 4754 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transit
+ o]\n  - REG 4754 (CAMNAGO-LENTATE -> MILANO CADORNA)\n  - REG 4755 (MILANO
   CADORNA -> CAMNAGO-LENTATE)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 78%\nNota normativa/euristica: Chiusura continua per 8 treni: in
+ à stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: in
  tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
  o stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PALAZZOLO MILANESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4757--20261121-S01083@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T150050Z
 DTEND:20261122T151500Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 16:00 - 16:15 (primo: REG 4757)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:00 - 16:15 (primo: REG 4757)
 DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: CHIU
- SURA CONTINUA - 8 TRENI\nChiusura sbarre stimata: 16:00:50 - 16:15:00\nTre
+ SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 16:00:50 - 16:15:00\nTre
  ni coinvolti nella chiusura:\n  - REG 4757 (MILANO CADORNA -> CAMNAGO-LENT
- ATE) [Transito]\n  - REG 4757 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transit
- o]\n  - REG 4756 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transito]\n  - REG 4
- 756 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transito]\n  - REG 4756 (CAMNAGO-
- LENTATE -> MILANO CADORNA)\n  - REG 4756 (CAMNAGO-LENTATE -> MILANO CADORN
- A)\n  - REG 4757 (MILANO CADORNA -> CAMNAGO-LENTATE)\n  - REG 4757 (MILANO
+ ATE) [Transito]\n  - REG 4756 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transit
+ o]\n  - REG 4756 (CAMNAGO-LENTATE -> MILANO CADORNA)\n  - REG 4757 (MILANO
   CADORNA -> CAMNAGO-LENTATE)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 78%\nNota normativa/euristica: Chiusura continua per 8 treni: in
+ à stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: in
  tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
  o stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PALAZZOLO MILANESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-657--20261121-S01083@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T152121Z
 DTEND:20261122T152651Z
 SUMMARY:[TRANSITO VELOCE] REG 657 (MILANO CADORNA -> ASSO) ore 16:25
@@ -344,208 +322,195 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4759--20261121-S01083@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T153050Z
 DTEND:20261122T154500Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 16:30 - 16:45 (primo: REG 4759)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:30 - 16:45 (primo: REG 4759)
 DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: CHIU
- SURA CONTINUA - 8 TRENI\nChiusura sbarre stimata: 16:30:50 - 16:45:00\nTre
+ SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 16:30:50 - 16:45:00\nTre
  ni coinvolti nella chiusura:\n  - REG 4759 (MILANO CADORNA -> CAMNAGO-LENT
- ATE) [Transito]\n  - REG 4759 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transit
- o]\n  - REG 4758 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transito]\n  - REG 4
- 758 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transito]\n  - REG 4758 (CAMNAGO-
- LENTATE -> MILANO CADORNA)\n  - REG 4758 (CAMNAGO-LENTATE -> MILANO CADORN
- A)\n  - REG 4759 (MILANO CADORNA -> CAMNAGO-LENTATE)\n  - REG 4759 (MILANO
+ ATE) [Transito]\n  - REG 4758 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transit
+ o]\n  - REG 4758 (CAMNAGO-LENTATE -> MILANO CADORNA)\n  - REG 4759 (MILANO
   CADORNA -> CAMNAGO-LENTATE)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 78%\nNota normativa/euristica: Chiusura continua per 8 treni: in
+ à stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: in
  tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
  o stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PALAZZOLO MILANESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-761--20261121-S01083@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T160050Z
 DTEND:20261122T160620Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:00 - 17:06 (primo: REG 761)
-DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:00:50 - 17:06:20\nTre
- ni coinvolti nella chiusura:\n  - REG 761 (MILANO CADORNA -> CAMNAGO-LENTA
- TE) [Transito]\n  - REG 761 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito]
- \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
- a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
- i (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 761 (MILANO CADORNA -> CAMNAGO-LENTATE) ore 1
+ 7:05
+DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 17:00:50 - 17:06:20\nTreni coinvolti
+  nella chiusura:\n  - REG 761 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (70% tratta MILANO AFFORI ->
+  MILANO BRUZZANO PARCO NORD\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PALAZZOLO MILANESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-761--20261121-S01083@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T161030Z
 DTEND:20261122T161500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:10 - 17:15 (primo: REG 761)
-DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:10:30 - 17:15:00\nTre
- ni coinvolti nella chiusura:\n  - REG 761 (MILANO CADORNA -> CAMNAGO-LENTA
- TE)\n  - REG 761 (MILANO CADORNA -> CAMNAGO-LENTATE)\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura 
- continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 761 (MILANO CADORNA -> CAMNAGO-LENTATE) ore 17:14
+DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 17:10:30 - 17:15:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 761 (MILANO CADORNA -> CAMNAGO-LENTATE)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
+ isione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione PALAZZOLO MILANESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-681--20261121-S01083@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T192121Z
 DTEND:20261122T192651Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:21 - 20:26 (primo: REG 681)
-DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:21:21 - 20:26:51\nTre
- ni coinvolti nella chiusura:\n  - REG 681 (MILANO CADORNA -> ASSO) [Transi
- to]\n  - REG 681 (MILANO CADORNA -> ASSO) [Transito]\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
- continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 681 (MILANO CADORNA -> ASSO) ore 20:25
+DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 20:21:21 - 20:26:51\nTreni coinvolti
+  nella chiusura:\n  - REG 681 (MILANO CADORNA -> ASSO) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (55% tratta MILANO AFFORI -> CESANO MAD
+ ERNO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PALAZZOLO MILANESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-783--20261121-S01083@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T193050Z
 DTEND:20261122T193620Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:30 - 20:36 (primo: REG 783)
-DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:30:50 - 20:36:20\nTre
- ni coinvolti nella chiusura:\n  - REG 783 (MILANO CADORNA -> CAMNAGO-LENTA
- TE) [Transito]\n  - REG 783 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito]
- \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
- a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
- i (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 783 (MILANO CADORNA -> CAMNAGO-LENTATE) ore 2
+ 0:35
+DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 20:30:50 - 20:36:20\nTreni coinvolti
+  nella chiusura:\n  - REG 783 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (70% tratta MILANO AFFORI ->
+  MILANO BRUZZANO PARCO NORD\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PALAZZOLO MILANESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-783--20261121-S01083@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T194030Z
 DTEND:20261122T194500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:40 - 20:45 (primo: REG 783)
-DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:40:30 - 20:45:00\nTre
- ni coinvolti nella chiusura:\n  - REG 783 (MILANO CADORNA -> CAMNAGO-LENTA
- TE)\n  - REG 783 (MILANO CADORNA -> CAMNAGO-LENTATE)\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura 
- continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 783 (MILANO CADORNA -> CAMNAGO-LENTATE) ore 20:44
+DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 20:40:30 - 20:45:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 783 (MILANO CADORNA -> CAMNAGO-LENTATE)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
+ isione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione PALAZZOLO MILANESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-787--20261121-S01083@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T203050Z
 DTEND:20261122T204500Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 21:30 - 21:45 (primo: REG 787)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 21:30 - 21:45 (primo: REG 787)
 DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: CHIU
- SURA CONTINUA - 8 TRENI\nChiusura sbarre stimata: 21:30:50 - 21:45:00\nTre
+ SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 21:30:50 - 21:45:00\nTre
  ni coinvolti nella chiusura:\n  - REG 787 (MILANO CADORNA -> CAMNAGO-LENTA
- TE) [Transito]\n  - REG 787 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito]
- \n  - REG 784 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transito]\n  - REG 784 
- (CAMNAGO-LENTATE -> MILANO CADORNA) [Transito]\n  - REG 784 (CAMNAGO-LENTA
- TE -> MILANO CADORNA)\n  - REG 784 (CAMNAGO-LENTATE -> MILANO CADORNA)\n  
- - REG 787 (MILANO CADORNA -> CAMNAGO-LENTATE)\n  - REG 787 (MILANO CADORNA
-  -> CAMNAGO-LENTATE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 78%\nNota normativa/euristica: Chiusura continua per 8 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
+ TE) [Transito]\n  - REG 784 (CAMNAGO-LENTATE -> MILANO CADORNA) [Transito]
+ \n  - REG 784 (CAMNAGO-LENTATE -> MILANO CADORNA)\n  - REG 787 (MILANO CAD
+ ORNA -> CAMNAGO-LENTATE)\nRitardo massimo rilevato: 0 min\nAffidabilità s
+ tima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: interv
+ allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
+ radale (120s)
 LOCATION:Passaggio a Livello / Stazione PALAZZOLO MILANESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-789--20261121-S01083@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T210050Z
 DTEND:20261122T210620Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:00 - 22:06 (primo: REG 789)
-DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:00:50 - 22:06:20\nTre
- ni coinvolti nella chiusura:\n  - REG 789 (MILANO CADORNA -> CAMNAGO-LENTA
- TE) [Transito]\n  - REG 789 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito]
- \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
- a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
- i (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 789 (MILANO CADORNA -> CAMNAGO-LENTATE) ore 2
+ 2:05
+DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 22:00:50 - 22:06:20\nTreni coinvolti
+  nella chiusura:\n  - REG 789 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (70% tratta MILANO AFFORI ->
+  MILANO BRUZZANO PARCO NORD\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PALAZZOLO MILANESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-789--20261121-S01083@pl-tracker.local
-DTSTAMP:20261122T001006Z
-SEQUENCE:0
+DTSTAMP:20261122T065144Z
+SEQUENCE:1
 DTSTART:20261122T211030Z
 DTEND:20261122T211500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:10 - 22:15 (primo: REG 789)
-DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:10:30 - 22:15:00\nTre
- ni coinvolti nella chiusura:\n  - REG 789 (MILANO CADORNA -> CAMNAGO-LENTA
- TE)\n  - REG 789 (MILANO CADORNA -> CAMNAGO-LENTATE)\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura 
- continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 789 (MILANO CADORNA -> CAMNAGO-LENTATE) ore 22:14
+DESCRIPTION:Stazione/PL: PALAZZOLO MILANESE (S01083)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 22:10:30 - 22:15:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 789 (MILANO CADORNA -> CAMNAGO-LENTATE)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
+ isione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione PALAZZOLO MILANESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
