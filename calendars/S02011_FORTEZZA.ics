@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:11602e07d4023a9fb912d1a4aed011094fe7100c18f51c72d0323c9b8ff7
- 9bec
+X-CONTENT-HASH:8b1a7223b014b662a20aa7f42e605c375c021770ff4672e36d02a7c98c6b
+ b7fb
 BEGIN:VEVENT
 UID:train-3462--20261121-S02011@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T091030Z
 DTEND:20261122T091500Z
 SUMMARY:[FERMATA] REG 3462 (VERONA PORTA NUOVA -> BRENNERO) ore 10:14
@@ -32,31 +32,57 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3843--20261121-S02011@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T120237Z
-DTEND:20261122T121400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:02 - 13:14 (primo: REG 3843)
+UID:train-88--20261121-S02011@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T101045Z
+DTEND:20261122T101830Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:10 - 11:18 (primo: EC 88) (+3 min)
 DESCRIPTION:Stazione/PL: FORTEZZA (S02011)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 13:02:37 - 13:14:00\nTreni coinvol
- ti nella chiusura:\n  - REG 3843 (BRENNERO -> BOLOGNA CENTRALE) [Transito]
- \n  - EC 86 (VERONA PORTA NUOVA -> BRENNERO)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (67s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+ NUA - 2 TRENI\nChiusura sbarre stimata: 11:10:45 - 11:18:30\nTreni coinvol
+ ti nella chiusura:\n  - EC 88 (BOLOGNA CENTRALE -> BRENNERO) (+3m)\n  - EC
+  88 (BOLOGNA CENTRALE -> BRENNERO) (+3m)\nRitardo massimo rilevato: 3 min\
+ nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per
+  2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
+ a di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FORTEZZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:EC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3843--20261121-S02011@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T120214Z
+DTEND:20261122T121700Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 13:02 - 13:17 (primo: REG 3843) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: FORTEZZA (S02011)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 5 TRENI\nChiusura sbarre stimata: 13:02:14 - 13:17:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 3843 (BRENNERO -> BOLOGNA CENTRALE) [Transito]
+ \n  - EC 86 (VERONA PORTA NUOVA -> BRENNERO) (+1m) [Arrivo]\n  - EC 86 (VE
+ RONA PORTA NUOVA -> BRENNERO) (+1m) [Arrivo]\n  - EC 86 (VERONA PORTA NUOV
+ A -> BRENNERO) (+1m) [Partenza]\n  - EC 86 (VERONA PORTA NUOVA -> BRENNERO
+ ) (+1m) [Partenza]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 
+ 78%\nNota normativa/euristica: Chiusura continua per 5 treni: intervallo u
+ tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
+  (120s)
+LOCATION:Passaggio a Livello / Stazione FORTEZZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3843--20261121-S02011@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T123330Z
 DTEND:20261122T123800Z
 SUMMARY:[FERMATA] REG 3843 (BRENNERO -> BOLOGNA CENTRALE) ore 13:37
@@ -75,8 +101,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3840--20261121-S02011@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T131030Z
 DTEND:20261122T131500Z
 SUMMARY:[FERMATA] REG 3840 (BOLOGNA CENTRALE -> BRENNERO) ore 14:14
@@ -95,28 +121,31 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-85--20261121-S02011@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T134015Z
-DTEND:20261122T134500Z
-SUMMARY:[FERMATA] EC 85 (BRENNERO -> VENEZIA S.LUCIA) ore 14:44
-DESCRIPTION:Stazione/PL: FORTEZZA (S02011)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 14:40:15 - 14:45:00\nTreni coinvolti nella chiusura:\n
-   - EC 85 (BRENNERO -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia 
- oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T134945Z
+DTEND:20261122T135630Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:49 - 14:56 (primo: EC 85) (+10 min
+ )
+DESCRIPTION:Stazione/PL: FORTEZZA (S02011)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 14:49:45 - 14:56:30\nTreni coinvol
+ ti nella chiusura:\n  - EC 85 (BRENNERO -> VENEZIA S.LUCIA) (+10m)\n  - EC
+  85 (BRENNERO -> VENEZIA S.LUCIA) (+10m)\nRitardo massimo rilevato: 10 min
+ \nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua pe
+ r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FORTEZZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:10
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:EC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-84--20261121-S02011@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T140915Z
 DTEND:20261122T141400Z
 SUMMARY:[FERMATA] EC 84 (VENEZIA S.LUCIA -> BRENNERO) ore 15:13
@@ -135,48 +164,54 @@ X-PL-TRAIN-CATEGORY:EC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3850--20261121-S02011@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T151030Z
-DTEND:20261122T151500Z
-SUMMARY:[FERMATA] REG 3850 (BOLOGNA CENTRALE -> BRENNERO) ore 16:14
-DESCRIPTION:Stazione/PL: FORTEZZA (S02011)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 16:10:30 - 16:15:00\nTreni coinvolti nella chiusura:\n
-   - REG 3850 (BOLOGNA CENTRALE -> BRENNERO)\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da trac
- cia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T152430Z
+DTEND:20261122T152900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:24 - 16:29 (primo: REG 3850) (+14 
+ min)
+DESCRIPTION:Stazione/PL: FORTEZZA (S02011)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 16:24:30 - 16:29:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 3850 (BOLOGNA CENTRALE -> BRENNERO) (+14m)\n  
+ - REG 3850 (BOLOGNA CENTRALE -> BRENNERO) (+14m)\nRitardo massimo rilevato
+ : 14 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
+ tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FORTEZZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:14
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3844--20261121-S02011@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T171030Z
-DTEND:20261122T171500Z
-SUMMARY:[FERMATA] REG 3844 (BOLOGNA CENTRALE -> BRENNERO) ore 18:14
-DESCRIPTION:Stazione/PL: FORTEZZA (S02011)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 18:10:30 - 18:15:00\nTreni coinvolti nella chiusura:\n
-   - REG 3844 (BOLOGNA CENTRALE -> BRENNERO)\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da trac
- cia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T171630Z
+DTEND:20261122T172100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:16 - 18:21 (primo: REG 3844) (+6 m
+ in)
+DESCRIPTION:Stazione/PL: FORTEZZA (S02011)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 18:16:30 - 18:21:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 3844 (BOLOGNA CENTRALE -> BRENNERO) (+6m)\n  -
+  REG 3844 (BOLOGNA CENTRALE -> BRENNERO) (+6m)\nRitardo massimo rilevato: 
+ 6 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura contin
+ ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+  minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FORTEZZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-80--20261121-S02011@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T180915Z
 DTEND:20261122T181400Z
 SUMMARY:[FERMATA] EC 80 (VENEZIA S.LUCIA -> BRENNERO) ore 19:13
@@ -195,21 +230,24 @@ X-PL-TRAIN-CATEGORY:EC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3846--20261121-S02011@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T191030Z
-DTEND:20261122T191500Z
-SUMMARY:[FERMATA] REG 3846 (BOLOGNA CENTRALE -> BRENNERO) ore 20:14
-DESCRIPTION:Stazione/PL: FORTEZZA (S02011)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 20:10:30 - 20:15:00\nTreni coinvolti nella chiusura:\n
-   - REG 3846 (BOLOGNA CENTRALE -> BRENNERO)\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da trac
- cia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T191130Z
+DTEND:20261122T191600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:11 - 20:16 (primo: REG 3846) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: FORTEZZA (S02011)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 20:11:30 - 20:16:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 3846 (BOLOGNA CENTRALE -> BRENNERO) (+1m)\n  -
+  REG 3846 (BOLOGNA CENTRALE -> BRENNERO) (+1m)\nRitardo massimo rilevato: 
+ 1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura contin
+ ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+  minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FORTEZZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT

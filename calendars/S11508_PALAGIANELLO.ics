@@ -9,20 +9,20 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:c2815ce0f5aaafb79776223f707ca92d140bffeabaf7952515d2ed4596e4
- cf94
+X-CONTENT-HASH:49932f26d99d5e60aa29ed07696557a0a397fcae59e2f85c6b87462ef32d
+ d6e5
 BEGIN:VEVENT
 UID:train-19872--20261121-S11508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T052514Z
-DTEND:20261122T053044Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T052502Z
+DTEND:20261122T053032Z
 SUMMARY:[TRANSITO VELOCE] REG 19872 (TARANTO -> BARI CENTRALE) ore 06:29
 DESCRIPTION:Stazione/PL: PALAGIANELLO (S11508)\nRegime chiusura: TRANSITO V
- ELOCE\nChiusura sbarre stimata: 06:25:14 - 06:30:44\nTreni coinvolti nella
+ ELOCE\nChiusura sbarre stimata: 06:25:02 - 06:30:32\nTreni coinvolti nella
   chiusura:\n  - REG 19872 (TARANTO -> BARI CENTRALE) [Transito]\nRitardo m
  assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (87% tratta TARANTO -> MASSAFRA\; pedale 
+ : Transito stimato senza fermata (86% tratta TARANTO -> MASSAFRA\; pedale 
  annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PALAGIANELLO
 STATUS:CONFIRMED
@@ -34,8 +34,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19872--20261121-S11508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T053530Z
 DTEND:20261122T054000Z
 SUMMARY:[FERMATA] REG 19872 (TARANTO -> BARI CENTRALE) ore 06:39
@@ -53,39 +53,64 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-19871--20261121-S11508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T071557Z
+UID:train-558--20261121-S11508@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T070959Z
 DTEND:20261122T072700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:15 - 08:27 (primo: REG 19871)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:09 - 08:27 (primo: IC 558)
 DESCRIPTION:Stazione/PL: PALAGIANELLO (S11508)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:15:57 - 08:27:00\nTreni coi
- nvolti nella chiusura:\n  - REG 19871 (BARI CENTRALE -> TARANTO) [Transito
- ]\n  - REG 19871 (BARI CENTRALE -> TARANTO)\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua 
- per 2 treni: intervallo utile tra i passaggi (62s) inferiore alla soglia m
- inima di sgombero stradale (120s)
+ ONTINUA - 4 TRENI\nChiusura sbarre stimata: 08:09:59 - 08:27:00\nTreni coi
+ nvolti nella chiusura:\n  - IC 558 (BARI CENTRALE -> VILLA S.GIOVANNI) [Tr
+ ansito]\n  - IC 558 (BARI CENTRALE -> VILLA S.GIOVANNI) [Transito]\n  - RE
+ G 19871 (BARI CENTRALE -> TARANTO) [Transito]\n  - REG 19871 (BARI CENTRAL
+ E -> TARANTO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\n
+ Nota normativa/euristica: Chiusura continua per 4 treni: intervallo utile 
+ tra i passaggi (65s) inferiore alla soglia minima di sgombero stradale (12
+ 0s)
+LOCATION:Passaggio a Livello / Stazione PALAGIANELLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8820--20261121-S11508@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T082818Z
+DTEND:20261122T083348Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:28 - 09:33 (primo: TRENO 8820) (+1
+ 4 min)
+DESCRIPTION:Stazione/PL: PALAGIANELLO (S11508)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:28:18 - 09:33:48\nTreni coi
+ nvolti nella chiusura:\n  - TRENO 8820 (TARANTO -> MILANO CENTRALE) (+14m)
+  [Transito]\n  - TRENO 8820 (TARANTO -> MILANO CENTRALE) (+14m) [Transito]
+ \nRitardo massimo rilevato: 14 min\nAffidabilità stima: 78%\nNota normati
+ va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
+ gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PALAGIANELLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:14
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19878--20261121-S11508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T090414Z
-DTEND:20261122T090944Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T090402Z
+DTEND:20261122T090932Z
 SUMMARY:[TRANSITO VELOCE] REG 19878 (TARANTO -> BARI CENTRALE) ore 10:08
 DESCRIPTION:Stazione/PL: PALAGIANELLO (S11508)\nRegime chiusura: TRANSITO V
- ELOCE\nChiusura sbarre stimata: 10:04:14 - 10:09:44\nTreni coinvolti nella
+ ELOCE\nChiusura sbarre stimata: 10:04:02 - 10:09:32\nTreni coinvolti nella
   chiusura:\n  - REG 19878 (TARANTO -> BARI CENTRALE) [Transito]\nRitardo m
  assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (87% tratta TARANTO -> MASSAFRA\; pedale 
+ : Transito stimato senza fermata (86% tratta TARANTO -> MASSAFRA\; pedale 
  annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PALAGIANELLO
 STATUS:CONFIRMED
@@ -97,8 +122,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19878--20261121-S11508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T091430Z
 DTEND:20261122T091900Z
 SUMMARY:[FERMATA] REG 19878 (TARANTO -> BARI CENTRALE) ore 10:18
@@ -117,8 +142,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-612--20261121-S11508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T094136Z
 DTEND:20261122T094606Z
 SUMMARY:[TRANSITO VELOCE] IC 612 (LECCE -> MILANO CENTRALE) ore 10:45
@@ -138,17 +163,17 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19875--20261121-S11508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T105757Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T105754Z
 DTEND:20261122T110900Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:57 - 12:09 (primo: REG 19875)
 DESCRIPTION:Stazione/PL: PALAGIANELLO (S11508)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:57:57 - 12:09:00\nTreni coi
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:57:54 - 12:09:00\nTreni coi
  nvolti nella chiusura:\n  - REG 19875 (BARI CENTRALE -> TARANTO) [Transito
  ]\n  - REG 19875 (BARI CENTRALE -> TARANTO)\nRitardo massimo rilevato: 0 m
  in\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua 
- per 2 treni: intervallo utile tra i passaggi (62s) inferiore alla soglia m
+ per 2 treni: intervallo utile tra i passaggi (65s) inferiore alla soglia m
  inima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PALAGIANELLO
 STATUS:CONFIRMED
@@ -160,16 +185,16 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19890--20261121-S11508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T142614Z
-DTEND:20261122T143144Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T142602Z
+DTEND:20261122T143132Z
 SUMMARY:[TRANSITO VELOCE] REG 19890 (TARANTO -> BARI CENTRALE) ore 15:30
 DESCRIPTION:Stazione/PL: PALAGIANELLO (S11508)\nRegime chiusura: TRANSITO V
- ELOCE\nChiusura sbarre stimata: 15:26:14 - 15:31:44\nTreni coinvolti nella
+ ELOCE\nChiusura sbarre stimata: 15:26:02 - 15:31:32\nTreni coinvolti nella
   chiusura:\n  - REG 19890 (TARANTO -> BARI CENTRALE) [Transito]\nRitardo m
  assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (87% tratta TARANTO -> MASSAFRA\; pedale 
+ : Transito stimato senza fermata (86% tratta TARANTO -> MASSAFRA\; pedale 
  annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PALAGIANELLO
 STATUS:CONFIRMED
@@ -181,8 +206,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19890--20261121-S11508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T143630Z
 DTEND:20261122T144100Z
 SUMMARY:[FERMATA] REG 19890 (TARANTO -> BARI CENTRALE) ore 15:40
@@ -200,18 +225,84 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-710--20261121-S11508@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T145213Z
+DTEND:20261122T145643Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:52 - 15:56 (primo: IC 710)
+DESCRIPTION:Stazione/PL: PALAGIANELLO (S11508)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:52:13 - 15:56:43\nTreni coi
+ nvolti nella chiusura:\n  - IC 710 (TARANTO -> ROMA TERMINI) [Transito]\n 
+  - IC 710 (TARANTO -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato: 
+ -3 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
+ nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PALAGIANELLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19892--20261121-S11508@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T155802Z
+DTEND:20261122T160332Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:58 - 17:03 (primo: REG 19892)
+DESCRIPTION:Stazione/PL: PALAGIANELLO (S11508)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:58:02 - 17:03:32\nTreni coi
+ nvolti nella chiusura:\n  - REG 19892 (TARANTO -> BARI CENTRALE) [Transito
+ ]\n  - REG 19892 (TARANTO -> BARI CENTRALE) [Transito]\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
+ a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PALAGIANELLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19892--20261121-S11508@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T160830Z
+DTEND:20261122T161300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:08 - 17:13 (primo: REG 19892)
+DESCRIPTION:Stazione/PL: PALAGIANELLO (S11508)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:08:30 - 17:13:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 19892 (TARANTO -> BARI CENTRALE)\n  - REG 
+ 19892 (TARANTO -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidab
+ ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PALAGIANELLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-19891--20261121-S11508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T161757Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T161754Z
 DTEND:20261122T162900Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:17 - 17:29 (primo: REG 19891)
 DESCRIPTION:Stazione/PL: PALAGIANELLO (S11508)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:17:57 - 17:29:00\nTreni coi
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:17:54 - 17:29:00\nTreni coi
  nvolti nella chiusura:\n  - REG 19891 (BARI CENTRALE -> TARANTO) [Transito
  ]\n  - REG 19891 (BARI CENTRALE -> TARANTO)\nRitardo massimo rilevato: 0 m
  in\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua 
- per 2 treni: intervallo utile tra i passaggi (62s) inferiore alla soglia m
+ per 2 treni: intervallo utile tra i passaggi (65s) inferiore alla soglia m
  inima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PALAGIANELLO
 STATUS:CONFIRMED
@@ -223,29 +314,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-605--20261121-S11508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T170311Z
-DTEND:20261122T170741Z
-SUMMARY:[TRANSITO VELOCE] IC 605 (MILANO CENTRALE -> LECCE) ore 18:06
-DESCRIPTION:Stazione/PL: PALAGIANELLO (S11508)\nRegime chiusura: TRANSITO V
- ELOCE\nChiusura sbarre stimata: 18:03:11 - 18:07:41\nTreni coinvolti nella
-  chiusura:\n  - IC 605 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (44% tratta GIOIA DEL COLLE -> TARANTO\; ped
- ale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T170211Z
+DTEND:20261122T170641Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:02 - 18:06 (primo: IC 605)
+DESCRIPTION:Stazione/PL: PALAGIANELLO (S11508)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:02:11 - 18:06:41\nTreni coi
+ nvolti nella chiusura:\n  - IC 605 (MILANO CENTRALE -> LECCE) [Transito]\n
+   - IC 605 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massimo rilevato
+ : -1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
+ tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PALAGIANELLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-562--20261121-S11508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T175810Z
 DTEND:20261122T180240Z
 SUMMARY:[TRANSITO VELOCE] IC 562 (VILLA S.GIOVANNI -> BARI CENTRALE) ore 19
@@ -266,8 +358,8 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8807--20261121-S11508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T182218Z
 DTEND:20261122T182748Z
 SUMMARY:[TRANSITO VELOCE] TRENO 8807 (MILANO CENTRALE -> TARANTO) ore 19:26
@@ -287,17 +379,17 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19897--20261121-S11508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T193257Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T193254Z
 DTEND:20261122T194400Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:32 - 20:44 (primo: REG 19897)
 DESCRIPTION:Stazione/PL: PALAGIANELLO (S11508)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:32:57 - 20:44:00\nTreni coi
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:32:54 - 20:44:00\nTreni coi
  nvolti nella chiusura:\n  - REG 19897 (BARI CENTRALE -> TARANTO) [Transito
  ]\n  - REG 19897 (BARI CENTRALE -> TARANTO)\nRitardo massimo rilevato: 0 m
  in\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua 
- per 2 treni: intervallo utile tra i passaggi (62s) inferiore alla soglia m
+ per 2 treni: intervallo utile tra i passaggi (65s) inferiore alla soglia m
  inima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PALAGIANELLO
 STATUS:CONFIRMED

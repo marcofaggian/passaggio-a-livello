@@ -9,20 +9,20 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:ff46399b008e82a45197a2b1a4e673147902172ed4818409703299a5a5a3
- ed8a
+X-CONTENT-HASH:19de23cad0b475828e1da3b4dbb02059f78d384ed4b5c54d4d7b8b34278e
+ a54c
 BEGIN:VEVENT
 UID:train-3901--20261121-S05069@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T064838Z
-DTEND:20261122T065408Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T064817Z
+DTEND:20261122T065347Z
 SUMMARY:[TRANSITO VELOCE] REG 3901 (BOLOGNA CENTRALE -> ANCONA) ore 07:52
 DESCRIPTION:Stazione/PL: SANTARCANGELO DI ROMAGNA (S05069)\nRegime chiusura
- : TRANSITO VELOCE\nChiusura sbarre stimata: 07:48:38 - 07:54:08\nTreni coi
+ : TRANSITO VELOCE\nChiusura sbarre stimata: 07:48:17 - 07:53:47\nTreni coi
  nvolti nella chiusura:\n  - REG 3901 (BOLOGNA CENTRALE -> ANCONA) [Transit
  o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Transito stimato senza fermata (32% tratta SAVIGNANO SUL RU
+ iva/euristica: Transito stimato senza fermata (30% tratta SAVIGNANO SUL RU
  BICONE -> RIMINI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SANTARCANGELO DI ROMAGNA
 STATUS:CONFIRMED
@@ -33,29 +33,79 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3919--20261121-S05069@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T115530Z
-DTEND:20261122T120000Z
-SUMMARY:[FERMATA] REG 3919 (REGGIO EMILIA -> ANCONA) ore 12:59
+UID:train-17437--20261121-S05069@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T072200Z
+DTEND:20261122T072830Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:22 - 08:28 (primo: REG 17437) (+4 
+ min)
 DESCRIPTION:Stazione/PL: SANTARCANGELO DI ROMAGNA (S05069)\nRegime chiusura
- : FERMATA\nChiusura sbarre stimata: 12:55:30 - 13:00:00\nTreni coinvolti n
- ella chiusura:\n  - REG 3919 (REGGIO EMILIA -> ANCONA)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
- one da traccia oraria regolare
+ : CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:22:00 - 08:28:3
+ 0\nTreni coinvolti nella chiusura:\n  - REG 17437 (BOLOGNA CENTRALE -> RIM
+ INI) (+4m)\n  - REG 17437 (BOLOGNA CENTRALE -> RIMINI) (+4m)\nRitardo mass
+ imo rilevato: 4 min\nAffidabilità stima: 99%\nNota normativa/euristica: C
+ hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
+ re alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SANTARCANGELO DI ROMAGNA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3905--20261121-S05069@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T075245Z
+DTEND:20261122T075815Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:52 - 08:58 (primo: REG 3905)
+DESCRIPTION:Stazione/PL: SANTARCANGELO DI ROMAGNA (S05069)\nRegime chiusura
+ : CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:52:45 - 08:58:1
+ 5\nTreni coinvolti nella chiusura:\n  - REG 3905 (REGGIO EMILIA -> ANCONA)
+  [Transito]\n  - REG 3905 (REGGIO EMILIA -> ANCONA) [Transito]\nRitardo ma
+ ssimo rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SANTARCANGELO DI ROMAGNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3919--20261121-S05069@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T115830Z
+DTEND:20261122T120630Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:58 - 13:06 (primo: REG 3919) (+6 m
+ in)
+DESCRIPTION:Stazione/PL: SANTARCANGELO DI ROMAGNA (S05069)\nRegime chiusura
+ : CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 12:58:30 - 13:06:3
+ 0\nTreni coinvolti nella chiusura:\n  - REG 3919 (REGGIO EMILIA -> ANCONA)
+  (+6m) [Arrivo]\n  - REG 3919 (REGGIO EMILIA -> ANCONA) (+6m) [Arrivo]\n  
+ - REG 3919 (REGGIO EMILIA -> ANCONA) (+6m) [Partenza]\n  - REG 3919 (REGGI
+ O EMILIA -> ANCONA) (+6m) [Partenza]\nRitardo massimo rilevato: 6 min\nAff
+ idabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 4 t
+ reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
+  sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SANTARCANGELO DI ROMAGNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3920--20261121-S05069@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T134430Z
 DTEND:20261122T134900Z
 SUMMARY:[FERMATA] REG 3920 (RIMINI -> REGGIO EMILIA) ore 14:48
@@ -74,50 +124,73 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3927--20261121-S05069@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T154838Z
-DTEND:20261122T155408Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T154817Z
+DTEND:20261122T155347Z
 SUMMARY:[TRANSITO VELOCE] REG 3927 (REGGIO EMILIA -> PESARO) ore 16:52
 DESCRIPTION:Stazione/PL: SANTARCANGELO DI ROMAGNA (S05069)\nRegime chiusura
- : TRANSITO VELOCE\nChiusura sbarre stimata: 16:48:38 - 16:54:08\nTreni coi
+ : TRANSITO VELOCE\nChiusura sbarre stimata: 16:48:17 - 16:53:47\nTreni coi
  nvolti nella chiusura:\n  - REG 3927 (REGGIO EMILIA -> PESARO) [Transito]\
  nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Transito stimato senza fermata (32% tratta SAVIGNANO SUL RUBIC
+ /euristica: Transito stimato senza fermata (30% tratta SAVIGNANO SUL RUBIC
  ONE -> RIMINI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SANTARCANGELO DI ROMAGNA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3931--20261121-S05069@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T174942Z
+DTEND:20261122T175512Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:49 - 18:55 (primo: REG 3931)
+DESCRIPTION:Stazione/PL: SANTARCANGELO DI ROMAGNA (S05069)\nRegime chiusura
+ : CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:49:42 - 18:55:1
+ 2\nTreni coinvolti nella chiusura:\n  - REG 3931 (REGGIO EMILIA -> ANCONA)
+  [Transito]\n  - REG 3931 (REGGIO EMILIA -> ANCONA) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
+ iore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SANTARCANGELO DI ROMAGNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3939--20261121-S05069@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T204838Z
-DTEND:20261122T205408Z
-SUMMARY:[TRANSITO VELOCE] REG 3939 (REGGIO EMILIA -> ANCONA) ore 21:52
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T204817Z
+DTEND:20261122T205347Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:48 - 21:53 (primo: REG 3939)
 DESCRIPTION:Stazione/PL: SANTARCANGELO DI ROMAGNA (S05069)\nRegime chiusura
- : TRANSITO VELOCE\nChiusura sbarre stimata: 21:48:38 - 21:54:08\nTreni coi
- nvolti nella chiusura:\n  - REG 3939 (REGGIO EMILIA -> ANCONA) [Transito]\
- nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Transito stimato senza fermata (32% tratta SAVIGNANO SUL RUBIC
- ONE -> RIMINI\; pedale annuncio fisso Vmax)
+ : CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:48:17 - 21:53:4
+ 7\nTreni coinvolti nella chiusura:\n  - REG 3939 (REGGIO EMILIA -> ANCONA)
+  [Transito]\n  - REG 3939 (REGGIO EMILIA -> ANCONA) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
+ iore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SANTARCANGELO DI ROMAGNA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-88291--20261121-S05069@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T220330Z
 DTEND:20261122T220800Z
 SUMMARY:[FERMATA] REG 88291 (REGGIO EMILIA -> RIMINI) ore 23:07

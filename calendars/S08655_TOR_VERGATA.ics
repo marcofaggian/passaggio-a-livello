@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:6296dda0d10a214fd96a54dbe7d36e35533c4d0060109cdaceb2ac3c7ac1
- 22de
+X-CONTENT-HASH:6fe434a694d773a412505a2448ad647a590010829a95d84db89546c5e17f
+ 3bc6
 BEGIN:VEVENT
 UID:train-12595--20261121-S08655@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T053530Z
 DTEND:20261122T054000Z
 SUMMARY:[FERMATA] REG 12595 (ROMA TERMINI -> CASSINO) ore 06:39
@@ -33,28 +33,31 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12597--20261121-S08655@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T062130Z
-DTEND:20261122T062600Z
-SUMMARY:[FERMATA] REG 12597 (ROMA TERMINI -> CASSINO) ore 07:25
-DESCRIPTION:Stazione/PL: TOR VERGATA (S08655)\nRegime chiusura: FERMATA\nCh
- iusura sbarre stimata: 07:21:30 - 07:26:00\nTreni coinvolti nella chiusura
- :\n  - REG 12597 (ROMA TERMINI -> CASSINO)\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracc
- ia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T062200Z
+DTEND:20261122T062700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:22 - 07:27 (primo: REG 12597) (+1 
+ min)
+DESCRIPTION:Stazione/PL: TOR VERGATA (S08655)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 07:22:00 - 07:27:00\nTreni coin
+ volti nella chiusura:\n  - REG 12597 (ROMA TERMINI -> CASSINO) (+1m)\n  - 
+ REG 12597 (ROMA TERMINI -> CASSINO) (+1m)\nRitardo massimo rilevato: 1 min
+ \nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua pe
+ r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TOR VERGATA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12603--20261121-S08655@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T071530Z
 DTEND:20261122T072000Z
 SUMMARY:[FERMATA] REG 12603 (ROMA TERMINI -> CASSINO) ore 08:19
@@ -73,16 +76,16 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12625--20261121-S08655@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T145441Z
-DTEND:20261122T150011Z
-SUMMARY:[TRANSITO VELOCE] REG 12625 (ROMA TERMINI -> CASSINO) ore 15:58
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T145449Z
+DTEND:20261122T150019Z
+SUMMARY:[TRANSITO VELOCE] REG 12625 (ROMA TERMINI -> CASSINO) ore 15:59
 DESCRIPTION:Stazione/PL: TOR VERGATA (S08655)\nRegime chiusura: TRANSITO VE
- LOCE\nChiusura sbarre stimata: 15:54:41 - 16:00:11\nTreni coinvolti nella 
+ LOCE\nChiusura sbarre stimata: 15:54:49 - 16:00:19\nTreni coinvolti nella 
  chiusura:\n  - REG 12625 (ROMA TERMINI -> CASSINO) [Transito]\nRitardo mas
  simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Transito stimato senza fermata (35% tratta CIAMPINO -> ZAGAROLO\; pedale a
+ Transito stimato senza fermata (36% tratta CIAMPINO -> ZAGAROLO\; pedale a
  nnuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione TOR VERGATA
 STATUS:CONFIRMED
@@ -93,22 +96,88 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-12622--20261121-S08655@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T154011Z
+DTEND:20261122T154541Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:40 - 16:45 (primo: REG 12622)
+DESCRIPTION:Stazione/PL: TOR VERGATA (S08655)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 16:40:11 - 16:45:41\nTreni coin
+ volti nella chiusura:\n  - REG 12622 (CASSINO -> ROMA TERMINI) [Transito]\
+ n  - REG 12622 (CASSINO -> ROMA TERMINI) [Transito]\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
+ ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione TOR VERGATA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12622--20261121-S08655@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T155030Z
+DTEND:20261122T155500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:50 - 16:55 (primo: REG 12622)
+DESCRIPTION:Stazione/PL: TOR VERGATA (S08655)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 16:50:30 - 16:55:00\nTreni coin
+ volti nella chiusura:\n  - REG 12622 (CASSINO -> ROMA TERMINI)\n  - REG 12
+ 622 (CASSINO -> ROMA TERMINI)\nRitardo massimo rilevato: 0 min\nAffidabili
+ tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
+ ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
+LOCATION:Passaggio a Livello / Stazione TOR VERGATA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-5841--20261121-S08655@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T160720Z
-DTEND:20261122T161250Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T160727Z
+DTEND:20261122T161257Z
 SUMMARY:[TRANSITO VELOCE] REG 5841 (ROMA TERMINI -> CASERTA) ore 17:11
 DESCRIPTION:Stazione/PL: TOR VERGATA (S08655)\nRegime chiusura: TRANSITO VE
- LOCE\nChiusura sbarre stimata: 17:07:20 - 17:12:50\nTreni coinvolti nella 
+ LOCE\nChiusura sbarre stimata: 17:07:27 - 17:12:57\nTreni coinvolti nella 
  chiusura:\n  - REG 5841 (ROMA TERMINI -> CASERTA) [Transito]\nRitardo mass
  imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (35% tratta CIAMPINO -> ZAGAROLO\; pedale an
+ ransito stimato senza fermata (36% tratta CIAMPINO -> ZAGAROLO\; pedale an
  nuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione TOR VERGATA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12633--20261121-S08655@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T165749Z
+DTEND:20261122T170319Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:57 - 18:03 (primo: REG 12633)
+DESCRIPTION:Stazione/PL: TOR VERGATA (S08655)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 17:57:49 - 18:03:19\nTreni coin
+ volti nella chiusura:\n  - REG 12633 (ROMA TERMINI -> CASSINO) [Transito]\
+ n  - REG 12633 (ROMA TERMINI -> CASSINO) [Transito]\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
+ ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione TOR VERGATA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG

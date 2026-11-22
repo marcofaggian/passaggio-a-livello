@@ -9,32 +9,62 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:b92041ba9d6156f4d7868ca2323e56dbe35cea3116183ba52ad84b55f705
- c506
+X-CONTENT-HASH:151eb6d86d1406ba2923588d02b94ffdbc38e945db8e503466f424e6a9b9
+ 899b
 BEGIN:VEVENT
-UID:train-9508--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T050330Z
-DTEND:20261122T050800Z
-SUMMARY:[FERMATA] TRENO 9508 (ROMA TERMINI -> TORINO PORTA NUOVA) ore 06:07
-DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 06:03:30 - 06:08:00\nTreni coinvolti nella chius
- ura:\n  - TRENO 9508 (ROMA TERMINI -> TORINO PORTA NUOVA)\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
- isione da traccia oraria regolare
+UID:train-9400--20261121-S08217@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T043800Z
+DTEND:20261122T044630Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 05:38 - 05:46 (primo: TRENO 9400) (+1
+  min)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 05:38:00 - 05:46:30\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 9400 (ROMA TERMINI -> VENEZIA S.LUCIA)
+  (+1m) [Arrivo]\n  - TRENO 9400 (ROMA TERMINI -> VENEZIA S.LUCIA) (+1m) [A
+ rrivo]\n  - TRENO 9400 (ROMA TERMINI -> VENEZIA S.LUCIA) (+1m) [Partenza]\
+ n  - TRENO 9400 (ROMA TERMINI -> VENEZIA S.LUCIA) (+1m) [Partenza]\nRitard
+ o massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/eurist
+ ica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9508--20261121-S08217@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T050300Z
+DTEND:20261122T051130Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:03 - 06:11 (primo: TRENO 9508) (+1
+  min)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 06:03:00 - 06:11:30\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 9508 (ROMA TERMINI -> TORINO PORTA NUO
+ VA) (+1m) [Arrivo]\n  - TRENO 9508 (ROMA TERMINI -> TORINO PORTA NUOVA) (+
+ 1m) [Arrivo]\n  - TRENO 9508 (ROMA TERMINI -> TORINO PORTA NUOVA) (+1m) [P
+ artenza]\n  - TRENO 9508 (ROMA TERMINI -> TORINO PORTA NUOVA) (+1m) [Parte
+ nza]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota norm
+ ativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8588--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T052530Z
 DTEND:20261122T053100Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:25 - 06:31 (primo: TRENO 8588)
@@ -55,8 +85,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9404--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T053630Z
 DTEND:20261122T055300Z
 SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 06:36 - 06:53 (primo: TRENO 9404)
@@ -78,148 +108,90 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20790--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T060630Z
-DTEND:20261122T062200Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 07:06 - 07:22 (primo: REG 20790)
+DTEND:20261122T063300Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 07:06 - 07:33 (primo: REG 20790)
 DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
-  CONTINUA - 5 TRENI\nChiusura sbarre stimata: 07:06:30 - 07:22:00\nTreni c
+  CONTINUA - 7 TRENI\nChiusura sbarre stimata: 07:06:30 - 07:33:00\nTreni c
  oinvolti nella chiusura:\n  - REG 20790 (ROMA TIBURTINA -> PESCARA)\n  - R
  EG 4151 (ANCONA -> ROMA TERMINI)\n  - REG 12754 (ROMA TIBURTINA -> TIVOLI)
  \n  - TRENO 9512 (ROMA TERMINI -> MILANO CENTRALE)\n  - IC 534 (ROMA TERMI
- NI -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\n
- Nota normativa/euristica: Chiusura continua per 5 treni: intervallo utile 
- tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
- s)
+ NI -> ANCONA)\n  - TRENO 9610 (ROMA TERMINI -> MILANO CENTRALE) [Transito]
+ \n  - TRENO 9304 (NAPOLI CENTRALE -> TORINO PORTA NUOVA)\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
+ ura continua per 7 treni: intervallo utile tra i passaggi (109s) inferiore
+  alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9304--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T062830Z
-DTEND:20261122T063300Z
-SUMMARY:[FERMATA] TRENO 9304 (NAPOLI CENTRALE -> TORINO PORTA NUOVA) ore 07
- :32
-DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 07:28:30 - 07:33:00\nTreni coinvolti nella chius
- ura:\n  - TRENO 9304 (NAPOLI CENTRALE -> TORINO PORTA NUOVA)\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
- revisione da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4726--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T063730Z
-DTEND:20261122T064300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:37 - 07:43 (primo: REG 4726)
+UID:train-9406--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T063830Z
+DTEND:20261122T064430Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:38 - 07:44 (primo: TRENO 9406) (+1
+  min)
 DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:37:30 - 07:43:00\nTreni c
- oinvolti nella chiusura:\n  - REG 4726 (ROMA TERMINI -> PERUGIA)\n  - TREN
- O 9406 (NAPOLI CENTRALE -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua 
- per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
- nima di sgombero stradale (120s)
+  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 07:38:30 - 07:44:30\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 9406 (NAPOLI CENTRALE -> VENEZIA S.LUC
+ IA)\n  - REG 4726 (ROMA TERMINI -> PERUGIA) (+1m)\n  - REG 4726 (ROMA TERM
+ INI -> PERUGIA) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabilità stim
+ a: 90%\nNota normativa/euristica: Chiusura continua per 3 treni: intervall
+ o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
+ ale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9505--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T075030Z
-DTEND:20261122T075500Z
-SUMMARY:[FERMATA] TRENO 9505 (MILANO CENTRALE -> SALERNO) ore 08:54
-DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 08:50:30 - 08:55:00\nTreni coinvolti nella chius
- ura:\n  - TRENO 9505 (MILANO CENTRALE -> SALERNO)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
- a traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9401--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T081130Z
-DTEND:20261122T081800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:11 - 09:18 (primo: TRENO 9401)
+UID:train-9516--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T065637Z
+DTEND:20261122T070207Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9516 (SALERNO -> TORINO PORTA NUOVA) ore 08
+ :00
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: TRANSITO
+  VELOCE\nChiusura sbarre stimata: 07:56:37 - 08:02:07\nTreni coinvolti nel
+ la chiusura:\n  - TRENO 9516 (SALERNO -> TORINO PORTA NUOVA) [Transito]\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Transito stimato senza fermata (5% tratta ROMA TERMINI -> FIRENZ
+ E SANTA MARIA NOVELLA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9591--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T071920Z
+DTEND:20261122T072707Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 08:19 - 08:27 (primo: TRENO 9591)
 DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:11:30 - 09:18:00\nTreni c
- oinvolti nella chiusura:\n  - TRENO 9401 (VENEZIA S.LUCIA -> ROMA TERMINI)
- \n  - TRENO 9520 (NAPOLI CENTRALE -> MILANO CENTRALE)\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura
-  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9301--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T082030Z
-DTEND:20261122T082500Z
-SUMMARY:[FERMATA] TRENO 9301 (MANTOVA -> ROMA TERMINI) ore 09:24
-DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 09:20:30 - 09:25:00\nTreni coinvolti nella chius
- ura:\n  - TRENO 9301 (MANTOVA -> ROMA TERMINI)\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
- raccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8508--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T085330Z
-DTEND:20261122T090444Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 09:53 - 10:04 (primo: TRENO 8508)
-DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
-  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 09:53:30 - 10:04:44\nTreni c
- oinvolti nella chiusura:\n  - TRENO 8508 (ROMA TERMINI -> BRESCIA)\n  - TR
- ENO 8505 (BOLZANO -> ROMA TERMINI)\n  - TRENO 9607 (TORINO PORTA NUOVA -> 
- NAPOLI CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 08:19:20 - 08:27:07\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 9591 (FIRENZE SANTA MARIA NOVELLA -> R
+ OMA TERMINI) [Transito]\n  - TRENO 9591 (FIRENZE SANTA MARIA NOVELLA -> RO
+ MA TERMINI) [Transito]\n  - TRENO 9490 (SALERNO -> VENEZIA S.LUCIA) [Trans
+ ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -229,162 +201,305 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9604--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T092818Z
-DTEND:20261122T093348Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9604 (BRESCIA -> NAPOLI CENTRALE) ore 10:32
-DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 10:28:18 - 10:33:48\nTreni coinvolti nel
- la chiusura:\n  - TRENO 9604 (BRESCIA -> NAPOLI CENTRALE) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (95% tratta MILANO ROGOREDO -> ROMA 
- TERMINI\; pedale annuncio fisso Vmax)
+UID:train-9505--20261121-S08217@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T080200Z
+DTEND:20261122T083151Z
+SUMMARY:[CHIUSURA CONTINUA - 12 TRENI] 09:02 - 09:31 (primo: TRENO 9505) (+
+ 12 min)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 12 TRENI\nChiusura sbarre stimata: 09:02:00 - 09:31:51\nTreni 
+ coinvolti nella chiusura:\n  - TRENO 9505 (MILANO CENTRALE -> SALERNO) (+1
+ 2m) [Arrivo]\n  - TRENO 9505 (MILANO CENTRALE -> SALERNO) (+12m) [Arrivo]\
+ n  - TRENO 9505 (MILANO CENTRALE -> SALERNO) (+12m) [Partenza]\n  - TRENO 
+ 9505 (MILANO CENTRALE -> SALERNO) (+12m) [Partenza]\n  - TRENO 9401 (VENEZ
+ IA S.LUCIA -> ROMA TERMINI)\n  - TRENO 9520 (NAPOLI CENTRALE -> MILANO CEN
+ TRALE) (+5m) [Arrivo]\n  - TRENO 9520 (NAPOLI CENTRALE -> MILANO CENTRALE)
+  (+5m) [Arrivo]\n  - TRENO 9520 (NAPOLI CENTRALE -> MILANO CENTRALE) (+5m)
+  [Partenza]\n  - TRENO 9520 (NAPOLI CENTRALE -> MILANO CENTRALE) (+5m) [Pa
+ rtenza]\n  - TRENO 9301 (MANTOVA -> ROMA TERMINI)\n  - TRENO 9301 (MANTOVA
+  -> ROMA TERMINI)\n  - TRENO 9414 (SALERNO -> VENEZIA S.LUCIA) [Transito]\
+ nRitardo massimo rilevato: 12 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Chiusura continua per 12 treni: intervallo utile tra i passag
+ gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 12 TRENI,FERROVIA
+X-PL-DELAY-MIN:12
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9515--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T093714Z
-DTEND:20261122T094300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:37 - 10:43 (primo: TRENO 9515)
+UID:train-9511--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T083412Z
+DTEND:20261122T083942Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:34 - 09:39 (primo: TRENO 9511)
 DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:37:14 - 10:43:00\nTreni c
- oinvolti nella chiusura:\n  - TRENO 9515 (MILANO CENTRALE -> SALERNO) [Tra
- nsito]\n  - TRENO 9416 (ROMA TERMINI -> VENEZIA S.LUCIA)\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
- ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
- lla soglia minima di sgombero stradale (120s)
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:34:12 - 09:39:42\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) [Trans
+ ito]\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massim
+ o rilevato: -3 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9524--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T085153Z
+DTEND:20261122T090100Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 09:51 - 10:01 (primo: TRENO 9524)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 09:51:53 - 10:01:00\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 9524 (SALERNO -> MILANO CENTRALE) [Tra
+ nsito]\n  - TRENO 8508 (ROMA TERMINI -> BRESCIA)\n  - TRENO 8505 (BOLZANO 
+ -> ROMA TERMINI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
+ %\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo uti
+ le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
+ 120s)
+LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9611--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T095817Z
-DTEND:20261122T100347Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9611 (TORINO PORTA NUOVA -> NAPOLI CENTRALE
- ) ore 11:02
-DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 10:58:17 - 11:03:47\nTreni coinvolti nel
- la chiusura:\n  - TRENO 9611 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Tran
- sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Transito stimato senza fermata (94% tratta BOLOGNA C.LE/
- AV -> ROMA TERMINI\; pedale annuncio fisso Vmax)
+UID:train-9607--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T090941Z
+DTEND:20261122T091511Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:09 - 10:15 (primo: TRENO 9607) (+1
+  min)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:09:41 - 10:15:11\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 9607 (TORINO PORTA NUOVA -> NAPOLI CEN
+ TRALE) (+1m) [Transito]\n  - TRENO 9607 (TORINO PORTA NUOVA -> NAPOLI CENT
+ RALE) (+1m) [Transito]\nRitardo massimo rilevato: 1 min\nAffidabilità sti
+ ma: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
+ lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
+ dale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9310--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T092705Z
+DTEND:20261122T093248Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:27 - 10:32 (primo: TRENO 9310) (+1
+ 2 min)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 10:27:05 - 10:32:48\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 9310 (NAPOLI CENTRALE -> TORINO PORTA 
+ NUOVA) (+12m) [Transito]\n  - TRENO 9310 (NAPOLI CENTRALE -> TORINO PORTA 
+ NUOVA) (+12m) [Transito]\n  - TRENO 9604 (BRESCIA -> NAPOLI CENTRALE) (+2m
+ ) [Transito]\n  - TRENO 9604 (BRESCIA -> NAPOLI CENTRALE) (+2m) [Transito]
+ \nRitardo massimo rilevato: 12 min\nAffidabilità stima: 78%\nNota normati
+ va/euristica: Chiusura continua per 4 treni: intervallo utile tra i passag
+ gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:12
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9416--20261121-S08217@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T093800Z
+DTEND:20261122T094700Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 10:38 - 10:47 (primo: TRENO 9416) (+1
+ 7 min)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 6 TRENI\nChiusura sbarre stimata: 10:38:00 - 10:47:00\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 9416 (ROMA TERMINI -> VENEZIA S.LUCIA)
+  (+1m) [Arrivo]\n  - TRENO 9416 (ROMA TERMINI -> VENEZIA S.LUCIA) (+1m) [A
+ rrivo]\n  - IC 588 (ROMA TERMINI -> TRIESTE CENTRALE) (+17m) [Transito]\n 
+  - IC 588 (ROMA TERMINI -> TRIESTE CENTRALE) (+17m) [Transito]\n  - TRENO 
+ 9416 (ROMA TERMINI -> VENEZIA S.LUCIA) (+1m) [Partenza]\n  - TRENO 9416 (R
+ OMA TERMINI -> VENEZIA S.LUCIA) (+1m) [Partenza]\nRitardo massimo rilevato
+ : 17 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
+ tinua per 6 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:17
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9626--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T095828Z
+DTEND:20261122T101927Z
+SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 10:58 - 11:19 (primo: TRENO 9626) (+5
+ 8 min)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 8 TRENI\nChiusura sbarre stimata: 10:58:28 - 11:19:27\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 9626 (ROMA TERMINI -> TORINO PORTA NUO
+ VA) (+8m) [Transito]\n  - TRENO 9626 (ROMA TERMINI -> TORINO PORTA NUOVA) 
+ (+8m) [Transito]\n  - TRENO 9611 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [
+ Transito]\n  - TRENO 9611 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transit
+ o]\n  - TRENO 8509 (SIBARI -> BOLZANO) (+14m)\n  - TRENO 8509 (SIBARI -> B
+ OLZANO) (+14m)\n  - TRENO 9515 (MILANO CENTRALE -> SALERNO) (+58m) [Transi
+ to]\n  - TRENO 9515 (MILANO CENTRALE -> SALERNO) (+58m) [Transito]\nRitard
+ o massimo rilevato: 58 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Chiusura continua per 8 treni: intervallo utile tra i passaggi (0s) 
+ inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+X-PL-DELAY-MIN:58
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9613--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T102914Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T102956Z
 DTEND:20261122T105000Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 11:29 - 11:50 (primo: TRENO 9613)
+SUMMARY:[CHIUSURA CONTINUA - 9 TRENI] 11:29 - 11:50 (primo: TRENO 9613) (+5
+  min)
 DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
-  CONTINUA - 5 TRENI\nChiusura sbarre stimata: 11:29:14 - 11:50:00\nTreni c
+  CONTINUA - 9 TRENI\nChiusura sbarre stimata: 11:29:56 - 11:50:00\nTreni c
  oinvolti nella chiusura:\n  - TRENO 9613 (MILANO CENTRALE -> NAPOLI CENTRA
- LE) [Transito]\n  - REG 4510 (ROMA TERMINI -> ASSISI)\n  - TRENO 9519 (TOR
- INO PORTA NUOVA -> SALERNO) [Transito]\n  - REG 4727 (PERUGIA -> ROMA TERM
- INI)\n  - TRENO 9466 (VENEZIA S.LUCIA -> ROMA TERMINI)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
- a continua per 5 treni: intervallo utile tra i passaggi (30s) inferiore al
- la soglia minima di sgombero stradale (120s)
+ LE) [Transito]\n  - REG 4510 (ROMA TERMINI -> ASSISI) (+3m) [Arrivo]\n  - 
+ REG 4510 (ROMA TERMINI -> ASSISI) (+3m) [Arrivo]\n  - REG 4510 (ROMA TERMI
+ NI -> ASSISI) (+3m) [Partenza]\n  - REG 4510 (ROMA TERMINI -> ASSISI) (+3m
+ ) [Partenza]\n  - REG 4727 (PERUGIA -> ROMA TERMINI)\n  - TRENO 9519 (TORI
+ NO PORTA NUOVA -> SALERNO) (+5m) [Transito]\n  - TRENO 9519 (TORINO PORTA 
+ NUOVA -> SALERNO) (+5m) [Transito]\n  - TRENO 9466 (VENEZIA S.LUCIA -> ROM
+ A TERMINI)\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Chiusura continua per 9 treni: intervallo utile tra
+  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 9 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8507--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T105530Z
-DTEND:20261122T110000Z
-SUMMARY:[FERMATA] TRENO 8507 (BOLZANO -> ROMA TERMINI) ore 11:59
-DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 11:55:30 - 12:00:00\nTreni coinvolti nella chius
- ura:\n  - TRENO 8507 (BOLZANO -> ROMA TERMINI)\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
- raccia oraria regolare
+UID:train-8507--20261121-S08217@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T105730Z
+DTEND:20261122T110530Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:57 - 12:05 (primo: TRENO 8507) (+3
+  min)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 11:57:30 - 12:05:30\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 8507 (BOLZANO -> ROMA TERMINI) (+3m) [
+ Arrivo]\n  - TRENO 8507 (BOLZANO -> ROMA TERMINI) (+3m) [Arrivo]\n  - TREN
+ O 8507 (BOLZANO -> ROMA TERMINI) (+3m) [Partenza]\n  - TRENO 8507 (BOLZANO
+  -> ROMA TERMINI) (+3m) [Partenza]\nRitardo massimo rilevato: 3 min\nAffid
+ abilità stima: 99%\nNota normativa/euristica: Chiusura continua per 4 tre
+ ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
+ gombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9532--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T111330Z
-DTEND:20261122T111840Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:13 - 12:18 (primo: TRENO 9532)
+UID:train-9532--20261121-S08217@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T111800Z
+DTEND:20261122T114610Z
+SUMMARY:[CHIUSURA CONTINUA - 15 TRENI] 12:18 - 12:46 (primo: TRENO 9532) (+
+ 46 min)
 DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:13:30 - 12:18:40\nTreni c
- oinvolti nella chiusura:\n  - TRENO 9532 (NAPOLI CENTRALE -> TORINO PORTA 
- NUOVA)\n  - TRENO 9409 (GORIZIA CENTRALE -> NAPOLI CENTRALE) [Transito]\nR
- itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
+  CONTINUA - 15 TRENI\nChiusura sbarre stimata: 12:18:00 - 12:46:10\nTreni 
+ coinvolti nella chiusura:\n  - TRENO 9532 (NAPOLI CENTRALE -> TORINO PORTA
+  NUOVA) (+6m) [Arrivo]\n  - TRENO 9532 (NAPOLI CENTRALE -> TORINO PORTA NU
+ OVA) (+6m) [Arrivo]\n  - TRENO 9532 (NAPOLI CENTRALE -> TORINO PORTA NUOVA
+ ) (+6m) [Partenza]\n  - TRENO 9532 (NAPOLI CENTRALE -> TORINO PORTA NUOVA)
+  (+6m) [Partenza]\n  - TRENO 9409 (GORIZIA CENTRALE -> NAPOLI CENTRALE) [T
+ ransito]\n  - TRENO 9409 (GORIZIA CENTRALE -> NAPOLI CENTRALE) [Transito]\
+ n  - TRENO 8418 (REGGIO DI CALABRIA CENTRALE -> VENEZIA S.LUCIA) (+46m) [T
+ ransito]\n  - TRENO 8418 (REGGIO DI CALABRIA CENTRALE -> VENEZIA S.LUCIA) 
+ (+46m) [Transito]\n  - TRENO 9391 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) 
+ (+11m) [Arrivo]\n  - TRENO 9391 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) (+
+ 11m) [Arrivo]\n  - TRENO 9391 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) (+11
+ m) [Partenza]\n  - TRENO 9391 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) (+11
+ m) [Partenza]\n  - TRENO 9420 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) (+7m) [
+ Transito]\n  - TRENO 9420 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) (+7m) [Tran
+ sito]\n  - TRENO 9634 (NAPOLI CENTRALE -> MILANO CENTRALE) [Transito]\nRit
+ ardo massimo rilevato: 46 min\nAffidabilità stima: 78%\nNota normativa/eu
+ ristica: Chiusura continua per 15 treni: intervallo utile tra i passaggi (
  0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 15 TRENI,FERROVIA
+X-PL-DELAY-MIN:46
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9411--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T121749Z
-DTEND:20261122T122400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:17 - 13:24 (primo: TRENO 9411)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T121835Z
+DTEND:20261122T123330Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 13:18 - 13:33 (primo: TRENO 9411) (+2
+  min)
 DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:17:49 - 13:24:00\nTreni c
+  CONTINUA - 7 TRENI\nChiusura sbarre stimata: 13:18:35 - 13:33:30\nTreni c
  oinvolti nella chiusura:\n  - TRENO 9411 (VENEZIA S.LUCIA -> ROMA TERMINI)
-  [Transito]\n  - TRENO 9311 (TORINO PORTA NUOVA -> NAPOLI CENTRALE)\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
- tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
+  [Transito]\n  - TRENO 9311 (TORINO PORTA NUOVA -> NAPOLI CENTRALE)\n  - T
+ RENO 9422 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) [Transito]\n  - REG 4154 (R
+ OMA TERMINI -> ANCONA) (+2m) [Arrivo]\n  - REG 4154 (ROMA TERMINI -> ANCON
+ A) (+2m) [Arrivo]\n  - REG 4154 (ROMA TERMINI -> ANCONA) (+2m) [Partenza]\
+ n  - REG 4154 (ROMA TERMINI -> ANCONA) (+2m) [Partenza]\nRitardo massimo r
+ ilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
+ ra continua per 7 treni: intervallo utile tra i passaggi (0s) inferiore al
+ la soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9527--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T123630Z
 DTEND:20261122T124100Z
 SUMMARY:[FERMATA] TRENO 9527 (MILANO CENTRALE -> SALERNO) ore 13:40
@@ -402,18 +517,42 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
+UID:train-9584--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T124406Z
+DTEND:20261122T124936Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:44 - 13:49 (primo: TRENO 9584) (+2
+ 0 min)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:44:06 - 13:49:36\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 9584 (REGGIO DI CALABRIA CENTRALE -> T
+ ORINO PORTA NUOVA) (+20m) [Transito]\n  - TRENO 9584 (REGGIO DI CALABRIA C
+ ENTRALE -> TORINO PORTA NUOVA) (+20m) [Transito]\nRitardo massimo rilevato
+ : 20 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
+ tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:20
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
 UID:train-9623--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T125817Z
-DTEND:20261122T130347Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T125859Z
+DTEND:20261122T130429Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9623 (MILANO CENTRALE -> REGGIO DI CALABRIA
-  CENTRALE) ore 14:02
+  CENTRALE) ore 14:03
 DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 13:58:17 - 14:03:47\nTreni coinvolti nel
+  VELOCE\nChiusura sbarre stimata: 13:58:59 - 14:04:29\nTreni coinvolti nel
  la chiusura:\n  - TRENO 9623 (MILANO CENTRALE -> REGGIO DI CALABRIA CENTRA
  LE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\
- nNota normativa/euristica: Transito stimato senza fermata (94% tratta BOLO
+ nNota normativa/euristica: Transito stimato senza fermata (95% tratta BOLO
  GNA C.LE/AV -> ROMA TERMINI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
@@ -424,85 +563,115 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9415--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T141030Z
-DTEND:20261122T141900Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:10 - 15:19 (primo: TRENO 9415)
+UID:train-20485--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T131230Z
+DTEND:20261122T131700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:12 - 14:17 (primo: REG 20485) (+1 
+ min)
 DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
-  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 15:10:30 - 15:19:00\nTreni c
- oinvolti nella chiusura:\n  - TRENO 9415 (VENEZIA S.LUCIA -> ROMA TERMINI)
- \n  - REG 21248 (ROMA TIBURTINA -> AVEZZANO)\n  - IC 540 (ROMA TERMINI -> 
- ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota n
- ormativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i 
- passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:12:30 - 14:17:00\nTreni c
+ oinvolti nella chiusura:\n  - REG 20485 (ORTE -> ROMA TIBURTINA) (+1m)\n  
+ - REG 20485 (ORTE -> ROMA TIBURTINA) (+1m)\nRitardo massimo rilevato: 1 mi
+ n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
+ er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
+ ima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9423--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T133549Z
+DTEND:20261122T134354Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 14:35 - 14:43 (primo: TRENO 9423) (+2
+ 7 min)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 14:35:49 - 14:43:54\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 9423 (ROMA TERMINI -> VENEZIA S.LUCIA)
+  [Transito]\n  - TRENO 9413 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) (+27m) [T
+ ransito]\n  - TRENO 9413 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) (+27m) [Tran
+ sito]\nRitardo massimo rilevato: 27 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i p
+ assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:27
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-1552--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T143547Z
-DTEND:20261122T144100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:35 - 15:41 (primo: IC 1552)
+UID:train-20491--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T135830Z
+DTEND:20261122T140300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:58 - 15:03 (primo: REG 20491) (+2 
+ min)
 DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:35:47 - 15:41:00\nTreni c
- oinvolti nella chiusura:\n  - IC 1552 (ROMA TERMINI -> TRIESTE CENTRALE) [
- Transito]\n  - TRENO 9535 (TORINO PORTA NUOVA -> NAPOLI CENTRALE)\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
- feriore alla soglia minima di sgombero stradale (120s)
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:58:30 - 15:03:00\nTreni c
+ oinvolti nella chiusura:\n  - REG 20491 (FARA SABINA-MONTELIBRETTI -> ROMA
+  TIBURTINA) (+2m)\n  - REG 20491 (FARA SABINA-MONTELIBRETTI -> ROMA TIBURT
+ INA) (+2m)\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 90%\nNot
+ a normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra
+  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-12766--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T144630Z
-DTEND:20261122T145446Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:46 - 15:54 (primo: REG 12766)
+UID:train-21248--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T141130Z
+DTEND:20261122T141930Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 15:11 - 15:19 (primo: REG 21248) (+2 
+ min)
 DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:46:30 - 15:54:46\nTreni c
- oinvolti nella chiusura:\n  - REG 12766 (ROMA TIBURTINA -> TIVOLI)\n  - IC
-  584 (TRIESTE CENTRALE -> ROMA TERMINI) [Transito]\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
- ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
- glia minima di sgombero stradale (120s)
+  CONTINUA - 6 TRENI\nChiusura sbarre stimata: 15:11:30 - 15:19:30\nTreni c
+ oinvolti nella chiusura:\n  - REG 21248 (ROMA TIBURTINA -> AVEZZANO)\n  - 
+ TRENO 9544 (SALERNO -> MILANO CENTRALE) [Transito]\n  - TRENO 9544 (SALERN
+ O -> MILANO CENTRALE) [Transito]\n  - IC 540 (ROMA TERMINI -> ANCONA)\n  -
+  TRENO 9415 (VENEZIA S.LUCIA -> ROMA TERMINI) (+2m)\n  - TRENO 9415 (VENEZ
+ IA S.LUCIA -> ROMA TERMINI) (+2m)\nRitardo massimo rilevato: 2 min\nAffida
+ bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 6 tren
+ i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
+ ombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9631--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T150259Z
-DTEND:20261122T150829Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9631 (MILANO CENTRALE -> NAPOLI CENTRALE) o
- re 16:07
+UID:train-9426--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T142137Z
+DTEND:20261122T142707Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9426 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) o
+ re 15:25
 DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 16:02:59 - 16:08:29\nTreni coinvolti nel
- la chiusura:\n  - TRENO 9631 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transit
+  VELOCE\nChiusura sbarre stimata: 15:21:37 - 15:27:07\nTreni coinvolti nel
+ la chiusura:\n  - TRENO 9426 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) [Transit
  o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Transito stimato senza fermata (94% tratta BOLOGNA C.LE/AV 
- -> ROMA TERMINI\; pedale annuncio fisso Vmax)
+ iva/euristica: Transito stimato senza fermata (5% tratta ROMA TERMINI -> F
+ IRENZE SANTA MARIA NOVELLA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -512,18 +681,18 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9588--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T151330Z
-DTEND:20261122T151800Z
-SUMMARY:[FERMATA] TRENO 9588 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA N
- UOVA) ore 16:17
+UID:train-9535--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T143630Z
+DTEND:20261122T144100Z
+SUMMARY:[FERMATA] TRENO 9535 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) ore 15
+ :40
 DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 16:13:30 - 16:18:00\nTreni coinvolti nella chius
- ura:\n  - TRENO 9588 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA NUOVA)\n
- Ritardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/
- euristica: Previsione da traccia oraria regolare
+ nChiusura sbarre stimata: 15:36:30 - 15:41:00\nTreni coinvolti nella chius
+ ura:\n  - TRENO 9535 (TORINO PORTA NUOVA -> NAPOLI CENTRALE)\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
+ revisione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -533,104 +702,213 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9539--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T153630Z
-DTEND:20261122T154900Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:36 - 16:49 (primo: TRENO 9539)
+UID:train-12766--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T144630Z
+DTEND:20261122T145732Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:46 - 15:57 (primo: REG 12766) (+26
+  min)
 DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
-  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 16:36:30 - 16:49:00\nTreni c
+  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 15:46:30 - 15:57:32\nTreni c
+ oinvolti nella chiusura:\n  - REG 12766 (ROMA TIBURTINA -> TIVOLI)\n  - IC
+  584 (TRIESTE CENTRALE -> ROMA TERMINI) [Transito]\n  - IC 1552 (ROMA TERM
+ INI -> TRIESTE CENTRALE) (+26m) [Transito]\n  - IC 1552 (ROMA TERMINI -> T
+ RIESTE CENTRALE) (+26m) [Transito]\nRitardo massimo rilevato: 26 min\nAffi
+ dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 tr
+ eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:26
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9631--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T150451Z
+DTEND:20261122T151021Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:04 - 16:10 (primo: TRENO 9631) (+1
+  min)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:04:51 - 16:10:21\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 9631 (MILANO CENTRALE -> NAPOLI CENTRA
+ LE) (+1m) [Transito]\n  - TRENO 9631 (MILANO CENTRALE -> NAPOLI CENTRALE) 
+ (+1m) [Transito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78
+ %\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo uti
+ le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
+ 120s)
+LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20679--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T151230Z
+DTEND:20261122T152454Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 16:12 - 16:24 (primo: REG 20679) (+6 
+ min)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 6 TRENI\nChiusura sbarre stimata: 16:12:30 - 16:24:54\nTreni c
+ oinvolti nella chiusura:\n  - REG 20679 (ROMA TIBURTINA -> POGGIO MIRTETO)
+ \n  - REG 20679 (ROMA TIBURTINA -> POGGIO MIRTETO)\n  - TRENO 9648 (NAPOLI
+  CENTRALE -> MILANO CENTRALE) [Transito]\n  - TRENO 9588 (REGGIO DI CALABR
+ IA CENTRALE -> TORINO PORTA NUOVA)\n  - TRENO 8419 (VENEZIA S.LUCIA -> REG
+ GIO DI CALABRIA CENTRALE) (+6m) [Transito]\n  - TRENO 8419 (VENEZIA S.LUCI
+ A -> REGGIO DI CALABRIA CENTRALE) (+6m) [Transito]\nRitardo massimo rileva
+ to: 6 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
+ ntinua per 6 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9539--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T153130Z
+DTEND:20261122T153600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:31 - 16:36 (primo: TRENO 9539)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:31:30 - 16:36:00\nTreni c
  oinvolti nella chiusura:\n  - TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRA
- LE)\n  - REG 20683 (ROMA TIBURTINA -> FARA SABINA-MONTELIBRETTI)\n  - REG 
- 4266 (ROMA TERMINI -> PESCARA) [Transito]\n  - REG 4105 (FIRENZE SANTA MAR
- IA NOVELLA -> ROMA TERMINI)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+ LE)\n  - TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE)\nRitardo massimo 
+ rilevato: -5 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiu
+ sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-5
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20683--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T154230Z
+DTEND:20261122T154900Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:42 - 16:49 (primo: REG 20683)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:42:30 - 16:49:00\nTreni c
+ oinvolti nella chiusura:\n  - REG 20683 (ROMA TIBURTINA -> FARA SABINA-MON
+ TELIBRETTI)\n  - REG 4266 (ROMA TERMINI -> PESCARA) [Transito]\n  - REG 41
+ 05 (FIRENZE SANTA MARIA NOVELLA -> ROMA TERMINI)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
+ inua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8524--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T155330Z
+DTEND:20261122T160100Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:53 - 17:01 (primo: TRENO 8524) (+1
+ 8 min)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:53:30 - 17:01:00\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 8524 (ROMA TERMINI -> BOLZANO)\n  - TR
+ ENO 9428 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) (+18m)\n  - TRENO 9428 (NAPO
+ LI CENTRALE -> VENEZIA S.LUCIA) (+18m)\nRitardo massimo rilevato: 18 min\n
+ Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
+ 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
+  di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:18
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9552--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T160521Z
+DTEND:20261122T161907Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 17:05 - 17:19 (primo: TRENO 9552) (+4
+  min)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 5 TRENI\nChiusura sbarre stimata: 17:05:21 - 17:19:07\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 9552 (SALERNO -> TORINO PORTA NUOVA) (
+ +4m) [Transito]\n  - TRENO 9552 (SALERNO -> TORINO PORTA NUOVA) (+4m) [Tra
+ nsito]\n  - TRENO 9421 (VENEZIA S.LUCIA -> NAPOLI CENTRALE)\n  - TRENO 965
+ 2 (NAPOLI CENTRALE -> MILANO CENTRALE) (+2m) [Transito]\n  - TRENO 9652 (N
+ APOLI CENTRALE -> MILANO CENTRALE) (+2m) [Transito]\nRitardo massimo rilev
+ ato: 4 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
+ ontinua per 5 treni: intervallo utile tra i passaggi (0s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4106--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T162430Z
+DTEND:20261122T163255Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:24 - 17:32 (primo: REG 4106)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 17:24:30 - 17:32:55\nTreni c
+ oinvolti nella chiusura:\n  - REG 4106 (ROMA TERMINI -> FIRENZE SANTA MARI
+ A NOVELLA)\n  - REG 4106 (ROMA TERMINI -> FIRENZE SANTA MARIA NOVELLA)\n  
+ - TRENO 9639 (MILANO CENTRALE -> REGGIO DI CALABRIA CENTRALE) [Transito]\n
+   - TRENO 9639 (MILANO CENTRALE -> REGGIO DI CALABRIA CENTRALE) [Transito]
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Chiusura continua per 4 treni: intervallo utile tra i passagg
+ i (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8524--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T155330Z
-DTEND:20261122T155800Z
-SUMMARY:[FERMATA] TRENO 8524 (ROMA TERMINI -> BOLZANO) ore 16:57
-DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 16:53:30 - 16:58:00\nTreni coinvolti nella chius
- ura:\n  - TRENO 8524 (ROMA TERMINI -> BOLZANO)\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
- raccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9421--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T161030Z
-DTEND:20261122T161500Z
-SUMMARY:[FERMATA] TRENO 9421 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) ore 17:14
-DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 17:10:30 - 17:15:00\nTreni coinvolti nella chius
- ura:\n  - TRENO 9421 (VENEZIA S.LUCIA -> NAPOLI CENTRALE)\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
- isione da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9639--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T162817Z
-DTEND:20261122T163347Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9639 (MILANO CENTRALE -> REGGIO DI CALABRIA
-  CENTRALE) ore 17:32
-DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 17:28:17 - 17:33:47\nTreni coinvolti nel
- la chiusura:\n  - TRENO 9639 (MILANO CENTRALE -> REGGIO DI CALABRIA CENTRA
- LE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\
- nNota normativa/euristica: Transito stimato senza fermata (94% tratta BOLO
- GNA C.LE/AV -> ROMA TERMINI\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9543--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T163714Z
-DTEND:20261122T164244Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T163759Z
+DTEND:20261122T164329Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9543 (TORINO PORTA NUOVA -> SALERNO) ore 17
- :41
+ :42
 DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 17:37:14 - 17:42:44\nTreni coinvolti nel
+  VELOCE\nChiusura sbarre stimata: 17:37:59 - 17:43:29\nTreni coinvolti nel
  la chiusura:\n  - TRENO 9543 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nR
  itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Transito stimato senza fermata (93% tratta FIRENZE SANTA MARIA N
+ uristica: Transito stimato senza fermata (94% tratta FIRENZE SANTA MARIA N
  OVELLA -> ROMA TERMINI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
@@ -641,165 +919,125 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9425--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T171310Z
-DTEND:20261122T171840Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9425 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) o
- re 18:17
-DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 18:13:10 - 18:18:40\nTreni coinvolti nel
- la chiusura:\n  - TRENO 9425 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Transit
- o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Transito stimato senza fermata (93% tratta FIRENZE SANTA MA
- RIA NOVELLA -> ROMA TERMINI\; pedale annuncio fisso Vmax)
+UID:train-9660--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T170650Z
+DTEND:20261122T172225Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 18:06 - 18:22 (primo: TRENO 9660) (+2
+ 9 min)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 6 TRENI\nChiusura sbarre stimata: 18:06:50 - 18:22:25\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 9660 (NAPOLI CENTRALE -> BRESCIA) [Tra
+ nsito]\n  - TRENO 9660 (NAPOLI CENTRALE -> BRESCIA) [Transito]\n  - TRENO 
+ 9658 (REGGIO DI CALABRIA CENTRALE -> MILANO CENTRALE) (+29m) [Transito]\n 
+  - TRENO 9658 (REGGIO DI CALABRIA CENTRALE -> MILANO CENTRALE) (+29m) [Tra
+ nsito]\n  - TRENO 9425 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) (+3m) [Transit
+ o]\n  - TRENO 9425 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) (+3m) [Transito]\n
+ Ritardo massimo rilevato: 29 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Chiusura continua per 6 treni: intervallo utile tra i passaggi
+  (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:29
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9326--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T172830Z
-DTEND:20261122T173347Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:28 - 18:33 (primo: TRENO 9326)
+DTEND:20261122T174220Z
+SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 18:28 - 18:42 (primo: TRENO 9326) (+8
+  min)
 DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:28:30 - 18:33:47\nTreni c
+  CONTINUA - 8 TRENI\nChiusura sbarre stimata: 18:28:30 - 18:42:20\nTreni c
  oinvolti nella chiusura:\n  - TRENO 9326 (ROMA TERMINI -> TORINO PORTA NUO
- VA)\n  - TRENO 9643 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
- tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
+ VA)\n  - TRENO 9643 (MILANO CENTRALE -> NAPOLI CENTRALE) (+2m) [Transito]\
+ n  - TRENO 9643 (MILANO CENTRALE -> NAPOLI CENTRALE) (+2m) [Transito]\n  -
+  TRENO 9321 (TORINO PORTA NUOVA -> ROMA TERMINI) (+8m) [Transito]\n  - TRE
+ NO 9321 (TORINO PORTA NUOVA -> ROMA TERMINI) (+8m) [Transito]\n  - TRENO 9
+ 547 (MILANO CENTRALE -> TARANTO)\n  - TRENO 9662 (NAPOLI CENTRALE -> MILAN
+ O CENTRALE) [Transito]\n  - TRENO 9662 (NAPOLI CENTRALE -> MILANO CENTRALE
+ ) [Transito]\nRitardo massimo rilevato: 8 min\nAffidabilità stima: 78%\nN
+ ota normativa/euristica: Chiusura continua per 8 treni: intervallo utile t
+ ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
+ )
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9547--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T173630Z
-DTEND:20261122T174100Z
-SUMMARY:[FERMATA] TRENO 9547 (MILANO CENTRALE -> TARANTO) ore 18:40
-DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 18:36:30 - 18:41:00\nTreni coinvolti nella chius
- ura:\n  - TRENO 9547 (MILANO CENTRALE -> TARANTO)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
- a traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8528--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T175430Z
 DTEND:20261122T175900Z
-SUMMARY:[FERMATA] TRENO 8528 (ROMA TERMINI -> BRESCIA) ore 18:58
-DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 18:54:30 - 18:59:00\nTreni coinvolti nella chius
- ura:\n  - TRENO 8528 (ROMA TERMINI -> BRESCIA)\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
- raccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9645--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T180259Z
-DTEND:20261122T180829Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9645 (TORINO PORTA NUOVA -> ROMA TERMINI) o
- re 19:07
-DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 19:02:59 - 19:08:29\nTreni coinvolti nel
- la chiusura:\n  - TRENO 9645 (TORINO PORTA NUOVA -> ROMA TERMINI) [Transit
- o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Transito stimato senza fermata (94% tratta BOLOGNA C.LE/AV 
- -> ROMA TERMINI\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9560--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T181330Z
-DTEND:20261122T181800Z
-SUMMARY:[FERMATA] TRENO 9560 (LECCE -> MILANO CENTRALE) ore 19:17
-DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 19:13:30 - 19:18:00\nTreni coinvolti nella chius
- ura:\n  - TRENO 9560 (LECCE -> MILANO CENTRALE)\nRitardo massimo rilevato:
-  0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da 
- traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9323--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T182314Z
-DTEND:20261122T183347Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:23 - 19:33 (primo: TRENO 9323)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:54 - 18:59 (primo: TRENO 8528)
 DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:23:14 - 19:33:47\nTreni c
- oinvolti nella chiusura:\n  - TRENO 9323 (TORINO PORTA NUOVA -> ROMA TERMI
- NI) [Transito]\n  - TRENO 9647 (MILANO CENTRALE -> FOGGIA) [Transito]\nRit
- ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
- ) inferiore alla soglia minima di sgombero stradale (120s)
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:54:30 - 18:59:00\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 8528 (ROMA TERMINI -> BRESCIA)\n  - TR
+ ENO 8528 (ROMA TERMINI -> BRESCIA)\nRitardo massimo rilevato: 0 min\nAffid
+ abilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tre
+ ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
+ gombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9560--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T181330Z
+DTEND:20261122T183429Z
+SUMMARY:[CHIUSURA CONTINUA - 11 TRENI] 19:13 - 19:34 (primo: TRENO 9560) (+
+ 12 min)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 11 TRENI\nChiusura sbarre stimata: 19:13:30 - 19:34:29\nTreni 
+ coinvolti nella chiusura:\n  - TRENO 9560 (LECCE -> MILANO CENTRALE)\n  - 
+ TRENO 9645 (TORINO PORTA NUOVA -> ROMA TERMINI) (+12m) [Transito]\n  - TRE
+ NO 9645 (TORINO PORTA NUOVA -> ROMA TERMINI) (+12m) [Transito]\n  - TRENO 
+ 9434 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) [Transito]\n  - TRENO 9323 (TORI
+ NO PORTA NUOVA -> ROMA TERMINI) [Transito]\n  - TRENO 9427 (VENEZIA S.LUCI
+ A -> SALERNO) (+11m) [Transito]\n  - TRENO 9427 (VENEZIA S.LUCIA -> SALERN
+ O) (+11m) [Transito]\n  - TRENO 9328 (ROMA TERMINI -> MANTOVA)\n  - TRENO 
+ 9328 (ROMA TERMINI -> MANTOVA)\n  - TRENO 9647 (MILANO CENTRALE -> FOGGIA)
+  [Transito]\n  - TRENO 9647 (MILANO CENTRALE -> FOGGIA) [Transito]\nRitard
+ o massimo rilevato: 12 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Chiusura continua per 11 treni: intervallo utile tra i passaggi (0s)
+  inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 11 TRENI,FERROVIA
+X-PL-DELAY-MIN:12
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9551--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T183714Z
-DTEND:20261122T184244Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9551 (MILANO CENTRALE -> SALERNO) ore 19:41
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T183759Z
+DTEND:20261122T184329Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9551 (MILANO CENTRALE -> SALERNO) ore 19:42
 DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 19:37:14 - 19:42:44\nTreni coinvolti nel
+  VELOCE\nChiusura sbarre stimata: 19:37:59 - 19:43:29\nTreni coinvolti nel
  la chiusura:\n  - TRENO 9551 (MILANO CENTRALE -> SALERNO) [Transito]\nRita
  rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (93% tratta FIRENZE SANTA MARIA NOVE
+ stica: Transito stimato senza fermata (94% tratta FIRENZE SANTA MARIA NOVE
  LLA -> ROMA TERMINI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
@@ -811,14 +1049,58 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9330--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T185330Z
 DTEND:20261122T185800Z
-SUMMARY:[FERMATA] TRENO 9330 (ROMA TERMINI -> MILANO CENTRALE) ore 19:57
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:53 - 19:58 (primo: TRENO 9330)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:53:30 - 19:58:00\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 9330 (ROMA TERMINI -> MILANO CENTRALE)
+ \n  - TRENO 9330 (ROMA TERMINI -> MILANO CENTRALE)\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura co
+ ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9649--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T190343Z
+DTEND:20261122T190913Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:03 - 20:09 (primo: TRENO 9649)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:03:43 - 20:09:13\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 9649 (TORINO PORTA NUOVA -> ROMA TERMI
+ NI) [Transito]\n  - TRENO 9649 (TORINO PORTA NUOVA -> ROMA TERMINI) [Trans
+ ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20727--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T191230Z
+DTEND:20261122T191700Z
+SUMMARY:[FERMATA] REG 20727 (ROMA TIBURTINA -> POGGIO MIRTETO) ore 20:16
 DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 19:53:30 - 19:58:00\nTreni coinvolti nella chius
- ura:\n  - TRENO 9330 (ROMA TERMINI -> MILANO CENTRALE)\nRitardo massimo ri
+ nChiusura sbarre stimata: 20:12:30 - 20:17:00\nTreni coinvolti nella chius
+ ura:\n  - REG 20727 (ROMA TIBURTINA -> POGGIO MIRTETO)\nRitardo massimo ri
  levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
  one da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
@@ -827,40 +1109,41 @@ TRANSP:OPAQUE
 CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-20727--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T191230Z
+UID:train-541--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T191915Z
 DTEND:20261122T193100Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:12 - 20:31 (primo: REG 20727)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:19 - 20:31 (primo: IC 541) (+3 min
+ )
 DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
-  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 20:12:30 - 20:31:00\nTreni c
- oinvolti nella chiusura:\n  - REG 20727 (ROMA TIBURTINA -> POGGIO MIRTETO)
- \n  - IC 541 (ANCONA -> ROMA TERMINI)\n  - TRENO 9325 (TORINO PORTA NUOVA 
- -> NAPOLI CENTRALE)\n  - TRENO 8596 (ROMA TERMINI -> GENOVA PIAZZA PRINCIP
- E)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normat
- iva/euristica: Chiusura continua per 4 treni: intervallo utile tra i passa
- ggi (90s) inferiore alla soglia minima di sgombero stradale (120s)
+  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 20:19:15 - 20:31:00\nTreni c
+ oinvolti nella chiusura:\n  - IC 541 (ANCONA -> ROMA TERMINI) (+3m)\n  - I
+ C 541 (ANCONA -> ROMA TERMINI) (+3m)\n  - TRENO 9325 (TORINO PORTA NUOVA -
+ > NAPOLI CENTRALE)\n  - TRENO 8596 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE
+ )\nRitardo massimo rilevato: 3 min\nAffidabilità stima: 90%\nNota normati
+ va/euristica: Chiusura continua per 4 treni: intervallo utile tra i passag
+ gi (90s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9555--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T193810Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T193855Z
 DTEND:20261122T194700Z
 SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:38 - 20:47 (primo: TRENO 9555)
 DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
-  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 20:38:10 - 20:47:00\nTreni c
+  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 20:38:55 - 20:47:00\nTreni c
  oinvolti nella chiusura:\n  - TRENO 9555 (MILANO CENTRALE -> BATTIPAGLIA) 
  [Transito]\n  - REG 4735 (PERUGIA -> ROMA TERMINI)\n  - REG 20731 (ROMA TI
  BURTINA -> ORTE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
@@ -877,35 +1160,58 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8527--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T195530Z
-DTEND:20261122T200347Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:55 - 21:03 (primo: TRENO 8527)
+DTEND:20261122T200429Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:55 - 21:04 (primo: TRENO 8527)
 DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:55:30 - 21:03:47\nTreni c
+  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 20:55:30 - 21:04:29\nTreni c
  oinvolti nella chiusura:\n  - TRENO 8527 (BRESCIA -> ROMA TERMINI)\n  - TR
- ENO 9653 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
- inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
+ ENO 8527 (BRESCIA -> ROMA TERMINI)\n  - TRENO 9653 (MILANO CENTRALE -> SAL
+ ERNO) [Transito]\n  - TRENO 9653 (MILANO CENTRALE -> SALERNO) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Chiusura continua per 4 treni: intervallo utile tra i passaggi 
+ (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-20735--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T202730Z
-DTEND:20261122T203347Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:27 - 21:33 (primo: REG 20735)
+UID:train-9568--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T201330Z
+DTEND:20261122T201800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:13 - 21:18 (primo: TRENO 9568)
 DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:27:30 - 21:33:47\nTreni c
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:13:30 - 21:18:00\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 9568 (POMPEI -> FIRENZE SANTA MARIA NO
+ VELLA)\n  - TRENO 9568 (POMPEI -> FIRENZE SANTA MARIA NOVELLA)\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica:
+  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
+ iore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20735--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T202730Z
+DTEND:20261122T203429Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:27 - 21:34 (primo: REG 20735)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:27:30 - 21:34:29\nTreni c
  oinvolti nella chiusura:\n  - REG 20735 (ROMA TIBURTINA -> ORTE)\n  - TREN
  O 9657 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\nRitardo massimo ri
  levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
@@ -921,8 +1227,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9559--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T203630Z
 DTEND:20261122T204100Z
 SUMMARY:[FERMATA] TRENO 9559 (TORINO PORTA NUOVA -> ROMA TERMINI) ore 21:40
@@ -940,74 +1246,125 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-594--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T205210Z
+UID:train-9674--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T204830Z
 DTEND:20261122T210200Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:52 - 22:02 (primo: IC 594)
+SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 21:48 - 22:02 (primo: TRENO 9674)
 DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
-  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 21:52:10 - 22:02:00\nTreni c
- oinvolti nella chiusura:\n  - IC 594 (TRIESTE CENTRALE -> ROMA TERMINI) [T
- ransito]\n  - TRENO 8529 (BOLZANO -> ROMA TERMINI)\n  - REG 20739 (ROMA TI
- BURTINA -> ORTE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
- %\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo uti
- le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
- 120s)
+  CONTINUA - 8 TRENI\nChiusura sbarre stimata: 21:48:30 - 22:02:00\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 9674 (NAPOLI CENTRALE -> FIRENZE SANTA
+  MARIA NOVELLA)\n  - TRENO 9674 (NAPOLI CENTRALE -> FIRENZE SANTA MARIA NO
+ VELLA)\n  - IC 594 (TRIESTE CENTRALE -> ROMA TERMINI) [Transito]\n  - REG 
+ 20322 (ROMA TIBURTINA -> TIVOLI)\n  - REG 20322 (ROMA TIBURTINA -> TIVOLI)
+ \n  - TRENO 8529 (BOLZANO -> ROMA TERMINI)\n  - REG 20739 (ROMA TIBURTINA 
+ -> ORTE)\n  - REG 20739 (ROMA TIBURTINA -> ORTE)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
+ inua per 8 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9435--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T211310Z
-DTEND:20261122T211840Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9435 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) o
- re 22:17
-DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 22:13:10 - 22:18:40\nTreni coinvolti nel
- la chiusura:\n  - TRENO 9435 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Transit
- o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Transito stimato senza fermata (93% tratta FIRENZE SANTA MA
- RIA NOVELLA -> ROMA TERMINI\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9437--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T221030Z
-DTEND:20261122T221500Z
-SUMMARY:[FERMATA] TRENO 9437 (VENEZIA S.LUCIA -> ROMA TERMINI) ore 23:14
-DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 23:10:30 - 23:15:00\nTreni coinvolti nella chius
- ura:\n  - TRENO 9437 (VENEZIA S.LUCIA -> ROMA TERMINI)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
- one da traccia oraria regolare
+UID:train-9435--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T211355Z
+DTEND:20261122T211925Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:13 - 22:19 (primo: TRENO 9435)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:13:55 - 22:19:25\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 9435 (VENEZIA S.LUCIA -> NAPOLI CENTRA
+ LE) [Transito]\n  - TRENO 9435 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Trans
+ ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-774--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T213957Z
+DTEND:20261122T214800Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 22:39 - 22:48 (primo: ICN 774)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 22:39:57 - 22:48:00\nTreni c
+ oinvolti nella chiusura:\n  - ICN 774 (ROMA TERMINI -> TRIESTE CENTRALE) [
+ Transito]\n  - ICN 774 (ROMA TERMINI -> TRIESTE CENTRALE) [Transito]\n  - 
+ TRENO 8591 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI)\n  - TRENO 8591 (GENOV
+ A PIAZZA PRINCIPE -> ROMA TERMINI)\nRitardo massimo rilevato: 0 min\nAffid
+ abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 tre
+ ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
+ gombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:ICN
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9437--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T221030Z
+DTEND:20261122T221500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:10 - 23:15 (primo: TRENO 9437)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 23:10:30 - 23:15:00\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 9437 (VENEZIA S.LUCIA -> ROMA TERMINI)
+ \n  - TRENO 9437 (VENEZIA S.LUCIA -> ROMA TERMINI)\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura co
+ ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9567--20261121-S08217@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T223630Z
+DTEND:20261122T224100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:36 - 23:41 (primo: TRENO 9567)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 23:36:30 - 23:41:00\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 9567 (TORINO PORTA NUOVA -> ROMA TERMI
+ NI)\n  - TRENO 9567 (TORINO PORTA NUOVA -> ROMA TERMINI)\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chius
+ ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4113--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T233230Z
 DTEND:20261122T233700Z
 SUMMARY:[FERMATA] REG 4113 (FIRENZE SANTA MARIA NOVELLA -> ROMA TERMINI) or
@@ -1027,8 +1384,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-797--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261123T044915Z
 DTEND:20261123T045400Z
 SUMMARY:[FERMATA] ICN 797 (TORINO PORTA NUOVA -> SALERNO) ore 05:53
@@ -1047,22 +1404,22 @@ X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-770--20261121-S08217@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261123T052011Z
-DTEND:20261123T052441Z
-SUMMARY:[TRANSITO VELOCE] ICN 770 (TRIESTE CENTRALE -> ROMA TERMINI) ore 06
- :23
-DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 06:20:11 - 06:24:41\nTreni coinvolti nel
- la chiusura:\n  - ICN 770 (TRIESTE CENTRALE -> ROMA TERMINI) [Transito]\nR
- itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Transito stimato senza fermata (87% tratta CHIUSI-CHIANCIANO TER
- ME -> ROMA TERMINI\; pedale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261123T052122Z
+DTEND:20261123T052552Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:21 - 06:25 (primo: ICN 770)
+DESCRIPTION:Stazione/PL: ROMA TIBURTINA (S08217)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:21:22 - 06:25:52\nTreni c
+ oinvolti nella chiusura:\n  - ICN 770 (TRIESTE CENTRALE -> ROMA TERMINI) [
+ Transito]\n  - ICN 770 (TRIESTE CENTRALE -> ROMA TERMINI) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
+  inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TIBURTINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:ICN

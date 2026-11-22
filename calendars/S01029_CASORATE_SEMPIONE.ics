@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:9bda64e9c9e8825db72595e6209aa3a96f1a5fda80d97e7ec11b87a3cc4b
- 1949
+X-CONTENT-HASH:5d7ae8540ce46ac9c6d603192d3a93d90adb89f2e1f5def72063f27a574e
+ 3791
 BEGIN:VEVENT
 UID:train-10216--20261121-S01029@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T071330Z
 DTEND:20261122T071800Z
 SUMMARY:[FERMATA] REG 10216 (MILANO PORTA GARIBALDI -> DOMODOSSOLA) ore 08:
@@ -34,38 +34,39 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10204--20261121-S01029@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T111330Z
-DTEND:20261122T111800Z
-SUMMARY:[FERMATA] REG 10204 (MILANO PORTA GARIBALDI -> DOMODOSSOLA) ore 12:
- 17
-DESCRIPTION:Stazione/PL: CASORATE SEMPIONE (S01029)\nRegime chiusura: FERMA
- TA\nChiusura sbarre stimata: 12:13:30 - 12:18:00\nTreni coinvolti nella ch
- iusura:\n  - REG 10204 (MILANO PORTA GARIBALDI -> DOMODOSSOLA)\nRitardo ma
- ssimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica:
-  Previsione da traccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T110130Z
+DTEND:20261122T110600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:01 - 12:06 (primo: REG 10204)
+DESCRIPTION:Stazione/PL: CASORATE SEMPIONE (S01029)\nRegime chiusura: CHIUS
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:01:30 - 12:06:00\nTren
+ i coinvolti nella chiusura:\n  - REG 10204 (MILANO PORTA GARIBALDI -> DOMO
+ DOSSOLA)\n  - REG 10204 (MILANO PORTA GARIBALDI -> DOMODOSSOLA)\nRitardo m
+ assimo rilevato: -12 min\nAffidabilità stima: 90%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CASORATE SEMPIONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-12
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2430--20261121-S01029@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T150100Z
-DTEND:20261122T150630Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T150031Z
+DTEND:20261122T150601Z
 SUMMARY:[TRANSITO VELOCE] REG 2430 (MILANO CENTRALE -> DOMODOSSOLA) ore 16:
- 05
+ 04
 DESCRIPTION:Stazione/PL: CASORATE SEMPIONE (S01029)\nRegime chiusura: TRANS
- ITO VELOCE\nChiusura sbarre stimata: 16:01:00 - 16:06:30\nTreni coinvolti 
+ ITO VELOCE\nChiusura sbarre stimata: 16:00:31 - 16:06:01\nTreni coinvolti 
  nella chiusura:\n  - REG 2430 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\
  nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Transito stimato senza fermata (25% tratta GALLARATE -> SESTO 
+ /euristica: Transito stimato senza fermata (21% tratta GALLARATE -> SESTO 
  CALENDE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CASORATE SEMPIONE
 STATUS:CONFIRMED
@@ -77,8 +78,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10232--20261121-S01029@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T151330Z
 DTEND:20261122T151800Z
 SUMMARY:[FERMATA] REG 10232 (MILANO PORTA GARIBALDI -> DOMODOSSOLA) ore 16:
@@ -98,22 +99,110 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2432--20261121-S01029@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T160100Z
-DTEND:20261122T160630Z
-SUMMARY:[TRANSITO VELOCE] REG 2432 (MILANO CENTRALE -> DOMODOSSOLA) ore 17:
- 05
-DESCRIPTION:Stazione/PL: CASORATE SEMPIONE (S01029)\nRegime chiusura: TRANS
- ITO VELOCE\nChiusura sbarre stimata: 17:01:00 - 17:06:30\nTreni coinvolti 
- nella chiusura:\n  - REG 2432 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\
- nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Transito stimato senza fermata (25% tratta GALLARATE -> SESTO 
- CALENDE\; pedale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T160031Z
+DTEND:20261122T160601Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:00 - 17:06 (primo: REG 2432)
+DESCRIPTION:Stazione/PL: CASORATE SEMPIONE (S01029)\nRegime chiusura: CHIUS
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:00:31 - 17:06:01\nTren
+ i coinvolti nella chiusura:\n  - REG 2432 (MILANO CENTRALE -> DOMODOSSOLA)
+  [Transito]\n  - REG 2432 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRit
+ ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CASORATE SEMPIONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10234--20261121-S01029@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T161330Z
+DTEND:20261122T161800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:13 - 17:18 (primo: REG 10234)
+DESCRIPTION:Stazione/PL: CASORATE SEMPIONE (S01029)\nRegime chiusura: CHIUS
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:13:30 - 17:18:00\nTren
+ i coinvolti nella chiusura:\n  - REG 10234 (MILANO PORTA GARIBALDI -> ARON
+ A)\n  - REG 10234 (MILANO PORTA GARIBALDI -> ARONA)\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura c
+ ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CASORATE SEMPIONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2440--20261121-S01029@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T200031Z
+DTEND:20261122T200601Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:00 - 21:06 (primo: REG 2440)
+DESCRIPTION:Stazione/PL: CASORATE SEMPIONE (S01029)\nRegime chiusura: CHIUS
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:00:31 - 21:06:01\nTren
+ i coinvolti nella chiusura:\n  - REG 2440 (MILANO CENTRALE -> DOMODOSSOLA)
+  [Transito]\n  - REG 2440 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRit
+ ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CASORATE SEMPIONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10242--20261121-S01029@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T201330Z
+DTEND:20261122T201800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:13 - 21:18 (primo: REG 10242)
+DESCRIPTION:Stazione/PL: CASORATE SEMPIONE (S01029)\nRegime chiusura: CHIUS
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:13:30 - 21:18:00\nTren
+ i coinvolti nella chiusura:\n  - REG 10242 (MILANO PORTA GARIBALDI -> ARON
+ A)\n  - REG 10242 (MILANO PORTA GARIBALDI -> ARONA)\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura c
+ ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CASORATE SEMPIONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2442--20261121-S01029@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T210031Z
+DTEND:20261122T210601Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:00 - 22:06 (primo: REG 2442)
+DESCRIPTION:Stazione/PL: CASORATE SEMPIONE (S01029)\nRegime chiusura: CHIUS
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:00:31 - 22:06:01\nTren
+ i coinvolti nella chiusura:\n  - REG 2442 (MILANO CENTRALE -> DOMODOSSOLA)
+  [Transito]\n  - REG 2442 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRit
+ ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CASORATE SEMPIONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG

@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:03be220b58e605558b70bd25433dbf4cc88e2d1853f1e61bd9b4c24fc402
- 01bd
+X-CONTENT-HASH:7ff1c7f2ddc0ab6673ec58b9362fdf33927ed4d190922892a3a295120762
+ a1ec
 BEGIN:VEVENT
 UID:train-20009--20261121-S08701@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T065630Z
 DTEND:20261122T070100Z
 SUMMARY:[FERMATA] REG 20009 (ROMA TERMINI -> ALBANO LAZIALE) ore 08:00
@@ -33,20 +33,44 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20029--20261121-S08701@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T155130Z
 DTEND:20261122T155600Z
-SUMMARY:[FERMATA] REG 20029 (ROMA TERMINI -> ALBANO LAZIALE) ore 16:55
-DESCRIPTION:Stazione/PL: MARINO LAZIALE (S08701)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 16:51:30 - 16:56:00\nTreni coinvolti nella chius
- ura:\n  - REG 20029 (ROMA TERMINI -> ALBANO LAZIALE)\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
- e da traccia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:51 - 16:56 (primo: REG 20029)
+DESCRIPTION:Stazione/PL: MARINO LAZIALE (S08701)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:51:30 - 16:56:00\nTreni c
+ oinvolti nella chiusura:\n  - REG 20029 (ROMA TERMINI -> ALBANO LAZIALE)\n
+   - REG 20029 (ROMA TERMINI -> ALBANO LAZIALE)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura contin
+ ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+  minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MARINO LAZIALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20043--20261121-S08701@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T195130Z
+DTEND:20261122T195600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:51 - 20:56 (primo: REG 20043)
+DESCRIPTION:Stazione/PL: MARINO LAZIALE (S08701)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:51:30 - 20:56:00\nTreni c
+ oinvolti nella chiusura:\n  - REG 20043 (ROMA TERMINI -> ALBANO LAZIALE)\n
+   - REG 20043 (ROMA TERMINI -> ALBANO LAZIALE)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura contin
+ ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+  minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MARINO LAZIALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:049a82e2c4d233bad077988fed123a5d683c3727d6b099289e4c8b8d1269
- 16ae
+X-CONTENT-HASH:fdb44b0a5979817a0705d7f909f371013f7e4198e4460897c6728be8d558
+ 4303
 BEGIN:VEVENT
 UID:train-10818--20261121-S01852@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T072430Z
 DTEND:20261122T072900Z
 SUMMARY:[FERMATA] REG 10818 (PARMA -> BRESCIA) ore 08:28
@@ -32,21 +32,67 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-10844--20261121-S01852@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T202430Z
-DTEND:20261122T202900Z
-SUMMARY:[FERMATA] REG 10844 (PARMA -> PIADENA) ore 21:28
-DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 21:24:30 - 21:29:00\nTreni coinvolti nella chiusura:\n 
-  - REG 10844 (PARMA -> PIADENA)\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria r
- egolare
+UID:train-10831--20261121-S01852@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T152530Z
+DTEND:20261122T153000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:25 - 16:30 (primo: REG 10831) (+4 
+ min)
+DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 16:25:30 - 16:30:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 10831 (BRESCIA -> PARMA) (+4m)\n  - REG 10831 (
+ BRESCIA -> PARMA) (+4m)\nRitardo massimo rilevato: 4 min\nAffidabilità st
+ ima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
+ llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
+ adale (120s)
 LOCATION:Passaggio a Livello / Stazione COLORNO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10836--20261121-S01852@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T163545Z
+DTEND:20261122T164115Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:35 - 17:41 (primo: REG 10836)
+DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 17:35:45 - 17:41:15\nTreni coinvolt
+ i nella chiusura:\n  - REG 10836 (PARMA -> BRESCIA) [Transito]\n  - REG 10
+ 836 (PARMA -> BRESCIA) [Transito]\nRitardo massimo rilevato: 0 min\nAffida
+ bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tren
+ i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
+ ombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione COLORNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10844--20261121-S01852@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T202430Z
+DTEND:20261122T202900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:24 - 21:29 (primo: REG 10844)
+DESCRIPTION:Stazione/PL: COLORNO (S01852)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 21:24:30 - 21:29:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 10844 (PARMA -> PIADENA)\n  - REG 10844 (PARMA 
+ -> PIADENA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNo
+ ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
+ a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione COLORNO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

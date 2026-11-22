@@ -9,92 +9,183 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:db062744fff89e191f8c0260f0c0fc6a086f9de3443c83a1b0e32f22942b
- 46f0
+X-CONTENT-HASH:f3e46db3b0ef5dcc4ff20e2f86de53a9866b1011bf8240c2eb9d1ce3c034
+ a75b
 BEGIN:VEVENT
 UID:train-4507--20261121-S08002@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T052830Z
-DTEND:20261122T053300Z
-SUMMARY:[FERMATA] REG 4507 (GROSSETO -> ROMA TERMINI) ore 06:32
-DESCRIPTION:Stazione/PL: TALAMONE (S08002)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 06:28:30 - 06:33:00\nTreni coinvolti nella chiusura:\n
-   - REG 4507 (GROSSETO -> ROMA TERMINI)\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia 
- oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T053030Z
+DTEND:20261122T053600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:30 - 06:36 (primo: REG 4507) (+2 m
+ in)
+DESCRIPTION:Stazione/PL: TALAMONE (S08002)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 06:30:30 - 06:36:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 4507 (GROSSETO -> ROMA TERMINI) (+2m)\n  - REG
+  4507 (GROSSETO -> ROMA TERMINI) (+2m)\nRitardo massimo rilevato: 2 min\nA
+ ffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TALAMONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4124--20261121-S08002@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T071325Z
+DTEND:20261122T071855Z
+SUMMARY:[TRANSITO VELOCE] REG 4124 (ROMA TERMINI -> PISA CENTRALE) ore 08:1
+ 7
+DESCRIPTION:Stazione/PL: TALAMONE (S08002)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 08:13:25 - 08:18:55\nTreni coinvolti nella chi
+ usura:\n  - REG 4124 (ROMA TERMINI -> PISA CENTRALE) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (33% tratta ALBINIA -> GROSSETO\; pedale 
+ annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione TALAMONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4127--20261121-S08002@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T083307Z
+DTEND:20261122T083837Z
+SUMMARY:[TRANSITO VELOCE] REG 4127 (PISA CENTRALE -> ROMA TERMINI) ore 09:3
+ 7
+DESCRIPTION:Stazione/PL: TALAMONE (S08002)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 09:33:07 - 09:38:37\nTreni coinvolti nella chi
+ usura:\n  - REG 4127 (PISA CENTRALE -> ROMA TERMINI) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (81% tratta GROSSETO -> ALBINIA\; pedale 
+ annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione TALAMONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4128--20261121-S08002@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T112355Z
+DTEND:20261122T112925Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:23 - 12:29 (primo: REG 4128)
+DESCRIPTION:Stazione/PL: TALAMONE (S08002)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 12:23:55 - 12:29:25\nTreni coinvol
+ ti nella chiusura:\n  - REG 4128 (ROMA TERMINI -> PISA CENTRALE) [Transito
+ ]\n  - REG 4128 (ROMA TERMINI -> PISA CENTRALE) [Transito]\nRitardo massim
+ o rilevato: -3 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione TALAMONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4132--20261121-S08002@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T130945Z
+DTEND:20261122T131515Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:09 - 14:15 (primo: REG 4132)
+DESCRIPTION:Stazione/PL: TALAMONE (S08002)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 14:09:45 - 14:15:15\nTreni coinvol
+ ti nella chiusura:\n  - REG 4132 (ROMA TERMINI -> PISA CENTRALE) [Transito
+ ]\n  - REG 4132 (ROMA TERMINI -> PISA CENTRALE) [Transito]\nRitardo massim
+ o rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione TALAMONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4134--20261121-S08002@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T151045Z
+DTEND:20261122T151615Z
+SUMMARY:[TRANSITO VELOCE] REG 4134 (ROMA TERMINI -> PISA CENTRALE) ore 16:1
+ 5
+DESCRIPTION:Stazione/PL: TALAMONE (S08002)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 16:10:45 - 16:16:15\nTreni coinvolti nella chi
+ usura:\n  - REG 4134 (ROMA TERMINI -> PISA CENTRALE) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (33% tratta ALBINIA -> GROSSETO\; pedale 
+ annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione TALAMONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4136--20261121-S08002@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T171505Z
+DTEND:20261122T172035Z
+SUMMARY:[TRANSITO VELOCE] REG 4136 (ROMA TERMINI -> PISA CENTRALE) ore 18:1
+ 9
+DESCRIPTION:Stazione/PL: TALAMONE (S08002)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 18:15:05 - 18:20:35\nTreni coinvolti nella chi
+ usura:\n  - REG 4136 (ROMA TERMINI -> PISA CENTRALE) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (33% tratta ALBINIA -> GROSSETO\; pedale 
+ annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione TALAMONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4508--20261121-S08002@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T231630Z
+DTEND:20261122T232100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 00:16 - 00:21 (primo: REG 4508)
+DESCRIPTION:Stazione/PL: TALAMONE (S08002)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 00:16:30 - 00:21:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 4508 (ROMA TERMINI -> GROSSETO)\n  - REG 4508 
+ (ROMA TERMINI -> GROSSETO)\nRitardo massimo rilevato: 0 min\nAffidabilità
+  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
+ rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
+ stradale (120s)
+LOCATION:Passaggio a Livello / Stazione TALAMONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4125--20261121-S08002@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T062648Z
-DTEND:20261122T063218Z
-SUMMARY:[TRANSITO VELOCE] REG 4125 (PISA CENTRALE -> ROMA TERMINI) ore 07:3
- 1
-DESCRIPTION:Stazione/PL: TALAMONE (S08002)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 07:26:48 - 07:32:18\nTreni coinvolti nella chi
- usura:\n  - REG 4125 (PISA CENTRALE -> ROMA TERMINI) [Transito]\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (65% tratta GROSSETO -> ALBINIA\; pedale 
- annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione TALAMONE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4135--20261121-S08002@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T162948Z
-DTEND:20261122T163518Z
-SUMMARY:[TRANSITO VELOCE] REG 4135 (PISA CENTRALE -> ROMA TERMINI) ore 17:3
- 4
-DESCRIPTION:Stazione/PL: TALAMONE (S08002)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 17:29:48 - 17:35:18\nTreni coinvolti nella chi
- usura:\n  - REG 4135 (PISA CENTRALE -> ROMA TERMINI) [Transito]\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (65% tratta GROSSETO -> ALBINIA\; pedale 
- annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione TALAMONE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4137--20261121-S08002@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T182948Z
-DTEND:20261122T183518Z
-SUMMARY:[TRANSITO VELOCE] REG 4137 (PISA CENTRALE -> ROMA TERMINI) ore 19:3
- 4
-DESCRIPTION:Stazione/PL: TALAMONE (S08002)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 19:29:48 - 19:35:18\nTreni coinvolti nella chi
- usura:\n  - REG 4137 (PISA CENTRALE -> ROMA TERMINI) [Transito]\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (65% tratta GROSSETO -> ALBINIA\; pedale 
- annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione TALAMONE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

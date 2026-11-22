@@ -9,21 +9,21 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:c2f005c5c9f08c39cabe6dd06713dc64b38759c510e755dd3f6b6c5feafb
- 8e43
+X-CONTENT-HASH:b39bc29cde9de12e703b37b19fc51b03bbdd89bd4e9017da504fcd579893
+ daaa
 BEGIN:VEVENT
 UID:train-18251--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T003741Z
-DTEND:20261122T004311Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T003750Z
+DTEND:20261122T004320Z
 SUMMARY:[TRANSITO VELOCE] REG 18251 (FIRENZE SANTA MARIA NOVELLA -> PISA CE
- NTRALE) ore 01:41 (+4 min)
+ NTRALE) ore 01:42 (+4 min)
 DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: TRANSITO 
- VELOCE\nChiusura sbarre stimata: 01:37:41 - 01:43:11\nTreni coinvolti nell
+ VELOCE\nChiusura sbarre stimata: 01:37:50 - 01:43:20\nTreni coinvolti nell
  a chiusura:\n  - REG 18251 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE) 
  (+4m) [Transito]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 78
- %\nNota normativa/euristica: Transito stimato senza fermata (42% tratta PO
+ %\nNota normativa/euristica: Transito stimato senza fermata (44% tratta PO
  NTEDERA CASCIANA TERME -> CASCINA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
@@ -35,8 +35,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18251--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T010330Z
 DTEND:20261122T010800Z
 SUMMARY:[FERMATA] REG 18251 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE) 
@@ -56,28 +56,33 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4125--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T043630Z
-DTEND:20261122T044100Z
-SUMMARY:[FERMATA] REG 4125 (PISA CENTRALE -> ROMA TERMINI) ore 05:40
-DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: FERMATA\n
- Chiusura sbarre stimata: 05:36:30 - 05:41:00\nTreni coinvolti nella chiusu
- ra:\n  - REG 4125 (PISA CENTRALE -> ROMA TERMINI)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
- a traccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T043730Z
+DTEND:20261122T044600Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 05:37 - 05:46 (primo: REG 4125) (+3 m
+ in)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 4 TRENI\nChiusura sbarre stimata: 05:37:30 - 05:46:00\nTreni co
+ involti nella chiusura:\n  - REG 4125 (PISA CENTRALE -> ROMA TERMINI) (+1m
+ )\n  - REG 4125 (PISA CENTRALE -> ROMA TERMINI) (+1m)\n  - IC 658 (LIVORNO
+  CENTRALE -> MILANO CENTRALE) (+3m)\n  - IC 658 (LIVORNO CENTRALE -> MILAN
+ O CENTRALE) (+3m)\nRitardo massimo rilevato: 3 min\nAffidabilità stima: 9
+ 9%\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo ut
+ ile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale 
+ (120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2294--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T045330Z
 DTEND:20261122T045800Z
 SUMMARY:[FERMATA] REG 2294 (LIVORNO CENTRALE -> MILANO PORTA GARIBALDI) ore
@@ -96,9 +101,32 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-501--20261121-S06500@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T051844Z
+DTEND:20261122T052314Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:18 - 06:23 (primo: IC 501) (+11 mi
+ n)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:18:44 - 06:23:14\nTreni co
+ involti nella chiusura:\n  - IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) (+
+ 11m) [Transito]\n  - IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) (+11m) [Tr
+ ansito]\nRitardo massimo rilevato: 11 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i
+  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:11
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
 UID:train-18255--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T053130Z
 DTEND:20261122T053600Z
 SUMMARY:[FERMATA] REG 18255 (FIRENZE SANTA MARIA NOVELLA -> PIOMBINO MARITT
@@ -118,199 +146,239 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-501--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T054015Z
-DTEND:20261122T054500Z
-SUMMARY:[FERMATA] IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) ore 06:44
-DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: FERMATA\n
- Chiusura sbarre stimata: 06:40:15 - 06:45:00\nTreni coinvolti nella chiusu
- ra:\n  - IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
-  da traccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T054345Z
+DTEND:20261122T055700Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:43 - 06:57 (primo: IC 501) (+4 min
+ )
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 4 TRENI\nChiusura sbarre stimata: 06:43:45 - 06:57:00\nTreni co
+ involti nella chiusura:\n  - IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) (+
+ 4m)\n  - IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) (+4m)\n  - REG 18264 (
+ PISA CENTRALE -> FIRENZE SANTA MARIA NOVELLA) (+2m)\n  - REG 18264 (PISA C
+ ENTRALE -> FIRENZE SANTA MARIA NOVELLA) (+2m)\nRitardo massimo rilevato: 4
+  min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continu
+ a per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
+ minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18553--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T060030Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T060130Z
 DTEND:20261122T061300Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:00 - 07:13 (primo: REG 18553)
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 07:01 - 07:13 (primo: REG 18553) (+3 
+ min)
 DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
- CONTINUA - 3 TRENI\nChiusura sbarre stimata: 07:00:30 - 07:13:00\nTreni co
- involti nella chiusura:\n  - REG 18553 (PISA CENTRALE -> LUCCA)\n  - REG 1
- 8355 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE) [Transito]\n  - R
- EG 19405 (PISA CENTRALE -> CAMPIGLIA MARITTIMA)\nRitardo massimo rilevato:
-  0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
- nua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
- a minima di sgombero stradale (120s)
+ CONTINUA - 5 TRENI\nChiusura sbarre stimata: 07:01:30 - 07:13:00\nTreni co
+ involti nella chiusura:\n  - REG 18553 (PISA CENTRALE -> LUCCA) (+1m)\n  -
+  REG 18553 (PISA CENTRALE -> LUCCA) (+1m)\n  - REG 18355 (FIRENZE SANTA MA
+ RIA NOVELLA -> LA SPEZIA CENTRALE) (+3m) [Transito]\n  - REG 18355 (FIRENZ
+ E SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE) (+3m) [Transito]\n  - REG 194
+ 05 (PISA CENTRALE -> CAMPIGLIA MARITTIMA)\nRitardo massimo rilevato: 3 min
+ \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
+ r 5 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18355--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T062830Z
-DTEND:20261122T063900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:28 - 07:39 (primo: REG 18355)
+UID:train-18355--20261121-S06500@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T062730Z
+DTEND:20261122T065200Z
+SUMMARY:[CHIUSURA CONTINUA - 9 TRENI] 07:27 - 07:52 (primo: REG 18355) (+3 
+ min)
 DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:28:30 - 07:39:00\nTreni co
+ CONTINUA - 9 TRENI\nChiusura sbarre stimata: 07:27:30 - 07:52:00\nTreni co
  involti nella chiusura:\n  - REG 18355 (FIRENZE SANTA MARIA NOVELLA -> LA 
- SPEZIA CENTRALE)\n  - REG 4012 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVEL
- LA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (90s) inferiore alla soglia minima di sgombero stradale (120s)
+ SPEZIA CENTRALE) (+3m) [Arrivo]\n  - REG 18355 (FIRENZE SANTA MARIA NOVELL
+ A -> LA SPEZIA CENTRALE) (+3m) [Arrivo]\n  - REG 18355 (FIRENZE SANTA MARI
+ A NOVELLA -> LA SPEZIA CENTRALE) (+3m) [Partenza]\n  - REG 18355 (FIRENZE 
+ SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE) (+3m) [Partenza]\n  - REG 4127 
+ (PISA CENTRALE -> ROMA TERMINI) (+1m)\n  - REG 4127 (PISA CENTRALE -> ROMA
+  TERMINI) (+1m)\n  - REG 18268 (CAMPIGLIA MARITTIMA -> FIRENZE SANTA MARIA
+  NOVELLA)\n  - REG 19155 (PISA CENTRALE -> AULLA LUNIGIANA) (+1m)\n  - REG
+  19155 (PISA CENTRALE -> AULLA LUNIGIANA) (+1m)\nRitardo massimo rilevato:
+  3 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura conti
+ nua per 9 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18268--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T064130Z
-DTEND:20261122T065100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:41 - 07:51 (primo: REG 18268)
-DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:41:30 - 07:51:00\nTreni co
- involti nella chiusura:\n  - REG 18268 (CAMPIGLIA MARITTIMA -> FIRENZE SAN
- TA MARIA NOVELLA)\n  - REG 19155 (PISA CENTRALE -> AULLA LUNIGIANA)\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euris
- tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (30s)
-  inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 9 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18274--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T065430Z
-DTEND:20261122T065900Z
-SUMMARY:[FERMATA] REG 18274 (LIVORNO CENTRALE -> FIRENZE SANTA MARIA NOVELL
- A) ore 07:58
-DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: FERMATA\n
- Chiusura sbarre stimata: 07:54:30 - 07:59:00\nTreni coinvolti nella chiusu
- ra:\n  - REG 18274 (LIVORNO CENTRALE -> FIRENZE SANTA MARIA NOVELLA)\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euri
- stica: Previsione da traccia oraria regolare
+DTEND:20261122T070300Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 07:54 - 08:03 (primo: REG 18274) (+21
+  min)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 5 TRENI\nChiusura sbarre stimata: 07:54:30 - 08:03:00\nTreni co
+ involti nella chiusura:\n  - REG 18274 (LIVORNO CENTRALE -> FIRENZE SANTA 
+ MARIA NOVELLA)\n  - REG 4012 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVELLA
+ ) (+21m)\n  - REG 4012 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVELLA) (+21
+ m)\n  - REG 18267 (FIRENZE SANTA MARIA NOVELLA -> GROSSETO) (+2m) [Arrivo]
+ \n  - REG 18267 (FIRENZE SANTA MARIA NOVELLA -> GROSSETO) (+2m) [Arrivo]\n
+ Ritardo massimo rilevato: 21 min\nAffidabilità stima: 90%\nNota normativa
+ /euristica: Chiusura continua per 5 treni: intervallo utile tra i passaggi
+  (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:21
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4013--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T072430Z
-DTEND:20261122T072900Z
-SUMMARY:[FERMATA] REG 4013 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE
- ) ore 08:28
-DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: FERMATA\n
- Chiusura sbarre stimata: 08:24:30 - 08:29:00\nTreni coinvolti nella chiusu
- ra:\n  - REG 4013 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE)\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euris
- tica: Previsione da traccia oraria regolare
+UID:train-18267--20261121-S06500@pl-tracker.local-dep
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T070700Z
+DTEND:20261122T071130Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:07 - 08:11 (primo: REG 18267) (+2 
+ min)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:07:00 - 08:11:30\nTreni co
+ involti nella chiusura:\n  - REG 18267 (FIRENZE SANTA MARIA NOVELLA -> GRO
+ SSETO) (+2m) [Partenza]\n  - REG 18267 (FIRENZE SANTA MARIA NOVELLA -> GRO
+ SSETO) (+2m) [Partenza]\nRitardo massimo rilevato: 2 min\nAffidabilità st
+ ima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
+ llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
+ adale (120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4013--20261121-S06500@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T072300Z
+DTEND:20261122T072730Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:23 - 08:27 (primo: REG 4013) (+2 m
+ in)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:23:00 - 08:27:30\nTreni co
+ involti nella chiusura:\n  - REG 4013 (FIRENZE SANTA MARIA NOVELLA -> LIVO
+ RNO CENTRALE) (+2m) [Arrivo]\n  - REG 4013 (FIRENZE SANTA MARIA NOVELLA ->
+  LIVORNO CENTRALE) (+2m) [Arrivo]\nRitardo massimo rilevato: 2 min\nAffida
+ bilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 tren
+ i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
+ ombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4013--20261121-S06500@pl-tracker.local-dep
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T073030Z
+DTEND:20261122T073500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:30 - 08:35 (primo: REG 4013) (+2 m
+ in)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:30:30 - 08:35:00\nTreni co
+ involti nella chiusura:\n  - REG 4013 (FIRENZE SANTA MARIA NOVELLA -> LIVO
+ RNO CENTRALE) (+2m) [Partenza]\n  - REG 4013 (FIRENZE SANTA MARIA NOVELLA 
+ -> LIVORNO CENTRALE) (+2m) [Partenza]\nRitardo massimo rilevato: 2 min\nAf
+ fidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 
+ treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
+ i sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8588--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T074130Z
-DTEND:20261122T074600Z
-SUMMARY:[FERMATA] TRENO 8588 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) ore 0
- 8:45
-DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: FERMATA\n
- Chiusura sbarre stimata: 08:41:30 - 08:46:00\nTreni coinvolti nella chiusu
- ra:\n  - TRENO 8588 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE)\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
- revisione da traccia oraria regolare
+DTEND:20261122T075400Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:41 - 08:54 (primo: TRENO 8588) (+1
+ 0 min)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 4 TRENI\nChiusura sbarre stimata: 08:41:30 - 08:54:00\nTreni co
+ involti nella chiusura:\n  - TRENO 8588 (ROMA TERMINI -> GENOVA PIAZZA PRI
+ NCIPE)\n  - TRENO 8605 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI) (+10m) [Tr
+ ansito]\n  - TRENO 8605 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI) (+10m) [T
+ ransito]\n  - IC 666 (LIVORNO CENTRALE -> MILANO CENTRALE)\nRitardo massim
+ o rilevato: 10 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 4 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:10
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-666--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T074915Z
-DTEND:20261122T075400Z
-SUMMARY:[FERMATA] IC 666 (LIVORNO CENTRALE -> MILANO CENTRALE) ore 08:53
-DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: FERMATA\n
- Chiusura sbarre stimata: 08:49:15 - 08:54:00\nTreni coinvolti nella chiusu
- ra:\n  - IC 666 (LIVORNO CENTRALE -> MILANO CENTRALE)\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
- ne da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
 UID:train-18357--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T080030Z
-DTEND:20261122T080500Z
-SUMMARY:[FERMATA] REG 18357 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) ore 
- 09:04
-DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: FERMATA\n
- Chiusura sbarre stimata: 09:00:30 - 09:05:00\nTreni coinvolti nella chiusu
- ra:\n  - REG 18357 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: 
- Previsione da traccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T080130Z
+DTEND:20261122T081700Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 09:01 - 09:17 (primo: REG 18357) (+9 
+ min)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 6 TRENI\nChiusura sbarre stimata: 09:01:30 - 09:17:00\nTreni co
+ involti nella chiusura:\n  - REG 18357 (FIRENZE SANTA MARIA NOVELLA -> VIA
+ REGGIO) (+1m)\n  - REG 18357 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) (+
+ 1m)\n  - TRENO 8605 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI) (+9m) [Arrivo
+ ]\n  - TRENO 8605 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI) (+9m) [Arrivo]\
+ n  - TRENO 8605 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI) (+9m) [Partenza]\
+ n  - TRENO 8605 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI) (+9m) [Partenza]\
+ nRitardo massimo rilevato: 9 min\nAffidabilità stima: 99%\nNota normativa
+ /euristica: Chiusura continua per 6 treni: intervallo utile tra i passaggi
+  (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:9
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8606--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T083930Z
 DTEND:20261122T084400Z
 SUMMARY:[FERMATA] TRENO 8606 (ROMA TERMINI -> TORINO PORTA NUOVA) ore 09:43
@@ -329,8 +397,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4019--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T092430Z
 DTEND:20261122T093400Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:24 - 10:34 (primo: REG 4019)
@@ -351,8 +419,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19340--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T100230Z
 DTEND:20261122T100700Z
 SUMMARY:[FERMATA] REG 19340 (PISA CENTRALE -> LA SPEZIA CENTRALE) ore 11:06
@@ -371,101 +439,110 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4030--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T102330Z
 DTEND:20261122T105200Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 11:23 - 11:52 (primo: REG 4030)
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 11:23 - 11:52 (primo: REG 4030)
 DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
- CONTINUA - 8 TRENI\nChiusura sbarre stimata: 11:23:30 - 11:52:00\nTreni co
+ CONTINUA - 7 TRENI\nChiusura sbarre stimata: 11:23:30 - 11:52:00\nTreni co
  involti nella chiusura:\n  - REG 4030 (PIOMBINO MARITTIMA -> FIRENZE SANTA
   MARIA NOVELLA)\n  - REG 4021 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENT
- RALE)\n  - REG 2293 (MILANO CENTRALE -> PISA CENTRALE) [Transito]\n  - IC 
- 583 (MILANO CENTRALE -> NAPOLI CENTRALE)\n  - IC 670 (LIVORNO CENTRALE -> 
- MILANO CENTRALE)\n  - REG 19357 (LA SPEZIA CENTRALE -> PISA CENTRALE)\n  -
-  REG 2293 (MILANO CENTRALE -> PISA CENTRALE)\n  - REG 4023 (FIRENZE SANTA 
- MARIA NOVELLA -> LIVORNO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 8 tre
- ni: intervallo utile tra i passaggi (90s) inferiore alla soglia minima di 
- sgombero stradale (120s)
+ RALE)\n  - IC 583 (MILANO CENTRALE -> NAPOLI CENTRALE)\n  - IC 670 (LIVORN
+ O CENTRALE -> MILANO CENTRALE)\n  - REG 19357 (LA SPEZIA CENTRALE -> PISA 
+ CENTRALE)\n  - REG 2293 (MILANO CENTRALE -> PISA CENTRALE)\n  - REG 4023 (
+ FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura cont
+ inua per 7 treni: intervallo utile tra i passaggi (90s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18287--20261121-S06500@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T112130Z
+DTEND:20261122T113820Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 12:21 - 12:38 (primo: REG 18287) (+4 
+ min)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 7 TRENI\nChiusura sbarre stimata: 12:21:30 - 12:38:20\nTreni co
+ involti nella chiusura:\n  - REG 18287 (FIRENZE SANTA MARIA NOVELLA -> GRO
+ SSETO) (+2m) [Arrivo]\n  - REG 18287 (FIRENZE SANTA MARIA NOVELLA -> GROSS
+ ETO) (+2m) [Arrivo]\n  - IC 657 (MILANO CENTRALE -> GROSSETO) (+4m)\n  - I
+ C 657 (MILANO CENTRALE -> GROSSETO) (+4m)\n  - REG 18287 (FIRENZE SANTA MA
+ RIA NOVELLA -> GROSSETO) (+2m) [Partenza]\n  - REG 18287 (FIRENZE SANTA MA
+ RIA NOVELLA -> GROSSETO) (+2m) [Partenza]\n  - REG 18289 (FIRENZE SANTA MA
+ RIA NOVELLA -> LIVORNO CENTRALE) [Transito]\nRitardo massimo rilevato: 4 m
+ in\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua 
+ per 7 treni: intervallo utile tra i passaggi (80s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-657--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T111915Z
-DTEND:20261122T112700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:19 - 12:27 (primo: IC 657)
+UID:train-18289--20261121-S06500@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T115530Z
+DTEND:20261122T120530Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 12:55 - 13:05 (primo: REG 18289) (+3 
+ min)
 DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:19:15 - 12:27:00\nTreni co
- involti nella chiusura:\n  - IC 657 (MILANO CENTRALE -> GROSSETO)\n  - REG
-  18287 (FIRENZE SANTA MARIA NOVELLA -> GROSSETO)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura cont
- inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
+ CONTINUA - 5 TRENI\nChiusura sbarre stimata: 12:55:30 - 13:05:30\nTreni co
+ involti nella chiusura:\n  - REG 18289 (FIRENZE SANTA MARIA NOVELLA -> LIV
+ ORNO CENTRALE)\n  - IC 510 (SALERNO -> TORINO PORTA NUOVA) (+3m) [Arrivo]\
+ n  - IC 510 (SALERNO -> TORINO PORTA NUOVA) (+3m) [Arrivo]\n  - IC 510 (SA
+ LERNO -> TORINO PORTA NUOVA) (+3m) [Partenza]\n  - IC 510 (SALERNO -> TORI
+ NO PORTA NUOVA) (+3m) [Partenza]\nRitardo massimo rilevato: 3 min\nAffidab
+ ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 5 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18289--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T113241Z
-DTEND:20261122T113811Z
-SUMMARY:[TRANSITO VELOCE] REG 18289 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO
-  CENTRALE) ore 12:36
+UID:train-8613--20261121-S06500@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T123704Z
+DTEND:20261122T124234Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8613 (GENOVA PIAZZA PRINCIPE -> ROMA TERMIN
+ I) ore 13:41
 DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: TRANSITO 
- VELOCE\nChiusura sbarre stimata: 12:32:41 - 12:38:11\nTreni coinvolti nell
- a chiusura:\n  - REG 18289 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRAL
- E) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\n
- Nota normativa/euristica: Transito stimato senza fermata (42% tratta PONTE
- DERA CASCIANA TERME -> CASCINA\; pedale annuncio fisso Vmax)
+ VELOCE\nChiusura sbarre stimata: 13:37:04 - 13:42:34\nTreni coinvolti nell
+ a chiusura:\n  - TRENO 8613 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI) [Tran
+ sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
+ mativa/euristica: Transito stimato senza fermata (61% tratta MASSA CENTRO 
+ -> VIAREGGIO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18289--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T115530Z
-DTEND:20261122T120000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:55 - 13:00 (primo: REG 18289)
-DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:55:30 - 13:00:00\nTreni co
- involti nella chiusura:\n  - REG 18289 (FIRENZE SANTA MARIA NOVELLA -> LIV
- ORNO CENTRALE)\n  - IC 510 (SALERNO -> TORINO PORTA NUOVA)\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
- usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8613--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T130030Z
 DTEND:20261122T130500Z
 SUMMARY:[FERMATA] TRENO 8613 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI) ore 1
@@ -485,28 +562,103 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4128--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T132130Z
-DTEND:20261122T132600Z
-SUMMARY:[FERMATA] REG 4128 (ROMA TERMINI -> PISA CENTRALE) ore 14:25
-DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: FERMATA\n
- Chiusura sbarre stimata: 14:21:30 - 14:26:00\nTreni coinvolti nella chiusu
- ra:\n  - REG 4128 (ROMA TERMINI -> PISA CENTRALE)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
- a traccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T131830Z
+DTEND:20261122T132300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:18 - 14:23 (primo: REG 4128)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:18:30 - 14:23:00\nTreni co
+ involti nella chiusura:\n  - REG 4128 (ROMA TERMINI -> PISA CENTRALE)\n  -
+  REG 4128 (ROMA TERMINI -> PISA CENTRALE)\nRitardo massimo rilevato: -3 mi
+ n\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua p
+ er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
+ ima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19392--20261121-S06500@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T133030Z
+DTEND:20261122T133530Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:30 - 14:35 (primo: REG 19392) (+2 
+ min)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:30:30 - 14:35:30\nTreni co
+ involti nella chiusura:\n  - REG 19392 (LIVORNO CENTRALE -> LA SPEZIA CENT
+ RALE) (+2m)\n  - REG 19392 (LIVORNO CENTRALE -> LA SPEZIA CENTRALE) (+2m)\
+ nRitardo massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa
+ /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
+  (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18395--20261121-S06500@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T134600Z
+DTEND:20261122T135030Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:46 - 14:50 (primo: REG 18395) (+3 
+ min)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:46:00 - 14:50:30\nTreni co
+ involti nella chiusura:\n  - REG 18395 (LA SPEZIA CENTRALE -> FIRENZE SANT
+ A MARIA NOVELLA) (+3m) [Arrivo]\n  - REG 18395 (LA SPEZIA CENTRALE -> FIRE
+ NZE SANTA MARIA NOVELLA) (+3m) [Arrivo]\nRitardo massimo rilevato: 3 min\n
+ Affidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 
+ 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
+  di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18395--20261121-S06500@pl-tracker.local-dep
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T135300Z
+DTEND:20261122T140030Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 14:53 - 15:00 (primo: REG 18395) (+8 
+ min)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 4 TRENI\nChiusura sbarre stimata: 14:53:00 - 15:00:30\nTreni co
+ involti nella chiusura:\n  - REG 18395 (LA SPEZIA CENTRALE -> FIRENZE SANT
+ A MARIA NOVELLA) (+3m) [Partenza]\n  - REG 18395 (LA SPEZIA CENTRALE -> FI
+ RENZE SANTA MARIA NOVELLA) (+3m) [Partenza]\n  - TRENO 8616 (ROMA TERMINI 
+ -> GENOVA PIAZZA PRINCIPE) (+8m)\n  - TRENO 8616 (ROMA TERMINI -> GENOVA P
+ IAZZA PRINCIPE) (+8m)\nRitardo massimo rilevato: 8 min\nAffidabilità stim
+ a: 99%\nNota normativa/euristica: Chiusura continua per 4 treni: intervall
+ o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
+ ale (120s)
+LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-590--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T141815Z
 DTEND:20261122T142300Z
 SUMMARY:[FERMATA] IC 590 (SALERNO -> MILANO CENTRALE) ore 15:22
@@ -525,310 +677,325 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19358--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T143030Z
-DTEND:20261122T144311Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:30 - 15:43 (primo: REG 19358)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T143130Z
+DTEND:20261122T144100Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:31 - 15:41 (primo: REG 19358) (+1 
+ min)
 DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
- CONTINUA - 3 TRENI\nChiusura sbarre stimata: 15:30:30 - 15:43:11\nTreni co
+ CONTINUA - 3 TRENI\nChiusura sbarre stimata: 15:31:30 - 15:41:00\nTreni co
  involti nella chiusura:\n  - REG 19358 (PISA CENTRALE -> LA SPEZIA CENTRAL
- E)\n  - REG 4135 (PISA CENTRALE -> ROMA TERMINI)\n  - REG 18415 (LA SPEZIA
-  CENTRALE -> FIRENZE SANTA MARIA NOVELLA) [Transito]\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
- continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+ E) (+1m)\n  - REG 19358 (PISA CENTRALE -> LA SPEZIA CENTRALE) (+1m)\n  - R
+ EG 4135 (PISA CENTRALE -> ROMA TERMINI)\nRitardo massimo rilevato: 1 min\n
+ Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
+ 3 treni: intervallo utile tra i passaggi (30s) inferiore alla soglia minim
+ a di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4037--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T144730Z
-DTEND:20261122T145500Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:47 - 15:55 (primo: REG 4037)
+DTEND:20261122T145630Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:47 - 15:56 (primo: REG 4037) (+4 m
+ in)
 DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
- CONTINUA - 3 TRENI\nChiusura sbarre stimata: 15:47:30 - 15:55:00\nTreni co
+ CONTINUA - 4 TRENI\nChiusura sbarre stimata: 15:47:30 - 15:56:30\nTreni co
  involti nella chiusura:\n  - REG 4037 (FIRENZE SANTA MARIA NOVELLA -> LIVO
  RNO CENTRALE)\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NO
- VELLA)\n  - REG 18308 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA)\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
- : Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) infe
- riore alla soglia minima di sgombero stradale (120s)
+ VELLA)\n  - REG 18308 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA) (+4m) [Arr
+ ivo]\n  - REG 18308 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA) (+4m) [Arriv
+ o]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 90%\nNota normat
+ iva/euristica: Chiusura continua per 4 treni: intervallo utile tra i passa
+ ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18377--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T150030Z
-DTEND:20261122T150500Z
-SUMMARY:[FERMATA] REG 18377 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTR
- ALE) ore 16:04
-DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: FERMATA\n
- Chiusura sbarre stimata: 16:00:30 - 16:05:00\nTreni coinvolti nella chiusu
- ra:\n  - REG 18377 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE)\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eu
- ristica: Previsione da traccia oraria regolare
+DTEND:20261122T150600Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:00 - 16:06 (primo: REG 18377) (+4 
+ min)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:00:30 - 16:06:00\nTreni co
+ involti nella chiusura:\n  - REG 18377 (FIRENZE SANTA MARIA NOVELLA -> LA 
+ SPEZIA CENTRALE)\n  - REG 18308 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA) 
+ (+4m) [Partenza]\n  - REG 18308 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA) 
+ (+4m) [Partenza]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 90
+ %\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo uti
+ le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
+ 120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18495--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T151430Z
-DTEND:20261122T151900Z
-SUMMARY:[FERMATA] REG 18495 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVELLA) 
- ore 16:18
-DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: FERMATA\n
- Chiusura sbarre stimata: 16:14:30 - 16:19:00\nTreni coinvolti nella chiusu
- ra:\n  - REG 18495 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVELLA)\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristi
- ca: Previsione da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-19362--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T153030Z
-DTEND:20261122T154256Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:30 - 16:42 (primo: REG 19362)
+DTEND:20261122T154234Z
+SUMMARY:[CHIUSURA CONTINUA - 9 TRENI] 16:14 - 16:42 (primo: REG 18495)
 DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
- CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:30:30 - 16:42:56\nTreni co
- involti nella chiusura:\n  - REG 19362 (PISA CENTRALE -> LA SPEZIA CENTRAL
- E)\n  - REG 18301 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE) [Transito
- ]\n  - REG 18399 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELLA) [Tran
- sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i pa
- ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ CONTINUA - 9 TRENI\nChiusura sbarre stimata: 16:14:30 - 16:42:34\nTreni co
+ involti nella chiusura:\n  - REG 18495 (PISA CENTRALE -> FIRENZE SANTA MAR
+ IA NOVELLA)\n  - REG 4132 (ROMA TERMINI -> PISA CENTRALE)\n  - REG 4132 (R
+ OMA TERMINI -> PISA CENTRALE)\n  - REG 4044 (LIVORNO CENTRALE -> FIRENZE S
+ ANTA MARIA NOVELLA)\n  - REG 4044 (LIVORNO CENTRALE -> FIRENZE SANTA MARIA
+  NOVELLA)\n  - REG 19362 (PISA CENTRALE -> LA SPEZIA CENTRALE)\n  - REG 18
+ 301 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE) [Transito]\n  - REG 183
+ 01 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE) [Transito]\n  - TRENO 86
+ 19 (MILANO CENTRALE -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato:
+  0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
+ nua per 9 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 9 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18399--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T154830Z
+UID:train-18587--20261121-S06500@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T154630Z
 DTEND:20261122T160700Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 16:48 - 17:07 (primo: REG 18399)
+SUMMARY:[CHIUSURA CONTINUA - 9 TRENI] 16:46 - 17:07 (primo: REG 18587) (+5 
+ min)
 DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
- CONTINUA - 5 TRENI\nChiusura sbarre stimata: 16:48:30 - 17:07:00\nTreni co
- involti nella chiusura:\n  - REG 18399 (LA SPEZIA CENTRALE -> FIRENZE SANT
- A MARIA NOVELLA)\n  - TRENO 8620 (ROMA TERMINI -> MILANO CENTRALE)\n  - RE
- G 18301 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE)\n  - TRENO 8619 (MI
- LANO CENTRALE -> ROMA TERMINI)\n  - REG 4046 (LIVORNO CENTRALE -> FIRENZE 
- SANTA MARIA NOVELLA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 90%\nNota normativa/euristica: Chiusura continua per 5 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
+ CONTINUA - 9 TRENI\nChiusura sbarre stimata: 16:46:30 - 17:07:00\nTreni co
+ involti nella chiusura:\n  - REG 18587 (PISA CENTRALE -> LUCCA)\n  - REG 1
+ 8587 (PISA CENTRALE -> LUCCA)\n  - REG 18399 (LA SPEZIA CENTRALE -> FIRENZ
+ E SANTA MARIA NOVELLA)\n  - TRENO 8620 (ROMA TERMINI -> MILANO CENTRALE) (
+ +5m)\n  - TRENO 8620 (ROMA TERMINI -> MILANO CENTRALE) (+5m)\n  - REG 1830
+ 1 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE)\n  - REG 18301 (FIRENZE S
+ ANTA MARIA NOVELLA -> PISA CENTRALE)\n  - TRENO 8619 (MILANO CENTRALE -> R
+ OMA TERMINI)\n  - REG 4046 (LIVORNO CENTRALE -> FIRENZE SANTA MARIA NOVELL
+ A)\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 90%\nNota normat
+ iva/euristica: Chiusura continua per 9 treni: intervallo utile tra i passa
+ ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 9 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19367--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T162330Z
 DTEND:20261122T163300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:23 - 17:33 (primo: REG 19367)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:23 - 17:33 (primo: REG 19367)
 DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:23:30 - 17:33:00\nTreni co
+ CONTINUA - 4 TRENI\nChiusura sbarre stimata: 17:23:30 - 17:33:00\nTreni co
  involti nella chiusura:\n  - REG 19367 (LA SPEZIA CENTRALE -> PISA CENTRAL
- E)\n  - IC 684 (GROSSETO -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (15s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+ E)\n  - REG 4050 (LIVORNO CENTRALE -> FIRENZE SANTA MARIA NOVELLA)\n  - RE
+ G 4050 (LIVORNO CENTRALE -> FIRENZE SANTA MARIA NOVELLA)\n  - IC 684 (GROS
+ SETO -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità s
+ tima: 90%\nNota normativa/euristica: Chiusura continua per 4 treni: interv
+ allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
+ radale (120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4137--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T163630Z
-DTEND:20261122T164100Z
-SUMMARY:[FERMATA] REG 4137 (PISA CENTRALE -> ROMA TERMINI) ore 17:40
-DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: FERMATA\n
- Chiusura sbarre stimata: 17:36:30 - 17:41:00\nTreni coinvolti nella chiusu
- ra:\n  - REG 4137 (PISA CENTRALE -> ROMA TERMINI)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
- a traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18385--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T170030Z
-DTEND:20261122T170500Z
-SUMMARY:[FERMATA] REG 18385 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTR
- ALE) ore 18:04
-DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: FERMATA\n
- Chiusura sbarre stimata: 18:00:30 - 18:05:00\nTreni coinvolti nella chiusu
- ra:\n  - REG 18385 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE)\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eu
- ristica: Previsione da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-596--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T171415Z
-DTEND:20261122T172500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:14 - 18:25 (primo: IC 596)
+DTEND:20261122T164400Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:36 - 17:44 (primo: REG 4137)
 DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:14:15 - 18:25:00\nTreni co
- involti nella chiusura:\n  - IC 596 (NAPOLI CENTRALE -> MILANO CENTRALE)\n
-   - IC 669 (MILANO CENTRALE -> LIVORNO CENTRALE)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura cont
- inua per 2 treni: intervallo utile tra i passaggi (75s) inferiore alla sog
- lia minima di sgombero stradale (120s)
+ CONTINUA - 3 TRENI\nChiusura sbarre stimata: 17:36:30 - 17:44:00\nTreni co
+ involti nella chiusura:\n  - REG 4137 (PISA CENTRALE -> ROMA TERMINI)\n  -
+  REG 19370 (PISA CENTRALE -> LA SPEZIA CENTRALE)\n  - REG 19370 (PISA CENT
+ RALE -> LA SPEZIA CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilit
+ à stima: 90%\nNota normativa/euristica: Chiusura continua per 3 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-669--20261121-S06500@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T165739Z
+DTEND:20261122T170500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:57 - 18:05 (primo: IC 669)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:57:39 - 18:05:00\nTreni co
+ involti nella chiusura:\n  - IC 669 (MILANO CENTRALE -> LIVORNO CENTRALE) 
+ [Transito]\n  - REG 18385 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRA
+ LE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
+ aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-669--20261121-S06500@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T172015Z
+DTEND:20261122T172900Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 18:20 - 18:29 (primo: IC 669)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 3 TRENI\nChiusura sbarre stimata: 18:20:15 - 18:29:00\nTreni co
+ involti nella chiusura:\n  - IC 669 (MILANO CENTRALE -> LIVORNO CENTRALE)\
+ n  - REG 18307 (FIRENZE SANTA MARIA NOVELLA -> GROSSETO)\n  - REG 18307 (F
+ IRENZE SANTA MARIA NOVELLA -> GROSSETO)\nRitardo massimo rilevato: 0 min\n
+ Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
+ 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
+  di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4134--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T173130Z
 DTEND:20261122T173600Z
-SUMMARY:[FERMATA] REG 4134 (ROMA TERMINI -> PISA CENTRALE) ore 18:35
-DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: FERMATA\n
- Chiusura sbarre stimata: 18:31:30 - 18:36:00\nTreni coinvolti nella chiusu
- ra:\n  - REG 4134 (ROMA TERMINI -> PISA CENTRALE)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
- a traccia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 18:31 - 18:36 (primo: REG 4134) (+17 
+ min)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 3 TRENI\nChiusura sbarre stimata: 18:31:30 - 18:36:00\nTreni co
+ involti nella chiusura:\n  - REG 4134 (ROMA TERMINI -> PISA CENTRALE)\n  -
+  IC 596 (NAPOLI CENTRALE -> MILANO CENTRALE) (+17m)\n  - IC 596 (NAPOLI CE
+ NTRALE -> MILANO CENTRALE) (+17m)\nRitardo massimo rilevato: 17 min\nAffid
+ abilità stima: 90%\nNota normativa/euristica: Chiusura continua per 3 tre
+ ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
+ gombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:17
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-518--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T175615Z
-DTEND:20261122T180100Z
-SUMMARY:[FERMATA] IC 518 (ROMA TERMINI -> VENTIMIGLIA) ore 19:00
-DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: FERMATA\n
- Chiusura sbarre stimata: 18:56:15 - 19:01:00\nTreni coinvolti nella chiusu
- ra:\n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA)\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tr
- accia oraria regolare
+UID:train-8623--20261121-S06500@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T174204Z
+DTEND:20261122T174734Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:42 - 18:47 (primo: TRENO 8623) (+1
+  min)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:42:04 - 18:47:34\nTreni co
+ involti nella chiusura:\n  - TRENO 8623 (TORINO PORTA NUOVA -> ROMA TERMIN
+ I) (+1m) [Transito]\n  - TRENO 8623 (TORINO PORTA NUOVA -> ROMA TERMINI) (
+ +1m) [Transito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%
+ \nNota normativa/euristica: Chiusura continua per 2 treni: intervallo util
+ e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
+ 20s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-518--20261121-S06500@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T180215Z
+DTEND:20261122T181000Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 19:02 - 19:10 (primo: IC 518) (+6 min
+ )
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 4 TRENI\nChiusura sbarre stimata: 19:02:15 - 19:10:00\nTreni co
+ involti nella chiusura:\n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA) (+6m)\n 
+  - IC 518 (ROMA TERMINI -> VENTIMIGLIA) (+6m)\n  - TRENO 8623 (TORINO PORT
+ A NUOVA -> ROMA TERMINI) (+1m)\n  - TRENO 8623 (TORINO PORTA NUOVA -> ROMA
+  TERMINI) (+1m)\nRitardo massimo rilevato: 6 min\nAffidabilità stima: 90%
+ \nNota normativa/euristica: Chiusura continua per 4 treni: intervallo util
+ e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
+ 20s)
+LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8623--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T180430Z
-DTEND:20261122T180900Z
-SUMMARY:[FERMATA] TRENO 8623 (TORINO PORTA NUOVA -> ROMA TERMINI) ore 19:08
-DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: FERMATA\n
- Chiusura sbarre stimata: 19:04:30 - 19:09:00\nTreni coinvolti nella chiusu
- ra:\n  - TRENO 8623 (TORINO PORTA NUOVA -> ROMA TERMINI)\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previ
- sione da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
 UID:train-8626--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T184930Z
-DTEND:20261122T185400Z
-SUMMARY:[FERMATA] TRENO 8626 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) ore 1
- 9:53
-DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: FERMATA\n
- Chiusura sbarre stimata: 19:49:30 - 19:54:00\nTreni coinvolti nella chiusu
- ra:\n  - TRENO 8626 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE)\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
- revisione da traccia oraria regolare
+DTEND:20261122T185656Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:49 - 19:56 (primo: TRENO 8626)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:49:30 - 19:56:56\nTreni co
+ involti nella chiusura:\n  - TRENO 8626 (ROMA TERMINI -> GENOVA PIAZZA PRI
+ NCIPE)\n  - IC 673 (MILANO CENTRALE -> LIVORNO CENTRALE) [Transito]\nRitar
+ do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
+ inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-673--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T191315Z
 DTEND:20261122T191800Z
 SUMMARY:[FERMATA] IC 673 (MILANO CENTRALE -> LIVORNO CENTRALE) ore 20:17
@@ -847,31 +1014,54 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4136--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T192130Z
 DTEND:20261122T193000Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:21 - 20:30 (primo: REG 4136)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:21 - 20:30 (primo: REG 4136)
 DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
- CONTINUA - 3 TRENI\nChiusura sbarre stimata: 20:21:30 - 20:30:00\nTreni co
+ CONTINUA - 4 TRENI\nChiusura sbarre stimata: 20:21:30 - 20:30:00\nTreni co
  involti nella chiusura:\n  - REG 4136 (ROMA TERMINI -> PISA CENTRALE)\n  -
   REG 4051 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE)\n  - REG 4060 
- (PIOMBINO MARITTIMA -> FIRENZE SANTA MARIA NOVELLA)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura c
- ontinua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+ (PIOMBINO MARITTIMA -> FIRENZE SANTA MARIA NOVELLA)\n  - REG 4060 (PIOMBIN
+ O MARITTIMA -> FIRENZE SANTA MARIA NOVELLA)\nRitardo massimo rilevato: 0 m
+ in\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua 
+ per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
+ nima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-8591--20261121-S06500@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T193230Z
+DTEND:20261122T193700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:32 - 20:37 (primo: TRENO 8591)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:32:30 - 20:37:00\nTreni co
+ involti nella chiusura:\n  - TRENO 8591 (GENOVA PIAZZA PRINCIPE -> ROMA TE
+ RMINI)\n  - TRENO 8591 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI)\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
+ : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
 UID:train-18599--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T194630Z
 DTEND:20261122T195100Z
 SUMMARY:[FERMATA] REG 18599 (PISA CENTRALE -> LUCCA) ore 20:50
@@ -889,39 +1079,43 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4062--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T202530Z
+UID:train-1588--20261121-S06500@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T202115Z
 DTEND:20261122T203000Z
-SUMMARY:[FERMATA] REG 4062 (LIVORNO CENTRALE -> FIRENZE SANTA MARIA NOVELLA
- ) ore 21:29
-DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: FERMATA\n
- Chiusura sbarre stimata: 21:25:30 - 21:30:00\nTreni coinvolti nella chiusu
- ra:\n  - REG 4062 (LIVORNO CENTRALE -> FIRENZE SANTA MARIA NOVELLA)\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euris
- tica: Previsione da traccia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 21:21 - 21:30 (primo: IC 1588) (+121 
+ min)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 4 TRENI\nChiusura sbarre stimata: 21:21:15 - 21:30:00\nTreni co
+ involti nella chiusura:\n  - IC 1588 (REGGIO DI CALABRIA CENTRALE -> MILAN
+ O CENTRALE) (+121m)\n  - IC 1588 (REGGIO DI CALABRIA CENTRALE -> MILANO CE
+ NTRALE) (+121m)\n  - REG 4062 (LIVORNO CENTRALE -> FIRENZE SANTA MARIA NOV
+ ELLA)\n  - REG 4062 (LIVORNO CENTRALE -> FIRENZE SANTA MARIA NOVELLA)\nRit
+ ardo massimo rilevato: 121 min\nAffidabilità stima: 90%\nNota normativa/e
+ uristica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:121
 X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18325--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T203241Z
-DTEND:20261122T203811Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T203250Z
+DTEND:20261122T203820Z
 SUMMARY:[TRANSITO VELOCE] REG 18325 (FIRENZE SANTA MARIA NOVELLA -> PISA CE
- NTRALE) ore 21:36
+ NTRALE) ore 21:37
 DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: TRANSITO 
- VELOCE\nChiusura sbarre stimata: 21:32:41 - 21:38:11\nTreni coinvolti nell
+ VELOCE\nChiusura sbarre stimata: 21:32:50 - 21:38:20\nTreni coinvolti nell
  a chiusura:\n  - REG 18325 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE) 
  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
- a normativa/euristica: Transito stimato senza fermata (42% tratta PONTEDER
+ a normativa/euristica: Transito stimato senza fermata (44% tratta PONTEDER
  A CASCIANA TERME -> CASCINA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
@@ -933,33 +1127,78 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18605--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T204630Z
-DTEND:20261122T210800Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 21:46 - 22:08 (primo: REG 18605)
+DTEND:20261122T205309Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 21:46 - 21:53 (primo: REG 18605)
 DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
- CONTINUA - 5 TRENI\nChiusura sbarre stimata: 21:46:30 - 22:08:00\nTreni co
- involti nella chiusura:\n  - REG 18605 (PISA CENTRALE -> LUCCA)\n  - REG 2
- 295 (MILANO PORTA GARIBALDI -> LIVORNO CENTRALE) [Transito]\n  - REG 18325
-  (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE)\n  - REG 18329 (FIRENZE SA
- NTA MARIA NOVELLA -> LIVORNO CENTRALE)\n  - REG 2295 (MILANO PORTA GARIBAL
- DI -> LIVORNO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità st
- ima: 78%\nNota normativa/euristica: Chiusura continua per 5 treni: interva
- llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
- adale (120s)
+ CONTINUA - 4 TRENI\nChiusura sbarre stimata: 21:46:30 - 21:53:09\nTreni co
+ involti nella chiusura:\n  - REG 18605 (PISA CENTRALE -> LUCCA)\n  - REG 1
+ 8605 (PISA CENTRALE -> LUCCA)\n  - IC 679 (MILANO CENTRALE -> LIVORNO CENT
+ RALE) [Transito]\n  - IC 679 (MILANO CENTRALE -> LIVORNO CENTRALE) [Transi
+ to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Chiusura continua per 4 treni: intervallo utile tra i pass
+ aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-18325--20261121-S06500@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T205530Z
+DTEND:20261122T210800Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 21:55 - 22:08 (primo: REG 18325)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 5 TRENI\nChiusura sbarre stimata: 21:55:30 - 22:08:00\nTreni co
+ involti nella chiusura:\n  - REG 18325 (FIRENZE SANTA MARIA NOVELLA -> PIS
+ A CENTRALE)\n  - REG 18329 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRAL
+ E)\n  - REG 18329 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE)\n  - R
+ EG 2295 (MILANO PORTA GARIBALDI -> LIVORNO CENTRALE)\n  - REG 2295 (MILANO
+  PORTA GARIBALDI -> LIVORNO CENTRALE)\nRitardo massimo rilevato: 0 min\nAf
+ fidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 5 
+ treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
+ i sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-679--20261121-S06500@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T211315Z
+DTEND:20261122T211800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:13 - 22:18 (primo: IC 679)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:13:15 - 22:18:00\nTreni co
+ involti nella chiusura:\n  - IC 679 (MILANO CENTRALE -> LIVORNO CENTRALE)\
+ n  - IC 679 (MILANO CENTRALE -> LIVORNO CENTRALE)\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
+ tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
 UID:train-18335--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T212430Z
 DTEND:20261122T212900Z
 SUMMARY:[FERMATA] REG 18335 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRAL
@@ -979,8 +1218,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8596--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T213630Z
 DTEND:20261122T214100Z
 SUMMARY:[FERMATA] TRENO 8596 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) ore 2
@@ -1000,48 +1239,74 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-685--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T221315Z
-DTEND:20261122T221800Z
-SUMMARY:[FERMATA] IC 685 (MILANO CENTRALE -> LIVORNO CENTRALE) ore 23:17
-DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: FERMATA\n
- Chiusura sbarre stimata: 23:13:15 - 23:18:00\nTreni coinvolti nella chiusu
- ra:\n  - IC 685 (MILANO CENTRALE -> LIVORNO CENTRALE)\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
- ne da traccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T215226Z
+DTEND:20261122T215656Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:52 - 22:56 (primo: IC 685)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:52:26 - 22:56:56\nTreni co
+ involti nella chiusura:\n  - IC 685 (MILANO CENTRALE -> LIVORNO CENTRALE) 
+ [Transito]\n  - IC 685 (MILANO CENTRALE -> LIVORNO CENTRALE) [Transito]\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-685--20261121-S06500@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T221315Z
+DTEND:20261122T221800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:13 - 23:18 (primo: IC 685)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 23:13:15 - 23:18:00\nTreni co
+ involti nella chiusura:\n  - IC 685 (MILANO CENTRALE -> LIVORNO CENTRALE)\
+ n  - IC 685 (MILANO CENTRALE -> LIVORNO CENTRALE)\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
+ tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-799--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261123T011215Z
 DTEND:20261123T011700Z
-SUMMARY:[FERMATA] ICN 799 (TORINO PORTA NUOVA -> SALERNO) ore 02:16
-DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: FERMATA\n
- Chiusura sbarre stimata: 02:12:15 - 02:17:00\nTreni coinvolti nella chiusu
- ra:\n  - ICN 799 (TORINO PORTA NUOVA -> SALERNO)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da
-  traccia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 02:12 - 02:17 (primo: ICN 799)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 02:12:15 - 02:17:00\nTreni co
+ involti nella chiusura:\n  - ICN 799 (TORINO PORTA NUOVA -> SALERNO)\n  - 
+ ICN 799 (TORINO PORTA NUOVA -> SALERNO)\nRitardo massimo rilevato: 0 min\n
+ Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
+ 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
+  di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-796--20261121-S06500@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261123T021915Z
 DTEND:20261123T022400Z
 SUMMARY:[FERMATA] ICN 796 (SALERNO -> TORINO PORTA NUOVA) ore 03:23
@@ -1054,6 +1319,28 @@ LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:ICN
+END:VEVENT
+BEGIN:VEVENT
+UID:train-812--20261121-S06500@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261123T102015Z
+DTEND:20261123T102500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:20 - 11:25 (primo: ICN 812)
+DESCRIPTION:Stazione/PL: PISA CENTRALE (S06500)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:20:15 - 11:25:00\nTreni co
+ involti nella chiusura:\n  - ICN 812 (REGGIO DI CALABRIA CENTRALE -> TORIN
+ O PORTA NUOVA)\n  - ICN 812 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA N
+ UOVA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota nor
+ mativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pa
+ ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PISA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:ICN

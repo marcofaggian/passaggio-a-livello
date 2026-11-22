@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:b6b4406bebf2de05b97613872e015c0e4046b3473dd6a4457887f6b89c3b
- 5db5
+X-CONTENT-HASH:d40106ef8c179e62eeb4f82f2e399c4687eeed428d46355e689e5d1c27c4
+ 1ff6
 BEGIN:VEVENT
 UID:train-91584--20261121-S02834@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T150800Z
 DTEND:20261122T151230Z
 SUMMARY:[FERMATA] REG 91584 (ADRIA -> VENEZIA S.LUCIA) ore 16:11
@@ -32,21 +32,45 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-91599--20261121-S02834@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T200030Z
-DTEND:20261122T200500Z
-SUMMARY:[FERMATA] REG 91599 (VENEZIA S.LUCIA -> PIOVE DI SACCO) ore 21:04
-DESCRIPTION:Stazione/PL: ORIAGO (S02834)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 21:00:30 - 21:05:00\nTreni coinvolti nella chiusura:\n  
- - REG 91599 (VENEZIA S.LUCIA -> PIOVE DI SACCO)\nRitardo massimo rilevato:
-  0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da 
- traccia oraria regolare
+UID:train-91551--20261121-S02834@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T165030Z
+DTEND:20261122T165500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:50 - 17:55 (primo: REG 91551)
+DESCRIPTION:Stazione/PL: ORIAGO (S02834)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 17:50:30 - 17:55:00\nTreni coinvolti
+  nella chiusura:\n  - REG 91551 (VENEZIA S.LUCIA -> ADRIA)\n  - REG 91551 
+ (VENEZIA S.LUCIA -> ADRIA)\nRitardo massimo rilevato: 0 min\nAffidabilità
+  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
+ rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
+ stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORIAGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-91599--20261121-S02834@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T200030Z
+DTEND:20261122T200500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:00 - 21:05 (primo: REG 91599)
+DESCRIPTION:Stazione/PL: ORIAGO (S02834)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 21:00:30 - 21:05:00\nTreni coinvolti
+  nella chiusura:\n  - REG 91599 (VENEZIA S.LUCIA -> PIOVE DI SACCO)\n  - R
+ EG 91599 (VENEZIA S.LUCIA -> PIOVE DI SACCO)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
+  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ORIAGO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

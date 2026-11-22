@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:9ddfdf4aa8b2f9d17e6f126e875d587195212c1aebff61bc1dd27d134884
- 0513
+X-CONTENT-HASH:9e4f370bff1f9ce863c7bfdc1b23cd3c50068dcba4b6a41434212fad891d
+ 861a
 BEGIN:VEVENT
 UID:train-18251--20261121-S06509@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T002130Z
 DTEND:20261122T002600Z
 SUMMARY:[FERMATA] REG 18251 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE) 
@@ -34,8 +34,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18255--20261121-S06509@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T050330Z
 DTEND:20261122T050800Z
 SUMMARY:[FERMATA] REG 18255 (FIRENZE SANTA MARIA NOVELLA -> PIOMBINO MARITT
@@ -55,37 +55,40 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18355--20261121-S06509@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T054730Z
-DTEND:20261122T055200Z
-SUMMARY:[FERMATA] REG 18355 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTR
- ALE) ore 06:51
-DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: FER
- MATA\nChiusura sbarre stimata: 06:47:30 - 06:52:00\nTreni coinvolti nella 
- chiusura:\n  - REG 18355 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRAL
- E)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normat
- iva/euristica: Previsione da traccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T054930Z
+DTEND:20261122T055500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:49 - 06:55 (primo: REG 18355) (+2 
+ min)
+DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: CHI
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:49:30 - 06:55:00\nTr
+ eni coinvolti nella chiusura:\n  - REG 18355 (FIRENZE SANTA MARIA NOVELLA 
+ -> LA SPEZIA CENTRALE) (+2m)\n  - REG 18355 (FIRENZE SANTA MARIA NOVELLA -
+ > LA SPEZIA CENTRALE) (+2m)\nRitardo massimo rilevato: 2 min\nAffidabilit
+ à stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4012--20261121-S06509@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T065645Z
-DTEND:20261122T070324Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:56 - 08:03 (primo: REG 4012)
+UID:train-18264--20261121-S06509@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T061032Z
+DTEND:20261122T061602Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:10 - 07:16 (primo: REG 18264)
 DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:56:45 - 08:03:24\nTr
- eni coinvolti nella chiusura:\n  - REG 4012 (PISA CENTRALE -> FIRENZE SANT
- A MARIA NOVELLA) [Transito]\n  - REG 4013 (FIRENZE SANTA MARIA NOVELLA -> 
- LIVORNO CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilit
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:10:32 - 07:16:02\nTr
+ eni coinvolti nella chiusura:\n  - REG 18264 (PISA CENTRALE -> FIRENZE SAN
+ TA MARIA NOVELLA) [Transito]\n  - REG 18264 (PISA CENTRALE -> FIRENZE SANT
+ A MARIA NOVELLA) [Transito]\nRitardo massimo rilevato: -4 min\nAffidabilit
  à stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: in
  tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
  o stradale (120s)
@@ -93,90 +96,144 @@ LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:-4
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18268--20261121-S06509@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T071111Z
-DTEND:20261122T071641Z
-SUMMARY:[TRANSITO VELOCE] REG 18268 (CAMPIGLIA MARITTIMA -> FIRENZE SANTA M
- ARIA NOVELLA) ore 08:15
-DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 08:11:11 - 08:16:41\nTreni coinvolt
- i nella chiusura:\n  - REG 18268 (CAMPIGLIA MARITTIMA -> FIRENZE SANTA MAR
- IA NOVELLA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità sti
- ma: 78%\nNota normativa/euristica: Transito stimato senza fermata (81% tra
- tta PONTEDERA CASCIANA TERME -> S.ROMANO-MONTOPOLI-S.CROCE\; pedale annunc
- io fisso Vmax)
+UID:train-18264--20261121-S06509@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T062030Z
+DTEND:20261122T062600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:20 - 07:26 (primo: REG 18264) (+3 
+ min)
+DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: CHI
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:20:30 - 07:26:00\nTr
+ eni coinvolti nella chiusura:\n  - REG 18264 (PISA CENTRALE -> FIRENZE SAN
+ TA MARIA NOVELLA) (+3m)\n  - REG 18264 (PISA CENTRALE -> FIRENZE SANTA MAR
+ IA NOVELLA) (+3m)\nRitardo massimo rilevato: 3 min\nAffidabilità stima: 9
+ 9%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo ut
+ ile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale 
+ (120s)
 LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18267--20261121-S06509@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T063330Z
+DTEND:20261122T063900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:33 - 07:39 (primo: REG 18267) (+1 
+ min)
+DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: CHI
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:33:30 - 07:39:00\nTr
+ eni coinvolti nella chiusura:\n  - REG 18267 (FIRENZE SANTA MARIA NOVELLA 
+ -> GROSSETO) (+1m)\n  - REG 18267 (FIRENZE SANTA MARIA NOVELLA -> GROSSETO
+ ) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota n
+ ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
+ passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4013--20261121-S06509@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T070110Z
+DTEND:20261122T070640Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:01 - 08:06 (primo: REG 4013)
+DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: CHI
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:01:10 - 08:06:40\nTr
+ eni coinvolti nella chiusura:\n  - REG 4013 (FIRENZE SANTA MARIA NOVELLA -
+ > LIVORNO CENTRALE) [Transito]\n  - REG 4013 (FIRENZE SANTA MARIA NOVELLA 
+ -> LIVORNO CENTRALE) [Transito]\nRitardo massimo rilevato: -1 min\nAffidab
+ ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18268--20261121-S06509@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T071930Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T071121Z
 DTEND:20261122T072400Z
-SUMMARY:[FERMATA] REG 18268 (CAMPIGLIA MARITTIMA -> FIRENZE SANTA MARIA NOV
- ELLA) ore 08:23
-DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: FER
- MATA\nChiusura sbarre stimata: 08:19:30 - 08:24:00\nTreni coinvolti nella 
- chiusura:\n  - REG 18268 (CAMPIGLIA MARITTIMA -> FIRENZE SANTA MARIA NOVEL
- LA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota norma
- tiva/euristica: Previsione da traccia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:11 - 08:24 (primo: REG 18268) (+10
+  min)
+DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: CHI
+ USURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 08:11:21 - 08:24:00\nTr
+ eni coinvolti nella chiusura:\n  - REG 18268 (CAMPIGLIA MARITTIMA -> FIREN
+ ZE SANTA MARIA NOVELLA) [Transito]\n  - REG 4012 (PISA CENTRALE -> FIRENZE
+  SANTA MARIA NOVELLA) (+10m) [Transito]\n  - REG 4012 (PISA CENTRALE -> FI
+ RENZE SANTA MARIA NOVELLA) (+10m) [Transito]\n  - REG 18268 (CAMPIGLIA MAR
+ ITTIMA -> FIRENZE SANTA MARIA NOVELLA)\nRitardo massimo rilevato: 10 min\n
+ Affidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 
+ 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
+  di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:10
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18274--20261121-S06509@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T072611Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T072621Z
 DTEND:20261122T073800Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 08:26 - 08:38 (primo: REG 18274)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:26 - 08:38 (primo: REG 18274) (+3 
+ min)
 DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: CHI
- USURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 08:26:11 - 08:38:00\nTr
+ USURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 08:26:21 - 08:38:00\nTr
  eni coinvolti nella chiusura:\n  - REG 18274 (LIVORNO CENTRALE -> FIRENZE 
  SANTA MARIA NOVELLA) [Transito]\n  - REG 18357 (FIRENZE SANTA MARIA NOVELL
- A -> VIAREGGIO)\n  - REG 18274 (LIVORNO CENTRALE -> FIRENZE SANTA MARIA NO
- VELLA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i p
- assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ A -> VIAREGGIO) (+3m)\n  - REG 18357 (FIRENZE SANTA MARIA NOVELLA -> VIARE
+ GGIO) (+3m)\n  - REG 18274 (LIVORNO CENTRALE -> FIRENZE SANTA MARIA NOVELL
+ A)\nRitardo massimo rilevato: 3 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Chiusura continua per 4 treni: intervallo utile tra i passa
+ ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4019--20261121-S06509@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T085754Z
-DTEND:20261122T090324Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T085812Z
+DTEND:20261122T090342Z
 SUMMARY:[TRANSITO VELOCE] REG 4019 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO 
  CENTRALE) ore 10:02
 DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 09:57:54 - 10:03:24\nTreni coinvolt
+ NSITO VELOCE\nChiusura sbarre stimata: 09:58:12 - 10:03:42\nTreni coinvolt
  i nella chiusura:\n  - REG 4019 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CE
  NTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
- 78%\nNota normativa/euristica: Transito stimato senza fermata (32% tratta 
+ 78%\nNota normativa/euristica: Transito stimato senza fermata (34% tratta 
  EMPOLI -> PONTEDERA CASCIANA TERME\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
 STATUS:CONFIRMED
@@ -188,17 +245,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4021--20261121-S06509@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T095754Z
-DTEND:20261122T100324Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T095812Z
+DTEND:20261122T100342Z
 SUMMARY:[TRANSITO VELOCE] REG 4021 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO 
  CENTRALE) ore 11:02
 DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 10:57:54 - 11:03:24\nTreni coinvolt
+ NSITO VELOCE\nChiusura sbarre stimata: 10:58:12 - 11:03:42\nTreni coinvolt
  i nella chiusura:\n  - REG 4021 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CE
  NTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
- 78%\nNota normativa/euristica: Transito stimato senza fermata (32% tratta 
+ 78%\nNota normativa/euristica: Transito stimato senza fermata (34% tratta 
  EMPOLI -> PONTEDERA CASCIANA TERME\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
 STATUS:CONFIRMED
@@ -210,17 +267,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4023--20261121-S06509@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T102215Z
-DTEND:20261122T102745Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T102231Z
+DTEND:20261122T102801Z
 SUMMARY:[TRANSITO VELOCE] REG 4023 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO 
  CENTRALE) ore 11:26
 DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 11:22:15 - 11:27:45\nTreni coinvolt
+ NSITO VELOCE\nChiusura sbarre stimata: 11:22:31 - 11:28:01\nTreni coinvolt
  i nella chiusura:\n  - REG 4023 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CE
  NTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
- 78%\nNota normativa/euristica: Transito stimato senza fermata (32% tratta 
+ 78%\nNota normativa/euristica: Transito stimato senza fermata (34% tratta 
  EMPOLI -> PONTEDERA CASCIANA TERME\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
 STATUS:CONFIRMED
@@ -232,31 +289,54 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4030--20261121-S06509@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T105022Z
-DTEND:20261122T110305Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:50 - 12:03 (primo: REG 4030)
-DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:50:22 - 12:03:05\nTr
- eni coinvolti nella chiusura:\n  - REG 4030 (PIOMBINO MARITTIMA -> FIRENZE
-  SANTA MARIA NOVELLA) [Transito]\n  - REG 18287 (FIRENZE SANTA MARIA NOVEL
- LA -> GROSSETO) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
- rvallo utile tra i passaggi (102s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T105053Z
+DTEND:20261122T105623Z
+SUMMARY:[TRANSITO VELOCE] REG 4030 (PIOMBINO MARITTIMA -> FIRENZE SANTA MAR
+ IA NOVELLA) ore 11:55
+DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 11:50:53 - 11:56:23\nTreni coinvolt
+ i nella chiusura:\n  - REG 4030 (PIOMBINO MARITTIMA -> FIRENZE SANTA MARIA
+  NOVELLA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima
+ : 78%\nNota normativa/euristica: Transito stimato senza fermata (66% tratt
+ a PONTEDERA CASCIANA TERME -> EMPOLI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-18287--20261121-S06509@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T105920Z
+DTEND:20261122T110450Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:59 - 12:04 (primo: REG 18287) (+2 
+ min)
+DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: CHI
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:59:20 - 12:04:50\nTr
+ eni coinvolti nella chiusura:\n  - REG 18287 (FIRENZE SANTA MARIA NOVELLA 
+ -> GROSSETO) (+2m) [Transito]\n  - REG 18287 (FIRENZE SANTA MARIA NOVELLA 
+ -> GROSSETO) (+2m) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabili
+ tà stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: i
+ ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
+LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-18289--20261121-S06509@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T111530Z
 DTEND:20261122T112000Z
 SUMMARY:[FERMATA] REG 18289 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRAL
@@ -275,31 +355,57 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4037--20261121-S06509@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T142215Z
-DTEND:20261122T142745Z
-SUMMARY:[TRANSITO VELOCE] REG 4037 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO 
- CENTRALE) ore 15:26
-DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 15:22:15 - 15:27:45\nTreni coinvolt
- i nella chiusura:\n  - REG 4037 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CE
- NTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
- 78%\nNota normativa/euristica: Transito stimato senza fermata (32% tratta 
- EMPOLI -> PONTEDERA CASCIANA TERME\; pedale annuncio fisso Vmax)
+UID:train-18395--20261121-S06509@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T141137Z
+DTEND:20261122T141707Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:11 - 15:17 (primo: REG 18395)
+DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: CHI
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:11:37 - 15:17:07\nTr
+ eni coinvolti nella chiusura:\n  - REG 18395 (LA SPEZIA CENTRALE -> FIRENZ
+ E SANTA MARIA NOVELLA) [Transito]\n  - REG 18395 (LA SPEZIA CENTRALE -> FI
+ RENZE SANTA MARIA NOVELLA) [Transito]\nRitardo massimo rilevato: -3 min\nA
+ ffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18395--20261121-S06509@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T142130Z
+DTEND:20261122T142801Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:21 - 15:28 (primo: REG 18395) (+2 
+ min)
+DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: CHI
+ USURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 15:21:30 - 15:28:01\nTr
+ eni coinvolti nella chiusura:\n  - REG 18395 (LA SPEZIA CENTRALE -> FIRENZ
+ E SANTA MARIA NOVELLA) (+2m)\n  - REG 18395 (LA SPEZIA CENTRALE -> FIRENZE
+  SANTA MARIA NOVELLA) (+2m)\n  - REG 4037 (FIRENZE SANTA MARIA NOVELLA -> 
+ LIVORNO CENTRALE) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilit
+ à stima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
+LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18377--20261121-S06509@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T143030Z
 DTEND:20261122T143500Z
 SUMMARY:[FERMATA] REG 18377 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTR
@@ -319,20 +425,20 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18415--20261121-S06509@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T151111Z
-DTEND:20261122T153029Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:11 - 16:30 (primo: REG 18415)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T151121Z
+DTEND:20261122T152400Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:11 - 16:24 (primo: REG 18415)
 DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: CHI
- USURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 16:11:11 - 16:30:29\nTr
+ USURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 16:11:21 - 16:24:00\nTr
  eni coinvolti nella chiusura:\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRENZ
  E SANTA MARIA NOVELLA) [Transito]\n  - REG 18301 (FIRENZE SANTA MARIA NOVE
- LLA -> PISA CENTRALE)\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA 
- MARIA NOVELLA)\n  - REG 18308 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA) [T
- ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i
-  passaggi (59s) inferiore alla soglia minima di sgombero stradale (120s)
+ LLA -> PISA CENTRALE)\n  - REG 18301 (FIRENZE SANTA MARIA NOVELLA -> PISA 
+ CENTRALE)\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELL
+ A)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Chiusura continua per 4 treni: intervallo utile tra i passa
+ ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -343,38 +449,87 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18308--20261121-S06509@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T153330Z
-DTEND:20261122T153800Z
-SUMMARY:[FERMATA] REG 18308 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA) ore 1
- 6:37
-DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: FER
- MATA\nChiusura sbarre stimata: 16:33:30 - 16:38:00\nTreni coinvolti nella 
- chiusura:\n  - REG 18308 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA)\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
- ica: Previsione da traccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T153111Z
+DTEND:20261122T153641Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:31 - 16:36 (primo: REG 18308) (+6 
+ min)
+DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: CHI
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:31:11 - 16:36:41\nTr
+ eni coinvolti nella chiusura:\n  - REG 18308 (GROSSETO -> FIRENZE SANTA MA
+ RIA NOVELLA) (+6m) [Transito]\n  - REG 18308 (GROSSETO -> FIRENZE SANTA MA
+ RIA NOVELLA) (+6m) [Transito]\nRitardo massimo rilevato: 6 min\nAffidabili
+ tà stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: i
+ ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18308--20261121-S06509@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T153930Z
+DTEND:20261122T154400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:39 - 16:44 (primo: REG 18308) (+6 
+ min)
+DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: CHI
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:39:30 - 16:44:00\nTr
+ eni coinvolti nella chiusura:\n  - REG 18308 (GROSSETO -> FIRENZE SANTA MA
+ RIA NOVELLA) (+6m)\n  - REG 18308 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA
+ ) (+6m)\nRitardo massimo rilevato: 6 min\nAffidabilità stima: 90%\nNota n
+ ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
+ passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-4044--20261121-S06509@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T155253Z
+DTEND:20261122T155823Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:52 - 16:58 (primo: REG 4044)
+DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: CHI
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:52:53 - 16:58:23\nTr
+ eni coinvolti nella chiusura:\n  - REG 4044 (LIVORNO CENTRALE -> FIRENZE S
+ ANTA MARIA NOVELLA) [Transito]\n  - REG 4044 (LIVORNO CENTRALE -> FIRENZE 
+ SANTA MARIA NOVELLA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabi
+ lità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni:
+  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-18399--20261121-S06509@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T161111Z
-DTEND:20261122T161641Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T161121Z
+DTEND:20261122T161651Z
 SUMMARY:[TRANSITO VELOCE] REG 18399 (LA SPEZIA CENTRALE -> FIRENZE SANTA MA
  RIA NOVELLA) ore 17:15
 DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 17:11:11 - 17:16:41\nTreni coinvolt
+ NSITO VELOCE\nChiusura sbarre stimata: 17:11:21 - 17:16:51\nTreni coinvolt
  i nella chiusura:\n  - REG 18399 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARI
  A NOVELLA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stim
- a: 78%\nNota normativa/euristica: Transito stimato senza fermata (81% trat
+ a: 78%\nNota normativa/euristica: Transito stimato senza fermata (83% trat
  ta PONTEDERA CASCIANA TERME -> S.ROMANO-MONTOPOLI-S.CROCE\; pedale annunci
  o fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
@@ -387,41 +542,86 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18399--20261121-S06509@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T161930Z
-DTEND:20261122T163500Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:19 - 17:35 (primo: REG 18399)
-DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: CHI
- USURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 17:19:30 - 17:35:00\nTr
- eni coinvolti nella chiusura:\n  - REG 18399 (LA SPEZIA CENTRALE -> FIRENZ
- E SANTA MARIA NOVELLA)\n  - REG 4046 (LIVORNO CENTRALE -> FIRENZE SANTA MA
- RIA NOVELLA) [Transito]\n  - REG 18385 (FIRENZE SANTA MARIA NOVELLA -> LA 
- SPEZIA CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
- %\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo uti
- le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
- 120s)
+DTEND:20261122T162400Z
+SUMMARY:[FERMATA] REG 18399 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVE
+ LLA) ore 17:23
+DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 17:19:30 - 17:24:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 18399 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELL
+ A)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normat
+ iva/euristica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4046--20261121-S06509@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T162613Z
+DTEND:20261122T163500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:26 - 17:35 (primo: REG 4046)
+DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: CHI
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:26:13 - 17:35:00\nTr
+ eni coinvolti nella chiusura:\n  - REG 4046 (LIVORNO CENTRALE -> FIRENZE S
+ ANTA MARIA NOVELLA) [Transito]\n  - REG 18385 (FIRENZE SANTA MARIA NOVELLA
+  -> LA SPEZIA CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità st
+ ima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
+ llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
+ adale (120s)
+LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4050--20261121-S06509@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T165253Z
+DTEND:20261122T170342Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:52 - 18:03 (primo: REG 4050)
+DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: CHI
+ USURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 17:52:53 - 18:03:42\nTr
+ eni coinvolti nella chiusura:\n  - REG 4050 (LIVORNO CENTRALE -> FIRENZE S
+ ANTA MARIA NOVELLA) [Transito]\n  - REG 4050 (LIVORNO CENTRALE -> FIRENZE 
+ SANTA MARIA NOVELLA) [Transito]\n  - REG 18307 (FIRENZE SANTA MARIA NOVELL
+ A -> GROSSETO) [Transito]\n  - REG 18307 (FIRENZE SANTA MARIA NOVELLA -> G
+ ROSSETO) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
+  78%\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo 
+ utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
+ e (120s)
+LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4051--20261121-S06509@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T185754Z
-DTEND:20261122T190324Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T185812Z
+DTEND:20261122T190342Z
 SUMMARY:[TRANSITO VELOCE] REG 4051 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO 
  CENTRALE) ore 20:02
 DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 19:57:54 - 20:03:24\nTreni coinvolt
+ NSITO VELOCE\nChiusura sbarre stimata: 19:58:12 - 20:03:42\nTreni coinvolt
  i nella chiusura:\n  - REG 4051 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CE
  NTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
- 78%\nNota normativa/euristica: Transito stimato senza fermata (32% tratta 
+ 78%\nNota normativa/euristica: Transito stimato senza fermata (34% tratta 
  EMPOLI -> PONTEDERA CASCIANA TERME\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
 STATUS:CONFIRMED
@@ -433,30 +633,31 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4060--20261121-S06509@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T195352Z
-DTEND:20261122T195922Z
-SUMMARY:[TRANSITO VELOCE] REG 4060 (PIOMBINO MARITTIMA -> FIRENZE SANTA MAR
- IA NOVELLA) ore 20:58
-DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 20:53:52 - 20:59:22\nTreni coinvolt
- i nella chiusura:\n  - REG 4060 (PIOMBINO MARITTIMA -> FIRENZE SANTA MARIA
-  NOVELLA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 78%\nNota normativa/euristica: Transito stimato senza fermata (62% tratt
- a PONTEDERA CASCIANA TERME -> EMPOLI\; pedale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T195430Z
+DTEND:20261122T200000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:54 - 21:00 (primo: REG 4060)
+DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: CHI
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:54:30 - 21:00:00\nTr
+ eni coinvolti nella chiusura:\n  - REG 4060 (PIOMBINO MARITTIMA -> FIRENZE
+  SANTA MARIA NOVELLA) [Transito]\n  - REG 4060 (PIOMBINO MARITTIMA -> FIRE
+ NZE SANTA MARIA NOVELLA) [Transito]\nRitardo massimo rilevato: 0 min\nAffi
+ dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tr
+ eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18325--20261121-S06509@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T201530Z
 DTEND:20261122T202000Z
 SUMMARY:[FERMATA] REG 18325 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRALE) 
@@ -476,65 +677,46 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18329--20261121-S06509@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T202930Z
 DTEND:20261122T203400Z
-SUMMARY:[FERMATA] REG 18329 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRAL
- E) ore 21:33
-DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: FER
- MATA\nChiusura sbarre stimata: 21:29:30 - 21:34:00\nTreni coinvolti nella 
- chiusura:\n  - REG 18329 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE)
- \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativ
- a/euristica: Previsione da traccia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:29 - 21:34 (primo: REG 18329)
+DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: CHI
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:29:30 - 21:34:00\nTr
+ eni coinvolti nella chiusura:\n  - REG 18329 (FIRENZE SANTA MARIA NOVELLA 
+ -> LIVORNO CENTRALE)\n  - REG 18329 (FIRENZE SANTA MARIA NOVELLA -> LIVORN
+ O CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNo
+ ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
+ a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4062--20261121-S06509@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T205222Z
-DTEND:20261122T205752Z
-SUMMARY:[TRANSITO VELOCE] REG 4062 (LIVORNO CENTRALE -> FIRENZE SANTA MARIA
-  NOVELLA) ore 21:56
-DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 21:52:22 - 21:57:52\nTreni coinvolt
- i nella chiusura:\n  - REG 4062 (LIVORNO CENTRALE -> FIRENZE SANTA MARIA N
- OVELLA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
- 78%\nNota normativa/euristica: Transito stimato senza fermata (62% tratta 
- PONTEDERA CASCIANA TERME -> EMPOLI\; pedale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T205253Z
+DTEND:20261122T210542Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:52 - 22:05 (primo: REG 4062)
+DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: CHI
+ USURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 21:52:53 - 22:05:42\nTr
+ eni coinvolti nella chiusura:\n  - REG 4062 (LIVORNO CENTRALE -> FIRENZE S
+ ANTA MARIA NOVELLA) [Transito]\n  - REG 4062 (LIVORNO CENTRALE -> FIRENZE 
+ SANTA MARIA NOVELLA) [Transito]\n  - REG 18335 (FIRENZE SANTA MARIA NOVELL
+ A -> LIVORNO CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffida
+ bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 tren
+ i: intervallo utile tra i passaggi (108s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18335--20261121-S06509@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T205954Z
-DTEND:20261122T210524Z
-SUMMARY:[TRANSITO VELOCE] REG 18335 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO
-  CENTRALE) ore 22:04
-DESCRIPTION:Stazione/PL: S.MINIATO FUCECCHIO (S06509)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 21:59:54 - 22:05:24\nTreni coinvolt
- i nella chiusura:\n  - REG 18335 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO C
- ENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
-  78%\nNota normativa/euristica: Transito stimato senza fermata (32% tratta
-  EMPOLI -> PONTEDERA CASCIANA TERME\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione S.MINIATO FUCECCHIO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG

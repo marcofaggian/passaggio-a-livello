@@ -9,20 +9,20 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:d70b39a846cd77c3dc904c326a17161870decff55bd1b92f3f07bc22b97f
- 5e01
+X-CONTENT-HASH:a1a503de426527d22d79e03356890c1145ae0d1b7c2680bac214721f6fc0
+ 49d6
 BEGIN:VEVENT
 UID:train-3427--20261121-S02038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T040212Z
-DTEND:20261122T040742Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T040208Z
+DTEND:20261122T040738Z
 SUMMARY:[TRANSITO VELOCE] REG 3427 (BOLZANO -> BOLOGNA CENTRALE) ore 05:06
 DESCRIPTION:Stazione/PL: TRENTO (S02038)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 05:02:12 - 05:07:42\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 05:02:08 - 05:07:38\nTreni coinvolti nella chius
  ura:\n  - REG 3427 (BOLZANO -> BOLOGNA CENTRALE) [Transito]\nRitardo massi
  mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
- ansito stimato senza fermata (59% tratta BOLZANO -> ORA\; pedale annuncio 
+ ansito stimato senza fermata (58% tratta BOLZANO -> ORA\; pedale annuncio 
  fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione TRENTO
 STATUS:CONFIRMED
@@ -34,8 +34,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3427--20261121-S02038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T043230Z
 DTEND:20261122T044200Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:32 - 05:42 (primo: REG 3427)
@@ -55,29 +55,34 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8507--20261121-S02038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T063730Z
-DTEND:20261122T064200Z
-SUMMARY:[FERMATA] TRENO 8507 (BOLZANO -> ROMA TERMINI) ore 07:41
-DESCRIPTION:Stazione/PL: TRENTO (S02038)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 07:37:30 - 07:42:00\nTreni coinvolti nella chiusura:\n  
- - TRENO 8507 (BOLZANO -> ROMA TERMINI)\nRitardo massimo rilevato: 0 min\nA
- ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
- raria regolare
+UID:train-8507--20261121-S02038@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T064100Z
+DTEND:20261122T065000Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:41 - 07:50 (primo: TRENO 8507) (+6
+  min)
+DESCRIPTION:Stazione/PL: TRENTO (S02038)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 07:41:00 - 07:50:00\nTreni coinvolti
+  nella chiusura:\n  - TRENO 8507 (BOLZANO -> ROMA TERMINI) (+6m) [Arrivo]\
+ n  - TRENO 8507 (BOLZANO -> ROMA TERMINI) (+6m) [Arrivo]\n  - TRENO 8507 (
+ BOLZANO -> ROMA TERMINI) (+6m) [Partenza]\n  - TRENO 8507 (BOLZANO -> ROMA
+  TERMINI) (+6m) [Partenza]\nRitardo massimo rilevato: 6 min\nAffidabilità
+  stima: 99%\nNota normativa/euristica: Chiusura continua per 4 treni: inte
+ rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
+ stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TRENTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3462--20261121-S02038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T074830Z
 DTEND:20261122T075300Z
 SUMMARY:[FERMATA] REG 3462 (VERONA PORTA NUOVA -> BRENNERO) ore 08:52
@@ -95,29 +100,81 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9721--20261121-S02038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+UID:train-9721--20261121-S02038@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
 DTSTART:20261122T081330Z
-DTEND:20261122T081800Z
-SUMMARY:[FERMATA] TRENO 9721 (BOLZANO -> MILANO CENTRALE) ore 09:17
-DESCRIPTION:Stazione/PL: TRENTO (S02038)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 09:13:30 - 09:18:00\nTreni coinvolti nella chiusura:\n  
- - TRENO 9721 (BOLZANO -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
- a oraria regolare
+DTEND:20261122T082300Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 09:13 - 09:23 (primo: TRENO 9721) (+3
+  min)
+DESCRIPTION:Stazione/PL: TRENTO (S02038)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 09:13:30 - 09:23:00\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9721 (BOLZANO -> MILANO CENTRALE) (+3m) [Arriv
+ o]\n  - TRENO 9721 (BOLZANO -> MILANO CENTRALE) (+3m) [Arrivo]\n  - TRENO 
+ 9721 (BOLZANO -> MILANO CENTRALE) (+3m) [Partenza]\n  - TRENO 9721 (BOLZAN
+ O -> MILANO CENTRALE) (+3m) [Partenza]\nRitardo massimo rilevato: 3 min\nA
+ ffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 4
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TRENTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
+UID:train-88--20261121-S02038@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T085315Z
+DTEND:20261122T090400Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 09:53 - 10:04 (primo: EC 88) (+1 min)
+DESCRIPTION:Stazione/PL: TRENTO (S02038)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 09:53:15 - 10:04:00\nTreni coinvolti
+  nella chiusura:\n  - EC 88 (BOLOGNA CENTRALE -> BRENNERO) (+1m)\n  - EC 8
+ 8 (BOLOGNA CENTRALE -> BRENNERO) (+1m)\n  - REG 2691 (MILANO PORTA GARIBAL
+ DI -> BOLZANO) (+1m) [Arrivo]\n  - REG 2691 (MILANO PORTA GARIBALDI -> BOL
+ ZANO) (+1m) [Arrivo]\nRitardo massimo rilevato: 1 min\nAffidabilità stima
+ : 99%\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo
+  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
+ le (120s)
+LOCATION:Passaggio a Livello / Stazione TRENTO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:EC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2691--20261121-S02038@pl-tracker.local-dep
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T090700Z
+DTEND:20261122T091130Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:07 - 10:11 (primo: REG 2691) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: TRENTO (S02038)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 10:07:00 - 10:11:30\nTreni coinvolti
+  nella chiusura:\n  - REG 2691 (MILANO PORTA GARIBALDI -> BOLZANO) (+1m) [
+ Partenza]\n  - REG 2691 (MILANO PORTA GARIBALDI -> BOLZANO) (+1m) [Partenz
+ a]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normat
+ iva/euristica: Chiusura continua per 2 treni: intervallo utile tra i passa
+ ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione TRENTO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-8502--20261121-S02038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T101130Z
 DTEND:20261122T101600Z
 SUMMARY:[FERMATA] TRENO 8502 (NAPOLI CENTRALE -> BOLZANO) ore 11:15
@@ -135,31 +192,33 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-86--20261121-S02038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T105315Z
-DTEND:20261122T110233Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:53 - 12:02 (primo: EC 86)
+UID:train-86--20261121-S02038@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T105145Z
+DTEND:20261122T110228Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 11:51 - 12:02 (primo: EC 86) (+2 min)
 DESCRIPTION:Stazione/PL: TRENTO (S02038)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 11:53:15 - 12:02:33\nTreni coinvolti
-  nella chiusura:\n  - EC 86 (VERONA PORTA NUOVA -> BRENNERO)\n  - IC 611 (
- BOLZANO -> BARI CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAff
- idabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 t
- reni: intervallo utile tra i passaggi (3s) inferiore alla soglia minima di
-  sgombero stradale (120s)
+ A - 5 TRENI\nChiusura sbarre stimata: 11:51:45 - 12:02:28\nTreni coinvolti
+  nella chiusura:\n  - EC 86 (VERONA PORTA NUOVA -> BRENNERO) (+2m) [Arrivo
+ ]\n  - EC 86 (VERONA PORTA NUOVA -> BRENNERO) (+2m) [Arrivo]\n  - EC 86 (V
+ ERONA PORTA NUOVA -> BRENNERO) (+2m) [Partenza]\n  - EC 86 (VERONA PORTA N
+ UOVA -> BRENNERO) (+2m) [Partenza]\n  - IC 611 (BOLZANO -> BARI CENTRALE) 
+ [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Chiusura continua per 5 treni: intervallo utile tra
+  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TRENTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:EC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-611--20261121-S02038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T113515Z
 DTEND:20261122T114000Z
 SUMMARY:[FERMATA] IC 611 (BOLZANO -> BARI CENTRALE) ore 12:39
@@ -178,8 +237,8 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3840--20261121-S02038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T114830Z
 DTEND:20261122T115300Z
 SUMMARY:[FERMATA] REG 3840 (BOLOGNA CENTRALE -> BRENNERO) ore 12:52
@@ -197,9 +256,34 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-16610--20261121-S02038@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T122630Z
+DTEND:20261122T123500Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 13:26 - 13:35 (primo: REG 16610) (+2 
+ min)
+DESCRIPTION:Stazione/PL: TRENTO (S02038)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 13:26:30 - 13:35:00\nTreni coinvolti
+  nella chiusura:\n  - REG 16610 (VERONA PORTA NUOVA -> BOLZANO) (+2m) [Arr
+ ivo]\n  - REG 16610 (VERONA PORTA NUOVA -> BOLZANO) (+2m) [Arrivo]\n  - RE
+ G 16610 (VERONA PORTA NUOVA -> BOLZANO) (+2m) [Partenza]\n  - REG 16610 (V
+ ERONA PORTA NUOVA -> BOLZANO) (+2m) [Partenza]\nRitardo massimo rilevato: 
+ 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura contin
+ ua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+  minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione TRENTO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-84--20261121-S02038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T125315Z
 DTEND:20261122T125800Z
 SUMMARY:[FERMATA] EC 84 (VENEZIA S.LUCIA -> BRENNERO) ore 13:57
@@ -218,16 +302,16 @@ X-PL-TRAIN-CATEGORY:EC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3843--20261121-S02038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T132622Z
-DTEND:20261122T133152Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T132618Z
+DTEND:20261122T133148Z
 SUMMARY:[TRANSITO VELOCE] REG 3843 (BRENNERO -> BOLOGNA CENTRALE) ore 14:30
 DESCRIPTION:Stazione/PL: TRENTO (S02038)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 14:26:22 - 14:31:52\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 14:26:18 - 14:31:48\nTreni coinvolti nella chius
  ura:\n  - REG 3843 (BRENNERO -> BOLOGNA CENTRALE) [Transito]\nRitardo mass
  imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (59% tratta BOLZANO -> ORA\; pedale annuncio
+ ransito stimato senza fermata (58% tratta BOLZANO -> ORA\; pedale annuncio
   fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione TRENTO
 STATUS:CONFIRMED
@@ -238,97 +322,111 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3850--20261121-S02038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T134830Z
-DTEND:20261122T135300Z
-SUMMARY:[FERMATA] REG 3850 (BOLOGNA CENTRALE -> BRENNERO) ore 14:52
-DESCRIPTION:Stazione/PL: TRENTO (S02038)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 14:48:30 - 14:53:00\nTreni coinvolti nella chiusura:\n  
- - REG 3850 (BOLOGNA CENTRALE -> BRENNERO)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
- a oraria regolare
+UID:train-3843--20261121-S02038@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T135830Z
+DTEND:20261122T140500Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 14:58 - 15:05 (primo: REG 3843) (+10 
+ min)
+DESCRIPTION:Stazione/PL: TRENTO (S02038)\nRegime chiusura: CHIUSURA CONTINU
+ A - 3 TRENI\nChiusura sbarre stimata: 14:58:30 - 15:05:00\nTreni coinvolti
+  nella chiusura:\n  - REG 3843 (BRENNERO -> BOLOGNA CENTRALE)\n  - REG 385
+ 0 (BOLOGNA CENTRALE -> BRENNERO) (+10m)\n  - REG 3850 (BOLOGNA CENTRALE ->
+  BRENNERO) (+10m)\nRitardo massimo rilevato: 10 min\nAffidabilità stima: 
+ 90%\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo u
+ tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
+  (120s)
 LOCATION:Passaggio a Livello / Stazione TRENTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:10
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3843--20261121-S02038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T135830Z
-DTEND:20261122T140300Z
-SUMMARY:[FERMATA] REG 3843 (BRENNERO -> BOLOGNA CENTRALE) ore 15:02
-DESCRIPTION:Stazione/PL: TRENTO (S02038)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 14:58:30 - 15:03:00\nTreni coinvolti nella chiusura:\n  
- - REG 3843 (BRENNERO -> BOLOGNA CENTRALE)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
- a oraria regolare
+UID:train-8509--20261121-S02038@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T141130Z
+DTEND:20261122T141930Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:11 - 15:19 (primo: TRENO 8509) (+2
+  min)
+DESCRIPTION:Stazione/PL: TRENTO (S02038)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 15:11:30 - 15:19:30\nTreni coinvolti
+  nella chiusura:\n  - TRENO 8509 (SIBARI -> BOLZANO) (+2m) [Arrivo]\n  - T
+ RENO 8509 (SIBARI -> BOLZANO) (+2m) [Arrivo]\n  - TRENO 8509 (SIBARI -> BO
+ LZANO) (+2m) [Partenza]\n  - TRENO 8509 (SIBARI -> BOLZANO) (+2m) [Partenz
+ a]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normat
+ iva/euristica: Chiusura continua per 4 treni: intervallo utile tra i passa
+ ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TRENTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-85--20261121-S02038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T145815Z
-DTEND:20261122T150300Z
-SUMMARY:[FERMATA] EC 85 (BRENNERO -> VENEZIA S.LUCIA) ore 16:02
-DESCRIPTION:Stazione/PL: TRENTO (S02038)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 15:58:15 - 16:03:00\nTreni coinvolti nella chiusura:\n  
- - EC 85 (BRENNERO -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\nAf
- fidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia or
- aria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T151515Z
+DTEND:20261122T152000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:15 - 16:20 (primo: EC 85) (+17 min
+ )
+DESCRIPTION:Stazione/PL: TRENTO (S02038)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 16:15:15 - 16:20:00\nTreni coinvolti
+  nella chiusura:\n  - EC 85 (BRENNERO -> VENEZIA S.LUCIA) (+17m)\n  - EC 8
+ 5 (BRENNERO -> VENEZIA S.LUCIA) (+17m)\nRitardo massimo rilevato: 17 min\n
+ Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
+ 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
+  di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TRENTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:17
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:EC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3844--20261121-S02038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T154830Z
-DTEND:20261122T155300Z
-SUMMARY:[FERMATA] REG 3844 (BOLOGNA CENTRALE -> BRENNERO) ore 16:52
-DESCRIPTION:Stazione/PL: TRENTO (S02038)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 16:48:30 - 16:53:00\nTreni coinvolti nella chiusura:\n  
- - REG 3844 (BOLOGNA CENTRALE -> BRENNERO)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
- a oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T155430Z
+DTEND:20261122T155900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:54 - 16:59 (primo: REG 3844) (+6 m
+ in)
+DESCRIPTION:Stazione/PL: TRENTO (S02038)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 16:54:30 - 16:59:00\nTreni coinvolti
+  nella chiusura:\n  - REG 3844 (BOLOGNA CENTRALE -> BRENNERO) (+6m)\n  - R
+ EG 3844 (BOLOGNA CENTRALE -> BRENNERO) (+6m)\nRitardo massimo rilevato: 6 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
+  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TRENTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8529--20261121-S02038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T161212Z
-DTEND:20261122T161742Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T161208Z
+DTEND:20261122T161738Z
 SUMMARY:[TRANSITO VELOCE] TRENO 8529 (BOLZANO -> ROMA TERMINI) ore 17:16
 DESCRIPTION:Stazione/PL: TRENTO (S02038)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 17:12:12 - 17:17:42\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 17:12:08 - 17:17:38\nTreni coinvolti nella chius
  ura:\n  - TRENO 8529 (BOLZANO -> ROMA TERMINI) [Transito]\nRitardo massimo
   rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
- sito stimato senza fermata (59% tratta BOLZANO -> ORA\; pedale annuncio fi
+ sito stimato senza fermata (58% tratta BOLZANO -> ORA\; pedale annuncio fi
  sso Vmax)
 LOCATION:Passaggio a Livello / Stazione TRENTO
 STATUS:CONFIRMED
@@ -340,8 +438,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16708--20261121-S02038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T162630Z
 DTEND:20261122T163100Z
 SUMMARY:[FERMATA] REG 16708 (VERONA PORTA NUOVA -> BOLZANO) ore 17:30
@@ -360,8 +458,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8529--20261121-S02038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T163730Z
 DTEND:20261122T164200Z
 SUMMARY:[FERMATA] TRENO 8529 (BOLZANO -> ROMA TERMINI) ore 17:41
@@ -380,8 +478,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-80--20261121-S02038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T165315Z
 DTEND:20261122T165800Z
 SUMMARY:[FERMATA] EC 80 (VENEZIA S.LUCIA -> BRENNERO) ore 17:57
@@ -400,28 +498,31 @@ X-PL-TRAIN-CATEGORY:EC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3846--20261121-S02038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T174830Z
-DTEND:20261122T175300Z
-SUMMARY:[FERMATA] REG 3846 (BOLOGNA CENTRALE -> BRENNERO) ore 18:52
-DESCRIPTION:Stazione/PL: TRENTO (S02038)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 18:48:30 - 18:53:00\nTreni coinvolti nella chiusura:\n  
- - REG 3846 (BOLOGNA CENTRALE -> BRENNERO)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
- a oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T174930Z
+DTEND:20261122T175400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:49 - 18:54 (primo: REG 3846) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: TRENTO (S02038)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 18:49:30 - 18:54:00\nTreni coinvolti
+  nella chiusura:\n  - REG 3846 (BOLOGNA CENTRALE -> BRENNERO) (+1m)\n  - R
+ EG 3846 (BOLOGNA CENTRALE -> BRENNERO) (+1m)\nRitardo massimo rilevato: 1 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
+  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TRENTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-610--20261121-S02038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T184315Z
 DTEND:20261122T184800Z
 SUMMARY:[FERMATA] IC 610 (LECCE -> BOLZANO) ore 19:47
@@ -439,9 +540,31 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
+UID:train-9751--20261121-S02038@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T191130Z
+DTEND:20261122T191600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:11 - 20:16 (primo: TRENO 9751)
+DESCRIPTION:Stazione/PL: TRENTO (S02038)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 20:11:30 - 20:16:00\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9751 (MILANO CENTRALE -> BOLZANO)\n  - TRENO 9
+ 751 (MILANO CENTRALE -> BOLZANO)\nRitardo massimo rilevato: 0 min\nAffidab
+ ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione TRENTO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
 UID:train-8524--20261121-S02038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T201130Z
 DTEND:20261122T201600Z
 SUMMARY:[FERMATA] TRENO 8524 (ROMA TERMINI -> BOLZANO) ore 21:15
@@ -460,8 +583,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3760--20261121-S02038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T215530Z
 DTEND:20261122T220000Z
 SUMMARY:[FERMATA] REG 3760 (BOLOGNA CENTRALE -> BOLZANO) ore 22:59

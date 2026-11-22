@@ -9,32 +9,57 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:8fac7706d9afe6dc65849e0adddfe780208eea985c1d6b7ff2e52095618d
- 2430
+X-CONTENT-HASH:a36b94e293b00b9de4dda35d9a5c532a1ecfbe7d5fdcbc1894f831a9cd4a
+ 7e0b
 BEGIN:VEVENT
-UID:train-4213--20261121-S07806@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T122530Z
-DTEND:20261122T123000Z
-SUMMARY:[FERMATA] REG 4213 (ANCONA -> PESCARA) ore 13:29
-DESCRIPTION:Stazione/PL: PINETO ATRI (S07806)\nRegime chiusura: FERMATA\nCh
- iusura sbarre stimata: 13:25:30 - 13:30:00\nTreni coinvolti nella chiusura
- :\n  - REG 4213 (ANCONA -> PESCARA)\nRitardo massimo rilevato: 0 min\nAffi
- dabilità stima: 90%\nNota normativa/euristica: Previsione da traccia orar
- ia regolare
+UID:train-604--20261121-S07806@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T061018Z
+DTEND:20261122T061448Z
+SUMMARY:[TRANSITO VELOCE] IC 604 (PESCARA -> MILANO CENTRALE) ore 07:13 (+8
+ 8 min)
+DESCRIPTION:Stazione/PL: PINETO ATRI (S07806)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 07:10:18 - 07:14:48\nTreni coinvolti nella 
+ chiusura:\n  - IC 604 (PESCARA -> MILANO CENTRALE) (+88m) [Transito]\nRita
+ rdo massimo rilevato: 88 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Transito stimato senza fermata (48% tratta PESCARA -> GIULIANOVA\;
+  pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PINETO ATRI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:88
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4213--20261121-S07806@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T122430Z
+DTEND:20261122T123200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:24 - 13:32 (primo: REG 4213) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: PINETO ATRI (S07806)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 13:24:30 - 13:32:00\nTreni coin
+ volti nella chiusura:\n  - REG 4213 (ANCONA -> PESCARA) (+1m)\n  - REG 421
+ 3 (ANCONA -> PESCARA) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabilit
+ à stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PINETO ATRI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1728--20261121-S07806@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T132730Z
 DTEND:20261122T133200Z
 SUMMARY:[FERMATA] REG 1728 (PESCARA -> BOLOGNA CENTRALE) ore 14:31
@@ -47,6 +72,49 @@ LOCATION:Passaggio a Livello / Stazione PINETO ATRI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-612--20261121-S07806@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T140632Z
+DTEND:20261122T141102Z
+SUMMARY:[TRANSITO VELOCE] IC 612 (LECCE -> MILANO CENTRALE) ore 15:10
+DESCRIPTION:Stazione/PL: PINETO ATRI (S07806)\nRegime chiusura: TRANSITO VE
+ LOCE\nChiusura sbarre stimata: 15:06:32 - 15:11:02\nTreni coinvolti nella 
+ chiusura:\n  - IC 612 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
+ ansito stimato senza fermata (48% tratta PESCARA -> GIULIANOVA\; pedale an
+ nuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PINETO ATRI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4223--20261121-S07806@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T172830Z
+DTEND:20261122T173300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:28 - 18:33 (primo: REG 4223)
+DESCRIPTION:Stazione/PL: PINETO ATRI (S07806)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 18:28:30 - 18:33:00\nTreni coin
+ volti nella chiusura:\n  - REG 4223 (ANCONA -> PESCARA)\n  - REG 4223 (ANC
+ ONA -> PESCARA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%
+ \nNota normativa/euristica: Chiusura continua per 2 treni: intervallo util
+ e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
+ 20s)
+LOCATION:Passaggio a Livello / Stazione PINETO ATRI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

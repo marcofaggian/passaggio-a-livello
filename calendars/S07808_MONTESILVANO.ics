@@ -9,40 +9,43 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:8526831c5307ccabc8ac64ced46d0e7151ca2c09372bee4900472dbe50b1
- c2b0
+X-CONTENT-HASH:7cbc78cc8bf0688e0cb5be6cd47d01d9acd23191fe159066280d00a7d620
+ 70e6
 BEGIN:VEVENT
 UID:train-4213--20261121-S07808@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T123730Z
-DTEND:20261122T124200Z
-SUMMARY:[FERMATA] REG 4213 (ANCONA -> PESCARA) ore 13:41
-DESCRIPTION:Stazione/PL: MONTESILVANO (S07808)\nRegime chiusura: FERMATA\nC
- hiusura sbarre stimata: 13:37:30 - 13:42:00\nTreni coinvolti nella chiusur
- a:\n  - REG 4213 (ANCONA -> PESCARA)\nRitardo massimo rilevato: 0 min\nAff
- idabilità stima: 90%\nNota normativa/euristica: Previsione da traccia ora
- ria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T123630Z
+DTEND:20261122T124400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:36 - 13:44 (primo: REG 4213) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: MONTESILVANO (S07808)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:36:30 - 13:44:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 4213 (ANCONA -> PESCARA) (+1m)\n  - REG 42
+ 13 (ANCONA -> PESCARA) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabilit
+ à stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONTESILVANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1728--20261121-S07808@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T133001Z
-DTEND:20261122T133531Z
-SUMMARY:[TRANSITO VELOCE] REG 1728 (PESCARA -> BOLOGNA CENTRALE) ore 14:34
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T132915Z
+DTEND:20261122T133445Z
+SUMMARY:[TRANSITO VELOCE] REG 1728 (PESCARA -> BOLOGNA CENTRALE) ore 14:33
 DESCRIPTION:Stazione/PL: MONTESILVANO (S07808)\nRegime chiusura: TRANSITO V
- ELOCE\nChiusura sbarre stimata: 14:30:01 - 14:35:31\nTreni coinvolti nella
+ ELOCE\nChiusura sbarre stimata: 14:29:15 - 14:34:45\nTreni coinvolti nella
   chiusura:\n  - REG 1728 (PESCARA -> BOLOGNA CENTRALE) [Transito]\nRitardo
   massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Transito stimato senza fermata (27% tratta PINETO ATRI -> GIULIANOVA\;
+ ca: Transito stimato senza fermata (21% tratta PINETO ATRI -> GIULIANOVA\;
   pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONTESILVANO
 STATUS:CONFIRMED
@@ -50,6 +53,28 @@ TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4223--20261121-S07808@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T173930Z
+DTEND:20261122T174400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:39 - 18:44 (primo: REG 4223)
+DESCRIPTION:Stazione/PL: MONTESILVANO (S07808)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:39:30 - 18:44:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 4223 (ANCONA -> PESCARA)\n  - REG 4223 (AN
+ CONA -> PESCARA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90
+ %\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo uti
+ le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
+ 120s)
+LOCATION:Passaggio a Livello / Stazione MONTESILVANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

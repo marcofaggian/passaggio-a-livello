@@ -9,42 +9,44 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:c77d8de4730185ee9ae3f0e1d9d214493aedb62f072198da9e003263ba63
- 9598
+X-CONTENT-HASH:65bb94da1b6b733b2a334538c34fa83c0c7d1044b56974d102a5be15ddc0
+ 6d1d
 BEGIN:VEVENT
 UID:train-9409--20261121-S03304@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T050830Z
-DTEND:20261122T051300Z
-SUMMARY:[FERMATA] TRENO 9409 (GORIZIA CENTRALE -> NAPOLI CENTRALE) ore 06:1
- 2
-DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: FERMAT
- A\nChiusura sbarre stimata: 06:08:30 - 06:13:00\nTreni coinvolti nella chi
- usura:\n  - TRENO 9409 (GORIZIA CENTRALE -> NAPOLI CENTRALE)\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
- revisione da traccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T050930Z
+DTEND:20261122T051400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:09 - 06:14 (primo: TRENO 9409) (+1
+  min)
+DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:09:30 - 06:14:00\nTreni
+  coinvolti nella chiusura:\n  - TRENO 9409 (GORIZIA CENTRALE -> NAPOLI CEN
+ TRALE) (+1m)\n  - TRENO 9409 (GORIZIA CENTRALE -> NAPOLI CENTRALE) (+1m)\n
+ Ritardo massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/
+ euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
+ (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GORIZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-584--20261121-S03304@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T060938Z
-DTEND:20261122T061408Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T061311Z
+DTEND:20261122T061741Z
 SUMMARY:[TRANSITO VELOCE] IC 584 (TRIESTE CENTRALE -> ROMA TERMINI) ore 07:
- 13
+ 16
 DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: TRANSI
- TO VELOCE\nChiusura sbarre stimata: 07:09:38 - 07:14:08\nTreni coinvolti n
+ TO VELOCE\nChiusura sbarre stimata: 07:13:11 - 07:17:41\nTreni coinvolti n
  ella chiusura:\n  - IC 584 (TRIESTE CENTRALE -> ROMA TERMINI) [Transito]\n
  Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
- euristica: Transito stimato senza fermata (16% tratta MONFALCONE -> VENEZI
+ euristica: Transito stimato senza fermata (18% tratta MONFALCONE -> VENEZI
  A MESTRE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GORIZIA CENTRALE
 STATUS:CONFIRMED
@@ -56,8 +58,8 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3858--20261121-S03304@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T063830Z
 DTEND:20261122T064300Z
 SUMMARY:[FERMATA] REG 3858 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) ore 07:42
@@ -76,8 +78,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17328--20261121-S03304@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T071530Z
 DTEND:20261122T072000Z
 SUMMARY:[FERMATA] REG 17328 (TRIESTE CENTRALE -> UDINE) ore 08:19
@@ -96,8 +98,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3400--20261121-S03304@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T082345Z
+DTEND:20261122T082915Z
+SUMMARY:[TRANSITO VELOCE] REG 3400 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) or
+ e 09:28
+DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 09:23:45 - 09:29:15\nTreni coinvolti n
+ ella chiusura:\n  - REG 3400 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) [Transi
+ to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (70% tratta MONFALCONE -> S
+ AGRADO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione GORIZIA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3400--20261121-S03304@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T083830Z
 DTEND:20261122T084300Z
 SUMMARY:[FERMATA] REG 3400 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) ore 09:42
@@ -115,60 +139,113 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-7973--20261121-S03304@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T090430Z
+UID:train-16776--20261121-S03304@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T085945Z
 DTEND:20261122T090900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:04 - 10:09 (primo: REG 7973)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 09:59 - 10:09 (primo: REG 16776) (+2 
+ min)
 DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:04:30 - 10:09:00\nTreni
-  coinvolti nella chiusura:\n  - REG 7973 (VENEZIA MESTRE -> NOVA GORICA)\n
-   - REG 7973 (VENEZIA MESTRE -> NOVA GORICA)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
+ RA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 09:59:45 - 10:09:00\nTreni
+  coinvolti nella chiusura:\n  - REG 16776 (VENEZIA S.LUCIA -> TRIESTE CENT
+ RALE) (+2m) [Transito]\n  - REG 16776 (VENEZIA S.LUCIA -> TRIESTE CENTRALE
+ ) (+2m) [Transito]\n  - REG 7973 (VENEZIA MESTRE -> NOVA GORICA)\n  - REG 
+ 7973 (VENEZIA MESTRE -> NOVA GORICA)\nRitardo massimo rilevato: 2 min\nAff
+ idabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 t
+ reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
+  sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GORIZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16776--20261121-S03304@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T091330Z
+DTEND:20261122T092400Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:13 - 10:24 (primo: REG 16776) (+5 
+ min)
+DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 10:13:30 - 10:24:00\nTreni
+  coinvolti nella chiusura:\n  - REG 16776 (VENEZIA S.LUCIA -> TRIESTE CENT
+ RALE) (+5m) [Arrivo]\n  - REG 16776 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) 
+ (+5m) [Arrivo]\n  - REG 16776 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) (+5m) 
+ [Partenza]\n  - REG 16776 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) (+5m) [Par
+ tenza]\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 99%\nNota no
+ rmativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i p
+ assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GORIZIA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3556--20261121-S03304@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T103830Z
-DTEND:20261122T104300Z
-SUMMARY:[FERMATA] REG 3556 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) ore 11:42
-DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: FERMAT
- A\nChiusura sbarre stimata: 11:38:30 - 11:43:00\nTreni coinvolti nella chi
- usura:\n  - REG 3556 (TRIESTE CENTRALE -> VENEZIA S.LUCIA)\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pre
- visione da traccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T102415Z
+DTEND:20261122T102945Z
+SUMMARY:[TRANSITO VELOCE] REG 3556 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) or
+ e 11:28
+DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 11:24:15 - 11:29:45\nTreni coinvolti n
+ ella chiusura:\n  - REG 3556 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) [Transi
+ to]\nRitardo massimo rilevato: -4 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Transito stimato senza fermata (70% tratta MONFALCONE -> 
+ SAGRADO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GORIZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3556--20261121-S03304@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T103800Z
+DTEND:20261122T104500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:38 - 11:45 (primo: REG 3556) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:38:00 - 11:45:00\nTreni
+  coinvolti nella chiusura:\n  - REG 3556 (TRIESTE CENTRALE -> VENEZIA S.LU
+ CIA) (+1m)\n  - REG 3556 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) (+1m)\nRita
+ rdo massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euri
+ stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
+  inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GORIZIA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3876--20261121-S03304@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T105945Z
-DTEND:20261122T110515Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T110004Z
+DTEND:20261122T110534Z
 SUMMARY:[TRANSITO VELOCE] REG 3876 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) or
  e 12:04
 DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: TRANSI
- TO VELOCE\nChiusura sbarre stimata: 11:59:45 - 12:05:15\nTreni coinvolti n
+ TO VELOCE\nChiusura sbarre stimata: 12:00:04 - 12:05:34\nTreni coinvolti n
  ella chiusura:\n  - REG 3876 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) [Transi
  to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Transito stimato senza fermata (77% tratta UDINE -> CORMON
+ tiva/euristica: Transito stimato senza fermata (78% tratta UDINE -> CORMON
  S\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GORIZIA CENTRALE
 STATUS:CONFIRMED
@@ -180,8 +257,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3876--20261121-S03304@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T111330Z
 DTEND:20261122T111800Z
 SUMMARY:[FERMATA] REG 3876 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) ore 12:17
@@ -200,17 +277,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-594--20261121-S03304@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T115837Z
-DTEND:20261122T120307Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T120146Z
+DTEND:20261122T120616Z
 SUMMARY:[TRANSITO VELOCE] IC 594 (TRIESTE CENTRALE -> ROMA TERMINI) ore 13:
- 02
+ 05
 DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: TRANSI
- TO VELOCE\nChiusura sbarre stimata: 12:58:37 - 13:03:07\nTreni coinvolti n
+ TO VELOCE\nChiusura sbarre stimata: 13:01:46 - 13:06:16\nTreni coinvolti n
  ella chiusura:\n  - IC 594 (TRIESTE CENTRALE -> ROMA TERMINI) [Transito]\n
  Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
- euristica: Transito stimato senza fermata (16% tratta MONFALCONE -> VENEZI
+ euristica: Transito stimato senza fermata (18% tratta MONFALCONE -> VENEZI
  A MESTRE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GORIZIA CENTRALE
 STATUS:CONFIRMED
@@ -221,18 +298,40 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
+UID:train-3886--20261121-S03304@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T123730Z
+DTEND:20261122T124400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:37 - 13:44 (primo: REG 3886)
+DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:37:30 - 13:44:00\nTreni
+  coinvolti nella chiusura:\n  - REG 3886 (TRIESTE CENTRALE -> VENEZIA S.LU
+ CIA)\n  - REG 3886 (TRIESTE CENTRALE -> VENEZIA S.LUCIA)\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chius
+ ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GORIZIA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-3438--20261121-S03304@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T125945Z
-DTEND:20261122T130515Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T130004Z
+DTEND:20261122T130534Z
 SUMMARY:[TRANSITO VELOCE] REG 3438 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) or
  e 14:04
 DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: TRANSI
- TO VELOCE\nChiusura sbarre stimata: 13:59:45 - 14:05:15\nTreni coinvolti n
+ TO VELOCE\nChiusura sbarre stimata: 14:00:04 - 14:05:34\nTreni coinvolti n
  ella chiusura:\n  - REG 3438 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) [Transi
  to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Transito stimato senza fermata (77% tratta UDINE -> CORMON
+ tiva/euristica: Transito stimato senza fermata (78% tratta UDINE -> CORMON
  S\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GORIZIA CENTRALE
 STATUS:CONFIRMED
@@ -244,8 +343,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3438--20261121-S03304@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T131330Z
 DTEND:20261122T131800Z
 SUMMARY:[FERMATA] REG 3438 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) ore 14:17
@@ -263,78 +362,197 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-17396--20261121-S03304@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T151530Z
-DTEND:20261122T152000Z
-SUMMARY:[FERMATA] REG 17396 (TRIESTE CENTRALE -> UDINE) ore 16:19
-DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: FERMAT
- A\nChiusura sbarre stimata: 16:15:30 - 16:20:00\nTreni coinvolti nella chi
- usura:\n  - REG 17396 (TRIESTE CENTRALE -> UDINE)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
- a traccia oraria regolare
+UID:train-3890--20261121-S03304@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T142354Z
+DTEND:20261122T142924Z
+SUMMARY:[TRANSITO VELOCE] REG 3890 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) or
+ e 15:28 (+3 min)
+DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 15:23:54 - 15:29:24\nTreni coinvolti n
+ ella chiusura:\n  - REG 3890 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) (+3m) [
+ Transito]\nRitardo massimo rilevato: 3 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Transito stimato senza fermata (70% tratta MONFALCON
+ E -> SAGRADO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GORIZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3890--20261121-S03304@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T143730Z
+DTEND:20261122T144430Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:37 - 15:44 (primo: REG 3890) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:37:30 - 15:44:30\nTreni
+  coinvolti nella chiusura:\n  - REG 3890 (TRIESTE CENTRALE -> VENEZIA S.LU
+ CIA) (+1m)\n  - REG 3890 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) (+1m)\nRita
+ rdo massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euri
+ stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
+  inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GORIZIA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3884--20261121-S03304@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T145952Z
+DTEND:20261122T150522Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:59 - 16:05 (primo: REG 3884)
+DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:59:52 - 16:05:22\nTreni
+  coinvolti nella chiusura:\n  - REG 3884 (VENEZIA S.LUCIA -> TRIESTE CENTR
+ ALE) [Transito]\n  - REG 3884 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) [Trans
+ ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GORIZIA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3884--20261121-S03304@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T151330Z
+DTEND:20261122T152000Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:13 - 16:20 (primo: REG 3884)
+DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:13:30 - 16:20:00\nTreni
+  coinvolti nella chiusura:\n  - REG 3884 (VENEZIA S.LUCIA -> TRIESTE CENTR
+ ALE)\n  - REG 3884 (VENEZIA S.LUCIA -> TRIESTE CENTRALE)\n  - REG 17396 (T
+ RIESTE CENTRALE -> UDINE)\nRitardo massimo rilevato: 0 min\nAffidabilità 
+ stima: 90%\nNota normativa/euristica: Chiusura continua per 3 treni: inter
+ vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
+ tradale (120s)
+LOCATION:Passaggio a Livello / Stazione GORIZIA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-770--20261121-S03304@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T182915Z
-DTEND:20261122T183400Z
-SUMMARY:[FERMATA] ICN 770 (TRIESTE CENTRALE -> ROMA TERMINI) ore 19:33
-DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: FERMAT
- A\nChiusura sbarre stimata: 19:29:15 - 19:34:00\nTreni coinvolti nella chi
- usura:\n  - ICN 770 (TRIESTE CENTRALE -> ROMA TERMINI)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
- one da traccia oraria regolare
+UID:train-588--20261121-S03304@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T180138Z
+DTEND:20261122T180608Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:01 - 19:06 (primo: IC 588) (+17 mi
+ n)
+DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:01:38 - 19:06:08\nTreni
+  coinvolti nella chiusura:\n  - IC 588 (ROMA TERMINI -> TRIESTE CENTRALE) 
+ (+17m) [Transito]\n  - IC 588 (ROMA TERMINI -> TRIESTE CENTRALE) (+17m) [T
+ ransito]\nRitardo massimo rilevato: 17 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
+ i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GORIZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:17
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-770--20261121-S03304@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T182915Z
+DTEND:20261122T183400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:29 - 19:34 (primo: ICN 770)
+DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:29:15 - 19:34:00\nTreni
+  coinvolti nella chiusura:\n  - ICN 770 (TRIESTE CENTRALE -> ROMA TERMINI)
+ \n  - ICN 770 (TRIESTE CENTRALE -> ROMA TERMINI)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GORIZIA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16022--20261121-S03304@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T201530Z
-DTEND:20261122T202000Z
-SUMMARY:[FERMATA] REG 16022 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) ore 21:19
-DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: FERMAT
- A\nChiusura sbarre stimata: 21:15:30 - 21:20:00\nTreni coinvolti nella chi
- usura:\n  - REG 16022 (TRIESTE CENTRALE -> VENEZIA S.LUCIA)\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pr
- evisione da traccia oraria regolare
+UID:train-3898--20261121-S03304@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T183830Z
+DTEND:20261122T184300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:38 - 19:43 (primo: REG 3898)
+DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:38:30 - 19:43:00\nTreni
+  coinvolti nella chiusura:\n  - REG 3898 (TRIESTE CENTRALE -> VENEZIA S.LU
+ CIA)\n  - REG 3898 (TRIESTE CENTRALE -> VENEZIA S.LUCIA)\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chius
+ ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GORIZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16022--20261121-S03304@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T201530Z
+DTEND:20261122T202000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:15 - 21:20 (primo: REG 16022)
+DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:15:30 - 21:20:00\nTreni
+  coinvolti nella chiusura:\n  - REG 16022 (TRIESTE CENTRALE -> VENEZIA S.L
+ UCIA)\n  - REG 16022 (TRIESTE CENTRALE -> VENEZIA S.LUCIA)\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
+ usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
+  alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GORIZIA CENTRALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3896--20261121-S03304@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T205945Z
-DTEND:20261122T210515Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T210004Z
+DTEND:20261122T210534Z
 SUMMARY:[TRANSITO VELOCE] REG 3896 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) or
  e 22:04
 DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: TRANSI
- TO VELOCE\nChiusura sbarre stimata: 21:59:45 - 22:05:15\nTreni coinvolti n
+ TO VELOCE\nChiusura sbarre stimata: 22:00:04 - 22:05:34\nTreni coinvolti n
  ella chiusura:\n  - REG 3896 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) [Transi
  to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Transito stimato senza fermata (77% tratta UDINE -> CORMON
+ tiva/euristica: Transito stimato senza fermata (78% tratta UDINE -> CORMON
  S\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GORIZIA CENTRALE
 STATUS:CONFIRMED
@@ -346,8 +564,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3896--20261121-S03304@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T211330Z
 DTEND:20261122T212000Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:13 - 22:20 (primo: REG 3896)
@@ -368,42 +586,45 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1552--20261121-S03304@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T230014Z
-DTEND:20261122T230444Z
-SUMMARY:[TRANSITO VELOCE] IC 1552 (ROMA TERMINI -> TRIESTE CENTRALE) ore 00
- :03
-DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: TRANSI
- TO VELOCE\nChiusura sbarre stimata: 00:00:14 - 00:04:44\nTreni coinvolti n
- ella chiusura:\n  - IC 1552 (ROMA TERMINI -> TRIESTE CENTRALE) [Transito]\
- nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Transito stimato senza fermata (87% tratta VENEZIA MESTRE -> M
- ONFALCONE\; pedale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T232527Z
+DTEND:20261122T232957Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 00:25 - 00:29 (primo: IC 1552) (+26 m
+ in)
+DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 00:25:27 - 00:29:57\nTreni
+  coinvolti nella chiusura:\n  - IC 1552 (ROMA TERMINI -> TRIESTE CENTRALE)
+  (+26m) [Transito]\n  - IC 1552 (ROMA TERMINI -> TRIESTE CENTRALE) (+26m) 
+ [Transito]\nRitardo massimo rilevato: 26 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
+ a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GORIZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:26
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-774--20261121-S03304@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261123T080415Z
 DTEND:20261123T080900Z
-SUMMARY:[FERMATA] ICN 774 (ROMA TERMINI -> TRIESTE CENTRALE) ore 09:08
-DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: FERMAT
- A\nChiusura sbarre stimata: 09:04:15 - 09:09:00\nTreni coinvolti nella chi
- usura:\n  - ICN 774 (ROMA TERMINI -> TRIESTE CENTRALE)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
- one da traccia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:04 - 09:09 (primo: ICN 774)
+DESCRIPTION:Stazione/PL: GORIZIA CENTRALE (S03304)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:04:15 - 09:09:00\nTreni
+  coinvolti nella chiusura:\n  - ICN 774 (ROMA TERMINI -> TRIESTE CENTRALE)
+ \n  - ICN 774 (ROMA TERMINI -> TRIESTE CENTRALE)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GORIZIA CENTRALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:ICN

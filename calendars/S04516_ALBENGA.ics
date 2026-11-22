@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:e17ec826217eff84e8023f915aa4a21d78e51459a2006a7f140918fcbb0e
- e57f
+X-CONTENT-HASH:debc158834030fa3b7a73a71c082e6aec2a2ef1a701aa935c3a18c125388
+ 3965
 BEGIN:VEVENT
 UID:train-653--20261121-S04516@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T043915Z
 DTEND:20261122T044400Z
 SUMMARY:[FERMATA] IC 653 (VENTIMIGLIA -> MILANO CENTRALE) ore 05:43
@@ -33,8 +33,8 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-633--20261121-S04516@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T085315Z
 DTEND:20261122T085800Z
 SUMMARY:[FERMATA] IC 633 (MILANO CENTRALE -> VENTIMIGLIA) ore 09:57
@@ -52,18 +52,65 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
+UID:train-659--20261121-S04516@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T105003Z
+DTEND:20261122T105433Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:50 - 11:54 (primo: IC 659)
+DESCRIPTION:Stazione/PL: ALBENGA (S04516)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 11:50:03 - 11:54:33\nTreni coinvolt
+ i nella chiusura:\n  - IC 659 (MILANO CENTRALE -> VENTIMIGLIA) [Transito]\
+ n  - IC 659 (MILANO CENTRALE -> VENTIMIGLIA) [Transito]\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
+ ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
+ la soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ALBENGA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-659--20261121-S04516@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T110345Z
+DTEND:20261122T111330Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:03 - 12:13 (primo: IC 659) (+2 min
+ )
+DESCRIPTION:Stazione/PL: ALBENGA (S04516)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 4 TRENI\nChiusura sbarre stimata: 12:03:45 - 12:13:30\nTreni coinvolt
+ i nella chiusura:\n  - IC 659 (MILANO CENTRALE -> VENTIMIGLIA) (+2m) [Arri
+ vo]\n  - IC 659 (MILANO CENTRALE -> VENTIMIGLIA) (+2m) [Arrivo]\n  - IC 65
+ 9 (MILANO CENTRALE -> VENTIMIGLIA) (+2m) [Partenza]\n  - IC 659 (MILANO CE
+ NTRALE -> VENTIMIGLIA) (+2m) [Partenza]\nRitardo massimo rilevato: 2 min\n
+ Affidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 
+ 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
+  di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ALBENGA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
 UID:train-3368--20261121-S04516@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T114054Z
-DTEND:20261122T114624Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T114110Z
+DTEND:20261122T114640Z
 SUMMARY:[TRANSITO VELOCE] REG 3368 (GENOVA BRIGNOLE -> VENTIMIGLIA) ore 12:
  45
 DESCRIPTION:Stazione/PL: ALBENGA (S04516)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 12:40:54 - 12:46:24\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 12:41:10 - 12:46:40\nTreni coinvolti nella chiu
  sura:\n  - REG 3368 (GENOVA BRIGNOLE -> VENTIMIGLIA) [Transito]\nRitardo m
  assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (53% tratta FINALE LIGURE MARINA -> PIETR
+ : Transito stimato senza fermata (57% tratta FINALE LIGURE MARINA -> PIETR
  A LIGURE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALBENGA
 STATUS:CONFIRMED
@@ -75,8 +122,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3368--20261121-S04516@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T115630Z
 DTEND:20261122T120100Z
 SUMMARY:[FERMATA] REG 3368 (GENOVA BRIGNOLE -> VENTIMIGLIA) ore 13:00
@@ -94,38 +141,67 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3075--20261121-S04516@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T130230Z
-DTEND:20261122T130700Z
-SUMMARY:[FERMATA] REG 3075 (ALBENGA -> MILANO CENTRALE) ore 14:06
-DESCRIPTION:Stazione/PL: ALBENGA (S04516)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 14:02:30 - 14:07:00\nTreni coinvolti nella chiusura:\n 
-  - REG 3075 (ALBENGA -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia
-  oraria regolare
+UID:train-637--20261121-S04516@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T130145Z
+DTEND:20261122T131130Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 14:01 - 14:11 (primo: IC 637) (+13 mi
+ n)
+DESCRIPTION:Stazione/PL: ALBENGA (S04516)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 5 TRENI\nChiusura sbarre stimata: 14:01:45 - 14:11:30\nTreni coinvolt
+ i nella chiusura:\n  - IC 637 (MILANO CENTRALE -> VENTIMIGLIA) (+13m) [Arr
+ ivo]\n  - IC 637 (MILANO CENTRALE -> VENTIMIGLIA) (+13m) [Arrivo]\n  - REG
+  3075 (ALBENGA -> MILANO CENTRALE)\n  - IC 637 (MILANO CENTRALE -> VENTIMI
+ GLIA) (+13m) [Partenza]\n  - IC 637 (MILANO CENTRALE -> VENTIMIGLIA) (+13m
+ ) [Partenza]\nRitardo massimo rilevato: 13 min\nAffidabilità stima: 90%\n
+ Nota normativa/euristica: Chiusura continua per 5 treni: intervallo utile 
+ tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
+ s)
 LOCATION:Passaggio a Livello / Stazione ALBENGA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:13
 X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3371--20261121-S04516@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T135230Z
+DTEND:20261122T135830Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:52 - 14:58 (primo: REG 3371) (+3 m
+ in)
+DESCRIPTION:Stazione/PL: ALBENGA (S04516)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 14:52:30 - 14:58:30\nTreni coinvolt
+ i nella chiusura:\n  - REG 3371 (VENTIMIGLIA -> GENOVA BRIGNOLE) (+3m)\n  
+ - REG 3371 (VENTIMIGLIA -> GENOVA BRIGNOLE) (+3m)\nRitardo massimo rilevat
+ o: 3 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura con
+ tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ALBENGA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3376--20261121-S04516@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T154054Z
-DTEND:20261122T154624Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T154110Z
+DTEND:20261122T154640Z
 SUMMARY:[TRANSITO VELOCE] REG 3376 (GENOVA BRIGNOLE -> VENTIMIGLIA) ore 16:
  45
 DESCRIPTION:Stazione/PL: ALBENGA (S04516)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 16:40:54 - 16:46:24\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 16:41:10 - 16:46:40\nTreni coinvolti nella chiu
  sura:\n  - REG 3376 (GENOVA BRIGNOLE -> VENTIMIGLIA) [Transito]\nRitardo m
  assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (53% tratta FINALE LIGURE MARINA -> PIETR
+ : Transito stimato senza fermata (57% tratta FINALE LIGURE MARINA -> PIETR
  A LIGURE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALBENGA
 STATUS:CONFIRMED
@@ -137,8 +213,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3376--20261121-S04516@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T155630Z
 DTEND:20261122T160100Z
 SUMMARY:[FERMATA] REG 3376 (GENOVA BRIGNOLE -> VENTIMIGLIA) ore 17:00
@@ -157,8 +233,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-641--20261121-S04516@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T165315Z
 DTEND:20261122T165800Z
 SUMMARY:[FERMATA] IC 641 (MILANO CENTRALE -> VENTIMIGLIA) ore 17:57
@@ -176,77 +252,107 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3379--20261121-S04516@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T175030Z
-DTEND:20261122T175500Z
-SUMMARY:[FERMATA] REG 3379 (VENTIMIGLIA -> GENOVA BRIGNOLE) ore 18:54
-DESCRIPTION:Stazione/PL: ALBENGA (S04516)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 18:50:30 - 18:55:00\nTreni coinvolti nella chiusura:\n 
-  - REG 3379 (VENTIMIGLIA -> GENOVA BRIGNOLE)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
- ccia oraria regolare
+UID:train-3380--20261121-S04516@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T174110Z
+DTEND:20261122T174640Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:41 - 18:46 (primo: REG 3380)
+DESCRIPTION:Stazione/PL: ALBENGA (S04516)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 18:41:10 - 18:46:40\nTreni coinvolt
+ i nella chiusura:\n  - REG 3380 (GENOVA BRIGNOLE -> VENTIMIGLIA) [Transito
+ ]\n  - REG 3380 (GENOVA BRIGNOLE -> VENTIMIGLIA) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ALBENGA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3379--20261121-S04516@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T175030Z
+DTEND:20261122T180100Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 18:50 - 19:01 (primo: REG 3379)
+DESCRIPTION:Stazione/PL: ALBENGA (S04516)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 3 TRENI\nChiusura sbarre stimata: 18:50:30 - 19:01:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 3379 (VENTIMIGLIA -> GENOVA BRIGNOLE)\n  - REG 
+ 3380 (GENOVA BRIGNOLE -> VENTIMIGLIA)\n  - REG 3380 (GENOVA BRIGNOLE -> VE
+ NTIMIGLIA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNot
+ a normativa/euristica: Chiusura continua per 3 treni: intervallo utile tra
+  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ALBENGA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-639--20261121-S04516@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T185115Z
 DTEND:20261122T185600Z
-SUMMARY:[FERMATA] IC 639 (VENTIMIGLIA -> MILANO CENTRALE) ore 19:55
-DESCRIPTION:Stazione/PL: ALBENGA (S04516)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 19:51:15 - 19:56:00\nTreni coinvolti nella chiusura:\n 
-  - IC 639 (VENTIMIGLIA -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracc
- ia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 19:51 - 19:56 (primo: IC 639)
+DESCRIPTION:Stazione/PL: ALBENGA (S04516)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 4 TRENI\nChiusura sbarre stimata: 19:51:15 - 19:56:00\nTreni coinvolt
+ i nella chiusura:\n  - IC 639 (VENTIMIGLIA -> MILANO CENTRALE)\n  - IC 639
+  (VENTIMIGLIA -> MILANO CENTRALE)\n  - IC 675 (MILANO CENTRALE -> VENTIMIG
+ LIA)\n  - IC 675 (MILANO CENTRALE -> VENTIMIGLIA)\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
+ tinua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ALBENGA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-518--20261121-S04516@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T212615Z
-DTEND:20261122T213100Z
-SUMMARY:[FERMATA] IC 518 (ROMA TERMINI -> VENTIMIGLIA) ore 22:30
-DESCRIPTION:Stazione/PL: ALBENGA (S04516)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 22:26:15 - 22:31:00\nTreni coinvolti nella chiusura:\n 
-  - IC 518 (ROMA TERMINI -> VENTIMIGLIA)\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia 
- oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T213215Z
+DTEND:20261122T213700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:32 - 22:37 (primo: IC 518) (+6 min
+ )
+DESCRIPTION:Stazione/PL: ALBENGA (S04516)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 22:32:15 - 22:37:00\nTreni coinvolt
+ i nella chiusura:\n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA) (+6m)\n  - IC 
+ 518 (ROMA TERMINI -> VENTIMIGLIA) (+6m)\nRitardo massimo rilevato: 6 min\n
+ Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
+ 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
+  di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ALBENGA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3041--20261121-S04516@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T223154Z
-DTEND:20261122T223724Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T223210Z
+DTEND:20261122T223740Z
 SUMMARY:[TRANSITO VELOCE] REG 3041 (MILANO CENTRALE -> ALASSIO) ore 23:36
 DESCRIPTION:Stazione/PL: ALBENGA (S04516)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 23:31:54 - 23:37:24\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 23:32:10 - 23:37:40\nTreni coinvolti nella chiu
  sura:\n  - REG 3041 (MILANO CENTRALE -> ALASSIO) [Transito]\nRitardo massi
  mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
- ansito stimato senza fermata (53% tratta FINALE LIGURE MARINA -> PIETRA LI
+ ansito stimato senza fermata (57% tratta FINALE LIGURE MARINA -> PIETRA LI
  GURE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALBENGA
 STATUS:CONFIRMED
@@ -258,8 +364,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3041--20261121-S04516@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T224730Z
 DTEND:20261122T225200Z
 SUMMARY:[FERMATA] REG 3041 (MILANO CENTRALE -> ALASSIO) ore 23:51

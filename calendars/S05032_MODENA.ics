@@ -9,21 +9,21 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:bff6b05fc4957bab000a8eff3cea61bd7548eab1cda9780f44394efcdcce
- 85c8
+X-CONTENT-HASH:c918aa15a43a44f5d83b702e558adbd818eba529dfcddccfe635566f99f1
+ 7261
 BEGIN:VEVENT
 UID:train-87930--20261120-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:2
-DTSTART:20261121T055022Z
-DTEND:20261121T055552Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:3
+DTSTART:20261121T055035Z
+DTEND:20261121T055605Z
 SUMMARY:[TRANSITO VELOCE] REG 87930 (BOLOGNA CENTRALE -> REGGIO EMILIA) ore
   06:54 (+6 min)
 DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 06:50:22 - 06:55:52\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 06:50:35 - 06:56:05\nTreni coinvolti nella chius
  ura:\n  - REG 87930 (BOLOGNA CENTRALE -> REGGIO EMILIA) (+6m) [Transito]\n
  Ritardo massimo rilevato: 6 min\nAffidabilità stima: 78%\nNota normativa/
- euristica: Transito stimato senza fermata (80% tratta BOLOGNA CENTRALE -> 
+ euristica: Transito stimato senza fermata (82% tratta BOLOGNA CENTRALE -> 
  CASTELFRANCO EMILIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
@@ -35,8 +35,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-87930--20261120-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:2
+DTSTAMP:20261122T150820Z
+SEQUENCE:3
 DTSTART:20261121T060200Z
 DTEND:20261121T060830Z
 SUMMARY:[FERMATA] REG 87930 (BOLOGNA CENTRALE -> REGGIO EMILIA) ore 07:07 (
@@ -56,8 +56,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2462--20261120-S05032@pl-tracker.local-arr
-DTSTAMP:20261122T065144Z
-SEQUENCE:2
+DTSTAMP:20261122T150820Z
+SEQUENCE:3
 DTSTART:20261121T071400Z
 DTEND:20261121T071830Z
 SUMMARY:[FERMATA] REG 2462 (RAVENNA -> REGGIO EMILIA) ore 08:17 (+2 min)
@@ -76,8 +76,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2462--20261120-S05032@pl-tracker.local-dep
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261121T072100Z
 DTEND:20261121T072530Z
 SUMMARY:[FERMATA] REG 2462 (RAVENNA -> REGGIO EMILIA) ore 08:24 (+2 min)
@@ -96,99 +96,110 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9505--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T051118Z
-DTEND:20261122T051648Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9505 (MILANO CENTRALE -> SALERNO) ore 06:15
-DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 06:11:18 - 06:16:48\nTreni coinvolti nella chius
- ura:\n  - TRENO 9505 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (72% tratta REGGIO EMILIA AV MEDIOPADANA -> 
- BOLOGNA C.LE/AV\; pedale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T052244Z
+DTEND:20261122T052814Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:22 - 06:28 (primo: TRENO 9505)
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 06:22:44 - 06:28:14\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9505 (MILANO CENTRALE -> SALERNO) [Transito]\n
+   - TRENO 9505 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo massimo ri
+ levato: -5 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
+ ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
+ la soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9301--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T054130Z
-DTEND:20261122T054600Z
-SUMMARY:[FERMATA] TRENO 9301 (MANTOVA -> ROMA TERMINI) ore 06:45
-DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 06:41:30 - 06:46:00\nTreni coinvolti nella chiusura:\n  
- - TRENO 9301 (MANTOVA -> ROMA TERMINI)\nRitardo massimo rilevato: 0 min\nA
- ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
- raria regolare
+UID:train-9301--20261121-S05032@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T054030Z
+DTEND:20261122T055244Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 06:40 - 06:52 (primo: TRENO 9301) (+2
+  min)
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
+ A - 6 TRENI\nChiusura sbarre stimata: 06:40:30 - 06:52:44\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9301 (MANTOVA -> ROMA TERMINI) (+2m) [Arrivo]\
+ n  - TRENO 9301 (MANTOVA -> ROMA TERMINI) (+2m) [Arrivo]\n  - TRENO 9301 (
+ MANTOVA -> ROMA TERMINI) (+2m) [Partenza]\n  - TRENO 9301 (MANTOVA -> ROMA
+  TERMINI) (+2m) [Partenza]\n  - REG 3905 (REGGIO EMILIA -> ANCONA) [Transi
+ to]\n  - REG 3905 (REGGIO EMILIA -> ANCONA) [Transito]\nRitardo massimo ri
+ levato: 2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
+ a continua per 6 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2460--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T060946Z
-DTEND:20261122T061516Z
-SUMMARY:[TRANSITO VELOCE] REG 2460 (BOLOGNA CENTRALE -> REGGIO EMILIA) ore 
- 07:14
-DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 07:09:46 - 07:15:16\nTreni coinvolti nella chius
- ura:\n  - REG 2460 (BOLOGNA CENTRALE -> REGGIO EMILIA) [Transito]\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Transito stimato senza fermata (80% tratta BOLOGNA CENTRALE -> CASTELF
- RANCO EMILIA\; pedale annuncio fisso Vmax)
+UID:train-3905--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T060230Z
+DTEND:20261122T061534Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:02 - 07:15 (primo: REG 3905) (+9 m
+ in)
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
+ A - 3 TRENI\nChiusura sbarre stimata: 07:02:30 - 07:15:34\nTreni coinvolti
+  nella chiusura:\n  - REG 3905 (REGGIO EMILIA -> ANCONA) (+9m)\n  - REG 39
+ 05 (REGGIO EMILIA -> ANCONA) (+9m)\n  - REG 2460 (BOLOGNA CENTRALE -> REGG
+ IO EMILIA) [Transito]\nRitardo massimo rilevato: 9 min\nAffidabilità stim
+ a: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: intervall
+ o utile tra i passaggi (34s) inferiore alla soglia minima di sgombero stra
+ dale (120s)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:9
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2460--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T062530Z
+UID:train-9511--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T061904Z
 DTEND:20261122T063000Z
-SUMMARY:[FERMATA] REG 2460 (BOLOGNA CENTRALE -> REGGIO EMILIA) ore 07:29
-DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 07:25:30 - 07:30:00\nTreni coinvolti nella chiusura:\n  
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:19 - 07:30 (primo: TRENO 9511)
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 07:19:04 - 07:30:00\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) [Transito]\n  
  - REG 2460 (BOLOGNA CENTRALE -> REGGIO EMILIA)\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
- raccia oraria regolare
+ 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
+ ua per 2 treni: intervallo utile tra i passaggi (55s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3902--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T063923Z
-DTEND:20261122T064453Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T063942Z
+DTEND:20261122T064512Z
 SUMMARY:[TRANSITO VELOCE] REG 3902 (ANCONA -> REGGIO EMILIA) ore 07:43
 DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 07:39:23 - 07:44:53\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 07:39:42 - 07:45:12\nTreni coinvolti nella chius
  ura:\n  - REG 3902 (ANCONA -> REGGIO EMILIA) [Transito]\nRitardo massimo r
  ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transi
- to stimato senza fermata (80% tratta BOLOGNA CENTRALE -> CASTELFRANCO EMIL
+ to stimato senza fermata (82% tratta BOLOGNA CENTRALE -> CASTELFRANCO EMIL
  IA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
@@ -200,8 +211,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3902--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T065430Z
 DTEND:20261122T065900Z
 SUMMARY:[FERMATA] REG 3902 (ANCONA -> REGGIO EMILIA) ore 07:58
@@ -219,30 +230,9 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9515--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T071118Z
-DTEND:20261122T071648Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9515 (MILANO CENTRALE -> SALERNO) ore 08:15
-DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 08:11:18 - 08:16:48\nTreni coinvolti nella chius
- ura:\n  - TRENO 9515 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (72% tratta REGGIO EMILIA AV MEDIOPADANA -> 
- BOLOGNA C.LE/AV\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione MODENA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
 UID:train-2493--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T073430Z
 DTEND:20261122T073900Z
 SUMMARY:[FERMATA] REG 2493 (REGGIO EMILIA -> PESCARA) ore 08:38
@@ -260,170 +250,251 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9519--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T081118Z
-DTEND:20261122T081648Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9519 (TORINO PORTA NUOVA -> SALERNO) ore 09
- :15
-DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 09:11:18 - 09:16:48\nTreni coinvolti nella chius
- ura:\n  - TRENO 9519 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (72% tratta REGGIO EMILIA AV MEDIOPADANA 
- -> BOLOGNA C.LE/AV\; pedale annuncio fisso Vmax)
+UID:train-9515--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T075319Z
+DTEND:20261122T075849Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:53 - 08:58 (primo: TRENO 9515) (+5
+ 8 min)
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 08:53:19 - 08:58:49\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9515 (MILANO CENTRALE -> SALERNO) (+58m) [Tran
+ sito]\n  - TRENO 9515 (MILANO CENTRALE -> SALERNO) (+58m) [Transito]\nRita
+ rdo massimo rilevato: 58 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:58
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3906--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:0
-DTSTART:20261122T083923Z
-DTEND:20261122T084453Z
-SUMMARY:[TRANSITO VELOCE] REG 3906 (ANCONA -> REGGIO EMILIA) ore 09:43
-DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 09:39:23 - 09:44:53\nTreni coinvolti nella chius
- ura:\n  - REG 3906 (ANCONA -> REGGIO EMILIA) [Transito]\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transi
- to stimato senza fermata (80% tratta BOLOGNA CENTRALE -> CASTELFRANCO EMIL
- IA\; pedale annuncio fisso Vmax)
+UID:train-9519--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T082800Z
+DTEND:20261122T083330Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:28 - 09:33 (primo: TRENO 9519) (+5
+  min)
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 09:28:00 - 09:33:30\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9519 (TORINO PORTA NUOVA -> SALERNO) (+5m) [Tr
+ ansito]\n  - TRENO 9519 (TORINO PORTA NUOVA -> SALERNO) (+5m) [Transito]\n
+ Ritardo massimo rilevato: 5 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
+ (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3913--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T085230Z
-DTEND:20261122T085900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:52 - 09:59 (primo: REG 3913)
+UID:train-583--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T083740Z
+DTEND:20261122T084308Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:37 - 09:43 (primo: IC 583)
 DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 09:52:30 - 09:59:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3913 (REGGIO EMILIA -> ANCONA)\n  - REG 3906 (AN
- CONA -> REGGIO EMILIA)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
- ma: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
- lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
- dale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 09:37:40 - 09:43:08\nTreni coinvolti
+  nella chiusura:\n  - IC 583 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transit
+ o]\n  - TRENO 9512 (ROMA TERMINI -> MILANO CENTRALE) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3908--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T093923Z
-DTEND:20261122T094453Z
-SUMMARY:[TRANSITO VELOCE] REG 3908 (ANCONA -> REGGIO EMILIA) ore 10:43
-DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 10:39:23 - 10:44:53\nTreni coinvolti nella chius
- ura:\n  - REG 3908 (ANCONA -> REGGIO EMILIA) [Transito]\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transi
- to stimato senza fermata (80% tratta BOLOGNA CENTRALE -> CASTELFRANCO EMIL
- IA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione MODENA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3919--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
+UID:train-3906--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
 SEQUENCE:1
-DTSTART:20261122T095230Z
-DTEND:20261122T100205Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 10:52 - 11:02 (primo: REG 3919)
+DTSTART:20261122T084632Z
+DTEND:20261122T085700Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 09:46 - 09:57 (primo: REG 3906) (+7 m
+ in)
 DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 10:52:30 - 11:02:05\nTreni coinvolti
-  nella chiusura:\n  - REG 3919 (REGGIO EMILIA -> ANCONA)\n  - REG 3908 (AN
- CONA -> REGGIO EMILIA)\n  - TRENO 9311 (TORINO PORTA NUOVA -> NAPOLI CENTR
- ALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%
- \nNota normativa/euristica: Chiusura continua per 3 treni: intervallo util
- e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
- 20s)
+ A - 3 TRENI\nChiusura sbarre stimata: 09:46:32 - 09:57:00\nTreni coinvolti
+  nella chiusura:\n  - REG 3906 (ANCONA -> REGGIO EMILIA) (+7m) [Transito]\
+ n  - REG 3906 (ANCONA -> REGGIO EMILIA) (+7m) [Transito]\n  - REG 3913 (RE
+ GGIO EMILIA -> ANCONA)\nRitardo massimo rilevato: 7 min\nAffidabilità sti
+ ma: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: interval
+ lo utile tra i passaggi (27s) inferiore alla soglia minima di sgombero str
+ adale (120s)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:7
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9527--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
+UID:train-3906--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
 SEQUENCE:1
-DTSTART:20261122T101118Z
-DTEND:20261122T101648Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9527 (MILANO CENTRALE -> SALERNO) ore 11:15
-DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 11:11:18 - 11:16:48\nTreni coinvolti nella chius
- ura:\n  - TRENO 9527 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (72% tratta REGGIO EMILIA AV MEDIOPADANA -> 
- BOLOGNA C.LE/AV\; pedale annuncio fisso Vmax)
+DTSTART:20261122T090030Z
+DTEND:20261122T090837Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:00 - 10:08 (primo: REG 3906) (+7 m
+ in)
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 10:00:30 - 10:08:37\nTreni coinvolti
+  nella chiusura:\n  - REG 3906 (ANCONA -> REGGIO EMILIA) (+7m)\n  - REG 39
+ 06 (ANCONA -> REGGIO EMILIA) (+7m)\n  - TRENO 9391 (TORINO PORTA NUOVA -> 
+ NAPOLI CENTRALE) [Transito]\n  - TRENO 9391 (TORINO PORTA NUOVA -> NAPOLI 
+ CENTRALE) [Transito]\nRitardo massimo rilevato: 7 min\nAffidabilità stima
+ : 78%\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo
+  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
+ le (120s)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9516--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T093738Z
+DTEND:20261122T094512Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:37 - 10:45 (primo: TRENO 9516)
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 10:37:38 - 10:45:12\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9516 (SALERNO -> TORINO PORTA NUOVA) [Transito
+ ]\n  - REG 3908 (ANCONA -> REGGIO EMILIA) [Transito]\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
+ continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MODENA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-584--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:0
-DTSTART:20261122T102307Z
-DTEND:20261122T102737Z
-SUMMARY:[TRANSITO VELOCE] IC 584 (TRIESTE CENTRALE -> ROMA TERMINI) ore 11:
- 26
-DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 11:23:07 - 11:27:37\nTreni coinvolti nella chius
- ura:\n  - IC 584 (TRIESTE CENTRALE -> ROMA TERMINI) [Transito]\nRitardo ma
- ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
-  Transito stimato senza fermata (25% tratta BOLOGNA CENTRALE -> PRATO CENT
- RALE\; pedale annuncio fisso Vmax)
+UID:train-3908--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T095430Z
+DTEND:20261122T100800Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:54 - 11:08 (primo: REG 3908) (+9 m
+ in)
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 10:54:30 - 11:08:00\nTreni coinvolti
+  nella chiusura:\n  - REG 3908 (ANCONA -> REGGIO EMILIA)\n  - TRENO 9311 (
+ TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\n  - REG 3919 (REGGIO EM
+ ILIA -> ANCONA) (+9m)\n  - REG 3919 (REGGIO EMILIA -> ANCONA) (+9m)\nRitar
+ do massimo rilevato: 9 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) 
+ inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:9
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-584--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:1
+DTSTART:20261122T102630Z
+DTEND:20261122T103743Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:26 - 11:37 (primo: IC 584) (+15 mi
+ n)
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
+ A - 3 TRENI\nChiusura sbarre stimata: 11:26:30 - 11:37:43\nTreni coinvolti
+  nella chiusura:\n  - IC 584 (TRIESTE CENTRALE -> ROMA TERMINI) [Transito]
+ \n  - TRENO 8810 (BARI CENTRALE -> MILANO CENTRALE) (+15m) [Transito]\n  -
+  TRENO 8810 (BARI CENTRALE -> MILANO CENTRALE) (+15m) [Transito]\nRitardo 
+ massimo rilevato: 15 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MODENA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:15
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
+UID:train-9805--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T104718Z
+DTEND:20261122T105248Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:47 - 11:52 (primo: TRENO 9805) (+2
+ 0 min)
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 11:47:18 - 11:52:48\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9805 (TORINO PORTA NUOVA -> LECCE) (+20m) [Tra
+ nsito]\n  - TRENO 9805 (TORINO PORTA NUOVA -> LECCE) (+20m) [Transito]\nRi
+ tardo massimo rilevato: 20 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MODENA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:20
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9806--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T112810Z
+DTEND:20261122T113340Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:28 - 12:33 (primo: TRENO 9806) (+8
+  min)
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 12:28:10 - 12:33:40\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9806 (BARI CENTRALE -> MILANO CENTRALE) (+8m) 
+ [Transito]\n  - TRENO 9806 (BARI CENTRALE -> MILANO CENTRALE) (+8m) [Trans
+ ito]\nRitardo massimo rilevato: 8 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MODENA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
 UID:train-9535--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T121118Z
-DTEND:20261122T121648Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T121254Z
+DTEND:20261122T121824Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9535 (TORINO PORTA NUOVA -> NAPOLI CENTRALE
- ) ore 13:15
+ ) ore 13:17
 DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 13:11:18 - 13:16:48\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 13:12:54 - 13:18:24\nTreni coinvolti nella chius
  ura:\n  - TRENO 9535 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\nR
  itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Transito stimato senza fermata (72% tratta REGGIO EMILIA AV MEDI
+ uristica: Transito stimato senza fermata (77% tratta REGGIO EMILIA AV MEDI
  OPADANA -> BOLOGNA C.LE/AV\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
@@ -435,16 +506,16 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8814--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T122043Z
-DTEND:20261122T122613Z
-SUMMARY:[TRANSITO VELOCE] TRENO 8814 (LECCE -> MILANO CENTRALE) ore 13:24
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T122143Z
+DTEND:20261122T122713Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8814 (LECCE -> MILANO CENTRALE) ore 13:25
 DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 13:20:43 - 13:26:13\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 13:21:43 - 13:27:13\nTreni coinvolti nella chius
  ura:\n  - TRENO 8814 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massim
  o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
- nsito stimato senza fermata (40% tratta BOLOGNA CENTRALE -> REGGIO EMILIA 
+ nsito stimato senza fermata (44% tratta BOLOGNA CENTRALE -> REGGIO EMILIA 
  AV MEDIOPADANA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
@@ -455,31 +526,123 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
+UID:train-3914--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T124135Z
+DTEND:20261122T124705Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:41 - 13:47 (primo: REG 3914) (+2 m
+ in)
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 13:41:35 - 13:47:05\nTreni coinvolti
+  nella chiusura:\n  - REG 3914 (ANCONA -> REGGIO EMILIA) (+2m) [Transito]\
+ n  - REG 3914 (ANCONA -> REGGIO EMILIA) (+2m) [Transito]\nRitardo massimo 
+ rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
+ ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MODENA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3914--20261121-S05032@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T125300Z
+DTEND:20261122T130130Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 13:53 - 14:01 (primo: REG 3914) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 13:53:00 - 14:01:30\nTreni coinvolti
+  nella chiusura:\n  - REG 3914 (ANCONA -> REGGIO EMILIA) (+1m) [Arrivo]\n 
+  - REG 3914 (ANCONA -> REGGIO EMILIA) (+1m) [Arrivo]\n  - REG 3914 (ANCONA
+  -> REGGIO EMILIA) (+1m) [Partenza]\n  - REG 3914 (ANCONA -> REGGIO EMILIA
+ ) (+1m) [Partenza]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 
+ 99%\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo u
+ tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
+  (120s)
+LOCATION:Passaggio a Livello / Stazione MODENA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-9539--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T131118Z
-DTEND:20261122T131648Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE) o
- re 14:15
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T130818Z
+DTEND:20261122T131348Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:08 - 14:13 (primo: TRENO 9539)
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 14:08:18 - 14:13:48\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE) [Tra
+ nsito]\n  - TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\nRi
+ tardo massimo rilevato: -5 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MODENA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8811--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T133426Z
+DTEND:20261122T133956Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8811 (MILANO CENTRALE -> LECCE) ore 14:38 (
+ +5 min)
 DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 14:11:18 - 14:16:48\nTreni coinvolti nella chius
- ura:\n  - TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (72% tratta REGGIO EMILIA AV MEDIOPA
- DANA -> BOLOGNA C.LE/AV\; pedale annuncio fisso Vmax)
+ nChiusura sbarre stimata: 14:34:26 - 14:39:56\nTreni coinvolti nella chius
+ ura:\n  - TRENO 8811 (MILANO CENTRALE -> LECCE) (+5m) [Transito]\nRitardo 
+ massimo rilevato: 5 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Transito stimato senza fermata (68% tratta REGGIO EMILIA AV MEDIOPADANA
+  -> BOLOGNA CENTRALE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9532--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T134451Z
+DTEND:20261122T135021Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9532 (NAPOLI CENTRALE -> TORINO PORTA NUOVA
+ ) ore 14:49 (+8 min)
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 14:44:51 - 14:50:21\nTreni coinvolti nella chius
+ ura:\n  - TRENO 9532 (NAPOLI CENTRALE -> TORINO PORTA NUOVA) (+8m) [Transi
+ to]\nRitardo massimo rilevato: 8 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (36% tratta BOLOGNA C.LE/AV
+  -> REGGIO EMILIA AV MEDIOPADANA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MODENA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:8
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3927--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T135230Z
 DTEND:20261122T135700Z
 SUMMARY:[FERMATA] REG 3927 (REGGIO EMILIA -> PESARO) ore 14:56
@@ -498,17 +661,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9543--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T141118Z
-DTEND:20261122T141648Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T141254Z
+DTEND:20261122T141824Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9543 (TORINO PORTA NUOVA -> SALERNO) ore 15
- :15
+ :17
 DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 15:11:18 - 15:16:48\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 15:12:54 - 15:18:24\nTreni coinvolti nella chius
  ura:\n  - TRENO 9543 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRitardo m
  assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (72% tratta REGGIO EMILIA AV MEDIOPADANA 
+ : Transito stimato senza fermata (77% tratta REGGIO EMILIA AV MEDIOPADANA 
  -> BOLOGNA C.LE/AV\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
@@ -520,16 +683,16 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8818--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T142043Z
-DTEND:20261122T142613Z
-SUMMARY:[TRANSITO VELOCE] TRENO 8818 (LECCE -> MILANO CENTRALE) ore 15:24
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T142143Z
+DTEND:20261122T142713Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8818 (LECCE -> MILANO CENTRALE) ore 15:25
 DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 15:20:43 - 15:26:13\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 15:21:43 - 15:27:13\nTreni coinvolti nella chius
  ura:\n  - TRENO 8818 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massim
  o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
- nsito stimato senza fermata (40% tratta BOLOGNA CENTRALE -> REGGIO EMILIA 
+ nsito stimato senza fermata (44% tratta BOLOGNA CENTRALE -> REGGIO EMILIA 
  AV MEDIOPADANA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
@@ -541,16 +704,16 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3918--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T143923Z
-DTEND:20261122T144453Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T143942Z
+DTEND:20261122T144512Z
 SUMMARY:[TRANSITO VELOCE] REG 3918 (ANCONA -> REGGIO EMILIA) ore 15:43
 DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 15:39:23 - 15:44:53\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 15:39:42 - 15:45:12\nTreni coinvolti nella chius
  ura:\n  - REG 3918 (ANCONA -> REGGIO EMILIA) [Transito]\nRitardo massimo r
  ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transi
- to stimato senza fermata (80% tratta BOLOGNA CENTRALE -> CASTELFRANCO EMIL
+ to stimato senza fermata (82% tratta BOLOGNA CENTRALE -> CASTELFRANCO EMIL
  IA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
@@ -562,8 +725,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3929--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T145230Z
 DTEND:20261122T145900Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:52 - 15:59 (primo: REG 3929)
@@ -583,126 +746,135 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9547--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T151118Z
-DTEND:20261122T151648Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9547 (MILANO CENTRALE -> TARANTO) ore 16:15
-DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 16:11:18 - 16:16:48\nTreni coinvolti nella chius
- ura:\n  - TRENO 9547 (MILANO CENTRALE -> TARANTO) [Transito]\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (72% tratta REGGIO EMILIA AV MEDIOPADANA -> 
- BOLOGNA C.LE/AV\; pedale annuncio fisso Vmax)
+UID:train-9321--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T150710Z
+DTEND:20261122T151824Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:07 - 16:18 (primo: TRENO 9321) (+8
+  min)
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
+ A - 3 TRENI\nChiusura sbarre stimata: 16:07:10 - 16:18:24\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9321 (TORINO PORTA NUOVA -> ROMA TERMINI) (+8m
+ ) [Transito]\n  - TRENO 9321 (TORINO PORTA NUOVA -> ROMA TERMINI) (+8m) [T
+ ransito]\n  - TRENO 9547 (MILANO CENTRALE -> TARANTO) [Transito]\nRitardo 
+ massimo rilevato: 8 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Chiusura continua per 3 treni: intervallo utile tra i passaggi (14s) in
+ feriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3920--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T153923Z
-DTEND:20261122T154453Z
-SUMMARY:[TRANSITO VELOCE] REG 3920 (RIMINI -> REGGIO EMILIA) ore 16:43
-DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 16:39:23 - 16:44:53\nTreni coinvolti nella chius
- ura:\n  - REG 3920 (RIMINI -> REGGIO EMILIA) [Transito]\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transi
- to stimato senza fermata (80% tratta BOLOGNA CENTRALE -> CASTELFRANCO EMIL
- IA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione MODENA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3920--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T155430Z
-DTEND:20261122T160205Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:54 - 17:02 (primo: REG 3920)
+UID:train-8820--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T153635Z
+DTEND:20261122T154512Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:36 - 16:45 (primo: TRENO 8820) (+1
+ 4 min)
 DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 16:54:30 - 17:02:05\nTreni coinvolti
-  nella chiusura:\n  - REG 3920 (RIMINI -> REGGIO EMILIA)\n  - TRENO 9323 (
- TORINO PORTA NUOVA -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
- ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+ A - 3 TRENI\nChiusura sbarre stimata: 16:36:35 - 16:45:12\nTreni coinvolti
+  nella chiusura:\n  - TRENO 8820 (TARANTO -> MILANO CENTRALE) (+14m) [Tran
+ sito]\n  - TRENO 8820 (TARANTO -> MILANO CENTRALE) (+14m) [Transito]\n  - 
+ REG 3920 (RIMINI -> REGGIO EMILIA) [Transito]\nRitardo massimo rilevato: 1
+ 4 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
+ ua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
   minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:14
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3931--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T155230Z
+DTEND:20261122T160338Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:52 - 17:03 (primo: REG 3931)
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 16:52:30 - 17:03:38\nTreni coinvolti
+  nella chiusura:\n  - REG 3931 (REGGIO EMILIA -> ANCONA)\n  - REG 3931 (RE
+ GGIO EMILIA -> ANCONA)\n  - REG 3920 (RIMINI -> REGGIO EMILIA)\n  - TRENO 
+ 9323 (TORINO PORTA NUOVA -> ROMA TERMINI) [Transito]\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
+ continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MODENA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9551--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T161118Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T161254Z
 DTEND:20261122T162100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:11 - 17:21 (primo: TRENO 9551)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:12 - 17:21 (primo: TRENO 9551)
 DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 17:11:18 - 17:21:00\nTreni coinvolti
+ A - 3 TRENI\nChiusura sbarre stimata: 17:12:54 - 17:21:00\nTreni coinvolti
   nella chiusura:\n  - TRENO 9551 (MILANO CENTRALE -> SALERNO) [Transito]\n
-   - REG 17418 (BOLOGNA CENTRALE -> REGGIO EMILIA)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
- tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
- lia minima di sgombero stradale (120s)
+   - REG 17418 (BOLOGNA CENTRALE -> REGGIO EMILIA)\n  - REG 17418 (BOLOGNA 
+ CENTRALE -> REGGIO EMILIA)\nRitardo massimo rilevato: 0 min\nAffidabilità
+  stima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: inte
+ rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
+ stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-594--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T163137Z
-DTEND:20261122T163607Z
-SUMMARY:[TRANSITO VELOCE] IC 594 (TRIESTE CENTRALE -> ROMA TERMINI) ore 17:
- 35
-DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 17:31:37 - 17:36:07\nTreni coinvolti nella chius
- ura:\n  - IC 594 (TRIESTE CENTRALE -> ROMA TERMINI) [Transito]\nRitardo ma
- ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
-  Transito stimato senza fermata (28% tratta BOLOGNA CENTRALE -> PRATO CENT
- RALE\; pedale annuncio fisso Vmax)
+UID:train-9544--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T163038Z
+DTEND:20261122T163749Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:30 - 17:37 (primo: TRENO 9544)
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
+ A - 3 TRENI\nChiusura sbarre stimata: 17:30:38 - 17:37:49\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9544 (SALERNO -> MILANO CENTRALE) [Transito]\n
+   - TRENO 9544 (SALERNO -> MILANO CENTRALE) [Transito]\n  - IC 594 (TRIEST
+ E CENTRALE -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9325--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:0
-DTSTART:20261122T165635Z
-DTEND:20261122T170205Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:1
+DTSTART:20261122T165808Z
+DTEND:20261122T170338Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9325 (TORINO PORTA NUOVA -> NAPOLI CENTRALE
- ) ore 18:00
+ ) ore 18:02
 DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 17:56:35 - 18:02:05\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 17:58:08 - 18:03:38\nTreni coinvolti nella chius
  ura:\n  - TRENO 9325 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\nR
  itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Transito stimato senza fermata (72% tratta REGGIO EMILIA AV MEDI
+ uristica: Transito stimato senza fermata (77% tratta REGGIO EMILIA AV MEDI
  OPADANA -> BOLOGNA C.LE/AV\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
@@ -714,17 +886,17 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9555--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T171118Z
-DTEND:20261122T171648Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T171254Z
+DTEND:20261122T171824Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9555 (MILANO CENTRALE -> BATTIPAGLIA) ore 1
- 8:15
+ 8:17
 DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 18:11:18 - 18:16:48\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 18:12:54 - 18:18:24\nTreni coinvolti nella chius
  ura:\n  - TRENO 9555 (MILANO CENTRALE -> BATTIPAGLIA) [Transito]\nRitardo 
  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Transito stimato senza fermata (72% tratta REGGIO EMILIA AV MEDIOPADANA
+ a: Transito stimato senza fermata (77% tratta REGGIO EMILIA AV MEDIOPADANA
   -> BOLOGNA C.LE/AV\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
@@ -735,18 +907,39 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9559--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T181118Z
-DTEND:20261122T181648Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9559 (TORINO PORTA NUOVA -> ROMA TERMINI) o
- re 19:15
+UID:train-8823--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T180226Z
+DTEND:20261122T180756Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8823 (MILANO CENTRALE -> PESCARA) ore 19:06
 DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 19:11:18 - 19:16:48\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 19:02:26 - 19:07:56\nTreni coinvolti nella chius
+ ura:\n  - TRENO 8823 (MILANO CENTRALE -> PESCARA) [Transito]\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
+ ransito stimato senza fermata (68% tratta REGGIO EMILIA AV MEDIOPADANA -> 
+ BOLOGNA CENTRALE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MODENA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9559--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T181254Z
+DTEND:20261122T181824Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9559 (TORINO PORTA NUOVA -> ROMA TERMINI) o
+ re 19:17
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 19:12:54 - 19:18:24\nTreni coinvolti nella chius
  ura:\n  - TRENO 9559 (TORINO PORTA NUOVA -> ROMA TERMINI) [Transito]\nRita
  rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (72% tratta REGGIO EMILIA AV MEDIOPA
+ stica: Transito stimato senza fermata (77% tratta REGGIO EMILIA AV MEDIOPA
  DANA -> BOLOGNA C.LE/AV\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
@@ -757,53 +950,78 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3939--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T185230Z
-DTEND:20261122T190205Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:52 - 20:02 (primo: REG 3939)
+UID:train-9808--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T182243Z
+DTEND:20261122T182813Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:22 - 19:28 (primo: TRENO 9808) (+1
+  min)
 DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 19:52:30 - 20:02:05\nTreni coinvolti
-  nella chiusura:\n  - REG 3939 (REGGIO EMILIA -> ANCONA)\n  - TRENO 9329 (
- TORINO PORTA NUOVA -> PERUGIA) [Transito]\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
- r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
- ma di sgombero stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 19:22:43 - 19:28:13\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9808 (LECCE -> TORINO PORTA NUOVA) (+1m) [Tran
+ sito]\n  - TRENO 9808 (LECCE -> TORINO PORTA NUOVA) (+1m) [Transito]\nRita
+ rdo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
+  inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-37--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T194533Z
-DTEND:20261122T195003Z
-SUMMARY:[TRANSITO VELOCE] EC 37 (CHIASSO -> FIRENZE SANTA MARIA NOVELLA) or
- e 20:49
+UID:train-9552--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T184138Z
+DTEND:20261122T184708Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9552 (SALERNO -> TORINO PORTA NUOVA) ore 19
+ :45 (+4 min)
 DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 20:45:33 - 20:50:03\nTreni coinvolti nella chius
- ura:\n  - EC 37 (CHIASSO -> FIRENZE SANTA MARIA NOVELLA) [Transito]\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
- tica: Transito stimato senza fermata (34% tratta BOLOGNA CENTRALE -> FIREN
- ZE SANTA MARIA NOVELLA\; pedale annuncio fisso Vmax)
+ nChiusura sbarre stimata: 19:41:38 - 19:47:08\nTreni coinvolti nella chius
+ ura:\n  - TRENO 9552 (SALERNO -> TORINO PORTA NUOVA) (+4m) [Transito]\nRit
+ ardo massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Transito stimato senza fermata (36% tratta BOLOGNA C.LE/AV -> REGG
+ IO EMILIA AV MEDIOPADANA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:EC
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3939--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T185230Z
+DTEND:20261122T190936Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 19:52 - 20:09 (primo: REG 3939) (+26 
+ min)
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 19:52:30 - 20:09:36\nTreni coinvolti
+  nella chiusura:\n  - REG 3939 (REGGIO EMILIA -> ANCONA)\n  - REG 3939 (RE
+ GGIO EMILIA -> ANCONA)\n  - TRENO 9329 (TORINO PORTA NUOVA -> PERUGIA) [Tr
+ ansito]\n  - IC 1552 (ROMA TERMINI -> TRIESTE CENTRALE) (+26m) [Transito]\
+ nRitardo massimo rilevato: 26 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Chiusura continua per 4 treni: intervallo utile tra i passagg
+ i (87s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MODENA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:26
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-88291--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T195230Z
 DTEND:20261122T195700Z
 SUMMARY:[FERMATA] REG 88291 (REGGIO EMILIA -> RIMINI) ore 20:56
@@ -821,52 +1039,54 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2494--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T201430Z
+UID:train-9567--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T201254Z
 DTEND:20261122T202200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:14 - 21:22 (primo: REG 2494)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:12 - 21:22 (primo: TRENO 9567)
 DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 21:14:30 - 21:22:00\nTreni coinvolti
-  nella chiusura:\n  - REG 2494 (PESCARA -> REGGIO EMILIA)\n  - REG 17422 (
- BOLOGNA CENTRALE -> REGGIO EMILIA)\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+ A - 3 TRENI\nChiusura sbarre stimata: 21:12:54 - 21:22:00\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9567 (TORINO PORTA NUOVA -> ROMA TERMINI) [Tra
+ nsito]\n  - REG 2494 (PESCARA -> REGGIO EMILIA)\n  - REG 17422 (BOLOGNA CE
+ NTRALE -> REGGIO EMILIA)\nRitardo massimo rilevato: 0 min\nAffidabilità s
+ tima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: interv
+ allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
+ radale (120s)
+LOCATION:Passaggio a Livello / Stazione MODENA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9560--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T203738Z
+DTEND:20261122T204512Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:37 - 21:45 (primo: TRENO 9560)
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 21:37:38 - 21:45:12\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9560 (LECCE -> MILANO CENTRALE) [Transito]\n  
+ - REG 3930 (ANCONA -> REGGIO EMILIA) [Transito]\nRitardo massimo rilevato:
+  0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
+ nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MODENA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3930--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T203923Z
-DTEND:20261122T204453Z
-SUMMARY:[TRANSITO VELOCE] REG 3930 (ANCONA -> REGGIO EMILIA) ore 21:43
-DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 21:39:23 - 21:44:53\nTreni coinvolti nella chius
- ura:\n  - REG 3930 (ANCONA -> REGGIO EMILIA) [Transito]\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transi
- to stimato senza fermata (80% tratta BOLOGNA CENTRALE -> CASTELFRANCO EMIL
- IA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione MODENA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3930--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T205430Z
 DTEND:20261122T205900Z
 SUMMARY:[FERMATA] REG 3930 (ANCONA -> REGGIO EMILIA) ore 21:58
@@ -884,9 +1104,119 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-9328--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T211230Z
+DTEND:20261122T211700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:12 - 22:17 (primo: TRENO 9328)
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 22:12:30 - 22:17:00\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9328 (ROMA TERMINI -> MANTOVA)\n  - TRENO 9328
+  (ROMA TERMINI -> MANTOVA)\nRitardo massimo rilevato: 0 min\nAffidabilità
+  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
+ rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
+ stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MODENA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8830--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T212143Z
+DTEND:20261122T212713Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8830 (BARI CENTRALE -> MILANO CENTRALE) ore
+  22:25
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 22:21:43 - 22:27:13\nTreni coinvolti nella chius
+ ura:\n  - TRENO 8830 (BARI CENTRALE -> MILANO CENTRALE) [Transito]\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Transito stimato senza fermata (44% tratta BOLOGNA CENTRALE -> REGGIO
+  EMILIA AV MEDIOPADANA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MODENA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-1588--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T221448Z
+DTEND:20261122T221918Z
+SUMMARY:[TRANSITO VELOCE] IC 1588 (REGGIO DI CALABRIA CENTRALE -> MILANO CE
+ NTRALE) ore 23:18 (+121 min)
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 23:14:48 - 23:19:18\nTreni coinvolti nella chius
+ ura:\n  - IC 1588 (REGGIO DI CALABRIA CENTRALE -> MILANO CENTRALE) (+121m)
+  [Transito]\nRitardo massimo rilevato: 121 min\nAffidabilità stima: 78%\n
+ Nota normativa/euristica: Transito stimato senza fermata (76% tratta PRATO
+  CENTRALE -> BOLOGNA CENTRALE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MODENA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:121
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-770--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261123T000226Z
+DTEND:20261123T000656Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 01:02 - 01:06 (primo: ICN 770)
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 01:02:26 - 01:06:56\nTreni coinvolti
+  nella chiusura:\n  - ICN 770 (TRIESTE CENTRALE -> ROMA TERMINI) [Transito
+ ]\n  - ICN 770 (TRIESTE CENTRALE -> ROMA TERMINI) [Transito]\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
+ hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
+ re alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MODENA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:ICN
+END:VEVENT
+BEGIN:VEVENT
+UID:train-774--20261121-S05032@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261123T023919Z
+DTEND:20261123T024349Z
+SUMMARY:[TRANSITO VELOCE] ICN 774 (ROMA TERMINI -> TRIESTE CENTRALE) ore 03
+ :42
+DESCRIPTION:Stazione/PL: MODENA (S05032)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 03:39:19 - 03:43:49\nTreni coinvolti nella chius
+ ura:\n  - ICN 774 (ROMA TERMINI -> TRIESTE CENTRALE) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (74% tratta FIRENZE CAMPO MARTE -> BOLOGN
+ A CENTRALE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MODENA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:ICN
+END:VEVENT
+BEGIN:VEVENT
 UID:train-1962--20261121-S05032@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261123T063715Z
 DTEND:20261123T064200Z
 SUMMARY:[FERMATA] ICN 1962 (CATANIA CENTRALE -> MILANO CENTRALE) ore 07:41

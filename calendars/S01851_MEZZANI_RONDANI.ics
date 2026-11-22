@@ -9,12 +9,33 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:eb608be36396b2184309a53627033b9d00305aa6f10dffd42e2d057b9878
- 070b
+X-CONTENT-HASH:d847e3b5851bee39b6bf78c29755fdc559de1e2b9b6f31d09046e94c835e
+ 3c34
 BEGIN:VEVENT
 UID:train-10818--20261121-S01851@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T072145Z
+DTEND:20261122T072715Z
+SUMMARY:[TRANSITO VELOCE] REG 10818 (PARMA -> BRESCIA) ore 08:26
+DESCRIPTION:Stazione/PL: MEZZANI RONDANI (S01851)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 08:21:45 - 08:27:15\nTreni coinvolti ne
+ lla chiusura:\n  - REG 10818 (PARMA -> BRESCIA) [Transito]\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
+ nsito stimato senza fermata (83% tratta TORRILE S.POLO -> COLORNO\; pedale
+  annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MEZZANI RONDANI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10818--20261121-S01851@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T073000Z
 DTEND:20261122T073430Z
 SUMMARY:[FERMATA] REG 10818 (PARMA -> BRESCIA) ore 08:33
@@ -32,21 +53,90 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-10844--20261121-S01851@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T203000Z
-DTEND:20261122T203430Z
-SUMMARY:[FERMATA] REG 10844 (PARMA -> PIADENA) ore 21:33
-DESCRIPTION:Stazione/PL: MEZZANI RONDANI (S01851)\nRegime chiusura: FERMATA
- \nChiusura sbarre stimata: 21:30:00 - 21:34:30\nTreni coinvolti nella chiu
- sura:\n  - REG 10844 (PARMA -> PIADENA)\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia 
- oraria regolare
+UID:train-10831--20261121-S01851@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T152000Z
+DTEND:20261122T152430Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:20 - 16:24 (primo: REG 10831) (+4 
+ min)
+DESCRIPTION:Stazione/PL: MEZZANI RONDANI (S01851)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:20:00 - 16:24:30\nTreni 
+ coinvolti nella chiusura:\n  - REG 10831 (BRESCIA -> PARMA) (+4m)\n  - REG
+  10831 (BRESCIA -> PARMA) (+4m)\nRitardo massimo rilevato: 4 min\nAffidabi
+ lità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni:
+  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MEZZANI RONDANI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10836--20261121-S01851@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T164115Z
+DTEND:20261122T164645Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:41 - 17:46 (primo: REG 10836)
+DESCRIPTION:Stazione/PL: MEZZANI RONDANI (S01851)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:41:15 - 17:46:45\nTreni 
+ coinvolti nella chiusura:\n  - REG 10836 (PARMA -> BRESCIA) [Transito]\n  
+ - REG 10836 (PARMA -> BRESCIA) [Transito]\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
+ r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MEZZANI RONDANI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10844--20261121-S01851@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T202145Z
+DTEND:20261122T202715Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:21 - 21:27 (primo: REG 10844)
+DESCRIPTION:Stazione/PL: MEZZANI RONDANI (S01851)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:21:45 - 21:27:15\nTreni 
+ coinvolti nella chiusura:\n  - REG 10844 (PARMA -> PIADENA) [Transito]\n  
+ - REG 10844 (PARMA -> PIADENA) [Transito]\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
+ r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MEZZANI RONDANI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10844--20261121-S01851@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T203000Z
+DTEND:20261122T203430Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:30 - 21:34 (primo: REG 10844)
+DESCRIPTION:Stazione/PL: MEZZANI RONDANI (S01851)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:30:00 - 21:34:30\nTreni 
+ coinvolti nella chiusura:\n  - REG 10844 (PARMA -> PIADENA)\n  - REG 10844
+  (PARMA -> PIADENA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
+  90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
+ utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
+ e (120s)
+LOCATION:Passaggio a Livello / Stazione MEZZANI RONDANI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:852bc7e26711ae6790c29ecbe95975f5648fe779d0b0132bfdacf200f37c
- 8fcb
+X-CONTENT-HASH:f94d4c96f908c23ca7b4aad5efebff3333a94ee33f7229295040f1697275
+ e9c8
 BEGIN:VEVENT
 UID:train-23363--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T051904Z
 DTEND:20261122T052434Z
 SUMMARY:[TRANSITO VELOCE] REG 23363 (ROMA TERMINI -> BOIANO) ore 06:23
@@ -34,8 +34,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-701--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T055415Z
 DTEND:20261122T055900Z
 SUMMARY:[FERMATA] IC 701 (ROMA TERMINI -> TARANTO) ore 06:58
@@ -54,13 +54,13 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12727--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T060222Z
-DTEND:20261122T060930Z
+DTEND:20261122T060922Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:02 - 07:09 (primo: REG 12727)
 DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 07:02:22 - 07:09:30\nTreni coinvolti
+ A - 2 TRENI\nChiusura sbarre stimata: 07:02:22 - 07:09:22\nTreni coinvolti
   nella chiusura:\n  - REG 12727 (ROMA TERMINI -> MINTURNO-SCAURI) [Transit
  o]\n  - TRENO 9304 (NAPOLI CENTRALE -> TORINO PORTA NUOVA) [Transito]\nRit
  ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
@@ -76,8 +76,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12727--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T061330Z
 DTEND:20261122T061800Z
 SUMMARY:[FERMATA] REG 12727 (ROMA TERMINI -> MINTURNO-SCAURI) ore 07:17
@@ -96,8 +96,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-703--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T063442Z
 DTEND:20261122T063912Z
 SUMMARY:[TRANSITO VELOCE] IC 703 (ROMA TERMINI -> BARI CENTRALE) ore 07:38
@@ -116,31 +116,34 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-21059--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T070322Z
+UID:train-8333--20261121-S08608@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T065614Z
 DTEND:20261122T070852Z
-SUMMARY:[TRANSITO VELOCE] REG 21059 (ROMA TERMINI -> NAPOLI CENTRALE) ore 0
- 8:07
-DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 08:03:22 - 08:08:52\nTreni coinvolti nella chius
- ura:\n  - REG 21059 (ROMA TERMINI -> NAPOLI CENTRALE) [Transito]\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Transito stimato senza fermata (86% tratta CAMPOLEONE -> CISTERNA DI LA
- TINA\; pedale annuncio fisso Vmax)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:56 - 08:08 (primo: TRENO 8333) (+2
+ 3 min)
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 3 TRENI\nChiusura sbarre stimata: 07:56:14 - 08:08:52\nTreni coinvolti
+  nella chiusura:\n  - TRENO 8333 (ROMA TERMINI -> REGGIO DI CALABRIA CENTR
+ ALE) (+23m) [Transito]\n  - TRENO 8333 (ROMA TERMINI -> REGGIO DI CALABRIA
+  CENTRALE) (+23m) [Transito]\n  - REG 21059 (ROMA TERMINI -> NAPOLI CENTRA
+ LE) [Transito]\nRitardo massimo rilevato: 23 min\nAffidabilità stima: 78%
+ \nNota normativa/euristica: Chiusura continua per 3 treni: intervallo util
+ e tra i passaggi (98s) inferiore alla soglia minima di sgombero stradale (
+ 120s)
 LOCATION:Passaggio a Livello / Stazione LATINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:23
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21059--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T071430Z
 DTEND:20261122T071900Z
 SUMMARY:[FERMATA] REG 21059 (ROMA TERMINI -> NAPOLI CENTRALE) ore 08:18
@@ -159,37 +162,284 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4507--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T073544Z
-DTEND:20261122T074114Z
-SUMMARY:[TRANSITO VELOCE] REG 4507 (GROSSETO -> ROMA TERMINI) ore 08:39
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T073656Z
+DTEND:20261122T074226Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:36 - 08:42 (primo: REG 4507)
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 08:36:56 - 08:42:26\nTreni coinvolti
+  nella chiusura:\n  - REG 4507 (GROSSETO -> ROMA TERMINI) [Transito]\n  - 
+ REG 4507 (GROSSETO -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato: 
+ -1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
+ nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LATINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-510--20261121-S08608@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T075415Z
+DTEND:20261122T080230Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:54 - 09:02 (primo: IC 510) (+2 min
+ )
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 08:54:15 - 09:02:30\nTreni coinvolti
+  nella chiusura:\n  - IC 510 (SALERNO -> TORINO PORTA NUOVA) (+2m) [Arrivo
+ ]\n  - IC 510 (SALERNO -> TORINO PORTA NUOVA) (+2m) [Arrivo]\n  - IC 510 (
+ SALERNO -> TORINO PORTA NUOVA) (+2m) [Partenza]\n  - IC 510 (SALERNO -> TO
+ RINO PORTA NUOVA) (+2m) [Partenza]\nRitardo massimo rilevato: 2 min\nAffid
+ abilità stima: 99%\nNota normativa/euristica: Chiusura continua per 4 tre
+ ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
+ gombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LATINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8863--20261121-S08608@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T082135Z
+DTEND:20261122T082705Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:21 - 09:27 (primo: TRENO 8863) (+1
+ 9 min)
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 09:21:35 - 09:27:05\nTreni coinvolti
+  nella chiusura:\n  - TRENO 8863 (ROMA TERMINI -> REGGIO DI CALABRIA CENTR
+ ALE) (+19m) [Transito]\n  - TRENO 8863 (ROMA TERMINI -> REGGIO DI CALABRIA
+  CENTRALE) (+19m) [Transito]\nRitardo massimo rilevato: 19 min\nAffidabili
+ tà stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: i
+ ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LATINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:19
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4125--20261121-S08608@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T083426Z
+DTEND:20261122T084504Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 09:34 - 09:45 (primo: REG 4125)
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 3 TRENI\nChiusura sbarre stimata: 09:34:26 - 09:45:04\nTreni coinvolti
+  nella chiusura:\n  - REG 4125 (PISA CENTRALE -> ROMA TERMINI) [Transito]\
+ n  - TRENO 9505 (MILANO CENTRALE -> SALERNO) [Transito]\n  - TRENO 9505 (M
+ ILANO CENTRALE -> SALERNO) [Transito]\nRitardo massimo rilevato: 0 min\nAf
+ fidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 
+ treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
+ i sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LATINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9511--20261121-S08608@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T090832Z
+DTEND:20261122T091402Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:08 - 10:14 (primo: TRENO 9511)
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 10:08:32 - 10:14:02\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) [Transito]\n  
+ - TRENO 9511 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massimo rileva
+ to: -3 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
+ ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LATINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8335--20261121-S08608@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T092816Z
+DTEND:20261122T093346Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8335 (ROMA TERMINI -> NAPOLI CENTRALE) ore 
+ 10:32
 DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 08:35:44 - 08:41:14\nTreni coinvolti nella chius
- ura:\n  - REG 4507 (GROSSETO -> ROMA TERMINI) [Transito]\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
- ito stimato senza fermata (50% tratta ROMA OSTIENSE -> ROMA TUSCOLANA\; pe
- dale annuncio fisso Vmax)
+ nChiusura sbarre stimata: 10:28:16 - 10:33:46\nTreni coinvolti nella chius
+ ura:\n  - TRENO 8335 (ROMA TERMINI -> NAPOLI CENTRALE) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (22% tratta ROMA TERMINI -> NAPOLI AFRA
+ GOLA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LATINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9607--20261121-S08608@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T094305Z
+DTEND:20261122T094835Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:43 - 10:48 (primo: TRENO 9607) (+1
+  min)
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 10:43:05 - 10:48:35\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9607 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) (
+ +1m) [Transito]\n  - TRENO 9607 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) (+
+ 1m) [Transito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\
+ nNota normativa/euristica: Chiusura continua per 2 treni: intervallo utile
+  tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (12
+ 0s)
+LOCATION:Passaggio a Livello / Stazione LATINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-590--20261121-S08608@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T095615Z
+DTEND:20261122T100800Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:56 - 11:08 (primo: IC 590) (+2 min
+ )
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 10:56:15 - 11:08:00\nTreni coinvolti
+  nella chiusura:\n  - IC 590 (SALERNO -> MILANO CENTRALE)\n  - REG 21063 (
+ ROMA TERMINI -> NAPOLI CENTRALE) [Transito]\n  - TRENO 9604 (BRESCIA -> NA
+ POLI CENTRALE) (+2m) [Transito]\n  - TRENO 9604 (BRESCIA -> NAPOLI CENTRAL
+ E) (+2m) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima:
+  78%\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo 
+ utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
+ e (120s)
+LOCATION:Passaggio a Livello / Stazione LATINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21063--20261121-S08608@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T101230Z
+DTEND:20261122T101730Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:12 - 11:17 (primo: REG 21063) (+14
+  min)
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 3 TRENI\nChiusura sbarre stimata: 11:12:30 - 11:17:30\nTreni coinvolti
+  nella chiusura:\n  - REG 21063 (ROMA TERMINI -> NAPOLI CENTRALE)\n  - IC 
+ 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) (+14m)\n  - IC 501 (SESTRI LEVANTE
+  -> NAPOLI CENTRALE) (+14m)\nRitardo massimo rilevato: 14 min\nAffidabilit
+ à stima: 90%\nNota normativa/euristica: Chiusura continua per 3 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LATINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:14
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-510--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T075415Z
-DTEND:20261122T075900Z
-SUMMARY:[FERMATA] IC 510 (SALERNO -> TORINO PORTA NUOVA) ore 08:58
+UID:train-4127--20261121-S08608@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T103711Z
+DTEND:20261122T104449Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:37 - 11:44 (primo: REG 4127)
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 11:37:11 - 11:44:49\nTreni coinvolti
+  nella chiusura:\n  - REG 4127 (PISA CENTRALE -> ROMA TERMINI) [Transito]\
+ n  - REG 4127 (PISA CENTRALE -> ROMA TERMINI) [Transito]\n  - TRENO 9611 (
+ TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\n  - TRENO 9611 (TORINO 
+ PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
+ er 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
+ ima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LATINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-95057--20261121-S08608@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T105115Z
+DTEND:20261122T112000Z
+SUMMARY:[CHIUSURA CONTINUA - 12 TRENI] 11:51 - 12:20 (primo: IC 95057) (+58
+  min)
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 12 TRENI\nChiusura sbarre stimata: 11:51:15 - 12:20:00\nTreni coinvolt
+ i nella chiusura:\n  - IC 95057 (ROMA TERMINI -> VILLA S.GIOVANNI) [Arrivo
+ ]\n  - IC 95057 (ROMA TERMINI -> VILLA S.GIOVANNI) [Arrivo]\n  - TRENO 961
+ 3 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\n  - IC 95057 (ROMA TERM
+ INI -> VILLA S.GIOVANNI) [Partenza]\n  - IC 95057 (ROMA TERMINI -> VILLA S
+ .GIOVANNI) [Partenza]\n  - TRENO 8605 (GENOVA PIAZZA PRINCIPE -> ROMA TERM
+ INI) (+10m) [Transito]\n  - REG 21065 (ROMA TERMINI -> NAPOLI CENTRALE) [T
+ ransito]\n  - TRENO 9515 (MILANO CENTRALE -> SALERNO) (+58m) [Transito]\n 
+  - TRENO 9515 (MILANO CENTRALE -> SALERNO) (+58m) [Transito]\n  - REG 2106
+ 5 (ROMA TERMINI -> NAPOLI CENTRALE)\n  - TRENO 9519 (TORINO PORTA NUOVA ->
+  SALERNO) (+5m) [Transito]\n  - TRENO 9519 (TORINO PORTA NUOVA -> SALERNO)
+  (+5m) [Transito]\nRitardo massimo rilevato: 58 min\nAffidabilità stima: 
+ 78%\nNota normativa/euristica: Chiusura continua per 12 treni: intervallo 
+ utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
+ e (120s)
+LOCATION:Passaggio a Livello / Stazione LATINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 12 TRENI,FERROVIA
+X-PL-DELAY-MIN:58
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-550--20261121-S08608@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T115415Z
+DTEND:20261122T115900Z
+SUMMARY:[FERMATA] IC 550 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI) ore 
+ 12:58
 DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 08:54:15 - 08:59:00\nTreni coinvolti nella chiusura:\n  
- - IC 510 (SALERNO -> TORINO PORTA NUOVA)\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia
-  oraria regolare
+ a sbarre stimata: 12:54:15 - 12:59:00\nTreni coinvolti nella chiusura:\n  
+ - IC 550 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione LATINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -199,86 +449,22 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9505--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T082038Z
-DTEND:20261122T082608Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9505 (MILANO CENTRALE -> SALERNO) ore 09:24
-DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 09:20:38 - 09:26:08\nTreni coinvolti nella chius
- ura:\n  - TRENO 9505 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (25% tratta ROMA TERMINI -> NAPOLI CENTRALE\
- ; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione LATINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4125--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T083314Z
-DTEND:20261122T083844Z
-SUMMARY:[TRANSITO VELOCE] REG 4125 (PISA CENTRALE -> ROMA TERMINI) ore 09:3
- 7
-DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 09:33:14 - 09:38:44\nTreni coinvolti nella chius
- ura:\n  - REG 4125 (PISA CENTRALE -> ROMA TERMINI) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Transito stimato senza fermata (50% tratta ROMA OSTIENSE -> ROMA TUSCOLANA
- \; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione LATINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8335--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T092742Z
-DTEND:20261122T093353Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:27 - 10:33 (primo: TRENO 8335)
+UID:train-9391--20261121-S08608@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T120322Z
+DTEND:20261122T121439Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 13:03 - 13:14 (primo: TRENO 9391)
 DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 10:27:42 - 10:33:53\nTreni coinvolti
-  nella chiusura:\n  - TRENO 8335 (ROMA TERMINI -> NAPOLI CENTRALE) [Transi
- to]\n  - TRENO 9607 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
- s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione LATINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9604--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T095050Z
-DTEND:20261122T100652Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 10:50 - 11:06 (primo: TRENO 9604)
-DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
- A - 5 TRENI\nChiusura sbarre stimata: 10:50:50 - 11:06:52\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9604 (BRESCIA -> NAPOLI CENTRALE) [Transito]\n
-   - IC 590 (SALERNO -> MILANO CENTRALE)\n  - IC 501 (SESTRI LEVANTE -> NAP
- OLI CENTRALE)\n  - TRENO 9515 (MILANO CENTRALE -> SALERNO) [Transito]\n  -
-  REG 21063 (ROMA TERMINI -> NAPOLI CENTRALE) [Transito]\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
- ra continua per 5 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+ A - 5 TRENI\nChiusura sbarre stimata: 13:03:22 - 13:14:39\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9391 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [
+ Transito]\n  - TRENO 9391 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transit
+ o]\n  - TRENO 9409 (GORIZIA CENTRALE -> NAPOLI CENTRALE) [Transito]\n  - T
+ RENO 9409 (GORIZIA CENTRALE -> NAPOLI CENTRALE) [Transito]\n  - REG 21070 
+ (NAPOLI CENTRALE -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua
+  per 5 treni: intervallo utile tra i passaggi (13s) inferiore alla soglia 
+ minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LATINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -288,159 +474,9 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-21063--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T101230Z
-DTEND:20261122T101700Z
-SUMMARY:[FERMATA] REG 21063 (ROMA TERMINI -> NAPOLI CENTRALE) ore 11:16
-DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 11:12:30 - 11:17:00\nTreni coinvolti nella chiusura:\n  
- - REG 21063 (ROMA TERMINI -> NAPOLI CENTRALE)\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tr
- accia oraria regolare
-LOCATION:Passaggio a Livello / Stazione LATINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9611--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T102623Z
-DTEND:20261122T103153Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9611 (TORINO PORTA NUOVA -> NAPOLI CENTRALE
- ) ore 11:30
-DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 11:26:23 - 11:31:53\nTreni coinvolti nella chius
- ura:\n  - TRENO 9611 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\nR
- itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Transito stimato senza fermata (25% tratta ROMA TERMINI -> NAPOL
- I CENTRALE\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione LATINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9613--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T105129Z
-DTEND:20261122T105659Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9613 (MILANO CENTRALE -> NAPOLI CENTRALE) o
- re 11:55
-DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 11:51:29 - 11:56:59\nTreni coinvolti nella chius
- ura:\n  - TRENO 9613 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (21% tratta ROMA TERMINI -> NAPOLI A
- FRAGOLA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione LATINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9519--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T105916Z
-DTEND:20261122T110652Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:59 - 12:06 (primo: TRENO 9519)
-DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 11:59:16 - 12:06:52\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9519 (TORINO PORTA NUOVA -> SALERNO) [Transito
- ]\n  - REG 21065 (ROMA TERMINI -> NAPOLI CENTRALE) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione LATINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-21065--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T111230Z
-DTEND:20261122T111700Z
-SUMMARY:[FERMATA] REG 21065 (ROMA TERMINI -> NAPOLI CENTRALE) ore 12:16
-DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 12:12:30 - 12:17:00\nTreni coinvolti nella chiusura:\n  
- - REG 21065 (ROMA TERMINI -> NAPOLI CENTRALE)\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tr
- accia oraria regolare
-LOCATION:Passaggio a Livello / Stazione LATINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9409--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T114507Z
-DTEND:20261122T115037Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9409 (GORIZIA CENTRALE -> NAPOLI CENTRALE) 
- ore 12:49
-DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 12:45:07 - 12:50:37\nTreni coinvolti nella chius
- ura:\n  - TRENO 9409 (GORIZIA CENTRALE -> NAPOLI CENTRALE) [Transito]\nRit
- ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Transito stimato senza fermata (25% tratta ROMA TERMINI -> NAPOLI 
- CENTRALE\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione LATINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-550--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T115415Z
-DTEND:20261122T120546Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:54 - 13:05 (primo: IC 550)
-DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 12:54:15 - 13:05:46\nTreni coinvolti
-  nella chiusura:\n  - IC 550 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI)
- \n  - REG 21070 (NAPOLI CENTRALE -> ROMA TERMINI) [Transito]\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
- hiusura continua per 2 treni: intervallo utile tra i passaggi (76s) inferi
- ore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione LATINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
 UID:train-21070--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T123230Z
 DTEND:20261122T123700Z
 SUMMARY:[FERMATA] REG 21070 (NAPOLI CENTRALE -> ROMA TERMINI) ore 13:36
@@ -459,17 +495,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9311--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T124620Z
-DTEND:20261122T125150Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T124704Z
+DTEND:20261122T125234Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9311 (TORINO PORTA NUOVA -> NAPOLI CENTRALE
- ) ore 13:50
+ ) ore 13:51
 DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 13:46:20 - 13:51:50\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 13:47:04 - 13:52:34\nTreni coinvolti nella chius
  ura:\n  - TRENO 9311 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\nR
  itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Transito stimato senza fermata (21% tratta ROMA TERMINI -> NAPOL
+ uristica: Transito stimato senza fermata (22% tratta ROMA TERMINI -> NAPOL
  I AFRAGOLA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LATINA
 STATUS:CONFIRMED
@@ -481,16 +517,16 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9527--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T125903Z
-DTEND:20261122T130433Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T125944Z
+DTEND:20261122T130514Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9527 (MILANO CENTRALE -> SALERNO) ore 14:03
 DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 13:59:03 - 14:04:33\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 13:59:44 - 14:05:14\nTreni coinvolti nella chius
  ura:\n  - TRENO 9527 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo mass
  imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (21% tratta ROMA TERMINI -> NAPOLI AFRAGOLA\
+ ransito stimato senza fermata (22% tratta ROMA TERMINI -> NAPOLI AFRAGOLA\
  ; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LATINA
 STATUS:CONFIRMED
@@ -502,17 +538,17 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9623--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T132054Z
-DTEND:20261122T132624Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T132137Z
+DTEND:20261122T132707Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9623 (MILANO CENTRALE -> REGGIO DI CALABRIA
   CENTRALE) ore 14:25
 DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 14:20:54 - 14:26:24\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 14:21:37 - 14:27:07\nTreni coinvolti nella chius
  ura:\n  - TRENO 9623 (MILANO CENTRALE -> REGGIO DI CALABRIA CENTRALE) [Tra
  nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Transito stimato senza fermata (21% tratta ROMA TERMINI
+ rmativa/euristica: Transito stimato senza fermata (22% tratta ROMA TERMINI
   -> NAPOLI AFRAGOLA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LATINA
 STATUS:CONFIRMED
@@ -524,128 +560,189 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-596--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T133215Z
-DTEND:20261122T133700Z
-SUMMARY:[FERMATA] IC 596 (NAPOLI CENTRALE -> MILANO CENTRALE) ore 14:36
-DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 14:32:15 - 14:37:00\nTreni coinvolti nella chiusura:\n  
- - IC 596 (NAPOLI CENTRALE -> MILANO CENTRALE)\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tr
- accia oraria regolare
-LOCATION:Passaggio a Livello / Stazione LATINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-552--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T135215Z
-DTEND:20261122T140400Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 14:52 - 15:04 (primo: IC 552)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T133815Z
+DTEND:20261122T134530Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:38 - 14:45 (primo: IC 596) (+7 min
+ )
 DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 14:52:15 - 15:04:00\nTreni coinvolti
-  nella chiusura:\n  - IC 552 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI)
- \n  - IC 555 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE)\n  - IC 583 (MI
- LANO CENTRALE -> NAPOLI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffida
- bilità stima: 90%\nNota normativa/euristica: Chiusura continua per 3 tren
- i: intervallo utile tra i passaggi (15s) inferiore alla soglia minima di s
- gombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione LATINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9535--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:0
-DTSTART:20261122T150033Z
-DTEND:20261122T150747Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:00 - 16:07 (primo: TRENO 9535)
-DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 16:00:33 - 16:07:47\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9535 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [
- Transito]\n  - TRENO 8317 (ROMA TERMINI -> LECCE) [Transito]\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
- hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 14:38:15 - 14:45:30\nTreni coinvolti
+  nella chiusura:\n  - IC 596 (NAPOLI CENTRALE -> MILANO CENTRALE) (+7m)\n 
+  - IC 596 (NAPOLI CENTRALE -> MILANO CENTRALE) (+7m)\nRitardo massimo rile
+ vato: 7 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura 
+ continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LATINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-552--20261121-S08608@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T134845Z
+DTEND:20261122T140400Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 14:48 - 15:04 (primo: IC 552) (+1 min
+ )
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 6 TRENI\nChiusura sbarre stimata: 14:48:45 - 15:04:00\nTreni coinvolti
+  nella chiusura:\n  - IC 552 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI)
+  (+1m) [Arrivo]\n  - IC 552 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI) 
+ (+1m) [Arrivo]\n  - IC 552 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI) (
+ +1m) [Partenza]\n  - IC 552 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI) 
+ (+1m) [Partenza]\n  - IC 555 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE)
+ \n  - IC 583 (MILANO CENTRALE -> NAPOLI CENTRALE)\nRitardo massimo rilevat
+ o: 1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
+ tinua per 6 treni: intervallo utile tra i passaggi (15s) inferiore alla so
+ glia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LATINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9413--20261121-S08608@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T141827Z
+DTEND:20261122T142357Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:18 - 15:23 (primo: TRENO 9413) (+2
+ 7 min)
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 15:18:27 - 15:23:57\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9413 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) (+27
+ m) [Transito]\n  - TRENO 9413 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) (+27m) 
+ [Transito]\nRitardo massimo rilevato: 27 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
+ a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LATINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:27
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
+UID:train-518--20261121-S08608@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T150030Z
+DTEND:20261122T151043Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:00 - 16:10 (primo: IC 518) (+6 min
+ )
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 16:00:30 - 16:10:43\nTreni coinvolti
+  nella chiusura:\n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA) (+6m) [Transito
+ ]\n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA) (+6m) [Transito]\n  - TRENO 95
+ 35 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\n  - TRENO 8317 (ROM
+ A TERMINI -> LECCE) [Transito]\nRitardo massimo rilevato: 6 min\nAffidabil
+ ità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: 
+ intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
+ ero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LATINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
 UID:train-9631--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T153009Z
-DTEND:20261122T153539Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9631 (MILANO CENTRALE -> NAPOLI CENTRALE) o
- re 16:34
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T153129Z
+DTEND:20261122T153659Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:31 - 16:36 (primo: TRENO 9631) (+1
+  min)
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 16:31:29 - 16:36:59\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9631 (MILANO CENTRALE -> NAPOLI CENTRALE) (+1m
+ ) [Transito]\n  - TRENO 9631 (MILANO CENTRALE -> NAPOLI CENTRALE) (+1m) [T
+ ransito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i
+  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LATINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8419--20261121-S08608@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T154151Z
+DTEND:20261122T155900Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 16:41 - 16:59 (primo: TRENO 8419) (+6
+  min)
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 6 TRENI\nChiusura sbarre stimata: 16:41:51 - 16:59:00\nTreni coinvolti
+  nella chiusura:\n  - TRENO 8419 (VENEZIA S.LUCIA -> REGGIO DI CALABRIA CE
+ NTRALE) (+6m) [Transito]\n  - TRENO 8419 (VENEZIA S.LUCIA -> REGGIO DI CAL
+ ABRIA CENTRALE) (+6m) [Transito]\n  - TRENO 9539 (MILANO CENTRALE -> NAPOL
+ I CENTRALE) [Transito]\n  - TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE
+ ) [Transito]\n  - IC 561 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE)\n  
+ - IC 561 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE)\nRitardo massimo ri
+ levato: 6 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
+ a continua per 6 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LATINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21081--20261121-S08608@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T160122Z
+DTEND:20261122T160652Z
+SUMMARY:[TRANSITO VELOCE] REG 21081 (ROMA TERMINI -> NAPOLI CENTRALE) ore 1
+ 7:05
 DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 16:30:09 - 16:35:39\nTreni coinvolti nella chius
- ura:\n  - TRENO 9631 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (25% tratta ROMA TERMINI -> NAPOLI C
- ENTRALE\; pedale annuncio fisso Vmax)
+ nChiusura sbarre stimata: 17:01:22 - 17:06:52\nTreni coinvolti nella chius
+ ura:\n  - REG 21081 (ROMA TERMINI -> NAPOLI CENTRALE) [Transito]\nRitardo 
+ massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Transito stimato senza fermata (86% tratta CAMPOLEONE -> CISTERNA DI LA
+ TINA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LATINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9539--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T155254Z
-DTEND:20261122T155900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:52 - 16:59 (primo: TRENO 9539)
-DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 16:52:54 - 16:59:00\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE) [Tra
- nsito]\n  - IC 556 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI)\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione LATINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21081--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T160122Z
-DTEND:20261122T162351Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:01 - 17:23 (primo: REG 21081)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T161230Z
+DTEND:20261122T162426Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:12 - 17:24 (primo: REG 21081)
 DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
- A - 4 TRENI\nChiusura sbarre stimata: 17:01:22 - 17:23:51\nTreni coinvolti
-  nella chiusura:\n  - REG 21081 (ROMA TERMINI -> NAPOLI CENTRALE) [Transit
- o]\n  - REG 21092 (NAPOLI CENTRALE -> ROMA TERMINI) [Transito]\n  - REG 21
- 081 (ROMA TERMINI -> NAPOLI CENTRALE)\n  - TRENO 8343 (ROMA TERMINI -> NAP
- OLI CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità s
- tima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: interv
- allo utile tra i passaggi (81s) inferiore alla soglia minima di sgombero s
+ A - 4 TRENI\nChiusura sbarre stimata: 17:12:30 - 17:24:26\nTreni coinvolti
+  nella chiusura:\n  - REG 21081 (ROMA TERMINI -> NAPOLI CENTRALE)\n  - REG
+  21092 (NAPOLI CENTRALE -> ROMA TERMINI) [Transito]\n  - TRENO 8343 (ROMA 
+ TERMINI -> NAPOLI CENTRALE) [Transito]\n  - TRENO 8343 (ROMA TERMINI -> NA
+ POLI CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità 
+ stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: inter
+ vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
  tradale (120s)
 LOCATION:Passaggio a Livello / Stazione LATINA
 STATUS:CONFIRMED
@@ -656,106 +753,159 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-21092--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T163630Z
-DTEND:20261122T164608Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:36 - 17:46 (primo: REG 21092)
+UID:train-556--20261121-S08608@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T163115Z
+DTEND:20261122T164630Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:31 - 17:46 (primo: IC 556) (+37 mi
+ n)
 DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 17:36:30 - 17:46:08\nTreni coinvolti
-  nella chiusura:\n  - REG 21092 (NAPOLI CENTRALE -> ROMA TERMINI)\n  - TRE
- NO 9421 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Transito]\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
+ A - 4 TRENI\nChiusura sbarre stimata: 17:31:15 - 17:46:30\nTreni coinvolti
+  nella chiusura:\n  - IC 556 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI)
+  (+37m)\n  - IC 556 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI) (+37m)\n
+   - REG 21092 (NAPOLI CENTRALE -> ROMA TERMINI)\n  - TRENO 9421 (VENEZIA S
+ .LUCIA -> NAPOLI CENTRALE) [Transito]\nRitardo massimo rilevato: 37 min\nA
+ ffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LATINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:37
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9639--20261121-S08608@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T164911Z
+DTEND:20261122T165700Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:49 - 17:57 (primo: TRENO 9639) (+1
+ 21 min)
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 17:49:11 - 17:57:00\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9639 (MILANO CENTRALE -> REGGIO DI CALABRIA CE
+ NTRALE) [Transito]\n  - TRENO 9639 (MILANO CENTRALE -> REGGIO DI CALABRIA 
+ CENTRALE) [Transito]\n  - IC 1588 (REGGIO DI CALABRIA CENTRALE -> MILANO C
+ ENTRALE) (+121m)\n  - IC 1588 (REGGIO DI CALABRIA CENTRALE -> MILANO CENTR
+ ALE) (+121m)\nRitardo massimo rilevato: 121 min\nAffidabilità stima: 78%\
+ nNota normativa/euristica: Chiusura continua per 4 treni: intervallo utile
+  tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (12
+ 0s)
+LOCATION:Passaggio a Livello / Stazione LATINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:121
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9543--20261121-S08608@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T165944Z
+DTEND:20261122T170514Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9543 (TORINO PORTA NUOVA -> SALERNO) ore 18
+ :03
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 17:59:44 - 18:05:14\nTreni coinvolti nella chius
+ ura:\n  - TRENO 9543 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (22% tratta ROMA TERMINI -> NAPOLI AFRAGO
+ LA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione LATINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-95072--20261121-S08608@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T172315Z
+DTEND:20261122T172800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:23 - 18:28 (primo: IC 95072) (+29 
+ min)
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 18:23:15 - 18:28:00\nTreni coinvolti
+  nella chiusura:\n  - IC 95072 (MESSINA CENTRALE -> ROMA TERMINI) (+29m)\n
+   - IC 95072 (MESSINA CENTRALE -> ROMA TERMINI) (+29m)\nRitardo massimo ri
+ levato: 29 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
  ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
  la soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LATINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9639--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T165029Z
-DTEND:20261122T170433Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:50 - 18:04 (primo: TRENO 9639)
-DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 17:50:29 - 18:04:33\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9639 (MILANO CENTRALE -> REGGIO DI CALABRIA CE
- NTRALE) [Transito]\n  - IC 95072 (MESSINA CENTRALE -> ROMA TERMINI)\n  - T
- RENO 9543 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
- continua per 3 treni: intervallo utile tra i passaggi (3s) inferiore alla 
- soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione LATINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-DELAY-MIN:29
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9425--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T174123Z
-DTEND:20261122T174653Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9425 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) o
- re 18:45
-DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 18:41:23 - 18:46:53\nTreni coinvolti nella chius
- ura:\n  - TRENO 9425 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (25% tratta ROMA TERMINI -> NAPOLI C
- ENTRALE\; pedale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T174445Z
+DTEND:20261122T175015Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:44 - 18:50 (primo: TRENO 9425) (+3
+  min)
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 18:44:45 - 18:50:15\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9425 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) (+3m
+ ) [Transito]\n  - TRENO 9425 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) (+3m) [T
+ ransito]\nRitardo massimo rilevato: 3 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i
+  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LATINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9643--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T175016Z
-DTEND:20261122T175546Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9643 (MILANO CENTRALE -> NAPOLI CENTRALE) o
- re 18:54
-DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 18:50:16 - 18:55:46\nTreni coinvolti nella chius
- ura:\n  - TRENO 9643 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (21% tratta ROMA TERMINI -> NAPOLI A
- FRAGOLA\; pedale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T175257Z
+DTEND:20261122T175827Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:52 - 18:58 (primo: TRENO 9643) (+2
+  min)
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 18:52:57 - 18:58:27\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9643 (MILANO CENTRALE -> NAPOLI CENTRALE) (+2m
+ ) [Transito]\n  - TRENO 9643 (MILANO CENTRALE -> NAPOLI CENTRALE) (+2m) [T
+ ransito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i
+  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LATINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9547--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T180058Z
-DTEND:20261122T180628Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9547 (MILANO CENTRALE -> TARANTO) ore 19:05
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T180145Z
+DTEND:20261122T180715Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9547 (MILANO CENTRALE -> TARANTO) ore 19:06
 DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 19:00:58 - 19:06:28\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 19:01:45 - 19:07:15\nTreni coinvolti nella chius
  ura:\n  - TRENO 9547 (MILANO CENTRALE -> TARANTO) [Transito]\nRitardo mass
  imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (21% tratta ROMA TERMINI -> NAPOLI AFRAGOLA\
+ ransito stimato senza fermata (22% tratta ROMA TERMINI -> NAPOLI AFRAGOLA\
  ; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LATINA
 STATUS:CONFIRMED
@@ -767,17 +917,17 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4135--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T183214Z
-DTEND:20261122T183744Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T183209Z
+DTEND:20261122T183739Z
 SUMMARY:[TRANSITO VELOCE] REG 4135 (PISA CENTRALE -> ROMA TERMINI) ore 19:3
  6
 DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 19:32:14 - 19:37:44\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 19:32:09 - 19:37:39\nTreni coinvolti nella chius
  ura:\n  - REG 4135 (PISA CENTRALE -> ROMA TERMINI) [Transito]\nRitardo mas
  simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Transito stimato senza fermata (50% tratta ROMA OSTIENSE -> ROMA TUSCOLANA
+ Transito stimato senza fermata (48% tratta ROMA OSTIENSE -> ROMA TUSCOLANA
  \; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LATINA
 STATUS:CONFIRMED
@@ -788,83 +938,67 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8619--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T184411Z
-DTEND:20261122T185204Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:44 - 19:52 (primo: TRENO 8619)
-DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 19:44:11 - 19:52:04\nTreni coinvolti
-  nella chiusura:\n  - TRENO 8619 (MILANO CENTRALE -> ROMA TERMINI) [Transi
- to]\n  - TRENO 9647 (MILANO CENTRALE -> FOGGIA) [Transito]\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
- usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione LATINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9551--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
+UID:train-9647--20261121-S08608@pl-tracker.local
+DTSTAMP:20261122T150820Z
 SEQUENCE:0
-DTSTART:20261122T185903Z
-DTEND:20261122T190433Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9551 (MILANO CENTRALE -> SALERNO) ore 20:03
-DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 19:59:03 - 20:04:33\nTreni coinvolti nella chius
- ura:\n  - TRENO 9551 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (21% tratta ROMA TERMINI -> NAPOLI AFRAGOLA\
- ; pedale annuncio fisso Vmax)
+DTSTART:20261122T184953Z
+DTEND:20261122T190514Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 19:49 - 20:05 (primo: TRENO 9647) (+1
+ 1 min)
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 5 TRENI\nChiusura sbarre stimata: 19:49:53 - 20:05:14\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9647 (MILANO CENTRALE -> FOGGIA) [Transito]\n 
+  - TRENO 9647 (MILANO CENTRALE -> FOGGIA) [Transito]\n  - TRENO 9427 (VENE
+ ZIA S.LUCIA -> SALERNO) (+11m) [Transito]\n  - TRENO 9427 (VENEZIA S.LUCIA
+  -> SALERNO) (+11m) [Transito]\n  - TRENO 9551 (MILANO CENTRALE -> SALERNO
+ ) [Transito]\nRitardo massimo rilevato: 11 min\nAffidabilità stima: 78%\n
+ Nota normativa/euristica: Chiusura continua per 5 treni: intervallo utile 
+ tra i passaggi (88s) inferiore alla soglia minima di sgombero stradale (12
+ 0s)
 LOCATION:Passaggio a Livello / Stazione LATINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:11
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1955--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T194515Z
-DTEND:20261122T195150Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:45 - 20:51 (primo: ICN 1955)
+DTEND:20261122T195234Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:45 - 20:52 (primo: ICN 1955)
 DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 20:45:15 - 20:51:50\nTreni coinvolti
-  nella chiusura:\n  - ICN 1955 (ROMA TERMINI -> CATANIA CENTRALE)\n  - TRE
- NO 9325 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
- usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
+ A - 3 TRENI\nChiusura sbarre stimata: 20:45:15 - 20:52:34\nTreni coinvolti
+  nella chiusura:\n  - ICN 1955 (ROMA TERMINI -> CATANIA CENTRALE)\n  - ICN
+  1955 (ROMA TERMINI -> CATANIA CENTRALE)\n  - TRENO 9325 (TORINO PORTA NUO
+ VA -> NAPOLI CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffida
+ bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 tren
+ i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
+ ombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LATINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9555--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T195950Z
-DTEND:20261122T200520Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T200030Z
+DTEND:20261122T200600Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9555 (MILANO CENTRALE -> BATTIPAGLIA) ore 2
  1:04
 DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 20:59:50 - 21:05:20\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 21:00:30 - 21:06:00\nTreni coinvolti nella chius
  ura:\n  - TRENO 9555 (MILANO CENTRALE -> BATTIPAGLIA) [Transito]\nRitardo 
  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Transito stimato senza fermata (21% tratta ROMA TERMINI -> NAPOLI AFRAG
+ a: Transito stimato senza fermata (22% tratta ROMA TERMINI -> NAPOLI AFRAG
  OLA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LATINA
 STATUS:CONFIRMED
@@ -876,35 +1010,36 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9653--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T202623Z
-DTEND:20261122T203744Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:26 - 21:37 (primo: TRENO 9653)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T202645Z
+DTEND:20261122T203739Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:26 - 21:37 (primo: TRENO 9653)
 DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 21:26:23 - 21:37:44\nTreni coinvolti
+ A - 3 TRENI\nChiusura sbarre stimata: 21:26:45 - 21:37:39\nTreni coinvolti
   nella chiusura:\n  - TRENO 9653 (MILANO CENTRALE -> SALERNO) [Transito]\n
-   - REG 4137 (PISA CENTRALE -> ROMA TERMINI) [Transito]\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (20s) inferiore a
- lla soglia minima di sgombero stradale (120s)
+   - TRENO 9653 (MILANO CENTRALE -> SALERNO) [Transito]\n  - REG 4137 (PISA
+  CENTRALE -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato: 0 min\nAf
+ fidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 
+ treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
+ i sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LATINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9657--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T205016Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T205057Z
 DTEND:20261122T205900Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:50 - 21:59 (primo: TRENO 9657)
 DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 21:50:16 - 21:59:00\nTreni coinvolti
+ A - 2 TRENI\nChiusura sbarre stimata: 21:50:57 - 21:59:00\nTreni coinvolti
   nella chiusura:\n  - TRENO 9657 (MILANO CENTRALE -> NAPOLI CENTRALE) [Tra
  nsito]\n  - IC 560 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI)\nRitardo 
  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
@@ -919,31 +1054,57 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9435--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T213529Z
-DTEND:20261122T214059Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9435 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) o
- re 22:39
-DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 22:35:29 - 22:40:59\nTreni coinvolti nella chius
- ura:\n  - TRENO 9435 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (21% tratta ROMA TERMINI -> NAPOLI A
- FRAGOLA\; pedale annuncio fisso Vmax)
+UID:train-21038--20261121-S08608@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T212909Z
+DTEND:20261122T214141Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 22:29 - 22:41 (primo: REG 21038)
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 6 TRENI\nChiusura sbarre stimata: 22:29:09 - 22:41:41\nTreni coinvolti
+  nella chiusura:\n  - REG 21038 (NAPOLI CENTRALE -> ROMA TERMINI) [Transit
+ o]\n  - REG 21038 (NAPOLI CENTRALE -> ROMA TERMINI) [Transito]\n  - REG 12
+ 665 (ROMA TERMINI -> FORMIA-GAETA) [Transito]\n  - REG 12665 (ROMA TERMINI
+  -> FORMIA-GAETA) [Transito]\n  - TRENO 9435 (VENEZIA S.LUCIA -> NAPOLI CE
+ NTRALE) [Transito]\n  - TRENO 9435 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [T
+ ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Chiusura continua per 6 treni: intervallo utile tra i
+  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LATINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12665--20261121-S08608@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T214730Z
+DTEND:20261122T215600Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 22:47 - 22:56 (primo: REG 12665)
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 22:47:30 - 22:56:00\nTreni coinvolti
+  nella chiusura:\n  - REG 12665 (ROMA TERMINI -> FORMIA-GAETA)\n  - REG 12
+ 665 (ROMA TERMINI -> FORMIA-GAETA)\n  - REG 21038 (NAPOLI CENTRALE -> ROMA
+  TERMINI)\n  - REG 21038 (NAPOLI CENTRALE -> ROMA TERMINI)\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
+ usura continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore
+  alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LATINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-796--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T221015Z
 DTEND:20261122T221500Z
 SUMMARY:[FERMATA] ICN 796 (SALERNO -> TORINO PORTA NUOVA) ore 23:14
@@ -961,34 +1122,58 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
-UID:train-799--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261123T053115Z
-DTEND:20261123T053600Z
-SUMMARY:[FERMATA] ICN 799 (TORINO PORTA NUOVA -> SALERNO) ore 06:35
-DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 06:31:15 - 06:36:00\nTreni coinvolti nella chiusura:\n  
- - ICN 799 (TORINO PORTA NUOVA -> SALERNO)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
- a oraria regolare
+UID:train-812--20261121-S08608@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261123T043515Z
+DTEND:20261123T044000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:35 - 05:40 (primo: ICN 812)
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 05:35:15 - 05:40:00\nTreni coinvolti
+  nella chiusura:\n  - ICN 812 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA
+  NUOVA)\n  - ICN 812 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA NUOVA)\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/
+ euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
+ (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LATINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:ICN
+END:VEVENT
+BEGIN:VEVENT
+UID:train-799--20261121-S08608@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261123T053115Z
+DTEND:20261123T053600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:31 - 06:36 (primo: ICN 799)
+DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 06:31:15 - 06:36:00\nTreni coinvolti
+  nella chiusura:\n  - ICN 799 (TORINO PORTA NUOVA -> SALERNO)\n  - ICN 799
+  (TORINO PORTA NUOVA -> SALERNO)\nRitardo massimo rilevato: 0 min\nAffidab
+ ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LATINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-797--20261121-S08608@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261123T054501Z
-DTEND:20261123T054931Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261123T054449Z
+DTEND:20261123T054919Z
 SUMMARY:[TRANSITO VELOCE] ICN 797 (TORINO PORTA NUOVA -> SALERNO) ore 06:48
 DESCRIPTION:Stazione/PL: LATINA (S08608)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 06:45:01 - 06:49:31\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 06:44:49 - 06:49:19\nTreni coinvolti nella chius
  ura:\n  - ICN 797 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRitardo mass
  imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
  ransito stimato senza fermata (32% tratta ROMA TIBURTINA -> NAPOLI CENTRAL

@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:0b8d57645b767f31141615709c1e16aff05c548316a9bd427bb0caceb15d
- 1a4f
+X-CONTENT-HASH:c7bf39230333a200d938a55c222e81fc06ba803f0b54799e43a45f677e37
+ c8e3
 BEGIN:VEVENT
 UID:train-18251--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261121T234145Z
 DTEND:20261121T234715Z
 SUMMARY:[TRANSITO VELOCE] REG 18251 (FIRENZE SANTA MARIA NOVELLA -> PISA CE
@@ -35,8 +35,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18255--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T043245Z
 DTEND:20261122T043815Z
 SUMMARY:[TRANSITO VELOCE] REG 18255 (FIRENZE SANTA MARIA NOVELLA -> PIOMBIN
@@ -57,30 +57,32 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18355--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T050615Z
-DTEND:20261122T051145Z
-SUMMARY:[TRANSITO VELOCE] REG 18355 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZ
- IA CENTRALE) ore 06:10
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 06:06:15 - 06:11:45\nTreni coinvolti nella chius
- ura:\n  - REG 18355 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE) [T
- ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Transito stimato senza fermata (50% tratta FIRENZE SA
- NTA MARIA NOVELLA -> FIRENZE RIFREDI\; pedale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T050700Z
+DTEND:20261122T051230Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:07 - 06:12 (primo: REG 18355) (+3 
+ min)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 06:07:00 - 06:12:30\nTreni coinvolti
+  nella chiusura:\n  - REG 18355 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA 
+ CENTRALE) (+3m) [Transito]\n  - REG 18355 (FIRENZE SANTA MARIA NOVELLA -> 
+ LA SPEZIA CENTRALE) (+3m) [Transito]\nRitardo massimo rilevato: 3 min\nAff
+ idabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 t
+ reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
+  sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AREZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18259--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T051815Z
 DTEND:20261122T052345Z
 SUMMARY:[TRANSITO VELOCE] REG 18259 (FIRENZE SANTA MARIA NOVELLA -> SIENA) 
@@ -100,90 +102,174 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9508--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T062107Z
-DTEND:20261122T063200Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:21 - 07:32 (primo: TRENO 9508)
+UID:train-34221--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T054002Z
+DTEND:20261122T054838Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 06:40 - 06:48 (primo: REG 34221) (+2 
+ min)
 DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 4 TRENI\nChiusura sbarre stimata: 07:21:07 - 07:32:00\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9508 (ROMA TERMINI -> TORINO PORTA NUOVA) [Tra
- nsito]\n  - TRENO 8588 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) [Transito]
- \n  - REG 4013 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE) [Transito
- ]\n  - REG 34221 (FIRENZE SANTA MARIA NOVELLA -> ATTIGLIANO-BOMARZO)\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s)
-  inferiore alla soglia minima di sgombero stradale (120s)
+ A - 3 TRENI\nChiusura sbarre stimata: 06:40:02 - 06:48:38\nTreni coinvolti
+  nella chiusura:\n  - REG 34221 (FIRENZE SANTA MARIA NOVELLA -> ATTIGLIANO
+ -BOMARZO) [Transito]\n  - TRENO 9400 (ROMA TERMINI -> VENEZIA S.LUCIA) (+2
+ m) [Transito]\n  - TRENO 9400 (ROMA TERMINI -> VENEZIA S.LUCIA) (+2m) [Tra
+ nsito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i p
+ assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AREZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9404--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T064306Z
-DTEND:20261122T070333Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 07:43 - 08:03 (primo: TRENO 9404)
+UID:train-18267--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T055145Z
+DTEND:20261122T055715Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:51 - 06:57 (primo: REG 18267) (+1 
+ min)
 DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 6 TRENI\nChiusura sbarre stimata: 07:43:06 - 08:03:33\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9404 (ROMA TERMINI -> VENEZIA S.LUCIA) [Transi
- to]\n  - TRENO 9505 (MILANO CENTRALE -> SALERNO)\n  - REG 18658 (FIRENZE S
- ANTA MARIA NOVELLA -> MONTECATINI TERME-MONSUMMANO) [Transito]\n  - REG 18
- 357 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) [Transito]\n  - TRENO 9401 
- (VENEZIA S.LUCIA -> ROMA TERMINI) [Transito]\n  - TRENO 8502 (NAPOLI CENTR
- ALE -> BOLZANO) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 78%\nNota normativa/euristica: Chiusura continua per 6 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18506--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T070715Z
-DTEND:20261122T071328Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:07 - 08:13 (primo: REG 18506)
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 08:07:15 - 08:13:28\nTreni coinvolti
-  nella chiusura:\n  - REG 18506 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)
-  [Transito]\n  - TRENO 9301 (MANTOVA -> ROMA TERMINI) [Transito]\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 06:51:45 - 06:57:15\nTreni coinvolti
+  nella chiusura:\n  - REG 18267 (FIRENZE SANTA MARIA NOVELLA -> GROSSETO) 
+ (+1m) [Transito]\n  - REG 18267 (FIRENZE SANTA MARIA NOVELLA -> GROSSETO) 
+ (+1m) [Transito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78
+ %\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo uti
+ le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
+ 120s)
 LOCATION:Passaggio a Livello / Stazione AREZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18273--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T061415Z
+DTEND:20261122T062346Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:14 - 07:23 (primo: REG 18273)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 07:14:15 - 07:23:46\nTreni coinvolti
+  nella chiusura:\n  - REG 18273 (FIRENZE SANTA MARIA NOVELLA -> EMPOLI) [T
+ ransito]\n  - REG 18273 (FIRENZE SANTA MARIA NOVELLA -> EMPOLI) [Transito]
+ \n  - TRENO 9591 (FIRENZE SANTA MARIA NOVELLA -> ROMA TERMINI) [Transito]\
+ n  - TRENO 9591 (FIRENZE SANTA MARIA NOVELLA -> ROMA TERMINI) [Transito]\n
+ Ritardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Chiusura continua per 4 treni: intervallo utile tra i passaggi
+  (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-34221--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T062730Z
+DTEND:20261122T063401Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 07:27 - 07:34 (primo: REG 34221) (+19
+  min)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 6 TRENI\nChiusura sbarre stimata: 07:27:30 - 07:34:01\nTreni coinvolti
+  nella chiusura:\n  - REG 34221 (FIRENZE SANTA MARIA NOVELLA -> ATTIGLIANO
+ -BOMARZO)\n  - TRENO 9508 (ROMA TERMINI -> TORINO PORTA NUOVA) (+19m) [Tra
+ nsito]\n  - TRENO 9508 (ROMA TERMINI -> TORINO PORTA NUOVA) (+19m) [Transi
+ to]\n  - REG 4013 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE) [Trans
+ ito]\n  - REG 4013 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE) [Tran
+ sito]\n  - TRENO 8588 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) [Transito]\
+ nRitardo massimo rilevato: 19 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Chiusura continua per 6 treni: intervallo utile tra i passagg
+ i (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:19
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18658--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T064515Z
+DTEND:20261122T070838Z
+SUMMARY:[CHIUSURA CONTINUA - 10 TRENI] 07:45 - 08:08 (primo: REG 18658) (+1
+ 3 min)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 10 TRENI\nChiusura sbarre stimata: 07:45:15 - 08:08:38\nTreni coinvolt
+ i nella chiusura:\n  - REG 18658 (FIRENZE SANTA MARIA NOVELLA -> MONTECATI
+ NI TERME-MONSUMMANO) [Transito]\n  - TRENO 9404 (ROMA TERMINI -> VENEZIA S
+ .LUCIA) [Transito]\n  - REG 18357 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGI
+ O) [Transito]\n  - REG 18357 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) [T
+ ransito]\n  - TRENO 9505 (MILANO CENTRALE -> SALERNO) (+13m) [Arrivo]\n  -
+  TRENO 9505 (MILANO CENTRALE -> SALERNO) (+13m) [Arrivo]\n  - TRENO 9401 (
+ VENEZIA S.LUCIA -> ROMA TERMINI) [Transito]\n  - TRENO 9505 (MILANO CENTRA
+ LE -> SALERNO) (+13m) [Partenza]\n  - TRENO 9505 (MILANO CENTRALE -> SALER
+ NO) (+13m) [Partenza]\n  - TRENO 8502 (NAPOLI CENTRALE -> BOLZANO) [Transi
+ to]\nRitardo massimo rilevato: 13 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 10 treni: intervallo utile tra i pa
+ ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 10 TRENI,FERROVIA
+X-PL-DELAY-MIN:13
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18506--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T071100Z
+DTEND:20261122T072048Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 08:11 - 08:20 (primo: REG 18506) (+16
+  min)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 6 TRENI\nChiusura sbarre stimata: 08:11:00 - 08:20:48\nTreni coinvolti
+  nella chiusura:\n  - REG 18506 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)
+  (+3m) [Transito]\n  - REG 18506 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO
+ ) (+3m) [Transito]\n  - REG 18743 (FIRENZE SANTA MARIA NOVELLA -> AREZZO) 
+ (+16m) [Transito]\n  - REG 18743 (FIRENZE SANTA MARIA NOVELLA -> AREZZO) (
+ +16m) [Transito]\n  - TRENO 9301 (MANTOVA -> ROMA TERMINI) [Transito]\n  -
+  TRENO 9301 (MANTOVA -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato
+ : 16 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
+ tinua per 6 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:16
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9512--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T071837Z
-DTEND:20261122T072407Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T072322Z
+DTEND:20261122T072852Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9512 (ROMA TERMINI -> MILANO CENTRALE) ore 
- 08:22
+ 08:27
 DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 08:18:37 - 08:24:07\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 08:23:22 - 08:28:52\nTreni coinvolti nella chius
  ura:\n  - TRENO 9512 (ROMA TERMINI -> MILANO CENTRALE) [Transito]\nRitardo
   massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Transito stimato senza fermata (74% tratta ROMA TIBURTINA -> FIRENZE S
+ ca: Transito stimato senza fermata (79% tratta ROMA TIBURTINA -> FIRENZE S
  ANTA MARIA NOVELLA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione AREZZO
 STATUS:CONFIRMED
@@ -194,107 +280,71 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9304--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T073337Z
-DTEND:20261122T073907Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9304 (NAPOLI CENTRALE -> TORINO PORTA NUOVA
- ) ore 08:37
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 08:33:37 - 08:39:07\nTreni coinvolti nella chius
- ura:\n  - TRENO 9304 (NAPOLI CENTRALE -> TORINO PORTA NUOVA) [Transito]\nR
- itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Transito stimato senza fermata (74% tratta ROMA TIBURTINA -> FIR
- ENZE SANTA MARIA NOVELLA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8505--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T074226Z
-DTEND:20261122T075009Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 08:42 - 08:50 (primo: TRENO 8505)
+UID:train-9511--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T073141Z
+DTEND:20261122T075352Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 08:31 - 08:53 (primo: TRENO 9511)
 DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 08:42:26 - 08:50:09\nTreni coinvolti
-  nella chiusura:\n  - TRENO 8505 (BOLZANO -> ROMA TERMINI) [Transito]\n  -
-  TRENO 9406 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) [Transito]\n  - TRENO 960
- 7 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
- continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+ A - 6 TRENI\nChiusura sbarre stimata: 08:31:41 - 08:53:52\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) [Transito]\n  
+ - TRENO 9511 (MILANO CENTRALE -> LECCE) [Transito]\n  - TRENO 9304 (NAPOLI
+  CENTRALE -> TORINO PORTA NUOVA) [Transito]\n  - TRENO 9610 (ROMA TERMINI 
+ -> MILANO CENTRALE) [Transito]\n  - TRENO 8505 (BOLZANO -> ROMA TERMINI) [
+ Transito]\n  - TRENO 9406 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Chiusura continua per 6 treni: intervallo utile tra i passaggi
+  (103s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AREZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9604--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T080429Z
-DTEND:20261122T080959Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9604 (BRESCIA -> NAPOLI CENTRALE) ore 09:08
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 09:04:29 - 09:09:59\nTreni coinvolti nella chius
- ura:\n  - TRENO 9604 (BRESCIA -> NAPOLI CENTRALE) [Transito]\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (50% tratta MILANO ROGOREDO -> ROMA TERMINI\
- ; pedale annuncio fisso Vmax)
+UID:train-18743--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T075930Z
+DTEND:20261122T080855Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 08:59 - 09:08 (primo: REG 18743) (+16
+  min)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 6 TRENI\nChiusura sbarre stimata: 08:59:30 - 09:08:55\nTreni coinvolti
+  nella chiusura:\n  - REG 18743 (FIRENZE SANTA MARIA NOVELLA -> AREZZO) (+
+ 16m)\n  - REG 18743 (FIRENZE SANTA MARIA NOVELLA -> AREZZO) (+16m)\n  - TR
+ ENO 9607 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) (+1m) [Transito]\n  - TRE
+ NO 9607 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) (+1m) [Transito]\n  - TREN
+ O 9604 (BRESCIA -> NAPOLI CENTRALE) (+2m) [Transito]\n  - TRENO 9604 (BRES
+ CIA -> NAPOLI CENTRALE) (+2m) [Transito]\nRitardo massimo rilevato: 16 min
+ \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
+ r 6 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AREZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:16
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9516--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T081343Z
-DTEND:20261122T081913Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9516 (SALERNO -> TORINO PORTA NUOVA) ore 09
- :17
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 09:13:43 - 09:19:13\nTreni coinvolti nella chius
- ura:\n  - TRENO 9516 (SALERNO -> TORINO PORTA NUOVA) [Transito]\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (75% tratta ROMA TERMINI -> FIRENZE SANTA
-  MARIA NOVELLA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9515--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T082248Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T082002Z
 DTEND:20261122T083145Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:22 - 09:31 (primo: TRENO 9515)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:20 - 09:31 (primo: TRENO 9516)
 DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 09:22:48 - 09:31:45\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9515 (MILANO CENTRALE -> SALERNO) [Transito]\n
-   - REG 4019 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE) [Transito]\
- nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
-  (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 09:20:02 - 09:31:45\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9516 (SALERNO -> TORINO PORTA NUOVA) [Transito
+ ]\n  - REG 4019 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Chiusura continua per 2 treni: intervallo utile tra i passa
+ ggi (43s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AREZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -305,43 +355,159 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9490--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T083843Z
-DTEND:20261122T084948Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:38 - 09:49 (primo: TRENO 9490)
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 09:38:43 - 09:49:48\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9490 (SALERNO -> VENEZIA S.LUCIA) [Transito]\n
-   - TRENO 9611 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (5s) in
- feriore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T084502Z
+DTEND:20261122T085032Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9490 (SALERNO -> VENEZIA S.LUCIA) ore 09:49
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 09:45:02 - 09:50:32\nTreni coinvolti nella chius
+ ura:\n  - TRENO 9490 (SALERNO -> VENEZIA S.LUCIA) [Transito]\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
+ ransito stimato senza fermata (80% tratta ROMA TERMINI -> FIRENZE SANTA MA
+ RIA NOVELLA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione AREZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9613--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T091439Z
-DTEND:20261122T093521Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 10:14 - 10:35 (primo: TRENO 9613)
+UID:train-9611--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T085459Z
+DTEND:20261122T090029Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:54 - 10:00 (primo: TRENO 9611)
 DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 5 TRENI\nChiusura sbarre stimata: 10:14:39 - 10:35:21\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9613 (MILANO CENTRALE -> NAPOLI CENTRALE) [Tra
- nsito]\n  - TRENO 9520 (NAPOLI CENTRALE -> MILANO CENTRALE) [Transito]\n  
- - TRENO 9519 (TORINO PORTA NUOVA -> SALERNO) [Transito]\n  - REG 4021 (FIR
- ENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE) [Transito]\n  - TRENO 9466 (
- VENEZIA S.LUCIA -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua 
- per 5 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
- nima di sgombero stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 09:54:59 - 10:00:29\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9611 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [
+ Transito]\n  - TRENO 9611 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transit
+ o]\nRitardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
+ aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9515--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T090831Z
+DTEND:20261122T091836Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 10:08 - 10:18 (primo: TRENO 9515) (+5
+ 8 min)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 3 TRENI\nChiusura sbarre stimata: 10:08:31 - 10:18:36\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9515 (MILANO CENTRALE -> SALERNO) (+58m) [Tran
+ sito]\n  - TRENO 9515 (MILANO CENTRALE -> SALERNO) (+58m) [Transito]\n  - 
+ TRENO 9613 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\nRitardo massim
+ o rilevato: 58 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 3 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:58
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9520--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T092606Z
+DTEND:20261122T093332Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:26 - 10:33 (primo: TRENO 9520) (+1
+ 0 min)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 10:26:06 - 10:33:32\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9520 (NAPOLI CENTRALE -> MILANO CENTRALE) (+10
+ m) [Transito]\n  - TRENO 9520 (NAPOLI CENTRALE -> MILANO CENTRALE) (+10m) 
+ [Transito]\n  - REG 4021 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE)
+  [Transito]\n  - TRENO 9466 (VENEZIA S.LUCIA -> ROMA TERMINI) [Transito]\n
+ Ritardo massimo rilevato: 10 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Chiusura continua per 4 treni: intervallo utile tra i passaggi
+  (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:10
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9519--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T094017Z
+DTEND:20261122T095131Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 10:40 - 10:51 (primo: TRENO 9519) (+5
+  min)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 3 TRENI\nChiusura sbarre stimata: 10:40:17 - 10:51:31\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9519 (TORINO PORTA NUOVA -> SALERNO) (+5m) [Tr
+ ansito]\n  - TRENO 9519 (TORINO PORTA NUOVA -> SALERNO) (+5m) [Transito]\n
+   - TRENO 9414 (SALERNO -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo ri
+ levato: 5 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
+ a continua per 3 treni: intervallo utile tra i passaggi (13s) inferiore al
+ la soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8507--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T095458Z
+DTEND:20261122T100028Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:54 - 11:00 (primo: TRENO 8507)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 10:54:58 - 11:00:28\nTreni coinvolti
+  nella chiusura:\n  - TRENO 8507 (BOLZANO -> ROMA TERMINI) [Transito]\n  -
+  TRENO 8507 (BOLZANO -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato
+ : -3 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
+ tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8508--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T100410Z
+DTEND:20261122T101500Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 11:04 - 11:15 (primo: TRENO 8508)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 5 TRENI\nChiusura sbarre stimata: 11:04:10 - 11:15:00\nTreni coinvolti
+  nella chiusura:\n  - TRENO 8508 (ROMA TERMINI -> BRESCIA) [Transito]\n  -
+  REG 18209 (FIRENZE SANTA MARIA NOVELLA -> SIENA) [Transito]\n  - TRENO 94
+ 09 (GORIZIA CENTRALE -> NAPOLI CENTRALE) [Transito]\n  - TRENO 9409 (GORIZ
+ IA CENTRALE -> NAPOLI CENTRALE) [Transito]\n  - REG 18753 (FIRENZE SANTA M
+ ARIA NOVELLA -> AREZZO) [Transito]\nRitardo massimo rilevato: 0 min\nAffid
+ abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 5 tre
+ ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
+ gombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AREZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -351,19 +517,144 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9414--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T093959Z
-DTEND:20261122T094742Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:39 - 10:47 (primo: TRENO 9414)
+UID:train-9391--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T101842Z
+DTEND:20261122T102434Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:18 - 11:24 (primo: TRENO 9391)
 DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 10:39:59 - 10:47:42\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9414 (SALERNO -> VENEZIA S.LUCIA) [Transito]\n
-   - TRENO 8507 (BOLZANO -> ROMA TERMINI) [Transito]\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+ A - 3 TRENI\nChiusura sbarre stimata: 11:18:42 - 11:24:34\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9391 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [
+ Transito]\n  - TRENO 9391 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transit
+ o]\n  - TRENO 9524 (SALERNO -> MILANO CENTRALE) [Transito]\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
+ usura continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore
+  alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18287--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T102715Z
+DTEND:20261122T103245Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:27 - 11:32 (primo: REG 18287) (+2 
+ min)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 11:27:15 - 11:32:45\nTreni coinvolti
+  nella chiusura:\n  - REG 18287 (FIRENZE SANTA MARIA NOVELLA -> GROSSETO) 
+ (+2m) [Transito]\n  - REG 18287 (FIRENZE SANTA MARIA NOVELLA -> GROSSETO) 
+ (+2m) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78
+ %\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo uti
+ le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
+ 120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18289--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T103615Z
+DTEND:20261122T105506Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 11:36 - 11:55 (primo: REG 18289) (+12
+  min)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 6 TRENI\nChiusura sbarre stimata: 11:36:15 - 11:55:06\nTreni coinvolti
+  nella chiusura:\n  - REG 18289 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CE
+ NTRALE) [Transito]\n  - TRENO 9310 (NAPOLI CENTRALE -> TORINO PORTA NUOVA)
+  (+12m) [Transito]\n  - TRENO 9310 (NAPOLI CENTRALE -> TORINO PORTA NUOVA)
+  (+12m) [Transito]\n  - REG 18753 (FIRENZE SANTA MARIA NOVELLA -> AREZZO)\
+ n  - TRENO 9416 (ROMA TERMINI -> VENEZIA S.LUCIA) [Transito]\n  - TRENO 94
+ 16 (ROMA TERMINI -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo rilevato:
+  12 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
+ inua per 6 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:12
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9411--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T105754Z
+DTEND:20261122T110324Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9411 (VENEZIA S.LUCIA -> ROMA TERMINI) ore 
+ 12:02
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 11:57:54 - 12:03:24\nTreni coinvolti nella chius
+ ura:\n  - TRENO 9411 (VENEZIA S.LUCIA -> ROMA TERMINI) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (21% tratta FIRENZE SANTA MARIA NOVELLA
+  -> ROMA TERMINI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9626--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T110539Z
+DTEND:20261122T111708Z
+SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 12:05 - 12:17 (primo: TRENO 9626) (+8
+  min)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 8 TRENI\nChiusura sbarre stimata: 12:05:39 - 12:17:08\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9626 (ROMA TERMINI -> TORINO PORTA NUOVA) (+8m
+ ) [Transito]\n  - TRENO 9626 (ROMA TERMINI -> TORINO PORTA NUOVA) (+8m) [T
+ ransito]\n  - TRENO 9311 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito
+ ]\n  - REG 18213 (FIRENZE SANTA MARIA NOVELLA -> SIENA) [Transito]\n  - RE
+ G 18512 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) (+1m) [Transito]\n  - R
+ EG 18512 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) (+1m) [Transito]\n  - 
+ TRENO 8509 (SIBARI -> BOLZANO) [Transito]\n  - TRENO 8509 (SIBARI -> BOLZA
+ NO) [Transito]\nRitardo massimo rilevato: 8 min\nAffidabilità stima: 78%\
+ nNota normativa/euristica: Chiusura continua per 8 treni: intervallo utile
+  tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (12
+ 0s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9527--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T112109Z
+DTEND:20261122T113032Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:21 - 12:30 (primo: TRENO 9527)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 12:21:09 - 12:30:32\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9527 (MILANO CENTRALE -> SALERNO) [Transito]\n
+   - REG 4077 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO) [Transito]\nRitardo 
+ massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AREZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -373,16 +664,626 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9409--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T095801Z
-DTEND:20261122T100451Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:58 - 11:04 (primo: TRENO 9409)
+UID:train-9623--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T114246Z
+DTEND:20261122T114816Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9623 (MILANO CENTRALE -> REGGIO DI CALABRIA
+  CENTRALE) ore 12:47
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 12:42:46 - 12:48:16\nTreni coinvolti nella chius
+ ura:\n  - TRENO 9623 (MILANO CENTRALE -> REGGIO DI CALABRIA CENTRALE) [Tra
+ nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Transito stimato senza fermata (34% tratta BOLOGNA C.LE
+ /AV -> ROMA TERMINI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-588--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T115115Z
+DTEND:20261122T115900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:51 - 12:59 (primo: IC 588) (+6 min
+ )
 DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 10:58:01 - 11:04:51\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9409 (GORIZIA CENTRALE -> NAPOLI CENTRALE) [Tr
- ansito]\n  - TRENO 8508 (ROMA TERMINI -> BRESCIA) [Transito]\nRitardo mass
+ A - 2 TRENI\nChiusura sbarre stimata: 12:51:15 - 12:59:00\nTreni coinvolti
+  nella chiusura:\n  - IC 588 (ROMA TERMINI -> TRIESTE CENTRALE) (+6m)\n  -
+  IC 588 (ROMA TERMINI -> TRIESTE CENTRALE) (+6m)\nRitardo massimo rilevato
+ : 6 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-584--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T120615Z
+DTEND:20261122T122101Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 13:06 - 13:21 (primo: IC 584) (+27 mi
+ n)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 13:06:15 - 13:21:01\nTreni coinvolti
+  nella chiusura:\n  - IC 584 (TRIESTE CENTRALE -> ROMA TERMINI)\n  - REG 4
+ 077 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO)\n  - TRENO 9413 (VENEZIA S.LU
+ CIA -> NAPOLI CENTRALE) (+27m) [Transito]\n  - TRENO 9413 (VENEZIA S.LUCIA
+  -> NAPOLI CENTRALE) (+27m) [Transito]\nRitardo massimo rilevato: 27 min\n
+ Affidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 
+ 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
+  di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:27
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4105--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T122502Z
+DTEND:20261122T123714Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 13:25 - 13:37 (primo: REG 4105) (+46 
+ min)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 5 TRENI\nChiusura sbarre stimata: 13:25:02 - 13:37:14\nTreni coinvolti
+  nella chiusura:\n  - REG 4105 (FIRENZE SANTA MARIA NOVELLA -> ROMA TERMIN
+ I) [Transito]\n  - TRENO 9532 (NAPOLI CENTRALE -> TORINO PORTA NUOVA) (+8m
+ ) [Transito]\n  - TRENO 9532 (NAPOLI CENTRALE -> TORINO PORTA NUOVA) (+8m)
+  [Transito]\n  - TRENO 8418 (REGGIO DI CALABRIA CENTRALE -> VENEZIA S.LUCI
+ A) (+46m) [Transito]\n  - TRENO 8418 (REGGIO DI CALABRIA CENTRALE -> VENEZ
+ IA S.LUCIA) (+46m) [Transito]\nRitardo massimo rilevato: 46 min\nAffidabil
+ ità stima: 78%\nNota normativa/euristica: Chiusura continua per 5 treni: 
+ intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
+ ero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:46
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9420--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T124809Z
+DTEND:20261122T125339Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:48 - 13:53 (primo: TRENO 9420) (+7
+  min)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 13:48:09 - 13:53:39\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9420 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) (+7m
+ ) [Transito]\n  - TRENO 9420 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) (+7m) [T
+ ransito]\nRitardo massimo rilevato: 7 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i
+  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9634--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T130447Z
+DTEND:20261122T131700Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 14:04 - 14:17 (primo: TRENO 9634)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 14:04:47 - 14:17:00\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9634 (NAPOLI CENTRALE -> MILANO CENTRALE) [Tra
+ nsito]\n  - TRENO 9415 (VENEZIA S.LUCIA -> ROMA TERMINI) [Transito]\n  - T
+ RENO 9415 (VENEZIA S.LUCIA -> ROMA TERMINI) [Transito]\n  - REG 4105 (FIRE
+ NZE SANTA MARIA NOVELLA -> ROMA TERMINI)\nRitardo massimo rilevato: 0 min\
+ nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per
+  4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
+ a di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9535--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T132109Z
+DTEND:20261122T132639Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9535 (TORINO PORTA NUOVA -> NAPOLI CENTRALE
+ ) ore 14:25
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 14:21:09 - 14:26:39\nTreni coinvolti nella chius
+ ura:\n  - TRENO 9535 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Transito stimato senza fermata (22% tratta FIRENZE SANTA MARIA N
+ OVELLA -> ROMA TIBURTINA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9422--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T134502Z
+DTEND:20261122T135645Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 14:45 - 14:56 (primo: TRENO 9422) (+2
+ 0 min)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 6 TRENI\nChiusura sbarre stimata: 14:45:02 - 14:56:45\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9422 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) [Tra
+ nsito]\n  - TRENO 9584 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA NUOVA)
+  (+20m) [Transito]\n  - TRENO 9584 (REGGIO DI CALABRIA CENTRALE -> TORINO 
+ PORTA NUOVA) (+20m) [Transito]\n  - TRENO 9631 (MILANO CENTRALE -> NAPOLI 
+ CENTRALE) (+1m) [Transito]\n  - TRENO 9631 (MILANO CENTRALE -> NAPOLI CENT
+ RALE) (+1m) [Transito]\n  - REG 18377 (FIRENZE SANTA MARIA NOVELLA -> LA S
+ PEZIA CENTRALE) [Transito]\nRitardo massimo rilevato: 20 min\nAffidabilit
+ à stima: 78%\nNota normativa/euristica: Chiusura continua per 6 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:20
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8419--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T140747Z
+DTEND:20261122T141317Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:07 - 15:13 (primo: TRENO 8419) (+6
+  min)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 15:07:47 - 15:13:17\nTreni coinvolti
+  nella chiusura:\n  - TRENO 8419 (VENEZIA S.LUCIA -> REGGIO DI CALABRIA CE
+ NTRALE) (+6m) [Transito]\n  - TRENO 8419 (VENEZIA S.LUCIA -> REGGIO DI CAL
+ ABRIA CENTRALE) (+6m) [Transito]\nRitardo massimo rilevato: 6 min\nAffidab
+ ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9539--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T142725Z
+DTEND:20261122T143255Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:27 - 15:32 (primo: TRENO 9539)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 15:27:25 - 15:32:55\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE) [Tra
+ nsito]\n  - TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\nRi
+ tardo massimo rilevato: -5 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18301--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T143600Z
+DTEND:20261122T144130Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:36 - 15:41 (primo: REG 18301)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 15:36:00 - 15:41:30\nTreni coinvolti
+  nella chiusura:\n  - REG 18301 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTR
+ ALE) [Transito]\n  - REG 18301 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRA
+ LE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\
+ nNota normativa/euristica: Chiusura continua per 2 treni: intervallo utile
+  tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (12
+ 0s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9423--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T144758Z
+DTEND:20261122T145328Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9423 (ROMA TERMINI -> VENEZIA S.LUCIA) ore 
+ 15:52
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 15:47:58 - 15:53:28\nTreni coinvolti nella chius
+ ura:\n  - TRENO 9423 (ROMA TERMINI -> VENEZIA S.LUCIA) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (80% tratta ROMA TERMINI -> FIRENZE SAN
+ TA MARIA NOVELLA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9421--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T145555Z
+DTEND:20261122T150125Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9421 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) o
+ re 16:00
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 15:55:55 - 16:01:25\nTreni coinvolti nella chius
+ ura:\n  - TRENO 9421 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Transito stimato senza fermata (22% tratta FIRENZE SANTA MARIA NOVE
+ LLA -> ROMA TIBURTINA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18522--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T150715Z
+DTEND:20261122T153032Z
+SUMMARY:[CHIUSURA CONTINUA - 9 TRENI] 16:07 - 16:30 (primo: REG 18522)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 9 TRENI\nChiusura sbarre stimata: 16:07:15 - 16:30:32\nTreni coinvolti
+  nella chiusura:\n  - REG 18522 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)
+  [Transito]\n  - REG 18522 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) [Tra
+ nsito]\n  - REG 18771 (FIRENZE SANTA MARIA NOVELLA -> AREZZO) [Transito]\n
+   - TRENO 9639 (MILANO CENTRALE -> REGGIO DI CALABRIA CENTRALE) [Transito]
+ \n  - TRENO 9639 (MILANO CENTRALE -> REGGIO DI CALABRIA CENTRALE) [Transit
+ o]\n  - TRENO 9544 (SALERNO -> MILANO CENTRALE) [Transito]\n  - TRENO 9544
+  (SALERNO -> MILANO CENTRALE) [Transito]\n  - TRENO 9543 (TORINO PORTA NUO
+ VA -> SALERNO) [Transito]\n  - REG 4081 (FIRENZE SANTA MARIA NOVELLA -> FO
+ LIGNO) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 7
+ 8%\nNota normativa/euristica: Chiusura continua per 9 treni: intervallo ut
+ ile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale 
+ (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 9 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9426--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T154502Z
+DTEND:20261122T163145Z
+SUMMARY:[CHIUSURA CONTINUA - 22 TRENI] 16:45 - 17:31 (primo: TRENO 9426) (+
+ 8 min)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 22 TRENI\nChiusura sbarre stimata: 16:45:02 - 17:31:45\nTreni coinvolt
+ i nella chiusura:\n  - TRENO 9426 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) [Tr
+ ansito]\n  - REG 18771 (FIRENZE SANTA MARIA NOVELLA -> AREZZO)\n  - REG 18
+ 385 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE) [Transito]\n  - RE
+ G 18964 (BORGO S.LORENZO -> FIRENZE SANTA MARIA NOVELLA) (+3m) [Transito]\
+ n  - REG 18964 (BORGO S.LORENZO -> FIRENZE SANTA MARIA NOVELLA) (+3m) [Tra
+ nsito]\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELLA) 
+ [Transito]\n  - TRENO 9425 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) (+3m) [Tra
+ nsito]\n  - TRENO 9425 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) (+3m) [Transit
+ o]\n  - REG 18526 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) [Transito]\n 
+  - REG 18526 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) [Transito]\n  - RE
+ G 18223 (FIRENZE SANTA MARIA NOVELLA -> SIENA) [Transito]\n  - REG 4081 (F
+ IRENZE SANTA MARIA NOVELLA -> FOLIGNO)\n  - REG 18775 (FIRENZE SANTA MARIA
+  NOVELLA -> CHIUSI-CHIANCIANO TERME) [Transito]\n  - TRENO 9643 (MILANO CE
+ NTRALE -> NAPOLI CENTRALE) (+2m) [Transito]\n  - TRENO 9643 (MILANO CENTRA
+ LE -> NAPOLI CENTRALE) (+2m) [Transito]\n  - TRENO 9321 (TORINO PORTA NUOV
+ A -> ROMA TERMINI) (+8m) [Transito]\n  - TRENO 9321 (TORINO PORTA NUOVA ->
+  ROMA TERMINI) (+8m) [Transito]\n  - TRENO 9547 (MILANO CENTRALE -> TARANT
+ O) [Transito]\n  - TRENO 9588 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA
+  NUOVA) [Transito]\n  - REG 4109 (FIRENZE SANTA MARIA NOVELLA -> CHIUSI-CH
+ IANCIANO TERME) [Transito]\n  - REG 18307 (FIRENZE SANTA MARIA NOVELLA -> 
+ GROSSETO) [Transito]\n  - REG 18307 (FIRENZE SANTA MARIA NOVELLA -> GROSSE
+ TO) [Transito]\nRitardo massimo rilevato: 8 min\nAffidabilità stima: 78%\
+ nNota normativa/euristica: Chiusura continua per 22 treni: intervallo util
+ e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
+ 20s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 22 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18480--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T163546Z
+DTEND:20261122T164116Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:35 - 17:41 (primo: REG 18480)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 17:35:46 - 17:41:16\nTreni coinvolti
+  nella chiusura:\n  - REG 18480 (FIRENZE SANTA MARIA NOVELLA -> LUCCA) [Tr
+ ansito]\n  - REG 18480 (FIRENZE SANTA MARIA NOVELLA -> LUCCA) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
+ (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9648--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T164434Z
+DTEND:20261122T165004Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9648 (NAPOLI CENTRALE -> MILANO CENTRALE) o
+ re 17:48
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 17:44:34 - 17:50:04\nTreni coinvolti nella chius
+ ura:\n  - TRENO 9648 (NAPOLI CENTRALE -> MILANO CENTRALE) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Transito stimato senza fermata (51% tratta ROMA TERMINI -> MILANO C
+ ENTRALE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9645--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T165628Z
+DTEND:20261122T171816Z
+SUMMARY:[CHIUSURA CONTINUA - 12 TRENI] 17:56 - 18:18 (primo: TRENO 9645) (+
+ 18 min)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 12 TRENI\nChiusura sbarre stimata: 17:56:28 - 18:18:16\nTreni coinvolt
+ i nella chiusura:\n  - TRENO 9645 (TORINO PORTA NUOVA -> ROMA TERMINI) (+1
+ 2m) [Transito]\n  - TRENO 9645 (TORINO PORTA NUOVA -> ROMA TERMINI) (+12m)
+  [Transito]\n  - REG 18775 (FIRENZE SANTA MARIA NOVELLA -> CHIUSI-CHIANCIA
+ NO TERME)\n  - TRENO 8524 (ROMA TERMINI -> BOLZANO) [Transito]\n  - TRENO 
+ 9428 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) (+18m) [Transito]\n  - TRENO 942
+ 8 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) (+18m) [Transito]\n  - TRENO 9323 (
+ TORINO PORTA NUOVA -> ROMA TERMINI) [Transito]\n  - TRENO 9427 (VENEZIA S.
+ LUCIA -> SALERNO) (+11m) [Transito]\n  - TRENO 9427 (VENEZIA S.LUCIA -> SA
+ LERNO) (+11m) [Transito]\n  - REG 4109 (FIRENZE SANTA MARIA NOVELLA -> CHI
+ USI-CHIANCIANO TERME)\n  - TRENO 9647 (MILANO CENTRALE -> FOGGIA) [Transit
+ o]\n  - TRENO 9647 (MILANO CENTRALE -> FOGGIA) [Transito]\nRitardo massimo
+  rilevato: 18 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
+ usura continua per 12 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 12 TRENI,FERROVIA
+X-PL-DELAY-MIN:18
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9551--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T172139Z
+DTEND:20261122T173031Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 18:21 - 18:30 (primo: TRENO 9551) (+2
+ 6 min)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 5 TRENI\nChiusura sbarre stimata: 18:21:39 - 18:30:31\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9551 (MILANO CENTRALE -> SALERNO) [Transito]\n
+   - IC 1552 (ROMA TERMINI -> TRIESTE CENTRALE) (+26m)\n  - IC 1552 (ROMA T
+ ERMINI -> TRIESTE CENTRALE) (+26m)\n  - TRENO 9552 (SALERNO -> TORINO PORT
+ A NUOVA) (+4m) [Transito]\n  - TRENO 9552 (SALERNO -> TORINO PORTA NUOVA) 
+ (+4m) [Transito]\nRitardo massimo rilevato: 26 min\nAffidabilità stima: 7
+ 8%\nNota normativa/euristica: Chiusura continua per 5 treni: intervallo ut
+ ile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale 
+ (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:26
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9652--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T173707Z
+DTEND:20261122T174958Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 18:37 - 18:49 (primo: TRENO 9652) (+2
+  min)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 18:37:07 - 18:49:58\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9652 (NAPOLI CENTRALE -> MILANO CENTRALE) (+2m
+ ) [Transito]\n  - TRENO 9652 (NAPOLI CENTRALE -> MILANO CENTRALE) (+2m) [T
+ ransito]\n  - TRENO 9649 (TORINO PORTA NUOVA -> ROMA TERMINI) [Transito]\n
+   - TRENO 9649 (TORINO PORTA NUOVA -> ROMA TERMINI) [Transito]\nRitardo ma
+ ssimo rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) infer
+ iore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-594--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T180115Z
+DTEND:20261122T181212Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:01 - 19:12 (primo: IC 594)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 19:01:15 - 19:12:12\nTreni coinvolti
+  nella chiusura:\n  - IC 594 (TRIESTE CENTRALE -> ROMA TERMINI)\n  - TRENO
+  9325 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
+ ura continua per 2 treni: intervallo utile tra i passaggi (42s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9555--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T182151Z
+DTEND:20261122T185600Z
+SUMMARY:[CHIUSURA CONTINUA - 16 TRENI] 19:21 - 19:56 (primo: TRENO 9555) (+
+ 29 min)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 16 TRENI\nChiusura sbarre stimata: 19:21:51 - 19:56:00\nTreni coinvolt
+ i nella chiusura:\n  - TRENO 9555 (MILANO CENTRALE -> BATTIPAGLIA) [Transi
+ to]\n  - REG 4106 (ROMA TERMINI -> FIRENZE SANTA MARIA NOVELLA) [Transito]
+ \n  - REG 4106 (ROMA TERMINI -> FIRENZE SANTA MARIA NOVELLA) [Transito]\n 
+  - REG 4051 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE) [Transito]\n
+   - TRENO 9660 (NAPOLI CENTRALE -> BRESCIA) [Transito]\n  - TRENO 9660 (NA
+ POLI CENTRALE -> BRESCIA) [Transito]\n  - TRENO 9658 (REGGIO DI CALABRIA C
+ ENTRALE -> MILANO CENTRALE) (+29m) [Transito]\n  - TRENO 9658 (REGGIO DI C
+ ALABRIA CENTRALE -> MILANO CENTRALE) (+29m) [Transito]\n  - TRENO 9326 (RO
+ MA TERMINI -> TORINO PORTA NUOVA) [Transito]\n  - TRENO 8527 (BRESCIA -> R
+ OMA TERMINI) [Transito]\n  - TRENO 8527 (BRESCIA -> ROMA TERMINI) [Transit
+ o]\n  - TRENO 9653 (MILANO CENTRALE -> SALERNO) [Transito]\n  - TRENO 9653
+  (MILANO CENTRALE -> SALERNO) [Transito]\n  - REG 18690 (FIRENZE SANTA MAR
+ IA NOVELLA -> MONTECATINI TERME-MONSUMMANO) [Transito]\n  - REG 4106 (ROMA
+  TERMINI -> FIRENZE SANTA MARIA NOVELLA)\n  - REG 4106 (ROMA TERMINI -> FI
+ RENZE SANTA MARIA NOVELLA)\nRitardo massimo rilevato: 29 min\nAffidabilit
+ à stima: 78%\nNota normativa/euristica: Chiusura continua per 16 treni: i
+ ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 16 TRENI,FERROVIA
+X-PL-DELAY-MIN:29
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9662--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T190329Z
+DTEND:20261122T190952Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:03 - 20:09 (primo: TRENO 9662)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 20:03:29 - 20:09:52\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9662 (NAPOLI CENTRALE -> MILANO CENTRALE) [Tra
+ nsito]\n  - TRENO 9662 (NAPOLI CENTRALE -> MILANO CENTRALE) [Transito]\n  
+ - TRENO 8528 (ROMA TERMINI -> BRESCIA) [Transito]\n  - TRENO 8528 (ROMA TE
+ RMINI -> BRESCIA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilit
+ à stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9657--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T191246Z
+DTEND:20261122T191816Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9657 (MILANO CENTRALE -> NAPOLI CENTRALE) o
+ re 20:17
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 20:12:46 - 20:18:16\nTreni coinvolti nella chius
+ ura:\n  - TRENO 9657 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Transito stimato senza fermata (34% tratta BOLOGNA C.LE/AV -> ROMA 
+ TERMINI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione AREZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9559--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T192109Z
+DTEND:20261122T192852Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:21 - 20:28 (primo: TRENO 9559)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 20:21:09 - 20:28:52\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9559 (TORINO PORTA NUOVA -> ROMA TERMINI) [Tra
+ nsito]\n  - TRENO 9560 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo mass
  imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
  hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
  re alla soglia minima di sgombero stradale (120s)
@@ -395,443 +1296,57 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18209--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T100815Z
-DTEND:20261122T101757Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:08 - 11:17 (primo: REG 18209)
+UID:train-18325--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T193615Z
+DTEND:20261122T201945Z
+SUMMARY:[CHIUSURA CONTINUA - 16 TRENI] 20:36 - 21:19 (primo: REG 18325)
 DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 11:08:15 - 11:17:57\nTreni coinvolti
-  nella chiusura:\n  - REG 18209 (FIRENZE SANTA MARIA NOVELLA -> SIENA) [Tr
- ansito]\n  - TRENO 9524 (SALERNO -> MILANO CENTRALE) [Transito]\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
- riore alla soglia minima di sgombero stradale (120s)
+ A - 16 TRENI\nChiusura sbarre stimata: 20:36:15 - 21:19:45\nTreni coinvolt
+ i nella chiusura:\n  - REG 18325 (FIRENZE SANTA MARIA NOVELLA -> PISA CENT
+ RALE) [Transito]\n  - TRENO 9328 (ROMA TERMINI -> MANTOVA) [Transito]\n  -
+  TRENO 9328 (ROMA TERMINI -> MANTOVA) [Transito]\n  - TRENO 8529 (BOLZANO 
+ -> ROMA TERMINI) [Transito]\n  - TRENO 9434 (NAPOLI CENTRALE -> VENEZIA S.
+ LUCIA) [Transito]\n  - REG 18329 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO C
+ ENTRALE) [Transito]\n  - REG 18329 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO
+  CENTRALE) [Transito]\n  - TRENO 9435 (VENEZIA S.LUCIA -> NAPOLI CENTRALE)
+  [Transito]\n  - TRENO 9435 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Transito
+ ]\n  - REG 18692 (FIRENZE SANTA MARIA NOVELLA -> MONTECATINI TERME-MONSUMM
+ ANO) [Transito]\n  - REG 18692 (FIRENZE SANTA MARIA NOVELLA -> MONTECATINI
+  TERME-MONSUMMANO) [Transito]\n  - TRENO 9330 (ROMA TERMINI -> MILANO CENT
+ RALE) [Transito]\n  - TRENO 9330 (ROMA TERMINI -> MILANO CENTRALE) [Transi
+ to]\n  - REG 18793 (FIRENZE SANTA MARIA NOVELLA -> AREZZO) [Transito]\n  -
+  REG 18793 (FIRENZE SANTA MARIA NOVELLA -> AREZZO) [Transito]\n  - REG 183
+ 31 (FIRENZE SANTA MARIA NOVELLA -> EMPOLI) [Transito]\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
+  continua per 16 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AREZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 16 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18287--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T102615Z
-DTEND:20261122T103343Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:26 - 11:33 (primo: REG 18287)
+UID:train-4113--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T202502Z
+DTEND:20261122T203415Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 21:25 - 21:34 (primo: REG 4113)
 DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 11:26:15 - 11:33:43\nTreni coinvolti
-  nella chiusura:\n  - REG 18287 (FIRENZE SANTA MARIA NOVELLA -> GROSSETO) 
- [Transito]\n  - TRENO 9310 (NAPOLI CENTRALE -> TORINO PORTA NUOVA) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18289--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T103615Z
-DTEND:20261122T105300Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:36 - 11:53 (primo: REG 18289)
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 11:36:15 - 11:53:00\nTreni coinvolti
-  nella chiusura:\n  - REG 18289 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CE
- NTRALE) [Transito]\n  - TRENO 9416 (ROMA TERMINI -> VENEZIA S.LUCIA) [Tran
- sito]\n  - REG 18753 (FIRENZE SANTA MARIA NOVELLA -> AREZZO)\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
- hiusura continua per 3 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9411--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T105907Z
-DTEND:20261122T110437Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9411 (VENEZIA S.LUCIA -> ROMA TERMINI) ore 
- 12:03
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 11:59:07 - 12:04:37\nTreni coinvolti nella chius
- ura:\n  - TRENO 9411 (VENEZIA S.LUCIA -> ROMA TERMINI) [Transito]\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Transito stimato senza fermata (22% tratta FIRENZE SANTA MARIA NOVELLA
-  -> ROMA TERMINI\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18512--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T110715Z
-DTEND:20261122T111345Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:07 - 12:13 (primo: REG 18512)
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 12:07:15 - 12:13:45\nTreni coinvolti
-  nella chiusura:\n  - REG 18512 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)
-  [Transito]\n  - TRENO 9311 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Trans
- ito]\n  - REG 18213 (FIRENZE SANTA MARIA NOVELLA -> SIENA) [Transito]\nRit
- ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s
- ) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9527--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T112226Z
-DTEND:20261122T112756Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9527 (MILANO CENTRALE -> SALERNO) ore 12:26
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 12:22:26 - 12:27:56\nTreni coinvolti nella chius
- ura:\n  - TRENO 9527 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (24% tratta FIRENZE SANTA MARIA NOVELLA -> R
- OMA TIBURTINA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9623--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T114418Z
-DTEND:20261122T114948Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9623 (MILANO CENTRALE -> REGGIO DI CALABRIA
-  CENTRALE) ore 12:48
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 12:44:18 - 12:49:48\nTreni coinvolti nella chius
- ura:\n  - TRENO 9623 (MILANO CENTRALE -> REGGIO DI CALABRIA CENTRALE) [Tra
- nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Transito stimato senza fermata (35% tratta BOLOGNA C.LE
- /AV -> ROMA TERMINI\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-584--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T120615Z
-DTEND:20261122T122407Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 13:06 - 13:24 (primo: IC 584)
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 13:06:15 - 13:24:07\nTreni coinvolti
-  nella chiusura:\n  - IC 584 (TRIESTE CENTRALE -> ROMA TERMINI)\n  - REG 4
- 077 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO)\n  - TRENO 9532 (NAPOLI CENTR
- ALE -> TORINO PORTA NUOVA) [Transito]\nRitardo massimo rilevato: 0 min\nAf
- fidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 
- treni: intervallo utile tra i passaggi (97s) inferiore alla soglia minima 
- di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9415--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T125712Z
-DTEND:20261122T130242Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9415 (VENEZIA S.LUCIA -> ROMA TERMINI) ore 
- 14:01
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 13:57:12 - 14:02:42\nTreni coinvolti nella chius
- ura:\n  - TRENO 9415 (VENEZIA S.LUCIA -> ROMA TERMINI) [Transito]\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Transito stimato senza fermata (24% tratta FIRENZE SANTA MARIA NOVELLA
-  -> ROMA TIBURTINA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4105--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T131230Z
-DTEND:20261122T131700Z
-SUMMARY:[FERMATA] REG 4105 (FIRENZE SANTA MARIA NOVELLA -> ROMA TERMINI) or
- e 14:16
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 14:12:30 - 14:17:00\nTreni coinvolti nella chiusura:\n  
- - REG 4105 (FIRENZE SANTA MARIA NOVELLA -> ROMA TERMINI)\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previ
- sione da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9535--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T132226Z
-DTEND:20261122T132756Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9535 (TORINO PORTA NUOVA -> NAPOLI CENTRALE
- ) ore 14:26
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 14:22:26 - 14:27:56\nTreni coinvolti nella chius
- ura:\n  - TRENO 9535 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\nR
- itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Transito stimato senza fermata (24% tratta FIRENZE SANTA MARIA N
- OVELLA -> ROMA TIBURTINA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9422--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T133843Z
-DTEND:20261122T135645Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 14:38 - 14:56 (primo: TRENO 9422)
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 14:38:43 - 14:56:45\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9422 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) [Tra
- nsito]\n  - TRENO 9631 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\n  
- - REG 18377 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE) [Transito]
- \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
- a/euristica: Chiusura continua per 3 treni: intervallo utile tra i passagg
- i (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9539--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T142226Z
-DTEND:20261122T142756Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE) o
- re 15:26
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 15:22:26 - 15:27:56\nTreni coinvolti nella chius
- ura:\n  - TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (24% tratta FIRENZE SANTA MARIA NOVE
- LLA -> ROMA TIBURTINA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18301--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T143615Z
-DTEND:20261122T144800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:36 - 15:48 (primo: REG 18301)
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 15:36:15 - 15:48:00\nTreni coinvolti
-  nella chiusura:\n  - REG 18301 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTR
- ALE) [Transito]\n  - TRENO 9423 (ROMA TERMINI -> VENEZIA S.LUCIA) [Transit
- o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Chiusura continua per 2 treni: intervallo utile tra i passa
- ggi (44s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9421--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T145712Z
-DTEND:20261122T150242Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9421 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) o
- re 16:01
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 15:57:12 - 16:02:42\nTreni coinvolti nella chius
- ura:\n  - TRENO 9421 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (24% tratta FIRENZE SANTA MARIA NOVE
- LLA -> ROMA TIBURTINA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9544--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T151343Z
-DTEND:20261122T151948Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:13 - 16:19 (primo: TRENO 9544)
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 16:13:43 - 16:19:48\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9544 (SALERNO -> MILANO CENTRALE) [Transito]\n
-   - TRENO 9639 (MILANO CENTRALE -> REGGIO DI CALABRIA CENTRALE) [Transito]
- \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
- a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
- i (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9543--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T152248Z
-DTEND:20261122T152818Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9543 (TORINO PORTA NUOVA -> SALERNO) ore 16
- :27
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 16:22:48 - 16:28:18\nTreni coinvolti nella chius
- ura:\n  - TRENO 9543 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (22% tratta FIRENZE SANTA MARIA NOVELLA -
- > ROMA TERMINI\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9426--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T153843Z
-DTEND:20261122T154413Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9426 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) o
- re 16:42
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 16:38:43 - 16:44:13\nTreni coinvolti nella chius
- ura:\n  - TRENO 9426 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (75% tratta ROMA TERMINI -> FIRENZE 
- SANTA MARIA NOVELLA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18771--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T154830Z
-DTEND:20261122T160331Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:48 - 17:03 (primo: REG 18771)
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 16:48:30 - 17:03:31\nTreni coinvolti
-  nella chiusura:\n  - REG 18771 (FIRENZE SANTA MARIA NOVELLA -> AREZZO)\n 
-  - REG 18385 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE) [Transito
- ]\n  - TRENO 9425 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Transito]\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Chiusura continua per 3 treni: intervallo utile tra i passaggi (75s) i
- nferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18223--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T160815Z
-DTEND:20261122T162756Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 17:08 - 17:27 (primo: REG 18223)
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 5 TRENI\nChiusura sbarre stimata: 17:08:15 - 17:27:56\nTreni coinvolti
-  nella chiusura:\n  - REG 18223 (FIRENZE SANTA MARIA NOVELLA -> SIENA) [Tr
- ansito]\n  - REG 4081 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO)\n  - TRENO 
- 9643 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\n  - TRENO 9588 (REGG
- IO DI CALABRIA CENTRALE -> TORINO PORTA NUOVA) [Transito]\n  - TRENO 9547 
- (MILANO CENTRALE -> TARANTO) [Transito]\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 
- 5 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
-  di sgombero stradale (120s)
+ A - 5 TRENI\nChiusura sbarre stimata: 21:25:02 - 21:34:15\nTreni coinvolti
+  nella chiusura:\n  - REG 4113 (FIRENZE SANTA MARIA NOVELLA -> ROMA TERMIN
+ I) [Transito]\n  - REG 18335 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTR
+ ALE) [Transito]\n  - TRENO 9329 (TORINO PORTA NUOVA -> PERUGIA)\n  - TRENO
+  9329 (TORINO PORTA NUOVA -> PERUGIA)\n  - TRENO 8596 (ROMA TERMINI -> GEN
+ OVA PIAZZA PRINCIPE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabi
+ lità stima: 78%\nNota normativa/euristica: Chiusura continua per 5 treni:
+  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AREZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -841,246 +1356,43 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9645--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T164604Z
-DTEND:20261122T165134Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9645 (TORINO PORTA NUOVA -> ROMA TERMINI) o
- re 17:50
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 17:46:04 - 17:51:34\nTreni coinvolti nella chius
- ura:\n  - TRENO 9645 (TORINO PORTA NUOVA -> ROMA TERMINI) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (35% tratta BOLOGNA C.LE/AV -> ROMA 
- TERMINI\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-1552--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T165615Z
-DTEND:20261122T170500Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:56 - 18:05 (primo: IC 1552)
+UID:train-8591--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T203819Z
+DTEND:20261122T204349Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:38 - 21:43 (primo: TRENO 8591)
 DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 17:56:15 - 18:05:00\nTreni coinvolti
-  nella chiusura:\n  - IC 1552 (ROMA TERMINI -> TRIESTE CENTRALE)\n  - TREN
- O 8524 (ROMA TERMINI -> BOLZANO) [Transito]\n  - REG 18775 (FIRENZE SANTA 
- MARIA NOVELLA -> CHIUSI-CHIANCIANO TERME)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
- r 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
- ma di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9323--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T170848Z
-DTEND:20261122T172029Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 18:08 - 18:20 (primo: TRENO 9323)
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 4 TRENI\nChiusura sbarre stimata: 18:08:48 - 18:20:29\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9323 (TORINO PORTA NUOVA -> ROMA TERMINI) [Tra
- nsito]\n  - REG 4109 (FIRENZE SANTA MARIA NOVELLA -> CHIUSI-CHIANCIANO TER
- ME)\n  - TRENO 9647 (MILANO CENTRALE -> FOGGIA) [Transito]\n  - TRENO 9552
-  (SALERNO -> TORINO PORTA NUOVA) [Transito]\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua 
- per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
- nima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9551--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T172248Z
-DTEND:20261122T172818Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9551 (MILANO CENTRALE -> SALERNO) ore 18:27
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 18:22:48 - 18:28:18\nTreni coinvolti nella chius
- ura:\n  - TRENO 9551 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (22% tratta FIRENZE SANTA MARIA NOVELLA -> R
- OMA TERMINI\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-594--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T180115Z
-DTEND:20261122T181328Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:01 - 19:13 (primo: IC 594)
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 19:01:15 - 19:13:28\nTreni coinvolti
-  nella chiusura:\n  - IC 594 (TRIESTE CENTRALE -> ROMA TERMINI)\n  - TRENO
-  9325 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
- ura continua per 2 treni: intervallo utile tra i passaggi (118s) inferiore
-  alla soglia minima di sgombero stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 21:38:19 - 21:43:49\nTreni coinvolti
+  nella chiusura:\n  - TRENO 8591 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI) 
+ [Transito]\n  - TRENO 8591 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI) [Trans
+ ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AREZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9555--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T182301Z
-DTEND:20261122T183907Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 19:23 - 19:39 (primo: TRENO 9555)
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 19:23:01 - 19:39:07\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9555 (MILANO CENTRALE -> BATTIPAGLIA) [Transit
- o]\n  - REG 4051 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE) [Transi
- to]\n  - TRENO 9326 (ROMA TERMINI -> TORINO PORTA NUOVA) [Transito]\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
- tica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (111s
- ) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8527--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T184212Z
-DTEND:20261122T185045Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 19:42 - 19:50 (primo: TRENO 8527)
+UID:train-18793--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T205030Z
+DTEND:20261122T210125Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 21:50 - 22:01 (primo: REG 18793)
 DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 19:42:12 - 19:50:45\nTreni coinvolti
-  nella chiusura:\n  - TRENO 8527 (BRESCIA -> ROMA TERMINI) [Transito]\n  -
-  TRENO 9653 (MILANO CENTRALE -> SALERNO) [Transito]\n  - REG 18690 (FIRENZ
- E SANTA MARIA NOVELLA -> MONTECATINI TERME-MONSUMMANO) [Transito]\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) in
- feriore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8528--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T185937Z
-DTEND:20261122T190507Z
-SUMMARY:[TRANSITO VELOCE] TRENO 8528 (ROMA TERMINI -> BRESCIA) ore 20:03
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 19:59:37 - 20:05:07\nTreni coinvolti nella chius
- ura:\n  - TRENO 8528 (ROMA TERMINI -> BRESCIA) [Transito]\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
- sito stimato senza fermata (74% tratta ROMA TIBURTINA -> FIRENZE SANTA MAR
- IA NOVELLA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9657--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T191418Z
-DTEND:20261122T192756Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:14 - 20:27 (primo: TRENO 9657)
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 20:14:18 - 20:27:56\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9657 (MILANO CENTRALE -> NAPOLI CENTRALE) [Tra
- nsito]\n  - TRENO 9560 (LECCE -> MILANO CENTRALE) [Transito]\n  - TRENO 95
- 59 (TORINO PORTA NUOVA -> ROMA TERMINI) [Transito]\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
- ntinua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla so
- glia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18325--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T193615Z
-DTEND:20261122T194742Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:36 - 20:47 (primo: REG 18325)
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 20:36:15 - 20:47:42\nTreni coinvolti
-  nella chiusura:\n  - REG 18325 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTR
- ALE) [Transito]\n  - TRENO 9434 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) [Tran
- sito]\n  - TRENO 8529 (BOLZANO -> ROMA TERMINI) [Transito]\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
- usura continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18329--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T195115Z
-DTEND:20261122T200451Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:51 - 21:04 (primo: REG 18329)
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 4 TRENI\nChiusura sbarre stimata: 20:51:15 - 21:04:51\nTreni coinvolti
-  nella chiusura:\n  - REG 18329 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CE
- NTRALE) [Transito]\n  - REG 18692 (FIRENZE SANTA MARIA NOVELLA -> MONTECAT
- INI TERME-MONSUMMANO) [Transito]\n  - TRENO 9435 (VENEZIA S.LUCIA -> NAPOL
- I CENTRALE) [Transito]\n  - TRENO 9330 (ROMA TERMINI -> MILANO CENTRALE) [
- Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
-  normativa/euristica: Chiusura continua per 4 treni: intervallo utile tra 
- i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ A - 4 TRENI\nChiusura sbarre stimata: 21:50:30 - 22:01:25\nTreni coinvolti
+  nella chiusura:\n  - REG 18793 (FIRENZE SANTA MARIA NOVELLA -> AREZZO)\n 
+  - REG 18793 (FIRENZE SANTA MARIA NOVELLA -> AREZZO)\n  - TRENO 9437 (VENE
+ ZIA S.LUCIA -> ROMA TERMINI) [Transito]\n  - TRENO 9437 (VENEZIA S.LUCIA -
+ > ROMA TERMINI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità
+  stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: inte
+ rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
+ stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AREZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -1090,169 +1402,134 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18331--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T201415Z
-DTEND:20261122T201945Z
-SUMMARY:[TRANSITO VELOCE] REG 18331 (FIRENZE SANTA MARIA NOVELLA -> EMPOLI)
-  ore 21:18
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 21:14:15 - 21:19:45\nTreni coinvolti nella chius
- ura:\n  - REG 18331 (FIRENZE SANTA MARIA NOVELLA -> EMPOLI) [Transito]\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Transito stimato senza fermata (50% tratta FIRENZE SANTA MARIA NO
- VELLA -> FIRENZE RIFREDI\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8596--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T202543Z
-DTEND:20261122T203200Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:25 - 21:32 (primo: TRENO 8596)
+UID:train-18795--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T210930Z
+DTEND:20261122T211700Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 22:09 - 22:17 (primo: REG 18795)
 DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 21:25:43 - 21:32:00\nTreni coinvolti
-  nella chiusura:\n  - TRENO 8596 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) 
- [Transito]\n  - REG 18335 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE
- ) [Transito]\n  - TRENO 9329 (TORINO PORTA NUOVA -> PERUGIA)\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
- hiusura continua per 3 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
+ A - 3 TRENI\nChiusura sbarre stimata: 22:09:30 - 22:17:00\nTreni coinvolti
+  nella chiusura:\n  - REG 18795 (FIRENZE SANTA MARIA NOVELLA -> CHIUSI-CHI
+ ANCIANO TERME) [Transito]\n  - REG 18795 (FIRENZE SANTA MARIA NOVELLA -> C
+ HIUSI-CHIANCIANO TERME) [Transito]\n  - REG 4113 (FIRENZE SANTA MARIA NOVE
+ LLA -> ROMA TERMINI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
+ : 78%\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo
+  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
+ le (120s)
 LOCATION:Passaggio a Livello / Stazione AREZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18793--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T205030Z
-DTEND:20261122T205500Z
-SUMMARY:[FERMATA] REG 18793 (FIRENZE SANTA MARIA NOVELLA -> AREZZO) ore 21:
- 54
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 21:50:30 - 21:55:00\nTreni coinvolti nella chiusura:\n  
- - REG 18793 (FIRENZE SANTA MARIA NOVELLA -> AREZZO)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
-  da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9437--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T205712Z
-DTEND:20261122T210242Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9437 (VENEZIA S.LUCIA -> ROMA TERMINI) ore 
- 22:01
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 21:57:12 - 22:02:42\nTreni coinvolti nella chius
- ura:\n  - TRENO 9437 (VENEZIA S.LUCIA -> ROMA TERMINI) [Transito]\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Transito stimato senza fermata (24% tratta FIRENZE SANTA MARIA NOVELLA
-  -> ROMA TIBURTINA\; pedale annuncio fisso Vmax)
+UID:train-9568--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T211930Z
+DTEND:20261122T213006Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 22:19 - 22:30 (primo: TRENO 9568)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 5 TRENI\nChiusura sbarre stimata: 22:19:30 - 22:30:06\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9568 (POMPEI -> FIRENZE SANTA MARIA NOVELLA)\n
+   - TRENO 9568 (POMPEI -> FIRENZE SANTA MARIA NOVELLA)\n  - TRENO 9567 (TO
+ RINO PORTA NUOVA -> ROMA TERMINI) [Transito]\n  - TRENO 9567 (TORINO PORTA
+  NUOVA -> ROMA TERMINI) [Transito]\n  - REG 4062 (LIVORNO CENTRALE -> FIRE
+ NZE SANTA MARIA NOVELLA) [Transito]\nRitardo massimo rilevato: 0 min\nAffi
+ dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 5 tr
+ eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AREZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4113--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T211230Z
-DTEND:20261122T211700Z
-SUMMARY:[FERMATA] REG 4113 (FIRENZE SANTA MARIA NOVELLA -> ROMA TERMINI) or
- e 22:16
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 22:12:30 - 22:17:00\nTreni coinvolti nella chiusura:\n  
- - REG 4113 (FIRENZE SANTA MARIA NOVELLA -> ROMA TERMINI)\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previ
- sione da traccia oraria regolare
+UID:train-18795--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T214830Z
+DTEND:20261122T215300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:48 - 22:53 (primo: REG 18795)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 22:48:30 - 22:53:00\nTreni coinvolti
+  nella chiusura:\n  - REG 18795 (FIRENZE SANTA MARIA NOVELLA -> CHIUSI-CHI
+ ANCIANO TERME)\n  - REG 18795 (FIRENZE SANTA MARIA NOVELLA -> CHIUSI-CHIAN
+ CIANO TERME)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nN
+ ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
+ ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
+ )
 LOCATION:Passaggio a Livello / Stazione AREZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18795--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T214830Z
-DTEND:20261122T215300Z
-SUMMARY:[FERMATA] REG 18795 (FIRENZE SANTA MARIA NOVELLA -> CHIUSI-CHIANCIA
- NO TERME) ore 22:52
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 22:48:30 - 22:53:00\nTreni coinvolti nella chiusura:\n  
- - REG 18795 (FIRENZE SANTA MARIA NOVELLA -> CHIUSI-CHIANCIANO TERME)\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euri
- stica: Previsione da traccia oraria regolare
+UID:train-9674--20261121-S06915@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T215735Z
+DTEND:20261122T220305Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:57 - 23:03 (primo: TRENO 9674)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 22:57:35 - 23:03:05\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9674 (NAPOLI CENTRALE -> FIRENZE SANTA MARIA N
+ OVELLA) [Transito]\n  - TRENO 9674 (NAPOLI CENTRALE -> FIRENZE SANTA MARIA
+  NOVELLA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima
+ : 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
+  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
+ le (120s)
 LOCATION:Passaggio a Livello / Stazione AREZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-774--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T235105Z
-DTEND:20261122T235535Z
-SUMMARY:[TRANSITO VELOCE] ICN 774 (ROMA TERMINI -> TRIESTE CENTRALE) ore 00
- :54
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 00:51:05 - 00:55:35\nTreni coinvolti nella chius
- ura:\n  - ICN 774 (ROMA TERMINI -> TRIESTE CENTRALE) [Transito]\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (46% tratta CHIUSI-CHIANCIANO TERME -> FI
- RENZE CAMPO MARTE\; pedale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T235135Z
+DTEND:20261123T000143Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 00:51 - 01:01 (primo: ICN 774)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 00:51:35 - 01:01:43\nTreni coinvolti
+  nella chiusura:\n  - ICN 774 (ROMA TERMINI -> TRIESTE CENTRALE) [Transito
+ ]\n  - ICN 774 (ROMA TERMINI -> TRIESTE CENTRALE) [Transito]\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
+ hiusura continua per 2 treni: intervallo utile tra i passaggi (68s) inferi
+ ore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AREZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-797--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261123T015249Z
-DTEND:20261123T015719Z
-SUMMARY:[TRANSITO VELOCE] ICN 797 (TORINO PORTA NUOVA -> SALERNO) ore 02:56
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261123T014611Z
+DTEND:20261123T015041Z
+SUMMARY:[TRANSITO VELOCE] ICN 797 (TORINO PORTA NUOVA -> SALERNO) ore 02:49
 DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 02:52:49 - 02:57:19\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 02:46:11 - 02:50:41\nTreni coinvolti nella chius
  ura:\n  - ICN 797 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRitardo mass
  imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (72% tratta MILANO PORTA GARIBALDI -> ORVIET
+ ransito stimato senza fermata (70% tratta MILANO PORTA GARIBALDI -> ORVIET
  O\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione AREZZO
 STATUS:CONFIRMED
@@ -1264,44 +1541,24 @@ X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-770--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261123T031915Z
 DTEND:20261123T032400Z
-SUMMARY:[FERMATA] ICN 770 (TRIESTE CENTRALE -> ROMA TERMINI) ore 04:23
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 04:19:15 - 04:24:00\nTreni coinvolti nella chiusura:\n  
- - ICN 770 (TRIESTE CENTRALE -> ROMA TERMINI)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
- ccia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 04:19 - 04:24 (primo: ICN 770)
+DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 04:19:15 - 04:24:00\nTreni coinvolti
+  nella chiusura:\n  - ICN 770 (TRIESTE CENTRALE -> ROMA TERMINI)\n  - ICN 
+ 770 (TRIESTE CENTRALE -> ROMA TERMINI)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AREZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:ICN
-END:VEVENT
-BEGIN:VEVENT
-UID:train-1962--20261121-S06915@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261123T044143Z
-DTEND:20261123T044613Z
-SUMMARY:[TRANSITO VELOCE] ICN 1962 (CATANIA CENTRALE -> MILANO CENTRALE) or
- e 05:45
-DESCRIPTION:Stazione/PL: AREZZO (S06915)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 05:41:43 - 05:46:13\nTreni coinvolti nella chius
- ura:\n  - ICN 1962 (CATANIA CENTRALE -> MILANO CENTRALE) [Transito]\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
- tica: Transito stimato senza fermata (33% tratta FIRENZE CAMPO MARTE -> PR
- ATO CENTRALE\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AREZZO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 END:VCALENDAR

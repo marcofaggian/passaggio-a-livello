@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:eefab319a62915d47ce60c2a5ace92cfd22a98cb041dccdd0d886cbdfa88
- 3c1a
+X-CONTENT-HASH:e6cd21d5c6dbd23407b703922f21ef4343157a51c6725c5489e00dab3ad2
+ 97ed
 BEGIN:VEVENT
 UID:train-4151--20261121-S07230@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T051530Z
 DTEND:20261122T052000Z
 SUMMARY:[FERMATA] REG 4151 (ANCONA -> ROMA TERMINI) ore 06:19
@@ -33,16 +33,16 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-534--20261121-S07230@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T073854Z
-DTEND:20261122T074324Z
-SUMMARY:[TRANSITO VELOCE] IC 534 (ROMA TERMINI -> ANCONA) ore 08:42
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T073000Z
+DTEND:20261122T073430Z
+SUMMARY:[TRANSITO VELOCE] IC 534 (ROMA TERMINI -> ANCONA) ore 08:33
 DESCRIPTION:Stazione/PL: NARNI AMELIA (S07230)\nRegime chiusura: TRANSITO V
- ELOCE\nChiusura sbarre stimata: 08:38:54 - 08:43:24\nTreni coinvolti nella
+ ELOCE\nChiusura sbarre stimata: 08:30:00 - 08:34:30\nTreni coinvolti nella
   chiusura:\n  - IC 534 (ROMA TERMINI -> ANCONA) [Transito]\nRitardo massim
  o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
- nsito stimato senza fermata (65% tratta ORTE -> TERNI\; pedale annuncio fi
+ nsito stimato senza fermata (25% tratta ORTE -> TERNI\; pedale annuncio fi
  sso Vmax)
 LOCATION:Passaggio a Livello / Stazione NARNI AMELIA
 STATUS:CONFIRMED
@@ -54,28 +54,30 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4726--20261121-S07230@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T080330Z
-DTEND:20261122T080800Z
-SUMMARY:[FERMATA] REG 4726 (ROMA TERMINI -> PERUGIA) ore 09:07
-DESCRIPTION:Stazione/PL: NARNI AMELIA (S07230)\nRegime chiusura: FERMATA\nC
- hiusura sbarre stimata: 09:03:30 - 09:08:00\nTreni coinvolti nella chiusur
- a:\n  - REG 4726 (ROMA TERMINI -> PERUGIA)\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracc
- ia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T075830Z
+DTEND:20261122T080300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:58 - 09:03 (primo: REG 4726)
+DESCRIPTION:Stazione/PL: NARNI AMELIA (S07230)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:58:30 - 09:03:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 4726 (ROMA TERMINI -> PERUGIA)\n  - REG 47
+ 26 (ROMA TERMINI -> PERUGIA)\nRitardo massimo rilevato: -5 min\nAffidabili
+ tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
+ ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
 LOCATION:Passaggio a Livello / Stazione NARNI AMELIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-5
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4727--20261121-S07230@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T095930Z
 DTEND:20261122T100400Z
 SUMMARY:[FERMATA] REG 4727 (PERUGIA -> ROMA TERMINI) ore 11:03
@@ -94,36 +96,61 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4510--20261121-S07230@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T112030Z
-DTEND:20261122T112500Z
-SUMMARY:[FERMATA] REG 4510 (ROMA TERMINI -> ASSISI) ore 12:24
-DESCRIPTION:Stazione/PL: NARNI AMELIA (S07230)\nRegime chiusura: FERMATA\nC
- hiusura sbarre stimata: 12:20:30 - 12:25:00\nTreni coinvolti nella chiusur
- a:\n  - REG 4510 (ROMA TERMINI -> ASSISI)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
- a oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T111430Z
+DTEND:20261122T111900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:14 - 12:19 (primo: REG 4510)
+DESCRIPTION:Stazione/PL: NARNI AMELIA (S07230)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:14:30 - 12:19:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 4510 (ROMA TERMINI -> ASSISI)\n  - REG 451
+ 0 (ROMA TERMINI -> ASSISI)\nRitardo massimo rilevato: -6 min\nAffidabilit
+ à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
 LOCATION:Passaggio a Livello / Stazione NARNI AMELIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-6
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4154--20261121-S07230@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T131730Z
+DTEND:20261122T132200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:17 - 14:22 (primo: REG 4154) (+5 m
+ in)
+DESCRIPTION:Stazione/PL: NARNI AMELIA (S07230)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:17:30 - 14:22:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 4154 (ROMA TERMINI -> ANCONA) (+5m)\n  - R
+ EG 4154 (ROMA TERMINI -> ANCONA) (+5m)\nRitardo massimo rilevato: 5 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione NARNI AMELIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-540--20261121-S07230@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T150751Z
-DTEND:20261122T151221Z
-SUMMARY:[TRANSITO VELOCE] IC 540 (ROMA TERMINI -> ANCONA) ore 16:11
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T145745Z
+DTEND:20261122T150215Z
+SUMMARY:[TRANSITO VELOCE] IC 540 (ROMA TERMINI -> ANCONA) ore 16:01
 DESCRIPTION:Stazione/PL: NARNI AMELIA (S07230)\nRegime chiusura: TRANSITO V
- ELOCE\nChiusura sbarre stimata: 16:07:51 - 16:12:21\nTreni coinvolti nella
+ ELOCE\nChiusura sbarre stimata: 15:57:45 - 16:02:15\nTreni coinvolti nella
   chiusura:\n  - IC 540 (ROMA TERMINI -> ANCONA) [Transito]\nRitardo massim
  o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
- nsito stimato senza fermata (65% tratta ORTE -> TERNI\; pedale annuncio fi
+ nsito stimato senza fermata (25% tratta ORTE -> TERNI\; pedale annuncio fi
  sso Vmax)
 LOCATION:Passaggio a Livello / Stazione NARNI AMELIA
 STATUS:CONFIRMED
@@ -135,29 +162,31 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-541--20261121-S07230@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T175700Z
-DTEND:20261122T180130Z
-SUMMARY:[TRANSITO VELOCE] IC 541 (ANCONA -> ROMA TERMINI) ore 19:00
-DESCRIPTION:Stazione/PL: NARNI AMELIA (S07230)\nRegime chiusura: TRANSITO V
- ELOCE\nChiusura sbarre stimata: 18:57:00 - 19:01:30\nTreni coinvolti nella
-  chiusura:\n  - IC 541 (ANCONA -> ROMA TERMINI) [Transito]\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
- nsito stimato senza fermata (45% tratta TERNI -> ORTE\; pedale annuncio fi
- sso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T180000Z
+DTEND:20261122T180430Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:00 - 19:04 (primo: IC 541) (+3 min
+ )
+DESCRIPTION:Stazione/PL: NARNI AMELIA (S07230)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:00:00 - 19:04:30\nTreni coi
+ nvolti nella chiusura:\n  - IC 541 (ANCONA -> ROMA TERMINI) (+3m) [Transit
+ o]\n  - IC 541 (ANCONA -> ROMA TERMINI) (+3m) [Transito]\nRitardo massimo 
+ rilevato: 3 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
+ ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione NARNI AMELIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4735--20261121-S07230@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T182130Z
 DTEND:20261122T182600Z
 SUMMARY:[FERMATA] REG 4735 (PERUGIA -> ROMA TERMINI) ore 19:25

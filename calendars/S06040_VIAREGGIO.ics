@@ -9,34 +9,36 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:3dcb8f6c4c09abb231ef137f9ec8ff62e2e6fa61f82a235b761a58246b39
- 9d23
+X-CONTENT-HASH:98b716968997a59a1bacafc77ca9f12362a0b4e47f08fdcc502c01212a4b
+ a0fe
 BEGIN:VEVENT
-UID:train-2294--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T045644Z
-DTEND:20261122T050214Z
-SUMMARY:[TRANSITO VELOCE] REG 2294 (LIVORNO CENTRALE -> MILANO PORTA GARIBA
- LDI) ore 06:00
-DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: TRANSITO VELO
- CE\nChiusura sbarre stimata: 05:56:44 - 06:02:14\nTreni coinvolti nella ch
- iusura:\n  - REG 2294 (LIVORNO CENTRALE -> MILANO PORTA GARIBALDI) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Transito stimato senza fermata (57% tratta PISA CENTRALE -
- > PISA/BINARI PISA S.ROSSORE\; pedale annuncio fisso Vmax)
+UID:train-658--20261121-S06040@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T045515Z
+DTEND:20261122T050208Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 05:55 - 06:02 (primo: IC 658) (+4 min
+ )
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 3 TRENI\nChiusura sbarre stimata: 05:55:15 - 06:02:08\nTreni coinvo
+ lti nella chiusura:\n  - IC 658 (LIVORNO CENTRALE -> MILANO CENTRALE) (+4m
+ )\n  - IC 658 (LIVORNO CENTRALE -> MILANO CENTRALE) (+4m)\n  - REG 2294 (L
+ IVORNO CENTRALE -> MILANO PORTA GARIBALDI) [Transito]\nRitardo massimo ril
+ evato: 4 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
+  continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla
+  soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIAREGGIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2294--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T051330Z
 DTEND:20261122T051800Z
 SUMMARY:[FERMATA] REG 2294 (LIVORNO CENTRALE -> MILANO PORTA GARIBALDI) ore
@@ -55,158 +57,198 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-501--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T052215Z
-DTEND:20261122T052700Z
-SUMMARY:[FERMATA] IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) ore 06:26
-DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: FERMATA\nChiu
- sura sbarre stimata: 06:22:15 - 06:27:00\nTreni coinvolti nella chiusura:\
- n  - IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE)\nRitardo massimo rilevato:
-  0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da 
- traccia oraria regolare
+UID:train-501--20261121-S06040@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T052345Z
+DTEND:20261122T053200Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:23 - 06:32 (primo: IC 501) (+3 min
+ )
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 4 TRENI\nChiusura sbarre stimata: 06:23:45 - 06:32:00\nTreni coinvo
+ lti nella chiusura:\n  - IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) (+3m) 
+ [Arrivo]\n  - IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) (+3m) [Arrivo]\n 
+  - IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) (+3m) [Partenza]\n  - IC 501
+  (SESTRI LEVANTE -> NAPOLI CENTRALE) (+3m) [Partenza]\nRitardo massimo ril
+ evato: 3 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura
+  continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla
+  soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIAREGGIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18553--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T060235Z
-DTEND:20261122T060805Z
-SUMMARY:[TRANSITO VELOCE] REG 18553 (PISA CENTRALE -> LUCCA) ore 07:06
-DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: TRANSITO VELO
- CE\nChiusura sbarre stimata: 07:02:35 - 07:08:05\nTreni coinvolti nella ch
- iusura:\n  - REG 18553 (PISA CENTRALE -> LUCCA) [Transito]\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
- nsito stimato senza fermata (57% tratta PISA CENTRALE -> PISA/BINARI PISA 
- S.ROSSORE\; pedale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T060258Z
+DTEND:20261122T060828Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:02 - 07:08 (primo: REG 18553) (+3 
+ min)
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 07:02:58 - 07:08:28\nTreni coinvo
+ lti nella chiusura:\n  - REG 18553 (PISA CENTRALE -> LUCCA) (+3m) [Transit
+ o]\n  - REG 18553 (PISA CENTRALE -> LUCCA) (+3m) [Transito]\nRitardo massi
+ mo rilevato: 3 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIAREGGIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18355--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T063326Z
-DTEND:20261122T063856Z
-SUMMARY:[TRANSITO VELOCE] REG 18355 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZ
- IA CENTRALE) ore 07:37
-DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: TRANSITO VELO
- CE\nChiusura sbarre stimata: 07:33:26 - 07:38:56\nTreni coinvolti nella ch
- iusura:\n  - REG 18355 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE)
-  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
- ta normativa/euristica: Transito stimato senza fermata (57% tratta PISA CE
- NTRALE -> PISA/BINARI PISA S.ROSSORE\; pedale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T063341Z
+DTEND:20261122T063911Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:33 - 07:39 (primo: REG 18355) (+3 
+ min)
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 07:33:41 - 07:39:11\nTreni coinvo
+ lti nella chiusura:\n  - REG 18355 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZ
+ IA CENTRALE) (+3m) [Transito]\n  - REG 18355 (FIRENZE SANTA MARIA NOVELLA 
+ -> LA SPEZIA CENTRALE) (+3m) [Transito]\nRitardo massimo rilevato: 3 min\n
+ Affidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 
+ 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
+  di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIAREGGIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19155--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T064801Z
-DTEND:20261122T065800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:48 - 07:58 (primo: REG 19155)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T064841Z
+DTEND:20261122T065930Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:48 - 07:59 (primo: REG 19155) (+5 
+ min)
 DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 07:48:01 - 07:58:00\nTreni coinvo
- lti nella chiusura:\n  - REG 19155 (PISA CENTRALE -> AULLA LUNIGIANA) [Tra
- nsito]\n  - REG 18355 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE)\
- nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ INUA - 4 TRENI\nChiusura sbarre stimata: 07:48:41 - 07:59:30\nTreni coinvo
+ lti nella chiusura:\n  - REG 19155 (PISA CENTRALE -> AULLA LUNIGIANA) (+5m
+ ) [Transito]\n  - REG 19155 (PISA CENTRALE -> AULLA LUNIGIANA) (+5m) [Tran
+ sito]\n  - REG 18355 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE) (
+ +1m)\n  - REG 18355 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE) (+
+ 1m)\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Chiusura continua per 4 treni: intervallo utile tra i pass
+ aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VIAREGGIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8605--20261121-S06040@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T075230Z
+DTEND:20261122T080022Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 08:52 - 09:00 (primo: TRENO 8605) (+1
+ 0 min)
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 3 TRENI\nChiusura sbarre stimata: 08:52:30 - 09:00:22\nTreni coinvo
+ lti nella chiusura:\n  - TRENO 8605 (GENOVA PIAZZA PRINCIPE -> ROMA TERMIN
+ I) (+10m)\n  - TRENO 8605 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI) (+10m)\
+ n  - TRENO 8588 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) [Transito]\nRitar
+ do massimo rilevato: 10 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s)
+  inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VIAREGGIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:10
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18357--20261121-S06040@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T080408Z
+DTEND:20261122T081300Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 09:04 - 09:13 (primo: REG 18357)
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 3 TRENI\nChiusura sbarre stimata: 09:04:08 - 09:13:00\nTreni coinvo
+ lti nella chiusura:\n  - REG 18357 (FIRENZE SANTA MARIA NOVELLA -> VIAREGG
+ IO) [Transito]\n  - REG 18357 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) [
+ Transito]\n  - IC 666 (LIVORNO CENTRALE -> MILANO CENTRALE)\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 3 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VIAREGGIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18357--20261121-S06040@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T082600Z
+DTEND:20261122T083030Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:26 - 09:30 (primo: REG 18357)
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 09:26:00 - 09:30:30\nTreni coinvo
+ lti nella chiusura:\n  - REG 18357 (FIRENZE SANTA MARIA NOVELLA -> VIAREGG
+ IO)\n  - REG 18357 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)\nRitardo mas
+ simo rilevato: -5 min\nAffidabilità stima: 99%\nNota normativa/euristica:
+  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
+ iore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VIAREGGIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-5
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18506--20261121-S06040@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T084900Z
+DTEND:20261122T085400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:49 - 09:54 (primo: REG 18506) (+3 
+ min)
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 09:49:00 - 09:54:00\nTreni coinvo
+ lti nella chiusura:\n  - REG 18506 (FIRENZE SANTA MARIA NOVELLA -> VIAREGG
+ IO) (+3m)\n  - REG 18506 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) (+3m)\
+ nRitardo massimo rilevato: 3 min\nAffidabilità stima: 99%\nNota normativa
  /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
   (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIAREGGIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18357--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T080452Z
-DTEND:20261122T081300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:04 - 09:13 (primo: REG 18357)
-DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 09:04:52 - 09:13:00\nTreni coinvo
- lti nella chiusura:\n  - REG 18357 (FIRENZE SANTA MARIA NOVELLA -> VIAREGG
- IO) [Transito]\n  - IC 666 (LIVORNO CENTRALE -> MILANO CENTRALE)\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VIAREGGIO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18357--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T083030Z
-DTEND:20261122T083500Z
-SUMMARY:[FERMATA] REG 18357 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) ore 
- 09:34
-DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: FERMATA\nChiu
- sura sbarre stimata: 09:30:30 - 09:35:00\nTreni coinvolti nella chiusura:\
- n  - REG 18357 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
- isione da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione VIAREGGIO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18506--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T084630Z
-DTEND:20261122T085100Z
-SUMMARY:[FERMATA] REG 18506 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) ore 
- 09:50
-DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: FERMATA\nChiu
- sura sbarre stimata: 09:46:30 - 09:51:00\nTreni coinvolti nella chiusura:\
- n  - REG 18506 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
- isione da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione VIAREGGIO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8606--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T085630Z
 DTEND:20261122T090100Z
 SUMMARY:[FERMATA] TRENO 8606 (ROMA TERMINI -> TORINO PORTA NUOVA) ore 10:00
@@ -225,17 +267,17 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19357--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T094748Z
-DTEND:20261122T095318Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T094800Z
+DTEND:20261122T095330Z
 SUMMARY:[TRANSITO VELOCE] REG 19357 (LA SPEZIA CENTRALE -> PISA CENTRALE) o
  re 10:52
 DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: TRANSITO VELO
- CE\nChiusura sbarre stimata: 10:47:48 - 10:53:18\nTreni coinvolti nella ch
+ CE\nChiusura sbarre stimata: 10:48:00 - 10:53:30\nTreni coinvolti nella ch
  iusura:\n  - REG 19357 (LA SPEZIA CENTRALE -> PISA CENTRALE) [Transito]\nR
  itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Transito stimato senza fermata (51% tratta MASSA CENTRO -> FORTE
+ uristica: Transito stimato senza fermata (54% tratta MASSA CENTRO -> FORTE
   DEI MARMI-SERAVEZZA-QUERCETA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VIAREGGIO
 STATUS:CONFIRMED
@@ -247,13 +289,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2293--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T095948Z
-DTEND:20261122T101005Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 10:59 - 11:10 (primo: REG 2293)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T100000Z
+DTEND:20261122T101001Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:00 - 11:10 (primo: REG 2293)
 DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
- INUA - 3 TRENI\nChiusura sbarre stimata: 10:59:48 - 11:10:05\nTreni coinvo
+ INUA - 3 TRENI\nChiusura sbarre stimata: 11:00:00 - 11:10:01\nTreni coinvo
  lti nella chiusura:\n  - REG 2293 (MILANO CENTRALE -> PISA CENTRALE) [Tran
  sito]\n  - REG 19340 (PISA CENTRALE -> LA SPEZIA CENTRALE) [Transito]\n  -
   REG 19357 (LA SPEZIA CENTRALE -> PISA CENTRALE)\nRitardo massimo rilevato
@@ -270,8 +312,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19340--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T101830Z
 DTEND:20261122T102300Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:18 - 11:23 (primo: REG 19340)
@@ -292,184 +334,253 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-657--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T104603Z
-DTEND:20261122T105033Z
-SUMMARY:[TRANSITO VELOCE] IC 657 (MILANO CENTRALE -> GROSSETO) ore 11:49
-DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: TRANSITO VELO
- CE\nChiusura sbarre stimata: 11:46:03 - 11:50:33\nTreni coinvolti nella ch
- iusura:\n  - IC 657 (MILANO CENTRALE -> GROSSETO) [Transito]\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (51% tratta MASSA CENTRO -> FORTE DEI MARMI-
- SERAVEZZA-QUERCETA\; pedale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T104745Z
+DTEND:20261122T105900Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:47 - 11:59 (primo: IC 657)
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 3 TRENI\nChiusura sbarre stimata: 11:47:45 - 11:59:00\nTreni coinvo
+ lti nella chiusura:\n  - IC 657 (MILANO CENTRALE -> GROSSETO) [Transito]\n
+   - IC 657 (MILANO CENTRALE -> GROSSETO) [Transito]\n  - IC 670 (LIVORNO C
+ ENTRALE -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilit
+ à stima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: in
+ tervallo utile tra i passaggi (119s) inferiore alla soglia minima di sgomb
+ ero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIAREGGIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-670--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T105415Z
-DTEND:20261122T105900Z
-SUMMARY:[FERMATA] IC 670 (LIVORNO CENTRALE -> MILANO CENTRALE) ore 11:58
-DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: FERMATA\nChiu
- sura sbarre stimata: 11:54:15 - 11:59:00\nTreni coinvolti nella chiusura:\
- n  - IC 670 (LIVORNO CENTRALE -> MILANO CENTRALE)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
- a traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione VIAREGGIO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
 UID:train-657--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T110315Z
-DTEND:20261122T110800Z
-SUMMARY:[FERMATA] IC 657 (MILANO CENTRALE -> GROSSETO) ore 12:07
-DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: FERMATA\nChiu
- sura sbarre stimata: 12:03:15 - 12:08:00\nTreni coinvolti nella chiusura:\
- n  - IC 657 (MILANO CENTRALE -> GROSSETO)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
- a oraria regolare
-LOCATION:Passaggio a Livello / Stazione VIAREGGIO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-510--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T121115Z
-DTEND:20261122T121600Z
-SUMMARY:[FERMATA] IC 510 (SALERNO -> TORINO PORTA NUOVA) ore 13:15
-DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: FERMATA\nChiu
- sura sbarre stimata: 13:11:15 - 13:16:00\nTreni coinvolti nella chiusura:\
- n  - IC 510 (SALERNO -> TORINO PORTA NUOVA)\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da trac
- cia oraria regolare
-LOCATION:Passaggio a Livello / Stazione VIAREGGIO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8613--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T124230Z
-DTEND:20261122T125100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:42 - 13:51 (primo: TRENO 8613)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T110745Z
+DTEND:20261122T111500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:07 - 12:15 (primo: IC 657) (+5 min
+ )
 DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 13:42:30 - 13:51:00\nTreni coinvo
- lti nella chiusura:\n  - TRENO 8613 (GENOVA PIAZZA PRINCIPE -> ROMA TERMIN
- I)\n  - REG 18512 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: C
- hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
+ INUA - 2 TRENI\nChiusura sbarre stimata: 12:07:45 - 12:15:00\nTreni coinvo
+ lti nella chiusura:\n  - IC 657 (MILANO CENTRALE -> GROSSETO) (+5m)\n  - I
+ C 657 (MILANO CENTRALE -> GROSSETO) (+5m)\nRitardo massimo rilevato: 5 min
+ \nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua pe
+ r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIAREGGIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-510--20261121-S06040@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T121345Z
+DTEND:20261122T122000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:13 - 13:20 (primo: IC 510) (+2 min
+ )
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 13:13:45 - 13:20:00\nTreni coinvo
+ lti nella chiusura:\n  - IC 510 (SALERNO -> TORINO PORTA NUOVA) (+2m)\n  -
+  IC 510 (SALERNO -> TORINO PORTA NUOVA) (+2m)\nRitardo massimo rilevato: 2
+  min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continu
+ a per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
+ minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VIAREGGIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8613--20261121-S06040@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T124230Z
+DTEND:20261122T125200Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 13:42 - 13:52 (primo: TRENO 8613) (+1
+  min)
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 3 TRENI\nChiusura sbarre stimata: 13:42:30 - 13:52:00\nTreni coinvo
+ lti nella chiusura:\n  - TRENO 8613 (GENOVA PIAZZA PRINCIPE -> ROMA TERMIN
+ I)\n  - REG 18512 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) (+1m)\n  - RE
+ G 18512 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) (+1m)\nRitardo massimo 
+ rilevato: 1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chius
+ ura continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VIAREGGIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18415--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T141248Z
-DTEND:20261122T141818Z
-SUMMARY:[TRANSITO VELOCE] REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA MA
- RIA NOVELLA) ore 15:17
-DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: TRANSITO VELO
- CE\nChiusura sbarre stimata: 15:12:48 - 15:18:18\nTreni coinvolti nella ch
- iusura:\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELLA)
-  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
- ta normativa/euristica: Transito stimato senza fermata (51% tratta MASSA C
- ENTRO -> FORTE DEI MARMI-SERAVEZZA-QUERCETA\; pedale annuncio fisso Vmax)
+UID:train-18395--20261121-S06040@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T131128Z
+DTEND:20261122T131658Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:11 - 14:16 (primo: REG 18395)
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 14:11:28 - 14:16:58\nTreni coinvo
+ lti nella chiusura:\n  - REG 18395 (LA SPEZIA CENTRALE -> FIRENZE SANTA MA
+ RIA NOVELLA) [Transito]\n  - REG 18395 (LA SPEZIA CENTRALE -> FIRENZE SANT
+ A MARIA NOVELLA) [Transito]\nRitardo massimo rilevato: -3 min\nAffidabilit
+ à stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIAREGGIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18395--20261121-S06040@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T132900Z
+DTEND:20261122T133725Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 14:29 - 14:37 (primo: REG 18395) (+6 
+ min)
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 4 TRENI\nChiusura sbarre stimata: 14:29:00 - 14:37:25\nTreni coinvo
+ lti nella chiusura:\n  - REG 18395 (LA SPEZIA CENTRALE -> FIRENZE SANTA MA
+ RIA NOVELLA) (+6m)\n  - REG 18395 (LA SPEZIA CENTRALE -> FIRENZE SANTA MAR
+ IA NOVELLA) (+6m)\n  - REG 19392 (LIVORNO CENTRALE -> LA SPEZIA CENTRALE) 
+ [Transito]\n  - REG 19392 (LIVORNO CENTRALE -> LA SPEZIA CENTRALE) [Transi
+ to]\nRitardo massimo rilevato: 6 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Chiusura continua per 4 treni: intervallo utile tra i pass
+ aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VIAREGGIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19392--20261121-S06040@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T135100Z
+DTEND:20261122T135630Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:51 - 14:56 (primo: REG 19392) (+3 
+ min)
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 14:51:00 - 14:56:30\nTreni coinvo
+ lti nella chiusura:\n  - REG 19392 (LIVORNO CENTRALE -> LA SPEZIA CENTRALE
+ ) (+3m)\n  - REG 19392 (LIVORNO CENTRALE -> LA SPEZIA CENTRALE) (+3m)\nRit
+ ardo massimo rilevato: 3 min\nAffidabilità stima: 99%\nNota normativa/eur
+ istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VIAREGGIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18523--20261121-S06040@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T140830Z
+DTEND:20261122T141830Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 15:08 - 15:18 (primo: REG 18523) (+7 
+ min)
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 5 TRENI\nChiusura sbarre stimata: 15:08:30 - 15:18:30\nTreni coinvo
+ lti nella chiusura:\n  - REG 18523 (VIAREGGIO -> FIRENZE SANTA MARIA NOVEL
+ LA) (+2m)\n  - REG 18523 (VIAREGGIO -> FIRENZE SANTA MARIA NOVELLA) (+2m)\
+ n  - TRENO 8616 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) (+7m)\n  - TRENO 
+ 8616 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) (+7m)\n  - REG 18415 (LA SPE
+ ZIA CENTRALE -> FIRENZE SANTA MARIA NOVELLA) [Transito]\nRitardo massimo r
+ ilevato: 7 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
+ ra continua per 5 treni: intervallo utile tra i passaggi (0s) inferiore al
+ la soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VIAREGGIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18415--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T142930Z
-DTEND:20261122T143805Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:29 - 15:38 (primo: REG 18415)
+DTEND:20261122T143828Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:29 - 15:38 (primo: REG 18415)
 DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 15:29:30 - 15:38:05\nTreni coinvo
+ INUA - 3 TRENI\nChiusura sbarre stimata: 15:29:30 - 15:38:28\nTreni coinvo
  lti nella chiusura:\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA MA
  RIA NOVELLA)\n  - REG 19358 (PISA CENTRALE -> LA SPEZIA CENTRALE) [Transit
- o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Chiusura continua per 2 treni: intervallo utile tra i passa
- ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ o]\n  - REG 19358 (PISA CENTRALE -> LA SPEZIA CENTRALE) [Transito]\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIAREGGIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19358--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T144930Z
-DTEND:20261122T145400Z
-SUMMARY:[FERMATA] REG 19358 (PISA CENTRALE -> LA SPEZIA CENTRALE) ore 15:53
-DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: FERMATA\nChiu
- sura sbarre stimata: 15:49:30 - 15:54:00\nTreni coinvolti nella chiusura:\
- n  - REG 19358 (PISA CENTRALE -> LA SPEZIA CENTRALE)\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
- e da traccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T145100Z
+DTEND:20261122T145630Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:51 - 15:56 (primo: REG 19358) (+2 
+ min)
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 15:51:00 - 15:56:30\nTreni coinvo
+ lti nella chiusura:\n  - REG 19358 (PISA CENTRALE -> LA SPEZIA CENTRALE) (
+ +2m)\n  - REG 19358 (PISA CENTRALE -> LA SPEZIA CENTRALE) (+2m)\nRitardo m
+ assimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica
+ : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIAREGGIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18377--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T150344Z
-DTEND:20261122T150914Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T150338Z
+DTEND:20261122T150908Z
 SUMMARY:[TRANSITO VELOCE] REG 18377 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZ
  IA CENTRALE) ore 16:07
 DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: TRANSITO VELO
- CE\nChiusura sbarre stimata: 16:03:44 - 16:09:14\nTreni coinvolti nella ch
+ CE\nChiusura sbarre stimata: 16:03:38 - 16:09:08\nTreni coinvolti nella ch
  iusura:\n  - REG 18377 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE)
   [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
- ta normativa/euristica: Transito stimato senza fermata (57% tratta PISA CE
+ ta normativa/euristica: Transito stimato senza fermata (56% tratta PISA CE
  NTRALE -> PISA/BINARI PISA S.ROSSORE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VIAREGGIO
 STATUS:CONFIRMED
@@ -481,13 +592,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18399--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T151148Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T151200Z
 DTEND:20261122T152300Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:11 - 16:23 (primo: REG 18399)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:12 - 16:23 (primo: REG 18399)
 DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
- INUA - 3 TRENI\nChiusura sbarre stimata: 16:11:48 - 16:23:00\nTreni coinvo
+ INUA - 3 TRENI\nChiusura sbarre stimata: 16:12:00 - 16:23:00\nTreni coinvo
  lti nella chiusura:\n  - REG 18399 (LA SPEZIA CENTRALE -> FIRENZE SANTA MA
  RIA NOVELLA) [Transito]\n  - REG 18495 (PISA CENTRALE -> FIRENZE SANTA MAR
  IA NOVELLA) [Transito]\n  - REG 18377 (FIRENZE SANTA MARIA NOVELLA -> LA S
@@ -505,13 +616,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18399--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T152830Z
-DTEND:20261122T153805Z
+DTEND:20261122T153801Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:28 - 16:38 (primo: REG 18399)
 DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 16:28:30 - 16:38:05\nTreni coinvo
+ INUA - 2 TRENI\nChiusura sbarre stimata: 16:28:30 - 16:38:01\nTreni coinvo
  lti nella chiusura:\n  - REG 18399 (LA SPEZIA CENTRALE -> FIRENZE SANTA MA
  RIA NOVELLA)\n  - REG 19362 (PISA CENTRALE -> LA SPEZIA CENTRALE) [Transit
  o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
@@ -527,95 +638,123 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8619--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T154230Z
 DTEND:20261122T155500Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:42 - 16:55 (primo: TRENO 8619)
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 16:42 - 16:55 (primo: TRENO 8619)
 DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
- INUA - 3 TRENI\nChiusura sbarre stimata: 16:42:30 - 16:55:00\nTreni coinvo
+ INUA - 5 TRENI\nChiusura sbarre stimata: 16:42:30 - 16:55:00\nTreni coinvo
  lti nella chiusura:\n  - TRENO 8619 (MILANO CENTRALE -> ROMA TERMINI)\n  -
-  REG 19367 (LA SPEZIA CENTRALE -> PISA CENTRALE) [Transito]\n  - REG 19362
-  (PISA CENTRALE -> LA SPEZIA CENTRALE)\nRitardo massimo rilevato: 0 min\nA
- ffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3
-  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
- di sgombero stradale (120s)
+  REG 18587 (PISA CENTRALE -> LUCCA) [Transito]\n  - REG 18587 (PISA CENTRA
+ LE -> LUCCA) [Transito]\n  - REG 19367 (LA SPEZIA CENTRALE -> PISA CENTRAL
+ E) [Transito]\n  - REG 19362 (PISA CENTRALE -> LA SPEZIA CENTRALE)\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Chiusura continua per 5 treni: intervallo utile tra i passaggi (0s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIAREGGIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19367--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T160330Z
-DTEND:20261122T161100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:03 - 17:11 (primo: REG 19367)
-DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 17:03:30 - 17:11:00\nTreni coinvo
- lti nella chiusura:\n  - REG 19367 (LA SPEZIA CENTRALE -> PISA CENTRALE)\n
-   - TRENO 8620 (ROMA TERMINI -> MILANO CENTRALE)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura cont
- inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VIAREGGIO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-684--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T164615Z
-DTEND:20261122T165100Z
-SUMMARY:[FERMATA] IC 684 (GROSSETO -> MILANO CENTRALE) ore 17:50
+DTEND:20261122T160800Z
+SUMMARY:[FERMATA] REG 19367 (LA SPEZIA CENTRALE -> PISA CENTRALE) ore 17:07
 DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: FERMATA\nChiu
- sura sbarre stimata: 17:46:15 - 17:51:00\nTreni coinvolti nella chiusura:\
- n  - IC 684 (GROSSETO -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
- a oraria regolare
+ sura sbarre stimata: 17:03:30 - 17:08:00\nTreni coinvolti nella chiusura:\
+ n  - REG 19367 (LA SPEZIA CENTRALE -> PISA CENTRALE)\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
+ e da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VIAREGGIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-669--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T170315Z
-DTEND:20261122T170914Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:03 - 18:09 (primo: IC 669)
+UID:train-8620--20261121-S06040@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T161130Z
+DTEND:20261122T161600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:11 - 17:16 (primo: TRENO 8620) (+5
+  min)
 DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 18:03:15 - 18:09:14\nTreni coinvo
- lti nella chiusura:\n  - IC 669 (MILANO CENTRALE -> LIVORNO CENTRALE)\n  -
-  REG 18385 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE) [Transito]\
- nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
-  (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ INUA - 2 TRENI\nChiusura sbarre stimata: 17:11:30 - 17:16:00\nTreni coinvo
+ lti nella chiusura:\n  - TRENO 8620 (ROMA TERMINI -> MILANO CENTRALE) (+5m
+ )\n  - TRENO 8620 (ROMA TERMINI -> MILANO CENTRALE) (+5m)\nRitardo massimo
+  rilevato: 5 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiu
+ sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIAREGGIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19370--20261121-S06040@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T164131Z
+DTEND:20261122T165100Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 17:41 - 17:51 (primo: REG 19370)
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 5 TRENI\nChiusura sbarre stimata: 17:41:31 - 17:51:00\nTreni coinvo
+ lti nella chiusura:\n  - REG 19370 (PISA CENTRALE -> LA SPEZIA CENTRALE) [
+ Transito]\n  - REG 19370 (PISA CENTRALE -> LA SPEZIA CENTRALE) [Transito]\
+ n  - REG 18522 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)\n  - REG 18522 (
+ FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)\n  - IC 684 (GROSSETO -> MILANO 
+ CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Chiusura continua per 5 treni: intervallo utile tra 
+ i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VIAREGGIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19370--20261121-S06040@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T165930Z
+DTEND:20261122T170908Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:59 - 18:09 (primo: REG 19370)
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 4 TRENI\nChiusura sbarre stimata: 17:59:30 - 18:09:08\nTreni coinvo
+ lti nella chiusura:\n  - REG 19370 (PISA CENTRALE -> LA SPEZIA CENTRALE)\n
+   - REG 19370 (PISA CENTRALE -> LA SPEZIA CENTRALE)\n  - IC 669 (MILANO CE
+ NTRALE -> LIVORNO CENTRALE)\n  - REG 18385 (FIRENZE SANTA MARIA NOVELLA ->
+  LA SPEZIA CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabi
+ lità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni:
+  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VIAREGGIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18385--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T171830Z
 DTEND:20261122T172300Z
 SUMMARY:[FERMATA] REG 18385 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTR
@@ -634,49 +773,57 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8623--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+UID:train-18526--20261121-S06040@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
 DTSTART:20261122T174630Z
-DTEND:20261122T175100Z
-SUMMARY:[FERMATA] TRENO 8623 (TORINO PORTA NUOVA -> ROMA TERMINI) ore 18:50
-DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: FERMATA\nChiu
- sura sbarre stimata: 18:46:30 - 18:51:00\nTreni coinvolti nella chiusura:\
- n  - TRENO 8623 (TORINO PORTA NUOVA -> ROMA TERMINI)\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
- e da traccia oraria regolare
+DTEND:20261122T175200Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 18:46 - 18:52 (primo: REG 18526) (+1 
+ min)
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 4 TRENI\nChiusura sbarre stimata: 18:46:30 - 18:52:00\nTreni coinvo
+ lti nella chiusura:\n  - REG 18526 (FIRENZE SANTA MARIA NOVELLA -> VIAREGG
+ IO)\n  - REG 18526 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO)\n  - TRENO 8
+ 623 (TORINO PORTA NUOVA -> ROMA TERMINI) (+1m)\n  - TRENO 8623 (TORINO POR
+ TA NUOVA -> ROMA TERMINI) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabi
+ lità stima: 90%\nNota normativa/euristica: Chiusura continua per 4 treni:
+  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIAREGGIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-518--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T181315Z
-DTEND:20261122T181800Z
-SUMMARY:[FERMATA] IC 518 (ROMA TERMINI -> VENTIMIGLIA) ore 19:17
-DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: FERMATA\nChiu
- sura sbarre stimata: 19:13:15 - 19:18:00\nTreni coinvolti nella chiusura:\
- n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
- a oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T181915Z
+DTEND:20261122T182400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:19 - 19:24 (primo: IC 518) (+6 min
+ )
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 19:19:15 - 19:24:00\nTreni coinvo
+ lti nella chiusura:\n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA) (+6m)\n  - I
+ C 518 (ROMA TERMINI -> VENTIMIGLIA) (+6m)\nRitardo massimo rilevato: 6 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua pe
+ r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIAREGGIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-673--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T185715Z
 DTEND:20261122T190200Z
 SUMMARY:[FERMATA] IC 673 (MILANO CENTRALE -> LIVORNO CENTRALE) ore 20:01
@@ -695,8 +842,8 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8626--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T190630Z
 DTEND:20261122T191100Z
 SUMMARY:[FERMATA] TRENO 8626 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) ore 2
@@ -715,17 +862,39 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
+UID:train-8591--20261121-S06040@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T191750Z
+DTEND:20261122T192320Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:17 - 20:23 (primo: TRENO 8591)
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 20:17:50 - 20:23:20\nTreni coinvo
+ lti nella chiusura:\n  - TRENO 8591 (GENOVA PIAZZA PRINCIPE -> ROMA TERMIN
+ I) [Transito]\n  - TRENO 8591 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI) [Tr
+ ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
+ passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VIAREGGIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
 UID:train-18599--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T194801Z
-DTEND:20261122T195331Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T194758Z
+DTEND:20261122T195328Z
 SUMMARY:[TRANSITO VELOCE] REG 18599 (PISA CENTRALE -> LUCCA) ore 20:52
 DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: TRANSITO VELO
- CE\nChiusura sbarre stimata: 20:48:01 - 20:53:31\nTreni coinvolti nella ch
+ CE\nChiusura sbarre stimata: 20:47:58 - 20:53:28\nTreni coinvolti nella ch
  iusura:\n  - REG 18599 (PISA CENTRALE -> LUCCA) [Transito]\nRitardo massim
  o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
- nsito stimato senza fermata (57% tratta PISA CENTRALE -> PISA/BINARI PISA 
+ nsito stimato senza fermata (56% tratta PISA CENTRALE -> PISA/BINARI PISA 
  S.ROSSORE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VIAREGGIO
 STATUS:CONFIRMED
@@ -737,100 +906,127 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2295--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T202318Z
-DTEND:20261122T202848Z
-SUMMARY:[TRANSITO VELOCE] REG 2295 (MILANO PORTA GARIBALDI -> LIVORNO CENTR
- ALE) ore 21:27
-DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: TRANSITO VELO
- CE\nChiusura sbarre stimata: 21:23:18 - 21:28:48\nTreni coinvolti nella ch
- iusura:\n  - REG 2295 (MILANO PORTA GARIBALDI -> LIVORNO CENTRALE) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Transito stimato senza fermata (51% tratta MASSA CENTRO ->
-  FORTE DEI MARMI-SERAVEZZA-QUERCETA\; pedale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T202333Z
+DTEND:20261122T202903Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:23 - 21:29 (primo: REG 2295)
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 21:23:33 - 21:29:03\nTreni coinvo
+ lti nella chiusura:\n  - REG 2295 (MILANO PORTA GARIBALDI -> LIVORNO CENTR
+ ALE) [Transito]\n  - REG 2295 (MILANO PORTA GARIBALDI -> LIVORNO CENTRALE)
+  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
+ a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIAREGGIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2295--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T204030Z
 DTEND:20261122T204500Z
-SUMMARY:[FERMATA] REG 2295 (MILANO PORTA GARIBALDI -> LIVORNO CENTRALE) ore
-  21:44
-DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: FERMATA\nChiu
- sura sbarre stimata: 21:40:30 - 21:45:00\nTreni coinvolti nella chiusura:\
- n  - REG 2295 (MILANO PORTA GARIBALDI -> LIVORNO CENTRALE)\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pre
- visione da traccia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:40 - 21:45 (primo: REG 2295)
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 21:40:30 - 21:45:00\nTreni coinvo
+ lti nella chiusura:\n  - REG 2295 (MILANO PORTA GARIBALDI -> LIVORNO CENTR
+ ALE)\n  - REG 2295 (MILANO PORTA GARIBALDI -> LIVORNO CENTRALE)\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
+ : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIAREGGIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18605--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T204801Z
-DTEND:20261122T205331Z
-SUMMARY:[TRANSITO VELOCE] REG 18605 (PISA CENTRALE -> LUCCA) ore 21:52
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T204758Z
+DTEND:20261122T205900Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 21:47 - 21:59 (primo: REG 18605)
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 4 TRENI\nChiusura sbarre stimata: 21:47:58 - 21:59:00\nTreni coinvo
+ lti nella chiusura:\n  - REG 18605 (PISA CENTRALE -> LUCCA) [Transito]\n  
+ - REG 18605 (PISA CENTRALE -> LUCCA) [Transito]\n  - IC 679 (MILANO CENTRA
+ LE -> LIVORNO CENTRALE)\n  - IC 679 (MILANO CENTRALE -> LIVORNO CENTRALE)\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Chiusura continua per 4 treni: intervallo utile tra i passaggi
+  (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VIAREGGIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8596--20261121-S06040@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T214820Z
+DTEND:20261122T215350Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8596 (ROMA TERMINI -> GENOVA PIAZZA PRINCIP
+ E) ore 22:52
 DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: TRANSITO VELO
- CE\nChiusura sbarre stimata: 21:48:01 - 21:53:31\nTreni coinvolti nella ch
- iusura:\n  - REG 18605 (PISA CENTRALE -> LUCCA) [Transito]\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
- nsito stimato senza fermata (57% tratta PISA CENTRALE -> PISA/BINARI PISA 
- S.ROSSORE\; pedale annuncio fisso Vmax)
+ CE\nChiusura sbarre stimata: 22:48:20 - 22:53:50\nTreni coinvolti nella ch
+ iusura:\n  - TRENO 8596 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) [Transito
+ ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
+ va/euristica: Transito stimato senza fermata (28% tratta PISA CENTRALE -> 
+ LA SPEZIA CENTRALE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VIAREGGIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-685--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T215715Z
 DTEND:20261122T220200Z
-SUMMARY:[FERMATA] IC 685 (MILANO CENTRALE -> LIVORNO CENTRALE) ore 23:01
-DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: FERMATA\nChiu
- sura sbarre stimata: 22:57:15 - 23:02:00\nTreni coinvolti nella chiusura:\
- n  - IC 685 (MILANO CENTRALE -> LIVORNO CENTRALE)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
- a traccia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:57 - 23:02 (primo: IC 685)
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 22:57:15 - 23:02:00\nTreni coinvo
+ lti nella chiusura:\n  - IC 685 (MILANO CENTRALE -> LIVORNO CENTRALE)\n  -
+  IC 685 (MILANO CENTRALE -> LIVORNO CENTRALE)\nRitardo massimo rilevato: 0
+  min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continu
+ a per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
+ minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIAREGGIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-799--20261121-S06040@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261123T005444Z
-DTEND:20261123T005914Z
-SUMMARY:[TRANSITO VELOCE] ICN 799 (TORINO PORTA NUOVA -> SALERNO) ore 01:58
+UID:train-796--20261121-S06040@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261123T023617Z
+DTEND:20261123T024047Z
+SUMMARY:[TRANSITO VELOCE] ICN 796 (SALERNO -> TORINO PORTA NUOVA) ore 03:39
 DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: TRANSITO VELO
- CE\nChiusura sbarre stimata: 01:54:44 - 01:59:14\nTreni coinvolti nella ch
- iusura:\n  - ICN 799 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRitardo m
+ CE\nChiusura sbarre stimata: 03:36:17 - 03:40:47\nTreni coinvolti nella ch
+ iusura:\n  - ICN 796 (SALERNO -> TORINO PORTA NUOVA) [Transito]\nRitardo m
  assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (66% tratta LA SPEZIA CENTRALE -> PISA CE
+ : Transito stimato senza fermata (28% tratta PISA CENTRALE -> LA SPEZIA CE
  NTRALE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VIAREGGIO
 STATUS:CONFIRMED
@@ -838,6 +1034,28 @@ TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:ICN
+END:VEVENT
+BEGIN:VEVENT
+UID:train-812--20261121-S06040@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261123T112215Z
+DTEND:20261123T112700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:22 - 12:27 (primo: ICN 812)
+DESCRIPTION:Stazione/PL: VIAREGGIO (S06040)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 12:22:15 - 12:27:00\nTreni coinvo
+ lti nella chiusura:\n  - ICN 812 (REGGIO DI CALABRIA CENTRALE -> TORINO PO
+ RTA NUOVA)\n  - ICN 812 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA NUOVA
+ )\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normati
+ va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
+ gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VIAREGGIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 END:VCALENDAR

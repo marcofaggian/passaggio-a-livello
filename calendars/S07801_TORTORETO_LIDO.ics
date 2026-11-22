@@ -9,40 +9,43 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:7704fe6b43725ce8278e7e909de027bba54d654538040c79ab5ac5bd5ce8
- 2303
+X-CONTENT-HASH:696da6a9873567b181fe2bf8cf47088db6cbd0819278914aaddb78befab2
+ d968
 BEGIN:VEVENT
 UID:train-4213--20261121-S07801@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T120330Z
-DTEND:20261122T120800Z
-SUMMARY:[FERMATA] REG 4213 (ANCONA -> PESCARA) ore 13:07
-DESCRIPTION:Stazione/PL: TORTORETO LIDO (S07801)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 13:03:30 - 13:08:00\nTreni coinvolti nella chius
- ura:\n  - REG 4213 (ANCONA -> PESCARA)\nRitardo massimo rilevato: 0 min\nA
- ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
- raria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T120630Z
+DTEND:20261122T121200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:06 - 13:12 (primo: REG 4213) (+3 m
+ in)
+DESCRIPTION:Stazione/PL: TORTORETO LIDO (S07801)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:06:30 - 13:12:00\nTreni c
+ oinvolti nella chiusura:\n  - REG 4213 (ANCONA -> PESCARA) (+3m)\n  - REG 
+ 4213 (ANCONA -> PESCARA) (+3m)\nRitardo massimo rilevato: 3 min\nAffidabil
+ ità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: 
+ intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
+ ero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TORTORETO LIDO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2493--20261121-S07801@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T121411Z
-DTEND:20261122T121941Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T121413Z
+DTEND:20261122T121943Z
 SUMMARY:[TRANSITO VELOCE] REG 2493 (REGGIO EMILIA -> PESCARA) ore 13:18
 DESCRIPTION:Stazione/PL: TORTORETO LIDO (S07801)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 13:14:11 - 13:19:41\nTreni coinvolti nel
+  VELOCE\nChiusura sbarre stimata: 13:14:13 - 13:19:43\nTreni coinvolti nel
  la chiusura:\n  - REG 2493 (REGGIO EMILIA -> PESCARA) [Transito]\nRitardo 
  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Transito stimato senza fermata (44% tratta ALBA ADRIATICA-NERETO-CONTRO
+ a: Transito stimato senza fermata (45% tratta ALBA ADRIATICA-NERETO-CONTRO
  GUERRA -> GIULIANOVA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione TORTORETO LIDO
 STATUS:CONFIRMED
@@ -50,6 +53,28 @@ TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4223--20261121-S07801@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T170930Z
+DTEND:20261122T171400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:09 - 18:14 (primo: REG 4223)
+DESCRIPTION:Stazione/PL: TORTORETO LIDO (S07801)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:09:30 - 18:14:00\nTreni c
+ oinvolti nella chiusura:\n  - REG 4223 (ANCONA -> PESCARA)\n  - REG 4223 (
+ ANCONA -> PESCARA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
+ 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo u
+ tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
+  (120s)
+LOCATION:Passaggio a Livello / Stazione TORTORETO LIDO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

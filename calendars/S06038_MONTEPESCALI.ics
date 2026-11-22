@@ -9,32 +9,58 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:28e4a330c56bc78fc9ed9d2554a8b53cef24b66f37a4166c34450108d240
- 604e
+X-CONTENT-HASH:c4bb27ef4e0773845db1cde610ac5a90aa0f9e9e552f2a879e303243147f
+ 45ea
 BEGIN:VEVENT
 UID:train-4125--20261121-S06038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T060630Z
-DTEND:20261122T061100Z
-SUMMARY:[FERMATA] REG 4125 (PISA CENTRALE -> ROMA TERMINI) ore 07:10
-DESCRIPTION:Stazione/PL: MONTEPESCALI (S06038)\nRegime chiusura: FERMATA\nC
- hiusura sbarre stimata: 07:06:30 - 07:11:00\nTreni coinvolti nella chiusur
- a:\n  - REG 4125 (PISA CENTRALE -> ROMA TERMINI)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da
-  traccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T061300Z
+DTEND:20261122T061830Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:13 - 07:18 (primo: REG 4125) (+7 m
+ in)
+DESCRIPTION:Stazione/PL: MONTEPESCALI (S06038)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:13:00 - 07:18:30\nTreni coi
+ nvolti nella chiusura:\n  - REG 4125 (PISA CENTRALE -> ROMA TERMINI) (+7m)
+ \n  - REG 4125 (PISA CENTRALE -> ROMA TERMINI) (+7m)\nRitardo massimo rile
+ vato: 7 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura 
+ continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONTEPESCALI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-501--20261121-S06038@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T070745Z
+DTEND:20261122T071215Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:07 - 08:12 (primo: IC 501) (+11 mi
+ n)
+DESCRIPTION:Stazione/PL: MONTEPESCALI (S06038)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:07:45 - 08:12:15\nTreni coi
+ nvolti nella chiusura:\n  - IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) (+1
+ 1m) [Transito]\n  - IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) (+11m) [Tra
+ nsito]\nRitardo massimo rilevato: 11 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
+ passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MONTEPESCALI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:11
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
 UID:train-4124--20261121-S06038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T073430Z
 DTEND:20261122T073900Z
 SUMMARY:[FERMATA] REG 4124 (ROMA TERMINI -> PISA CENTRALE) ore 08:38
@@ -52,101 +78,157 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-510--20261121-S06038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T103925Z
-DTEND:20261122T104355Z
-SUMMARY:[TRANSITO VELOCE] IC 510 (SALERNO -> TORINO PORTA NUOVA) ore 11:42
-DESCRIPTION:Stazione/PL: MONTEPESCALI (S06038)\nRegime chiusura: TRANSITO V
- ELOCE\nChiusura sbarre stimata: 11:39:25 - 11:43:55\nTreni coinvolti nella
-  chiusura:\n  - IC 510 (SALERNO -> TORINO PORTA NUOVA) [Transito]\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Transito stimato senza fermata (35% tratta GROSSETO -> FOLLONICA\; ped
- ale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione MONTEPESCALI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4128--20261121-S06038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T113330Z
-DTEND:20261122T113800Z
-SUMMARY:[FERMATA] REG 4128 (ROMA TERMINI -> PISA CENTRALE) ore 12:37
-DESCRIPTION:Stazione/PL: MONTEPESCALI (S06038)\nRegime chiusura: FERMATA\nC
- hiusura sbarre stimata: 12:33:30 - 12:38:00\nTreni coinvolti nella chiusur
- a:\n  - REG 4128 (ROMA TERMINI -> PISA CENTRALE)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da
-  traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione MONTEPESCALI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18308--20261121-S06038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T125330Z
-DTEND:20261122T125816Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:53 - 13:58 (primo: REG 18308)
+UID:train-4127--20261121-S06038@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T081100Z
+DTEND:20261122T081730Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:11 - 09:17 (primo: REG 4127) (+2 m
+ in)
 DESCRIPTION:Stazione/PL: MONTEPESCALI (S06038)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:53:30 - 13:58:16\nTreni coi
- nvolti nella chiusura:\n  - REG 18308 (GROSSETO -> FIRENZE SANTA MARIA NOV
- ELLA)\n  - REG 18287 (FIRENZE SANTA MARIA NOVELLA -> GROSSETO) [Transito]\
- nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
-  (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:11:00 - 09:17:30\nTreni coi
+ nvolti nella chiusura:\n  - REG 4127 (PISA CENTRALE -> ROMA TERMINI) (+2m)
+ \n  - REG 4127 (PISA CENTRALE -> ROMA TERMINI) (+2m)\nRitardo massimo rile
+ vato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura 
+ continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONTEPESCALI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18267--20261121-S06038@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T084537Z
+DTEND:20261122T085107Z
+SUMMARY:[TRANSITO VELOCE] REG 18267 (FIRENZE SANTA MARIA NOVELLA -> GROSSET
+ O) ore 09:49 (+1 min)
+DESCRIPTION:Stazione/PL: MONTEPESCALI (S06038)\nRegime chiusura: TRANSITO V
+ ELOCE\nChiusura sbarre stimata: 09:45:37 - 09:51:07\nTreni coinvolti nella
+  chiusura:\n  - REG 18267 (FIRENZE SANTA MARIA NOVELLA -> GROSSETO) (+1m) 
+ [Transito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Transito stimato senza fermata (62% tratta FOLLONIC
+ A -> GROSSETO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MONTEPESCALI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4128--20261121-S06038@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T114130Z
+DTEND:20261122T114730Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:41 - 12:47 (primo: REG 4128) (+9 m
+ in)
+DESCRIPTION:Stazione/PL: MONTEPESCALI (S06038)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:41:30 - 12:47:30\nTreni coi
+ nvolti nella chiusura:\n  - REG 4128 (ROMA TERMINI -> PISA CENTRALE) (+9m)
+ \n  - REG 4128 (ROMA TERMINI -> PISA CENTRALE) (+9m)\nRitardo massimo rile
+ vato: 9 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura 
+ continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MONTEPESCALI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:9
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18308--20261121-S06038@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T125500Z
+DTEND:20261122T130934Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 13:55 - 14:09 (primo: REG 18308) (+3 
+ min)
+DESCRIPTION:Stazione/PL: MONTEPESCALI (S06038)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 5 TRENI\nChiusura sbarre stimata: 13:55:00 - 14:09:34\nTreni coi
+ nvolti nella chiusura:\n  - REG 18308 (GROSSETO -> FIRENZE SANTA MARIA NOV
+ ELLA) (+3m)\n  - REG 18308 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA) (+3m)
+ \n  - IC 657 (MILANO CENTRALE -> GROSSETO) [Transito]\n  - REG 18287 (FIRE
+ NZE SANTA MARIA NOVELLA -> GROSSETO) (+2m) [Transito]\n  - REG 18287 (FIRE
+ NZE SANTA MARIA NOVELLA -> GROSSETO) (+2m) [Transito]\nRitardo massimo ril
+ evato: 3 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
+  continua per 5 treni: intervallo utile tra i passaggi (0s) inferiore alla
+  soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MONTEPESCALI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18287--20261121-S06038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T131930Z
-DTEND:20261122T132400Z
-SUMMARY:[FERMATA] REG 18287 (FIRENZE SANTA MARIA NOVELLA -> GROSSETO) ore 1
- 4:23
-DESCRIPTION:Stazione/PL: MONTEPESCALI (S06038)\nRegime chiusura: FERMATA\nC
- hiusura sbarre stimata: 14:19:30 - 14:24:00\nTreni coinvolti nella chiusur
- a:\n  - REG 18287 (FIRENZE SANTA MARIA NOVELLA -> GROSSETO)\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pr
- evisione da traccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T132300Z
+DTEND:20261122T132800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:23 - 14:28 (primo: REG 18287) (+3 
+ min)
+DESCRIPTION:Stazione/PL: MONTEPESCALI (S06038)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:23:00 - 14:28:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 18287 (FIRENZE SANTA MARIA NOVELLA -> GROS
+ SETO) (+3m)\n  - REG 18287 (FIRENZE SANTA MARIA NOVELLA -> GROSSETO) (+3m)
+ \nRitardo massimo rilevato: 3 min\nAffidabilità stima: 99%\nNota normativ
+ a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
+ i (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONTEPESCALI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4132--20261121-S06038@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T133230Z
+DTEND:20261122T133930Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:32 - 14:39 (primo: REG 4132) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: MONTEPESCALI (S06038)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:32:30 - 14:39:30\nTreni coi
+ nvolti nella chiusura:\n  - REG 4132 (ROMA TERMINI -> PISA CENTRALE) (+1m)
+ \n  - REG 4132 (ROMA TERMINI -> PISA CENTRALE) (+1m)\nRitardo massimo rile
+ vato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura 
+ continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MONTEPESCALI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-684--20261121-S06038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T150643Z
-DTEND:20261122T151113Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T150632Z
+DTEND:20261122T151102Z
 SUMMARY:[TRANSITO VELOCE] IC 684 (GROSSETO -> MILANO CENTRALE) ore 16:10
 DESCRIPTION:Stazione/PL: MONTEPESCALI (S06038)\nRegime chiusura: TRANSITO V
- ELOCE\nChiusura sbarre stimata: 16:06:43 - 16:11:13\nTreni coinvolti nella
+ ELOCE\nChiusura sbarre stimata: 16:06:32 - 16:11:02\nTreni coinvolti nella
   chiusura:\n  - IC 684 (GROSSETO -> MILANO CENTRALE) [Transito]\nRitardo m
  assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (35% tratta GROSSETO -> FOLLONICA\; pedal
+ : Transito stimato senza fermata (34% tratta GROSSETO -> FOLLONICA\; pedal
  e annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONTEPESCALI
 STATUS:CONFIRMED
@@ -158,8 +240,8 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4134--20261121-S06038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T153630Z
 DTEND:20261122T154100Z
 SUMMARY:[FERMATA] REG 4134 (ROMA TERMINI -> PISA CENTRALE) ore 16:40
@@ -178,8 +260,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4135--20261121-S06038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T161030Z
 DTEND:20261122T161500Z
 SUMMARY:[FERMATA] REG 4135 (PISA CENTRALE -> ROMA TERMINI) ore 17:14
@@ -197,9 +279,32 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-518--20261121-S06038@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T164533Z
+DTEND:20261122T165003Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:45 - 17:50 (primo: IC 518) (+6 min
+ )
+DESCRIPTION:Stazione/PL: MONTEPESCALI (S06038)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:45:33 - 17:50:03\nTreni coi
+ nvolti nella chiusura:\n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA) (+6m) [Tr
+ ansito]\n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA) (+6m) [Transito]\nRitard
+ o massimo rilevato: 6 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MONTEPESCALI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
 UID:train-4136--20261121-S06038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T174130Z
 DTEND:20261122T174600Z
 SUMMARY:[FERMATA] REG 4136 (ROMA TERMINI -> PISA CENTRALE) ore 18:45
@@ -218,8 +323,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4137--20261121-S06038@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T181030Z
 DTEND:20261122T181500Z
 SUMMARY:[FERMATA] REG 4137 (PISA CENTRALE -> ROMA TERMINI) ore 19:14
@@ -232,6 +337,50 @@ LOCATION:Passaggio a Livello / Stazione MONTEPESCALI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18307--20261121-S06038@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T185108Z
+DTEND:20261122T185638Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:51 - 19:56 (primo: REG 18307)
+DESCRIPTION:Stazione/PL: MONTEPESCALI (S06038)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:51:08 - 19:56:38\nTreni coi
+ nvolti nella chiusura:\n  - REG 18307 (FIRENZE SANTA MARIA NOVELLA -> GROS
+ SETO) [Transito]\n  - REG 18307 (FIRENZE SANTA MARIA NOVELLA -> GROSSETO) 
+ [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra
+  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MONTEPESCALI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18307--20261121-S06038@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T191130Z
+DTEND:20261122T191600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:11 - 20:16 (primo: REG 18307)
+DESCRIPTION:Stazione/PL: MONTEPESCALI (S06038)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:11:30 - 20:16:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 18307 (FIRENZE SANTA MARIA NOVELLA -> GROS
+ SETO)\n  - REG 18307 (FIRENZE SANTA MARIA NOVELLA -> GROSSETO)\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica:
+  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
+ iore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MONTEPESCALI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

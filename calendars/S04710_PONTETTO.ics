@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:e0d34523d129727bd69908c570d97adc32a47fde04cc577c7c3751ce40e0
- d4e5
+X-CONTENT-HASH:a241ba5eb42c5289b0e2fda4bff4d52302e54d5a116f54debf273cfd8583
+ a721
 BEGIN:VEVENT
 UID:train-12353--20261121-S04710@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T093845Z
 DTEND:20261122T094415Z
 SUMMARY:[TRANSITO VELOCE] REG 12353 (SAVONA -> SESTRI LEVANTE) ore 10:43
@@ -34,29 +34,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12373--20261121-S04710@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T113845Z
-DTEND:20261122T114415Z
-SUMMARY:[TRANSITO VELOCE] REG 12373 (SAVONA -> SESTRI LEVANTE) ore 12:43
-DESCRIPTION:Stazione/PL: PONTETTO (S04710)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 12:38:45 - 12:44:15\nTreni coinvolti nella chi
- usura:\n  - REG 12373 (SAVONA -> SESTRI LEVANTE) [Transito]\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
- ansito stimato senza fermata (50% tratta BOGLIASCO -> PIEVE LIGURE\; pedal
- e annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T114015Z
+DTEND:20261122T114545Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:40 - 12:45 (primo: REG 12373)
+DESCRIPTION:Stazione/PL: PONTETTO (S04710)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 12:40:15 - 12:45:45\nTreni coinvol
+ ti nella chiusura:\n  - REG 12373 (SAVONA -> SESTRI LEVANTE) [Transito]\n 
+  - REG 12373 (SAVONA -> SESTRI LEVANTE) [Transito]\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
+ ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PONTETTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12403--20261121-S04710@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T144130Z
 DTEND:20261122T144600Z
 SUMMARY:[FERMATA] REG 12403 (SAVONA -> SESTRI LEVANTE) ore 15:45
@@ -75,38 +76,85 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12412--20261121-S04710@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T151130Z
-DTEND:20261122T151600Z
-SUMMARY:[FERMATA] REG 12412 (SESTRI LEVANTE -> SAVONA) ore 16:15
-DESCRIPTION:Stazione/PL: PONTETTO (S04710)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 16:11:30 - 16:16:00\nTreni coinvolti nella chiusura:\n
-   - REG 12412 (SESTRI LEVANTE -> SAVONA)\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia
-  oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T151930Z
+DTEND:20261122T152400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:19 - 16:24 (primo: REG 12412) (+8 
+ min)
+DESCRIPTION:Stazione/PL: PONTETTO (S04710)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 16:19:30 - 16:24:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 12412 (SESTRI LEVANTE -> SAVONA) (+8m)\n  - RE
+ G 12412 (SESTRI LEVANTE -> SAVONA) (+8m)\nRitardo massimo rilevato: 8 min\
+ nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per
+  2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
+ a di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PONTETTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3283--20261121-S04710@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T184445Z
+DTEND:20261122T185015Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:44 - 19:50 (primo: REG 3283)
+DESCRIPTION:Stazione/PL: PONTETTO (S04710)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 19:44:45 - 19:50:15\nTreni coinvol
+ ti nella chiusura:\n  - REG 3283 (GENOVA BRIGNOLE -> PARMA) [Transito]\n  
+ - REG 3283 (GENOVA BRIGNOLE -> PARMA) [Transito]\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PONTETTO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12452--20261121-S04710@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T191130Z
+DTEND:20261122T191600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:11 - 20:16 (primo: REG 12452)
+DESCRIPTION:Stazione/PL: PONTETTO (S04710)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 20:11:30 - 20:16:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 12452 (SESTRI LEVANTE -> SAVONA)\n  - REG 1245
+ 2 (SESTRI LEVANTE -> SAVONA)\nRitardo massimo rilevato: 0 min\nAffidabilit
+ à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PONTETTO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-12448--20261121-S04710@pl-tracker.local
-DTSTAMP:20261122T065144Z
+UID:train-12453--20261121-S04710@pl-tracker.local
+DTSTAMP:20261122T150820Z
 SEQUENCE:0
-DTSTART:20261122T184345Z
-DTEND:20261122T185015Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:43 - 19:50 (primo: REG 12448)
+DTSTART:20261122T193845Z
+DTEND:20261122T194415Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:38 - 20:44 (primo: REG 12453)
 DESCRIPTION:Stazione/PL: PONTETTO (S04710)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 19:43:45 - 19:50:15\nTreni coinvol
- ti nella chiusura:\n  - REG 12448 (SESTRI LEVANTE -> SAVONA) [Transito]\n 
-  - REG 3283 (GENOVA BRIGNOLE -> PARMA) [Transito]\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
- tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
- lia minima di sgombero stradale (120s)
+ NUA - 2 TRENI\nChiusura sbarre stimata: 20:38:45 - 20:44:15\nTreni coinvol
+ ti nella chiusura:\n  - REG 12453 (SAVONA -> SESTRI LEVANTE) [Transito]\n 
+  - REG 12453 (SAVONA -> SESTRI LEVANTE) [Transito]\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
+ ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PONTETTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -117,20 +165,22 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12463--20261121-S04710@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T204030Z
 DTEND:20261122T204500Z
-SUMMARY:[FERMATA] REG 12463 (SAVONA -> SESTRI LEVANTE) ore 21:44
-DESCRIPTION:Stazione/PL: PONTETTO (S04710)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 21:40:30 - 21:45:00\nTreni coinvolti nella chiusura:\n
-   - REG 12463 (SAVONA -> SESTRI LEVANTE)\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia
-  oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:40 - 21:45 (primo: REG 12463)
+DESCRIPTION:Stazione/PL: PONTETTO (S04710)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 21:40:30 - 21:45:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 12463 (SAVONA -> SESTRI LEVANTE)\n  - REG 1246
+ 3 (SAVONA -> SESTRI LEVANTE)\nRitardo massimo rilevato: 0 min\nAffidabilit
+ à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PONTETTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

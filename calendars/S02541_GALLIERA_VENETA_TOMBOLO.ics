@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:28360a230e030bfa98730fbe3d84a4a5c813ff650312b7d1dad3a51ab33f
- 7ecd
+X-CONTENT-HASH:ea15e45015d64bc141642c843c997b4ee51e79d9f21d7fd815258f48aa46
+ 4c24
 BEGIN:VEVENT
 UID:train-16158--20261121-S02541@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T071130Z
 DTEND:20261122T071600Z
 SUMMARY:[FERMATA] REG 16158 (TREVISO CENTRALE -> VICENZA) ore 08:15
@@ -33,20 +33,67 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16188--20261121-S02541@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T151130Z
-DTEND:20261122T151600Z
-SUMMARY:[FERMATA] REG 16188 (TREVISO CENTRALE -> VICENZA) ore 16:15
+DTEND:20261122T152254Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:11 - 16:22 (primo: REG 16188)
 DESCRIPTION:Stazione/PL: GALLIERA VENETA TOMBOLO (S02541)\nRegime chiusura:
-  FERMATA\nChiusura sbarre stimata: 16:11:30 - 16:16:00\nTreni coinvolti ne
- lla chiusura:\n  - REG 16188 (TREVISO CENTRALE -> VICENZA)\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pre
- visione da traccia oraria regolare
+  CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:11:30 - 16:22:54
+ \nTreni coinvolti nella chiusura:\n  - REG 16188 (TREVISO CENTRALE -> VICE
+ NZA)\n  - REG 16187 (VICENZA -> TREVISO CENTRALE) [Transito]\n  - REG 1618
+ 7 (VICENZA -> TREVISO CENTRALE) [Transito]\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
+ er 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
+ ima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GALLIERA VENETA TOMBOLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16187--20261121-S02541@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T153930Z
+DTEND:20261122T154400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:39 - 16:44 (primo: REG 16187)
+DESCRIPTION:Stazione/PL: GALLIERA VENETA TOMBOLO (S02541)\nRegime chiusura:
+  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:39:30 - 16:44:00
+ \nTreni coinvolti nella chiusura:\n  - REG 16187 (VICENZA -> TREVISO CENTR
+ ALE)\n  - REG 16187 (VICENZA -> TREVISO CENTRALE)\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
+ tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GALLIERA VENETA TOMBOLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16200--20261121-S02541@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T201130Z
+DTEND:20261122T201600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:11 - 21:16 (primo: REG 16200)
+DESCRIPTION:Stazione/PL: GALLIERA VENETA TOMBOLO (S02541)\nRegime chiusura:
+  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:11:30 - 21:16:00
+ \nTreni coinvolti nella chiusura:\n  - REG 16200 (TREVISO CENTRALE -> VICE
+ NZA)\n  - REG 16200 (TREVISO CENTRALE -> VICENZA)\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
+ tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GALLIERA VENETA TOMBOLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

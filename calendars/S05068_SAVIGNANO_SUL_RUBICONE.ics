@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:455d71780a31d023799cf3a002f94ab7be83d104f5e85183459075f4c757
- 0dd3
+X-CONTENT-HASH:387f6bf21a77c32d4fcbfa96284ceca2b35b3b74bce59cff0cdf2b697ef9
+ cc0f
 BEGIN:VEVENT
 UID:train-3901--20261121-S05068@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T064530Z
 DTEND:20261122T065000Z
 SUMMARY:[FERMATA] REG 3901 (BOLOGNA CENTRALE -> ANCONA) ore 07:49
@@ -32,100 +32,174 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-605--20261121-S05068@pl-tracker.local
-DTSTAMP:20261122T065144Z
+UID:train-17437--20261121-S05068@pl-tracker.local
+DTSTAMP:20261122T150820Z
 SEQUENCE:0
-DTSTART:20261122T095621Z
-DTEND:20261122T100051Z
-SUMMARY:[TRANSITO VELOCE] IC 605 (MILANO CENTRALE -> LECCE) ore 10:59
+DTSTART:20261122T070931Z
+DTEND:20261122T071501Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:09 - 08:15 (primo: REG 17437) (+3 
+ min)
 DESCRIPTION:Stazione/PL: SAVIGNANO SUL RUBICONE (S05068)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 10:56:21 - 11:00:51\nTreni coinv
- olti nella chiusura:\n  - IC 605 (MILANO CENTRALE -> LECCE) [Transito]\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Transito stimato senza fermata (43% tratta CESENA -> RIMINI\; ped
- ale annuncio fisso Vmax)
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:09:31 - 08:15:01\
+ nTreni coinvolti nella chiusura:\n  - REG 17437 (BOLOGNA CENTRALE -> RIMIN
+ I) (+3m) [Transito]\n  - REG 17437 (BOLOGNA CENTRALE -> RIMINI) (+3m) [Tra
+ nsito]\nRitardo massimo rilevato: 3 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i p
+ assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SAVIGNANO SUL RUBICONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17437--20261121-S05068@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T071800Z
+DTEND:20261122T072330Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:18 - 08:23 (primo: REG 17437) (+4 
+ min)
+DESCRIPTION:Stazione/PL: SAVIGNANO SUL RUBICONE (S05068)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:18:00 - 08:23:30\
+ nTreni coinvolti nella chiusura:\n  - REG 17437 (BOLOGNA CENTRALE -> RIMIN
+ I) (+4m)\n  - REG 17437 (BOLOGNA CENTRALE -> RIMINI) (+4m)\nRitardo massim
+ o rilevato: 4 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chi
+ usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
+  alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SAVIGNANO SUL RUBICONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3905--20261121-S05068@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T075000Z
+DTEND:20261122T080033Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 08:50 - 09:00 (primo: REG 3905) (+5 m
+ in)
+DESCRIPTION:Stazione/PL: SAVIGNANO SUL RUBICONE (S05068)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 08:50:00 - 09:00:33\
+ nTreni coinvolti nella chiusura:\n  - REG 3905 (REGGIO EMILIA -> ANCONA) (
+ +5m)\n  - REG 3905 (REGGIO EMILIA -> ANCONA) (+5m)\n  - IC 603 (MILANO CEN
+ TRALE -> LECCE) [Transito]\nRitardo massimo rilevato: 5 min\nAffidabilità
+  stima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: inte
+ rvallo utile tra i passaggi (33s) inferiore alla soglia minima di sgombero
+  stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SAVIGNANO SUL RUBICONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2493--20261121-S05068@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T092324Z
+DTEND:20261122T092854Z
+SUMMARY:[TRANSITO VELOCE] REG 2493 (REGGIO EMILIA -> PESCARA) ore 10:27
+DESCRIPTION:Stazione/PL: SAVIGNANO SUL RUBICONE (S05068)\nRegime chiusura: 
+ TRANSITO VELOCE\nChiusura sbarre stimata: 10:23:24 - 10:28:54\nTreni coinv
+ olti nella chiusura:\n  - REG 2493 (REGGIO EMILIA -> PESCARA) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (46% tratta CESENA -> RIMINI\; p
+ edale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SAVIGNANO SUL RUBICONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3913--20261121-S05068@pl-tracker.local
-DTSTAMP:20261122T065144Z
+UID:train-605--20261121-S05068@pl-tracker.local
+DTSTAMP:20261122T150820Z
 SEQUENCE:1
-DTSTART:20261122T104445Z
-DTEND:20261122T105015Z
-SUMMARY:[TRANSITO VELOCE] REG 3913 (REGGIO EMILIA -> ANCONA) ore 11:49
+DTSTART:20261122T095946Z
+DTEND:20261122T100416Z
+SUMMARY:[TRANSITO VELOCE] IC 605 (MILANO CENTRALE -> LECCE) ore 11:03
 DESCRIPTION:Stazione/PL: SAVIGNANO SUL RUBICONE (S05068)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 11:44:45 - 11:50:15\nTreni coinv
- olti nella chiusura:\n  - REG 3913 (REGGIO EMILIA -> ANCONA) [Transito]\nR
- itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Transito stimato senza fermata (43% tratta CESENA -> RIMINI\; pe
+ TRANSITO VELOCE\nChiusura sbarre stimata: 10:59:46 - 11:04:16\nTreni coinv
+ olti nella chiusura:\n  - IC 605 (MILANO CENTRALE -> LECCE) [Transito]\nRi
+ tardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Transito stimato senza fermata (46% tratta CESENA -> RIMINI\; pe
  dale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SAVIGNANO SUL RUBICONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3919--20261121-S05068@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T114631Z
+DTEND:20261122T115201Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:46 - 12:52 (primo: REG 3919)
+DESCRIPTION:Stazione/PL: SAVIGNANO SUL RUBICONE (S05068)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:46:31 - 12:52:01\
+ nTreni coinvolti nella chiusura:\n  - REG 3919 (REGGIO EMILIA -> ANCONA) [
+ Transito]\n  - REG 3919 (REGGIO EMILIA -> ANCONA) [Transito]\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
+ hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
+ re alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SAVIGNANO SUL RUBICONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3919--20261121-S05068@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T114157Z
-DTEND:20261122T114727Z
-SUMMARY:[TRANSITO VELOCE] REG 3919 (REGGIO EMILIA -> ANCONA) ore 12:46
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T115500Z
+DTEND:20261122T120030Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:55 - 13:00 (primo: REG 3919) (+5 m
+ in)
 DESCRIPTION:Stazione/PL: SAVIGNANO SUL RUBICONE (S05068)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 12:41:57 - 12:47:27\nTreni coinv
- olti nella chiusura:\n  - REG 3919 (REGGIO EMILIA -> ANCONA) [Transito]\nR
- itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Transito stimato senza fermata (60% tratta CESENA -> GAMBETTOLA\
- ; pedale annuncio fisso Vmax)
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:55:00 - 13:00:30\
+ nTreni coinvolti nella chiusura:\n  - REG 3919 (REGGIO EMILIA -> ANCONA) (
+ +5m)\n  - REG 3919 (REGGIO EMILIA -> ANCONA) (+5m)\nRitardo massimo rileva
+ to: 5 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura co
+ ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SAVIGNANO SUL RUBICONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3919--20261121-S05068@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T115030Z
-DTEND:20261122T115500Z
-SUMMARY:[FERMATA] REG 3919 (REGGIO EMILIA -> ANCONA) ore 12:54
-DESCRIPTION:Stazione/PL: SAVIGNANO SUL RUBICONE (S05068)\nRegime chiusura: 
- FERMATA\nChiusura sbarre stimata: 12:50:30 - 12:55:00\nTreni coinvolti nel
- la chiusura:\n  - REG 3919 (REGGIO EMILIA -> ANCONA)\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
- e da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione SAVIGNANO SUL RUBICONE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3920--20261121-S05068@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T134233Z
-DTEND:20261122T134803Z
-SUMMARY:[TRANSITO VELOCE] REG 3920 (RIMINI -> REGGIO EMILIA) ore 14:46
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T134254Z
+DTEND:20261122T134824Z
+SUMMARY:[TRANSITO VELOCE] REG 3920 (RIMINI -> REGGIO EMILIA) ore 14:47
 DESCRIPTION:Stazione/PL: SAVIGNANO SUL RUBICONE (S05068)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 14:42:33 - 14:48:03\nTreni coinv
+ TRANSITO VELOCE\nChiusura sbarre stimata: 14:42:54 - 14:48:24\nTreni coinv
  olti nella chiusura:\n  - REG 3920 (RIMINI -> REGGIO EMILIA) [Transito]\nR
  itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Transito stimato senza fermata (83% tratta RIMINI -> SANTARCANGE
+ uristica: Transito stimato senza fermata (88% tratta RIMINI -> SANTARCANGE
  LO DI ROMAGNA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SAVIGNANO SUL RUBICONE
 STATUS:CONFIRMED
@@ -137,8 +211,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3920--20261121-S05068@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T135030Z
 DTEND:20261122T135500Z
 SUMMARY:[FERMATA] REG 3920 (RIMINI -> REGGIO EMILIA) ore 14:54
@@ -156,9 +230,31 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-1763--20261121-S05068@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T140459Z
+DTEND:20261122T141029Z
+SUMMARY:[TRANSITO VELOCE] REG 1763 (BOLOGNA CENTRALE -> ANCONA) ore 15:09 (
+ +6 min)
+DESCRIPTION:Stazione/PL: SAVIGNANO SUL RUBICONE (S05068)\nRegime chiusura: 
+ TRANSITO VELOCE\nChiusura sbarre stimata: 15:04:59 - 15:10:29\nTreni coinv
+ olti nella chiusura:\n  - REG 1763 (BOLOGNA CENTRALE -> ANCONA) (+6m) [Tra
+ nsito]\nRitardo massimo rilevato: 6 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Transito stimato senza fermata (46% tratta CESENA -> RI
+ MINI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione SAVIGNANO SUL RUBICONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-3927--20261121-S05068@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T154530Z
 DTEND:20261122T155000Z
 SUMMARY:[FERMATA] REG 3927 (REGGIO EMILIA -> PESARO) ore 16:49
@@ -176,55 +272,101 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-613--20261121-S05068@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T175547Z
-DTEND:20261122T180017Z
-SUMMARY:[TRANSITO VELOCE] IC 613 (MILANO CENTRALE -> PESCARA) ore 18:59
+UID:train-3931--20261121-S05068@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T174730Z
+DTEND:20261122T175200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:47 - 18:52 (primo: REG 3931)
 DESCRIPTION:Stazione/PL: SAVIGNANO SUL RUBICONE (S05068)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 18:55:47 - 19:00:17\nTreni coinv
- olti nella chiusura:\n  - IC 613 (MILANO CENTRALE -> PESCARA) [Transito]\n
- Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
- euristica: Transito stimato senza fermata (43% tratta CESENA -> RIMINI\; p
- edale annuncio fisso Vmax)
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:47:30 - 18:52:00\
+ nTreni coinvolti nella chiusura:\n  - REG 3931 (REGGIO EMILIA -> ANCONA)\n
+   - REG 3931 (REGGIO EMILIA -> ANCONA)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SAVIGNANO SUL RUBICONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-613--20261121-S05068@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T180625Z
+DTEND:20261122T181055Z
+SUMMARY:[TRANSITO VELOCE] IC 613 (MILANO CENTRALE -> PESCARA) ore 19:09 (+1
+ 0 min)
+DESCRIPTION:Stazione/PL: SAVIGNANO SUL RUBICONE (S05068)\nRegime chiusura: 
+ TRANSITO VELOCE\nChiusura sbarre stimata: 19:06:25 - 19:10:55\nTreni coinv
+ olti nella chiusura:\n  - IC 613 (MILANO CENTRALE -> PESCARA) (+10m) [Tran
+ sito]\nRitardo massimo rilevato: 10 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Transito stimato senza fermata (46% tratta CESENA -> RI
+ MINI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione SAVIGNANO SUL RUBICONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:10
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8823--20261121-S05068@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T193245Z
+DTEND:20261122T193815Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8823 (MILANO CENTRALE -> PESCARA) ore 20:37
+DESCRIPTION:Stazione/PL: SAVIGNANO SUL RUBICONE (S05068)\nRegime chiusura: 
+ TRANSITO VELOCE\nChiusura sbarre stimata: 20:32:45 - 20:38:15\nTreni coinv
+ olti nella chiusura:\n  - TRENO 8823 (MILANO CENTRALE -> PESCARA) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (46% tratta CESENA -> RIMINI
+ \; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SAVIGNANO SUL RUBICONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3939--20261121-S05068@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T204530Z
 DTEND:20261122T205000Z
-SUMMARY:[FERMATA] REG 3939 (REGGIO EMILIA -> ANCONA) ore 21:49
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:45 - 21:50 (primo: REG 3939)
 DESCRIPTION:Stazione/PL: SAVIGNANO SUL RUBICONE (S05068)\nRegime chiusura: 
- FERMATA\nChiusura sbarre stimata: 21:45:30 - 21:50:00\nTreni coinvolti nel
- la chiusura:\n  - REG 3939 (REGGIO EMILIA -> ANCONA)\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
- e da traccia oraria regolare
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:45:30 - 21:50:00\
+ nTreni coinvolti nella chiusura:\n  - REG 3939 (REGGIO EMILIA -> ANCONA)\n
+   - REG 3939 (REGGIO EMILIA -> ANCONA)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SAVIGNANO SUL RUBICONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-88291--20261121-S05068@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T214333Z
-DTEND:20261122T214903Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T214331Z
+DTEND:20261122T214901Z
 SUMMARY:[TRANSITO VELOCE] REG 88291 (REGGIO EMILIA -> RIMINI) ore 22:47
 DESCRIPTION:Stazione/PL: SAVIGNANO SUL RUBICONE (S05068)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 22:43:33 - 22:49:03\nTreni coinv
+ TRANSITO VELOCE\nChiusura sbarre stimata: 22:43:31 - 22:49:01\nTreni coinv
  olti nella chiusura:\n  - REG 88291 (REGGIO EMILIA -> RIMINI) [Transito]\n
  Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
  euristica: Transito stimato senza fermata (60% tratta CESENA -> GAMBETTOLA
@@ -239,8 +381,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-88291--20261121-S05068@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T215630Z
 DTEND:20261122T220100Z
 SUMMARY:[FERMATA] REG 88291 (REGGIO EMILIA -> RIMINI) ore 23:00
@@ -256,5 +398,26 @@ CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-755--20261121-S05068@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261123T002009Z
+DTEND:20261123T002439Z
+SUMMARY:[TRANSITO VELOCE] ICN 755 (MILANO CENTRALE -> LECCE) ore 01:23
+DESCRIPTION:Stazione/PL: SAVIGNANO SUL RUBICONE (S05068)\nRegime chiusura: 
+ TRANSITO VELOCE\nChiusura sbarre stimata: 01:20:09 - 01:24:39\nTreni coinv
+ olti nella chiusura:\n  - ICN 755 (MILANO CENTRALE -> LECCE) [Transito]\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Transito stimato senza fermata (46% tratta CESENA -> RIMINI\; pe
+ dale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione SAVIGNANO SUL RUBICONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 END:VCALENDAR

@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:a8e33f0c68f011d53ec829941217dfec35f21086e46ea601a0496345a4cb
- a347
+X-CONTENT-HASH:cdaaad086b36c8dfc907ea2a6fa6777775c9f39ae2d9accd35e5e159ece2
+ 3ecc
 BEGIN:VEVENT
 UID:train-12352--20261121-S04712@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T090330Z
 DTEND:20261122T090800Z
 SUMMARY:[FERMATA] REG 12352 (SESTRI LEVANTE -> SAVONA) ore 10:07
@@ -33,8 +33,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12353--20261121-S04712@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T094430Z
 DTEND:20261122T094900Z
 SUMMARY:[FERMATA] REG 12353 (SAVONA -> SESTRI LEVANTE) ore 10:48
@@ -53,29 +53,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12373--20261121-S04712@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T114248Z
-DTEND:20261122T114818Z
-SUMMARY:[TRANSITO VELOCE] REG 12373 (SAVONA -> SESTRI LEVANTE) ore 12:47
-DESCRIPTION:Stazione/PL: SORI (S04712)\nRegime chiusura: TRANSITO VELOCE\nC
- hiusura sbarre stimata: 12:42:48 - 12:48:18\nTreni coinvolti nella chiusur
- a:\n  - REG 12373 (SAVONA -> SESTRI LEVANTE) [Transito]\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transi
- to stimato senza fermata (34% tratta PIEVE LIGURE -> RECCO\; pedale annunc
- io fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T114333Z
+DTEND:20261122T114903Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:43 - 12:49 (primo: REG 12373)
+DESCRIPTION:Stazione/PL: SORI (S04712)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 12:43:33 - 12:49:03\nTreni coinvolti n
+ ella chiusura:\n  - REG 12373 (SAVONA -> SESTRI LEVANTE) [Transito]\n  - R
+ EG 12373 (SAVONA -> SESTRI LEVANTE) [Transito]\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
+ ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+  minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SORI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12403--20261121-S04712@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T144730Z
 DTEND:20261122T145200Z
 SUMMARY:[FERMATA] REG 12403 (SAVONA -> SESTRI LEVANTE) ore 15:51
@@ -94,80 +95,155 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12412--20261121-S04712@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T150530Z
-DTEND:20261122T151000Z
-SUMMARY:[FERMATA] REG 12412 (SESTRI LEVANTE -> SAVONA) ore 16:09
-DESCRIPTION:Stazione/PL: SORI (S04712)\nRegime chiusura: FERMATA\nChiusura 
- sbarre stimata: 16:05:30 - 16:10:00\nTreni coinvolti nella chiusura:\n  - 
- REG 12412 (SESTRI LEVANTE -> SAVONA)\nRitardo massimo rilevato: 0 min\nAff
- idabilità stima: 90%\nNota normativa/euristica: Previsione da traccia ora
- ria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T151330Z
+DTEND:20261122T151800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:13 - 16:18 (primo: REG 12412) (+8 
+ min)
+DESCRIPTION:Stazione/PL: SORI (S04712)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 16:13:30 - 16:18:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 12412 (SESTRI LEVANTE -> SAVONA) (+8m)\n  - REG 12
+ 412 (SESTRI LEVANTE -> SAVONA) (+8m)\nRitardo massimo rilevato: 8 min\nAff
+ idabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 t
+ reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
+  sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SORI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12422--20261121-S04712@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T160730Z
+DTEND:20261122T161200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:07 - 17:12 (primo: REG 12422)
+DESCRIPTION:Stazione/PL: SORI (S04712)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 17:07:30 - 17:12:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 12422 (SESTRI LEVANTE -> SAVONA)\n  - REG 12422 (S
+ ESTRI LEVANTE -> SAVONA)\nRitardo massimo rilevato: 0 min\nAffidabilità s
+ tima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interv
+ allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
+ radale (120s)
+LOCATION:Passaggio a Livello / Stazione SORI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12448--20261121-S04712@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T183930Z
 DTEND:20261122T184400Z
-SUMMARY:[FERMATA] REG 12448 (SESTRI LEVANTE -> SAVONA) ore 19:43
-DESCRIPTION:Stazione/PL: SORI (S04712)\nRegime chiusura: FERMATA\nChiusura 
- sbarre stimata: 19:39:30 - 19:44:00\nTreni coinvolti nella chiusura:\n  - 
- REG 12448 (SESTRI LEVANTE -> SAVONA)\nRitardo massimo rilevato: 0 min\nAff
- idabilità stima: 90%\nNota normativa/euristica: Previsione da traccia ora
- ria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:39 - 19:44 (primo: REG 12448)
+DESCRIPTION:Stazione/PL: SORI (S04712)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 19:39:30 - 19:44:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 12448 (SESTRI LEVANTE -> SAVONA)\n  - REG 12448 (S
+ ESTRI LEVANTE -> SAVONA)\nRitardo massimo rilevato: 0 min\nAffidabilità s
+ tima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interv
+ allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
+ radale (120s)
 LOCATION:Passaggio a Livello / Stazione SORI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3283--20261121-S04712@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T185030Z
 DTEND:20261122T185500Z
-SUMMARY:[FERMATA] REG 3283 (GENOVA BRIGNOLE -> PARMA) ore 19:54
-DESCRIPTION:Stazione/PL: SORI (S04712)\nRegime chiusura: FERMATA\nChiusura 
- sbarre stimata: 19:50:30 - 19:55:00\nTreni coinvolti nella chiusura:\n  - 
- REG 3283 (GENOVA BRIGNOLE -> PARMA)\nRitardo massimo rilevato: 0 min\nAffi
- dabilità stima: 90%\nNota normativa/euristica: Previsione da traccia orar
- ia regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:50 - 19:55 (primo: REG 3283)
+DESCRIPTION:Stazione/PL: SORI (S04712)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 19:50:30 - 19:55:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 3283 (GENOVA BRIGNOLE -> PARMA)\n  - REG 3283 (GEN
+ OVA BRIGNOLE -> PARMA)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
+ ma: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
+ lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
+ dale (120s)
 LOCATION:Passaggio a Livello / Stazione SORI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12452--20261121-S04712@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T190530Z
+DTEND:20261122T191000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:05 - 20:10 (primo: REG 12452)
+DESCRIPTION:Stazione/PL: SORI (S04712)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 20:05:30 - 20:10:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 12452 (SESTRI LEVANTE -> SAVONA)\n  - REG 12452 (S
+ ESTRI LEVANTE -> SAVONA)\nRitardo massimo rilevato: 0 min\nAffidabilità s
+ tima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interv
+ allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
+ radale (120s)
+LOCATION:Passaggio a Livello / Stazione SORI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12453--20261121-S04712@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T194430Z
+DTEND:20261122T194900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:44 - 20:49 (primo: REG 12453)
+DESCRIPTION:Stazione/PL: SORI (S04712)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 20:44:30 - 20:49:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 12453 (SAVONA -> SESTRI LEVANTE)\n  - REG 12453 (S
+ AVONA -> SESTRI LEVANTE)\nRitardo massimo rilevato: 0 min\nAffidabilità s
+ tima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interv
+ allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
+ radale (120s)
+LOCATION:Passaggio a Livello / Stazione SORI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12463--20261121-S04712@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T204630Z
 DTEND:20261122T205100Z
-SUMMARY:[FERMATA] REG 12463 (SAVONA -> SESTRI LEVANTE) ore 21:50
-DESCRIPTION:Stazione/PL: SORI (S04712)\nRegime chiusura: FERMATA\nChiusura 
- sbarre stimata: 21:46:30 - 21:51:00\nTreni coinvolti nella chiusura:\n  - 
- REG 12463 (SAVONA -> SESTRI LEVANTE)\nRitardo massimo rilevato: 0 min\nAff
- idabilità stima: 90%\nNota normativa/euristica: Previsione da traccia ora
- ria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:46 - 21:51 (primo: REG 12463)
+DESCRIPTION:Stazione/PL: SORI (S04712)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 21:46:30 - 21:51:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 12463 (SAVONA -> SESTRI LEVANTE)\n  - REG 12463 (S
+ AVONA -> SESTRI LEVANTE)\nRitardo massimo rilevato: 0 min\nAffidabilità s
+ tima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interv
+ allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
+ radale (120s)
 LOCATION:Passaggio a Livello / Stazione SORI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

@@ -9,47 +9,28 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:f41f0aec2ae0d2e6dff01996375a1f1de3a2f7a5300ff635e3fc8a84efeb
- 8bae
+X-CONTENT-HASH:7dc9ff73c923fb05357c030513d2e09ab324b2b58671f9d13f1c69614a64
+ 385e
 BEGIN:VEVENT
 UID:train-4213--20261121-S07805@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T122030Z
-DTEND:20261122T122500Z
-SUMMARY:[FERMATA] REG 4213 (ANCONA -> PESCARA) ore 13:24
-DESCRIPTION:Stazione/PL: SCERNE DI PINETO (S07805)\nRegime chiusura: FERMAT
- A\nChiusura sbarre stimata: 13:20:30 - 13:25:00\nTreni coinvolti nella chi
- usura:\n  - REG 4213 (ANCONA -> PESCARA)\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia
-  oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T121830Z
+DTEND:20261122T122430Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:18 - 13:24 (primo: REG 4213)
+DESCRIPTION:Stazione/PL: SCERNE DI PINETO (S07805)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:18:30 - 13:24:30\nTreni
+  coinvolti nella chiusura:\n  - REG 4213 (ANCONA -> PESCARA)\n  - REG 4213
+  (ANCONA -> PESCARA)\nRitardo massimo rilevato: -2 min\nAffidabilità stim
+ a: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: intervall
+ o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
+ ale (120s)
 LOCATION:Passaggio a Livello / Stazione SCERNE DI PINETO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-1728--20261121-S07805@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T132522Z
-DTEND:20261122T133052Z
-SUMMARY:[TRANSITO VELOCE] REG 1728 (PESCARA -> BOLOGNA CENTRALE) ore 14:29
-DESCRIPTION:Stazione/PL: SCERNE DI PINETO (S07805)\nRegime chiusura: TRANSI
- TO VELOCE\nChiusura sbarre stimata: 14:25:22 - 14:30:52\nTreni coinvolti n
- ella chiusura:\n  - REG 1728 (PESCARA -> BOLOGNA CENTRALE) [Transito]\nRit
- ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Transito stimato senza fermata (88% tratta PESCARA -> PINETO ATRI\
- ; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione SCERNE DI PINETO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-2
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

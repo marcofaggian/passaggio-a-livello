@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:99499dbc3bc897a6f2a2a874b3f30678e7e9da8bde91f1e7396b3aa05994
- 9ee9
+X-CONTENT-HASH:cc4f888c4a477984fbebdde5ad87279dc97d0e844119abb3c66d55e92133
+ 1e1c
 BEGIN:VEVENT
 UID:train-2814--20261120-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261121T063100Z
 DTEND:20261121T063730Z
 SUMMARY:[FERMATA] REG 2814 (MILANO CENTRALE -> SONDRIO) ore 07:36 (+5 min)
@@ -32,310 +32,304 @@ X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-2832--20261120-S01322@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261121T152430Z
+DTEND:20261121T152900Z
+SUMMARY:[SOPPRESSO] [FERMATA] REG 2832 (SONDRIO -> TIRANO) ore 16:28
+DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 16:24:30 - 16:29:00\nTreni coinvolti nella chiusura:\n  -
+  REG 2832 (SONDRIO -> TIRANO)\nRitardo massimo rilevato: -3 min\nAffidabil
+ ità stima: 90%\nNota normativa/euristica: Previsione con anticipo (-3 min
+ )
+LOCATION:Passaggio a Livello / Stazione MONZA
+STATUS:CANCELLED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:-3
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-4611--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T051312Z
-DTEND:20261122T051842Z
-SUMMARY:[TRANSITO VELOCE] REG 4611 (MILANO CADORNA -> ASSO) ore 06:17
-DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 06:13:12 - 06:18:42\nTreni coinvolti nella chiusu
- ra:\n  - REG 4611 (MILANO CADORNA -> ASSO) [Transito]\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito
-  stimato senza fermata (49% tratta MILANO BOVISA POLITECNICO -> MILANO AFF
- ORI\; pedale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T051903Z
+DTEND:20261122T052606Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 06:19 - 06:26 (primo: REG 4611)
+DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
+  - 3 TRENI\nChiusura sbarre stimata: 06:19:03 - 06:26:06\nTreni coinvolti 
+ nella chiusura:\n  - REG 4611 (MILANO CADORNA -> ASSO) [Transito]\n  - REG
+  4611 (MILANO CADORNA -> ASSO) [Transito]\n  - REG 2917 (GALLARATE -> MILA
+ NO CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità st
+ ima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: interva
+ llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
+ adale (120s)
 LOCATION:Passaggio a Livello / Stazione MONZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-24918--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T053830Z
-DTEND:20261122T054800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:38 - 06:48 (primo: REG 24918)
+UID:train-711--20261121-S01322@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T052904Z
+DTEND:20261122T060100Z
+SUMMARY:[CHIUSURA CONTINUA - 16 TRENI] 06:29 - 07:01 (primo: REG 711) (+3 m
+ in)
 DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 06:38:30 - 06:48:00\nTreni coinvolti 
- nella chiusura:\n  - REG 24918 (MILANO PORTA GARIBALDI -> SARONNO)\n  - RE
- G 25819 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura co
- ntinua per 2 treni: intervallo utile tra i passaggi (30s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+  - 16 TRENI\nChiusura sbarre stimata: 06:29:04 - 07:01:00\nTreni coinvolti
+  nella chiusura:\n  - REG 711 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transit
+ o]\n  - REG 711 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito]\n  - REG 24
+ 918 (MILANO PORTA GARIBALDI -> SARONNO) [Transito]\n  - REG 2920 (MILANO C
+ ENTRALE -> GALLARATE) (+1m) [Transito]\n  - REG 2920 (MILANO CENTRALE -> G
+ ALLARATE) (+1m) [Transito]\n  - REG 25819 (MILANO PORTA GARIBALDI -> PONTE
+  S.PIETRO) [Transito]\n  - REG 25819 (MILANO PORTA GARIBALDI -> PONTE S.PI
+ ETRO) [Transito]\n  - REG 24918 (MILANO PORTA GARIBALDI -> SARONNO)\n  - R
+ EG 25819 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO)\n  - REG 25819 (MILANO
+  PORTA GARIBALDI -> PONTE S.PIETRO)\n  - REG 25020 (MILANO PORTA GARIBALDI
+  -> COMO S.GIOVANNI) [Transito]\n  - REG 25020 (MILANO PORTA GARIBALDI -> 
+ COMO S.GIOVANNI) [Transito]\n  - REG 25386 (MILANO CENTRALE -> CHIASSO) (+
+ 1m)\n  - REG 25386 (MILANO CENTRALE -> CHIASSO) (+1m)\n  - REG 25020 (MILA
+ NO PORTA GARIBALDI -> COMO S.GIOVANNI) (+3m)\n  - REG 25020 (MILANO PORTA 
+ GARIBALDI -> COMO S.GIOVANNI) (+3m)\nRitardo massimo rilevato: 3 min\nAffi
+ dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 16 t
+ reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
+  sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MONZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 16 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4615--20261121-S01322@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T061539Z
+DTEND:20261122T065300Z
+SUMMARY:[CHIUSURA CONTINUA - 14 TRENI] 07:15 - 07:53 (primo: REG 4615) (+4 
+ min)
+DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
+  - 14 TRENI\nChiusura sbarre stimata: 07:15:39 - 07:53:00\nTreni coinvolti
+  nella chiusura:\n  - REG 4615 (MILANO CADORNA -> ASSO) [Transito]\n  - RE
+ G 4615 (MILANO CADORNA -> ASSO) [Transito]\n  - REG 2921 (GALLARATE -> MIL
+ ANO CENTRALE) (+3m) [Transito]\n  - REG 2921 (GALLARATE -> MILANO CENTRALE
+ ) (+3m) [Transito]\n  - REG 10198 (MILANO PORTA GARIBALDI -> CHIAVENNA) [T
+ ransito]\n  - REG 717 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito]\n  - 
+ REG 717 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito]\n  - REG 2924 (MILA
+ NO CENTRALE -> GALLARATE) [Transito]\n  - REG 10198 (MILANO PORTA GARIBALD
+ I -> CHIAVENNA)\n  - REG 25823 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO) 
+ [Transito]\n  - REG 25823 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO)\n  - 
+ REG 25024 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI) (+4m) [Transito]\n  
+ - REG 25024 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI) (+4m) [Transito]\n
+   - REG 25298 (MILANO CENTRALE -> CHIASSO)\nRitardo massimo rilevato: 4 mi
+ n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
+ er 14 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
+ nima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MONZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 14 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25024--20261121-S01322@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T065600Z
+DTEND:20261122T070230Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:56 - 08:02 (primo: REG 25024) (+5 
+ min)
+DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 07:56:00 - 08:02:30\nTreni coinvolti 
+ nella chiusura:\n  - REG 25024 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)
+  (+5m)\n  - REG 25024 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI) (+5m)\nR
+ itardo massimo rilevato: 5 min\nAffidabilità stima: 99%\nNota normativa/e
+ uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-717--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T062712Z
-DTEND:20261122T065700Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 07:27 - 07:57 (primo: REG 717)
+UID:train-2926--20261121-S01322@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T070638Z
+DTEND:20261122T071208Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:06 - 08:12 (primo: REG 2926)
 DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
-  - 8 TRENI\nChiusura sbarre stimata: 07:27:12 - 07:57:00\nTreni coinvolti 
- nella chiusura:\n  - REG 717 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito
- ]\n  - REG 2924 (MILANO CENTRALE -> GALLARATE) [Transito]\n  - REG 10198 (
- MILANO PORTA GARIBALDI -> CHIAVENNA)\n  - REG 10857 (MILANO GRECO PIRELLI 
- -> PIACENZA) [Transito]\n  - REG 3063 (MILANO GRECO PIRELLI -> SESTRI LEVA
- NTE) [Transito]\n  - REG 25823 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO)\
- n  - REG 25298 (MILANO CENTRALE -> CHIASSO)\n  - REG 25024 (MILANO PORTA G
- ARIBALDI -> COMO S.GIOVANNI)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 78%\nNota normativa/euristica: Chiusura continua per 8 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+  - 2 TRENI\nChiusura sbarre stimata: 08:06:38 - 08:12:08\nTreni coinvolti 
+ nella chiusura:\n  - REG 2926 (MILANO CENTRALE -> GALLARATE) [Transito]\n 
+  - REG 2926 (MILANO CENTRALE -> GALLARATE) [Transito]\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
+  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
+  soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-631--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T091312Z
-DTEND:20261122T091842Z
-SUMMARY:[TRANSITO VELOCE] REG 631 (MILANO CADORNA -> ASSO) ore 10:17
-DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 10:13:12 - 10:18:42\nTreni coinvolti nella chiusu
- ra:\n  - REG 631 (MILANO CADORNA -> ASSO) [Transito]\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito 
- stimato senza fermata (49% tratta MILANO BOVISA POLITECNICO -> MILANO AFFO
- RI\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione MONZA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2820--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T092730Z
-DTEND:20261122T093300Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 10:27 - 10:33 (primo: REG 2820)
+DTEND:20261122T092456Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:13 - 10:24 (primo: REG 631) (+5 mi
+ n)
 DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
-  - 3 TRENI\nChiusura sbarre stimata: 10:27:30 - 10:33:00\nTreni coinvolti 
- nella chiusura:\n  - REG 2820 (MILANO CENTRALE -> TIRANO)\n  - REG 4731 (M
- ILANO CADORNA -> CAMNAGO-LENTATE) [Transito]\n  - REG 24707 (MILANO PORTA 
- GARIBALDI -> VILLASANTA PARCO)\nRitardo massimo rilevato: 0 min\nAffidabil
- ità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
+  - 2 TRENI\nChiusura sbarre stimata: 10:13:12 - 10:24:56\nTreni coinvolti 
+ nella chiusura:\n  - REG 631 (MILANO CADORNA -> ASSO) [Transito]\n  - REG 
+ 2933 (GALLARATE -> MILANO CENTRALE) (+5m) [Transito]\nRitardo massimo rile
+ vato: 5 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
+ continua per 2 treni: intervallo utile tra i passaggi (44s) inferiore alla
+  soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-25835--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T094330Z
-DTEND:20261122T100758Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 10:43 - 11:07 (primo: REG 25835)
+UID:train-4731--20261121-S01322@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T092712Z
+DTEND:20261122T095300Z
+SUMMARY:[CHIUSURA CONTINUA - 14 TRENI] 10:27 - 10:53 (primo: REG 4731) (+9 
+ min)
 DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
-  - 5 TRENI\nChiusura sbarre stimata: 10:43:30 - 11:07:58\nTreni coinvolti 
- nella chiusura:\n  - REG 25835 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO)\
- n  - REG 32936 (MILANO CENTRALE -> CHIASSO)\n  - REG 25036 (MILANO PORTA G
- ARIBALDI -> COMO S.GIOVANNI)\n  - REG 4733 (MILANO CADORNA -> CAMNAGO-LENT
- ATE) [Transito]\n  - REG 2938 (MILANO CENTRALE -> GALLARATE) [Transito]\nR
- itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Chiusura continua per 5 treni: intervallo utile tra i passaggi (
- 0s) inferiore alla soglia minima di sgombero stradale (120s)
+  - 14 TRENI\nChiusura sbarre stimata: 10:27:12 - 10:53:00\nTreni coinvolti
+  nella chiusura:\n  - REG 4731 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transi
+ to]\n  - REG 24707 (MILANO PORTA GARIBALDI -> VILLASANTA PARCO) (+4m) [Tra
+ nsito]\n  - REG 24707 (MILANO PORTA GARIBALDI -> VILLASANTA PARCO) (+4m) [
+ Transito]\n  - REG 2820 (MILANO CENTRALE -> TIRANO) (+4m)\n  - REG 2820 (M
+ ILANO CENTRALE -> TIRANO) (+4m)\n  - REG 24707 (MILANO PORTA GARIBALDI -> 
+ VILLASANTA PARCO) (+9m)\n  - REG 24707 (MILANO PORTA GARIBALDI -> VILLASAN
+ TA PARCO) (+9m)\n  - REG 25835 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO) 
+ (+1m) [Transito]\n  - REG 25835 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO)
+  (+1m) [Transito]\n  - REG 25036 (MILANO PORTA GARIBALDI -> COMO S.GIOVANN
+ I) (+1m) [Transito]\n  - REG 25036 (MILANO PORTA GARIBALDI -> COMO S.GIOVA
+ NNI) (+1m) [Transito]\n  - REG 25835 (MILANO PORTA GARIBALDI -> PONTE S.PI
+ ETRO) (+2m)\n  - REG 25835 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO) (+2m
+ )\n  - REG 32936 (MILANO CENTRALE -> CHIASSO)\nRitardo massimo rilevato: 9
+  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
+ a per 14 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+  minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 14 TRENI,FERROVIA
+X-PL-DELAY-MIN:9
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-150--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T101639Z
-DTEND:20261122T103300Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:16 - 11:33 (primo: EC 150)
+UID:train-25036--20261121-S01322@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T095500Z
+DTEND:20261122T101100Z
+SUMMARY:[CHIUSURA CONTINUA - 11 TRENI] 10:55 - 11:11 (primo: REG 25036) (+5
+  min)
 DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
-  - 4 TRENI\nChiusura sbarre stimata: 11:16:39 - 11:33:00\nTreni coinvolti 
- nella chiusura:\n  - EC 150 (MILANO CENTRALE -> CHIASSO) [Transito]\n  - R
- EG 25038 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)\n  - REG 4735 (MILANO
-  CADORNA -> CAMNAGO-LENTATE) [Transito]\n  - REG 24709 (MILANO PORTA GARIB
- ALDI -> VILLASANTA PARCO)\nRitardo massimo rilevato: 0 min\nAffidabilità 
- stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: inter
- vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
- tradale (120s)
+  - 11 TRENI\nChiusura sbarre stimata: 10:55:00 - 11:11:00\nTreni coinvolti
+  nella chiusura:\n  - REG 25036 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI
+ ) (+5m) [Arrivo]\n  - REG 25036 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI
+ ) (+5m) [Arrivo]\n  - REG 4733 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transi
+ to]\n  - REG 25036 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI) (+5m) [Part
+ enza]\n  - REG 25036 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI) (+5m) [Pa
+ rtenza]\n  - REG 24836 (MILANO PORTA GARIBALDI -> LECCO) [Transito]\n  - R
+ EG 24836 (MILANO PORTA GARIBALDI -> LECCO) [Transito]\n  - REG 2938 (MILAN
+ O CENTRALE -> GALLARATE) (+3m) [Transito]\n  - REG 2938 (MILANO CENTRALE -
+ > GALLARATE) (+3m) [Transito]\n  - REG 24836 (MILANO PORTA GARIBALDI -> LE
+ CCO) (+2m)\n  - REG 24836 (MILANO PORTA GARIBALDI -> LECCO) (+2m)\nRitardo
+  massimo rilevato: 5 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Chiusura continua per 11 treni: intervallo utile tra i passaggi (0s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 11 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:EC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-25839--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T104330Z
-DTEND:20261122T104800Z
-SUMMARY:[FERMATA] REG 25839 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO) ore 
- 11:47
-DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: FERMATA\nChiusura
-  sbarre stimata: 11:43:30 - 11:48:00\nTreni coinvolti nella chiusura:\n  -
-  REG 25839 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO)\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
- ne da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione MONZA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-25040--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T105230Z
-DTEND:20261122T105700Z
-SUMMARY:[FERMATA] REG 25040 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI) ore
-  11:56
-DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: FERMATA\nChiusura
-  sbarre stimata: 11:52:30 - 11:57:00\nTreni coinvolti nella chiusura:\n  -
-  REG 25040 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
- one da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione MONZA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-24840--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T110330Z
+UID:train-25038--20261121-S01322@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T101522Z
 DTEND:20261122T110800Z
-SUMMARY:[FERMATA] REG 24840 (MILANO PORTA GARIBALDI -> LECCO) ore 12:07
-DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: FERMATA\nChiusura
-  sbarre stimata: 12:03:30 - 12:08:00\nTreni coinvolti nella chiusura:\n  -
-  REG 24840 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
- ccia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 24 TRENI] 11:15 - 12:08 (primo: REG 25038) (+7
+  min)
+DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
+  - 24 TRENI\nChiusura sbarre stimata: 11:15:22 - 12:08:00\nTreni coinvolti
+  nella chiusura:\n  - REG 25038 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI
+ ) [Transito]\n  - REG 2937 (GALLARATE -> MILANO CENTRALE) [Transito]\n  - 
+ REG 25038 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)\n  - REG 24709 (MILA
+ NO PORTA GARIBALDI -> VILLASANTA PARCO) [Transito]\n  - REG 4735 (MILANO C
+ ADORNA -> CAMNAGO-LENTATE) [Transito]\n  - REG 24709 (MILANO PORTA GARIBAL
+ DI -> VILLASANTA PARCO)\n  - REG 10362 (MILANO PORTA GARIBALDI -> SONDRIO)
+  [Transito]\n  - REG 10362 (MILANO PORTA GARIBALDI -> SONDRIO) [Transito]\
+ n  - REG 2822 (MILANO CENTRALE -> TIRANO) (+7m)\n  - REG 2822 (MILANO CENT
+ RALE -> TIRANO) (+7m)\n  - REG 10362 (MILANO PORTA GARIBALDI -> SONDRIO) (
+ +6m)\n  - REG 10362 (MILANO PORTA GARIBALDI -> SONDRIO) (+6m)\n  - REG 258
+ 39 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO) (+1m) [Transito]\n  - REG 25
+ 839 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO) (+1m) [Transito]\n  - REG 2
+ 5040 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI) [Transito]\n  - REG 2939 
+ (GALLARATE -> MILANO CENTRALE) [Transito]\n  - REG 2939 (GALLARATE -> MILA
+ NO CENTRALE) [Transito]\n  - REG 25839 (MILANO PORTA GARIBALDI -> PONTE S.
+ PIETRO) (+5m)\n  - REG 25839 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO) (+
+ 5m)\n  - REG 25040 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)\n  - REG 24
+ 840 (MILANO PORTA GARIBALDI -> LECCO) [Transito]\n  - REG 4737 (MILANO CAD
+ ORNA -> CAMNAGO-LENTATE) [Transito]\n  - REG 4737 (MILANO CADORNA -> CAMNA
+ GO-LENTATE) [Transito]\n  - REG 24840 (MILANO PORTA GARIBALDI -> LECCO)\nR
+ itardo massimo rilevato: 7 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Chiusura continua per 24 treni: intervallo utile tra i passaggi 
+ (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 24 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25042--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T112230Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T111523Z
 DTEND:20261122T112700Z
-SUMMARY:[FERMATA] REG 25042 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI) ore
-  12:26
-DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: FERMATA\nChiusura
-  sbarre stimata: 12:22:30 - 12:27:00\nTreni coinvolti nella chiusura:\n  -
-  REG 25042 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
- one da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione MONZA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2830--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T142730Z
-DTEND:20261122T143800Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 15:27 - 15:38 (primo: REG 2830)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:15 - 12:27 (primo: REG 25042)
 DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
-  - 5 TRENI\nChiusura sbarre stimata: 15:27:30 - 15:38:00\nTreni coinvolti 
- nella chiusura:\n  - REG 2830 (MILANO CENTRALE -> TIRANO)\n  - REG 4755 (M
- ILANO CADORNA -> CAMNAGO-LENTATE) [Transito]\n  - REG 24789 (MILANO PORTA 
- GARIBALDI -> VILLASANTA PARCO)\n  - REG 2956 (MILANO CENTRALE -> GALLARATE
- ) [Transito]\n  - REG 10370 (MILANO PORTA GARIBALDI -> SONDRIO)\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Chiusura continua per 5 treni: intervallo utile tra i passaggi (0s) infe
- riore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MONZA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-25855--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T144330Z
-DTEND:20261122T145300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:43 - 15:53 (primo: REG 25855)
-DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 15:43:30 - 15:53:00\nTreni coinvolti 
- nella chiusura:\n  - REG 25855 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO)\
- n  - REG 25354 (MILANO CENTRALE -> CHIASSO)\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua 
- per 2 treni: intervallo utile tra i passaggi (30s) inferiore alla soglia m
- inima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MONZA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4757--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T145712Z
-DTEND:20261122T150800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:57 - 16:08 (primo: REG 4757)
-DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 15:57:12 - 16:08:00\nTreni coinvolti 
- nella chiusura:\n  - REG 4757 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transit
- o]\n  - REG 24856 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (47s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+  - 2 TRENI\nChiusura sbarre stimata: 12:15:23 - 12:27:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 25042 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)
+  [Transito]\n  - REG 25042 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)\nRi
+ tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
+ ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (9
+ 6s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -345,120 +339,188 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-657--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T151312Z
-DTEND:20261122T152109Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:13 - 16:21 (primo: REG 657)
+UID:train-24857--20261121-S01322@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T140446Z
+DTEND:20261122T141016Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:04 - 15:10 (primo: REG 24857)
 DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 16:13:12 - 16:21:09\nTreni coinvolti 
- nella chiusura:\n  - REG 657 (MILANO CADORNA -> ASSO) [Transito]\n  - EC 2
- 2 (MILANO CENTRALE -> CHIASSO) [Transito]\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
- r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
- ma di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MONZA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4759--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T152712Z
-DTEND:20261122T153300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:27 - 16:33 (primo: REG 4759)
-DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 16:27:12 - 16:33:00\nTreni coinvolti 
- nella chiusura:\n  - REG 4759 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transit
- o]\n  - REG 24791 (MILANO PORTA GARIBALDI -> VILLASANTA PARCO)\nRitardo ma
- ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  - 2 TRENI\nChiusura sbarre stimata: 15:04:46 - 15:10:16\nTreni coinvolti 
+ nella chiusura:\n  - REG 24857 (LECCO -> MILANO PORTA GARIBALDI) [Transito
+ ]\n  - REG 24857 (LECCO -> MILANO PORTA GARIBALDI) [Transito]\nRitardo mas
+ simo rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/euristica:
   Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
  iore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2333--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T154134Z
-DTEND:20261122T154704Z
-SUMMARY:[TRANSITO VELOCE] REG 2333 (MILANO GRECO PIRELLI -> NOVI LIGURE) or
- e 16:45
-DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 16:41:34 - 16:47:04\nTreni coinvolti nella chiusu
- ra:\n  - REG 2333 (MILANO GRECO PIRELLI -> NOVI LIGURE) [Transito]\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Transito stimato senza fermata (14% tratta MILANO GRECO PIRELLI -> MI
- LANO LAMBRATE\; pedale annuncio fisso Vmax)
+UID:train-25055--20261121-S01322@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T142103Z
+DTEND:20261122T145400Z
+SUMMARY:[CHIUSURA CONTINUA - 18 TRENI] 15:21 - 15:54 (primo: REG 25055) (+9
+  min)
+DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
+  - 18 TRENI\nChiusura sbarre stimata: 15:21:03 - 15:54:00\nTreni coinvolti
+  nella chiusura:\n  - REG 25055 (COMO S.GIOVANNI -> MILANO PORTA GARIBALDI
+ ) (+4m) [Transito]\n  - REG 25055 (COMO S.GIOVANNI -> MILANO PORTA GARIBAL
+ DI) (+4m) [Transito]\n  - REG 24789 (MILANO PORTA GARIBALDI -> VILLASANTA 
+ PARCO) [Transito]\n  - REG 2830 (MILANO CENTRALE -> TIRANO)\n  - REG 4755 
+ (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito]\n  - REG 10370 (MILANO PORT
+ A GARIBALDI -> SONDRIO) [Transito]\n  - REG 24789 (MILANO PORTA GARIBALDI 
+ -> VILLASANTA PARCO)\n  - REG 2956 (MILANO CENTRALE -> GALLARATE) [Transit
+ o]\n  - REG 10370 (MILANO PORTA GARIBALDI -> SONDRIO)\n  - REG 25055 (COMO
+  S.GIOVANNI -> MILANO PORTA GARIBALDI) (+9m) [Arrivo]\n  - REG 25055 (COMO
+  S.GIOVANNI -> MILANO PORTA GARIBALDI) (+9m) [Arrivo]\n  - REG 25055 (COMO
+  S.GIOVANNI -> MILANO PORTA GARIBALDI) (+9m) [Partenza]\n  - REG 25055 (CO
+ MO S.GIOVANNI -> MILANO PORTA GARIBALDI) (+9m) [Partenza]\n  - REG 25855 (
+ MILANO PORTA GARIBALDI -> PONTE S.PIETRO) [Transito]\n  - REG 25855 (MILAN
+ O PORTA GARIBALDI -> PONTE S.PIETRO)\n  - REG 25354 (MILANO CENTRALE -> CH
+ IASSO)\n  - REG 24857 (LECCO -> MILANO PORTA GARIBALDI) (+1m)\n  - REG 248
+ 57 (LECCO -> MILANO PORTA GARIBALDI) (+1m)\nRitardo massimo rilevato: 9 mi
+ n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
+ er 18 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
+ nima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 18 TRENI,FERROVIA
+X-PL-DELAY-MIN:9
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24856--20261121-S01322@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T145722Z
+DTEND:20261122T151130Z
+SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 15:57 - 16:11 (primo: REG 24856) (+4 
+ min)
+DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
+  - 8 TRENI\nChiusura sbarre stimata: 15:57:22 - 16:11:30\nTreni coinvolti 
+ nella chiusura:\n  - REG 24856 (MILANO PORTA GARIBALDI -> LECCO) [Transito
+ ]\n  - REG 4757 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito]\n  - REG 47
+ 57 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito]\n  - REG 24856 (MILANO P
+ ORTA GARIBALDI -> LECCO)\n  - REG 2958 (MILANO CENTRALE -> GALLARATE) (+2m
+ ) [Transito]\n  - REG 2958 (MILANO CENTRALE -> GALLARATE) (+2m) [Transito]
+ \n  - REG 32945 (CHIASSO -> MILANO CENTRALE) (+4m)\n  - REG 32945 (CHIASSO
+  -> MILANO CENTRALE) (+4m)\nRitardo massimo rilevato: 4 min\nAffidabilità
+  stima: 78%\nNota normativa/euristica: Chiusura continua per 8 treni: inte
+ rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
+ stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MONZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-657--20261121-S01322@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T151412Z
+DTEND:20261122T153800Z
+SUMMARY:[CHIUSURA CONTINUA - 12 TRENI] 16:14 - 16:38 (primo: REG 657) (+3 m
+ in)
+DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
+  - 12 TRENI\nChiusura sbarre stimata: 16:14:12 - 16:38:00\nTreni coinvolti
+  nella chiusura:\n  - REG 657 (MILANO CADORNA -> ASSO) (+1m) [Transito]\n 
+  - REG 657 (MILANO CADORNA -> ASSO) (+1m) [Transito]\n  - REG 2957 (GALLAR
+ ATE -> MILANO CENTRALE) (+3m) [Transito]\n  - REG 2957 (GALLARATE -> MILAN
+ O CENTRALE) (+3m) [Transito]\n  - REG 24791 (MILANO PORTA GARIBALDI -> VIL
+ LASANTA PARCO) [Transito]\n  - REG 4759 (MILANO CADORNA -> CAMNAGO-LENTATE
+ ) [Transito]\n  - REG 4759 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito]\
+ n  - REG 10372 (MILANO PORTA GARIBALDI -> COLICO) [Transito]\n  - REG 1037
+ 2 (MILANO PORTA GARIBALDI -> COLICO) [Transito]\n  - REG 24791 (MILANO POR
+ TA GARIBALDI -> VILLASANTA PARCO)\n  - REG 10372 (MILANO PORTA GARIBALDI -
+ > COLICO)\n  - REG 10372 (MILANO PORTA GARIBALDI -> COLICO)\nRitardo massi
+ mo rilevato: 3 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 12 treni: intervallo utile tra i passaggi (0s) inferio
+ re alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MONZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 12 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25060--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T155230Z
-DTEND:20261122T160800Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:52 - 17:08 (primo: REG 25060)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T154522Z
+DTEND:20261122T160802Z
+SUMMARY:[CHIUSURA CONTINUA - 11 TRENI] 16:45 - 17:08 (primo: REG 25060)
 DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
-  - 3 TRENI\nChiusura sbarre stimata: 16:52:30 - 17:08:00\nTreni coinvolti 
- nella chiusura:\n  - REG 25060 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)
- \n  - REG 761 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito]\n  - REG 2486
- 0 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo rilevato: 0 min\nAffi
- dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 tr
- eni: intervallo utile tra i passaggi (47s) inferiore alla soglia minima di
-  sgombero stradale (120s)
+  - 11 TRENI\nChiusura sbarre stimata: 16:45:22 - 17:08:02\nTreni coinvolti
+  nella chiusura:\n  - REG 25060 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI
+ ) [Transito]\n  - REG 25060 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI) [T
+ ransito]\n  - REG 25356 (MILANO CENTRALE -> CHIASSO)\n  - REG 25356 (MILAN
+ O CENTRALE -> CHIASSO)\n  - REG 25060 (MILANO PORTA GARIBALDI -> COMO S.GI
+ OVANNI)\n  - REG 25060 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)\n  - RE
+ G 761 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito]\n  - REG 24860 (MILAN
+ O PORTA GARIBALDI -> LECCO) [Transito]\n  - REG 2962 (MILANO CENTRALE -> G
+ ALLARATE) [Transito]\n  - REG 2962 (MILANO CENTRALE -> GALLARATE) [Transit
+ o]\n  - REG 24860 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
+ ontinua per 11 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 11 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3039--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T184134Z
-DTEND:20261122T184704Z
-SUMMARY:[TRANSITO VELOCE] REG 3039 (MILANO GRECO PIRELLI -> GENOVA BRIGNOLE
- ) ore 19:45
-DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 19:41:34 - 19:47:04\nTreni coinvolti nella chiusu
- ra:\n  - REG 3039 (MILANO GRECO PIRELLI -> GENOVA BRIGNOLE) [Transito]\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Transito stimato senza fermata (14% tratta MILANO GRECO PIRELLI -
- > MILANO LAMBRATE\; pedale annuncio fisso Vmax)
+UID:train-663--20261121-S01322@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T161312Z
+DTEND:20261122T163802Z
+SUMMARY:[CHIUSURA CONTINUA - 14 TRENI] 17:13 - 17:38 (primo: REG 663) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
+  - 14 TRENI\nChiusura sbarre stimata: 17:13:12 - 17:38:02\nTreni coinvolti
+  nella chiusura:\n  - REG 663 (MILANO CADORNA -> ASSO) [Transito]\n  - REG
+  663 (MILANO CADORNA -> ASSO) [Transito]\n  - REG 2961 (GALLARATE -> MILAN
+ O CENTRALE) [Transito]\n  - REG 2833 (TIRANO -> MILANO CENTRALE) (+1m)\n  
+ - REG 2833 (TIRANO -> MILANO CENTRALE) (+1m)\n  - REG 2834 (MILANO CENTRAL
+ E -> TIRANO)\n  - REG 2834 (MILANO CENTRALE -> TIRANO)\n  - REG 10374 (MIL
+ ANO PORTA GARIBALDI -> SONDRIO) [Transito]\n  - REG 10374 (MILANO PORTA GA
+ RIBALDI -> SONDRIO) [Transito]\n  - EC 37 (CHIASSO -> FIRENZE SANTA MARIA 
+ NOVELLA) [Transito]\n  - REG 2964 (MILANO CENTRALE -> GALLARATE) [Transito
+ ]\n  - REG 2964 (MILANO CENTRALE -> GALLARATE) [Transito]\n  - REG 10374 (
+ MILANO PORTA GARIBALDI -> SONDRIO)\n  - REG 10374 (MILANO PORTA GARIBALDI 
+ -> SONDRIO)\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Chiusura continua per 14 treni: intervallo utile t
+ ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
+ )
 LOCATION:Passaggio a Livello / Stazione MONZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 14 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-681--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T191312Z
 DTEND:20261122T191842Z
 SUMMARY:[TRANSITO VELOCE] REG 681 (MILANO CADORNA -> ASSO) ore 20:17
@@ -478,86 +540,67 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-783--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T192712Z
-DTEND:20261122T193800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:27 - 20:38 (primo: REG 783)
+DTEND:20261122T193802Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 20:27 - 20:38 (primo: REG 783)
 DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 20:27:12 - 20:38:00\nTreni coinvolti 
+  - 6 TRENI\nChiusura sbarre stimata: 20:27:12 - 20:38:02\nTreni coinvolti 
  nella chiusura:\n  - REG 783 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito
- ]\n  - REG 10380 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
- ntinua per 2 treni: intervallo utile tra i passaggi (47s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+ ]\n  - REG 783 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito]\n  - REG 103
+ 80 (MILANO PORTA GARIBALDI -> LECCO) [Transito]\n  - REG 2976 (MILANO CENT
+ RALE -> GALLARATE) [Transito]\n  - REG 2976 (MILANO CENTRALE -> GALLARATE)
+  [Transito]\n  - REG 10380 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
+ hiusura continua per 6 treni: intervallo utile tra i passaggi (0s) inferio
+ re alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2341--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T194134Z
+UID:train-25294--20261121-S01322@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T194830Z
 DTEND:20261122T195300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:41 - 20:53 (primo: REG 2341)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:48 - 20:53 (primo: REG 25294)
 DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 20:41:34 - 20:53:00\nTreni coinvolti 
- nella chiusura:\n  - REG 2341 (MILANO GRECO PIRELLI -> TORTONA) [Transito]
- \n  - REG 25294 (MILANO CENTRALE -> CHIASSO)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (85s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+  - 2 TRENI\nChiusura sbarre stimata: 20:48:30 - 20:53:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 25294 (MILANO CENTRALE -> CHIASSO)\n  - REG 25294
+  (MILANO CENTRALE -> CHIASSO)\nRitardo massimo rilevato: 0 min\nAffidabili
+ tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
+ ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2978--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T200228Z
-DTEND:20261122T201204Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:02 - 21:12 (primo: REG 2978)
+UID:train-24876--20261121-S01322@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T195722Z
+DTEND:20261122T200802Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:57 - 21:08 (primo: REG 24876)
 DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
-  - 3 TRENI\nChiusura sbarre stimata: 21:02:28 - 21:12:04\nTreni coinvolti 
- nella chiusura:\n  - REG 2978 (MILANO CENTRALE -> GALLARATE) [Transito]\n 
-  - REG 24876 (MILANO PORTA GARIBALDI -> LECCO)\n  - REG 10885 (MILANO GREC
- O PIRELLI -> PIACENZA) [Transito]\nRitardo massimo rilevato: 0 min\nAffida
- bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 tren
- i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
- ombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MONZA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-25078--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T202230Z
-DTEND:20261122T203758Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 21:22 - 21:37 (primo: REG 25078)
-DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
-  - 4 TRENI\nChiusura sbarre stimata: 21:22:30 - 21:37:58\nTreni coinvolti 
- nella chiusura:\n  - REG 25078 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)
- \n  - REG 2842 (MILANO CENTRALE -> SONDRIO)\n  - REG 787 (MILANO CADORNA -
- > CAMNAGO-LENTATE) [Transito]\n  - REG 2980 (MILANO CENTRALE -> GALLARATE)
-  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
- ta normativa/euristica: Chiusura continua per 4 treni: intervallo utile tr
- a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+  - 4 TRENI\nChiusura sbarre stimata: 20:57:22 - 21:08:02\nTreni coinvolti 
+ nella chiusura:\n  - REG 24876 (MILANO PORTA GARIBALDI -> LECCO) [Transito
+ ]\n  - REG 2978 (MILANO CENTRALE -> GALLARATE) [Transito]\n  - REG 2978 (M
+ ILANO CENTRALE -> GALLARATE) [Transito]\n  - REG 24876 (MILANO PORTA GARIB
+ ALDI -> LECCO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\
+ nNota normativa/euristica: Chiusura continua per 4 treni: intervallo utile
+  tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (12
+ 0s)
 LOCATION:Passaggio a Livello / Stazione MONZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -567,45 +610,54 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3043--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T204134Z
+UID:train-25078--20261121-S01322@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T201523Z
 DTEND:20261122T204800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:41 - 21:48 (primo: REG 3043)
+SUMMARY:[CHIUSURA CONTINUA - 10 TRENI] 21:15 - 21:48 (primo: REG 25078)
 DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 21:41:34 - 21:48:00\nTreni coinvolti 
- nella chiusura:\n  - REG 3043 (MILANO GRECO PIRELLI -> GENOVA BRIGNOLE) [T
- ransito]\n  - REG 25879 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO)\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
- nferiore alla soglia minima di sgombero stradale (120s)
+  - 10 TRENI\nChiusura sbarre stimata: 21:15:23 - 21:48:00\nTreni coinvolti
+  nella chiusura:\n  - REG 25078 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI
+ ) [Transito]\n  - REG 2977 (GALLARATE -> MILANO CENTRALE) [Transito]\n  - 
+ REG 25078 (MILANO PORTA GARIBALDI -> COMO S.GIOVANNI)\n  - REG 2842 (MILAN
+ O CENTRALE -> SONDRIO)\n  - REG 2842 (MILANO CENTRALE -> SONDRIO)\n  - REG
+  787 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito]\n  - REG 2980 (MILANO 
+ CENTRALE -> GALLARATE) [Transito]\n  - REG 2980 (MILANO CENTRALE -> GALLAR
+ ATE) [Transito]\n  - REG 25879 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO) 
+ [Transito]\n  - REG 25879 (MILANO PORTA GARIBALDI -> PONTE S.PIETRO)\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Chiusura continua per 10 treni: intervallo utile tra i passaggi (37
+ s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 10 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-789--20261121-S01322@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T205712Z
 DTEND:20261122T210800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:57 - 22:08 (primo: REG 789)
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 21:57 - 22:08 (primo: REG 789)
 DESCRIPTION:Stazione/PL: MONZA (S01322)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 21:57:12 - 22:08:00\nTreni coinvolti 
+  - 6 TRENI\nChiusura sbarre stimata: 21:57:12 - 22:08:00\nTreni coinvolti 
  nella chiusura:\n  - REG 789 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito
- ]\n  - REG 24880 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
- ntinua per 2 treni: intervallo utile tra i passaggi (47s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+ ]\n  - REG 789 (MILANO CADORNA -> CAMNAGO-LENTATE) [Transito]\n  - REG 248
+ 80 (MILANO PORTA GARIBALDI -> LECCO) [Transito]\n  - REG 24880 (MILANO POR
+ TA GARIBALDI -> LECCO) [Transito]\n  - REG 24880 (MILANO PORTA GARIBALDI -
+ > LECCO)\n  - REG 24880 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
+ sura continua per 6 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG

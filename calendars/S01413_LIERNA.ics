@@ -9,20 +9,20 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:aacd07050c20c6d5b5166fbf16ffd1475ca4aa58b3d3fdf9a486052ff06e
- 5a15
+X-CONTENT-HASH:a33aa68441bf3e47bbfbbaa180851c2adace594cb5ad932756a35387e4ab
+ 846a
 BEGIN:VEVENT
 UID:train-2814--20261120-S01413@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261121T071309Z
-DTEND:20261121T071839Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261121T071320Z
+DTEND:20261121T071850Z
 SUMMARY:[TRANSITO VELOCE] REG 2814 (MILANO CENTRALE -> SONDRIO) ore 08:17
 DESCRIPTION:Stazione/PL: LIERNA (S01413)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 08:13:09 - 08:18:39\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 08:13:20 - 08:18:50\nTreni coinvolti nella chius
  ura:\n  - REG 2814 (MILANO CENTRALE -> SONDRIO) [Transito]\nRitardo massim
  o rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
- ansito stimato senza fermata (40% tratta MANDELLO DEL LARIO -> VARENNA ESI
+ ansito stimato senza fermata (42% tratta MANDELLO DEL LARIO -> VARENNA ESI
  NO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LIERNA
 STATUS:CONFIRMED
@@ -33,9 +33,30 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-2832--20261120-S01413@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261121T160910Z
+DTEND:20261121T161440Z
+SUMMARY:[TRANSITO VELOCE] REG 2832 (SONDRIO -> TIRANO) ore 17:13
+DESCRIPTION:Stazione/PL: LIERNA (S01413)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 17:09:10 - 17:14:40\nTreni coinvolti nella chius
+ ura:\n  - REG 2832 (SONDRIO -> TIRANO) [Transito]\nRitardo massimo rilevat
+ o: -3 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito st
+ imato senza fermata (42% tratta MANDELLO DEL LARIO -> VARENNA ESINO\; peda
+ le annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione LIERNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-10198--20261121-S01413@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T073430Z
 DTEND:20261122T073900Z
 SUMMARY:[FERMATA] REG 10198 (MILANO PORTA GARIBALDI -> CHIAVENNA) ore 08:38
@@ -54,37 +75,85 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2820--20261121-S01413@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T101157Z
-DTEND:20261122T101727Z
-SUMMARY:[TRANSITO VELOCE] REG 2820 (MILANO CENTRALE -> TIRANO) ore 11:16
-DESCRIPTION:Stazione/PL: LIERNA (S01413)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 11:11:57 - 11:17:27\nTreni coinvolti nella chius
- ura:\n  - REG 2820 (MILANO CENTRALE -> TIRANO) [Transito]\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
- sito stimato senza fermata (40% tratta MANDELLO DEL LARIO -> VARENNA ESINO
- \; pedale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T101413Z
+DTEND:20261122T101943Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:14 - 11:19 (primo: REG 2820)
+DESCRIPTION:Stazione/PL: LIERNA (S01413)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 11:14:13 - 11:19:43\nTreni coinvolti
+  nella chiusura:\n  - REG 2820 (MILANO CENTRALE -> TIRANO) [Transito]\n  -
+  REG 2820 (MILANO CENTRALE -> TIRANO) [Transito]\nRitardo massimo rilevato
+ : -4 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
+ tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LIERNA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-4
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-2822--20261121-S01413@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T111543Z
+DTEND:20261122T112113Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:15 - 12:21 (primo: REG 2822)
+DESCRIPTION:Stazione/PL: LIERNA (S01413)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 12:15:43 - 12:21:13\nTreni coinvolti
+  nella chiusura:\n  - REG 2822 (MILANO CENTRALE -> TIRANO) [Transito]\n  -
+  REG 2822 (MILANO CENTRALE -> TIRANO) [Transito]\nRitardo massimo rilevato
+ : -4 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
+ tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LIERNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10362--20261121-S01413@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T113530Z
+DTEND:20261122T114600Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:35 - 12:46 (primo: REG 10362) (+3 
+ min)
+DESCRIPTION:Stazione/PL: LIERNA (S01413)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 12:35:30 - 12:46:00\nTreni coinvolti
+  nella chiusura:\n  - REG 10362 (MILANO PORTA GARIBALDI -> SONDRIO) (+3m) 
+ [Arrivo]\n  - REG 10362 (MILANO PORTA GARIBALDI -> SONDRIO) (+3m) [Arrivo]
+ \n  - REG 10362 (MILANO PORTA GARIBALDI -> SONDRIO) (+3m) [Partenza]\n  - 
+ REG 10362 (MILANO PORTA GARIBALDI -> SONDRIO) (+3m) [Partenza]\nRitardo ma
+ ssimo rilevato: 3 min\nAffidabilità stima: 99%\nNota normativa/euristica:
+  Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) infer
+ iore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LIERNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-2830--20261121-S01413@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T151157Z
-DTEND:20261122T151727Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T151210Z
+DTEND:20261122T151740Z
 SUMMARY:[TRANSITO VELOCE] REG 2830 (MILANO CENTRALE -> TIRANO) ore 16:16
 DESCRIPTION:Stazione/PL: LIERNA (S01413)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 16:11:57 - 16:17:27\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 16:12:10 - 16:17:40\nTreni coinvolti nella chius
  ura:\n  - REG 2830 (MILANO CENTRALE -> TIRANO) [Transito]\nRitardo massimo
   rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
- sito stimato senza fermata (40% tratta MANDELLO DEL LARIO -> VARENNA ESINO
+ sito stimato senza fermata (42% tratta MANDELLO DEL LARIO -> VARENNA ESINO
  \; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LIERNA
 STATUS:CONFIRMED
@@ -96,8 +165,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10370--20261121-S01413@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T153430Z
 DTEND:20261122T153900Z
 SUMMARY:[FERMATA] REG 10370 (MILANO PORTA GARIBALDI -> SONDRIO) ore 16:38
@@ -115,22 +184,89 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2842--20261121-S01413@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T211157Z
-DTEND:20261122T211727Z
-SUMMARY:[TRANSITO VELOCE] REG 2842 (MILANO CENTRALE -> SONDRIO) ore 22:16
-DESCRIPTION:Stazione/PL: LIERNA (S01413)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 22:11:57 - 22:17:27\nTreni coinvolti nella chius
- ura:\n  - REG 2842 (MILANO CENTRALE -> SONDRIO) [Transito]\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
- nsito stimato senza fermata (40% tratta MANDELLO DEL LARIO -> VARENNA ESIN
- O\; pedale annuncio fisso Vmax)
+UID:train-10372--20261121-S01413@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T163430Z
+DTEND:20261122T163900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:34 - 17:39 (primo: REG 10372)
+DESCRIPTION:Stazione/PL: LIERNA (S01413)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 17:34:30 - 17:39:00\nTreni coinvolti
+  nella chiusura:\n  - REG 10372 (MILANO PORTA GARIBALDI -> COLICO)\n  - RE
+ G 10372 (MILANO PORTA GARIBALDI -> COLICO)\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
+ er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
+ ima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LIERNA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2834--20261121-S01413@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T171210Z
+DTEND:20261122T171740Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:12 - 18:17 (primo: REG 2834)
+DESCRIPTION:Stazione/PL: LIERNA (S01413)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 18:12:10 - 18:17:40\nTreni coinvolti
+  nella chiusura:\n  - REG 2834 (MILANO CENTRALE -> TIRANO) [Transito]\n  -
+  REG 2834 (MILANO CENTRALE -> TIRANO) [Transito]\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LIERNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10374--20261121-S01413@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T173430Z
+DTEND:20261122T173900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:34 - 18:39 (primo: REG 10374)
+DESCRIPTION:Stazione/PL: LIERNA (S01413)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 18:34:30 - 18:39:00\nTreni coinvolti
+  nella chiusura:\n  - REG 10374 (MILANO PORTA GARIBALDI -> SONDRIO)\n  - R
+ EG 10374 (MILANO PORTA GARIBALDI -> SONDRIO)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
+  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LIERNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2842--20261121-S01413@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T211210Z
+DTEND:20261122T211740Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:12 - 22:17 (primo: REG 2842)
+DESCRIPTION:Stazione/PL: LIERNA (S01413)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 22:12:10 - 22:17:40\nTreni coinvolti
+  nella chiusura:\n  - REG 2842 (MILANO CENTRALE -> SONDRIO) [Transito]\n  
+ - REG 2842 (MILANO CENTRALE -> SONDRIO) [Transito]\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
+ ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LIERNA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG

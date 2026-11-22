@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:5fd5f5db9adaacbda6ddbc60d2a412097ebbb12e031357319d3f878c84a8
- 017a
+X-CONTENT-HASH:5b10b29dba19345bf8a788288ced611dfbe5b7fa74b72da7a60056c97af9
+ ffce
 BEGIN:VEVENT
 UID:train-3902--20261121-S07102@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T043330Z
 DTEND:20261122T043800Z
 SUMMARY:[FERMATA] REG 3902 (ANCONA -> REGGIO EMILIA) ore 05:37
@@ -33,28 +33,31 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3906--20261121-S07102@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T063630Z
-DTEND:20261122T064100Z
-SUMMARY:[FERMATA] REG 3906 (ANCONA -> REGGIO EMILIA) ore 07:40
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T064230Z
+DTEND:20261122T065000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:42 - 07:50 (primo: REG 3906) (+8 m
+ in)
 DESCRIPTION:Stazione/PL: CATTOLICA S.GIOVANNI GABICCE (S07102)\nRegime chiu
- sura: FERMATA\nChiusura sbarre stimata: 07:36:30 - 07:41:00\nTreni coinvol
- ti nella chiusura:\n  - REG 3906 (ANCONA -> REGGIO EMILIA)\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pre
- visione da traccia oraria regolare
+ sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:42:30 - 07:
+ 50:00\nTreni coinvolti nella chiusura:\n  - REG 3906 (ANCONA -> REGGIO EMI
+ LIA) (+8m)\n  - REG 3906 (ANCONA -> REGGIO EMILIA) (+8m)\nRitardo massimo 
+ rilevato: 8 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chius
+ ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CATTOLICA S.GIOVANNI GABICCE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3901--20261121-S07102@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T071530Z
 DTEND:20261122T072000Z
 SUMMARY:[FERMATA] REG 3901 (BOLOGNA CENTRALE -> ANCONA) ore 08:19
@@ -73,8 +76,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3908--20261121-S07102@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T073830Z
 DTEND:20261122T074300Z
 SUMMARY:[FERMATA] REG 3908 (ANCONA -> REGGIO EMILIA) ore 08:42
@@ -92,51 +95,53 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-604--20261121-S07102@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T082416Z
-DTEND:20261122T082846Z
-SUMMARY:[TRANSITO VELOCE] IC 604 (PESCARA -> MILANO CENTRALE) ore 09:27
+UID:train-3905--20261121-S07102@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T081530Z
+DTEND:20261122T082230Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:15 - 09:22 (primo: REG 3905) (+2 m
+ in)
 DESCRIPTION:Stazione/PL: CATTOLICA S.GIOVANNI GABICCE (S07102)\nRegime chiu
- sura: TRANSITO VELOCE\nChiusura sbarre stimata: 09:24:16 - 09:28:46\nTreni
-  coinvolti nella chiusura:\n  - IC 604 (PESCARA -> MILANO CENTRALE) [Trans
- ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
- ativa/euristica: Transito stimato senza fermata (57% tratta PESARO -> RICC
- IONE\; pedale annuncio fisso Vmax)
+ sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:15:30 - 09:
+ 22:30\nTreni coinvolti nella chiusura:\n  - REG 3905 (REGGIO EMILIA -> ANC
+ ONA) (+2m)\n  - REG 3905 (REGGIO EMILIA -> ANCONA) (+2m)\nRitardo massimo 
+ rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chius
+ ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CATTOLICA S.GIOVANNI GABICCE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-603--20261121-S07102@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:0
-DTSTART:20261122T083139Z
-DTEND:20261122T083609Z
-SUMMARY:[TRANSITO VELOCE] IC 603 (MILANO CENTRALE -> LECCE) ore 09:35
+DTSTAMP:20261122T150820Z
+SEQUENCE:1
+DTSTART:20261122T083232Z
+DTEND:20261122T083702Z
+SUMMARY:[TRANSITO VELOCE] IC 603 (MILANO CENTRALE -> LECCE) ore 09:36
 DESCRIPTION:Stazione/PL: CATTOLICA S.GIOVANNI GABICCE (S07102)\nRegime chiu
- sura: TRANSITO VELOCE\nChiusura sbarre stimata: 09:31:39 - 09:36:09\nTreni
+ sura: TRANSITO VELOCE\nChiusura sbarre stimata: 09:32:32 - 09:37:02\nTreni
   coinvolti nella chiusura:\n  - IC 603 (MILANO CENTRALE -> LECCE) [Transit
- o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Transito stimato senza fermata (42% tratta RICCIONE -> PESA
- RO\; pedale annuncio fisso Vmax)
+ o]\nRitardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (42% tratta RICCIONE -> PES
+ ARO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CATTOLICA S.GIOVANNI GABICCE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2493--20261121-S07102@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T095930Z
 DTEND:20261122T100400Z
 SUMMARY:[FERMATA] REG 2493 (REGGIO EMILIA -> PESCARA) ore 11:03
@@ -155,29 +160,52 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-605--20261121-S07102@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:0
-DTSTART:20261122T102604Z
-DTEND:20261122T103034Z
-SUMMARY:[TRANSITO VELOCE] IC 605 (MILANO CENTRALE -> LECCE) ore 11:29
+DTSTAMP:20261122T150820Z
+SEQUENCE:1
+DTSTART:20261122T102702Z
+DTEND:20261122T103132Z
+SUMMARY:[TRANSITO VELOCE] IC 605 (MILANO CENTRALE -> LECCE) ore 11:30
 DESCRIPTION:Stazione/PL: CATTOLICA S.GIOVANNI GABICCE (S07102)\nRegime chiu
- sura: TRANSITO VELOCE\nChiusura sbarre stimata: 11:26:04 - 11:30:34\nTreni
+ sura: TRANSITO VELOCE\nChiusura sbarre stimata: 11:27:02 - 11:31:32\nTreni
   coinvolti nella chiusura:\n  - IC 605 (MILANO CENTRALE -> LECCE) [Transit
- o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Transito stimato senza fermata (42% tratta RICCIONE -> PESA
- RO\; pedale annuncio fisso Vmax)
+ o]\nRitardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (42% tratta RICCIONE -> PES
+ ARO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CATTOLICA S.GIOVANNI GABICCE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
+UID:train-3914--20261121-S07102@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T103800Z
+DTEND:20261122T104430Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:38 - 11:44 (primo: REG 3914) (+6 m
+ in)
+DESCRIPTION:Stazione/PL: CATTOLICA S.GIOVANNI GABICCE (S07102)\nRegime chiu
+ sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:38:00 - 11:
+ 44:30\nTreni coinvolti nella chiusura:\n  - REG 3914 (ANCONA -> REGGIO EMI
+ LIA) (+6m)\n  - REG 3914 (ANCONA -> REGGIO EMILIA) (+6m)\nRitardo massimo 
+ rilevato: 6 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chius
+ ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CATTOLICA S.GIOVANNI GABICCE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-3913--20261121-S07102@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T111530Z
 DTEND:20261122T112000Z
 SUMMARY:[FERMATA] REG 3913 (REGGIO EMILIA -> ANCONA) ore 12:19
@@ -195,40 +223,43 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3919--20261121-S07102@pl-tracker.local
-DTSTAMP:20261122T065144Z
+UID:train-607--20261121-S07102@pl-tracker.local
+DTSTAMP:20261122T150820Z
 SEQUENCE:0
-DTSTART:20261122T122857Z
-DTEND:20261122T124100Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 13:28 - 13:41 (primo: REG 3919)
+DTSTART:20261122T122603Z
+DTEND:20261122T124300Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 13:26 - 13:43 (primo: IC 607) (+1 min
+ )
 DESCRIPTION:Stazione/PL: CATTOLICA S.GIOVANNI GABICCE (S07102)\nRegime chiu
- sura: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 13:28:57 - 13:
- 41:00\nTreni coinvolti nella chiusura:\n  - REG 3919 (REGGIO EMILIA -> ANC
- ONA) [Transito]\n  - REG 3918 (ANCONA -> REGGIO EMILIA)\n  - REG 3919 (REG
- GIO EMILIA -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilità stim
- a: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: intervall
- o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
- ale (120s)
+ sura: CHIUSURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 13:26:03 - 13:
+ 43:00\nTreni coinvolti nella chiusura:\n  - IC 607 (MILANO PORTA GARIBALDI
+  -> LECCE) [Transito]\n  - REG 3919 (REGGIO EMILIA -> ANCONA) [Transito]\n
+   - REG 3919 (REGGIO EMILIA -> ANCONA) [Transito]\n  - REG 3918 (ANCONA ->
+  REGGIO EMILIA)\n  - REG 3919 (REGGIO EMILIA -> ANCONA) (+1m)\n  - REG 391
+ 9 (REGGIO EMILIA -> ANCONA) (+1m)\nRitardo massimo rilevato: 1 min\nAffida
+ bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 6 tren
+ i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
+ ombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CATTOLICA S.GIOVANNI GABICCE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-610--20261121-S07102@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:0
-DTSTART:20261122T142325Z
-DTEND:20261122T142755Z
-SUMMARY:[TRANSITO VELOCE] IC 610 (LECCE -> BOLZANO) ore 15:26
+DTSTAMP:20261122T150820Z
+SEQUENCE:1
+DTSTART:20261122T142343Z
+DTEND:20261122T142813Z
+SUMMARY:[TRANSITO VELOCE] IC 610 (LECCE -> BOLZANO) ore 15:27
 DESCRIPTION:Stazione/PL: CATTOLICA S.GIOVANNI GABICCE (S07102)\nRegime chiu
- sura: TRANSITO VELOCE\nChiusura sbarre stimata: 15:23:25 - 15:27:55\nTreni
+ sura: TRANSITO VELOCE\nChiusura sbarre stimata: 15:23:43 - 15:28:13\nTreni
   coinvolti nella chiusura:\n  - IC 610 (LECCE -> BOLZANO) [Transito]\nRita
  rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (57% tratta PESARO -> RICCIONE\; ped
+ stica: Transito stimato senza fermata (58% tratta PESARO -> RICCIONE\; ped
  ale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CATTOLICA S.GIOVANNI GABICCE
 STATUS:CONFIRMED
@@ -239,52 +270,75 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3927--20261121-S07102@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T161018Z
-DTEND:20261122T162200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:10 - 17:22 (primo: REG 3927)
+UID:train-1763--20261121-S07102@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T143209Z
+DTEND:20261122T144430Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:32 - 15:44 (primo: REG 1763) (+6 m
+ in)
 DESCRIPTION:Stazione/PL: CATTOLICA S.GIOVANNI GABICCE (S07102)\nRegime chiu
- sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:10:18 - 17:
- 22:00\nTreni coinvolti nella chiusura:\n  - REG 3927 (REGGIO EMILIA -> PES
- ARO) [Transito]\n  - REG 3927 (REGGIO EMILIA -> PESARO)\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (101s) inferiore 
- alla soglia minima di sgombero stradale (120s)
+ sura: CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 15:32:09 - 15:
+ 44:30\nTreni coinvolti nella chiusura:\n  - REG 1763 (BOLOGNA CENTRALE -> 
+ ANCONA) (+6m) [Transito]\n  - REG 1763 (BOLOGNA CENTRALE -> ANCONA) (+6m) 
+ [Transito]\n  - REG 1763 (BOLOGNA CENTRALE -> ANCONA) (+6m)\n  - REG 1763 
+ (BOLOGNA CENTRALE -> ANCONA) (+6m)\nRitardo massimo rilevato: 6 min\nAffid
+ abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 tre
+ ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
+ gombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CATTOLICA S.GIOVANNI GABICCE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-611--20261121-S07102@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:0
-DTSTART:20261122T162604Z
-DTEND:20261122T163034Z
-SUMMARY:[TRANSITO VELOCE] IC 611 (BOLZANO -> BARI CENTRALE) ore 17:29
+UID:train-3927--20261121-S07102@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T160956Z
+DTEND:20261122T161526Z
+SUMMARY:[TRANSITO VELOCE] REG 3927 (REGGIO EMILIA -> PESARO) ore 17:14
 DESCRIPTION:Stazione/PL: CATTOLICA S.GIOVANNI GABICCE (S07102)\nRegime chiu
- sura: TRANSITO VELOCE\nChiusura sbarre stimata: 17:26:04 - 17:30:34\nTreni
-  coinvolti nella chiusura:\n  - IC 611 (BOLZANO -> BARI CENTRALE) [Transit
- o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Transito stimato senza fermata (42% tratta RICCIONE -> PESA
- RO\; pedale annuncio fisso Vmax)
+ sura: TRANSITO VELOCE\nChiusura sbarre stimata: 17:09:56 - 17:15:26\nTreni
+  coinvolti nella chiusura:\n  - REG 3927 (REGGIO EMILIA -> PESARO) [Transi
+ to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (55% tratta RICCIONE -> MIS
+ ANO ADRIATICO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CATTOLICA S.GIOVANNI GABICCE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3927--20261121-S07102@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T161730Z
+DTEND:20261122T162200Z
+SUMMARY:[FERMATA] REG 3927 (REGGIO EMILIA -> PESARO) ore 17:21
+DESCRIPTION:Stazione/PL: CATTOLICA S.GIOVANNI GABICCE (S07102)\nRegime chiu
+ sura: FERMATA\nChiusura sbarre stimata: 17:17:30 - 17:22:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 3927 (REGGIO EMILIA -> PESARO)\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pre
+ visione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione CATTOLICA S.GIOVANNI GABICCE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3929--20261121-S07102@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T171830Z
 DTEND:20261122T172300Z
 SUMMARY:[FERMATA] REG 3929 (REGGIO EMILIA -> ANCONA) ore 18:22
@@ -303,8 +357,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2494--20261121-S07102@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T175330Z
 DTEND:20261122T175800Z
 SUMMARY:[FERMATA] REG 2494 (PESCARA -> REGGIO EMILIA) ore 18:57
@@ -322,39 +376,61 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-613--20261121-S07102@pl-tracker.local
-DTSTAMP:20261122T065144Z
+UID:train-3931--20261121-S07102@pl-tracker.local
+DTSTAMP:20261122T150820Z
 SEQUENCE:0
-DTSTART:20261122T182655Z
-DTEND:20261122T183600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:26 - 19:36 (primo: IC 613)
+DTSTART:20261122T180656Z
+DTEND:20261122T181226Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:06 - 19:12 (primo: REG 3931)
 DESCRIPTION:Stazione/PL: CATTOLICA S.GIOVANNI GABICCE (S07102)\nRegime chiu
- sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:26:55 - 19:
- 36:00\nTreni coinvolti nella chiusura:\n  - IC 613 (MILANO CENTRALE -> PES
- CARA) [Transito]\n  - REG 3930 (ANCONA -> REGGIO EMILIA)\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
- ura continua per 2 treni: intervallo utile tra i passaggi (4s) inferiore a
- lla soglia minima di sgombero stradale (120s)
+ sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:06:56 - 19:
+ 12:26\nTreni coinvolti nella chiusura:\n  - REG 3931 (REGGIO EMILIA -> ANC
+ ONA) [Transito]\n  - REG 3931 (REGGIO EMILIA -> ANCONA) [Transito]\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CATTOLICA S.GIOVANNI GABICCE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3932--20261121-S07102@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T203730Z
-DTEND:20261122T204200Z
-SUMMARY:[FERMATA] REG 3932 (ANCONA -> BOLOGNA CENTRALE) ore 21:41
+UID:train-3931--20261121-S07102@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T181430Z
+DTEND:20261122T181900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:14 - 19:19 (primo: REG 3931)
 DESCRIPTION:Stazione/PL: CATTOLICA S.GIOVANNI GABICCE (S07102)\nRegime chiu
- sura: FERMATA\nChiusura sbarre stimata: 21:37:30 - 21:42:00\nTreni coinvol
- ti nella chiusura:\n  - REG 3932 (ANCONA -> BOLOGNA CENTRALE)\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: 
- Previsione da traccia oraria regolare
+ sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:14:30 - 19:
+ 19:00\nTreni coinvolti nella chiusura:\n  - REG 3931 (REGGIO EMILIA -> ANC
+ ONA)\n  - REG 3931 (REGGIO EMILIA -> ANCONA)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
+  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CATTOLICA S.GIOVANNI GABICCE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3930--20261121-S07102@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T183130Z
+DTEND:20261122T183600Z
+SUMMARY:[FERMATA] REG 3930 (ANCONA -> REGGIO EMILIA) ore 19:35
+DESCRIPTION:Stazione/PL: CATTOLICA S.GIOVANNI GABICCE (S07102)\nRegime chiu
+ sura: FERMATA\nChiusura sbarre stimata: 19:31:30 - 19:36:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 3930 (ANCONA -> REGGIO EMILIA)\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pre
+ visione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione CATTOLICA S.GIOVANNI GABICCE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -364,21 +440,45 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3939--20261121-S07102@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T211530Z
-DTEND:20261122T212000Z
-SUMMARY:[FERMATA] REG 3939 (REGGIO EMILIA -> ANCONA) ore 22:19
+UID:train-3932--20261121-S07102@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T203730Z
+DTEND:20261122T204200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:37 - 21:42 (primo: REG 3932)
 DESCRIPTION:Stazione/PL: CATTOLICA S.GIOVANNI GABICCE (S07102)\nRegime chiu
- sura: FERMATA\nChiusura sbarre stimata: 22:15:30 - 22:20:00\nTreni coinvol
- ti nella chiusura:\n  - REG 3939 (REGGIO EMILIA -> ANCONA)\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pre
- visione da traccia oraria regolare
+ sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:37:30 - 21:
+ 42:00\nTreni coinvolti nella chiusura:\n  - REG 3932 (ANCONA -> BOLOGNA CE
+ NTRALE)\n  - REG 3932 (ANCONA -> BOLOGNA CENTRALE)\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura co
+ ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CATTOLICA S.GIOVANNI GABICCE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3939--20261121-S07102@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T211530Z
+DTEND:20261122T212000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:15 - 22:20 (primo: REG 3939)
+DESCRIPTION:Stazione/PL: CATTOLICA S.GIOVANNI GABICCE (S07102)\nRegime chiu
+ sura: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:15:30 - 22:
+ 20:00\nTreni coinvolti nella chiusura:\n  - REG 3939 (REGGIO EMILIA -> ANC
+ ONA)\n  - REG 3939 (REGGIO EMILIA -> ANCONA)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
+  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CATTOLICA S.GIOVANNI GABICCE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

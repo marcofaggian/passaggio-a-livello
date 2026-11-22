@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:d86b2714c3d417c424669463aebbfee60bd90a4a766ba704b2e61fdf254d
- 6458
+X-CONTENT-HASH:997f22b0dc50ce7b82ec4b549127d82cd6bdc355d8aa083616c178a7925e
+ fdff
 BEGIN:VEVENT
 UID:train-10216--20261121-S01027@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T072230Z
 DTEND:20261122T072700Z
 SUMMARY:[FERMATA] REG 10216 (MILANO PORTA GARIBALDI -> DOMODOSSOLA) ore 08:
@@ -34,38 +34,40 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10204--20261121-S01027@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T112230Z
-DTEND:20261122T112700Z
-SUMMARY:[FERMATA] REG 10204 (MILANO PORTA GARIBALDI -> DOMODOSSOLA) ore 12:
- 26
-DESCRIPTION:Stazione/PL: VERGIATE (S01027)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 12:22:30 - 12:27:00\nTreni coinvolti nella chiusura:\n
-   - REG 10204 (MILANO PORTA GARIBALDI -> DOMODOSSOLA)\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
- ne da traccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T112800Z
+DTEND:20261122T113500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:28 - 12:35 (primo: REG 10204) (+7 
+ min)
+DESCRIPTION:Stazione/PL: VERGIATE (S01027)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 12:28:00 - 12:35:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 10204 (MILANO PORTA GARIBALDI -> DOMODOSSOLA) 
+ (+7m)\n  - REG 10204 (MILANO PORTA GARIBALDI -> DOMODOSSOLA) (+7m)\nRitard
+ o massimo rilevato: 7 min\nAffidabilità stima: 99%\nNota normativa/eurist
+ ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERGIATE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2430--20261121-S01027@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T150650Z
-DTEND:20261122T151220Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T150745Z
+DTEND:20261122T151315Z
 SUMMARY:[TRANSITO VELOCE] REG 2430 (MILANO CENTRALE -> DOMODOSSOLA) ore 16:
- 11
+ 12
 DESCRIPTION:Stazione/PL: VERGIATE (S01027)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 16:06:50 - 16:12:20\nTreni coinvolti nella chi
+ E\nChiusura sbarre stimata: 16:07:45 - 16:13:15\nTreni coinvolti nella chi
  usura:\n  - REG 2430 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRitardo 
  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Transito stimato senza fermata (70% tratta GALLARATE -> SESTO CALENDE\;
+ a: Transito stimato senza fermata (77% tratta GALLARATE -> SESTO CALENDE\;
   pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VERGIATE
 STATUS:CONFIRMED
@@ -77,8 +79,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10232--20261121-S01027@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T152230Z
 DTEND:20261122T152700Z
 SUMMARY:[FERMATA] REG 10232 (MILANO PORTA GARIBALDI -> DOMODOSSOLA) ore 16:
@@ -98,22 +100,110 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2432--20261121-S01027@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T160650Z
-DTEND:20261122T161220Z
-SUMMARY:[TRANSITO VELOCE] REG 2432 (MILANO CENTRALE -> DOMODOSSOLA) ore 17:
- 11
-DESCRIPTION:Stazione/PL: VERGIATE (S01027)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 17:06:50 - 17:12:20\nTreni coinvolti nella chi
- usura:\n  - REG 2432 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Transito stimato senza fermata (70% tratta GALLARATE -> SESTO CALENDE\;
-  pedale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T160745Z
+DTEND:20261122T161315Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:07 - 17:13 (primo: REG 2432)
+DESCRIPTION:Stazione/PL: VERGIATE (S01027)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 17:07:45 - 17:13:15\nTreni coinvol
+ ti nella chiusura:\n  - REG 2432 (MILANO CENTRALE -> DOMODOSSOLA) [Transit
+ o]\n  - REG 2432 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
+ hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
+ re alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERGIATE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10234--20261121-S01027@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T162230Z
+DTEND:20261122T162700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:22 - 17:27 (primo: REG 10234)
+DESCRIPTION:Stazione/PL: VERGIATE (S01027)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 17:22:30 - 17:27:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 10234 (MILANO PORTA GARIBALDI -> ARONA)\n  - R
+ EG 10234 (MILANO PORTA GARIBALDI -> ARONA)\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
+ er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
+ ima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERGIATE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2440--20261121-S01027@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T200745Z
+DTEND:20261122T201315Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:07 - 21:13 (primo: REG 2440)
+DESCRIPTION:Stazione/PL: VERGIATE (S01027)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 21:07:45 - 21:13:15\nTreni coinvol
+ ti nella chiusura:\n  - REG 2440 (MILANO CENTRALE -> DOMODOSSOLA) [Transit
+ o]\n  - REG 2440 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
+ hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
+ re alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERGIATE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10242--20261121-S01027@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T202230Z
+DTEND:20261122T202700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:22 - 21:27 (primo: REG 10242)
+DESCRIPTION:Stazione/PL: VERGIATE (S01027)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 21:22:30 - 21:27:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 10242 (MILANO PORTA GARIBALDI -> ARONA)\n  - R
+ EG 10242 (MILANO PORTA GARIBALDI -> ARONA)\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
+ er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
+ ima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERGIATE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2442--20261121-S01027@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T210745Z
+DTEND:20261122T211315Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:07 - 22:13 (primo: REG 2442)
+DESCRIPTION:Stazione/PL: VERGIATE (S01027)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 22:07:45 - 22:13:15\nTreni coinvol
+ ti nella chiusura:\n  - REG 2442 (MILANO CENTRALE -> DOMODOSSOLA) [Transit
+ o]\n  - REG 2442 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
+ hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
+ re alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERGIATE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG

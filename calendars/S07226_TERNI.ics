@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:025e034dcc0658d5b37f513c7a62920e25b6d426f4ced0cdf883cee4b092
- 63ae
+X-CONTENT-HASH:195b4838ece6621ca514334e6e0d3b5160b2ee483d44c044b270d19729fa
+ 2c4b
 BEGIN:VEVENT
 UID:train-4151--20261121-S07226@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T050530Z
 DTEND:20261122T051000Z
 SUMMARY:[FERMATA] REG 4151 (ANCONA -> ROMA TERMINI) ore 06:09
@@ -33,8 +33,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-534--20261121-S07226@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T074615Z
 DTEND:20261122T075100Z
 SUMMARY:[FERMATA] IC 534 (ROMA TERMINI -> ANCONA) ore 08:50
@@ -53,49 +53,52 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4726--20261121-S07226@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T075602Z
-DTEND:20261122T080132Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T075643Z
+DTEND:20261122T080213Z
 SUMMARY:[TRANSITO VELOCE] REG 4726 (ROMA TERMINI -> PERUGIA) ore 09:00
 DESCRIPTION:Stazione/PL: TERNI (S07226)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 08:56:02 - 09:01:32\nTreni coinvolti nella chiusu
+ Chiusura sbarre stimata: 08:56:43 - 09:02:13\nTreni coinvolti nella chiusu
  ra:\n  - REG 4726 (ROMA TERMINI -> PERUGIA) [Transito]\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transit
- o stimato senza fermata (71% tratta ORTE -> NARNI AMELIA\; pedale annuncio
-  fisso Vmax)
+ levato: -5 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transi
+ to stimato senza fermata (71% tratta ORTE -> NARNI AMELIA\; pedale annunci
+ o fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione TERNI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:-5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4726--20261121-S07226@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T081330Z
-DTEND:20261122T081800Z
-SUMMARY:[FERMATA] REG 4726 (ROMA TERMINI -> PERUGIA) ore 09:17
-DESCRIPTION:Stazione/PL: TERNI (S07226)\nRegime chiusura: FERMATA\nChiusura
-  sbarre stimata: 09:13:30 - 09:18:00\nTreni coinvolti nella chiusura:\n  -
-  REG 4726 (ROMA TERMINI -> PERUGIA)\nRitardo massimo rilevato: 0 min\nAffi
- dabilità stima: 90%\nNota normativa/euristica: Previsione da traccia orar
- ia regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T081430Z
+DTEND:20261122T082100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:14 - 09:21 (primo: REG 4726) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: TERNI (S07226)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 09:14:30 - 09:21:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 4726 (ROMA TERMINI -> PERUGIA) (+1m)\n  - REG 472
+ 6 (ROMA TERMINI -> PERUGIA) (+1m)\nRitardo massimo rilevato: 1 min\nAffida
+ bilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 tren
+ i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
+ ombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TERNI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4727--20261121-S07226@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T095030Z
 DTEND:20261122T095500Z
 SUMMARY:[FERMATA] REG 4727 (PERUGIA -> ROMA TERMINI) ore 10:54
@@ -114,49 +117,74 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4510--20261121-S07226@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T111557Z
-DTEND:20261122T112127Z
-SUMMARY:[TRANSITO VELOCE] REG 4510 (ROMA TERMINI -> ASSISI) ore 12:20
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T111226Z
+DTEND:20261122T111756Z
+SUMMARY:[TRANSITO VELOCE] REG 4510 (ROMA TERMINI -> ASSISI) ore 12:16
 DESCRIPTION:Stazione/PL: TERNI (S07226)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 12:15:57 - 12:21:27\nTreni coinvolti nella chiusu
+ Chiusura sbarre stimata: 12:12:26 - 12:17:56\nTreni coinvolti nella chiusu
  ra:\n  - REG 4510 (ROMA TERMINI -> ASSISI) [Transito]\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito
-  stimato senza fermata (71% tratta ORTE -> NARNI AMELIA\; pedale annuncio 
- fisso Vmax)
+ evato: -6 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transit
+ o stimato senza fermata (71% tratta ORTE -> NARNI AMELIA\; pedale annuncio
+  fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione TERNI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:-6
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4510--20261121-S07226@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T112930Z
-DTEND:20261122T113400Z
-SUMMARY:[FERMATA] REG 4510 (ROMA TERMINI -> ASSISI) ore 12:33
-DESCRIPTION:Stazione/PL: TERNI (S07226)\nRegime chiusura: FERMATA\nChiusura
-  sbarre stimata: 12:29:30 - 12:34:00\nTreni coinvolti nella chiusura:\n  -
-  REG 4510 (ROMA TERMINI -> ASSISI)\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 90%\nNota normativa/euristica: Previsione da traccia orari
- a regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T112830Z
+DTEND:20261122T113600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:28 - 12:36 (primo: REG 4510)
+DESCRIPTION:Stazione/PL: TERNI (S07226)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 12:28:30 - 12:36:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 4510 (ROMA TERMINI -> ASSISI)\n  - REG 4510 (ROMA
+  TERMINI -> ASSISI)\nRitardo massimo rilevato: -6 min\nAffidabilità stima
+ : 99%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
+  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
+ le (120s)
 LOCATION:Passaggio a Livello / Stazione TERNI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-6
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4154--20261121-S07226@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T132330Z
+DTEND:20261122T133000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:23 - 14:30 (primo: REG 4154) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: TERNI (S07226)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 14:23:30 - 14:30:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 4154 (ROMA TERMINI -> ANCONA) (+1m)\n  - REG 4154
+  (ROMA TERMINI -> ANCONA) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabi
+ lità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni:
+  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione TERNI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-540--20261121-S07226@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T151615Z
 DTEND:20261122T152100Z
 SUMMARY:[FERMATA] IC 540 (ROMA TERMINI -> ANCONA) ore 16:20
@@ -175,28 +203,31 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-541--20261121-S07226@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T174715Z
-DTEND:20261122T175200Z
-SUMMARY:[FERMATA] IC 541 (ANCONA -> ROMA TERMINI) ore 18:51
-DESCRIPTION:Stazione/PL: TERNI (S07226)\nRegime chiusura: FERMATA\nChiusura
-  sbarre stimata: 18:47:15 - 18:52:00\nTreni coinvolti nella chiusura:\n  -
-  IC 541 (ANCONA -> ROMA TERMINI)\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria 
- regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T175015Z
+DTEND:20261122T175500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:50 - 18:55 (primo: IC 541) (+3 min
+ )
+DESCRIPTION:Stazione/PL: TERNI (S07226)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 18:50:15 - 18:55:00\nTreni coinvolti 
+ nella chiusura:\n  - IC 541 (ANCONA -> ROMA TERMINI) (+3m)\n  - IC 541 (AN
+ CONA -> ROMA TERMINI) (+3m)\nRitardo massimo rilevato: 3 min\nAffidabilit
+ à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TERNI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4735--20261121-S07226@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T181130Z
 DTEND:20261122T181600Z
 SUMMARY:[FERMATA] REG 4735 (PERUGIA -> ROMA TERMINI) ore 19:15

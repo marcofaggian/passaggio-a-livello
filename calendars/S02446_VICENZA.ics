@@ -9,21 +9,21 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:be3c9bcc707d0bb58ffd34f1a8bd2bf916f95334088e369af850a5286cb7
- 70af
+X-CONTENT-HASH:ac52dc6c46e8e6c6d028bb8a2e977b66930edc2b5a8c5fae8888a59ab398
+ 713f
 BEGIN:VEVENT
 UID:train-33667--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T004215Z
-DTEND:20261122T004745Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T003943Z
+DTEND:20261122T004513Z
 SUMMARY:[TRANSITO VELOCE] REG 33667 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
-  ore 01:46 (+4 min)
+  ore 01:43 (+4 min)
 DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 01:42:15 - 01:47:45\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 01:39:43 - 01:45:13\nTreni coinvolti nella chiu
  sura:\n  - REG 33667 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+4m) [Transi
  to]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Transito stimato senza fermata (39% tratta PADOVA -> VERON
+ tiva/euristica: Transito stimato senza fermata (36% tratta PADOVA -> VERON
  A PORTA NUOVA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VICENZA
 STATUS:CONFIRMED
@@ -34,33 +34,62 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-17162--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T055118Z
-DTEND:20261122T060400Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:51 - 07:04 (primo: REG 17162)
+UID:train-9700--20261121-S02446@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T051730Z
+DTEND:20261122T052800Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:17 - 06:28 (primo: TRENO 9700) (+1
+  min)
 DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
- UA - 4 TRENI\nChiusura sbarre stimata: 06:51:18 - 07:04:00\nTreni coinvolt
- i nella chiusura:\n  - REG 17162 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [
- Transito]\n  - TRENO 8505 (BOLZANO -> ROMA TERMINI) [Transito]\n  - TRENO 
- 9702 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA)\n  - REG 3481 (VICENZA -> VEN
- EZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\n
- Nota normativa/euristica: Chiusura continua per 4 treni: intervallo utile 
- tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
- s)
+ UA - 4 TRENI\nChiusura sbarre stimata: 06:17:30 - 06:28:00\nTreni coinvolt
+ i nella chiusura:\n  - TRENO 9700 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+1
+ m) [Arrivo]\n  - TRENO 9700 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+1m) [Ar
+ rivo]\n  - TRENO 9700 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+1m) [Partenza
+ ]\n  - TRENO 9700 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+1m) [Partenza]\nR
+ itardo massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/e
+ uristica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VICENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17162--20261121-S02446@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T055047Z
+DTEND:20261122T060600Z
+SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 06:50 - 07:06 (primo: REG 17162) (+1 
+ min)
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 8 TRENI\nChiusura sbarre stimata: 06:50:47 - 07:06:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 17162 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [
+ Transito]\n  - TRENO 8505 (BOLZANO -> ROMA TERMINI) [Transito]\n  - TRENO 
+ 9702 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA) (+1m) [Arrivo]\n  - TRENO 970
+ 2 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA) (+1m) [Arrivo]\n  - REG 3481 (VI
+ CENZA -> VENEZIA S.LUCIA) (+1m)\n  - REG 3481 (VICENZA -> VENEZIA S.LUCIA)
+  (+1m)\n  - TRENO 9702 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA) (+1m) [Part
+ enza]\n  - TRENO 9702 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA) (+1m) [Parte
+ nza]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 8 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VICENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17162--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T061430Z
 DTEND:20261122T061900Z
 SUMMARY:[FERMATA] REG 17162 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) ore 07:
@@ -79,38 +108,64 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9708--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T065830Z
-DTEND:20261122T070300Z
-SUMMARY:[FERMATA] TRENO 9708 (VENEZIA S.LUCIA -> MILANO CENTRALE) ore 08:02
-DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 07:58:30 - 08:03:00\nTreni coinvolti nella chiusura:\n 
-  - TRENO 9708 (VENEZIA S.LUCIA -> MILANO CENTRALE)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
- da traccia oraria regolare
+UID:train-9708--20261121-S02446@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T065800Z
+DTEND:20261122T070230Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:58 - 08:02 (primo: TRENO 9708) (+5
+  min)
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 07:58:00 - 08:02:30\nTreni coinvolt
+ i nella chiusura:\n  - TRENO 9708 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+5
+ m) [Arrivo]\n  - TRENO 9708 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+5m) [Ar
+ rivo]\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 99%\nNota nor
+ mativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pa
+ ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VICENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9708--20261121-S02446@pl-tracker.local-dep
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T070500Z
+DTEND:20261122T070930Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:05 - 08:09 (primo: TRENO 9708) (+5
+  min)
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 08:05:00 - 08:09:30\nTreni coinvolt
+ i nella chiusura:\n  - TRENO 9708 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+5
+ m) [Partenza]\n  - TRENO 9708 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+5m) [
+ Partenza]\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 99%\nNota
+  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
+ i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VICENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9712--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T071357Z
-DTEND:20261122T071927Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T071210Z
+DTEND:20261122T071740Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9712 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA
- ) ore 08:18
+ ) ore 08:16
 DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 08:13:57 - 08:19:27\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 08:12:10 - 08:17:40\nTreni coinvolti nella chiu
  sura:\n  - TRENO 9712 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA) [Transito]\n
  Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
- euristica: Transito stimato senza fermata (56% tratta VENEZIA MESTRE -> VE
+ euristica: Transito stimato senza fermata (53% tratta VENEZIA MESTRE -> VE
  RONA PORTA NUOVA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VICENZA
 STATUS:CONFIRMED
@@ -122,94 +177,182 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9703--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T072130Z
-DTEND:20261122T072600Z
-SUMMARY:[FERMATA] TRENO 9703 (MILANO CENTRALE -> UDINE) ore 08:25
+DTEND:20261122T073530Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 08:21 - 08:35 (primo: TRENO 9703) (+1
+ 0 min)
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 7 TRENI\nChiusura sbarre stimata: 08:21:30 - 08:35:30\nTreni coinvolt
+ i nella chiusura:\n  - TRENO 9703 (MILANO CENTRALE -> UDINE)\n  - EC 88 (B
+ OLOGNA CENTRALE -> BRENNERO) (+10m) [Transito]\n  - EC 88 (BOLOGNA CENTRAL
+ E -> BRENNERO) (+10m) [Transito]\n  - TRENO 9713 (UDINE -> MILANO CENTRALE
+ ) (+1m) [Arrivo]\n  - TRENO 9713 (UDINE -> MILANO CENTRALE) (+1m) [Arrivo]
+ \n  - TRENO 9713 (UDINE -> MILANO CENTRALE) (+1m) [Partenza]\n  - TRENO 97
+ 13 (UDINE -> MILANO CENTRALE) (+1m) [Partenza]\nRitardo massimo rilevato: 
+ 10 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
+ nua per 7 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VICENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+X-PL-DELAY-MIN:10
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17257--20261121-S02446@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T073932Z
+DTEND:20261122T075000Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 08:39 - 08:50 (primo: REG 17257) (+2 
+ min)
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 3 TRENI\nChiusura sbarre stimata: 08:39:32 - 08:50:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 17257 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (
+ +2m) [Transito]\n  - REG 17257 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+2
+ m) [Transito]\n  - REG 16158 (TREVISO CENTRALE -> VICENZA)\nRitardo massim
+ o rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
+ usura continua per 3 treni: intervallo utile tra i passaggi (27s) inferior
+ e alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VICENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3486--20261121-S02446@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T075230Z
+DTEND:20261122T075700Z
+SUMMARY:[FERMATA] REG 3486 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) ore 08:5
+ 6
 DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 08:21:30 - 08:26:00\nTreni coinvolti nella chiusura:\n 
-  - TRENO 9703 (MILANO CENTRALE -> UDINE)\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia
-  oraria regolare
+ ra sbarre stimata: 08:52:30 - 08:57:00\nTreni coinvolti nella chiusura:\n 
+  - REG 3486 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
+  da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VICENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16158--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T074530Z
-DTEND:20261122T075714Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 08:45 - 08:57 (primo: REG 16158)
+UID:train-17250--20261121-S02446@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T075909Z
+DTEND:20261122T081030Z
+SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 08:59 - 09:10 (primo: REG 17250) (+9 
+ min)
 DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
- UA - 3 TRENI\nChiusura sbarre stimata: 08:45:30 - 08:57:14\nTreni coinvolt
- i nella chiusura:\n  - REG 16158 (TREVISO CENTRALE -> VICENZA)\n  - TRENO 
- 8507 (BOLZANO -> ROMA TERMINI) [Transito]\n  - REG 3486 (VENEZIA S.LUCIA -
- > VERONA PORTA NUOVA)\nRitardo massimo rilevato: 0 min\nAffidabilità stim
- a: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: intervall
- o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
- ale (120s)
+ UA - 8 TRENI\nChiusura sbarre stimata: 08:59:09 - 09:10:30\nTreni coinvolt
+ i nella chiusura:\n  - REG 17250 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (
+ +3m) [Transito]\n  - REG 17250 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+3
+ m) [Transito]\n  - TRENO 9705 (MILANO CENTRALE -> VENEZIA S.LUCIA) (+9m)\n
+   - TRENO 9705 (MILANO CENTRALE -> VENEZIA S.LUCIA) (+9m)\n  - TRENO 8507 
+ (BOLZANO -> ROMA TERMINI) [Transito]\n  - TRENO 8507 (BOLZANO -> ROMA TERM
+ INI) [Transito]\n  - TRENO 9716 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA) (+
+ 6m)\n  - TRENO 9716 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA) (+6m)\nRitardo
+  massimo rilevato: 9 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Chiusura continua per 8 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VICENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+X-PL-DELAY-MIN:9
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8502--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T085029Z
-DTEND:20261122T085559Z
-SUMMARY:[TRANSITO VELOCE] TRENO 8502 (NAPOLI CENTRALE -> BOLZANO) ore 09:54
-DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 09:50:29 - 09:55:59\nTreni coinvolti nella chiu
- sura:\n  - TRENO 8502 (NAPOLI CENTRALE -> BOLZANO) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Transito stimato senza fermata (76% tratta BOLOGNA C.LE/AV -> VERONA PORTA
-  NUOVA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione VICENZA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17187--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T090430Z
-DTEND:20261122T090922Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:04 - 10:09 (primo: REG 17187)
+UID:train-17250--20261121-S02446@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T081930Z
+DTEND:20261122T082700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:19 - 09:27 (primo: REG 17250) (+6 
+ min)
 DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 10:04:30 - 10:09:22\nTreni coinvolt
- i nella chiusura:\n  - REG 17187 (VICENZA -> VENEZIA S.LUCIA)\n  - REG 224
- 69 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
-  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
+ UA - 2 TRENI\nChiusura sbarre stimata: 09:19:30 - 09:27:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 17250 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (
+ +6m)\n  - REG 17250 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+6m)\nRitardo
+  massimo rilevato: 6 min\nAffidabilità stima: 99%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VICENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17257--20261121-S02446@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T084400Z
+DTEND:20261122T085433Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 09:44 - 09:54 (primo: REG 17257) (+9 
+ min)
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 3 TRENI\nChiusura sbarre stimata: 09:44:00 - 09:54:33\nTreni coinvolt
+ i nella chiusura:\n  - REG 17257 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (
+ +9m)\n  - REG 17257 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+9m)\n  - TRE
+ NO 8502 (NAPOLI CENTRALE -> BOLZANO) [Transito]\nRitardo massimo rilevato:
+  9 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
+ nua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VICENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:9
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-22469--20261121-S02446@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T090305Z
+DTEND:20261122T091400Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 10:03 - 10:14 (primo: REG 22469) (+13
+  min)
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 6 TRENI\nChiusura sbarre stimata: 10:03:05 - 10:14:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 22469 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (
+ +3m) [Transito]\n  - REG 22469 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+3
+ m) [Transito]\n  - TRENO 9709 (MILANO CENTRALE -> VENEZIA S.LUCIA) (+13m)\
+ n  - TRENO 9709 (MILANO CENTRALE -> VENEZIA S.LUCIA) (+13m)\n  - REG 17187
+  (VICENZA -> VENEZIA S.LUCIA) (+5m)\n  - REG 17187 (VICENZA -> VENEZIA S.L
+ UCIA) (+5m)\nRitardo massimo rilevato: 13 min\nAffidabilità stima: 78%\nN
+ ota normativa/euristica: Chiusura continua per 6 treni: intervallo utile t
+ ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
+ )
+LOCATION:Passaggio a Livello / Stazione VICENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:13
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9710--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T092130Z
 DTEND:20261122T092600Z
 SUMMARY:[FERMATA] TRENO 9710 (GENOVA BRIGNOLE -> VENEZIA S.LUCIA) ore 10:25
@@ -228,71 +371,57 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-22469--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T093830Z
-DTEND:20261122T094300Z
-SUMMARY:[FERMATA] REG 22469 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) ore 10:
- 42
-DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 10:38:30 - 10:43:00\nTreni coinvolti nella chiusura:\n 
-  - REG 22469 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
- e da traccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T094530Z
+DTEND:20261122T095230Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:45 - 10:52 (primo: REG 22469) (+9 
+ min)
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 10:45:30 - 10:52:30\nTreni coinvolt
+ i nella chiusura:\n  - REG 22469 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (
+ +9m)\n  - REG 22469 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+9m)\nRitardo
+  massimo rilevato: 9 min\nAffidabilità stima: 99%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VICENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:9
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3513--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T101932Z
-DTEND:20261122T102502Z
-SUMMARY:[TRANSITO VELOCE] REG 3513 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) 
- ore 11:23
-DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 11:19:32 - 11:25:02\nTreni coinvolti nella chiu
- sura:\n  - REG 3513 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Transito stimato senza fermata (45% tratta VERONA PORTA NUOVA -> 
- VERONA PORTA VESCOVO\; pedale annuncio fisso Vmax)
+DTEND:20261122T103600Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 11:19 - 11:36 (primo: REG 3513) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 5 TRENI\nChiusura sbarre stimata: 11:19:32 - 11:36:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 3513 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [T
+ ransito]\n  - TRENO 9724 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+1m) [Arriv
+ o]\n  - TRENO 9724 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+1m) [Arrivo]\n  
+ - TRENO 9724 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+1m) [Partenza]\n  - TR
+ ENO 9724 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+1m) [Partenza]\nRitardo ma
+ ssimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Chiusura continua per 5 treni: intervallo utile tra i passaggi (0s) infer
+ iore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VICENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9724--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T102830Z
-DTEND:20261122T103300Z
-SUMMARY:[FERMATA] TRENO 9724 (VENEZIA S.LUCIA -> MILANO CENTRALE) ore 11:32
-DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 11:28:30 - 11:33:00\nTreni coinvolti nella chiusura:\n 
-  - TRENO 9724 (VENEZIA S.LUCIA -> MILANO CENTRALE)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
- da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione VICENZA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
 UID:train-41--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T105115Z
 DTEND:20261122T110300Z
 SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:51 - 12:03 (primo: EC 41)
@@ -314,8 +443,8 @@ X-PL-TRAIN-CATEGORY:EC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-84--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T111815Z
 DTEND:20261122T112300Z
 SUMMARY:[FERMATA] EC 84 (VENEZIA S.LUCIA -> BRENNERO) ore 12:22
@@ -334,8 +463,8 @@ X-PL-TRAIN-CATEGORY:EC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9728--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T112830Z
 DTEND:20261122T113300Z
 SUMMARY:[FERMATA] TRENO 9728 (VENEZIA S.LUCIA -> MILANO CENTRALE) ore 12:32
@@ -354,16 +483,16 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8508--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T115029Z
-DTEND:20261122T115559Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T115001Z
+DTEND:20261122T115531Z
 SUMMARY:[TRANSITO VELOCE] TRENO 8508 (ROMA TERMINI -> BRESCIA) ore 12:54
 DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 12:50:29 - 12:55:59\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 12:50:01 - 12:55:31\nTreni coinvolti nella chiu
  sura:\n  - TRENO 8508 (ROMA TERMINI -> BRESCIA) [Transito]\nRitardo massim
  o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
- nsito stimato senza fermata (76% tratta BOLOGNA C.LE/AV -> VERONA PORTA NU
+ nsito stimato senza fermata (75% tratta BOLOGNA C.LE/AV -> VERONA PORTA NU
  OVA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VICENZA
 STATUS:CONFIRMED
@@ -374,30 +503,126 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-611--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T132146Z
-DTEND:20261122T132616Z
-SUMMARY:[TRANSITO VELOCE] IC 611 (BOLZANO -> BARI CENTRALE) ore 14:25
-DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 14:21:46 - 14:26:16\nTreni coinvolti nella chiu
- sura:\n  - IC 611 (BOLZANO -> BARI CENTRALE) [Transito]\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transi
- to stimato senza fermata (24% tratta VERONA PORTA NUOVA -> BOLOGNA CENTRAL
- E\; pedale annuncio fisso Vmax)
+UID:train-9732--20261121-S02446@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T122530Z
+DTEND:20261122T123530Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 13:25 - 13:35 (primo: TRENO 9732) (+1
+  min)
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 4 TRENI\nChiusura sbarre stimata: 13:25:30 - 13:35:30\nTreni coinvolt
+ i nella chiusura:\n  - TRENO 9732 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+1
+ m) [Arrivo]\n  - TRENO 9732 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+1m) [Ar
+ rivo]\n  - TRENO 9732 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+1m) [Partenza
+ ]\n  - TRENO 9732 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+1m) [Partenza]\nR
+ itardo massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/e
+ uristica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VICENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8509--20261121-S02446@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T124901Z
+DTEND:20261122T125523Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:49 - 13:55 (primo: TRENO 8509)
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 13:49:01 - 13:55:23\nTreni coinvolt
+ i nella chiusura:\n  - TRENO 8509 (SIBARI -> BOLZANO) [Transito]\n  - TREN
+ O 8509 (SIBARI -> BOLZANO) [Transito]\nRitardo massimo rilevato: -1 min\nA
+ ffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VICENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-611--20261121-S02446@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T132152Z
+DTEND:20261122T132648Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 14:21 - 14:26 (primo: IC 611) (+3 min
+ )
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 3 TRENI\nChiusura sbarre stimata: 14:21:52 - 14:26:48\nTreni coinvolt
+ i nella chiusura:\n  - IC 611 (BOLZANO -> BARI CENTRALE) [Transito]\n  - R
+ EG 3499 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+3m) [Transito]\n  - REG 
+ 3499 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+3m) [Transito]\nRitardo mas
+ simo rilevato: 3 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) inferi
+ ore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VICENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
+UID:train-3499--20261121-S02446@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T135830Z
+DTEND:20261122T140600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:58 - 15:06 (primo: REG 3499) (+2 m
+ in)
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 14:58:30 - 15:06:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 3499 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+
+ 2m)\n  - REG 3499 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+2m)\nRitardo m
+ assimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica
+ : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VICENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9723--20261121-S02446@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T141000Z
+DTEND:20261122T141730Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:10 - 15:17 (primo: TRENO 9723) (+1
+ 10 min)
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 15:10:00 - 15:17:30\nTreni coinvolt
+ i nella chiusura:\n  - TRENO 9723 (MILANO CENTRALE -> VENEZIA S.LUCIA) (+1
+ 10m)\n  - TRENO 9723 (MILANO CENTRALE -> VENEZIA S.LUCIA) (+110m)\nRitardo
+  massimo rilevato: 110 min\nAffidabilità stima: 99%\nNota normativa/euris
+ tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
+ inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VICENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:110
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
 UID:train-9740--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T142830Z
 DTEND:20261122T143300Z
 SUMMARY:[FERMATA] TRENO 9740 (VENEZIA S.LUCIA -> MILANO CENTRALE) ore 15:32
@@ -415,31 +640,54 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9733--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T145130Z
+UID:train-3498--20261121-S02446@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T145230Z
 DTEND:20261122T145700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:51 - 15:57 (primo: TRENO 9733)
-DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 15:51:30 - 15:57:00\nTreni coinvolt
- i nella chiusura:\n  - TRENO 9733 (MILANO CENTRALE -> VENEZIA S.LUCIA)\n  
- - REG 3498 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura co
- ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
- glia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 3498 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) ore 15:5
+ 6
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 15:52:30 - 15:57:00\nTreni coinvolti nella chiusura:\n 
+  - REG 3498 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
+  da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VICENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-306--20261121-S02446@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T150015Z
+DTEND:20261122T151500Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 16:00 - 16:15 (primo: EC 306)
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 6 TRENI\nChiusura sbarre stimata: 16:00:15 - 16:15:00\nTreni coinvolt
+ i nella chiusura:\n  - EC 306 (VICENZA -> CHIASSO)\n  - EC 306 (VICENZA ->
+  CHIASSO)\n  - REG 91518 (ROVIGO -> VERONA PORTA NUOVA) [Transito]\n  - RE
+ G 91518 (ROVIGO -> VERONA PORTA NUOVA) [Transito]\n  - REG 16187 (VICENZA 
+ -> TREVISO CENTRALE)\n  - REG 16187 (VICENZA -> TREVISO CENTRALE)\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Chiusura continua per 6 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VICENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:EC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-80--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T151815Z
 DTEND:20261122T152300Z
 SUMMARY:[FERMATA] EC 80 (VENEZIA S.LUCIA -> BRENNERO) ore 16:22
@@ -457,29 +705,54 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:EC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16188--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T154530Z
-DTEND:20261122T155000Z
-SUMMARY:[FERMATA] REG 16188 (TREVISO CENTRALE -> VICENZA) ore 16:49
-DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 16:45:30 - 16:50:00\nTreni coinvolti nella chiusura:\n 
-  - REG 16188 (TREVISO CENTRALE -> VICENZA)\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracc
- ia oraria regolare
+UID:train-17227--20261121-S02446@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T153159Z
+DTEND:20261122T153729Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:31 - 16:37 (primo: REG 17227)
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 16:31:59 - 16:37:29\nTreni coinvolt
+ i nella chiusura:\n  - REG 17227 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [
+ Transito]\n  - REG 17227 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito
+ ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
+ va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
+ gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VICENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16188--20261121-S02446@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T154530Z
+DTEND:20261122T155600Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:45 - 16:56 (primo: REG 16188)
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 3 TRENI\nChiusura sbarre stimata: 16:45:30 - 16:56:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 16188 (TREVISO CENTRALE -> VICENZA)\n  - TRENO 
+ 9737 (MILANO CENTRALE -> VENEZIA S.LUCIA)\n  - TRENO 9737 (MILANO CENTRALE
+  -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
+ : 90%\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo
+  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
+ le (120s)
+LOCATION:Passaggio a Livello / Stazione VICENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-46--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T155815Z
 DTEND:20261122T160300Z
 SUMMARY:[FERMATA] EC 46 (VENEZIA S.LUCIA -> DOMODOSSOLA) ore 17:02
@@ -497,96 +770,126 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:EC
 END:VEVENT
 BEGIN:VEVENT
+UID:train-9733--20261121-S02446@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T161130Z
+DTEND:20261122T161600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:11 - 17:16 (primo: TRENO 9733) (+8
+ 0 min)
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 17:11:30 - 17:16:00\nTreni coinvolt
+ i nella chiusura:\n  - TRENO 9733 (MILANO CENTRALE -> VENEZIA S.LUCIA) (+8
+ 0m)\n  - TRENO 9733 (MILANO CENTRALE -> VENEZIA S.LUCIA) (+80m)\nRitardo m
+ assimo rilevato: 80 min\nAffidabilità stima: 90%\nNota normativa/euristic
+ a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VICENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:80
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
 UID:train-9741--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T162130Z
-DTEND:20261122T162600Z
-SUMMARY:[FERMATA] TRENO 9741 (MILANO CENTRALE -> VENEZIA S.LUCIA) ore 17:25
+DTEND:20261122T163300Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:21 - 17:33 (primo: TRENO 9741)
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 4 TRENI\nChiusura sbarre stimata: 17:21:30 - 17:33:00\nTreni coinvolt
+ i nella chiusura:\n  - TRENO 9741 (MILANO CENTRALE -> VENEZIA S.LUCIA)\n  
+ - REG 17227 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - REG 17227 (VERONA
+  PORTA NUOVA -> VENEZIA S.LUCIA)\n  - TRENO 9748 (VENEZIA S.LUCIA -> MILAN
+ O CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNo
+ ta normativa/euristica: Chiusura continua per 4 treni: intervallo utile tr
+ a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VICENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-85--20261121-S02446@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T164815Z
+DTEND:20261122T170300Z
+SUMMARY:[CHIUSURA CONTINUA - 10 TRENI] 17:48 - 18:03 (primo: EC 85) (+17 mi
+ n)
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 10 TRENI\nChiusura sbarre stimata: 17:48:15 - 18:03:00\nTreni coinvol
+ ti nella chiusura:\n  - EC 85 (BRENNERO -> VENEZIA S.LUCIA) (+17m)\n  - EC
+  85 (BRENNERO -> VENEZIA S.LUCIA) (+17m)\n  - REG 17216 (VENEZIA S.LUCIA -
+ > VERONA PORTA NUOVA) [Transito]\n  - REG 3504 (VENEZIA S.LUCIA -> VERONA 
+ PORTA NUOVA)\n  - TRENO 8527 (BRESCIA -> ROMA TERMINI) [Transito]\n  - TRE
+ NO 9743 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA) (+2m)\n  - TRENO 9743 (TOR
+ INO PORTA NUOVA -> VENEZIA S.LUCIA) (+2m)\n  - TRENO 8527 (BRESCIA -> ROMA
+  TERMINI) [Transito]\n  - TRENO 9750 (VENEZIA S.LUCIA -> TORINO PORTA NUOV
+ A)\n  - TRENO 9750 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA)\nRitardo massim
+ o rilevato: 17 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 10 treni: intervallo utile tra i passaggi (0s) inferio
+ re alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VICENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 10 TRENI,FERROVIA
+X-PL-DELAY-MIN:17
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:EC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-610--20261121-S02446@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T170654Z
+DTEND:20261122T171124Z
+SUMMARY:[TRANSITO VELOCE] IC 610 (LECCE -> BOLZANO) ore 18:10
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 18:06:54 - 18:11:24\nTreni coinvolti nella chiu
+ sura:\n  - IC 610 (LECCE -> BOLZANO) [Transito]\nRitardo massimo rilevato:
+  0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito stima
+ to senza fermata (74% tratta BOLOGNA CENTRALE -> VERONA PORTA NUOVA\; peda
+ le annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione VICENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17216--20261121-S02446@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T171430Z
+DTEND:20261122T171900Z
+SUMMARY:[FERMATA] REG 17216 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) ore 18:
+ 18
 DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 17:21:30 - 17:26:00\nTreni coinvolti nella chiusura:\n 
-  - TRENO 9741 (MILANO CENTRALE -> VENEZIA S.LUCIA)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
- da traccia oraria regolare
+ ra sbarre stimata: 18:14:30 - 18:19:00\nTreni coinvolti nella chiusura:\n 
+  - REG 17216 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
+ e da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VICENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9748--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T162830Z
-DTEND:20261122T163600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:28 - 17:36 (primo: TRENO 9748)
-DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 17:28:30 - 17:36:00\nTreni coinvolt
- i nella chiusura:\n  - TRENO 9748 (VENEZIA S.LUCIA -> MILANO CENTRALE)\n  
- - EC 85 (BRENNERO -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\nAf
- fidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 
- treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
- i sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VICENZA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17216--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T165118Z
-DTEND:20261122T165807Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:51 - 17:58 (primo: REG 17216)
-DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
- UA - 3 TRENI\nChiusura sbarre stimata: 17:51:18 - 17:58:07\nTreni coinvolt
- i nella chiusura:\n  - REG 17216 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [
- Transito]\n  - REG 3504 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\n  - TRENO
-  8527 (BRESCIA -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
- er 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VICENZA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-610--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T170804Z
-DTEND:20261122T171900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:08 - 18:19 (primo: IC 610)
-DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 18:08:04 - 18:19:00\nTreni coinvolt
- i nella chiusura:\n  - IC 610 (LECCE -> BOLZANO) [Transito]\n  - REG 17216
-  (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per
-  2 treni: intervallo utile tra i passaggi (115s) inferiore alla soglia min
- ima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VICENZA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
 UID:train-9747--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T172130Z
 DTEND:20261122T172600Z
 SUMMARY:[FERMATA] TRENO 9747 (MILANO CENTRALE -> VENEZIA S.LUCIA) ore 18:25
@@ -605,8 +908,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16309--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T173832Z
 DTEND:20261122T174402Z
 SUMMARY:[TRANSITO VELOCE] REG 16309 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)
@@ -627,13 +930,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8529--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T175144Z
-DTEND:20261122T175714Z
-SUMMARY:[TRANSITO VELOCE] TRENO 8529 (BOLZANO -> ROMA TERMINI) ore 18:55
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T175157Z
+DTEND:20261122T175727Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8529 (BOLZANO -> ROMA TERMINI) ore 18:56
 DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 18:51:44 - 18:57:14\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 18:51:57 - 18:57:27\nTreni coinvolti nella chiu
  sura:\n  - TRENO 8529 (BOLZANO -> ROMA TERMINI) [Transito]\nRitardo massim
  o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
  nsito stimato senza fermata (25% tratta VERONA PORTA NUOVA -> BOLOGNA C.LE
@@ -647,9 +950,31 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
+UID:train-3523--20261121-S02446@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T181932Z
+DTEND:20261122T182502Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:19 - 19:25 (primo: REG 3523)
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 19:19:32 - 19:25:02\nTreni coinvolt
+ i nella chiusura:\n  - REG 3523 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [T
+ ransito]\n  - REG 3523 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
+  (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VICENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-16309--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T183530Z
 DTEND:20261122T184000Z
 SUMMARY:[FERMATA] REG 16309 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) ore 19:
@@ -669,52 +994,55 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8524--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T185029Z
-DTEND:20261122T185600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:50 - 19:56 (primo: TRENO 8524)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T184903Z
+DTEND:20261122T190200Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 19:49 - 20:02 (primo: TRENO 8524)
 DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 19:50:29 - 19:56:00\nTreni coinvolt
+ UA - 5 TRENI\nChiusura sbarre stimata: 19:49:03 - 20:02:00\nTreni coinvolt
  i nella chiusura:\n  - TRENO 8524 (ROMA TERMINI -> BOLZANO) [Transito]\n  
- - TRENO 9753 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
- continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+ - TRENO 9753 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA)\n  - TRENO 9753 (TORI
+ NO PORTA NUOVA -> VENEZIA S.LUCIA)\n  - REG 3523 (VERONA PORTA NUOVA -> VE
+ NEZIA S.LUCIA)\n  - REG 3523 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Chiusura continua per 5 treni: intervallo utile tra i passaggi (0s)
+  inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VICENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3501--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T191932Z
-DTEND:20261122T192502Z
-SUMMARY:[TRANSITO VELOCE] REG 3501 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) 
- ore 20:23
-DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 20:19:32 - 20:25:02\nTreni coinvolti nella chiu
- sura:\n  - REG 3501 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Transito stimato senza fermata (45% tratta VERONA PORTA NUOVA -> 
- VERONA PORTA VESCOVO\; pedale annuncio fisso Vmax)
+DTEND:20261122T192600Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:19 - 20:26 (primo: REG 3501)
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 3 TRENI\nChiusura sbarre stimata: 20:19:32 - 20:26:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 3501 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [T
+ ransito]\n  - TRENO 9755 (MILANO CENTRALE -> UDINE)\n  - TRENO 9755 (MILAN
+ O CENTRALE -> UDINE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
+ : 78%\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo
+  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
+ le (120s)
 LOCATION:Passaggio a Livello / Stazione VICENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17247--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T193832Z
 DTEND:20261122T194402Z
 SUMMARY:[TRANSITO VELOCE] REG 17247 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)
@@ -735,8 +1063,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3501--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T195730Z
 DTEND:20261122T200200Z
 SUMMARY:[FERMATA] REG 3501 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) ore 21:0
@@ -756,29 +1084,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9759--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T201830Z
 DTEND:20261122T202300Z
-SUMMARY:[FERMATA] TRENO 9759 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA) ore 21
- :22
-DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 21:18:30 - 21:23:00\nTreni coinvolti nella chiusura:\n 
-  - TRENO 9759 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
- ne da traccia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:18 - 21:23 (primo: TRENO 9759)
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 21:18:30 - 21:23:00\nTreni coinvolt
+ i nella chiusura:\n  - TRENO 9759 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA)\
+ n  - TRENO 9759 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
+ ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
+ la soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VICENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17247--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T203530Z
 DTEND:20261122T204000Z
 SUMMARY:[FERMATA] REG 17247 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) ore 21:
@@ -797,39 +1126,62 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8528--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T205029Z
+UID:train-16200--20261121-S02446@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T204530Z
 DTEND:20261122T205700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:50 - 21:57 (primo: TRENO 8528)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 21:45 - 21:57 (primo: REG 16200)
 DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 21:50:29 - 21:57:00\nTreni coinvolt
- i nella chiusura:\n  - TRENO 8528 (ROMA TERMINI -> BRESCIA) [Transito]\n  
- - REG 3518 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
- ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
- glia minima di sgombero stradale (120s)
+ UA - 4 TRENI\nChiusura sbarre stimata: 21:45:30 - 21:57:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 16200 (TREVISO CENTRALE -> VICENZA)\n  - REG 16
+ 200 (TREVISO CENTRALE -> VICENZA)\n  - TRENO 8528 (ROMA TERMINI -> BRESCIA
+ ) [Transito]\n  - REG 3518 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VICENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9763--20261121-S02446@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T212430Z
+DTEND:20261122T212900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:24 - 22:29 (primo: TRENO 9763)
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 22:24:30 - 22:29:00\nTreni coinvolt
+ i nella chiusura:\n  - TRENO 9763 (MILANO CENTRALE -> VENEZIA S.LUCIA)\n  
+ - TRENO 9763 (MILANO CENTRALE -> VENEZIA S.LUCIA)\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
+ tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VICENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-6732--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T214918Z
-DTEND:20261122T215448Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T214847Z
+DTEND:20261122T215417Z
 SUMMARY:[TRANSITO VELOCE] REG 6732 (VENEZIA S.LUCIA -> VICENZA) ore 22:53
 DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 22:49:18 - 22:54:48\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 22:48:47 - 22:54:17\nTreni coinvolti nella chiu
  sura:\n  - REG 6732 (VENEZIA S.LUCIA -> VICENZA) [Transito]\nRitardo massi
  mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
- ansito stimato senza fermata (51% tratta PADOVA -> MESTRINO\; pedale annun
+ ansito stimato senza fermata (45% tratta PADOVA -> MESTRINO\; pedale annun
  cio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VICENZA
 STATUS:CONFIRMED
@@ -841,30 +1193,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-33825--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T220802Z
-DTEND:20261122T221332Z
-SUMMARY:[TRANSITO VELOCE] REG 33825 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
-  ore 23:12
-DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 23:08:02 - 23:13:32\nTreni coinvolti nella chiu
- sura:\n  - REG 33825 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Transito]\nR
- itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Transito stimato senza fermata (39% tratta PADOVA -> VERONA PORT
- A NUOVA\; pedale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T220526Z
+DTEND:20261122T221056Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:05 - 23:10 (primo: REG 33825)
+DESCRIPTION:Stazione/PL: VICENZA (S02446)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 23:05:26 - 23:10:56\nTreni coinvolt
+ i nella chiusura:\n  - REG 33825 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [
+ Transito]\n  - REG 33825 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Transito
+ ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
+ va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
+ gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VICENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-6732--20261121-S02446@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T221630Z
 DTEND:20261122T222100Z
 SUMMARY:[FERMATA] REG 6732 (VENEZIA S.LUCIA -> VICENZA) ore 23:20

@@ -9,40 +9,65 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:b29468aab550d1d8125c83f0be4d56f6c847ab6195ef8b28f8b8cd1a14ff
- de0b
+X-CONTENT-HASH:1d983a4eb2f83eb4fbb44ed75a4b885f967cf2faa1b8179bcea4bab50411
+ a879
 BEGIN:VEVENT
-UID:train-9702--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T061827Z
-DTEND:20261122T062357Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9702 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA
- ) ore 07:22
-DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: TR
- ANSITO VELOCE\nChiusura sbarre stimata: 07:18:27 - 07:23:57\nTreni coinvol
- ti nella chiusura:\n  - TRENO 9702 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA)
-  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
- ta normativa/euristica: Transito stimato senza fermata (74% tratta VICENZA
-  -> VERONA PORTA NUOVA\; pedale annuncio fisso Vmax)
+UID:train-9700--20261121-S02433@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T054344Z
+DTEND:20261122T054914Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:43 - 06:49 (primo: TRENO 9700) (+6
+  min)
+DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:43:44 - 06:49:14\nT
+ reni coinvolti nella chiusura:\n  - TRENO 9700 (VENEZIA S.LUCIA -> MILANO 
+ CENTRALE) (+6m) [Transito]\n  - TRENO 9700 (VENEZIA S.LUCIA -> MILANO CENT
+ RALE) (+6m) [Transito]\nRitardo massimo rilevato: 6 min\nAffidabilità sti
+ ma: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
+ lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
+ dale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9702--20261121-S02433@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T062058Z
+DTEND:20261122T062628Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:20 - 07:26 (primo: TRENO 9702)
+DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:20:58 - 07:26:28\nT
+ reni coinvolti nella chiusura:\n  - TRENO 9702 (VENEZIA S.LUCIA -> TORINO 
+ PORTA NUOVA) [Transito]\n  - TRENO 9702 (VENEZIA S.LUCIA -> TORINO PORTA N
+ UOVA) [Transito]\nRitardo massimo rilevato: -3 min\nAffidabilità stima: 7
+ 8%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo ut
+ ile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale 
+ (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17162--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T064436Z
-DTEND:20261122T065006Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T064442Z
+DTEND:20261122T065012Z
 SUMMARY:[TRANSITO VELOCE] REG 17162 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
   ore 07:48
 DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: TR
- ANSITO VELOCE\nChiusura sbarre stimata: 07:44:36 - 07:50:06\nTreni coinvol
+ ANSITO VELOCE\nChiusura sbarre stimata: 07:44:42 - 07:50:12\nTreni coinvol
  ti nella chiusura:\n  - REG 17162 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) 
  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
  a normativa/euristica: Transito stimato senza fermata (66% tratta S.BONIFA
@@ -57,13 +82,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9703--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T065701Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T065650Z
 DTEND:20261122T070400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:57 - 08:04 (primo: TRENO 9703)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:56 - 08:04 (primo: TRENO 9703)
 DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:57:01 - 08:04:00\nT
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:56:50 - 08:04:00\nT
  reni coinvolti nella chiusura:\n  - TRENO 9703 (MILANO CENTRALE -> UDINE) 
  [Transito]\n  - REG 17162 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitardo
   massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
@@ -79,36 +104,87 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9708--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T071827Z
-DTEND:20261122T072357Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9708 (VENEZIA S.LUCIA -> MILANO CENTRALE) o
- re 08:22
-DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: TR
- ANSITO VELOCE\nChiusura sbarre stimata: 08:18:27 - 08:23:57\nTreni coinvol
- ti nella chiusura:\n  - TRENO 9708 (VENEZIA S.LUCIA -> MILANO CENTRALE) [T
- ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Transito stimato senza fermata (74% tratta VICENZA ->
-  VERONA PORTA NUOVA\; pedale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T072514Z
+DTEND:20261122T073044Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:25 - 08:30 (primo: TRENO 9708) (+1
+ 8 min)
+DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:25:14 - 08:30:44\nT
+ reni coinvolti nella chiusura:\n  - TRENO 9708 (VENEZIA S.LUCIA -> MILANO 
+ CENTRALE) (+18m) [Transito]\n  - TRENO 9708 (VENEZIA S.LUCIA -> MILANO CEN
+ TRALE) (+18m) [Transito]\nRitardo massimo rilevato: 18 min\nAffidabilità 
+ stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: inter
+ vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
+ tradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:18
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
+UID:train-9705--20261121-S02433@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T073423Z
+DTEND:20261122T073953Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:34 - 08:39 (primo: TRENO 9705)
+DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:34:23 - 08:39:53\nT
+ reni coinvolti nella chiusura:\n  - TRENO 9705 (MILANO CENTRALE -> VENEZIA
+  S.LUCIA) [Transito]\n  - TRENO 9705 (MILANO CENTRALE -> VENEZIA S.LUCIA) 
+ [Transito]\nRitardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
+ a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17257--20261121-S02433@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T074230Z
+DTEND:20261122T075558Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 08:42 - 08:55 (primo: REG 17257) (+7 
+ min)
+DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
+ IUSURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 08:42:30 - 08:55:58\nT
+ reni coinvolti nella chiusura:\n  - REG 17257 (VERONA PORTA NUOVA -> VENEZ
+ IA S.LUCIA) (+4m) [Arrivo]\n  - REG 17257 (VERONA PORTA NUOVA -> VENEZIA S
+ .LUCIA) (+4m) [Arrivo]\n  - REG 17257 (VERONA PORTA NUOVA -> VENEZIA S.LUC
+ IA) (+4m) [Partenza]\n  - REG 17257 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA
+ ) (+4m) [Partenza]\n  - TRENO 9713 (UDINE -> MILANO CENTRALE) (+7m) [Trans
+ ito]\n  - TRENO 9713 (UDINE -> MILANO CENTRALE) (+7m) [Transito]\nRitardo 
+ massimo rilevato: 7 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Chiusura continua per 6 treni: intervallo utile tra i passaggi (0s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-3486--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T080323Z
-DTEND:20261122T080853Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T080324Z
+DTEND:20261122T080854Z
 SUMMARY:[TRANSITO VELOCE] REG 3486 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) 
  ore 09:07
 DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: TR
- ANSITO VELOCE\nChiusura sbarre stimata: 09:03:23 - 09:08:53\nTreni coinvol
+ ANSITO VELOCE\nChiusura sbarre stimata: 09:03:24 - 09:08:54\nTreni coinvol
  ti nella chiusura:\n  - REG 3486 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [
  Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
   normativa/euristica: Transito stimato senza fermata (73% tratta VICENZA -
@@ -122,82 +198,96 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3486--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T082730Z
-DTEND:20261122T083200Z
-SUMMARY:[FERMATA] REG 3486 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) ore 09:3
- 1
-DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: FE
- RMATA\nChiusura sbarre stimata: 09:27:30 - 09:32:00\nTreni coinvolti nella
-  chiusura:\n  - REG 3486 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
- a: Previsione da traccia oraria regolare
+UID:train-9716--20261121-S02433@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T082636Z
+DTEND:20261122T083206Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 09:26 - 09:32 (primo: TRENO 9716) (+7
+  min)
+DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
+ IUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 09:26:36 - 09:32:06\nT
+ reni coinvolti nella chiusura:\n  - TRENO 9716 (VENEZIA S.LUCIA -> TORINO 
+ PORTA NUOVA) (+7m) [Transito]\n  - TRENO 9716 (VENEZIA S.LUCIA -> TORINO P
+ ORTA NUOVA) (+7m) [Transito]\n  - REG 3486 (VENEZIA S.LUCIA -> VERONA PORT
+ A NUOVA)\nRitardo massimo rilevato: 7 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i
+  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9710--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T085701Z
-DTEND:20261122T090231Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9710 (GENOVA BRIGNOLE -> VENEZIA S.LUCIA) o
- re 10:01
-DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: TR
- ANSITO VELOCE\nChiusura sbarre stimata: 09:57:01 - 10:02:31\nTreni coinvol
- ti nella chiusura:\n  - TRENO 9710 (GENOVA BRIGNOLE -> VENEZIA S.LUCIA) [T
- ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Transito stimato senza fermata (12% tratta VERONA POR
- TA NUOVA -> VICENZA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-22469--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T090830Z
-DTEND:20261122T091300Z
-SUMMARY:[FERMATA] REG 22469 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) ore 10:
- 12
-DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: FE
- RMATA\nChiusura sbarre stimata: 10:08:30 - 10:13:00\nTreni coinvolti nella
-  chiusura:\n  - REG 22469 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristi
- ca: Previsione da traccia oraria regolare
+UID:train-9709--20261121-S02433@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T083800Z
+DTEND:20261122T084330Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:38 - 09:43 (primo: TRENO 9709) (+4
+  min)
+DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:38:00 - 09:43:30\nT
+ reni coinvolti nella chiusura:\n  - TRENO 9709 (MILANO CENTRALE -> VENEZIA
+  S.LUCIA) (+4m) [Transito]\n  - TRENO 9709 (MILANO CENTRALE -> VENEZIA S.L
+ UCIA) (+4m) [Transito]\nRitardo massimo rilevato: 4 min\nAffidabilità sti
+ ma: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
+ lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
+ dale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9710--20261121-S02433@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T085650Z
+DTEND:20261122T092300Z
+SUMMARY:[CHIUSURA CONTINUA - 9 TRENI] 09:56 - 10:23 (primo: TRENO 9710) (+1
+ 8 min)
+DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
+ IUSURA CONTINUA - 9 TRENI\nChiusura sbarre stimata: 09:56:50 - 10:23:00\nT
+ reni coinvolti nella chiusura:\n  - TRENO 9710 (GENOVA BRIGNOLE -> VENEZIA
+  S.LUCIA) [Transito]\n  - REG 17250 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA
+ ) (+3m) [Transito]\n  - REG 17250 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) 
+ (+3m) [Transito]\n  - REG 22469 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+
+ 2m) [Arrivo]\n  - REG 22469 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+2m) 
+ [Arrivo]\n  - REG 22469 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+2m) [Par
+ tenza]\n  - REG 22469 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+2m) [Parte
+ nza]\n  - REG 17250 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+18m)\n  - RE
+ G 17250 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+18m)\nRitardo massimo ri
+ levato: 18 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
+ ra continua per 9 treni: intervallo utile tra i passaggi (0s) inferiore al
+ la soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 9 TRENI,FERROVIA
+X-PL-DELAY-MIN:18
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3513--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T102230Z
-DTEND:20261122T103216Z
+DTEND:20261122T103205Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:22 - 11:32 (primo: REG 3513)
 DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:22:30 - 11:32:16\nT
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:22:30 - 11:32:05\nT
  reni coinvolti nella chiusura:\n  - REG 3513 (VERONA PORTA NUOVA -> VENEZI
  A S.LUCIA)\n  - EC 41 (DOMODOSSOLA -> VENEZIA S.LUCIA) [Transito]\nRitardo
   massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (46s) i
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (35s) i
  nferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
 STATUS:CONFIRMED
@@ -209,39 +299,41 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9724--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T104827Z
-DTEND:20261122T105357Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9724 (VENEZIA S.LUCIA -> MILANO CENTRALE) o
- re 11:52
-DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: TR
- ANSITO VELOCE\nChiusura sbarre stimata: 11:48:27 - 11:53:57\nTreni coinvol
- ti nella chiusura:\n  - TRENO 9724 (VENEZIA S.LUCIA -> MILANO CENTRALE) [T
- ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Transito stimato senza fermata (74% tratta VICENZA ->
-  VERONA PORTA NUOVA\; pedale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T105555Z
+DTEND:20261122T110125Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:55 - 12:01 (primo: TRENO 9724) (+1
+ 59 min)
+DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:55:55 - 12:01:25\nT
+ reni coinvolti nella chiusura:\n  - TRENO 9724 (VENEZIA S.LUCIA -> MILANO 
+ CENTRALE) (+159m) [Transito]\n  - TRENO 9724 (VENEZIA S.LUCIA -> MILANO CE
+ NTRALE) (+159m) [Transito]\nRitardo massimo rilevato: 159 min\nAffidabilit
+ à stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:159
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9726--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T111827Z
-DTEND:20261122T112357Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T111906Z
+DTEND:20261122T112436Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9726 (VENEZIA S.LUCIA -> MILANO CENTRALE) o
- re 12:22
+ re 12:23
 DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: TR
- ANSITO VELOCE\nChiusura sbarre stimata: 12:18:27 - 12:23:57\nTreni coinvol
+ ANSITO VELOCE\nChiusura sbarre stimata: 12:19:06 - 12:24:36\nTreni coinvol
  ti nella chiusura:\n  - TRENO 9726 (VENEZIA S.LUCIA -> MILANO CENTRALE) [T
  ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Transito stimato senza fermata (74% tratta VICENZA ->
+ normativa/euristica: Transito stimato senza fermata (76% tratta VICENZA ->
   VERONA PORTA NUOVA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
 STATUS:CONFIRMED
@@ -253,16 +345,16 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-84--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T114040Z
-DTEND:20261122T114510Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T114123Z
+DTEND:20261122T114553Z
 SUMMARY:[TRANSITO VELOCE] EC 84 (VENEZIA S.LUCIA -> BRENNERO) ore 12:44
 DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: TR
- ANSITO VELOCE\nChiusura sbarre stimata: 12:40:40 - 12:45:10\nTreni coinvol
+ ANSITO VELOCE\nChiusura sbarre stimata: 12:41:23 - 12:45:53\nTreni coinvol
  ti nella chiusura:\n  - EC 84 (VENEZIA S.LUCIA -> BRENNERO) [Transito]\nRi
  tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Transito stimato senza fermata (74% tratta VICENZA -> VERONA PORT
+ ristica: Transito stimato senza fermata (76% tratta VICENZA -> VERONA PORT
  A NUOVA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
 STATUS:CONFIRMED
@@ -274,17 +366,17 @@ X-PL-TRAIN-CATEGORY:EC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9728--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T114827Z
-DTEND:20261122T115357Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T114906Z
+DTEND:20261122T115436Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9728 (VENEZIA S.LUCIA -> MILANO CENTRALE) o
- re 12:52
+ re 12:53
 DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: TR
- ANSITO VELOCE\nChiusura sbarre stimata: 12:48:27 - 12:53:57\nTreni coinvol
+ ANSITO VELOCE\nChiusura sbarre stimata: 12:49:06 - 12:54:36\nTreni coinvol
  ti nella chiusura:\n  - TRENO 9728 (VENEZIA S.LUCIA -> MILANO CENTRALE) [T
  ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Transito stimato senza fermata (74% tratta VICENZA ->
+ normativa/euristica: Transito stimato senza fermata (76% tratta VICENZA ->
   VERONA PORTA NUOVA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
 STATUS:CONFIRMED
@@ -295,40 +387,92 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9733--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T142701Z
-DTEND:20261122T143231Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9733 (MILANO CENTRALE -> VENEZIA S.LUCIA) o
- re 15:31
-DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: TR
- ANSITO VELOCE\nChiusura sbarre stimata: 15:27:01 - 15:32:31\nTreni coinvol
- ti nella chiusura:\n  - TRENO 9733 (MILANO CENTRALE -> VENEZIA S.LUCIA) [T
- ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Transito stimato senza fermata (12% tratta VERONA POR
- TA NUOVA -> VICENZA\; pedale annuncio fisso Vmax)
+UID:train-9732--20261121-S02433@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T125440Z
+DTEND:20261122T130010Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:54 - 14:00 (primo: TRENO 9732) (+7
+ 6 min)
+DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:54:40 - 14:00:10\nT
+ reni coinvolti nella chiusura:\n  - TRENO 9732 (VENEZIA S.LUCIA -> MILANO 
+ CENTRALE) (+76m) [Transito]\n  - TRENO 9732 (VENEZIA S.LUCIA -> MILANO CEN
+ TRALE) (+76m) [Transito]\nRitardo massimo rilevato: 76 min\nAffidabilità 
+ stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: inter
+ vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
+ tradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:76
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3499--20261121-S02433@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T132400Z
+DTEND:20261122T133230Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 14:24 - 14:32 (primo: REG 3499) (+5 m
+ in)
+DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
+ IUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 14:24:00 - 14:32:30\nT
+ reni coinvolti nella chiusura:\n  - REG 3499 (VERONA PORTA NUOVA -> VENEZI
+ A S.LUCIA) (+5m) [Arrivo]\n  - REG 3499 (VERONA PORTA NUOVA -> VENEZIA S.L
+ UCIA) (+5m) [Arrivo]\n  - REG 3499 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)
+  (+5m) [Partenza]\n  - REG 3499 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+
+ 5m) [Partenza]\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 99%\
+ nNota normativa/euristica: Chiusura continua per 4 treni: intervallo utile
+  tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (12
+ 0s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9723--20261121-S02433@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T134307Z
+DTEND:20261122T134837Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:43 - 14:48 (primo: TRENO 9723) (+1
+ 05 min)
+DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:43:07 - 14:48:37\nT
+ reni coinvolti nella chiusura:\n  - TRENO 9723 (MILANO CENTRALE -> VENEZIA
+  S.LUCIA) (+105m) [Transito]\n  - TRENO 9723 (MILANO CENTRALE -> VENEZIA S
+ .LUCIA) (+105m) [Transito]\nRitardo massimo rilevato: 105 min\nAffidabilit
+ à stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:105
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9740--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T144827Z
-DTEND:20261122T145357Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T144906Z
+DTEND:20261122T145436Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9740 (VENEZIA S.LUCIA -> MILANO CENTRALE) o
- re 15:52
+ re 15:53
 DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: TR
- ANSITO VELOCE\nChiusura sbarre stimata: 15:48:27 - 15:53:57\nTreni coinvol
+ ANSITO VELOCE\nChiusura sbarre stimata: 15:49:06 - 15:54:36\nTreni coinvol
  ti nella chiusura:\n  - TRENO 9740 (VENEZIA S.LUCIA -> MILANO CENTRALE) [T
  ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Transito stimato senza fermata (74% tratta VICENZA ->
+ normativa/euristica: Transito stimato senza fermata (76% tratta VICENZA ->
   VERONA PORTA NUOVA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
 STATUS:CONFIRMED
@@ -340,14 +484,14 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3498--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T150323Z
-DTEND:20261122T150853Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T150324Z
+DTEND:20261122T150854Z
 SUMMARY:[TRANSITO VELOCE] REG 3498 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) 
  ore 16:07
 DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: TR
- ANSITO VELOCE\nChiusura sbarre stimata: 16:03:23 - 16:08:53\nTreni coinvol
+ ANSITO VELOCE\nChiusura sbarre stimata: 16:03:24 - 16:08:54\nTreni coinvol
  ti nella chiusura:\n  - REG 3498 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [
  Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
   normativa/euristica: Transito stimato senza fermata (73% tratta VICENZA -
@@ -361,103 +505,156 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3498--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T152730Z
-DTEND:20261122T153200Z
-SUMMARY:[FERMATA] REG 3498 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) ore 16:3
- 1
-DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: FE
- RMATA\nChiusura sbarre stimata: 16:27:30 - 16:32:00\nTreni coinvolti nella
-  chiusura:\n  - REG 3498 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
- a: Previsione da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-80--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T154040Z
-DTEND:20261122T154510Z
-SUMMARY:[TRANSITO VELOCE] EC 80 (VENEZIA S.LUCIA -> BRENNERO) ore 16:44
-DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: TR
- ANSITO VELOCE\nChiusura sbarre stimata: 16:40:40 - 16:45:10\nTreni coinvol
- ti nella chiusura:\n  - EC 80 (VENEZIA S.LUCIA -> BRENNERO) [Transito]\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Transito stimato senza fermata (74% tratta VICENZA -> VERONA PORT
- A NUOVA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:EC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9741--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T155701Z
-DTEND:20261122T160329Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:57 - 17:03 (primo: TRENO 9741)
+UID:train-306--20261121-S02433@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T152020Z
+DTEND:20261122T152450Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:20 - 16:24 (primo: EC 306)
 DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:57:01 - 17:03:29\nT
- reni coinvolti nella chiusura:\n  - TRENO 9741 (MILANO CENTRALE -> VENEZIA
-  S.LUCIA) [Transito]\n  - EC 85 (BRENNERO -> VENEZIA S.LUCIA) [Transito]\n
- Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
- euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
- (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:20:20 - 16:24:50\nT
+ reni coinvolti nella chiusura:\n  - EC 306 (VICENZA -> CHIASSO) [Transito]
+ \n  - EC 306 (VICENZA -> CHIASSO) [Transito]\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua
+  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:EC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-46--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T161912Z
-DTEND:20261122T162342Z
-SUMMARY:[TRANSITO VELOCE] EC 46 (VENEZIA S.LUCIA -> DOMODOSSOLA) ore 17:22
+UID:train-3498--20261121-S02433@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T152730Z
+DTEND:20261122T153220Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:27 - 16:32 (primo: REG 3498)
+DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
+ IUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:27:30 - 16:32:20\nT
+ reni coinvolti nella chiusura:\n  - REG 3498 (VENEZIA S.LUCIA -> VERONA PO
+ RTA NUOVA)\n  - TRENO 9737 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Transito]
+ \n  - TRENO 9737 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Transito]\nRitardo 
+ massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17227--20261121-S02433@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T153530Z
+DTEND:20261122T154553Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:35 - 16:45 (primo: REG 17227)
+DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
+ IUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:35:30 - 16:45:53\nT
+ reni coinvolti nella chiusura:\n  - REG 17227 (VERONA PORTA NUOVA -> VENEZ
+ IA S.LUCIA)\n  - REG 17227 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - EC
+  80 (VENEZIA S.LUCIA -> BRENNERO) [Transito]\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua
+  per 3 treni: intervallo utile tra i passaggi (83s) inferiore alla soglia 
+ minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9741--20261121-S02433@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T155650Z
+DTEND:20261122T160220Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9741 (MILANO CENTRALE -> VENEZIA S.LUCIA) o
+ re 17:01
 DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: TR
- ANSITO VELOCE\nChiusura sbarre stimata: 17:19:12 - 17:23:42\nTreni coinvol
- ti nella chiusura:\n  - EC 46 (VENEZIA S.LUCIA -> DOMODOSSOLA) [Transito]\
- nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Transito stimato senza fermata (74% tratta VICENZA -> VERONA P
- ORTA NUOVA\; pedale annuncio fisso Vmax)
+ ANSITO VELOCE\nChiusura sbarre stimata: 16:56:50 - 17:02:20\nTreni coinvol
+ ti nella chiusura:\n  - TRENO 9741 (MILANO CENTRALE -> VENEZIA S.LUCIA) [T
+ ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Transito stimato senza fermata (11% tratta VERONA POR
+ TA NUOVA -> VICENZA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-85--20261121-S02433@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T161543Z
+DTEND:20261122T162421Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:15 - 17:24 (primo: EC 85) (+17 min
+ )
+DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
+ IUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 17:15:43 - 17:24:21\nT
+ reni coinvolti nella chiusura:\n  - EC 85 (BRENNERO -> VENEZIA S.LUCIA) (+
+ 17m) [Transito]\n  - EC 85 (BRENNERO -> VENEZIA S.LUCIA) (+17m) [Transito]
+ \n  - EC 46 (VENEZIA S.LUCIA -> DOMODOSSOLA) [Transito]\nRitardo massimo r
+ ilevato: 17 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
+ ura continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:17
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:EC
 END:VEVENT
 BEGIN:VEVENT
+UID:train-9743--20261121-S02433@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T162850Z
+DTEND:20261122T163420Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:28 - 17:34 (primo: TRENO 9743) (+2
+  min)
+DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:28:50 - 17:34:20\nT
+ reni coinvolti nella chiusura:\n  - TRENO 9743 (TORINO PORTA NUOVA -> VENE
+ ZIA S.LUCIA) (+2m) [Transito]\n  - TRENO 9743 (TORINO PORTA NUOVA -> VENEZ
+ IA S.LUCIA) (+2m) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilit
+ à stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
 UID:train-9748--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T164827Z
-DTEND:20261122T165357Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T164906Z
+DTEND:20261122T165436Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9748 (VENEZIA S.LUCIA -> MILANO CENTRALE) o
- re 17:52
+ re 17:53
 DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: TR
- ANSITO VELOCE\nChiusura sbarre stimata: 17:48:27 - 17:53:57\nTreni coinvol
+ ANSITO VELOCE\nChiusura sbarre stimata: 17:49:06 - 17:54:36\nTreni coinvol
  ti nella chiusura:\n  - TRENO 9748 (VENEZIA S.LUCIA -> MILANO CENTRALE) [T
  ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Transito stimato senza fermata (74% tratta VICENZA ->
+ normativa/euristica: Transito stimato senza fermata (76% tratta VICENZA ->
   VERONA PORTA NUOVA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
 STATUS:CONFIRMED
@@ -469,18 +666,18 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9747--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T165701Z
-DTEND:20261122T170853Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:57 - 18:08 (primo: TRENO 9747)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T165650Z
+DTEND:20261122T170854Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:56 - 18:08 (primo: TRENO 9747)
 DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:57:01 - 18:08:53\nT
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:56:50 - 18:08:54\nT
  reni coinvolti nella chiusura:\n  - TRENO 9747 (MILANO CENTRALE -> VENEZIA
   S.LUCIA) [Transito]\n  - REG 3504 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
   [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
  ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
- a i passaggi (52s) inferiore alla soglia minima di sgombero stradale (120s
+ a i passaggi (63s) inferiore alla soglia minima di sgombero stradale (120s
  )
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
 STATUS:CONFIRMED
@@ -491,9 +688,32 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
+UID:train-9750--20261121-S02433@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T171906Z
+DTEND:20261122T172436Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:19 - 18:24 (primo: TRENO 9750)
+DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:19:06 - 18:24:36\nT
+ reni coinvolti nella chiusura:\n  - TRENO 9750 (VENEZIA S.LUCIA -> TORINO 
+ PORTA NUOVA) [Transito]\n  - TRENO 9750 (VENEZIA S.LUCIA -> TORINO PORTA N
+ UOVA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
+ %\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo uti
+ le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
+ 120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
 UID:train-3504--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T172730Z
 DTEND:20261122T173200Z
 SUMMARY:[FERMATA] REG 3504 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) ore 18:3
@@ -513,13 +733,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16309--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T174130Z
-DTEND:20261122T175006Z
+DTEND:20261122T175012Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:41 - 18:50 (primo: REG 16309)
 DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:41:30 - 18:50:06\nT
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:41:30 - 18:50:12\nT
  reni coinvolti nella chiusura:\n  - REG 16309 (VERONA PORTA NUOVA -> VENEZ
  IA S.LUCIA)\n  - REG 17216 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Transi
  to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
@@ -535,8 +755,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17216--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T175930Z
 DTEND:20261122T180400Z
 SUMMARY:[FERMATA] REG 17216 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) ore 19:
@@ -555,31 +775,55 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9753--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T182701Z
-DTEND:20261122T183231Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9753 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA
- ) ore 19:31
-DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: TR
- ANSITO VELOCE\nChiusura sbarre stimata: 19:27:01 - 19:32:31\nTreni coinvol
- ti nella chiusura:\n  - TRENO 9753 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA)
-  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
- ta normativa/euristica: Transito stimato senza fermata (12% tratta VERONA 
- PORTA NUOVA -> VICENZA\; pedale annuncio fisso Vmax)
+UID:train-3523--20261121-S02433@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T182230Z
+DTEND:20261122T183220Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 19:22 - 19:32 (primo: REG 3523)
+DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
+ IUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 19:22:30 - 19:32:20\nT
+ reni coinvolti nella chiusura:\n  - REG 3523 (VERONA PORTA NUOVA -> VENEZI
+ A S.LUCIA)\n  - REG 3523 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - TREN
+ O 9753 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\n  - TRENO 9753 
+ (TORINO PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
+ ntinua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9755--20261121-S02433@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T185650Z
+DTEND:20261122T190220Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:56 - 20:02 (primo: TRENO 9755)
+DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:56:50 - 20:02:20\nT
+ reni coinvolti nella chiusura:\n  - TRENO 9755 (MILANO CENTRALE -> UDINE) 
+ [Transito]\n  - TRENO 9755 (MILANO CENTRALE -> UDINE) [Transito]\nRitardo 
+ massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3501--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T192230Z
 DTEND:20261122T192700Z
 SUMMARY:[FERMATA] REG 3501 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) ore 20:2
@@ -599,8 +843,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17247--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T194130Z
 DTEND:20261122T194600Z
 SUMMARY:[FERMATA] REG 17247 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) ore 20:
@@ -620,52 +864,54 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9759--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T195216Z
-DTEND:20261122T195746Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9759 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA
- ) ore 20:56
-DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: TR
- ANSITO VELOCE\nChiusura sbarre stimata: 20:52:16 - 20:57:46\nTreni coinvol
- ti nella chiusura:\n  - TRENO 9759 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA)
-  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
- ta normativa/euristica: Transito stimato senza fermata (12% tratta VERONA 
- PORTA NUOVA -> VICENZA\; pedale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T195204Z
+DTEND:20261122T195734Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:52 - 20:57 (primo: TRENO 9759)
+DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:52:04 - 20:57:34\nT
+ reni coinvolti nella chiusura:\n  - TRENO 9759 (TORINO PORTA NUOVA -> VENE
+ ZIA S.LUCIA) [Transito]\n  - TRENO 9759 (TORINO PORTA NUOVA -> VENEZIA S.L
+ UCIA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
+ %\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo uti
+ le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
+ 120s)
 LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9763--20261121-S02433@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T205950Z
+DTEND:20261122T210854Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:59 - 22:08 (primo: TRENO 9763)
+DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: CH
+ IUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 21:59:50 - 22:08:54\nT
+ reni coinvolti nella chiusura:\n  - TRENO 9763 (MILANO CENTRALE -> VENEZIA
+  S.LUCIA) [Transito]\n  - TRENO 9763 (MILANO CENTRALE -> VENEZIA S.LUCIA) 
+ [Transito]\n  - REG 3518 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Transito
+ ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
+ va/euristica: Chiusura continua per 3 treni: intervallo utile tra i passag
+ gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3518--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T210323Z
-DTEND:20261122T210853Z
-SUMMARY:[TRANSITO VELOCE] REG 3518 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) 
- ore 22:07
-DESCRIPTION:Stazione/PL: VERONA PORTA VESCOVO (S02433)\nRegime chiusura: TR
- ANSITO VELOCE\nChiusura sbarre stimata: 22:03:23 - 22:08:53\nTreni coinvol
- ti nella chiusura:\n  - REG 3518 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [
- Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
-  normativa/euristica: Transito stimato senza fermata (73% tratta VICENZA -
- > S.BONIFACIO\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione VERONA PORTA VESCOVO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3518--20261121-S02433@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T212730Z
 DTEND:20261122T213200Z
 SUMMARY:[FERMATA] REG 3518 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) ore 22:3

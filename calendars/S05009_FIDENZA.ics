@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:d1e2969639ba2cba573038bc9ea1c6b4c9c12b5192fad95382ce5f28695a
- 9882
+X-CONTENT-HASH:8b57a037f0ffc2ad1122c3fbb2ae80105ba5a2c330ff1ea2487f6b21563b
+ 656f
 BEGIN:VEVENT
 UID:train-88164--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T050030Z
 DTEND:20261122T050500Z
 SUMMARY:[FERMATA] REG 88164 (FIDENZA -> VOGHERA) ore 06:04
@@ -32,9 +32,56 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-19233--20261121-S05009@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T054832Z
+DTEND:20261122T055548Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:48 - 06:55 (primo: REG 19233) (+3 
+ min)
+DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 4 TRENI\nChiusura sbarre stimata: 06:48:32 - 06:55:48\nTreni coinvolt
+ i nella chiusura:\n  - REG 19233 (PARMA -> LA SPEZIA CENTRALE) (+3m) [Tran
+ sito]\n  - REG 19233 (PARMA -> LA SPEZIA CENTRALE) (+3m) [Transito]\n  - R
+ EG 34035 (PIACENZA -> FIDENZA) [Transito]\n  - REG 34035 (PIACENZA -> FIDE
+ NZA) [Transito]\nRitardo massimo rilevato: 3 min\nAffidabilità stima: 78%
+ \nNota normativa/euristica: Chiusura continua per 4 treni: intervallo util
+ e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
+ 20s)
+LOCATION:Passaggio a Livello / Stazione FIDENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-34035--20261121-S05009@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T060500Z
+DTEND:20261122T060930Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:05 - 07:09 (primo: REG 34035)
+DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 07:05:00 - 07:09:30\nTreni coinvolt
+ i nella chiusura:\n  - REG 34035 (PIACENZA -> FIDENZA)\n  - REG 34035 (PIA
+ CENZA -> FIDENZA)\nRitardo massimo rilevato: -5 min\nAffidabilità stima: 
+ 99%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo u
+ tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
+  (120s)
+LOCATION:Passaggio a Livello / Stazione FIDENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-5
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-33976--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T061330Z
 DTEND:20261122T061800Z
 SUMMARY:[FERMATA] REG 33976 (FIDENZA -> MILANO CENTRALE) ore 07:17
@@ -53,30 +100,31 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-34043--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T062205Z
-DTEND:20261122T062900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:22 - 07:29 (primo: REG 34043)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T062206Z
+DTEND:20261122T063000Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:22 - 07:30 (primo: REG 34043) (+1 
+ min)
 DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 07:22:05 - 07:29:00\nTreni coinvolt
+ UA - 3 TRENI\nChiusura sbarre stimata: 07:22:06 - 07:30:00\nTreni coinvolt
  i nella chiusura:\n  - REG 34043 (PIACENZA -> FIDENZA) [Transito]\n  - REG
-  34051 (PIACENZA -> FIDENZA)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+  34051 (PIACENZA -> FIDENZA) (+1m)\n  - REG 34051 (PIACENZA -> FIDENZA) (+
+ 1m)\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Chiusura continua per 3 treni: intervallo utile tra i pass
+ aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FIDENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-34043--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T063930Z
 DTEND:20261122T064700Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:39 - 07:47 (primo: REG 34043)
@@ -97,59 +145,60 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-34025--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T065332Z
-DTEND:20261122T065902Z
-SUMMARY:[TRANSITO VELOCE] REG 34025 (VOGHERA -> FIDENZA) ore 07:57
-DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 07:53:32 - 07:59:02\nTreni coinvolti nella chiu
- sura:\n  - REG 34025 (VOGHERA -> FIDENZA) [Transito]\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito 
- stimato senza fermata (72% tratta PIACENZA -> FIORENZUOLA\; pedale annunci
- o fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T065348Z
+DTEND:20261122T065918Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:53 - 07:59 (primo: REG 34025)
+DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 07:53:48 - 07:59:18\nTreni coinvolt
+ i nella chiusura:\n  - REG 34025 (VOGHERA -> FIDENZA) [Transito]\n  - REG 
+ 34025 (VOGHERA -> FIDENZA) [Transito]\nRitardo massimo rilevato: -5 min\nA
+ ffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FIDENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-34025--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T071130Z
-DTEND:20261122T072456Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 08:11 - 08:24 (primo: REG 34025)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T070700Z
+DTEND:20261122T071130Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:07 - 08:11 (primo: REG 34025)
 DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: CHIUSURA CONTIN
- UA - 3 TRENI\nChiusura sbarre stimata: 08:11:30 - 08:24:56\nTreni coinvolt
- i nella chiusura:\n  - REG 34025 (VOGHERA -> FIDENZA)\n  - REG 2293 (MILAN
- O CENTRALE -> PISA CENTRALE)\n  - REG 2493 (REGGIO EMILIA -> PESCARA) [Tra
- nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i p
- assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ UA - 2 TRENI\nChiusura sbarre stimata: 08:07:00 - 08:11:30\nTreni coinvolt
+ i nella chiusura:\n  - REG 34025 (VOGHERA -> FIDENZA)\n  - REG 34025 (VOGH
+ ERA -> FIDENZA)\nRitardo massimo rilevato: -5 min\nAffidabilità stima: 99
+ %\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo uti
+ le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
+ 120s)
 LOCATION:Passaggio a Livello / Stazione FIDENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-5
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-33971--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T074230Z
-DTEND:20261122T074700Z
-SUMMARY:[FERMATA] REG 33971 (MILANO CENTRALE -> FIDENZA) ore 08:46
+UID:train-2293--20261121-S05009@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T071530Z
+DTEND:20261122T072000Z
+SUMMARY:[FERMATA] REG 2293 (MILANO CENTRALE -> PISA CENTRALE) ore 08:19
 DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 08:42:30 - 08:47:00\nTreni coinvolti nella chiusura:\n 
-  - REG 33971 (MILANO CENTRALE -> FIDENZA)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
- a oraria regolare
+ ra sbarre stimata: 08:15:30 - 08:20:00\nTreni coinvolti nella chiusura:\n 
+  - REG 2293 (MILANO CENTRALE -> PISA CENTRALE)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
+ raccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione FIDENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -159,9 +208,31 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-33971--20261121-S05009@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T073830Z
+DTEND:20261122T074300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:38 - 08:43 (primo: REG 33971)
+DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 08:38:30 - 08:43:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 33971 (MILANO CENTRALE -> FIDENZA)\n  - REG 339
+ 71 (MILANO CENTRALE -> FIDENZA)\nRitardo massimo rilevato: -4 min\nAffidab
+ ilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FIDENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-4
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-2294--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T075930Z
 DTEND:20261122T080400Z
 SUMMARY:[FERMATA] REG 2294 (LIVORNO CENTRALE -> MILANO PORTA GARIBALDI) ore
@@ -181,8 +252,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-33960--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T081330Z
 DTEND:20261122T081800Z
 SUMMARY:[FERMATA] REG 33960 (FIDENZA -> MILANO CENTRALE) ore 09:17
@@ -200,51 +271,9 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3913--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T084139Z
-DTEND:20261122T084709Z
-SUMMARY:[TRANSITO VELOCE] REG 3913 (REGGIO EMILIA -> ANCONA) ore 09:45
-DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 09:41:39 - 09:47:09\nTreni coinvolti nella chiu
- sura:\n  - REG 3913 (REGGIO EMILIA -> ANCONA) [Transito]\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
- ito stimato senza fermata (16% tratta REGGIO EMILIA -> MODENA\; pedale ann
- uncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione FIDENZA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3919--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T094139Z
-DTEND:20261122T094709Z
-SUMMARY:[TRANSITO VELOCE] REG 3919 (REGGIO EMILIA -> ANCONA) ore 10:45
-DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 10:41:39 - 10:47:09\nTreni coinvolti nella chiu
- sura:\n  - REG 3919 (REGGIO EMILIA -> ANCONA) [Transito]\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
- ito stimato senza fermata (16% tratta REGGIO EMILIA -> MODENA\; pedale ann
- uncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione FIDENZA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-33956--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T101330Z
 DTEND:20261122T101800Z
 SUMMARY:[FERMATA] REG 33956 (FIDENZA -> MILANO CENTRALE) ore 11:17
@@ -263,17 +292,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19241--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T104436Z
-DTEND:20261122T105635Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T104440Z
+DTEND:20261122T105636Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:44 - 11:56 (primo: REG 19241)
 DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 11:44:36 - 11:56:35\nTreni coinvolt
+ UA - 2 TRENI\nChiusura sbarre stimata: 11:44:40 - 11:56:36\nTreni coinvolt
  i nella chiusura:\n  - REG 19241 (PARMA -> LA SPEZIA CENTRALE) [Transito]\
  n  - REG 34055 (PIACENZA -> FIDENZA) [Transito]\nRitardo massimo rilevato:
   0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
- nua per 2 treni: intervallo utile tra i passaggi (59s) inferiore alla sogl
+ nua per 2 treni: intervallo utile tra i passaggi (56s) inferiore alla sogl
  ia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FIDENZA
 STATUS:CONFIRMED
@@ -285,8 +314,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-34055--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T110930Z
 DTEND:20261122T111400Z
 SUMMARY:[FERMATA] REG 34055 (PIACENZA -> FIDENZA) ore 12:13
@@ -305,8 +334,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-34065--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T114430Z
 DTEND:20261122T114900Z
 SUMMARY:[FERMATA] REG 34065 (MILANO CENTRALE -> FIDENZA) ore 12:48
@@ -324,9 +353,32 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-2465--20261121-S05009@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T123830Z
+DTEND:20261122T124300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:38 - 13:43 (primo: REG 2465) (+11 
+ min)
+DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 13:38:30 - 13:43:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 2465 (MILANO CENTRALE -> FIDENZA) (+11m)\n  - R
+ EG 2465 (MILANO CENTRALE -> FIDENZA) (+11m)\nRitardo massimo rilevato: 11 
+ min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua
+  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FIDENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:11
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-2472--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T132030Z
 DTEND:20261122T132500Z
 SUMMARY:[FERMATA] REG 2472 (FIDENZA -> MILANO CENTRALE) ore 14:24
@@ -344,53 +396,56 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3927--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T134139Z
-DTEND:20261122T134709Z
-SUMMARY:[TRANSITO VELOCE] REG 3927 (REGGIO EMILIA -> PESARO) ore 14:45
-DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 14:41:39 - 14:47:09\nTreni coinvolti nella chiu
- sura:\n  - REG 3927 (REGGIO EMILIA -> PESARO) [Transito]\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
- ito stimato senza fermata (16% tratta REGGIO EMILIA -> MODENA\; pedale ann
- uncio fisso Vmax)
+UID:train-34004--20261121-S05009@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T141430Z
+DTEND:20261122T141900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:14 - 15:19 (primo: REG 34004) (+1 
+ min)
+DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 15:14:30 - 15:19:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 34004 (FIDENZA -> MILANO CENTRALE) (+1m)\n  - R
+ EG 34004 (FIDENZA -> MILANO CENTRALE) (+1m)\nRitardo massimo rilevato: 1 m
+ in\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua 
+ per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
+ nima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FIDENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3929--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T144139Z
-DTEND:20261122T145635Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:41 - 15:56 (primo: REG 3929)
+UID:train-87982--20261121-S05009@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T144330Z
+DTEND:20261122T145636Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:43 - 15:56 (primo: REG 87982) (+1 
+ min)
 DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: CHIUSURA CONTIN
- UA - 3 TRENI\nChiusura sbarre stimata: 15:41:39 - 15:56:35\nTreni coinvolt
- i nella chiusura:\n  - REG 3929 (REGGIO EMILIA -> ANCONA) [Transito]\n  - 
- REG 19249 (PARMA -> LA SPEZIA CENTRALE) [Transito]\n  - REG 34053 (PIACENZ
- A -> FIDENZA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità s
- tima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: interv
- allo utile tra i passaggi (59s) inferiore alla soglia minima di sgombero s
- tradale (120s)
+ UA - 4 TRENI\nChiusura sbarre stimata: 15:43:30 - 15:56:36\nTreni coinvolt
+ i nella chiusura:\n  - REG 87982 (FIDENZA -> PIACENZA) (+1m)\n  - REG 8798
+ 2 (FIDENZA -> PIACENZA) (+1m)\n  - REG 19249 (PARMA -> LA SPEZIA CENTRALE)
+  [Transito]\n  - REG 34053 (PIACENZA -> FIDENZA) [Transito]\nRitardo massi
+ mo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 4 treni: intervallo utile tra i passaggi (56s) inferio
+ re alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FIDENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-34053--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T150930Z
 DTEND:20261122T151400Z
 SUMMARY:[FERMATA] REG 34053 (PIACENZA -> FIDENZA) ore 16:13
@@ -408,113 +463,124 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-33983--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T153730Z
-DTEND:20261122T154200Z
-SUMMARY:[FERMATA] REG 33983 (MILANO CENTRALE -> FIDENZA) ore 16:41
-DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 16:37:30 - 16:42:00\nTreni coinvolti nella chiusura:\n 
-  - REG 33983 (MILANO CENTRALE -> FIDENZA)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
- a oraria regolare
+UID:train-19251--20261121-S05009@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T154440Z
+DTEND:20261122T155800Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 16:44 - 16:58 (primo: REG 19251) (+16
+  min)
+DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 5 TRENI\nChiusura sbarre stimata: 16:44:40 - 16:58:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 19251 (PARMA -> LA SPEZIA CENTRALE) [Transito]\
+ n  - REG 88317 (PIACENZA -> FIDENZA) [Transito]\n  - REG 88317 (PIACENZA -
+ > FIDENZA) [Transito]\n  - REG 33983 (MILANO CENTRALE -> FIDENZA) (+16m)\n
+   - REG 33983 (MILANO CENTRALE -> FIDENZA) (+16m)\nRitardo massimo rilevat
+ o: 16 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
+ ntinua per 5 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FIDENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:16
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-19251--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T154436Z
-DTEND:20261122T155006Z
-SUMMARY:[TRANSITO VELOCE] REG 19251 (PARMA -> LA SPEZIA CENTRALE) ore 16:48
-DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 16:44:36 - 16:50:06\nTreni coinvolti nella chiu
- sura:\n  - REG 19251 (PARMA -> LA SPEZIA CENTRALE) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Transito stimato senza fermata (27% tratta PARMA -> VICOFERTILE\; pedale a
- nnuncio fisso Vmax)
+UID:train-88317--20261121-S05009@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T160930Z
+DTEND:20261122T161400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:09 - 17:14 (primo: REG 88317)
+DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 17:09:30 - 17:14:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 88317 (PIACENZA -> FIDENZA)\n  - REG 88317 (PIA
+ CENZA -> FIDENZA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 9
+ 0%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo ut
+ ile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale 
+ (120s)
 LOCATION:Passaggio a Livello / Stazione FIDENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2473--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T162630Z
 DTEND:20261122T163100Z
-SUMMARY:[FERMATA] REG 2473 (MILANO CENTRALE -> FIDENZA) ore 17:30
-DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 17:26:30 - 17:31:00\nTreni coinvolti nella chiusura:\n 
-  - REG 2473 (MILANO CENTRALE -> FIDENZA)\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia
-  oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:26 - 17:31 (primo: REG 2473)
+DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 17:26:30 - 17:31:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 2473 (MILANO CENTRALE -> FIDENZA)\n  - REG 2473
+  (MILANO CENTRALE -> FIDENZA)\nRitardo massimo rilevato: 0 min\nAffidabili
+ tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
+ ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FIDENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2295--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T174605Z
-DTEND:20261122T175135Z
-SUMMARY:[TRANSITO VELOCE] REG 2295 (MILANO PORTA GARIBALDI -> LIVORNO CENTR
- ALE) ore 18:50
-DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 18:46:05 - 18:51:35\nTreni coinvolti nella chiu
- sura:\n  - REG 2295 (MILANO PORTA GARIBALDI -> LIVORNO CENTRALE) [Transito
- ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
- va/euristica: Transito stimato senza fermata (72% tratta PIACENZA -> FIORE
- NZUOLA\; pedale annuncio fisso Vmax)
+UID:train-33987--20261121-S05009@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T174030Z
+DTEND:20261122T175136Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 18:40 - 18:51 (primo: REG 33987)
+DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 4 TRENI\nChiusura sbarre stimata: 18:40:30 - 18:51:36\nTreni coinvolt
+ i nella chiusura:\n  - REG 33987 (MILANO CENTRALE -> FIDENZA)\n  - REG 339
+ 87 (MILANO CENTRALE -> FIDENZA)\n  - REG 2295 (MILANO PORTA GARIBALDI -> L
+ IVORNO CENTRALE) [Transito]\n  - REG 2295 (MILANO PORTA GARIBALDI -> LIVOR
+ NO CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità st
+ ima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: interva
+ llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
+ adale (120s)
 LOCATION:Passaggio a Livello / Stazione FIDENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2295--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T180030Z
 DTEND:20261122T180500Z
-SUMMARY:[FERMATA] REG 2295 (MILANO PORTA GARIBALDI -> LIVORNO CENTRALE) ore
-  19:04
-DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 19:00:30 - 19:05:00\nTreni coinvolti nella chiusura:\n 
-  - REG 2295 (MILANO PORTA GARIBALDI -> LIVORNO CENTRALE)\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previ
- sione da traccia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:00 - 19:05 (primo: REG 2295)
+DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 19:00:30 - 19:05:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 2295 (MILANO PORTA GARIBALDI -> LIVORNO CENTRAL
+ E)\n  - REG 2295 (MILANO PORTA GARIBALDI -> LIVORNO CENTRALE)\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: 
+ Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
+ ore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FIDENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-34000--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T181530Z
 DTEND:20261122T182000Z
 SUMMARY:[FERMATA] REG 34000 (FIDENZA -> MILANO CENTRALE) ore 19:19
@@ -532,19 +598,41 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3939--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T184139Z
-DTEND:20261122T184709Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:41 - 19:47 (primo: REG 3939)
+UID:train-34008--20261121-S05009@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T184230Z
+DTEND:20261122T184700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:42 - 19:47 (primo: REG 34008)
 DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 19:41:39 - 19:47:09\nTreni coinvolt
- i nella chiusura:\n  - REG 3939 (REGGIO EMILIA -> ANCONA) [Transito]\n  - 
+ UA - 2 TRENI\nChiusura sbarre stimata: 19:42:30 - 19:47:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 34008 (FIDENZA -> MILANO PORTA GARIBALDI)\n  - 
  REG 34008 (FIDENZA -> MILANO PORTA GARIBALDI)\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
+  min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continu
  a per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
  minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FIDENZA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2090--20261121-S05009@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T185333Z
+DTEND:20261122T185903Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:53 - 19:59 (primo: REG 2090)
+DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 19:53:33 - 19:59:03\nTreni coinvolt
+ i nella chiusura:\n  - REG 2090 (GENOVA BRIGNOLE -> FIDENZA) [Transito]\n 
+  - REG 2090 (GENOVA BRIGNOLE -> FIDENZA) [Transito]\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
+ ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FIDENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -555,60 +643,41 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2090--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T185332Z
-DTEND:20261122T185902Z
-SUMMARY:[TRANSITO VELOCE] REG 2090 (GENOVA BRIGNOLE -> FIDENZA) ore 19:57
-DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 19:53:32 - 19:59:02\nTreni coinvolti nella chiu
- sura:\n  - REG 2090 (GENOVA BRIGNOLE -> FIDENZA) [Transito]\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
- ansito stimato senza fermata (72% tratta PIACENZA -> FIORENZUOLA\; pedale 
- annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione FIDENZA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2090--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T190830Z
 DTEND:20261122T191300Z
-SUMMARY:[FERMATA] REG 2090 (GENOVA BRIGNOLE -> FIDENZA) ore 20:12
-DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 20:08:30 - 20:13:00\nTreni coinvolti nella chiusura:\n 
-  - REG 2090 (GENOVA BRIGNOLE -> FIDENZA)\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia
-  oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:08 - 20:13 (primo: REG 2090)
+DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 20:08:30 - 20:13:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 2090 (GENOVA BRIGNOLE -> FIDENZA)\n  - REG 2090
+  (GENOVA BRIGNOLE -> FIDENZA)\nRitardo massimo rilevato: 0 min\nAffidabili
+ tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
+ ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FIDENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-88291--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T194139Z
-DTEND:20261122T195552Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:41 - 20:55 (primo: REG 88291)
+UID:train-19259--20261121-S05009@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T194440Z
+DTEND:20261122T195553Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:44 - 20:55 (primo: REG 19259)
 DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: CHIUSURA CONTIN
- UA - 3 TRENI\nChiusura sbarre stimata: 20:41:39 - 20:55:52\nTreni coinvolt
- i nella chiusura:\n  - REG 88291 (REGGIO EMILIA -> RIMINI) [Transito]\n  -
-  REG 19259 (PARMA -> LA SPEZIA CENTRALE) [Transito]\n  - REG 88309 (PIACEN
- ZA -> FIDENZA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità 
- stima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: inter
- vallo utile tra i passaggi (16s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+ UA - 3 TRENI\nChiusura sbarre stimata: 20:44:40 - 20:55:53\nTreni coinvolt
+ i nella chiusura:\n  - REG 19259 (PARMA -> LA SPEZIA CENTRALE) [Transito]\
+ n  - REG 19259 (PARMA -> LA SPEZIA CENTRALE) [Transito]\n  - REG 88309 (PI
+ ACENZA -> FIDENZA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabili
+ tà stima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: i
+ ntervallo utile tra i passaggi (13s) inferiore alla soglia minima di sgomb
+ ero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FIDENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -619,35 +688,35 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-88309--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T200830Z
 DTEND:20261122T201800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:08 - 21:18 (primo: REG 88309)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:08 - 21:18 (primo: REG 88309)
 DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 21:08:30 - 21:18:00\nTreni coinvolt
+ UA - 3 TRENI\nChiusura sbarre stimata: 21:08:30 - 21:18:00\nTreni coinvolt
  i nella chiusura:\n  - REG 88309 (PIACENZA -> FIDENZA)\n  - REG 87980 (FID
- ENZA -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità s
- tima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interv
- allo utile tra i passaggi (30s) inferiore alla soglia minima di sgombero s
- tradale (120s)
+ ENZA -> MILANO CENTRALE)\n  - REG 87980 (FIDENZA -> MILANO CENTRALE)\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euri
+ stica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s)
+  inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FIDENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-88313--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T205022Z
-DTEND:20261122T205552Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T205023Z
+DTEND:20261122T205553Z
 SUMMARY:[TRANSITO VELOCE] REG 88313 (PIACENZA -> FIDENZA) ore 21:54
 DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 21:50:22 - 21:55:52\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 21:50:23 - 21:55:53\nTreni coinvolti nella chiu
  sura:\n  - REG 88313 (PIACENZA -> FIDENZA) [Transito]\nRitardo massimo ril
  evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito
   stimato senza fermata (72% tratta PIACENZA -> FIORENZUOLA\; pedale annunc
@@ -662,8 +731,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-88313--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T210830Z
 DTEND:20261122T211300Z
 SUMMARY:[FERMATA] REG 88313 (PIACENZA -> FIDENZA) ore 22:12
@@ -682,28 +751,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2483--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T213730Z
 DTEND:20261122T214200Z
-SUMMARY:[FERMATA] REG 2483 (MILANO CENTRALE -> FIDENZA) ore 22:41
-DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 22:37:30 - 22:42:00\nTreni coinvolti nella chiusura:\n 
-  - REG 2483 (MILANO CENTRALE -> FIDENZA)\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia
-  oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:37 - 22:42 (primo: REG 2483)
+DESCRIPTION:Stazione/PL: FIDENZA (S05009)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 22:37:30 - 22:42:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 2483 (MILANO CENTRALE -> FIDENZA)\n  - REG 2483
+  (MILANO CENTRALE -> FIDENZA)\nRitardo massimo rilevato: 0 min\nAffidabili
+ tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
+ ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FIDENZA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1962--20261121-S05009@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261123T073015Z
 DTEND:20261123T073500Z
 SUMMARY:[FERMATA] ICN 1962 (CATANIA CENTRALE -> MILANO CENTRALE) ore 08:34

@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:2eedf16439c8a0abbb441ea090d401bfa54af2171e5e906d3a39a0c952ce
- 1402
+X-CONTENT-HASH:84761a040da57d3109e542ad45458e5bc5a23b938bb0930cf6bd2b720c45
+ 219e
 BEGIN:VEVENT
 UID:train-10216--20261121-S01028@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T071730Z
 DTEND:20261122T072200Z
 SUMMARY:[FERMATA] REG 10216 (MILANO PORTA GARIBALDI -> DOMODOSSOLA) ore 08:
@@ -34,38 +34,40 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10204--20261121-S01028@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T111730Z
-DTEND:20261122T112200Z
-SUMMARY:[FERMATA] REG 10204 (MILANO PORTA GARIBALDI -> DOMODOSSOLA) ore 12:
- 21
-DESCRIPTION:Stazione/PL: SOMMA LOMBARDO (S01028)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 12:17:30 - 12:22:00\nTreni coinvolti nella chius
- ura:\n  - REG 10204 (MILANO PORTA GARIBALDI -> DOMODOSSOLA)\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pr
- evisione da traccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T112430Z
+DTEND:20261122T113030Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:24 - 12:30 (primo: REG 10204) (+8 
+ min)
+DESCRIPTION:Stazione/PL: SOMMA LOMBARDO (S01028)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:24:30 - 12:30:30\nTreni c
+ oinvolti nella chiusura:\n  - REG 10204 (MILANO PORTA GARIBALDI -> DOMODOS
+ SOLA) (+8m)\n  - REG 10204 (MILANO PORTA GARIBALDI -> DOMODOSSOLA) (+8m)\n
+ Ritardo massimo rilevato: 8 min\nAffidabilità stima: 99%\nNota normativa/
+ euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
+ (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SOMMA LOMBARDO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2430--20261121-S01028@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T150336Z
-DTEND:20261122T150906Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T150523Z
+DTEND:20261122T151053Z
 SUMMARY:[TRANSITO VELOCE] REG 2430 (MILANO CENTRALE -> DOMODOSSOLA) ore 16:
- 07
+ 09
 DESCRIPTION:Stazione/PL: SOMMA LOMBARDO (S01028)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 16:03:36 - 16:09:06\nTreni coinvolti nel
+  VELOCE\nChiusura sbarre stimata: 16:05:23 - 16:10:53\nTreni coinvolti nel
  la chiusura:\n  - REG 2430 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRi
  tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Transito stimato senza fermata (45% tratta GALLARATE -> SESTO CAL
+ ristica: Transito stimato senza fermata (59% tratta GALLARATE -> SESTO CAL
  ENDE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SOMMA LOMBARDO
 STATUS:CONFIRMED
@@ -77,8 +79,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10232--20261121-S01028@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T151730Z
 DTEND:20261122T152200Z
 SUMMARY:[FERMATA] REG 10232 (MILANO PORTA GARIBALDI -> DOMODOSSOLA) ore 16:
@@ -98,22 +100,110 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2432--20261121-S01028@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T160336Z
-DTEND:20261122T160906Z
-SUMMARY:[TRANSITO VELOCE] REG 2432 (MILANO CENTRALE -> DOMODOSSOLA) ore 17:
- 07
-DESCRIPTION:Stazione/PL: SOMMA LOMBARDO (S01028)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 17:03:36 - 17:09:06\nTreni coinvolti nel
- la chiusura:\n  - REG 2432 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Transito stimato senza fermata (45% tratta GALLARATE -> SESTO CAL
- ENDE\; pedale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T160523Z
+DTEND:20261122T161053Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:05 - 17:10 (primo: REG 2432)
+DESCRIPTION:Stazione/PL: SOMMA LOMBARDO (S01028)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:05:23 - 17:10:53\nTreni c
+ oinvolti nella chiusura:\n  - REG 2432 (MILANO CENTRALE -> DOMODOSSOLA) [T
+ ransito]\n  - REG 2432 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SOMMA LOMBARDO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10234--20261121-S01028@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T161730Z
+DTEND:20261122T162200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:17 - 17:22 (primo: REG 10234)
+DESCRIPTION:Stazione/PL: SOMMA LOMBARDO (S01028)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:17:30 - 17:22:00\nTreni c
+ oinvolti nella chiusura:\n  - REG 10234 (MILANO PORTA GARIBALDI -> ARONA)\
+ n  - REG 10234 (MILANO PORTA GARIBALDI -> ARONA)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SOMMA LOMBARDO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2440--20261121-S01028@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T200523Z
+DTEND:20261122T201053Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:05 - 21:10 (primo: REG 2440)
+DESCRIPTION:Stazione/PL: SOMMA LOMBARDO (S01028)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:05:23 - 21:10:53\nTreni c
+ oinvolti nella chiusura:\n  - REG 2440 (MILANO CENTRALE -> DOMODOSSOLA) [T
+ ransito]\n  - REG 2440 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SOMMA LOMBARDO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10242--20261121-S01028@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T201730Z
+DTEND:20261122T202200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:17 - 21:22 (primo: REG 10242)
+DESCRIPTION:Stazione/PL: SOMMA LOMBARDO (S01028)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:17:30 - 21:22:00\nTreni c
+ oinvolti nella chiusura:\n  - REG 10242 (MILANO PORTA GARIBALDI -> ARONA)\
+ n  - REG 10242 (MILANO PORTA GARIBALDI -> ARONA)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SOMMA LOMBARDO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2442--20261121-S01028@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T210523Z
+DTEND:20261122T211053Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:05 - 22:10 (primo: REG 2442)
+DESCRIPTION:Stazione/PL: SOMMA LOMBARDO (S01028)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:05:23 - 22:10:53\nTreni c
+ oinvolti nella chiusura:\n  - REG 2442 (MILANO CENTRALE -> DOMODOSSOLA) [T
+ ransito]\n  - REG 2442 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SOMMA LOMBARDO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG

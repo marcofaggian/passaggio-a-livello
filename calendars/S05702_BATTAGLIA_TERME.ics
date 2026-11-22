@@ -9,52 +9,102 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:c4973638713255fcb00f2fc346110ade1472f6be1884481200693c9240f7
- 5595
+X-CONTENT-HASH:13877ab84bfcf255a4685b7bed1523284409479d582a0c086fb30e2ef109
+ f262
 BEGIN:VEVENT
-UID:train-17008--20261121-S05702@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T055230Z
-DTEND:20261122T055700Z
-SUMMARY:[FERMATA] REG 17008 (ROVIGO -> VENEZIA S.LUCIA) ore 06:56
-DESCRIPTION:Stazione/PL: BATTAGLIA TERME (S05702)\nRegime chiusura: FERMATA
- \nChiusura sbarre stimata: 06:52:30 - 06:57:00\nTreni coinvolti nella chiu
- sura:\n  - REG 17008 (ROVIGO -> VENEZIA S.LUCIA)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da
-  traccia oraria regolare
+UID:train-3998--20261121-S05702@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T052523Z
+DTEND:20261122T053053Z
+SUMMARY:[TRANSITO VELOCE] REG 3998 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) or
+ e 06:29
+DESCRIPTION:Stazione/PL: BATTAGLIA TERME (S05702)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 06:25:23 - 06:30:53\nTreni coinvolti ne
+ lla chiusura:\n  - REG 3998 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (46% tratta MONSELICE -> TER
+ ME EUGANEE-ABANO-MONTEGROTTO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BATTAGLIA TERME
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17008--20261121-S05702@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T055800Z
+DTEND:20261122T060530Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:58 - 07:05 (primo: REG 17008) (+8 
+ min)
+DESCRIPTION:Stazione/PL: BATTAGLIA TERME (S05702)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:58:00 - 07:05:30\nTreni 
+ coinvolti nella chiusura:\n  - REG 17008 (ROVIGO -> VENEZIA S.LUCIA) (+8m)
+ \n  - REG 17008 (ROVIGO -> VENEZIA S.LUCIA) (+8m)\nRitardo massimo rilevat
+ o: 8 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura con
+ tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BATTAGLIA TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17017--20261121-S05702@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T065330Z
-DTEND:20261122T065800Z
-SUMMARY:[FERMATA] REG 17017 (VENEZIA S.LUCIA -> ROVIGO) ore 07:57
-DESCRIPTION:Stazione/PL: BATTAGLIA TERME (S05702)\nRegime chiusura: FERMATA
- \nChiusura sbarre stimata: 07:53:30 - 07:58:00\nTreni coinvolti nella chiu
- sura:\n  - REG 17017 (VENEZIA S.LUCIA -> ROVIGO)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da
-  traccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T065300Z
+DTEND:20261122T070030Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:53 - 08:00 (primo: REG 17017) (+2 
+ min)
+DESCRIPTION:Stazione/PL: BATTAGLIA TERME (S05702)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:53:00 - 08:00:30\nTreni 
+ coinvolti nella chiusura:\n  - REG 17017 (VENEZIA S.LUCIA -> ROVIGO) (+2m)
+ \n  - REG 17017 (VENEZIA S.LUCIA -> ROVIGO) (+2m)\nRitardo massimo rilevat
+ o: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura con
+ tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BATTAGLIA TERME
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3965--20261121-S05702@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T071634Z
+DTEND:20261122T072204Z
+SUMMARY:[TRANSITO VELOCE] REG 3965 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) or
+ e 08:20
+DESCRIPTION:Stazione/PL: BATTAGLIA TERME (S05702)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 08:16:34 - 08:22:04\nTreni coinvolti ne
+ lla chiusura:\n  - REG 3965 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (48% tratta TERME EUGANEE-AB
+ ANO-MONTEGROTTO -> MONSELICE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione BATTAGLIA TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17085--20261121-S05702@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T080630Z
 DTEND:20261122T081100Z
 SUMMARY:[FERMATA] REG 17085 (VENEZIA S.LUCIA -> ROVIGO) ore 09:10
@@ -72,58 +122,18 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-17010--20261121-S05702@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T095030Z
-DTEND:20261122T095500Z
-SUMMARY:[FERMATA] REG 17010 (ROVIGO -> VENEZIA S.LUCIA) ore 10:54
-DESCRIPTION:Stazione/PL: BATTAGLIA TERME (S05702)\nRegime chiusura: FERMATA
- \nChiusura sbarre stimata: 10:50:30 - 10:55:00\nTreni coinvolti nella chiu
- sura:\n  - REG 17010 (ROVIGO -> VENEZIA S.LUCIA)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da
-  traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione BATTAGLIA TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17019--20261121-S05702@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T155430Z
-DTEND:20261122T155900Z
-SUMMARY:[FERMATA] REG 17019 (VENEZIA S.LUCIA -> ROVIGO) ore 16:58
-DESCRIPTION:Stazione/PL: BATTAGLIA TERME (S05702)\nRegime chiusura: FERMATA
- \nChiusura sbarre stimata: 16:54:30 - 16:59:00\nTreni coinvolti nella chiu
- sura:\n  - REG 17019 (VENEZIA S.LUCIA -> ROVIGO)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da
-  traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione BATTAGLIA TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3984--20261121-S05702@pl-tracker.local
-DTSTAMP:20261122T065144Z
+UID:train-3966--20261121-S05702@pl-tracker.local
+DTSTAMP:20261122T150820Z
 SEQUENCE:0
-DTSTART:20261122T162415Z
-DTEND:20261122T162945Z
-SUMMARY:[TRANSITO VELOCE] REG 3984 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) or
- e 17:28
+DTSTART:20261122T082523Z
+DTEND:20261122T083053Z
+SUMMARY:[TRANSITO VELOCE] REG 3966 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) or
+ e 09:29
 DESCRIPTION:Stazione/PL: BATTAGLIA TERME (S05702)\nRegime chiusura: TRANSIT
- O VELOCE\nChiusura sbarre stimata: 17:24:15 - 17:29:45\nTreni coinvolti ne
- lla chiusura:\n  - REG 3984 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [Transit
+ O VELOCE\nChiusura sbarre stimata: 09:25:23 - 09:30:53\nTreni coinvolti ne
+ lla chiusura:\n  - REG 3966 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [Transit
  o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Transito stimato senza fermata (31% tratta MONSELICE -> TER
+ iva/euristica: Transito stimato senza fermata (46% tratta MONSELICE -> TER
  ME EUGANEE-ABANO-MONTEGROTTO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BATTAGLIA TERME
 STATUS:CONFIRMED
@@ -134,9 +144,213 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-3970--20261121-S05702@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T092729Z
+DTEND:20261122T093259Z
+SUMMARY:[TRANSITO VELOCE] REG 3970 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) or
+ e 10:31 (+1 min)
+DESCRIPTION:Stazione/PL: BATTAGLIA TERME (S05702)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 10:27:29 - 10:32:59\nTreni coinvolti ne
+ lla chiusura:\n  - REG 3970 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) (+1m) [T
+ ransito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Transito stimato senza fermata (46% tratta MONSELICE 
+ -> TERME EUGANEE-ABANO-MONTEGROTTO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione BATTAGLIA TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17010--20261121-S05702@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T095600Z
+DTEND:20261122T100300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:56 - 11:03 (primo: REG 17010) (+7 
+ min)
+DESCRIPTION:Stazione/PL: BATTAGLIA TERME (S05702)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:56:00 - 11:03:00\nTreni 
+ coinvolti nella chiusura:\n  - REG 17010 (ROVIGO -> VENEZIA S.LUCIA) (+7m)
+ \n  - REG 17010 (ROVIGO -> VENEZIA S.LUCIA) (+7m)\nRitardo massimo rilevat
+ o: 7 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura con
+ tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BATTAGLIA TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3971--20261121-S05702@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T102123Z
+DTEND:20261122T103231Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:21 - 11:32 (primo: REG 3971) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: BATTAGLIA TERME (S05702)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:21:23 - 11:32:31\nTreni 
+ coinvolti nella chiusura:\n  - REG 3971 (VENEZIA S.LUCIA -> BOLOGNA CENTRA
+ LE) [Transito]\n  - REG 3972 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) (+1m) [
+ Transito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
+ i passaggi (7s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BATTAGLIA TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3973--20261121-S05702@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T112222Z
+DTEND:20261122T113442Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:22 - 12:34 (primo: REG 3973)
+DESCRIPTION:Stazione/PL: BATTAGLIA TERME (S05702)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 3 TRENI\nChiusura sbarre stimata: 12:22:22 - 12:34:42\nTreni 
+ coinvolti nella chiusura:\n  - REG 3973 (VENEZIA S.LUCIA -> BOLOGNA CENTRA
+ LE) [Transito]\n  - REG 3973 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) [Transi
+ to]\n  - REG 3994 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [Transito]\nRitard
+ o massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (80s)
+  inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BATTAGLIA TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17087--20261121-S05702@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T115400Z
+DTEND:20261122T120200Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:54 - 13:02 (primo: REG 17087) (+3 
+ min)
+DESCRIPTION:Stazione/PL: BATTAGLIA TERME (S05702)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 4 TRENI\nChiusura sbarre stimata: 12:54:00 - 13:02:00\nTreni 
+ coinvolti nella chiusura:\n  - REG 17087 (VENEZIA S.LUCIA -> ROVIGO) (+3m)
+  [Arrivo]\n  - REG 17087 (VENEZIA S.LUCIA -> ROVIGO) (+3m) [Arrivo]\n  - R
+ EG 17087 (VENEZIA S.LUCIA -> ROVIGO) (+3m) [Partenza]\n  - REG 17087 (VENE
+ ZIA S.LUCIA -> ROVIGO) (+3m) [Partenza]\nRitardo massimo rilevato: 3 min\n
+ Affidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 
+ 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
+  di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BATTAGLIA TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3974--20261121-S05702@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T122523Z
+DTEND:20261122T123053Z
+SUMMARY:[TRANSITO VELOCE] REG 3974 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) or
+ e 13:29
+DESCRIPTION:Stazione/PL: BATTAGLIA TERME (S05702)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 13:25:23 - 13:30:53\nTreni coinvolti ne
+ lla chiusura:\n  - REG 3974 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (46% tratta MONSELICE -> TER
+ ME EUGANEE-ABANO-MONTEGROTTO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione BATTAGLIA TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3980--20261121-S05702@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T142823Z
+DTEND:20261122T143353Z
+SUMMARY:[TRANSITO VELOCE] REG 3980 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) or
+ e 15:32
+DESCRIPTION:Stazione/PL: BATTAGLIA TERME (S05702)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 15:28:23 - 15:33:53\nTreni coinvolti ne
+ lla chiusura:\n  - REG 3980 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (46% tratta MONSELICE -> TER
+ ME EUGANEE-ABANO-MONTEGROTTO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione BATTAGLIA TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3982--20261121-S05702@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T152523Z
+DTEND:20261122T153053Z
+SUMMARY:[TRANSITO VELOCE] REG 3982 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) or
+ e 16:29
+DESCRIPTION:Stazione/PL: BATTAGLIA TERME (S05702)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 16:25:23 - 16:30:53\nTreni coinvolti ne
+ lla chiusura:\n  - REG 3982 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (46% tratta MONSELICE -> TER
+ ME EUGANEE-ABANO-MONTEGROTTO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione BATTAGLIA TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17006--20261121-S05702@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T155030Z
+DTEND:20261122T155900Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:50 - 16:59 (primo: REG 17006)
+DESCRIPTION:Stazione/PL: BATTAGLIA TERME (S05702)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:50:30 - 16:59:00\nTreni 
+ coinvolti nella chiusura:\n  - REG 17006 (ROVIGO -> VENEZIA S.LUCIA)\n  - 
+ REG 17006 (ROVIGO -> VENEZIA S.LUCIA)\n  - REG 17019 (VENEZIA S.LUCIA -> R
+ OVIGO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota no
+ rmativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i p
+ assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BATTAGLIA TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-17015--20261121-S05702@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T195430Z
 DTEND:20261122T195900Z
 SUMMARY:[FERMATA] REG 17015 (VENEZIA S.LUCIA -> ROVIGO) ore 20:58
@@ -152,5 +366,49 @@ CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3992--20261121-S05702@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T212523Z
+DTEND:20261122T213053Z
+SUMMARY:[TRANSITO VELOCE] REG 3992 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) or
+ e 22:29
+DESCRIPTION:Stazione/PL: BATTAGLIA TERME (S05702)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 22:25:23 - 22:30:53\nTreni coinvolti ne
+ lla chiusura:\n  - REG 3992 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (46% tratta MONSELICE -> TER
+ ME EUGANEE-ABANO-MONTEGROTTO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione BATTAGLIA TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-774--20261121-S05702@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261123T042608Z
+DTEND:20261123T043038Z
+SUMMARY:[TRANSITO VELOCE] ICN 774 (ROMA TERMINI -> TRIESTE CENTRALE) ore 05
+ :29
+DESCRIPTION:Stazione/PL: BATTAGLIA TERME (S05702)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 05:26:08 - 05:30:38\nTreni coinvolti ne
+ lla chiusura:\n  - ICN 774 (ROMA TERMINI -> TRIESTE CENTRALE) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (46% tratta MONSELICE -> TERME E
+ UGANEE-ABANO-MONTEGROTTO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione BATTAGLIA TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 END:VCALENDAR

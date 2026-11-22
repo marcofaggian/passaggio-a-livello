@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:0ba452a008a3cc0667b2e103347588bcddf4733ae1a37557ad19e089e1ec
- 8435
+X-CONTENT-HASH:0218241fb376feafb5b6f315bcb5ab64ebdaa17d1bd32df7f90a4f14676e
+ 34e1
 BEGIN:VEVENT
 UID:train-8814--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T051130Z
 DTEND:20261122T051600Z
 SUMMARY:[FERMATA] TRENO 8814 (LECCE -> MILANO CENTRALE) ore 06:15
@@ -33,8 +33,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8302--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T052330Z
 DTEND:20261122T052800Z
 SUMMARY:[FERMATA] TRENO 8302 (LECCE -> ROMA TERMINI) ore 06:27
@@ -53,50 +53,76 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8816--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T061730Z
-DTEND:20261122T063017Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:17 - 07:30 (primo: TRENO 8816)
-DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
- NUA - 3 TRENI\nChiusura sbarre stimata: 07:17:30 - 07:30:17\nTreni coinvol
- ti nella chiusura:\n  - TRENO 8816 (LECCE -> VENEZIA S.LUCIA)\n  - TRENO 8
- 306 (LECCE -> ROMA TERMINI)\n  - REG 4390 (LECCE -> BARI CENTRALE) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 3 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione BRINDISI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4450--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T063530Z
-DTEND:20261122T064000Z
-SUMMARY:[FERMATA] REG 4450 (LECCE -> BARI CENTRALE) ore 07:39
+DTEND:20261122T062200Z
+SUMMARY:[FERMATA] TRENO 8816 (LECCE -> VENEZIA S.LUCIA) ore 07:21
 DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 07:35:30 - 07:40:00\nTreni coinvolti nella chiusura:\n
-   - REG 4450 (LECCE -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAf
- fidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia or
- aria regolare
+ ura sbarre stimata: 07:17:30 - 07:22:00\nTreni coinvolti nella chiusura:\n
+   - TRENO 8816 (LECCE -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
+ a oraria regolare
 LOCATION:Passaggio a Livello / Stazione BRINDISI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4390--20261121-S11136@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T062445Z
+DTEND:20261122T063100Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:24 - 07:31 (primo: REG 4390) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 3 TRENI\nChiusura sbarre stimata: 07:24:45 - 07:31:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 4390 (LECCE -> BARI CENTRALE) [Transito]\n  - 
+ TRENO 8306 (LECCE -> ROMA TERMINI) (+1m)\n  - TRENO 8306 (LECCE -> ROMA TE
+ RMINI) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nN
+ ota normativa/euristica: Chiusura continua per 3 treni: intervallo utile t
+ ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
+ )
+LOCATION:Passaggio a Livello / Stazione BRINDISI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4450--20261121-S11136@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T063530Z
+DTEND:20261122T064136Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:35 - 07:41 (primo: REG 4450) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 3 TRENI\nChiusura sbarre stimata: 07:35:30 - 07:41:36\nTreni coinvol
+ ti nella chiusura:\n  - REG 4450 (LECCE -> BARI CENTRALE) (+1m)\n  - REG 4
+ 450 (LECCE -> BARI CENTRALE) (+1m)\n  - IC 558 (BARI CENTRALE -> VILLA S.G
+ IOVANNI) [Transito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima:
+  78%\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo 
+ utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
+ e (120s)
+LOCATION:Passaggio a Livello / Stazione BRINDISI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4390--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T065130Z
 DTEND:20261122T065600Z
 SUMMARY:[FERMATA] REG 4390 (LECCE -> BARI CENTRALE) ore 07:55
@@ -115,8 +141,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8818--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T072330Z
 DTEND:20261122T072800Z
 SUMMARY:[FERMATA] TRENO 8818 (LECCE -> MILANO CENTRALE) ore 08:27
@@ -135,8 +161,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-610--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T073615Z
 DTEND:20261122T074100Z
 SUMMARY:[FERMATA] IC 610 (LECCE -> BOLZANO) ore 08:40
@@ -155,78 +181,137 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4389--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T075919Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T080314Z
 DTEND:20261122T081100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:59 - 09:11 (primo: REG 4389)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 09:03 - 09:11 (primo: REG 4389)
 DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 08:59:19 - 09:11:00\nTreni coinvol
+ NUA - 3 TRENI\nChiusura sbarre stimata: 09:03:14 - 09:11:00\nTreni coinvol
  ti nella chiusura:\n  - REG 4389 (BARI CENTRALE -> LECCE) [Transito]\n  - 
- IC 612 (LECCE -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffida
- bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tren
- i: intervallo utile tra i passaggi (85s) inferiore alla soglia minima di s
- gombero stradale (120s)
+ REG 4389 (BARI CENTRALE -> LECCE) [Transito]\n  - IC 612 (LECCE -> MILANO 
+ CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Chiusura continua per 3 treni: intervallo utile tra 
+ i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BRINDISI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4389--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T081930Z
-DTEND:20261122T082400Z
-SUMMARY:[FERMATA] REG 4389 (BARI CENTRALE -> LECCE) ore 09:23
-DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 09:19:30 - 09:24:00\nTreni coinvolti nella chiusura:\n
-   - REG 4389 (BARI CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAf
- fidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia or
- aria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T082000Z
+DTEND:20261122T082700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:20 - 09:27 (primo: REG 4389) (+2 m
+ in)
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 09:20:00 - 09:27:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 4389 (BARI CENTRALE -> LECCE) (+2m)\n  - REG 4
+ 389 (BARI CENTRALE -> LECCE) (+2m)\nRitardo massimo rilevato: 2 min\nAffid
+ abilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 tre
+ ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
+ gombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BRINDISI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8314--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T102330Z
-DTEND:20261122T102800Z
-SUMMARY:[FERMATA] TRENO 8314 (LECCE -> ROMA TERMINI) ore 11:27
-DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 11:23:30 - 11:28:00\nTreni coinvolti nella chiusura:\n
-   - TRENO 8314 (LECCE -> ROMA TERMINI)\nRitardo massimo rilevato: 0 min\nA
- ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
- raria regolare
+UID:train-1546--20261121-S11136@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T084945Z
+DTEND:20261122T085800Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 09:49 - 09:58 (primo: IC 1546) (+1 mi
+ n)
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 4 TRENI\nChiusura sbarre stimata: 09:49:45 - 09:58:00\nTreni coinvol
+ ti nella chiusura:\n  - IC 1546 (LECCE -> MILANO CENTRALE) (+1m) [Arrivo]\
+ n  - IC 1546 (LECCE -> MILANO CENTRALE) (+1m) [Arrivo]\n  - IC 1546 (LECCE
+  -> MILANO CENTRALE) (+1m) [Partenza]\n  - IC 1546 (LECCE -> MILANO CENTRA
+ LE) (+1m) [Partenza]\nRitardo massimo rilevato: 1 min\nAffidabilità stima
+ : 99%\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo
+  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
+ le (120s)
 LOCATION:Passaggio a Livello / Stazione BRINDISI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8820--20261121-S11136@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T090251Z
+DTEND:20261122T090821Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:02 - 10:08 (primo: TRENO 8820) (+1
+ 4 min)
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 10:02:51 - 10:08:21\nTreni coinvol
+ ti nella chiusura:\n  - TRENO 8820 (TARANTO -> MILANO CENTRALE) (+14m) [Tr
+ ansito]\n  - TRENO 8820 (TARANTO -> MILANO CENTRALE) (+14m) [Transito]\nRi
+ tardo massimo rilevato: 14 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BRINDISI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:14
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8382--20261121-S11136@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T101430Z
+DTEND:20261122T103200Z
+SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 11:14 - 11:32 (primo: TRENO 8382) (+2
+  min)
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 8 TRENI\nChiusura sbarre stimata: 11:14:30 - 11:32:00\nTreni coinvol
+ ti nella chiusura:\n  - TRENO 8382 (NAPOLI CENTRALE -> LECCE) (+2m) [Arriv
+ o]\n  - TRENO 8382 (NAPOLI CENTRALE -> LECCE) (+2m) [Arrivo]\n  - TRENO 83
+ 14 (LECCE -> ROMA TERMINI) (+2m) [Arrivo]\n  - TRENO 8314 (LECCE -> ROMA T
+ ERMINI) (+2m) [Arrivo]\n  - TRENO 8382 (NAPOLI CENTRALE -> LECCE) (+2m) [P
+ artenza]\n  - TRENO 8382 (NAPOLI CENTRALE -> LECCE) (+2m) [Partenza]\n  - 
+ TRENO 8314 (LECCE -> ROMA TERMINI) (+2m) [Partenza]\n  - TRENO 8314 (LECCE
+  -> ROMA TERMINI) (+2m) [Partenza]\nRitardo massimo rilevato: 2 min\nAffid
+ abilità stima: 99%\nNota normativa/euristica: Chiusura continua per 8 tre
+ ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
+ gombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BRINDISI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4399--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T103419Z
-DTEND:20261122T103949Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T103414Z
+DTEND:20261122T103944Z
 SUMMARY:[TRANSITO VELOCE] REG 4399 (BARI CENTRALE -> LECCE) ore 11:38
 DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 11:34:19 - 11:39:49\nTreni coinvolti nella chi
+ E\nChiusura sbarre stimata: 11:34:14 - 11:39:44\nTreni coinvolti nella chi
  usura:\n  - REG 4399 (BARI CENTRALE -> LECCE) [Transito]\nRitardo massimo 
  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
- ito stimato senza fermata (60% tratta OSTUNI -> CAROVIGNO\; pedale annunci
+ ito stimato senza fermata (58% tratta OSTUNI -> CAROVIGNO\; pedale annunci
  o fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BRINDISI
 STATUS:CONFIRMED
@@ -238,8 +323,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4399--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T105330Z
 DTEND:20261122T105800Z
 SUMMARY:[FERMATA] REG 4399 (BARI CENTRALE -> LECCE) ore 11:57
@@ -258,50 +343,56 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4382--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T111417Z
-DTEND:20261122T111947Z
-SUMMARY:[TRANSITO VELOCE] REG 4382 (LECCE -> BARI CENTRALE) ore 12:18
-DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 12:14:17 - 12:19:47\nTreni coinvolti nella chi
- usura:\n  - REG 4382 (LECCE -> BARI CENTRALE) [Transito]\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
- ito stimato senza fermata (51% tratta LECCE -> TREPUZZI\; pedale annuncio 
- fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T111415Z
+DTEND:20261122T112430Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:14 - 12:24 (primo: REG 4382) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 3 TRENI\nChiusura sbarre stimata: 12:14:15 - 12:24:30\nTreni coinvol
+ ti nella chiusura:\n  - REG 4382 (LECCE -> BARI CENTRALE) [Transito]\n  - 
+ TRENO 9808 (LECCE -> TORINO PORTA NUOVA) (+1m) [Arrivo]\n  - TRENO 9808 (L
+ ECCE -> TORINO PORTA NUOVA) (+1m) [Arrivo]\nRitardo massimo rilevato: 1 mi
+ n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
+ er 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
+ ima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BRINDISI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4317--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T112919Z
-DTEND:20261122T113449Z
-SUMMARY:[TRANSITO VELOCE] REG 4317 (BARI CENTRALE -> LECCE) ore 12:33
-DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 12:29:19 - 12:34:49\nTreni coinvolti nella chi
- usura:\n  - REG 4317 (BARI CENTRALE -> LECCE) [Transito]\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
- ito stimato senza fermata (60% tratta OSTUNI -> CAROVIGNO\; pedale annunci
- o fisso Vmax)
+UID:train-9808--20261121-S11136@pl-tracker.local-dep
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T112630Z
+DTEND:20261122T113444Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:26 - 12:34 (primo: TRENO 9808) (+1
+  min)
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 3 TRENI\nChiusura sbarre stimata: 12:26:30 - 12:34:44\nTreni coinvol
+ ti nella chiusura:\n  - TRENO 9808 (LECCE -> TORINO PORTA NUOVA) (+1m) [Pa
+ rtenza]\n  - TRENO 9808 (LECCE -> TORINO PORTA NUOVA) (+1m) [Partenza]\n  
+ - REG 4317 (BARI CENTRALE -> LECCE) [Transito]\nRitardo massimo rilevato: 
+ 1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
+ ua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+  minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BRINDISI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4382--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T113930Z
 DTEND:20261122T114400Z
 SUMMARY:[FERMATA] REG 4382 (LECCE -> BARI CENTRALE) ore 12:43
@@ -320,8 +411,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4317--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T114830Z
 DTEND:20261122T115300Z
 SUMMARY:[FERMATA] REG 4317 (BARI CENTRALE -> LECCE) ore 12:52
@@ -340,8 +431,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9560--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T115730Z
 DTEND:20261122T120200Z
 SUMMARY:[FERMATA] TRENO 9560 (LECCE -> MILANO CENTRALE) ore 13:01
@@ -359,160 +450,279 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4424--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T141647Z
-DTEND:20261122T142217Z
-SUMMARY:[TRANSITO VELOCE] REG 4424 (LECCE -> BARI CENTRALE) ore 15:21
-DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 15:16:47 - 15:22:17\nTreni coinvolti nella chi
- usura:\n  - REG 4424 (LECCE -> BARI CENTRALE) [Transito]\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
- ito stimato senza fermata (51% tratta LECCE -> TREPUZZI\; pedale annuncio 
- fisso Vmax)
+UID:train-8828--20261121-S11136@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T121130Z
+DTEND:20261122T122200Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 13:11 - 13:22 (primo: TRENO 8828) (+1
+  min)
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 4 TRENI\nChiusura sbarre stimata: 13:11:30 - 13:22:00\nTreni coinvol
+ ti nella chiusura:\n  - TRENO 8828 (LECCE -> VENEZIA S.LUCIA) (+1m) [Arriv
+ o]\n  - TRENO 8828 (LECCE -> VENEZIA S.LUCIA) (+1m) [Arrivo]\n  - TRENO 88
+ 28 (LECCE -> VENEZIA S.LUCIA) (+1m) [Partenza]\n  - TRENO 8828 (LECCE -> V
+ ENEZIA S.LUCIA) (+1m) [Partenza]\nRitardo massimo rilevato: 1 min\nAffidab
+ ilità stima: 99%\nNota normativa/euristica: Chiusura continua per 4 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BRINDISI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8801--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T143230Z
-DTEND:20261122T144012Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:32 - 15:40 (primo: TRENO 8801)
+UID:train-4420--20261121-S11136@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T131845Z
+DTEND:20261122T132415Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:18 - 14:24 (primo: REG 4420) (+6 m
+ in)
 DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 15:32:30 - 15:40:12\nTreni coinvol
- ti nella chiusura:\n  - TRENO 8801 (VENEZIA S.LUCIA -> LECCE)\n  - IC 564 
- (REGGIO DI CALABRIA CENTRALE -> LECCE) [Transito]\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
- tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
- lia minima di sgombero stradale (120s)
+ NUA - 2 TRENI\nChiusura sbarre stimata: 14:18:45 - 14:24:15\nTreni coinvol
+ ti nella chiusura:\n  - REG 4420 (LECCE -> BARI CENTRALE) (+6m) [Transito]
+ \n  - REG 4420 (LECCE -> BARI CENTRALE) (+6m) [Transito]\nRitardo massimo 
+ rilevato: 6 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
+ ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BRINDISI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4420--20261121-S11136@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T134330Z
+DTEND:20261122T135030Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:43 - 14:50 (primo: REG 4420) (+2 m
+ in)
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 14:43:30 - 14:50:30\nTreni coinvol
+ ti nella chiusura:\n  - REG 4420 (LECCE -> BARI CENTRALE) (+2m)\n  - REG 4
+ 420 (LECCE -> BARI CENTRALE) (+2m)\nRitardo massimo rilevato: 2 min\nAffid
+ abilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 tre
+ ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
+ gombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BRINDISI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9511--20261121-S11136@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T141400Z
+DTEND:20261122T142345Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:14 - 15:23 (primo: TRENO 9511) (+1
+  min)
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 4 TRENI\nChiusura sbarre stimata: 15:14:00 - 15:23:45\nTreni coinvol
+ ti nella chiusura:\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) (+1m) [Arriv
+ o]\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) (+1m) [Arrivo]\n  - REG 4424
+  (LECCE -> BARI CENTRALE) (+1m) [Transito]\n  - REG 4424 (LECCE -> BARI CE
+ NTRALE) (+1m) [Transito]\nRitardo massimo rilevato: 1 min\nAffidabilità s
+ tima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: interv
+ allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
+ radale (120s)
+LOCATION:Passaggio a Livello / Stazione BRINDISI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4424--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T144330Z
-DTEND:20261122T144800Z
-SUMMARY:[FERMATA] REG 4424 (LECCE -> BARI CENTRALE) ore 15:47
-DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 15:43:30 - 15:48:00\nTreni coinvolti nella chiusura:\n
-   - REG 4424 (LECCE -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAf
- fidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia or
- aria regolare
+UID:train-9511--20261121-S11136@pl-tracker.local-dep
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T142700Z
+DTEND:20261122T143700Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:27 - 15:37 (primo: TRENO 9511) (+1
+  min)
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 3 TRENI\nChiusura sbarre stimata: 15:27:00 - 15:37:00\nTreni coinvol
+ ti nella chiusura:\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) (+1m) [Parte
+ nza]\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) (+1m) [Partenza]\n  - TREN
+ O 8801 (VENEZIA S.LUCIA -> LECCE)\nRitardo massimo rilevato: 1 min\nAffida
+ bilità stima: 90%\nNota normativa/euristica: Chiusura continua per 3 tren
+ i: intervallo utile tra i passaggi (60s) inferiore alla soglia minima di s
+ gombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BRINDISI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-564--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T151015Z
-DTEND:20261122T151500Z
-SUMMARY:[FERMATA] IC 564 (REGGIO DI CALABRIA CENTRALE -> LECCE) ore 16:14
-DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 16:10:15 - 16:15:00\nTreni coinvolti nella chiusura:\n
-   - IC 564 (REGGIO DI CALABRIA CENTRALE -> LECCE)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
- a traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione BRINDISI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-603--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T152115Z
-DTEND:20261122T152600Z
-SUMMARY:[FERMATA] IC 603 (MILANO CENTRALE -> LECCE) ore 16:25
-DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 16:21:15 - 16:26:00\nTreni coinvolti nella chiusura:\n
-   - IC 603 (MILANO CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAf
- fidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia or
- aria regolare
-LOCATION:Passaggio a Livello / Stazione BRINDISI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4447--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T154630Z
-DTEND:20261122T155100Z
-SUMMARY:[FERMATA] REG 4447 (BARI CENTRALE -> LECCE) ore 16:50
-DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 16:46:30 - 16:51:00\nTreni coinvolti nella chiusura:\n
-   - REG 4447 (BARI CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAf
- fidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia or
- aria regolare
-LOCATION:Passaggio a Livello / Stazione BRINDISI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8326--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T162330Z
-DTEND:20261122T162800Z
-SUMMARY:[FERMATA] TRENO 8326 (LECCE -> ROMA TERMINI) ore 17:27
-DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 17:23:30 - 17:28:00\nTreni coinvolti nella chiusura:\n
-   - TRENO 8326 (LECCE -> ROMA TERMINI)\nRitardo massimo rilevato: 0 min\nA
- ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
- raria regolare
-LOCATION:Passaggio a Livello / Stazione BRINDISI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
+UID:train-4424--20261121-S11136@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T144300Z
+DTEND:20261122T145057Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:43 - 15:50 (primo: REG 4424) (+5 m
+ in)
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 4 TRENI\nChiusura sbarre stimata: 15:43:00 - 15:50:57\nTreni coinvol
+ ti nella chiusura:\n  - REG 4424 (LECCE -> BARI CENTRALE) (+1m)\n  - REG 4
+ 424 (LECCE -> BARI CENTRALE) (+1m)\n  - REG 4413 (BARI CENTRALE -> LECCE) 
+ (+5m) [Transito]\n  - REG 4413 (BARI CENTRALE -> LECCE) (+5m) [Transito]\n
+ Ritardo massimo rilevato: 5 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Chiusura continua per 4 treni: intervallo utile tra i passaggi 
+ (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BRINDISI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-564--20261121-S11136@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T145258Z
+DTEND:20261122T145728Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:52 - 15:57 (primo: IC 564) (+18 mi
+ n)
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 15:52:58 - 15:57:28\nTreni coinvol
+ ti nella chiusura:\n  - IC 564 (REGGIO DI CALABRIA CENTRALE -> LECCE) (+18
+ m) [Transito]\n  - IC 564 (REGGIO DI CALABRIA CENTRALE -> LECCE) (+18m) [T
+ ransito]\nRitardo massimo rilevato: 18 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
+ i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BRINDISI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:18
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4413--20261121-S11136@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T150230Z
+DTEND:20261122T150900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:02 - 16:09 (primo: REG 4413) (+5 m
+ in)
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 16:02:30 - 16:09:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 4413 (BARI CENTRALE -> LECCE) (+5m)\n  - REG 4
+ 413 (BARI CENTRALE -> LECCE) (+5m)\nRitardo massimo rilevato: 5 min\nAffid
+ abilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 tre
+ ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
+ gombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BRINDISI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-603--20261121-S11136@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T152015Z
+DTEND:20261122T153300Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 16:20 - 16:33 (primo: IC 603) (+18 mi
+ n)
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 6 TRENI\nChiusura sbarre stimata: 16:20:15 - 16:33:00\nTreni coinvol
+ ti nella chiusura:\n  - IC 603 (MILANO CENTRALE -> LECCE)\n  - IC 603 (MIL
+ ANO CENTRALE -> LECCE)\n  - IC 710 (TARANTO -> ROMA TERMINI) [Transito]\n 
+  - IC 710 (TARANTO -> ROMA TERMINI) [Transito]\n  - IC 564 (REGGIO DI CALA
+ BRIA CENTRALE -> LECCE) (+18m)\n  - IC 564 (REGGIO DI CALABRIA CENTRALE ->
+  LECCE) (+18m)\nRitardo massimo rilevato: 18 min\nAffidabilità stima: 78%
+ \nNota normativa/euristica: Chiusura continua per 6 treni: intervallo util
+ e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
+ 20s)
+LOCATION:Passaggio a Livello / Stazione BRINDISI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:18
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4447--20261121-S11136@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T154030Z
+DTEND:20261122T154500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:40 - 16:45 (primo: REG 4447)
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 16:40:30 - 16:45:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 4447 (BARI CENTRALE -> LECCE)\n  - REG 4447 (B
+ ARI CENTRALE -> LECCE)\nRitardo massimo rilevato: -6 min\nAffidabilità st
+ ima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
+ llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
+ adale (120s)
+LOCATION:Passaggio a Livello / Stazione BRINDISI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-6
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-605--20261121-S11136@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T161817Z
+DTEND:20261122T163015Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 17:18 - 17:30 (primo: IC 605)
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 5 TRENI\nChiusura sbarre stimata: 17:18:17 - 17:30:15\nTreni coinvol
+ ti nella chiusura:\n  - IC 605 (MILANO CENTRALE -> LECCE) [Transito]\n  - 
+ TRENO 8326 (LECCE -> ROMA TERMINI)\n  - TRENO 8326 (LECCE -> ROMA TERMINI)
+ \n  - REG 4434 (LECCE -> BARI CENTRALE) [Transito]\n  - REG 4434 (LECCE ->
+  BARI CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità
+  stima: 78%\nNota normativa/euristica: Chiusura continua per 5 treni: inte
+ rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
+ stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BRINDISI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
 UID:train-4423--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T163419Z
-DTEND:20261122T163949Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T163414Z
+DTEND:20261122T163944Z
 SUMMARY:[TRANSITO VELOCE] REG 4423 (BARI CENTRALE -> LECCE) ore 17:38
 DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 17:34:19 - 17:39:49\nTreni coinvolti nella chi
+ E\nChiusura sbarre stimata: 17:34:14 - 17:39:44\nTreni coinvolti nella chi
  usura:\n  - REG 4423 (BARI CENTRALE -> LECCE) [Transito]\nRitardo massimo 
  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
- ito stimato senza fermata (60% tratta OSTUNI -> CAROVIGNO\; pedale annunci
+ ito stimato senza fermata (58% tratta OSTUNI -> CAROVIGNO\; pedale annunci
  o fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BRINDISI
 STATUS:CONFIRMED
@@ -523,58 +733,107 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4423--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T165330Z
+UID:train-4434--20261121-S11136@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T164930Z
 DTEND:20261122T165800Z
-SUMMARY:[FERMATA] REG 4423 (BARI CENTRALE -> LECCE) ore 17:57
-DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 17:53:30 - 17:58:00\nTreni coinvolti nella chiusura:\n
-   - REG 4423 (BARI CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAf
- fidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia or
- aria regolare
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:49 - 17:58 (primo: REG 4434)
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 3 TRENI\nChiusura sbarre stimata: 17:49:30 - 17:58:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 4434 (LECCE -> BARI CENTRALE)\n  - REG 4434 (L
+ ECCE -> BARI CENTRALE)\n  - REG 4423 (BARI CENTRALE -> LECCE)\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: 
+ Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) inferi
+ ore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BRINDISI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9805--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T172030Z
-DTEND:20261122T172500Z
-SUMMARY:[FERMATA] TRENO 9805 (TORINO PORTA NUOVA -> LECCE) ore 18:24
-DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 18:20:30 - 18:25:00\nTreni coinvolti nella chiusura:\n
-   - TRENO 9805 (TORINO PORTA NUOVA -> LECCE)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
- ccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T174030Z
+DTEND:20261122T174500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:40 - 18:45 (primo: TRENO 9805) (+2
+ 0 min)
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 18:40:30 - 18:45:00\nTreni coinvol
+ ti nella chiusura:\n  - TRENO 9805 (TORINO PORTA NUOVA -> LECCE) (+20m)\n 
+  - TRENO 9805 (TORINO PORTA NUOVA -> LECCE) (+20m)\nRitardo massimo rileva
+ to: 20 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura c
+ ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BRINDISI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:20
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-605--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T174916Z
-DTEND:20261122T175346Z
-SUMMARY:[TRANSITO VELOCE] IC 605 (MILANO CENTRALE -> LECCE) ore 18:52
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T174723Z
+DTEND:20261122T175153Z
+SUMMARY:[TRANSITO VELOCE] IC 605 (MILANO CENTRALE -> LECCE) ore 18:50
 DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 18:49:16 - 18:53:46\nTreni coinvolti nella chi
+ E\nChiusura sbarre stimata: 18:47:23 - 18:51:53\nTreni coinvolti nella chi
  usura:\n  - IC 605 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
- ito stimato senza fermata (78% tratta TARANTO -> FRANCAVILLA FONTANA\; ped
- ale annuncio fisso Vmax)
+ rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
+ sito stimato senza fermata (75% tratta TARANTO -> FRANCAVILLA FONTANA\; pe
+ dale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione BRINDISI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-605--20261121-S11136@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T182315Z
+DTEND:20261122T182800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:23 - 19:28 (primo: IC 605)
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 19:23:15 - 19:28:00\nTreni coinvol
+ ti nella chiusura:\n  - IC 605 (MILANO CENTRALE -> LECCE)\n  - IC 605 (MIL
+ ANO CENTRALE -> LECCE)\nRitardo massimo rilevato: -1 min\nAffidabilità st
+ ima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
+ llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
+ adale (120s)
+LOCATION:Passaggio a Livello / Stazione BRINDISI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-562--20261121-S11136@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T183734Z
+DTEND:20261122T184204Z
+SUMMARY:[TRANSITO VELOCE] IC 562 (VILLA S.GIOVANNI -> BARI CENTRALE) ore 19
+ :41
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 19:37:34 - 19:42:04\nTreni coinvolti nella chi
+ usura:\n  - IC 562 (VILLA S.GIOVANNI -> BARI CENTRALE) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (60% tratta GIOIA DEL COLLE -> BARI CEN
+ TRALE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BRINDISI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -584,29 +843,9 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-605--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T182415Z
-DTEND:20261122T182900Z
-SUMMARY:[FERMATA] IC 605 (MILANO CENTRALE -> LECCE) ore 19:28
-DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 19:24:15 - 19:29:00\nTreni coinvolti nella chiusura:\n
-   - IC 605 (MILANO CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAf
- fidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia or
- aria regolare
-LOCATION:Passaggio a Livello / Stazione BRINDISI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
 UID:train-607--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T190815Z
 DTEND:20261122T191300Z
 SUMMARY:[FERMATA] IC 607 (MILANO PORTA GARIBALDI -> LECCE) ore 20:12
@@ -625,28 +864,30 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-754--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T194715Z
 DTEND:20261122T195200Z
-SUMMARY:[FERMATA] ICN 754 (LECCE -> TORINO PORTA NUOVA) ore 20:51
-DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 20:47:15 - 20:52:00\nTreni coinvolti nella chiusura:\n
-   - ICN 754 (LECCE -> TORINO PORTA NUOVA)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
- a oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:47 - 20:52 (primo: ICN 754)
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 20:47:15 - 20:52:00\nTreni coinvol
+ ti nella chiusura:\n  - ICN 754 (LECCE -> TORINO PORTA NUOVA)\n  - ICN 754
+  (LECCE -> TORINO PORTA NUOVA)\nRitardo massimo rilevato: 0 min\nAffidabil
+ ità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: 
+ intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
+ ero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BRINDISI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8317--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T201630Z
 DTEND:20261122T202100Z
 SUMMARY:[FERMATA] TRENO 8317 (ROMA TERMINI -> LECCE) ore 21:20
@@ -665,59 +906,41 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8811--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T202530Z
-DTEND:20261122T203000Z
-SUMMARY:[FERMATA] TRENO 8811 (MILANO CENTRALE -> LECCE) ore 21:29
-DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 21:25:30 - 21:30:00\nTreni coinvolti nella chiusura:\n
-   - TRENO 8811 (MILANO CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
- a oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T203030Z
+DTEND:20261122T203500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:30 - 21:35 (primo: TRENO 8811) (+5
+  min)
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 21:30:30 - 21:35:00\nTreni coinvol
+ ti nella chiusura:\n  - TRENO 8811 (MILANO CENTRALE -> LECCE) (+5m)\n  - T
+ RENO 8811 (MILANO CENTRALE -> LECCE) (+5m)\nRitardo massimo rilevato: 5 mi
+ n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
+ er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
+ ima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BRINDISI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4443--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T203719Z
-DTEND:20261122T204249Z
-SUMMARY:[TRANSITO VELOCE] REG 4443 (BARI CENTRALE -> LECCE) ore 21:41
-DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 21:37:19 - 21:42:49\nTreni coinvolti nella chi
- usura:\n  - REG 4443 (BARI CENTRALE -> LECCE) [Transito]\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
- ito stimato senza fermata (60% tratta OSTUNI -> CAROVIGNO\; pedale annunci
- o fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione BRINDISI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4490--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T205247Z
-DTEND:20261122T210300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:52 - 22:03 (primo: REG 4490)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T203714Z
+DTEND:20261122T204244Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:37 - 21:42 (primo: REG 4443)
 DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 21:52:47 - 22:03:00\nTreni coinvol
- ti nella chiusura:\n  - REG 4490 (LECCE -> BARI CENTRALE) [Transito]\n  - 
- REG 4443 (BARI CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAffida
- bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tren
- i: intervallo utile tra i passaggi (12s) inferiore alla soglia minima di s
- gombero stradale (120s)
+ NUA - 2 TRENI\nChiusura sbarre stimata: 21:37:14 - 21:42:44\nTreni coinvol
+ ti nella chiusura:\n  - REG 4443 (BARI CENTRALE -> LECCE) [Transito]\n  - 
+ REG 4443 (BARI CENTRALE -> LECCE) [Transito]\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua
+  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BRINDISI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -728,8 +951,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4490--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T205245Z
+DTEND:20261122T210300Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:52 - 22:03 (primo: REG 4490)
+DESCRIPTION:Stazione/PL: BRINDISI (S11136)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 3 TRENI\nChiusura sbarre stimata: 21:52:45 - 22:03:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 4490 (LECCE -> BARI CENTRALE) [Transito]\n  - 
+ REG 4443 (BARI CENTRALE -> LECCE)\n  - REG 4443 (BARI CENTRALE -> LECCE)\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Chiusura continua per 3 treni: intervallo utile tra i passaggi 
+ (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BRINDISI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4490--20261121-S11136@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T211930Z
 DTEND:20261122T212400Z
 SUMMARY:[FERMATA] REG 4490 (LECCE -> BARI CENTRALE) ore 22:23
@@ -748,8 +993,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-788--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T213415Z
 DTEND:20261122T213900Z
 SUMMARY:[FERMATA] ICN 788 (LECCE -> ROMA TERMINI) ore 22:38
@@ -768,8 +1013,8 @@ X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-755--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261123T080115Z
 DTEND:20261123T080600Z
 SUMMARY:[FERMATA] ICN 755 (MILANO CENTRALE -> LECCE) ore 09:05
@@ -788,8 +1033,8 @@ X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-757--20261121-S11136@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261123T083915Z
 DTEND:20261123T084400Z
 SUMMARY:[FERMATA] ICN 757 (TORINO PORTA NUOVA -> LECCE) ore 09:43

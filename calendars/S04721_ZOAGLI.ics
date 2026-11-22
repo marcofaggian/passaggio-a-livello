@@ -9,12 +9,56 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:0130d23a6af0062c01a186184d758399296e3e3b08a60fcfa3e8235cc900
- 22d4
+X-CONTENT-HASH:974af3c1afba26b099c45203721c32df1862bc9a6230261c862a94a0b36c
+ b1cb
+BEGIN:VEVENT
+UID:train-3016--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T034428Z
+DTEND:20261122T034958Z
+SUMMARY:[TRANSITO VELOCE] REG 3016 (SESTRI LEVANTE -> MILANO CENTRALE) ore 
+ 04:48 (+1 min)
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 04:44:28 - 04:49:58\nTreni coinvolti nella chius
+ ura:\n  - REG 3016 (SESTRI LEVANTE -> MILANO CENTRALE) (+1m) [Transito]\nR
+ itardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Transito stimato senza fermata (50% tratta CHIAVARI -> RAPALLO\;
+  pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ZOAGLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-652--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T045028Z
+DTEND:20261122T045458Z
+SUMMARY:[TRANSITO VELOCE] IC 652 (LA SPEZIA CENTRALE -> MILANO CENTRALE) or
+ e 05:53
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 05:50:28 - 05:54:58\nTreni coinvolti nella chius
+ ura:\n  - IC 652 (LA SPEZIA CENTRALE -> MILANO CENTRALE) [Transito]\nRitar
+ do massimo rilevato: -2 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Transito stimato senza fermata (50% tratta CHIAVARI -> RAPALLO\; pe
+ dale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ZOAGLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
 BEGIN:VEVENT
 UID:train-12316--20261121-S04721@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T051830Z
 DTEND:20261122T052300Z
 SUMMARY:[FERMATA] REG 12316 (LA SPEZIA CENTRALE -> SAVONA) ore 06:22
@@ -32,31 +76,53 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-12323--20261121-S04721@pl-tracker.local
-DTSTAMP:20261122T065144Z
+UID:train-658--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
 SEQUENCE:0
-DTSTART:20261122T070145Z
-DTEND:20261122T070715Z
-SUMMARY:[TRANSITO VELOCE] REG 12323 (SAVONA -> LA SPEZIA CENTRALE) ore 08:0
- 6
-DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 08:01:45 - 08:07:15\nTreni coinvolti nella chius
- ura:\n  - REG 12323 (SAVONA -> LA SPEZIA CENTRALE) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Transito stimato senza fermata (50% tratta RAPALLO -> CHIAVARI\; pedale an
- nuncio fisso Vmax)
+DTSTART:20261122T062344Z
+DTEND:20261122T062814Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:23 - 07:28 (primo: IC 658)
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 07:23:44 - 07:28:14\nTreni coinvolti
+  nella chiusura:\n  - IC 658 (LIVORNO CENTRALE -> MILANO CENTRALE) [Transi
+ to]\n  - IC 658 (LIVORNO CENTRALE -> MILANO CENTRALE) [Transito]\nRitardo 
+ massimo rilevato: -8 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ZOAGLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-8
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12323--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:1
+DTSTART:20261122T070402Z
+DTEND:20261122T070932Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:04 - 08:09 (primo: REG 12323)
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 08:04:02 - 08:09:32\nTreni coinvolti
+  nella chiusura:\n  - REG 12323 (SAVONA -> LA SPEZIA CENTRALE) [Transito]\
+ n  - REG 12323 (SAVONA -> LA SPEZIA CENTRALE) [Transito]\nRitardo massimo 
+ rilevato: -4 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
+ sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ZOAGLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-4
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12352--20261121-S04721@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T083930Z
 DTEND:20261122T084400Z
 SUMMARY:[FERMATA] REG 12352 (SESTRI LEVANTE -> SAVONA) ore 09:43
@@ -74,31 +140,55 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3063--20261121-S04721@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T095645Z
-DTEND:20261122T100215Z
-SUMMARY:[TRANSITO VELOCE] REG 3063 (MILANO GRECO PIRELLI -> SESTRI LEVANTE)
-  ore 11:01
-DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 10:56:45 - 11:02:15\nTreni coinvolti nella chius
- ura:\n  - REG 3063 (MILANO GRECO PIRELLI -> SESTRI LEVANTE) [Transito]\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Transito stimato senza fermata (50% tratta RAPALLO -> CHIAVARI\; 
- pedale annuncio fisso Vmax)
+UID:train-657--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T092547Z
+DTEND:20261122T093017Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:25 - 10:30 (primo: IC 657)
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 10:25:47 - 10:30:17\nTreni coinvolti
+  nella chiusura:\n  - IC 657 (MILANO CENTRALE -> GROSSETO) [Transito]\n  -
+  IC 657 (MILANO CENTRALE -> GROSSETO) [Transito]\nRitardo massimo rilevato
+ : -10 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
+ ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ZOAGLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-10
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3063--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T095917Z
+DTEND:20261122T100447Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:59 - 11:04 (primo: REG 3063) (+2 m
+ in)
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 10:59:17 - 11:04:47\nTreni coinvolti
+  nella chiusura:\n  - REG 3063 (MILANO GRECO PIRELLI -> SESTRI LEVANTE) (+
+ 2m) [Transito]\n  - REG 3063 (MILANO GRECO PIRELLI -> SESTRI LEVANTE) (+2m
+ ) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nN
+ ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
+ ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
+ )
+LOCATION:Passaggio a Livello / Stazione ZOAGLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12353--20261121-S04721@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T100830Z
 DTEND:20261122T101300Z
 SUMMARY:[FERMATA] REG 12353 (SAVONA -> SESTRI LEVANTE) ore 11:12
@@ -116,18 +206,85 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-666--20261121-S04721@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T102924Z
-DTEND:20261122T103354Z
-SUMMARY:[TRANSITO VELOCE] IC 666 (LIVORNO CENTRALE -> MILANO CENTRALE) ore 
- 11:32
+UID:train-3265--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T101748Z
+DTEND:20261122T102318Z
+SUMMARY:[TRANSITO VELOCE] REG 3265 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) 
+ ore 11:22
 DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 11:29:24 - 11:33:54\nTreni coinvolti nella chius
- ura:\n  - IC 666 (LIVORNO CENTRALE -> MILANO CENTRALE) [Transito]\nRitardo
+ nChiusura sbarre stimata: 11:17:48 - 11:23:18\nTreni coinvolti nella chius
+ ura:\n  - REG 3265 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) [Transito]\nRit
+ ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Transito stimato senza fermata (51% tratta RAPALLO -> CHIAVARI\; p
+ edale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ZOAGLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3266--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T113328Z
+DTEND:20261122T113858Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:33 - 12:38 (primo: REG 3266)
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 12:33:28 - 12:38:58\nTreni coinvolti
+  nella chiusura:\n  - REG 3266 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) [Tr
+ ansito]\n  - REG 3266 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) [Transito]\n
+ Ritardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
+  (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ZOAGLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12373--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T121230Z
+DTEND:20261122T121800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:12 - 13:18 (primo: REG 12373) (+5 
+ min)
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 13:12:30 - 13:18:00\nTreni coinvolti
+  nella chiusura:\n  - REG 12373 (SAVONA -> SESTRI LEVANTE) (+5m)\n  - REG 
+ 12373 (SAVONA -> SESTRI LEVANTE) (+5m)\nRitardo massimo rilevato: 5 min\nA
+ ffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ZOAGLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-670--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T123057Z
+DTEND:20261122T123527Z
+SUMMARY:[TRANSITO VELOCE] IC 670 (LIVORNO CENTRALE -> MILANO CENTRALE) ore 
+ 13:34
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 13:30:57 - 13:35:27\nTreni coinvolti nella chius
+ ura:\n  - IC 670 (LIVORNO CENTRALE -> MILANO CENTRALE) [Transito]\nRitardo
   massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Transito stimato senza fermata (55% tratta CHIAVARI -> RAPALLO\; pedal
+ ca: Transito stimato senza fermata (50% tratta CHIAVARI -> RAPALLO\; pedal
  e annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ZOAGLI
 STATUS:CONFIRMED
@@ -138,49 +295,97 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-12373--20261121-S04721@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T120730Z
-DTEND:20261122T121200Z
-SUMMARY:[FERMATA] REG 12373 (SAVONA -> SESTRI LEVANTE) ore 13:11
-DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 13:07:30 - 13:12:00\nTreni coinvolti nella chiusura:\n  
- - REG 12373 (SAVONA -> SESTRI LEVANTE)\nRitardo massimo rilevato: 0 min\nA
- ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
- raria regolare
+UID:train-665--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T132602Z
+DTEND:20261122T133032Z
+SUMMARY:[TRANSITO VELOCE] IC 665 (MILANO CENTRALE -> LA SPEZIA CENTRALE) or
+ e 14:29 (+2 min)
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 14:26:02 - 14:30:32\nTreni coinvolti nella chius
+ ura:\n  - IC 665 (MILANO CENTRALE -> LA SPEZIA CENTRALE) (+2m) [Transito]\
+ nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Transito stimato senza fermata (51% tratta RAPALLO -> CHIAVARI
+ \; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ZOAGLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-510--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T135014Z
+DTEND:20261122T135444Z
+SUMMARY:[TRANSITO VELOCE] IC 510 (SALERNO -> TORINO PORTA NUOVA) ore 14:53
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 14:50:14 - 14:54:44\nTreni coinvolti nella chius
+ ura:\n  - IC 510 (SALERNO -> TORINO PORTA NUOVA) [Transito]\nRitardo massi
+ mo rilevato: -7 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
+ ransito stimato senza fermata (50% tratta CHIAVARI -> RAPALLO\; pedale ann
+ uncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ZOAGLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-7
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8619--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T142318Z
+DTEND:20261122T142848Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8619 (MILANO CENTRALE -> ROMA TERMINI) ore 
+ 15:27
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 15:23:18 - 15:28:48\nTreni coinvolti nella chius
+ ura:\n  - TRENO 8619 (MILANO CENTRALE -> ROMA TERMINI) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (51% tratta RAPALLO -> CHIAVARI\; pedal
+ e annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ZOAGLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12412--20261121-S04721@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T144230Z
-DTEND:20261122T144700Z
-SUMMARY:[FERMATA] REG 12412 (SESTRI LEVANTE -> SAVONA) ore 15:46
-DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 15:42:30 - 15:47:00\nTreni coinvolti nella chiusura:\n  
- - REG 12412 (SESTRI LEVANTE -> SAVONA)\nRitardo massimo rilevato: 0 min\nA
- ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
- raria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T144530Z
+DTEND:20261122T145030Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:45 - 15:50 (primo: REG 12412) (+3 
+ min)
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 15:45:30 - 15:50:30\nTreni coinvolti
+  nella chiusura:\n  - REG 12412 (SESTRI LEVANTE -> SAVONA) (+3m)\n  - REG 
+ 12412 (SESTRI LEVANTE -> SAVONA) (+3m)\nRitardo massimo rilevato: 3 min\nA
+ ffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ZOAGLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12403--20261121-S04721@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T151030Z
 DTEND:20261122T151500Z
 SUMMARY:[FERMATA] REG 12403 (SAVONA -> SESTRI LEVANTE) ore 16:14
@@ -198,18 +403,41 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3274--20261121-S04721@pl-tracker.local
-DTSTAMP:20261122T065144Z
+UID:train-669--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
 SEQUENCE:0
-DTSTART:20261122T153306Z
-DTEND:20261122T153836Z
+DTSTART:20261122T152003Z
+DTEND:20261122T152742Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:20 - 16:27 (primo: IC 669) (+8 min
+ )
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 16:20:03 - 16:27:42\nTreni coinvolti
+  nella chiusura:\n  - IC 669 (MILANO CENTRALE -> LIVORNO CENTRALE) [Transi
+ to]\n  - TRENO 8616 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) (+8m) [Transi
+ to]\nRitardo massimo rilevato: 8 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
+ aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ZOAGLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3274--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:1
+DTSTART:20261122T153242Z
+DTEND:20261122T153812Z
 SUMMARY:[TRANSITO VELOCE] REG 3274 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) 
- ore 16:37
+ ore 16:36
 DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 16:33:06 - 16:38:36\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 16:32:42 - 16:38:12\nTreni coinvolti nella chius
  ura:\n  - REG 3274 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) [Transito]\nRit
  ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Transito stimato senza fermata (55% tratta CHIAVARI -> RAPALLO\; p
+ istica: Transito stimato senza fermata (50% tratta CHIAVARI -> RAPALLO\; p
  edale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ZOAGLI
 STATUS:CONFIRMED
@@ -220,82 +448,41 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3277--20261121-S04721@pl-tracker.local
-DTSTAMP:20261122T065144Z
+UID:train-12422--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
 SEQUENCE:0
-DTSTART:20261122T161745Z
-DTEND:20261122T162315Z
-SUMMARY:[TRANSITO VELOCE] REG 3277 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) 
- ore 17:22
-DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 17:17:45 - 17:23:15\nTreni coinvolti nella chius
- ura:\n  - REG 3277 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) [Transito]\nRit
- ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Transito stimato senza fermata (50% tratta RAPALLO -> CHIAVARI\; p
- edale annuncio fisso Vmax)
+DTSTART:20261122T154430Z
+DTEND:20261122T154900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:44 - 16:49 (primo: REG 12422)
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 16:44:30 - 16:49:00\nTreni coinvolti
+  nella chiusura:\n  - REG 12422 (SESTRI LEVANTE -> SAVONA)\n  - REG 12422 
+ (SESTRI LEVANTE -> SAVONA)\nRitardo massimo rilevato: 0 min\nAffidabilità
+  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
+ rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
+ stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ZOAGLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8623--20261121-S04721@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:0
-DTSTART:20261122T163515Z
-DTEND:20261122T164045Z
-SUMMARY:[TRANSITO VELOCE] TRENO 8623 (TORINO PORTA NUOVA -> ROMA TERMINI) o
- re 17:39
-DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 17:35:15 - 17:40:45\nTreni coinvolti nella chius
- ura:\n  - TRENO 8623 (TORINO PORTA NUOVA -> ROMA TERMINI) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (50% tratta RAPALLO -> CHIAVARI\; pe
- dale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione ZOAGLI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-12448--20261121-S04721@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T181530Z
-DTEND:20261122T182000Z
-SUMMARY:[FERMATA] REG 12448 (SESTRI LEVANTE -> SAVONA) ore 19:19
-DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 19:15:30 - 19:20:00\nTreni coinvolti nella chiusura:\n  
- - REG 12448 (SESTRI LEVANTE -> SAVONA)\nRitardo massimo rilevato: 0 min\nA
- ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
- raria regolare
-LOCATION:Passaggio a Livello / Stazione ZOAGLI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3283--20261121-S04721@pl-tracker.local
-DTSTAMP:20261122T065144Z
+UID:train-3277--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
 SEQUENCE:1
-DTSTART:20261122T191315Z
-DTEND:20261122T191845Z
-SUMMARY:[TRANSITO VELOCE] REG 3283 (GENOVA BRIGNOLE -> PARMA) ore 20:17
+DTSTART:20261122T161748Z
+DTEND:20261122T162318Z
+SUMMARY:[TRANSITO VELOCE] REG 3277 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) 
+ ore 17:22
 DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 20:13:15 - 20:18:45\nTreni coinvolti nella chius
- ura:\n  - REG 3283 (GENOVA BRIGNOLE -> PARMA) [Transito]\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
- ito stimato senza fermata (50% tratta RAPALLO -> CHIAVARI\; pedale annunci
- o fisso Vmax)
+ nChiusura sbarre stimata: 17:17:48 - 17:23:18\nTreni coinvolti nella chius
+ ura:\n  - REG 3277 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) [Transito]\nRit
+ ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Transito stimato senza fermata (51% tratta RAPALLO -> CHIAVARI\; p
+ edale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ZOAGLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -305,17 +492,85 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-518--20261121-S04721@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T193651Z
-DTEND:20261122T194121Z
-SUMMARY:[TRANSITO VELOCE] IC 518 (ROMA TERMINI -> VENTIMIGLIA) ore 20:40
+UID:train-680--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T163057Z
+DTEND:20261122T164148Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:30 - 17:41 (primo: IC 680) (+1 min
+ )
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: CHIUSURA CONTINU
+ A - 3 TRENI\nChiusura sbarre stimata: 17:30:57 - 17:41:48\nTreni coinvolti
+  nella chiusura:\n  - IC 680 (LA SPEZIA CENTRALE -> MILANO CENTRALE) [Tran
+ sito]\n  - TRENO 8623 (TORINO PORTA NUOVA -> ROMA TERMINI) (+1m) [Transito
+ ]\n  - TRENO 8623 (TORINO PORTA NUOVA -> ROMA TERMINI) (+1m) [Transito]\nR
+ itardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ZOAGLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-673--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T172003Z
+DTEND:20261122T172433Z
+SUMMARY:[TRANSITO VELOCE] IC 673 (MILANO CENTRALE -> LIVORNO CENTRALE) ore 
+ 18:23
 DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 20:36:51 - 20:41:21\nTreni coinvolti nella chius
- ura:\n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA) [Transito]\nRitardo massimo
+ nChiusura sbarre stimata: 18:20:03 - 18:24:33\nTreni coinvolti nella chius
+ ura:\n  - IC 673 (MILANO CENTRALE -> LIVORNO CENTRALE) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (51% tratta RAPALLO -> CHIAVARI\; pedal
+ e annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ZOAGLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12448--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T181530Z
+DTEND:20261122T182000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:15 - 19:20 (primo: REG 12448)
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 19:15:30 - 19:20:00\nTreni coinvolti
+  nella chiusura:\n  - REG 12448 (SESTRI LEVANTE -> SAVONA)\n  - REG 12448 
+ (SESTRI LEVANTE -> SAVONA)\nRitardo massimo rilevato: 0 min\nAffidabilità
+  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
+ rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
+ stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ZOAGLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-684--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T183057Z
+DTEND:20261122T183527Z
+SUMMARY:[TRANSITO VELOCE] IC 684 (GROSSETO -> MILANO CENTRALE) ore 19:34
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 19:30:57 - 19:35:27\nTreni coinvolti nella chius
+ ura:\n  - IC 684 (GROSSETO -> MILANO CENTRALE) [Transito]\nRitardo massimo
   rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
- sito stimato senza fermata (55% tratta CHIAVARI -> RAPALLO\; pedale annunc
+ sito stimato senza fermata (50% tratta CHIAVARI -> RAPALLO\; pedale annunc
  io fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ZOAGLI
 STATUS:CONFIRMED
@@ -326,60 +581,131 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3287--20261121-S04721@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T201315Z
-DTEND:20261122T201845Z
-SUMMARY:[TRANSITO VELOCE] REG 3287 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) 
- ore 21:17
-DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 21:13:15 - 21:18:45\nTreni coinvolti nella chius
- ura:\n  - REG 3287 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) [Transito]\nRit
- ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Transito stimato senza fermata (50% tratta RAPALLO -> CHIAVARI\; p
- edale annuncio fisso Vmax)
+UID:train-12452--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T184130Z
+DTEND:20261122T184600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:41 - 19:46 (primo: REG 12452)
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 19:41:30 - 19:46:00\nTreni coinvolti
+  nella chiusura:\n  - REG 12452 (SESTRI LEVANTE -> SAVONA)\n  - REG 12452 
+ (SESTRI LEVANTE -> SAVONA)\nRitardo massimo rilevato: 0 min\nAffidabilità
+  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
+ rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
+ stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ZOAGLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3283--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T191318Z
+DTEND:20261122T192433Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:13 - 20:24 (primo: REG 3283)
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 20:13:18 - 20:24:33\nTreni coinvolti
+  nella chiusura:\n  - REG 3283 (GENOVA BRIGNOLE -> PARMA) [Transito]\n  - 
+ REG 3283 (GENOVA BRIGNOLE -> PARMA) [Transito]\n  - IC 679 (MILANO CENTRAL
+ E -> LIVORNO CENTRALE) [Transito]\n  - IC 679 (MILANO CENTRALE -> LIVORNO 
+ CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima
+ : 78%\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo
+  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
+ le (120s)
+LOCATION:Passaggio a Livello / Stazione ZOAGLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-12463--20261121-S04721@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T211330Z
-DTEND:20261122T211800Z
-SUMMARY:[FERMATA] REG 12463 (SAVONA -> SESTRI LEVANTE) ore 22:17
-DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 22:13:30 - 22:18:00\nTreni coinvolti nella chiusura:\n  
- - REG 12463 (SAVONA -> SESTRI LEVANTE)\nRitardo massimo rilevato: 0 min\nA
- ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
- raria regolare
+UID:train-12453--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T200930Z
+DTEND:20261122T201848Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:09 - 21:18 (primo: REG 12453)
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: CHIUSURA CONTINU
+ A - 3 TRENI\nChiusura sbarre stimata: 21:09:30 - 21:18:48\nTreni coinvolti
+  nella chiusura:\n  - REG 12453 (SAVONA -> SESTRI LEVANTE)\n  - REG 12453 
+ (SAVONA -> SESTRI LEVANTE)\n  - REG 3287 (GENOVA BRIGNOLE -> LA SPEZIA CEN
+ TRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 7
+ 8%\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo ut
+ ile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale 
+ (120s)
 LOCATION:Passaggio a Livello / Stazione ZOAGLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-685--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T202503Z
+DTEND:20261122T202933Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:25 - 21:29 (primo: IC 685)
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 21:25:03 - 21:29:33\nTreni coinvolti
+  nella chiusura:\n  - IC 685 (MILANO CENTRALE -> LIVORNO CENTRALE) [Transi
+ to]\n  - IC 685 (MILANO CENTRALE -> LIVORNO CENTRALE) [Transito]\nRitardo 
+ massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ZOAGLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12463--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T211330Z
+DTEND:20261122T211800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:13 - 22:18 (primo: REG 12463)
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 22:13:30 - 22:18:00\nTreni coinvolti
+  nella chiusura:\n  - REG 12463 (SAVONA -> SESTRI LEVANTE)\n  - REG 12463 
+ (SAVONA -> SESTRI LEVANTE)\nRitardo massimo rilevato: 0 min\nAffidabilità
+  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
+ rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
+ stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ZOAGLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3286--20261121-S04721@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T213006Z
-DTEND:20261122T213536Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T212942Z
+DTEND:20261122T213512Z
 SUMMARY:[TRANSITO VELOCE] REG 3286 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) 
- ore 22:34
+ ore 22:33
 DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 22:30:06 - 22:35:36\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 22:29:42 - 22:35:12\nTreni coinvolti nella chius
  ura:\n  - REG 3286 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) [Transito]\nRit
  ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Transito stimato senza fermata (55% tratta CHIAVARI -> RAPALLO\; p
+ istica: Transito stimato senza fermata (50% tratta CHIAVARI -> RAPALLO\; p
  edale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ZOAGLI
 STATUS:CONFIRMED
@@ -390,17 +716,61 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-799--20261121-S04721@pl-tracker.local
-DTSTAMP:20261122T065144Z
+UID:train-687--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
 SEQUENCE:0
-DTSTART:20261122T232730Z
-DTEND:20261122T233200Z
-SUMMARY:[TRANSITO VELOCE] ICN 799 (TORINO PORTA NUOVA -> SALERNO) ore 00:31
+DTSTART:20261122T222303Z
+DTEND:20261122T222733Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:23 - 23:27 (primo: IC 687)
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 23:23:03 - 23:27:33\nTreni coinvolti
+  nella chiusura:\n  - IC 687 (MILANO CENTRALE -> LA SPEZIA CENTRALE) [Tran
+ sito]\n  - IC 687 (MILANO CENTRALE -> LA SPEZIA CENTRALE) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
+  inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ZOAGLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-799--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:1
+DTSTART:20261122T232733Z
+DTEND:20261122T233203Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 00:27 - 00:32 (primo: ICN 799)
+DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 00:27:33 - 00:32:03\nTreni coinvolti
+  nella chiusura:\n  - ICN 799 (TORINO PORTA NUOVA -> SALERNO) [Transito]\n
+   - ICN 799 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
+ a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ZOAGLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:ICN
+END:VEVENT
+BEGIN:VEVENT
+UID:train-796--20261121-S04721@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261123T041057Z
+DTEND:20261123T041527Z
+SUMMARY:[TRANSITO VELOCE] ICN 796 (SALERNO -> TORINO PORTA NUOVA) ore 05:14
 DESCRIPTION:Stazione/PL: ZOAGLI (S04721)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 00:27:30 - 00:32:00\nTreni coinvolti nella chius
- ura:\n  - ICN 799 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRitardo mass
+ nChiusura sbarre stimata: 05:10:57 - 05:15:27\nTreni coinvolti nella chius
+ ura:\n  - ICN 796 (SALERNO -> TORINO PORTA NUOVA) [Transito]\nRitardo mass
  imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (50% tratta RAPALLO -> CHIAVARI\; pedale ann
+ ransito stimato senza fermata (50% tratta CHIAVARI -> RAPALLO\; pedale ann
  uncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ZOAGLI
 STATUS:CONFIRMED

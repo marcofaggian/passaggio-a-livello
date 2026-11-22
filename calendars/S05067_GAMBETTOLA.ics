@@ -9,20 +9,20 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:3a08d527cf5221368b0daf6c5155705147453114a731795b0385ed2f61fa
- 4a70
+X-CONTENT-HASH:13171f5d72e73473af2bfe3279005ccb4ac298780a31fa80cd8a0bf29a15
+ 384d
 BEGIN:VEVENT
 UID:train-3901--20261121-S05067@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T064024Z
-DTEND:20261122T064554Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T064019Z
+DTEND:20261122T064549Z
 SUMMARY:[TRANSITO VELOCE] REG 3901 (BOLOGNA CENTRALE -> ANCONA) ore 07:44
 DESCRIPTION:Stazione/PL: GAMBETTOLA (S05067)\nRegime chiusura: TRANSITO VEL
- OCE\nChiusura sbarre stimata: 07:40:24 - 07:45:54\nTreni coinvolti nella c
+ OCE\nChiusura sbarre stimata: 07:40:19 - 07:45:49\nTreni coinvolti nella c
  hiusura:\n  - REG 3901 (BOLOGNA CENTRALE -> ANCONA) [Transito]\nRitardo ma
  ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
-  Transito stimato senza fermata (52% tratta CESENA -> SAVIGNANO SUL RUBICO
+  Transito stimato senza fermata (51% tratta CESENA -> SAVIGNANO SUL RUBICO
  NE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GAMBETTOLA
 STATUS:CONFIRMED
@@ -33,29 +33,77 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3919--20261121-S05067@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T114530Z
-DTEND:20261122T115000Z
-SUMMARY:[FERMATA] REG 3919 (REGGIO EMILIA -> ANCONA) ore 12:49
-DESCRIPTION:Stazione/PL: GAMBETTOLA (S05067)\nRegime chiusura: FERMATA\nChi
- usura sbarre stimata: 12:45:30 - 12:50:00\nTreni coinvolti nella chiusura:
- \n  - REG 3919 (REGGIO EMILIA -> ANCONA)\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia
-  oraria regolare
+UID:train-17437--20261121-S05067@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T071230Z
+DTEND:20261122T071730Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:12 - 08:17 (primo: REG 17437) (+4 
+ min)
+DESCRIPTION:Stazione/PL: GAMBETTOLA (S05067)\nRegime chiusura: CHIUSURA CON
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 08:12:30 - 08:17:30\nTreni coinv
+ olti nella chiusura:\n  - REG 17437 (BOLOGNA CENTRALE -> RIMINI) (+4m)\n  
+ - REG 17437 (BOLOGNA CENTRALE -> RIMINI) (+4m)\nRitardo massimo rilevato: 
+ 4 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura contin
+ ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+  minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GAMBETTOLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3905--20261121-S05067@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T074504Z
+DTEND:20261122T075034Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:45 - 08:50 (primo: REG 3905)
+DESCRIPTION:Stazione/PL: GAMBETTOLA (S05067)\nRegime chiusura: CHIUSURA CON
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 08:45:04 - 08:50:34\nTreni coinv
+ olti nella chiusura:\n  - REG 3905 (REGGIO EMILIA -> ANCONA) [Transito]\n 
+  - REG 3905 (REGGIO EMILIA -> ANCONA) [Transito]\nRitardo massimo rilevato
+ : -1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
+ tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GAMBETTOLA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3919--20261121-S05067@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T114930Z
+DTEND:20261122T115430Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:49 - 12:54 (primo: REG 3919) (+4 m
+ in)
+DESCRIPTION:Stazione/PL: GAMBETTOLA (S05067)\nRegime chiusura: CHIUSURA CON
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 12:49:30 - 12:54:30\nTreni coinv
+ olti nella chiusura:\n  - REG 3919 (REGGIO EMILIA -> ANCONA) (+4m)\n  - RE
+ G 3919 (REGGIO EMILIA -> ANCONA) (+4m)\nRitardo massimo rilevato: 4 min\nA
+ ffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GAMBETTOLA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3920--20261121-S05067@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T135630Z
 DTEND:20261122T140100Z
 SUMMARY:[FERMATA] REG 3920 (RIMINI -> REGGIO EMILIA) ore 15:00
@@ -74,50 +122,73 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3927--20261121-S05067@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T154024Z
-DTEND:20261122T154554Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T154019Z
+DTEND:20261122T154549Z
 SUMMARY:[TRANSITO VELOCE] REG 3927 (REGGIO EMILIA -> PESARO) ore 16:44
 DESCRIPTION:Stazione/PL: GAMBETTOLA (S05067)\nRegime chiusura: TRANSITO VEL
- OCE\nChiusura sbarre stimata: 16:40:24 - 16:45:54\nTreni coinvolti nella c
+ OCE\nChiusura sbarre stimata: 16:40:19 - 16:45:49\nTreni coinvolti nella c
  hiusura:\n  - REG 3927 (REGGIO EMILIA -> PESARO) [Transito]\nRitardo massi
  mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
- ansito stimato senza fermata (52% tratta CESENA -> SAVIGNANO SUL RUBICONE\
+ ansito stimato senza fermata (51% tratta CESENA -> SAVIGNANO SUL RUBICONE\
  ; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GAMBETTOLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3931--20261121-S05067@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T174219Z
+DTEND:20261122T174749Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:42 - 18:47 (primo: REG 3931)
+DESCRIPTION:Stazione/PL: GAMBETTOLA (S05067)\nRegime chiusura: CHIUSURA CON
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 18:42:19 - 18:47:49\nTreni coinv
+ olti nella chiusura:\n  - REG 3931 (REGGIO EMILIA -> ANCONA) [Transito]\n 
+  - REG 3931 (REGGIO EMILIA -> ANCONA) [Transito]\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GAMBETTOLA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3939--20261121-S05067@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T204024Z
-DTEND:20261122T204554Z
-SUMMARY:[TRANSITO VELOCE] REG 3939 (REGGIO EMILIA -> ANCONA) ore 21:44
-DESCRIPTION:Stazione/PL: GAMBETTOLA (S05067)\nRegime chiusura: TRANSITO VEL
- OCE\nChiusura sbarre stimata: 21:40:24 - 21:45:54\nTreni coinvolti nella c
- hiusura:\n  - REG 3939 (REGGIO EMILIA -> ANCONA) [Transito]\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
- ansito stimato senza fermata (52% tratta CESENA -> SAVIGNANO SUL RUBICONE\
- ; pedale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T204019Z
+DTEND:20261122T204549Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:40 - 21:45 (primo: REG 3939)
+DESCRIPTION:Stazione/PL: GAMBETTOLA (S05067)\nRegime chiusura: CHIUSURA CON
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 21:40:19 - 21:45:49\nTreni coinv
+ olti nella chiusura:\n  - REG 3939 (REGGIO EMILIA -> ANCONA) [Transito]\n 
+  - REG 3939 (REGGIO EMILIA -> ANCONA) [Transito]\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GAMBETTOLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-88291--20261121-S05067@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T214730Z
 DTEND:20261122T215200Z
 SUMMARY:[FERMATA] REG 88291 (REGGIO EMILIA -> RIMINI) ore 22:51

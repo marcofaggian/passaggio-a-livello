@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:fc99208ca4c83f12b89deeb917f9da9eb74d05d57342b212dc3bbdf7debc
- 788b
+X-CONTENT-HASH:8360c9a2631952cbd85be80d0880cb57d18d2dc0d007f595db88543b329a
+ 73f4
 BEGIN:VEVENT
 UID:train-5212--20261121-S11711@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T050730Z
 DTEND:20261122T051200Z
 SUMMARY:[FERMATA] REG 5212 (SAPRI -> NAPOLI CENTRALE) ore 06:11
@@ -33,8 +33,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5214--20261121-S11711@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T052330Z
 DTEND:20261122T052800Z
 SUMMARY:[FERMATA] REG 5214 (SAPRI -> NAPOLI CENTRALE) ore 06:27
@@ -53,8 +53,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5969--20261121-S11711@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T064030Z
 DTEND:20261122T064500Z
 SUMMARY:[FERMATA] REG 5969 (NAPOLI CENTRALE -> SAPRI) ore 07:44
@@ -73,8 +73,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5215--20261121-S11711@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T084430Z
 DTEND:20261122T084900Z
 SUMMARY:[FERMATA] REG 5215 (NAPOLI CENTRALE -> SAPRI) ore 09:48
@@ -92,79 +92,205 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-556--20261121-S11711@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T123615Z
-DTEND:20261122T124100Z
-SUMMARY:[FERMATA] IC 556 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI) ore 
- 13:40
-DESCRIPTION:Stazione/PL: ASCEA (S11711)\nRegime chiusura: FERMATA\nChiusura
-  sbarre stimata: 13:36:15 - 13:41:00\nTreni coinvolti nella chiusura:\n  -
-  IC 556 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI)\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
- ne da traccia oraria regolare
+UID:train-5202--20261121-S11711@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T100000Z
+DTEND:20261122T100730Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:00 - 11:07 (primo: REG 5202) (+19 
+ min)
+DESCRIPTION:Stazione/PL: ASCEA (S11711)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 11:00:00 - 11:07:30\nTreni coinvolti 
+ nella chiusura:\n  - REG 5202 (SAPRI -> NAPOLI CENTRALE) (+19m)\n  - REG 5
+ 202 (SAPRI -> NAPOLI CENTRALE) (+19m)\nRitardo massimo rilevato: 19 min\nA
+ ffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ASCEA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:19
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8863--20261121-S11711@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T103908Z
+DTEND:20261122T104438Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:39 - 11:44 (primo: TRENO 8863) (+1
+ 9 min)
+DESCRIPTION:Stazione/PL: ASCEA (S11711)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 11:39:08 - 11:44:38\nTreni coinvolti 
+ nella chiusura:\n  - TRENO 8863 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRA
+ LE) (+19m) [Transito]\n  - TRENO 8863 (ROMA TERMINI -> REGGIO DI CALABRIA 
+ CENTRALE) (+19m) [Transito]\nRitardo massimo rilevato: 19 min\nAffidabilit
+ à stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ASCEA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:19
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-5655--20261121-S11711@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T124800Z
+DTEND:20261122T125430Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:48 - 13:54 (primo: REG 5655) (+8 m
+ in)
+DESCRIPTION:Stazione/PL: ASCEA (S11711)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 13:48:00 - 13:54:30\nTreni coinvolti 
+ nella chiusura:\n  - REG 5655 (NAPOLI CENTRALE -> PAOLA) (+8m)\n  - REG 56
+ 55 (NAPOLI CENTRALE -> PAOLA) (+8m)\nRitardo massimo rilevato: 8 min\nAffi
+ dabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 tr
+ eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ASCEA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-556--20261121-S11711@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T125809Z
+DTEND:20261122T130239Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:58 - 14:02 (primo: IC 556) (+37 mi
+ n)
+DESCRIPTION:Stazione/PL: ASCEA (S11711)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 13:58:09 - 14:02:39\nTreni coinvolti 
+ nella chiusura:\n  - IC 556 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI) 
+ (+37m) [Transito]\n  - IC 556 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI
+ ) (+37m) [Transito]\nRitardo massimo rilevato: 37 min\nAffidabilità stima
+ : 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
+  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
+ le (120s)
+LOCATION:Passaggio a Livello / Stazione ASCEA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:37
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-1588--20261121-S11711@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T130917Z
+DTEND:20261122T131530Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 14:09 - 14:15 (primo: IC 1588) (+121 
+ min)
+DESCRIPTION:Stazione/PL: ASCEA (S11711)\nRegime chiusura: CHIUSURA CONTINUA
+  - 3 TRENI\nChiusura sbarre stimata: 14:09:17 - 14:15:30\nTreni coinvolti 
+ nella chiusura:\n  - IC 1588 (REGGIO DI CALABRIA CENTRALE -> MILANO CENTRA
+ LE) (+121m) [Transito]\n  - IC 556 (REGGIO DI CALABRIA CENTRALE -> ROMA TE
+ RMINI) (+33m)\n  - IC 556 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI) (+
+ 33m)\nRitardo massimo rilevato: 121 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i p
+ assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ASCEA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:121
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-1588--20261121-S11711@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T132045Z
+DTEND:20261122T132830Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:20 - 14:28 (primo: IC 1588) (+97 m
+ in)
+DESCRIPTION:Stazione/PL: ASCEA (S11711)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 14:20:45 - 14:28:30\nTreni coinvolti 
+ nella chiusura:\n  - IC 1588 (REGGIO DI CALABRIA CENTRALE -> MILANO CENTRA
+ LE) (+97m)\n  - IC 1588 (REGGIO DI CALABRIA CENTRALE -> MILANO CENTRALE) (
+ +97m)\nRitardo massimo rilevato: 97 min\nAffidabilità stima: 99%\nNota no
+ rmativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i p
+ assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ASCEA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:97
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5592--20261121-S11711@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T133330Z
-DTEND:20261122T133800Z
-SUMMARY:[FERMATA] REG 5592 (PAOLA -> NAPOLI CENTRALE) ore 14:37
-DESCRIPTION:Stazione/PL: ASCEA (S11711)\nRegime chiusura: FERMATA\nChiusura
-  sbarre stimata: 14:33:30 - 14:38:00\nTreni coinvolti nella chiusura:\n  -
-  REG 5592 (PAOLA -> NAPOLI CENTRALE)\nRitardo massimo rilevato: 0 min\nAff
- idabilità stima: 90%\nNota normativa/euristica: Previsione da traccia ora
- ria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T134630Z
+DTEND:20261122T135300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:46 - 14:53 (primo: REG 5592) (+14 
+ min)
+DESCRIPTION:Stazione/PL: ASCEA (S11711)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 14:46:30 - 14:53:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 5592 (PAOLA -> NAPOLI CENTRALE) (+14m)\n  - REG 5
+ 592 (PAOLA -> NAPOLI CENTRALE) (+14m)\nRitardo massimo rilevato: 14 min\nA
+ ffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ASCEA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:14
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5580--20261121-S11711@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T144330Z
-DTEND:20261122T144800Z
-SUMMARY:[FERMATA] REG 5580 (COSENZA -> NAPOLI CENTRALE) ore 15:47
-DESCRIPTION:Stazione/PL: ASCEA (S11711)\nRegime chiusura: FERMATA\nChiusura
-  sbarre stimata: 15:43:30 - 15:48:00\nTreni coinvolti nella chiusura:\n  -
-  REG 5580 (COSENZA -> NAPOLI CENTRALE)\nRitardo massimo rilevato: 0 min\nA
- ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
- raria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T151230Z
+DTEND:20261122T151700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:12 - 16:17 (primo: REG 5580) (+29 
+ min)
+DESCRIPTION:Stazione/PL: ASCEA (S11711)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 16:12:30 - 16:17:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 5580 (COSENZA -> NAPOLI CENTRALE) (+29m)\n  - REG
+  5580 (COSENZA -> NAPOLI CENTRALE) (+29m)\nRitardo massimo rilevato: 29 mi
+ n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
+ er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
+ ima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ASCEA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:29
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9623--20261121-S11711@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T160311Z
-DTEND:20261122T160841Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T160247Z
+DTEND:20261122T160817Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9623 (MILANO CENTRALE -> REGGIO DI CALABRIA
   CENTRALE) ore 17:07
 DESCRIPTION:Stazione/PL: ASCEA (S11711)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 17:03:11 - 17:08:41\nTreni coinvolti nella chiusu
+ Chiusura sbarre stimata: 17:02:47 - 17:08:17\nTreni coinvolti nella chiusu
  ra:\n  - TRENO 9623 (MILANO CENTRALE -> REGGIO DI CALABRIA CENTRALE) [Tran
  sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Transito stimato senza fermata (19% tratta VALLO DELLA L
+ mativa/euristica: Transito stimato senza fermata (18% tratta VALLO DELLA L
  UCANIA-CASTELNUOVO -> SAPRI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ASCEA
 STATUS:CONFIRMED
@@ -176,8 +302,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-555--20261121-S11711@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T172615Z
 DTEND:20261122T173100Z
 SUMMARY:[FERMATA] IC 555 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE) ore 
@@ -197,28 +323,52 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5576--20261121-S11711@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T181830Z
 DTEND:20261122T182300Z
-SUMMARY:[FERMATA] REG 5576 (PAOLA -> NAPOLI CENTRALE) ore 19:22
-DESCRIPTION:Stazione/PL: ASCEA (S11711)\nRegime chiusura: FERMATA\nChiusura
-  sbarre stimata: 19:18:30 - 19:23:00\nTreni coinvolti nella chiusura:\n  -
-  REG 5576 (PAOLA -> NAPOLI CENTRALE)\nRitardo massimo rilevato: 0 min\nAff
- idabilità stima: 90%\nNota normativa/euristica: Previsione da traccia ora
- ria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:18 - 19:23 (primo: REG 5576)
+DESCRIPTION:Stazione/PL: ASCEA (S11711)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 19:18:30 - 19:23:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 5576 (PAOLA -> NAPOLI CENTRALE)\n  - REG 5576 (PA
+ OLA -> NAPOLI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità st
+ ima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
+ llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
+ adale (120s)
 LOCATION:Passaggio a Livello / Stazione ASCEA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-561--20261121-S11711@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T192547Z
+DTEND:20261122T193017Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:25 - 20:30 (primo: IC 561)
+DESCRIPTION:Stazione/PL: ASCEA (S11711)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 20:25:47 - 20:30:17\nTreni coinvolti 
+ nella chiusura:\n  - IC 561 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE) 
+ [Transito]\n  - IC 561 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE) [Tran
+ sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
+ mativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pa
+ ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ASCEA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
 UID:train-5208--20261121-S11711@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T195630Z
 DTEND:20261122T200100Z
 SUMMARY:[FERMATA] REG 5208 (SAPRI -> NAPOLI CENTRALE) ore 21:00
@@ -236,9 +386,31 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-5247--20261121-S11711@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T211330Z
+DTEND:20261122T211800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:13 - 22:18 (primo: REG 5247)
+DESCRIPTION:Stazione/PL: ASCEA (S11711)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 22:13:30 - 22:18:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 5247 (NAPOLI CENTRALE -> SAPRI)\n  - REG 5247 (NA
+ POLI CENTRALE -> SAPRI)\nRitardo massimo rilevato: 0 min\nAffidabilità st
+ ima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
+ llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
+ adale (120s)
+LOCATION:Passaggio a Livello / Stazione ASCEA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-1962--20261121-S11711@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T212115Z
 DTEND:20261122T212600Z
 SUMMARY:[FERMATA] ICN 1962 (CATANIA CENTRALE -> MILANO CENTRALE) ore 22:25
@@ -257,8 +429,8 @@ X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5249--20261121-S11711@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T220130Z
 DTEND:20261122T220600Z
 SUMMARY:[FERMATA] REG 5249 (NAPOLI CENTRALE -> SAPRI) ore 23:05

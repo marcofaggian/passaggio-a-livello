@@ -9,17 +9,17 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:f772b08af8c72d89407a2d364ca6296fa4771b8c39385d98914a2595e5a1
- fb42
+X-CONTENT-HASH:6e3b1933420f0a4211edd0982262d2e940bd49a945eaabffad327aedde84
+ 9cda
 BEGIN:VEVENT
 UID:train-23363--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T053809Z
-DTEND:20261122T054339Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T053825Z
+DTEND:20261122T054355Z
 SUMMARY:[TRANSITO VELOCE] REG 23363 (ROMA TERMINI -> BOIANO) ore 06:42
 DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 06:38:09 - 06:43:39\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 06:38:25 - 06:43:55\nTreni coinvolti nella chius
  ura:\n  - REG 23363 (ROMA TERMINI -> BOIANO) [Transito]\nRitardo massimo r
  ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transi
  to stimato senza fermata (52% tratta ROMA TERMINI -> FROSINONE\; pedale an
@@ -34,17 +34,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9304--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T055012Z
-DTEND:20261122T055542Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T055003Z
+DTEND:20261122T055533Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9304 (NAPOLI CENTRALE -> TORINO PORTA NUOVA
  ) ore 06:54
 DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 06:50:12 - 06:55:42\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 06:50:03 - 06:55:33\nTreni coinvolti nella chius
  ura:\n  - TRENO 9304 (NAPOLI CENTRALE -> TORINO PORTA NUOVA) [Transito]\nR
  itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Transito stimato senza fermata (49% tratta FROSINONE -> ROMA TER
+ uristica: Transito stimato senza fermata (48% tratta FROSINONE -> ROMA TER
  MINI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione AVERSA
 STATUS:CONFIRMED
@@ -55,34 +55,39 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-510--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T064315Z
-DTEND:20261122T064800Z
-SUMMARY:[FERMATA] IC 510 (SALERNO -> TORINO PORTA NUOVA) ore 07:47
-DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 07:43:15 - 07:48:00\nTreni coinvolti nella chiusura:\n  
- - IC 510 (SALERNO -> TORINO PORTA NUOVA)\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia
-  oraria regolare
+UID:train-510--20261121-S09006@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T064145Z
+DTEND:20261122T065100Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:41 - 07:51 (primo: IC 510) (+1 min
+ )
+DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 07:41:45 - 07:51:00\nTreni coinvolti
+  nella chiusura:\n  - IC 510 (SALERNO -> TORINO PORTA NUOVA) (+1m) [Arrivo
+ ]\n  - IC 510 (SALERNO -> TORINO PORTA NUOVA) (+1m) [Arrivo]\n  - IC 510 (
+ SALERNO -> TORINO PORTA NUOVA) (+1m) [Partenza]\n  - IC 510 (SALERNO -> TO
+ RINO PORTA NUOVA) (+1m) [Partenza]\nRitardo massimo rilevato: 1 min\nAffid
+ abilità stima: 99%\nNota normativa/euristica: Chiusura continua per 4 tre
+ ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
+ gombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AVERSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-703--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T065806Z
-DTEND:20261122T070236Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T065826Z
+DTEND:20261122T070256Z
 SUMMARY:[TRANSITO VELOCE] IC 703 (ROMA TERMINI -> BARI CENTRALE) ore 08:01
 DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 07:58:06 - 08:02:36\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 07:58:26 - 08:02:56\nTreni coinvolti nella chius
  ura:\n  - IC 703 (ROMA TERMINI -> BARI CENTRALE) [Transito]\nRitardo massi
  mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
  ansito stimato senza fermata (52% tratta ROMA TERMINI -> FROSINONE\; pedal
@@ -97,51 +102,58 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-701--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T070515Z
-DTEND:20261122T071641Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 08:05 - 08:16 (primo: IC 701)
+DTEND:20261122T071909Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 08:05 - 08:19 (primo: IC 701) (+23 mi
+ n)
 DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 08:05:15 - 08:16:41\nTreni coinvolti
+ A - 6 TRENI\nChiusura sbarre stimata: 08:05:15 - 08:19:09\nTreni coinvolti
   nella chiusura:\n  - IC 701 (ROMA TERMINI -> TARANTO)\n  - REG 21143 (NAP
- OLI CENTRALE -> CASERTA) [Transito]\n  - REG 12727 (ROMA TERMINI -> MINTUR
- NO-SCAURI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stim
- a: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: intervall
- o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
- ale (120s)
+ OLI CENTRALE -> CASERTA) [Transito]\n  - REG 21143 (NAPOLI CENTRALE -> CAS
+ ERTA) [Transito]\n  - REG 12727 (ROMA TERMINI -> MINTURNO-SCAURI) [Transit
+ o]\n  - TRENO 8333 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE) (+23m) [T
+ ransito]\n  - TRENO 8333 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE) (+2
+ 3m) [Transito]\nRitardo massimo rilevato: 23 min\nAffidabilità stima: 78%
+ \nNota normativa/euristica: Chiusura continua per 6 treni: intervallo util
+ e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
+ 20s)
 LOCATION:Passaggio a Livello / Stazione AVERSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:23
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21143--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T072530Z
-DTEND:20261122T073000Z
-SUMMARY:[FERMATA] REG 21143 (NAPOLI CENTRALE -> CASERTA) ore 08:29
-DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 08:25:30 - 08:30:00\nTreni coinvolti nella chiusura:\n  
- - REG 21143 (NAPOLI CENTRALE -> CASERTA)\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia
-  oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T072730Z
+DTEND:20261122T073400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:27 - 08:34 (primo: REG 21143) (+3 
+ min)
+DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 08:27:30 - 08:34:00\nTreni coinvolti
+  nella chiusura:\n  - REG 21143 (NAPOLI CENTRALE -> CASERTA) (+3m)\n  - RE
+ G 21143 (NAPOLI CENTRALE -> CASERTA) (+3m)\nRitardo massimo rilevato: 3 mi
+ n\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua p
+ er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
+ ima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AVERSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21059--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T080550Z
 DTEND:20261122T081120Z
 SUMMARY:[TRANSITO VELOCE] REG 21059 (ROMA TERMINI -> NAPOLI CENTRALE) ore 0
@@ -162,8 +174,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-590--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T083315Z
 DTEND:20261122T083800Z
 SUMMARY:[FERMATA] IC 590 (SALERNO -> MILANO CENTRALE) ore 09:37
@@ -181,40 +193,106 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-21059--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T090430Z
-DTEND:20261122T091403Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:04 - 10:14 (primo: REG 21059)
+UID:train-8863--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T084206Z
+DTEND:20261122T084736Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:42 - 09:47 (primo: TRENO 8863) (+1
+ 9 min)
 DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 10:04:30 - 10:14:03\nTreni coinvolti
-  nella chiusura:\n  - REG 21059 (ROMA TERMINI -> NAPOLI CENTRALE)\n  - TRE
- NO 9505 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo massimo rilevato:
-  0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
- nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
- a minima di sgombero stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 09:42:06 - 09:47:36\nTreni coinvolti
+  nella chiusura:\n  - TRENO 8863 (ROMA TERMINI -> REGGIO DI CALABRIA CENTR
+ ALE) (+19m) [Transito]\n  - TRENO 8863 (ROMA TERMINI -> REGGIO DI CALABRIA
+  CENTRALE) (+19m) [Transito]\nRitardo massimo rilevato: 19 min\nAffidabili
+ tà stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: i
+ ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AVERSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:19
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21059--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T090430Z
+DTEND:20261122T090900Z
+SUMMARY:[FERMATA] REG 21059 (ROMA TERMINI -> NAPOLI CENTRALE) ore 10:08
+DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 10:04:30 - 10:09:00\nTreni coinvolti nella chiusura:\n  
+ - REG 21059 (ROMA TERMINI -> NAPOLI CENTRALE)\nRitardo massimo rilevato: 0
+  min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tr
+ accia oraria regolare
+LOCATION:Passaggio a Livello / Stazione AVERSA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-9505--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T091840Z
+DTEND:20261122T092410Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:18 - 10:24 (primo: TRENO 9505)
+DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 10:18:40 - 10:24:10\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9505 (MILANO CENTRALE -> SALERNO) [Transito]\n
+   - TRENO 9505 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo massimo ri
+ levato: -5 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
+ ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
+ la soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AVERSA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9511--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T093337Z
+DTEND:20261122T093907Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:33 - 10:39 (primo: TRENO 9511)
+DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 10:33:37 - 10:39:07\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) [Transito]\n  
+ - TRENO 9511 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massimo rileva
+ to: -3 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
+ ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AVERSA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
 UID:train-8335--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T095508Z
-DTEND:20261122T100038Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T095722Z
+DTEND:20261122T100252Z
 SUMMARY:[TRANSITO VELOCE] TRENO 8335 (ROMA TERMINI -> NAPOLI CENTRALE) ore 
- 10:59
+ 11:01
 DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 10:55:08 - 11:00:38\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 10:57:22 - 11:02:52\nTreni coinvolti nella chius
  ura:\n  - TRENO 8335 (ROMA TERMINI -> NAPOLI CENTRALE) [Transito]\nRitardo
   massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Transito stimato senza fermata (70% tratta ROMA TERMINI -> NAPOLI AFRA
+ ca: Transito stimato senza fermata (74% tratta ROMA TERMINI -> NAPOLI AFRA
  GOLA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione AVERSA
 STATUS:CONFIRMED
@@ -225,120 +303,174 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9607--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T101801Z
-DTEND:20261122T102840Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:18 - 11:28 (primo: TRENO 9607)
+UID:train-21070--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T101847Z
+DTEND:20261122T102851Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:18 - 11:28 (primo: REG 21070) (+1 
+ min)
 DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 11:18:01 - 11:28:40\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9607 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [
- Transito]\n  - REG 21070 (NAPOLI CENTRALE -> ROMA TERMINI) [Transito]\n  -
-  TRENO 9604 (BRESCIA -> NAPOLI CENTRALE) [Transito]\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
- ontinua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+ A - 3 TRENI\nChiusura sbarre stimata: 11:18:47 - 11:28:51\nTreni coinvolti
+  nella chiusura:\n  - REG 21070 (NAPOLI CENTRALE -> ROMA TERMINI) [Transit
+ o]\n  - TRENO 9607 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) (+1m) [Transito
+ ]\n  - TRENO 9607 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) (+1m) [Transito]
+ \nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Chiusura continua per 3 treni: intervallo utile tra i passagg
+ i (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AVERSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9604--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T103207Z
+DTEND:20261122T104800Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:32 - 11:48 (primo: TRENO 9604) (+2
+  min)
+DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 11:32:07 - 11:48:00\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9604 (BRESCIA -> NAPOLI CENTRALE) (+2m) [Trans
+ ito]\n  - TRENO 9604 (BRESCIA -> NAPOLI CENTRALE) (+2m) [Transito]\n  - RE
+ G 21070 (NAPOLI CENTRALE -> ROMA TERMINI)\n  - IC 550 (REGGIO DI CALABRIA 
+ CENTRALE -> ROMA TERMINI)\nRitardo massimo rilevato: 2 min\nAffidabilità 
+ stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: inter
+ vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
+ tradale (120s)
+LOCATION:Passaggio a Livello / Stazione AVERSA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9515--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T103152Z
-DTEND:20261122T103722Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9515 (MILANO CENTRALE -> SALERNO) ore 11:36
+UID:train-21063--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T110423Z
+DTEND:20261122T110953Z
+SUMMARY:[TRANSITO VELOCE] REG 21063 (ROMA TERMINI -> NAPOLI CENTRALE) ore 1
+ 2:08
 DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 11:31:52 - 11:37:22\nTreni coinvolti nella chius
- ura:\n  - TRENO 9515 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (70% tratta ROMA TERMINI -> NAPOLI AFRAGOLA\
- ; pedale annuncio fisso Vmax)
+ nChiusura sbarre stimata: 12:04:23 - 12:09:53\nTreni coinvolti nella chius
+ ura:\n  - REG 21063 (ROMA TERMINI -> NAPOLI CENTRALE) [Transito]\nRitardo 
+ massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Transito stimato senza fermata (45% tratta FORMIA-GAETA -> MINTURNO-SCA
+ URI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione AVERSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-21070--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T103930Z
-DTEND:20261122T104800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:39 - 11:48 (primo: REG 21070)
+UID:train-9611--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T111750Z
+DTEND:20261122T112320Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:17 - 12:23 (primo: TRENO 9611)
 DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 11:39:30 - 11:48:00\nTreni coinvolti
-  nella chiusura:\n  - REG 21070 (NAPOLI CENTRALE -> ROMA TERMINI)\n  - IC 
- 550 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
- tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
- lia minima di sgombero stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 12:17:50 - 12:23:20\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9611 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [
+ Transito]\n  - TRENO 9611 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transit
+ o]\nRitardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
+ aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AVERSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-21063--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T110422Z
-DTEND:20261122T111914Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:04 - 12:19 (primo: REG 21063)
+UID:train-501--20261121-S09006@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T112545Z
+DTEND:20261122T113400Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 12:25 - 12:34 (primo: IC 501) (+18 mi
+ n)
 DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 12:04:22 - 12:19:14\nTreni coinvolti
-  nella chiusura:\n  - REG 21063 (ROMA TERMINI -> NAPOLI CENTRALE) [Transit
- o]\n  - IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE)\n  - TRENO 9611 (TORINO
-  PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua 
- per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
- nima di sgombero stradale (120s)
+ A - 5 TRENI\nChiusura sbarre stimata: 12:25:45 - 12:34:00\nTreni coinvolti
+  nella chiusura:\n  - IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) (+18m) [A
+ rrivo]\n  - IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) (+18m) [Arrivo]\n  
+ - TRENO 9613 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\n  - IC 501 (
+ SESTRI LEVANTE -> NAPOLI CENTRALE) (+18m) [Partenza]\n  - IC 501 (SESTRI L
+ EVANTE -> NAPOLI CENTRALE) (+18m) [Partenza]\nRitardo massimo rilevato: 18
+  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
+ a per 5 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
+ minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AVERSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:18
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9613--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T112517Z
-DTEND:20261122T113805Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:25 - 12:38 (primo: TRENO 9613)
+UID:train-9515--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T113621Z
+DTEND:20261122T114151Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:36 - 12:41 (primo: TRENO 9515) (+5
+ 8 min)
 DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 12:25:17 - 12:38:05\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9613 (MILANO CENTRALE -> NAPOLI CENTRALE) [Tra
- nsito]\n  - TRENO 9519 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (107s) 
- inferiore alla soglia minima di sgombero stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 12:36:21 - 12:41:51\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9515 (MILANO CENTRALE -> SALERNO) (+58m) [Tran
+ sito]\n  - TRENO 9515 (MILANO CENTRALE -> SALERNO) (+58m) [Transito]\nRita
+ rdo massimo rilevato: 58 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AVERSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:58
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9519--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T114628Z
+DTEND:20261122T115158Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:46 - 12:51 (primo: TRENO 9519) (+5
+  min)
+DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 12:46:28 - 12:51:58\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9519 (TORINO PORTA NUOVA -> SALERNO) (+5m) [Tr
+ ansito]\n  - TRENO 9519 (TORINO PORTA NUOVA -> SALERNO) (+5m) [Transito]\n
+ Ritardo massimo rilevato: 5 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
+ (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AVERSA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21063--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T115430Z
 DTEND:20261122T115900Z
 SUMMARY:[FERMATA] REG 21063 (ROMA TERMINI -> NAPOLI CENTRALE) ore 12:58
@@ -357,52 +489,86 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21065--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T120822Z
-DTEND:20261122T121600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:08 - 13:16 (primo: REG 21065)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T120823Z
+DTEND:20261122T121500Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 13:08 - 13:15 (primo: REG 21065) (+3 
+ min)
 DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 13:08:22 - 13:16:00\nTreni coinvolti
+ A - 3 TRENI\nChiusura sbarre stimata: 13:08:23 - 13:15:00\nTreni coinvolti
   nella chiusura:\n  - REG 21065 (ROMA TERMINI -> NAPOLI CENTRALE) [Transit
- o]\n  - IC 596 (NAPOLI CENTRALE -> MILANO CENTRALE)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+ o]\n  - IC 95057 (ROMA TERMINI -> VILLA S.GIOVANNI) (+3m)\n  - IC 95057 (R
+ OMA TERMINI -> VILLA S.GIOVANNI) (+3m)\nRitardo massimo rilevato: 3 min\nA
+ ffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AVERSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-552--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T123615Z
-DTEND:20261122T124632Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:36 - 13:46 (primo: IC 552)
+UID:train-596--20261121-S09006@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T121915Z
+DTEND:20261122T122730Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 13:19 - 13:27 (primo: IC 596) (+10 mi
+ n)
 DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 13:36:15 - 13:46:32\nTreni coinvolti
-  nella chiusura:\n  - IC 552 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI)
- \n  - TRENO 9409 (GORIZIA CENTRALE -> NAPOLI CENTRALE) [Transito]\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (2s) in
- feriore alla soglia minima di sgombero stradale (120s)
+ A - 4 TRENI\nChiusura sbarre stimata: 13:19:15 - 13:27:30\nTreni coinvolti
+  nella chiusura:\n  - IC 596 (NAPOLI CENTRALE -> MILANO CENTRALE) (+10m) [
+ Arrivo]\n  - IC 596 (NAPOLI CENTRALE -> MILANO CENTRALE) (+10m) [Arrivo]\n
+   - IC 596 (NAPOLI CENTRALE -> MILANO CENTRALE) (+10m) [Partenza]\n  - IC 
+ 596 (NAPOLI CENTRALE -> MILANO CENTRALE) (+10m) [Partenza]\nRitardo massim
+ o rilevato: 10 min\nAffidabilità stima: 99%\nNota normativa/euristica: Ch
+ iusura continua per 4 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AVERSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:10
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
+UID:train-9391--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T123024Z
+DTEND:20261122T124523Z
+SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 13:30 - 13:45 (primo: TRENO 9391) (+1
+  min)
+DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
+ A - 8 TRENI\nChiusura sbarre stimata: 13:30:24 - 13:45:23\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9391 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [
+ Transito]\n  - TRENO 9391 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transit
+ o]\n  - IC 552 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI) (+1m) [Arrivo
+ ]\n  - IC 552 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI) (+1m) [Arrivo]
+ \n  - IC 552 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI) (+1m) [Partenza
+ ]\n  - IC 552 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI) (+1m) [Partenz
+ a]\n  - TRENO 9409 (GORIZIA CENTRALE -> NAPOLI CENTRALE) [Transito]\n  - T
+ RENO 9409 (GORIZIA CENTRALE -> NAPOLI CENTRALE) [Transito]\nRitardo massim
+ o rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
+ usura continua per 8 treni: intervallo utile tra i passaggi (0s) inferiore
+  alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AVERSA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
 UID:train-21065--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T125430Z
 DTEND:20261122T125900Z
 SUMMARY:[FERMATA] REG 21065 (ROMA TERMINI -> NAPOLI CENTRALE) ore 13:58
@@ -421,17 +587,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9311--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T132206Z
-DTEND:20261122T132736Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T132501Z
+DTEND:20261122T133031Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9311 (TORINO PORTA NUOVA -> NAPOLI CENTRALE
- ) ore 14:26
+ ) ore 14:29
 DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 14:22:06 - 14:27:36\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 14:25:01 - 14:30:31\nTreni coinvolti nella chius
  ura:\n  - TRENO 9311 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\nR
  itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Transito stimato senza fermata (70% tratta ROMA TERMINI -> NAPOL
+ uristica: Transito stimato senza fermata (74% tratta ROMA TERMINI -> NAPOL
  I AFRAGOLA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione AVERSA
 STATUS:CONFIRMED
@@ -443,16 +609,16 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9527--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T133152Z
-DTEND:20261122T133722Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9527 (MILANO CENTRALE -> SALERNO) ore 14:36
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T133433Z
+DTEND:20261122T134003Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9527 (MILANO CENTRALE -> SALERNO) ore 14:38
 DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 14:31:52 - 14:37:22\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 14:34:33 - 14:40:03\nTreni coinvolti nella chius
  ura:\n  - TRENO 9527 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo mass
  imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (70% tratta ROMA TERMINI -> NAPOLI AFRAGOLA\
+ ransito stimato senza fermata (74% tratta ROMA TERMINI -> NAPOLI AFRAGOLA\
  ; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione AVERSA
 STATUS:CONFIRMED
@@ -464,17 +630,17 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9623--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T135541Z
-DTEND:20261122T140111Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T135831Z
+DTEND:20261122T140401Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9623 (MILANO CENTRALE -> REGGIO DI CALABRIA
-  CENTRALE) ore 14:59
+  CENTRALE) ore 15:02
 DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 14:55:41 - 15:01:11\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 14:58:31 - 15:04:01\nTreni coinvolti nella chius
  ura:\n  - TRENO 9623 (MILANO CENTRALE -> REGGIO DI CALABRIA CENTRALE) [Tra
  nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Transito stimato senza fermata (70% tratta ROMA TERMINI
+ rmativa/euristica: Transito stimato senza fermata (74% tratta ROMA TERMINI
   -> NAPOLI AFRAGOLA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione AVERSA
 STATUS:CONFIRMED
@@ -486,16 +652,16 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21151--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T140822Z
-DTEND:20261122T141352Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T140747Z
+DTEND:20261122T141317Z
 SUMMARY:[TRANSITO VELOCE] REG 21151 (NAPOLI CENTRALE -> CASERTA) ore 15:12
 DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 15:08:22 - 15:13:52\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 15:07:47 - 15:13:17\nTreni coinvolti nella chius
  ura:\n  - REG 21151 (NAPOLI CENTRALE -> CASERTA) [Transito]\nRitardo massi
  mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
- ansito stimato senza fermata (66% tratta NAPOLI CENTRALE -> CASORIA-AFRAGO
+ ansito stimato senza fermata (60% tratta NAPOLI CENTRALE -> CASORIA-AFRAGO
  LA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione AVERSA
 STATUS:CONFIRMED
@@ -507,8 +673,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21151--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T142730Z
 DTEND:20261122T143200Z
 SUMMARY:[FERMATA] REG 21151 (NAPOLI CENTRALE -> CASERTA) ore 15:31
@@ -526,104 +692,122 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-556--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T144315Z
-DTEND:20261122T144800Z
-SUMMARY:[FERMATA] IC 556 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI) ore 
- 15:47
-DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 15:43:15 - 15:48:00\nTreni coinvolti nella chiusura:\n  
- - IC 556 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
- one da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione AVERSA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
 UID:train-21092--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T145330Z
-DTEND:20261122T145800Z
-SUMMARY:[FERMATA] REG 21092 (NAPOLI CENTRALE -> ROMA TERMINI) ore 15:57
-DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 15:53:30 - 15:58:00\nTreni coinvolti nella chiusura:\n  
- - REG 21092 (NAPOLI CENTRALE -> ROMA TERMINI)\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tr
- accia oraria regolare
-LOCATION:Passaggio a Livello / Stazione AVERSA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-555--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T150515Z
 DTEND:20261122T151000Z
-SUMMARY:[FERMATA] IC 555 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE) ore 
- 16:09
-DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 16:05:15 - 16:10:00\nTreni coinvolti nella chiusura:\n  
- - IC 555 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
- one da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione AVERSA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8317--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:0
-DTSTART:20261122T152411Z
-DTEND:20261122T154800Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:24 - 16:48 (primo: TRENO 8317)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:53 - 16:10 (primo: REG 21092) (+27
+  min)
 DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
- A - 4 TRENI\nChiusura sbarre stimata: 16:24:11 - 16:48:00\nTreni coinvolti
-  nella chiusura:\n  - TRENO 8317 (ROMA TERMINI -> LECCE) [Transito]\n  - I
- C 583 (MILANO CENTRALE -> NAPOLI CENTRALE)\n  - TRENO 9535 (TORINO PORTA N
- UOVA -> NAPOLI CENTRALE) [Transito]\n  - IC 95072 (MESSINA CENTRALE -> ROM
- A TERMINI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
- a normativa/euristica: Chiusura continua per 4 treni: intervallo utile tra
-  i passaggi (56s) inferiore alla soglia minima di sgombero stradale (120s)
+ A - 4 TRENI\nChiusura sbarre stimata: 15:53:30 - 16:10:00\nTreni coinvolti
+  nella chiusura:\n  - REG 21092 (NAPOLI CENTRALE -> ROMA TERMINI)\n  - TRE
+ NO 9413 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) (+27m) [Transito]\n  - TRENO 
+ 9413 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) (+27m) [Transito]\n  - IC 555 (R
+ OMA TERMINI -> REGGIO DI CALABRIA CENTRALE)\nRitardo massimo rilevato: 27 
+ min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua
+  per 4 treni: intervallo utile tra i passaggi (7s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AVERSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:27
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-556--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T152015Z
+DTEND:20261122T152500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:20 - 16:25 (primo: IC 556) (+37 mi
+ n)
+DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 16:20:15 - 16:25:00\nTreni coinvolti
+  nella chiusura:\n  - IC 556 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI)
+  (+37m)\n  - IC 556 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI) (+37m)\n
+ Ritardo massimo rilevato: 37 min\nAffidabilità stima: 90%\nNota normativa
+ /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
+  (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AVERSA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:37
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-583--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T153015Z
+DTEND:20261122T155200Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 16:30 - 16:52 (primo: IC 583) (+121 m
+ in)
+DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
+ A - 5 TRENI\nChiusura sbarre stimata: 16:30:15 - 16:52:00\nTreni coinvolti
+  nella chiusura:\n  - IC 583 (MILANO CENTRALE -> NAPOLI CENTRALE)\n  - TRE
+ NO 8317 (ROMA TERMINI -> LECCE) [Transito]\n  - TRENO 9535 (TORINO PORTA N
+ UOVA -> NAPOLI CENTRALE) [Transito]\n  - IC 1588 (REGGIO DI CALABRIA CENTR
+ ALE -> MILANO CENTRALE) (+121m)\n  - IC 1588 (REGGIO DI CALABRIA CENTRALE 
+ -> MILANO CENTRALE) (+121m)\nRitardo massimo rilevato: 121 min\nAffidabili
+ tà stima: 78%\nNota normativa/euristica: Chiusura continua per 5 treni: i
+ ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AVERSA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:121
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9539--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T160654Z
+DTEND:20261122T162446Z
+SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 17:06 - 17:24 (primo: TRENO 9539) (+2
+ 9 min)
+DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
+ A - 8 TRENI\nChiusura sbarre stimata: 17:06:54 - 17:24:46\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE) [Tra
+ nsito]\n  - TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\n  
+ - IC 95072 (MESSINA CENTRALE -> ROMA TERMINI) (+29m)\n  - IC 95072 (MESSIN
+ A CENTRALE -> ROMA TERMINI) (+29m)\n  - TRENO 9631 (MILANO CENTRALE -> NAP
+ OLI CENTRALE) (+1m) [Transito]\n  - TRENO 9631 (MILANO CENTRALE -> NAPOLI 
+ CENTRALE) (+1m) [Transito]\n  - TRENO 8419 (VENEZIA S.LUCIA -> REGGIO DI C
+ ALABRIA CENTRALE) (+6m) [Transito]\n  - TRENO 8419 (VENEZIA S.LUCIA -> REG
+ GIO DI CALABRIA CENTRALE) (+6m) [Transito]\nRitardo massimo rilevato: 29 m
+ in\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua 
+ per 8 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
+ nima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AVERSA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+X-PL-DELAY-MIN:29
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9539--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T161138Z
-DTEND:20261122T162009Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:11 - 17:20 (primo: TRENO 9539)
+UID:train-8343--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T164936Z
+DTEND:20261122T165506Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:49 - 17:55 (primo: TRENO 8343)
 DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 17:11:38 - 17:20:09\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE) [Tra
- nsito]\n  - TRENO 9631 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
- s) inferiore alla soglia minima di sgombero stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 17:49:36 - 17:55:06\nTreni coinvolti
+  nella chiusura:\n  - TRENO 8343 (ROMA TERMINI -> NAPOLI CENTRALE) [Transi
+ to]\n  - TRENO 8343 (ROMA TERMINI -> NAPOLI CENTRALE) [Transito]\nRitardo 
+ massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AVERSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -633,76 +817,56 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8343--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T164715Z
-DTEND:20261122T165245Z
-SUMMARY:[TRANSITO VELOCE] TRENO 8343 (ROMA TERMINI -> NAPOLI CENTRALE) ore 
- 17:51
-DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 17:47:15 - 17:52:45\nTreni coinvolti nella chius
- ura:\n  - TRENO 8343 (ROMA TERMINI -> NAPOLI CENTRALE) [Transito]\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Transito stimato senza fermata (70% tratta ROMA TERMINI -> NAPOLI AFRA
- GOLA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AVERSA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
 UID:train-21081--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T170422Z
-DTEND:20261122T170952Z
-SUMMARY:[TRANSITO VELOCE] REG 21081 (ROMA TERMINI -> NAPOLI CENTRALE) ore 1
- 8:08
-DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 18:04:22 - 18:09:52\nTreni coinvolti nella chius
- ura:\n  - REG 21081 (ROMA TERMINI -> NAPOLI CENTRALE) [Transito]\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Transito stimato senza fermata (45% tratta FORMIA-GAETA -> MINTURNO-SCA
- URI\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AVERSA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9639--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T172417Z
-DTEND:20261122T173722Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 18:24 - 18:37 (primo: TRENO 9639)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T170423Z
+DTEND:20261122T171000Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 18:04 - 18:10 (primo: REG 21081)
 DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 18:24:17 - 18:37:22\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9639 (MILANO CENTRALE -> REGGIO DI CALABRIA CE
- NTRALE) [Transito]\n  - TRENO 9421 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [T
- ransito]\n  - TRENO 9543 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
- tica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
+ A - 3 TRENI\nChiusura sbarre stimata: 18:04:23 - 18:10:00\nTreni coinvolti
+  nella chiusura:\n  - REG 21081 (ROMA TERMINI -> NAPOLI CENTRALE) [Transit
+ o]\n  - IC 561 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE)\n  - IC 561 (
+ ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua
+  per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AVERSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9639--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T172502Z
+DTEND:20261122T174003Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 18:25 - 18:40 (primo: TRENO 9639)
+DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 18:25:02 - 18:40:03\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9639 (MILANO CENTRALE -> REGGIO DI CALABRIA CE
+ NTRALE) [Transito]\n  - TRENO 9639 (MILANO CENTRALE -> REGGIO DI CALABRIA 
+ CENTRALE) [Transito]\n  - TRENO 9421 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) 
+ [Transito]\n  - TRENO 9543 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRit
+ ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AVERSA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21081--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T175430Z
 DTEND:20261122T175900Z
 SUMMARY:[FERMATA] REG 21081 (ROMA TERMINI -> NAPOLI CENTRALE) ore 18:58
@@ -721,15 +885,244 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9643--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T182335Z
-DTEND:20261122T183414Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:23 - 19:34 (primo: TRENO 9643)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T182818Z
+DTEND:20261122T183903Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 19:28 - 19:39 (primo: TRENO 9643) (+3
+  min)
 DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 19:23:35 - 19:34:14\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9643 (MILANO CENTRALE -> NAPOLI CENTRALE) [Tra
- nsito]\n  - TRENO 9425 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Transito]\nRi
+ A - 4 TRENI\nChiusura sbarre stimata: 19:28:18 - 19:39:03\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9643 (MILANO CENTRALE -> NAPOLI CENTRALE) (+2m
+ ) [Transito]\n  - TRENO 9643 (MILANO CENTRALE -> NAPOLI CENTRALE) (+2m) [T
+ ransito]\n  - TRENO 9425 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) (+3m) [Trans
+ ito]\n  - TRENO 9425 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) (+3m) [Transito]
+ \nRitardo massimo rilevato: 3 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Chiusura continua per 4 treni: intervallo utile tra i passagg
+ i (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AVERSA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9547--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T184114Z
+DTEND:20261122T184644Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9547 (MILANO CENTRALE -> TARANTO) ore 19:45
+DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 19:41:14 - 19:46:44\nTreni coinvolti nella chius
+ ura:\n  - TRENO 9547 (MILANO CENTRALE -> TARANTO) [Transito]\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
+ ransito stimato senza fermata (74% tratta ROMA TERMINI -> NAPOLI AFRAGOLA\
+ ; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione AVERSA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9647--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T192245Z
+DTEND:20261122T192815Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:22 - 20:28 (primo: TRENO 9647)
+DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 20:22:45 - 20:28:15\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9647 (MILANO CENTRALE -> FOGGIA) [Transito]\n 
+  - TRENO 9647 (MILANO CENTRALE -> FOGGIA) [Transito]\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
+ continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AVERSA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9551--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T193433Z
+DTEND:20261122T194800Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:34 - 20:48 (primo: TRENO 9551) (+1
+ 1 min)
+DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 20:34:33 - 20:48:00\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9551 (MILANO CENTRALE -> SALERNO) [Transito]\n
+   - TRENO 9427 (VENEZIA S.LUCIA -> SALERNO) (+11m) [Transito]\n  - TRENO 9
+ 427 (VENEZIA S.LUCIA -> SALERNO) (+11m) [Transito]\n  - IC 560 (REGGIO DI 
+ CALABRIA CENTRALE -> ROMA TERMINI)\nRitardo massimo rilevato: 11 min\nAffi
+ dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 tr
+ eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AVERSA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:11
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21038--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T200330Z
+DTEND:20261122T201223Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 21:03 - 21:12 (primo: REG 21038)
+DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
+ A - 5 TRENI\nChiusura sbarre stimata: 21:03:30 - 21:12:23\nTreni coinvolti
+  nella chiusura:\n  - REG 21038 (NAPOLI CENTRALE -> ROMA TERMINI)\n  - REG
+  21038 (NAPOLI CENTRALE -> ROMA TERMINI)\n  - REG 21209 (NAPOLI CENTRALE -
+ > BENEVENTO) [Transito]\n  - REG 21172 (CASERTA -> NAPOLI CENTRALE) [Trans
+ ito]\n  - REG 21172 (CASERTA -> NAPOLI CENTRALE) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 5 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AVERSA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21172--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T202430Z
+DTEND:20261122T203200Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 21:24 - 21:32 (primo: REG 21172)
+DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 21:24:30 - 21:32:00\nTreni coinvolti
+  nella chiusura:\n  - REG 21172 (CASERTA -> NAPOLI CENTRALE)\n  - REG 2117
+ 2 (CASERTA -> NAPOLI CENTRALE)\n  - TRENO 9325 (TORINO PORTA NUOVA -> NAPO
+ LI CENTRALE) [Transito]\n  - REG 21209 (NAPOLI CENTRALE -> BENEVENTO)\nRit
+ ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AVERSA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9555--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T203448Z
+DTEND:20261122T204018Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9555 (MILANO CENTRALE -> BATTIPAGLIA) ore 2
+ 1:39
+DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 21:34:48 - 21:40:18\nTreni coinvolti nella chius
+ ura:\n  - TRENO 9555 (MILANO CENTRALE -> BATTIPAGLIA) [Transito]\nRitardo 
+ massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Transito stimato senza fermata (74% tratta ROMA TERMINI -> NAPOLI AFRAG
+ OLA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione AVERSA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-796--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T205615Z
+DTEND:20261122T210640Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:56 - 22:06 (primo: ICN 796)
+DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
+ A - 3 TRENI\nChiusura sbarre stimata: 21:56:15 - 22:06:40\nTreni coinvolti
+  nella chiusura:\n  - ICN 796 (SALERNO -> TORINO PORTA NUOVA)\n  - ICN 195
+ 5 (ROMA TERMINI -> CATANIA CENTRALE) [Transito]\n  - ICN 1955 (ROMA TERMIN
+ I -> CATANIA CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffida
+ bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 tren
+ i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
+ ombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AVERSA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:ICN
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9653--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T211533Z
+DTEND:20261122T212103Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:15 - 22:21 (primo: TRENO 9653)
+DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 22:15:33 - 22:21:03\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9653 (MILANO CENTRALE -> SALERNO) [Transito]\n
+   - TRENO 9653 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
+ a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione AVERSA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9657--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T212618Z
+DTEND:20261122T213148Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9657 (MILANO CENTRALE -> NAPOLI CENTRALE) o
+ re 22:30
+DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 22:26:18 - 22:31:48\nTreni coinvolti nella chius
+ ura:\n  - TRENO 9657 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Transito stimato senza fermata (74% tratta ROMA TERMINI -> NAPOLI A
+ FRAGOLA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione AVERSA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9435--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T221202Z
+DTEND:20261122T221732Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:12 - 23:17 (primo: TRENO 9435)
+DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 23:12:02 - 23:17:32\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9435 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Tra
+ nsito]\n  - TRENO 9435 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Transito]\nRi
  tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
  ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
  s) inferiore alla soglia minima di sgombero stradale (120s)
@@ -742,148 +1135,20 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9547--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T183812Z
-DTEND:20261122T184342Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9547 (MILANO CENTRALE -> TARANTO) ore 19:42
-DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 19:38:12 - 19:43:42\nTreni coinvolti nella chius
- ura:\n  - TRENO 9547 (MILANO CENTRALE -> TARANTO) [Transito]\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (70% tratta ROMA TERMINI -> NAPOLI AFRAGOLA\
- ; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AVERSA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9647--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T191124Z
-DTEND:20261122T191654Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9647 (MILANO CENTRALE -> FOGGIA) ore 20:15
-DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 20:11:24 - 20:16:54\nTreni coinvolti nella chius
- ura:\n  - TRENO 9647 (MILANO CENTRALE -> FOGGIA) [Transito]\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
- ansito stimato senza fermata (47% tratta ROMA TERMINI -> CASERTA\; pedale 
- annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AVERSA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9551--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T193152Z
-DTEND:20261122T193722Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9551 (MILANO CENTRALE -> SALERNO) ore 20:36
-DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 20:31:52 - 20:37:22\nTreni coinvolti nella chius
- ura:\n  - TRENO 9551 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (70% tratta ROMA TERMINI -> NAPOLI AFRAGOLA\
- ; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AVERSA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-560--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
+UID:train-812--20261121-S09006@pl-tracker.local
+DTSTAMP:20261122T150820Z
 SEQUENCE:0
-DTSTART:20261122T194315Z
-DTEND:20261122T194800Z
-SUMMARY:[FERMATA] IC 560 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI) ore 
- 20:47
-DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 20:43:15 - 20:48:00\nTreni coinvolti nella chiusura:\n  
- - IC 560 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
- one da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione AVERSA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-21209--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T200702Z
-DTEND:20261122T201232Z
-SUMMARY:[TRANSITO VELOCE] REG 21209 (NAPOLI CENTRALE -> BENEVENTO) ore 21:1
- 1
-DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 21:07:02 - 21:12:32\nTreni coinvolti nella chius
- ura:\n  - REG 21209 (NAPOLI CENTRALE -> BENEVENTO) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Transito stimato senza fermata (66% tratta NAPOLI CENTRALE -> CASORIA-AFRA
- GOLA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AVERSA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9325--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T202206Z
-DTEND:20261122T203740Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:22 - 21:37 (primo: TRENO 9325)
+DTSTART:20261123T033111Z
+DTEND:20261123T033541Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 04:31 - 04:35 (primo: ICN 812)
 DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 21:22:06 - 21:37:40\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9325 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [
- Transito]\n  - REG 21209 (NAPOLI CENTRALE -> BENEVENTO)\n  - TRENO 9555 (M
- ILANO CENTRALE -> BATTIPAGLIA) [Transito]\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
- r 3 treni: intervallo utile tra i passaggi (10s) inferiore alla soglia min
- ima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione AVERSA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-796--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T205615Z
-DTEND:20261122T210438Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:56 - 22:04 (primo: ICN 796)
-DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 21:56:15 - 22:04:38\nTreni coinvolti
-  nella chiusura:\n  - ICN 796 (SALERNO -> TORINO PORTA NUOVA)\n  - ICN 195
- 5 (ROMA TERMINI -> CATANIA CENTRALE) [Transito]\nRitardo massimo rilevato:
-  0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
- nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
- a minima di sgombero stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 04:31:11 - 04:35:41\nTreni coinvolti
+  nella chiusura:\n  - ICN 812 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA
+  NUOVA) [Transito]\n  - ICN 812 (REGGIO DI CALABRIA CENTRALE -> TORINO POR
+ TA NUOVA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima
+ : 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
+  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
+ le (120s)
 LOCATION:Passaggio a Livello / Stazione AVERSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -893,102 +1158,39 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9653--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T211344Z
-DTEND:20261122T211914Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9653 (MILANO CENTRALE -> SALERNO) ore 22:17
-DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 22:13:44 - 22:19:14\nTreni coinvolti nella chius
- ura:\n  - TRENO 9653 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (82% tratta ROMA TERMINI -> NAPOLI CENTRALE\
- ; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AVERSA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9657--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T212335Z
-DTEND:20261122T212905Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9657 (MILANO CENTRALE -> NAPOLI CENTRALE) o
- re 22:27
-DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 22:23:35 - 22:29:05\nTreni coinvolti nella chius
- ura:\n  - TRENO 9657 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (70% tratta ROMA TERMINI -> NAPOLI A
- FRAGOLA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AVERSA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9435--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T220917Z
-DTEND:20261122T221447Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9435 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) o
- re 23:13
-DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 23:09:17 - 23:14:47\nTreni coinvolti nella chius
- ura:\n  - TRENO 9435 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (70% tratta ROMA TERMINI -> NAPOLI A
- FRAGOLA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione AVERSA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
 UID:train-799--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261123T065215Z
 DTEND:20261123T065700Z
-SUMMARY:[FERMATA] ICN 799 (TORINO PORTA NUOVA -> SALERNO) ore 07:56
-DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 07:52:15 - 07:57:00\nTreni coinvolti nella chiusura:\n  
- - ICN 799 (TORINO PORTA NUOVA -> SALERNO)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
- a oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:52 - 07:57 (primo: ICN 799)
+DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 07:52:15 - 07:57:00\nTreni coinvolti
+  nella chiusura:\n  - ICN 799 (TORINO PORTA NUOVA -> SALERNO)\n  - ICN 799
+  (TORINO PORTA NUOVA -> SALERNO)\nRitardo massimo rilevato: 0 min\nAffidab
+ ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione AVERSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-797--20261121-S09006@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261123T071414Z
-DTEND:20261123T071844Z
-SUMMARY:[TRANSITO VELOCE] ICN 797 (TORINO PORTA NUOVA -> SALERNO) ore 08:17
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261123T071727Z
+DTEND:20261123T072157Z
+SUMMARY:[TRANSITO VELOCE] ICN 797 (TORINO PORTA NUOVA -> SALERNO) ore 08:20
 DESCRIPTION:Stazione/PL: AVERSA (S09006)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 08:14:14 - 08:18:44\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 08:17:27 - 08:21:57\nTreni coinvolti nella chius
  ura:\n  - ICN 797 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRitardo mass
  imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (84% tratta ROMA TIBURTINA -> NAPOLI CENTRAL
+ ransito stimato senza fermata (86% tratta ROMA TIBURTINA -> NAPOLI CENTRAL
  E\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione AVERSA
 STATUS:CONFIRMED

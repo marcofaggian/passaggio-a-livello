@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:7fc14871ec87ad198a837e07c061d002bbc95c5148f8c6a3a264dff25c3b
- fede
+X-CONTENT-HASH:a29af38f2bd52b4224afd1c0ebf186d82062de3b6abd3ab8ad841cc55f07
+ 1594
 BEGIN:VEVENT
 UID:train-3902--20261121-S07107@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T040730Z
 DTEND:20261122T041200Z
 SUMMARY:[FERMATA] REG 3902 (ANCONA -> REGGIO EMILIA) ore 05:11
@@ -33,28 +33,31 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3906--20261121-S07107@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T060830Z
-DTEND:20261122T061300Z
-SUMMARY:[FERMATA] REG 3906 (ANCONA -> REGGIO EMILIA) ore 07:12
-DESCRIPTION:Stazione/PL: MAROTTA-MONDOLFO (S07107)\nRegime chiusura: FERMAT
- A\nChiusura sbarre stimata: 07:08:30 - 07:13:00\nTreni coinvolti nella chi
- usura:\n  - REG 3906 (ANCONA -> REGGIO EMILIA)\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
- raccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T061130Z
+DTEND:20261122T061830Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:11 - 07:18 (primo: REG 3906) (+5 m
+ in)
+DESCRIPTION:Stazione/PL: MAROTTA-MONDOLFO (S07107)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:11:30 - 07:18:30\nTreni
+  coinvolti nella chiusura:\n  - REG 3906 (ANCONA -> REGGIO EMILIA) (+5m)\n
+   - REG 3906 (ANCONA -> REGGIO EMILIA) (+5m)\nRitardo massimo rilevato: 5 
+ min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua
+  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MAROTTA-MONDOLFO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3908--20261121-S07107@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T071030Z
 DTEND:20261122T071500Z
 SUMMARY:[FERMATA] REG 3908 (ANCONA -> REGGIO EMILIA) ore 08:14
@@ -73,8 +76,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3901--20261121-S07107@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T074130Z
 DTEND:20261122T074600Z
 SUMMARY:[FERMATA] REG 3901 (BOLOGNA CENTRALE -> ANCONA) ore 08:45
@@ -93,29 +96,98 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-604--20261121-S07107@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T075618Z
-DTEND:20261122T080048Z
-SUMMARY:[TRANSITO VELOCE] IC 604 (PESCARA -> MILANO CENTRALE) ore 08:59
-DESCRIPTION:Stazione/PL: MAROTTA-MONDOLFO (S07107)\nRegime chiusura: TRANSI
- TO VELOCE\nChiusura sbarre stimata: 08:56:18 - 09:00:48\nTreni coinvolti n
- ella chiusura:\n  - IC 604 (PESCARA -> MILANO CENTRALE) [Transito]\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Transito stimato senza fermata (45% tratta SENIGALLIA -> FANO\; pedal
- e annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T075937Z
+DTEND:20261122T080407Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:59 - 09:04 (primo: IC 604) (+88 mi
+ n)
+DESCRIPTION:Stazione/PL: MAROTTA-MONDOLFO (S07107)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:59:37 - 09:04:07\nTreni
+  coinvolti nella chiusura:\n  - IC 604 (PESCARA -> MILANO CENTRALE) (+88m)
+  [Transito]\n  - IC 604 (PESCARA -> MILANO CENTRALE) (+88m) [Transito]\nRi
+ tardo massimo rilevato: 88 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MAROTTA-MONDOLFO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:88
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
+UID:train-3905--20261121-S07107@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T084400Z
+DTEND:20261122T085100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:44 - 09:51 (primo: REG 3905) (+4 m
+ in)
+DESCRIPTION:Stazione/PL: MAROTTA-MONDOLFO (S07107)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:44:00 - 09:51:00\nTreni
+  coinvolti nella chiusura:\n  - REG 3905 (REGGIO EMILIA -> ANCONA) (+4m)\n
+   - REG 3905 (REGGIO EMILIA -> ANCONA) (+4m)\nRitardo massimo rilevato: 4 
+ min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua
+  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MAROTTA-MONDOLFO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-603--20261121-S07107@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T085921Z
+DTEND:20261122T090351Z
+SUMMARY:[TRANSITO VELOCE] IC 603 (MILANO CENTRALE -> LECCE) ore 10:02
+DESCRIPTION:Stazione/PL: MAROTTA-MONDOLFO (S07107)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 09:59:21 - 10:03:51\nTreni coinvolti n
+ ella chiusura:\n  - IC 603 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo 
+ massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (53% tratta FANO -> SENIGALLIA\; pedale
+  annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MAROTTA-MONDOLFO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3914--20261121-S07107@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T100930Z
+DTEND:20261122T101630Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:09 - 11:16 (primo: REG 3914) (+5 m
+ in)
+DESCRIPTION:Stazione/PL: MAROTTA-MONDOLFO (S07107)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:09:30 - 11:16:30\nTreni
+  coinvolti nella chiusura:\n  - REG 3914 (ANCONA -> REGGIO EMILIA) (+5m)\n
+   - REG 3914 (ANCONA -> REGGIO EMILIA) (+5m)\nRitardo massimo rilevato: 5 
+ min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua
+  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MAROTTA-MONDOLFO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-3913--20261121-S07107@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T114130Z
 DTEND:20261122T114600Z
 SUMMARY:[FERMATA] REG 3913 (REGGIO EMILIA -> ANCONA) ore 12:45
@@ -134,8 +206,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3918--20261121-S07107@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T120630Z
 DTEND:20261122T121100Z
 SUMMARY:[FERMATA] REG 3918 (ANCONA -> REGGIO EMILIA) ore 13:10
@@ -153,34 +225,39 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3919--20261121-S07107@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T130630Z
-DTEND:20261122T131100Z
-SUMMARY:[FERMATA] REG 3919 (REGGIO EMILIA -> ANCONA) ore 14:10
-DESCRIPTION:Stazione/PL: MAROTTA-MONDOLFO (S07107)\nRegime chiusura: FERMAT
- A\nChiusura sbarre stimata: 14:06:30 - 14:11:00\nTreni coinvolti nella chi
- usura:\n  - REG 3919 (REGGIO EMILIA -> ANCONA)\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
- raccia oraria regolare
+UID:train-3919--20261121-S07107@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T130530Z
+DTEND:20261122T131330Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 14:05 - 14:13 (primo: REG 3919) (+2 m
+ in)
+DESCRIPTION:Stazione/PL: MAROTTA-MONDOLFO (S07107)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 14:05:30 - 14:13:30\nTreni
+  coinvolti nella chiusura:\n  - REG 3919 (REGGIO EMILIA -> ANCONA) (+2m) [
+ Arrivo]\n  - REG 3919 (REGGIO EMILIA -> ANCONA) (+2m) [Arrivo]\n  - REG 39
+ 19 (REGGIO EMILIA -> ANCONA) (+2m) [Partenza]\n  - REG 3919 (REGGIO EMILIA
+  -> ANCONA) (+2m) [Partenza]\nRitardo massimo rilevato: 2 min\nAffidabilit
+ à stima: 99%\nNota normativa/euristica: Chiusura continua per 4 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MAROTTA-MONDOLFO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-610--20261121-S07107@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T135618Z
-DTEND:20261122T140048Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T135617Z
+DTEND:20261122T140047Z
 SUMMARY:[TRANSITO VELOCE] IC 610 (LECCE -> BOLZANO) ore 14:59
 DESCRIPTION:Stazione/PL: MAROTTA-MONDOLFO (S07107)\nRegime chiusura: TRANSI
- TO VELOCE\nChiusura sbarre stimata: 14:56:18 - 15:00:48\nTreni coinvolti n
+ TO VELOCE\nChiusura sbarre stimata: 14:56:17 - 15:00:47\nTreni coinvolti n
  ella chiusura:\n  - IC 610 (LECCE -> BOLZANO) [Transito]\nRitardo massimo 
  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
  ito stimato senza fermata (45% tratta SENIGALLIA -> FANO\; pedale annuncio
@@ -194,14 +271,37 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
+UID:train-1763--20261121-S07107@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T150430Z
+DTEND:20261122T151130Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:04 - 16:11 (primo: REG 1763) (+6 m
+ in)
+DESCRIPTION:Stazione/PL: MAROTTA-MONDOLFO (S07107)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:04:30 - 16:11:30\nTreni
+  coinvolti nella chiusura:\n  - REG 1763 (BOLOGNA CENTRALE -> ANCONA) (+6m
+ )\n  - REG 1763 (BOLOGNA CENTRALE -> ANCONA) (+6m)\nRitardo massimo rileva
+ to: 6 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura co
+ ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MAROTTA-MONDOLFO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-1728--20261121-S07107@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T151640Z
-DTEND:20261122T152210Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T151638Z
+DTEND:20261122T152208Z
 SUMMARY:[TRANSITO VELOCE] REG 1728 (PESCARA -> BOLOGNA CENTRALE) ore 16:20
 DESCRIPTION:Stazione/PL: MAROTTA-MONDOLFO (S07107)\nRegime chiusura: TRANSI
- TO VELOCE\nChiusura sbarre stimata: 16:16:40 - 16:22:10\nTreni coinvolti n
+ TO VELOCE\nChiusura sbarre stimata: 16:16:38 - 16:22:08\nTreni coinvolti n
  ella chiusura:\n  - REG 1728 (PESCARA -> BOLOGNA CENTRALE) [Transito]\nRit
  ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
  istica: Transito stimato senza fermata (45% tratta SENIGALLIA -> FANO\; pe
@@ -215,14 +315,36 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-1546--20261121-S07107@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T153017Z
+DTEND:20261122T153447Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:30 - 16:34 (primo: IC 1546)
+DESCRIPTION:Stazione/PL: MAROTTA-MONDOLFO (S07107)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:30:17 - 16:34:47\nTreni
+  coinvolti nella chiusura:\n  - IC 1546 (LECCE -> MILANO CENTRALE) [Transi
+ to]\n  - IC 1546 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
+ a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MAROTTA-MONDOLFO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
 UID:train-612--20261121-S07107@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T155618Z
-DTEND:20261122T160048Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T155617Z
+DTEND:20261122T160047Z
 SUMMARY:[TRANSITO VELOCE] IC 612 (LECCE -> MILANO CENTRALE) ore 16:59
 DESCRIPTION:Stazione/PL: MAROTTA-MONDOLFO (S07107)\nRegime chiusura: TRANSI
- TO VELOCE\nChiusura sbarre stimata: 16:56:18 - 17:00:48\nTreni coinvolti n
+ TO VELOCE\nChiusura sbarre stimata: 16:56:17 - 17:00:47\nTreni coinvolti n
  ella chiusura:\n  - IC 612 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo 
  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
  a: Transito stimato senza fermata (45% tratta SENIGALLIA -> FANO\; pedale 
@@ -237,13 +359,13 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2494--20261121-S07107@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T172100Z
-DTEND:20261122T172630Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T172059Z
+DTEND:20261122T172629Z
 SUMMARY:[TRANSITO VELOCE] REG 2494 (PESCARA -> REGGIO EMILIA) ore 18:25
 DESCRIPTION:Stazione/PL: MAROTTA-MONDOLFO (S07107)\nRegime chiusura: TRANSI
- TO VELOCE\nChiusura sbarre stimata: 18:21:00 - 18:26:30\nTreni coinvolti n
+ TO VELOCE\nChiusura sbarre stimata: 18:20:59 - 18:26:29\nTreni coinvolti n
  ella chiusura:\n  - REG 2494 (PESCARA -> REGGIO EMILIA) [Transito]\nRitard
  o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
  ica: Transito stimato senza fermata (45% tratta SENIGALLIA -> FANO\; pedal
@@ -258,8 +380,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3929--20261121-S07107@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T174530Z
 DTEND:20261122T175000Z
 SUMMARY:[FERMATA] REG 3929 (REGGIO EMILIA -> ANCONA) ore 18:49
@@ -278,8 +400,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3930--20261121-S07107@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T180630Z
 DTEND:20261122T181100Z
 SUMMARY:[FERMATA] REG 3930 (ANCONA -> REGGIO EMILIA) ore 19:10
@@ -297,41 +419,89 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3932--20261121-S07107@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T201030Z
-DTEND:20261122T201500Z
-SUMMARY:[FERMATA] REG 3932 (ANCONA -> BOLOGNA CENTRALE) ore 21:14
-DESCRIPTION:Stazione/PL: MAROTTA-MONDOLFO (S07107)\nRegime chiusura: FERMAT
- A\nChiusura sbarre stimata: 21:10:30 - 21:15:00\nTreni coinvolti nella chi
- usura:\n  - REG 3932 (ANCONA -> BOLOGNA CENTRALE)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
- a traccia oraria regolare
+UID:train-3931--20261121-S07107@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T184130Z
+DTEND:20261122T184600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:41 - 19:46 (primo: REG 3931)
+DESCRIPTION:Stazione/PL: MAROTTA-MONDOLFO (S07107)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:41:30 - 19:46:00\nTreni
+  coinvolti nella chiusura:\n  - REG 3931 (REGGIO EMILIA -> ANCONA)\n  - RE
+ G 3931 (REGGIO EMILIA -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidab
+ ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MAROTTA-MONDOLFO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-613--20261121-S07107@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T190353Z
+DTEND:20261122T190823Z
+SUMMARY:[TRANSITO VELOCE] IC 613 (MILANO CENTRALE -> PESCARA) ore 20:07 (+1
+ 0 min)
+DESCRIPTION:Stazione/PL: MAROTTA-MONDOLFO (S07107)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 20:03:53 - 20:08:23\nTreni coinvolti n
+ ella chiusura:\n  - IC 613 (MILANO CENTRALE -> PESCARA) (+10m) [Transito]\
+ nRitardo massimo rilevato: 10 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Transito stimato senza fermata (53% tratta FANO -> SENIGALLIA
+ \; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MAROTTA-MONDOLFO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:10
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3932--20261121-S07107@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T201030Z
+DTEND:20261122T201500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:10 - 21:15 (primo: REG 3932)
+DESCRIPTION:Stazione/PL: MAROTTA-MONDOLFO (S07107)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:10:30 - 21:15:00\nTreni
+  coinvolti nella chiusura:\n  - REG 3932 (ANCONA -> BOLOGNA CENTRALE)\n  -
+  REG 3932 (ANCONA -> BOLOGNA CENTRALE)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MAROTTA-MONDOLFO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3939--20261121-S07107@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T214130Z
 DTEND:20261122T214600Z
-SUMMARY:[FERMATA] REG 3939 (REGGIO EMILIA -> ANCONA) ore 22:45
-DESCRIPTION:Stazione/PL: MAROTTA-MONDOLFO (S07107)\nRegime chiusura: FERMAT
- A\nChiusura sbarre stimata: 22:41:30 - 22:46:00\nTreni coinvolti nella chi
- usura:\n  - REG 3939 (REGGIO EMILIA -> ANCONA)\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
- raccia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:41 - 22:46 (primo: REG 3939)
+DESCRIPTION:Stazione/PL: MAROTTA-MONDOLFO (S07107)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:41:30 - 22:46:00\nTreni
+  coinvolti nella chiusura:\n  - REG 3939 (REGGIO EMILIA -> ANCONA)\n  - RE
+ G 3939 (REGGIO EMILIA -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidab
+ ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MAROTTA-MONDOLFO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

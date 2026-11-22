@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:7b7dd4402b8464b902fdfbadca97d21af6cc4460b2dacd25d8dd993c555b
- 9456
+X-CONTENT-HASH:89b161d517fae697e5434d246de1ae82a4953e388510ca34ba0e65cfc9ea
+ 2c19
 BEGIN:VEVENT
 UID:train-2814--20261120-S01430@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:4
+DTSTAMP:20261122T150820Z
+SEQUENCE:5
 DTSTART:20261121T081500Z
 DTEND:20261121T081930Z
 SUMMARY:[FERMATA] REG 2814 (MILANO CENTRALE -> SONDRIO) ore 09:18
@@ -32,29 +32,120 @@ X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2820--20261121-S01430@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T111530Z
-DTEND:20261122T112000Z
-SUMMARY:[FERMATA] REG 2820 (MILANO CENTRALE -> TIRANO) ore 12:19
+UID:train-2832--20261120-S01430@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261121T171730Z
+DTEND:20261121T172200Z
+SUMMARY:[FERMATA] REG 2832 (SONDRIO -> TIRANO) ore 18:21 (+1 min)
 DESCRIPTION:Stazione/PL: SONDRIO (S01430)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 12:15:30 - 12:20:00\nTreni coinvolti nella chiusura:\n 
-  - REG 2820 (MILANO CENTRALE -> TIRANO)\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia 
- oraria regolare
+ ra sbarre stimata: 18:17:30 - 18:22:00\nTreni coinvolti nella chiusura:\n 
+  - REG 2832 (SONDRIO -> TIRANO) (+1m)\nRitardo massimo rilevato: 1 min\nAf
+ fidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale da cir
+ cuito di binario
 LOCATION:Passaggio a Livello / Stazione SONDRIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2820--20261121-S01430@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T111630Z
+DTEND:20261122T112400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:16 - 12:24 (primo: REG 2820) (+3 m
+ in)
+DESCRIPTION:Stazione/PL: SONDRIO (S01430)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 12:16:30 - 12:24:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 2820 (MILANO CENTRALE -> TIRANO) (+3m)\n  - REG
+  2820 (MILANO CENTRALE -> TIRANO) (+3m)\nRitardo massimo rilevato: 3 min\n
+ Affidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 
+ 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
+  di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SONDRIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2822--20261121-S01430@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T121530Z
+DTEND:20261122T122230Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:15 - 13:22 (primo: REG 2822) (+2 m
+ in)
+DESCRIPTION:Stazione/PL: SONDRIO (S01430)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 13:15:30 - 13:22:30\nTreni coinvolt
+ i nella chiusura:\n  - REG 2822 (MILANO CENTRALE -> TIRANO) (+2m)\n  - REG
+  2822 (MILANO CENTRALE -> TIRANO) (+2m)\nRitardo massimo rilevato: 2 min\n
+ Affidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 
+ 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
+  di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SONDRIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10362--20261121-S01430@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T130900Z
+DTEND:20261122T131330Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:09 - 14:13 (primo: REG 10362)
+DESCRIPTION:Stazione/PL: SONDRIO (S01430)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 14:09:00 - 14:13:30\nTreni coinvolt
+ i nella chiusura:\n  - REG 10362 (MILANO PORTA GARIBALDI -> SONDRIO)\n  - 
+ REG 10362 (MILANO PORTA GARIBALDI -> SONDRIO)\nRitardo massimo rilevato: -
+ 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura contin
+ ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+  minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SONDRIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2833--20261121-S01430@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T143830Z
+DTEND:20261122T144530Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:38 - 15:45 (primo: REG 2833) (+5 m
+ in)
+DESCRIPTION:Stazione/PL: SONDRIO (S01430)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 15:38:30 - 15:45:30\nTreni coinvolt
+ i nella chiusura:\n  - REG 2833 (TIRANO -> MILANO CENTRALE) (+5m)\n  - REG
+  2833 (TIRANO -> MILANO CENTRALE) (+5m)\nRitardo massimo rilevato: 5 min\n
+ Affidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 
+ 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
+  di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SONDRIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2830--20261121-S01430@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T161530Z
 DTEND:20261122T162000Z
 SUMMARY:[FERMATA] REG 2830 (MILANO CENTRALE -> TIRANO) ore 17:19
@@ -73,8 +164,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10370--20261121-S01430@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T170930Z
 DTEND:20261122T171400Z
 SUMMARY:[FERMATA] REG 10370 (MILANO PORTA GARIBALDI -> SONDRIO) ore 18:13
@@ -92,21 +183,67 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2842--20261121-S01430@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T221630Z
-DTEND:20261122T222100Z
-SUMMARY:[FERMATA] REG 2842 (MILANO CENTRALE -> SONDRIO) ore 23:20
-DESCRIPTION:Stazione/PL: SONDRIO (S01430)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 23:16:30 - 23:21:00\nTreni coinvolti nella chiusura:\n 
-  - REG 2842 (MILANO CENTRALE -> SONDRIO)\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia
-  oraria regolare
+UID:train-2834--20261121-S01430@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T181530Z
+DTEND:20261122T182000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:15 - 19:20 (primo: REG 2834)
+DESCRIPTION:Stazione/PL: SONDRIO (S01430)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 19:15:30 - 19:20:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 2834 (MILANO CENTRALE -> TIRANO)\n  - REG 2834 
+ (MILANO CENTRALE -> TIRANO)\nRitardo massimo rilevato: 0 min\nAffidabilit
+ à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SONDRIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10374--20261121-S01430@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T190930Z
+DTEND:20261122T191400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:09 - 20:14 (primo: REG 10374)
+DESCRIPTION:Stazione/PL: SONDRIO (S01430)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 20:09:30 - 20:14:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 10374 (MILANO PORTA GARIBALDI -> SONDRIO)\n  - 
+ REG 10374 (MILANO PORTA GARIBALDI -> SONDRIO)\nRitardo massimo rilevato: 0
+  min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continu
+ a per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
+ minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SONDRIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2842--20261121-S01430@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T221630Z
+DTEND:20261122T222100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:16 - 23:21 (primo: REG 2842)
+DESCRIPTION:Stazione/PL: SONDRIO (S01430)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 23:16:30 - 23:21:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 2842 (MILANO CENTRALE -> SONDRIO)\n  - REG 2842
+  (MILANO CENTRALE -> SONDRIO)\nRitardo massimo rilevato: 0 min\nAffidabili
+ tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
+ ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SONDRIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

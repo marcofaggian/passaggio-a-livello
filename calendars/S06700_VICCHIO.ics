@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:ffac7a2dc2c8f3d69325c963f19f1bdd35f9425616e041c061977d8d0702
- 1c9d
+X-CONTENT-HASH:e10f9115453901634b1dfde999b6e35c709fc752e3a1ebf43927ae66603d
+ 27d8
 BEGIN:VEVENT
 UID:train-18939--20261121-S06700@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T075230Z
 DTEND:20261122T075700Z
 SUMMARY:[FERMATA] REG 18939 (FIRENZE SANTA MARIA NOVELLA -> BORGO S.LORENZO
@@ -33,51 +33,102 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18961--20261121-S06700@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T155230Z
-DTEND:20261122T155700Z
-SUMMARY:[FERMATA] REG 18961 (FIRENZE SANTA MARIA NOVELLA -> BORGO S.LORENZO
- ) ore 16:56
-DESCRIPTION:Stazione/PL: VICCHIO (S06700)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 16:52:30 - 16:57:00\nTreni coinvolti nella chiusura:\n 
-  - REG 18961 (FIRENZE SANTA MARIA NOVELLA -> BORGO S.LORENZO)\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: 
- Previsione da traccia oraria regolare
+UID:train-18964--20261121-S06700@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T144830Z
+DTEND:20261122T145300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:48 - 15:53 (primo: REG 18964) (+3 
+ min)
+DESCRIPTION:Stazione/PL: VICCHIO (S06700)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 15:48:30 - 15:53:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 18964 (BORGO S.LORENZO -> FIRENZE SANTA MARIA N
+ OVELLA) (+3m) [Arrivo]\n  - REG 18964 (BORGO S.LORENZO -> FIRENZE SANTA MA
+ RIA NOVELLA) (+3m) [Arrivo]\nRitardo massimo rilevato: 3 min\nAffidabilit
+ à stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VICCHIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18964--20261121-S06700@pl-tracker.local-dep
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T145700Z
+DTEND:20261122T150130Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:57 - 16:01 (primo: REG 18964) (+3 
+ min)
+DESCRIPTION:Stazione/PL: VICCHIO (S06700)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 15:57:00 - 16:01:30\nTreni coinvolt
+ i nella chiusura:\n  - REG 18964 (BORGO S.LORENZO -> FIRENZE SANTA MARIA N
+ OVELLA) (+3m) [Partenza]\n  - REG 18964 (BORGO S.LORENZO -> FIRENZE SANTA 
+ MARIA NOVELLA) (+3m) [Partenza]\nRitardo massimo rilevato: 3 min\nAffidabi
+ lità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni:
+  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VICCHIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18961--20261121-S06700@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T155330Z
+DTEND:20261122T155800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:53 - 16:58 (primo: REG 18961) (+1 
+ min)
+DESCRIPTION:Stazione/PL: VICCHIO (S06700)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 16:53:30 - 16:58:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 18961 (FIRENZE SANTA MARIA NOVELLA -> BORGO S.L
+ ORENZO) (+1m)\n  - REG 18961 (FIRENZE SANTA MARIA NOVELLA -> BORGO S.LOREN
+ ZO) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 90%\nNota
+  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
+ i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VICCHIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18965--20261121-S06700@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T165230Z
 DTEND:20261122T165700Z
-SUMMARY:[FERMATA] REG 18965 (FIRENZE SANTA MARIA NOVELLA -> BORGO S.LORENZO
- ) ore 17:56
-DESCRIPTION:Stazione/PL: VICCHIO (S06700)\nRegime chiusura: FERMATA\nChiusu
- ra sbarre stimata: 17:52:30 - 17:57:00\nTreni coinvolti nella chiusura:\n 
-  - REG 18965 (FIRENZE SANTA MARIA NOVELLA -> BORGO S.LORENZO)\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: 
- Previsione da traccia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:52 - 17:57 (primo: REG 18965)
+DESCRIPTION:Stazione/PL: VICCHIO (S06700)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 17:52:30 - 17:57:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 18965 (FIRENZE SANTA MARIA NOVELLA -> BORGO S.L
+ ORENZO)\n  - REG 18965 (FIRENZE SANTA MARIA NOVELLA -> BORGO S.LORENZO)\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/e
+ uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VICCHIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18981--20261121-S06700@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T204930Z
 DTEND:20261122T205400Z
 SUMMARY:[FERMATA] REG 18981 (FIRENZE SANTA MARIA NOVELLA -> BORGO S.LORENZO

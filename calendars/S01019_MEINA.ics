@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:c1827bbff52578cd4aa563dbff59eab459b450bd7476f73437c7f103fe06
- 2f66
+X-CONTENT-HASH:4d86514a47a9f03ebebe87491da6c112f71fcb90f88280e90a982d774ffd
+ 17ce
 BEGIN:VEVENT
 UID:train-10216--20261121-S01019@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T074530Z
 DTEND:20261122T075000Z
 SUMMARY:[FERMATA] REG 10216 (MILANO PORTA GARIBALDI -> DOMODOSSOLA) ore 08:
@@ -34,38 +34,40 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10204--20261121-S01019@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T114530Z
-DTEND:20261122T115000Z
-SUMMARY:[FERMATA] REG 10204 (MILANO PORTA GARIBALDI -> DOMODOSSOLA) ore 12:
- 49
-DESCRIPTION:Stazione/PL: MEINA (S01019)\nRegime chiusura: FERMATA\nChiusura
-  sbarre stimata: 12:45:30 - 12:50:00\nTreni coinvolti nella chiusura:\n  -
-  REG 10204 (MILANO PORTA GARIBALDI -> DOMODOSSOLA)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
- da traccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T114930Z
+DTEND:20261122T115500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:49 - 12:55 (primo: REG 10204) (+4 
+ min)
+DESCRIPTION:Stazione/PL: MEINA (S01019)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 12:49:30 - 12:55:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 10204 (MILANO PORTA GARIBALDI -> DOMODOSSOLA) (+4
+ m)\n  - REG 10204 (MILANO PORTA GARIBALDI -> DOMODOSSOLA) (+4m)\nRitardo m
+ assimo rilevato: 4 min\nAffidabilità stima: 99%\nNota normativa/euristica
+ : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MEINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2430--20261121-S01019@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T152236Z
-DTEND:20261122T152806Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T152250Z
+DTEND:20261122T152820Z
 SUMMARY:[TRANSITO VELOCE] REG 2430 (MILANO CENTRALE -> DOMODOSSOLA) ore 16:
- 26
+ 27
 DESCRIPTION:Stazione/PL: MEINA (S01019)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 16:22:36 - 16:28:06\nTreni coinvolti nella chiusu
+ Chiusura sbarre stimata: 16:22:50 - 16:28:20\nTreni coinvolti nella chiusu
  ra:\n  - REG 2430 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRitardo mas
  simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Transito stimato senza fermata (24% tratta ARONA -> STRESA\; pedale annunc
+ Transito stimato senza fermata (26% tratta ARONA -> STRESA\; pedale annunc
  io fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MEINA
 STATUS:CONFIRMED
@@ -77,8 +79,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10232--20261121-S01019@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T154530Z
 DTEND:20261122T155000Z
 SUMMARY:[FERMATA] REG 10232 (MILANO PORTA GARIBALDI -> DOMODOSSOLA) ore 16:
@@ -98,22 +100,66 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2432--20261121-S01019@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T162236Z
-DTEND:20261122T162806Z
-SUMMARY:[TRANSITO VELOCE] REG 2432 (MILANO CENTRALE -> DOMODOSSOLA) ore 17:
- 26
-DESCRIPTION:Stazione/PL: MEINA (S01019)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 17:22:36 - 17:28:06\nTreni coinvolti nella chiusu
- ra:\n  - REG 2432 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Transito stimato senza fermata (24% tratta ARONA -> STRESA\; pedale annunc
- io fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T162250Z
+DTEND:20261122T162820Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:22 - 17:28 (primo: REG 2432)
+DESCRIPTION:Stazione/PL: MEINA (S01019)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 17:22:50 - 17:28:20\nTreni coinvolti 
+ nella chiusura:\n  - REG 2432 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\
+ n  - REG 2432 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
+ sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MEINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2440--20261121-S01019@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T202250Z
+DTEND:20261122T202820Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:22 - 21:28 (primo: REG 2440)
+DESCRIPTION:Stazione/PL: MEINA (S01019)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 21:22:50 - 21:28:20\nTreni coinvolti 
+ nella chiusura:\n  - REG 2440 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\
+ n  - REG 2440 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
+ sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MEINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2442--20261121-S01019@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T212250Z
+DTEND:20261122T212820Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:22 - 22:28 (primo: REG 2442)
+DESCRIPTION:Stazione/PL: MEINA (S01019)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 22:22:50 - 22:28:20\nTreni coinvolti 
+ nella chiusura:\n  - REG 2442 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\
+ n  - REG 2442 (MILANO CENTRALE -> DOMODOSSOLA) [Transito]\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
+ sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MEINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG

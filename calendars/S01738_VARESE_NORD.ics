@@ -9,32 +9,35 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:52a1af97fc794fc00dfd9379085add55f0458451e3840a40980f6e00463c
- afb9
+X-CONTENT-HASH:20946206600e656dafa5b3a5fddc4c3110b3755542c4ebd23b905fb619e9
+ 70af
 BEGIN:VEVENT
 UID:train-14014--20261121-S01738@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T051630Z
-DTEND:20261122T052100Z
-SUMMARY:[FERMATA] REG 14014 (VARESE NORD -> MILANO CADORNA) ore 06:20
-DESCRIPTION:Stazione/PL: VARESE NORD (S01738)\nRegime chiusura: FERMATA\nCh
- iusura sbarre stimata: 06:16:30 - 06:21:00\nTreni coinvolti nella chiusura
- :\n  - REG 14014 (VARESE NORD -> MILANO CADORNA)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da
-  traccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T051730Z
+DTEND:20261122T052200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:17 - 06:22 (primo: REG 14014) (+1 
+ min)
+DESCRIPTION:Stazione/PL: VARESE NORD (S01738)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 06:17:30 - 06:22:00\nTreni coin
+ volti nella chiusura:\n  - REG 14014 (VARESE NORD -> MILANO CADORNA) (+1m)
+ \n  - REG 14014 (VARESE NORD -> MILANO CADORNA) (+1m)\nRitardo massimo ril
+ evato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura
+  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
+  soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VARESE NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10022--20261121-S01738@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T061630Z
 DTEND:20261122T062100Z
 SUMMARY:[FERMATA] REG 10022 (VARESE NORD -> MILANO CADORNA) ore 07:20
@@ -52,49 +55,57 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-13--20261121-S01738@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T063630Z
-DTEND:20261122T064100Z
-SUMMARY:[FERMATA] REG 13 (MILANO CADORNA -> LAVENO MOMBELLO LAGO) ore 07:40
-DESCRIPTION:Stazione/PL: VARESE NORD (S01738)\nRegime chiusura: FERMATA\nCh
- iusura sbarre stimata: 07:36:30 - 07:41:00\nTreni coinvolti nella chiusura
- :\n  - REG 13 (MILANO CADORNA -> LAVENO MOMBELLO LAGO)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
- one da traccia oraria regolare
+UID:train-13--20261121-S01738@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T063647Z
+DTEND:20261122T064649Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:36 - 07:46 (primo: REG 13) (+1 min
+ )
+DESCRIPTION:Stazione/PL: VARESE NORD (S01738)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 4 TRENI\nChiusura sbarre stimata: 07:36:47 - 07:46:49\nTreni coin
+ volti nella chiusura:\n  - REG 13 (MILANO CADORNA -> LAVENO MOMBELLO LAGO)
+  (+1m) [Arrivo]\n  - REG 13 (MILANO CADORNA -> LAVENO MOMBELLO LAGO) (+1m)
+  [Arrivo]\n  - REG 13 (MILANO CADORNA -> LAVENO MOMBELLO LAGO) (+1m) [Part
+ enza]\n  - REG 13 (MILANO CADORNA -> LAVENO MOMBELLO LAGO) (+1m) [Partenza
+ ]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normati
+ va/euristica: Chiusura continua per 4 treni: intervallo utile tra i passag
+ gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VARESE NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19--20261121-S01738@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T074130Z
-DTEND:20261122T074600Z
-SUMMARY:[FERMATA] REG 19 (MILANO CADORNA -> LAVENO MOMBELLO LAGO) ore 08:45
-DESCRIPTION:Stazione/PL: VARESE NORD (S01738)\nRegime chiusura: FERMATA\nCh
- iusura sbarre stimata: 08:41:30 - 08:46:00\nTreni coinvolti nella chiusura
- :\n  - REG 19 (MILANO CADORNA -> LAVENO MOMBELLO LAGO)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
- one da traccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T074257Z
+DTEND:20261122T075016Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:42 - 08:50 (primo: REG 19) (+2 min
+ )
+DESCRIPTION:Stazione/PL: VARESE NORD (S01738)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 08:42:57 - 08:50:16\nTreni coin
+ volti nella chiusura:\n  - REG 19 (MILANO CADORNA -> LAVENO MOMBELLO LAGO)
+  (+2m)\n  - REG 19 (MILANO CADORNA -> LAVENO MOMBELLO LAGO) (+2m)\nRitardo
+  massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VARESE NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-36--20261121-S01738@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T091130Z
 DTEND:20261122T092100Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:11 - 10:21 (primo: REG 36)
@@ -114,80 +125,112 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-10040--20261121-S01738@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T101630Z
+UID:train-40--20261121-S01738@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T101152Z
 DTEND:20261122T102100Z
-SUMMARY:[FERMATA] REG 10040 (VARESE NORD -> MILANO CADORNA) ore 11:20
-DESCRIPTION:Stazione/PL: VARESE NORD (S01738)\nRegime chiusura: FERMATA\nCh
- iusura sbarre stimata: 11:16:30 - 11:21:00\nTreni coinvolti nella chiusura
- :\n  - REG 10040 (VARESE NORD -> MILANO CADORNA)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da
-  traccia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:11 - 11:21 (primo: REG 40) (+2 min
+ )
+DESCRIPTION:Stazione/PL: VARESE NORD (S01738)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 3 TRENI\nChiusura sbarre stimata: 11:11:52 - 11:21:00\nTreni coin
+ volti nella chiusura:\n  - REG 40 (LAVENO MOMBELLO LAGO -> MILANO CADORNA)
+  (+2m)\n  - REG 40 (LAVENO MOMBELLO LAGO -> MILANO CADORNA) (+2m)\n  - REG
+  10040 (VARESE NORD -> MILANO CADORNA)\nRitardo massimo rilevato: 2 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 3
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VARESE NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10031--20261121-S01738@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T103630Z
-DTEND:20261122T104100Z
-SUMMARY:[FERMATA] REG 10031 (MILANO CADORNA -> VARESE NORD) ore 11:40
-DESCRIPTION:Stazione/PL: VARESE NORD (S01738)\nRegime chiusura: FERMATA\nCh
- iusura sbarre stimata: 11:36:30 - 11:41:00\nTreni coinvolti nella chiusura
- :\n  - REG 10031 (MILANO CADORNA -> VARESE NORD)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da
-  traccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T103919Z
+DTEND:20261122T104349Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:39 - 11:43 (primo: REG 10031)
+DESCRIPTION:Stazione/PL: VARESE NORD (S01738)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 11:39:19 - 11:43:49\nTreni coin
+ volti nella chiusura:\n  - REG 10031 (MILANO CADORNA -> VARESE NORD)\n  - 
+ REG 10031 (MILANO CADORNA -> VARESE NORD)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua pe
+ r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VARESE NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4037--20261121-S01738@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T114130Z
-DTEND:20261122T114600Z
-SUMMARY:[FERMATA] REG 4037 (MILANO CADORNA -> LAVENO MOMBELLO LAGO) ore 12:
- 45
-DESCRIPTION:Stazione/PL: VARESE NORD (S01738)\nRegime chiusura: FERMATA\nCh
- iusura sbarre stimata: 12:41:30 - 12:46:00\nTreni coinvolti nella chiusura
- :\n  - REG 4037 (MILANO CADORNA -> LAVENO MOMBELLO LAGO)\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previ
- sione da traccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T114656Z
+DTEND:20261122T115331Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:46 - 12:53 (primo: REG 4037) (+6 m
+ in)
+DESCRIPTION:Stazione/PL: VARESE NORD (S01738)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 12:46:56 - 12:53:31\nTreni coin
+ volti nella chiusura:\n  - REG 4037 (MILANO CADORNA -> LAVENO MOMBELLO LAG
+ O) (+6m)\n  - REG 4037 (MILANO CADORNA -> LAVENO MOMBELLO LAGO) (+6m)\nRit
+ ardo massimo rilevato: 6 min\nAffidabilità stima: 99%\nNota normativa/eur
+ istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VARESE NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10056--20261121-S01738@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T141630Z
+DTEND:20261122T142239Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:16 - 15:22 (primo: REG 10056) (+6 
+ min)
+DESCRIPTION:Stazione/PL: VARESE NORD (S01738)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 3 TRENI\nChiusura sbarre stimata: 15:16:30 - 15:22:39\nTreni coin
+ volti nella chiusura:\n  - REG 10056 (VARESE NORD -> MILANO CADORNA)\n  - 
+ REG 56 (LAVENO MOMBELLO LAGO -> MILANO CADORNA) (+6m)\n  - REG 56 (LAVENO 
+ MOMBELLO LAGO -> MILANO CADORNA) (+6m)\nRitardo massimo rilevato: 6 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 3
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VARESE NORD
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-56--20261121-S01738@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T141130Z
-DTEND:20261122T142100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:11 - 15:21 (primo: REG 56)
+UID:train-10060--20261121-S01738@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T151630Z
+DTEND:20261122T152100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:16 - 16:21 (primo: REG 10060)
 DESCRIPTION:Stazione/PL: VARESE NORD (S01738)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 15:11:30 - 15:21:00\nTreni coin
- volti nella chiusura:\n  - REG 56 (LAVENO MOMBELLO LAGO -> MILANO CADORNA)
- \n  - REG 10056 (VARESE NORD -> MILANO CADORNA)\nRitardo massimo rilevato:
-  0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura conti
- nua per 2 treni: intervallo utile tra i passaggi (30s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 16:16:30 - 16:21:00\nTreni coin
+ volti nella chiusura:\n  - REG 10060 (VARESE NORD -> MILANO CADORNA)\n  - 
+ REG 10060 (VARESE NORD -> MILANO CADORNA)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua pe
+ r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VARESE NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -198,30 +241,51 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10055--20261121-S01738@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T153630Z
-DTEND:20261122T154600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:36 - 16:46 (primo: REG 10055)
-DESCRIPTION:Stazione/PL: VARESE NORD (S01738)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 16:36:30 - 16:46:00\nTreni coin
- volti nella chiusura:\n  - REG 10055 (MILANO CADORNA -> VARESE NORD)\n  - 
- REG 55 (MILANO CADORNA -> LAVENO MOMBELLO LAGO)\nRitardo massimo rilevato:
-  0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura conti
- nua per 2 treni: intervallo utile tra i passaggi (30s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
+DTEND:20261122T154100Z
+SUMMARY:[FERMATA] REG 10055 (MILANO CADORNA -> VARESE NORD) ore 16:40
+DESCRIPTION:Stazione/PL: VARESE NORD (S01738)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 16:36:30 - 16:41:00\nTreni coinvolti nella chiusura
+ :\n  - REG 10055 (MILANO CADORNA -> VARESE NORD)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da
+  traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VARESE NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-55--20261121-S01738@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T154430Z
+DTEND:20261122T154900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:44 - 16:49 (primo: REG 55) (+3 min
+ )
+DESCRIPTION:Stazione/PL: VARESE NORD (S01738)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 16:44:30 - 16:49:00\nTreni coin
+ volti nella chiusura:\n  - REG 55 (MILANO CADORNA -> LAVENO MOMBELLO LAGO)
+  (+3m)\n  - REG 55 (MILANO CADORNA -> LAVENO MOMBELLO LAGO) (+3m)\nRitardo
+  massimo rilevato: 3 min\nAffidabilità stima: 90%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VARESE NORD
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-10059--20261121-S01738@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T163630Z
 DTEND:20261122T164600Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:36 - 17:46 (primo: REG 10059)
@@ -242,28 +306,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-82--20261121-S01738@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T191130Z
 DTEND:20261122T191600Z
-SUMMARY:[FERMATA] REG 82 (LAVENO MOMBELLO LAGO -> MILANO CADORNA) ore 20:15
-DESCRIPTION:Stazione/PL: VARESE NORD (S01738)\nRegime chiusura: FERMATA\nCh
- iusura sbarre stimata: 20:11:30 - 20:16:00\nTreni coinvolti nella chiusura
- :\n  - REG 82 (LAVENO MOMBELLO LAGO -> MILANO CADORNA)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
- one da traccia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:11 - 20:16 (primo: REG 82)
+DESCRIPTION:Stazione/PL: VARESE NORD (S01738)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 20:11:30 - 20:16:00\nTreni coin
+ volti nella chiusura:\n  - REG 82 (LAVENO MOMBELLO LAGO -> MILANO CADORNA)
+ \n  - REG 82 (LAVENO MOMBELLO LAGO -> MILANO CADORNA)\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura
+  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
+  soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VARESE NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-84--20261121-S01738@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T201130Z
 DTEND:20261122T201600Z
 SUMMARY:[FERMATA] REG 84 (LAVENO MOMBELLO LAGO -> MILANO CADORNA) ore 21:15

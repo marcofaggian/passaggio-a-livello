@@ -9,26 +9,164 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:8aef1b81bef2c6eb2a3babcf56440fc0765f5db1c501835fad4138f514a3
- 365f
+X-CONTENT-HASH:e33b4debef301a2a3c9860ca58632c6b8a531ab57a436d8852017b451d82
+ 8486
 BEGIN:VEVENT
-UID:train-10818--20261121-S01845@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T081430Z
-DTEND:20261122T081900Z
-SUMMARY:[FERMATA] REG 10818 (PARMA -> BRESCIA) ore 09:18
-DESCRIPTION:Stazione/PL: REMEDELLO SOPRA (S01845)\nRegime chiusura: FERMATA
- \nChiusura sbarre stimata: 09:14:30 - 09:19:00\nTreni coinvolti nella chiu
- sura:\n  - REG 10818 (PARMA -> BRESCIA)\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia 
- oraria regolare
+UID:train-2156--20261121-S01845@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T052701Z
+DTEND:20261122T053231Z
+SUMMARY:[TRANSITO VELOCE] REG 2156 (PIADENA -> MILANO CENTRALE) ore 06:31
+DESCRIPTION:Stazione/PL: REMEDELLO SOPRA (S01845)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 06:27:01 - 06:32:31\nTreni coinvolti ne
+ lla chiusura:\n  - REG 2156 (PIADENA -> MILANO CENTRALE) [Transito]\nRitar
+ do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Transito stimato senza fermata (10% tratta PIADENA -> CREMONA\; peda
+ le annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione REMEDELLO SOPRA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2162--20261121-S01845@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T080824Z
+DTEND:20261122T081900Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 09:08 - 09:19 (primo: REG 2162) (+15 
+ min)
+DESCRIPTION:Stazione/PL: REMEDELLO SOPRA (S01845)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 4 TRENI\nChiusura sbarre stimata: 09:08:24 - 09:19:00\nTreni 
+ coinvolti nella chiusura:\n  - REG 2162 (PIADENA -> MILANO CENTRALE) (+15m
+ ) [Transito]\n  - REG 2162 (PIADENA -> MILANO CENTRALE) (+15m) [Transito]\
+ n  - REG 10818 (PARMA -> BRESCIA) [Transito]\n  - REG 10818 (PARMA -> BRES
+ CIA)\nRitardo massimo rilevato: 15 min\nAffidabilità stima: 78%\nNota nor
+ mativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i pa
+ ssaggi (15s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione REMEDELLO SOPRA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:15
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2174--20261121-S01845@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T140837Z
+DTEND:20261122T141407Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:08 - 15:14 (primo: REG 2174) (+2 m
+ in)
+DESCRIPTION:Stazione/PL: REMEDELLO SOPRA (S01845)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:08:37 - 15:14:07\nTreni 
+ coinvolti nella chiusura:\n  - REG 2174 (PIADENA -> MILANO CENTRALE) (+2m)
+  [Transito]\n  - REG 2174 (PIADENA -> MILANO CENTRALE) (+2m) [Transito]\nR
+ itardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione REMEDELLO SOPRA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10831--20261121-S01845@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T142930Z
+DTEND:20261122T143930Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:29 - 15:39 (primo: REG 10831) (+6 
+ min)
+DESCRIPTION:Stazione/PL: REMEDELLO SOPRA (S01845)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 4 TRENI\nChiusura sbarre stimata: 15:29:30 - 15:39:30\nTreni 
+ coinvolti nella chiusura:\n  - REG 10831 (BRESCIA -> PARMA) (+6m) [Arrivo]
+ \n  - REG 10831 (BRESCIA -> PARMA) (+6m) [Arrivo]\n  - REG 10831 (BRESCIA 
+ -> PARMA) (+6m) [Partenza]\n  - REG 10831 (BRESCIA -> PARMA) (+6m) [Parten
+ za]\nRitardo massimo rilevato: 6 min\nAffidabilità stima: 99%\nNota norma
+ tiva/euristica: Chiusura continua per 4 treni: intervallo utile tra i pass
+ aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione REMEDELLO SOPRA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2176--20261121-S01845@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T152833Z
+DTEND:20261122T153416Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:28 - 16:34 (primo: REG 2176)
+DESCRIPTION:Stazione/PL: REMEDELLO SOPRA (S01845)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:28:33 - 16:34:16\nTreni 
+ coinvolti nella chiusura:\n  - REG 2176 (CREMONA -> MILANO CENTRALE) [Tran
+ sito]\n  - REG 2176 (CREMONA -> MILANO CENTRALE) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione REMEDELLO SOPRA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10836--20261121-S01845@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T172530Z
+DTEND:20261122T173000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:25 - 18:30 (primo: REG 10836)
+DESCRIPTION:Stazione/PL: REMEDELLO SOPRA (S01845)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:25:30 - 18:30:00\nTreni 
+ coinvolti nella chiusura:\n  - REG 10836 (PARMA -> BRESCIA)\n  - REG 10836
+  (PARMA -> BRESCIA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
+  90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
+ utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
+ e (120s)
+LOCATION:Passaggio a Livello / Stazione REMEDELLO SOPRA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2182--20261121-S01845@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T180642Z
+DTEND:20261122T181220Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:06 - 19:12 (primo: REG 2182)
+DESCRIPTION:Stazione/PL: REMEDELLO SOPRA (S01845)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:06:42 - 19:12:20\nTreni 
+ coinvolti nella chiusura:\n  - REG 2182 (PIADENA -> MILANO CENTRALE) [Tran
+ sito]\n  - REG 2182 (PIADENA -> MILANO CENTRALE) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione REMEDELLO SOPRA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

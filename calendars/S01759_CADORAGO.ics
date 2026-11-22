@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:7b7f35021574a8d837f52336d40999ae9883764cc53f8daa558b9dc04675
- e0cd
+X-CONTENT-HASH:6c10b0e7dabf35248e4cd417bdefb2bc31a5d61b22f4db1e8b7d042e17e1
+ 02ee
 BEGIN:VEVENT
 UID:train-114--20261121-S01759@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T053530Z
 DTEND:20261122T054000Z
 SUMMARY:[FERMATA] REG 114 (COMO LAGO -> MILANO CADORNA) ore 06:39
@@ -33,8 +33,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-122--20261121-S01759@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T063530Z
 DTEND:20261122T064000Z
 SUMMARY:[FERMATA] REG 122 (COMO LAGO -> MILANO CADORNA) ore 07:39
@@ -52,69 +52,146 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-117--20261121-S01759@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T071530Z
-DTEND:20261122T072000Z
-SUMMARY:[FERMATA] REG 117 (MILANO CADORNA -> COMO LAGO) ore 08:19
-DESCRIPTION:Stazione/PL: CADORAGO (S01759)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 08:15:30 - 08:20:00\nTreni coinvolti nella chiusura:\n
-   - REG 117 (MILANO CADORNA -> COMO LAGO)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
- a oraria regolare
+UID:train-117--20261121-S01759@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T072222Z
+DTEND:20261122T072958Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:22 - 08:29 (primo: REG 117) (+10 m
+ in)
+DESCRIPTION:Stazione/PL: CADORAGO (S01759)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 4 TRENI\nChiusura sbarre stimata: 08:22:22 - 08:29:58\nTreni coinvol
+ ti nella chiusura:\n  - REG 117 (MILANO CADORNA -> COMO LAGO) (+10m) [Arri
+ vo]\n  - REG 117 (MILANO CADORNA -> COMO LAGO) (+10m) [Arrivo]\n  - REG 11
+ 7 (MILANO CADORNA -> COMO LAGO) (+10m) [Partenza]\n  - REG 117 (MILANO CAD
+ ORNA -> COMO LAGO) (+10m) [Partenza]\nRitardo massimo rilevato: 10 min\nAf
+ fidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 4 
+ treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
+ i sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CADORAGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:10
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-140--20261121-S01759@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T103600Z
+DTEND:20261122T104235Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:36 - 11:42 (primo: REG 140) (+3 mi
+ n)
+DESCRIPTION:Stazione/PL: CADORAGO (S01759)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 11:36:00 - 11:42:35\nTreni coinvol
+ ti nella chiusura:\n  - REG 140 (COMO LAGO -> MILANO CADORNA) (+3m)\n  - R
+ EG 140 (COMO LAGO -> MILANO CADORNA) (+3m)\nRitardo massimo rilevato: 3 mi
+ n\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua p
+ er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
+ ima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CADORAGO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-154--20261121-S01759@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T143547Z
+DTEND:20261122T144229Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:35 - 15:42 (primo: REG 154) (+2 mi
+ n)
+DESCRIPTION:Stazione/PL: CADORAGO (S01759)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 15:35:47 - 15:42:29\nTreni coinvol
+ ti nella chiusura:\n  - REG 154 (COMO LAGO -> MILANO CADORNA) (+2m)\n  - R
+ EG 154 (COMO LAGO -> MILANO CADORNA) (+2m)\nRitardo massimo rilevato: 2 mi
+ n\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua p
+ er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
+ ima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CADORAGO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-160--20261121-S01759@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T153530Z
+DTEND:20261122T154000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:35 - 16:40 (primo: REG 160)
+DESCRIPTION:Stazione/PL: CADORAGO (S01759)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 16:35:30 - 16:40:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 160 (COMO LAGO -> MILANO CADORNA)\n  - REG 160
+  (COMO LAGO -> MILANO CADORNA)\nRitardo massimo rilevato: 0 min\nAffidabil
+ ità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: 
+ intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
+ ero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CADORAGO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-154--20261121-S01759@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T143530Z
-DTEND:20261122T144000Z
-SUMMARY:[FERMATA] REG 154 (COMO LAGO -> MILANO CADORNA) ore 15:39
-DESCRIPTION:Stazione/PL: CADORAGO (S01759)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 15:35:30 - 15:40:00\nTreni coinvolti nella chiusura:\n
-   - REG 154 (COMO LAGO -> MILANO CADORNA)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
- a oraria regolare
+UID:train-178--20261121-S01759@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T190530Z
+DTEND:20261122T191000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:05 - 20:10 (primo: REG 178)
+DESCRIPTION:Stazione/PL: CADORAGO (S01759)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 20:05:30 - 20:10:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 178 (COMO LAGO -> MILANO CADORNA)\n  - REG 178
+  (COMO LAGO -> MILANO CADORNA)\nRitardo massimo rilevato: 0 min\nAffidabil
+ ità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: 
+ intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
+ ero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CADORAGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-180--20261121-S01759@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T193530Z
 DTEND:20261122T194000Z
-SUMMARY:[FERMATA] REG 180 (COMO LAGO -> MILANO CADORNA) ore 20:39
-DESCRIPTION:Stazione/PL: CADORAGO (S01759)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 20:35:30 - 20:40:00\nTreni coinvolti nella chiusura:\n
-   - REG 180 (COMO LAGO -> MILANO CADORNA)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
- a oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:35 - 20:40 (primo: REG 180)
+DESCRIPTION:Stazione/PL: CADORAGO (S01759)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 20:35:30 - 20:40:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 180 (COMO LAGO -> MILANO CADORNA)\n  - REG 180
+  (COMO LAGO -> MILANO CADORNA)\nRitardo massimo rilevato: 0 min\nAffidabil
+ ità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: 
+ intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
+ ero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CADORAGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-184--20261121-S01759@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T203530Z
 DTEND:20261122T204000Z
 SUMMARY:[FERMATA] REG 184 (COMO LAGO -> MILANO CADORNA) ore 21:39
@@ -133,8 +210,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-187--20261121-S01759@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T211530Z
 DTEND:20261122T212000Z
 SUMMARY:[FERMATA] REG 187 (MILANO CADORNA -> COMO LAGO) ore 22:19

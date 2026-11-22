@@ -9,40 +9,43 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:6a4659b1b3c7f0bf0f00569d4fbde677760c6190e5d788dc12f582c9cf9f
- c82a
+X-CONTENT-HASH:5efee581d3b92b362760a74ca060080b8e81bf304822d1ad00fb6f2c8871
+ 804e
 BEGIN:VEVENT
 UID:train-3906--20261121-S07119@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T064130Z
-DTEND:20261122T064600Z
-SUMMARY:[FERMATA] REG 3906 (ANCONA -> REGGIO EMILIA) ore 07:45
-DESCRIPTION:Stazione/PL: MISANO ADRIATICO (S07119)\nRegime chiusura: FERMAT
- A\nChiusura sbarre stimata: 07:41:30 - 07:46:00\nTreni coinvolti nella chi
- usura:\n  - REG 3906 (ANCONA -> REGGIO EMILIA)\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
- raccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T065230Z
+DTEND:20261122T065730Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:52 - 07:57 (primo: REG 3906) (+11 
+ min)
+DESCRIPTION:Stazione/PL: MISANO ADRIATICO (S07119)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:52:30 - 07:57:30\nTreni
+  coinvolti nella chiusura:\n  - REG 3906 (ANCONA -> REGGIO EMILIA) (+11m)\
+ n  - REG 3906 (ANCONA -> REGGIO EMILIA) (+11m)\nRitardo massimo rilevato: 
+ 11 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura conti
+ nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MISANO ADRIATICO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:11
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3901--20261121-S07119@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T071032Z
-DTEND:20261122T071602Z
-SUMMARY:[TRANSITO VELOCE] REG 3901 (BOLOGNA CENTRALE -> ANCONA) ore 08:14
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T071045Z
+DTEND:20261122T071615Z
+SUMMARY:[TRANSITO VELOCE] REG 3901 (BOLOGNA CENTRALE -> ANCONA) ore 08:15
 DESCRIPTION:Stazione/PL: MISANO ADRIATICO (S07119)\nRegime chiusura: TRANSI
- TO VELOCE\nChiusura sbarre stimata: 08:10:32 - 08:16:02\nTreni coinvolti n
+ TO VELOCE\nChiusura sbarre stimata: 08:10:45 - 08:16:15\nTreni coinvolti n
  ella chiusura:\n  - REG 3901 (BOLOGNA CENTRALE -> ANCONA) [Transito]\nRita
  rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (47% tratta RICCIONE -> CATTOLICA S.
+ stica: Transito stimato senza fermata (50% tratta RICCIONE -> CATTOLICA S.
  GIOVANNI GABICCE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MISANO ADRIATICO
 STATUS:CONFIRMED
@@ -53,17 +56,39 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-3905--20261121-S07119@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T081215Z
+DTEND:20261122T081745Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:12 - 09:17 (primo: REG 3905)
+DESCRIPTION:Stazione/PL: MISANO ADRIATICO (S07119)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:12:15 - 09:17:45\nTreni
+  coinvolti nella chiusura:\n  - REG 3905 (REGGIO EMILIA -> ANCONA) [Transi
+ to]\n  - REG 3905 (REGGIO EMILIA -> ANCONA) [Transito]\nRitardo massimo ri
+ levato: -1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
+ ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
+ la soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MISANO ADRIATICO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-2493--20261121-S07119@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T095432Z
-DTEND:20261122T100002Z
-SUMMARY:[TRANSITO VELOCE] REG 2493 (REGGIO EMILIA -> PESCARA) ore 10:58
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T095445Z
+DTEND:20261122T100015Z
+SUMMARY:[TRANSITO VELOCE] REG 2493 (REGGIO EMILIA -> PESCARA) ore 10:59
 DESCRIPTION:Stazione/PL: MISANO ADRIATICO (S07119)\nRegime chiusura: TRANSI
- TO VELOCE\nChiusura sbarre stimata: 10:54:32 - 11:00:02\nTreni coinvolti n
+ TO VELOCE\nChiusura sbarre stimata: 10:54:45 - 11:00:15\nTreni coinvolti n
  ella chiusura:\n  - REG 2493 (REGGIO EMILIA -> PESCARA) [Transito]\nRitard
  o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Transito stimato senza fermata (47% tratta RICCIONE -> CATTOLICA S.GI
+ ica: Transito stimato senza fermata (50% tratta RICCIONE -> CATTOLICA S.GI
  OVANNI GABICCE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MISANO ADRIATICO
 STATUS:CONFIRMED
@@ -74,31 +99,76 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3919--20261121-S07119@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T123130Z
-DTEND:20261122T124200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:31 - 13:42 (primo: REG 3919)
-DESCRIPTION:Stazione/PL: MISANO ADRIATICO (S07119)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:31:30 - 13:42:00\nTreni
-  coinvolti nella chiusura:\n  - REG 3919 (REGGIO EMILIA -> ANCONA)\n  - RE
- G 3918 (ANCONA -> REGGIO EMILIA)\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
- : intervallo utile tra i passaggi (90s) inferiore alla soglia minima di sg
- ombero stradale (120s)
+UID:train-3913--20261121-S07119@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T111045Z
+DTEND:20261122T111615Z
+SUMMARY:[TRANSITO VELOCE] REG 3913 (REGGIO EMILIA -> ANCONA) ore 12:15
+DESCRIPTION:Stazione/PL: MISANO ADRIATICO (S07119)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 12:10:45 - 12:16:15\nTreni coinvolti n
+ ella chiusura:\n  - REG 3913 (REGGIO EMILIA -> ANCONA) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (50% tratta RICCIONE -> CATTOLICA S.GIO
+ VANNI GABICCE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MISANO ADRIATICO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3919--20261121-S07119@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T123330Z
+DTEND:20261122T124200Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 13:33 - 13:42 (primo: REG 3919) (+2 m
+ in)
+DESCRIPTION:Stazione/PL: MISANO ADRIATICO (S07119)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 13:33:30 - 13:42:00\nTreni
+  coinvolti nella chiusura:\n  - REG 3919 (REGGIO EMILIA -> ANCONA) (+2m)\n
+   - REG 3919 (REGGIO EMILIA -> ANCONA) (+2m)\n  - REG 3918 (ANCONA -> REGG
+ IO EMILIA)\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 90%\nNot
+ a normativa/euristica: Chiusura continua per 3 treni: intervallo utile tra
+  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MISANO ADRIATICO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-1763--20261121-S07119@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T143430Z
+DTEND:20261122T144000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:34 - 15:40 (primo: REG 1763) (+5 m
+ in)
+DESCRIPTION:Stazione/PL: MISANO ADRIATICO (S07119)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:34:30 - 15:40:00\nTreni
+  coinvolti nella chiusura:\n  - REG 1763 (BOLOGNA CENTRALE -> ANCONA) (+5m
+ )\n  - REG 1763 (BOLOGNA CENTRALE -> ANCONA) (+5m)\nRitardo massimo rileva
+ to: 5 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura co
+ ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MISANO ADRIATICO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-3927--20261121-S07119@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T161230Z
 DTEND:20261122T161700Z
 SUMMARY:[FERMATA] REG 3927 (REGGIO EMILIA -> PESARO) ore 17:16
@@ -116,18 +186,40 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3929--20261121-S07119@pl-tracker.local
-DTSTAMP:20261122T065144Z
+UID:train-3931--20261121-S07119@pl-tracker.local
+DTSTAMP:20261122T150820Z
 SEQUENCE:0
-DTSTART:20261122T171332Z
-DTEND:20261122T171902Z
-SUMMARY:[TRANSITO VELOCE] REG 3929 (REGGIO EMILIA -> ANCONA) ore 18:17
+DTSTART:20261122T180930Z
+DTEND:20261122T181400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:09 - 19:14 (primo: REG 3931)
+DESCRIPTION:Stazione/PL: MISANO ADRIATICO (S07119)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:09:30 - 19:14:00\nTreni
+  coinvolti nella chiusura:\n  - REG 3931 (REGGIO EMILIA -> ANCONA)\n  - RE
+ G 3931 (REGGIO EMILIA -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidab
+ ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MISANO ADRIATICO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3932--20261121-S07119@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T204205Z
+DTEND:20261122T204735Z
+SUMMARY:[TRANSITO VELOCE] REG 3932 (ANCONA -> BOLOGNA CENTRALE) ore 21:46
 DESCRIPTION:Stazione/PL: MISANO ADRIATICO (S07119)\nRegime chiusura: TRANSI
- TO VELOCE\nChiusura sbarre stimata: 18:13:32 - 18:19:02\nTreni coinvolti n
- ella chiusura:\n  - REG 3929 (REGGIO EMILIA -> ANCONA) [Transito]\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Transito stimato senza fermata (47% tratta RICCIONE -> CATTOLICA S.GIO
- VANNI GABICCE\; pedale annuncio fisso Vmax)
+ TO VELOCE\nChiusura sbarre stimata: 21:42:05 - 21:47:35\nTreni coinvolti n
+ ella chiusura:\n  - REG 3932 (ANCONA -> BOLOGNA CENTRALE) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Transito stimato senza fermata (67% tratta CATTOLICA S.GIOVANNI GAB
+ ICCE -> RICCIONE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MISANO ADRIATICO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -138,16 +230,16 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3939--20261121-S07119@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:0
-DTSTART:20261122T211032Z
-DTEND:20261122T211602Z
-SUMMARY:[TRANSITO VELOCE] REG 3939 (REGGIO EMILIA -> ANCONA) ore 22:14
+DTSTAMP:20261122T150820Z
+SEQUENCE:1
+DTSTART:20261122T211045Z
+DTEND:20261122T211615Z
+SUMMARY:[TRANSITO VELOCE] REG 3939 (REGGIO EMILIA -> ANCONA) ore 22:15
 DESCRIPTION:Stazione/PL: MISANO ADRIATICO (S07119)\nRegime chiusura: TRANSI
- TO VELOCE\nChiusura sbarre stimata: 22:10:32 - 22:16:02\nTreni coinvolti n
+ TO VELOCE\nChiusura sbarre stimata: 22:10:45 - 22:16:15\nTreni coinvolti n
  ella chiusura:\n  - REG 3939 (REGGIO EMILIA -> ANCONA) [Transito]\nRitardo
   massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Transito stimato senza fermata (47% tratta RICCIONE -> CATTOLICA S.GIO
+ ca: Transito stimato senza fermata (50% tratta RICCIONE -> CATTOLICA S.GIO
  VANNI GABICCE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MISANO ADRIATICO
 STATUS:CONFIRMED

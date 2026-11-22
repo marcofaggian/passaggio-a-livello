@@ -9,40 +9,69 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:d1322a510e406b95600423064a1b2aa7326727f12b478540c3ed1a2be6ef
- f8a4
+X-CONTENT-HASH:dcb6757d91ebfae222e61f44f84f82498e39d49eac4ee2b5f4fe4a0189d9
+ 7494
 BEGIN:VEVENT
-UID:train-604--20261121-S07508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T064715Z
-DTEND:20261122T065200Z
-SUMMARY:[FERMATA] IC 604 (PESCARA -> MILANO CENTRALE) ore 07:51
-DESCRIPTION:Stazione/PL: PORTO S.GIORGIO FERMO (S07508)\nRegime chiusura: F
- ERMATA\nChiusura sbarre stimata: 07:47:15 - 07:52:00\nTreni coinvolti nell
- a chiusura:\n  - IC 604 (PESCARA -> MILANO CENTRALE)\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
- e da traccia oraria regolare
+UID:train-604--20261121-S07508@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T065245Z
+DTEND:20261122T070100Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:52 - 08:01 (primo: IC 604) (+7 min
+ )
+DESCRIPTION:Stazione/PL: PORTO S.GIORGIO FERMO (S07508)\nRegime chiusura: C
+ HIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 07:52:45 - 08:01:00\n
+ Treni coinvolti nella chiusura:\n  - IC 604 (PESCARA -> MILANO CENTRALE) (
+ +7m) [Arrivo]\n  - IC 604 (PESCARA -> MILANO CENTRALE) (+7m) [Arrivo]\n  -
+  IC 604 (PESCARA -> MILANO CENTRALE) (+7m) [Partenza]\n  - IC 604 (PESCARA
+  -> MILANO CENTRALE) (+7m) [Partenza]\nRitardo massimo rilevato: 7 min\nAf
+ fidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 4 
+ treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
+ i sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PORTO S.GIORGIO FERMO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8814--20261121-S07508@pl-tracker.local
-DTSTAMP:20261122T065144Z
+UID:train-8810--20261121-S07508@pl-tracker.local
+DTSTAMP:20261122T150820Z
 SEQUENCE:0
-DTSTART:20261122T094118Z
-DTEND:20261122T094648Z
-SUMMARY:[TRANSITO VELOCE] TRENO 8814 (LECCE -> MILANO CENTRALE) ore 10:45
+DTSTART:20261122T074353Z
+DTEND:20261122T074923Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:43 - 08:49 (primo: TRENO 8810) (+1
+ 5 min)
+DESCRIPTION:Stazione/PL: PORTO S.GIORGIO FERMO (S07508)\nRegime chiusura: C
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:43:53 - 08:49:23\n
+ Treni coinvolti nella chiusura:\n  - TRENO 8810 (BARI CENTRALE -> MILANO C
+ ENTRALE) (+15m) [Transito]\n  - TRENO 8810 (BARI CENTRALE -> MILANO CENTRA
+ LE) (+15m) [Transito]\nRitardo massimo rilevato: 15 min\nAffidabilità sti
+ ma: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
+ lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
+ dale (120s)
+LOCATION:Passaggio a Livello / Stazione PORTO S.GIORGIO FERMO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:15
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8814--20261121-S07508@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:1
+DTSTART:20261122T094214Z
+DTEND:20261122T094744Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8814 (LECCE -> MILANO CENTRALE) ore 10:46
 DESCRIPTION:Stazione/PL: PORTO S.GIORGIO FERMO (S07508)\nRegime chiusura: T
- RANSITO VELOCE\nChiusura sbarre stimata: 10:41:18 - 10:46:48\nTreni coinvo
+ RANSITO VELOCE\nChiusura sbarre stimata: 10:42:14 - 10:47:44\nTreni coinvo
  lti nella chiusura:\n  - TRENO 8814 (LECCE -> MILANO CENTRALE) [Transito]\
  nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Transito stimato senza fermata (80% tratta PESCARA -> CIVITANO
+ /euristica: Transito stimato senza fermata (82% tratta PESCARA -> CIVITANO
  VA MARCHE-MONTEGRANARO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PORTO S.GIORGIO FERMO
 STATUS:CONFIRMED
@@ -54,76 +83,62 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-603--20261121-S07508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T100515Z
-DTEND:20261122T101000Z
-SUMMARY:[FERMATA] IC 603 (MILANO CENTRALE -> LECCE) ore 11:09
-DESCRIPTION:Stazione/PL: PORTO S.GIORGIO FERMO (S07508)\nRegime chiusura: F
- ERMATA\nChiusura sbarre stimata: 11:05:15 - 11:10:00\nTreni coinvolti nell
- a chiusura:\n  - IC 603 (MILANO CENTRALE -> LECCE)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
- da traccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T100545Z
+DTEND:20261122T101330Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:05 - 11:13 (primo: IC 603) (+2 min
+ )
+DESCRIPTION:Stazione/PL: PORTO S.GIORGIO FERMO (S07508)\nRegime chiusura: C
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:05:45 - 11:13:30\n
+ Treni coinvolti nella chiusura:\n  - IC 603 (MILANO CENTRALE -> LECCE) (+2
+ m)\n  - IC 603 (MILANO CENTRALE -> LECCE) (+2m)\nRitardo massimo rilevato:
+  2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura conti
+ nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PORTO S.GIORGIO FERMO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4213--20261121-S07508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T112730Z
-DTEND:20261122T113200Z
-SUMMARY:[FERMATA] REG 4213 (ANCONA -> PESCARA) ore 12:31
-DESCRIPTION:Stazione/PL: PORTO S.GIORGIO FERMO (S07508)\nRegime chiusura: F
- ERMATA\nChiusura sbarre stimata: 12:27:30 - 12:32:00\nTreni coinvolti nell
- a chiusura:\n  - REG 4213 (ANCONA -> PESCARA)\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tr
- accia oraria regolare
-LOCATION:Passaggio a Livello / Stazione PORTO S.GIORGIO FERMO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2493--20261121-S07508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T113930Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T113330Z
 DTEND:20261122T114400Z
-SUMMARY:[FERMATA] REG 2493 (REGGIO EMILIA -> PESCARA) ore 12:43
-DESCRIPTION:Stazione/PL: PORTO S.GIORGIO FERMO (S07508)\nRegime chiusura: F
- ERMATA\nChiusura sbarre stimata: 12:39:30 - 12:44:00\nTreni coinvolti nell
- a chiusura:\n  - REG 2493 (REGGIO EMILIA -> PESCARA)\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
- e da traccia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:33 - 12:44 (primo: REG 4213) (+7 m
+ in)
+DESCRIPTION:Stazione/PL: PORTO S.GIORGIO FERMO (S07508)\nRegime chiusura: C
+ HIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 12:33:30 - 12:44:00\n
+ Treni coinvolti nella chiusura:\n  - REG 4213 (ANCONA -> PESCARA) (+7m)\n 
+  - REG 4213 (ANCONA -> PESCARA) (+7m)\n  - REG 2493 (REGGIO EMILIA -> PESC
+ ARA)\nRitardo massimo rilevato: 7 min\nAffidabilità stima: 90%\nNota norm
+ ativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PORTO S.GIORGIO FERMO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8818--20261121-S07508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T114809Z
-DTEND:20261122T115339Z
-SUMMARY:[TRANSITO VELOCE] TRENO 8818 (LECCE -> MILANO CENTRALE) ore 12:52
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T114711Z
+DTEND:20261122T115241Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8818 (LECCE -> MILANO CENTRALE) ore 12:51
 DESCRIPTION:Stazione/PL: PORTO S.GIORGIO FERMO (S07508)\nRegime chiusura: T
- RANSITO VELOCE\nChiusura sbarre stimata: 12:48:09 - 12:53:39\nTreni coinvo
+ RANSITO VELOCE\nChiusura sbarre stimata: 12:47:11 - 12:52:41\nTreni coinvo
  lti nella chiusura:\n  - TRENO 8818 (LECCE -> MILANO CENTRALE) [Transito]\
  nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Transito stimato senza fermata (31% tratta S.BENEDETTO DEL TRO
+ /euristica: Transito stimato senza fermata (29% tratta S.BENEDETTO DEL TRO
  NTO -> ANCONA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PORTO S.GIORGIO FERMO
 STATUS:CONFIRMED
@@ -134,49 +149,58 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-605--20261121-S07508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T120115Z
-DTEND:20261122T120600Z
-SUMMARY:[FERMATA] IC 605 (MILANO CENTRALE -> LECCE) ore 13:05
-DESCRIPTION:Stazione/PL: PORTO S.GIORGIO FERMO (S07508)\nRegime chiusura: F
- ERMATA\nChiusura sbarre stimata: 13:01:15 - 13:06:00\nTreni coinvolti nell
- a chiusura:\n  - IC 605 (MILANO CENTRALE -> LECCE)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
- da traccia oraria regolare
+UID:train-605--20261121-S07508@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T115845Z
+DTEND:20261122T120900Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:58 - 13:09 (primo: IC 605) (+1 min
+ )
+DESCRIPTION:Stazione/PL: PORTO S.GIORGIO FERMO (S07508)\nRegime chiusura: C
+ HIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 12:58:45 - 13:09:00\n
+ Treni coinvolti nella chiusura:\n  - IC 605 (MILANO CENTRALE -> LECCE) (+1
+ m) [Arrivo]\n  - IC 605 (MILANO CENTRALE -> LECCE) (+1m) [Arrivo]\n  - IC 
+ 605 (MILANO CENTRALE -> LECCE) (+1m) [Partenza]\n  - IC 605 (MILANO CENTRA
+ LE -> LECCE) (+1m) [Partenza]\nRitardo massimo rilevato: 1 min\nAffidabili
+ tà stima: 99%\nNota normativa/euristica: Chiusura continua per 4 treni: i
+ ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PORTO S.GIORGIO FERMO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-610--20261121-S07508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T125715Z
+UID:train-8820--20261121-S07508@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T125531Z
 DTEND:20261122T130200Z
-SUMMARY:[FERMATA] IC 610 (LECCE -> BOLZANO) ore 14:01
-DESCRIPTION:Stazione/PL: PORTO S.GIORGIO FERMO (S07508)\nRegime chiusura: F
- ERMATA\nChiusura sbarre stimata: 13:57:15 - 14:02:00\nTreni coinvolti nell
- a chiusura:\n  - IC 610 (LECCE -> BOLZANO)\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracc
- ia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 13:55 - 14:02 (primo: TRENO 8820) (+1
+ 4 min)
+DESCRIPTION:Stazione/PL: PORTO S.GIORGIO FERMO (S07508)\nRegime chiusura: C
+ HIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 13:55:31 - 14:02:00\n
+ Treni coinvolti nella chiusura:\n  - TRENO 8820 (TARANTO -> MILANO CENTRAL
+ E) (+14m) [Transito]\n  - TRENO 8820 (TARANTO -> MILANO CENTRALE) (+14m) [
+ Transito]\n  - IC 610 (LECCE -> BOLZANO)\nRitardo massimo rilevato: 14 min
+ \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
+ r 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PORTO S.GIORGIO FERMO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:14
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-607--20261121-S07508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T140115Z
 DTEND:20261122T140600Z
 SUMMARY:[FERMATA] IC 607 (MILANO PORTA GARIBALDI -> LECCE) ore 15:05
@@ -195,8 +219,8 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1728--20261121-S07508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T140830Z
 DTEND:20261122T141300Z
 SUMMARY:[FERMATA] REG 1728 (PESCARA -> BOLOGNA CENTRALE) ore 15:12
@@ -214,9 +238,32 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-1546--20261121-S07508@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T142145Z
+DTEND:20261122T142930Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:21 - 15:29 (primo: IC 1546) (+1 mi
+ n)
+DESCRIPTION:Stazione/PL: PORTO S.GIORGIO FERMO (S07508)\nRegime chiusura: C
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:21:45 - 15:29:30\n
+ Treni coinvolti nella chiusura:\n  - IC 1546 (LECCE -> MILANO CENTRALE) (+
+ 1m)\n  - IC 1546 (LECCE -> MILANO CENTRALE) (+1m)\nRitardo massimo rilevat
+ o: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura con
+ tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PORTO S.GIORGIO FERMO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
 UID:train-612--20261121-S07508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T144715Z
 DTEND:20261122T145200Z
 SUMMARY:[FERMATA] IC 612 (LECCE -> MILANO CENTRALE) ore 15:51
@@ -235,8 +282,8 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2494--20261121-S07508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T160130Z
 DTEND:20261122T160600Z
 SUMMARY:[FERMATA] REG 2494 (PESCARA -> REGGIO EMILIA) ore 17:05
@@ -254,9 +301,31 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-4223--20261121-S07508@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T162930Z
+DTEND:20261122T163400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:29 - 17:34 (primo: REG 4223)
+DESCRIPTION:Stazione/PL: PORTO S.GIORGIO FERMO (S07508)\nRegime chiusura: C
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:29:30 - 17:34:00\n
+ Treni coinvolti nella chiusura:\n  - REG 4223 (ANCONA -> PESCARA)\n  - REG
+  4223 (ANCONA -> PESCARA)\nRitardo massimo rilevato: 0 min\nAffidabilità 
+ stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inter
+ vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
+ tradale (120s)
+LOCATION:Passaggio a Livello / Stazione PORTO S.GIORGIO FERMO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-611--20261121-S07508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T175615Z
 DTEND:20261122T180100Z
 SUMMARY:[FERMATA] IC 611 (BOLZANO -> BARI CENTRALE) ore 19:00
@@ -274,43 +343,71 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-613--20261121-S07508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T200715Z
-DTEND:20261122T201200Z
-SUMMARY:[FERMATA] IC 613 (MILANO CENTRALE -> PESCARA) ore 21:11
-DESCRIPTION:Stazione/PL: PORTO S.GIORGIO FERMO (S07508)\nRegime chiusura: F
- ERMATA\nChiusura sbarre stimata: 21:07:15 - 21:12:00\nTreni coinvolti nell
- a chiusura:\n  - IC 613 (MILANO CENTRALE -> PESCARA)\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
- e da traccia oraria regolare
+UID:train-8830--20261121-S07508@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T184711Z
+DTEND:20261122T185241Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:47 - 19:52 (primo: TRENO 8830)
+DESCRIPTION:Stazione/PL: PORTO S.GIORGIO FERMO (S07508)\nRegime chiusura: C
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:47:11 - 19:52:41\n
+ Treni coinvolti nella chiusura:\n  - TRENO 8830 (BARI CENTRALE -> MILANO C
+ ENTRALE) [Transito]\n  - TRENO 8830 (BARI CENTRALE -> MILANO CENTRALE) [Tr
+ ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
+ passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PORTO S.GIORGIO FERMO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-23799--20261121-S07508@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T202330Z
-DTEND:20261122T202800Z
-SUMMARY:[FERMATA] REG 23799 (ANCONA -> ASCOLI PICENO) ore 21:27
-DESCRIPTION:Stazione/PL: PORTO S.GIORGIO FERMO (S07508)\nRegime chiusura: F
- ERMATA\nChiusura sbarre stimata: 21:23:30 - 21:28:00\nTreni coinvolti nell
- a chiusura:\n  - REG 23799 (ANCONA -> ASCOLI PICENO)\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
- e da traccia oraria regolare
+UID:train-9811--20261121-S07508@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T195931Z
+DTEND:20261122T200501Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:59 - 21:05 (primo: TRENO 9811)
+DESCRIPTION:Stazione/PL: PORTO S.GIORGIO FERMO (S07508)\nRegime chiusura: C
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:59:31 - 21:05:01\n
+ Treni coinvolti nella chiusura:\n  - TRENO 9811 (MILANO CENTRALE -> PESCAR
+ A) [Transito]\n  - TRENO 9811 (MILANO CENTRALE -> PESCARA) [Transito]\nRit
+ ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PORTO S.GIORGIO FERMO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-613--20261121-S07508@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T201715Z
+DTEND:20261122T202800Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 21:17 - 21:28 (primo: IC 613) (+10 mi
+ n)
+DESCRIPTION:Stazione/PL: PORTO S.GIORGIO FERMO (S07508)\nRegime chiusura: C
+ HIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 21:17:15 - 21:28:00\n
+ Treni coinvolti nella chiusura:\n  - IC 613 (MILANO CENTRALE -> PESCARA) (
+ +10m)\n  - IC 613 (MILANO CENTRALE -> PESCARA) (+10m)\n  - REG 23799 (ANCO
+ NA -> ASCOLI PICENO)\n  - REG 23799 (ANCONA -> ASCOLI PICENO)\nRitardo mas
+ simo rilevato: 10 min\nAffidabilità stima: 90%\nNota normativa/euristica:
+  Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) infer
+ iore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PORTO S.GIORGIO FERMO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:10
 X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 END:VCALENDAR

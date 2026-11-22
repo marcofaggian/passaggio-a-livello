@@ -9,76 +9,128 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:7deea946e007b95a1bbb2f08b2083474c334967522d68e01a42e4e935069
- 13f5
+X-CONTENT-HASH:849a7a3986a402916f446c2be708ea4417ca61dbb841418791c04c94c8f8
+ 808d
 BEGIN:VEVENT
-UID:train-2618--20261121-S01714@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T063530Z
-DTEND:20261122T064000Z
-SUMMARY:[FERMATA] REG 2618 (VERONA PORTA NUOVA -> MILANO CENTRALE) ore 07:3
- 9
-DESCRIPTION:Stazione/PL: ROVATO (S01714)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 07:35:30 - 07:40:00\nTreni coinvolti nella chiusura:\n  
- - REG 2618 (VERONA PORTA NUOVA -> MILANO CENTRALE)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
- da traccia oraria regolare
+UID:train-2613--20261121-S01714@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T055739Z
+DTEND:20261122T060309Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:57 - 07:03 (primo: REG 2613)
+DESCRIPTION:Stazione/PL: ROVATO (S01714)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 06:57:39 - 07:03:09\nTreni coinvolti
+  nella chiusura:\n  - REG 2613 (MILANO CENTRALE -> VERONA PORTA NUOVA) [Tr
+ ansito]\n  - REG 2613 (MILANO CENTRALE -> VERONA PORTA NUOVA) [Transito]\n
+ Ritardo massimo rilevato: -2 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
+  (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROVATO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2613--20261121-S01714@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T061530Z
+DTEND:20261122T062746Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:15 - 07:27 (primo: REG 2613) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: ROVATO (S01714)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 07:15:30 - 07:27:46\nTreni coinvolti
+  nella chiusura:\n  - REG 2613 (MILANO CENTRALE -> VERONA PORTA NUOVA) (+1
+ m)\n  - REG 2613 (MILANO CENTRALE -> VERONA PORTA NUOVA) (+1m)\n  - REG 26
+ 91 (MILANO PORTA GARIBALDI -> BOLZANO) [Transito]\n  - REG 2691 (MILANO PO
+ RTA GARIBALDI -> BOLZANO) [Transito]\nRitardo massimo rilevato: 1 min\nAff
+ idabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 t
+ reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
+  sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROVATO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2618--20261121-S01714@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T063530Z
+DTEND:20261122T064830Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:35 - 07:48 (primo: REG 2618) (+4 m
+ in)
+DESCRIPTION:Stazione/PL: ROVATO (S01714)\nRegime chiusura: CHIUSURA CONTINU
+ A - 3 TRENI\nChiusura sbarre stimata: 07:35:30 - 07:48:30\nTreni coinvolti
+  nella chiusura:\n  - REG 2618 (VERONA PORTA NUOVA -> MILANO CENTRALE)\n  
+ - REG 2691 (MILANO PORTA GARIBALDI -> BOLZANO) (+4m)\n  - REG 2691 (MILANO
+  PORTA GARIBALDI -> BOLZANO) (+4m)\nRitardo massimo rilevato: 4 min\nAffid
+ abilità stima: 90%\nNota normativa/euristica: Chiusura continua per 3 tre
+ ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
+ gombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROVATO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2615--20261121-S01714@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T065735Z
-DTEND:20261122T070305Z
-SUMMARY:[TRANSITO VELOCE] REG 2615 (MILANO CENTRALE -> VERONA PORTA NUOVA) 
- ore 08:01
-DESCRIPTION:Stazione/PL: ROVATO (S01714)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 07:57:35 - 08:03:05\nTreni coinvolti nella chius
- ura:\n  - REG 2615 (MILANO CENTRALE -> VERONA PORTA NUOVA) [Transito]\nRit
- ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Transito stimato senza fermata (78% tratta TREVIGLIO -> ROMANO\; p
- edale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T065752Z
+DTEND:20261122T070322Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:57 - 08:03 (primo: REG 2615)
+DESCRIPTION:Stazione/PL: ROVATO (S01714)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 07:57:52 - 08:03:22\nTreni coinvolti
+  nella chiusura:\n  - REG 2615 (MILANO CENTRALE -> VERONA PORTA NUOVA) [Tr
+ ansito]\n  - REG 2615 (MILANO CENTRALE -> VERONA PORTA NUOVA) [Transito]\n
+ Ritardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
+  (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROVATO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2615--20261121-S01714@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T071530Z
-DTEND:20261122T072000Z
-SUMMARY:[FERMATA] REG 2615 (MILANO CENTRALE -> VERONA PORTA NUOVA) ore 08:1
- 9
-DESCRIPTION:Stazione/PL: ROVATO (S01714)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 08:15:30 - 08:20:00\nTreni coinvolti nella chiusura:\n  
- - REG 2615 (MILANO CENTRALE -> VERONA PORTA NUOVA)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
- da traccia oraria regolare
+DTEND:20261122T072230Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:15 - 08:22 (primo: REG 2615) (+2 m
+ in)
+DESCRIPTION:Stazione/PL: ROVATO (S01714)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 08:15:30 - 08:22:30\nTreni coinvolti
+  nella chiusura:\n  - REG 2615 (MILANO CENTRALE -> VERONA PORTA NUOVA) (+2
+ m)\n  - REG 2615 (MILANO CENTRALE -> VERONA PORTA NUOVA) (+2m)\nRitardo ma
+ ssimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica:
+  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
+ iore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROVATO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2620--20261121-S01714@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T073530Z
 DTEND:20261122T074000Z
 SUMMARY:[FERMATA] REG 2620 (VERONA PORTA NUOVA -> MILANO CENTRALE) ore 08:3
@@ -97,61 +149,89 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2623--20261121-S01714@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T105735Z
-DTEND:20261122T110305Z
-SUMMARY:[TRANSITO VELOCE] REG 2623 (MILANO CENTRALE -> VERONA PORTA NUOVA) 
- ore 12:01
-DESCRIPTION:Stazione/PL: ROVATO (S01714)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 11:57:35 - 12:03:05\nTreni coinvolti nella chius
- ura:\n  - REG 2623 (MILANO CENTRALE -> VERONA PORTA NUOVA) [Transito]\nRit
- ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Transito stimato senza fermata (78% tratta TREVIGLIO -> ROMANO\; p
- edale annuncio fisso Vmax)
+UID:train-2626--20261121-S01714@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T103400Z
+DTEND:20261122T104230Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:34 - 11:42 (primo: REG 2626) (+2 m
+ in)
+DESCRIPTION:Stazione/PL: ROVATO (S01714)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 11:34:00 - 11:42:30\nTreni coinvolti
+  nella chiusura:\n  - REG 2626 (VERONA PORTA NUOVA -> MILANO CENTRALE) (+2
+ m) [Arrivo]\n  - REG 2626 (VERONA PORTA NUOVA -> MILANO CENTRALE) (+2m) [A
+ rrivo]\n  - REG 2626 (VERONA PORTA NUOVA -> MILANO CENTRALE) (+2m) [Parten
+ za]\n  - REG 2626 (VERONA PORTA NUOVA -> MILANO CENTRALE) (+2m) [Partenza]
+ \nRitardo massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativ
+ a/euristica: Chiusura continua per 4 treni: intervallo utile tra i passagg
+ i (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROVATO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2623--20261121-S01714@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T110939Z
+DTEND:20261122T111509Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:09 - 12:15 (primo: REG 2623) (+8 m
+ in)
+DESCRIPTION:Stazione/PL: ROVATO (S01714)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 12:09:39 - 12:15:09\nTreni coinvolti
+  nella chiusura:\n  - REG 2623 (MILANO CENTRALE -> BRESCIA) (+8m) [Transit
+ o]\n  - REG 2623 (MILANO CENTRALE -> BRESCIA) (+8m) [Transito]\nRitardo ma
+ ssimo rilevato: 8 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
+ iore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROVATO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2623--20261121-S01714@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T111530Z
-DTEND:20261122T112000Z
-SUMMARY:[FERMATA] REG 2623 (MILANO CENTRALE -> VERONA PORTA NUOVA) ore 12:1
- 9
-DESCRIPTION:Stazione/PL: ROVATO (S01714)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 12:15:30 - 12:20:00\nTreni coinvolti nella chiusura:\n  
- - REG 2623 (MILANO CENTRALE -> VERONA PORTA NUOVA)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
- da traccia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T112600Z
+DTEND:20261122T113200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:26 - 12:32 (primo: REG 2623) (+11 
+ min)
+DESCRIPTION:Stazione/PL: ROVATO (S01714)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 12:26:00 - 12:32:00\nTreni coinvolti
+  nella chiusura:\n  - REG 2623 (MILANO CENTRALE -> BRESCIA) (+11m)\n  - RE
+ G 2623 (MILANO CENTRALE -> BRESCIA) (+11m)\nRitardo massimo rilevato: 11 m
+ in\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua 
+ per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
+ nima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROVATO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:11
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2631--20261121-S01714@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T145735Z
-DTEND:20261122T150305Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T145737Z
+DTEND:20261122T150307Z
 SUMMARY:[TRANSITO VELOCE] REG 2631 (MILANO CENTRALE -> VERONA PORTA NUOVA) 
  ore 16:01
 DESCRIPTION:Stazione/PL: ROVATO (S01714)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 15:57:35 - 16:03:05\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 15:57:37 - 16:03:07\nTreni coinvolti nella chius
  ura:\n  - REG 2631 (MILANO CENTRALE -> VERONA PORTA NUOVA) [Transito]\nRit
  ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Transito stimato senza fermata (78% tratta TREVIGLIO -> ROMANO\; p
+ istica: Transito stimato senza fermata (79% tratta TREVIGLIO -> ROMANO\; p
  edale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ROVATO
 STATUS:CONFIRMED
@@ -163,8 +243,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2631--20261121-S01714@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T151530Z
 DTEND:20261122T152000Z
 SUMMARY:[FERMATA] REG 2631 (MILANO CENTRALE -> VERONA PORTA NUOVA) ore 16:1
@@ -184,8 +264,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2638--20261121-S01714@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T163530Z
 DTEND:20261122T164000Z
 SUMMARY:[FERMATA] REG 2638 (VERONA PORTA NUOVA -> MILANO CENTRALE) ore 17:3
@@ -205,51 +285,74 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2641--20261121-S01714@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T195735Z
-DTEND:20261122T200305Z
-SUMMARY:[TRANSITO VELOCE] REG 2641 (MILANO CENTRALE -> VERONA PORTA NUOVA) 
- ore 21:01
-DESCRIPTION:Stazione/PL: ROVATO (S01714)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 20:57:35 - 21:03:05\nTreni coinvolti nella chius
- ura:\n  - REG 2641 (MILANO CENTRALE -> VERONA PORTA NUOVA) [Transito]\nRit
- ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Transito stimato senza fermata (78% tratta TREVIGLIO -> ROMANO\; p
- edale annuncio fisso Vmax)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T195737Z
+DTEND:20261122T200307Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:57 - 21:03 (primo: REG 2641)
+DESCRIPTION:Stazione/PL: ROVATO (S01714)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 20:57:37 - 21:03:07\nTreni coinvolti
+  nella chiusura:\n  - REG 2641 (MILANO CENTRALE -> VERONA PORTA NUOVA) [Tr
+ ansito]\n  - REG 2641 (MILANO CENTRALE -> VERONA PORTA NUOVA) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
+ (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROVATO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2641--20261121-S01714@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T201530Z
 DTEND:20261122T202000Z
-SUMMARY:[FERMATA] REG 2641 (MILANO CENTRALE -> VERONA PORTA NUOVA) ore 21:1
- 9
-DESCRIPTION:Stazione/PL: ROVATO (S01714)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 21:15:30 - 21:20:00\nTreni coinvolti nella chiusura:\n  
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:15 - 21:20 (primo: REG 2641)
+DESCRIPTION:Stazione/PL: ROVATO (S01714)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 21:15:30 - 21:20:00\nTreni coinvolti
+  nella chiusura:\n  - REG 2641 (MILANO CENTRALE -> VERONA PORTA NUOVA)\n  
  - REG 2641 (MILANO CENTRALE -> VERONA PORTA NUOVA)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
- da traccia oraria regolare
+ to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura co
+ ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROVATO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2646--20261121-S01714@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T203530Z
+DTEND:20261122T204000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:35 - 21:40 (primo: REG 2646)
+DESCRIPTION:Stazione/PL: ROVATO (S01714)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 21:35:30 - 21:40:00\nTreni coinvolti
+  nella chiusura:\n  - REG 2646 (VERONA PORTA NUOVA -> MILANO CENTRALE)\n  
+ - REG 2646 (VERONA PORTA NUOVA -> MILANO CENTRALE)\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura co
+ ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROVATO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2648--20261121-S01714@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T213530Z
 DTEND:20261122T214000Z
 SUMMARY:[FERMATA] REG 2648 (VERONA PORTA NUOVA -> MILANO CENTRALE) ore 22:3

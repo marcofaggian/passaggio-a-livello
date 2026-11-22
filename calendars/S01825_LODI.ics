@@ -9,32 +9,35 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:82a0bbde87e5322647fa7773f69ec1ec7e6b300f3ce6841535ee663b080c
- 52cf
+X-CONTENT-HASH:d4ff91af5e525a3c4d6589751a51f2804bdba24ca7d0c21d55e485eb2679
+ 0eab
 BEGIN:VEVENT
 UID:train-24014--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T044930Z
-DTEND:20261122T045400Z
-SUMMARY:[FERMATA] REG 24014 (LODI -> MILANO BOVISA POLITECNICO) ore 05:53
-DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: FERMATA\nChiusura 
- sbarre stimata: 05:49:30 - 05:54:00\nTreni coinvolti nella chiusura:\n  - 
- REG 24014 (LODI -> MILANO BOVISA POLITECNICO)\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tr
- accia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T045130Z
+DTEND:20261122T045600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:51 - 05:56 (primo: REG 24014) (+2 
+ min)
+DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 05:51:30 - 05:56:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 24014 (LODI -> MILANO BOVISA POLITECNICO) (+2m)\n 
+  - REG 24014 (LODI -> MILANO BOVISA POLITECNICO) (+2m)\nRitardo massimo ri
+ levato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusur
+ a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24016--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T051930Z
 DTEND:20261122T052400Z
 SUMMARY:[FERMATA] REG 24016 (LODI -> MILANO BOVISA POLITECNICO) ore 06:23
@@ -52,62 +55,66 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2153--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T054230Z
-DTEND:20261122T054700Z
-SUMMARY:[FERMATA] REG 2153 (MILANO CENTRALE -> PIADENA) ore 06:46
-DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: FERMATA\nChiusura 
- sbarre stimata: 06:42:30 - 06:47:00\nTreni coinvolti nella chiusura:\n  - 
+UID:train-2156--20261121-S01825@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T054139Z
+DTEND:20261122T054709Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:41 - 06:47 (primo: REG 2156)
+DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 06:41:39 - 06:47:09\nTreni coinvolti n
+ ella chiusura:\n  - REG 2156 (PIADENA -> MILANO CENTRALE) [Transito]\n  - 
  REG 2153 (MILANO CENTRALE -> PIADENA)\nRitardo massimo rilevato: 0 min\nAf
- fidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia or
- aria regolare
+ fidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 
+ treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
+ i sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-24115--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T054909Z
-DTEND:20261122T055439Z
-SUMMARY:[TRANSITO VELOCE] REG 24115 (MILANO BOVISA POLITECNICO -> LODI) ore
-  06:53
-DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: TRANSITO VELOCE\nC
- hiusura sbarre stimata: 06:49:09 - 06:54:39\nTreni coinvolti nella chiusur
- a:\n  - REG 24115 (MILANO BOVISA POLITECNICO -> LODI) [Transito]\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Transito stimato senza fermata (60% tratta MELEGNANO -> S.ZENONE AL LAM
- BRO\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione LODI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24115--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T060330Z
-DTEND:20261122T061159Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:03 - 07:11 (primo: REG 24115)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T054917Z
+DTEND:20261122T055500Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 06:49 - 06:55 (primo: REG 24115) (+1 
+ min)
 DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
- - 4 TRENI\nChiusura sbarre stimata: 07:03:30 - 07:11:59\nTreni coinvolti n
+ - 3 TRENI\nChiusura sbarre stimata: 06:49:17 - 06:55:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 24115 (MILANO BOVISA POLITECNICO -> LODI) [Transit
+ o]\n  - REG 24018 (LODI -> MILANO BOVISA POLITECNICO) (+1m)\n  - REG 24018
+  (LODI -> MILANO BOVISA POLITECNICO) (+1m)\nRitardo massimo rilevato: 1 mi
+ n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
+ er 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
+ ima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LODI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24115--20261121-S01825@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T060330Z
+DTEND:20261122T061225Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:03 - 07:12 (primo: REG 24115)
+DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 4 TRENI\nChiusura sbarre stimata: 07:03:30 - 07:12:25\nTreni coinvolti n
  ella chiusura:\n  - REG 24115 (MILANO BOVISA POLITECNICO -> LODI)\n  - REG
   2293 (MILANO CENTRALE -> PISA CENTRALE) [Transito]\n  - REG 34025 (VOGHER
- A -> FIDENZA) [Transito]\n  - REG 10856 (PIACENZA -> MILANO GRECO PIRELLI)
-  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
- ta normativa/euristica: Chiusura continua per 4 treni: intervallo utile tr
- a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ A -> FIDENZA) [Transito]\n  - REG 34025 (VOGHERA -> FIDENZA) [Transito]\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -117,56 +124,66 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2293--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T062330Z
-DTEND:20261122T063900Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:23 - 07:39 (primo: REG 2293)
+UID:train-10856--20261121-S01825@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T061935Z
+DTEND:20261122T063706Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:19 - 07:37 (primo: REG 10856) (+6 
+ min)
 DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
- - 3 TRENI\nChiusura sbarre stimata: 07:23:30 - 07:39:00\nTreni coinvolti n
- ella chiusura:\n  - REG 2293 (MILANO CENTRALE -> PISA CENTRALE)\n  - REG 2
- 156 (PIADENA -> MILANO CENTRALE)\n  - REG 10856 (PIACENZA -> MILANO GRECO 
- PIRELLI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota 
- normativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i
-  passaggi (30s) inferiore alla soglia minima di sgombero stradale (120s)
+ - 4 TRENI\nChiusura sbarre stimata: 07:19:35 - 07:37:06\nTreni coinvolti n
+ ella chiusura:\n  - REG 10856 (PIACENZA -> MILANO GRECO PIRELLI) (+6m) [Tr
+ ansito]\n  - REG 2293 (MILANO CENTRALE -> PISA CENTRALE)\n  - REG 2156 (PI
+ ADENA -> MILANO CENTRALE)\n  - REG 10856 (PIACENZA -> MILANO GRECO PIRELLI
+ ) (+6m) [Transito]\nRitardo massimo rilevato: 6 min\nAffidabilità stima: 
+ 78%\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo u
+ tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
+  (120s)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-33971--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+UID:train-10856--20261121-S01825@pl-tracker.local-arr
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
 DTSTART:20261122T064230Z
-DTEND:20261122T064700Z
-SUMMARY:[FERMATA] REG 33971 (MILANO CENTRALE -> FIDENZA) ore 07:46
-DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: FERMATA\nChiusura 
- sbarre stimata: 07:42:30 - 07:47:00\nTreni coinvolti nella chiusura:\n  - 
- REG 33971 (MILANO CENTRALE -> FIDENZA)\nRitardo massimo rilevato: 0 min\nA
- ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
- raria regolare
+DTEND:20261122T065330Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 07:42 - 07:53 (primo: REG 10856) (+13
+  min)
+DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 6 TRENI\nChiusura sbarre stimata: 07:42:30 - 07:53:30\nTreni coinvolti n
+ ella chiusura:\n  - REG 10856 (PIACENZA -> MILANO GRECO PIRELLI) (+13m) [A
+ rrivo]\n  - REG 10856 (PIACENZA -> MILANO GRECO PIRELLI) (+13m) [Arrivo]\n
+   - REG 10856 (PIACENZA -> MILANO GRECO PIRELLI) (+13m) [Partenza]\n  - RE
+ G 10856 (PIACENZA -> MILANO GRECO PIRELLI) (+13m) [Partenza]\n  - REG 3397
+ 1 (MILANO CENTRALE -> FIDENZA) (+6m)\n  - REG 33971 (MILANO CENTRALE -> FI
+ DENZA) (+6m)\nRitardo massimo rilevato: 13 min\nAffidabilità stima: 99%\n
+ Nota normativa/euristica: Chiusura continua per 6 treni: intervallo utile 
+ tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
+ s)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:13
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-33976--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T071430Z
-DTEND:20261122T072439Z
+DTEND:20261122T072447Z
 SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 08:14 - 08:24 (primo: REG 33976)
 DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
- - 3 TRENI\nChiusura sbarre stimata: 08:14:30 - 08:24:39\nTreni coinvolti n
+ - 3 TRENI\nChiusura sbarre stimata: 08:14:30 - 08:24:47\nTreni coinvolti n
  ella chiusura:\n  - REG 33976 (FIDENZA -> MILANO CENTRALE)\n  - REG 10857 
  (MILANO GRECO PIRELLI -> PIACENZA)\n  - REG 24021 (MILANO BOVISA POLITECNI
  CO -> LODI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità sti
@@ -183,8 +200,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24021--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T073330Z
 DTEND:20261122T074200Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:33 - 08:42 (primo: REG 24021)
@@ -205,17 +222,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24023--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T074909Z
-DTEND:20261122T075439Z
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T074917Z
+DTEND:20261122T075447Z
 SUMMARY:[TRANSITO VELOCE] REG 24023 (MILANO BOVISA POLITECNICO -> LODI) ore
   08:53
 DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: TRANSITO VELOCE\nC
- hiusura sbarre stimata: 08:49:09 - 08:54:39\nTreni coinvolti nella chiusur
+ hiusura sbarre stimata: 08:49:17 - 08:54:47\nTreni coinvolti nella chiusur
  a:\n  - REG 24023 (MILANO BOVISA POLITECNICO -> LODI) [Transito]\nRitardo 
  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Transito stimato senza fermata (60% tratta MELEGNANO -> S.ZENONE AL LAM
+ a: Transito stimato senza fermata (63% tratta MELEGNANO -> S.ZENONE AL LAM
  BRO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
@@ -227,8 +244,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24023--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T080330Z
 DTEND:20261122T080800Z
 SUMMARY:[FERMATA] REG 24023 (MILANO BOVISA POLITECNICO -> LODI) ore 09:07
@@ -246,9 +263,32 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-2162--20261121-S01825@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T081848Z
+DTEND:20261122T082432Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:18 - 09:24 (primo: REG 2162) (+15 
+ min)
+DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 09:18:48 - 09:24:32\nTreni coinvolti n
+ ella chiusura:\n  - REG 2162 (PIADENA -> MILANO CENTRALE) (+15m) [Transito
+ ]\n  - REG 2162 (PIADENA -> MILANO CENTRALE) (+15m) [Transito]\nRitardo ma
+ ssimo rilevato: 15 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LODI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:15
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-2294--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T084430Z
 DTEND:20261122T084900Z
 SUMMARY:[FERMATA] REG 2294 (LIVORNO CENTRALE -> MILANO PORTA GARIBALDI) ore
@@ -268,29 +308,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-33960--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T085305Z
-DTEND:20261122T085835Z
-SUMMARY:[TRANSITO VELOCE] REG 33960 (FIDENZA -> MILANO CENTRALE) ore 09:57
-DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: TRANSITO VELOCE\nC
- hiusura sbarre stimata: 09:53:05 - 09:58:35\nTreni coinvolti nella chiusur
- a:\n  - REG 33960 (FIDENZA -> MILANO CENTRALE) [Transito]\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
- sito stimato senza fermata (67% tratta PIACENZA -> CASALPUSTERLENGO\; peda
- le annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione LODI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-33960--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T090930Z
 DTEND:20261122T091400Z
 SUMMARY:[FERMATA] REG 33960 (FIDENZA -> MILANO CENTRALE) ore 10:13
@@ -308,31 +327,57 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-24034--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T094930Z
-DTEND:20261122T095439Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:49 - 10:54 (primo: REG 24034)
+UID:train-2162--20261121-S01825@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T092030Z
+DTEND:20261122T092630Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:20 - 10:26 (primo: REG 2162) (+17 
+ min)
 DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 10:49:30 - 10:54:39\nTreni coinvolti n
- ella chiusura:\n  - REG 24034 (LODI -> MILANO BOVISA POLITECNICO)\n  - REG
-  24031 (MILANO BOVISA POLITECNICO -> LODI) [Transito]\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
-  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
+ - 2 TRENI\nChiusura sbarre stimata: 10:20:30 - 10:26:30\nTreni coinvolti n
+ ella chiusura:\n  - REG 2162 (PIADENA -> MILANO CENTRALE) (+17m)\n  - REG 
+ 2162 (PIADENA -> MILANO CENTRALE) (+17m)\nRitardo massimo rilevato: 17 min
+ \nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua pe
+ r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:17
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2161--20261121-S01825@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T094840Z
+DTEND:20261122T095447Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:48 - 10:54 (primo: REG 2161) (+5 m
+ in)
+DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 4 TRENI\nChiusura sbarre stimata: 10:48:40 - 10:54:47\nTreni coinvolti n
+ ella chiusura:\n  - REG 2161 (MILANO CENTRALE -> PIADENA) (+5m) [Transito]
+ \n  - REG 2161 (MILANO CENTRALE -> PIADENA) (+5m) [Transito]\n  - REG 2403
+ 4 (LODI -> MILANO BOVISA POLITECNICO)\n  - REG 24031 (MILANO BOVISA POLITE
+ CNICO -> LODI) [Transito]\nRitardo massimo rilevato: 5 min\nAffidabilità 
+ stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: inter
+ vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
+ tradale (120s)
+LOCATION:Passaggio a Livello / Stazione LODI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24031--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T100330Z
 DTEND:20261122T100800Z
 SUMMARY:[FERMATA] REG 24031 (MILANO BOVISA POLITECNICO -> LODI) ore 11:07
@@ -351,28 +396,31 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24036--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T101930Z
-DTEND:20261122T102400Z
-SUMMARY:[FERMATA] REG 24036 (LODI -> MILANO BOVISA POLITECNICO) ore 11:23
-DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: FERMATA\nChiusura 
- sbarre stimata: 11:19:30 - 11:24:00\nTreni coinvolti nella chiusura:\n  - 
- REG 24036 (LODI -> MILANO BOVISA POLITECNICO)\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tr
- accia oraria regolare
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T102030Z
+DTEND:20261122T102500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:20 - 11:25 (primo: REG 24036) (+1 
+ min)
+DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 11:20:30 - 11:25:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 24036 (LODI -> MILANO BOVISA POLITECNICO) (+1m)\n 
+  - REG 24036 (LODI -> MILANO BOVISA POLITECNICO) (+1m)\nRitardo massimo ri
+ levato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusur
+ a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-34065--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T104230Z
 DTEND:20261122T104700Z
 SUMMARY:[FERMATA] REG 34065 (MILANO CENTRALE -> FIDENZA) ore 11:46
@@ -391,82 +439,60 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24035--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T104909Z
-DTEND:20261122T105835Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:49 - 11:58 (primo: REG 24035)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T104931Z
+DTEND:20261122T105501Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:49 - 11:55 (primo: REG 24035)
 DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 11:49:09 - 11:58:35\nTreni coinvolti n
+ - 2 TRENI\nChiusura sbarre stimata: 11:49:31 - 11:55:01\nTreni coinvolti n
  ella chiusura:\n  - REG 24035 (MILANO BOVISA POLITECNICO -> LODI) [Transit
- o]\n  - REG 33956 (FIDENZA -> MILANO CENTRALE) [Transito]\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
- sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
+ o]\n  - REG 24035 (MILANO BOVISA POLITECNICO -> LODI) [Transito]\nRitardo 
+ massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24035--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T110330Z
-DTEND:20261122T111400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:03 - 12:14 (primo: REG 24035)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T110230Z
+DTEND:20261122T110700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:02 - 12:07 (primo: REG 24035)
 DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 12:03:30 - 12:14:00\nTreni coinvolti n
+ - 2 TRENI\nChiusura sbarre stimata: 12:02:30 - 12:07:00\nTreni coinvolti n
  ella chiusura:\n  - REG 24035 (MILANO BOVISA POLITECNICO -> LODI)\n  - REG
-  33956 (FIDENZA -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffi
- dabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tr
- eni: intervallo utile tra i passaggi (90s) inferiore alla soglia minima di
-  sgombero stradale (120s)
+  24035 (MILANO BOVISA POLITECNICO -> LODI)\nRitardo massimo rilevato: -1 m
+ in\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua 
+ per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
+ nima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-24037--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T111909Z
-DTEND:20261122T112439Z
-SUMMARY:[TRANSITO VELOCE] REG 24037 (MILANO BOVISA POLITECNICO -> LODI) ore
-  12:23
-DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: TRANSITO VELOCE\nC
- hiusura sbarre stimata: 12:19:09 - 12:24:39\nTreni coinvolti nella chiusur
- a:\n  - REG 24037 (MILANO BOVISA POLITECNICO -> LODI) [Transito]\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Transito stimato senza fermata (60% tratta MELEGNANO -> S.ZENONE AL LAM
- BRO\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione LODI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-24037--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T113330Z
-DTEND:20261122T113800Z
-SUMMARY:[FERMATA] REG 24037 (MILANO BOVISA POLITECNICO -> LODI) ore 12:37
+UID:train-33956--20261121-S01825@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T110930Z
+DTEND:20261122T111400Z
+SUMMARY:[FERMATA] REG 33956 (FIDENZA -> MILANO CENTRALE) ore 12:13
 DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: FERMATA\nChiusura 
- sbarre stimata: 12:33:30 - 12:38:00\nTreni coinvolti nella chiusura:\n  - 
- REG 24037 (MILANO BOVISA POLITECNICO -> LODI)\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tr
- accia oraria regolare
+ sbarre stimata: 12:09:30 - 12:14:00\nTreni coinvolti nella chiusura:\n  - 
+ REG 33956 (FIDENZA -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -476,9 +502,76 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-24037--20261121-S01825@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T112109Z
+DTEND:20261122T112639Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:21 - 12:26 (primo: REG 24037)
+DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 12:21:09 - 12:26:39\nTreni coinvolti n
+ ella chiusura:\n  - REG 24037 (MILANO BOVISA POLITECNICO -> LODI) [Transit
+ o]\n  - REG 24037 (MILANO BOVISA POLITECNICO -> LODI) [Transito]\nRitardo 
+ massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LODI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24037--20261121-S01825@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T113330Z
+DTEND:20261122T113800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:33 - 12:38 (primo: REG 24037)
+DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 12:33:30 - 12:38:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 24037 (MILANO BOVISA POLITECNICO -> LODI)\n  - REG
+  24037 (MILANO BOVISA POLITECNICO -> LODI)\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua p
+ er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
+ ima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LODI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2465--20261121-S01825@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T114700Z
+DTEND:20261122T115330Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:47 - 12:53 (primo: REG 2465) (+11 
+ min)
+DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 12:47:00 - 12:53:30\nTreni coinvolti n
+ ella chiusura:\n  - REG 2465 (MILANO CENTRALE -> FIDENZA) (+11m)\n  - REG 
+ 2465 (MILANO CENTRALE -> FIDENZA) (+11m)\nRitardo massimo rilevato: 11 min
+ \nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua pe
+ r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LODI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:11
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-24148--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T131930Z
 DTEND:20261122T132400Z
 SUMMARY:[FERMATA] REG 24148 (LODI -> SARONNO) ore 14:23
@@ -497,8 +590,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2472--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T140930Z
 DTEND:20261122T141400Z
 SUMMARY:[FERMATA] REG 2472 (FIDENZA -> MILANO CENTRALE) ore 15:13
@@ -516,29 +609,33 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-33983--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T144230Z
-DTEND:20261122T144700Z
-SUMMARY:[FERMATA] REG 33983 (MILANO CENTRALE -> FIDENZA) ore 15:46
-DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: FERMATA\nChiusura 
- sbarre stimata: 15:42:30 - 15:47:00\nTreni coinvolti nella chiusura:\n  - 
- REG 33983 (MILANO CENTRALE -> FIDENZA)\nRitardo massimo rilevato: 0 min\nA
- ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
- raria regolare
+UID:train-2174--20261121-S01825@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T141933Z
+DTEND:20261122T142600Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:19 - 15:26 (primo: REG 2174) (+2 m
+ in)
+DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 4 TRENI\nChiusura sbarre stimata: 15:19:33 - 15:26:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 2174 (PIADENA -> MILANO CENTRALE) (+2m) [Transito]
+ \n  - REG 2174 (PIADENA -> MILANO CENTRALE) (+2m) [Transito]\n  - REG 2415
+ 2 (LODI -> SARONNO) (+2m)\n  - REG 24152 (LODI -> SARONNO) (+2m)\nRitardo 
+ massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24154--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T144930Z
 DTEND:20261122T145400Z
 SUMMARY:[FERMATA] REG 24154 (LODI -> SARONNO) ore 15:53
@@ -556,149 +653,115 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-10874--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T150629Z
-DTEND:20261122T151159Z
-SUMMARY:[TRANSITO VELOCE] REG 10874 (PIACENZA -> MILANO GRECO PIRELLI) ore 
- 16:10
-DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: TRANSITO VELOCE\nC
- hiusura sbarre stimata: 16:06:29 - 16:11:59\nTreni coinvolti nella chiusur
- a:\n  - REG 10874 (PIACENZA -> MILANO GRECO PIRELLI) [Transito]\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (53% tratta PIACENZA -> S.STEFANO LODIGIA
- NO\; pedale annuncio fisso Vmax)
+UID:train-33983--20261121-S01825@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T145700Z
+DTEND:20261122T151500Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 15:57 - 16:15 (primo: REG 33983) (+16
+  min)
+DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 7 TRENI\nChiusura sbarre stimata: 15:57:00 - 16:15:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 33983 (MILANO CENTRALE -> FIDENZA) (+16m)\n  - REG
+  33983 (MILANO CENTRALE -> FIDENZA) (+16m)\n  - REG 2174 (PIADENA -> MILAN
+ O CENTRALE) (+2m)\n  - REG 2174 (PIADENA -> MILANO CENTRALE) (+2m)\n  - RE
+ G 10874 (PIACENZA -> MILANO GRECO PIRELLI) [Transito]\n  - REG 34004 (FIDE
+ NZA -> MILANO CENTRALE) (+1m)\n  - REG 34004 (FIDENZA -> MILANO CENTRALE) 
+ (+1m)\nRitardo massimo rilevato: 16 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Chiusura continua per 7 treni: intervallo utile tra i p
+ assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+X-PL-DELAY-MIN:16
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-24156--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T151930Z
-DTEND:20261122T152439Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:19 - 16:24 (primo: REG 24156)
+UID:train-24153--20261121-S01825@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T151717Z
+DTEND:20261122T152400Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:17 - 16:24 (primo: REG 24153)
 DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 16:19:30 - 16:24:39\nTreni coinvolti n
- ella chiusura:\n  - REG 24156 (LODI -> SARONNO)\n  - REG 24153 (SARONNO ->
-  LODI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 7
- 8%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo ut
- ile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale 
- (120s)
+ - 3 TRENI\nChiusura sbarre stimata: 16:17:17 - 16:24:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 24153 (SARONNO -> LODI) [Transito]\n  - REG 24153 
+ (SARONNO -> LODI) [Transito]\n  - REG 24156 (LODI -> SARONNO)\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) inferi
+ ore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24153--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T153330Z
-DTEND:20261122T154200Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:33 - 16:42 (primo: REG 24153)
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T153130Z
+DTEND:20261122T154227Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 16:31 - 16:42 (primo: REG 24153)
 DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
- - 3 TRENI\nChiusura sbarre stimata: 16:33:30 - 16:42:00\nTreni coinvolti n
- ella chiusura:\n  - REG 24153 (SARONNO -> LODI)\n  - REG 10874 (PIACENZA -
- > MILANO GRECO PIRELLI)\n  - REG 2473 (MILANO CENTRALE -> FIDENZA)\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
- ica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) i
- nferiore alla soglia minima di sgombero stradale (120s)
+ - 6 TRENI\nChiusura sbarre stimata: 16:31:30 - 16:42:27\nTreni coinvolti n
+ ella chiusura:\n  - REG 24153 (SARONNO -> LODI)\n  - REG 24153 (SARONNO ->
+  LODI)\n  - REG 10874 (PIACENZA -> MILANO GRECO PIRELLI)\n  - REG 2473 (MI
+ LANO CENTRALE -> FIDENZA)\n  - REG 2473 (MILANO CENTRALE -> FIDENZA)\n  - 
+ REG 2176 (CREMONA -> MILANO CENTRALE) [Transito]\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
+ inua per 6 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-24155--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T154909Z
-DTEND:20261122T155439Z
-SUMMARY:[TRANSITO VELOCE] REG 24155 (SARONNO -> LODI) ore 16:53
-DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: TRANSITO VELOCE\nC
- hiusura sbarre stimata: 16:49:09 - 16:54:39\nTreni coinvolti nella chiusur
- a:\n  - REG 24155 (SARONNO -> LODI) [Transito]\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito stimat
- o senza fermata (60% tratta MELEGNANO -> S.ZENONE AL LAMBRO\; pedale annun
- cio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione LODI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-2085--20261121-S01825@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T154443Z
+DTEND:20261122T155447Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:44 - 16:54 (primo: REG 2085) (+4 m
+ in)
+DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 3 TRENI\nChiusura sbarre stimata: 16:44:43 - 16:54:47\nTreni coinvolti n
+ ella chiusura:\n  - REG 2085 (VOGHERA -> PIACENZA) (+4m) [Transito]\n  - R
+ EG 2085 (VOGHERA -> PIACENZA) (+4m) [Transito]\n  - REG 24155 (SARONNO -> 
+ LODI) [Transito]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 78
+ %\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo uti
+ le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
+ 120s)
+LOCATION:Passaggio a Livello / Stazione LODI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-24155--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T160330Z
-DTEND:20261122T161159Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:03 - 17:11 (primo: REG 24155)
+DTEND:20261122T160900Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:03 - 17:09 (primo: REG 24155)
 DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 17:03:30 - 17:11:59\nTreni coinvolti n
- ella chiusura:\n  - REG 24155 (SARONNO -> LODI)\n  - REG 10876 (PIACENZA -
- > MILANO GRECO PIRELLI) [Transito]\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione LODI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-24157--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T161909Z
-DTEND:20261122T162439Z
-SUMMARY:[TRANSITO VELOCE] REG 24157 (SARONNO -> LODI) ore 17:23
-DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: TRANSITO VELOCE\nC
- hiusura sbarre stimata: 17:19:09 - 17:24:39\nTreni coinvolti nella chiusur
- a:\n  - REG 24157 (SARONNO -> LODI) [Transito]\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito stimat
- o senza fermata (60% tratta MELEGNANO -> S.ZENONE AL LAMBRO\; pedale annun
- cio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione LODI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-24157--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T163330Z
-DTEND:20261122T164200Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:33 - 17:42 (primo: REG 24157)
-DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
- - 3 TRENI\nChiusura sbarre stimata: 17:33:30 - 17:42:00\nTreni coinvolti n
- ella chiusura:\n  - REG 24157 (SARONNO -> LODI)\n  - REG 10876 (PIACENZA -
- > MILANO GRECO PIRELLI)\n  - REG 2175 (MILANO CENTRALE -> PIADENA)\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
- ica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) i
- nferiore alla soglia minima di sgombero stradale (120s)
+ - 3 TRENI\nChiusura sbarre stimata: 17:03:30 - 17:09:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 24155 (SARONNO -> LODI)\n  - REG 2176 (CREMONA -> 
+ MILANO CENTRALE)\n  - REG 2176 (CREMONA -> MILANO CENTRALE)\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Ch
+ iusura continua per 3 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -708,58 +771,87 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2295--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T164451Z
-DTEND:20261122T165439Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:44 - 17:54 (primo: REG 2295)
+UID:train-10876--20261121-S01825@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T161354Z
+DTEND:20261122T162447Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:13 - 17:24 (primo: REG 10876)
 DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 17:44:51 - 17:54:39\nTreni coinvolti n
- ella chiusura:\n  - REG 2295 (MILANO PORTA GARIBALDI -> LIVORNO CENTRALE) 
- [Transito]\n  - REG 24159 (SARONNO -> LODI) [Transito]\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+ - 3 TRENI\nChiusura sbarre stimata: 17:13:54 - 17:24:47\nTreni coinvolti n
+ ella chiusura:\n  - REG 10876 (PIACENZA -> MILANO GRECO PIRELLI) [Transito
+ ]\n  - REG 10876 (PIACENZA -> MILANO GRECO PIRELLI) [Transito]\n  - REG 24
+ 157 (SARONNO -> LODI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidab
+ ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24157--20261121-S01825@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T163330Z
+DTEND:20261122T165447Z
+SUMMARY:[CHIUSURA CONTINUA - 9 TRENI] 17:33 - 17:54 (primo: REG 24157)
+DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 9 TRENI\nChiusura sbarre stimata: 17:33:30 - 17:54:47\nTreni coinvolti n
+ ella chiusura:\n  - REG 24157 (SARONNO -> LODI)\n  - REG 10876 (PIACENZA -
+ > MILANO GRECO PIRELLI)\n  - REG 10876 (PIACENZA -> MILANO GRECO PIRELLI)\
+ n  - REG 2175 (MILANO CENTRALE -> PIADENA)\n  - REG 33987 (MILANO CENTRALE
+  -> FIDENZA)\n  - REG 33987 (MILANO CENTRALE -> FIDENZA)\n  - REG 2295 (MI
+ LANO PORTA GARIBALDI -> LIVORNO CENTRALE) [Transito]\n  - REG 2295 (MILANO
+  PORTA GARIBALDI -> LIVORNO CENTRALE) [Transito]\n  - REG 24159 (SARONNO -
+ > LODI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
+ 78%\nNota normativa/euristica: Chiusura continua per 9 treni: intervallo u
+ tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
+  (120s)
+LOCATION:Passaggio a Livello / Stazione LODI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 9 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24159--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T170330Z
 DTEND:20261122T171100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:03 - 18:11 (primo: REG 24159)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 18:03 - 18:11 (primo: REG 24159)
 DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 18:03:30 - 18:11:00\nTreni coinvolti n
+ - 3 TRENI\nChiusura sbarre stimata: 18:03:30 - 18:11:00\nTreni coinvolti n
  ella chiusura:\n  - REG 24159 (SARONNO -> LODI)\n  - REG 2295 (MILANO PORT
- A GARIBALDI -> LIVORNO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+ A GARIBALDI -> LIVORNO CENTRALE)\n  - REG 2295 (MILANO PORTA GARIBALDI -> 
+ LIVORNO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 9
+ 0%\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo ut
+ ile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale 
+ (120s)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2090--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T180344Z
-DTEND:20261122T180914Z
-SUMMARY:[TRANSITO VELOCE] REG 2090 (GENOVA BRIGNOLE -> FIDENZA) ore 19:07
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T180346Z
+DTEND:20261122T180916Z
+SUMMARY:[TRANSITO VELOCE] REG 2090 (GENOVA BRIGNOLE -> FIDENZA) ore 19:08
 DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: TRANSITO VELOCE\nC
- hiusura sbarre stimata: 19:03:44 - 19:09:14\nTreni coinvolti nella chiusur
+ hiusura sbarre stimata: 19:03:46 - 19:09:16\nTreni coinvolti nella chiusur
  a:\n  - REG 2090 (GENOVA BRIGNOLE -> FIDENZA) [Transito]\nRitardo massimo 
  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
  ito stimato senza fermata (53% tratta VOGHERA -> STRADELLA\; pedale annunc
@@ -774,143 +866,152 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24168--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T181930Z
-DTEND:20261122T182400Z
-SUMMARY:[FERMATA] REG 24168 (LODI -> SARONNO) ore 19:23
-DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: FERMATA\nChiusura 
- sbarre stimata: 19:19:30 - 19:24:00\nTreni coinvolti nella chiusura:\n  - 
- REG 24168 (LODI -> SARONNO)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Previsione da traccia oraria rego
- lare
+DTEND:20261122T182450Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 19:19 - 19:24 (primo: REG 24168)
+DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 3 TRENI\nChiusura sbarre stimata: 19:19:30 - 19:24:50\nTreni coinvolti n
+ ella chiusura:\n  - REG 24168 (LODI -> SARONNO)\n  - REG 2182 (PIADENA -> 
+ MILANO CENTRALE) [Transito]\n  - REG 2182 (PIADENA -> MILANO CENTRALE) [Tr
+ ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i 
+ passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-34000--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T185305Z
-DTEND:20261122T185835Z
-SUMMARY:[TRANSITO VELOCE] REG 34000 (FIDENZA -> MILANO CENTRALE) ore 19:57
-DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: TRANSITO VELOCE\nC
- hiusura sbarre stimata: 19:53:05 - 19:58:35\nTreni coinvolti nella chiusur
- a:\n  - REG 34000 (FIDENZA -> MILANO CENTRALE) [Transito]\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
- sito stimato senza fermata (67% tratta PIACENZA -> CASALPUSTERLENGO\; peda
- le annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione LODI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-34000--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T190930Z
-DTEND:20261122T191400Z
-SUMMARY:[FERMATA] REG 34000 (FIDENZA -> MILANO CENTRALE) ore 20:13
-DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: FERMATA\nChiusura 
- sbarre stimata: 20:09:30 - 20:14:00\nTreni coinvolti nella chiusura:\n  - 
- REG 34000 (FIDENZA -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nA
- ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
- raria regolare
+UID:train-24170--20261121-S01825@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T184930Z
+DTEND:20261122T185400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:49 - 19:54 (primo: REG 24170)
+DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 19:49:30 - 19:54:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 24170 (LODI -> SARONNO)\n  - REG 24170 (LODI -> SA
+ RONNO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota no
+ rmativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i p
+ assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2182--20261121-S01825@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T190430Z
+DTEND:20261122T191400Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:04 - 20:14 (primo: REG 2182)
+DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 3 TRENI\nChiusura sbarre stimata: 20:04:30 - 20:14:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 2182 (PIADENA -> MILANO CENTRALE)\n  - REG 2182 (P
+ IADENA -> MILANO CENTRALE)\n  - REG 34000 (FIDENZA -> MILANO CENTRALE)\nRi
+ tardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eu
+ ristica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (3
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LODI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24172--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T191930Z
-DTEND:20261122T193015Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:19 - 20:30 (primo: REG 24172)
+DTEND:20261122T193042Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:19 - 20:30 (primo: REG 24172)
 DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 20:19:30 - 20:30:15\nTreni coinvolti n
- ella chiusura:\n  - REG 24172 (LODI -> SARONNO)\n  - REG 34008 (FIDENZA ->
-  MILANO PORTA GARIBALDI) [Transito]\nRitardo massimo rilevato: 0 min\nAffi
- dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tr
- eni: intervallo utile tra i passaggi (45s) inferiore alla soglia minima di
-  sgombero stradale (120s)
+ - 4 TRENI\nChiusura sbarre stimata: 20:19:30 - 20:30:42\nTreni coinvolti n
+ ella chiusura:\n  - REG 24172 (LODI -> SARONNO)\n  - REG 24172 (LODI -> SA
+ RONNO)\n  - REG 34008 (FIDENZA -> MILANO PORTA GARIBALDI) [Transito]\n  - 
+ REG 34008 (FIDENZA -> MILANO PORTA GARIBALDI) [Transito]\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
+ ura continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2181--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T194230Z
-DTEND:20261122T194700Z
-SUMMARY:[FERMATA] REG 2181 (MILANO CENTRALE -> PIADENA) ore 20:46
-DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: FERMATA\nChiusura 
- sbarre stimata: 20:42:30 - 20:47:00\nTreni coinvolti nella chiusura:\n  - 
- REG 2181 (MILANO CENTRALE -> PIADENA)\nRitardo massimo rilevato: 0 min\nAf
- fidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia or
- aria regolare
-LOCATION:Passaggio a Livello / Stazione LODI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-24174--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261122T194930Z
-DTEND:20261122T195439Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:49 - 20:54 (primo: REG 24174)
+DTEND:20261122T195447Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 20:42 - 20:54 (primo: REG 2181)
 DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 20:49:30 - 20:54:39\nTreni coinvolti n
- ella chiusura:\n  - REG 24174 (LODI -> MILANO BOVISA POLITECNICO)\n  - REG
-  24171 (SARONNO -> LODI) [Transito]\nRitardo massimo rilevato: 0 min\nAffi
- dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tr
- eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
- sgombero stradale (120s)
+ - 7 TRENI\nChiusura sbarre stimata: 20:42:30 - 20:54:47\nTreni coinvolti n
+ ella chiusura:\n  - REG 2181 (MILANO CENTRALE -> PIADENA)\n  - REG 10883 (
+ MILANO GRECO PIRELLI -> PIACENZA)\n  - REG 10883 (MILANO GRECO PIRELLI -> 
+ PIACENZA)\n  - REG 24174 (LODI -> MILANO BOVISA POLITECNICO)\n  - REG 2417
+ 4 (LODI -> MILANO BOVISA POLITECNICO)\n  - REG 24171 (SARONNO -> LODI) [Tr
+ ansito]\n  - REG 24171 (SARONNO -> LODI) [Transito]\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
+ ontinua per 7 treni: intervallo utile tra i passaggi (0s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24171--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T200330Z
-DTEND:20261122T201159Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:03 - 21:11 (primo: REG 24171)
+DTEND:20261122T200800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:03 - 21:08 (primo: REG 24171)
 DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
- - 2 TRENI\nChiusura sbarre stimata: 21:03:30 - 21:11:59\nTreni coinvolti n
- ella chiusura:\n  - REG 24171 (SARONNO -> LODI)\n  - REG 10884 (PIACENZA -
- > MILANO GRECO PIRELLI) [Transito]\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+ - 2 TRENI\nChiusura sbarre stimata: 21:03:30 - 21:08:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 24171 (SARONNO -> LODI)\n  - REG 24171 (SARONNO ->
+  LODI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota no
+ rmativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i p
+ assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LODI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10884--20261121-S01825@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261122T201835Z
+DTEND:20261122T202405Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:18 - 21:24 (primo: REG 10884)
+DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 21:18:35 - 21:24:05\nTreni coinvolti n
+ ella chiusura:\n  - REG 10884 (PIACENZA -> MILANO GRECO PIRELLI) [Transito
+ ]\n  - REG 10884 (PIACENZA -> MILANO GRECO PIRELLI) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
+ iore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -921,38 +1022,63 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10884--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T203430Z
 DTEND:20261122T203900Z
-SUMMARY:[FERMATA] REG 10884 (PIACENZA -> MILANO GRECO PIRELLI) ore 21:38
-DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: FERMATA\nChiusura 
- sbarre stimata: 21:34:30 - 21:39:00\nTreni coinvolti nella chiusura:\n  - 
- REG 10884 (PIACENZA -> MILANO GRECO PIRELLI)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
- ccia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:34 - 21:39 (primo: REG 10884)
+DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 2 TRENI\nChiusura sbarre stimata: 21:34:30 - 21:39:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 10884 (PIACENZA -> MILANO GRECO PIRELLI)\n  - REG 
+ 10884 (PIACENZA -> MILANO GRECO PIRELLI)\nRitardo massimo rilevato: 0 min\
+ nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per
+  2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
+ a di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2483--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T204230Z
-DTEND:20261122T205835Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:42 - 21:58 (primo: REG 2483)
+DTEND:20261122T205200Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 21:42 - 21:52 (primo: REG 2483)
 DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
- - 3 TRENI\nChiusura sbarre stimata: 21:42:30 - 21:58:35\nTreni coinvolti n
- ella chiusura:\n  - REG 2483 (MILANO CENTRALE -> FIDENZA)\n  - REG 10885 (
- MILANO GRECO PIRELLI -> PIACENZA)\n  - REG 87980 (FIDENZA -> MILANO CENTRA
- LE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\
- nNota normativa/euristica: Chiusura continua per 3 treni: intervallo utile
-  tra i passaggi (65s) inferiore alla soglia minima di sgombero stradale (1
+ - 4 TRENI\nChiusura sbarre stimata: 21:42:30 - 21:52:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 2483 (MILANO CENTRALE -> FIDENZA)\n  - REG 2483 (M
+ ILANO CENTRALE -> FIDENZA)\n  - REG 10885 (MILANO GRECO PIRELLI -> PIACENZ
+ A)\n  - REG 10885 (MILANO GRECO PIRELLI -> PIACENZA)\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura 
+ continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LODI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10886--20261121-S01825@pl-tracker.local
+DTSTAMP:20261122T150820Z
+SEQUENCE:0
+DTSTART:20261122T210634Z
+DTEND:20261122T211400Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 22:06 - 22:14 (primo: REG 10886)
+DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
+ - 3 TRENI\nChiusura sbarre stimata: 22:06:34 - 22:14:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 10886 (PIACENZA -> MILANO GRECO PIRELLI) [Transito
+ ]\n  - REG 87980 (FIDENZA -> MILANO CENTRALE)\n  - REG 87980 (FIDENZA -> M
+ ILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%
+ \nNota normativa/euristica: Chiusura continua per 3 treni: intervallo util
+ e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
  20s)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
@@ -963,32 +1089,31 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-87980--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
+UID:train-10483--20261121-S01825@pl-tracker.local
+DTSTAMP:20261122T150820Z
 SEQUENCE:0
-DTSTART:20261122T210930Z
-DTEND:20261122T212439Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 22:09 - 22:24 (primo: REG 87980)
+DTSTART:20261122T211855Z
+DTEND:20261122T212447Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:18 - 22:24 (primo: REG 10483)
 DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: CHIUSURA CONTINUA 
- - 4 TRENI\nChiusura sbarre stimata: 22:09:30 - 22:24:39\nTreni coinvolti n
- ella chiusura:\n  - REG 87980 (FIDENZA -> MILANO CENTRALE)\n  - REG 10886 
- (PIACENZA -> MILANO GRECO PIRELLI) [Transito]\n  - REG 10483 (MILANO PORTA
-  GARIBALDI -> PIACENZA) [Transito]\n  - REG 24177 (SARONNO -> LODI) [Trans
- ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
- ativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i pas
- saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ - 2 TRENI\nChiusura sbarre stimata: 22:18:55 - 22:24:47\nTreni coinvolti n
+ ella chiusura:\n  - REG 10483 (MILANO PORTA GARIBALDI -> PIACENZA) [Transi
+ to]\n  - REG 24177 (SARONNO -> LODI) [Transito]\nRitardo massimo rilevato:
+  0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
+ nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24177--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
 DTSTART:20261122T213330Z
 DTEND:20261122T213900Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:33 - 22:39 (primo: REG 24177)
@@ -1009,16 +1134,16 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-754--20261121-S01825@pl-tracker.local
-DTSTAMP:20261122T065144Z
-SEQUENCE:1
-DTSTART:20261123T054127Z
-DTEND:20261123T054557Z
-SUMMARY:[TRANSITO VELOCE] ICN 754 (LECCE -> TORINO PORTA NUOVA) ore 06:44
+DTSTAMP:20261122T150820Z
+SEQUENCE:2
+DTSTART:20261123T054222Z
+DTEND:20261123T054652Z
+SUMMARY:[TRANSITO VELOCE] ICN 754 (LECCE -> TORINO PORTA NUOVA) ore 06:45
 DESCRIPTION:Stazione/PL: LODI (S01825)\nRegime chiusura: TRANSITO VELOCE\nC
- hiusura sbarre stimata: 06:41:27 - 06:45:57\nTreni coinvolti nella chiusur
+ hiusura sbarre stimata: 06:42:22 - 06:46:52\nTreni coinvolti nella chiusur
  a:\n  - ICN 754 (LECCE -> TORINO PORTA NUOVA) [Transito]\nRitardo massimo 
  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
- ito stimato senza fermata (76% tratta BOLOGNA CENTRALE -> PIACENZA\; pedal
+ ito stimato senza fermata (77% tratta BOLOGNA CENTRALE -> PIACENZA\; pedal
  e annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LODI
 STATUS:CONFIRMED
