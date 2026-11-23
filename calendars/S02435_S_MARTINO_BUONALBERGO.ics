@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:4c7118cfb133a7f32ad84068eccd6040b994f8cd102e9f28395bd5f43c7b
- 163b
+X-CONTENT-HASH:acc8545ab875af6e3e1b80ee98fd34c347b27bd74964634fbc5f9e10fa7e
+ 4c34
 BEGIN:VEVENT
 UID:train-16325--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T044630Z
 DTEND:20261123T045100Z
 SUMMARY:[FERMATA] REG 16325 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) ore 05:
@@ -34,8 +34,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17181--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T061230Z
 DTEND:20261123T061700Z
 SUMMARY:[FERMATA] REG 17181 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) ore 07:
@@ -54,15 +54,37 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-3478--20261122-S02435@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:0
+DTSTART:20261123T062227Z
+DTEND:20261123T062757Z
+SUMMARY:[TRANSITO VELOCE] REG 3478 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) 
+ ore 07:26
+DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: T
+ RANSITO VELOCE\nChiusura sbarre stimata: 07:22:27 - 07:27:57\nTreni coinvo
+ lti nella chiusura:\n  - REG 3478 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) 
+ [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Transito stimato senza fermata (77% tratta S.BONIFA
+ CIO -> VERONA PORTA VESCOVO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione S.MARTINO BUONALBERGO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-17162--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T064630Z
-DTEND:20261123T065200Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T064631Z
+DTEND:20261123T065201Z
 SUMMARY:[TRANSITO VELOCE] REG 17162 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
   ore 07:50
 DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: T
- RANSITO VELOCE\nChiusura sbarre stimata: 07:46:30 - 07:52:00\nTreni coinvo
+ RANSITO VELOCE\nChiusura sbarre stimata: 07:46:31 - 07:52:01\nTreni coinvo
  lti nella chiusura:\n  - REG 17162 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
   [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
  ta normativa/euristica: Transito stimato senza fermata (81% tratta S.BONIF
@@ -77,8 +99,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17162--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T065430Z
 DTEND:20261123T065900Z
 SUMMARY:[FERMATA] REG 17162 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) ore 07:
@@ -98,8 +120,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17257--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T074630Z
 DTEND:20261123T075100Z
 SUMMARY:[FERMATA] REG 17257 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) ore 08:
@@ -119,61 +141,57 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17166--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T080254Z
 DTEND:20261123T080824Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:02 - 09:08 (primo: REG 17166) (+2 
- min)
-DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:02:54 - 09:08:24\n
- Treni coinvolti nella chiusura:\n  - REG 17166 (VENEZIA S.LUCIA -> VERONA 
- PORTA NUOVA) (+2m) [Transito]\n  - REG 17166 (VENEZIA S.LUCIA -> VERONA PO
- RTA NUOVA) (+2m) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilit
- à stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 17166 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
+  ore 09:07 (+2 min)
+DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: T
+ RANSITO VELOCE\nChiusura sbarre stimata: 09:02:54 - 09:08:24\nTreni coinvo
+ lti nella chiusura:\n  - REG 17166 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
+  (+2m) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 7
+ 8%\nNota normativa/euristica: Transito stimato senza fermata (81% tratta S
+ .BONIFACIO -> CALDIERO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.MARTINO BUONALBERGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17166--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T081230Z
 DTEND:20261123T081730Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:12 - 09:17 (primo: REG 17166) (+6 
- min)
-DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:12:30 - 09:17:30\n
- Treni coinvolti nella chiusura:\n  - REG 17166 (VENEZIA S.LUCIA -> VERONA 
- PORTA NUOVA) (+6m)\n  - REG 17166 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) 
- (+6m)\nRitardo massimo rilevato: 6 min\nAffidabilità stima: 99%\nNota nor
- mativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pa
- ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 17166 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) ore 09:
+ 16 (+6 min)
+DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: F
+ ERMATA\nChiusura sbarre stimata: 09:12:30 - 09:17:30\nTreni coinvolti nell
+ a chiusura:\n  - REG 17166 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+6m)\n
+ Ritardo massimo rilevato: 6 min\nAffidabilità stima: 99%\nNota normativa/
+ euristica: Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione S.MARTINO BUONALBERGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17250--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T084630Z
-DTEND:20261123T085200Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T084631Z
+DTEND:20261123T085201Z
 SUMMARY:[TRANSITO VELOCE] REG 17250 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
   ore 09:50
 DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: T
- RANSITO VELOCE\nChiusura sbarre stimata: 09:46:30 - 09:52:00\nTreni coinvo
+ RANSITO VELOCE\nChiusura sbarre stimata: 09:46:31 - 09:52:01\nTreni coinvo
  lti nella chiusura:\n  - REG 17250 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
   [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
  ta normativa/euristica: Transito stimato senza fermata (81% tratta S.BONIF
@@ -188,41 +206,40 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17250--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T085430Z
 DTEND:20261123T085930Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 09:54 - 09:59 (primo: REG 17250) (+8 
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:54 - 09:59 (primo: REG 17250) (+8 
  min)
 DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: C
- HIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 09:54:30 - 09:59:30\n
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:54:30 - 09:59:30\n
  Treni coinvolti nella chiusura:\n  - REG 17250 (VENEZIA S.LUCIA -> VERONA 
  PORTA NUOVA)\n  - REG 17299 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+8m)\
- n  - REG 17299 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+8m)\nRitardo mass
- imo rilevato: 8 min\nAffidabilità stima: 90%\nNota normativa/euristica: C
- hiusura continua per 3 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
+ nRitardo massimo rilevato: 8 min\nAffidabilità stima: 90%\nNota normativa
+ /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
+  (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.MARTINO BUONALBERGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:8
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3632--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T103155Z
-DTEND:20261123T103725Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261123T103202Z
+DTEND:20261123T103732Z
 SUMMARY:[TRANSITO VELOCE] REG 3632 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) 
  ore 11:36 (+8 min)
 DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: T
- RANSITO VELOCE\nChiusura sbarre stimata: 11:31:55 - 11:37:25\nTreni coinvo
+ RANSITO VELOCE\nChiusura sbarre stimata: 11:32:02 - 11:37:32\nTreni coinvo
  lti nella chiusura:\n  - REG 3632 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) 
  (+8m) [Transito]\nRitardo massimo rilevato: 8 min\nAffidabilità stima: 78
- %\nNota normativa/euristica: Transito stimato senza fermata (76% tratta S.
+ %\nNota normativa/euristica: Transito stimato senza fermata (77% tratta S.
  BONIFACIO -> VERONA PORTA VESCOVO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.MARTINO BUONALBERGO
 STATUS:CONFIRMED
@@ -234,17 +251,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3488--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T112416Z
-DTEND:20261123T112946Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261123T112427Z
+DTEND:20261123T112957Z
 SUMMARY:[TRANSITO VELOCE] REG 3488 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) 
  ore 12:28 (+2 min)
 DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: T
- RANSITO VELOCE\nChiusura sbarre stimata: 12:24:16 - 12:29:46\nTreni coinvo
+ RANSITO VELOCE\nChiusura sbarre stimata: 12:24:27 - 12:29:57\nTreni coinvo
  lti nella chiusura:\n  - REG 3488 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) 
  (+2m) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78
- %\nNota normativa/euristica: Transito stimato senza fermata (76% tratta S.
+ %\nNota normativa/euristica: Transito stimato senza fermata (77% tratta S.
  BONIFACIO -> VERONA PORTA VESCOVO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.MARTINO BUONALBERGO
 STATUS:CONFIRMED
@@ -256,130 +273,60 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17190--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T115631Z
-DTEND:20261123T120201Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:56 - 13:02 (primo: REG 17190) (+1 
- min)
-DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:56:31 - 13:02:01\n
- Treni coinvolti nella chiusura:\n  - REG 17190 (VENEZIA S.LUCIA -> VERONA 
- PORTA NUOVA) (+1m) [Transito]\n  - REG 17190 (VENEZIA S.LUCIA -> VERONA PO
- RTA NUOVA) (+1m) [Transito]\nRitardo massimo rilevato: 1 min\nAffidabilit
- à stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T115633Z
+DTEND:20261123T120203Z
+SUMMARY:[TRANSITO VELOCE] REG 17190 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
+  ore 13:00 (+1 min)
+DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: T
+ RANSITO VELOCE\nChiusura sbarre stimata: 12:56:33 - 13:02:03\nTreni coinvo
+ lti nella chiusura:\n  - REG 17190 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
+  (+1m) [Transito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 7
+ 8%\nNota normativa/euristica: Transito stimato senza fermata (81% tratta S
+ .BONIFACIO -> CALDIERO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.MARTINO BUONALBERGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17190--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T120730Z
 DTEND:20261123T121200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:07 - 13:12 (primo: REG 17190) (+1 
- min)
-DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:07:30 - 13:12:00\n
- Treni coinvolti nella chiusura:\n  - REG 17190 (VENEZIA S.LUCIA -> VERONA 
- PORTA NUOVA) (+1m)\n  - REG 17190 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) 
- (+1m)\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 90%\nNota nor
- mativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pa
- ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 17190 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) ore 13:
+ 11 (+1 min)
+DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: F
+ ERMATA\nChiusura sbarre stimata: 13:07:30 - 13:12:00\nTreni coinvolti nell
+ a chiusura:\n  - REG 17190 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+1m)\n
+ Ritardo massimo rilevato: 1 min\nAffidabilità stima: 90%\nNota normativa/
+ euristica: Previsione con ritardo propagato (+1 min)
 LOCATION:Passaggio a Livello / Stazione S.MARTINO BUONALBERGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-17209--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T124630Z
-DTEND:20261123T125100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:46 - 13:51 (primo: REG 17209)
-DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:46:30 - 13:51:00\n
- Treni coinvolti nella chiusura:\n  - REG 17209 (VERONA PORTA NUOVA -> VENE
- ZIA S.LUCIA)\n  - REG 17209 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euris
- tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione S.MARTINO BUONALBERGO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-16281--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
+UID:train-3490--20261122-S02435@pl-tracker.local
+DTSTAMP:20261123T221239Z
 SEQUENCE:0
-DTSTART:20261123T134630Z
-DTEND:20261123T135100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:46 - 14:51 (primo: REG 16281)
-DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:46:30 - 14:51:00\n
- Treni coinvolti nella chiusura:\n  - REG 16281 (VERONA PORTA NUOVA -> VENE
- ZIA S.LUCIA)\n  - REG 16281 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euris
- tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione S.MARTINO BUONALBERGO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17221--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T144630Z
-DTEND:20261123T145100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:46 - 15:51 (primo: REG 17221)
-DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:46:30 - 15:51:00\n
- Treni coinvolti nella chiusura:\n  - REG 17221 (VERONA PORTA NUOVA -> VENE
- ZIA S.LUCIA)\n  - REG 17221 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euris
- tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione S.MARTINO BUONALBERGO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3498--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T152216Z
-DTEND:20261123T152746Z
-SUMMARY:[TRANSITO VELOCE] REG 3498 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) 
- ore 16:26
+DTSTART:20261123T122227Z
+DTEND:20261123T122757Z
+SUMMARY:[TRANSITO VELOCE] REG 3490 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) 
+ ore 13:26
 DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: T
- RANSITO VELOCE\nChiusura sbarre stimata: 16:22:16 - 16:27:46\nTreni coinvo
- lti nella chiusura:\n  - REG 3498 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) 
+ RANSITO VELOCE\nChiusura sbarre stimata: 13:22:27 - 13:27:57\nTreni coinvo
+ lti nella chiusura:\n  - REG 3490 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) 
  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
- a normativa/euristica: Transito stimato senza fermata (76% tratta S.BONIFA
+ a normativa/euristica: Transito stimato senza fermata (77% tratta S.BONIFA
  CIO -> VERONA PORTA VESCOVO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.MARTINO BUONALBERGO
 STATUS:CONFIRMED
@@ -390,37 +337,99 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-17227--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T154030Z
-DTEND:20261123T154500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:40 - 16:45 (primo: REG 17227)
-DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:40:30 - 16:45:00\n
- Treni coinvolti nella chiusura:\n  - REG 17227 (VERONA PORTA NUOVA -> VENE
- ZIA S.LUCIA)\n  - REG 17227 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euris
- tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
+UID:train-17209--20261122-S02435@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T124630Z
+DTEND:20261123T125100Z
+SUMMARY:[FERMATA] REG 17209 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) ore 13:
+ 50
+DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: F
+ ERMATA\nChiusura sbarre stimata: 13:46:30 - 13:51:00\nTreni coinvolti nell
+ a chiusura:\n  - REG 17209 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
+ ica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione S.MARTINO BUONALBERGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16281--20261122-S02435@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261123T134630Z
+DTEND:20261123T135100Z
+SUMMARY:[FERMATA] REG 16281 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) ore 14:
+ 50
+DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: F
+ ERMATA\nChiusura sbarre stimata: 14:46:30 - 14:51:00\nTreni coinvolti nell
+ a chiusura:\n  - REG 16281 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
+ ica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione S.MARTINO BUONALBERGO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17221--20261122-S02435@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261123T144630Z
+DTEND:20261123T145100Z
+SUMMARY:[FERMATA] REG 17221 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) ore 15:
+ 50
+DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: F
+ ERMATA\nChiusura sbarre stimata: 15:46:30 - 15:51:00\nTreni coinvolti nell
+ a chiusura:\n  - REG 17221 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
+ ica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione S.MARTINO BUONALBERGO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17227--20261122-S02435@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T154030Z
+DTEND:20261123T154500Z
+SUMMARY:[FERMATA] REG 17227 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) ore 16:
+ 44
+DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: F
+ ERMATA\nChiusura sbarre stimata: 16:40:30 - 16:45:00\nTreni coinvolti nell
+ a chiusura:\n  - REG 17227 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
+ ica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione S.MARTINO BUONALBERGO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17204--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T155520Z
-DTEND:20261123T160050Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T155522Z
+DTEND:20261123T160052Z
 SUMMARY:[TRANSITO VELOCE] REG 17204 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
   ore 16:59
 DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: T
- RANSITO VELOCE\nChiusura sbarre stimata: 16:55:20 - 17:00:50\nTreni coinvo
+ RANSITO VELOCE\nChiusura sbarre stimata: 16:55:22 - 17:00:52\nTreni coinvo
  lti nella chiusura:\n  - REG 17204 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
   [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
  ta normativa/euristica: Transito stimato senza fermata (81% tratta S.BONIF
@@ -435,8 +444,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17204--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T160630Z
 DTEND:20261123T161100Z
 SUMMARY:[FERMATA] REG 17204 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) ore 17:
@@ -456,14 +465,14 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17208--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T164630Z
-DTEND:20261123T165200Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T164631Z
+DTEND:20261123T165201Z
 SUMMARY:[TRANSITO VELOCE] REG 17208 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
   ore 17:50
 DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: T
- RANSITO VELOCE\nChiusura sbarre stimata: 17:46:30 - 17:52:00\nTreni coinvo
+ RANSITO VELOCE\nChiusura sbarre stimata: 17:46:31 - 17:52:01\nTreni coinvo
  lti nella chiusura:\n  - REG 17208 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
   [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
  ta normativa/euristica: Transito stimato senza fermata (81% tratta S.BONIF
@@ -478,8 +487,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17208--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T165430Z
 DTEND:20261123T165900Z
 SUMMARY:[FERMATA] REG 17208 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) ore 17:
@@ -499,14 +508,14 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17216--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T174630Z
-DTEND:20261123T175200Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T174631Z
+DTEND:20261123T175201Z
 SUMMARY:[TRANSITO VELOCE] REG 17216 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
   ore 18:50
 DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: T
- RANSITO VELOCE\nChiusura sbarre stimata: 18:46:30 - 18:52:00\nTreni coinvo
+ RANSITO VELOCE\nChiusura sbarre stimata: 18:46:31 - 18:52:01\nTreni coinvo
  lti nella chiusura:\n  - REG 17216 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
   [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
  ta normativa/euristica: Transito stimato senza fermata (81% tratta S.BONIF
@@ -521,8 +530,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17216--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T175430Z
 DTEND:20261123T175900Z
 SUMMARY:[FERMATA] REG 17216 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) ore 18:
@@ -542,69 +551,65 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17254--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T204630Z
-DTEND:20261123T205200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:46 - 21:52 (primo: REG 17254)
-DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:46:30 - 21:52:00\n
- Treni coinvolti nella chiusura:\n  - REG 17254 (VENEZIA S.LUCIA -> VERONA 
- PORTA NUOVA) [Transito]\n  - REG 17254 (VENEZIA S.LUCIA -> VERONA PORTA NU
- OVA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%
- \nNota normativa/euristica: Chiusura continua per 2 treni: intervallo util
- e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
- 20s)
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261123T204631Z
+DTEND:20261123T205201Z
+SUMMARY:[TRANSITO VELOCE] REG 17254 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
+  ore 21:50
+DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: T
+ RANSITO VELOCE\nChiusura sbarre stimata: 21:46:31 - 21:52:01\nTreni coinvo
+ lti nella chiusura:\n  - REG 17254 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
+  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Transito stimato senza fermata (81% tratta S.BONIF
+ ACIO -> CALDIERO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.MARTINO BUONALBERGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17254--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T205430Z
 DTEND:20261123T205900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:54 - 21:59 (primo: REG 17254)
-DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:54:30 - 21:59:00\n
- Treni coinvolti nella chiusura:\n  - REG 17254 (VENEZIA S.LUCIA -> VERONA 
- PORTA NUOVA)\n  - REG 17254 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euris
- tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 17254 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) ore 21:
+ 58
+DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: F
+ ERMATA\nChiusura sbarre stimata: 21:54:30 - 21:59:00\nTreni coinvolti nell
+ a chiusura:\n  - REG 17254 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
+ ica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione S.MARTINO BUONALBERGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17124--20261122-S02435@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T214137Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261123T214138Z
 DTEND:20261123T215300Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 22:41 - 22:53 (primo: REG 17124)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:41 - 22:53 (primo: REG 17124)
 DESCRIPTION:Stazione/PL: S.MARTINO BUONALBERGO (S02435)\nRegime chiusura: C
- HIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 22:41:37 - 22:53:00\n
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:41:38 - 22:53:00\n
  Treni coinvolti nella chiusura:\n  - REG 17124 (VENEZIA S.LUCIA -> VERONA 
  PORTA NUOVA) [Transito]\n  - REG 17124 (VENEZIA S.LUCIA -> VERONA PORTA NU
- OVA) [Transito]\n  - REG 17124 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\n  
- - REG 17124 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
- ontinua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+ OVA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
+ saggi (81s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.MARTINO BUONALBERGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG

@@ -9,18 +9,18 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:a8af434daed65913e80591e168b0a65ae6ddf0ce78c937bd18caa7928e5f
- 454d
+X-CONTENT-HASH:294252dabf53d26eb5726c22b6e1955f88738fd002ed341fde7ebd04a592
+ 7f1f
 BEGIN:VEVENT
 UID:train-3016--20261122-S04709@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T041327Z
-DTEND:20261123T041857Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261123T041324Z
+DTEND:20261123T041854Z
 SUMMARY:[TRANSITO VELOCE] REG 3016 (SESTRI LEVANTE -> MILANO CENTRALE) ore 
  05:17 (+6 min)
 DESCRIPTION:Stazione/PL: BOGLIASCO (S04709)\nRegime chiusura: TRANSITO VELO
- CE\nChiusura sbarre stimata: 05:13:27 - 05:18:57\nTreni coinvolti nella ch
+ CE\nChiusura sbarre stimata: 05:13:24 - 05:18:54\nTreni coinvolti nella ch
  iusura:\n  - REG 3016 (SESTRI LEVANTE -> MILANO CENTRALE) (+6m) [Transito]
  \nRitardo massimo rilevato: 6 min\nAffidabilità stima: 78%\nNota normativ
  a/euristica: Transito stimato senza fermata (72% tratta RECCO -> GENOVA NE
@@ -34,9 +34,31 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-12310--20261122-S04709@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:0
+DTSTART:20261123T050603Z
+DTEND:20261123T051133Z
+SUMMARY:[TRANSITO VELOCE] REG 12310 (LA SPEZIA CENTRALE -> VENTIMIGLIA) ore
+  06:10
+DESCRIPTION:Stazione/PL: BOGLIASCO (S04709)\nRegime chiusura: TRANSITO VELO
+ CE\nChiusura sbarre stimata: 06:06:03 - 06:11:33\nTreni coinvolti nella ch
+ iusura:\n  - REG 12310 (LA SPEZIA CENTRALE -> VENTIMIGLIA) [Transito]\nRit
+ ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Transito stimato senza fermata (72% tratta RECCO -> GENOVA NERVI\;
+  pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione BOGLIASCO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-3360--20261122-S04709@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T060230Z
 DTEND:20261123T060700Z
 SUMMARY:[FERMATA] REG 3360 (SESTRI LEVANTE -> VENTIMIGLIA) ore 07:06
@@ -55,52 +77,31 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-22824--20261122-S04709@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T061018Z
-DTEND:20261123T061548Z
-SUMMARY:[TRANSITO VELOCE] REG 22824 (LA SPEZIA CENTRALE -> GENOVA SESTRI PO
- NENTE AEROPORTO) ore 07:14
-DESCRIPTION:Stazione/PL: BOGLIASCO (S04709)\nRegime chiusura: TRANSITO VELO
- CE\nChiusura sbarre stimata: 07:10:18 - 07:15:48\nTreni coinvolti nella ch
- iusura:\n  - REG 22824 (LA SPEZIA CENTRALE -> GENOVA SESTRI PONENTE AEROPO
- RTO) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%
- \nNota normativa/euristica: Transito stimato senza fermata (52% tratta SOR
- I -> PIEVE LIGURE\; pedale annuncio fisso Vmax)
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261123T061333Z
+DTEND:20261123T062300Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:13 - 07:23 (primo: REG 22824)
+DESCRIPTION:Stazione/PL: BOGLIASCO (S04709)\nRegime chiusura: CHIUSURA CONT
+ INUA - 3 TRENI\nChiusura sbarre stimata: 07:13:33 - 07:23:00\nTreni coinvo
+ lti nella chiusura:\n  - REG 22824 (LA SPEZIA CENTRALE -> GENOVA SESTRI PO
+ NENTE AEROPORTO) [Transito]\n  - REG 22819 (GENOVA VOLTRI -> RECCO)\n  - R
+ EG 22824 (LA SPEZIA CENTRALE -> GENOVA SESTRI PONENTE AEROPORTO)\nRitardo 
+ massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BOGLIASCO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-22819--20261122-S04709@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T061830Z
-DTEND:20261123T062300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:18 - 07:23 (primo: REG 22819)
-DESCRIPTION:Stazione/PL: BOGLIASCO (S04709)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 07:18:30 - 07:23:00\nTreni coinvo
- lti nella chiusura:\n  - REG 22819 (GENOVA VOLTRI -> RECCO)\n  - REG 22824
-  (LA SPEZIA CENTRALE -> GENOVA SESTRI PONENTE AEROPORTO)\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chius
- ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
- lla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione BOGLIASCO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-22821--20261122-S04709@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T064830Z
 DTEND:20261123T065300Z
 SUMMARY:[FERMATA] REG 22821 (SAVONA -> RECCO) ore 07:52
@@ -119,54 +120,51 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-22823--20261122-S04709@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T071830Z
 DTEND:20261123T072400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:18 - 08:24 (primo: REG 22823) (+1 
- min)
-DESCRIPTION:Stazione/PL: BOGLIASCO (S04709)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 08:18:30 - 08:24:00\nTreni coinvo
- lti nella chiusura:\n  - REG 22823 (SAVONA -> RECCO) (+1m)\n  - REG 22823 
- (SAVONA -> RECCO) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabilità st
- ima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
- llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
- adale (120s)
+SUMMARY:[FERMATA] REG 22823 (SAVONA -> RECCO) ore 08:23 (+1 min)
+DESCRIPTION:Stazione/PL: BOGLIASCO (S04709)\nRegime chiusura: FERMATA\nChiu
+ sura sbarre stimata: 08:18:30 - 08:24:00\nTreni coinvolti nella chiusura:\
+ n  - REG 22823 (SAVONA -> RECCO) (+1m)\nRitardo massimo rilevato: 1 min\nA
+ ffidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale da ci
+ rcuito di binario
 LOCATION:Passaggio a Livello / Stazione BOGLIASCO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-12331--20261122-S04709@pl-tracker.local
-DTSTAMP:20261123T102915Z
+UID:train-12214--20261122-S04709@pl-tracker.local
+DTSTAMP:20261123T221239Z
 SEQUENCE:0
-DTSTART:20261123T073830Z
+DTSTART:20261123T073420Z
 DTEND:20261123T074330Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:38 - 08:43 (primo: REG 12331) (+4 
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:34 - 08:43 (primo: REG 12214) (+4 
  min)
 DESCRIPTION:Stazione/PL: BOGLIASCO (S04709)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 08:38:30 - 08:43:30\nTreni coinvo
- lti nella chiusura:\n  - REG 12331 (VENTIMIGLIA -> SESTRI LEVANTE) (+4m)\n
-   - REG 12331 (VENTIMIGLIA -> SESTRI LEVANTE) (+4m)\nRitardo massimo rilev
- ato: 4 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+ INUA - 2 TRENI\nChiusura sbarre stimata: 08:34:20 - 08:43:30\nTreni coinvo
+ lti nella chiusura:\n  - REG 12214 (LA SPEZIA CENTRALE -> GENOVA PIAZZA PR
+ INCIPE) [Transito]\n  - REG 12331 (VENTIMIGLIA -> SESTRI LEVANTE) (+4m)\nR
+ itardo massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BOGLIASCO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:4
-X-PL-CONFIDENCE:0.99
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12351--20261122-S04709@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T093730Z
 DTEND:20261123T094200Z
 SUMMARY:[FERMATA] REG 12351 (SAVONA -> SESTRI LEVANTE) ore 10:41
@@ -185,8 +183,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12359--20261122-S04709@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T100530Z
 DTEND:20261123T101000Z
 SUMMARY:[FERMATA] REG 12359 (SAVONA -> SESTRI LEVANTE) ore 11:09
@@ -205,100 +203,94 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12366--20261122-S04709@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T103930Z
 DTEND:20261123T104600Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:39 - 11:46 (primo: REG 12366) (+3 
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:39 - 11:46 (primo: REG 12366) (+3 
  min)
 DESCRIPTION:Stazione/PL: BOGLIASCO (S04709)\nRegime chiusura: CHIUSURA CONT
- INUA - 4 TRENI\nChiusura sbarre stimata: 11:39:30 - 11:46:00\nTreni coinvo
+ INUA - 2 TRENI\nChiusura sbarre stimata: 11:39:30 - 11:46:00\nTreni coinvo
  lti nella chiusura:\n  - REG 12366 (SESTRI LEVANTE -> SAVONA) (+3m)\n  - R
- EG 12366 (SESTRI LEVANTE -> SAVONA) (+3m)\n  - REG 12361 (SAVONA -> SESTRI
-  LEVANTE) (+1m)\n  - REG 12361 (SAVONA -> SESTRI LEVANTE) (+1m)\nRitardo m
- assimo rilevato: 3 min\nAffidabilità stima: 90%\nNota normativa/euristica
- : Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) infe
- riore alla soglia minima di sgombero stradale (120s)
+ EG 12361 (SAVONA -> SESTRI LEVANTE) (+1m)\nRitardo massimo rilevato: 3 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua pe
+ r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BOGLIASCO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12367--20261122-S04709@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T110930Z
 DTEND:20261123T111400Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:09 - 12:14 (primo: REG 12367) (+7 
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:09 - 12:14 (primo: REG 12367) (+7 
  min)
 DESCRIPTION:Stazione/PL: BOGLIASCO (S04709)\nRegime chiusura: CHIUSURA CONT
- INUA - 4 TRENI\nChiusura sbarre stimata: 12:09:30 - 12:14:00\nTreni coinvo
+ INUA - 2 TRENI\nChiusura sbarre stimata: 12:09:30 - 12:14:00\nTreni coinvo
  lti nella chiusura:\n  - REG 12367 (SAVONA -> SESTRI LEVANTE) (+7m)\n  - R
- EG 12367 (SAVONA -> SESTRI LEVANTE) (+7m)\n  - REG 12370 (SESTRI LEVANTE -
- > SAVONA)\n  - REG 12370 (SESTRI LEVANTE -> SAVONA)\nRitardo massimo rilev
- ato: 7 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura c
- ontinua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+ EG 12370 (SESTRI LEVANTE -> SAVONA)\nRitardo massimo rilevato: 7 min\nAffi
+ dabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tr
+ eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BOGLIASCO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:7
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12377--20261122-S04709@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T120530Z
 DTEND:20261123T121000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:05 - 13:10 (primo: REG 12377)
-DESCRIPTION:Stazione/PL: BOGLIASCO (S04709)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 13:05:30 - 13:10:00\nTreni coinvo
- lti nella chiusura:\n  - REG 12377 (SAVONA -> SESTRI LEVANTE)\n  - REG 123
- 77 (SAVONA -> SESTRI LEVANTE)\nRitardo massimo rilevato: 0 min\nAffidabili
- tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
- ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
- ro stradale (120s)
+SUMMARY:[FERMATA] REG 12377 (SAVONA -> SESTRI LEVANTE) ore 13:09
+DESCRIPTION:Stazione/PL: BOGLIASCO (S04709)\nRegime chiusura: FERMATA\nChiu
+ sura sbarre stimata: 13:05:30 - 13:10:00\nTreni coinvolti nella chiusura:\
+ n  - REG 12377 (SAVONA -> SESTRI LEVANTE)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
+ a oraria regolare
 LOCATION:Passaggio a Livello / Stazione BOGLIASCO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12400--20261122-S04709@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T140930Z
 DTEND:20261123T141400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:09 - 15:14 (primo: REG 12400)
-DESCRIPTION:Stazione/PL: BOGLIASCO (S04709)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 15:09:30 - 15:14:00\nTreni coinvo
- lti nella chiusura:\n  - REG 12400 (SESTRI LEVANTE -> SAVONA)\n  - REG 124
- 00 (SESTRI LEVANTE -> SAVONA)\nRitardo massimo rilevato: 0 min\nAffidabili
- tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
- ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
- ro stradale (120s)
+SUMMARY:[FERMATA] REG 12400 (SESTRI LEVANTE -> SAVONA) ore 15:13
+DESCRIPTION:Stazione/PL: BOGLIASCO (S04709)\nRegime chiusura: FERMATA\nChiu
+ sura sbarre stimata: 15:09:30 - 15:14:00\nTreni coinvolti nella chiusura:\
+ n  - REG 12400 (SESTRI LEVANTE -> SAVONA)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
+ a oraria regolare
 LOCATION:Passaggio a Livello / Stazione BOGLIASCO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12401--20261122-S04709@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T143730Z
 DTEND:20261123T144200Z
 SUMMARY:[FERMATA] REG 12401 (SAVONA -> SESTRI LEVANTE) ore 15:41
@@ -317,52 +309,50 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12407--20261122-S04709@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T150530Z
 DTEND:20261123T151000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:05 - 16:10 (primo: REG 12407)
-DESCRIPTION:Stazione/PL: BOGLIASCO (S04709)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 16:05:30 - 16:10:00\nTreni coinvo
- lti nella chiusura:\n  - REG 12407 (SAVONA -> SESTRI LEVANTE)\n  - REG 124
- 07 (SAVONA -> SESTRI LEVANTE)\nRitardo massimo rilevato: 0 min\nAffidabili
- tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
- ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
- ro stradale (120s)
+SUMMARY:[FERMATA] REG 12407 (SAVONA -> SESTRI LEVANTE) ore 16:09
+DESCRIPTION:Stazione/PL: BOGLIASCO (S04709)\nRegime chiusura: FERMATA\nChiu
+ sura sbarre stimata: 16:05:30 - 16:10:00\nTreni coinvolti nella chiusura:\
+ n  - REG 12407 (SAVONA -> SESTRI LEVANTE)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
+ a oraria regolare
 LOCATION:Passaggio a Livello / Stazione BOGLIASCO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3277--20261122-S04709@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T155727Z
-DTEND:20261123T160257Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:57 - 17:02 (primo: REG 3277)
-DESCRIPTION:Stazione/PL: BOGLIASCO (S04709)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 16:57:27 - 17:02:57\nTreni coinvo
- lti nella chiusura:\n  - REG 3277 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) 
- [Transito]\n  - REG 3277 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) [Transito
- ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
- va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
- gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261123T155728Z
+DTEND:20261123T160258Z
+SUMMARY:[TRANSITO VELOCE] REG 3277 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) 
+ ore 17:01
+DESCRIPTION:Stazione/PL: BOGLIASCO (S04709)\nRegime chiusura: TRANSITO VELO
+ CE\nChiusura sbarre stimata: 16:57:28 - 17:02:58\nTreni coinvolti nella ch
+ iusura:\n  - REG 3277 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (47% tratta GENOVA NERVI -> RECC
+ O\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BOGLIASCO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12417--20261122-S04709@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T160530Z
 DTEND:20261123T161000Z
 SUMMARY:[FERMATA] REG 12417 (SAVONA -> SESTRI LEVANTE) ore 17:09
@@ -381,8 +371,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12421--20261122-S04709@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T163730Z
 DTEND:20261123T164200Z
 SUMMARY:[FERMATA] REG 12421 (SAVONA -> SESTRI LEVANTE) ore 17:41
@@ -401,22 +391,20 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12461--20261122-S04709@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T204130Z
 DTEND:20261123T204600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:41 - 21:46 (primo: REG 12461)
-DESCRIPTION:Stazione/PL: BOGLIASCO (S04709)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 21:41:30 - 21:46:00\nTreni coinvo
- lti nella chiusura:\n  - REG 12461 (SAVONA -> SESTRI LEVANTE)\n  - REG 124
- 61 (SAVONA -> SESTRI LEVANTE)\nRitardo massimo rilevato: 0 min\nAffidabili
- tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
- ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
- ro stradale (120s)
+SUMMARY:[FERMATA] REG 12461 (SAVONA -> SESTRI LEVANTE) ore 21:45
+DESCRIPTION:Stazione/PL: BOGLIASCO (S04709)\nRegime chiusura: FERMATA\nChiu
+ sura sbarre stimata: 21:41:30 - 21:46:00\nTreni coinvolti nella chiusura:\
+ n  - REG 12461 (SAVONA -> SESTRI LEVANTE)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
+ a oraria regolare
 LOCATION:Passaggio a Livello / Stazione BOGLIASCO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

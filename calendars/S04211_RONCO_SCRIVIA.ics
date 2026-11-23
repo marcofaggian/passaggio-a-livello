@@ -9,64 +9,82 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:b0573cfe44c59c7c50aa9834a1e00f26945554d08c47e70acbd8d9e10c30
- 60ca
+X-CONTENT-HASH:f5eb8423cfe6a256d67e179a4620075cf69a383b6780e52e7e3acc14dba0
+ 0b4d
 BEGIN:VEVENT
 UID:train-12015--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T045030Z
-DTEND:20261123T045730Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:50 - 05:57 (primo: REG 12015) (+1 
- min)
-DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:50:30 - 05:57:30\nTreni co
- involti nella chiusura:\n  - REG 12015 (NOVI LIGURE -> GENOVA BRIGNOLE) (+
- 1m)\n  - REG 12015 (NOVI LIGURE -> GENOVA BRIGNOLE) (+1m)\nRitardo massimo
-  rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiu
- sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261123T042407Z
+DTEND:20261123T042937Z
+SUMMARY:[TRANSITO VELOCE] REG 12015 (NOVI LIGURE -> GENOVA BRIGNOLE) ore 05
+ :28 (+4 min)
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: TRANSITO 
+ VELOCE\nChiusura sbarre stimata: 05:24:07 - 05:29:37\nTreni coinvolti nell
+ a chiusura:\n  - REG 12015 (NOVI LIGURE -> GENOVA BRIGNOLE) (+4m) [Transit
+ o]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (77% tratta NOVI LIGURE -> S
+ ERRAVALLE SCRIVIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12015--20261122-S04211@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261123T045030Z
+DTEND:20261123T045730Z
+SUMMARY:[FERMATA] REG 12015 (NOVI LIGURE -> GENOVA BRIGNOLE) ore 05:56 (+1 
+ min)
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 05:50:30 - 05:57:30\nTreni coinvolti nella chiusu
+ ra:\n  - REG 12015 (NOVI LIGURE -> GENOVA BRIGNOLE) (+1m)\nRitardo massimo
+  rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rile
+ vamento reale da circuito di binario
+LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3016--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T050530Z
 DTEND:20261123T051300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:05 - 06:13 (primo: REG 3016) (+6 m
- in)
-DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:05:30 - 06:13:00\nTreni co
- involti nella chiusura:\n  - REG 3016 (SESTRI LEVANTE -> MILANO CENTRALE) 
- (+6m)\n  - REG 3016 (SESTRI LEVANTE -> MILANO CENTRALE) (+6m)\nRitardo mas
- simo rilevato: 6 min\nAffidabilità stima: 99%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 3016 (SESTRI LEVANTE -> MILANO CENTRALE) ore 06:12 (+
+ 6 min)
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 06:05:30 - 06:13:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 3016 (SESTRI LEVANTE -> MILANO CENTRALE) (+6m)\nRitardo massi
+ mo rilevato: 6 min\nAffidabilità stima: 99%\nNota normativa/euristica: Ri
+ levamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12019--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T053837Z
-DTEND:20261123T054407Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T053836Z
+DTEND:20261123T054406Z
 SUMMARY:[TRANSITO VELOCE] REG 12019 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) or
  e 06:42
 DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: TRANSITO 
- VELOCE\nChiusura sbarre stimata: 06:38:37 - 06:44:07\nTreni coinvolti nell
+ VELOCE\nChiusura sbarre stimata: 06:38:36 - 06:44:06\nTreni coinvolti nell
  a chiusura:\n  - REG 12019 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) [Transito]
  \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
  a/euristica: Transito stimato senza fermata (69% tratta ARQUATA SCRIVIA ->
@@ -81,8 +99,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12019--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T054730Z
 DTEND:20261123T055200Z
 SUMMARY:[FERMATA] REG 12019 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) ore 06:51
@@ -101,17 +119,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12018--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T060433Z
-DTEND:20261123T061003Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T060435Z
+DTEND:20261123T061005Z
 SUMMARY:[TRANSITO VELOCE] REG 12018 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) or
  e 07:08
 DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: TRANSITO 
- VELOCE\nChiusura sbarre stimata: 07:04:33 - 07:10:03\nTreni coinvolti nell
+ VELOCE\nChiusura sbarre stimata: 07:04:35 - 07:10:05\nTreni coinvolti nell
  a chiusura:\n  - REG 12018 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) [Transito]
  \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
- a/euristica: Transito stimato senza fermata (56% tratta GENOVA SAMPIERDARE
+ a/euristica: Transito stimato senza fermata (57% tratta GENOVA SAMPIERDARE
  NA -> GENOVA RIVAROLO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
 STATUS:CONFIRMED
@@ -123,8 +141,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12157--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T062430Z
 DTEND:20261123T063300Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:24 - 07:33 (primo: REG 12157)
@@ -145,55 +163,33 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3013--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T063547Z
-DTEND:20261123T064500Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:35 - 07:45 (primo: REG 3013)
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261123T063546Z
+DTEND:20261123T065600Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 07:35 - 07:56 (primo: REG 3013)
 DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 3 TRENI\nChiusura sbarre stimata: 07:35:47 - 07:45:00\nTreni co
+ CONTINUA - 5 TRENI\nChiusura sbarre stimata: 07:35:46 - 07:56:00\nTreni co
  involti nella chiusura:\n  - REG 3013 (MILANO CENTRALE -> GENOVA BRIGNOLE)
-  [Transito]\n  - REG 3013 (MILANO CENTRALE -> GENOVA BRIGNOLE) [Transito]\
- n  - REG 12018 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
- ontinua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+  [Transito]\n  - REG 12018 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA)\n  - REG 2
+ 115 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) [Transito]\n  - REG 3013 (MILA
+ NO CENTRALE -> GENOVA BRIGNOLE) [Arrivo]\n  - REG 3013 (MILANO CENTRALE ->
+  GENOVA BRIGNOLE) [Partenza]\nRitardo massimo rilevato: 0 min\nAffidabilit
+ à stima: 78%\nNota normativa/euristica: Chiusura continua per 5 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
 LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3013--20261122-S04211@pl-tracker.local-arr
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T064800Z
-DTEND:20261123T065600Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:48 - 07:56 (primo: REG 3013)
-DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 4 TRENI\nChiusura sbarre stimata: 07:48:00 - 07:56:00\nTreni co
- involti nella chiusura:\n  - REG 3013 (MILANO CENTRALE -> GENOVA BRIGNOLE)
-  [Arrivo]\n  - REG 3013 (MILANO CENTRALE -> GENOVA BRIGNOLE) [Arrivo]\n  -
-  REG 3013 (MILANO CENTRALE -> GENOVA BRIGNOLE) [Partenza]\n  - REG 3013 (M
- ILANO CENTRALE -> GENOVA BRIGNOLE) [Partenza]\nRitardo massimo rilevato: -
- 12 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura conti
- nua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
- a minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:-12
-X-PL-CONFIDENCE:0.99
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-2115--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T070230Z
 DTEND:20261123T070700Z
 SUMMARY:[FERMATA] REG 2115 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) ore 08:0
@@ -212,80 +208,98 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2122--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
+UID:train-658--20261122-S04211@pl-tracker.local
+DTSTAMP:20261123T221239Z
 SEQUENCE:0
-DTSTART:20261123T084700Z
-DTEND:20261123T085400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:47 - 09:54 (primo: REG 2122) (+2 m
- in)
-DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:47:00 - 09:54:00\nTreni co
- involti nella chiusura:\n  - REG 2122 (GENOVA BRIGNOLE -> TORINO PORTA NUO
- VA) (+2m)\n  - REG 2122 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) (+2m)\nRit
- ardo massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/eur
- istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
- ) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTART:20261123T073152Z
+DTEND:20261123T073622Z
+SUMMARY:[TRANSITO VELOCE] IC 658 (LIVORNO CENTRALE -> MILANO CENTRALE) ore 
+ 08:35
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: TRANSITO 
+ VELOCE\nChiusura sbarre stimata: 08:31:52 - 08:36:22\nTreni coinvolti nell
+ a chiusura:\n  - IC 658 (LIVORNO CENTRALE -> MILANO CENTRALE) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (48% tratta GENOVA PIAZZA PRINCI
+ PE -> TORTONA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2122--20261122-S04211@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261123T084700Z
+DTEND:20261123T085400Z
+SUMMARY:[FERMATA] REG 2122 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) ore 09:5
+ 3 (+2 min)
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 09:47:00 - 09:54:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 2122 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) (+2m)\nRitardo m
+ assimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica
+ : Rilevamento reale da circuito di binario
+LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2119--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T090230Z
-DTEND:20261123T090734Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 10:02 - 10:07 (primo: REG 2119) (+32 
+DTEND:20261123T090733Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:02 - 10:07 (primo: REG 2119) (+32 
  min)
 DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 3 TRENI\nChiusura sbarre stimata: 10:02:30 - 10:07:34\nTreni co
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:02:30 - 10:07:33\nTreni co
  involti nella chiusura:\n  - REG 2119 (TORINO PORTA NUOVA -> GENOVA BRIGNO
- LE)\n  - REG 2070 (RAVENNA -> GENOVA BRIGNOLE) (+32m) [Transito]\n  - REG 
- 2070 (RAVENNA -> GENOVA BRIGNOLE) (+32m) [Transito]\nRitardo massimo rilev
- ato: 32 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
- continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+ LE)\n  - REG 2070 (RAVENNA -> GENOVA BRIGNOLE) (+32m) [Transito]\nRitardo 
+ massimo rilevato: 32 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:32
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2070--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T091630Z
-DTEND:20261123T092309Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 10:16 - 10:23 (primo: REG 2070) (+43 
+DTEND:20261123T092313Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:16 - 10:23 (primo: REG 2070) (+43 
  min)
 DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 3 TRENI\nChiusura sbarre stimata: 10:16:30 - 10:23:09\nTreni co
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:16:30 - 10:23:13\nTreni co
  involti nella chiusura:\n  - REG 2070 (RAVENNA -> GENOVA BRIGNOLE) (+43m)\
- n  - REG 2070 (RAVENNA -> GENOVA BRIGNOLE) (+43m)\n  - IC 659 (MILANO CENT
- RALE -> VENTIMIGLIA) [Transito]\nRitardo massimo rilevato: 43 min\nAffidab
- ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+ n  - IC 659 (MILANO CENTRALE -> VENTIMIGLIA) [Transito]\nRitardo massimo r
+ ilevato: 43 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
+ ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:43
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2124--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T094630Z
 DTEND:20261123T095100Z
 SUMMARY:[FERMATA] REG 2124 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) ore 10:5
@@ -305,40 +319,38 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12037--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T100600Z
 DTEND:20261123T101300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:06 - 11:13 (primo: REG 12037) (+1 
- min)
-DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:06:00 - 11:13:00\nTreni co
- involti nella chiusura:\n  - REG 12037 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE
- ) (+1m)\n  - REG 12037 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) (+1m)\nRitardo
-  massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristi
- ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
- feriore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 12037 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) ore 11:12 
+ (+1 min)
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 11:06:00 - 11:13:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 12037 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) (+1m)\nRitardo mas
+ simo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: 
+ Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12036--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T103233Z
-DTEND:20261123T103803Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T103235Z
+DTEND:20261123T103805Z
 SUMMARY:[TRANSITO VELOCE] REG 12036 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) or
  e 11:36
 DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: TRANSITO 
- VELOCE\nChiusura sbarre stimata: 11:32:33 - 11:38:03\nTreni coinvolti nell
+ VELOCE\nChiusura sbarre stimata: 11:32:35 - 11:38:05\nTreni coinvolti nell
  a chiusura:\n  - REG 12036 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) [Transito]
  \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
- a/euristica: Transito stimato senza fermata (56% tratta GENOVA SAMPIERDARE
+ a/euristica: Transito stimato senza fermata (57% tratta GENOVA SAMPIERDARE
  NA -> GENOVA RIVAROLO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
 STATUS:CONFIRMED
@@ -350,35 +362,35 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3028--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T105730Z
-DTEND:20261123T110200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:57 - 12:02 (primo: REG 3028)
+DTEND:20261123T110329Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:57 - 12:03 (primo: REG 3028)
 DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:57:30 - 12:02:00\nTreni co
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:57:30 - 12:03:29\nTreni co
  involti nella chiusura:\n  - REG 3028 (GENOVA BRIGNOLE -> MILANO CENTRALE)
- \n  - REG 3028 (GENOVA BRIGNOLE -> MILANO CENTRALE)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+ \n  - REG 2123 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12036--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T110730Z
-DTEND:20261123T111347Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:07 - 12:13 (primo: REG 12036)
+DTEND:20261123T111403Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:07 - 12:14 (primo: REG 12036)
 DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 3 TRENI\nChiusura sbarre stimata: 12:07:30 - 12:13:47\nTreni co
+ CONTINUA - 3 TRENI\nChiusura sbarre stimata: 12:07:30 - 12:14:03\nTreni co
  involti nella chiusura:\n  - REG 12036 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA
  )\n  - REG 2123 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\n  - EC 32 (LA SPE
  ZIA CENTRALE -> CHIASSO) [Transito]\nRitardo massimo rilevato: 0 min\nAffi
@@ -395,173 +407,37 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12040--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T113233Z
-DTEND:20261123T113803Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:32 - 12:38 (primo: REG 12040)
-DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:32:33 - 12:38:03\nTreni co
- involti nella chiusura:\n  - REG 12040 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA
- ) [Transito]\n  - REG 12040 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) [Transito
- ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
- va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
- gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3023--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T120125Z
-DTEND:20261123T120700Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 13:01 - 13:07 (primo: REG 3023)
-DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 3 TRENI\nChiusura sbarre stimata: 13:01:25 - 13:07:00\nTreni co
- involti nella chiusura:\n  - REG 3023 (MILANO GRECO PIRELLI -> GENOVA BRIG
- NOLE) [Transito]\n  - REG 3023 (MILANO GRECO PIRELLI -> GENOVA BRIGNOLE) [
- Transito]\n  - REG 2125 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) infe
- riore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-12040--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T121230Z
-DTEND:20261123T121700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:12 - 13:17 (primo: REG 12040)
-DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:12:30 - 13:17:00\nTreni co
- involti nella chiusura:\n  - REG 12040 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA
- )\n  - REG 12040 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA)\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura
-  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3023--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T122030Z
-DTEND:20261123T122500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:20 - 13:25 (primo: REG 3023)
-DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:20:30 - 13:25:00\nTreni co
- involti nella chiusura:\n  - REG 3023 (MILANO GRECO PIRELLI -> GENOVA BRIG
- NOLE)\n  - REG 3023 (MILANO GRECO PIRELLI -> GENOVA BRIGNOLE)\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2127--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T130230Z
-DTEND:20261123T130700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:02 - 14:07 (primo: REG 2127)
-DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:02:30 - 14:07:00\nTreni co
- involti nella chiusura:\n  - REG 2127 (TORINO PORTA NUOVA -> GENOVA BRIGNO
- LE)\n  - REG 2127 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiu
- sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2129--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
+DTSTAMP:20261123T221239Z
 SEQUENCE:1
-DTSTART:20261123T140230Z
-DTEND:20261123T141200Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:02 - 15:12 (primo: REG 2129)
-DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 3 TRENI\nChiusura sbarre stimata: 15:02:30 - 15:12:00\nTreni co
- involti nella chiusura:\n  - REG 2129 (TORINO PORTA NUOVA -> GENOVA BRIGNO
- LE)\n  - REG 12053 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE)\n  - REG 12053 (AR
- QUATA SCRIVIA -> GENOVA BRIGNOLE)\nRitardo massimo rilevato: 0 min\nAffida
- bilità stima: 90%\nNota normativa/euristica: Chiusura continua per 3 tren
- i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
- ombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3034--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T142830Z
-DTEND:20261123T143803Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:28 - 15:38 (primo: REG 3034)
-DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 4 TRENI\nChiusura sbarre stimata: 15:28:30 - 15:38:03\nTreni co
- involti nella chiusura:\n  - REG 3034 (GENOVA BRIGNOLE -> MILANO GRECO PIR
- ELLI)\n  - REG 3034 (GENOVA BRIGNOLE -> MILANO GRECO PIRELLI)\n  - REG 120
- 52 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) [Transito]\n  - REG 12052 (GENOVA 
- BRIGNOLE -> ARQUATA SCRIVIA) [Transito]\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 
- 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
-  di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2131--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T144407Z
-DTEND:20261123T144937Z
-SUMMARY:[TRANSITO VELOCE] REG 2131 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) 
- ore 15:48
+DTSTART:20261123T113235Z
+DTEND:20261123T113805Z
+SUMMARY:[TRANSITO VELOCE] REG 12040 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) or
+ e 12:36
 DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: TRANSITO 
- VELOCE\nChiusura sbarre stimata: 15:44:07 - 15:49:37\nTreni coinvolti nell
- a chiusura:\n  - REG 2131 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) [Transit
+ VELOCE\nChiusura sbarre stimata: 12:32:35 - 12:38:05\nTreni coinvolti nell
+ a chiusura:\n  - REG 12040 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) [Transito]
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Transito stimato senza fermata (57% tratta GENOVA SAMPIERDARE
+ NA -> GENOVA RIVAROLO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2125--20261122-S04211@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:0
+DTSTART:20261123T114407Z
+DTEND:20261123T114937Z
+SUMMARY:[TRANSITO VELOCE] REG 2125 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) 
+ ore 12:48
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: TRANSITO 
+ VELOCE\nChiusura sbarre stimata: 12:44:07 - 12:49:37\nTreni coinvolti nell
+ a chiusura:\n  - REG 2125 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) [Transit
  o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
  iva/euristica: Transito stimato senza fermata (77% tratta NOVI LIGURE -> S
  ERRAVALLE SCRIVIA\; pedale annuncio fisso Vmax)
@@ -574,108 +450,42 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2131--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T150430Z
-DTEND:20261123T150900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:04 - 16:09 (primo: REG 2131)
-DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:04:30 - 16:09:00\nTreni co
- involti nella chiusura:\n  - REG 2131 (TORINO PORTA NUOVA -> GENOVA BRIGNO
- LE)\n  - REG 2131 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiu
- sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-12052--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
+UID:train-3023--20261122-S04211@pl-tracker.local
+DTSTAMP:20261123T221239Z
 SEQUENCE:1
-DTSTART:20261123T151230Z
-DTEND:20261123T151700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:12 - 16:17 (primo: REG 12052)
+DTSTART:20261123T120124Z
+DTEND:20261123T120700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:01 - 13:07 (primo: REG 3023)
 DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:12:30 - 16:17:00\nTreni co
- involti nella chiusura:\n  - REG 12052 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA
- )\n  - REG 12052 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA)\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura
-  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-674--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T153039Z
-DTEND:20261123T153509Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:30 - 16:35 (primo: IC 674)
-DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:30:39 - 16:35:09\nTreni co
- involti nella chiusura:\n  - IC 674 (LIVORNO CENTRALE -> MILANO CENTRALE) 
- [Transito]\n  - IC 674 (LIVORNO CENTRALE -> MILANO CENTRALE) [Transito]\nR
- itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
- 0s) inferiore alla soglia minima di sgombero stradale (120s)
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:01:24 - 13:07:00\nTreni co
+ involti nella chiusura:\n  - REG 3023 (MILANO GRECO PIRELLI -> GENOVA BRIG
+ NOLE) [Transito]\n  - REG 2125 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\nRi
+ tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
+ ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
+ s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2136--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T154630Z
-DTEND:20261123T155100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:46 - 16:51 (primo: REG 2136)
-DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:46:30 - 16:51:00\nTreni co
- involti nella chiusura:\n  - REG 2136 (GENOVA BRIGNOLE -> TORINO PORTA NUO
- VA)\n  - REG 2136 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA)\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiu
- sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3031--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
+UID:train-12040--20261122-S04211@pl-tracker.local
+DTSTAMP:20261123T221239Z
 SEQUENCE:1
-DTSTART:20261123T160125Z
-DTEND:20261123T160700Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:01 - 17:07 (primo: REG 3031)
+DTSTART:20261123T121230Z
+DTEND:20261123T122500Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 13:12 - 13:25 (primo: REG 12040)
 DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 3 TRENI\nChiusura sbarre stimata: 17:01:25 - 17:07:00\nTreni co
- involti nella chiusura:\n  - REG 3031 (MILANO GRECO PIRELLI -> GENOVA PIAZ
- ZA PRINCIPE) [Transito]\n  - REG 2133 (TORINO PORTA NUOVA -> GENOVA BRIGNO
- LE)\n  - REG 2133 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
- sura continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
+ CONTINUA - 3 TRENI\nChiusura sbarre stimata: 13:12:30 - 13:25:00\nTreni co
+ involti nella chiusura:\n  - REG 12040 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA
+ )\n  - IC 665 (MILANO CENTRALE -> LA SPEZIA CENTRALE) [Transito]\n  - REG 
+ 3023 (MILANO GRECO PIRELLI -> GENOVA BRIGNOLE)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
+ ua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+  minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -685,9 +495,202 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3031--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
+UID:train-2127--20261122-S04211@pl-tracker.local
+DTSTAMP:20261123T221239Z
 SEQUENCE:1
+DTSTART:20261123T130230Z
+DTEND:20261123T130700Z
+SUMMARY:[FERMATA] REG 2127 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) ore 14:0
+ 6
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 14:02:30 - 14:07:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 2127 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
+ isione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2129--20261122-S04211@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T134407Z
+DTEND:20261123T134937Z
+SUMMARY:[TRANSITO VELOCE] REG 2129 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) 
+ ore 14:48
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: TRANSITO 
+ VELOCE\nChiusura sbarre stimata: 14:44:07 - 14:49:37\nTreni coinvolti nell
+ a chiusura:\n  - REG 2129 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (77% tratta NOVI LIGURE -> S
+ ERRAVALLE SCRIVIA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2129--20261122-S04211@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T140230Z
+DTEND:20261123T141200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:02 - 15:12 (primo: REG 2129)
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:02:30 - 15:12:00\nTreni co
+ involti nella chiusura:\n  - REG 2129 (TORINO PORTA NUOVA -> GENOVA BRIGNO
+ LE)\n  - REG 12053 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE)\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
+ ra continua per 2 treni: intervallo utile tra i passaggi (30s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3034--20261122-S04211@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T142830Z
+DTEND:20261123T143805Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:28 - 15:38 (primo: REG 3034)
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:28:30 - 15:38:05\nTreni co
+ involti nella chiusura:\n  - REG 3034 (GENOVA BRIGNOLE -> MILANO GRECO PIR
+ ELLI)\n  - REG 12052 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
+  inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2131--20261122-S04211@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261123T150430Z
+DTEND:20261123T150900Z
+SUMMARY:[FERMATA] REG 2131 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) ore 16:0
+ 8
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 16:04:30 - 16:09:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 2131 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
+ isione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12052--20261122-S04211@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T151230Z
+DTEND:20261123T151700Z
+SUMMARY:[FERMATA] REG 12052 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) ore 16:16
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 16:12:30 - 16:17:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 12052 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA)\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previs
+ ione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-674--20261122-S04211@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261123T153050Z
+DTEND:20261123T153520Z
+SUMMARY:[TRANSITO VELOCE] IC 674 (LIVORNO CENTRALE -> MILANO CENTRALE) ore 
+ 16:34
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: TRANSITO 
+ VELOCE\nChiusura sbarre stimata: 16:30:50 - 16:35:20\nTreni coinvolti nell
+ a chiusura:\n  - IC 674 (LIVORNO CENTRALE -> MILANO CENTRALE) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (48% tratta GENOVA PIAZZA PRINCI
+ PE -> TORTONA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2136--20261122-S04211@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T154630Z
+DTEND:20261123T155100Z
+SUMMARY:[FERMATA] REG 2136 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) ore 16:5
+ 0
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 16:46:30 - 16:51:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 2136 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
+ isione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3031--20261122-S04211@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T160124Z
+DTEND:20261123T160700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:01 - 17:07 (primo: REG 3031)
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:01:24 - 17:07:00\nTreni co
+ involti nella chiusura:\n  - REG 3031 (MILANO GRECO PIRELLI -> GENOVA PIAZ
+ ZA PRINCIPE) [Transito]\n  - REG 2133 (TORINO PORTA NUOVA -> GENOVA BRIGNO
+ LE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
+ aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3031--20261122-S04211@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T162030Z
 DTEND:20261123T162500Z
 SUMMARY:[FERMATA] REG 3031 (MILANO GRECO PIRELLI -> GENOVA PIAZZA PRINCIPE)
@@ -707,102 +710,120 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3038--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T162830Z
 DTEND:20261123T163300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:28 - 17:33 (primo: REG 3038)
-DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:28:30 - 17:33:00\nTreni co
- involti nella chiusura:\n  - REG 3038 (GENOVA PIAZZA PRINCIPE -> MILANO GR
- ECO PIRELLI)\n  - REG 3038 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO PIRELLI
- )\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normati
- va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
- gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 3038 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO PIRELLI)
+  ore 17:32
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 17:28:30 - 17:33:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 3038 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO PIRELLI)\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
+ ica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3033--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T163625Z
-DTEND:20261123T164155Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:36 - 17:41 (primo: REG 3033)
-DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:36:25 - 17:41:55\nTreni co
- involti nella chiusura:\n  - REG 3033 (MILANO CENTRALE -> GENOVA BRIGNOLE)
-  [Transito]\n  - REG 3033 (MILANO CENTRALE -> GENOVA BRIGNOLE) [Transito]\
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261123T163624Z
+DTEND:20261123T164154Z
+SUMMARY:[TRANSITO VELOCE] REG 3033 (MILANO CENTRALE -> GENOVA BRIGNOLE) ore
+  17:40
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: TRANSITO 
+ VELOCE\nChiusura sbarre stimata: 17:36:24 - 17:41:54\nTreni coinvolti nell
+ a chiusura:\n  - REG 3033 (MILANO CENTRALE -> GENOVA BRIGNOLE) [Transito]\
  nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
-  (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ /euristica: Transito stimato senza fermata (85% tratta TORTONA -> ARQUATA 
+ SCRIVIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3033--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T165030Z
 DTEND:20261123T165500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:50 - 17:55 (primo: REG 3033)
-DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:50:30 - 17:55:00\nTreni co
- involti nella chiusura:\n  - REG 3033 (MILANO CENTRALE -> GENOVA BRIGNOLE)
- \n  - REG 3033 (MILANO CENTRALE -> GENOVA BRIGNOLE)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 3033 (MILANO CENTRALE -> GENOVA BRIGNOLE) ore 17:54
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 17:50:30 - 17:55:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 3033 (MILANO CENTRALE -> GENOVA BRIGNOLE)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3042--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T182830Z
-DTEND:20261123T183300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:28 - 19:33 (primo: REG 3042)
-DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:28:30 - 19:33:00\nTreni co
- involti nella chiusura:\n  - REG 3042 (GENOVA PIAZZA PRINCIPE -> MILANO GR
- ECO PIRELLI)\n  - REG 3042 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO PIRELLI
- )\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normati
- va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
- gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+UID:train-679--20261122-S04211@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:0
+DTSTART:20261123T181843Z
+DTEND:20261123T182313Z
+SUMMARY:[TRANSITO VELOCE] IC 679 (MILANO CENTRALE -> LIVORNO CENTRALE) ore 
+ 19:22
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: TRANSITO 
+ VELOCE\nChiusura sbarre stimata: 19:18:43 - 19:23:13\nTreni coinvolti nell
+ a chiusura:\n  - IC 679 (MILANO CENTRALE -> LIVORNO CENTRALE) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (49% tratta TORTONA -> GENOVA PI
+ AZZA PRINCIPE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3042--20261122-S04211@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T182830Z
+DTEND:20261123T183300Z
+SUMMARY:[FERMATA] REG 3042 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO PIRELLI)
+  ore 19:32
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 19:28:30 - 19:33:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 3042 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO PIRELLI)\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
+ ica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3037--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T183625Z
-DTEND:20261123T184155Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T183624Z
+DTEND:20261123T184154Z
 SUMMARY:[TRANSITO VELOCE] REG 3037 (MILANO CENTRALE -> GENOVA BRIGNOLE) ore
   19:40
 DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: TRANSITO 
- VELOCE\nChiusura sbarre stimata: 19:36:25 - 19:41:55\nTreni coinvolti nell
+ VELOCE\nChiusura sbarre stimata: 19:36:24 - 19:41:54\nTreni coinvolti nell
  a chiusura:\n  - REG 3037 (MILANO CENTRALE -> GENOVA BRIGNOLE) [Transito]\
  nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
  /euristica: Transito stimato senza fermata (85% tratta TORTONA -> ARQUATA 
@@ -817,8 +838,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3037--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T185030Z
 DTEND:20261123T185500Z
 SUMMARY:[FERMATA] REG 3037 (MILANO CENTRALE -> GENOVA BRIGNOLE) ore 19:54
@@ -837,40 +858,39 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3044--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T190130Z
 DTEND:20261123T190700Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:01 - 20:07 (primo: REG 3044)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:01 - 20:07 (primo: REG 3044)
 DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 4 TRENI\nChiusura sbarre stimata: 20:01:30 - 20:07:00\nTreni co
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:01:30 - 20:07:00\nTreni co
  involti nella chiusura:\n  - REG 3044 (GENOVA BRIGNOLE -> MILANO CENTRALE)
- \n  - REG 3044 (GENOVA BRIGNOLE -> MILANO CENTRALE)\n  - REG 2139 (TORINO 
- PORTA NUOVA -> GENOVA BRIGNOLE)\n  - REG 2139 (TORINO PORTA NUOVA -> GENOV
- A BRIGNOLE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNo
- ta normativa/euristica: Chiusura continua per 4 treni: intervallo utile tr
- a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ \n  - REG 2139 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
+ a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12072--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T193233Z
-DTEND:20261123T193803Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T193235Z
+DTEND:20261123T193805Z
 SUMMARY:[TRANSITO VELOCE] REG 12072 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) or
  e 20:36
 DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: TRANSITO 
- VELOCE\nChiusura sbarre stimata: 20:32:33 - 20:38:03\nTreni coinvolti nell
+ VELOCE\nChiusura sbarre stimata: 20:32:35 - 20:38:05\nTreni coinvolti nell
  a chiusura:\n  - REG 12072 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) [Transito]
  \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
- a/euristica: Transito stimato senza fermata (56% tratta GENOVA SAMPIERDARE
+ a/euristica: Transito stimato senza fermata (57% tratta GENOVA SAMPIERDARE
  NA -> GENOVA RIVAROLO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
 STATUS:CONFIRMED
@@ -882,18 +902,39 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2144--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T194430Z
 DTEND:20261123T194900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:44 - 20:49 (primo: REG 2144)
+SUMMARY:[FERMATA] REG 2144 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) ore 20:4
+ 8
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 20:44:30 - 20:49:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 2144 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
+ isione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2141--20261122-S04211@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T200230Z
+DTEND:20261123T201200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:02 - 21:12 (primo: REG 2141)
 DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:44:30 - 20:49:00\nTreni co
- involti nella chiusura:\n  - REG 2144 (GENOVA BRIGNOLE -> TORINO PORTA NUO
- VA)\n  - REG 2144 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA)\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiu
- sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:02:30 - 21:12:00\nTreni co
+ involti nella chiusura:\n  - REG 2141 (TORINO PORTA NUOVA -> GENOVA BRIGNO
+ LE)\n  - REG 12072 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA)\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
+ ra continua per 2 treni: intervallo utile tra i passaggi (30s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -903,32 +944,9 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2141--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T200230Z
-DTEND:20261123T201200Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:02 - 21:12 (primo: REG 2141)
-DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 3 TRENI\nChiusura sbarre stimata: 21:02:30 - 21:12:00\nTreni co
- involti nella chiusura:\n  - REG 2141 (TORINO PORTA NUOVA -> GENOVA BRIGNO
- LE)\n  - REG 2141 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\n  - REG 12072 (
- GENOVA BRIGNOLE -> ARQUATA SCRIVIA)\nRitardo massimo rilevato: 0 min\nAffi
- dabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 3 tr
- eni: intervallo utile tra i passaggi (30s) inferiore alla soglia minima di
-  sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-3046--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T202830Z
 DTEND:20261123T203300Z
 SUMMARY:[FERMATA] REG 3046 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO PIRELLI)
@@ -948,13 +966,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3041--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T203625Z
-DTEND:20261123T204155Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T203624Z
+DTEND:20261123T204154Z
 SUMMARY:[TRANSITO VELOCE] REG 3041 (MILANO CENTRALE -> ALASSIO) ore 21:40
 DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: TRANSITO 
- VELOCE\nChiusura sbarre stimata: 21:36:25 - 21:41:55\nTreni coinvolti nell
+ VELOCE\nChiusura sbarre stimata: 21:36:24 - 21:41:54\nTreni coinvolti nell
  a chiusura:\n  - REG 3041 (MILANO CENTRALE -> ALASSIO) [Transito]\nRitardo
   massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
  ca: Transito stimato senza fermata (85% tratta TORTONA -> ARQUATA SCRIVIA\
@@ -969,92 +987,108 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2146--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T204630Z
 DTEND:20261123T205500Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:46 - 21:55 (primo: REG 2146)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:46 - 21:55 (primo: REG 2146)
 DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 3 TRENI\nChiusura sbarre stimata: 21:46:30 - 21:55:00\nTreni co
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:46:30 - 21:55:00\nTreni co
  involti nella chiusura:\n  - REG 2146 (GENOVA BRIGNOLE -> TORINO PORTA NUO
- VA)\n  - REG 2146 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA)\n  - REG 3041 (M
- ILANO CENTRALE -> ALASSIO)\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 90%\nNota normativa/euristica: Chiusura continua per 3 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+ VA)\n  - REG 3041 (MILANO CENTRALE -> ALASSIO)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura contin
+ ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
+  minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3043--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
+UID:train-2145--20261122-S04211@pl-tracker.local
+DTSTAMP:20261123T221239Z
 SEQUENCE:0
-DTSTART:20261123T215851Z
+DTSTART:20261123T214407Z
+DTEND:20261123T214937Z
+SUMMARY:[TRANSITO VELOCE] REG 2145 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) 
+ ore 22:48
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: TRANSITO 
+ VELOCE\nChiusura sbarre stimata: 22:44:07 - 22:49:37\nTreni coinvolti nell
+ a chiusura:\n  - REG 2145 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (77% tratta NOVI LIGURE -> S
+ ERRAVALLE SCRIVIA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3043--20261122-S04211@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261123T215850Z
 DTEND:20261123T220700Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 22:58 - 23:07 (primo: REG 3043)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:58 - 23:07 (primo: REG 3043)
 DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 3 TRENI\nChiusura sbarre stimata: 22:58:51 - 23:07:00\nTreni co
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:58:50 - 23:07:00\nTreni co
  involti nella chiusura:\n  - REG 3043 (MILANO GRECO PIRELLI -> GENOVA BRIG
- NOLE) [Transito]\n  - REG 3043 (MILANO GRECO PIRELLI -> GENOVA BRIGNOLE) [
- Transito]\n  - REG 2145 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) infe
- riore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3045--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T220943Z
-DTEND:20261123T221900Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 23:09 - 23:19 (primo: REG 3045)
-DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 4 TRENI\nChiusura sbarre stimata: 23:09:43 - 23:19:00\nTreni co
- involti nella chiusura:\n  - REG 3045 (MILANO CENTRALE -> GENOVA BRIGNOLE)
-  [Transito]\n  - REG 3045 (MILANO CENTRALE -> GENOVA BRIGNOLE) [Transito]\
- n  - REG 3043 (MILANO GRECO PIRELLI -> GENOVA BRIGNOLE)\n  - REG 3043 (MIL
- ANO GRECO PIRELLI -> GENOVA BRIGNOLE)\nRitardo massimo rilevato: 0 min\nAf
- fidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 
- treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
- i sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3045--20261122-S04211@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T222830Z
-DTEND:20261123T223300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:28 - 23:33 (primo: REG 3045)
-DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 23:28:30 - 23:33:00\nTreni co
- involti nella chiusura:\n  - REG 3045 (MILANO CENTRALE -> GENOVA BRIGNOLE)
- \n  - REG 3045 (MILANO CENTRALE -> GENOVA BRIGNOLE)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+ NOLE) [Transito]\n  - REG 2145 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\nRi
+ tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
+ ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
+ s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3045--20261122-S04211@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T220941Z
+DTEND:20261123T221900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:09 - 23:19 (primo: REG 3045)
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 23:09:41 - 23:19:00\nTreni co
+ involti nella chiusura:\n  - REG 3045 (MILANO CENTRALE -> GENOVA BRIGNOLE)
+  [Transito]\n  - REG 3043 (MILANO GRECO PIRELLI -> GENOVA BRIGNOLE)\nRitar
+ do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
+ inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3045--20261122-S04211@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T222830Z
+DTEND:20261123T223300Z
+SUMMARY:[FERMATA] REG 3045 (MILANO CENTRALE -> GENOVA BRIGNOLE) ore 23:32
+DESCRIPTION:Stazione/PL: RONCO SCRIVIA (S04211)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 23:28:30 - 23:33:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 3045 (MILANO CENTRALE -> GENOVA BRIGNOLE)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione RONCO SCRIVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

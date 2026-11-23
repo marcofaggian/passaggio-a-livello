@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:5b4b505b76dc1d5dc22b4482ddf70fdca44dd016aad03b189289887580dc
- 8e38
+X-CONTENT-HASH:bcc94e4fcde618c2057658d0a6e522ae274aba7de33fa49999877315319b
+ 79fc
 BEGIN:VEVENT
 UID:train-21052--20261122-S09000@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T034251Z
 DTEND:20261123T034821Z
 SUMMARY:[TRANSITO VELOCE] REG 21052 (NAPOLI CENTRALE -> ROMA TERMINI) ore 0
@@ -35,8 +35,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21052--20261122-S09000@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T035230Z
 DTEND:20261123T035700Z
 SUMMARY:[FERMATA] REG 21052 (NAPOLI CENTRALE -> ROMA TERMINI) ore 04:56
@@ -54,39 +54,58 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-510--20261122-S09000@pl-tracker.local
-DTSTAMP:20261123T102915Z
+UID:train-701--20261122-S09000@pl-tracker.local
+DTSTAMP:20261123T221239Z
 SEQUENCE:0
-DTSTART:20261123T071211Z
-DTEND:20261123T071953Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:12 - 08:19 (primo: IC 510)
+DTSTART:20261123T064230Z
+DTEND:20261123T064700Z
+SUMMARY:[TRANSITO VELOCE] IC 701 (ROMA TERMINI -> TARANTO) ore 07:46
 DESCRIPTION:Stazione/PL: SESSA AURUNCA-ROCCAMONFINA (S09000)\nRegime chiusu
- ra: CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 08:12:11 - 08:19
- :53\nTreni coinvolti nella chiusura:\n  - IC 510 (SALERNO -> TORINO PORTA 
- NUOVA) [Transito]\n  - IC 510 (SALERNO -> TORINO PORTA NUOVA) [Transito]\n
-   - REG 12727 (ROMA TERMINI -> MINTURNO-SCAURI) [Transito]\n  - REG 12727 
- (ROMA TERMINI -> MINTURNO-SCAURI) [Transito]\nRitardo massimo rilevato: -3
-  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
- a per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+ ra: TRANSITO VELOCE\nChiusura sbarre stimata: 07:42:30 - 07:47:00\nTreni c
+ oinvolti nella chiusura:\n  - IC 701 (ROMA TERMINI -> TARANTO) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Transito stimato senza fermata (36% tratta FORMIA-GAETA -> AVE
+ RSA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SESSA AURUNCA-ROCCAMONFINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-510--20261122-S09000@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261123T071227Z
+DTEND:20261123T071953Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:12 - 08:19 (primo: IC 510)
+DESCRIPTION:Stazione/PL: SESSA AURUNCA-ROCCAMONFINA (S09000)\nRegime chiusu
+ ra: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:12:27 - 08:19
+ :53\nTreni coinvolti nella chiusura:\n  - IC 510 (SALERNO -> TORINO PORTA 
+ NUOVA) [Transito]\n  - REG 12727 (ROMA TERMINI -> MINTURNO-SCAURI) [Transi
+ to]\nRitardo massimo rilevato: -3 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SESSA AURUNCA-ROCCAMONFINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:-3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-723--20261122-S09000@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T074235Z
-DTEND:20261123T074705Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T074230Z
+DTEND:20261123T074700Z
 SUMMARY:[TRANSITO VELOCE] IC 723 (ROMA TERMINI -> PALERMO CENTRALE) ore 08:
  46
 DESCRIPTION:Stazione/PL: SESSA AURUNCA-ROCCAMONFINA (S09000)\nRegime chiusu
- ra: TRANSITO VELOCE\nChiusura sbarre stimata: 08:42:35 - 08:47:05\nTreni c
+ ra: TRANSITO VELOCE\nChiusura sbarre stimata: 08:42:30 - 08:47:00\nTreni c
  oinvolti nella chiusura:\n  - IC 723 (ROMA TERMINI -> PALERMO CENTRALE) [T
  ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
  normativa/euristica: Transito stimato senza fermata (36% tratta FORMIA-GAE
@@ -101,106 +120,100 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21057--20261122-S09000@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T081530Z
-DTEND:20261123T082100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:15 - 09:21 (primo: REG 21057)
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261123T081529Z
+DTEND:20261123T082059Z
+SUMMARY:[TRANSITO VELOCE] REG 21057 (ROMA TERMINI -> NAPOLI CENTRALE) ore 0
+ 9:19
 DESCRIPTION:Stazione/PL: SESSA AURUNCA-ROCCAMONFINA (S09000)\nRegime chiusu
- ra: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:15:30 - 09:21
- :00\nTreni coinvolti nella chiusura:\n  - REG 21057 (ROMA TERMINI -> NAPOL
- I CENTRALE) [Transito]\n  - REG 21057 (ROMA TERMINI -> NAPOLI CENTRALE) [T
- ransito]\nRitardo massimo rilevato: -4 min\nAffidabilità stima: 78%\nNota
-  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
- i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ ra: TRANSITO VELOCE\nChiusura sbarre stimata: 09:15:29 - 09:20:59\nTreni c
+ oinvolti nella chiusura:\n  - REG 21057 (ROMA TERMINI -> NAPOLI CENTRALE) 
+ [Transito]\nRitardo massimo rilevato: -4 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Transito stimato senza fermata (88% tratta FORMIA-
+ GAETA -> MINTURNO-SCAURI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SESSA AURUNCA-ROCCAMONFINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-4
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21057--20261122-S09000@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T082830Z
 DTEND:20261123T083330Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:28 - 09:33 (primo: REG 21057) (+2 
- min)
+SUMMARY:[FERMATA] REG 21057 (ROMA TERMINI -> NAPOLI CENTRALE) ore 09:32 (+2
+  min)
 DESCRIPTION:Stazione/PL: SESSA AURUNCA-ROCCAMONFINA (S09000)\nRegime chiusu
- ra: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:28:30 - 09:33
- :30\nTreni coinvolti nella chiusura:\n  - REG 21057 (ROMA TERMINI -> NAPOL
- I CENTRALE) (+2m)\n  - REG 21057 (ROMA TERMINI -> NAPOLI CENTRALE) (+2m)\n
- Ritardo massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/
- euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
- (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ ra: FERMATA\nChiusura sbarre stimata: 09:28:30 - 09:33:30\nTreni coinvolti
+  nella chiusura:\n  - REG 21057 (ROMA TERMINI -> NAPOLI CENTRALE) (+2m)\nR
+ itardo massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/e
+ uristica: Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione SESSA AURUNCA-ROCCAMONFINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21047--20261122-S09000@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T085756Z
 DTEND:20261123T090326Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:57 - 10:03 (primo: REG 21047) (+2 
- min)
+SUMMARY:[TRANSITO VELOCE] REG 21047 (FORMIA-GAETA -> NAPOLI CENTRALE) ore 1
+ 0:02 (+2 min)
 DESCRIPTION:Stazione/PL: SESSA AURUNCA-ROCCAMONFINA (S09000)\nRegime chiusu
- ra: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:57:56 - 10:03
- :26\nTreni coinvolti nella chiusura:\n  - REG 21047 (FORMIA-GAETA -> NAPOL
- I CENTRALE) (+2m) [Transito]\n  - REG 21047 (FORMIA-GAETA -> NAPOLI CENTRA
- LE) (+2m) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima
- : 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
+ ra: TRANSITO VELOCE\nChiusura sbarre stimata: 09:57:56 - 10:03:26\nTreni c
+ oinvolti nella chiusura:\n  - REG 21047 (FORMIA-GAETA -> NAPOLI CENTRALE) 
+ (+2m) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78
+ %\nNota normativa/euristica: Transito stimato senza fermata (88% tratta FO
+ RMIA-GAETA -> MINTURNO-SCAURI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SESSA AURUNCA-ROCCAMONFINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21047--20261122-S09000@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T091000Z
 DTEND:20261123T091600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:10 - 10:16 (primo: REG 21047) (+3 
- min)
+SUMMARY:[FERMATA] REG 21047 (FORMIA-GAETA -> NAPOLI CENTRALE) ore 10:15 (+3
+  min)
 DESCRIPTION:Stazione/PL: SESSA AURUNCA-ROCCAMONFINA (S09000)\nRegime chiusu
- ra: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:10:00 - 10:16
- :00\nTreni coinvolti nella chiusura:\n  - REG 21047 (FORMIA-GAETA -> NAPOL
- I CENTRALE) (+3m)\n  - REG 21047 (FORMIA-GAETA -> NAPOLI CENTRALE) (+3m)\n
- Ritardo massimo rilevato: 3 min\nAffidabilità stima: 99%\nNota normativa/
- euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
- (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ ra: FERMATA\nChiusura sbarre stimata: 10:10:00 - 10:16:00\nTreni coinvolti
+  nella chiusura:\n  - REG 21047 (FORMIA-GAETA -> NAPOLI CENTRALE) (+3m)\nR
+ itardo massimo rilevato: 3 min\nAffidabilità stima: 99%\nNota normativa/e
+ uristica: Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione SESSA AURUNCA-ROCCAMONFINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-501--20261122-S09000@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T104114Z
-DTEND:20261123T104544Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T104109Z
+DTEND:20261123T104539Z
 SUMMARY:[TRANSITO VELOCE] IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) ore 11
  :44
 DESCRIPTION:Stazione/PL: SESSA AURUNCA-ROCCAMONFINA (S09000)\nRegime chiusu
- ra: TRANSITO VELOCE\nChiusura sbarre stimata: 11:41:14 - 11:45:44\nTreni c
+ ra: TRANSITO VELOCE\nChiusura sbarre stimata: 11:41:09 - 11:45:39\nTreni c
  oinvolti nella chiusura:\n  - IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) [
  Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
   normativa/euristica: Transito stimato senza fermata (36% tratta FORMIA-GA
@@ -215,36 +228,36 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-34673--20261122-S09000@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T110447Z
-DTEND:20261123T111017Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:04 - 12:10 (primo: REG 34673)
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261123T110448Z
+DTEND:20261123T111018Z
+SUMMARY:[TRANSITO VELOCE] REG 34673 (VILLA LITERNO -> NAPOLI CENTRALE) ore 
+ 12:09
 DESCRIPTION:Stazione/PL: SESSA AURUNCA-ROCCAMONFINA (S09000)\nRegime chiusu
- ra: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:04:47 - 12:10
- :17\nTreni coinvolti nella chiusura:\n  - REG 34673 (VILLA LITERNO -> NAPO
- LI CENTRALE) [Transito]\n  - REG 34673 (VILLA LITERNO -> NAPOLI CENTRALE) 
- [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
- a normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra
-  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ ra: TRANSITO VELOCE\nChiusura sbarre stimata: 12:04:48 - 12:10:18\nTreni c
+ oinvolti nella chiusura:\n  - REG 34673 (VILLA LITERNO -> NAPOLI CENTRALE)
+  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Transito stimato senza fermata (21% tratta VILLA L
+ ITERNO -> ALBANOVA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SESSA AURUNCA-ROCCAMONFINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-95057--20261122-S09000@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T114235Z
-DTEND:20261123T114705Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T114230Z
+DTEND:20261123T114700Z
 SUMMARY:[TRANSITO VELOCE] IC 95057 (ROMA TERMINI -> PALERMO CENTRALE) ore 1
  2:46
 DESCRIPTION:Stazione/PL: SESSA AURUNCA-ROCCAMONFINA (S09000)\nRegime chiusu
- ra: TRANSITO VELOCE\nChiusura sbarre stimata: 12:42:35 - 12:47:05\nTreni c
+ ra: TRANSITO VELOCE\nChiusura sbarre stimata: 12:42:30 - 12:47:00\nTreni c
  oinvolti nella chiusura:\n  - IC 95057 (ROMA TERMINI -> PALERMO CENTRALE) 
  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
  a normativa/euristica: Transito stimato senza fermata (36% tratta FORMIA-G
@@ -259,58 +272,56 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21067--20261122-S09000@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T122243Z
-DTEND:20261123T122813Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:22 - 13:28 (primo: REG 21067)
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T122242Z
+DTEND:20261123T122812Z
+SUMMARY:[TRANSITO VELOCE] REG 21067 (ROMA TERMINI -> NAPOLI CENTRALE) ore 1
+ 3:26
 DESCRIPTION:Stazione/PL: SESSA AURUNCA-ROCCAMONFINA (S09000)\nRegime chiusu
- ra: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:22:43 - 13:28
- :13\nTreni coinvolti nella chiusura:\n  - REG 21067 (ROMA TERMINI -> NAPOL
- I CENTRALE) [Transito]\n  - REG 21067 (ROMA TERMINI -> NAPOLI CENTRALE) [T
- ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i
-  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ ra: TRANSITO VELOCE\nChiusura sbarre stimata: 13:22:42 - 13:28:12\nTreni c
+ oinvolti nella chiusura:\n  - REG 21067 (ROMA TERMINI -> NAPOLI CENTRALE) 
+ [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Transito stimato senza fermata (88% tratta FORMIA-G
+ AETA -> MINTURNO-SCAURI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SESSA AURUNCA-ROCCAMONFINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21067--20261122-S09000@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T123330Z
 DTEND:20261123T123800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:33 - 13:38 (primo: REG 21067)
+SUMMARY:[FERMATA] REG 21067 (ROMA TERMINI -> NAPOLI CENTRALE) ore 13:37
 DESCRIPTION:Stazione/PL: SESSA AURUNCA-ROCCAMONFINA (S09000)\nRegime chiusu
- ra: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:33:30 - 13:38
- :00\nTreni coinvolti nella chiusura:\n  - REG 21067 (ROMA TERMINI -> NAPOL
- I CENTRALE)\n  - REG 21067 (ROMA TERMINI -> NAPOLI CENTRALE)\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: C
- hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
+ ra: FERMATA\nChiusura sbarre stimata: 13:33:30 - 13:38:00\nTreni coinvolti
+  nella chiusura:\n  - REG 21067 (ROMA TERMINI -> NAPOLI CENTRALE)\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristi
+ ca: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione SESSA AURUNCA-ROCCAMONFINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-583--20261122-S09000@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T134719Z
-DTEND:20261123T135149Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T134714Z
+DTEND:20261123T135144Z
 SUMMARY:[TRANSITO VELOCE] IC 583 (MILANO CENTRALE -> NAPOLI CENTRALE) ore 1
  4:50
 DESCRIPTION:Stazione/PL: SESSA AURUNCA-ROCCAMONFINA (S09000)\nRegime chiusu
- ra: TRANSITO VELOCE\nChiusura sbarre stimata: 14:47:19 - 14:51:49\nTreni c
+ ra: TRANSITO VELOCE\nChiusura sbarre stimata: 14:47:14 - 14:51:44\nTreni c
  oinvolti nella chiusura:\n  - IC 583 (MILANO CENTRALE -> NAPOLI CENTRALE) 
  [Transito]\nRitardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNo
  ta normativa/euristica: Transito stimato senza fermata (36% tratta FORMIA-
@@ -324,93 +335,65 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-555--20261122-S09000@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T144235Z
-DTEND:20261123T144705Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:42 - 15:47 (primo: IC 555)
-DESCRIPTION:Stazione/PL: SESSA AURUNCA-ROCCAMONFINA (S09000)\nRegime chiusu
- ra: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:42:35 - 15:47
- :05\nTreni coinvolti nella chiusura:\n  - IC 555 (ROMA TERMINI -> REGGIO D
- I CALABRIA CENTRALE) [Transito]\n  - IC 555 (ROMA TERMINI -> REGGIO DI CAL
- ABRIA CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
-LOCATION:Passaggio a Livello / Stazione SESSA AURUNCA-ROCCAMONFINA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
 UID:train-21090--20261122-S09000@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T145845Z
 DTEND:20261123T151200Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 15:58 - 16:12 (primo: REG 21090) (+2 
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:58 - 16:12 (primo: REG 21090) (+2 
  min)
 DESCRIPTION:Stazione/PL: SESSA AURUNCA-ROCCAMONFINA (S09000)\nRegime chiusu
- ra: CHIUSURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 15:58:45 - 16:12
+ ra: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 15:58:45 - 16:12
  :00\nTreni coinvolti nella chiusura:\n  - REG 21090 (NAPOLI CENTRALE -> RO
- MA TERMINI) [Transito]\n  - REG 21090 (NAPOLI CENTRALE -> ROMA TERMINI) [T
- ransito]\n  - IC 556 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI) (+2m) [
- Transito]\n  - IC 556 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI) (+2m) 
- [Transito]\n  - REG 21090 (NAPOLI CENTRALE -> ROMA TERMINI)\n  - REG 21090
-  (NAPOLI CENTRALE -> ROMA TERMINI)\nRitardo massimo rilevato: 2 min\nAffid
- abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 6 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+ MA TERMINI) [Transito]\n  - IC 556 (REGGIO DI CALABRIA CENTRALE -> ROMA TE
+ RMINI) (+2m) [Transito]\n  - REG 21090 (NAPOLI CENTRALE -> ROMA TERMINI)\n
+ Ritardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Chiusura continua per 3 treni: intervallo utile tra i passaggi 
+ (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SESSA AURUNCA-ROCCAMONFINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21096--20261122-S09000@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T155940Z
 DTEND:20261123T161300Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 16:59 - 17:13 (primo: REG 21096)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:59 - 17:13 (primo: REG 21096)
 DESCRIPTION:Stazione/PL: SESSA AURUNCA-ROCCAMONFINA (S09000)\nRegime chiusu
- ra: CHIUSURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 16:59:40 - 17:13
+ ra: CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:59:40 - 17:13
  :00\nTreni coinvolti nella chiusura:\n  - REG 21096 (NAPOLI CENTRALE -> RO
- MA TERMINI) [Transito]\n  - REG 21096 (NAPOLI CENTRALE -> ROMA TERMINI) [T
- ransito]\n  - IC 95072 (MESSINA CENTRALE -> ROMA TERMINI) [Transito]\n  - 
- IC 95072 (MESSINA CENTRALE -> ROMA TERMINI) [Transito]\n  - REG 21096 (NAP
- OLI CENTRALE -> ROMA TERMINI)\n  - REG 21096 (NAPOLI CENTRALE -> ROMA TERM
- INI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
- ativa/euristica: Chiusura continua per 6 treni: intervallo utile tra i pas
- saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ MA TERMINI) [Transito]\n  - IC 95072 (MESSINA CENTRALE -> ROMA TERMINI) [T
+ ransito]\n  - REG 21096 (NAPOLI CENTRALE -> ROMA TERMINI)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
+ sura continua per 3 treni: intervallo utile tra i passaggi (66s) inferiore
+  alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SESSA AURUNCA-ROCCAMONFINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21077--20261122-S09000@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T162243Z
-DTEND:20261123T162813Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T162242Z
+DTEND:20261123T162812Z
 SUMMARY:[TRANSITO VELOCE] REG 21077 (ROMA TERMINI -> NAPOLI CENTRALE) ore 1
  7:26
 DESCRIPTION:Stazione/PL: SESSA AURUNCA-ROCCAMONFINA (S09000)\nRegime chiusu
- ra: TRANSITO VELOCE\nChiusura sbarre stimata: 17:22:43 - 17:28:13\nTreni c
+ ra: TRANSITO VELOCE\nChiusura sbarre stimata: 17:22:42 - 17:28:12\nTreni c
  oinvolti nella chiusura:\n  - REG 21077 (ROMA TERMINI -> NAPOLI CENTRALE) 
  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
- a normativa/euristica: Transito stimato senza fermata (89% tratta FORMIA-G
+ a normativa/euristica: Transito stimato senza fermata (88% tratta FORMIA-G
  AETA -> MINTURNO-SCAURI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SESSA AURUNCA-ROCCAMONFINA
 STATUS:CONFIRMED
@@ -422,8 +405,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21077--20261122-S09000@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T163330Z
 DTEND:20261123T163800Z
 SUMMARY:[FERMATA] REG 21077 (ROMA TERMINI -> NAPOLI CENTRALE) ore 17:37
@@ -442,111 +425,107 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-561--20261122-S09000@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T164235Z
-DTEND:20261123T164705Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:42 - 17:47 (primo: IC 561)
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261123T164230Z
+DTEND:20261123T164700Z
+SUMMARY:[TRANSITO VELOCE] IC 561 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRA
+ LE) ore 17:46
 DESCRIPTION:Stazione/PL: SESSA AURUNCA-ROCCAMONFINA (S09000)\nRegime chiusu
- ra: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:42:35 - 17:47
- :05\nTreni coinvolti nella chiusura:\n  - IC 561 (ROMA TERMINI -> REGGIO D
- I CALABRIA CENTRALE) [Transito]\n  - IC 561 (ROMA TERMINI -> REGGIO DI CAL
- ABRIA CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+ ra: TRANSITO VELOCE\nChiusura sbarre stimata: 17:42:30 - 17:47:00\nTreni c
+ oinvolti nella chiusura:\n  - IC 561 (ROMA TERMINI -> REGGIO DI CALABRIA C
+ ENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
+  78%\nNota normativa/euristica: Transito stimato senza fermata (36% tratta
+  FORMIA-GAETA -> AVERSA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SESSA AURUNCA-ROCCAMONFINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21038--20261122-S09000@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T203545Z
 DTEND:20261123T204115Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:35 - 21:41 (primo: REG 21038)
+SUMMARY:[TRANSITO VELOCE] REG 21038 (NAPOLI CENTRALE -> ROMA TERMINI) ore 2
+ 1:40
 DESCRIPTION:Stazione/PL: SESSA AURUNCA-ROCCAMONFINA (S09000)\nRegime chiusu
- ra: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:35:45 - 21:41
- :15\nTreni coinvolti nella chiusura:\n  - REG 21038 (NAPOLI CENTRALE -> RO
- MA TERMINI) [Transito]\n  - REG 21038 (NAPOLI CENTRALE -> ROMA TERMINI) [T
- ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i
-  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ ra: TRANSITO VELOCE\nChiusura sbarre stimata: 21:35:45 - 21:41:15\nTreni c
+ oinvolti nella chiusura:\n  - REG 21038 (NAPOLI CENTRALE -> ROMA TERMINI) 
+ [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Transito stimato senza fermata (91% tratta VILLA LI
+ TERNO -> FALCIANO-MONDRAGONE-CARINOLA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SESSA AURUNCA-ROCCAMONFINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21038--20261122-S09000@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T204430Z
 DTEND:20261123T204900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:44 - 21:49 (primo: REG 21038)
+SUMMARY:[FERMATA] REG 21038 (NAPOLI CENTRALE -> ROMA TERMINI) ore 21:48
 DESCRIPTION:Stazione/PL: SESSA AURUNCA-ROCCAMONFINA (S09000)\nRegime chiusu
- ra: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:44:30 - 21:49
- :00\nTreni coinvolti nella chiusura:\n  - REG 21038 (NAPOLI CENTRALE -> RO
- MA TERMINI)\n  - REG 21038 (NAPOLI CENTRALE -> ROMA TERMINI)\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: C
- hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
+ ra: FERMATA\nChiusura sbarre stimata: 21:44:30 - 21:49:00\nTreni coinvolti
+  nella chiusura:\n  - REG 21038 (NAPOLI CENTRALE -> ROMA TERMINI)\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristi
+ ca: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione SESSA AURUNCA-ROCCAMONFINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12749--20261122-S09000@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T211841Z
-DTEND:20261123T212411Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:18 - 22:24 (primo: REG 12749)
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T211840Z
+DTEND:20261123T212410Z
+SUMMARY:[TRANSITO VELOCE] REG 12749 (ROMA TERMINI -> MINTURNO-SCAURI) ore 2
+ 2:22
 DESCRIPTION:Stazione/PL: SESSA AURUNCA-ROCCAMONFINA (S09000)\nRegime chiusu
- ra: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:18:41 - 22:24
- :11\nTreni coinvolti nella chiusura:\n  - REG 12749 (ROMA TERMINI -> MINTU
- RNO-SCAURI) [Transito]\n  - REG 12749 (ROMA TERMINI -> MINTURNO-SCAURI) [T
- ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i
-  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ ra: TRANSITO VELOCE\nChiusura sbarre stimata: 22:18:40 - 22:24:10\nTreni c
+ oinvolti nella chiusura:\n  - REG 12749 (ROMA TERMINI -> MINTURNO-SCAURI) 
+ [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Transito stimato senza fermata (88% tratta FORMIA-G
+ AETA -> MINTURNO-SCAURI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SESSA AURUNCA-ROCCAMONFINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-799--20261122-S09000@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261124T062625Z
-DTEND:20261124T063055Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:26 - 07:30 (primo: ICN 799)
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261124T062619Z
+DTEND:20261124T063049Z
+SUMMARY:[TRANSITO VELOCE] ICN 799 (TORINO PORTA NUOVA -> SALERNO) ore 07:29
 DESCRIPTION:Stazione/PL: SESSA AURUNCA-ROCCAMONFINA (S09000)\nRegime chiusu
- ra: CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:26:25 - 07:30
- :55\nTreni coinvolti nella chiusura:\n  - ICN 799 (TORINO PORTA NUOVA -> S
- ALERNO) [Transito]\n  - ICN 799 (TORINO PORTA NUOVA -> SALERNO) [Transito]
- \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
- a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
- i (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ ra: TRANSITO VELOCE\nChiusura sbarre stimata: 07:26:19 - 07:30:49\nTreni c
+ oinvolti nella chiusura:\n  - ICN 799 (TORINO PORTA NUOVA -> SALERNO) [Tra
+ nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Transito stimato senza fermata (36% tratta FORMIA-GAETA
+  -> AVERSA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SESSA AURUNCA-ROCCAMONFINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:ICN

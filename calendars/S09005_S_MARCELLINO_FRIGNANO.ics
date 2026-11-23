@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:66dd473ac6907a0011e6180942e8eac67d9c7525a117a903ad2c409dce20
- a0fc
+X-CONTENT-HASH:2d14914fccd2da7edd2da4deca3cbf279f67590958a625827ff7e17def45
+ 21b4
 BEGIN:VEVENT
 UID:train-21052--20261122-S09005@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T032539Z
 DTEND:20261123T033109Z
 SUMMARY:[TRANSITO VELOCE] REG 21052 (NAPOLI CENTRALE -> ROMA TERMINI) ore 0
@@ -35,40 +35,59 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21420--20261122-S09005@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T060800Z
 DTEND:20261123T061500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:08 - 07:15 (primo: REG 21420) (+2 
- min)
-DESCRIPTION:Stazione/PL: S.MARCELLINO FRIGNANO (S09005)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:08:00 - 07:15:00\n
- Treni coinvolti nella chiusura:\n  - REG 21420 (NAPOLI CENTRALE -> VILLA L
- ITERNO) (+2m)\n  - REG 21420 (NAPOLI CENTRALE -> VILLA LITERNO) (+2m)\nRit
- ardo massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/eur
- istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
- ) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 21420 (NAPOLI CENTRALE -> VILLA LITERNO) ore 07:14 (+
+ 2 min)
+DESCRIPTION:Stazione/PL: S.MARCELLINO FRIGNANO (S09005)\nRegime chiusura: F
+ ERMATA\nChiusura sbarre stimata: 07:08:00 - 07:15:00\nTreni coinvolti nell
+ a chiusura:\n  - REG 21420 (NAPOLI CENTRALE -> VILLA LITERNO) (+2m)\nRitar
+ do massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euris
+ tica: Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione S.MARCELLINO FRIGNANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-701--20261122-S09005@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:0
+DTSTART:20261123T070201Z
+DTEND:20261123T070631Z
+SUMMARY:[TRANSITO VELOCE] IC 701 (ROMA TERMINI -> TARANTO) ore 08:05
+DESCRIPTION:Stazione/PL: S.MARCELLINO FRIGNANO (S09005)\nRegime chiusura: T
+ RANSITO VELOCE\nChiusura sbarre stimata: 08:02:01 - 08:06:31\nTreni coinvo
+ lti nella chiusura:\n  - IC 701 (ROMA TERMINI -> TARANTO) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Transito stimato senza fermata (90% tratta FORMIA-GAETA -> AVERSA\;
+  pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione S.MARCELLINO FRIGNANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
 UID:train-723--20261122-S09005@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T080205Z
-DTEND:20261123T080635Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T080201Z
+DTEND:20261123T080631Z
 SUMMARY:[TRANSITO VELOCE] IC 723 (ROMA TERMINI -> PALERMO CENTRALE) ore 09:
  05
 DESCRIPTION:Stazione/PL: S.MARCELLINO FRIGNANO (S09005)\nRegime chiusura: T
- RANSITO VELOCE\nChiusura sbarre stimata: 09:02:05 - 09:06:35\nTreni coinvo
+ RANSITO VELOCE\nChiusura sbarre stimata: 09:02:01 - 09:06:31\nTreni coinvo
  lti nella chiusura:\n  - IC 723 (ROMA TERMINI -> PALERMO CENTRALE) [Transi
  to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Transito stimato senza fermata (91% tratta FORMIA-GAETA ->
+ tiva/euristica: Transito stimato senza fermata (90% tratta FORMIA-GAETA ->
   AVERSA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.MARCELLINO FRIGNANO
 STATUS:CONFIRMED
@@ -80,67 +99,63 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21057--20261122-S09005@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T085427Z
 DTEND:20261123T090630Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 09:54 - 10:06 (primo: REG 21057) (+1 
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:54 - 10:06 (primo: REG 21057) (+1 
  min)
 DESCRIPTION:Stazione/PL: S.MARCELLINO FRIGNANO (S09005)\nRegime chiusura: C
- HIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 09:54:27 - 10:06:30\n
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:54:27 - 10:06:30\n
  Treni coinvolti nella chiusura:\n  - REG 21057 (ROMA TERMINI -> NAPOLI CEN
- TRALE) [Transito]\n  - REG 21057 (ROMA TERMINI -> NAPOLI CENTRALE) [Transi
- to]\n  - REG 21057 (ROMA TERMINI -> NAPOLI CENTRALE) (+1m)\n  - REG 21057 
- (ROMA TERMINI -> NAPOLI CENTRALE) (+1m)\nRitardo massimo rilevato: 1 min\n
- Affidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 
- 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
-  di sgombero stradale (120s)
+ TRALE) [Transito]\n  - REG 21057 (ROMA TERMINI -> NAPOLI CENTRALE) (+1m)\n
+ Ritardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
+ (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.MARCELLINO FRIGNANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21047--20261122-S09005@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T093731Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261123T093730Z
 DTEND:20261123T094800Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:37 - 10:48 (primo: REG 21047) (+5 
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:37 - 10:48 (primo: REG 21047) (+5 
  min)
 DESCRIPTION:Stazione/PL: S.MARCELLINO FRIGNANO (S09005)\nRegime chiusura: C
- HIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 10:37:31 - 10:48:00\n
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:37:30 - 10:48:00\n
  Treni coinvolti nella chiusura:\n  - REG 21047 (FORMIA-GAETA -> NAPOLI CEN
  TRALE) (+2m) [Transito]\n  - REG 21047 (FORMIA-GAETA -> NAPOLI CENTRALE) (
- +2m) [Transito]\n  - REG 21047 (FORMIA-GAETA -> NAPOLI CENTRALE) (+5m)\n  
- - REG 21047 (FORMIA-GAETA -> NAPOLI CENTRALE) (+5m)\nRitardo massimo rilev
- ato: 5 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
- ontinua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+ +5m)\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.MARCELLINO FRIGNANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-501--20261122-S09005@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T110011Z
-DTEND:20261123T110441Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T110007Z
+DTEND:20261123T110437Z
 SUMMARY:[TRANSITO VELOCE] IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) ore 12
  :03
 DESCRIPTION:Stazione/PL: S.MARCELLINO FRIGNANO (S09005)\nRegime chiusura: T
- RANSITO VELOCE\nChiusura sbarre stimata: 12:00:11 - 12:04:41\nTreni coinvo
+ RANSITO VELOCE\nChiusura sbarre stimata: 12:00:07 - 12:04:37\nTreni coinvo
  lti nella chiusura:\n  - IC 501 (SESTRI LEVANTE -> NAPOLI CENTRALE) [Trans
  ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
- ativa/euristica: Transito stimato senza fermata (91% tratta FORMIA-GAETA -
+ ativa/euristica: Transito stimato senza fermata (90% tratta FORMIA-GAETA -
  > AVERSA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.MARCELLINO FRIGNANO
 STATUS:CONFIRMED
@@ -152,41 +167,39 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-34673--20261122-S09005@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T110829Z
 DTEND:20261123T111900Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:08 - 12:19 (primo: REG 34673)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:08 - 12:19 (primo: REG 34673)
 DESCRIPTION:Stazione/PL: S.MARCELLINO FRIGNANO (S09005)\nRegime chiusura: C
- HIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 12:08:29 - 12:19:00\n
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:08:29 - 12:19:00\n
  Treni coinvolti nella chiusura:\n  - REG 34673 (VILLA LITERNO -> NAPOLI CE
- NTRALE) [Transito]\n  - REG 34673 (VILLA LITERNO -> NAPOLI CENTRALE) [Tran
- sito]\n  - REG 34673 (VILLA LITERNO -> NAPOLI CENTRALE)\n  - REG 34673 (VI
- LLA LITERNO -> NAPOLI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
+ NTRALE) [Transito]\n  - REG 34673 (VILLA LITERNO -> NAPOLI CENTRALE)\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (30s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.MARCELLINO FRIGNANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-95057--20261122-S09005@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T120205Z
-DTEND:20261123T120635Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T120201Z
+DTEND:20261123T120631Z
 SUMMARY:[TRANSITO VELOCE] IC 95057 (ROMA TERMINI -> PALERMO CENTRALE) ore 1
  3:05
 DESCRIPTION:Stazione/PL: S.MARCELLINO FRIGNANO (S09005)\nRegime chiusura: T
- RANSITO VELOCE\nChiusura sbarre stimata: 13:02:05 - 13:06:35\nTreni coinvo
+ RANSITO VELOCE\nChiusura sbarre stimata: 13:02:01 - 13:06:31\nTreni coinvo
  lti nella chiusura:\n  - IC 95057 (ROMA TERMINI -> PALERMO CENTRALE) [Tran
  sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Transito stimato senza fermata (91% tratta FORMIA-GAETA 
+ mativa/euristica: Transito stimato senza fermata (90% tratta FORMIA-GAETA 
  -> AVERSA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.MARCELLINO FRIGNANO
 STATUS:CONFIRMED
@@ -198,41 +211,39 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21067--20261122-S09005@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T125723Z
 DTEND:20261123T130700Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 13:57 - 14:07 (primo: REG 21067)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:57 - 14:07 (primo: REG 21067)
 DESCRIPTION:Stazione/PL: S.MARCELLINO FRIGNANO (S09005)\nRegime chiusura: C
- HIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 13:57:23 - 14:07:00\n
+ HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:57:23 - 14:07:00\n
  Treni coinvolti nella chiusura:\n  - REG 21067 (ROMA TERMINI -> NAPOLI CEN
- TRALE) [Transito]\n  - REG 21067 (ROMA TERMINI -> NAPOLI CENTRALE) [Transi
- to]\n  - REG 21067 (ROMA TERMINI -> NAPOLI CENTRALE)\n  - REG 21067 (ROMA 
- TERMINI -> NAPOLI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+ TRALE) [Transito]\n  - REG 21067 (ROMA TERMINI -> NAPOLI CENTRALE)\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.MARCELLINO FRIGNANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-583--20261122-S09005@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T140754Z
-DTEND:20261123T141224Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T140750Z
+DTEND:20261123T141220Z
 SUMMARY:[TRANSITO VELOCE] IC 583 (MILANO CENTRALE -> NAPOLI CENTRALE) ore 1
  5:11
 DESCRIPTION:Stazione/PL: S.MARCELLINO FRIGNANO (S09005)\nRegime chiusura: T
- RANSITO VELOCE\nChiusura sbarre stimata: 15:07:54 - 15:12:24\nTreni coinvo
+ RANSITO VELOCE\nChiusura sbarre stimata: 15:07:50 - 15:12:20\nTreni coinvo
  lti nella chiusura:\n  - IC 583 (MILANO CENTRALE -> NAPOLI CENTRALE) [Tran
  sito]\nRitardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Transito stimato senza fermata (91% tratta FORMIA-GAETA
+ rmativa/euristica: Transito stimato senza fermata (90% tratta FORMIA-GAETA
   -> AVERSA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.MARCELLINO FRIGNANO
 STATUS:CONFIRMED
@@ -244,135 +255,104 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21090--20261122-S09005@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T143830Z
 DTEND:20261123T144300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:38 - 15:43 (primo: REG 21090)
-DESCRIPTION:Stazione/PL: S.MARCELLINO FRIGNANO (S09005)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:38:30 - 15:43:00\n
- Treni coinvolti nella chiusura:\n  - REG 21090 (NAPOLI CENTRALE -> ROMA TE
- RMINI)\n  - REG 21090 (NAPOLI CENTRALE -> ROMA TERMINI)\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 21090 (NAPOLI CENTRALE -> ROMA TERMINI) ore 15:42
+DESCRIPTION:Stazione/PL: S.MARCELLINO FRIGNANO (S09005)\nRegime chiusura: F
+ ERMATA\nChiusura sbarre stimata: 15:38:30 - 15:43:00\nTreni coinvolti nell
+ a chiusura:\n  - REG 21090 (NAPOLI CENTRALE -> ROMA TERMINI)\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
+ revisione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione S.MARCELLINO FRIGNANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-555--20261122-S09005@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T150205Z
-DTEND:20261123T150635Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:02 - 16:06 (primo: IC 555)
-DESCRIPTION:Stazione/PL: S.MARCELLINO FRIGNANO (S09005)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:02:05 - 16:06:35\n
- Treni coinvolti nella chiusura:\n  - IC 555 (ROMA TERMINI -> REGGIO DI CAL
- ABRIA CENTRALE) [Transito]\n  - IC 555 (ROMA TERMINI -> REGGIO DI CALABRIA
-  CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stim
- a: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervall
- o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
- ale (120s)
-LOCATION:Passaggio a Livello / Stazione S.MARCELLINO FRIGNANO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
 UID:train-21096--20261122-S09005@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T153830Z
 DTEND:20261123T154300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:38 - 16:43 (primo: REG 21096)
-DESCRIPTION:Stazione/PL: S.MARCELLINO FRIGNANO (S09005)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:38:30 - 16:43:00\n
- Treni coinvolti nella chiusura:\n  - REG 21096 (NAPOLI CENTRALE -> ROMA TE
- RMINI)\n  - REG 21096 (NAPOLI CENTRALE -> ROMA TERMINI)\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 21096 (NAPOLI CENTRALE -> ROMA TERMINI) ore 16:42
+DESCRIPTION:Stazione/PL: S.MARCELLINO FRIGNANO (S09005)\nRegime chiusura: F
+ ERMATA\nChiusura sbarre stimata: 16:38:30 - 16:43:00\nTreni coinvolti nell
+ a chiusura:\n  - REG 21096 (NAPOLI CENTRALE -> ROMA TERMINI)\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
+ revisione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione S.MARCELLINO FRIGNANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21077--20261122-S09005@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T165723Z
 DTEND:20261123T170700Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:57 - 18:07 (primo: REG 21077)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:57 - 18:07 (primo: REG 21077)
 DESCRIPTION:Stazione/PL: S.MARCELLINO FRIGNANO (S09005)\nRegime chiusura: C
- HIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 17:57:23 - 18:07:00\n
+ HIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 17:57:23 - 18:07:00\n
  Treni coinvolti nella chiusura:\n  - REG 21077 (ROMA TERMINI -> NAPOLI CEN
  TRALE) [Transito]\n  - IC 561 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE
- ) [Transito]\n  - IC 561 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE) [Tr
- ansito]\n  - REG 21077 (ROMA TERMINI -> NAPOLI CENTRALE)\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
- ura continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore a
- lla soglia minima di sgombero stradale (120s)
+ ) [Transito]\n  - REG 21077 (ROMA TERMINI -> NAPOLI CENTRALE)\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) inferi
+ ore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.MARCELLINO FRIGNANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21038--20261122-S09005@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T201030Z
 DTEND:20261123T201500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:10 - 21:15 (primo: REG 21038)
-DESCRIPTION:Stazione/PL: S.MARCELLINO FRIGNANO (S09005)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:10:30 - 21:15:00\n
- Treni coinvolti nella chiusura:\n  - REG 21038 (NAPOLI CENTRALE -> ROMA TE
- RMINI)\n  - REG 21038 (NAPOLI CENTRALE -> ROMA TERMINI)\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 21038 (NAPOLI CENTRALE -> ROMA TERMINI) ore 21:14
+DESCRIPTION:Stazione/PL: S.MARCELLINO FRIGNANO (S09005)\nRegime chiusura: F
+ ERMATA\nChiusura sbarre stimata: 21:10:30 - 21:15:00\nTreni coinvolti nell
+ a chiusura:\n  - REG 21038 (NAPOLI CENTRALE -> ROMA TERMINI)\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
+ revisione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione S.MARCELLINO FRIGNANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-799--20261122-S09005@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261124T064837Z
-DTEND:20261124T065307Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:48 - 07:53 (primo: ICN 799)
-DESCRIPTION:Stazione/PL: S.MARCELLINO FRIGNANO (S09005)\nRegime chiusura: C
- HIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:48:37 - 07:53:07\n
- Treni coinvolti nella chiusura:\n  - ICN 799 (TORINO PORTA NUOVA -> SALERN
- O) [Transito]\n  - ICN 799 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRit
- ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
- ) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261124T064832Z
+DTEND:20261124T065302Z
+SUMMARY:[TRANSITO VELOCE] ICN 799 (TORINO PORTA NUOVA -> SALERNO) ore 07:52
+DESCRIPTION:Stazione/PL: S.MARCELLINO FRIGNANO (S09005)\nRegime chiusura: T
+ RANSITO VELOCE\nChiusura sbarre stimata: 07:48:32 - 07:53:02\nTreni coinvo
+ lti nella chiusura:\n  - ICN 799 (TORINO PORTA NUOVA -> SALERNO) [Transito
+ ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
+ va/euristica: Transito stimato senza fermata (90% tratta FORMIA-GAETA -> A
+ VERSA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.MARCELLINO FRIGNANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:ICN

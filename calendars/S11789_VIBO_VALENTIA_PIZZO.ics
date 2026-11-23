@@ -9,36 +9,33 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:b46d86467a5366ea138c8f17c274f763c25eb5e5b8e057db772b025cd4f3
- 7920
+X-CONTENT-HASH:1e8c76df5dda92389ad65ed595ed3d8256067ced3a8895c60c92a0ad30bc
+ 65f3
 BEGIN:VEVENT
 UID:train-8418--20261122-S11789@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T060530Z
 DTEND:20261123T061300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:05 - 07:13 (primo: TRENO 8418) (+9
-  min)
-DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:05:30 - 07:13:00\nTr
- eni coinvolti nella chiusura:\n  - TRENO 8418 (REGGIO DI CALABRIA CENTRALE
-  -> VENEZIA S.LUCIA) (+9m)\n  - TRENO 8418 (REGGIO DI CALABRIA CENTRALE ->
-  VENEZIA S.LUCIA) (+9m)\nRitardo massimo rilevato: 9 min\nAffidabilità st
- ima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
- llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
- adale (120s)
+SUMMARY:[FERMATA] TRENO 8418 (REGGIO DI CALABRIA CENTRALE -> VENEZIA S.LUCI
+ A) ore 07:12 (+9 min)
+DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 07:05:30 - 07:13:00\nTreni coinvolti nella 
+ chiusura:\n  - TRENO 8418 (REGGIO DI CALABRIA CENTRALE -> VENEZIA S.LUCIA)
+  (+9m)\nRitardo massimo rilevato: 9 min\nAffidabilità stima: 99%\nNota no
+ rmativa/euristica: Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione VIBO VALENTIA-PIZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:9
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9642--20261122-S11789@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T085230Z
 DTEND:20261123T085700Z
 SUMMARY:[FERMATA] TRENO 9642 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA N
@@ -57,100 +54,115 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-556--20261122-S11789@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T101915Z
-DTEND:20261123T102630Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:19 - 11:26 (primo: IC 556) (+2 min
+UID:train-9588--20261122-S11789@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:0
+DTSTART:20261123T101117Z
+DTEND:20261123T101647Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9588 (REGGIO DI CALABRIA CENTRALE -> TORINO
+  PORTA NUOVA) ore 11:15 (+10 min)
+DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 11:11:17 - 11:16:47\nTreni coinvolt
+ i nella chiusura:\n  - TRENO 9588 (REGGIO DI CALABRIA CENTRALE -> TORINO P
+ ORTA NUOVA) (+10m) [Transito]\nRitardo massimo rilevato: 10 min\nAffidabil
+ ità stima: 78%\nNota normativa/euristica: Transito stimato senza fermata 
+ (49% tratta ROSARNO -> LAMEZIA TERME CENTRALE\; pedale annuncio fisso Vmax
  )
-DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:19:15 - 11:26:30\nTr
- eni coinvolti nella chiusura:\n  - IC 556 (REGGIO DI CALABRIA CENTRALE -> 
- ROMA TERMINI) (+2m)\n  - IC 556 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMI
- NI) (+2m)\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota
-  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
- i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIBO VALENTIA-PIZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:10
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-556--20261122-S11789@pl-tracker.local
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T101915Z
+DTEND:20261123T102630Z
+SUMMARY:[FERMATA] IC 556 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI) ore 
+ 11:25 (+2 min)
+DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 11:19:15 - 11:26:30\nTreni coinvolti nella 
+ chiusura:\n  - IC 556 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI) (+2m)\
+ nRitardo massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa
+ /euristica: Rilevamento reale da circuito di binario
+LOCATION:Passaggio a Livello / Stazione VIBO VALENTIA-PIZZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8333--20261122-S11789@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T112634Z
-DTEND:20261123T113204Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:26 - 12:32 (primo: TRENO 8333) (+3
- 4 min)
-DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:26:34 - 12:32:04\nTr
- eni coinvolti nella chiusura:\n  - TRENO 8333 (ROMA TERMINI -> REGGIO DI C
- ALABRIA CENTRALE) (+34m) [Transito]\n  - TRENO 8333 (ROMA TERMINI -> REGGI
- O DI CALABRIA CENTRALE) (+34m) [Transito]\nRitardo massimo rilevato: 34 mi
- n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
- er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261123T112640Z
+DTEND:20261123T113210Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8333 (ROMA TERMINI -> REGGIO DI CALABRIA CE
+ NTRALE) ore 12:30 (+34 min)
+DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 12:26:40 - 12:32:10\nTreni coinvolt
+ i nella chiusura:\n  - TRENO 8333 (ROMA TERMINI -> REGGIO DI CALABRIA CENT
+ RALE) (+34m) [Transito]\nRitardo massimo rilevato: 34 min\nAffidabilità s
+ tima: 78%\nNota normativa/euristica: Transito stimato senza fermata (50% t
+ ratta LAMEZIA TERME CENTRALE -> ROSARNO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VIBO VALENTIA-PIZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:34
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5560--20261122-S11789@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T120430Z
 DTEND:20261123T120900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:04 - 13:09 (primo: REG 5560)
-DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:04:30 - 13:09:00\nTr
- eni coinvolti nella chiusura:\n  - REG 5560 (REGGIO DI CALABRIA CENTRALE -
- > PAOLA)\n  - REG 5560 (REGGIO DI CALABRIA CENTRALE -> PAOLA)\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 5560 (REGGIO DI CALABRIA CENTRALE -> PAOLA) ore 13:08
+DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 13:04:30 - 13:09:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 5560 (REGGIO DI CALABRIA CENTRALE -> PAOLA)\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica:
+  Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VIBO VALENTIA-PIZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5564--20261122-S11789@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T130430Z
 DTEND:20261123T130900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:04 - 14:09 (primo: REG 5564)
-DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:04:30 - 14:09:00\nTr
- eni coinvolti nella chiusura:\n  - REG 5564 (REGGIO DI CALABRIA CENTRALE -
- > PAOLA)\n  - REG 5564 (REGGIO DI CALABRIA CENTRALE -> PAOLA)\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 5564 (REGGIO DI CALABRIA CENTRALE -> PAOLA) ore 14:08
+DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 14:04:30 - 14:09:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 5564 (REGGIO DI CALABRIA CENTRALE -> PAOLA)\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica:
+  Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VIBO VALENTIA-PIZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-6577--20261122-S11789@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T154630Z
 DTEND:20261123T155100Z
 SUMMARY:[FERMATA] REG 6577 (PAOLA -> REGGIO DI CALABRIA CENTRALE) ore 16:50
@@ -169,39 +181,38 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5570--20261122-S11789@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T160530Z
 DTEND:20261123T161000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:05 - 17:10 (primo: REG 5570)
-DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:05:30 - 17:10:00\nTr
- eni coinvolti nella chiusura:\n  - REG 5570 (REGGIO DI CALABRIA CENTRALE -
- > COSENZA)\n  - REG 5570 (REGGIO DI CALABRIA CENTRALE -> COSENZA)\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristi
- ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
- feriore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 5570 (REGGIO DI CALABRIA CENTRALE -> COSENZA) ore 17:
+ 09
+DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 17:05:30 - 17:10:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 5570 (REGGIO DI CALABRIA CENTRALE -> COSENZA)\nRitardo 
+ massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
+ a: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VIBO VALENTIA-PIZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9583--20261122-S11789@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
-DTSTART:20261123T165335Z
-DTEND:20261123T165905Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
+DTSTART:20261123T165340Z
+DTEND:20261123T165910Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9583 (TORINO PORTA NUOVA -> REGGIO DI CALAB
  RIA CENTRALE) ore 17:57
 DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 17:53:35 - 17:59:05\nTreni coinvolt
+ NSITO VELOCE\nChiusura sbarre stimata: 17:53:40 - 17:59:10\nTreni coinvolt
  i nella chiusura:\n  - TRENO 9583 (TORINO PORTA NUOVA -> REGGIO DI CALABRI
  A CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità sti
- ma: 78%\nNota normativa/euristica: Transito stimato senza fermata (49% tra
+ ma: 78%\nNota normativa/euristica: Transito stimato senza fermata (50% tra
  tta LAMEZIA TERME CENTRALE -> ROSARNO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VIBO VALENTIA-PIZZO
 STATUS:CONFIRMED
@@ -213,32 +224,29 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9623--20261122-S11789@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T181330Z
 DTEND:20261123T181800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:13 - 19:18 (primo: TRENO 9623) (+4
-  min)
-DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:13:30 - 19:18:00\nTr
- eni coinvolti nella chiusura:\n  - TRENO 9623 (MILANO CENTRALE -> REGGIO D
- I CALABRIA CENTRALE) (+4m)\n  - TRENO 9623 (MILANO CENTRALE -> REGGIO DI C
- ALABRIA CENTRALE) (+4m)\nRitardo massimo rilevato: 4 min\nAffidabilità st
- ima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
- llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
- adale (120s)
+SUMMARY:[FERMATA] TRENO 9623 (MILANO CENTRALE -> REGGIO DI CALABRIA CENTRAL
+ E) ore 19:17 (+4 min)
+DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 19:13:30 - 19:18:00\nTreni coinvolti nella 
+ chiusura:\n  - TRENO 9623 (MILANO CENTRALE -> REGGIO DI CALABRIA CENTRALE)
+  (+4m)\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 90%\nNota no
+ rmativa/euristica: Previsione con ritardo propagato (+4 min)
 LOCATION:Passaggio a Livello / Stazione VIBO VALENTIA-PIZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1962--20261122-S11789@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
 DTSTART:20261123T183415Z
 DTEND:20261123T183900Z
 SUMMARY:[FERMATA] ICN 1962 (CATANIA CENTRALE -> MILANO CENTRALE) ore 19:38
@@ -257,63 +265,59 @@ X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9587--20261122-S11789@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T193730Z
 DTEND:20261123T194200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:37 - 20:42 (primo: TRENO 9587) (+1
- 7 min)
-DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:37:30 - 20:42:00\nTr
- eni coinvolti nella chiusura:\n  - TRENO 9587 (TORINO PORTA NUOVA -> REGGI
- O DI CALABRIA CENTRALE) (+17m)\n  - TRENO 9587 (TORINO PORTA NUOVA -> REGG
- IO DI CALABRIA CENTRALE) (+17m)\nRitardo massimo rilevato: 17 min\nAffidab
- ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+SUMMARY:[FERMATA] TRENO 9587 (TORINO PORTA NUOVA -> REGGIO DI CALABRIA CENT
+ RALE) ore 20:41 (+17 min)
+DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 20:37:30 - 20:42:00\nTreni coinvolti nella 
+ chiusura:\n  - TRENO 9587 (TORINO PORTA NUOVA -> REGGIO DI CALABRIA CENTRA
+ LE) (+17m)\nRitardo massimo rilevato: 17 min\nAffidabilità stima: 90%\nNo
+ ta normativa/euristica: Previsione con ritardo propagato (+17 min)
 LOCATION:Passaggio a Livello / Stazione VIBO VALENTIA-PIZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:17
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-555--20261122-S11789@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T201215Z
 DTEND:20261123T201700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:12 - 21:17 (primo: IC 555)
-DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:12:15 - 21:17:00\nTr
- eni coinvolti nella chiusura:\n  - IC 555 (ROMA TERMINI -> REGGIO DI CALAB
- RIA CENTRALE)\n  - IC 555 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE)\nR
- itardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/e
- uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
- 0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] IC 555 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE) ore 
+ 21:16
+DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 21:12:15 - 21:17:00\nTreni coinvolti nella 
+ chiusura:\n  - IC 555 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE)\nRitar
+ do massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euris
+ tica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VIBO VALENTIA-PIZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9639--20261122-S11789@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:1
-DTSTART:20261123T210305Z
-DTEND:20261123T210835Z
+DTSTAMP:20261123T221239Z
+SEQUENCE:2
+DTSTART:20261123T210310Z
+DTEND:20261123T210840Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9639 (MILANO CENTRALE -> REGGIO DI CALABRIA
   CENTRALE) ore 22:07
 DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 22:03:05 - 22:08:35\nTreni coinvolt
+ NSITO VELOCE\nChiusura sbarre stimata: 22:03:10 - 22:08:40\nTreni coinvolt
  i nella chiusura:\n  - TRENO 9639 (MILANO CENTRALE -> REGGIO DI CALABRIA C
  ENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
-  78%\nNota normativa/euristica: Transito stimato senza fermata (49% tratta
+  78%\nNota normativa/euristica: Transito stimato senza fermata (50% tratta
   LAMEZIA TERME CENTRALE -> ROSARNO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VIBO VALENTIA-PIZZO
 STATUS:CONFIRMED
@@ -325,44 +329,41 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-561--20261122-S11789@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261123T214615Z
 DTEND:20261123T215100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:46 - 22:51 (primo: IC 561)
-DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:46:15 - 22:51:00\nTr
- eni coinvolti nella chiusura:\n  - IC 561 (ROMA TERMINI -> REGGIO DI CALAB
- RIA CENTRALE)\n  - IC 561 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE)\nR
- itardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/e
- uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
- 0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] IC 561 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE) ore 
+ 22:50
+DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 22:46:15 - 22:51:00\nTreni coinvolti nella 
+ chiusura:\n  - IC 561 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE)\nRitar
+ do massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euris
+ tica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VIBO VALENTIA-PIZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1963--20261122-S11789@pl-tracker.local
-DTSTAMP:20261123T102915Z
-SEQUENCE:0
+DTSTAMP:20261123T221239Z
+SEQUENCE:1
 DTSTART:20261124T083815Z
 DTEND:20261124T084300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:38 - 09:43 (primo: ICN 1963)
-DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:38:15 - 09:43:00\nTr
- eni coinvolti nella chiusura:\n  - ICN 1963 (MILANO CENTRALE -> CATANIA CE
- NTRALE)\n  - ICN 1963 (MILANO CENTRALE -> CATANIA CENTRALE)\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Ch
- iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] ICN 1963 (MILANO CENTRALE -> CATANIA CENTRALE) ore 09:42
+DESCRIPTION:Stazione/PL: VIBO VALENTIA-PIZZO (S11789)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 09:38:15 - 09:43:00\nTreni coinvolti nella 
+ chiusura:\n  - ICN 1963 (MILANO CENTRALE -> CATANIA CENTRALE)\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: 
+ Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VIBO VALENTIA-PIZZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:ICN
