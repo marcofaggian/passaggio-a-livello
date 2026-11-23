@@ -9,34 +9,81 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:1b9e6412435625de65c7a64b8969da7d106fe42f32dfd23a7e51cf6f158a
- 774d
+X-CONTENT-HASH:2a9af901d83dc0f14b4dc872e83a6d9932274017fd747c35d112b45c1bd3
+ 0a25
 BEGIN:VEVENT
-UID:train-12019--20261122-S04209@pl-tracker.local
-DTSTAMP:20261123T014528Z
+UID:train-12015--20261122-S04209@pl-tracker.local
+DTSTAMP:20261123T102915Z
 SEQUENCE:0
-DTSTART:20261123T053708Z
-DTEND:20261123T054814Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:37 - 06:48 (primo: REG 12019)
+DTSTART:20261123T043515Z
+DTEND:20261123T044700Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 05:35 - 05:47 (primo: REG 12015) (+4 
+ min)
 DESCRIPTION:Stazione/PL: PIETRABISSARA (S04209)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:37:08 - 06:48:14\nTreni co
- involti nella chiusura:\n  - REG 12019 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE
- ) [Transito]\n  - REG 12019 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) [Transito
- ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
- va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
- gi (6s) inferiore alla soglia minima di sgombero stradale (120s)
+ CONTINUA - 4 TRENI\nChiusura sbarre stimata: 05:35:15 - 05:47:00\nTreni co
+ involti nella chiusura:\n  - REG 12015 (NOVI LIGURE -> GENOVA BRIGNOLE) (+
+ 4m) [Transito]\n  - REG 12015 (NOVI LIGURE -> GENOVA BRIGNOLE) (+4m) [Tran
+ sito]\n  - REG 12015 (NOVI LIGURE -> GENOVA BRIGNOLE) (+1m)\n  - REG 12015
+  (NOVI LIGURE -> GENOVA BRIGNOLE) (+1m)\nRitardo massimo rilevato: 4 min\n
+ Affidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 
+ 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
+  di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PIETRABISSARA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3016--20261122-S04209@pl-tracker.local
+DTSTAMP:20261123T102915Z
+SEQUENCE:0
+DTSTART:20261123T051152Z
+DTEND:20261123T051722Z
+SUMMARY:[TRANSITO VELOCE] REG 3016 (SESTRI LEVANTE -> MILANO CENTRALE) ore 
+ 06:16 (+6 min)
+DESCRIPTION:Stazione/PL: PIETRABISSARA (S04209)\nRegime chiusura: TRANSITO 
+ VELOCE\nChiusura sbarre stimata: 06:11:52 - 06:17:22\nTreni coinvolti nell
+ a chiusura:\n  - REG 3016 (SESTRI LEVANTE -> MILANO CENTRALE) (+6m) [Trans
+ ito]\nRitardo massimo rilevato: 6 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Transito stimato senza fermata (46% tratta RONCO SCRIVIA 
+ -> ARQUATA SCRIVIA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PIETRABISSARA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12019--20261122-S04209@pl-tracker.local
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
+DTSTART:20261123T054244Z
+DTEND:20261123T054814Z
+SUMMARY:[TRANSITO VELOCE] REG 12019 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) or
+ e 06:46
+DESCRIPTION:Stazione/PL: PIETRABISSARA (S04209)\nRegime chiusura: TRANSITO 
+ VELOCE\nChiusura sbarre stimata: 06:42:44 - 06:48:14\nTreni coinvolti nell
+ a chiusura:\n  - REG 12019 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) [Transito]
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Transito stimato senza fermata (20% tratta ISOLA DEL CANTONE 
+ -> RONCO SCRIVIA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PIETRABISSARA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3018--20261122-S04209@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
 DTSTART:20261123T063532Z
 DTEND:20261123T064102Z
 SUMMARY:[TRANSITO VELOCE] REG 3018 (GENOVA BRIGNOLE -> MILANO GRECO PIRELLI
@@ -57,37 +104,145 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12018--20261122-S04209@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
 DTSTART:20261123T065130Z
 DTEND:20261123T065600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:51 - 07:56 (primo: REG 12018)
-DESCRIPTION:Stazione/PL: PIETRABISSARA (S04209)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:51:30 - 07:56:00\nTreni co
- involti nella chiusura:\n  - REG 12018 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA
- )\n  - REG 12018 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA)\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura
-  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 12018 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) ore 07:55
+DESCRIPTION:Stazione/PL: PIETRABISSARA (S04209)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 07:51:30 - 07:56:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 12018 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA)\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previs
+ ione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione PIETRABISSARA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-12036--20261122-S04209@pl-tracker.local
-DTSTAMP:20261123T014528Z
+UID:train-2122--20261122-S04209@pl-tracker.local
+DTSTAMP:20261123T102915Z
 SEQUENCE:0
+DTSTART:20261123T085225Z
+DTEND:20261123T085755Z
+SUMMARY:[TRANSITO VELOCE] REG 2122 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) 
+ ore 09:56
+DESCRIPTION:Stazione/PL: PIETRABISSARA (S04209)\nRegime chiusura: TRANSITO 
+ VELOCE\nChiusura sbarre stimata: 09:52:25 - 09:57:55\nTreni coinvolti nell
+ a chiusura:\n  - REG 2122 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) [Transit
+ o]\nRitardo massimo rilevato: -5 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (46% tratta RONCO SCRIVIA -
+ > ARQUATA SCRIVIA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PIETRABISSARA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2070--20261122-S04209@pl-tracker.local
+DTSTAMP:20261123T102915Z
+SEQUENCE:0
+DTSTART:20261123T091023Z
+DTEND:20261123T092050Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:10 - 10:20 (primo: REG 2070) (+32 
+ min)
+DESCRIPTION:Stazione/PL: PIETRABISSARA (S04209)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:10:23 - 10:20:50\nTreni co
+ involti nella chiusura:\n  - REG 2070 (RAVENNA -> GENOVA BRIGNOLE) (+32m) 
+ [Transito]\n  - REG 2070 (RAVENNA -> GENOVA BRIGNOLE) (+32m) [Transito]\nR
+ itardo massimo rilevato: 32 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
+ (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PIETRABISSARA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:32
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12037--20261122-S04209@pl-tracker.local
+DTSTAMP:20261123T102915Z
+SEQUENCE:0
+DTSTART:20261123T095730Z
+DTEND:20261123T100300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:57 - 11:03 (primo: REG 12037) (+1 
+ min)
+DESCRIPTION:Stazione/PL: PIETRABISSARA (S04209)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:57:30 - 11:03:00\nTreni co
+ involti nella chiusura:\n  - REG 12037 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE
+ ) (+1m)\n  - REG 12037 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) (+1m)\nRitardo
+  massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PIETRABISSARA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3028--20261122-S04209@pl-tracker.local
+DTSTAMP:20261123T102915Z
+SEQUENCE:0
+DTSTART:20261123T110120Z
+DTEND:20261123T110650Z
+SUMMARY:[TRANSITO VELOCE] REG 3028 (GENOVA BRIGNOLE -> MILANO CENTRALE) ore
+  12:05
+DESCRIPTION:Stazione/PL: PIETRABISSARA (S04209)\nRegime chiusura: TRANSITO 
+ VELOCE\nChiusura sbarre stimata: 12:01:20 - 12:06:50\nTreni coinvolti nell
+ a chiusura:\n  - REG 3028 (GENOVA BRIGNOLE -> MILANO CENTRALE) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Transito stimato senza fermata (46% tratta RONCO SCRIVIA -> AR
+ QUATA SCRIVIA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PIETRABISSARA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12036--20261122-S04209@pl-tracker.local
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
 DTSTART:20261123T111830Z
 DTEND:20261123T112300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:18 - 12:23 (primo: REG 12036)
+SUMMARY:[FERMATA] REG 12036 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) ore 12:22
+DESCRIPTION:Stazione/PL: PIETRABISSARA (S04209)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 12:18:30 - 12:23:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 12036 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA)\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previs
+ ione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PIETRABISSARA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12040--20261122-S04209@pl-tracker.local
+DTSTAMP:20261123T102915Z
+SEQUENCE:0
+DTSTART:20261123T122330Z
+DTEND:20261123T122800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:23 - 13:28 (primo: REG 12040)
 DESCRIPTION:Stazione/PL: PIETRABISSARA (S04209)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:18:30 - 12:23:00\nTreni co
- involti nella chiusura:\n  - REG 12036 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA
- )\n  - REG 12036 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA)\nRitardo massimo ril
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:23:30 - 13:28:00\nTreni co
+ involti nella chiusura:\n  - REG 12040 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA
+ )\n  - REG 12040 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA)\nRitardo massimo ril
  evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura
   continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
   soglia minima di sgombero stradale (120s)
@@ -101,8 +256,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12053--20261122-S04209@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
 DTSTART:20261123T135630Z
 DTEND:20261123T140100Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:56 - 15:01 (primo: REG 12053)
@@ -122,31 +277,9 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3034--20261122-S04209@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
-DTSTART:20261123T143532Z
-DTEND:20261123T144102Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:35 - 15:41 (primo: REG 3034)
-DESCRIPTION:Stazione/PL: PIETRABISSARA (S04209)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:35:32 - 15:41:02\nTreni co
- involti nella chiusura:\n  - REG 3034 (GENOVA BRIGNOLE -> MILANO GRECO PIR
- ELLI) [Transito]\n  - REG 3034 (GENOVA BRIGNOLE -> MILANO GRECO PIRELLI) [
- Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
-  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
- i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PIETRABISSARA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-12052--20261122-S04209@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
 DTSTART:20261123T152330Z
 DTEND:20261123T152800Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:23 - 16:28 (primo: REG 12052)
@@ -167,18 +300,62 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2136--20261122-S04209@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
 DTSTART:20261123T154952Z
 DTEND:20261123T155522Z
-SUMMARY:[TRANSITO VELOCE] REG 2136 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) 
- ore 16:54
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:49 - 16:55 (primo: REG 2136)
+DESCRIPTION:Stazione/PL: PIETRABISSARA (S04209)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:49:52 - 16:55:22\nTreni co
+ involti nella chiusura:\n  - REG 2136 (GENOVA BRIGNOLE -> TORINO PORTA NUO
+ VA) [Transito]\n  - REG 2136 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) [Tran
+ sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
+ mativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pa
+ ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PIETRABISSARA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3038--20261122-S04209@pl-tracker.local
+DTSTAMP:20261123T102915Z
+SEQUENCE:0
+DTSTART:20261123T163532Z
+DTEND:20261123T164102Z
+SUMMARY:[TRANSITO VELOCE] REG 3038 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO 
+ PIRELLI) ore 17:39
 DESCRIPTION:Stazione/PL: PIETRABISSARA (S04209)\nRegime chiusura: TRANSITO 
- VELOCE\nChiusura sbarre stimata: 16:49:52 - 16:55:22\nTreni coinvolti nell
- a chiusura:\n  - REG 2136 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) [Transit
- o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Transito stimato senza fermata (46% tratta RONCO SCRIVIA ->
-  ARQUATA SCRIVIA\; pedale annuncio fisso Vmax)
+ VELOCE\nChiusura sbarre stimata: 17:35:32 - 17:41:02\nTreni coinvolti nell
+ a chiusura:\n  - REG 3038 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO PIRELLI)
+  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Transito stimato senza fermata (46% tratta RONCO S
+ CRIVIA -> ARQUATA SCRIVIA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PIETRABISSARA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3042--20261122-S04209@pl-tracker.local
+DTSTAMP:20261123T102915Z
+SEQUENCE:0
+DTSTART:20261123T183532Z
+DTEND:20261123T184102Z
+SUMMARY:[TRANSITO VELOCE] REG 3042 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO 
+ PIRELLI) ore 19:39
+DESCRIPTION:Stazione/PL: PIETRABISSARA (S04209)\nRegime chiusura: TRANSITO 
+ VELOCE\nChiusura sbarre stimata: 19:35:32 - 19:41:02\nTreni coinvolti nell
+ a chiusura:\n  - REG 3042 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO PIRELLI)
+  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Transito stimato senza fermata (46% tratta RONCO S
+ CRIVIA -> ARQUATA SCRIVIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PIETRABISSARA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -189,24 +366,44 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12072--20261122-S04209@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
 DTSTART:20261123T201830Z
 DTEND:20261123T202300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:18 - 21:23 (primo: REG 12072)
-DESCRIPTION:Stazione/PL: PIETRABISSARA (S04209)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:18:30 - 21:23:00\nTreni co
- involti nella chiusura:\n  - REG 12072 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA
- )\n  - REG 12072 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA)\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura
-  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 12072 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) ore 21:22
+DESCRIPTION:Stazione/PL: PIETRABISSARA (S04209)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 21:18:30 - 21:23:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 12072 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA)\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previs
+ ione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione PIETRABISSARA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3046--20261122-S04209@pl-tracker.local
+DTSTAMP:20261123T102915Z
+SEQUENCE:0
+DTSTART:20261123T203532Z
+DTEND:20261123T204102Z
+SUMMARY:[TRANSITO VELOCE] REG 3046 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO 
+ PIRELLI) ore 21:39
+DESCRIPTION:Stazione/PL: PIETRABISSARA (S04209)\nRegime chiusura: TRANSITO 
+ VELOCE\nChiusura sbarre stimata: 21:35:32 - 21:41:02\nTreni coinvolti nell
+ a chiusura:\n  - REG 3046 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO PIRELLI)
+  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Transito stimato senza fermata (46% tratta RONCO S
+ CRIVIA -> ARQUATA SCRIVIA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PIETRABISSARA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

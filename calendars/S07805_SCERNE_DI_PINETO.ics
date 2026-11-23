@@ -9,26 +9,49 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:b34001f6b03b2848d14f5ecfd45dca0c32c4f8010186a0aaecb63e737753
- 3b6b
+X-CONTENT-HASH:9a02f213567781690fd9e88ab72adbc6402d89492018d0e81841ce9ae84a
+ a376
 BEGIN:VEVENT
-UID:train-4213--20261121-S07805@pl-tracker.local
-DTSTAMP:20261122T210441Z
-SEQUENCE:3
-DTSTART:20261122T121830Z
-DTEND:20261122T122430Z
-SUMMARY:[FERMATA] REG 4213 (ANCONA -> PESCARA) ore 13:23
-DESCRIPTION:Stazione/PL: SCERNE DI PINETO (S07805)\nRegime chiusura: FERMAT
- A\nChiusura sbarre stimata: 13:18:30 - 13:24:30\nTreni coinvolti nella chi
- usura:\n  - REG 4213 (ANCONA -> PESCARA)\nRitardo massimo rilevato: -2 min
- \nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale da
-  circuito di binario
+UID:train-4213--20261122-S07805@pl-tracker.local
+DTSTAMP:20261123T102915Z
+SEQUENCE:0
+DTSTART:20261123T122030Z
+DTEND:20261123T122500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:20 - 13:25 (primo: REG 4213)
+DESCRIPTION:Stazione/PL: SCERNE DI PINETO (S07805)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:20:30 - 13:25:00\nTreni
+  coinvolti nella chiusura:\n  - REG 4213 (ANCONA -> PESCARA)\n  - REG 4213
+  (ANCONA -> PESCARA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
+ : 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
+  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
+ le (120s)
 LOCATION:Passaggio a Livello / Stazione SCERNE DI PINETO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:-2
-X-PL-CONFIDENCE:0.99
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4223--20261122-S07805@pl-tracker.local
+DTSTAMP:20261123T102915Z
+SEQUENCE:0
+DTSTART:20261123T172345Z
+DTEND:20261123T172915Z
+SUMMARY:[TRANSITO VELOCE] REG 4223 (ANCONA -> PESCARA) ore 18:28
+DESCRIPTION:Stazione/PL: SCERNE DI PINETO (S07805)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 18:23:45 - 18:29:15\nTreni coinvolti n
+ ella chiusura:\n  - REG 4223 (ANCONA -> PESCARA) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
+ ansito stimato senza fermata (50% tratta ROSETO DEGLI ABRUZZI -> PINETO AT
+ RI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione SCERNE DI PINETO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

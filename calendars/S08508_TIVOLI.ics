@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:736a6e30e03332ceff040ff16fc011b7e96727730458ae9cd58a47c04cac
- beba
+X-CONTENT-HASH:3f6bb0679208a0e0490fbd44548d869ab13ed9f1d517c00180cb9fa789ac
+ ed1c
 BEGIN:VEVENT
 UID:train-12752--20261122-S08508@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
 DTSTART:20261123T064130Z
 DTEND:20261123T064600Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:41 - 07:46 (primo: REG 12752)
@@ -22,7 +22,7 @@ DESCRIPTION:Stazione/PL: TIVOLI (S08508)\nRegime chiusura: CHIUSURA CONTINU
  A - 2 TRENI\nChiusura sbarre stimata: 07:41:30 - 07:46:00\nTreni coinvolti
   nella chiusura:\n  - REG 12752 (ROMA TIBURTINA -> TIVOLI)\n  - REG 12752 
  (ROMA TIBURTINA -> TIVOLI)\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
+  stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
  rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
  stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TIVOLI
@@ -30,45 +30,91 @@ STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-20788--20261122-S08508@pl-tracker.local
-DTSTAMP:20261123T014528Z
+UID:train-20052--20261122-S08508@pl-tracker.local-arr
+DTSTAMP:20261123T102915Z
 SEQUENCE:0
-DTSTART:20261123T072030Z
-DTEND:20261123T072500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:20 - 08:25 (primo: REG 20788)
+DTSTART:20261123T065930Z
+DTEND:20261123T070400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:59 - 08:04 (primo: REG 20052) (+8 
+ min)
 DESCRIPTION:Stazione/PL: TIVOLI (S08508)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 08:20:30 - 08:25:00\nTreni coinvolti
-  nella chiusura:\n  - REG 20788 (ROMA TIBURTINA -> AVEZZANO)\n  - REG 2078
- 8 (ROMA TIBURTINA -> AVEZZANO)\nRitardo massimo rilevato: 0 min\nAffidabil
- ità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 07:59:30 - 08:04:00\nTreni coinvolti
+  nella chiusura:\n  - REG 20052 (ROMA TIBURTINA -> VALLE DELL'ANIENE-MANDE
+ LA-SAMBUCI) (+8m) [Arrivo]\n  - REG 20052 (ROMA TIBURTINA -> VALLE DELL'AN
+ IENE-MANDELA-SAMBUCI) (+8m) [Arrivo]\nRitardo massimo rilevato: 8 min\nAff
+ idabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 t
+ reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
+  sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TIVOLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20052--20261122-S08508@pl-tracker.local-dep
+DTSTAMP:20261123T102915Z
+SEQUENCE:0
+DTSTART:20261123T071630Z
+DTEND:20261123T072500Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 08:16 - 08:25 (primo: REG 20052) (+8 
+ min)
+DESCRIPTION:Stazione/PL: TIVOLI (S08508)\nRegime chiusura: CHIUSURA CONTINU
+ A - 3 TRENI\nChiusura sbarre stimata: 08:16:30 - 08:25:00\nTreni coinvolti
+  nella chiusura:\n  - REG 20052 (ROMA TIBURTINA -> VALLE DELL'ANIENE-MANDE
+ LA-SAMBUCI) (+8m) [Partenza]\n  - REG 20052 (ROMA TIBURTINA -> VALLE DELL'
+ ANIENE-MANDELA-SAMBUCI) (+8m) [Partenza]\n  - REG 20788 (ROMA TIBURTINA ->
+  AVEZZANO)\nRitardo massimo rilevato: 8 min\nAffidabilità stima: 90%\nNot
+ a normativa/euristica: Chiusura continua per 3 treni: intervallo utile tra
+  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione TIVOLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12760--20261122-S08508@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
 DTSTART:20261123T112130Z
 DTEND:20261123T112600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:21 - 12:26 (primo: REG 12760)
+SUMMARY:[FERMATA] REG 12760 (ROMA TIBURTINA -> TIVOLI) ore 12:25
+DESCRIPTION:Stazione/PL: TIVOLI (S08508)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 12:21:30 - 12:26:00\nTreni coinvolti nella chiusura:\n  
+ - REG 12760 (ROMA TIBURTINA -> TIVOLI)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
+LOCATION:Passaggio a Livello / Stazione TIVOLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20054--20261122-S08508@pl-tracker.local
+DTSTAMP:20261123T102915Z
+SEQUENCE:0
+DTSTART:20261123T123330Z
+DTEND:20261123T123800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:33 - 13:38 (primo: REG 20054)
 DESCRIPTION:Stazione/PL: TIVOLI (S08508)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 12:21:30 - 12:26:00\nTreni coinvolti
-  nella chiusura:\n  - REG 12760 (ROMA TIBURTINA -> TIVOLI)\n  - REG 12760 
- (ROMA TIBURTINA -> TIVOLI)\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 13:33:30 - 13:38:00\nTreni coinvolti
+  nella chiusura:\n  - REG 20054 (ROMA TIBURTINA -> VALLE DELL'ANIENE-MANDE
+ LA-SAMBUCI)\n  - REG 20054 (ROMA TIBURTINA -> VALLE DELL'ANIENE-MANDELA-SA
+ MBUCI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota no
+ rmativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i p
+ assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TIVOLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -79,14 +125,34 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12768--20261122-S08508@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
 DTSTART:20261123T155330Z
 DTEND:20261123T155800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:53 - 16:58 (primo: REG 12768)
+SUMMARY:[FERMATA] REG 12768 (ROMA TIBURTINA -> TIVOLI) ore 16:57
+DESCRIPTION:Stazione/PL: TIVOLI (S08508)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 16:53:30 - 16:58:00\nTreni coinvolti nella chiusura:\n  
+ - REG 12768 (ROMA TIBURTINA -> TIVOLI)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
+LOCATION:Passaggio a Livello / Stazione TIVOLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12776--20261122-S08508@pl-tracker.local
+DTSTAMP:20261123T102915Z
+SEQUENCE:0
+DTSTART:20261123T201630Z
+DTEND:20261123T202100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:16 - 21:21 (primo: REG 12776)
 DESCRIPTION:Stazione/PL: TIVOLI (S08508)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 16:53:30 - 16:58:00\nTreni coinvolti
-  nella chiusura:\n  - REG 12768 (ROMA TIBURTINA -> TIVOLI)\n  - REG 12768 
+ A - 2 TRENI\nChiusura sbarre stimata: 21:16:30 - 21:21:00\nTreni coinvolti
+  nella chiusura:\n  - REG 12776 (ROMA TIBURTINA -> TIVOLI)\n  - REG 12776 
  (ROMA TIBURTINA -> TIVOLI)\nRitardo massimo rilevato: 0 min\nAffidabilità
   stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
  rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
@@ -101,22 +167,20 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20786--20261122-S08508@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
 DTSTART:20261123T203130Z
 DTEND:20261123T203600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:31 - 21:36 (primo: REG 20786)
-DESCRIPTION:Stazione/PL: TIVOLI (S08508)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 21:31:30 - 21:36:00\nTreni coinvolti
-  nella chiusura:\n  - REG 20786 (ROMA TIBURTINA -> AVEZZANO)\n  - REG 2078
- 6 (ROMA TIBURTINA -> AVEZZANO)\nRitardo massimo rilevato: 0 min\nAffidabil
- ità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
+SUMMARY:[FERMATA] REG 20786 (ROMA TIBURTINA -> AVEZZANO) ore 21:35
+DESCRIPTION:Stazione/PL: TIVOLI (S08508)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 21:31:30 - 21:36:00\nTreni coinvolti nella chiusura:\n  
+ - REG 20786 (ROMA TIBURTINA -> AVEZZANO)\nRitardo massimo rilevato: 0 min\
+ nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia
+  oraria regolare
 LOCATION:Passaggio a Livello / Stazione TIVOLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

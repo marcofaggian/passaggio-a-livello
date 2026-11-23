@@ -9,22 +9,22 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:2cdd1db632760943b9c193f885ba71436b9193a57f09450abb85d43ca08e
- 02bf
+X-CONTENT-HASH:245a5a5f6540329458f114d759389ce738ea189245e7a7ba00dcf46644db
+ db4f
 BEGIN:VEVENT
 UID:train-18255--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
-DTSTART:20261123T043937Z
-DTEND:20261123T044507Z
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
+DTSTART:20261123T044942Z
+DTEND:20261123T045512Z
 SUMMARY:[TRANSITO VELOCE] REG 18255 (FIRENZE SANTA MARIA NOVELLA -> PIOMBIN
- O MARITTIMA) ore 05:43
+ O MARITTIMA) ore 05:53
 DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: TRANS
- ITO VELOCE\nChiusura sbarre stimata: 05:39:37 - 05:45:07\nTreni coinvolti 
+ ITO VELOCE\nChiusura sbarre stimata: 05:49:42 - 05:55:12\nTreni coinvolti 
  nella chiusura:\n  - REG 18255 (FIRENZE SANTA MARIA NOVELLA -> PIOMBINO MA
  RITTIMA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
-  78%\nNota normativa/euristica: Transito stimato senza fermata (44% tratta
-  FIRENZE RIFREDI -> LASTRA A SIGNA\; pedale annuncio fisso Vmax)
+  78%\nNota normativa/euristica: Transito stimato senza fermata (40% tratta
+  LASTRA A SIGNA -> EMPOLI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -35,18 +35,42 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18201--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
-DTSTART:20261123T054145Z
-DTEND:20261123T054715Z
-SUMMARY:[TRANSITO VELOCE] REG 18201 (FIRENZE SANTA MARIA NOVELLA -> SIENA) 
- ore 06:46
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
+DTSTART:20261123T053748Z
+DTEND:20261123T054318Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:37 - 06:43 (primo: REG 18201) (+3 
+ min)
+DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: CHIUS
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:37:48 - 06:43:18\nTren
+ i coinvolti nella chiusura:\n  - REG 18201 (FIRENZE SANTA MARIA NOVELLA ->
+  SIENA) (+3m) [Transito]\n  - REG 18201 (FIRENZE SANTA MARIA NOVELLA -> SI
+ ENA) (+3m) [Transito]\nRitardo massimo rilevato: 3 min\nAffidabilità stim
+ a: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervall
+ o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
+ ale (120s)
+LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18263--20261122-S06511@pl-tracker.local
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
+DTSTART:20261123T060428Z
+DTEND:20261123T060958Z
+SUMMARY:[TRANSITO VELOCE] REG 18263 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO
+  CENTRALE) ore 07:08
 DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: TRANS
- ITO VELOCE\nChiusura sbarre stimata: 06:41:45 - 06:47:15\nTreni coinvolti 
- nella chiusura:\n  - REG 18201 (FIRENZE SANTA MARIA NOVELLA -> SIENA) [Tra
- nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Transito stimato senza fermata (77% tratta LASTRA A SIG
- NA -> EMPOLI\; pedale annuncio fisso Vmax)
+ ITO VELOCE\nChiusura sbarre stimata: 07:04:28 - 07:09:58\nTreni coinvolti 
+ nella chiusura:\n  - REG 18263 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CEN
+ TRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 7
+ 8%\nNota normativa/euristica: Transito stimato senza fermata (59% tratta F
+ IRENZE RIFREDI -> SIGNA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -57,130 +81,132 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18263--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
-DTSTART:20261123T061708Z
-DTEND:20261123T062238Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:17 - 07:22 (primo: REG 18263)
-DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:17:08 - 07:22:38\nTren
- i coinvolti nella chiusura:\n  - REG 18263 (FIRENZE SANTA MARIA NOVELLA ->
-  LIVORNO CENTRALE) [Transito]\n  - REG 18263 (FIRENZE SANTA MARIA NOVELLA 
- -> LIVORNO CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
+DTSTART:20261123T061838Z
+DTEND:20261123T062408Z
+SUMMARY:[TRANSITO VELOCE] REG 18263 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO
+  CENTRALE) ore 07:22
+DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: TRANS
+ ITO VELOCE\nChiusura sbarre stimata: 07:18:38 - 07:24:08\nTreni coinvolti 
+ nella chiusura:\n  - REG 18263 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CEN
+ TRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 7
+ 8%\nNota normativa/euristica: Transito stimato senza fermata (56% tratta S
+ IGNA -> EMPOLI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18266--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
+UID:train-18271--20261122-S06511@pl-tracker.local
+DTSTAMP:20261123T102915Z
 SEQUENCE:0
-DTSTART:20261123T064330Z
+DTSTART:20261123T064130Z
 DTEND:20261123T064800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:43 - 07:48 (primo: REG 18266)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:41 - 07:48 (primo: REG 18271) (+2 
+ min)
 DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:43:30 - 07:48:00\nTren
- i coinvolti nella chiusura:\n  - REG 18266 (PISA CENTRALE -> FIRENZE SANTA
-  MARIA NOVELLA)\n  - REG 18266 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVEL
- LA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ URA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 07:41:30 - 07:48:00\nTren
+ i coinvolti nella chiusura:\n  - REG 18271 (FIRENZE SANTA MARIA NOVELLA ->
+  EMPOLI) (+2m)\n  - REG 18271 (FIRENZE SANTA MARIA NOVELLA -> EMPOLI) (+2m
+ )\n  - REG 18266 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVELLA)\nRitardo m
+ assimo rilevato: 2 min\nAffidabilità stima: 90%\nNota normativa/euristica
+ : Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18203--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
 DTSTART:20261123T072630Z
 DTEND:20261123T073100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:26 - 08:31 (primo: REG 18203)
-DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:26:30 - 08:31:00\nTren
- i coinvolti nella chiusura:\n  - REG 18203 (FIRENZE SANTA MARIA NOVELLA ->
-  SIENA)\n  - REG 18203 (FIRENZE SANTA MARIA NOVELLA -> SIENA)\nRitardo mas
+SUMMARY:[FERMATA] REG 18203 (FIRENZE SANTA MARIA NOVELLA -> SIENA) ore 08:3
+ 0
+DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: FERMA
+ TA\nChiusura sbarre stimata: 08:26:30 - 08:31:00\nTreni coinvolti nella ch
+ iusura:\n  - REG 18203 (FIRENZE SANTA MARIA NOVELLA -> SIENA)\nRitardo mas
  simo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
+ Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18272--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
 DTSTART:20261123T074830Z
-DTEND:20261123T075300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:48 - 08:53 (primo: REG 18272)
+DTEND:20261123T075344Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 08:48 - 08:53 (primo: REG 18272) (+38
+  min)
 DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:48:30 - 08:53:00\nTren
+ URA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 08:48:30 - 08:53:44\nTren
  i coinvolti nella chiusura:\n  - REG 18272 (LIVORNO CENTRALE -> FIRENZE SA
- NTA MARIA NOVELLA)\n  - REG 18272 (LIVORNO CENTRALE -> FIRENZE SANTA MARIA
-  NOVELLA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota
-  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
- i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ NTA MARIA NOVELLA)\n  - REG 4014 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA)
+  (+38m) [Transito]\n  - REG 4014 (GROSSETO -> FIRENZE SANTA MARIA NOVELLA)
+  (+38m) [Transito]\nRitardo massimo rilevato: 38 min\nAffidabilità stima:
+  78%\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo 
+ utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
+ e (120s)
 LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:38
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18361--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
-DTSTART:20261123T091524Z
-DTEND:20261123T092054Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:15 - 10:20 (primo: REG 18361)
-DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:15:24 - 10:20:54\nTren
- i coinvolti nella chiusura:\n  - REG 18361 (FIRENZE SANTA MARIA NOVELLA ->
-  VIAREGGIO) [Transito]\n  - REG 18361 (FIRENZE SANTA MARIA NOVELLA -> VIAR
- EGGIO) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 7
- 8%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo ut
- ile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale 
- (120s)
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
+DTSTART:20261123T091508Z
+DTEND:20261123T092038Z
+SUMMARY:[TRANSITO VELOCE] REG 18361 (FIRENZE SANTA MARIA NOVELLA -> VIAREGG
+ IO) ore 10:19
+DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: TRANS
+ ITO VELOCE\nChiusura sbarre stimata: 10:15:08 - 10:20:38\nTreni coinvolti 
+ nella chiusura:\n  - REG 18361 (FIRENZE SANTA MARIA NOVELLA -> VIAREGGIO) 
+ [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Transito stimato senza fermata (56% tratta SIGNA ->
+  EMPOLI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4021--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
-DTSTART:20261123T093337Z
-DTEND:20261123T093907Z
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
+DTSTART:20261123T094453Z
+DTEND:20261123T095023Z
 SUMMARY:[TRANSITO VELOCE] REG 4021 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO 
- CENTRALE) ore 10:37
+ CENTRALE) ore 10:49
 DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: TRANS
- ITO VELOCE\nChiusura sbarre stimata: 10:33:37 - 10:39:07\nTreni coinvolti 
+ ITO VELOCE\nChiusura sbarre stimata: 10:44:53 - 10:50:23\nTreni coinvolti 
  nella chiusura:\n  - REG 4021 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENT
  RALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
- %\nNota normativa/euristica: Transito stimato senza fermata (44% tratta FI
- RENZE RIFREDI -> LASTRA A SIGNA\; pedale annuncio fisso Vmax)
+ %\nNota normativa/euristica: Transito stimato senza fermata (40% tratta LA
+ STRA A SIGNA -> EMPOLI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -191,30 +217,52 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18289--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
 DTSTART:20261123T110230Z
 DTEND:20261123T110700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:02 - 12:07 (primo: REG 18289)
-DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:02:30 - 12:07:00\nTren
- i coinvolti nella chiusura:\n  - REG 18289 (FIRENZE SANTA MARIA NOVELLA ->
-  LIVORNO CENTRALE)\n  - REG 18289 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO 
- CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota
-  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
- i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 18289 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRAL
+ E) ore 12:06
+DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: FERMA
+ TA\nChiusura sbarre stimata: 12:02:30 - 12:07:00\nTreni coinvolti nella ch
+ iusura:\n  - REG 18289 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE)\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/
+ euristica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18211--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
+UID:train-18367--20261122-S06511@pl-tracker.local
+DTSTAMP:20261123T102915Z
 SEQUENCE:0
+DTSTART:20261123T111508Z
+DTEND:20261123T112038Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:15 - 12:20 (primo: REG 18367)
+DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: CHIUS
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:15:08 - 12:20:38\nTren
+ i coinvolti nella chiusura:\n  - REG 18367 (FIRENZE SANTA MARIA NOVELLA ->
+  LA SPEZIA CENTRALE) [Transito]\n  - REG 18367 (FIRENZE SANTA MARIA NOVELL
+ A -> LA SPEZIA CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffi
+ dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tr
+ eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18211--20261122-S06511@pl-tracker.local
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
 DTSTART:20261123T112630Z
 DTEND:20261123T113100Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:26 - 12:31 (primo: REG 18211)
@@ -235,61 +283,61 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18290--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
 DTSTART:20261123T114830Z
 DTEND:20261123T115300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:48 - 12:53 (primo: REG 18290)
-DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:48:30 - 12:53:00\nTren
- i coinvolti nella chiusura:\n  - REG 18290 (PISA CENTRALE -> FIRENZE SANTA
-  MARIA NOVELLA)\n  - REG 18290 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVEL
- LA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 18290 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVELLA) 
+ ore 12:52
+DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: FERMA
+ TA\nChiusura sbarre stimata: 12:48:30 - 12:53:00\nTreni coinvolti nella ch
+ iusura:\n  - REG 18290 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVELLA)\nRit
+ ardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eur
+ istica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4035--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
+UID:train-18296--20261122-S06511@pl-tracker.local
+DTSTAMP:20261123T102915Z
 SEQUENCE:0
-DTSTART:20261123T133337Z
-DTEND:20261123T133907Z
-SUMMARY:[TRANSITO VELOCE] REG 4035 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO 
- CENTRALE) ore 14:37
-DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: TRANS
- ITO VELOCE\nChiusura sbarre stimata: 14:33:37 - 14:39:07\nTreni coinvolti 
- nella chiusura:\n  - REG 4035 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENT
- RALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
- %\nNota normativa/euristica: Transito stimato senza fermata (44% tratta FI
- RENZE RIFREDI -> LASTRA A SIGNA\; pedale annuncio fisso Vmax)
+DTSTART:20261123T123225Z
+DTEND:20261123T123755Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:32 - 13:37 (primo: REG 18296)
+DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: CHIUS
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:32:25 - 13:37:55\nTren
+ i coinvolti nella chiusura:\n  - REG 18296 (PISA CENTRALE -> FIRENZE SANTA
+  MARIA NOVELLA) [Transito]\n  - REG 18296 (PISA CENTRALE -> FIRENZE SANTA 
+ MARIA NOVELLA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità 
+ stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: inter
+ vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
+ tradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4035--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
-DTSTART:20261123T134945Z
-DTEND:20261123T135515Z
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
+DTSTART:20261123T134453Z
+DTEND:20261123T135023Z
 SUMMARY:[TRANSITO VELOCE] REG 4035 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO 
- CENTRALE) ore 14:54
+ CENTRALE) ore 14:49
 DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: TRANS
- ITO VELOCE\nChiusura sbarre stimata: 14:49:45 - 14:55:15\nTreni coinvolti 
+ ITO VELOCE\nChiusura sbarre stimata: 14:44:53 - 14:50:23\nTreni coinvolti 
  nella chiusura:\n  - REG 4035 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENT
  RALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
- %\nNota normativa/euristica: Transito stimato senza fermata (77% tratta LA
+ %\nNota normativa/euristica: Transito stimato senza fermata (40% tratta LA
  STRA A SIGNA -> EMPOLI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
 STATUS:CONFIRMED
@@ -301,41 +349,18 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18377--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
-DTSTART:20261123T141559Z
-DTEND:20261123T142129Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:15 - 15:21 (primo: REG 18377)
-DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:15:59 - 15:21:29\nTren
- i coinvolti nella chiusura:\n  - REG 18377 (FIRENZE SANTA MARIA NOVELLA ->
-  LA SPEZIA CENTRALE) [Transito]\n  - REG 18377 (FIRENZE SANTA MARIA NOVELL
- A -> LA SPEZIA CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffi
- dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tr
- eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
- sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4039--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
-DTSTART:20261123T143337Z
-DTEND:20261123T143907Z
-SUMMARY:[TRANSITO VELOCE] REG 4039 (FIRENZE SANTA MARIA NOVELLA -> ORBETELL
- O-MONTE ARGENTARIO) ore 15:37
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
+DTSTART:20261123T141542Z
+DTEND:20261123T142112Z
+SUMMARY:[TRANSITO VELOCE] REG 18377 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZ
+ IA CENTRALE) ore 15:19
 DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: TRANS
- ITO VELOCE\nChiusura sbarre stimata: 15:33:37 - 15:39:07\nTreni coinvolti 
- nella chiusura:\n  - REG 4039 (FIRENZE SANTA MARIA NOVELLA -> ORBETELLO-MO
- NTE ARGENTARIO) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 78%\nNota normativa/euristica: Transito stimato senza fermata (44%
-  tratta FIRENZE RIFREDI -> LASTRA A SIGNA\; pedale annuncio fisso Vmax)
+ ITO VELOCE\nChiusura sbarre stimata: 15:15:42 - 15:21:12\nTreni coinvolti 
+ nella chiusura:\n  - REG 18377 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA C
+ ENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
+  78%\nNota normativa/euristica: Transito stimato senza fermata (56% tratta
+  SIGNA -> EMPOLI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -346,17 +371,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4039--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
-DTSTART:20261123T144945Z
-DTEND:20261123T145515Z
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
+DTSTART:20261123T144453Z
+DTEND:20261123T145023Z
 SUMMARY:[TRANSITO VELOCE] REG 4039 (FIRENZE SANTA MARIA NOVELLA -> ORBETELL
- O-MONTE ARGENTARIO) ore 15:54
+ O-MONTE ARGENTARIO) ore 15:49
 DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: TRANS
- ITO VELOCE\nChiusura sbarre stimata: 15:49:45 - 15:55:15\nTreni coinvolti 
+ ITO VELOCE\nChiusura sbarre stimata: 15:44:53 - 15:50:23\nTreni coinvolti 
  nella chiusura:\n  - REG 4039 (FIRENZE SANTA MARIA NOVELLA -> ORBETELLO-MO
  NTE ARGENTARIO) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 78%\nNota normativa/euristica: Transito stimato senza fermata (77%
+  stima: 78%\nNota normativa/euristica: Transito stimato senza fermata (40%
   tratta LASTRA A SIGNA -> EMPOLI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
 STATUS:CONFIRMED
@@ -368,13 +393,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18381--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
-DTSTART:20261123T151524Z
-DTEND:20261123T152054Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:15 - 16:20 (primo: REG 18381)
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
+DTSTART:20261123T150128Z
+DTEND:20261123T150658Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:01 - 16:06 (primo: REG 18381)
 DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:15:24 - 16:20:54\nTren
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:01:28 - 16:06:58\nTren
  i coinvolti nella chiusura:\n  - REG 18381 (FIRENZE SANTA MARIA NOVELLA ->
   LA SPEZIA CENTRALE) [Transito]\n  - REG 18381 (FIRENZE SANTA MARIA NOVELL
  A -> LA SPEZIA CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffi
@@ -390,21 +415,20 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18415--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
+UID:train-18221--20261122-S06511@pl-tracker.local
+DTSTAMP:20261123T102915Z
 SEQUENCE:0
-DTSTART:20261123T153225Z
-DTEND:20261123T153907Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:32 - 16:39 (primo: REG 18415)
+DTSTART:20261123T152630Z
+DTEND:20261123T153755Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:26 - 16:37 (primo: REG 18221)
 DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: CHIUS
- URA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:32:25 - 16:39:07\nTren
- i coinvolti nella chiusura:\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRENZE 
- SANTA MARIA NOVELLA) [Transito]\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRE
- NZE SANTA MARIA NOVELLA) [Transito]\n  - REG 4043 (FIRENZE SANTA MARIA NOV
- ELLA -> LIVORNO CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAff
- idabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 t
- reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
-  sgombero stradale (120s)
+ URA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:26:30 - 16:37:55\nTren
+ i coinvolti nella chiusura:\n  - REG 18221 (FIRENZE SANTA MARIA NOVELLA ->
+  SIENA)\n  - REG 18221 (FIRENZE SANTA MARIA NOVELLA -> SIENA)\n  - REG 184
+ 15 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELLA) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Chiusura continua per 3 treni: intervallo utile tra i passaggi (85s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -415,17 +439,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4043--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
-DTSTART:20261123T154945Z
-DTEND:20261123T155515Z
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
+DTSTART:20261123T154453Z
+DTEND:20261123T155023Z
 SUMMARY:[TRANSITO VELOCE] REG 4043 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO 
- CENTRALE) ore 16:54
+ CENTRALE) ore 16:49
 DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: TRANS
- ITO VELOCE\nChiusura sbarre stimata: 16:49:45 - 16:55:15\nTreni coinvolti 
+ ITO VELOCE\nChiusura sbarre stimata: 16:44:53 - 16:50:23\nTreni coinvolti 
  nella chiusura:\n  - REG 4043 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENT
  RALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
- %\nNota normativa/euristica: Transito stimato senza fermata (77% tratta LA
+ %\nNota normativa/euristica: Transito stimato senza fermata (40% tratta LA
  STRA A SIGNA -> EMPOLI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
 STATUS:CONFIRMED
@@ -436,64 +460,64 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18387--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
+UID:train-4044--20261122-S06511@pl-tracker.local
+DTSTAMP:20261123T102915Z
 SEQUENCE:0
-DTSTART:20261123T161559Z
-DTEND:20261123T162129Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:15 - 17:21 (primo: REG 18387)
+DTSTART:20261123T161151Z
+DTEND:20261123T162112Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:11 - 17:21 (primo: REG 4044)
 DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:15:59 - 17:21:29\nTren
- i coinvolti nella chiusura:\n  - REG 18387 (FIRENZE SANTA MARIA NOVELLA ->
-  BORGO VAL DI TARO) [Transito]\n  - REG 18387 (FIRENZE SANTA MARIA NOVELLA
-  -> BORGO VAL DI TARO) [Transito]\nRitardo massimo rilevato: 0 min\nAffida
- bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tren
- i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
- ombero stradale (120s)
+ URA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 17:11:51 - 17:21:12\nTren
+ i coinvolti nella chiusura:\n  - REG 4044 (LIVORNO CENTRALE -> FIRENZE SAN
+ TA MARIA NOVELLA) [Transito]\n  - REG 18387 (FIRENZE SANTA MARIA NOVELLA -
+ > BORGO VAL DI TARO) [Transito]\n  - REG 18387 (FIRENZE SANTA MARIA NOVELL
+ A -> BORGO VAL DI TARO) [Transito]\nRitardo massimo rilevato: 0 min\nAffid
+ abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 tre
+ ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
+ gombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18399--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
 DTSTART:20261123T163225Z
 DTEND:20261123T163755Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:32 - 17:37 (primo: REG 18399)
-DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:32:25 - 17:37:55\nTren
- i coinvolti nella chiusura:\n  - REG 18399 (LA SPEZIA CENTRALE -> FIRENZE 
- SANTA MARIA NOVELLA) [Transito]\n  - REG 18399 (LA SPEZIA CENTRALE -> FIRE
- NZE SANTA MARIA NOVELLA) [Transito]\nRitardo massimo rilevato: 0 min\nAffi
- dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tr
- eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
- sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 18399 (LA SPEZIA CENTRALE -> FIRENZE SANTA MA
+ RIA NOVELLA) ore 17:36
+DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: TRANS
+ ITO VELOCE\nChiusura sbarre stimata: 17:32:25 - 17:37:55\nTreni coinvolti 
+ nella chiusura:\n  - REG 18399 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA 
+ NOVELLA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
+  78%\nNota normativa/euristica: Transito stimato senza fermata (38% tratta
+  EMPOLI -> SIGNA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18323--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
-DTSTART:20261123T194945Z
-DTEND:20261123T195515Z
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
+DTSTART:20261123T194453Z
+DTEND:20261123T195023Z
 SUMMARY:[TRANSITO VELOCE] REG 18323 (FIRENZE SANTA MARIA NOVELLA -> PISA CE
- NTRALE) ore 20:54
+ NTRALE) ore 20:49
 DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: TRANS
- ITO VELOCE\nChiusura sbarre stimata: 20:49:45 - 20:55:15\nTreni coinvolti 
+ ITO VELOCE\nChiusura sbarre stimata: 20:44:53 - 20:50:23\nTreni coinvolti 
  nella chiusura:\n  - REG 18323 (FIRENZE SANTA MARIA NOVELLA -> PISA CENTRA
  LE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\
- nNota normativa/euristica: Transito stimato senza fermata (77% tratta LAST
+ nNota normativa/euristica: Transito stimato senza fermata (40% tratta LAST
  RA A SIGNA -> EMPOLI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
 STATUS:CONFIRMED
@@ -505,8 +529,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18329--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
 DTSTART:20261123T200128Z
 DTEND:20261123T200658Z
 SUMMARY:[TRANSITO VELOCE] REG 18329 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO
@@ -526,19 +550,61 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18329--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
+UID:train-18331--20261122-S06511@pl-tracker.local
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
+DTSTART:20261123T204130Z
+DTEND:20261123T204600Z
+SUMMARY:[FERMATA] REG 18331 (FIRENZE SANTA MARIA NOVELLA -> EMPOLI) ore 21:
+ 45
+DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: FERMA
+ TA\nChiusura sbarre stimata: 21:41:30 - 21:46:00\nTreni coinvolti nella ch
+ iusura:\n  - REG 18331 (FIRENZE SANTA MARIA NOVELLA -> EMPOLI)\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica:
+  Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18322--20261122-S06511@pl-tracker.local
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
+DTSTART:20261123T204830Z
+DTEND:20261123T205300Z
+SUMMARY:[FERMATA] REG 18322 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVELLA) 
+ ore 21:52
+DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: FERMA
+ TA\nChiusura sbarre stimata: 21:48:30 - 21:53:00\nTreni coinvolti nella ch
+ iusura:\n  - REG 18322 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVELLA)\nRit
+ ardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eur
+ istica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4062--20261122-S06511@pl-tracker.local
+DTSTAMP:20261123T102915Z
 SEQUENCE:0
-DTSTART:20261123T201524Z
-DTEND:20261123T202054Z
-SUMMARY:[TRANSITO VELOCE] REG 18329 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO
-  CENTRALE) ore 21:19
+DTSTART:20261123T211151Z
+DTEND:20261123T211721Z
+SUMMARY:[TRANSITO VELOCE] REG 4062 (LIVORNO CENTRALE -> FIRENZE SANTA MARIA
+  NOVELLA) ore 22:16
 DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: TRANS
- ITO VELOCE\nChiusura sbarre stimata: 21:15:24 - 21:20:54\nTreni coinvolti 
- nella chiusura:\n  - REG 18329 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CEN
- TRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 7
- 8%\nNota normativa/euristica: Transito stimato senza fermata (58% tratta S
- IGNA -> EMPOLI\; pedale annuncio fisso Vmax)
+ ITO VELOCE\nChiusura sbarre stimata: 22:11:51 - 22:17:21\nTreni coinvolti 
+ nella chiusura:\n  - REG 4062 (LIVORNO CENTRALE -> FIRENZE SANTA MARIA NOV
+ ELLA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
+ %\nNota normativa/euristica: Transito stimato senza fermata (19% tratta LA
+ STRA A SIGNA -> FIRENZE RIFREDI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -548,67 +614,22 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18331--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
-DTSTART:20261123T204130Z
-DTEND:20261123T204600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:41 - 21:46 (primo: REG 18331)
-DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:41:30 - 21:46:00\nTren
- i coinvolti nella chiusura:\n  - REG 18331 (FIRENZE SANTA MARIA NOVELLA ->
-  EMPOLI)\n  - REG 18331 (FIRENZE SANTA MARIA NOVELLA -> EMPOLI)\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
- : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
- riore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18322--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
-DTSTART:20261123T204830Z
-DTEND:20261123T205300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:48 - 21:53 (primo: REG 18322)
-DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:48:30 - 21:53:00\nTren
- i coinvolti nella chiusura:\n  - REG 18322 (PISA CENTRALE -> FIRENZE SANTA
-  MARIA NOVELLA)\n  - REG 18322 (PISA CENTRALE -> FIRENZE SANTA MARIA NOVEL
- LA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-18337--20261122-S06511@pl-tracker.local
-DTSTAMP:20261123T014528Z
-SEQUENCE:0
+DTSTAMP:20261123T102915Z
+SEQUENCE:1
 DTSTART:20261123T212530Z
 DTEND:20261123T213000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:25 - 22:30 (primo: REG 18337)
-DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:25:30 - 22:30:00\nTren
- i coinvolti nella chiusura:\n  - REG 18337 (FIRENZE SANTA MARIA NOVELLA ->
-  LIVORNO CENTRALE)\n  - REG 18337 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO 
- CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota
-  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
- i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 18337 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRAL
+ E) ore 22:29
+DESCRIPTION:Stazione/PL: MONTELUPO CAPRAIA (S06511)\nRegime chiusura: FERMA
+ TA\nChiusura sbarre stimata: 22:25:30 - 22:30:00\nTreni coinvolti nella ch
+ iusura:\n  - REG 18337 (FIRENZE SANTA MARIA NOVELLA -> LIVORNO CENTRALE)\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/
+ euristica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione MONTELUPO CAPRAIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
