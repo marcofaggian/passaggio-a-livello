@@ -9,28 +9,49 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:ca623bd4a86a8f6f3317f5422d5a8a716726c71f0df4a783b8dc51c25246
- 19b3
+X-CONTENT-HASH:21abd70067f7b6651139e8d82ebf60a81dc14b57e2fd1da9b55d4b5f3f80
+ 3f40
 BEGIN:VEVENT
 UID:train-88490--20261123-S01612@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
 DTSTART:20261124T055430Z
 DTEND:20261124T055900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:54 - 06:59 (primo: REG 88490)
+SUMMARY:[FERMATA] REG 88490 (BERGAMO -> MILANO CENTRALE) ore 06:58
+DESCRIPTION:Stazione/PL: STEZZANO (S01612)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 06:54:30 - 06:59:00\nTreni coinvolti nella chiusura:\n
+   - REG 88490 (BERGAMO -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracc
+ ia oraria regolare
+LOCATION:Passaggio a Livello / Stazione STEZZANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2238--20261123-S01612@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T165717Z
+DTEND:20261124T170247Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:57 - 18:02 (primo: REG 2238) (+1 m
+ in)
 DESCRIPTION:Stazione/PL: STEZZANO (S01612)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 06:54:30 - 06:59:00\nTreni coinvol
- ti nella chiusura:\n  - REG 88490 (BERGAMO -> MILANO CENTRALE)\n  - REG 88
- 490 (BERGAMO -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+ NUA - 2 TRENI\nChiusura sbarre stimata: 17:57:17 - 18:02:47\nTreni coinvol
+ ti nella chiusura:\n  - REG 2238 (BERGAMO -> MILANO CENTRALE) (+1m) [Trans
+ ito]\n  - REG 2238 (BERGAMO -> MILANO CENTRALE) (+1m) [Transito]\nRitardo 
+ massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione STEZZANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

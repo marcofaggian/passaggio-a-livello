@@ -9,19 +9,62 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:2b5ed2edb81542cbd15a7e59a0a73def3edc753dbbefe1e187770fc799bd
- 1e24
+X-CONTENT-HASH:b31be6239b781fb36f7e7e2ae819a58f23528e5e4b2f782aeb7d0f720ee7
+ 7ac3
 BEGIN:VEVENT
 UID:train-9504--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T045856Z
-DTEND:20261124T050426Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:58 - 06:04 (primo: TRENO 9504)
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T045847Z
+DTEND:20261124T050417Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9504 (ROMA TERMINI -> MILANO CENTRALE) ore 
+ 06:03
 DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:58:56 - 06:04:26
- \nTreni coinvolti nella chiusura:\n  - TRENO 9504 (ROMA TERMINI -> MILANO 
- CENTRALE) [Transito]\n  - TRENO 9504 (ROMA TERMINI -> MILANO CENTRALE) [Tr
+  TRANSITO VELOCE\nChiusura sbarre stimata: 05:58:47 - 06:04:17\nTreni coin
+ volti nella chiusura:\n  - TRENO 9504 (ROMA TERMINI -> MILANO CENTRALE) [T
+ ransito]\nRitardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Transito stimato senza fermata (56% tratta ROMA TIBU
+ RTINA -> FIRENZE SANTA MARIA NOVELLA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-581--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T055815Z
+DTEND:20261124T060600Z
+SUMMARY:[FERMATA] IC 581 (FIRENZE SANTA MARIA NOVELLA -> ROMA TERMINI) ore 
+ 07:05 (+1 min)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  FERMATA\nChiusura sbarre stimata: 06:58:15 - 07:06:00\nTreni coinvolti ne
+ lla chiusura:\n  - IC 581 (FIRENZE SANTA MARIA NOVELLA -> ROMA TERMINI) (+
+ 1m)\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota norma
+ tiva/euristica: Rilevamento reale da circuito di binario
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9404--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T063016Z
+DTEND:20261124T063546Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:30 - 07:35 (primo: TRENO 9404)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:30:16 - 07:35:46
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9404 (ROMA TERMINI -> VENEZIA
+  S.LUCIA) [Transito]\n  - TRENO 9404 (ROMA TERMINI -> VENEZIA S.LUCIA) [Tr
  ansito]\nRitardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota 
  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i
   passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
@@ -34,802 +77,178 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-581--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T055815Z
-DTEND:20261124T060600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:58 - 07:06 (primo: IC 581) (+1 min
- )
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:58:15 - 07:06:00
- \nTreni coinvolti nella chiusura:\n  - IC 581 (FIRENZE SANTA MARIA NOVELLA
-  -> ROMA TERMINI) (+1m)\n  - IC 581 (FIRENZE SANTA MARIA NOVELLA -> ROMA T
- ERMINI) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 99%\n
- Nota normativa/euristica: Chiusura continua per 2 treni: intervallo utile 
- tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
- s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:1
-X-PL-CONFIDENCE:0.99
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
 UID:train-9591--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T063715Z
-DTEND:20261124T064245Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:37 - 07:42 (primo: TRENO 9591) (+2
-  min)
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T063927Z
+DTEND:20261124T064457Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9591 (FIRENZE SANTA MARIA NOVELLA -> ROMA T
+ ERMINI) ore 07:43 (+2 min)
 DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:37:15 - 07:42:45
- \nTreni coinvolti nella chiusura:\n  - TRENO 9591 (FIRENZE SANTA MARIA NOV
- ELLA -> ROMA TERMINI) (+2m) [Transito]\n  - TRENO 9591 (FIRENZE SANTA MARI
- A NOVELLA -> ROMA TERMINI) (+2m) [Transito]\nRitardo massimo rilevato: 2 m
- in\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua 
- per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
- nima di sgombero stradale (120s)
+  TRANSITO VELOCE\nChiusura sbarre stimata: 07:39:27 - 07:44:57\nTreni coin
+ volti nella chiusura:\n  - TRENO 9591 (FIRENZE SANTA MARIA NOVELLA -> ROMA
+  TERMINI) (+2m) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità
+  stima: 78%\nNota normativa/euristica: Transito stimato senza fermata (41%
+  tratta FIRENZE SANTA MARIA NOVELLA -> ROMA TERMINI\; pedale annuncio fiss
+ o Vmax)
 LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9610--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
+UID:train-9512--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
 SEQUENCE:0
-DTSTART:20261124T071507Z
-DTEND:20261124T072539Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:15 - 08:25 (primo: TRENO 9610) (+4
-  min)
+DTSTART:20261124T070600Z
+DTEND:20261124T071130Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:06 - 08:11 (primo: TRENO 9512) (+1
+ 1 min)
 DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 08:15:07 - 08:25:39
- \nTreni coinvolti nella chiusura:\n  - TRENO 9610 (ROMA TERMINI -> MILANO 
- CENTRALE) [Transito]\n  - TRENO 9610 (ROMA TERMINI -> MILANO CENTRALE) [Tr
- ansito]\n  - TRENO 9401 (VENEZIA S.LUCIA -> ROMA TERMINI) (+4m) [Transito]
- \n  - TRENO 9401 (VENEZIA S.LUCIA -> ROMA TERMINI) (+4m) [Transito]\nRitar
- do massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota normativa/euris
- tica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
+  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:06:00 - 08:11:30
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9512 (ROMA TERMINI -> MILANO 
+ CENTRALE) (+11m) [Transito]\n  - TRENO 9512 (ROMA TERMINI -> MILANO CENTRA
+ LE) (+11m) [Transito]\nRitardo massimo rilevato: 11 min\nAffidabilità sti
+ ma: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
+ lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
+ dale (120s)
 LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:11
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9610--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T071738Z
+DTEND:20261124T072916Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 08:17 - 08:29 (primo: TRENO 9610) (+4
+  min)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 08:17:38 - 08:29:16
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9610 (ROMA TERMINI -> MILANO 
+ CENTRALE) [Transito]\n  - TRENO 9610 (ROMA TERMINI -> MILANO CENTRALE) [Tr
+ ansito]\n  - TRENO 9401 (VENEZIA S.LUCIA -> ROMA TERMINI) (+4m) [Transito]
+ \nRitardo massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Chiusura continua per 3 treni: intervallo utile tra i passagg
+ i (37s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9511--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T073643Z
-DTEND:20261124T074213Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:36 - 08:42 (primo: TRENO 9511)
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T074111Z
+DTEND:20261124T074641Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9511 (MILANO CENTRALE -> LECCE) ore 08:45
 DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:36:43 - 08:42:13
- \nTreni coinvolti nella chiusura:\n  - TRENO 9511 (MILANO CENTRALE -> LECC
- E) [Transito]\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) [Transito]\nRitar
- do massimo rilevato: -4 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
-  inferiore alla soglia minima di sgombero stradale (120s)
+  TRANSITO VELOCE\nChiusura sbarre stimata: 08:41:11 - 08:46:41\nTreni coin
+ volti nella chiusura:\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) [Transito
+ ]\nRitardo massimo rilevato: -4 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (43% tratta FIRENZE SANTA MA
+ RIA NOVELLA -> ROMA TERMINI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-4
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8583--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T075522Z
-DTEND:20261124T080052Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:55 - 09:00 (primo: TRENO 8583) (+2
-  min)
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T075832Z
+DTEND:20261124T080402Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8583 (GENOVA PIAZZA PRINCIPE -> ROMA TERMIN
+ I) ore 09:02 (+2 min)
 DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:55:22 - 09:00:52
- \nTreni coinvolti nella chiusura:\n  - TRENO 8583 (GENOVA PIAZZA PRINCIPE 
- -> ROMA TERMINI) (+2m) [Transito]\n  - TRENO 8583 (GENOVA PIAZZA PRINCIPE 
- -> ROMA TERMINI) (+2m) [Transito]\nRitardo massimo rilevato: 2 min\nAffida
- bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tren
- i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
- ombero stradale (120s)
+  TRANSITO VELOCE\nChiusura sbarre stimata: 08:58:32 - 09:04:02\nTreni coin
+ volti nella chiusura:\n  - TRENO 8583 (GENOVA PIAZZA PRINCIPE -> ROMA TERM
+ INI) (+2m) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità stim
+ a: 78%\nNota normativa/euristica: Transito stimato senza fermata (45% trat
+ ta FIRENZE CAMPO MARTE -> ROMA TIBURTINA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8505--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T080609Z
-DTEND:20261124T081139Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:06 - 09:11 (primo: TRENO 8505) (+5
-  min)
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T080946Z
+DTEND:20261124T081516Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8505 (BOLZANO -> ROMA TERMINI) ore 09:14 (+
+ 5 min)
 DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:06:09 - 09:11:39
- \nTreni coinvolti nella chiusura:\n  - TRENO 8505 (BOLZANO -> ROMA TERMINI
- ) (+5m) [Transito]\n  - TRENO 8505 (BOLZANO -> ROMA TERMINI) (+5m) [Transi
- to]\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+  TRANSITO VELOCE\nChiusura sbarre stimata: 09:09:46 - 09:15:16\nTreni coin
+ volti nella chiusura:\n  - TRENO 8505 (BOLZANO -> ROMA TERMINI) (+5m) [Tra
+ nsito]\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Transito stimato senza fermata (47% tratta FIRENZE SANT
+ A MARIA NOVELLA -> ROMA TIBURTINA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9403--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
+UID:train-18745--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
 SEQUENCE:0
-DTSTART:20261124T082006Z
-DTEND:20261124T082626Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 09:20 - 09:26 (primo: TRENO 9403) (+4
-  min)
+DTSTART:20261124T082059Z
+DTEND:20261124T082810Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:20 - 09:28 (primo: REG 18745) (+4 
+ min)
 DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 09:20:06 - 09:26:26
- \nTreni coinvolti nella chiusura:\n  - TRENO 9403 (VENEZIA S.LUCIA -> NAPO
- LI CENTRALE) (+4m) [Transito]\n  - TRENO 9403 (VENEZIA S.LUCIA -> NAPOLI C
- ENTRALE) (+4m) [Transito]\n  - REG 18745 (FIRENZE SANTA MARIA NOVELLA -> C
- HIUSI-CHIANCIANO TERME) [Transito]\n  - REG 18745 (FIRENZE SANTA MARIA NOV
- ELLA -> CHIUSI-CHIANCIANO TERME) [Transito]\nRitardo massimo rilevato: 4 m
- in\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua 
- per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
- nima di sgombero stradale (120s)
+  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:20:59 - 09:28:10
+ \nTreni coinvolti nella chiusura:\n  - REG 18745 (FIRENZE SANTA MARIA NOVE
+ LLA -> CHIUSI-CHIANCIANO TERME) [Transito]\n  - TRENO 9403 (VENEZIA S.LUCI
+ A -> NAPOLI CENTRALE) (+4m) [Transito]\nRitardo massimo rilevato: 4 min\nA
+ ffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8506--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
+UID:train-18745--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
 SEQUENCE:0
-DTSTART:20261124T083628Z
-DTEND:20261124T085037Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 09:36 - 09:50 (primo: TRENO 8506)
+DTSTART:20261124T083930Z
+DTEND:20261124T085041Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 09:39 - 09:50 (primo: REG 18745)
 DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 8 TRENI\nChiusura sbarre stimata: 09:36:28 - 09:50:37
- \nTreni coinvolti nella chiusura:\n  - TRENO 8506 (NAPOLI CENTRALE -> BOLZ
- ANO) [Transito]\n  - TRENO 8506 (NAPOLI CENTRALE -> BOLZANO) [Transito]\n 
-  - REG 18745 (FIRENZE SANTA MARIA NOVELLA -> CHIUSI-CHIANCIANO TERME)\n  -
-  REG 18745 (FIRENZE SANTA MARIA NOVELLA -> CHIUSI-CHIANCIANO TERME)\n  - T
- RENO 9515 (MILANO CENTRALE -> SALERNO) [Transito]\n  - TRENO 9515 (MILANO 
- CENTRALE -> SALERNO) [Transito]\n  - TRENO 9618 (ROMA TERMINI -> MILANO CE
+  CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 09:39:30 - 09:50:41
+ \nTreni coinvolti nella chiusura:\n  - REG 18745 (FIRENZE SANTA MARIA NOVE
+ LLA -> CHIUSI-CHIANCIANO TERME)\n  - TRENO 9618 (ROMA TERMINI -> MILANO CE
  NTRALE) [Transito]\n  - TRENO 9618 (ROMA TERMINI -> MILANO CENTRALE) [Tran
- sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Chiusura continua per 8 treni: intervallo utile tra i pa
- ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8513--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T085418Z
-DTEND:20261124T085948Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:54 - 09:59 (primo: TRENO 8513)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:54:18 - 09:59:48
- \nTreni coinvolti nella chiusura:\n  - TRENO 8513 (BOLZANO -> ROMA TERMINI
- ) [Transito]\n  - TRENO 8513 (BOLZANO -> ROMA TERMINI) [Transito]\nRitardo
-  massimo rilevato: -6 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
- nferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:-6
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9405--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T091456Z
-DTEND:20261124T092026Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:14 - 10:20 (primo: TRENO 9405)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:14:56 - 10:20:26
- \nTreni coinvolti nella chiusura:\n  - TRENO 9405 (VENEZIA S.LUCIA -> NAPO
- LI CENTRALE) [Transito]\n  - TRENO 9405 (VENEZIA S.LUCIA -> NAPOLI CENTRAL
- E) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\n
- Nota normativa/euristica: Chiusura continua per 2 treni: intervallo utile 
- tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
- s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9624--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T101507Z
-DTEND:20261124T102037Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:15 - 11:20 (primo: TRENO 9624)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:15:07 - 11:20:37
- \nTreni coinvolti nella chiusura:\n  - TRENO 9624 (ROMA TERMINI -> MILANO 
- CENTRALE) [Transito]\n  - TRENO 9624 (ROMA TERMINI -> MILANO CENTRALE) [Tr
- ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
- ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
- passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9416--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T102721Z
-DTEND:20261124T103251Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:27 - 11:32 (primo: TRENO 9416)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:27:21 - 11:32:51
- \nTreni coinvolti nella chiusura:\n  - TRENO 9416 (ROMA TERMINI -> VENEZIA
-  S.LUCIA) [Transito]\n  - TRENO 9416 (ROMA TERMINI -> VENEZIA S.LUCIA) [Tr
- ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
- ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
- passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8509--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T104354Z
-DTEND:20261124T104924Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:43 - 11:49 (primo: TRENO 8509) (+1
-  min)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:43:54 - 11:49:24
- \nTreni coinvolti nella chiusura:\n  - TRENO 8509 (SIBARI -> BOLZANO) (+1m
- ) [Transito]\n  - TRENO 8509 (SIBARI -> BOLZANO) (+1m) [Transito]\nRitardo
-  massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
- feriore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:1
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9628--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T110722Z
-DTEND:20261124T111351Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:07 - 12:13 (primo: TRENO 9628) (+6
-  min)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 12:07:22 - 12:13:51
- \nTreni coinvolti nella chiusura:\n  - TRENO 9628 (NAPOLI CENTRALE -> MILA
- NO CENTRALE) [Transito]\n  - TRENO 9628 (NAPOLI CENTRALE -> MILANO CENTRAL
- E) [Transito]\n  - TRENO 9514 (TARANTO -> TORINO PORTA NUOVA) (+6m) [Trans
- ito]\n  - TRENO 9514 (TARANTO -> TORINO PORTA NUOVA) (+6m) [Transito]\nRit
- ardo massimo rilevato: 6 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s
- ) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:6
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9411--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T111803Z
-DTEND:20261124T112333Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:18 - 12:23 (primo: TRENO 9411)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:18:03 - 12:23:33
- \nTreni coinvolti nella chiusura:\n  - TRENO 9411 (VENEZIA S.LUCIA -> ROMA
-  TERMINI) [Transito]\n  - TRENO 9411 (VENEZIA S.LUCIA -> ROMA TERMINI) [Tr
- ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
- ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
- passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9311--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T112552Z
-DTEND:20261124T113122Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:25 - 12:31 (primo: TRENO 9311)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:25:52 - 12:31:22
- \nTreni coinvolti nella chiusura:\n  - TRENO 9311 (TORINO PORTA NUOVA -> N
- APOLI CENTRALE) [Transito]\n  - TRENO 9311 (TORINO PORTA NUOVA -> NAPOLI C
- ENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
-  78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
- utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
- e (120s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9630--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T113957Z
-DTEND:20261124T114639Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:39 - 12:46 (primo: TRENO 9630)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 12:39:57 - 12:46:39
- \nTreni coinvolti nella chiusura:\n  - TRENO 9630 (NAPOLI CENTRALE -> MILA
- NO CENTRALE) [Transito]\n  - TRENO 9630 (NAPOLI CENTRALE -> MILANO CENTRAL
- E) [Transito]\n  - TRENO 9527 (MILANO CENTRALE -> SALERNO) [Transito]\n  -
-  TRENO 9527 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
- ontinua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9420--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T121819Z
-DTEND:20261124T122349Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:18 - 13:23 (primo: TRENO 9420)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:18:19 - 13:23:49
- \nTreni coinvolti nella chiusura:\n  - TRENO 9420 (NAPOLI CENTRALE -> VENE
- ZIA S.LUCIA) [Transito]\n  - TRENO 9420 (NAPOLI CENTRALE -> VENEZIA S.LUCI
- A) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\n
- Nota normativa/euristica: Chiusura continua per 2 treni: intervallo utile 
- tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
- s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9540--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T140221Z
-DTEND:20261124T140751Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:02 - 15:07 (primo: TRENO 9540)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:02:21 - 15:07:51
- \nTreni coinvolti nella chiusura:\n  - TRENO 9540 (NAPOLI CENTRALE -> MILA
- NO CENTRALE) [Transito]\n  - TRENO 9540 (NAPOLI CENTRALE -> MILANO CENTRAL
- E) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\n
- Nota normativa/euristica: Chiusura continua per 2 treni: intervallo utile 
- tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
- s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8520--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T144254Z
-DTEND:20261124T144824Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:42 - 15:48 (primo: TRENO 8520)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:42:54 - 15:48:24
- \nTreni coinvolti nella chiusura:\n  - TRENO 8520 (ROMA TERMINI -> BOLZANO
- ) [Transito]\n  - TRENO 8520 (ROMA TERMINI -> BOLZANO) [Transito]\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
- feriore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9320--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T150635Z
-DTEND:20261124T151205Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:06 - 16:12 (primo: TRENO 9320)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:06:35 - 16:12:05
- \nTreni coinvolti nella chiusura:\n  - TRENO 9320 (NAPOLI CENTRALE -> TORI
- NO PORTA NUOVA) [Transito]\n  - TRENO 9320 (NAPOLI CENTRALE -> TORINO PORT
- A NUOVA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
-  78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
- utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
- e (120s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9543--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T154043Z
-DTEND:20261124T154613Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:40 - 16:46 (primo: TRENO 9543)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:40:43 - 16:46:13
- \nTreni coinvolti nella chiusura:\n  - TRENO 9543 (TORINO PORTA NUOVA -> S
- ALERNO) [Transito]\n  - TRENO 9543 (TORINO PORTA NUOVA -> SALERNO) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8519--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T160106Z
-DTEND:20261124T160751Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:01 - 17:07 (primo: TRENO 8519)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 17:01:06 - 17:07:51
- \nTreni coinvolti nella chiusura:\n  - TRENO 8519 (BOLZANO -> SIBARI) [Tra
- nsito]\n  - TRENO 8519 (BOLZANO -> SIBARI) [Transito]\n  - TRENO 9588 (REG
- GIO DI CALABRIA CENTRALE -> TORINO PORTA NUOVA) [Transito]\n  - TRENO 9588
-  (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA NUOVA) [Transito]\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) infe
- riore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-592--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T161115Z
-DTEND:20261124T162159Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 17:11 - 17:21 (primo: IC 592)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 17:11:15 - 17:21:59
- \nTreni coinvolti nella chiusura:\n  - IC 592 (ROMA TERMINI -> TRIESTE CEN
- TRALE)\n  - IC 592 (ROMA TERMINI -> TRIESTE CENTRALE)\n  - TRENO 9425 (VEN
- EZIA S.LUCIA -> NAPOLI CENTRALE) [Transito]\n  - TRENO 9425 (VENEZIA S.LUC
- IA -> NAPOLI CENTRALE) [Transito]\n  - TRENO 9648 (NAPOLI CENTRALE -> MILA
- NO CENTRALE) [Transito]\n  - TRENO 9648 (NAPOLI CENTRALE -> MILANO CENTRAL
- E) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\n
- Nota normativa/euristica: Chiusura continua per 6 treni: intervallo utile 
- tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
- s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9428--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T162721Z
-DTEND:20261124T163524Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:27 - 17:35 (primo: TRENO 9428)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 17:27:21 - 17:35:24
- \nTreni coinvolti nella chiusura:\n  - TRENO 9428 (NAPOLI CENTRALE -> VENE
- ZIA S.LUCIA) [Transito]\n  - TRENO 9428 (NAPOLI CENTRALE -> VENEZIA S.LUCI
- A) [Transito]\n  - TRENO 9480 (ROMA TERMINI -> TRIESTE CENTRALE) [Transito
- ]\n  - TRENO 9480 (ROMA TERMINI -> TRIESTE CENTRALE) [Transito]\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) infe
- riore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8524--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T164254Z
-DTEND:20261124T164824Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:42 - 17:48 (primo: TRENO 8524)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:42:54 - 17:48:24
- \nTreni coinvolti nella chiusura:\n  - TRENO 8524 (ROMA TERMINI -> BOLZANO
- ) [Transito]\n  - TRENO 8524 (ROMA TERMINI -> BOLZANO) [Transito]\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
- feriore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9650--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T165209Z
-DTEND:20261124T165739Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:52 - 17:57 (primo: TRENO 9650)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:52:09 - 17:57:39
- \nTreni coinvolti nella chiusura:\n  - TRENO 9650 (ROMA TERMINI -> MILANO 
- CENTRALE) [Transito]\n  - TRENO 9650 (ROMA TERMINI -> MILANO CENTRALE) [Tr
- ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
- ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
- passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9430--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T171845Z
-DTEND:20261124T173016Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 18:18 - 18:30 (primo: TRENO 9430)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 18:18:45 - 18:30:16
- \nTreni coinvolti nella chiusura:\n  - TRENO 9430 (NAPOLI CENTRALE -> GORI
- ZIA CENTRALE) [Transito]\n  - TRENO 9430 (NAPOLI CENTRALE -> GORIZIA CENTR
- ALE) [Transito]\n  - TRENO 9323 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [T
- ransito]\n  - TRENO 9323 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito
- ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
- va/euristica: Chiusura continua per 4 treni: intervallo utile tra i passag
- gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4109--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T174047Z
-DTEND:20261124T174824Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 18:40 - 18:48 (primo: REG 4109)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 18:40:47 - 18:48:24
- \nTreni coinvolti nella chiusura:\n  - REG 4109 (FIRENZE SANTA MARIA NOVEL
- LA -> CHIUSI-CHIANCIANO TERME) [Transito]\n  - REG 4109 (FIRENZE SANTA MAR
- IA NOVELLA -> CHIUSI-CHIANCIANO TERME) [Transito]\n  - TRENO 9551 (MILANO 
- CENTRALE -> SALERNO) [Transito]\n  - TRENO 9551 (MILANO CENTRALE -> SALERN
- O) [Transito]\n  - TRENO 8526 (ROMA TERMINI -> BOLZANO) [Transito]\n  - TR
- ENO 8526 (ROMA TERMINI -> BOLZANO) [Transito]\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
- a per 6 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
- minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4109--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T175630Z
-DTEND:20261124T181600Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 18:56 - 19:16 (primo: REG 4109)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 8 TRENI\nChiusura sbarre stimata: 18:56:30 - 19:16:00
- \nTreni coinvolti nella chiusura:\n  - REG 4109 (FIRENZE SANTA MARIA NOVEL
- LA -> CHIUSI-CHIANCIANO TERME)\n  - REG 4109 (FIRENZE SANTA MARIA NOVELLA 
- -> CHIUSI-CHIANCIANO TERME)\n  - TRENO 8525 (BOLZANO -> NAPOLI CENTRALE) [
- Transito]\n  - TRENO 8525 (BOLZANO -> NAPOLI CENTRALE) [Transito]\n  - TRE
- NO 9660 (NAPOLI CENTRALE -> BRESCIA) [Transito]\n  - TRENO 9660 (NAPOLI CE
- NTRALE -> BRESCIA) [Transito]\n  - REG 18715 (CHIUSI-CHIANCIANO TERME -> R
- OMA TERMINI)\n  - REG 18715 (CHIUSI-CHIANCIANO TERME -> ROMA TERMINI)\nRit
- ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Chiusura continua per 8 treni: intervallo utile tra i passaggi (0s
- ) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9432--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T183012Z
-DTEND:20261124T184851Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 19:30 - 19:48 (primo: TRENO 9432)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 8 TRENI\nChiusura sbarre stimata: 19:30:12 - 19:48:51
- \nTreni coinvolti nella chiusura:\n  - TRENO 9432 (NAPOLI CENTRALE -> VENE
- ZIA S.LUCIA) [Transito]\n  - TRENO 9432 (NAPOLI CENTRALE -> VENEZIA S.LUCI
- A) [Transito]\n  - TRENO 9662 (NAPOLI CENTRALE -> MILANO CENTRALE) [Transi
- to]\n  - TRENO 9662 (NAPOLI CENTRALE -> MILANO CENTRALE) [Transito]\n  - T
- RENO 9555 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\n  - TRENO 9555 
- (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\n  - TRENO 8528 (ROMA TERM
- INI -> BRESCIA) [Transito]\n  - TRENO 8528 (ROMA TERMINI -> BRESCIA) [Tran
- sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Chiusura continua per 8 treni: intervallo utile tra i pa
- ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9560--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T190221Z
-DTEND:20261124T190751Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:02 - 20:07 (primo: TRENO 9560)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:02:21 - 20:07:51
- \nTreni coinvolti nella chiusura:\n  - TRENO 9560 (LECCE -> MILANO CENTRAL
- E) [Transito]\n  - TRENO 9560 (LECCE -> MILANO CENTRALE) [Transito]\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
- tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9433--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T191544Z
-DTEND:20261124T192415Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 20:15 - 20:24 (primo: TRENO 9433)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 20:15:44 - 20:24:15
- \nTreni coinvolti nella chiusura:\n  - TRENO 9433 (VENEZIA S.LUCIA -> ROMA
-  TERMINI) [Transito]\n  - TRENO 9433 (VENEZIA S.LUCIA -> ROMA TERMINI) [Tr
- ansito]\n  - TRENO 9328 (ROMA TERMINI -> MANTOVA) [Transito]\n  - TRENO 93
- 28 (ROMA TERMINI -> MANTOVA) [Transito]\n  - TRENO 9434 (NAPOLI CENTRALE -
- > VENEZIA S.LUCIA) [Transito]\n  - TRENO 9434 (NAPOLI CENTRALE -> VENEZIA 
- S.LUCIA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
-  78%\nNota normativa/euristica: Chiusura continua per 6 treni: intervallo 
- utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
- e (120s)
-LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9559--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T194109Z
-DTEND:20261124T194824Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:41 - 20:48 (primo: TRENO 9559)
-DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 20:41:09 - 20:48:24
- \nTreni coinvolti nella chiusura:\n  - TRENO 9559 (TORINO PORTA NUOVA -> R
- OMA TERMINI) [Transito]\n  - TRENO 9559 (TORINO PORTA NUOVA -> ROMA TERMIN
- I) [Transito]\n  - TRENO 9330 (ROMA TERMINI -> MILANO CENTRALE) [Transito]
- \n  - TRENO 9330 (ROMA TERMINI -> MILANO CENTRALE) [Transito]\nRitardo mas
+ sito]\n  - TRENO 9515 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo mas
  simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
  Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) inferi
  ore alla soglia minima di sgombero stradale (120s)
@@ -839,46 +258,727 @@ TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8506--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T085323Z
+DTEND:20261124T090320Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 09:53 - 10:03 (primo: TRENO 8506) (+6
+  min)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 09:53:23 - 10:03:20
+ \nTreni coinvolti nella chiusura:\n  - TRENO 8506 (NAPOLI CENTRALE -> BOLZ
+ ANO) (+6m) [Transito]\n  - TRENO 8506 (NAPOLI CENTRALE -> BOLZANO) (+6m) [
+ Transito]\n  - TRENO 8513 (BOLZANO -> ROMA TERMINI) [Transito]\nRitardo ma
+ ssimo rilevato: 6 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) infer
+ iore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9592--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
+UID:train-9611--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
 SEQUENCE:0
-DTSTART:20261124T195410Z
-DTEND:20261124T195940Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:54 - 20:59 (primo: TRENO 9592)
+DTSTART:20261124T091220Z
+DTEND:20261124T091923Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:12 - 10:19 (primo: TRENO 9611) (+5
+  min)
 DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:54:10 - 20:59:40
- \nTreni coinvolti nella chiusura:\n  - TRENO 9592 (SALERNO -> MILANO CENTR
- ALE) [Transito]\n  - TRENO 9592 (SALERNO -> MILANO CENTRALE) [Transito]\nR
- itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
- 0s) inferiore alla soglia minima di sgombero stradale (120s)
+  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:12:20 - 10:19:23
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9611 (TORINO PORTA NUOVA -> N
+ APOLI CENTRALE) (+5m) [Transito]\n  - TRENO 9611 (TORINO PORTA NUOVA -> NA
+ POLI CENTRALE) (+5m) [Transito]\nRitardo massimo rilevato: 5 min\nAffidabi
+ lità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni:
+  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9414--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T092923Z
+DTEND:20261124T093830Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:29 - 10:38 (primo: TRENO 9414) (+4
+  min)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 10:29:23 - 10:38:30
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9414 (SALERNO -> VENEZIA S.LU
+ CIA) [Transito]\n  - TRENO 9414 (SALERNO -> VENEZIA S.LUCIA) [Transito]\n 
+  - TRENO 9405 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) (+4m) [Transito]\n  - T
+ RENO 9405 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) (+4m) [Transito]\nRitardo m
+ assimo rilevato: 4 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9524--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T101506Z
+DTEND:20261124T102036Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:15 - 11:20 (primo: TRENO 9524) (+1
+ 4 min)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:15:06 - 11:20:36
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9524 (SALERNO -> MILANO CENTR
+ ALE) (+14m) [Transito]\n  - TRENO 9524 (SALERNO -> MILANO CENTRALE) (+14m)
+  [Transito]\nRitardo massimo rilevato: 14 min\nAffidabilità stima: 78%\nN
+ ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
+ ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
+ )
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:14
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9624--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T102415Z
+DTEND:20261124T103240Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:24 - 11:32 (primo: TRENO 9624) (+2
+ 0 min)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 11:24:15 - 11:32:40
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9624 (ROMA TERMINI -> MILANO 
+ CENTRALE) (+20m) [Transito]\n  - TRENO 9624 (ROMA TERMINI -> MILANO CENTRA
+ LE) (+20m) [Transito]\n  - TRENO 9416 (ROMA TERMINI -> VENEZIA S.LUCIA) [T
+ ransito]\nRitardo massimo rilevato: 20 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Chiusura continua per 3 treni: intervallo utile tra 
+ i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:20
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9391--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T103916Z
+DTEND:20261124T105002Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 11:39 - 11:50 (primo: TRENO 9391) (+1
+  min)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 11:39:16 - 11:50:02
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9391 (TORINO PORTA NUOVA -> N
+ APOLI CENTRALE) [Transito]\n  - TRENO 9391 (TORINO PORTA NUOVA -> NAPOLI C
+ ENTRALE) [Transito]\n  - TRENO 8509 (SIBARI -> BOLZANO) (+1m) [Transito]\n
+   - TRENO 9626 (ROMA TERMINI -> TORINO PORTA NUOVA) [Transito]\n  - TRENO 
+ 9626 (ROMA TERMINI -> TORINO PORTA NUOVA) [Transito]\nRitardo massimo rile
+ vato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
+ continua per 5 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9628--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T110626Z
+DTEND:20261124T111800Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:06 - 12:18 (primo: TRENO 9628)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 12:06:26 - 12:18:00
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9628 (NAPOLI CENTRALE -> MILA
+ NO CENTRALE) [Transito]\n  - TRENO 9514 (TARANTO -> TORINO PORTA NUOVA) [T
+ ransito]\n  - TRENO 9514 (TARANTO -> TORINO PORTA NUOVA) [Transito]\nRitar
+ do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) 
+ inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8596--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T201004Z
-DTEND:20261124T202136Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 21:10 - 21:21 (primo: TRENO 8596)
+UID:train-9411--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T112247Z
+DTEND:20261124T112817Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9411 (VENEZIA S.LUCIA -> ROMA TERMINI) ore 
+ 12:27
 DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 21:10:04 - 21:21:36
- \nTreni coinvolti nella chiusura:\n  - TRENO 8596 (ROMA TERMINI -> GENOVA 
- PIAZZA PRINCIPE) [Transito]\n  - TRENO 8596 (ROMA TERMINI -> GENOVA PIAZZA
-  PRINCIPE) [Transito]\n  - TRENO 9435 (VENEZIA S.LUCIA -> ROMA TERMINI) [T
- ransito]\n  - TRENO 9435 (VENEZIA S.LUCIA -> ROMA TERMINI) [Transito]\nRit
- ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s
- ) inferiore alla soglia minima di sgombero stradale (120s)
+  TRANSITO VELOCE\nChiusura sbarre stimata: 12:22:47 - 12:28:17\nTreni coin
+ volti nella chiusura:\n  - TRENO 9411 (VENEZIA S.LUCIA -> ROMA TERMINI) [T
+ ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Transito stimato senza fermata (43% tratta FIRENZE SA
+ NTA MARIA NOVELLA -> ROMA TERMINI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9311--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T113724Z
+DTEND:20261124T115016Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:37 - 12:50 (primo: TRENO 9311) (+2
+  min)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 12:37:24 - 12:50:16
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9311 (TORINO PORTA NUOVA -> N
+ APOLI CENTRALE) (+2m) [Transito]\n  - TRENO 9311 (TORINO PORTA NUOVA -> NA
+ POLI CENTRALE) (+2m) [Transito]\n  - TRENO 9630 (NAPOLI CENTRALE -> MILANO
+  CENTRALE) [Transito]\n  - TRENO 9527 (MILANO CENTRALE -> SALERNO) [Transi
+ to]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Chiusura continua per 4 treni: intervallo utile tra i pass
+ aggi (12s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9623--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T120707Z
+DTEND:20261124T122409Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 13:07 - 13:24 (primo: TRENO 9623) (+3
+  min)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 13:07:07 - 13:24:09
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9623 (MILANO CENTRALE -> REGG
+ IO DI CALABRIA CENTRALE) [Transito]\n  - TRENO 9632 (NAPOLI CENTRALE -> MI
+ LANO CENTRALE) (+3m) [Transito]\n  - TRENO 9632 (NAPOLI CENTRALE -> MILANO
+  CENTRALE) (+3m) [Transito]\n  - TRENO 9420 (NAPOLI CENTRALE -> VENEZIA S.
+ LUCIA) [Transito]\nRitardo massimo rilevato: 3 min\nAffidabilità stima: 7
+ 8%\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo ut
+ ile tra i passaggi (59s) inferiore alla soglia minima di sgombero stradale
+  (120s)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9625--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T123708Z
+DTEND:20261124T125000Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 13:37 - 13:50 (primo: TRENO 9625)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 13:37:08 - 13:50:00
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9625 (MILANO CENTRALE -> NAPO
+ LI CENTRALE) [Transito]\n  - IC 584 (TRIESTE CENTRALE -> ROMA TERMINI) [Ar
+ rivo]\n  - IC 584 (TRIESTE CENTRALE -> ROMA TERMINI) [Arrivo]\n  - IC 584 
+ (TRIESTE CENTRALE -> ROMA TERMINI) [Partenza]\n  - IC 584 (TRIESTE CENTRAL
+ E -> ROMA TERMINI) [Partenza]\nRitardo massimo rilevato: 0 min\nAffidabili
+ tà stima: 78%\nNota normativa/euristica: Chiusura continua per 5 treni: i
+ ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9587--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T125916Z
+DTEND:20261124T130446Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:59 - 14:04 (primo: TRENO 9587) (+5
+  min)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:59:16 - 14:04:46
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9587 (TORINO PORTA NUOVA -> R
+ EGGIO DI CALABRIA CENTRALE) (+5m) [Transito]\n  - TRENO 9587 (TORINO PORTA
+  NUOVA -> REGGIO DI CALABRIA CENTRALE) (+5m) [Transito]\nRitardo massimo r
+ ilevato: 5 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
+ ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
+ la soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9584--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T132115Z
+DTEND:20261124T133410Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 14:21 - 14:34 (primo: TRENO 9584) (+4
+ 1 min)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 14:21:15 - 14:34:10
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9584 (REGGIO DI CALABRIA CENT
+ RALE -> TORINO PORTA NUOVA) (+41m) [Transito]\n  - TRENO 9584 (REGGIO DI C
+ ALABRIA CENTRALE -> TORINO PORTA NUOVA) (+41m) [Transito]\n  - TRENO 9422 
+ (NAPOLI CENTRALE -> VENEZIA S.LUCIA) (+11m) [Transito]\n  - TRENO 9422 (NA
+ POLI CENTRALE -> VENEZIA S.LUCIA) (+11m) [Transito]\nRitardo massimo rilev
+ ato: 41 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
+ continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:41
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9540--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T140210Z
+DTEND:20261124T140740Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9540 (NAPOLI CENTRALE -> MILANO CENTRALE) o
+ re 15:06
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  TRANSITO VELOCE\nChiusura sbarre stimata: 15:02:10 - 15:07:40\nTreni coin
+ volti nella chiusura:\n  - TRENO 9540 (NAPOLI CENTRALE -> MILANO CENTRALE)
+  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Transito stimato senza fermata (56% tratta ROMA TI
+ BURTINA -> FIRENZE SANTA MARIA NOVELLA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8520--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T144243Z
+DTEND:20261124T144813Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8520 (ROMA TERMINI -> BOLZANO) ore 15:46
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  TRANSITO VELOCE\nChiusura sbarre stimata: 15:42:43 - 15:48:13\nTreni coin
+ volti nella chiusura:\n  - TRENO 8520 (ROMA TERMINI -> BOLZANO) [Transito]
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Transito stimato senza fermata (56% tratta ROMA TIBURTINA -> 
+ FIRENZE SANTA MARIA NOVELLA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9320--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T150656Z
+DTEND:20261124T151226Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9320 (NAPOLI CENTRALE -> TORINO PORTA NUOVA
+ ) ore 16:11
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  TRANSITO VELOCE\nChiusura sbarre stimata: 16:06:56 - 16:12:26\nTreni coin
+ volti nella chiusura:\n  - TRENO 9320 (NAPOLI CENTRALE -> TORINO PORTA NUO
+ VA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\
+ nNota normativa/euristica: Transito stimato senza fermata (57% tratta ROMA
+  TERMINI -> FIRENZE SANTA MARIA NOVELLA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9421--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T152835Z
+DTEND:20261124T153405Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:28 - 16:34 (primo: TRENO 9421) (+2
+  min)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:28:35 - 16:34:05
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9421 (VENEZIA S.LUCIA -> NAPO
+ LI CENTRALE) (+2m) [Transito]\n  - TRENO 9421 (VENEZIA S.LUCIA -> NAPOLI C
+ ENTRALE) (+2m) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità 
+ stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: inter
+ vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
+ tradale (120s)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9639--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T153707Z
+DTEND:20261124T154237Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9639 (MILANO CENTRALE -> REGGIO DI CALABRIA
+  CENTRALE) ore 16:41
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  TRANSITO VELOCE\nChiusura sbarre stimata: 16:37:07 - 16:42:37\nTreni coin
+ volti nella chiusura:\n  - TRENO 9639 (MILANO CENTRALE -> REGGIO DI CALABR
+ IA CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità st
+ ima: 78%\nNota normativa/euristica: Transito stimato senza fermata (53% tr
+ atta BOLOGNA C.LE/AV -> ROMA TERMINI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9543--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T154511Z
+DTEND:20261124T155041Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9543 (TORINO PORTA NUOVA -> SALERNO) ore 16
+ :49
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  TRANSITO VELOCE\nChiusura sbarre stimata: 16:45:11 - 16:50:41\nTreni coin
+ volti nella chiusura:\n  - TRENO 9543 (TORINO PORTA NUOVA -> SALERNO) [Tra
+ nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Transito stimato senza fermata (43% tratta FIRENZE SANT
+ A MARIA NOVELLA -> ROMA TERMINI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8519--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T160537Z
+DTEND:20261124T162607Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 17:05 - 17:26 (primo: TRENO 8519) (+1
+  min)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 7 TRENI\nChiusura sbarre stimata: 17:05:37 - 17:26:07
+ \nTreni coinvolti nella chiusura:\n  - TRENO 8519 (BOLZANO -> SIBARI) [Tra
+ nsito]\n  - TRENO 9588 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA NUOVA)
+  (+1m) [Transito]\n  - TRENO 9588 (REGGIO DI CALABRIA CENTRALE -> TORINO P
+ ORTA NUOVA) (+1m) [Transito]\n  - TRENO 9641 (TORINO PORTA NUOVA -> ROMA T
+ ERMINI) [Transito]\n  - IC 592 (ROMA TERMINI -> TRIESTE CENTRALE)\n  - TRE
+ NO 9648 (NAPOLI CENTRALE -> MILANO CENTRALE) [Transito]\n  - TRENO 9425 (V
+ ENEZIA S.LUCIA -> NAPOLI CENTRALE) [Transito]\nRitardo massimo rilevato: 1
+  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
+ a per 7 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
+ minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9480--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T162828Z
+DTEND:20261124T163833Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:28 - 17:38 (primo: TRENO 9480) (+5
+  min)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 17:28:28 - 17:38:33
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9480 (ROMA TERMINI -> TRIESTE
+  CENTRALE) [Transito]\n  - TRENO 9428 (NAPOLI CENTRALE -> VENEZIA S.LUCIA)
+  (+5m) [Transito]\n  - TRENO 9428 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) (+5
+ m) [Transito]\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 78%\n
+ Nota normativa/euristica: Chiusura continua per 3 treni: intervallo utile 
+ tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
+ s)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8524--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T164843Z
+DTEND:20261124T165907Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 17:48 - 17:59 (primo: TRENO 8524) (+8
+  min)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 17:48:43 - 17:59:07
+ \nTreni coinvolti nella chiusura:\n  - TRENO 8524 (ROMA TERMINI -> BOLZANO
+ ) (+8m) [Transito]\n  - TRENO 8524 (ROMA TERMINI -> BOLZANO) (+8m) [Transi
+ to]\n  - TRENO 9650 (ROMA TERMINI -> MILANO CENTRALE) [Transito]\n  - TREN
+ O 9547 (MILANO CENTRALE -> TARANTO) (+7m) [Transito]\n  - TRENO 9547 (MILA
+ NO CENTRALE -> TARANTO) (+7m) [Transito]\nRitardo massimo rilevato: 8 min\
+ nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per
+  5 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
+ a di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9645--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T171049Z
+DTEND:20261124T171619Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:10 - 18:16 (primo: TRENO 9645)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:10:49 - 18:16:19
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9645 (TORINO PORTA NUOVA -> R
+ OMA TERMINI) [Transito]\n  - TRENO 9645 (TORINO PORTA NUOVA -> ROMA TERMIN
+ I) [Transito]\nRitardo massimo rilevato: -2 min\nAffidabilità stima: 78%\
+ nNota normativa/euristica: Chiusura continua per 2 treni: intervallo utile
+  tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (12
+ 0s)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9430--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T171905Z
+DTEND:20261124T172435Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9430 (NAPOLI CENTRALE -> GORIZIA CENTRALE) 
+ ore 18:23
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  TRANSITO VELOCE\nChiusura sbarre stimata: 18:19:05 - 18:24:35\nTreni coin
+ volti nella chiusura:\n  - TRENO 9430 (NAPOLI CENTRALE -> GORIZIA CENTRALE
+ ) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nN
+ ota normativa/euristica: Transito stimato senza fermata (57% tratta ROMA T
+ ERMINI -> FIRENZE SANTA MARIA NOVELLA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9323--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T172901Z
+DTEND:20261124T180100Z
+SUMMARY:[CHIUSURA CONTINUA - 10 TRENI] 18:29 - 19:01 (primo: TRENO 9323) (+
+ 4 min)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 10 TRENI\nChiusura sbarre stimata: 18:29:01 - 19:01:0
+ 0\nTreni coinvolti nella chiusura:\n  - TRENO 9323 (TORINO PORTA NUOVA -> 
+ NAPOLI CENTRALE) [Transito]\n  - REG 4119 (FIRENZE SANTA MARIA NOVELLA -> 
+ CHIUSI-CHIANCIANO TERME) (+4m)\n  - REG 4119 (FIRENZE SANTA MARIA NOVELLA 
+ -> CHIUSI-CHIANCIANO TERME) (+4m)\n  - TRENO 9647 (MILANO CENTRALE -> FOGG
+ IA) [Transito]\n  - REG 4109 (FIRENZE SANTA MARIA NOVELLA -> CHIUSI-CHIANC
+ IANO TERME) [Transito]\n  - TRENO 8526 (ROMA TERMINI -> BOLZANO) [Transito
+ ]\n  - TRENO 9551 (MILANO CENTRALE -> SALERNO) [Transito]\n  - IC 597 (MIL
+ ANO CENTRALE -> SALERNO) (+1m)\n  - IC 597 (MILANO CENTRALE -> SALERNO) (+
+ 1m)\n  - REG 4109 (FIRENZE SANTA MARIA NOVELLA -> CHIUSI-CHIANCIANO TERME)
+ \nRitardo massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Chiusura continua per 10 treni: intervallo utile tra i passag
+ gi (30s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 10 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9660--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T180626Z
+DTEND:20261124T181600Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 19:06 - 19:16 (primo: TRENO 9660)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 19:06:26 - 19:16:00
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9660 (NAPOLI CENTRALE -> BRES
+ CIA) [Transito]\n  - TRENO 8525 (BOLZANO -> NAPOLI CENTRALE) [Transito]\n 
+  - REG 18715 (CHIUSI-CHIANCIANO TERME -> ROMA TERMINI)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
+ a continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9432--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T183004Z
+DTEND:20261124T183909Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 19:30 - 19:39 (primo: TRENO 9432) (+2
+ 1 min)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 19:30:04 - 19:39:09
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9432 (NAPOLI CENTRALE -> VENE
+ ZIA S.LUCIA) [Transito]\n  - TRENO 9649 (TORINO PORTA NUOVA -> NAPOLI CENT
+ RALE) (+21m) [Transito]\n  - TRENO 9649 (TORINO PORTA NUOVA -> NAPOLI CENT
+ RALE) (+21m) [Transito]\nRitardo massimo rilevato: 21 min\nAffidabilità s
+ tima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: interv
+ allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
+ radale (120s)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:21
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8528--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T184310Z
+DTEND:20261124T185256Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 19:43 - 19:52 (primo: TRENO 8528) (+1
+ 1 min)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 19:43:10 - 19:52:56
+ \nTreni coinvolti nella chiusura:\n  - TRENO 8528 (ROMA TERMINI -> BRESCIA
+ ) [Transito]\n  - TRENO 8528 (ROMA TERMINI -> BRESCIA) [Transito]\n  - TRE
+ NO 9555 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\n  - TRENO 9662 (N
+ APOLI CENTRALE -> MILANO CENTRALE) (+11m) [Transito]\n  - TRENO 9662 (NAPO
+ LI CENTRALE -> MILANO CENTRALE) (+11m) [Transito]\nRitardo massimo rilevat
+ o: 11 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
+ ntinua per 5 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:11
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9560--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T190210Z
+DTEND:20261124T191204Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:02 - 20:12 (primo: TRENO 9560) (+1
+  min)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 20:02:10 - 20:12:04
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9560 (LECCE -> MILANO CENTRAL
+ E) [Transito]\n  - TRENO 9653 (MILANO CENTRALE -> NAPOLI CENTRALE) (+1m) [
+ Transito]\n  - TRENO 9653 (MILANO CENTRALE -> NAPOLI CENTRALE) (+1m) [Tran
+ sito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota nor
+ mativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i pa
+ ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9328--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T191710Z
+DTEND:20261124T192448Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:17 - 20:24 (primo: TRENO 9328)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 20:17:10 - 20:24:48
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9328 (ROMA TERMINI -> MANTOVA
+ ) [Transito]\n  - TRENO 9328 (ROMA TERMINI -> MANTOVA) [Transito]\n  - TRE
+ NO 9434 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) [Transito]\n  - TRENO 9433 (V
+ ENEZIA S.LUCIA -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
+ er 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
+ ima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -888,101 +988,198 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4110--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
+UID:train-9657--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
 SEQUENCE:0
-DTSTART:20261124T203948Z
-DTEND:20261124T204518Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:39 - 21:45 (primo: REG 4110)
+DTSTART:20261124T193807Z
+DTEND:20261124T194813Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:38 - 20:48 (primo: TRENO 9657) (+1
+  min)
 DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:39:48 - 21:45:18
- \nTreni coinvolti nella chiusura:\n  - REG 4110 (ROMA TERMINI -> FIRENZE S
- ANTA MARIA NOVELLA) [Transito]\n  - REG 4110 (ROMA TERMINI -> FIRENZE SANT
- A MARIA NOVELLA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+  CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 20:38:07 - 20:48:13
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9657 (MILANO CENTRALE -> NAPO
+ LI CENTRALE) (+1m) [Transito]\n  - TRENO 9657 (MILANO CENTRALE -> NAPOLI C
+ ENTRALE) (+1m) [Transito]\n  - TRENO 9330 (ROMA TERMINI -> MILANO CENTRALE
+ ) [Transito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nN
+ ota normativa/euristica: Chiusura continua per 3 treni: intervallo utile t
+ ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
+ )
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9559--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T195358Z
+DTEND:20261124T200116Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:53 - 21:01 (primo: TRENO 9559) (+1
+ 1 min)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 20:53:58 - 21:01:16
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9559 (TORINO PORTA NUOVA -> R
+ OMA TERMINI) (+11m) [Transito]\n  - TRENO 9592 (SALERNO -> MILANO CENTRALE
+ ) [Transito]\n  - TRENO 9559 (TORINO PORTA NUOVA -> ROMA TERMINI) (+11m) [
+ Transito]\nRitardo massimo rilevato: 11 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Chiusura continua per 3 treni: intervallo utile tra
+  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:11
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9661--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T200534Z
+DTEND:20261124T201520Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:05 - 21:15 (primo: TRENO 9661)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 21:05:34 - 21:15:20
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9661 (MILANO CENTRALE -> ROMA
+  TERMINI) [Transito]\n  - TRENO 9661 (MILANO CENTRALE -> ROMA TERMINI) [Tr
+ ansito]\n  - TRENO 8596 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) [Transito
+ ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
+ va/euristica: Chiusura continua per 3 treni: intervallo utile tra i passag
+ gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9435--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T202540Z
+DTEND:20261124T203307Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:25 - 21:33 (primo: TRENO 9435) (+7
+  min)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:25:40 - 21:33:07
+ \nTreni coinvolti nella chiusura:\n  - TRENO 9435 (VENEZIA S.LUCIA -> ROMA
+  TERMINI) (+7m) [Transito]\n  - TRENO 9435 (VENEZIA S.LUCIA -> ROMA TERMIN
+ I) (+7m) [Transito]\nRitardo massimo rilevato: 7 min\nAffidabilità stima:
+  78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
+ utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
+ e (120s)
 LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4110--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T203945Z
+DTEND:20261124T205045Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:39 - 21:50 (primo: REG 4110)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 21:39:45 - 21:50:45
+ \nTreni coinvolti nella chiusura:\n  - REG 4110 (ROMA TERMINI -> FIRENZE S
+ ANTA MARIA NOVELLA) [Transito]\n  - TRENO 9563 (MILANO CENTRALE -> ROMA TE
+ RMINI) [Transito]\n  - TRENO 9563 (MILANO CENTRALE -> ROMA TERMINI) [Trans
+ ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4110--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
 DTSTART:20261124T205630Z
-DTEND:20261124T210352Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 21:56 - 22:03 (primo: REG 4110)
+DTEND:20261124T210345Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:56 - 22:03 (primo: REG 4110)
 DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 21:56:30 - 22:03:52
+  CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 21:56:30 - 22:03:45
  \nTreni coinvolti nella chiusura:\n  - REG 4110 (ROMA TERMINI -> FIRENZE S
- ANTA MARIA NOVELLA)\n  - REG 4110 (ROMA TERMINI -> FIRENZE SANTA MARIA NOV
- ELLA)\n  - TRENO 9568 (NAPOLI CENTRALE -> FIRENZE SANTA MARIA NOVELLA) [Tr
- ansito]\n  - TRENO 9568 (NAPOLI CENTRALE -> FIRENZE SANTA MARIA NOVELLA) [
- Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
-  normativa/euristica: Chiusura continua per 4 treni: intervallo utile tra 
- i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ ANTA MARIA NOVELLA)\n  - TRENO 9568 (NAPOLI CENTRALE -> FIRENZE SANTA MARI
+ A NOVELLA) [Transito]\n  - TRENO 9568 (NAPOLI CENTRALE -> FIRENZE SANTA MA
+ RIA NOVELLA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità st
+ ima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: interva
+ llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
+ adale (120s)
 LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9437--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T211544Z
-DTEND:20261124T212114Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:15 - 22:21 (primo: TRENO 9437)
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T211918Z
+DTEND:20261124T212448Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9437 (VENEZIA S.LUCIA -> ROMA TERMINI) ore 
+ 22:23
 DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:15:44 - 22:21:14
- \nTreni coinvolti nella chiusura:\n  - TRENO 9437 (VENEZIA S.LUCIA -> ROMA
-  TERMINI) [Transito]\n  - TRENO 9437 (VENEZIA S.LUCIA -> ROMA TERMINI) [Tr
- ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
- ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
- passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+  TRANSITO VELOCE\nChiusura sbarre stimata: 22:19:18 - 22:24:48\nTreni coin
+ volti nella chiusura:\n  - TRENO 9437 (VENEZIA S.LUCIA -> ROMA TERMINI) [T
+ ransito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Transito stimato senza fermata (47% tratta FIRENZE SA
+ NTA MARIA NOVELLA -> ROMA TIBURTINA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4113--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T213947Z
-DTEND:20261124T214517Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:39 - 22:45 (primo: REG 4113)
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T213949Z
+DTEND:20261124T214828Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 22:39 - 22:48 (primo: REG 4113)
 DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:39:47 - 22:45:17
+  CHIUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 22:39:49 - 22:48:28
  \nTreni coinvolti nella chiusura:\n  - REG 4113 (FIRENZE SANTA MARIA NOVEL
  LA -> ROMA TERMINI) [Transito]\n  - REG 4113 (FIRENZE SANTA MARIA NOVELLA 
- -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+ -> ROMA TERMINI) [Transito]\n  - TRENO 9567 (TORINO PORTA NUOVA -> ROMA TE
+ RMINI) [Transito]\n  - TRENO 9567 (TORINO PORTA NUOVA -> ROMA TERMINI) [Tr
+ ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i 
+ passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4113--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
 DTSTART:20261124T220030Z
 DTEND:20261124T220500Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:00 - 23:05 (primo: REG 4113)
@@ -1003,48 +1200,68 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18795--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T221547Z
-DTEND:20261124T222117Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:15 - 23:21 (primo: REG 18795)
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T221549Z
+DTEND:20261124T222119Z
+SUMMARY:[TRANSITO VELOCE] REG 18795 (FIRENZE SANTA MARIA NOVELLA -> CHIUSI-
+ CHIANCIANO TERME) ore 23:20
 DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 23:15:47 - 23:21:17
- \nTreni coinvolti nella chiusura:\n  - REG 18795 (FIRENZE SANTA MARIA NOVE
- LLA -> CHIUSI-CHIANCIANO TERME) [Transito]\n  - REG 18795 (FIRENZE SANTA M
- ARIA NOVELLA -> CHIUSI-CHIANCIANO TERME) [Transito]\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+  TRANSITO VELOCE\nChiusura sbarre stimata: 23:15:49 - 23:21:19\nTreni coin
+ volti nella chiusura:\n  - REG 18795 (FIRENZE SANTA MARIA NOVELLA -> CHIUS
+ I-CHIANCIANO TERME) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabil
+ ità stima: 78%\nNota normativa/euristica: Transito stimato senza fermata 
+ (58% tratta TERONTOLA CORTONA -> CASTIGLION DEL LAGO\; pedale annuncio fis
+ so Vmax)
 LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18795--20261123-S06925@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
 DTSTART:20261124T223530Z
 DTEND:20261124T224000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:35 - 23:40 (primo: REG 18795)
+SUMMARY:[FERMATA] REG 18795 (FIRENZE SANTA MARIA NOVELLA -> CHIUSI-CHIANCIA
+ NO TERME) ore 23:39
 DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 23:35:30 - 23:40:00
- \nTreni coinvolti nella chiusura:\n  - REG 18795 (FIRENZE SANTA MARIA NOVE
- LLA -> CHIUSI-CHIANCIANO TERME)\n  - REG 18795 (FIRENZE SANTA MARIA NOVELL
- A -> CHIUSI-CHIANCIANO TERME)\nRitardo massimo rilevato: 0 min\nAffidabili
- tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
- ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
- ro stradale (120s)
+  FERMATA\nChiusura sbarre stimata: 23:35:30 - 23:40:00\nTreni coinvolti ne
+ lla chiusura:\n  - REG 18795 (FIRENZE SANTA MARIA NOVELLA -> CHIUSI-CHIANC
+ IANO TERME)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNo
+ ta normativa/euristica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-798--20261123-S06925@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261125T003354Z
+DTEND:20261125T003824Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 01:33 - 01:38 (primo: ICN 798)
+DESCRIPTION:Stazione/PL: CHIUSI-CHIANCIANO TERME (S06925)\nRegime chiusura:
+  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 01:33:54 - 01:38:24
+ \nTreni coinvolti nella chiusura:\n  - ICN 798 (SALERNO -> TORINO PORTA NU
+ OVA) [Transito]\n  - ICN 798 (SALERNO -> TORINO PORTA NUOVA) [Transito]\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CHIUSI-CHIANCIANO TERME
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 END:VCALENDAR

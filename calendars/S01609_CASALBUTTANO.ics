@@ -9,27 +9,75 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:ba50c2ba950a445b89b642a1b582a9d40d325e375cb084e876e26c4186af
- a2d1
+X-CONTENT-HASH:15aded12e1bf2c491e797d51f2e37a6c482a086e890bdf3bae320a9c49b4
+ 3725
 BEGIN:VEVENT
-UID:train-10600--20261120-S01609@pl-tracker.local
-DTSTAMP:20261121T195057Z
-SEQUENCE:2
-DTSTART:20261121T041430Z
-DTEND:20261121T041900Z
-SUMMARY:[FERMATA] REG 10600 (CREMONA -> MILANO PORTA GARIBALDI) ore 05:18 (
- +1 min)
-DESCRIPTION:Stazione/PL: CASALBUTTANO (S01609)\nRegime chiusura: FERMATA\nC
- hiusura sbarre stimata: 05:14:30 - 05:19:00\nTreni coinvolti nella chiusur
- a:\n  - REG 10600 (CREMONA -> MILANO PORTA GARIBALDI) (+1m)\nRitardo massi
- mo rilevato: 1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pr
- evisione con ritardo propagato (+1 min)
+UID:train-10601--20261123-S01609@pl-tracker.local-arr
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T105000Z
+DTEND:20261124T105430Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:50 - 11:54 (primo: REG 10601) (+4 
+ min)
+DESCRIPTION:Stazione/PL: CASALBUTTANO (S01609)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:50:00 - 11:54:30\nTreni coi
+ nvolti nella chiusura:\n  - REG 10601 (MILANO PORTA GARIBALDI -> CREMONA) 
+ (+4m) [Arrivo]\n  - REG 10601 (MILANO PORTA GARIBALDI -> CREMONA) (+4m) [A
+ rrivo]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 99%\nNota no
+ rmativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i p
+ assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CASALBUTTANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:1
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10601--20261123-S01609@pl-tracker.local-dep
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T105630Z
+DTEND:20261124T110100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:56 - 12:01 (primo: REG 10601) (+4 
+ min)
+DESCRIPTION:Stazione/PL: CASALBUTTANO (S01609)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:56:30 - 12:01:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 10601 (MILANO PORTA GARIBALDI -> CREMONA) 
+ (+4m) [Partenza]\n  - REG 10601 (MILANO PORTA GARIBALDI -> CREMONA) (+4m) 
+ [Partenza]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 99%\nNot
+ a normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra
+  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CASALBUTTANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10605--20261123-S01609@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T170830Z
+DTEND:20261124T171500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:08 - 18:15 (primo: REG 10605) (+10
+  min)
+DESCRIPTION:Stazione/PL: CASALBUTTANO (S01609)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:08:30 - 18:15:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 10605 (MILANO PORTA GARIBALDI -> CREMONA) 
+ (+10m)\n  - REG 10605 (MILANO PORTA GARIBALDI -> CREMONA) (+10m)\nRitardo 
+ massimo rilevato: 10 min\nAffidabilità stima: 99%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CASALBUTTANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:10
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

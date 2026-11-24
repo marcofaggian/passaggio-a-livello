@@ -9,20 +9,20 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:e0caafb56c82beeaaa616f54785665b5aa1c8f2bad538f526834b4604ff2
- bda5
+X-CONTENT-HASH:ab0b8d46e7265619aec3189f94dea842032ed0cf0846d8de09d537c1d71d
+ bf02
 BEGIN:VEVENT
-UID:train-8303--20261122-S09307@pl-tracker.local
-DTSTAMP:20261123T221239Z
-SEQUENCE:2
-DTSTART:20261123T083347Z
-DTEND:20261123T083917Z
-SUMMARY:[TRANSITO VELOCE] TRENO 8303 (ROMA TERMINI -> LECCE) ore 09:38
+UID:train-8303--20261123-S09307@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T083844Z
+DTEND:20261124T084414Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8303 (ROMA TERMINI -> LECCE) ore 09:42
 DESCRIPTION:Stazione/PL: SOLOPACA (S09307)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 09:33:47 - 09:39:17\nTreni coinvolti nella chi
+ E\nChiusura sbarre stimata: 09:38:44 - 09:44:14\nTreni coinvolti nella chi
  usura:\n  - TRENO 8303 (ROMA TERMINI -> LECCE) [Transito]\nRitardo massimo
   rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
- sito stimato senza fermata (55% tratta CASERTA -> BENEVENTO\; pedale annun
+ sito stimato senza fermata (63% tratta CASERTA -> BENEVENTO\; pedale annun
  cio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SOLOPACA
 STATUS:CONFIRMED
@@ -33,80 +33,85 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9511--20261122-S09307@pl-tracker.local
-DTSTAMP:20261123T221239Z
-SEQUENCE:1
-DTSTART:20261123T104021Z
-DTEND:20261123T104551Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9511 (MILANO CENTRALE -> LECCE) ore 11:44 (
- +8 min)
+UID:train-9511--20261123-S09307@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T103206Z
+DTEND:20261124T103736Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9511 (MILANO CENTRALE -> LECCE) ore 11:36
 DESCRIPTION:Stazione/PL: SOLOPACA (S09307)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 11:40:21 - 11:45:51\nTreni coinvolti nella chi
- usura:\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) (+8m) [Transito]\nRitard
- o massimo rilevato: 8 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Transito stimato senza fermata (55% tratta CASERTA -> BENEVENTO\; ped
- ale annuncio fisso Vmax)
+ E\nChiusura sbarre stimata: 11:32:06 - 11:37:36\nTreni coinvolti nella chi
+ usura:\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo mass
+ imo rilevato: -4 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Transito stimato senza fermata (63% tratta CASERTA -> BENEVENTO\; pedale a
+ nnuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SOLOPACA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21179--20261123-S09307@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T122400Z
+DTEND:20261124T123030Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:24 - 13:30 (primo: REG 21179) (+8 
+ min)
+DESCRIPTION:Stazione/PL: SOLOPACA (S09307)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 13:24:00 - 13:30:30\nTreni coinvol
+ ti nella chiusura:\n  - REG 21179 (NAPOLI CENTRALE -> BENEVENTO) (+8m)\n  
+ - REG 21179 (NAPOLI CENTRALE -> BENEVENTO) (+8m)\nRitardo massimo rilevato
+ : 8 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SOLOPACA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:8
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-21179--20261122-S09307@pl-tracker.local
-DTSTAMP:20261123T221239Z
-SEQUENCE:2
-DTSTART:20261123T121730Z
-DTEND:20261123T122200Z
-SUMMARY:[FERMATA] REG 21179 (NAPOLI CENTRALE -> BENEVENTO) ore 13:21
-DESCRIPTION:Stazione/PL: SOLOPACA (S09307)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 13:17:30 - 13:22:00\nTreni coinvolti nella chiusura:\n
-   - REG 21179 (NAPOLI CENTRALE -> BENEVENTO)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
- ccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione SOLOPACA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-21197--20261122-S09307@pl-tracker.local
-DTSTAMP:20261123T221239Z
-SEQUENCE:2
-DTSTART:20261123T160330Z
-DTEND:20261123T160800Z
-SUMMARY:[FERMATA] REG 21197 (NAPOLI CENTRALE -> BENEVENTO) ore 17:07
-DESCRIPTION:Stazione/PL: SOLOPACA (S09307)\nRegime chiusura: FERMATA\nChius
- ura sbarre stimata: 17:03:30 - 17:08:00\nTreni coinvolti nella chiusura:\n
-   - REG 21197 (NAPOLI CENTRALE -> BENEVENTO)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
- ccia oraria regolare
+UID:train-21197--20261123-S09307@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T161000Z
+DTEND:20261124T161630Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:10 - 17:16 (primo: REG 21197) (+8 
+ min)
+DESCRIPTION:Stazione/PL: SOLOPACA (S09307)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 17:10:00 - 17:16:30\nTreni coinvol
+ ti nella chiusura:\n  - REG 21197 (NAPOLI CENTRALE -> BENEVENTO) (+8m)\n  
+ - REG 21197 (NAPOLI CENTRALE -> BENEVENTO) (+8m)\nRitardo massimo rilevato
+ : 8 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SOLOPACA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8317--20261122-S09307@pl-tracker.local
-DTSTAMP:20261123T221239Z
-SEQUENCE:1
-DTSTART:20261123T162856Z
-DTEND:20261123T163426Z
-SUMMARY:[TRANSITO VELOCE] TRENO 8317 (ROMA TERMINI -> LECCE) ore 17:33
+UID:train-8319--20261123-S09307@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T173318Z
+DTEND:20261124T173848Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8319 (ROMA TERMINI -> BENEVENTO) ore 18:37
 DESCRIPTION:Stazione/PL: SOLOPACA (S09307)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 17:28:56 - 17:34:26\nTreni coinvolti nella chi
- usura:\n  - TRENO 8317 (ROMA TERMINI -> LECCE) [Transito]\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
- sito stimato senza fermata (55% tratta CASERTA -> BENEVENTO\; pedale annun
- cio fisso Vmax)
+ E\nChiusura sbarre stimata: 18:33:18 - 18:38:48\nTreni coinvolti nella chi
+ usura:\n  - TRENO 8319 (ROMA TERMINI -> BENEVENTO) [Transito]\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Transito stimato senza fermata (63% tratta CASERTA -> BENEVENTO\; pedale a
+ nnuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SOLOPACA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -116,17 +121,17 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9647--20261122-S09307@pl-tracker.local
-DTSTAMP:20261123T221239Z
-SEQUENCE:2
-DTSTART:20261123T202659Z
-DTEND:20261123T203229Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9647 (MILANO CENTRALE -> FOGGIA) ore 21:31
+UID:train-9647--20261123-S09307@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T203216Z
+DTEND:20261124T203746Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9647 (MILANO CENTRALE -> FOGGIA) ore 21:36
 DESCRIPTION:Stazione/PL: SOLOPACA (S09307)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 21:26:59 - 21:32:29\nTreni coinvolti nella chi
+ E\nChiusura sbarre stimata: 21:32:16 - 21:37:46\nTreni coinvolti nella chi
  usura:\n  - TRENO 9647 (MILANO CENTRALE -> FOGGIA) [Transito]\nRitardo mas
  simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Transito stimato senza fermata (55% tratta CASERTA -> BENEVENTO\; pedale a
+ Transito stimato senza fermata (63% tratta CASERTA -> BENEVENTO\; pedale a
  nnuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SOLOPACA
 STATUS:CONFIRMED

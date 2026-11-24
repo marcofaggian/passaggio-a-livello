@@ -9,28 +9,49 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:c3391462772ebec306963879d307b54d741be8284900dde3d790c303407d
- 138e
+X-CONTENT-HASH:3916ebfbd5eb4fc899621386e56c8e47a8874955c746bd64a1a4ada5ff8b
+ 67d0
 BEGIN:VEVENT
 UID:train-3215--20261123-S00610@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
 DTSTART:20261124T073530Z
 DTEND:20261124T074000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:35 - 08:40 (primo: REG 3215)
+SUMMARY:[FERMATA] REG 3215 (TORINO PORTA NUOVA -> CUNEO) ore 08:39
+DESCRIPTION:Stazione/PL: CUNEO (S00610)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 08:35:30 - 08:40:00\nTreni coinvolti nella chiusura:\n  -
+  REG 3215 (TORINO PORTA NUOVA -> CUNEO)\nRitardo massimo rilevato: 0 min\n
+ Affidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia 
+ oraria regolare
+LOCATION:Passaggio a Livello / Stazione CUNEO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3240--20261123-S00610@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T162330Z
+DTEND:20261124T162800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:23 - 17:28 (primo: REG 3240) (+3 m
+ in)
 DESCRIPTION:Stazione/PL: CUNEO (S00610)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 08:35:30 - 08:40:00\nTreni coinvolti 
- nella chiusura:\n  - REG 3215 (TORINO PORTA NUOVA -> CUNEO)\n  - REG 3215 
- (TORINO PORTA NUOVA -> CUNEO)\nRitardo massimo rilevato: 0 min\nAffidabili
- tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
- ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
- ro stradale (120s)
+  - 2 TRENI\nChiusura sbarre stimata: 17:23:30 - 17:28:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 3240 (CUNEO -> TORINO PORTA NUOVA) (+3m)\n  - REG
+  3240 (CUNEO -> TORINO PORTA NUOVA) (+3m)\nRitardo massimo rilevato: 3 min
+ \nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua pe
+ r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CUNEO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

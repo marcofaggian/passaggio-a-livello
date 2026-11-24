@@ -9,20 +9,20 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:1668368070bdc87a0e9ff2d8bce27d4572742072527e49d986a5c80f59cc
- cff4
+X-CONTENT-HASH:31fd42a3dc3aab4fb6b9914155ccddcd850d1d91103989edcbed76c09510
+ ec7b
 BEGIN:VEVENT
 UID:train-16848--20261123-S02710@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T054126Z
-DTEND:20261124T054656Z
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T054111Z
+DTEND:20261124T054641Z
 SUMMARY:[TRANSITO VELOCE] REG 16848 (BELLUNO -> VENEZIA S.LUCIA) ore 06:45
 DESCRIPTION:Stazione/PL: LANCENIGO (S02710)\nRegime chiusura: TRANSITO VELO
- CE\nChiusura sbarre stimata: 06:41:26 - 06:46:56\nTreni coinvolti nella ch
+ CE\nChiusura sbarre stimata: 06:41:11 - 06:46:41\nTreni coinvolti nella ch
  iusura:\n  - REG 16848 (BELLUNO -> VENEZIA S.LUCIA) [Transito]\nRitardo ma
  ssimo rilevato: -5 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (46% tratta SPRESIANO -> TREVISO CENTRALE
+ : Transito stimato senza fermata (43% tratta SPRESIANO -> TREVISO CENTRALE
  \; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LANCENIGO
 STATUS:CONFIRMED
@@ -33,120 +33,203 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16870--20261123-S02710@pl-tracker.local
-DTSTAMP:20261124T060714Z
+UID:train-3640--20261123-S02710@pl-tracker.local
+DTSTAMP:20261124T174816Z
 SEQUENCE:0
-DTSTART:20261124T062830Z
-DTEND:20261124T063300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:28 - 07:33 (primo: REG 16870) (+4 
- min)
-DESCRIPTION:Stazione/PL: LANCENIGO (S02710)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 07:28:30 - 07:33:00\nTreni coinvo
- lti nella chiusura:\n  - REG 16870 (BELLUNO -> VENEZIA S.LUCIA) (+4m)\n  -
-  REG 16870 (BELLUNO -> VENEZIA S.LUCIA) (+4m)\nRitardo massimo rilevato: 4
-  min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continu
- a per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+DTSTART:20261124T060753Z
+DTEND:20261124T061323Z
+SUMMARY:[TRANSITO VELOCE] REG 3640 (VENEZIA S.LUCIA -> CONEGLIANO) ore 07:1
+ 2
+DESCRIPTION:Stazione/PL: LANCENIGO (S02710)\nRegime chiusura: TRANSITO VELO
+ CE\nChiusura sbarre stimata: 07:07:53 - 07:13:23\nTreni coinvolti nella ch
+ iusura:\n  - REG 3640 (VENEZIA S.LUCIA -> CONEGLIANO) [Transito]\nRitardo 
+ massimo rilevato: -2 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (62% tratta TREVISO CENTRALE -> SPRESIA
+ NO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LANCENIGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16870--20261123-S02710@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T062830Z
+DTEND:20261124T063300Z
+SUMMARY:[FERMATA] REG 16870 (BELLUNO -> VENEZIA S.LUCIA) ore 07:32 (+4 min)
+DESCRIPTION:Stazione/PL: LANCENIGO (S02710)\nRegime chiusura: FERMATA\nChiu
+ sura sbarre stimata: 07:28:30 - 07:33:00\nTreni coinvolti nella chiusura:\
+ n  - REG 16870 (BELLUNO -> VENEZIA S.LUCIA) (+4m)\nRitardo massimo rilevat
+ o: 4 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione c
+ on ritardo propagato (+4 min)
+LOCATION:Passaggio a Livello / Stazione LANCENIGO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16220--20261123-S02710@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
 DTSTART:20261124T115430Z
 DTEND:20261124T115900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:54 - 12:59 (primo: REG 16220)
-DESCRIPTION:Stazione/PL: LANCENIGO (S02710)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 12:54:30 - 12:59:00\nTreni coinvo
- lti nella chiusura:\n  - REG 16220 (VENEZIA S.LUCIA -> UDINE)\n  - REG 162
- 20 (VENEZIA S.LUCIA -> UDINE)\nRitardo massimo rilevato: 0 min\nAffidabili
- tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
- ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
- ro stradale (120s)
+SUMMARY:[FERMATA] REG 16220 (VENEZIA S.LUCIA -> UDINE) ore 12:58
+DESCRIPTION:Stazione/PL: LANCENIGO (S02710)\nRegime chiusura: FERMATA\nChiu
+ sura sbarre stimata: 12:54:30 - 12:59:00\nTreni coinvolti nella chiusura:\
+ n  - REG 16220 (VENEZIA S.LUCIA -> UDINE)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
+ a oraria regolare
 LOCATION:Passaggio a Livello / Stazione LANCENIGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16801--20261123-S02710@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
 DTSTART:20261124T145430Z
 DTEND:20261124T145900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:54 - 15:59 (primo: REG 16801)
-DESCRIPTION:Stazione/PL: LANCENIGO (S02710)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 15:54:30 - 15:59:00\nTreni coinvo
- lti nella chiusura:\n  - REG 16801 (UDINE -> VENEZIA S.LUCIA)\n  - REG 168
- 01 (UDINE -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\nAffidabili
- tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
- ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
- ro stradale (120s)
+SUMMARY:[FERMATA] REG 16801 (UDINE -> VENEZIA S.LUCIA) ore 15:58
+DESCRIPTION:Stazione/PL: LANCENIGO (S02710)\nRegime chiusura: FERMATA\nChiu
+ sura sbarre stimata: 15:54:30 - 15:59:00\nTreni coinvolti nella chiusura:\
+ n  - REG 16801 (UDINE -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
+ a oraria regolare
 LOCATION:Passaggio a Livello / Stazione LANCENIGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16806--20261123-S02710@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T155430Z
-DTEND:20261124T155900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:54 - 16:59 (primo: REG 16806)
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T160530Z
+DTEND:20261124T161729Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:05 - 17:17 (primo: REG 16806) (+12
+  min)
 DESCRIPTION:Stazione/PL: LANCENIGO (S02710)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 16:54:30 - 16:59:00\nTreni coinvo
- lti nella chiusura:\n  - REG 16806 (VENEZIA S.LUCIA -> UDINE)\n  - REG 168
- 06 (VENEZIA S.LUCIA -> UDINE)\nRitardo massimo rilevato: 0 min\nAffidabili
- tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
- ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
- ro stradale (120s)
+ INUA - 4 TRENI\nChiusura sbarre stimata: 17:05:30 - 17:17:29\nTreni coinvo
+ lti nella chiusura:\n  - REG 16806 (VENEZIA S.LUCIA -> UDINE) (+12m)\n  - 
+ REG 16806 (VENEZIA S.LUCIA -> UDINE) (+12m)\n  - REG 3666 (VENEZIA S.LUCIA
+  -> SACILE) (+6m) [Transito]\n  - REG 3666 (VENEZIA S.LUCIA -> SACILE) (+6
+ m) [Transito]\nRitardo massimo rilevato: 12 min\nAffidabilità stima: 78%\
+ nNota normativa/euristica: Chiusura continua per 4 treni: intervallo utile
+  tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (12
+ 0s)
+LOCATION:Passaggio a Livello / Stazione LANCENIGO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:12
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16815--20261123-S02710@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T165230Z
+DTEND:20261124T170000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:52 - 18:00 (primo: REG 16815)
+DESCRIPTION:Stazione/PL: LANCENIGO (S02710)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 17:52:30 - 18:00:00\nTreni coinvo
+ lti nella chiusura:\n  - REG 16815 (UDINE -> VENEZIA S.LUCIA)\n  - REG 168
+ 15 (UDINE -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: -2 min\nAffidabil
+ ità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: 
+ intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
+ ero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LANCENIGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:-2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16822--20261123-S02710@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T185630Z
+DTEND:20261124T190200Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 19:56 - 20:02 (primo: REG 16822) (+3 
+ min)
+DESCRIPTION:Stazione/PL: LANCENIGO (S02710)\nRegime chiusura: CHIUSURA CONT
+ INUA - 4 TRENI\nChiusura sbarre stimata: 19:56:30 - 20:02:00\nTreni coinvo
+ lti nella chiusura:\n  - REG 16822 (VENEZIA S.LUCIA -> UDINE)\n  - REG 168
+ 22 (VENEZIA S.LUCIA -> UDINE)\n  - REG 16825 (UDINE -> VENEZIA S.LUCIA) (+
+ 3m)\n  - REG 16825 (UDINE -> VENEZIA S.LUCIA) (+3m)\nRitardo massimo rilev
+ ato: 3 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura c
+ ontinua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LANCENIGO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16831--20261123-S02710@pl-tracker.local
-DTSTAMP:20261124T060714Z
+UID:train-3515--20261123-S02710@pl-tracker.local
+DTSTAMP:20261124T174816Z
 SEQUENCE:0
-DTSTART:20261124T195230Z
-DTEND:20261124T195700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:52 - 20:57 (primo: REG 16831)
-DESCRIPTION:Stazione/PL: LANCENIGO (S02710)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 20:52:30 - 20:57:00\nTreni coinvo
- lti nella chiusura:\n  - REG 16831 (UDINE -> VENEZIA S.LUCIA)\n  - REG 168
- 31 (UDINE -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\nAffidabili
- tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
- ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
- ro stradale (120s)
+DTSTART:20261124T193829Z
+DTEND:20261124T194359Z
+SUMMARY:[TRANSITO VELOCE] REG 3515 (SACILE -> VENEZIA S.LUCIA) ore 20:42
+DESCRIPTION:Stazione/PL: LANCENIGO (S02710)\nRegime chiusura: TRANSITO VELO
+ CE\nChiusura sbarre stimata: 20:38:29 - 20:43:59\nTreni coinvolti nella ch
+ iusura:\n  - REG 3515 (SACILE -> VENEZIA S.LUCIA) [Transito]\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
+ ransito stimato senza fermata (43% tratta SPRESIANO -> TREVISO CENTRALE\; 
+ pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LANCENIGO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16831--20261123-S02710@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T195230Z
+DTEND:20261124T195700Z
+SUMMARY:[FERMATA] REG 16831 (UDINE -> VENEZIA S.LUCIA) ore 20:56
+DESCRIPTION:Stazione/PL: LANCENIGO (S02710)\nRegime chiusura: FERMATA\nChiu
+ sura sbarre stimata: 20:52:30 - 20:57:00\nTreni coinvolti nella chiusura:\
+ n  - REG 16831 (UDINE -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
+ a oraria regolare
+LOCATION:Passaggio a Livello / Stazione LANCENIGO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16830--20261123-S02710@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
 DTSTART:20261124T205630Z
 DTEND:20261124T210100Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:56 - 22:01 (primo: REG 16830)

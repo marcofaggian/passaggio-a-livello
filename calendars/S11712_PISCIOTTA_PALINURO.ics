@@ -9,20 +9,85 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:9689c75271c9fe4fdad0698c2a9187c6535ef0fbb7943ea4878ca9dd9149
- a645
+X-CONTENT-HASH:463889a3264cdeba4fcdf7bc1f8514f559c48b85e5fbfe6eaac73395f8c1
+ 8387
 BEGIN:VEVENT
 UID:train-5216--20261123-S11712@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T053425Z
+DTEND:20261124T053955Z
+SUMMARY:[TRANSITO VELOCE] REG 5216 (SAPRI -> NAPOLI CENTRALE) ore 06:38 (+1
+ 2 min)
+DESCRIPTION:Stazione/PL: PISCIOTTA PALINURO (S11712)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 06:34:25 - 06:39:55\nTreni coinvolti
+  nella chiusura:\n  - REG 5216 (SAPRI -> NAPOLI CENTRALE) (+12m) [Transito
+ ]\nRitardo massimo rilevato: 12 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (52% tratta SAPRI -> POLICAS
+ TRO BUSSENTINO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PISCIOTTA PALINURO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:12
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-5216--20261123-S11712@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
 DTSTART:20261124T060400Z
 DTEND:20261124T061130Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:04 - 07:11 (primo: REG 5216) (+12 
+SUMMARY:[FERMATA] REG 5216 (SAPRI -> NAPOLI CENTRALE) ore 07:10 (+12 min)
+DESCRIPTION:Stazione/PL: PISCIOTTA PALINURO (S11712)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 07:04:00 - 07:11:30\nTreni coinvolti nella c
+ hiusura:\n  - REG 5216 (SAPRI -> NAPOLI CENTRALE) (+12m)\nRitardo massimo 
+ rilevato: 12 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rile
+ vamento reale da circuito di binario
+LOCATION:Passaggio a Livello / Stazione PISCIOTTA PALINURO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:12
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-5202--20261123-S11712@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T091553Z
+DTEND:20261124T092123Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:15 - 10:21 (primo: REG 5202) (+5 m
+ in)
+DESCRIPTION:Stazione/PL: PISCIOTTA PALINURO (S11712)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:15:53 - 10:21:23\nTre
+ ni coinvolti nella chiusura:\n  - REG 5202 (SAPRI -> NAPOLI CENTRALE) (+5m
+ ) [Transito]\n  - REG 5202 (SAPRI -> NAPOLI CENTRALE) (+5m) [Transito]\nRi
+ tardo massimo rilevato: 5 min\nAffidabilità stima: 78%\nNota normativa/eu
+ ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
+ s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PISCIOTTA PALINURO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-5202--20261123-S11712@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T094600Z
+DTEND:20261124T095330Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:46 - 10:53 (primo: REG 5202) (+12 
  min)
 DESCRIPTION:Stazione/PL: PISCIOTTA PALINURO (S11712)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:04:00 - 07:11:30\nTre
- ni coinvolti nella chiusura:\n  - REG 5216 (SAPRI -> NAPOLI CENTRALE) (+12
- m)\n  - REG 5216 (SAPRI -> NAPOLI CENTRALE) (+12m)\nRitardo massimo rileva
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:46:00 - 10:53:30\nTre
+ ni coinvolti nella chiusura:\n  - REG 5202 (SAPRI -> NAPOLI CENTRALE) (+12
+ m)\n  - REG 5202 (SAPRI -> NAPOLI CENTRALE) (+12m)\nRitardo massimo rileva
  to: 12 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura c
  ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
  oglia minima di sgombero stradale (120s)
@@ -35,19 +100,240 @@ X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-5202--20261123-S11712@pl-tracker.local
-DTSTAMP:20261124T060714Z
+UID:train-556--20261123-S11712@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T122815Z
+DTEND:20261124T123300Z
+SUMMARY:[FERMATA] IC 556 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI) ore 
+ 13:32
+DESCRIPTION:Stazione/PL: PISCIOTTA PALINURO (S11712)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 13:28:15 - 13:33:00\nTreni coinvolti nella c
+ hiusura:\n  - IC 556 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI)\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
+ ica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PISCIOTTA PALINURO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-5338--20261123-S11712@pl-tracker.local
+DTSTAMP:20261124T174816Z
 SEQUENCE:0
-DTSTART:20261124T093630Z
-DTEND:20261124T094100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:36 - 10:41 (primo: REG 5202)
+DTSTART:20261124T125520Z
+DTEND:20261124T130050Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:55 - 14:00 (primo: REG 5338)
 DESCRIPTION:Stazione/PL: PISCIOTTA PALINURO (S11712)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:36:30 - 10:41:00\nTre
- ni coinvolti nella chiusura:\n  - REG 5202 (SAPRI -> NAPOLI CENTRALE)\n  -
-  REG 5202 (SAPRI -> NAPOLI CENTRALE)\nRitardo massimo rilevato: 0 min\nAff
- idabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 t
- reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
-  sgombero stradale (120s)
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:55:20 - 14:00:50\nTre
+ ni coinvolti nella chiusura:\n  - REG 5338 (PAOLA -> NAPOLI CENTRALE) [Tra
+ nsito]\n  - REG 5338 (PAOLA -> NAPOLI CENTRALE) [Transito]\nRitardo massim
+ o rilevato: -2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PISCIOTTA PALINURO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-5338--20261123-S11712@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T132500Z
+DTEND:20261124T133230Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:25 - 14:32 (primo: REG 5338) (+2 m
+ in)
+DESCRIPTION:Stazione/PL: PISCIOTTA PALINURO (S11712)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:25:00 - 14:32:30\nTre
+ ni coinvolti nella chiusura:\n  - REG 5338 (PAOLA -> NAPOLI CENTRALE) (+2m
+ )\n  - REG 5338 (PAOLA -> NAPOLI CENTRALE) (+2m)\nRitardo massimo rilevato
+ : 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PISCIOTTA PALINURO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-553--20261123-S11712@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T153342Z
+DTEND:20261124T153812Z
+SUMMARY:[TRANSITO VELOCE] IC 553 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRA
+ LE) ore 16:37
+DESCRIPTION:Stazione/PL: PISCIOTTA PALINURO (S11712)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 16:33:42 - 16:38:12\nTreni coinvolti
+  nella chiusura:\n  - IC 553 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE)
+  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Transito stimato senza fermata (38% tratta VALLO D
+ ELLA LUCANIA-CASTELNUOVO -> SAPRI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PISCIOTTA PALINURO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9623--20261123-S11712@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T160945Z
+DTEND:20261124T161515Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9623 (MILANO CENTRALE -> REGGIO DI CALABRIA
+  CENTRALE) ore 17:14
+DESCRIPTION:Stazione/PL: PISCIOTTA PALINURO (S11712)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 17:09:45 - 17:15:15\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9623 (MILANO CENTRALE -> REGGIO DI CALABRIA CE
+ NTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
+ 78%\nNota normativa/euristica: Transito stimato senza fermata (38% tratta 
+ VALLO DELLA LUCANIA-CASTELNUOVO -> SAPRI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PISCIOTTA PALINURO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9587--20261123-S11712@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T171259Z
+DTEND:20261124T171829Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:12 - 18:18 (primo: TRENO 9587) (+5
+  min)
+DESCRIPTION:Stazione/PL: PISCIOTTA PALINURO (S11712)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:12:59 - 18:18:29\nTre
+ ni coinvolti nella chiusura:\n  - TRENO 9587 (TORINO PORTA NUOVA -> REGGIO
+  DI CALABRIA CENTRALE) (+5m) [Transito]\n  - TRENO 9587 (TORINO PORTA NUOV
+ A -> REGGIO DI CALABRIA CENTRALE) (+5m) [Transito]\nRitardo massimo rileva
+ to: 5 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
+ ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PISCIOTTA PALINURO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-555--20261123-S11712@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T172544Z
+DTEND:20261124T173014Z
+SUMMARY:[TRANSITO VELOCE] IC 555 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRA
+ LE) ore 18:29
+DESCRIPTION:Stazione/PL: PISCIOTTA PALINURO (S11712)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 18:25:44 - 18:30:14\nTreni coinvolti
+  nella chiusura:\n  - IC 555 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE)
+  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Transito stimato senza fermata (92% tratta VALLO D
+ ELLA LUCANIA-CASTELNUOVO -> ASCEA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PISCIOTTA PALINURO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-555--20261123-S11712@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T173515Z
+DTEND:20261124T174000Z
+SUMMARY:[FERMATA] IC 555 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE) ore 
+ 18:39
+DESCRIPTION:Stazione/PL: PISCIOTTA PALINURO (S11712)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 18:35:15 - 18:40:00\nTreni coinvolti nella c
+ hiusura:\n  - IC 555 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE)\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
+ ica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PISCIOTTA PALINURO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-561--20261123-S11712@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T193410Z
+DTEND:20261124T193840Z
+SUMMARY:[TRANSITO VELOCE] IC 561 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRA
+ LE) ore 20:37
+DESCRIPTION:Stazione/PL: PISCIOTTA PALINURO (S11712)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 20:34:10 - 20:38:40\nTreni coinvolti
+  nella chiusura:\n  - IC 561 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE)
+  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Transito stimato senza fermata (38% tratta VALLO D
+ ELLA LUCANIA-CASTELNUOVO -> SAPRI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PISCIOTTA PALINURO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-5585--20261123-S11712@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T200904Z
+DTEND:20261124T201434Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:09 - 21:14 (primo: REG 5585)
+DESCRIPTION:Stazione/PL: PISCIOTTA PALINURO (S11712)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:09:04 - 21:14:34\nTre
+ ni coinvolti nella chiusura:\n  - REG 5585 (NAPOLI CENTRALE -> COSENZA) [T
+ ransito]\n  - REG 5585 (NAPOLI CENTRALE -> COSENZA) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
+ iore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PISCIOTTA PALINURO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-5585--20261123-S11712@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T201930Z
+DTEND:20261124T202400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:19 - 21:24 (primo: REG 5585)
+DESCRIPTION:Stazione/PL: PISCIOTTA PALINURO (S11712)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:19:30 - 21:24:00\nTre
+ ni coinvolti nella chiusura:\n  - REG 5585 (NAPOLI CENTRALE -> COSENZA)\n 
+  - REG 5585 (NAPOLI CENTRALE -> COSENZA)\nRitardo massimo rilevato: 0 min\
+ nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per
+  2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
+ a di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PISCIOTTA PALINURO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -55,164 +341,5 @@ CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-552--20261123-S11712@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T101424Z
-DTEND:20261124T101854Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:14 - 11:18 (primo: IC 552)
-DESCRIPTION:Stazione/PL: PISCIOTTA PALINURO (S11712)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:14:24 - 11:18:54\nTre
- ni coinvolti nella chiusura:\n  - IC 552 (REGGIO DI CALABRIA CENTRALE -> R
- OMA TERMINI) [Transito]\n  - IC 552 (REGGIO DI CALABRIA CENTRALE -> ROMA T
- ERMINI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
- 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo u
- tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
-  (120s)
-LOCATION:Passaggio a Livello / Stazione PISCIOTTA PALINURO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-556--20261123-S11712@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T122815Z
-DTEND:20261124T123300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:28 - 13:33 (primo: IC 556)
-DESCRIPTION:Stazione/PL: PISCIOTTA PALINURO (S11712)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:28:15 - 13:33:00\nTre
- ni coinvolti nella chiusura:\n  - IC 556 (REGGIO DI CALABRIA CENTRALE -> R
- OMA TERMINI)\n  - IC 556 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI)\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eu
- ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
- s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PISCIOTTA PALINURO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-553--20261123-S11712@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T153406Z
-DTEND:20261124T153836Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:34 - 16:38 (primo: IC 553)
-DESCRIPTION:Stazione/PL: PISCIOTTA PALINURO (S11712)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:34:06 - 16:38:36\nTre
- ni coinvolti nella chiusura:\n  - IC 553 (ROMA TERMINI -> REGGIO DI CALABR
- IA CENTRALE) [Transito]\n  - IC 553 (ROMA TERMINI -> REGGIO DI CALABRIA CE
- NTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
- 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo u
- tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
-  (120s)
-LOCATION:Passaggio a Livello / Stazione PISCIOTTA PALINURO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9623--20261123-S11712@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T161003Z
-DTEND:20261124T161533Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:10 - 17:15 (primo: TRENO 9623)
-DESCRIPTION:Stazione/PL: PISCIOTTA PALINURO (S11712)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:10:03 - 17:15:33\nTre
- ni coinvolti nella chiusura:\n  - TRENO 9623 (MILANO CENTRALE -> REGGIO DI
-  CALABRIA CENTRALE) [Transito]\n  - TRENO 9623 (MILANO CENTRALE -> REGGIO 
- DI CALABRIA CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PISCIOTTA PALINURO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-555--20261123-S11712@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T172534Z
-DTEND:20261124T173004Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:25 - 18:30 (primo: IC 555)
-DESCRIPTION:Stazione/PL: PISCIOTTA PALINURO (S11712)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:25:34 - 18:30:04\nTre
- ni coinvolti nella chiusura:\n  - IC 555 (ROMA TERMINI -> REGGIO DI CALABR
- IA CENTRALE) [Transito]\n  - IC 555 (ROMA TERMINI -> REGGIO DI CALABRIA CE
- NTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
- 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo u
- tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
-  (120s)
-LOCATION:Passaggio a Livello / Stazione PISCIOTTA PALINURO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-555--20261123-S11712@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T173515Z
-DTEND:20261124T174000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:35 - 18:40 (primo: IC 555)
-DESCRIPTION:Stazione/PL: PISCIOTTA PALINURO (S11712)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:35:15 - 18:40:00\nTre
- ni coinvolti nella chiusura:\n  - IC 555 (ROMA TERMINI -> REGGIO DI CALABR
- IA CENTRALE)\n  - IC 555 (ROMA TERMINI -> REGGIO DI CALABRIA CENTRALE)\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eu
- ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
- s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PISCIOTTA PALINURO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-561--20261123-S11712@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T193432Z
-DTEND:20261124T193902Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:34 - 20:39 (primo: IC 561)
-DESCRIPTION:Stazione/PL: PISCIOTTA PALINURO (S11712)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:34:32 - 20:39:02\nTre
- ni coinvolti nella chiusura:\n  - IC 561 (ROMA TERMINI -> REGGIO DI CALABR
- IA CENTRALE) [Transito]\n  - IC 561 (ROMA TERMINI -> REGGIO DI CALABRIA CE
- NTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
- 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo u
- tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
-  (120s)
-LOCATION:Passaggio a Livello / Stazione PISCIOTTA PALINURO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 END:VCALENDAR

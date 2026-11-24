@@ -9,42 +9,90 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:f4a56f457f05950a2bebd701f70c47538f186b21f4ef6cb3172edb3b9889
- 8102
+X-CONTENT-HASH:b20e9551c1d6655ec0db455daf78a144f776d15798c5322620e39a805d9c
+ fdd6
 BEGIN:VEVENT
 UID:train-9511--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T053730Z
-DTEND:20261124T054300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:37 - 06:43 (primo: TRENO 9511)
-DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:37:30 - 06:43:00\nTreni co
- involti nella chiusura:\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) [Transi
- to]\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massimo
-  rilevato: -4 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
- usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T053632Z
+DTEND:20261124T054202Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9511 (MILANO CENTRALE -> LECCE) ore 06:40
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: TRANSITO 
+ VELOCE\nChiusura sbarre stimata: 06:36:32 - 06:42:02\nTreni coinvolti nell
+ a chiusura:\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo
+  massimo rilevato: -4 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Transito stimato senza fermata (56% tratta MILANO ROGOREDO -> REGGIO 
+ EMILIA AV MEDIOPADANA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-4
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9515--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
+UID:train-603--20261123-S05023@pl-tracker.local-arr
+DTSTAMP:20261124T174816Z
 SEQUENCE:0
-DTSTART:20261124T063458Z
-DTEND:20261124T064028Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9515 (MILANO CENTRALE -> SALERNO) ore 07:39
+DTSTART:20261124T060315Z
+DTEND:20261124T061130Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 07:03 - 07:11 (primo: IC 603) (+1 min
+ )
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 6 TRENI\nChiusura sbarre stimata: 07:03:15 - 07:11:30\nTreni co
+ involti nella chiusura:\n  - IC 603 (MILANO CENTRALE -> LECCE) (+1m) [Arri
+ vo]\n  - IC 603 (MILANO CENTRALE -> LECCE) (+1m) [Arrivo]\n  - REG 2070 (R
+ AVENNA -> GENOVA BRIGNOLE) (+1m) [Transito]\n  - REG 2070 (RAVENNA -> GENO
+ VA BRIGNOLE) (+1m) [Transito]\n  - IC 603 (MILANO CENTRALE -> LECCE) (+1m)
+  [Partenza]\n  - IC 603 (MILANO CENTRALE -> LECCE) (+1m) [Partenza]\nRitar
+ do massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Chiusura continua per 6 treni: intervallo utile tra i passaggi (0s) 
+ inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2070--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T061430Z
+DTEND:20261124T062130Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:14 - 07:21 (primo: REG 2070) (+3 m
+ in)
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:14:30 - 07:21:30\nTreni co
+ involti nella chiusura:\n  - REG 2070 (RAVENNA -> GENOVA BRIGNOLE) (+3m)\n
+   - REG 2070 (RAVENNA -> GENOVA BRIGNOLE) (+3m)\nRitardo massimo rilevato:
+  3 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura conti
+ nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9515--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T063356Z
+DTEND:20261124T063926Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9515 (MILANO CENTRALE -> SALERNO) ore 07:38
 DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: TRANSITO 
- VELOCE\nChiusura sbarre stimata: 07:34:58 - 07:40:28\nTreni coinvolti nell
+ VELOCE\nChiusura sbarre stimata: 07:33:56 - 07:39:26\nTreni coinvolti nell
  a chiusura:\n  - TRENO 9515 (MILANO CENTRALE -> SALERNO) [Transito]\nRitar
  do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
- tica: Transito stimato senza fermata (59% tratta MILANO ROGOREDO -> REGGIO
+ tica: Transito stimato senza fermata (56% tratta MILANO ROGOREDO -> REGGIO
   EMILIA AV MEDIOPADANA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
 STATUS:CONFIRMED
@@ -56,423 +104,512 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17407--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T065332Z
-DTEND:20261124T065902Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:53 - 07:59 (primo: REG 17407)
-DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:53:32 - 07:59:02\nTreni co
- involti nella chiusura:\n  - REG 17407 (PIACENZA -> BOLOGNA CENTRALE) [Tra
- nsito]\n  - REG 17407 (PIACENZA -> BOLOGNA CENTRALE) [Transito]\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
- riore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T065339Z
+DTEND:20261124T065909Z
+SUMMARY:[TRANSITO VELOCE] REG 17407 (PIACENZA -> BOLOGNA CENTRALE) ore 07:5
+ 7
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: TRANSITO 
+ VELOCE\nChiusura sbarre stimata: 07:53:39 - 07:59:09\nTreni coinvolti nell
+ a chiusura:\n  - REG 17407 (PIACENZA -> BOLOGNA CENTRALE) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Transito stimato senza fermata (61% tratta PARMA -> S.ILARIO D'ENZA
+ \; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17407--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
 DTSTART:20261124T070830Z
 DTEND:20261124T071300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:08 - 08:13 (primo: REG 17407)
-DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:08:30 - 08:13:00\nTreni co
- involti nella chiusura:\n  - REG 17407 (PIACENZA -> BOLOGNA CENTRALE)\n  -
-  REG 17407 (PIACENZA -> BOLOGNA CENTRALE)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua pe
- r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
- ma di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 17407 (PIACENZA -> BOLOGNA CENTRALE) ore 08:12
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 08:08:30 - 08:13:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 17407 (PIACENZA -> BOLOGNA CENTRALE)\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
+ a traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8804--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
+UID:train-2462--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
 SEQUENCE:0
-DTSTART:20261124T075830Z
-DTEND:20261124T080300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:58 - 09:03 (primo: TRENO 8804) (+7
-  min)
+DTSTART:20261124T072525Z
+DTEND:20261124T073055Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:25 - 08:30 (primo: REG 2462) (+6 m
+ in)
 DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:58:30 - 09:03:00\nTreni co
- involti nella chiusura:\n  - TRENO 8804 (ANCONA -> MILANO CENTRALE) (+7m)\
- n  - TRENO 8804 (ANCONA -> MILANO CENTRALE) (+7m)\nRitardo massimo rilevat
- o: 7 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
- tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
- lia minima di sgombero stradale (120s)
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:25:25 - 08:30:55\nTreni co
+ involti nella chiusura:\n  - REG 2462 (RIMINI -> MILANO CENTRALE) (+6m) [T
+ ransito]\n  - REG 2462 (RIMINI -> MILANO CENTRALE) (+6m) [Transito]\nRitar
+ do massimo rilevato: 6 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
+ inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2462--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T073600Z
+DTEND:20261124T074300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:36 - 08:43 (primo: REG 2462) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:36:00 - 08:43:00\nTreni co
+ involti nella chiusura:\n  - REG 2462 (RIMINI -> MILANO CENTRALE) (+1m)\n 
+  - REG 2462 (RIMINI -> MILANO CENTRALE) (+1m)\nRitardo massimo rilevato: 1
+  min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continu
+ a per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
+ minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8804--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T075830Z
+DTEND:20261124T080300Z
+SUMMARY:[FERMATA] TRENO 8804 (ANCONA -> MILANO CENTRALE) ore 09:02 (+7 min)
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 08:58:30 - 09:03:00\nTreni coinvolti nella chiusu
+ ra:\n  - TRENO 8804 (ANCONA -> MILANO CENTRALE) (+7m)\nRitardo massimo ril
+ evato: 7 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
+ ne con ritardo propagato (+7 min)
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:7
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3911--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
 DTSTART:20261124T083830Z
 DTEND:20261124T084300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:38 - 09:43 (primo: REG 3911)
-DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:38:30 - 09:43:00\nTreni co
- involti nella chiusura:\n  - REG 3911 (PIACENZA -> ANCONA)\n  - REG 3911 (
- PIACENZA -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
-  90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
- utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
- e (120s)
+SUMMARY:[FERMATA] REG 3911 (PIACENZA -> ANCONA) ore 09:42
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 09:38:30 - 09:43:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 3911 (PIACENZA -> ANCONA)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
 LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3906--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
+UID:train-8806--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
 SEQUENCE:0
-DTSTART:20261124T091430Z
-DTEND:20261124T092802Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 10:14 - 10:28 (primo: REG 3906) (+4 m
- in)
+DTSTART:20261124T085100Z
+DTEND:20261124T085800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:51 - 09:58 (primo: TRENO 8806) (+1
+  min)
 DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 5 TRENI\nChiusura sbarre stimata: 10:14:30 - 10:28:02\nTreni co
- involti nella chiusura:\n  - REG 3906 (ANCONA -> PIACENZA) (+4m)\n  - REG 
- 3906 (ANCONA -> PIACENZA) (+4m)\n  - TRENO 9311 (TORINO PORTA NUOVA -> NAP
- OLI CENTRALE) [Transito]\n  - REG 2466 (BOLOGNA CENTRALE -> MILANO CENTRAL
- E) [Transito]\n  - REG 2466 (BOLOGNA CENTRALE -> MILANO CENTRALE) [Transit
- o]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Chiusura continua per 5 treni: intervallo utile tra i passa
- ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:51:00 - 09:58:00\nTreni co
+ involti nella chiusura:\n  - TRENO 8806 (PESCARA -> MILANO CENTRALE) (+1m)
+ \n  - TRENO 8806 (PESCARA -> MILANO CENTRALE) (+1m)\nRitardo massimo rilev
+ ato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura c
+ ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3906--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T091430Z
+DTEND:20261124T091900Z
+SUMMARY:[FERMATA] REG 3906 (ANCONA -> PIACENZA) ore 10:18 (+4 min)
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 10:14:30 - 10:19:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 3906 (ANCONA -> PIACENZA) (+4m)\nRitardo massimo rilevato: 4 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione con ri
+ tardo propagato (+4 min)
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:4
-X-PL-CONFIDENCE:0.78
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2466--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T093530Z
-DTEND:20261124T094028Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:35 - 10:40 (primo: REG 2466)
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T092258Z
+DTEND:20261124T094000Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 10:22 - 10:40 (primo: REG 2466) (+2 m
+ in)
 DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 4 TRENI\nChiusura sbarre stimata: 10:35:30 - 10:40:28\nTreni co
+ CONTINUA - 5 TRENI\nChiusura sbarre stimata: 10:22:58 - 10:40:00\nTreni co
  involti nella chiusura:\n  - REG 2466 (BOLOGNA CENTRALE -> MILANO CENTRALE
- )\n  - REG 2466 (BOLOGNA CENTRALE -> MILANO CENTRALE)\n  - TRENO 9527 (MIL
- ANO CENTRALE -> SALERNO) [Transito]\n  - TRENO 9527 (MILANO CENTRALE -> SA
- LERNO) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 7
- 8%\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo ut
- ile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale 
- (120s)
+ ) [Transito]\n  - TRENO 9311 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) (+2m)
+  [Transito]\n  - TRENO 9311 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) (+2m) 
+ [Transito]\n  - TRENO 9527 (MILANO CENTRALE -> SALERNO) [Transito]\n  - RE
+ G 2466 (BOLOGNA CENTRALE -> MILANO CENTRALE)\nRitardo massimo rilevato: 2 
+ min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua
+  per 5 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-609--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
+UID:train-9587--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
 SEQUENCE:0
-DTSTART:20261124T120415Z
-DTEND:20261124T120900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:04 - 13:09 (primo: IC 609)
+DTSTART:20261124T104743Z
+DTEND:20261124T105313Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:47 - 11:53 (primo: TRENO 9587) (+5
+  min)
 DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:04:15 - 13:09:00\nTreni co
- involti nella chiusura:\n  - IC 609 (MILANO CENTRALE -> LECCE)\n  - IC 609
-  (MILANO CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:47:43 - 11:53:13\nTreni co
+ involti nella chiusura:\n  - TRENO 9587 (TORINO PORTA NUOVA -> REGGIO DI C
+ ALABRIA CENTRALE) (+5m) [Transito]\n  - TRENO 9587 (TORINO PORTA NUOVA -> 
+ REGGIO DI CALABRIA CENTRALE) (+5m) [Transito]\nRitardo massimo rilevato: 5
+  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
+ a per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
+ minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3910--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T111030Z
+DTEND:20261124T111800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:10 - 12:18 (primo: REG 3910) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:10:30 - 12:18:00\nTreni co
+ involti nella chiusura:\n  - REG 3910 (ANCONA -> PIACENZA) (+1m)\n  - REG 
+ 3910 (ANCONA -> PIACENZA) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabi
+ lità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni:
+  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2470--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T112537Z
+DTEND:20261124T113107Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:25 - 12:31 (primo: REG 2470) (+8 m
+ in)
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:25:37 - 12:31:07\nTreni co
+ involti nella chiusura:\n  - REG 2470 (BOLOGNA CENTRALE -> MILANO CENTRALE
+ ) (+8m) [Transito]\n  - REG 2470 (BOLOGNA CENTRALE -> MILANO CENTRALE) (+8
+ m) [Transito]\nRitardo massimo rilevato: 8 min\nAffidabilità stima: 78%\n
+ Nota normativa/euristica: Chiusura continua per 2 treni: intervallo utile 
+ tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
+ s)
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2470--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T113700Z
+DTEND:20261124T114800Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:37 - 12:48 (primo: REG 2470) (+3 m
+ in)
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 4 TRENI\nChiusura sbarre stimata: 12:37:00 - 12:48:00\nTreni co
+ involti nella chiusura:\n  - REG 2470 (BOLOGNA CENTRALE -> MILANO CENTRALE
+ ) (+2m)\n  - REG 2470 (BOLOGNA CENTRALE -> MILANO CENTRALE) (+2m)\n  - REG
+  3921 (PIACENZA -> ANCONA) (+3m)\n  - REG 3921 (PIACENZA -> ANCONA) (+3m)\
+ nRitardo massimo rilevato: 3 min\nAffidabilità stima: 99%\nNota normativa
+ /euristica: Chiusura continua per 4 treni: intervallo utile tra i passaggi
+  (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-609--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T120415Z
+DTEND:20261124T121114Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 13:04 - 13:11 (primo: IC 609) (+9 min
+ )
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 3 TRENI\nChiusura sbarre stimata: 13:04:15 - 13:11:14\nTreni co
+ involti nella chiusura:\n  - IC 609 (MILANO CENTRALE -> LECCE)\n  - REG 24
+ 63 (MILANO CENTRALE -> BOLOGNA CENTRALE) (+9m) [Transito]\n  - REG 2463 (M
+ ILANO CENTRALE -> BOLOGNA CENTRALE) (+9m) [Transito]\nRitardo massimo rile
+ vato: 9 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
+ continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:9
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-606--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
+UID:train-2463--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
 SEQUENCE:0
-DTSTART:20261124T124015Z
-DTEND:20261124T124500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:40 - 13:45 (primo: IC 606) (+6 min
- )
+DTSTART:20261124T122030Z
+DTEND:20261124T122800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:20 - 13:28 (primo: REG 2463) (+6 m
+ in)
 DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:40:15 - 13:45:00\nTreni co
- involti nella chiusura:\n  - IC 606 (BARI CENTRALE -> MILANO CENTRALE) (+6
- m)\n  - IC 606 (BARI CENTRALE -> MILANO CENTRALE) (+6m)\nRitardo massimo r
- ilevato: 6 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:20:30 - 13:28:00\nTreni co
+ involti nella chiusura:\n  - REG 2463 (MILANO CENTRALE -> BOLOGNA CENTRALE
+ ) (+6m)\n  - REG 2463 (MILANO CENTRALE -> BOLOGNA CENTRALE) (+6m)\nRitardo
+  massimo rilevato: 6 min\nAffidabilità stima: 99%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-606--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T124015Z
+DTEND:20261124T124500Z
+SUMMARY:[FERMATA] IC 606 (BARI CENTRALE -> MILANO CENTRALE) ore 13:44 (+6 m
+ in)
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 13:40:15 - 13:45:00\nTreni coinvolti nella chiusu
+ ra:\n  - IC 606 (BARI CENTRALE -> MILANO CENTRALE) (+6m)\nRitardo massimo 
+ rilevato: 6 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previ
+ sione con ritardo propagato (+6 min)
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3914--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
 DTSTART:20261124T131130Z
 DTEND:20261124T131600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:11 - 14:16 (primo: REG 3914)
-DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:11:30 - 14:16:00\nTreni co
- involti nella chiusura:\n  - REG 3914 (ANCONA -> PIACENZA)\n  - REG 3914 (
- ANCONA -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
-  90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
- utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
- e (120s)
+SUMMARY:[FERMATA] REG 3914 (ANCONA -> PIACENZA) ore 14:15
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 14:11:30 - 14:16:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 3914 (ANCONA -> PIACENZA)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
 LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9543--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
+UID:train-597--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
 SEQUENCE:0
-DTSTART:20261124T133458Z
-DTEND:20261124T134028Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9543 (TORINO PORTA NUOVA -> SALERNO) ore 14
- :39
-DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: TRANSITO 
- VELOCE\nChiusura sbarre stimata: 14:34:58 - 14:40:28\nTreni coinvolti nell
- a chiusura:\n  - TRENO 9543 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Transito stimato senza fermata (59% tratta MILANO ROGOREDO -> REG
- GIO EMILIA AV MEDIOPADANA\; pedale annuncio fisso Vmax)
+DTSTART:20261124T142445Z
+DTEND:20261124T143130Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:24 - 15:31 (primo: IC 597) (+5 min
+ )
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:24:45 - 15:31:30\nTreni co
+ involti nella chiusura:\n  - IC 597 (MILANO CENTRALE -> SALERNO) (+5m)\n  
+ - IC 597 (MILANO CENTRALE -> SALERNO) (+5m)\nRitardo massimo rilevato: 5 m
+ in\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua 
+ per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
+ nima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9547--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T143959Z
+DTEND:20261124T144700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:39 - 15:47 (primo: TRENO 9547) (+7
+  min)
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:39:59 - 15:47:00\nTreni co
+ involti nella chiusura:\n  - TRENO 9547 (MILANO CENTRALE -> TARANTO) (+7m)
+  [Transito]\n  - IC 608 (LECCE -> MILANO CENTRALE) (+1m)\nRitardo massimo 
+ rilevato: 7 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
+ ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-608--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T144215Z
-DTEND:20261124T144700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:42 - 15:47 (primo: IC 608) (+1 min
- )
-DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:42:15 - 15:47:00\nTreni co
- involti nella chiusura:\n  - IC 608 (LECCE -> MILANO CENTRALE) (+1m)\n  - 
- IC 608 (LECCE -> MILANO CENTRALE) (+1m)\nRitardo massimo rilevato: 1 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
- 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
-  di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:1
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
 UID:train-8818--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
 DTSTART:20261124T145130Z
 DTEND:20261124T145600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:51 - 15:56 (primo: TRENO 8818)
-DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:51:30 - 15:56:00\nTreni co
- involti nella chiusura:\n  - TRENO 8818 (LECCE -> MILANO CENTRALE)\n  - TR
- ENO 8818 (LECCE -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffi
- dabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tr
- eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
- sgombero stradale (120s)
+SUMMARY:[FERMATA] TRENO 8818 (LECCE -> MILANO CENTRALE) ore 15:55
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 15:51:30 - 15:56:00\nTreni coinvolti nella chiusu
+ ra:\n  - TRENO 8818 (LECCE -> MILANO CENTRALE)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
+ raccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17417--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T145908Z
-DTEND:20261124T150438Z
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T145920Z
+DTEND:20261124T150450Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:59 - 16:04 (primo: REG 17417)
 DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:59:08 - 16:04:38\nTreni co
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:59:20 - 16:04:50\nTreni co
  involti nella chiusura:\n  - REG 17417 (PARMA -> BOLOGNA CENTRALE) [Transi
  to]\n  - REG 17417 (PARMA -> BOLOGNA CENTRALE) [Transito]\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
- sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
+  rilevato: -3 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
+ usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
+  alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:-3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3918--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
+UID:train-17417--20261123-S05023@pl-tracker.local-arr
+DTSTAMP:20261124T174816Z
 SEQUENCE:0
-DTSTART:20261124T151030Z
-DTEND:20261124T151800Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:10 - 16:18 (primo: REG 3918)
+DTSTART:20261124T151230Z
+DTEND:20261124T152630Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 16:12 - 16:26 (primo: REG 17417) (+10
+  min)
 DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 4 TRENI\nChiusura sbarre stimata: 16:10:30 - 16:18:00\nTreni co
- involti nella chiusura:\n  - REG 3918 (ANCONA -> PIACENZA)\n  - REG 3918 (
- ANCONA -> PIACENZA)\n  - REG 17417 (PARMA -> BOLOGNA CENTRALE)\n  - REG 17
- 417 (PARMA -> BOLOGNA CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 90%\nNota normativa/euristica: Chiusura continua per 4 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
+ CONTINUA - 7 TRENI\nChiusura sbarre stimata: 16:12:30 - 16:26:30\nTreni co
+ involti nella chiusura:\n  - REG 17417 (PARMA -> BOLOGNA CENTRALE) (+1m) [
+ Arrivo]\n  - REG 17417 (PARMA -> BOLOGNA CENTRALE) (+1m) [Arrivo]\n  - REG
+  17417 (PARMA -> BOLOGNA CENTRALE) (+1m) [Partenza]\n  - REG 17417 (PARMA 
+ -> BOLOGNA CENTRALE) (+1m) [Partenza]\n  - TRENO 9323 (TORINO PORTA NUOVA 
+ -> NAPOLI CENTRALE) [Transito]\n  - REG 3918 (ANCONA -> PIACENZA) (+10m)\n
+   - REG 3918 (ANCONA -> PIACENZA) (+10m)\nRitardo massimo rilevato: 10 min
+ \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
+ r 7 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9323--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T152034Z
-DTEND:20261124T152604Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:20 - 16:26 (primo: TRENO 9323)
-DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:20:34 - 16:26:04\nTreni co
- involti nella chiusura:\n  - TRENO 9323 (TORINO PORTA NUOVA -> NAPOLI CENT
- RALE) [Transito]\n  - TRENO 9323 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [
- Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
-  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
- i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+X-PL-DELAY-MIN:10
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8820--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T155130Z
-DTEND:20261124T155600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:51 - 16:56 (primo: TRENO 8820)
-DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:51:30 - 16:56:00\nTreni co
- involti nella chiusura:\n  - TRENO 8820 (TARANTO -> MILANO CENTRALE)\n  - 
- TRENO 8820 (TARANTO -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
- 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
-  di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-613--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T160115Z
-DTEND:20261124T160600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:01 - 17:06 (primo: IC 613)
-DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:01:15 - 17:06:00\nTreni co
- involti nella chiusura:\n  - IC 613 (MILANO CENTRALE -> PESCARA)\n  - IC 6
- 13 (MILANO CENTRALE -> PESCARA)\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3920--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T161030Z
-DTEND:20261124T161500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:10 - 17:15 (primo: REG 3920)
-DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:10:30 - 17:15:00\nTreni co
- involti nella chiusura:\n  - REG 3920 (RIMINI -> PIACENZA)\n  - REG 3920 (
- RIMINI -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
-  90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
- utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
- e (120s)
-LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9555--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
+UID:train-9551--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
 SEQUENCE:0
-DTSTART:20261124T163458Z
-DTEND:20261124T164028Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9555 (MILANO CENTRALE -> NAPOLI CENTRALE) o
- re 17:39
+DTSTART:20261124T153356Z
+DTEND:20261124T153926Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9551 (MILANO CENTRALE -> SALERNO) ore 16:38
 DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: TRANSITO 
- VELOCE\nChiusura sbarre stimata: 17:34:58 - 17:40:28\nTreni coinvolti nell
- a chiusura:\n  - TRENO 9555 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito
- ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
- va/euristica: Transito stimato senza fermata (59% tratta MILANO ROGOREDO -
- > REGGIO EMILIA AV MEDIOPADANA\; pedale annuncio fisso Vmax)
+ VELOCE\nChiusura sbarre stimata: 16:33:56 - 16:39:26\nTreni coinvolti nell
+ a chiusura:\n  - TRENO 9551 (MILANO CENTRALE -> SALERNO) [Transito]\nRitar
+ do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Transito stimato senza fermata (56% tratta MILANO ROGOREDO -> REGGIO
+  EMILIA AV MEDIOPADANA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -482,19 +619,175 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9559--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
+UID:train-8820--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T155130Z
+DTEND:20261124T155600Z
+SUMMARY:[FERMATA] TRENO 8820 (TARANTO -> MILANO CENTRALE) ore 16:55
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 16:51:30 - 16:56:00\nTreni coinvolti nella chiusu
+ ra:\n  - TRENO 8820 (TARANTO -> MILANO CENTRALE)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da
+  traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-613--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T160115Z
+DTEND:20261124T160600Z
+SUMMARY:[FERMATA] IC 613 (MILANO CENTRALE -> PESCARA) ore 17:05
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 17:01:15 - 17:06:00\nTreni coinvolti nella chiusu
+ ra:\n  - IC 613 (MILANO CENTRALE -> PESCARA)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
+ ccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3920--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T161030Z
+DTEND:20261124T161500Z
+SUMMARY:[FERMATA] REG 3920 (RIMINI -> PIACENZA) ore 17:14
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 17:10:30 - 17:15:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 3920 (RIMINI -> PIACENZA)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3933--20261123-S05023@pl-tracker.local-arr
+DTSTAMP:20261124T174816Z
 SEQUENCE:0
-DTSTART:20261124T173458Z
-DTEND:20261124T174028Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:34 - 18:40 (primo: TRENO 9559)
+DTSTART:20261124T162900Z
+DTEND:20261124T163926Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 17:29 - 17:39 (primo: REG 3933) (+1 m
+ in)
 DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:34:58 - 18:40:28\nTreni co
+ CONTINUA - 5 TRENI\nChiusura sbarre stimata: 17:29:00 - 17:39:26\nTreni co
+ involti nella chiusura:\n  - REG 3933 (PIACENZA -> BOLOGNA CENTRALE) (+1m)
+  [Arrivo]\n  - REG 3933 (PIACENZA -> BOLOGNA CENTRALE) (+1m) [Arrivo]\n  -
+  REG 3933 (PIACENZA -> BOLOGNA CENTRALE) (+1m) [Partenza]\n  - REG 3933 (P
+ IACENZA -> BOLOGNA CENTRALE) (+1m) [Partenza]\n  - TRENO 9555 (MILANO CENT
+ RALE -> NAPOLI CENTRALE) [Transito]\nRitardo massimo rilevato: 1 min\nAffi
+ dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 5 tr
+ eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17419--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T170207Z
+DTEND:20261124T170737Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:02 - 18:07 (primo: REG 17419) (+1 
+ min)
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:02:07 - 18:07:37\nTreni co
+ involti nella chiusura:\n  - REG 17419 (PARMA -> BOLOGNA CENTRALE) (+1m) [
+ Transito]\n  - REG 17419 (PARMA -> BOLOGNA CENTRALE) (+1m) [Transito]\nRit
+ ardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17419--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T171530Z
+DTEND:20261124T172200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:15 - 18:22 (primo: REG 17419) (+2 
+ min)
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:15:30 - 18:22:00\nTreni co
+ involti nella chiusura:\n  - REG 17419 (PARMA -> BOLOGNA CENTRALE) (+2m)\n
+   - REG 17419 (PARMA -> BOLOGNA CENTRALE) (+2m)\nRitardo massimo rilevato:
+  2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura conti
+ nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9559--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T174536Z
+DTEND:20261124T175106Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:45 - 18:51 (primo: TRENO 9559) (+1
+ 1 min)
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:45:36 - 18:51:06\nTreni co
  involti nella chiusura:\n  - TRENO 9559 (TORINO PORTA NUOVA -> ROMA TERMIN
- I) [Transito]\n  - TRENO 9559 (TORINO PORTA NUOVA -> ROMA TERMINI) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ I) (+11m) [Transito]\n  - TRENO 9559 (TORINO PORTA NUOVA -> ROMA TERMINI) 
+ (+11m) [Transito]\nRitardo massimo rilevato: 11 min\nAffidabilità stima: 
+ 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo u
+ tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
+  (120s)
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:11
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9563--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T183356Z
+DTEND:20261124T183926Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:33 - 19:39 (primo: TRENO 9563)
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:33:56 - 19:39:26\nTreni co
+ involti nella chiusura:\n  - TRENO 9563 (MILANO CENTRALE -> ROMA TERMINI) 
+ [Transito]\n  - TRENO 9563 (MILANO CENTRALE -> ROMA TERMINI) [Transito]\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -505,64 +798,173 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-612--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
 DTSTART:20261124T185015Z
-DTEND:20261124T185602Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 19:50 - 19:56 (primo: IC 612)
+DTEND:20261124T185500Z
+SUMMARY:[FERMATA] IC 612 (LECCE -> MILANO CENTRALE) ore 19:54
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 19:50:15 - 19:55:00\nTreni coinvolti nella chiusu
+ ra:\n  - IC 612 (LECCE -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracc
+ ia oraria regolare
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2477--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T185739Z
+DTEND:20261124T190309Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:57 - 20:03 (primo: REG 2477) (+7 m
+ in)
 DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 4 TRENI\nChiusura sbarre stimata: 19:50:15 - 19:56:02\nTreni co
- involti nella chiusura:\n  - IC 612 (LECCE -> MILANO CENTRALE)\n  - IC 612
-  (LECCE -> MILANO CENTRALE)\n  - REG 2477 (MILANO CENTRALE -> RIMINI) [Tra
- nsito]\n  - REG 2477 (MILANO CENTRALE -> RIMINI) [Transito]\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
- iusura continua per 4 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:57:39 - 20:03:09\nTreni co
+ involti nella chiusura:\n  - REG 2477 (MILANO CENTRALE -> RIMINI) (+7m) [T
+ ransito]\n  - REG 2477 (MILANO CENTRALE -> RIMINI) (+7m) [Transito]\nRitar
+ do massimo rilevato: 7 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
+ inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3926--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T191030Z
+DTEND:20261124T191600Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:10 - 20:16 (primo: REG 3926) (+7 m
+ in)
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 3 TRENI\nChiusura sbarre stimata: 20:10:30 - 20:16:00\nTreni co
+ involti nella chiusura:\n  - REG 3926 (ANCONA -> PIACENZA)\n  - REG 2477 (
+ MILANO CENTRALE -> RIMINI) (+7m)\n  - REG 2477 (MILANO CENTRALE -> RIMINI)
+  (+7m)\nRitardo massimo rilevato: 7 min\nAffidabilità stima: 90%\nNota no
+ rmativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i p
+ assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2486--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T192258Z
+DTEND:20261124T192828Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:22 - 20:28 (primo: REG 2486)
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:22:58 - 20:28:28\nTreni co
+ involti nella chiusura:\n  - REG 2486 (BOLOGNA CENTRALE -> MILANO CENTRALE
+ ) [Transito]\n  - REG 2486 (BOLOGNA CENTRALE -> MILANO CENTRALE) [Transito
+ ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
+ va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
+ gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9567--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T193356Z
+DTEND:20261124T194300Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:33 - 20:43 (primo: TRENO 9567)
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 4 TRENI\nChiusura sbarre stimata: 20:33:56 - 20:43:00\nTreni co
+ involti nella chiusura:\n  - TRENO 9567 (TORINO PORTA NUOVA -> ROMA TERMIN
+ I) [Transito]\n  - REG 2486 (BOLOGNA CENTRALE -> MILANO CENTRALE)\n  - REG
+  2486 (BOLOGNA CENTRALE -> MILANO CENTRALE)\n  - REG 2090 (GENOVA BRIGNOLE
+  -> RIMINI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Chiusura continua per 4 treni: intervallo utile tr
+ a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2477--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T190430Z
-DTEND:20261124T191500Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:04 - 20:15 (primo: REG 2477)
-DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 4 TRENI\nChiusura sbarre stimata: 20:04:30 - 20:15:00\nTreni co
- involti nella chiusura:\n  - REG 2477 (MILANO CENTRALE -> RIMINI)\n  - REG
-  2477 (MILANO CENTRALE -> RIMINI)\n  - REG 3926 (ANCONA -> PIACENZA)\n  - 
- REG 3926 (ANCONA -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabili
- tà stima: 90%\nNota normativa/euristica: Chiusura continua per 4 treni: i
- ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
- ro stradale (120s)
+UID:train-3943--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T203730Z
+DTEND:20261124T204200Z
+SUMMARY:[FERMATA] REG 3943 (PIACENZA -> BOLOGNA CENTRALE) ore 21:41
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 21:37:30 - 21:42:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 3943 (PIACENZA -> BOLOGNA CENTRALE)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da
+  traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2090--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
+UID:train-17421--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
 SEQUENCE:0
-DTSTART:20261124T193830Z
-DTEND:20261124T194300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:38 - 20:43 (primo: REG 2090)
+DTSTART:20261124T204425Z
+DTEND:20261124T205300Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 21:44 - 21:53 (primo: REG 17421) (+3 
+ min)
 DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:38:30 - 20:43:00\nTreni co
- involti nella chiusura:\n  - REG 2090 (GENOVA BRIGNOLE -> RIMINI)\n  - REG
-  2090 (GENOVA BRIGNOLE -> RIMINI)\nRitardo massimo rilevato: 0 min\nAffida
- bilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tren
- i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
- ombero stradale (120s)
+ CONTINUA - 4 TRENI\nChiusura sbarre stimata: 21:44:25 - 21:53:00\nTreni co
+ involti nella chiusura:\n  - REG 17421 (PARMA -> BOLOGNA CENTRALE) [Transi
+ to]\n  - REG 17421 (PARMA -> BOLOGNA CENTRALE) [Transito]\n  - IC 614 (LEC
+ CE -> MILANO CENTRALE) (+3m)\n  - IC 614 (LECCE -> MILANO CENTRALE) (+3m)\
+ nRitardo massimo rilevato: 3 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Chiusura continua per 4 treni: intervallo utile tra i passaggi
+  (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17421--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T205930Z
+DTEND:20261124T210400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:59 - 22:04 (primo: REG 17421)
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:59:30 - 22:04:00\nTreni co
+ involti nella chiusura:\n  - REG 17421 (PARMA -> BOLOGNA CENTRALE)\n  - RE
+ G 17421 (PARMA -> BOLOGNA CENTRALE)\nRitardo massimo rilevato: 0 min\nAffi
+ dabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tr
+ eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -572,16 +974,39 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3943--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T203730Z
-DTEND:20261124T204200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:37 - 21:42 (primo: REG 3943)
+UID:train-3930--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T211230Z
+DTEND:20261124T211700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:12 - 22:17 (primo: REG 3930) (+2 m
+ in)
 DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:37:30 - 21:42:00\nTreni co
- involti nella chiusura:\n  - REG 3943 (PIACENZA -> BOLOGNA CENTRALE)\n  - 
- REG 3943 (PIACENZA -> BOLOGNA CENTRALE)\nRitardo massimo rilevato: 0 min\n
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:12:30 - 22:17:00\nTreni co
+ involti nella chiusura:\n  - REG 3930 (ANCONA -> PIACENZA) (+2m)\n  - REG 
+ 3930 (ANCONA -> PIACENZA) (+2m)\nRitardo massimo rilevato: 2 min\nAffidabi
+ lità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni:
+  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3945--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T213730Z
+DTEND:20261124T214200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:37 - 22:42 (primo: REG 3945)
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:37:30 - 22:42:00\nTreni co
+ involti nella chiusura:\n  - REG 3945 (PIACENZA -> BOLOGNA CENTRALE)\n  - 
+ REG 3945 (PIACENZA -> BOLOGNA CENTRALE)\nRitardo massimo rilevato: 0 min\n
  Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
  2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
   di sgombero stradale (120s)
@@ -594,61 +1019,81 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3930--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
-DTSTART:20261124T211030Z
-DTEND:20261124T211500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:10 - 22:15 (primo: REG 3930)
-DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:10:30 - 22:15:00\nTreni co
- involti nella chiusura:\n  - REG 3930 (ANCONA -> PIACENZA)\n  - REG 3930 (
- ANCONA -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
-  90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
- utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
- e (120s)
-LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-9330--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
 DTSTART:20261124T215730Z
 DTEND:20261124T220200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:57 - 23:02 (primo: TRENO 9330)
-DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:57:30 - 23:02:00\nTreni co
- involti nella chiusura:\n  - TRENO 9330 (ROMA TERMINI -> MILANO CENTRALE)\
- n  - TRENO 9330 (ROMA TERMINI -> MILANO CENTRALE)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
- tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
- lia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] TRENO 9330 (ROMA TERMINI -> MILANO CENTRALE) ore 23:01
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 22:57:30 - 23:02:00\nTreni coinvolti nella chiusu
+ ra:\n  - TRENO 9330 (ROMA TERMINI -> MILANO CENTRALE)\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
+ ne da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-754--20261123-S05023@pl-tracker.local
-DTSTAMP:20261124T060714Z
+UID:train-798--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
 SEQUENCE:0
-DTSTART:20261125T055339Z
-DTEND:20261125T055809Z
-SUMMARY:[TRANSITO VELOCE] ICN 754 (LECCE -> TORINO PORTA NUOVA) ore 06:57
+DTSTART:20261125T035719Z
+DTEND:20261125T040149Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 04:57 - 05:01 (primo: ICN 798)
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 04:57:19 - 05:01:49\nTreni co
+ involti nella chiusura:\n  - ICN 798 (SALERNO -> TORINO PORTA NUOVA) [Tran
+ sito]\n  - ICN 798 (SALERNO -> TORINO PORTA NUOVA) [Transito]\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
+ ore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:ICN
+END:VEVENT
+BEGIN:VEVENT
+UID:train-752--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261125T053015Z
+DTEND:20261125T053500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:30 - 06:35 (primo: ICN 752)
+DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: CHIUSURA 
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:30:15 - 06:35:00\nTreni co
+ involti nella chiusura:\n  - ICN 752 (LECCE -> MILANO CENTRALE)\n  - ICN 7
+ 52 (LECCE -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabili
+ tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
+ ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
+LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:ICN
+END:VEVENT
+BEGIN:VEVENT
+UID:train-754--20261123-S05023@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261125T054957Z
+DTEND:20261125T055427Z
+SUMMARY:[TRANSITO VELOCE] ICN 754 (LECCE -> TORINO PORTA NUOVA) ore 06:53
 DESCRIPTION:Stazione/PL: REGGIO EMILIA (S05023)\nRegime chiusura: TRANSITO 
- VELOCE\nChiusura sbarre stimata: 06:53:39 - 06:58:09\nTreni coinvolti nell
+ VELOCE\nChiusura sbarre stimata: 06:49:57 - 06:54:27\nTreni coinvolti nell
  a chiusura:\n  - ICN 754 (LECCE -> TORINO PORTA NUOVA) [Transito]\nRitardo
   massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Transito stimato senza fermata (47% tratta BOLOGNA CENTRALE -> PIACENZ
+ ca: Transito stimato senza fermata (44% tratta BOLOGNA CENTRALE -> PIACENZ
  A\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione REGGIO EMILIA
 STATUS:CONFIRMED

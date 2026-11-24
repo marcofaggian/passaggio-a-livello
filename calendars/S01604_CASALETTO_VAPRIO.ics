@@ -9,27 +9,52 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:285b913af2e6fa84c720ee439575e5ae599f67690828519116743210c52c
- 9ffc
+X-CONTENT-HASH:4c930f6e990844912c04d830e7603c7f986cf0e714f0e81a81e4ed5c86ee
+ 5e96
 BEGIN:VEVENT
-UID:train-10600--20261120-S01604@pl-tracker.local
-DTSTAMP:20261121T195057Z
-SEQUENCE:2
-DTSTART:20261121T044230Z
-DTEND:20261121T044700Z
-SUMMARY:[FERMATA] REG 10600 (CREMONA -> MILANO PORTA GARIBALDI) ore 05:46 (
- +1 min)
-DESCRIPTION:Stazione/PL: CASALETTO VAPRIO (S01604)\nRegime chiusura: FERMAT
- A\nChiusura sbarre stimata: 05:42:30 - 05:47:00\nTreni coinvolti nella chi
- usura:\n  - REG 10600 (CREMONA -> MILANO PORTA GARIBALDI) (+1m)\nRitardo m
- assimo rilevato: 1 min\nAffidabilità stima: 90%\nNota normativa/euristica
- : Previsione con ritardo propagato (+1 min)
+UID:train-10601--20261123-S01604@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T102000Z
+DTEND:20261124T102630Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:20 - 11:26 (primo: REG 10601) (+3 
+ min)
+DESCRIPTION:Stazione/PL: CASALETTO VAPRIO (S01604)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:20:00 - 11:26:30\nTreni
+  coinvolti nella chiusura:\n  - REG 10601 (MILANO PORTA GARIBALDI -> CREMO
+ NA) (+3m)\n  - REG 10601 (MILANO PORTA GARIBALDI -> CREMONA) (+3m)\nRitard
+ o massimo rilevato: 3 min\nAffidabilità stima: 99%\nNota normativa/eurist
+ ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CASALETTO VAPRIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:1
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10605--20261123-S01604@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T163600Z
+DTEND:20261124T164300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:36 - 17:43 (primo: REG 10605) (+11
+  min)
+DESCRIPTION:Stazione/PL: CASALETTO VAPRIO (S01604)\nRegime chiusura: CHIUSU
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:36:00 - 17:43:00\nTreni
+  coinvolti nella chiusura:\n  - REG 10605 (MILANO PORTA GARIBALDI -> CREMO
+ NA) (+11m)\n  - REG 10605 (MILANO PORTA GARIBALDI -> CREMONA) (+11m)\nRita
+ rdo massimo rilevato: 11 min\nAffidabilità stima: 99%\nNota normativa/eur
+ istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CASALETTO VAPRIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:11
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

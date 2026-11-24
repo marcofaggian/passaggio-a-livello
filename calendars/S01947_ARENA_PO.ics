@@ -9,74 +9,204 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:d6d972782437afb5ac489df6dc909cb8c24b4f593bdc46df66410cc9639e
- e622
+X-CONTENT-HASH:2d35046499a383f8043ced86328d696a3dbaba012c2f492f395c31e8cc53
+ cc86
 BEGIN:VEVENT
 UID:train-10454--20261123-S01947@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
 DTSTART:20261124T061530Z
 DTEND:20261124T062000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:15 - 07:20 (primo: REG 10454) (+16
-  min)
-DESCRIPTION:Stazione/PL: ARENA PO (S01947)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 07:15:30 - 07:20:00\nTreni coinvol
- ti nella chiusura:\n  - REG 10454 (PIACENZA -> MILANO PORTA GARIBALDI) (+1
- 6m)\n  - REG 10454 (PIACENZA -> MILANO PORTA GARIBALDI) (+16m)\nRitardo ma
- ssimo rilevato: 16 min\nAffidabilità stima: 90%\nNota normativa/euristica
- : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
- riore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 10454 (PIACENZA -> MILANO PORTA GARIBALDI) ore 07:19 
+ (+16 min)
+DESCRIPTION:Stazione/PL: ARENA PO (S01947)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 07:15:30 - 07:20:00\nTreni coinvolti nella chiusura:\n
+   - REG 10454 (PIACENZA -> MILANO PORTA GARIBALDI) (+16m)\nRitardo massimo
+  rilevato: 16 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pre
+ visione con ritardo propagato (+16 min)
 LOCATION:Passaggio a Livello / Stazione ARENA PO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:16
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10456--20261123-S01947@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
 DTSTART:20261124T065930Z
-DTEND:20261124T071127Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:59 - 08:11 (primo: REG 10456)
-DESCRIPTION:Stazione/PL: ARENA PO (S01947)\nRegime chiusura: CHIUSURA CONTI
- NUA - 4 TRENI\nChiusura sbarre stimata: 07:59:30 - 08:11:27\nTreni coinvol
- ti nella chiusura:\n  - REG 10456 (PIACENZA -> MILANO PORTA GARIBALDI)\n  
- - REG 10456 (PIACENZA -> MILANO PORTA GARIBALDI)\n  - REG 2069 (VOGHERA ->
-  PIACENZA) [Transito]\n  - REG 2069 (VOGHERA -> PIACENZA) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s)
-  inferiore alla soglia minima di sgombero stradale (120s)
+DTEND:20261124T070400Z
+SUMMARY:[FERMATA] REG 10456 (PIACENZA -> MILANO PORTA GARIBALDI) ore 08:03
+DESCRIPTION:Stazione/PL: ARENA PO (S01947)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 07:59:30 - 08:04:00\nTreni coinvolti nella chiusura:\n
+   - REG 10456 (PIACENZA -> MILANO PORTA GARIBALDI)\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
+ da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione ARENA PO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2069--20261123-S01947@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T071019Z
+DTEND:20261124T071549Z
+SUMMARY:[TRANSITO VELOCE] REG 2069 (VOGHERA -> PIACENZA) ore 08:14
+DESCRIPTION:Stazione/PL: ARENA PO (S01947)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 08:10:19 - 08:15:49\nTreni coinvolti nella chi
+ usura:\n  - REG 2069 (VOGHERA -> PIACENZA) [Transito]\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito
+  stimato senza fermata (45% tratta STRADELLA -> CASTEL S.GIOVANNI\; pedale
+  annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ARENA PO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2090--20261123-S01947@pl-tracker.local
-DTSTAMP:20261124T060714Z
+UID:train-2070--20261123-S01947@pl-tracker.local
+DTSTAMP:20261124T174816Z
 SEQUENCE:0
-DTSTART:20261124T181145Z
-DTEND:20261124T181715Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:11 - 19:17 (primo: REG 2090)
+DTSTART:20261124T074230Z
+DTEND:20261124T074800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:42 - 08:48 (primo: REG 2070) (+1 m
+ in)
 DESCRIPTION:Stazione/PL: ARENA PO (S01947)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 19:11:45 - 19:17:15\nTreni coinvol
- ti nella chiusura:\n  - REG 2090 (GENOVA BRIGNOLE -> RIMINI) [Transito]\n 
-  - REG 2090 (GENOVA BRIGNOLE -> RIMINI) [Transito]\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
+ NUA - 2 TRENI\nChiusura sbarre stimata: 08:42:30 - 08:48:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 2070 (RAVENNA -> GENOVA BRIGNOLE) (+1m) [Trans
+ ito]\n  - REG 2070 (RAVENNA -> GENOVA BRIGNOLE) (+1m) [Transito]\nRitardo 
+ massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ARENA PO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2076--20261123-S01947@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T104000Z
+DTEND:20261124T104530Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:40 - 11:45 (primo: REG 2076) (+2 m
+ in)
+DESCRIPTION:Stazione/PL: ARENA PO (S01947)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 11:40:00 - 11:45:30\nTreni coinvol
+ ti nella chiusura:\n  - REG 2076 (PIACENZA -> VOGHERA) (+2m) [Transito]\n 
+  - REG 2076 (PIACENZA -> VOGHERA) (+2m) [Transito]\nRitardo massimo rileva
+ to: 2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
  ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
  glia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ARENA PO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10465--20261123-S01947@pl-tracker.local-arr
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T115030Z
+DTEND:20261124T115830Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:50 - 12:58 (primo: REG 10465) (+3 
+ min)
+DESCRIPTION:Stazione/PL: ARENA PO (S01947)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 4 TRENI\nChiusura sbarre stimata: 12:50:30 - 12:58:30\nTreni coinvol
+ ti nella chiusura:\n  - REG 10465 (MILANO PORTA GARIBALDI -> PIACENZA) (+3
+ m) [Arrivo]\n  - REG 10465 (MILANO PORTA GARIBALDI -> PIACENZA) (+3m) [Arr
+ ivo]\n  - REG 10465 (MILANO PORTA GARIBALDI -> PIACENZA) (+3m) [Partenza]\
+ n  - REG 10465 (MILANO PORTA GARIBALDI -> PIACENZA) (+3m) [Partenza]\nRita
+ rdo massimo rilevato: 3 min\nAffidabilità stima: 99%\nNota normativa/euri
+ stica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s)
+  inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ARENA PO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2090--20261123-S01947@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
+DTSTART:20261124T181619Z
+DTEND:20261124T182149Z
+SUMMARY:[TRANSITO VELOCE] REG 2090 (GENOVA BRIGNOLE -> RIMINI) ore 19:20
+DESCRIPTION:Stazione/PL: ARENA PO (S01947)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 19:16:19 - 19:21:49\nTreni coinvolti nella chi
+ usura:\n  - REG 2090 (GENOVA BRIGNOLE -> RIMINI) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
+ ansito stimato senza fermata (45% tratta STRADELLA -> CASTEL S.GIOVANNI\; 
+ pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ARENA PO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10499--20261123-S01947@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T183430Z
+DTEND:20261124T183900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:34 - 19:39 (primo: REG 10499)
+DESCRIPTION:Stazione/PL: ARENA PO (S01947)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 19:34:30 - 19:39:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 10499 (VOGHERA -> PIACENZA)\n  - REG 10499 (VO
+ GHERA -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
+ 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo u
+ tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
+  (120s)
+LOCATION:Passaggio a Livello / Stazione ARENA PO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10481--20261123-S01947@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T195030Z
+DTEND:20261124T195500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:50 - 20:55 (primo: REG 10481)
+DESCRIPTION:Stazione/PL: ARENA PO (S01947)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 20:50:30 - 20:55:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 10481 (MILANO PORTA GARIBALDI -> PIACENZA)\n  
+ - REG 10481 (MILANO PORTA GARIBALDI -> PIACENZA)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ARENA PO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

@@ -9,27 +9,52 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:0029aafe12e89e92dbe1b3f21d440cb3dbeb2f859c1739b77caae1078bd6
- 3049
+X-CONTENT-HASH:9ae07d8ecd1aaff4938837a73e67f0c93067887d95ab1619d33a278fac08
+ 0081
 BEGIN:VEVENT
-UID:train-10600--20261120-S01602@pl-tracker.local
-DTSTAMP:20261121T195057Z
-SEQUENCE:2
-DTSTART:20261121T045230Z
-DTEND:20261121T045700Z
-SUMMARY:[FERMATA] REG 10600 (CREMONA -> MILANO PORTA GARIBALDI) ore 05:56 (
- +1 min)
-DESCRIPTION:Stazione/PL: CARAVAGGIO (S01602)\nRegime chiusura: FERMATA\nChi
- usura sbarre stimata: 05:52:30 - 05:57:00\nTreni coinvolti nella chiusura:
- \n  - REG 10600 (CREMONA -> MILANO PORTA GARIBALDI) (+1m)\nRitardo massimo
-  rilevato: 1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
- isione con ritardo propagato (+1 min)
+UID:train-10601--20261123-S01602@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T100900Z
+DTEND:20261124T101530Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:09 - 11:15 (primo: REG 10601) (+2 
+ min)
+DESCRIPTION:Stazione/PL: CARAVAGGIO (S01602)\nRegime chiusura: CHIUSURA CON
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 11:09:00 - 11:15:30\nTreni coinv
+ olti nella chiusura:\n  - REG 10601 (MILANO PORTA GARIBALDI -> CREMONA) (+
+ 2m)\n  - REG 10601 (MILANO PORTA GARIBALDI -> CREMONA) (+2m)\nRitardo mass
+ imo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: C
+ hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
+ re alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CARAVAGGIO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:1
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10605--20261123-S01602@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T162330Z
+DTEND:20261124T163000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:23 - 17:30 (primo: REG 10605) (+10
+  min)
+DESCRIPTION:Stazione/PL: CARAVAGGIO (S01602)\nRegime chiusura: CHIUSURA CON
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 17:23:30 - 17:30:00\nTreni coinv
+ olti nella chiusura:\n  - REG 10605 (MILANO PORTA GARIBALDI -> CREMONA) (+
+ 10m)\n  - REG 10605 (MILANO PORTA GARIBALDI -> CREMONA) (+10m)\nRitardo ma
+ ssimo rilevato: 10 min\nAffidabilità stima: 99%\nNota normativa/euristica
+ : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CARAVAGGIO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:10
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

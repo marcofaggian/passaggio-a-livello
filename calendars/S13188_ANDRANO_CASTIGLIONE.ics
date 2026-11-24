@@ -9,28 +9,48 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:38836ff8c7a9da750b8157e1e56362f6a55425a5247ce91bf4aa165926e4
- d30c
+X-CONTENT-HASH:825c8e246ef2ed89b669b91c8d157b315e293dc9d569f330731ffae0e725
+ e966
 BEGIN:VEVENT
 UID:train-90917--20261123-S13188@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
 DTSTART:20261124T154630Z
 DTEND:20261124T155100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:46 - 16:51 (primo: REG 90917)
+SUMMARY:[FERMATA] REG 90917 (LECCE -> GAGLIANO L.) ore 16:50
+DESCRIPTION:Stazione/PL: ANDRANO-CASTIGLIONE (S13188)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 16:46:30 - 16:51:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 90917 (LECCE -> GAGLIANO L.)\nRitardo massimo rilevato:
+  0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da 
+ traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione ANDRANO-CASTIGLIONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-90922--20261123-S13188@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T173530Z
+DTEND:20261124T174130Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:35 - 18:41 (primo: REG 90922)
 DESCRIPTION:Stazione/PL: ANDRANO-CASTIGLIONE (S13188)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:46:30 - 16:51:00\nTr
- eni coinvolti nella chiusura:\n  - REG 90917 (LECCE -> GAGLIANO L.)\n  - R
- EG 90917 (LECCE -> GAGLIANO L.)\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:35:30 - 18:41:30\nTr
+ eni coinvolti nella chiusura:\n  - REG 90922 (GAGLIANO L. -> LECCE)\n  - R
+ EG 90922 (GAGLIANO L. -> LECCE)\nRitardo massimo rilevato: -1 min\nAffidab
+ ilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ANDRANO-CASTIGLIONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

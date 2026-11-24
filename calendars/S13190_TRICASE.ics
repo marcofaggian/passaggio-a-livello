@@ -9,28 +9,49 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:09e2aac75570963befc9cde09e5ef40132427d956ddd26228862643bbc8f
- 7691
+X-CONTENT-HASH:27025d94dfe757b9a1420cc7323df74342c0572a90b33dcd98e122b5d3a5
+ 6264
 BEGIN:VEVENT
 UID:train-90917--20261123-S13190@pl-tracker.local
-DTSTAMP:20261124T060714Z
-SEQUENCE:0
+DTSTAMP:20261124T174816Z
+SEQUENCE:1
 DTSTART:20261124T155930Z
 DTEND:20261124T160400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:59 - 17:04 (primo: REG 90917)
+SUMMARY:[FERMATA] REG 90917 (LECCE -> GAGLIANO L.) ore 17:03
+DESCRIPTION:Stazione/PL: TRICASE (S13190)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 16:59:30 - 17:04:00\nTreni coinvolti nella chiusura:\n 
+  - REG 90917 (LECCE -> GAGLIANO L.)\nRitardo massimo rilevato: 0 min\nAffi
+ dabilità stima: 90%\nNota normativa/euristica: Previsione da traccia orar
+ ia regolare
+LOCATION:Passaggio a Livello / Stazione TRICASE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-90922--20261123-S13190@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T172300Z
+DTEND:20261124T172930Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:23 - 18:29 (primo: REG 90922) (+1 
+ min)
 DESCRIPTION:Stazione/PL: TRICASE (S13190)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 16:59:30 - 17:04:00\nTreni coinvolt
- i nella chiusura:\n  - REG 90917 (LECCE -> GAGLIANO L.)\n  - REG 90917 (LE
- CCE -> GAGLIANO L.)\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
-  90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
- utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
- e (120s)
+ UA - 2 TRENI\nChiusura sbarre stimata: 18:23:00 - 18:29:30\nTreni coinvolt
+ i nella chiusura:\n  - REG 90922 (GAGLIANO L. -> LECCE) (+1m)\n  - REG 909
+ 22 (GAGLIANO L. -> LECCE) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabi
+ lità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni:
+  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TRICASE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

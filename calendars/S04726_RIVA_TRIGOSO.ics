@@ -9,152 +9,141 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:0510c81d7019c26a549a46e6ed857e69237049e3876414847afc0d4855d3
- 28f7
+X-CONTENT-HASH:a1dde1adeae28473be3b1a84854b72b0a72f8662ca4dea0dcff7c4f79f31
+ dded
 BEGIN:VEVENT
-UID:train-12310--20261122-S04726@pl-tracker.local
-DTSTAMP:20261123T221239Z
-SEQUENCE:2
-DTSTART:20261123T041730Z
-DTEND:20261123T042200Z
-SUMMARY:[FERMATA] REG 12310 (LA SPEZIA CENTRALE -> VENTIMIGLIA) ore 05:21
-DESCRIPTION:Stazione/PL: RIVA TRIGOSO (S04726)\nRegime chiusura: FERMATA\nC
- hiusura sbarre stimata: 05:17:30 - 05:22:00\nTreni coinvolti nella chiusur
- a:\n  - REG 12310 (LA SPEZIA CENTRALE -> VENTIMIGLIA)\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
- ne da traccia oraria regolare
+UID:train-12213--20261123-S04726@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T050505Z
+DTEND:20261124T051035Z
+SUMMARY:[TRANSITO VELOCE] REG 12213 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE)
+  ore 06:09 (+19 min)
+DESCRIPTION:Stazione/PL: RIVA TRIGOSO (S04726)\nRegime chiusura: TRANSITO V
+ ELOCE\nChiusura sbarre stimata: 06:05:05 - 06:10:35\nTreni coinvolti nella
+  chiusura:\n  - REG 12213 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) (+19m) [
+ Transito]\nRitardo massimo rilevato: 19 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Transito stimato senza fermata (22% tratta SESTRI L
+ EVANTE -> MONEGLIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione RIVA TRIGOSO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:19
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12222--20261123-S04726@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T100630Z
+DTEND:20261124T101300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:06 - 11:13 (primo: REG 12222) (+1 
+ min)
+DESCRIPTION:Stazione/PL: RIVA TRIGOSO (S04726)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:06:30 - 11:13:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 12222 (LA SPEZIA CENTRALE -> SESTRI LEVANT
+ E) (+1m)\n  - REG 12222 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) (+1m)\nRita
+ rdo massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euri
+ stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
+  inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione RIVA TRIGOSO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3265--20261123-S04726@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T103331Z
+DTEND:20261124T103901Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:33 - 11:39 (primo: REG 3265)
+DESCRIPTION:Stazione/PL: RIVA TRIGOSO (S04726)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:33:31 - 11:39:01\nTreni coi
+ nvolti nella chiusura:\n  - REG 3265 (GENOVA BRIGNOLE -> LA SPEZIA CENTRAL
+ E) [Transito]\n  - REG 3265 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) [Trans
+ ito]\nRitardo massimo rilevato: -4 min\nAffidabilità stima: 78%\nNota nor
+ mativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pa
+ ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione RIVA TRIGOSO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-22879--20261123-S04726@pl-tracker.local-arr
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T173830Z
+DTEND:20261124T174630Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 18:38 - 18:46 (primo: REG 22879)
+DESCRIPTION:Stazione/PL: RIVA TRIGOSO (S04726)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 4 TRENI\nChiusura sbarre stimata: 18:38:30 - 18:46:30\nTreni coi
+ nvolti nella chiusura:\n  - REG 22879 (GENOVA VOLTRI -> LA SPEZIA CENTRALE
+ ) [Arrivo]\n  - REG 22879 (GENOVA VOLTRI -> LA SPEZIA CENTRALE) [Arrivo]\n
+   - REG 22879 (GENOVA VOLTRI -> LA SPEZIA CENTRALE) [Partenza]\n  - REG 22
+ 879 (GENOVA VOLTRI -> LA SPEZIA CENTRALE) [Partenza]\nRitardo massimo rile
+ vato: -1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura
+  continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla
+  soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione RIVA TRIGOSO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12242--20261123-S04726@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T200330Z
+DTEND:20261124T200800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:03 - 21:08 (primo: REG 12242)
+DESCRIPTION:Stazione/PL: RIVA TRIGOSO (S04726)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:03:30 - 21:08:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 12242 (LA SPEZIA CENTRALE -> SESTRI LEVANT
+ E)\n  - REG 12242 (LA SPEZIA CENTRALE -> SESTRI LEVANTE)\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chius
+ ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione RIVA TRIGOSO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-22824--20261122-S04726@pl-tracker.local
-DTSTAMP:20261123T221239Z
-SEQUENCE:2
-DTSTART:20261123T052730Z
-DTEND:20261123T053200Z
-SUMMARY:[FERMATA] REG 22824 (LA SPEZIA CENTRALE -> GENOVA SESTRI PONENTE AE
- ROPORTO) ore 06:31
-DESCRIPTION:Stazione/PL: RIVA TRIGOSO (S04726)\nRegime chiusura: FERMATA\nC
- hiusura sbarre stimata: 06:27:30 - 06:32:00\nTreni coinvolti nella chiusur
- a:\n  - REG 22824 (LA SPEZIA CENTRALE -> GENOVA SESTRI PONENTE AEROPORTO)\
- nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa
- /euristica: Previsione da traccia oraria regolare
+UID:train-3285--20261123-S04726@pl-tracker.local
+DTSTAMP:20261124T174816Z
+SEQUENCE:0
+DTSTART:20261124T202718Z
+DTEND:20261124T203248Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:27 - 21:32 (primo: REG 3285)
+DESCRIPTION:Stazione/PL: RIVA TRIGOSO (S04726)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:27:18 - 21:32:48\nTreni coi
+ nvolti nella chiusura:\n  - REG 3285 (GENOVA BRIGNOLE -> LA SPEZIA CENTRAL
+ E) [Transito]\n  - REG 3285 (GENOVA BRIGNOLE -> LA SPEZIA CENTRALE) [Trans
+ ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione RIVA TRIGOSO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-12214--20261122-S04726@pl-tracker.local
-DTSTAMP:20261123T221239Z
-SEQUENCE:2
-DTSTART:20261123T064930Z
-DTEND:20261123T065400Z
-SUMMARY:[FERMATA] REG 12214 (LA SPEZIA CENTRALE -> GENOVA PIAZZA PRINCIPE) 
- ore 07:53
-DESCRIPTION:Stazione/PL: RIVA TRIGOSO (S04726)\nRegime chiusura: FERMATA\nC
- hiusura sbarre stimata: 07:49:30 - 07:54:00\nTreni coinvolti nella chiusur
- a:\n  - REG 12214 (LA SPEZIA CENTRALE -> GENOVA PIAZZA PRINCIPE)\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
- a: Previsione da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione RIVA TRIGOSO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-12218--20261122-S04726@pl-tracker.local
-DTSTAMP:20261123T221239Z
-SEQUENCE:2
-DTSTART:20261123T080330Z
-DTEND:20261123T080800Z
-SUMMARY:[FERMATA] REG 12218 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) ore 09:0
- 7
-DESCRIPTION:Stazione/PL: RIVA TRIGOSO (S04726)\nRegime chiusura: FERMATA\nC
- hiusura sbarre stimata: 09:03:30 - 09:08:00\nTreni coinvolti nella chiusur
- a:\n  - REG 12218 (LA SPEZIA CENTRALE -> SESTRI LEVANTE)\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previ
- sione da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione RIVA TRIGOSO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-12226--20261122-S04726@pl-tracker.local
-DTSTAMP:20261123T221239Z
-SEQUENCE:2
-DTSTART:20261123T120330Z
-DTEND:20261123T120800Z
-SUMMARY:[FERMATA] REG 12226 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) ore 13:0
- 7
-DESCRIPTION:Stazione/PL: RIVA TRIGOSO (S04726)\nRegime chiusura: FERMATA\nC
- hiusura sbarre stimata: 13:03:30 - 13:08:00\nTreni coinvolti nella chiusur
- a:\n  - REG 12226 (LA SPEZIA CENTRALE -> SESTRI LEVANTE)\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previ
- sione da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione RIVA TRIGOSO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-12234--20261122-S04726@pl-tracker.local
-DTSTAMP:20261123T221239Z
-SEQUENCE:2
-DTSTART:20261123T160330Z
-DTEND:20261123T160800Z
-SUMMARY:[FERMATA] REG 12234 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) ore 17:0
- 7
-DESCRIPTION:Stazione/PL: RIVA TRIGOSO (S04726)\nRegime chiusura: FERMATA\nC
- hiusura sbarre stimata: 17:03:30 - 17:08:00\nTreni coinvolti nella chiusur
- a:\n  - REG 12234 (LA SPEZIA CENTRALE -> SESTRI LEVANTE)\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previ
- sione da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione RIVA TRIGOSO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-12244--20261122-S04726@pl-tracker.local
-DTSTAMP:20261123T221239Z
-SEQUENCE:2
-DTSTART:20261123T210530Z
-DTEND:20261123T211000Z
-SUMMARY:[FERMATA] REG 12244 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) ore 22:0
- 9
-DESCRIPTION:Stazione/PL: RIVA TRIGOSO (S04726)\nRegime chiusura: FERMATA\nC
- hiusura sbarre stimata: 22:05:30 - 22:10:00\nTreni coinvolti nella chiusur
- a:\n  - REG 12244 (LA SPEZIA CENTRALE -> SESTRI LEVANTE)\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previ
- sione da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione RIVA TRIGOSO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR
