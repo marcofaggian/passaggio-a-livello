@@ -9,24 +9,49 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:1ce01730a2a88bacf3e063665eea4daf32e2e9326ca9da0542870ef0e7e6
- f24f
+X-CONTENT-HASH:8890e3e826466b0d59f2e2dacf3c3becfaddb8ffc76e4fc1365e82e04754
+ 00a2
 BEGIN:VEVENT
-UID:train-10061--20261122-S00037@pl-tracker.local
-DTSTAMP:20261123T221239Z
-SEQUENCE:1
-DTSTART:20261123T170430Z
-DTEND:20261123T170900Z
-SUMMARY:[FERMATA] REG 10061 (MILANO ROGOREDO -> ALESSANDRIA) ore 18:08
-DESCRIPTION:Stazione/PL: VALLE LOMELLINA (S00037)\nRegime chiusura: FERMATA
- \nChiusura sbarre stimata: 18:04:30 - 18:09:00\nTreni coinvolti nella chiu
- sura:\n  - REG 10061 (MILANO ROGOREDO -> ALESSANDRIA)\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
- ne da traccia oraria regolare
+UID:train-10020--20261123-S00037@pl-tracker.local
+DTSTAMP:20261124T060714Z
+SEQUENCE:0
+DTSTART:20261124T044600Z
+DTEND:20261124T045200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:46 - 05:52 (primo: REG 10020) (+1 
+ min)
+DESCRIPTION:Stazione/PL: VALLE LOMELLINA (S00037)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:46:00 - 05:52:00\nTreni 
+ coinvolti nella chiusura:\n  - REG 10020 (ALESSANDRIA -> MILANO ROGOREDO) 
+ (+1m)\n  - REG 10020 (ALESSANDRIA -> MILANO ROGOREDO) (+1m)\nRitardo massi
+ mo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Ch
+ iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VALLE LOMELLINA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10061--20261123-S00037@pl-tracker.local
+DTSTAMP:20261124T060714Z
+SEQUENCE:0
+DTSTART:20261124T170430Z
+DTEND:20261124T170900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:04 - 18:09 (primo: REG 10061)
+DESCRIPTION:Stazione/PL: VALLE LOMELLINA (S00037)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:04:30 - 18:09:00\nTreni 
+ coinvolti nella chiusura:\n  - REG 10061 (MILANO ROGOREDO -> ALESSANDRIA)\
+ n  - REG 10061 (MILANO ROGOREDO -> ALESSANDRIA)\nRitardo massimo rilevato:
+  0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura conti
+ nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VALLE LOMELLINA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

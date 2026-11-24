@@ -9,24 +9,49 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:6b06e4c259c4d85e0dce523a7df8876a66a1ae9438e74a2645d68437c870
- e937
+X-CONTENT-HASH:b7583399d318d68c8631488d122c6c015cc28123d90a61aa6817d96490c5
+ ac3b
 BEGIN:VEVENT
-UID:train-10061--20261122-S00039@pl-tracker.local
-DTSTAMP:20261123T221239Z
-SEQUENCE:1
-DTSTART:20261123T171430Z
-DTEND:20261123T171900Z
-SUMMARY:[FERMATA] REG 10061 (MILANO ROGOREDO -> ALESSANDRIA) ore 18:18
-DESCRIPTION:Stazione/PL: TORREBERETTI (S00039)\nRegime chiusura: FERMATA\nC
- hiusura sbarre stimata: 18:14:30 - 18:19:00\nTreni coinvolti nella chiusur
- a:\n  - REG 10061 (MILANO ROGOREDO -> ALESSANDRIA)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
- da traccia oraria regolare
+UID:train-10020--20261123-S00039@pl-tracker.local
+DTSTAMP:20261124T060714Z
+SEQUENCE:0
+DTSTART:20261124T043530Z
+DTEND:20261124T044200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:35 - 05:42 (primo: REG 10020) (+1 
+ min)
+DESCRIPTION:Stazione/PL: TORREBERETTI (S00039)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:35:30 - 05:42:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 10020 (ALESSANDRIA -> MILANO ROGOREDO) (+1
+ m)\n  - REG 10020 (ALESSANDRIA -> MILANO ROGOREDO) (+1m)\nRitardo massimo 
+ rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chius
+ ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione TORREBERETTI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-10061--20261123-S00039@pl-tracker.local
+DTSTAMP:20261124T060714Z
+SEQUENCE:0
+DTSTART:20261124T171430Z
+DTEND:20261124T171900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:14 - 18:19 (primo: REG 10061)
+DESCRIPTION:Stazione/PL: TORREBERETTI (S00039)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:14:30 - 18:19:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 10061 (MILANO ROGOREDO -> ALESSANDRIA)\n  
+ - REG 10061 (MILANO ROGOREDO -> ALESSANDRIA)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
+  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione TORREBERETTI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
