@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:23b3be545e94c16df2e7cfdec308a2e9aed8b7140da8709a6f032a9dde91
- 5eae
+X-CONTENT-HASH:0906619db893ff6d7ee4fc3b4063e3b84b57d8b2931269f7560e96b8b9ed
+ fe3d
 BEGIN:VEVENT
 UID:train-9300--20261124-S07004@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T042030Z
 DTEND:20261125T042500Z
 SUMMARY:[FERMATA] TRENO 9300 (PERUGIA -> TORINO PORTA NUOVA) ore 05:24
@@ -33,55 +33,52 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4151--20261124-S07004@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T044216Z
-DTEND:20261125T044746Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:42 - 05:47 (primo: REG 4151)
-DESCRIPTION:Stazione/PL: PERUGIA (S07004)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 05:42:16 - 05:47:46\nTreni coinvolt
- i nella chiusura:\n  - REG 4151 (ANCONA -> ROMA TERMINI) [Transito]\n  - R
- EG 4151 (ANCONA -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato: -1 
- min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T044217Z
+DTEND:20261125T044747Z
+SUMMARY:[TRANSITO VELOCE] REG 4151 (ANCONA -> ROMA TERMINI) ore 05:46
+DESCRIPTION:Stazione/PL: PERUGIA (S07004)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 05:42:17 - 05:47:47\nTreni coinvolti nella chiu
+ sura:\n  - REG 4151 (ANCONA -> ROMA TERMINI) [Transito]\nRitardo massimo r
+ ilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
+ ito stimato senza fermata (23% tratta SPOLETO -> TERNI\; pedale annuncio f
+ isso Vmax)
 LOCATION:Passaggio a Livello / Stazione PERUGIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-580--20261124-S07004@pl-tracker.local-arr
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T052815Z
 DTEND:20261125T053900Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:28 - 06:39 (primo: IC 580) (+1 min
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:28 - 06:39 (primo: IC 580) (+1 min
  )
 DESCRIPTION:Stazione/PL: PERUGIA (S07004)\nRegime chiusura: CHIUSURA CONTIN
- UA - 4 TRENI\nChiusura sbarre stimata: 06:28:15 - 06:39:00\nTreni coinvolt
+ UA - 2 TRENI\nChiusura sbarre stimata: 06:28:15 - 06:39:00\nTreni coinvolt
  i nella chiusura:\n  - IC 580 (TERNI -> MILANO CENTRALE) (+1m) [Arrivo]\n 
-  - IC 580 (TERNI -> MILANO CENTRALE) (+1m) [Arrivo]\n  - IC 580 (TERNI -> 
- MILANO CENTRALE) (+1m) [Partenza]\n  - IC 580 (TERNI -> MILANO CENTRALE) (
- +1m) [Partenza]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 99%
- \nNota normativa/euristica: Chiusura continua per 4 treni: intervallo util
- e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
- 20s)
+  - IC 580 (TERNI -> MILANO CENTRALE) (+1m) [Partenza]\nRitardo massimo ril
+ evato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura
+  continua per 2 treni: intervallo utile tra i passaggi (75s) inferiore all
+ a soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PERUGIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4720--20261124-S07004@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T062131Z
 DTEND:20261125T062701Z
 SUMMARY:[TRANSITO VELOCE] REG 4720 (CHIUSI-CHIANCIANO TERME -> FOLIGNO) ore
@@ -102,75 +99,71 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4712--20261124-S07004@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T065300Z
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T065255Z
 DTEND:20261125T065900Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:53 - 07:59 (primo: REG 4712)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:52 - 07:59 (primo: REG 4712)
 DESCRIPTION:Stazione/PL: PERUGIA (S07004)\nRegime chiusura: CHIUSURA CONTIN
- UA - 3 TRENI\nChiusura sbarre stimata: 07:53:00 - 07:59:00\nTreni coinvolt
+ UA - 2 TRENI\nChiusura sbarre stimata: 07:52:55 - 07:59:00\nTreni coinvolt
  i nella chiusura:\n  - REG 4712 (ROMA TERMINI -> PERUGIA) [Transito]\n  - 
- REG 4712 (ROMA TERMINI -> PERUGIA) [Transito]\n  - REG 4720 (CHIUSI-CHIANC
- IANO TERME -> FOLIGNO)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
- ma: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: interval
- lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
- dale (120s)
+ REG 4720 (CHIUSI-CHIANCIANO TERME -> FOLIGNO)\nRitardo massimo rilevato: 0
+  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
+ a per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
+ minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PERUGIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23960--20261124-S07004@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T072848Z
-DTEND:20261125T073418Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:28 - 08:34 (primo: REG 23960)
-DESCRIPTION:Stazione/PL: PERUGIA (S07004)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 08:28:48 - 08:34:18\nTreni coinvolt
- i nella chiusura:\n  - REG 23960 (ROMA TIBURTINA -> RIETI) [Transito]\n  -
-  REG 23960 (ROMA TIBURTINA -> RIETI) [Transito]\nRitardo massimo rilevato:
-  -1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
- inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T072844Z
+DTEND:20261125T073414Z
+SUMMARY:[TRANSITO VELOCE] REG 23960 (ROMA TIBURTINA -> RIETI) ore 08:32
+DESCRIPTION:Stazione/PL: PERUGIA (S07004)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 08:28:44 - 08:34:14\nTreni coinvolti nella chiu
+ sura:\n  - REG 23960 (ROMA TIBURTINA -> RIETI) [Transito]\nRitardo massimo
+  rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
+ nsito stimato senza fermata (64% tratta NARNI AMELIA -> TERNI\; pedale ann
+ uncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PERUGIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4712--20261124-S07004@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T083430Z
 DTEND:20261125T083900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:34 - 09:39 (primo: REG 4712)
-DESCRIPTION:Stazione/PL: PERUGIA (S07004)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 09:34:30 - 09:39:00\nTreni coinvolt
- i nella chiusura:\n  - REG 4712 (ROMA TERMINI -> PERUGIA)\n  - REG 4712 (R
- OMA TERMINI -> PERUGIA)\nRitardo massimo rilevato: -1 min\nAffidabilità s
- tima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: interv
- allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
- radale (120s)
+SUMMARY:[FERMATA] REG 4712 (ROMA TERMINI -> PERUGIA) ore 09:38
+DESCRIPTION:Stazione/PL: PERUGIA (S07004)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 09:34:30 - 09:39:00\nTreni coinvolti nella chiusura:\n 
+  - REG 4712 (ROMA TERMINI -> PERUGIA)\nRitardo massimo rilevato: -1 min\nA
+ ffidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale da ci
+ rcuito di binario
 LOCATION:Passaggio a Livello / Stazione PERUGIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4073--20261124-S07004@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T085706Z
 DTEND:20261125T090236Z
 SUMMARY:[TRANSITO VELOCE] REG 4073 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO)
@@ -191,8 +184,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4073--20261124-S07004@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T092830Z
 DTEND:20261125T093300Z
 SUMMARY:[FERMATA] REG 4073 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO) ore 10:
@@ -212,31 +205,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4153--20261124-S07004@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T104322Z
-DTEND:20261125T104852Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:43 - 11:48 (primo: REG 4153) (+13 
- min)
-DESCRIPTION:Stazione/PL: PERUGIA (S07004)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 11:43:22 - 11:48:52\nTreni coinvolt
- i nella chiusura:\n  - REG 4153 (FOLIGNO -> ROMA TERMINI) (+13m) [Transito
- ]\n  - REG 4153 (FOLIGNO -> ROMA TERMINI) (+13m) [Transito]\nRitardo massi
- mo rilevato: 13 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
- hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T104323Z
+DTEND:20261125T104853Z
+SUMMARY:[TRANSITO VELOCE] REG 4153 (FOLIGNO -> ROMA TERMINI) ore 11:47 (+13
+  min)
+DESCRIPTION:Stazione/PL: PERUGIA (S07004)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 11:43:23 - 11:48:53\nTreni coinvolti nella chiu
+ sura:\n  - REG 4153 (FOLIGNO -> ROMA TERMINI) (+13m) [Transito]\nRitardo m
+ assimo rilevato: 13 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Transito stimato senza fermata (23% tratta SPOLETO -> TERNI\; pedale an
+ nuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PERUGIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:13
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4077--20261124-S07004@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T125757Z
 DTEND:20261125T130327Z
 SUMMARY:[TRANSITO VELOCE] REG 4077 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO)
@@ -257,8 +249,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4077--20261124-S07004@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T133330Z
 DTEND:20261125T133800Z
 SUMMARY:[FERMATA] REG 4077 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO) ore 14:
@@ -278,8 +270,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-6736--20261124-S07004@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T150830Z
 DTEND:20261125T151300Z
 SUMMARY:[FERMATA] REG 6736 (FOLIGNO -> TERONTOLA CORTONA) ore 16:12
@@ -298,30 +290,29 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4156--20261124-S07004@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T155631Z
-DTEND:20261125T160201Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:56 - 17:02 (primo: REG 4156)
-DESCRIPTION:Stazione/PL: PERUGIA (S07004)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 16:56:31 - 17:02:01\nTreni coinvolt
- i nella chiusura:\n  - REG 4156 (ROMA TERMINI -> ANCONA) [Transito]\n  - R
- EG 4156 (ROMA TERMINI -> ANCONA) [Transito]\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua 
- per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
- nima di sgombero stradale (120s)
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T155628Z
+DTEND:20261125T160158Z
+SUMMARY:[TRANSITO VELOCE] REG 4156 (ROMA TERMINI -> ANCONA) ore 17:00
+DESCRIPTION:Stazione/PL: PERUGIA (S07004)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 16:56:28 - 17:01:58\nTreni coinvolti nella chiu
+ sura:\n  - REG 4156 (ROMA TERMINI -> ANCONA) [Transito]\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transi
+ to stimato senza fermata (64% tratta NARNI AMELIA -> TERNI\; pedale annunc
+ io fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PERUGIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4735--20261124-S07004@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T164630Z
 DTEND:20261125T165100Z
 SUMMARY:[FERMATA] REG 4735 (PERUGIA -> ROMA TERMINI) ore 17:50
@@ -340,57 +331,56 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4081--20261124-S07004@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T170425Z
 DTEND:20261125T170955Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:04 - 18:09 (primo: REG 4081)
-DESCRIPTION:Stazione/PL: PERUGIA (S07004)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 18:04:25 - 18:09:55\nTreni coinvolt
- i nella chiusura:\n  - REG 4081 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO) [
- Transito]\n  - REG 4081 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO) [Transito
- ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
- va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
- gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 4081 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO)
+  ore 18:08
+DESCRIPTION:Stazione/PL: PERUGIA (S07004)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 18:04:25 - 18:09:55\nTreni coinvolti nella chiu
+ sura:\n  - REG 4081 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO) [Transito]\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Transito stimato senza fermata (58% tratta PASSIGNANO SUL TRASIM
+ ENO -> MAGIONE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PERUGIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4081--20261124-S07004@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T173430Z
 DTEND:20261125T173900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:34 - 18:39 (primo: REG 4081)
-DESCRIPTION:Stazione/PL: PERUGIA (S07004)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 18:34:30 - 18:39:00\nTreni coinvolt
- i nella chiusura:\n  - REG 4081 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO)\n
-   - REG 4081 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO)\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura
-  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 4081 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO) ore 18:
+ 38
+DESCRIPTION:Stazione/PL: PERUGIA (S07004)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 18:34:30 - 18:39:00\nTreni coinvolti nella chiusura:\n 
+  - REG 4081 (FIRENZE SANTA MARIA NOVELLA -> FOLIGNO)\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
+ e da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione PERUGIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4262--20261124-S07004@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T202709Z
-DTEND:20261125T203239Z
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T202706Z
+DTEND:20261125T203236Z
 SUMMARY:[TRANSITO VELOCE] REG 4262 (ROMA TIBURTINA -> RIETI) ore 21:31
 DESCRIPTION:Stazione/PL: PERUGIA (S07004)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 21:27:09 - 21:32:39\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 21:27:06 - 21:32:36\nTreni coinvolti nella chiu
  sura:\n  - REG 4262 (ROMA TIBURTINA -> RIETI) [Transito]\nRitardo massimo 
  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
  ito stimato senza fermata (64% tratta NARNI AMELIA -> TERNI\; pedale annun
@@ -405,8 +395,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9329--20261124-S07004@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T212630Z
 DTEND:20261125T213100Z
 SUMMARY:[FERMATA] TRENO 9329 (TORINO PORTA NUOVA -> PERUGIA) ore 22:30
@@ -425,8 +415,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-599--20261124-S07004@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T221315Z
 DTEND:20261125T221800Z
 SUMMARY:[FERMATA] IC 599 (MILANO CENTRALE -> TERNI) ore 23:17

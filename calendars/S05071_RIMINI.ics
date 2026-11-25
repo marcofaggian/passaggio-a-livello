@@ -9,35 +9,32 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:410f8fe56e980793c1a48dbc78596a449b962110bbae1a141fe500110098
- fb79
+X-CONTENT-HASH:8af385d91a13163c702a05196c48acbe92ce4a203a215da3a89ec7aab265
+ b9fe
 BEGIN:VEVENT
 UID:train-2462--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T041730Z
 DTEND:20261125T042200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:17 - 05:22 (primo: REG 2462) (+1 m
- in)
-DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 05:17:30 - 05:22:00\nTreni coinvolti
-  nella chiusura:\n  - REG 2462 (RIMINI -> MILANO CENTRALE) (+1m)\n  - REG 
- 2462 (RIMINI -> MILANO CENTRALE) (+1m)\nRitardo massimo rilevato: 1 min\nA
- ffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2
-  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
- di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 2462 (RIMINI -> MILANO CENTRALE) ore 05:21 (+1 min)
+DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 05:17:30 - 05:22:00\nTreni coinvolti nella chiusura:\n  
+ - REG 2462 (RIMINI -> MILANO CENTRALE) (+1m)\nRitardo massimo rilevato: 1 
+ min\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale
+  da circuito di binario
 LOCATION:Passaggio a Livello / Stazione RIMINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17480--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T043330Z
 DTEND:20261125T043800Z
 SUMMARY:[FERMATA] REG 17480 (RIMINI -> S.PIETRO IN CASALE) ore 05:37
@@ -56,8 +53,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8804--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T060430Z
 DTEND:20261125T060900Z
 SUMMARY:[FERMATA] TRENO 8804 (ANCONA -> MILANO CENTRALE) ore 07:08
@@ -76,55 +73,73 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3901--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T063028Z
 DTEND:20261125T063558Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:30 - 07:35 (primo: REG 3901)
-DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 07:30:28 - 07:35:58\nTreni coinvolti
-  nella chiusura:\n  - REG 3901 (BOLOGNA CENTRALE -> ANCONA) [Transito]\n  
- - REG 3901 (BOLOGNA CENTRALE -> ANCONA) [Transito]\nRitardo massimo rileva
- to: -2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 3901 (BOLOGNA CENTRALE -> ANCONA) ore 07:34
+DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 07:30:28 - 07:35:58\nTreni coinvolti nella chius
+ ura:\n  - REG 3901 (BOLOGNA CENTRALE -> ANCONA) [Transito]\nRitardo massim
+ o rilevato: -2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
+ ansito stimato senza fermata (58% tratta FORLI' -> CESENA\; pedale annunci
+ o fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione RIMINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3901--20261124-S05071@pl-tracker.local-arr
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T065600Z
 DTEND:20261125T070500Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:56 - 08:05 (primo: REG 3901) (+1 m
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:56 - 08:05 (primo: REG 3901) (+1 m
  in)
 DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: CHIUSURA CONTINU
- A - 4 TRENI\nChiusura sbarre stimata: 07:56:00 - 08:05:00\nTreni coinvolti
+ A - 2 TRENI\nChiusura sbarre stimata: 07:56:00 - 08:05:00\nTreni coinvolti
   nella chiusura:\n  - REG 3901 (BOLOGNA CENTRALE -> ANCONA) (+1m) [Arrivo]
- \n  - REG 3901 (BOLOGNA CENTRALE -> ANCONA) (+1m) [Arrivo]\n  - REG 3901 (
- BOLOGNA CENTRALE -> ANCONA) (+1m) [Partenza]\n  - REG 3901 (BOLOGNA CENTRA
- LE -> ANCONA) (+1m) [Partenza]\nRitardo massimo rilevato: 1 min\nAffidabil
- ità stima: 99%\nNota normativa/euristica: Chiusura continua per 4 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
+ \n  - REG 3901 (BOLOGNA CENTRALE -> ANCONA) (+1m) [Partenza]\nRitardo mass
+ imo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: C
+ hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
+ re alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione RIMINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-3905--20261124-S05071@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T072952Z
+DTEND:20261125T073522Z
+SUMMARY:[TRANSITO VELOCE] REG 3905 (PIACENZA -> ANCONA) ore 08:34
+DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 08:29:52 - 08:35:22\nTreni coinvolti nella chius
+ ura:\n  - REG 3905 (PIACENZA -> ANCONA) [Transito]\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito st
+ imato senza fermata (58% tratta FORLI' -> CESENA\; pedale annuncio fisso V
+ max)
+LOCATION:Passaggio a Livello / Stazione RIMINI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-603--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T074002Z
 DTEND:20261125T074432Z
 SUMMARY:[TRANSITO VELOCE] IC 603 (MILANO CENTRALE -> LECCE) ore 08:43
@@ -144,29 +159,8 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3905--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T074934Z
-DTEND:20261125T075504Z
-SUMMARY:[TRANSITO VELOCE] REG 3905 (PIACENZA -> ANCONA) ore 08:53
-DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 08:49:34 - 08:55:04\nTreni coinvolti nella chius
- ura:\n  - REG 3905 (PIACENZA -> ANCONA) [Transito]\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito st
- imato senza fermata (69% tratta SAVIGNANO SUL RUBICONE -> RIMINIFIERA\; pe
- dale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione RIMINI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3905--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T075730Z
 DTEND:20261125T080200Z
 SUMMARY:[FERMATA] REG 3905 (PIACENZA -> ANCONA) ore 09:01
@@ -185,8 +179,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-603--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T080715Z
 DTEND:20261125T081200Z
 SUMMARY:[FERMATA] IC 603 (MILANO CENTRALE -> LECCE) ore 09:11
@@ -205,107 +199,99 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3907--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T082923Z
 DTEND:20261125T083453Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:29 - 09:34 (primo: REG 3907)
-DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 09:29:23 - 09:34:53\nTreni coinvolti
-  nella chiusura:\n  - REG 3907 (PIACENZA -> ANCONA) [Transito]\n  - REG 39
- 07 (PIACENZA -> ANCONA) [Transito]\nRitardo massimo rilevato: -2 min\nAffi
- dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tr
- eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
- sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 3907 (PIACENZA -> ANCONA) ore 09:33
+DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 09:29:23 - 09:34:53\nTreni coinvolti nella chius
+ ura:\n  - REG 3907 (PIACENZA -> ANCONA) [Transito]\nRitardo massimo rileva
+ to: -2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito s
+ timato senza fermata (58% tratta FORLI' -> CESENA\; pedale annuncio fisso 
+ Vmax)
 LOCATION:Passaggio a Livello / Stazione RIMINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3907--20261124-S05071@pl-tracker.local-arr
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T085630Z
 DTEND:20261125T090100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:56 - 10:01 (primo: REG 3907) (+2 m
- in)
-DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 09:56:30 - 10:01:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3907 (PIACENZA -> ANCONA) (+2m) [Arrivo]\n  - RE
- G 3907 (PIACENZA -> ANCONA) (+2m) [Arrivo]\nRitardo massimo rilevato: 2 mi
- n\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua p
- er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 3907 (PIACENZA -> ANCONA) ore 10:00 (+2 min)
+DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 09:56:30 - 10:01:00\nTreni coinvolti nella chiusura:\n  
+ - REG 3907 (PIACENZA -> ANCONA) (+2m) [Arrivo]\nRitardo massimo rilevato: 
+ 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento rea
+ le da circuito di binario (impegno itinerario ingresso stazione)
 LOCATION:Passaggio a Livello / Stazione RIMINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3907--20261124-S05071@pl-tracker.local-dep
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T090400Z
 DTEND:20261125T090830Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:04 - 10:08 (primo: REG 3907) (+2 m
- in)
-DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 10:04:00 - 10:08:30\nTreni coinvolti
-  nella chiusura:\n  - REG 3907 (PIACENZA -> ANCONA) (+2m) [Partenza]\n  - 
- REG 3907 (PIACENZA -> ANCONA) (+2m) [Partenza]\nRitardo massimo rilevato: 
- 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura contin
- ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 3907 (PIACENZA -> ANCONA) ore 10:07 (+2 min)
+DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 10:04:00 - 10:08:30\nTreni coinvolti nella chiusura:\n  
+ - REG 3907 (PIACENZA -> ANCONA) (+2m) [Partenza]\nRitardo massimo rilevato
+ : 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento r
+ eale da circuito di binario (impegno itinerario partenza stazione)
 LOCATION:Passaggio a Livello / Stazione RIMINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-605--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T100003Z
 DTEND:20261125T100433Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:00 - 11:04 (primo: IC 605) (+22 mi
- n)
-DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 11:00:03 - 11:04:33\nTreni coinvolti
-  nella chiusura:\n  - IC 605 (MILANO CENTRALE -> LECCE) (+22m) [Transito]\
- n  - IC 605 (MILANO CENTRALE -> LECCE) (+22m) [Transito]\nRitardo massimo 
- rilevato: 22 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
- sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] IC 605 (MILANO CENTRALE -> LECCE) ore 11:03 (+22 
+ min)
+DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 11:00:03 - 11:04:33\nTreni coinvolti nella chius
+ ura:\n  - IC 605 (MILANO CENTRALE -> LECCE) (+22m) [Transito]\nRitardo mas
+ simo rilevato: 22 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Transito stimato senza fermata (58% tratta FORLI' -> CESENA\; pedale annu
+ ncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione RIMINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:22
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2067--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T100734Z
-DTEND:20261125T101304Z
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T100739Z
+DTEND:20261125T101309Z
 SUMMARY:[TRANSITO VELOCE] REG 2067 (VOGHERA -> RIMINI) ore 11:11
 DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 11:07:34 - 11:13:04\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 11:07:39 - 11:13:09\nTreni coinvolti nella chius
  ura:\n  - REG 2067 (VOGHERA -> RIMINI) [Transito]\nRitardo massimo rilevat
  o: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito sti
- mato senza fermata (69% tratta SAVIGNANO SUL RUBICONE -> RIMINIFIERA\; ped
+ mato senza fermata (70% tratta SAVIGNANO SUL RUBICONE -> RIMINIFIERA\; ped
  ale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione RIMINI
 STATUS:CONFIRMED
@@ -317,85 +303,97 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9806--20261124-S05071@pl-tracker.local-arr
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T101730Z
 DTEND:20261125T103530Z
-SUMMARY:[CHIUSURA CONTINUA - 9 TRENI] 11:17 - 11:35 (primo: TRENO 9806) (+2
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 11:17 - 11:35 (primo: TRENO 9806) (+2
  0 min)
 DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: CHIUSURA CONTINU
- A - 9 TRENI\nChiusura sbarre stimata: 11:17:30 - 11:35:30\nTreni coinvolti
+ A - 5 TRENI\nChiusura sbarre stimata: 11:17:30 - 11:35:30\nTreni coinvolti
   nella chiusura:\n  - TRENO 9806 (BARI CENTRALE -> MILANO CENTRALE) (+5m) 
- [Arrivo]\n  - TRENO 9806 (BARI CENTRALE -> MILANO CENTRALE) (+5m) [Arrivo]
- \n  - REG 2067 (VOGHERA -> RIMINI)\n  - TRENO 9806 (BARI CENTRALE -> MILAN
- O CENTRALE) (+5m) [Partenza]\n  - TRENO 9806 (BARI CENTRALE -> MILANO CENT
- RALE) (+5m) [Partenza]\n  - IC 605 (MILANO CENTRALE -> LECCE) (+20m) [Arri
- vo]\n  - IC 605 (MILANO CENTRALE -> LECCE) (+20m) [Arrivo]\n  - IC 605 (MI
- LANO CENTRALE -> LECCE) (+20m) [Partenza]\n  - IC 605 (MILANO CENTRALE -> 
- LECCE) (+20m) [Partenza]\nRitardo massimo rilevato: 20 min\nAffidabilità 
- stima: 90%\nNota normativa/euristica: Chiusura continua per 9 treni: inter
- vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
- tradale (120s)
+ [Arrivo]\n  - REG 2067 (VOGHERA -> RIMINI)\n  - TRENO 9806 (BARI CENTRALE 
+ -> MILANO CENTRALE) (+5m) [Partenza]\n  - IC 605 (MILANO CENTRALE -> LECCE
+ ) (+20m) [Arrivo]\n  - IC 605 (MILANO CENTRALE -> LECCE) (+20m) [Partenza]
+ \nRitardo massimo rilevato: 20 min\nAffidabilità stima: 90%\nNota normati
+ va/euristica: Chiusura continua per 5 treni: intervallo utile tra i passag
+ gi (15s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione RIMINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 9 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
 X-PL-DELAY-MIN:20
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8814--20261124-S05071@pl-tracker.local-arr
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T111200Z
 DTEND:20261125T112030Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:12 - 12:20 (primo: TRENO 8814) (+5
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:12 - 12:20 (primo: TRENO 8814) (+5
   min)
 DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: CHIUSURA CONTINU
- A - 4 TRENI\nChiusura sbarre stimata: 12:12:00 - 12:20:30\nTreni coinvolti
+ A - 2 TRENI\nChiusura sbarre stimata: 12:12:00 - 12:20:30\nTreni coinvolti
   nella chiusura:\n  - TRENO 8814 (LECCE -> MILANO CENTRALE) (+5m) [Arrivo]
- \n  - TRENO 8814 (LECCE -> MILANO CENTRALE) (+5m) [Arrivo]\n  - TRENO 8814
-  (LECCE -> MILANO CENTRALE) (+5m) [Partenza]\n  - TRENO 8814 (LECCE -> MIL
- ANO CENTRALE) (+5m) [Partenza]\nRitardo massimo rilevato: 5 min\nAffidabil
- ità stima: 99%\nNota normativa/euristica: Chiusura continua per 4 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
+ \n  - TRENO 8814 (LECCE -> MILANO CENTRALE) (+5m) [Partenza]\nRitardo mass
+ imo rilevato: 5 min\nAffidabilità stima: 99%\nNota normativa/euristica: C
+ hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
+ re alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione RIMINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3916--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T115430Z
 DTEND:20261125T115900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:54 - 12:59 (primo: REG 3916) (+2 m
- in)
-DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 12:54:30 - 12:59:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3916 (ANCONA -> PIACENZA) (+2m)\n  - REG 3916 (A
- NCONA -> PIACENZA) (+2m)\nRitardo massimo rilevato: 2 min\nAffidabilità s
- tima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interv
- allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
- radale (120s)
+SUMMARY:[FERMATA] REG 3916 (ANCONA -> PIACENZA) ore 12:58 (+2 min)
+DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 12:54:30 - 12:59:00\nTreni coinvolti nella chiusura:\n  
+ - REG 3916 (ANCONA -> PIACENZA) (+2m)\nRitardo massimo rilevato: 2 min\nAf
+ fidabilità stima: 90%\nNota normativa/euristica: Previsione con ritardo p
+ ropagato (+2 min)
 LOCATION:Passaggio a Livello / Stazione RIMINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-608--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T122641Z
+DTEND:20261125T123111Z
+SUMMARY:[TRANSITO VELOCE] IC 608 (LECCE -> MILANO CENTRALE) ore 13:30
+DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 13:26:41 - 13:31:11\nTreni coinvolti nella chius
+ ura:\n  - IC 608 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transit
+ o stimato senza fermata (72% tratta PESARO -> RICCIONE\; pedale annuncio f
+ isso Vmax)
+LOCATION:Passaggio a Livello / Stazione RIMINI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-608--20261124-S05071@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T124115Z
 DTEND:20261125T124911Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:41 - 13:49 (primo: IC 608)
@@ -416,53 +414,73 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3918--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T125230Z
 DTEND:20261125T130100Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 13:52 - 14:01 (primo: REG 3918)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:52 - 14:01 (primo: REG 3918)
 DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: CHIUSURA CONTINU
- A - 4 TRENI\nChiusura sbarre stimata: 13:52:30 - 14:01:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3918 (ANCONA -> PIACENZA)\n  - REG 3918 (ANCONA 
- -> PIACENZA)\n  - REG 17499 (BOLOGNA CENTRALE -> RIMINI)\n  - REG 17499 (B
- OLOGNA CENTRALE -> RIMINI)\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 90%\nNota normativa/euristica: Chiusura continua per 4 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 13:52:30 - 14:01:00\nTreni coinvolti
+  nella chiusura:\n  - REG 3918 (ANCONA -> PIACENZA)\n  - REG 17499 (BOLOGN
+ A CENTRALE -> RIMINI)\nRitardo massimo rilevato: 0 min\nAffidabilità stim
+ a: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervall
+ o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
+ ale (120s)
 LOCATION:Passaggio a Livello / Stazione RIMINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3920--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T133730Z
 DTEND:20261125T134200Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 14:37 - 14:42 (primo: REG 3920)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:37 - 14:42 (primo: REG 3920)
 DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 14:37:30 - 14:42:00\nTreni coinvolti
+ A - 2 TRENI\nChiusura sbarre stimata: 14:37:30 - 14:42:00\nTreni coinvolti
   nella chiusura:\n  - REG 3920 (RIMINI -> PIACENZA)\n  - TRENO 8809 (MILAN
- O CENTRALE -> LECCE)\n  - TRENO 8809 (MILANO CENTRALE -> LECCE)\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica
- : Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) infe
- riore alla soglia minima di sgombero stradale (120s)
+ O CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
+ : 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
+  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
+ le (120s)
 LOCATION:Passaggio a Livello / Stazione RIMINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-610--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T142641Z
+DTEND:20261125T143111Z
+SUMMARY:[TRANSITO VELOCE] IC 610 (LECCE -> BOLZANO) ore 15:30
+DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 15:26:41 - 15:31:11\nTreni coinvolti nella chius
+ ura:\n  - IC 610 (LECCE -> BOLZANO) [Transito]\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito stimat
+ o senza fermata (72% tratta PESARO -> RICCIONE\; pedale annuncio fisso Vma
+ x)
+LOCATION:Passaggio a Livello / Stazione RIMINI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-610--20261124-S05071@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T144115Z
 DTEND:20261125T144600Z
 SUMMARY:[FERMATA] IC 610 (LECCE -> BOLZANO) ore 15:45
@@ -481,8 +499,8 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8824--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T150930Z
 DTEND:20261125T151400Z
 SUMMARY:[FERMATA] TRENO 8824 (LECCE -> MILANO CENTRALE) ore 16:13
@@ -501,8 +519,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3927--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T152952Z
 DTEND:20261125T153522Z
 SUMMARY:[TRANSITO VELOCE] REG 3927 (PIACENZA -> PESARO) ore 16:34
@@ -522,8 +540,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8813--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T153730Z
 DTEND:20261125T154432Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:37 - 16:44 (primo: TRENO 8813)
@@ -544,31 +562,30 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4486--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T155157Z
 DTEND:20261125T160600Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:51 - 17:06 (primo: REG 4486)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:51 - 17:06 (primo: REG 4486)
 DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: CHIUSURA CONTINU
- A - 4 TRENI\nChiusura sbarre stimata: 16:51:57 - 17:06:00\nTreni coinvolti
+ A - 3 TRENI\nChiusura sbarre stimata: 16:51:57 - 17:06:00\nTreni coinvolti
   nella chiusura:\n  - REG 4486 (ANCONA -> RIMINI) [Transito]\n  - REG 3927
-  (PIACENZA -> PESARO)\n  - REG 3927 (PIACENZA -> PESARO)\n  - REG 4486 (AN
- CONA -> RIMINI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%
- \nNota normativa/euristica: Chiusura continua per 4 treni: intervallo util
- e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
- 20s)
+  (PIACENZA -> PESARO)\n  - REG 4486 (ANCONA -> RIMINI)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
+ a continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione RIMINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-611--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T160915Z
 DTEND:20261125T161400Z
 SUMMARY:[FERMATA] IC 611 (BOLZANO -> BARI CENTRALE) ore 17:13
@@ -587,60 +604,58 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4288--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T161957Z
 DTEND:20261125T162527Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:19 - 17:25 (primo: REG 4288)
-DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 17:19:57 - 17:25:27\nTreni coinvolti
-  nella chiusura:\n  - REG 4288 (ANCONA -> RIMINI) [Transito]\n  - REG 4288
-  (ANCONA -> RIMINI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabil
- ità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 4288 (ANCONA -> RIMINI) ore 17:24
+DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 17:19:57 - 17:25:27\nTreni coinvolti nella chius
+ ura:\n  - REG 4288 (ANCONA -> RIMINI) [Transito]\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito stim
+ ato senza fermata (64% tratta RICCIONE -> RIMINI MIRAMARE\; pedale annunci
+ o fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione RIMINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4288--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T163130Z
 DTEND:20261125T163600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:31 - 17:36 (primo: REG 4288)
-DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 17:31:30 - 17:36:00\nTreni coinvolti
-  nella chiusura:\n  - REG 4288 (ANCONA -> RIMINI)\n  - REG 4288 (ANCONA ->
-  RIMINI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota 
- normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i
-  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 4288 (ANCONA -> RIMINI) ore 17:35
+DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 17:31:30 - 17:36:00\nTreni coinvolti nella chiusura:\n  
+ - REG 4288 (ANCONA -> RIMINI)\nRitardo massimo rilevato: 0 min\nAffidabili
+ tà stima: 90%\nNota normativa/euristica: Previsione da traccia oraria reg
+ olare
 LOCATION:Passaggio a Livello / Stazione RIMINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-612--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T165501Z
-DTEND:20261125T165931Z
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T165441Z
+DTEND:20261125T165911Z
 SUMMARY:[TRANSITO VELOCE] IC 612 (LECCE -> MILANO CENTRALE) ore 17:58 (+28 
  min)
 DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 17:55:01 - 17:59:31\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 17:54:41 - 17:59:11\nTreni coinvolti nella chius
  ura:\n  - IC 612 (LECCE -> MILANO CENTRALE) (+28m) [Transito]\nRitardo mas
  simo rilevato: 28 min\nAffidabilità stima: 78%\nNota normativa/euristica:
-  Transito stimato senza fermata (74% tratta PESARO -> RICCIONE\; pedale an
+  Transito stimato senza fermata (72% tratta PESARO -> RICCIONE\; pedale an
  nuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione RIMINI
 STATUS:CONFIRMED
@@ -652,53 +667,54 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-612--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T170915Z
-DTEND:20261125T171600Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 18:09 - 18:16 (primo: IC 612) (+28 mi
+DTEND:20261125T172313Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 18:09 - 18:23 (primo: IC 612) (+28 mi
  n)
 DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 18:09:15 - 18:16:00\nTreni coinvolti
-  nella chiusura:\n  - IC 612 (LECCE -> MILANO CENTRALE) (+28m)\n  - IC 612
-  (LECCE -> MILANO CENTRALE) (+28m)\n  - TRENO 9808 (LECCE -> TORINO PORTA 
- NUOVA)\nRitardo massimo rilevato: 28 min\nAffidabilità stima: 90%\nNota n
- ormativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i 
- passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ A - 3 TRENI\nChiusura sbarre stimata: 18:09:15 - 18:23:13\nTreni coinvolti
+  nella chiusura:\n  - IC 612 (LECCE -> MILANO CENTRALE) (+28m)\n  - TRENO 
+ 9808 (LECCE -> TORINO PORTA NUOVA)\n  - TRENO 8819 (MILANO CENTRALE -> BAR
+ I CENTRALE) [Transito]\nRitardo massimo rilevato: 28 min\nAffidabilità st
+ ima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: interva
+ llo utile tra i passaggi (103s) inferiore alla soglia minima di sgombero s
+ tradale (120s)
 LOCATION:Passaggio a Livello / Stazione RIMINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:28
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8819--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T174530Z
 DTEND:20261125T175400Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 18:45 - 18:54 (primo: TRENO 8819)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:45 - 18:54 (primo: TRENO 8819)
 DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 18:45:30 - 18:54:00\nTreni coinvolti
-  nella chiusura:\n  - TRENO 8819 (MILANO CENTRALE -> BARI CENTRALE)\n  - T
- RENO 8819 (MILANO CENTRALE -> BARI CENTRALE)\n  - REG 3928 (PESARO -> PIAC
- ENZA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota nor
- mativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i pa
- ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 18:45:30 - 18:54:00\nTreni coinvolti
+  nella chiusura:\n  - TRENO 8819 (MILANO CENTRALE -> BARI CENTRALE)\n  - R
+ EG 3928 (PESARO -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabilit
+ à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
 LOCATION:Passaggio a Livello / Stazione RIMINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9811--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T183730Z
 DTEND:20261125T184200Z
 SUMMARY:[FERMATA] TRENO 9811 (MILANO CENTRALE -> PESCARA) ore 19:41
@@ -717,8 +733,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3930--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T185230Z
 DTEND:20261125T185700Z
 SUMMARY:[FERMATA] REG 3930 (ANCONA -> PIACENZA) ore 19:56
@@ -737,30 +753,49 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8830--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T200930Z
 DTEND:20261125T201400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:09 - 21:14 (primo: TRENO 8830)
-DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 21:09:30 - 21:14:00\nTreni coinvolti
-  nella chiusura:\n  - TRENO 8830 (BARI CENTRALE -> MILANO CENTRALE)\n  - T
- RENO 8830 (BARI CENTRALE -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
+SUMMARY:[FERMATA] TRENO 8830 (BARI CENTRALE -> MILANO CENTRALE) ore 21:13
+DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 21:09:30 - 21:14:00\nTreni coinvolti nella chiusura:\n  
+ - TRENO 8830 (BARI CENTRALE -> MILANO CENTRALE)\nRitardo massimo rilevato:
+  0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da 
+ traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione RIMINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8825--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T201743Z
+DTEND:20261125T202313Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8825 (MILANO CENTRALE -> ANCONA) ore 21:21
+DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 21:17:43 - 21:23:13\nTreni coinvolti nella chius
+ ura:\n  - TRENO 8825 (MILANO CENTRALE -> ANCONA) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
+ ansito stimato senza fermata (58% tratta FORLI' -> CESENA\; pedale annunci
+ o fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione RIMINI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8825--20261124-S05071@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T204530Z
 DTEND:20261125T205000Z
 SUMMARY:[FERMATA] TRENO 8825 (MILANO CENTRALE -> ANCONA) ore 21:49
@@ -779,44 +814,61 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3932--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T205830Z
 DTEND:20261125T210300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:58 - 22:03 (primo: REG 3932)
-DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 21:58:30 - 22:03:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3932 (ANCONA -> BOLOGNA CENTRALE)\n  - REG 3932 
- (ANCONA -> BOLOGNA CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+SUMMARY:[FERMATA] REG 3932 (ANCONA -> BOLOGNA CENTRALE) ore 22:02
+DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 21:58:30 - 22:03:00\nTreni coinvolti nella chiusura:\n  
+ - REG 3932 (ANCONA -> BOLOGNA CENTRALE)\nRitardo massimo rilevato: 0 min\n
+ Affidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia 
+ oraria regolare
 LOCATION:Passaggio a Livello / Stazione RIMINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-765--20261124-S05071@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T234815Z
-DTEND:20261125T235300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 00:48 - 00:53 (primo: ICN 765)
-DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 00:48:15 - 00:53:00\nTreni coinvolti
-  nella chiusura:\n  - ICN 765 (MILANO CENTRALE -> LECCE)\n  - ICN 765 (MIL
- ANO CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
- ma: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
- lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
- dale (120s)
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T232028Z
+DTEND:20261125T232458Z
+SUMMARY:[TRANSITO VELOCE] ICN 765 (MILANO CENTRALE -> LECCE) ore 00:23
+DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 00:20:28 - 00:24:58\nTreni coinvolti nella chius
+ ura:\n  - ICN 765 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transi
+ to stimato senza fermata (58% tratta FORLI' -> CESENA\; pedale annuncio fi
+ sso Vmax)
 LOCATION:Passaggio a Livello / Stazione RIMINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:ICN
+END:VEVENT
+BEGIN:VEVENT
+UID:train-765--20261124-S05071@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T234815Z
+DTEND:20261125T235300Z
+SUMMARY:[FERMATA] ICN 765 (MILANO CENTRALE -> LECCE) ore 00:52
+DESCRIPTION:Stazione/PL: RIMINI (S05071)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 00:48:15 - 00:53:00\nTreni coinvolti nella chiusura:\n  
+ - ICN 765 (MILANO CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAff
+ idabilità stima: 90%\nNota normativa/euristica: Previsione da traccia ora
+ ria regolare
+LOCATION:Passaggio a Livello / Stazione RIMINI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:ICN

@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:abf365007dad0bc4235fcff2c2c92400742f3de7442b53f2f02fdeab13fe
- 9fc0
+X-CONTENT-HASH:482b00b873d5c4ec7f04fc1c0e1532aed7202e713aabbaf39bcf3a89d4ff
+ 13d4
 BEGIN:VEVENT
 UID:train-19827--20261124-S11501@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T052542Z
 DTEND:20261125T053112Z
 SUMMARY:[TRANSITO VELOCE] REG 19827 (BARI CENTRALE -> TARANTO) ore 06:29
@@ -34,8 +34,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19827--20261124-S11501@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T053830Z
 DTEND:20261125T054300Z
 SUMMARY:[FERMATA] REG 19827 (BARI CENTRALE -> TARANTO) ore 06:42
@@ -54,20 +54,41 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23603--20261124-S11501@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T061853Z
 DTEND:20261125T062423Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:18 - 07:24 (primo: REG 23603) (+2 
+SUMMARY:[TRANSITO VELOCE] REG 23603 (BARI CENTRALE -> GIOIA DEL COLLE) ore 
+ 07:23 (+2 min)
+DESCRIPTION:Stazione/PL: BITETTO PALO DEL COLLE (S11501)\nRegime chiusura: 
+ TRANSITO VELOCE\nChiusura sbarre stimata: 07:18:53 - 07:24:23\nTreni coinv
+ olti nella chiusura:\n  - REG 23603 (BARI CENTRALE -> GIOIA DEL COLLE) (+2
+ m) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\n
+ Nota normativa/euristica: Transito stimato senza fermata (83% tratta BARI 
+ CENTRALE -> BARI VILLAGGIO DEL LAVORATORE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione BITETTO PALO DEL COLLE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23602--20261124-S11501@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T062933Z
+DTEND:20261125T063630Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:29 - 07:36 (primo: REG 23602) (+2 
  min)
 DESCRIPTION:Stazione/PL: BITETTO PALO DEL COLLE (S11501)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:18:53 - 07:24:23\
- nTreni coinvolti nella chiusura:\n  - REG 23603 (BARI CENTRALE -> GIOIA DE
- L COLLE) (+2m) [Transito]\n  - REG 23603 (BARI CENTRALE -> GIOIA DEL COLLE
- ) (+2m) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 
- 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo u
- tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
-  (120s)
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:29:33 - 07:36:30\
+ nTreni coinvolti nella chiusura:\n  - REG 23602 (GIOIA DEL COLLE -> BARI C
+ ENTRALE) [Transito]\n  - REG 23603 (BARI CENTRALE -> GIOIA DEL COLLE) (+2m
+ ) [Arrivo]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra
+  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BITETTO PALO DEL COLLE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -77,21 +98,21 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-23602--20261124-S11501@pl-tracker.local
-DTSTAMP:20261125T112015Z
+UID:train-23603--20261124-S11501@pl-tracker.local-dep
+DTSTAMP:20261125T203555Z
 SEQUENCE:1
-DTSTART:20261125T062934Z
-DTEND:20261125T063630Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:29 - 07:36 (primo: REG 23602) (+2 
+DTSTART:20261125T064330Z
+DTEND:20261125T065300Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:43 - 07:53 (primo: REG 23603) (+2 
  min)
 DESCRIPTION:Stazione/PL: BITETTO PALO DEL COLLE (S11501)\nRegime chiusura: 
- CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 07:29:34 - 07:36:30\
- nTreni coinvolti nella chiusura:\n  - REG 23602 (GIOIA DEL COLLE -> BARI C
- ENTRALE) [Transito]\n  - REG 23603 (BARI CENTRALE -> GIOIA DEL COLLE) (+2m
- ) [Arrivo]\n  - REG 23603 (BARI CENTRALE -> GIOIA DEL COLLE) (+2m) [Arrivo
- ]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota normati
- va/euristica: Chiusura continua per 3 treni: intervallo utile tra i passag
- gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 07:43:30 - 07:53:00\
+ nTreni coinvolti nella chiusura:\n  - REG 23603 (BARI CENTRALE -> GIOIA DE
+ L COLLE) (+2m) [Partenza]\n  - REG 23605 (BARI CENTRALE -> GIOIA DEL COLLE
+ ) [Transito]\n  - REG 23602 (GIOIA DEL COLLE -> BARI CENTRALE)\nRitardo ma
+ ssimo rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) infer
+ iore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BITETTO PALO DEL COLLE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -101,178 +122,141 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-23603--20261124-S11501@pl-tracker.local-dep
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T064330Z
-DTEND:20261125T065300Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 07:43 - 07:53 (primo: REG 23603) (+2 
- min)
-DESCRIPTION:Stazione/PL: BITETTO PALO DEL COLLE (S11501)\nRegime chiusura: 
- CHIUSURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 07:43:30 - 07:53:00\
- nTreni coinvolti nella chiusura:\n  - REG 23603 (BARI CENTRALE -> GIOIA DE
- L COLLE) (+2m) [Partenza]\n  - REG 23603 (BARI CENTRALE -> GIOIA DEL COLLE
- ) (+2m) [Partenza]\n  - REG 23605 (BARI CENTRALE -> GIOIA DEL COLLE) [Tran
- sito]\n  - REG 23605 (BARI CENTRALE -> GIOIA DEL COLLE) [Transito]\n  - RE
- G 23602 (GIOIA DEL COLLE -> BARI CENTRALE)\nRitardo massimo rilevato: 2 mi
- n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
- er 5 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione BITETTO PALO DEL COLLE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
-X-PL-DELAY-MIN:2
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-23605--20261124-S11501@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T065900Z
 DTEND:20261125T070600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:59 - 08:06 (primo: REG 23605) (+1 
- min)
+SUMMARY:[FERMATA] REG 23605 (BARI CENTRALE -> GIOIA DEL COLLE) ore 08:05 (+
+ 1 min)
 DESCRIPTION:Stazione/PL: BITETTO PALO DEL COLLE (S11501)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:59:00 - 08:06:00\
- nTreni coinvolti nella chiusura:\n  - REG 23605 (BARI CENTRALE -> GIOIA DE
- L COLLE) (+1m)\n  - REG 23605 (BARI CENTRALE -> GIOIA DEL COLLE) (+1m)\nRi
- tardo massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/eu
- ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
- s) inferiore alla soglia minima di sgombero stradale (120s)
+ FERMATA\nChiusura sbarre stimata: 07:59:00 - 08:06:00\nTreni coinvolti nel
+ la chiusura:\n  - REG 23605 (BARI CENTRALE -> GIOIA DEL COLLE) (+1m)\nRita
+ rdo massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euri
+ stica: Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione BITETTO PALO DEL COLLE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19829--20261124-S11501@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T071704Z
-DTEND:20261125T072234Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:17 - 08:22 (primo: REG 19829)
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T071714Z
+DTEND:20261125T072244Z
+SUMMARY:[TRANSITO VELOCE] REG 19829 (BARI CENTRALE -> TARANTO) ore 08:21
 DESCRIPTION:Stazione/PL: BITETTO PALO DEL COLLE (S11501)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:17:04 - 08:22:34\
- nTreni coinvolti nella chiusura:\n  - REG 19829 (BARI CENTRALE -> TARANTO)
-  [Transito]\n  - REG 19829 (BARI CENTRALE -> TARANTO) [Transito]\nRitardo 
- massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
- feriore alla soglia minima di sgombero stradale (120s)
+ TRANSITO VELOCE\nChiusura sbarre stimata: 08:17:14 - 08:22:44\nTreni coinv
+ olti nella chiusura:\n  - REG 19829 (BARI CENTRALE -> TARANTO) [Transito]\
+ nRitardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Transito stimato senza fermata (38% tratta BARI CENTRALE -> G
+ IOIA DEL COLLE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BITETTO PALO DEL COLLE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23606--20261124-S11501@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T093134Z
-DTEND:20261125T093704Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:31 - 10:37 (primo: REG 23606) (+2 
- min)
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T093133Z
+DTEND:20261125T093703Z
+SUMMARY:[TRANSITO VELOCE] REG 23606 (GIOIA DEL COLLE -> BARI CENTRALE) ore 
+ 10:35 (+2 min)
 DESCRIPTION:Stazione/PL: BITETTO PALO DEL COLLE (S11501)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:31:34 - 10:37:04\
- nTreni coinvolti nella chiusura:\n  - REG 23606 (GIOIA DEL COLLE -> BARI C
- ENTRALE) (+2m) [Transito]\n  - REG 23606 (GIOIA DEL COLLE -> BARI CENTRALE
- ) (+2m) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 
- 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo u
- tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
-  (120s)
+ TRANSITO VELOCE\nChiusura sbarre stimata: 10:31:33 - 10:37:03\nTreni coinv
+ olti nella chiusura:\n  - REG 23606 (GIOIA DEL COLLE -> BARI CENTRALE) (+2
+ m) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\n
+ Nota normativa/euristica: Transito stimato senza fermata (73% tratta GIOIA
+  DEL COLLE -> ACQUAVIVA DELLE FONTI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BITETTO PALO DEL COLLE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23606--20261124-S11501@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T095400Z
 DTEND:20261125T100000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:54 - 11:00 (primo: REG 23606) (+6 
- min)
+SUMMARY:[FERMATA] REG 23606 (GIOIA DEL COLLE -> BARI CENTRALE) ore 10:59 (+
+ 6 min)
 DESCRIPTION:Stazione/PL: BITETTO PALO DEL COLLE (S11501)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:54:00 - 11:00:00\
- nTreni coinvolti nella chiusura:\n  - REG 23606 (GIOIA DEL COLLE -> BARI C
- ENTRALE) (+6m)\n  - REG 23606 (GIOIA DEL COLLE -> BARI CENTRALE) (+6m)\nRi
- tardo massimo rilevato: 6 min\nAffidabilità stima: 99%\nNota normativa/eu
- ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
- s) inferiore alla soglia minima di sgombero stradale (120s)
+ FERMATA\nChiusura sbarre stimata: 10:54:00 - 11:00:00\nTreni coinvolti nel
+ la chiusura:\n  - REG 23606 (GIOIA DEL COLLE -> BARI CENTRALE) (+6m)\nRita
+ rdo massimo rilevato: 6 min\nAffidabilità stima: 99%\nNota normativa/euri
+ stica: Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione BITETTO PALO DEL COLLE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19831--20261124-S11501@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T101153Z
 DTEND:20261125T101723Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:11 - 11:17 (primo: REG 19831) (+1 
- min)
+SUMMARY:[TRANSITO VELOCE] REG 19831 (BARI CENTRALE -> TARANTO) ore 11:16 (+
+ 1 min)
 DESCRIPTION:Stazione/PL: BITETTO PALO DEL COLLE (S11501)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:11:53 - 11:17:23\
- nTreni coinvolti nella chiusura:\n  - REG 19831 (BARI CENTRALE -> TARANTO)
-  (+1m) [Transito]\n  - REG 19831 (BARI CENTRALE -> TARANTO) (+1m) [Transit
- o]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Chiusura continua per 2 treni: intervallo utile tra i passa
- ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ TRANSITO VELOCE\nChiusura sbarre stimata: 11:11:53 - 11:17:23\nTreni coinv
+ olti nella chiusura:\n  - REG 19831 (BARI CENTRALE -> TARANTO) (+1m) [Tran
+ sito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota nor
+ mativa/euristica: Transito stimato senza fermata (83% tratta BARI CENTRALE
+  -> BARI VILLAGGIO DEL LAVORATORE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BITETTO PALO DEL COLLE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19831--20261124-S11501@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T102330Z
 DTEND:20261125T103000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:23 - 11:30 (primo: REG 19831) (+1 
- min)
+SUMMARY:[FERMATA] REG 19831 (BARI CENTRALE -> TARANTO) ore 11:29 (+1 min)
 DESCRIPTION:Stazione/PL: BITETTO PALO DEL COLLE (S11501)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:23:30 - 11:30:00\
- nTreni coinvolti nella chiusura:\n  - REG 19831 (BARI CENTRALE -> TARANTO)
-  (+1m)\n  - REG 19831 (BARI CENTRALE -> TARANTO) (+1m)\nRitardo massimo ri
- levato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+ FERMATA\nChiusura sbarre stimata: 11:23:30 - 11:30:00\nTreni coinvolti nel
+ la chiusura:\n  - REG 19831 (BARI CENTRALE -> TARANTO) (+1m)\nRitardo mass
+ imo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: R
+ ilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione BITETTO PALO DEL COLLE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19836--20261124-S11501@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T110734Z
-DTEND:20261125T111304Z
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T110733Z
+DTEND:20261125T111303Z
 SUMMARY:[TRANSITO VELOCE] REG 19836 (TARANTO -> BARI CENTRALE) ore 12:11
 DESCRIPTION:Stazione/PL: BITETTO PALO DEL COLLE (S11501)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 12:07:34 - 12:13:04\nTreni coinv
+ TRANSITO VELOCE\nChiusura sbarre stimata: 12:07:33 - 12:13:03\nTreni coinv
  olti nella chiusura:\n  - REG 19836 (TARANTO -> BARI CENTRALE) [Transito]\
  nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
  /euristica: Transito stimato senza fermata (73% tratta GIOIA DEL COLLE -> 
@@ -287,8 +271,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19836--20261124-S11501@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T112630Z
 DTEND:20261125T113100Z
 SUMMARY:[FERMATA] REG 19836 (TARANTO -> BARI CENTRALE) ore 12:30
@@ -307,52 +291,50 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23609--20261124-S11501@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T124632Z
 DTEND:20261125T125202Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:46 - 13:52 (primo: REG 23609)
+SUMMARY:[TRANSITO VELOCE] REG 23609 (BARI CENTRALE -> GIOIA DEL COLLE) ore 
+ 13:50
 DESCRIPTION:Stazione/PL: BITETTO PALO DEL COLLE (S11501)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:46:32 - 13:52:02\
- nTreni coinvolti nella chiusura:\n  - REG 23609 (BARI CENTRALE -> GIOIA DE
- L COLLE) [Transito]\n  - REG 23609 (BARI CENTRALE -> GIOIA DEL COLLE) [Tra
- nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i p
- assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ TRANSITO VELOCE\nChiusura sbarre stimata: 13:46:32 - 13:52:02\nTreni coinv
+ olti nella chiusura:\n  - REG 23609 (BARI CENTRALE -> GIOIA DEL COLLE) [Tr
+ ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Transito stimato senza fermata (83% tratta BARI CENTRA
+ LE -> BARI VILLAGGIO DEL LAVORATORE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BITETTO PALO DEL COLLE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23609--20261124-S11501@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T125930Z
 DTEND:20261125T130400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:59 - 14:04 (primo: REG 23609)
+SUMMARY:[FERMATA] REG 23609 (BARI CENTRALE -> GIOIA DEL COLLE) ore 14:03
 DESCRIPTION:Stazione/PL: BITETTO PALO DEL COLLE (S11501)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:59:30 - 14:04:00\
- nTreni coinvolti nella chiusura:\n  - REG 23609 (BARI CENTRALE -> GIOIA DE
- L COLLE)\n  - REG 23609 (BARI CENTRALE -> GIOIA DEL COLLE)\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
- usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
+ FERMATA\nChiusura sbarre stimata: 13:59:30 - 14:04:00\nTreni coinvolti nel
+ la chiusura:\n  - REG 23609 (BARI CENTRALE -> GIOIA DEL COLLE)\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica:
+  Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione BITETTO PALO DEL COLLE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23611--20261124-S11501@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T134632Z
 DTEND:20261125T135202Z
 SUMMARY:[TRANSITO VELOCE] REG 23611 (BARI CENTRALE -> GIOIA DEL COLLE) ore 
@@ -373,8 +355,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23611--20261124-S11501@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T135930Z
 DTEND:20261125T140400Z
 SUMMARY:[FERMATA] REG 23611 (BARI CENTRALE -> GIOIA DEL COLLE) ore 15:03
@@ -393,31 +375,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-605--20261124-S11501@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T164046Z
-DTEND:20261125T164516Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:40 - 17:45 (primo: IC 605) (+22 mi
- n)
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T164102Z
+DTEND:20261125T164532Z
+SUMMARY:[TRANSITO VELOCE] IC 605 (MILANO CENTRALE -> LECCE) ore 17:44 (+22 
+ min)
 DESCRIPTION:Stazione/PL: BITETTO PALO DEL COLLE (S11501)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:40:46 - 17:45:16\
- nTreni coinvolti nella chiusura:\n  - IC 605 (MILANO CENTRALE -> LECCE) (+
- 22m) [Transito]\n  - IC 605 (MILANO CENTRALE -> LECCE) (+22m) [Transito]\n
- Ritardo massimo rilevato: 22 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
-  (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ TRANSITO VELOCE\nChiusura sbarre stimata: 17:41:02 - 17:45:32\nTreni coinv
+ olti nella chiusura:\n  - IC 605 (MILANO CENTRALE -> LECCE) (+22m) [Transi
+ to]\nRitardo massimo rilevato: 22 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Transito stimato senza fermata (38% tratta BARI CENTRALE 
+ -> GIOIA DEL COLLE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BITETTO PALO DEL COLLE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:22
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23621--20261124-S11501@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T184632Z
 DTEND:20261125T185202Z
 SUMMARY:[TRANSITO VELOCE] REG 23621 (BARI CENTRALE -> GIOIA DEL COLLE) ore 
@@ -438,8 +419,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23621--20261124-S11501@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T185930Z
 DTEND:20261125T190400Z
 SUMMARY:[FERMATA] REG 23621 (BARI CENTRALE -> GIOIA DEL COLLE) ore 20:03
@@ -458,8 +439,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19849--20261124-S11501@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T202242Z
 DTEND:20261125T202812Z
 SUMMARY:[TRANSITO VELOCE] REG 19849 (BARI CENTRALE -> TARANTO) ore 21:26
@@ -479,8 +460,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19849--20261124-S11501@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T203530Z
 DTEND:20261125T204000Z
 SUMMARY:[FERMATA] REG 19849 (BARI CENTRALE -> TARANTO) ore 21:39
@@ -499,22 +480,21 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-765--20261124-S11501@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261126T061301Z
-DTEND:20261126T061731Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:13 - 07:17 (primo: ICN 765)
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261126T061317Z
+DTEND:20261126T061747Z
+SUMMARY:[TRANSITO VELOCE] ICN 765 (MILANO CENTRALE -> LECCE) ore 07:16
 DESCRIPTION:Stazione/PL: BITETTO PALO DEL COLLE (S11501)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:13:01 - 07:17:31\
- nTreni coinvolti nella chiusura:\n  - ICN 765 (MILANO CENTRALE -> LECCE) [
- Transito]\n  - ICN 765 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo mass
- imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
- hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
+ TRANSITO VELOCE\nChiusura sbarre stimata: 07:13:17 - 07:17:47\nTreni coinv
+ olti nella chiusura:\n  - ICN 765 (MILANO CENTRALE -> LECCE) [Transito]\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Transito stimato senza fermata (38% tratta BARI CENTRALE -> GIOI
+ A DEL COLLE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BITETTO PALO DEL COLLE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:ICN

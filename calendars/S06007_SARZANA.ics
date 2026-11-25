@@ -9,82 +9,102 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:f5ff8c9d8c9ffbe1766a2037bcf0a98cd179b2cbf62efdaeed90a6a37c77
- b7fd
+X-CONTENT-HASH:f4848b97b098963bf99ad30d693bc669eb4c1ce6254afd8a8ba11efd71a8
+ 0f10
 BEGIN:VEVENT
 UID:train-12320--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T050530Z
 DTEND:20261125T051500Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 06:05 - 06:15 (primo: REG 12320) (+1 
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:05 - 06:15 (primo: REG 12320) (+1 
  min)
 DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: CHIUSURA CONTIN
- UA - 3 TRENI\nChiusura sbarre stimata: 06:05:30 - 06:15:00\nTreni coinvolt
- i nella chiusura:\n  - REG 12320 (SARZANA -> SAVONA) (+1m)\n  - REG 12320 
- (SARZANA -> SAVONA) (+1m)\n  - REG 19339 (LA SPEZIA CENTRALE -> LIVORNO CE
- NTRALE)\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 90%\nNota n
- ormativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i 
- passaggi (30s) inferiore alla soglia minima di sgombero stradale (120s)
+ UA - 2 TRENI\nChiusura sbarre stimata: 06:05:30 - 06:15:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 12320 (SARZANA -> SAVONA) (+1m)\n  - REG 19339 
+ (LA SPEZIA CENTRALE -> LIVORNO CENTRALE)\nRitardo massimo rilevato: 1 min\
+ nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per
+  2 treni: intervallo utile tra i passaggi (30s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SARZANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-19330--20261124-S06007@pl-tracker.local-arr
-DTSTAMP:20261125T112015Z
+UID:train-8601--20261124-S06007@pl-tracker.local
+DTSTAMP:20261125T203555Z
 SEQUENCE:0
-DTSTART:20261125T061930Z
-DTEND:20261125T062400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:19 - 07:24 (primo: REG 19330) (+15
-  min)
-DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 07:19:30 - 07:24:00\nTreni coinvolt
- i nella chiusura:\n  - REG 19330 (PISA CENTRALE -> LA SPEZIA CENTRALE) (+1
- 5m) [Arrivo]\n  - REG 19330 (PISA CENTRALE -> LA SPEZIA CENTRALE) (+15m) [
- Arrivo]\nRitardo massimo rilevato: 15 min\nAffidabilità stima: 99%\nNota 
- normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i
-  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTART:20261125T052145Z
+DTEND:20261125T052715Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8601 (GENOVA PIAZZA PRINCIPE -> ROMA TERMIN
+ I) ore 06:26
+DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 06:21:45 - 06:27:15\nTreni coinvolti nella chiu
+ sura:\n  - TRENO 8601 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Transito stimato senza fermata (50% tratta LA SPEZIA CENTRALE 
+ -> MASSA CENTRO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SARZANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19330--20261124-S06007@pl-tracker.local-arr
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T061930Z
+DTEND:20261125T062400Z
+SUMMARY:[FERMATA] REG 19330 (PISA CENTRALE -> LA SPEZIA CENTRALE) ore 07:23
+  (+15 min)
+DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 07:19:30 - 07:24:00\nTreni coinvolti nella chiusura:\n 
+  - REG 19330 (PISA CENTRALE -> LA SPEZIA CENTRALE) (+15m) [Arrivo]\nRitard
+ o massimo rilevato: 15 min\nAffidabilità stima: 99%\nNota normativa/euris
+ tica: Rilevamento reale da circuito di binario (impegno itinerario ingress
+ o stazione)
+LOCATION:Passaggio a Livello / Stazione SARZANA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:15
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19347--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T062730Z
 DTEND:20261125T063530Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:27 - 07:35 (primo: REG 19347) (+15
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:27 - 07:35 (primo: REG 19347) (+15
   min)
 DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: CHIUSURA CONTIN
- UA - 3 TRENI\nChiusura sbarre stimata: 07:27:30 - 07:35:30\nTreni coinvolt
+ UA - 2 TRENI\nChiusura sbarre stimata: 07:27:30 - 07:35:30\nTreni coinvolt
  i nella chiusura:\n  - REG 19347 (LA SPEZIA CENTRALE -> PISA CENTRALE)\n  
- - REG 19330 (PISA CENTRALE -> LA SPEZIA CENTRALE) (+15m) [Partenza]\n  - R
- EG 19330 (PISA CENTRALE -> LA SPEZIA CENTRALE) (+15m) [Partenza]\nRitardo 
- massimo rilevato: 15 min\nAffidabilità stima: 90%\nNota normativa/euristi
- ca: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) in
- feriore alla soglia minima di sgombero stradale (120s)
+ - REG 19330 (PISA CENTRALE -> LA SPEZIA CENTRALE) (+15m) [Partenza]\nRitar
+ do massimo rilevato: 15 min\nAffidabilità stima: 90%\nNota normativa/euri
+ stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
+  inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SARZANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:15
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19233--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T073252Z
 DTEND:20261125T073822Z
 SUMMARY:[TRANSITO VELOCE] REG 19233 (PARMA -> LA SPEZIA CENTRALE) ore 08:37
@@ -104,8 +124,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3261--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T083041Z
 DTEND:20261125T083611Z
 SUMMARY:[TRANSITO VELOCE] REG 3261 (PARMA -> GENOVA BRIGNOLE) ore 09:34
@@ -124,128 +144,162 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2293--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T093700Z
-DTEND:20261125T094130Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:37 - 10:41 (primo: REG 2293)
-DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 10:37:00 - 10:41:30\nTreni coinvolt
- i nella chiusura:\n  - REG 2293 (MILANO CENTRALE -> SARZANA)\n  - REG 2293
-  (MILANO CENTRALE -> SARZANA)\nRitardo massimo rilevato: -2 min\nAffidabil
- ità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione SARZANA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:-2
-X-PL-CONFIDENCE:0.99
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-19239--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
+UID:train-505--20261124-S06007@pl-tracker.local
+DTSTAMP:20261125T203555Z
 SEQUENCE:0
-DTSTART:20261125T113452Z
-DTEND:20261125T114022Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:34 - 12:40 (primo: REG 19239) (+2 
- min)
-DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 12:34:52 - 12:40:22\nTreni coinvolt
- i nella chiusura:\n  - REG 19239 (PONTREMOLI -> LA SPEZIA CENTRALE) (+2m) 
- [Transito]\n  - REG 19239 (PONTREMOLI -> LA SPEZIA CENTRALE) (+2m) [Transi
- to]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione SARZANA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:2
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18442--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T114330Z
-DTEND:20261125T114800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:43 - 12:48 (primo: REG 18442)
-DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 12:43:30 - 12:48:00\nTreni coinvolt
- i nella chiusura:\n  - REG 18442 (PISA CENTRALE -> BORGO VAL DI TARO)\n  -
-  REG 18442 (PISA CENTRALE -> BORGO VAL DI TARO)\nRitardo massimo rilevato:
-  -1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura cont
- inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione SARZANA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:-1
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-19361--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T120850Z
-DTEND:20261125T121420Z
-SUMMARY:[TRANSITO VELOCE] REG 19361 (LA SPEZIA CENTRALE -> PISA CENTRALE) o
- re 13:13
+DTSTART:20261125T092200Z
+DTEND:20261125T092630Z
+SUMMARY:[TRANSITO VELOCE] IC 505 (VENTIMIGLIA -> ROMA TERMINI) ore 10:25
 DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 13:08:50 - 13:14:20\nTreni coinvolti nella chiu
- sura:\n  - REG 19361 (LA SPEZIA CENTRALE -> PISA CENTRALE) [Transito]\nRit
- ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Transito stimato senza fermata (52% tratta LA SPEZIA CENTRALE -> L
- A SPEZIA MIGLIARINA\; pedale annuncio fisso Vmax)
+ \nChiusura sbarre stimata: 10:22:00 - 10:26:30\nTreni coinvolti nella chiu
+ sura:\n  - IC 505 (VENTIMIGLIA -> ROMA TERMINI) [Transito]\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
+ nsito stimato senza fermata (50% tratta LA SPEZIA CENTRALE -> MASSA CENTRO
+ \; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SARZANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2293--20261124-S06007@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T093700Z
+DTEND:20261125T094130Z
+SUMMARY:[FERMATA] REG 2293 (MILANO CENTRALE -> SARZANA) ore 10:40
+DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 10:37:00 - 10:41:30\nTreni coinvolti nella chiusura:\n 
+  - REG 2293 (MILANO CENTRALE -> SARZANA)\nRitardo massimo rilevato: -2 min
+ \nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale da
+  circuito di binario
+LOCATION:Passaggio a Livello / Stazione SARZANA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:-2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19239--20261124-S06007@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T113452Z
+DTEND:20261125T114022Z
+SUMMARY:[TRANSITO VELOCE] REG 19239 (PONTREMOLI -> LA SPEZIA CENTRALE) ore 
+ 12:39 (+2 min)
+DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 12:34:52 - 12:40:22\nTreni coinvolti nella chiu
+ sura:\n  - REG 19239 (PONTREMOLI -> LA SPEZIA CENTRALE) (+2m) [Transito]\n
+ Ritardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (59% tratta S.STEFANO DI MAGRA -
+ > VEZZANO LIGURE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione SARZANA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18442--20261124-S06007@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T114330Z
+DTEND:20261125T114800Z
+SUMMARY:[FERMATA] REG 18442 (PISA CENTRALE -> BORGO VAL DI TARO) ore 12:47
+DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 12:43:30 - 12:48:00\nTreni coinvolti nella chiusura:\n 
+  - REG 18442 (PISA CENTRALE -> BORGO VAL DI TARO)\nRitardo massimo rilevat
+ o: -1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
+ con anticipo (-1 min)
+LOCATION:Passaggio a Livello / Stazione SARZANA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19361--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T122830Z
 DTEND:20261125T123300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:28 - 13:33 (primo: REG 19361)
-DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 13:28:30 - 13:33:00\nTreni coinvolt
- i nella chiusura:\n  - REG 19361 (LA SPEZIA CENTRALE -> PISA CENTRALE)\n  
- - REG 19361 (LA SPEZIA CENTRALE -> PISA CENTRALE)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
- tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
- lia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 19361 (LA SPEZIA CENTRALE -> PISA CENTRALE) ore 13:32
+DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 13:28:30 - 13:33:00\nTreni coinvolti nella chiusura:\n 
+  - REG 19361 (LA SPEZIA CENTRALE -> PISA CENTRALE)\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
+ da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione SARZANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18367--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T125330Z
 DTEND:20261125T125800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:53 - 13:58 (primo: REG 18367)
+SUMMARY:[FERMATA] REG 18367 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTR
+ ALE) ore 13:57
+DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 13:53:30 - 13:58:00\nTreni coinvolti nella chiusura:\n 
+  - REG 18367 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE)\nRitardo 
+ massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
+ a: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione SARZANA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-510--20261124-S06007@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:0
+DTSTART:20261125T133633Z
+DTEND:20261125T134103Z
+SUMMARY:[TRANSITO VELOCE] IC 510 (SALERNO -> TORINO PORTA NUOVA) ore 14:40
+DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 14:36:33 - 14:41:03\nTreni coinvolti nella chiu
+ sura:\n  - IC 510 (SALERNO -> TORINO PORTA NUOVA) [Transito]\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
+ ransito stimato senza fermata (34% tratta CARRARA AVENZA -> LA SPEZIA CENT
+ RALE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione SARZANA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18371--20261124-S06007@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T135330Z
+DTEND:20261125T140100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:53 - 15:01 (primo: REG 18371)
 DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 13:53:30 - 13:58:00\nTreni coinvolt
- i nella chiusura:\n  - REG 18367 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA
-  CENTRALE)\n  - REG 18367 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRA
- LE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota norma
+ UA - 2 TRENI\nChiusura sbarre stimata: 14:53:30 - 15:01:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 18371 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA
+  CENTRALE)\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVEL
+ LA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota norma
  tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
  aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SARZANA
@@ -257,18 +311,18 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18415--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T133250Z
-DTEND:20261125T133820Z
-SUMMARY:[TRANSITO VELOCE] REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA MA
- RIA NOVELLA) ore 14:37
+UID:train-18399--20261124-S06007@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T143746Z
+DTEND:20261125T144316Z
+SUMMARY:[TRANSITO VELOCE] REG 18399 (LA SPEZIA CENTRALE -> FIRENZE SANTA MA
+ RIA NOVELLA) ore 15:42
 DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 14:32:50 - 14:38:20\nTreni coinvolti nella chiu
- sura:\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELLA) [
+ \nChiusura sbarre stimata: 15:37:46 - 15:43:16\nTreni coinvolti nella chiu
+ sura:\n  - REG 18399 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELLA) [
  Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
-  normativa/euristica: Transito stimato senza fermata (52% tratta LA SPEZIA
+  normativa/euristica: Transito stimato senza fermata (51% tratta LA SPEZIA
   CENTRALE -> LA SPEZIA MIGLIARINA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SARZANA
 STATUS:CONFIRMED
@@ -279,32 +333,9 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18371--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T135330Z
-DTEND:20261125T140100Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 14:53 - 15:01 (primo: REG 18371)
-DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: CHIUSURA CONTIN
- UA - 3 TRENI\nChiusura sbarre stimata: 14:53:30 - 15:01:00\nTreni coinvolt
- i nella chiusura:\n  - REG 18371 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA
-  CENTRALE)\n  - REG 18371 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRA
- LE)\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELLA)\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eu
- ristica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0
- s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione SARZANA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-18399--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T145530Z
 DTEND:20261125T150000Z
 SUMMARY:[FERMATA] REG 18399 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVE
@@ -323,131 +354,129 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-19358--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
+UID:train-8619--20261124-S06007@pl-tracker.local
+DTSTAMP:20261125T203555Z
 SEQUENCE:0
-DTSTART:20261125T152730Z
-DTEND:20261125T153200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:27 - 16:32 (primo: REG 19358)
-DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 16:27:30 - 16:32:00\nTreni coinvolt
- i nella chiusura:\n  - REG 19358 (PISA CENTRALE -> LA SPEZIA CENTRALE)\n  
- - REG 19358 (PISA CENTRALE -> LA SPEZIA CENTRALE)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
- tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
- lia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione SARZANA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-19371--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T153523Z
-DTEND:20261125T154053Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:35 - 16:40 (primo: REG 19371)
-DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 16:35:23 - 16:40:53\nTreni coinvolt
- i nella chiusura:\n  - REG 19371 (LA SPEZIA CENTRALE -> SARZANA) [Transito
- ]\n  - REG 19371 (LA SPEZIA CENTRALE -> SARZANA) [Transito]\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
- iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione SARZANA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-18401--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T154331Z
-DTEND:20261125T160000Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:43 - 17:00 (primo: REG 18401)
-DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: CHIUSURA CONTIN
- UA - 4 TRENI\nChiusura sbarre stimata: 16:43:31 - 17:00:00\nTreni coinvolt
- i nella chiusura:\n  - REG 18401 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARI
- A NOVELLA) [Transito]\n  - REG 19371 (LA SPEZIA CENTRALE -> SARZANA)\n  - 
- REG 19371 (LA SPEZIA CENTRALE -> SARZANA)\n  - REG 18401 (LA SPEZIA CENTRA
- LE -> FIRENZE SANTA MARIA NOVELLA)\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 tre
- ni: intervallo utile tra i passaggi (30s) inferiore alla soglia minima di 
- sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione SARZANA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-19256--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T161009Z
-DTEND:20261125T161539Z
-SUMMARY:[TRANSITO VELOCE] REG 19256 (LA SPEZIA CENTRALE -> PARMA) ore 17:14
+DTSTART:20261125T151945Z
+DTEND:20261125T152515Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8619 (MILANO CENTRALE -> ROMA TERMINI) ore 
+ 16:24
 DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 17:10:09 - 17:15:39\nTreni coinvolti nella chiu
- sura:\n  - REG 19256 (LA SPEZIA CENTRALE -> PARMA) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Transito stimato senza fermata (63% tratta LA SPEZIA MIGLIARINA -> VEZZANO
-  LIGURE\; pedale annuncio fisso Vmax)
+ \nChiusura sbarre stimata: 16:19:45 - 16:25:15\nTreni coinvolti nella chiu
+ sura:\n  - TRENO 8619 (MILANO CENTRALE -> ROMA TERMINI) [Transito]\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Transito stimato senza fermata (50% tratta LA SPEZIA CENTRALE -> MASS
+ A CENTRO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SARZANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19358--20261124-S06007@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T152730Z
+DTEND:20261125T153316Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:27 - 16:33 (primo: REG 19358)
+DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 16:27:30 - 16:33:16\nTreni coinvolt
+ i nella chiusura:\n  - REG 19358 (PISA CENTRALE -> LA SPEZIA CENTRALE)\n  
+ - REG 19371 (LA SPEZIA CENTRALE -> SARZANA) [Transito]\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
+ a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SARZANA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19371--20261124-S06007@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T155030Z
+DTEND:20261125T160000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:50 - 17:00 (primo: REG 19371)
+DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 16:50:30 - 17:00:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 19371 (LA SPEZIA CENTRALE -> SARZANA)\n  - REG 
+ 18401 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELLA)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiu
+ sura continua per 2 treni: intervallo utile tra i passaggi (30s) inferiore
+  alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SARZANA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12236--20261124-S06007@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:0
+DTSTART:20261125T160256Z
+DTEND:20261125T160916Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:02 - 17:09 (primo: REG 12236)
+DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 17:02:56 - 17:09:16\nTreni coinvolt
+ i nella chiusura:\n  - REG 12236 (LA SPEZIA MIGLIARINA -> SESTRI LEVANTE) 
+ [Transito]\n  - REG 19256 (LA SPEZIA CENTRALE -> PARMA) [Transito]\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SARZANA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18446--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T162330Z
 DTEND:20261125T162800Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:23 - 17:28 (primo: REG 18446)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:23 - 17:28 (primo: REG 18446)
 DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: CHIUSURA CONTIN
- UA - 3 TRENI\nChiusura sbarre stimata: 17:23:30 - 17:28:00\nTreni coinvolt
- i nella chiusura:\n  - REG 18446 (PISA CENTRALE -> PONTREMOLI)\n  - REG 18
- 446 (PISA CENTRALE -> PONTREMOLI)\n  - REG 19373 (LA SPEZIA CENTRALE -> PI
- SA CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nN
- ota normativa/euristica: Chiusura continua per 3 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
+ UA - 2 TRENI\nChiusura sbarre stimata: 17:23:30 - 17:28:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 18446 (PISA CENTRALE -> PONTREMOLI)\n  - REG 19
+ 373 (LA SPEZIA CENTRALE -> PISA CENTRALE)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua pe
+ r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SARZANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-669--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T164349Z
-DTEND:20261125T164819Z
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T163137Z
+DTEND:20261125T163607Z
 SUMMARY:[TRANSITO VELOCE] IC 669 (MILANO CENTRALE -> LIVORNO CENTRALE) ore 
- 17:47
+ 17:35
 DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 17:43:49 - 17:48:19\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 17:31:37 - 17:36:07\nTreni coinvolti nella chiu
  sura:\n  - IC 669 (MILANO CENTRALE -> LIVORNO CENTRALE) [Transito]\nRitard
  o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Transito stimato senza fermata (42% tratta CARRARA AVENZA -> MASSA CE
- NTRO\; pedale annuncio fisso Vmax)
+ ica: Transito stimato senza fermata (60% tratta LA SPEZIA CENTRALE -> CARR
+ ARA AVENZA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SARZANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -458,30 +487,29 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18381--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T165330Z
 DTEND:20261125T165800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:53 - 17:58 (primo: REG 18381)
-DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 17:53:30 - 17:58:00\nTreni coinvolt
- i nella chiusura:\n  - REG 18381 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA
-  CENTRALE)\n  - REG 18381 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRA
- LE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 18381 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTR
+ ALE) ore 17:57
+DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 17:53:30 - 17:58:00\nTreni coinvolti nella chiusura:\n 
+  - REG 18381 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZIA CENTRALE)\nRitardo 
+ massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
+ a: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione SARZANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8623--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T172230Z
 DTEND:20261125T172700Z
 SUMMARY:[FERMATA] TRENO 8623 (TORINO PORTA NUOVA -> ROMA TERMINI) ore 18:26
@@ -500,30 +528,29 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19251--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T173141Z
 DTEND:20261125T173711Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:31 - 18:37 (primo: REG 19251)
-DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 18:31:41 - 18:37:11\nTreni coinvolt
- i nella chiusura:\n  - REG 19251 (PARMA -> LA SPEZIA CENTRALE) [Transito]\
- n  - REG 19251 (PARMA -> LA SPEZIA CENTRALE) [Transito]\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 19251 (PARMA -> LA SPEZIA CENTRALE) ore 18:35
+DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 18:31:41 - 18:37:11\nTreni coinvolti nella chiu
+ sura:\n  - REG 19251 (PARMA -> LA SPEZIA CENTRALE) [Transito]\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Transito stimato senza fermata (59% tratta S.STEFANO DI MAGRA -> VEZZANO L
+ IGURE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SARZANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18387--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T175230Z
 DTEND:20261125T175700Z
 SUMMARY:[FERMATA] REG 18387 (FIRENZE SANTA MARIA NOVELLA -> BORGO VAL DI TA
@@ -543,62 +570,40 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18407--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T181346Z
+DTEND:20261125T181916Z
+SUMMARY:[TRANSITO VELOCE] REG 18407 (LA SPEZIA CENTRALE -> FIRENZE SANTA MA
+ RIA NOVELLA) ore 19:18
+DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 19:13:46 - 19:19:16\nTreni coinvolti nella chiu
+ sura:\n  - REG 18407 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVELLA) [
+ Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Transito stimato senza fermata (51% tratta LA SPEZIA
+  CENTRALE -> LA SPEZIA MIGLIARINA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione SARZANA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-18407--20261124-S06007@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T182830Z
-DTEND:20261125T183300Z
+DTEND:20261125T183355Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:28 - 19:33 (primo: REG 18407)
 DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 19:28:30 - 19:33:00\nTreni coinvolt
+ UA - 2 TRENI\nChiusura sbarre stimata: 19:28:30 - 19:33:55\nTreni coinvolt
  i nella chiusura:\n  - REG 18407 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARI
- A NOVELLA)\n  - REG 18407 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVEL
- LA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione SARZANA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2295--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T200630Z
-DTEND:20261125T201100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:06 - 21:11 (primo: REG 2295)
-DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 21:06:30 - 21:11:00\nTreni coinvolt
- i nella chiusura:\n  - REG 2295 (MILANO PORTA GARIBALDI -> LIVORNO CENTRAL
- E)\n  - REG 2295 (MILANO PORTA GARIBALDI -> LIVORNO CENTRALE)\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione SARZANA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3283--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T201440Z
-DTEND:20261125T202010Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:14 - 21:20 (primo: REG 3283)
-DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 21:14:40 - 21:20:10\nTreni coinvolt
- i nella chiusura:\n  - REG 3283 (GENOVA BRIGNOLE -> PARMA) [Transito]\n  -
-  REG 3283 (GENOVA BRIGNOLE -> PARMA) [Transito]\nRitardo massimo rilevato:
-  0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
- nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
- a minima di sgombero stradale (120s)
+ A NOVELLA)\n  - IC 673 (MILANO CENTRALE -> LIVORNO CENTRALE) [Transito]\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SARZANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -608,31 +613,71 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-19380--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T202830Z
-DTEND:20261125T203300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:28 - 21:33 (primo: REG 19380)
-DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 21:28:30 - 21:33:00\nTreni coinvolt
- i nella chiusura:\n  - REG 19380 (PISA CENTRALE -> LA SPEZIA CENTRALE)\n  
- - REG 19380 (PISA CENTRALE -> LA SPEZIA CENTRALE)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
- tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
- lia minima di sgombero stradale (120s)
+UID:train-2295--20261124-S06007@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T200630Z
+DTEND:20261125T201100Z
+SUMMARY:[FERMATA] REG 2295 (MILANO PORTA GARIBALDI -> LIVORNO CENTRALE) ore
+  21:10
+DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 21:06:30 - 21:11:00\nTreni coinvolti nella chiusura:\n 
+  - REG 2295 (MILANO PORTA GARIBALDI -> LIVORNO CENTRALE)\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previ
+ sione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione SARZANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3283--20261124-S06007@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T201443Z
+DTEND:20261125T202013Z
+SUMMARY:[TRANSITO VELOCE] REG 3283 (GENOVA BRIGNOLE -> PARMA) ore 21:18
+DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 21:14:43 - 21:20:13\nTreni coinvolti nella chiu
+ sura:\n  - REG 3283 (GENOVA BRIGNOLE -> PARMA) [Transito]\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
+ sito stimato senza fermata (58% tratta LA SPEZIA CENTRALE -> S.STEFANO DI 
+ MAGRA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione SARZANA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19380--20261124-S06007@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T202830Z
+DTEND:20261125T203300Z
+SUMMARY:[FERMATA] REG 19380 (PISA CENTRALE -> LA SPEZIA CENTRALE) ore 21:32
+DESCRIPTION:Stazione/PL: SARZANA (S06007)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 21:28:30 - 21:33:00\nTreni coinvolti nella chiusura:\n 
+  - REG 19380 (PISA CENTRALE -> LA SPEZIA CENTRALE)\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
+ da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione SARZANA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19382--20261124-S06007@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T213430Z
 DTEND:20261125T213933Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:34 - 22:39 (primo: REG 19382)

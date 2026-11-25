@@ -9,35 +9,33 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:abd513d87f5626767d27732c07fd17e900cd7d29bb4d4ecba2d101bdcc88
- 932b
+X-CONTENT-HASH:568a3f1c06434bed14a28f9693dee7bda77b62b0c8700bbb965d6251cc64
+ 8e0c
 BEGIN:VEVENT
 UID:train-11012--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T051156Z
 DTEND:20261125T051838Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:11 - 06:18 (primo: REG 11012) (+7 
- min)
-DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:11:56 - 06:18:38\nTreni
-  coinvolti nella chiusura:\n  - REG 11012 (VARESE NORD -> MILANO CADORNA) 
- (+7m)\n  - REG 11012 (VARESE NORD -> MILANO CADORNA) (+7m)\nRitardo massim
- o rilevato: 7 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chi
- usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 11012 (VARESE NORD -> MILANO CADORNA) ore 06:17 (+7 m
+ in)
+DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: FERMAT
+ A\nChiusura sbarre stimata: 06:11:56 - 06:18:38\nTreni coinvolti nella chi
+ usura:\n  - REG 11012 (VARESE NORD -> MILANO CADORNA) (+7m)\nRitardo massi
+ mo rilevato: 7 min\nAffidabilità stima: 99%\nNota normativa/euristica: Ri
+ levamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:7
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1011--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T052646Z
 DTEND:20261125T053216Z
 SUMMARY:[TRANSITO VELOCE] REG 1011 (MILANO CADORNA -> LAVENO MOMBELLO LAGO)
@@ -46,7 +44,7 @@ DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: TRANSI
  TO VELOCE\nChiusura sbarre stimata: 06:26:46 - 06:32:16\nTreni coinvolti n
  ella chiusura:\n  - REG 1011 (MILANO CADORNA -> LAVENO MOMBELLO LAGO) [Tra
  nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Transito stimato senza fermata (61% tratta SARONNO -> G
+ rmativa/euristica: Transito stimato senza fermata (60% tratta SARONNO -> G
  ERENZANO - TURATE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
 STATUS:CONFIRMED
@@ -58,8 +56,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1011--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T054230Z
 DTEND:20261125T054700Z
 SUMMARY:[FERMATA] REG 1011 (MILANO CADORNA -> LAVENO MOMBELLO LAGO) ore 06:
@@ -79,18 +77,40 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2016--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T060142Z
 DTEND:20261125T060712Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:01 - 07:07 (primo: REG 2016)
+SUMMARY:[TRANSITO VELOCE] REG 2016 (LAVENO MOMBELLO LAGO -> MILANO CADORNA)
+  ore 07:05
+DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 07:01:42 - 07:07:12\nTreni coinvolti n
+ ella chiusura:\n  - REG 2016 (LAVENO MOMBELLO LAGO -> MILANO CADORNA) [Tra
+ nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Transito stimato senza fermata (13% tratta TRADATE -> S
+ ARONNO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-1015--20261124-S01728@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T062956Z
+DTEND:20261125T063607Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:29 - 07:36 (primo: REG 1015)
 DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:01:42 - 07:07:12\nTreni
-  coinvolti nella chiusura:\n  - REG 2016 (LAVENO MOMBELLO LAGO -> MILANO C
- ADORNA) [Transito]\n  - REG 2016 (LAVENO MOMBELLO LAGO -> MILANO CADORNA) 
- [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
- a normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra
-  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:29:56 - 07:36:07\nTreni
+  coinvolti nella chiusura:\n  - REG 1015 (MILANO CADORNA -> VARESE CASBENO
+ ) [Transito]\n  - REG 20 (LAVENO MOMBELLO LAGO -> MILANO CADORNA) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Chiusura continua per 2 treni: intervallo utile tra i passa
+ ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -101,54 +121,29 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1015--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T062957Z
-DTEND:20261125T063606Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:29 - 07:36 (primo: REG 1015)
-DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: CHIUSU
- RA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 07:29:57 - 07:36:06\nTreni
-  coinvolti nella chiusura:\n  - REG 1015 (MILANO CADORNA -> VARESE CASBENO
- ) [Transito]\n  - REG 1015 (MILANO CADORNA -> VARESE CASBENO) [Transito]\n
-   - REG 20 (LAVENO MOMBELLO LAGO -> MILANO CADORNA) [Transito]\nRitardo ma
- ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
-  Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) infer
- iore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-1015--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T064645Z
 DTEND:20261125T065344Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:46 - 07:53 (primo: REG 1015) (+7 m
- in)
-DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:46:45 - 07:53:44\nTreni
-  coinvolti nella chiusura:\n  - REG 1015 (MILANO CADORNA -> VARESE CASBENO
- ) (+7m)\n  - REG 1015 (MILANO CADORNA -> VARESE CASBENO) (+7m)\nRitardo ma
- ssimo rilevato: 7 min\nAffidabilità stima: 99%\nNota normativa/euristica:
-  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
- iore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 1015 (MILANO CADORNA -> VARESE CASBENO) ore 07:52 (+7
+  min)
+DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: FERMAT
+ A\nChiusura sbarre stimata: 07:46:45 - 07:53:44\nTreni coinvolti nella chi
+ usura:\n  - REG 1015 (MILANO CADORNA -> VARESE CASBENO) (+7m)\nRitardo mas
+ simo rilevato: 7 min\nAffidabilità stima: 99%\nNota normativa/euristica: 
+ Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:7
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10017--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T065646Z
 DTEND:20261125T070216Z
 SUMMARY:[TRANSITO VELOCE] REG 10017 (MILANO CADORNA -> VARESE NORD) ore 08:
@@ -157,7 +152,7 @@ DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: TRANSI
  TO VELOCE\nChiusura sbarre stimata: 07:56:46 - 08:02:16\nTreni coinvolti n
  ella chiusura:\n  - REG 10017 (MILANO CADORNA -> VARESE NORD) [Transito]\n
  Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
- euristica: Transito stimato senza fermata (61% tratta SARONNO -> GERENZANO
+ euristica: Transito stimato senza fermata (60% tratta SARONNO -> GERENZANO
   - TURATE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
 STATUS:CONFIRMED
@@ -169,8 +164,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10017--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T071230Z
 DTEND:20261125T071700Z
 SUMMARY:[FERMATA] REG 10017 (MILANO CADORNA -> VARESE NORD) ore 08:16
@@ -189,17 +184,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T072051Z
-DTEND:20261125T072621Z
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T072055Z
+DTEND:20261125T072625Z
 SUMMARY:[TRANSITO VELOCE] REG 19 (MILANO CADORNA -> LAVENO MOMBELLO LAGO) o
  re 08:25
 DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: TRANSI
- TO VELOCE\nChiusura sbarre stimata: 08:20:51 - 08:26:21\nTreni coinvolti n
+ TO VELOCE\nChiusura sbarre stimata: 08:20:55 - 08:26:25\nTreni coinvolti n
  ella chiusura:\n  - REG 19 (MILANO CADORNA -> LAVENO MOMBELLO LAGO) [Trans
  ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
- ativa/euristica: Transito stimato senza fermata (88% tratta SARONNO -> TRA
+ ativa/euristica: Transito stimato senza fermata (89% tratta SARONNO -> TRA
  DATE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
 STATUS:CONFIRMED
@@ -211,62 +206,60 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10031--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T100340Z
 DTEND:20261125T100910Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:03 - 11:09 (primo: REG 10031)
-DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:03:40 - 11:09:10\nTreni
-  coinvolti nella chiusura:\n  - REG 10031 (MILANO CADORNA -> VARESE NORD) 
- [Transito]\n  - REG 10031 (MILANO CADORNA -> VARESE NORD) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
-  inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 10031 (MILANO CADORNA -> VARESE NORD) ore 11:
+ 07
+DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 11:03:40 - 11:09:10\nTreni coinvolti n
+ ella chiusura:\n  - REG 10031 (MILANO CADORNA -> VARESE NORD) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (60% tratta SARONNO -> GERENZANO
+  - TURATE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10031--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T101829Z
 DTEND:20261125T102517Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:18 - 11:25 (primo: REG 10031) (+8 
- min)
-DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:18:29 - 11:25:17\nTreni
-  coinvolti nella chiusura:\n  - REG 10031 (MILANO CADORNA -> VARESE NORD) 
- (+8m)\n  - REG 10031 (MILANO CADORNA -> VARESE NORD) (+8m)\nRitardo massim
- o rilevato: 8 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chi
- usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 10031 (MILANO CADORNA -> VARESE NORD) ore 11:24 (+8 m
+ in)
+DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: FERMAT
+ A\nChiusura sbarre stimata: 11:18:29 - 11:25:17\nTreni coinvolti nella chi
+ usura:\n  - REG 10031 (MILANO CADORNA -> VARESE NORD) (+8m)\nRitardo massi
+ mo rilevato: 8 min\nAffidabilità stima: 99%\nNota normativa/euristica: Ri
+ levamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:8
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-40--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T103036Z
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T103037Z
 DTEND:20261125T104200Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:30 - 11:42 (primo: REG 40)
 DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:30:36 - 11:42:00\nTreni
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:30:37 - 11:42:00\nTreni
   coinvolti nella chiusura:\n  - REG 40 (LAVENO MOMBELLO LAGO -> MILANO CAD
  ORNA) [Transito]\n  - REG 10040 (VARESE NORD -> MILANO CADORNA)\nRitardo m
  assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Chiusura continua per 2 treni: intervallo utile tra i passaggi (83s) inf
+ : Chiusura continua per 2 treni: intervallo utile tra i passaggi (82s) inf
  eriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
 STATUS:CONFIRMED
@@ -278,189 +271,180 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10035--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T105727Z
-DTEND:20261125T110257Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:57 - 12:02 (primo: REG 10035)
-DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:57:27 - 12:02:57\nTreni
-  coinvolti nella chiusura:\n  - REG 10035 (MILANO CADORNA -> VARESE NORD) 
- [Transito]\n  - REG 10035 (MILANO CADORNA -> VARESE NORD) [Transito]\nRita
- rdo massimo rilevato: -2 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
- ) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T105726Z
+DTEND:20261125T110256Z
+SUMMARY:[TRANSITO VELOCE] REG 10035 (MILANO CADORNA -> VARESE NORD) ore 12:
+ 01
+DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 11:57:26 - 12:02:56\nTreni coinvolti n
+ ella chiusura:\n  - REG 10035 (MILANO CADORNA -> VARESE NORD) [Transito]\n
+ Ritardo massimo rilevato: -2 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Transito stimato senza fermata (60% tratta SARONNO -> GERENZAN
+ O - TURATE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10035--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T111030Z
 DTEND:20261125T111500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:10 - 12:15 (primo: REG 10035)
-DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:10:30 - 12:15:00\nTreni
-  coinvolti nella chiusura:\n  - REG 10035 (MILANO CADORNA -> VARESE NORD)\
- n  - REG 10035 (MILANO CADORNA -> VARESE NORD)\nRitardo massimo rilevato: 
- -2 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura conti
- nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
- a minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 10035 (MILANO CADORNA -> VARESE NORD) ore 12:14
+DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: FERMAT
+ A\nChiusura sbarre stimata: 12:10:30 - 12:15:00\nTreni coinvolti nella chi
+ usura:\n  - REG 10035 (MILANO CADORNA -> VARESE NORD)\nRitardo massimo ril
+ evato: -2 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one con anticipo (-2 min)
 LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:-2
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10044--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T113730Z
 DTEND:20261125T114200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:37 - 12:42 (primo: REG 10044)
-DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:37:30 - 12:42:00\nTreni
-  coinvolti nella chiusura:\n  - REG 10044 (VARESE NORD -> MILANO CADORNA)\
- n  - REG 10044 (VARESE NORD -> MILANO CADORNA)\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura contin
- ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 10044 (VARESE NORD -> MILANO CADORNA) ore 12:41
+DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: FERMAT
+ A\nChiusura sbarre stimata: 12:37:30 - 12:42:00\nTreni coinvolti nella chi
+ usura:\n  - REG 10044 (VARESE NORD -> MILANO CADORNA)\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
+ ne da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10041--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T115646Z
 DTEND:20261125T120216Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:56 - 13:02 (primo: REG 10041)
-DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:56:46 - 13:02:16\nTreni
-  coinvolti nella chiusura:\n  - REG 10041 (MILANO CADORNA -> VARESE NORD) 
- [Transito]\n  - REG 10041 (MILANO CADORNA -> VARESE NORD) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
-  inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 10041 (MILANO CADORNA -> VARESE NORD) ore 13:
+ 01
+DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 12:56:46 - 13:02:16\nTreni coinvolti n
+ ella chiusura:\n  - REG 10041 (MILANO CADORNA -> VARESE NORD) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (60% tratta SARONNO -> GERENZANO
+  - TURATE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-11044--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T120730Z
 DTEND:20261125T121700Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 13:07 - 13:17 (primo: REG 11044)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:07 - 13:17 (primo: REG 11044)
 DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: CHIUSU
- RA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 13:07:30 - 13:17:00\nTreni
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:07:30 - 13:17:00\nTreni
   coinvolti nella chiusura:\n  - REG 11044 (VARESE NORD -> MILANO CADORNA)\
- n  - REG 11044 (VARESE NORD -> MILANO CADORNA)\n  - REG 10041 (MILANO CADO
- RNA -> VARESE NORD)\n  - REG 10041 (MILANO CADORNA -> VARESE NORD)\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
- ica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) i
- nferiore alla soglia minima di sgombero stradale (120s)
+ n  - REG 10041 (MILANO CADORNA -> VARESE NORD)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura contin
+ ua per 2 treni: intervallo utile tra i passaggi (30s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-11043--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T122646Z
 DTEND:20261125T123216Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:26 - 13:32 (primo: REG 11043)
-DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:26:46 - 13:32:16\nTreni
-  coinvolti nella chiusura:\n  - REG 11043 (MILANO CADORNA -> VARESE NORD) 
- [Transito]\n  - REG 11043 (MILANO CADORNA -> VARESE NORD) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
-  inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 11043 (MILANO CADORNA -> VARESE NORD) ore 13:
+ 31
+DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 13:26:46 - 13:32:16\nTreni coinvolti n
+ ella chiusura:\n  - REG 11043 (MILANO CADORNA -> VARESE NORD) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (60% tratta SARONNO -> GERENZANO
+  - TURATE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-11043--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T124230Z
 DTEND:20261125T124700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:42 - 13:47 (primo: REG 11043)
-DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:42:30 - 13:47:00\nTreni
-  coinvolti nella chiusura:\n  - REG 11043 (MILANO CADORNA -> VARESE NORD)\
- n  - REG 11043 (MILANO CADORNA -> VARESE NORD)\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura contin
- ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 11043 (MILANO CADORNA -> VARESE NORD) ore 13:46
+DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: FERMAT
+ A\nChiusura sbarre stimata: 13:42:30 - 13:47:00\nTreni coinvolti nella chi
+ usura:\n  - REG 11043 (MILANO CADORNA -> VARESE NORD)\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
+ ne da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12053--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T142646Z
 DTEND:20261125T144700Z
-SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 15:26 - 15:47 (primo: REG 12053)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:26 - 15:47 (primo: REG 12053)
 DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: CHIUSU
- RA CONTINUA - 7 TRENI\nChiusura sbarre stimata: 15:26:46 - 15:47:00\nTreni
+ RA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 15:26:46 - 15:47:00\nTreni
   coinvolti nella chiusura:\n  - REG 12053 (MILANO CADORNA -> VARESE NORD) 
- [Transito]\n  - REG 12053 (MILANO CADORNA -> VARESE NORD) [Transito]\n  - 
- REG 56 (LAVENO MOMBELLO LAGO -> MILANO CADORNA) [Transito]\n  - REG 10056 
- (VARESE NORD -> MILANO CADORNA)\n  - REG 10056 (VARESE NORD -> MILANO CADO
- RNA)\n  - REG 12053 (MILANO CADORNA -> VARESE NORD)\n  - REG 12053 (MILANO
-  CADORNA -> VARESE NORD)\nRitardo massimo rilevato: 0 min\nAffidabilità s
- tima: 78%\nNota normativa/euristica: Chiusura continua per 7 treni: interv
- allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
- radale (120s)
+ [Transito]\n  - REG 56 (LAVENO MOMBELLO LAGO -> MILANO CADORNA) [Transito]
+ \n  - REG 10056 (VARESE NORD -> MILANO CADORNA)\n  - REG 12053 (MILANO CAD
+ ORNA -> VARESE NORD)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
+ : 78%\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo
+  utile tra i passaggi (30s) inferiore alla soglia minima di sgombero strad
+ ale (120s)
 LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12058--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T150730Z
 DTEND:20261125T151200Z
 SUMMARY:[FERMATA] REG 12058 (VARESE NORD -> MILANO CADORNA) ore 16:11
@@ -479,54 +463,52 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-55--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T152051Z
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T152055Z
 DTEND:20261125T153216Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:20 - 16:32 (primo: REG 55)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:20 - 16:32 (primo: REG 55)
 DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: CHIUSU
- RA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:20:51 - 16:32:16\nTreni
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:20:55 - 16:32:16\nTreni
   coinvolti nella chiusura:\n  - REG 55 (MILANO CADORNA -> LAVENO MOMBELLO 
  LAGO) [Transito]\n  - REG 12057 (MILANO CADORNA -> VARESE NORD) [Transito]
- \n  - REG 12057 (MILANO CADORNA -> VARESE NORD) [Transito]\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
- usura continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
+ i (20s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10060--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T153730Z
 DTEND:20261125T154700Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:37 - 16:47 (primo: REG 10060)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:37 - 16:47 (primo: REG 10060)
 DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: CHIUSU
- RA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:37:30 - 16:47:00\nTreni
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:37:30 - 16:47:00\nTreni
   coinvolti nella chiusura:\n  - REG 10060 (VARESE NORD -> MILANO CADORNA)\
- n  - REG 12057 (MILANO CADORNA -> VARESE NORD)\n  - REG 12057 (MILANO CADO
- RNA -> VARESE NORD)\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
-  90%\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo 
- utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
- e (120s)
+ n  - REG 12057 (MILANO CADORNA -> VARESE NORD)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura contin
+ ua per 2 treni: intervallo utile tra i passaggi (30s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10059--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T155646Z
 DTEND:20261125T160216Z
 SUMMARY:[TRANSITO VELOCE] REG 10059 (MILANO CADORNA -> VARESE NORD) ore 17:
@@ -535,7 +517,7 @@ DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: TRANSI
  TO VELOCE\nChiusura sbarre stimata: 16:56:46 - 17:02:16\nTreni coinvolti n
  ella chiusura:\n  - REG 10059 (MILANO CADORNA -> VARESE NORD) [Transito]\n
  Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
- euristica: Transito stimato senza fermata (61% tratta SARONNO -> GERENZANO
+ euristica: Transito stimato senza fermata (60% tratta SARONNO -> GERENZANO
   - TURATE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
 STATUS:CONFIRMED
@@ -547,8 +529,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10059--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T161230Z
 DTEND:20261125T161700Z
 SUMMARY:[FERMATA] REG 10059 (MILANO CADORNA -> VARESE NORD) ore 17:16
@@ -567,8 +549,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-83--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T195646Z
 DTEND:20261125T200216Z
 SUMMARY:[TRANSITO VELOCE] REG 83 (MILANO CADORNA -> VARESE NORD) ore 21:01
@@ -576,7 +558,7 @@ DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: TRANSI
  TO VELOCE\nChiusura sbarre stimata: 20:56:46 - 21:02:16\nTreni coinvolti n
  ella chiusura:\n  - REG 83 (MILANO CADORNA -> VARESE NORD) [Transito]\nRit
  ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Transito stimato senza fermata (61% tratta SARONNO -> GERENZANO - 
+ istica: Transito stimato senza fermata (60% tratta SARONNO -> GERENZANO - 
  TURATE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
 STATUS:CONFIRMED
@@ -588,31 +570,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12082--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T200730Z
 DTEND:20261125T201700Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:07 - 21:17 (primo: REG 12082)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:07 - 21:17 (primo: REG 12082)
 DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: CHIUSU
- RA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 21:07:30 - 21:17:00\nTreni
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:07:30 - 21:17:00\nTreni
   coinvolti nella chiusura:\n  - REG 12082 (VARESE NORD -> MILANO CADORNA)\
- n  - REG 12082 (VARESE NORD -> MILANO CADORNA)\n  - REG 83 (MILANO CADORNA
-  -> VARESE NORD)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90
- %\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo uti
- le tra i passaggi (30s) inferiore alla soglia minima di sgombero stradale 
- (120s)
+ n  - REG 83 (MILANO CADORNA -> VARESE NORD)\nRitardo massimo rilevato: 0 m
+ in\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua 
+ per 2 treni: intervallo utile tra i passaggi (30s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10089--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T205646Z
 DTEND:20261125T210216Z
 SUMMARY:[TRANSITO VELOCE] REG 10089 (MILANO CADORNA -> TRADATE) ore 22:01
@@ -620,7 +601,7 @@ DESCRIPTION:Stazione/PL: ABBIATE GUAZZONE (S01728)\nRegime chiusura: TRANSI
  TO VELOCE\nChiusura sbarre stimata: 21:56:46 - 22:02:16\nTreni coinvolti n
  ella chiusura:\n  - REG 10089 (MILANO CADORNA -> TRADATE) [Transito]\nRita
  rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (61% tratta SARONNO -> GERENZANO - T
+ stica: Transito stimato senza fermata (60% tratta SARONNO -> GERENZANO - T
  URATE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ABBIATE GUAZZONE
 STATUS:CONFIRMED
@@ -632,8 +613,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10089--20261124-S01728@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T211230Z
 DTEND:20261125T211700Z
 SUMMARY:[FERMATA] REG 10089 (MILANO CADORNA -> TRADATE) ore 22:16

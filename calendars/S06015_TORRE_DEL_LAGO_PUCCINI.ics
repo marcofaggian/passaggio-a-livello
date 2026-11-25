@@ -9,35 +9,33 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:e2d70d1677e83695a01e44c95f712e858b9437f5cbf9feca12f872c91253
- 5ec5
+X-CONTENT-HASH:e34bb845f1cb04de60f5ff7d06532f770fd7cba02ceef496f17d4c9e1204
+ 32b4
 BEGIN:VEVENT
 UID:train-19330--20261124-S06015@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T053600Z
 DTEND:20261125T054230Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:36 - 06:42 (primo: REG 19330) (+4 
- min)
+SUMMARY:[FERMATA] REG 19330 (PISA CENTRALE -> LA SPEZIA CENTRALE) ore 06:41
+  (+4 min)
 DESCRIPTION:Stazione/PL: TORRE DEL LAGO PUCCINI (S06015)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:36:00 - 06:42:30\
- nTreni coinvolti nella chiusura:\n  - REG 19330 (PISA CENTRALE -> LA SPEZI
- A CENTRALE) (+4m)\n  - REG 19330 (PISA CENTRALE -> LA SPEZIA CENTRALE) (+4
- m)\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 99%\nNota normat
- iva/euristica: Chiusura continua per 2 treni: intervallo utile tra i passa
- ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ FERMATA\nChiusura sbarre stimata: 06:36:00 - 06:42:30\nTreni coinvolti nel
+ la chiusura:\n  - REG 19330 (PISA CENTRALE -> LA SPEZIA CENTRALE) (+4m)\nR
+ itardo massimo rilevato: 4 min\nAffidabilità stima: 99%\nNota normativa/e
+ uristica: Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione TORRE DEL LAGO PUCCINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19339--20261124-S06015@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T055630Z
 DTEND:20261125T060100Z
 SUMMARY:[FERMATA] REG 19339 (LA SPEZIA CENTRALE -> LIVORNO CENTRALE) ore 07
@@ -56,60 +54,59 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-19365--20261124-S06015@pl-tracker.local
-DTSTAMP:20261125T112015Z
+UID:train-19347--20261124-S06015@pl-tracker.local
+DTSTAMP:20261125T203555Z
 SEQUENCE:0
-DTSTART:20261125T104049Z
-DTEND:20261125T105200Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:40 - 11:52 (primo: REG 19365) (+2 
- min)
+DTSTART:20261125T070842Z
+DTEND:20261125T071412Z
+SUMMARY:[TRANSITO VELOCE] REG 19347 (LA SPEZIA CENTRALE -> PISA CENTRALE) o
+ re 08:12
 DESCRIPTION:Stazione/PL: TORRE DEL LAGO PUCCINI (S06015)\nRegime chiusura: 
- CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 11:40:49 - 11:52:00\
- nTreni coinvolti nella chiusura:\n  - REG 19365 (VIAREGGIO -> PISA CENTRAL
- E) [Transito]\n  - REG 19342 (PISA CENTRALE -> MASSA CENTRO) (+2m)\n  - RE
- G 19342 (PISA CENTRALE -> MASSA CENTRO) (+2m)\nRitardo massimo rilevato: 2
-  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
- a per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+ TRANSITO VELOCE\nChiusura sbarre stimata: 08:08:42 - 08:14:12\nTreni coinv
+ olti nella chiusura:\n  - REG 19347 (LA SPEZIA CENTRALE -> PISA CENTRALE) 
+ [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Transito stimato senza fermata (36% tratta VIAREGGI
+ O -> PISA/BINARI PISA S.ROSSORE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione TORRE DEL LAGO PUCCINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19365--20261124-S06015@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T104052Z
+DTEND:20261125T105200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:40 - 11:52 (primo: REG 19365) (+2 
+ min)
+DESCRIPTION:Stazione/PL: TORRE DEL LAGO PUCCINI (S06015)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:40:52 - 11:52:00\
+ nTreni coinvolti nella chiusura:\n  - REG 19365 (VIAREGGIO -> PISA CENTRAL
+ E) [Transito]\n  - REG 19342 (PISA CENTRALE -> MASSA CENTRO) (+2m)\nRitard
+ o massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione TORRE DEL LAGO PUCCINI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18442--20261124-S06015@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T110029Z
-DTEND:20261125T110559Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:00 - 12:05 (primo: REG 18442)
-DESCRIPTION:Stazione/PL: TORRE DEL LAGO PUCCINI (S06015)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:00:29 - 12:05:59\
- nTreni coinvolti nella chiusura:\n  - REG 18442 (PISA CENTRALE -> BORGO VA
- L DI TARO) [Transito]\n  - REG 18442 (PISA CENTRALE -> BORGO VAL DI TARO) 
- [Transito]\nRitardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNo
- ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
- a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione TORRE DEL LAGO PUCCINI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:-1
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-19366--20261124-S06015@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T115535Z
-DTEND:20261125T120105Z
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T115533Z
+DTEND:20261125T120103Z
 SUMMARY:[TRANSITO VELOCE] REG 19366 (PISA CENTRALE -> VIAREGGIO) ore 12:59
 DESCRIPTION:Stazione/PL: TORRE DEL LAGO PUCCINI (S06015)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 12:55:35 - 13:01:05\nTreni coinv
+ TRANSITO VELOCE\nChiusura sbarre stimata: 12:55:33 - 13:01:03\nTreni coinv
  olti nella chiusura:\n  - REG 19366 (PISA CENTRALE -> VIAREGGIO) [Transito
  ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
  va/euristica: Transito stimato senza fermata (60% tratta PISA/BINARI PISA 
@@ -124,14 +121,14 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18367--20261124-S06015@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T121323Z
-DTEND:20261125T121853Z
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T121321Z
+DTEND:20261125T121851Z
 SUMMARY:[TRANSITO VELOCE] REG 18367 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZ
  IA CENTRALE) ore 13:17
 DESCRIPTION:Stazione/PL: TORRE DEL LAGO PUCCINI (S06015)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 13:13:23 - 13:18:53\nTreni coinv
+ TRANSITO VELOCE\nChiusura sbarre stimata: 13:13:21 - 13:18:51\nTreni coinv
  olti nella chiusura:\n  - REG 18367 (FIRENZE SANTA MARIA NOVELLA -> LA SPE
  ZIA CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità s
  tima: 78%\nNota normativa/euristica: Transito stimato senza fermata (60% t
@@ -147,36 +144,34 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19361--20261124-S06015@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T130630Z
 DTEND:20261125T131100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:06 - 14:11 (primo: REG 19361)
+SUMMARY:[FERMATA] REG 19361 (LA SPEZIA CENTRALE -> PISA CENTRALE) ore 14:10
 DESCRIPTION:Stazione/PL: TORRE DEL LAGO PUCCINI (S06015)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:06:30 - 14:11:00\
- nTreni coinvolti nella chiusura:\n  - REG 19361 (LA SPEZIA CENTRALE -> PIS
- A CENTRALE)\n  - REG 19361 (LA SPEZIA CENTRALE -> PISA CENTRALE)\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
- a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
+ FERMATA\nChiusura sbarre stimata: 14:06:30 - 14:11:00\nTreni coinvolti nel
+ la chiusura:\n  - REG 19361 (LA SPEZIA CENTRALE -> PISA CENTRALE)\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristi
+ ca: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione TORRE DEL LAGO PUCCINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18371--20261124-S06015@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T131323Z
-DTEND:20261125T131853Z
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T131321Z
+DTEND:20261125T131851Z
 SUMMARY:[TRANSITO VELOCE] REG 18371 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZ
  IA CENTRALE) ore 14:17
 DESCRIPTION:Stazione/PL: TORRE DEL LAGO PUCCINI (S06015)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 14:13:23 - 14:18:53\nTreni coinv
+ TRANSITO VELOCE\nChiusura sbarre stimata: 14:13:21 - 14:18:51\nTreni coinv
  olti nella chiusura:\n  - REG 18371 (FIRENZE SANTA MARIA NOVELLA -> LA SPE
  ZIA CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità s
  tima: 78%\nNota normativa/euristica: Transito stimato senza fermata (60% t
@@ -191,59 +186,34 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-18415--20261124-S06015@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T143300Z
-DTEND:20261125T143830Z
-SUMMARY:[TRANSITO VELOCE] REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA MA
- RIA NOVELLA) ore 15:37
-DESCRIPTION:Stazione/PL: TORRE DEL LAGO PUCCINI (S06015)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 15:33:00 - 15:38:30\nTreni coinv
- olti nella chiusura:\n  - REG 18415 (LA SPEZIA CENTRALE -> FIRENZE SANTA M
- ARIA NOVELLA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità s
- tima: 78%\nNota normativa/euristica: Transito stimato senza fermata (35% t
- ratta VIAREGGIO -> PISA/BINARI PISA S.ROSSORE\; pedale annuncio fisso Vmax
- )
-LOCATION:Passaggio a Livello / Stazione TORRE DEL LAGO PUCCINI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-19358--20261124-S06015@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T144430Z
 DTEND:20261125T144900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:44 - 15:49 (primo: REG 19358)
+SUMMARY:[FERMATA] REG 19358 (PISA CENTRALE -> LA SPEZIA CENTRALE) ore 15:48
 DESCRIPTION:Stazione/PL: TORRE DEL LAGO PUCCINI (S06015)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:44:30 - 15:49:00\
- nTreni coinvolti nella chiusura:\n  - REG 19358 (PISA CENTRALE -> LA SPEZI
- A CENTRALE)\n  - REG 19358 (PISA CENTRALE -> LA SPEZIA CENTRALE)\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
- a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
+ FERMATA\nChiusura sbarre stimata: 15:44:30 - 15:49:00\nTreni coinvolti nel
+ la chiusura:\n  - REG 19358 (PISA CENTRALE -> LA SPEZIA CENTRALE)\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristi
+ ca: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione TORRE DEL LAGO PUCCINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18446--20261124-S06015@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T154323Z
-DTEND:20261125T154853Z
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T154321Z
+DTEND:20261125T154851Z
 SUMMARY:[TRANSITO VELOCE] REG 18446 (PISA CENTRALE -> PONTREMOLI) ore 16:47
 DESCRIPTION:Stazione/PL: TORRE DEL LAGO PUCCINI (S06015)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 16:43:23 - 16:48:53\nTreni coinv
+ TRANSITO VELOCE\nChiusura sbarre stimata: 16:43:21 - 16:48:51\nTreni coinv
  olti nella chiusura:\n  - REG 18446 (PISA CENTRALE -> PONTREMOLI) [Transit
  o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
  iva/euristica: Transito stimato senza fermata (60% tratta PISA/BINARI PISA
@@ -258,40 +228,40 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18381--20261124-S06015@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T161323Z
-DTEND:20261125T161853Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:13 - 17:18 (primo: REG 18381)
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T161321Z
+DTEND:20261125T161851Z
+SUMMARY:[TRANSITO VELOCE] REG 18381 (FIRENZE SANTA MARIA NOVELLA -> LA SPEZ
+ IA CENTRALE) ore 17:17
 DESCRIPTION:Stazione/PL: TORRE DEL LAGO PUCCINI (S06015)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:13:23 - 17:18:53\
- nTreni coinvolti nella chiusura:\n  - REG 18381 (FIRENZE SANTA MARIA NOVEL
- LA -> LA SPEZIA CENTRALE) [Transito]\n  - REG 18381 (FIRENZE SANTA MARIA N
- OVELLA -> LA SPEZIA CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per
-  2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
- a di sgombero stradale (120s)
+ TRANSITO VELOCE\nChiusura sbarre stimata: 17:13:21 - 17:18:51\nTreni coinv
+ olti nella chiusura:\n  - REG 18381 (FIRENZE SANTA MARIA NOVELLA -> LA SPE
+ ZIA CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità s
+ tima: 78%\nNota normativa/euristica: Transito stimato senza fermata (60% t
+ ratta PISA/BINARI PISA S.ROSSORE -> VIAREGGIO\; pedale annuncio fisso Vmax
+ )
 LOCATION:Passaggio a Livello / Stazione TORRE DEL LAGO PUCCINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18401--20261124-S06015@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T163221Z
-DTEND:20261125T163751Z
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T163225Z
+DTEND:20261125T163755Z
 SUMMARY:[TRANSITO VELOCE] REG 18401 (LA SPEZIA CENTRALE -> FIRENZE SANTA MA
  RIA NOVELLA) ore 17:36
 DESCRIPTION:Stazione/PL: TORRE DEL LAGO PUCCINI (S06015)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 17:32:21 - 17:37:51\nTreni coinv
+ TRANSITO VELOCE\nChiusura sbarre stimata: 17:32:25 - 17:37:55\nTreni coinv
  olti nella chiusura:\n  - REG 18401 (LA SPEZIA CENTRALE -> FIRENZE SANTA M
  ARIA NOVELLA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità s
- tima: 78%\nNota normativa/euristica: Transito stimato senza fermata (35% t
+ tima: 78%\nNota normativa/euristica: Transito stimato senza fermata (36% t
  ratta VIAREGGIO -> PISA/BINARI PISA S.ROSSORE\; pedale annuncio fisso Vmax
  )
 LOCATION:Passaggio a Livello / Stazione TORRE DEL LAGO PUCCINI
@@ -304,8 +274,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19373--20261124-S06015@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T170230Z
 DTEND:20261125T170700Z
 SUMMARY:[FERMATA] REG 19373 (LA SPEZIA CENTRALE -> PISA CENTRALE) ore 18:06
@@ -324,59 +294,35 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-18407--20261124-S06015@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T190730Z
 DTEND:20261125T191200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:07 - 20:12 (primo: REG 18407)
+SUMMARY:[FERMATA] REG 18407 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOVE
+ LLA) ore 20:11
 DESCRIPTION:Stazione/PL: TORRE DEL LAGO PUCCINI (S06015)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:07:30 - 20:12:00\
- nTreni coinvolti nella chiusura:\n  - REG 18407 (LA SPEZIA CENTRALE -> FIR
- ENZE SANTA MARIA NOVELLA)\n  - REG 18407 (LA SPEZIA CENTRALE -> FIRENZE SA
- NTA MARIA NOVELLA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
- 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo u
- tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
-  (120s)
+ FERMATA\nChiusura sbarre stimata: 20:07:30 - 20:12:00\nTreni coinvolti nel
+ la chiusura:\n  - REG 18407 (LA SPEZIA CENTRALE -> FIRENZE SANTA MARIA NOV
+ ELLA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota nor
+ mativa/euristica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione TORRE DEL LAGO PUCCINI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-19380--20261124-S06015@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T194430Z
 DTEND:20261125T194900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:44 - 20:49 (primo: REG 19380)
+SUMMARY:[FERMATA] REG 19380 (PISA CENTRALE -> LA SPEZIA CENTRALE) ore 20:48
 DESCRIPTION:Stazione/PL: TORRE DEL LAGO PUCCINI (S06015)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:44:30 - 20:49:00\
- nTreni coinvolti nella chiusura:\n  - REG 19380 (PISA CENTRALE -> LA SPEZI
- A CENTRALE)\n  - REG 19380 (PISA CENTRALE -> LA SPEZIA CENTRALE)\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
- a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione TORRE DEL LAGO PUCCINI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-19382--20261124-S06015@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T205030Z
-DTEND:20261125T205500Z
-SUMMARY:[FERMATA] REG 19382 (PISA CENTRALE -> LA SPEZIA CENTRALE) ore 21:54
-DESCRIPTION:Stazione/PL: TORRE DEL LAGO PUCCINI (S06015)\nRegime chiusura: 
- FERMATA\nChiusura sbarre stimata: 21:50:30 - 21:55:00\nTreni coinvolti nel
- la chiusura:\n  - REG 19382 (PISA CENTRALE -> LA SPEZIA CENTRALE)\nRitardo
+ FERMATA\nChiusura sbarre stimata: 20:44:30 - 20:49:00\nTreni coinvolti nel
+ la chiusura:\n  - REG 19380 (PISA CENTRALE -> LA SPEZIA CENTRALE)\nRitardo
   massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristi
  ca: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione TORRE DEL LAGO PUCCINI
@@ -385,6 +331,28 @@ TRANSP:OPAQUE
 CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2295--20261124-S06015@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:0
+DTSTART:20261125T204446Z
+DTEND:20261125T205500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:44 - 21:55 (primo: REG 2295)
+DESCRIPTION:Stazione/PL: TORRE DEL LAGO PUCCINI (S06015)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:44:46 - 21:55:00\
+ nTreni coinvolti nella chiusura:\n  - REG 2295 (MILANO PORTA GARIBALDI -> 
+ LIVORNO CENTRALE) [Transito]\n  - REG 19382 (PISA CENTRALE -> LA SPEZIA CE
+ NTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
+ passaggi (13s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione TORRE DEL LAGO PUCCINI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

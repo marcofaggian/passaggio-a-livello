@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:704d149c8b224fc425106de977902d39e0366c3a8215d939e7e34ccc95a1
- 26eb
+X-CONTENT-HASH:2e0dc8894a8370bb9c3e072988e2bb8474059491588baee27819f346db25
+ 4532
 BEGIN:VEVENT
 UID:train-25221--20261124-S01639@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T055330Z
 DTEND:20261125T055800Z
 SUMMARY:[FERMATA] REG 25221 (RHO -> COMO S.GIOVANNI) ore 06:57
@@ -33,143 +33,151 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2255--20261124-S01639@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T063530Z
 DTEND:20261125T064030Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:35 - 07:40 (primo: REG 2255) (+13 
- min)
-DESCRIPTION:Stazione/PL: MILANO VILLAPIZZONE (S01639)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:35:30 - 07:40:30\nTr
- eni coinvolti nella chiusura:\n  - REG 2255 (MILANO PORTA GARIBALDI -> BER
- GAMO) (+13m)\n  - REG 2255 (MILANO PORTA GARIBALDI -> BERGAMO) (+13m)\nRit
- ardo massimo rilevato: 13 min\nAffidabilità stima: 99%\nNota normativa/eu
- ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
- s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 2255 (MILANO PORTA GARIBALDI -> BERGAMO) ore 07:39 (+
+ 13 min)
+DESCRIPTION:Stazione/PL: MILANO VILLAPIZZONE (S01639)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 07:35:30 - 07:40:30\nTreni coinvolti nella 
+ chiusura:\n  - REG 2255 (MILANO PORTA GARIBALDI -> BERGAMO) (+13m)\nRitard
+ o massimo rilevato: 13 min\nAffidabilità stima: 99%\nNota normativa/euris
+ tica: Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione MILANO VILLAPIZZONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:13
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-25239--20261124-S01639@pl-tracker.local
-DTSTAMP:20261125T112015Z
+UID:train-2301--20261124-S01639@pl-tracker.local
+DTSTAMP:20261125T203555Z
 SEQUENCE:0
-DTSTART:20261125T105730Z
-DTEND:20261125T110300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:57 - 12:03 (primo: REG 25239) (+1 
- min)
-DESCRIPTION:Stazione/PL: MILANO VILLAPIZZONE (S01639)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:57:30 - 12:03:00\nTr
- eni coinvolti nella chiusura:\n  - REG 25239 (COMO S.GIOVANNI -> RHO) (+1m
- )\n  - REG 25239 (COMO S.GIOVANNI -> RHO) (+1m)\nRitardo massimo rilevato:
-  1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura conti
- nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
- a minima di sgombero stradale (120s)
+DTSTART:20261125T071704Z
+DTEND:20261125T072234Z
+SUMMARY:[TRANSITO VELOCE] REG 2301 (ALESSANDRIA -> MILANO CERTOSA) ore 08:2
+ 1 (+17 min)
+DESCRIPTION:Stazione/PL: MILANO VILLAPIZZONE (S01639)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 08:17:04 - 08:22:34\nTreni coinvolt
+ i nella chiusura:\n  - REG 2301 (ALESSANDRIA -> MILANO CERTOSA) (+17m) [Tr
+ ansito]\nRitardo massimo rilevato: 17 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Transito stimato senza fermata (89% tratta MILANO LAM
+ BRATE -> MILANO CERTOSA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MILANO VILLAPIZZONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:17
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25239--20261124-S01639@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T105730Z
+DTEND:20261125T110300Z
+SUMMARY:[FERMATA] REG 25239 (COMO S.GIOVANNI -> RHO) ore 12:02 (+1 min)
+DESCRIPTION:Stazione/PL: MILANO VILLAPIZZONE (S01639)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 11:57:30 - 12:03:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 25239 (COMO S.GIOVANNI -> RHO) (+1m)\nRitardo massimo r
+ ilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rileva
+ mento reale da circuito di binario
+LOCATION:Passaggio a Livello / Stazione MILANO VILLAPIZZONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25243--20261124-S01639@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T115730Z
 DTEND:20261125T120200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:57 - 13:02 (primo: REG 25243) (+1 
- min)
-DESCRIPTION:Stazione/PL: MILANO VILLAPIZZONE (S01639)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:57:30 - 13:02:00\nTr
- eni coinvolti nella chiusura:\n  - REG 25243 (COMO S.GIOVANNI -> RHO) (+1m
- )\n  - REG 25243 (COMO S.GIOVANNI -> RHO) (+1m)\nRitardo massimo rilevato:
-  1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura conti
- nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
- a minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 25243 (COMO S.GIOVANNI -> RHO) ore 13:01 (+1 min)
+DESCRIPTION:Stazione/PL: MILANO VILLAPIZZONE (S01639)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 12:57:30 - 13:02:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 25243 (COMO S.GIOVANNI -> RHO) (+1m)\nRitardo massimo r
+ ilevato: 1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previs
+ ione con ritardo propagato (+1 min)
 LOCATION:Passaggio a Livello / Stazione MILANO VILLAPIZZONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10603--20261124-S01639@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T123030Z
 DTEND:20261125T123500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:30 - 13:35 (primo: REG 10603)
-DESCRIPTION:Stazione/PL: MILANO VILLAPIZZONE (S01639)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:30:30 - 13:35:00\nTr
- eni coinvolti nella chiusura:\n  - REG 10603 (MILANO PORTA GARIBALDI -> CR
- EMONA)\n  - REG 10603 (MILANO PORTA GARIBALDI -> CREMONA)\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiu
- sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 10603 (MILANO PORTA GARIBALDI -> CREMONA) ore 13:34
+DESCRIPTION:Stazione/PL: MILANO VILLAPIZZONE (S01639)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 13:30:30 - 13:35:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 10603 (MILANO PORTA GARIBALDI -> CREMONA)\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
+ revisione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione MILANO VILLAPIZZONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25257--20261124-S01639@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T144908Z
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T145330Z
 DTEND:20261125T145800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:49 - 15:58 (primo: REG 25257)
-DESCRIPTION:Stazione/PL: MILANO VILLAPIZZONE (S01639)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:49:08 - 15:58:00\nTr
- eni coinvolti nella chiusura:\n  - REG 25257 (RHO -> COMO S.GIOVANNI) [Tra
- nsito]\n  - REG 25257 (RHO -> COMO S.GIOVANNI)\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
- ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 25257 (RHO -> COMO S.GIOVANNI) ore 15:57
+DESCRIPTION:Stazione/PL: MILANO VILLAPIZZONE (S01639)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 15:53:30 - 15:58:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 25257 (RHO -> COMO S.GIOVANNI)\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
+ a traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione MILANO VILLAPIZZONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2273--20261124-S01639@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T152230Z
 DTEND:20261125T152700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:22 - 16:27 (primo: REG 2273)
-DESCRIPTION:Stazione/PL: MILANO VILLAPIZZONE (S01639)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:22:30 - 16:27:00\nTr
- eni coinvolti nella chiusura:\n  - REG 2273 (MILANO PORTA GARIBALDI -> BER
- GAMO)\n  - REG 2273 (MILANO PORTA GARIBALDI -> BERGAMO)\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 2273 (MILANO PORTA GARIBALDI -> BERGAMO) ore 16:26
+DESCRIPTION:Stazione/PL: MILANO VILLAPIZZONE (S01639)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 16:22:30 - 16:27:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 2273 (MILANO PORTA GARIBALDI -> BERGAMO)\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pr
+ evisione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione MILANO VILLAPIZZONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25261--20261124-S01639@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T155330Z
 DTEND:20261125T160100Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:53 - 17:01 (primo: REG 25261)
@@ -189,69 +197,23 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-10483--20261124-S01639@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T192641Z
-DTEND:20261125T193211Z
-SUMMARY:[TRANSITO VELOCE] REG 10483 (MILANO PORTA GARIBALDI -> PIACENZA) or
- e 20:30
-DESCRIPTION:Stazione/PL: MILANO VILLAPIZZONE (S01639)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 20:26:41 - 20:32:11\nTreni coinvolt
- i nella chiusura:\n  - REG 10483 (MILANO PORTA GARIBALDI -> PIACENZA) [Tra
- nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Transito stimato senza fermata (39% tratta MILANO PORTA
-  GARIBALDI -> MILANO LAMBRATE\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione MILANO VILLAPIZZONE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-25277--20261124-S01639@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T195330Z
 DTEND:20261125T195800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:53 - 20:58 (primo: REG 25277)
-DESCRIPTION:Stazione/PL: MILANO VILLAPIZZONE (S01639)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:53:30 - 20:58:00\nTr
- eni coinvolti nella chiusura:\n  - REG 25277 (RHO -> COMO S.GIOVANNI)\n  -
-  REG 25277 (RHO -> COMO S.GIOVANNI)\nRitardo massimo rilevato: 0 min\nAffi
- dabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tr
- eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
- sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 25277 (RHO -> COMO S.GIOVANNI) ore 20:57
+DESCRIPTION:Stazione/PL: MILANO VILLAPIZZONE (S01639)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 20:53:30 - 20:58:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 25277 (RHO -> COMO S.GIOVANNI)\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
+ a traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione MILANO VILLAPIZZONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2485--20261124-S01639@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T210655Z
-DTEND:20261125T211225Z
-SUMMARY:[TRANSITO VELOCE] REG 2485 (MILANO PORTA GARIBALDI -> BOLOGNA CENTR
- ALE) ore 22:11
-DESCRIPTION:Stazione/PL: MILANO VILLAPIZZONE (S01639)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 22:06:55 - 22:12:25\nTreni coinvolt
- i nella chiusura:\n  - REG 2485 (MILANO PORTA GARIBALDI -> BOLOGNA CENTRAL
- E) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\n
- Nota normativa/euristica: Transito stimato senza fermata (39% tratta MILAN
- O PORTA GARIBALDI -> MILANO LAMBRATE\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione MILANO VILLAPIZZONE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

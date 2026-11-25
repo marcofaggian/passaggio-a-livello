@@ -9,21 +9,65 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:279db9f8abd1ca75a13ea82e4d5ad6a1153a33f523a72a2a4eb42d6b6194
- c7fb
+X-CONTENT-HASH:2888ab16a28c4a8795e9b3e1a55e5fd4dcbede425f9f6a0d2e9614cc0f29
+ ea34
 BEGIN:VEVENT
 UID:train-3605--20261124-S02517@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T054201Z
-DTEND:20261125T054731Z
-SUMMARY:[TRANSITO VELOCE] REG 3605 (UDINE -> VENEZIA S.LUCIA) ore 06:46
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T054204Z
+DTEND:20261125T054840Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:42 - 06:48 (primo: REG 3605)
 DESCRIPTION:Stazione/PL: VENEZIA MESTRE OSPEDALE (S02517)\nRegime chiusura:
-  TRANSITO VELOCE\nChiusura sbarre stimata: 06:42:01 - 06:47:31\nTreni coin
- volti nella chiusura:\n  - REG 3605 (UDINE -> VENEZIA S.LUCIA) [Transito]\
- nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Transito stimato senza fermata (45% tratta MOGLIANO VENETO -> 
- VENEZIA MESTRE\; pedale annuncio fisso Vmax)
+  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:42:04 - 06:48:40
+ \nTreni coinvolti nella chiusura:\n  - REG 3605 (UDINE -> VENEZIA S.LUCIA)
+  [Transito]\n  - REG 3640 (VENEZIA S.LUCIA -> CONEGLIANO) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
+  inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE OSPEDALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16757--20261124-S02517@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T055430Z
+DTEND:20261125T055930Z
+SUMMARY:[FERMATA] REG 16757 (TREVISO CENTRALE -> VENEZIA S.LUCIA) ore 06:58
+  (+3 min)
+DESCRIPTION:Stazione/PL: VENEZIA MESTRE OSPEDALE (S02517)\nRegime chiusura:
+  FERMATA\nChiusura sbarre stimata: 06:54:30 - 06:59:30\nTreni coinvolti ne
+ lla chiusura:\n  - REG 16757 (TREVISO CENTRALE -> VENEZIA S.LUCIA) (+3m)\n
+ Ritardo massimo rilevato: 3 min\nAffidabilità stima: 99%\nNota normativa/
+ euristica: Rilevamento reale da circuito di binario
+LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE OSPEDALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3872--20261124-S02517@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:0
+DTSTART:20261125T061235Z
+DTEND:20261125T061805Z
+SUMMARY:[TRANSITO VELOCE] REG 3872 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) or
+ e 07:16
+DESCRIPTION:Stazione/PL: VENEZIA MESTRE OSPEDALE (S02517)\nRegime chiusura:
+  TRANSITO VELOCE\nChiusura sbarre stimata: 07:12:35 - 07:18:05\nTreni coin
+ volti nella chiusura:\n  - REG 3872 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) 
+ [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Transito stimato senza fermata (58% tratta VENEZIA 
+ MESTRE -> MOGLIANO VENETO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE OSPEDALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -33,55 +77,49 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16757--20261124-S02517@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T055430Z
-DTEND:20261125T055930Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:54 - 06:59 (primo: REG 16757) (+3 
- min)
+UID:train-16759--20261124-S02517@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T062230Z
+DTEND:20261125T062700Z
+SUMMARY:[FERMATA] REG 16759 (UDINE -> VENEZIA S.LUCIA) ore 07:26
 DESCRIPTION:Stazione/PL: VENEZIA MESTRE OSPEDALE (S02517)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:54:30 - 06:59:30
- \nTreni coinvolti nella chiusura:\n  - REG 16757 (TREVISO CENTRALE -> VENE
- ZIA S.LUCIA) (+3m)\n  - REG 16757 (TREVISO CENTRALE -> VENEZIA S.LUCIA) (+
- 3m)\nRitardo massimo rilevato: 3 min\nAffidabilità stima: 99%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+  FERMATA\nChiusura sbarre stimata: 07:22:30 - 07:27:00\nTreni coinvolti ne
+ lla chiusura:\n  - REG 16759 (UDINE -> VENEZIA S.LUCIA)\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previs
+ ione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE OSPEDALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:3
-X-PL-CONFIDENCE:0.99
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16759--20261124-S02517@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T062230Z
+UID:train-16764--20261124-S02517@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:0
+DTSTART:20261125T062930Z
 DTEND:20261125T063400Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:22 - 07:34 (primo: REG 16759)
+SUMMARY:[FERMATA] REG 16764 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) ore 07:33
 DESCRIPTION:Stazione/PL: VENEZIA MESTRE OSPEDALE (S02517)\nRegime chiusura:
-  CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 07:22:30 - 07:34:00
- \nTreni coinvolti nella chiusura:\n  - REG 16759 (UDINE -> VENEZIA S.LUCIA
- )\n  - REG 16764 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) [Transito]\n  - REG
-  16764 (VENEZIA S.LUCIA -> TRIESTE CENTRALE)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua
-  per 3 treni: intervallo utile tra i passaggi (53s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+  FERMATA\nChiusura sbarre stimata: 07:29:30 - 07:34:00\nTreni coinvolti ne
+ lla chiusura:\n  - REG 16764 (VENEZIA S.LUCIA -> TRIESTE CENTRALE)\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
+ ica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE OSPEDALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16854--20261124-S02517@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T065730Z
 DTEND:20261125T070200Z
 SUMMARY:[FERMATA] REG 16854 (VENEZIA S.LUCIA -> BELLUNO) ore 08:01
@@ -100,14 +138,14 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3400--20261124-S02517@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T104307Z
-DTEND:20261125T104837Z
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T104310Z
+DTEND:20261125T104840Z
 SUMMARY:[TRANSITO VELOCE] REG 3400 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) or
  e 11:47
 DESCRIPTION:Stazione/PL: VENEZIA MESTRE OSPEDALE (S02517)\nRegime chiusura:
-  TRANSITO VELOCE\nChiusura sbarre stimata: 11:43:07 - 11:48:37\nTreni coin
+  TRANSITO VELOCE\nChiusura sbarre stimata: 11:43:10 - 11:48:40\nTreni coin
  volti nella chiusura:\n  - REG 3400 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) 
  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
  a normativa/euristica: Transito stimato senza fermata (45% tratta MOGLIANO
@@ -122,8 +160,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16220--20261124-S02517@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T112730Z
 DTEND:20261125T113200Z
 SUMMARY:[FERMATA] REG 16220 (VENEZIA S.LUCIA -> UDINE) ore 12:31
@@ -142,52 +180,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3656--20261124-S02517@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T124047Z
-DTEND:20261125T124617Z
-SUMMARY:[TRANSITO VELOCE] REG 3656 (VENEZIA S.LUCIA -> CONEGLIANO) ore 13:4
- 5
-DESCRIPTION:Stazione/PL: VENEZIA MESTRE OSPEDALE (S02517)\nRegime chiusura:
-  TRANSITO VELOCE\nChiusura sbarre stimata: 13:40:47 - 13:46:17\nTreni coin
- volti nella chiusura:\n  - REG 3656 (VENEZIA S.LUCIA -> CONEGLIANO) [Trans
- ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
- ativa/euristica: Transito stimato senza fermata (67% tratta VENEZIA MESTRE
-  -> VENEZIA MESTRE GAZZERA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE OSPEDALE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-16783--20261124-S02517@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T125130Z
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T124551Z
 DTEND:20261125T125600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:51 - 13:56 (primo: REG 16783)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:45 - 13:56 (primo: REG 3656)
 DESCRIPTION:Stazione/PL: VENEZIA MESTRE OSPEDALE (S02517)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:51:30 - 13:56:00
- \nTreni coinvolti nella chiusura:\n  - REG 16783 (TREVISO CENTRALE -> VENE
- ZIA S.LUCIA)\n  - REG 16783 (TREVISO CENTRALE -> VENEZIA S.LUCIA)\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristi
- ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
- feriore alla soglia minima di sgombero stradale (120s)
+  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:45:51 - 13:56:00
+ \nTreni coinvolti nella chiusura:\n  - REG 3656 (VENEZIA S.LUCIA -> CONEGL
+ IANO) [Transito]\n  - REG 16783 (TREVISO CENTRALE -> VENEZIA S.LUCIA)\nRit
+ ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (8s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE OSPEDALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16880--20261124-S02517@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T135730Z
 DTEND:20261125T140200Z
 SUMMARY:[FERMATA] REG 16880 (VENEZIA S.LUCIA -> BELLUNO) ore 15:01
@@ -206,53 +222,94 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16793--20261124-S02517@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T142130Z
 DTEND:20261125T142600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:21 - 15:26 (primo: REG 16793)
+SUMMARY:[FERMATA] REG 16793 (UDINE -> VENEZIA S.LUCIA) ore 15:25
 DESCRIPTION:Stazione/PL: VENEZIA MESTRE OSPEDALE (S02517)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:21:30 - 15:26:00
- \nTreni coinvolti nella chiusura:\n  - REG 16793 (UDINE -> VENEZIA S.LUCIA
- )\n  - REG 16793 (UDINE -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua 
- per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
- nima di sgombero stradale (120s)
+  FERMATA\nChiusura sbarre stimata: 15:21:30 - 15:26:00\nTreni coinvolti ne
+ lla chiusura:\n  - REG 16793 (UDINE -> VENEZIA S.LUCIA)\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previs
+ ione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE OSPEDALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16804--20261124-S02517@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T145306Z
-DTEND:20261125T150701Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:53 - 16:07 (primo: REG 16804)
+UID:train-3662--20261124-S02517@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:0
+DTSTART:20261125T144551Z
+DTEND:20261125T145121Z
+SUMMARY:[TRANSITO VELOCE] REG 3662 (VENEZIA S.LUCIA -> CONEGLIANO) ore 15:5
+ 0
 DESCRIPTION:Stazione/PL: VENEZIA MESTRE OSPEDALE (S02517)\nRegime chiusura:
-  CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 15:53:06 - 16:07:01
- \nTreni coinvolti nella chiusura:\n  - REG 16804 (VENEZIA S.LUCIA -> TREVI
- SO CENTRALE) [Transito]\n  - REG 16804 (VENEZIA S.LUCIA -> TREVISO CENTRAL
- E)\n  - REG 3657 (CONEGLIANO -> VENEZIA S.LUCIA) [Transito]\nRitardo massi
- mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
- iusura continua per 3 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+  TRANSITO VELOCE\nChiusura sbarre stimata: 15:45:51 - 15:51:21\nTreni coin
+ volti nella chiusura:\n  - REG 3662 (VENEZIA S.LUCIA -> CONEGLIANO) [Trans
+ ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Transito stimato senza fermata (44% tratta VENEZIA MESTRE
+  GAZZERA -> MOGLIANO VENETO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE OSPEDALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16804--20261124-S02517@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T145930Z
+DTEND:20261125T150703Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:59 - 16:07 (primo: REG 16804)
+DESCRIPTION:Stazione/PL: VENEZIA MESTRE OSPEDALE (S02517)\nRegime chiusura:
+  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:59:30 - 16:07:03
+ \nTreni coinvolti nella chiusura:\n  - REG 16804 (VENEZIA S.LUCIA -> TREVI
+ SO CENTRALE)\n  - REG 3657 (CONEGLIANO -> VENEZIA S.LUCIA) [Transito]\nRit
+ ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE OSPEDALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3888--20261124-S02517@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:0
+DTSTART:20261125T151235Z
+DTEND:20261125T151805Z
+SUMMARY:[TRANSITO VELOCE] REG 3888 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) or
+ e 16:16
+DESCRIPTION:Stazione/PL: VENEZIA MESTRE OSPEDALE (S02517)\nRegime chiusura:
+  TRANSITO VELOCE\nChiusura sbarre stimata: 16:12:35 - 16:18:05\nTreni coin
+ volti nella chiusura:\n  - REG 3888 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) 
+ [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Transito stimato senza fermata (58% tratta VENEZIA 
+ MESTRE -> MOGLIANO VENETO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE OSPEDALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16801--20261124-S02517@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
 DTSTART:20261125T152330Z
 DTEND:20261125T152800Z
 SUMMARY:[FERMATA] REG 16801 (UDINE -> VENEZIA S.LUCIA) ore 16:27
@@ -271,82 +328,35 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16812--20261124-S02517@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
 DTSTART:20261125T162930Z
 DTEND:20261125T163400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:29 - 17:34 (primo: REG 16812)
+SUMMARY:[FERMATA] REG 16812 (VENEZIA S.LUCIA -> UDINE) ore 17:33
 DESCRIPTION:Stazione/PL: VENEZIA MESTRE OSPEDALE (S02517)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:29:30 - 17:34:00
- \nTreni coinvolti nella chiusura:\n  - REG 16812 (VENEZIA S.LUCIA -> UDINE
- )\n  - REG 16812 (VENEZIA S.LUCIA -> UDINE)\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua 
- per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
- nima di sgombero stradale (120s)
+  FERMATA\nChiusura sbarre stimata: 17:29:30 - 17:34:00\nTreni coinvolti ne
+ lla chiusura:\n  - REG 16812 (VENEZIA S.LUCIA -> UDINE)\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previs
+ ione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE OSPEDALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16826--20261124-S02517@pl-tracker.local
-DTSTAMP:20261125T112015Z
+UID:train-3894--20261124-S02517@pl-tracker.local
+DTSTAMP:20261125T203555Z
 SEQUENCE:0
-DTSTART:20261125T195730Z
-DTEND:20261125T200200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:57 - 21:02 (primo: REG 16826)
+DTSTART:20261125T184310Z
+DTEND:20261125T184840Z
+SUMMARY:[TRANSITO VELOCE] REG 3894 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) or
+ e 19:47
 DESCRIPTION:Stazione/PL: VENEZIA MESTRE OSPEDALE (S02517)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:57:30 - 21:02:00
- \nTreni coinvolti nella chiusura:\n  - REG 16826 (VENEZIA S.LUCIA -> TREVI
- SO CENTRALE)\n  - REG 16826 (VENEZIA S.LUCIA -> TREVISO CENTRALE)\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristi
- ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
- feriore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE OSPEDALE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-16830--20261124-S02517@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T202306Z
-DTEND:20261125T203400Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:23 - 21:34 (primo: REG 16830)
-DESCRIPTION:Stazione/PL: VENEZIA MESTRE OSPEDALE (S02517)\nRegime chiusura:
-  CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 21:23:06 - 21:34:00
- \nTreni coinvolti nella chiusura:\n  - REG 16830 (VENEZIA S.LUCIA -> UDINE
- ) [Transito]\n  - REG 16830 (VENEZIA S.LUCIA -> UDINE)\n  - REG 16830 (VEN
- EZIA S.LUCIA -> UDINE)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
- ma: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: interval
- lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
- dale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE OSPEDALE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3898--20261124-S02517@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:1
-DTSTART:20261125T203648Z
-DTEND:20261125T204218Z
-SUMMARY:[TRANSITO VELOCE] REG 3898 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) or
- e 21:41
-DESCRIPTION:Stazione/PL: VENEZIA MESTRE OSPEDALE (S02517)\nRegime chiusura:
-  TRANSITO VELOCE\nChiusura sbarre stimata: 21:36:48 - 21:42:18\nTreni coin
- volti nella chiusura:\n  - REG 3898 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) 
+  TRANSITO VELOCE\nChiusura sbarre stimata: 19:43:10 - 19:48:40\nTreni coin
+ volti nella chiusura:\n  - REG 3894 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) 
  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
  a normativa/euristica: Transito stimato senza fermata (45% tratta MOGLIANO
   VENETO -> VENEZIA MESTRE\; pedale annuncio fisso Vmax)
@@ -359,24 +369,63 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16022--20261124-S02517@pl-tracker.local
-DTSTAMP:20261125T112015Z
-SEQUENCE:0
-DTSTART:20261125T223648Z
-DTEND:20261125T224218Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:36 - 23:42 (primo: REG 16022)
+UID:train-16826--20261124-S02517@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:1
+DTSTART:20261125T195730Z
+DTEND:20261125T200200Z
+SUMMARY:[FERMATA] REG 16826 (VENEZIA S.LUCIA -> TREVISO CENTRALE) ore 21:01
 DESCRIPTION:Stazione/PL: VENEZIA MESTRE OSPEDALE (S02517)\nRegime chiusura:
-  CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 23:36:48 - 23:42:18
- \nTreni coinvolti nella chiusura:\n  - REG 16022 (TRIESTE CENTRALE -> VENE
- ZIA S.LUCIA) [Transito]\n  - REG 16022 (TRIESTE CENTRALE -> VENEZIA S.LUCI
- A) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\n
- Nota normativa/euristica: Chiusura continua per 2 treni: intervallo utile 
- tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
- s)
+  FERMATA\nChiusura sbarre stimata: 20:57:30 - 21:02:00\nTreni coinvolti ne
+ lla chiusura:\n  - REG 16826 (VENEZIA S.LUCIA -> TREVISO CENTRALE)\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
+ ica: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE OSPEDALE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16830--20261124-S02517@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T202930Z
+DTEND:20261125T203400Z
+SUMMARY:[FERMATA] REG 16830 (VENEZIA S.LUCIA -> UDINE) ore 21:33
+DESCRIPTION:Stazione/PL: VENEZIA MESTRE OSPEDALE (S02517)\nRegime chiusura:
+  FERMATA\nChiusura sbarre stimata: 21:29:30 - 21:34:00\nTreni coinvolti ne
+ lla chiusura:\n  - REG 16830 (VENEZIA S.LUCIA -> UDINE)\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previs
+ ione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE OSPEDALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3898--20261124-S02517@pl-tracker.local
+DTSTAMP:20261125T203555Z
+SEQUENCE:2
+DTSTART:20261125T203649Z
+DTEND:20261125T204219Z
+SUMMARY:[TRANSITO VELOCE] REG 3898 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) or
+ e 21:41
+DESCRIPTION:Stazione/PL: VENEZIA MESTRE OSPEDALE (S02517)\nRegime chiusura:
+  TRANSITO VELOCE\nChiusura sbarre stimata: 21:36:49 - 21:42:19\nTreni coin
+ volti nella chiusura:\n  - REG 3898 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) 
+ [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Transito stimato senza fermata (45% tratta MOGLIANO
+  VENETO -> VENEZIA MESTRE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE OSPEDALE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
