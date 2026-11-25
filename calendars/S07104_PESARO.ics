@@ -9,259 +9,368 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:a6473635fe3c5290ac651f1974d678f21860cbf7a551a4d37e3604cd56f2
- 62e7
+X-CONTENT-HASH:86d868910c72ab74b518227dfc869238000abfba7c769129b7541b5afbec
+ a556
 BEGIN:VEVENT
 UID:train-8804--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
 DTSTART:20261125T054130Z
 DTEND:20261125T054600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:41 - 06:46 (primo: TRENO 8804)
-DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 06:41:30 - 06:46:00\nTreni coinvolti
-  nella chiusura:\n  - TRENO 8804 (ANCONA -> MILANO CENTRALE)\n  - TRENO 88
- 04 (ANCONA -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabil
- ità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
+SUMMARY:[FERMATA] TRENO 8804 (ANCONA -> MILANO CENTRALE) ore 06:45
+DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 06:41:30 - 06:46:00\nTreni coinvolti nella chiusura:\n  
+ - TRENO 8804 (ANCONA -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\
+ nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia
+  oraria regolare
 LOCATION:Passaggio a Livello / Stazione PESARO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4232--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
+UID:train-3901--20261124-S07104@pl-tracker.local
+DTSTAMP:20261125T112015Z
 SEQUENCE:0
-DTSTART:20261125T070430Z
+DTSTART:20261125T070221Z
 DTEND:20261125T070900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:04 - 08:09 (primo: REG 4232)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:02 - 08:09 (primo: REG 3901)
 DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 08:04:30 - 08:09:00\nTreni coinvolti
-  nella chiusura:\n  - REG 4232 (ANCONA -> PESARO)\n  - REG 4232 (ANCONA ->
-  PESARO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota 
- normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i
-  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 08:02:21 - 08:09:00\nTreni coinvolti
+  nella chiusura:\n  - REG 3901 (BOLOGNA CENTRALE -> ANCONA) [Transito]\n  
+ - REG 4232 (ANCONA -> PESARO)\nRitardo massimo rilevato: 0 min\nAffidabili
+ tà stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: i
+ ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PESARO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3901--20261124-S07104@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:0
+DTSTART:20261125T071113Z
+DTEND:20261125T071643Z
+SUMMARY:[TRANSITO VELOCE] REG 3901 (BOLOGNA CENTRALE -> ANCONA) ore 08:15
+DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 08:11:13 - 08:16:43\nTreni coinvolti nella chius
+ ura:\n  - REG 3901 (BOLOGNA CENTRALE -> ANCONA) [Transito]\nRitardo massim
+ o rilevato: -2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
+ ansito stimato senza fermata (62% tratta RICCIONE -> CATTOLICA S.GIOVANNI 
+ GABICCE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PESARO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3901--20261124-S07104@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:0
+DTSTART:20261125T072530Z
+DTEND:20261125T073230Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:25 - 08:32 (primo: REG 3901) (+2 m
+ in)
+DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 08:25:30 - 08:32:30\nTreni coinvolti
+  nella chiusura:\n  - REG 3901 (BOLOGNA CENTRALE -> ANCONA) (+2m)\n  - REG
+  3901 (BOLOGNA CENTRALE -> ANCONA) (+2m)\nRitardo massimo rilevato: 2 min\
+ nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per
+  2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
+ a di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PESARO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3905--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
 DTSTART:20261125T080130Z
 DTEND:20261125T080700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:01 - 09:07 (primo: REG 3905)
-DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 09:01:30 - 09:07:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3905 (PIACENZA -> ANCONA) [Transito]\n  - REG 39
- 05 (PIACENZA -> ANCONA) [Transito]\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 3905 (PIACENZA -> ANCONA) ore 09:05
+DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 09:01:30 - 09:07:00\nTreni coinvolti nella chius
+ ura:\n  - REG 3905 (PIACENZA -> ANCONA) [Transito]\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito st
+ imato senza fermata (48% tratta RIMINI -> RICCIONE\; pedale annuncio fisso
+  Vmax)
 LOCATION:Passaggio a Livello / Stazione PESARO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-603--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
 DTSTART:20261125T081534Z
 DTEND:20261125T082004Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:15 - 09:20 (primo: IC 603)
-DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 09:15:34 - 09:20:04\nTreni coinvolti
-  nella chiusura:\n  - IC 603 (MILANO CENTRALE -> LECCE) [Transito]\n  - IC
-  603 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
- er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] IC 603 (MILANO CENTRALE -> LECCE) ore 09:19
+DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 09:15:34 - 09:20:04\nTreni coinvolti nella chius
+ ura:\n  - IC 603 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transit
+ o stimato senza fermata (48% tratta RIMINI -> RICCIONE\; pedale annuncio f
+ isso Vmax)
 LOCATION:Passaggio a Livello / Stazione PESARO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3905--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
 DTSTART:20261125T082530Z
 DTEND:20261125T083000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:25 - 09:30 (primo: REG 3905)
-DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 09:25:30 - 09:30:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3905 (PIACENZA -> ANCONA)\n  - REG 3905 (PIACENZ
- A -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nN
- ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
+SUMMARY:[FERMATA] REG 3905 (PIACENZA -> ANCONA) ore 09:29
+DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 09:25:30 - 09:30:00\nTreni coinvolti nella chiusura:\n  
+ - REG 3905 (PIACENZA -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabi
+ lità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria r
+ egolare
 LOCATION:Passaggio a Livello / Stazione PESARO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-603--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
 DTSTART:20261125T084115Z
 DTEND:20261125T084600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:41 - 09:46 (primo: IC 603)
-DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 09:41:15 - 09:46:00\nTreni coinvolti
-  nella chiusura:\n  - IC 603 (MILANO CENTRALE -> LECCE)\n  - IC 603 (MILAN
- O CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
+SUMMARY:[FERMATA] IC 603 (MILANO CENTRALE -> LECCE) ore 09:45
+DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 09:41:15 - 09:46:00\nTreni coinvolti nella chiusura:\n  
+ - IC 603 (MILANO CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAffi
+ dabilità stima: 90%\nNota normativa/euristica: Previsione da traccia orar
+ ia regolare
 LOCATION:Passaggio a Livello / Stazione PESARO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3907--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
-DTSTART:20261125T090401Z
-DTEND:20261125T090931Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:04 - 10:09 (primo: REG 3907)
-DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 10:04:01 - 10:09:31\nTreni coinvolti
-  nella chiusura:\n  - REG 3907 (PIACENZA -> ANCONA) [Transito]\n  - REG 39
- 07 (PIACENZA -> ANCONA) [Transito]\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
+DTSTART:20261125T090537Z
+DTEND:20261125T091107Z
+SUMMARY:[TRANSITO VELOCE] REG 3907 (PIACENZA -> ANCONA) ore 10:09
+DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 10:05:37 - 10:11:07\nTreni coinvolti nella chius
+ ura:\n  - REG 3907 (PIACENZA -> ANCONA) [Transito]\nRitardo massimo rileva
+ to: -2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito s
+ timato senza fermata (48% tratta RIMINI -> RICCIONE\; pedale annuncio fiss
+ o Vmax)
 LOCATION:Passaggio a Livello / Stazione PESARO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3907--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
-DTSTART:20261125T092730Z
-DTEND:20261125T093200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:27 - 10:32 (primo: REG 3907)
-DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 10:27:30 - 10:32:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3907 (PIACENZA -> ANCONA)\n  - REG 3907 (PIACENZ
- A -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nN
- ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
+DTSTART:20261125T091343Z
+DTEND:20261125T091913Z
+SUMMARY:[TRANSITO VELOCE] REG 3907 (PIACENZA -> ANCONA) ore 10:17
+DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 10:13:43 - 10:19:13\nTreni coinvolti nella chius
+ ura:\n  - REG 3907 (PIACENZA -> ANCONA) [Transito]\nRitardo massimo rileva
+ to: -2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito s
+ timato senza fermata (62% tratta RICCIONE -> CATTOLICA S.GIOVANNI GABICCE\
+ ; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PESARO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-2
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-605--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
-DTSTART:20261125T101346Z
-DTEND:20261125T101816Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:13 - 11:18 (primo: IC 605)
+UID:train-3907--20261124-S07104@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
+DTSTART:20261125T092830Z
+DTEND:20261125T093530Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:28 - 10:35 (primo: REG 3907) (+3 m
+ in)
 DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 11:13:46 - 11:18:16\nTreni coinvolti
-  nella chiusura:\n  - IC 605 (MILANO CENTRALE -> LECCE) [Transito]\n  - IC
-  605 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
- er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 10:28:30 - 10:35:30\nTreni coinvolti
+  nella chiusura:\n  - REG 3907 (PIACENZA -> ANCONA) (+3m)\n  - REG 3907 (P
+ IACENZA -> ANCONA) (+3m)\nRitardo massimo rilevato: 3 min\nAffidabilità s
+ tima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: interv
+ allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
+ radale (120s)
 LOCATION:Passaggio a Livello / Stazione PESARO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9806--20261124-S07104@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:0
+DTSTART:20261125T095445Z
+DTEND:20261125T100015Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:54 - 11:00 (primo: TRENO 9806) (+1
+ 0 min)
+DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 10:54:45 - 11:00:15\nTreni coinvolti
+  nella chiusura:\n  - TRENO 9806 (BARI CENTRALE -> MILANO CENTRALE) (+10m)
+  [Transito]\n  - TRENO 9806 (BARI CENTRALE -> MILANO CENTRALE) (+10m) [Tra
+ nsito]\nRitardo massimo rilevato: 10 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
+ passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PESARO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:10
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-605--20261124-S07104@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
+DTSTART:20261125T103322Z
+DTEND:20261125T103752Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:33 - 11:37 (primo: IC 605) (+22 mi
+ n)
+DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 11:33:22 - 11:37:52\nTreni coinvolti
+  nella chiusura:\n  - IC 605 (MILANO CENTRALE -> LECCE) (+22m) [Transito]\
+ n  - IC 605 (MILANO CENTRALE -> LECCE) (+22m) [Transito]\nRitardo massimo 
+ rilevato: 22 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
+ sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PESARO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:22
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-605--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
+UID:train-8814--20261124-S07104@pl-tracker.local-arr
+DTSTAMP:20261125T112015Z
 SEQUENCE:0
-DTSTART:20261125T103615Z
-DTEND:20261125T104100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:36 - 11:41 (primo: IC 605)
+DTSTART:20261125T105330Z
+DTEND:20261125T110500Z
+SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 11:53 - 12:05 (primo: TRENO 8814) (+2
+ 2 min)
 DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 11:36:15 - 11:41:00\nTreni coinvolti
-  nella chiusura:\n  - IC 605 (MILANO CENTRALE -> LECCE)\n  - IC 605 (MILAN
- O CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
+ A - 8 TRENI\nChiusura sbarre stimata: 11:53:30 - 12:05:00\nTreni coinvolti
+  nella chiusura:\n  - TRENO 8814 (LECCE -> MILANO CENTRALE) (+9m) [Arrivo]
+ \n  - TRENO 8814 (LECCE -> MILANO CENTRALE) (+9m) [Arrivo]\n  - IC 605 (MI
+ LANO CENTRALE -> LECCE) (+22m) [Arrivo]\n  - IC 605 (MILANO CENTRALE -> LE
+ CCE) (+22m) [Arrivo]\n  - TRENO 8814 (LECCE -> MILANO CENTRALE) (+9m) [Par
+ tenza]\n  - TRENO 8814 (LECCE -> MILANO CENTRALE) (+9m) [Partenza]\n  - IC
+  605 (MILANO CENTRALE -> LECCE) (+22m) [Partenza]\n  - IC 605 (MILANO CENT
+ RALE -> LECCE) (+22m) [Partenza]\nRitardo massimo rilevato: 22 min\nAffida
+ bilità stima: 99%\nNota normativa/euristica: Chiusura continua per 8 tren
+ i: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sg
+ ombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PESARO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8814--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
-DTSTART:20261125T104630Z
-DTEND:20261125T105100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:46 - 11:51 (primo: TRENO 8814)
-DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 11:46:30 - 11:51:00\nTreni coinvolti
-  nella chiusura:\n  - TRENO 8814 (LECCE -> MILANO CENTRALE)\n  - TRENO 881
- 4 (LECCE -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PESARO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+X-PL-DELAY-MIN:22
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3916--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
-DTSTART:20261125T112230Z
-DTEND:20261125T112700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:22 - 12:27 (primo: REG 3916)
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
+DTSTART:20261125T112430Z
+DTEND:20261125T112900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:24 - 12:29 (primo: REG 3916) (+2 m
+ in)
 DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 12:22:30 - 12:27:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3916 (ANCONA -> PIACENZA)\n  - REG 3916 (ANCONA 
+ A - 2 TRENI\nChiusura sbarre stimata: 12:24:30 - 12:29:00\nTreni coinvolti
+  nella chiusura:\n  - REG 3916 (ANCONA -> PIACENZA) (+2m)\n  - REG 3916 (A
+ NCONA -> PIACENZA) (+2m)\nRitardo massimo rilevato: 2 min\nAffidabilità s
+ tima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interv
+ allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
+ radale (120s)
+LOCATION:Passaggio a Livello / Stazione PESARO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-608--20261124-S07104@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
+DTSTART:20261125T121115Z
+DTEND:20261125T121600Z
+SUMMARY:[FERMATA] IC 608 (LECCE -> MILANO CENTRALE) ore 13:15
+DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 13:11:15 - 13:16:00\nTreni coinvolti nella chiusura:\n  
+ - IC 608 (LECCE -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffi
+ dabilità stima: 90%\nNota normativa/euristica: Previsione da traccia orar
+ ia regolare
+LOCATION:Passaggio a Livello / Stazione PESARO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3918--20261124-S07104@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:0
+DTSTART:20261125T122230Z
+DTEND:20261125T122700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:22 - 13:27 (primo: REG 3918)
+DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 13:22:30 - 13:27:00\nTreni coinvolti
+  nella chiusura:\n  - REG 3918 (ANCONA -> PIACENZA)\n  - REG 3918 (ANCONA 
  -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nN
  ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
  ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
@@ -275,194 +384,229 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-608--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
+UID:train-8809--20261124-S07104@pl-tracker.local
+DTSTAMP:20261125T112015Z
 SEQUENCE:0
-DTSTART:20261125T121115Z
-DTEND:20261125T121600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:11 - 13:16 (primo: IC 608)
+DTSTART:20261125T135630Z
+DTEND:20261125T140100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:56 - 15:01 (primo: TRENO 8809)
 DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 13:11:15 - 13:16:00\nTreni coinvolti
-  nella chiusura:\n  - IC 608 (LECCE -> MILANO CENTRALE)\n  - IC 608 (LECCE
-  -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 14:56:30 - 15:01:00\nTreni coinvolti
+  nella chiusura:\n  - TRENO 8809 (MILANO CENTRALE -> LECCE)\n  - TRENO 880
+ 9 (MILANO CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAffidabilit
+ à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PESARO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-610--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
 DTSTART:20261125T141115Z
 DTEND:20261125T141600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:11 - 15:16 (primo: IC 610)
-DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 15:11:15 - 15:16:00\nTreni coinvolti
-  nella chiusura:\n  - IC 610 (LECCE -> BOLZANO)\n  - IC 610 (LECCE -> BOLZ
- ANO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota norm
- ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
- saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] IC 610 (LECCE -> BOLZANO) ore 15:15
+DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 15:11:15 - 15:16:00\nTreni coinvolti nella chiusura:\n  
+ - IC 610 (LECCE -> BOLZANO)\nRitardo massimo rilevato: 0 min\nAffidabilit
+ à stima: 90%\nNota normativa/euristica: Previsione da traccia oraria rego
+ lare
 LOCATION:Passaggio a Livello / Stazione PESARO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8824--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
 DTSTART:20261125T144630Z
 DTEND:20261125T145100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:46 - 15:51 (primo: TRENO 8824)
-DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 15:46:30 - 15:51:00\nTreni coinvolti
-  nella chiusura:\n  - TRENO 8824 (LECCE -> MILANO CENTRALE)\n  - TRENO 882
- 4 (LECCE -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+SUMMARY:[FERMATA] TRENO 8824 (LECCE -> MILANO CENTRALE) ore 15:50
+DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 15:46:30 - 15:51:00\nTreni coinvolti nella chiusura:\n  
+ - TRENO 8824 (LECCE -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\n
+ Affidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia 
+ oraria regolare
 LOCATION:Passaggio a Livello / Stazione PESARO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4486--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
 DTSTART:20261125T152930Z
 DTEND:20261125T153400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:29 - 16:34 (primo: REG 4486)
-DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 16:29:30 - 16:34:00\nTreni coinvolti
-  nella chiusura:\n  - REG 4486 (ANCONA -> RIMINI)\n  - REG 4486 (ANCONA ->
-  RIMINI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota 
- normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i
-  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 4486 (ANCONA -> RIMINI) ore 16:33
+DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 16:29:30 - 16:34:00\nTreni coinvolti nella chiusura:\n  
+ - REG 4486 (ANCONA -> RIMINI)\nRitardo massimo rilevato: 0 min\nAffidabili
+ tà stima: 90%\nNota normativa/euristica: Previsione da traccia oraria reg
+ olare
 LOCATION:Passaggio a Livello / Stazione PESARO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8813--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
 DTSTART:20261125T154004Z
 DTEND:20261125T154534Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:40 - 16:45 (primo: TRENO 8813)
-DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 16:40:04 - 16:45:34\nTreni coinvolti
-  nella chiusura:\n  - TRENO 8813 (MILANO CENTRALE -> LECCE) [Transito]\n  
- - TRENO 8813 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
- ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
- glia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] TRENO 8813 (MILANO CENTRALE -> LECCE) ore 16:44
+DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 16:40:04 - 16:45:34\nTreni coinvolti nella chius
+ ura:\n  - TRENO 8813 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
+ nsito stimato senza fermata (48% tratta RIMINI -> RICCIONE\; pedale annunc
+ io fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PESARO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4288--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
 DTSTART:20261125T155730Z
 DTEND:20261125T160500Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:57 - 17:05 (primo: REG 4288)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:57 - 17:05 (primo: REG 4288)
 DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 4 TRENI\nChiusura sbarre stimata: 16:57:30 - 17:05:00\nTreni coinvolti
+ A - 3 TRENI\nChiusura sbarre stimata: 16:57:30 - 17:05:00\nTreni coinvolti
   nella chiusura:\n  - REG 4288 (ANCONA -> RIMINI)\n  - REG 4288 (ANCONA ->
-  RIMINI)\n  - TRENO 8813 (MILANO CENTRALE -> LECCE)\n  - TRENO 8813 (MILAN
- O CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 90%\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
+  RIMINI)\n  - TRENO 8813 (MILANO CENTRALE -> LECCE)\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura c
+ ontinua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PESARO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-611--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
 DTSTART:20261125T161346Z
 DTEND:20261125T161816Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:13 - 17:18 (primo: IC 611)
-DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 17:13:46 - 17:18:16\nTreni coinvolti
-  nella chiusura:\n  - IC 611 (BOLZANO -> BARI CENTRALE) [Transito]\n  - IC
-  611 (BOLZANO -> BARI CENTRALE) [Transito]\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
- er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] IC 611 (BOLZANO -> BARI CENTRALE) ore 17:17
+DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 17:13:46 - 17:18:16\nTreni coinvolti nella chius
+ ura:\n  - IC 611 (BOLZANO -> BARI CENTRALE) [Transito]\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transit
+ o stimato senza fermata (48% tratta RIMINI -> RICCIONE\; pedale annuncio f
+ isso Vmax)
 LOCATION:Passaggio a Livello / Stazione PESARO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-611--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
+UID:train-3927--20261124-S07104@pl-tracker.local
+DTSTAMP:20261125T112015Z
 SEQUENCE:0
-DTSTART:20261125T163615Z
-DTEND:20261125T164100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:36 - 17:41 (primo: IC 611)
+DTSTART:20261125T163130Z
+DTEND:20261125T164400Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 17:31 - 17:44 (primo: REG 3927) (+28 
+ min)
 DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 17:36:15 - 17:41:00\nTreni coinvolti
-  nella chiusura:\n  - IC 611 (BOLZANO -> BARI CENTRALE)\n  - IC 611 (BOLZA
- NO -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
+ A - 5 TRENI\nChiusura sbarre stimata: 17:31:30 - 17:44:00\nTreni coinvolti
+  nella chiusura:\n  - REG 3927 (PIACENZA -> PESARO)\n  - REG 3927 (PIACENZ
+ A -> PESARO)\n  - IC 611 (BOLZANO -> BARI CENTRALE)\n  - IC 612 (LECCE -> 
+ MILANO CENTRALE) (+28m)\n  - IC 612 (LECCE -> MILANO CENTRALE) (+28m)\nRit
+ ardo massimo rilevato: 28 min\nAffidabilità stima: 90%\nNota normativa/eu
+ ristica: Chiusura continua per 5 treni: intervallo utile tra i passaggi (0
+ s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PESARO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:28
 X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9808--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
 DTSTART:20261125T164630Z
 DTEND:20261125T165100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:46 - 17:51 (primo: TRENO 9808)
+SUMMARY:[FERMATA] TRENO 9808 (LECCE -> TORINO PORTA NUOVA) ore 17:50
+DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 17:46:30 - 17:51:00\nTreni coinvolti nella chiusura:\n  
+ - TRENO 9808 (LECCE -> TORINO PORTA NUOVA)\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracc
+ ia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PESARO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3928--20261124-S07104@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
+DTSTART:20261125T171930Z
+DTEND:20261125T172400Z
+SUMMARY:[FERMATA] REG 3928 (PESARO -> PIACENZA) ore 18:23
+DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 18:19:30 - 18:24:00\nTreni coinvolti nella chiusura:\n  
+ - REG 3928 (PESARO -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabi
+ lità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria r
+ egolare
+LOCATION:Passaggio a Livello / Stazione PESARO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8819--20261124-S07104@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:0
+DTSTART:20261125T180430Z
+DTEND:20261125T180900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:04 - 19:09 (primo: TRENO 8819)
 DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 17:46:30 - 17:51:00\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9808 (LECCE -> TORINO PORTA NUOVA)\n  - TRENO 
- 9808 (LECCE -> TORINO PORTA NUOVA)\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 19:04:30 - 19:09:00\nTreni coinvolti
+  nella chiusura:\n  - TRENO 8819 (MILANO CENTRALE -> BARI CENTRALE)\n  - T
+ RENO 8819 (MILANO CENTRALE -> BARI CENTRALE)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
+  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PESARO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -472,63 +616,59 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3928--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
-DTSTART:20261125T171930Z
-DTEND:20261125T172400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:19 - 18:24 (primo: REG 3928)
-DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 18:19:30 - 18:24:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3928 (PESARO -> PIACENZA)\n  - REG 3928 (PESARO 
- -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nN
- ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
-LOCATION:Passaggio a Livello / Stazione PESARO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-3930--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
 DTSTART:20261125T182130Z
 DTEND:20261125T182600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:21 - 19:26 (primo: REG 3930)
-DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 19:21:30 - 19:26:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3930 (ANCONA -> PIACENZA)\n  - REG 3930 (ANCONA 
- -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nN
- ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
+SUMMARY:[FERMATA] REG 3930 (ANCONA -> PIACENZA) ore 19:25
+DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 19:21:30 - 19:26:00\nTreni coinvolti nella chiusura:\n  
+ - REG 3930 (ANCONA -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabi
+ lità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria r
+ egolare
 LOCATION:Passaggio a Livello / Stazione PESARO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9811--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
 DTSTART:20261125T185630Z
 DTEND:20261125T190100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:56 - 20:01 (primo: TRENO 9811)
+SUMMARY:[FERMATA] TRENO 9811 (MILANO CENTRALE -> PESCARA) ore 20:00
+DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 19:56:30 - 20:01:00\nTreni coinvolti nella chiusura:\n  
+ - TRENO 9811 (MILANO CENTRALE -> PESCARA)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
+ a oraria regolare
+LOCATION:Passaggio a Livello / Stazione PESARO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8830--20261124-S07104@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:0
+DTSTART:20261125T194630Z
+DTEND:20261125T195100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:46 - 20:51 (primo: TRENO 8830)
 DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 19:56:30 - 20:01:00\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9811 (MILANO CENTRALE -> PESCARA)\n  - TRENO 9
- 811 (MILANO CENTRALE -> PESCARA)\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 20:46:30 - 20:51:00\nTreni coinvolti
+  nella chiusura:\n  - TRENO 8830 (BARI CENTRALE -> MILANO CENTRALE)\n  - T
+ RENO 8830 (BARI CENTRALE -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
+  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PESARO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -539,8 +679,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3932--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
 DTSTART:20261125T202630Z
 DTEND:20261125T203100Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:26 - 21:31 (primo: REG 3932)
@@ -561,24 +701,44 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8825--20261124-S07104@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
 DTSTART:20261125T210430Z
 DTEND:20261125T210900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:04 - 22:09 (primo: TRENO 8825)
+SUMMARY:[FERMATA] TRENO 8825 (MILANO CENTRALE -> ANCONA) ore 22:08
+DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 22:04:30 - 22:09:00\nTreni coinvolti nella chiusura:\n  
+ - TRENO 8825 (MILANO CENTRALE -> ANCONA)\nRitardo massimo rilevato: 0 min\
+ nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia
+  oraria regolare
+LOCATION:Passaggio a Livello / Stazione PESARO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-765--20261124-S07104@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:0
+DTSTART:20261126T004415Z
+DTEND:20261126T004900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 01:44 - 01:49 (primo: ICN 765)
 DESCRIPTION:Stazione/PL: PESARO (S07104)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 22:04:30 - 22:09:00\nTreni coinvolti
-  nella chiusura:\n  - TRENO 8825 (MILANO CENTRALE -> ANCONA)\n  - TRENO 88
- 25 (MILANO CENTRALE -> ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabil
- ità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 01:44:15 - 01:49:00\nTreni coinvolti
+  nella chiusura:\n  - ICN 765 (MILANO CENTRALE -> LECCE)\n  - ICN 765 (MIL
+ ANO CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
+ ma: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
+ lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
+ dale (120s)
 LOCATION:Passaggio a Livello / Stazione PESARO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 END:VCALENDAR

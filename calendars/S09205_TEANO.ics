@@ -9,22 +9,86 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:fcc78011ae988207db1b3574a299024c53c86c0fcbdaa17bd5f2badf9acd
- d6ef
+X-CONTENT-HASH:a81d1bd1d128322d2190cced2af5f0e324829b6711a8cf4d549a2412c41b
+ cd62
 BEGIN:VEVENT
 UID:train-5806--20261124-S09205@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
 DTSTART:20261125T081530Z
 DTEND:20261125T082000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:15 - 09:20 (primo: REG 5806)
+SUMMARY:[FERMATA] REG 5806 (NAPOLI CENTRALE -> CASSINO) ore 09:19
+DESCRIPTION:Stazione/PL: TEANO (S09205)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 09:15:30 - 09:20:00\nTreni coinvolti nella chiusura:\n  -
+  REG 5806 (NAPOLI CENTRALE -> CASSINO)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
+LOCATION:Passaggio a Livello / Stazione TEANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-703--20261124-S09205@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:0
+DTSTART:20261125T083400Z
+DTEND:20261125T083830Z
+SUMMARY:[TRANSITO VELOCE] IC 703 (ROMA TERMINI -> BARI CENTRALE) ore 09:37
+DESCRIPTION:Stazione/PL: TEANO (S09205)\nRegime chiusura: TRANSITO VELOCE\n
+ Chiusura sbarre stimata: 09:34:00 - 09:38:30\nTreni coinvolti nella chiusu
+ ra:\n  - IC 703 (ROMA TERMINI -> BARI CENTRALE) [Transito]\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
+ nsito stimato senza fermata (25% tratta VAIRANO-CAIANELLO -> CASERTA\; ped
+ ale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione TEANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-5190--20261124-S09205@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
+DTSTART:20261125T120725Z
+DTEND:20261125T121255Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:07 - 13:12 (primo: REG 5190) (+1 m
+ in)
 DESCRIPTION:Stazione/PL: TEANO (S09205)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 09:15:30 - 09:20:00\nTreni coinvolti 
- nella chiusura:\n  - REG 5806 (NAPOLI CENTRALE -> CASSINO)\n  - REG 5806 (
- NAPOLI CENTRALE -> CASSINO)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+  - 2 TRENI\nChiusura sbarre stimata: 13:07:25 - 13:12:55\nTreni coinvolti 
+ nella chiusura:\n  - REG 5190 (NAPOLI CENTRALE -> BOIANO) (+1m) [Transito]
+ \n  - REG 5190 (NAPOLI CENTRALE -> BOIANO) (+1m) [Transito]\nRitardo massi
+ mo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Ch
+ iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
+ e alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione TEANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-5843--20261124-S09205@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:0
+DTSTART:20261125T133430Z
+DTEND:20261125T133900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:34 - 14:39 (primo: REG 5843)
+DESCRIPTION:Stazione/PL: TEANO (S09205)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 14:34:30 - 14:39:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 5843 (ROMA TERMINI -> CASERTA)\n  - REG 5843 (ROM
+ A TERMINI -> CASERTA)\nRitardo massimo rilevato: 0 min\nAffidabilità stim
+ a: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervall
+ o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
+ ale (120s)
 LOCATION:Passaggio a Livello / Stazione TEANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -34,16 +98,16 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-5190--20261124-S09205@pl-tracker.local
-DTSTAMP:20261125T020055Z
+UID:train-5192--20261124-S09205@pl-tracker.local
+DTSTAMP:20261125T112015Z
 SEQUENCE:0
-DTSTART:20261125T120430Z
-DTEND:20261125T121000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:04 - 13:10 (primo: REG 5190)
+DTSTART:20261125T134257Z
+DTEND:20261125T134827Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:42 - 14:48 (primo: REG 5192)
 DESCRIPTION:Stazione/PL: TEANO (S09205)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 13:04:30 - 13:10:00\nTreni coinvolti 
- nella chiusura:\n  - REG 5190 (NAPOLI CENTRALE -> BOIANO) [Transito]\n  - 
- REG 5190 (NAPOLI CENTRALE -> BOIANO) [Transito]\nRitardo massimo rilevato:
+  - 2 TRENI\nChiusura sbarre stimata: 14:42:57 - 14:48:27\nTreni coinvolti 
+ nella chiusura:\n  - REG 5192 (NAPOLI CENTRALE -> BOIANO) [Transito]\n  - 
+ REG 5192 (NAPOLI CENTRALE -> BOIANO) [Transito]\nRitardo massimo rilevato:
   0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
  nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
  a minima di sgombero stradale (120s)
@@ -56,23 +120,65 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-5810--20261124-S09205@pl-tracker.local
-DTSTAMP:20261125T020055Z
+UID:train-5192--20261124-S09205@pl-tracker.local
+DTSTAMP:20261125T112015Z
 SEQUENCE:0
-DTSTART:20261125T173030Z
-DTEND:20261125T173500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:30 - 18:35 (primo: REG 5810)
+DTSTART:20261125T135330Z
+DTEND:20261125T135800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:53 - 14:58 (primo: REG 5192)
 DESCRIPTION:Stazione/PL: TEANO (S09205)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 18:30:30 - 18:35:00\nTreni coinvolti 
- nella chiusura:\n  - REG 5810 (NAPOLI CENTRALE -> CASSINO)\n  - REG 5810 (
- NAPOLI CENTRALE -> CASSINO)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+  - 2 TRENI\nChiusura sbarre stimata: 14:53:30 - 14:58:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 5192 (NAPOLI CENTRALE -> BOIANO)\n  - REG 5192 (N
+ APOLI CENTRALE -> BOIANO)\nRitardo massimo rilevato: 0 min\nAffidabilità 
+ stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inter
+ vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
+ tradale (120s)
 LOCATION:Passaggio a Livello / Stazione TEANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-5804--20261124-S09205@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:0
+DTSTART:20261125T141530Z
+DTEND:20261125T142000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:15 - 15:20 (primo: REG 5804)
+DESCRIPTION:Stazione/PL: TEANO (S09205)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 15:15:30 - 15:20:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 5804 (NAPOLI CENTRALE -> VAIRANO-CAIANELLO)\n  - 
+ REG 5804 (NAPOLI CENTRALE -> VAIRANO-CAIANELLO)\nRitardo massimo rilevato:
+  0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura conti
+ nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione TEANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-5810--20261124-S09205@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
+DTSTART:20261125T173030Z
+DTEND:20261125T173500Z
+SUMMARY:[FERMATA] REG 5810 (NAPOLI CENTRALE -> CASSINO) ore 18:34
+DESCRIPTION:Stazione/PL: TEANO (S09205)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 18:30:30 - 18:35:00\nTreni coinvolti nella chiusura:\n  -
+  REG 5810 (NAPOLI CENTRALE -> CASSINO)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
+LOCATION:Passaggio a Livello / Stazione TEANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

@@ -9,17 +9,17 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:cf22d9b8a0b61bc27f861267a08e0afc8d9ce4b0fd2e24966f4c0a41210e
- a0d6
+X-CONTENT-HASH:44a253b711611367b0bf4494861316c6a4dc5549b4c6cb0609dbe42ea93b
+ 4ebf
 BEGIN:VEVENT
 UID:train-23506--20261124-S11127@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
-DTSTART:20261125T054021Z
-DTEND:20261125T054551Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:40 - 06:45 (primo: REG 23506)
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
+DTSTART:20261125T054224Z
+DTEND:20261125T054754Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:42 - 06:47 (primo: REG 23506)
 DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:40:21 - 06:45:51\nTreni coi
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:42:24 - 06:47:54\nTreni coi
  nvolti nella chiusura:\n  - REG 23506 (FASANO -> BARLETTA) [Transito]\n  -
   REG 23506 (FASANO -> BARLETTA) [Transito]\nRitardo massimo rilevato: 0 mi
  n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
@@ -35,37 +35,194 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23506--20261124-S11127@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
-DTSTART:20261125T055130Z
-DTEND:20261125T055600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:51 - 06:56 (primo: REG 23506)
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
+DTSTART:20261125T055230Z
+DTEND:20261125T055930Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:52 - 06:59 (primo: REG 23506) (+3 
+ min)
 DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:51:30 - 06:56:00\nTreni coi
- nvolti nella chiusura:\n  - REG 23506 (FASANO -> BARLETTA)\n  - REG 23506 
- (FASANO -> BARLETTA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:52:30 - 06:59:30\nTreni coi
+ nvolti nella chiusura:\n  - REG 23506 (FASANO -> BARLETTA) (+3m)\n  - REG 
+ 23506 (FASANO -> BARLETTA) (+3m)\nRitardo massimo rilevato: 3 min\nAffidab
+ ilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MOLA DI BARI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23510--20261124-S11127@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
+DTSTART:20261125T061018Z
+DTEND:20261125T061548Z
+SUMMARY:[TRANSITO VELOCE] REG 23510 (FASANO -> BARLETTA) ore 07:14
+DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: TRANSITO V
+ ELOCE\nChiusura sbarre stimata: 07:10:18 - 07:15:48\nTreni coinvolti nella
+  chiusura:\n  - REG 23510 (FASANO -> BARLETTA) [Transito]\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
+ sito stimato senza fermata (76% tratta MONOPOLI -> POLIGNANO A MARE\; peda
+ le annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MOLA DI BARI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23510--20261124-S11127@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
+DTSTART:20261125T062030Z
+DTEND:20261125T062500Z
+SUMMARY:[FERMATA] REG 23510 (FASANO -> BARLETTA) ore 07:24
+DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: FERMATA\nC
+ hiusura sbarre stimata: 07:20:30 - 07:25:00\nTreni coinvolti nella chiusur
+ a:\n  - REG 23510 (FASANO -> BARLETTA)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
+LOCATION:Passaggio a Livello / Stazione MOLA DI BARI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-23510--20261124-S11127@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
-DTSTART:20261125T061004Z
-DTEND:20261125T061534Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:10 - 07:15 (primo: REG 23510)
+UID:train-4386--20261124-S11127@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
+DTSTART:20261125T065401Z
+DTEND:20261125T065931Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:54 - 07:59 (primo: REG 4386) (+2 m
+ in)
 DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:10:04 - 07:15:34\nTreni coi
- nvolti nella chiusura:\n  - REG 23510 (FASANO -> BARLETTA) [Transito]\n  -
-  REG 23510 (FASANO -> BARLETTA) [Transito]\nRitardo massimo rilevato: 0 mi
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:54:01 - 07:59:31\nTreni coi
+ nvolti nella chiusura:\n  - REG 4386 (LECCE -> BARI CENTRALE) (+2m) [Trans
+ ito]\n  - REG 4386 (LECCE -> BARI CENTRALE) (+2m) [Transito]\nRitardo mass
+ imo rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
+ hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
+ re alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MOLA DI BARI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4386--20261124-S11127@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
+DTSTART:20261125T070330Z
+DTEND:20261125T071100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:03 - 08:11 (primo: REG 4386) (+7 m
+ in)
+DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:03:30 - 08:11:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 4386 (LECCE -> BARI CENTRALE) (+7m)\n  - R
+ EG 4386 (LECCE -> BARI CENTRALE) (+7m)\nRitardo massimo rilevato: 7 min\nA
+ ffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MOLA DI BARI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4394--20261124-S11127@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:0
+DTSTART:20261125T081254Z
+DTEND:20261125T081824Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:12 - 09:18 (primo: REG 4394)
+DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:12:54 - 09:18:24\nTreni coi
+ nvolti nella chiusura:\n  - REG 4394 (LECCE -> BARI CENTRALE) [Transito]\n
+   - REG 4394 (LECCE -> BARI CENTRALE) [Transito]\nRitardo massimo rilevato
+ : -4 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
+ tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MOLA DI BARI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-4
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23524--20261124-S11127@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:0
+DTSTART:20261125T104924Z
+DTEND:20261125T105500Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:49 - 11:55 (primo: REG 23524) (+2 
+ min)
+DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 4 TRENI\nChiusura sbarre stimata: 11:49:24 - 11:55:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 23524 (FASANO -> BARLETTA) (+2m) [Transito
+ ]\n  - REG 23524 (FASANO -> BARLETTA) (+2m) [Transito]\n  - REG 23527 (BAR
+ I CENTRALE -> FASANO) (+2m)\n  - REG 23527 (BARI CENTRALE -> FASANO) (+2m)
+ \nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Chiusura continua per 4 treni: intervallo utile tra i passagg
+ i (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MOLA DI BARI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23524--20261124-S11127@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:0
+DTSTART:20261125T110000Z
+DTEND:20261125T110700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:00 - 12:07 (primo: REG 23524) (+1 
+ min)
+DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:00:00 - 12:07:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 23524 (FASANO -> BARLETTA) (+1m)\n  - REG 
+ 23524 (FASANO -> BARLETTA) (+1m)\nRitardo massimo rilevato: 1 min\nAffidab
+ ilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
+ mbero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MOLA DI BARI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23528--20261124-S11127@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:0
+DTSTART:20261125T114918Z
+DTEND:20261125T115448Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:49 - 12:54 (primo: REG 23528)
+DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:49:18 - 12:54:48\nTreni coi
+ nvolti nella chiusura:\n  - REG 23528 (FASANO -> BARLETTA) [Transito]\n  -
+  REG 23528 (FASANO -> BARLETTA) [Transito]\nRitardo massimo rilevato: 0 mi
  n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
  er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
  ima di sgombero stradale (120s)
@@ -78,15 +235,15 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-23510--20261124-S11127@pl-tracker.local
-DTSTAMP:20261125T020055Z
+UID:train-23528--20261124-S11127@pl-tracker.local
+DTSTAMP:20261125T112015Z
 SEQUENCE:0
-DTSTART:20261125T062030Z
-DTEND:20261125T062500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:20 - 07:25 (primo: REG 23510)
+DTSTART:20261125T120030Z
+DTEND:20261125T120500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:00 - 13:05 (primo: REG 23528)
 DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:20:30 - 07:25:00\nTreni coi
- nvolti nella chiusura:\n  - REG 23510 (FASANO -> BARLETTA)\n  - REG 23510 
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:00:30 - 13:05:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 23528 (FASANO -> BARLETTA)\n  - REG 23528 
  (FASANO -> BARLETTA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
  : 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
   utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
@@ -100,19 +257,19 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4386--20261124-S11127@pl-tracker.local
-DTSTAMP:20261125T020055Z
+UID:train-23536--20261124-S11127@pl-tracker.local
+DTSTAMP:20261125T112015Z
 SEQUENCE:0
-DTSTART:20261125T064821Z
-DTEND:20261125T065351Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:48 - 07:53 (primo: REG 4386)
+DTSTART:20261125T134918Z
+DTEND:20261125T135448Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:49 - 14:54 (primo: REG 23536)
 DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:48:21 - 07:53:51\nTreni coi
- nvolti nella chiusura:\n  - REG 4386 (LECCE -> BARI CENTRALE) [Transito]\n
-   - REG 4386 (LECCE -> BARI CENTRALE) [Transito]\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
- inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:49:18 - 14:54:48\nTreni coi
+ nvolti nella chiusura:\n  - REG 23536 (FASANO -> BARLETTA) [Transito]\n  -
+  REG 23536 (FASANO -> BARLETTA) [Transito]\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
+ er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
+ ima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MOLA DI BARI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -122,41 +279,19 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4386--20261124-S11127@pl-tracker.local
-DTSTAMP:20261125T020055Z
+UID:train-23536--20261124-S11127@pl-tracker.local
+DTSTAMP:20261125T112015Z
 SEQUENCE:0
-DTSTART:20261125T065830Z
-DTEND:20261125T070300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:58 - 08:03 (primo: REG 4386)
+DTSTART:20261125T140030Z
+DTEND:20261125T140500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:00 - 15:05 (primo: REG 23536)
 DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:58:30 - 08:03:00\nTreni coi
- nvolti nella chiusura:\n  - REG 4386 (LECCE -> BARI CENTRALE)\n  - REG 438
- 6 (LECCE -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MOLA DI BARI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-23527--20261124-S11127@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
-DTSTART:20261125T104730Z
-DTEND:20261125T105200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:47 - 11:52 (primo: REG 23527)
-DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:47:30 - 11:52:00\nTreni coi
- nvolti nella chiusura:\n  - REG 23527 (BARI CENTRALE -> FASANO)\n  - REG 2
- 3527 (BARI CENTRALE -> FASANO)\nRitardo massimo rilevato: 0 min\nAffidabil
- ità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:00:30 - 15:05:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 23536 (FASANO -> BARLETTA)\n  - REG 23536 
+ (FASANO -> BARLETTA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
+ : 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
+  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
+ le (120s)
 LOCATION:Passaggio a Livello / Stazione MOLA DI BARI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -167,17 +302,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23538--20261124-S11127@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
-DTSTART:20261125T144904Z
-DTEND:20261125T145434Z
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
+DTSTART:20261125T145006Z
+DTEND:20261125T145536Z
 SUMMARY:[TRANSITO VELOCE] REG 23538 (BARI TORRE A MARE -> BARLETTA) ore 15:
- 53
+ 54
 DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: TRANSITO V
- ELOCE\nChiusura sbarre stimata: 15:49:04 - 15:54:34\nTreni coinvolti nella
+ ELOCE\nChiusura sbarre stimata: 15:50:06 - 15:55:36\nTreni coinvolti nella
   chiusura:\n  - REG 23538 (BARI TORRE A MARE -> BARLETTA) [Transito]\nRita
  rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (39% tratta BARI TORRE A MARE -> BAR
+ stica: Transito stimato senza fermata (56% tratta BARI TORRE A MARE -> BAR
  I TORRE QUETTA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MOLA DI BARI
 STATUS:CONFIRMED
@@ -189,37 +324,56 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23542--20261124-S11127@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
-DTSTART:20261125T151904Z
-DTEND:20261125T152434Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:19 - 16:24 (primo: REG 23542)
-DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:19:04 - 16:24:34\nTreni coi
- nvolti nella chiusura:\n  - REG 23542 (FASANO -> BARLETTA) [Transito]\n  -
-  REG 23542 (FASANO -> BARLETTA) [Transito]\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
- er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
+DTSTART:20261125T151918Z
+DTEND:20261125T152448Z
+SUMMARY:[TRANSITO VELOCE] REG 23542 (FASANO -> BARLETTA) ore 16:23
+DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: TRANSITO V
+ ELOCE\nChiusura sbarre stimata: 16:19:18 - 16:24:48\nTreni coinvolti nella
+  chiusura:\n  - REG 23542 (FASANO -> BARLETTA) [Transito]\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
+ sito stimato senza fermata (76% tratta MONOPOLI -> POLIGNANO A MARE\; peda
+ le annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MOLA DI BARI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23542--20261124-S11127@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
 DTSTART:20261125T153030Z
 DTEND:20261125T153500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:30 - 16:35 (primo: REG 23542)
+SUMMARY:[FERMATA] REG 23542 (FASANO -> BARLETTA) ore 16:34
+DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: FERMATA\nC
+ hiusura sbarre stimata: 16:30:30 - 16:35:00\nTreni coinvolti nella chiusur
+ a:\n  - REG 23542 (FASANO -> BARLETTA)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
+LOCATION:Passaggio a Livello / Stazione MOLA DI BARI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23547--20261124-S11127@pl-tracker.local
+DTSTAMP:20261125T112015Z
+SEQUENCE:0
+DTSTART:20261125T162030Z
+DTEND:20261125T162500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:20 - 17:25 (primo: REG 23547)
 DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:30:30 - 16:35:00\nTreni coi
- nvolti nella chiusura:\n  - REG 23542 (FASANO -> BARLETTA)\n  - REG 23542 
- (FASANO -> BARLETTA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:20:30 - 17:25:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 23547 (BARLETTA -> FASANO)\n  - REG 23547 
+ (BARLETTA -> FASANO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
  : 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
   utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
  le (120s)
@@ -233,8 +387,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4439--20261124-S11127@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
 DTSTART:20261125T195130Z
 DTEND:20261125T195600Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:51 - 20:56 (primo: REG 4439)
@@ -255,66 +409,61 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23567--20261124-S11127@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
 DTSTART:20261125T204030Z
 DTEND:20261125T204500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:40 - 21:45 (primo: REG 23567)
-DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:40:30 - 21:45:00\nTreni coi
- nvolti nella chiusura:\n  - REG 23567 (BARLETTA -> FASANO)\n  - REG 23567 
- (BARLETTA -> FASANO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
+SUMMARY:[FERMATA] REG 23567 (BARLETTA -> FASANO) ore 21:44
+DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: FERMATA\nC
+ hiusura sbarre stimata: 21:40:30 - 21:45:00\nTreni coinvolti nella chiusur
+ a:\n  - REG 23567 (BARLETTA -> FASANO)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
 LOCATION:Passaggio a Livello / Stazione MOLA DI BARI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4446--20261124-S11127@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
-DTSTART:20261125T213048Z
-DTEND:20261125T213618Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:30 - 22:36 (primo: REG 4446)
-DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:30:48 - 22:36:18\nTreni coi
- nvolti nella chiusura:\n  - REG 4446 (LECCE -> BARI CENTRALE) [Transito]\n
-   - REG 4446 (LECCE -> BARI CENTRALE) [Transito]\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
- inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
+DTSTART:20261125T213104Z
+DTEND:20261125T213634Z
+SUMMARY:[TRANSITO VELOCE] REG 4446 (LECCE -> BARI CENTRALE) ore 22:35
+DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: TRANSITO V
+ ELOCE\nChiusura sbarre stimata: 22:31:04 - 22:36:34\nTreni coinvolti nella
+  chiusura:\n  - REG 4446 (LECCE -> BARI CENTRALE) [Transito]\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
+ ransito stimato senza fermata (76% tratta MONOPOLI -> POLIGNANO A MARE\; p
+ edale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MOLA DI BARI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4446--20261124-S11127@pl-tracker.local
-DTSTAMP:20261125T020055Z
-SEQUENCE:0
+DTSTAMP:20261125T112015Z
+SEQUENCE:1
 DTSTART:20261125T214230Z
 DTEND:20261125T214700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:42 - 22:47 (primo: REG 4446)
-DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:42:30 - 22:47:00\nTreni coi
- nvolti nella chiusura:\n  - REG 4446 (LECCE -> BARI CENTRALE)\n  - REG 444
- 6 (LECCE -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+SUMMARY:[FERMATA] REG 4446 (LECCE -> BARI CENTRALE) ore 22:46
+DESCRIPTION:Stazione/PL: MOLA DI BARI (S11127)\nRegime chiusura: FERMATA\nC
+ hiusura sbarre stimata: 22:42:30 - 22:47:00\nTreni coinvolti nella chiusur
+ a:\n  - REG 4446 (LECCE -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
+ a oraria regolare
 LOCATION:Passaggio a Livello / Stazione MOLA DI BARI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
