@@ -9,26 +9,50 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:ffaa71d6f4a3771537f9f3cef0b73f531824f1c7710fd2a31781861afaed
- a402
+X-CONTENT-HASH:3ea62a8898eb79cb8eb69784dc847302a78a90fc89f7a2729089da869601
+ e4c8
 BEGIN:VEVENT
-UID:train-24614--20261121-S01058@pl-tracker.local
-DTSTAMP:20261122T210441Z
-SEQUENCE:3
-DTSTART:20261122T053730Z
-DTEND:20261122T054200Z
-SUMMARY:[FERMATA] REG 24614 (MILANO PORTA GARIBALDI -> NOVARA) ore 06:41
-DESCRIPTION:Stazione/PL: PREGNANA MILANESE (S01058)\nRegime chiusura: FERMA
- TA\nChiusura sbarre stimata: 06:37:30 - 06:42:00\nTreni coinvolti nella ch
- iusura:\n  - REG 24614 (MILANO PORTA GARIBALDI -> NOVARA)\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
- isione da traccia oraria regolare
+UID:train-24614--20261125-S01058@pl-tracker.local
+DTSTAMP:20261126T031031Z
+SEQUENCE:0
+DTSTART:20261126T053730Z
+DTEND:20261126T054200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:37 - 06:42 (primo: REG 24614)
+DESCRIPTION:Stazione/PL: PREGNANA MILANESE (S01058)\nRegime chiusura: CHIUS
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:37:30 - 06:42:00\nTren
+ i coinvolti nella chiusura:\n  - REG 24614 (MILANO PORTA GARIBALDI -> NOVA
+ RA)\n  - REG 24614 (MILANO PORTA GARIBALDI -> NOVARA)\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura
+  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
+  soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PREGNANA MILANESE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25261--20261125-S01058@pl-tracker.local
+DTSTAMP:20261126T031031Z
+SEQUENCE:0
+DTSTART:20261126T153926Z
+DTEND:20261126T154456Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:39 - 16:44 (primo: REG 25261)
+DESCRIPTION:Stazione/PL: PREGNANA MILANESE (S01058)\nRegime chiusura: CHIUS
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:39:26 - 16:44:56\nTren
+ i coinvolti nella chiusura:\n  - REG 25261 (RHO -> COMO S.GIOVANNI) [Trans
+ ito]\n  - REG 25261 (RHO -> COMO S.GIOVANNI) [Transito]\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
+ ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
+ la soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PREGNANA MILANESE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR
