@@ -9,20 +9,20 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:7a26e7f7974d043e01d5f7152ebbed7e778bceca63318c82ff772a08d7eb
- c61e
+X-CONTENT-HASH:ac69bafaac5dd4745df81b847bad9fd1ab8b54756a94d012f71836312ec9
+ 81f2
 BEGIN:VEVENT
 UID:train-23507--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T054225Z
-DTEND:20261126T054755Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T054214Z
+DTEND:20261126T054744Z
 SUMMARY:[TRANSITO VELOCE] REG 23507 (BARI CENTRALE -> FASANO) ore 06:46
 DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 06:42:25 - 06:47:55\nTreni coinvolti nella chi
+ E\nChiusura sbarre stimata: 06:42:14 - 06:47:44\nTreni coinvolti nella chi
  usura:\n  - REG 23507 (BARI CENTRALE -> FASANO) [Transito]\nRitardo massim
  o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
- nsito stimato senza fermata (59% tratta BARI TORRE A MARE -> MOLA DI BARI\
+ nsito stimato senza fermata (58% tratta BARI TORRE A MARE -> MOLA DI BARI\
  ; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
@@ -33,9 +33,30 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-8814--20261125-S11129@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T055229Z
+DTEND:20261126T055759Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8814 (LECCE -> MILANO CENTRALE) ore 06:56
+DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 06:52:29 - 06:57:59\nTreni coinvolti nella chi
+ usura:\n  - TRENO 8814 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
+ ransito stimato senza fermata (59% tratta BRINDISI -> BARI CENTRALE\; peda
+ le annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MONOPOLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
 UID:train-23507--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T060530Z
 DTEND:20261126T061000Z
 SUMMARY:[FERMATA] REG 23507 (BARI CENTRALE -> FASANO) ore 07:09
@@ -54,156 +75,123 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23510--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T061700Z
 DTEND:20261126T062400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:17 - 07:24 (primo: REG 23510) (+12
-  min)
-DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 07:17:00 - 07:24:00\nTreni coinvol
- ti nella chiusura:\n  - REG 23510 (FASANO -> BARLETTA) (+12m)\n  - REG 235
- 10 (FASANO -> BARLETTA) (+12m)\nRitardo massimo rilevato: 12 min\nAffidabi
- lità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
+SUMMARY:[FERMATA] REG 23510 (FASANO -> BARLETTA) ore 07:23 (+12 min)
+DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 07:17:00 - 07:24:00\nTreni coinvolti nella chiusura:\n
+   - REG 23510 (FASANO -> BARLETTA) (+12m)\nRitardo massimo rilevato: 12 mi
+ n\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale d
+ a circuito di binario
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:12
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-608--20261125-S11129@pl-tracker.local-arr
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T062845Z
-DTEND:20261126T063854Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 07:28 - 07:38 (primo: IC 608) (+3 min
+DTEND:20261126T063700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:28 - 07:37 (primo: IC 608) (+3 min
  )
 DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: CHIUSURA CONTI
- NUA - 6 TRENI\nChiusura sbarre stimata: 07:28:45 - 07:38:54\nTreni coinvol
+ NUA - 2 TRENI\nChiusura sbarre stimata: 07:28:45 - 07:37:00\nTreni coinvol
  ti nella chiusura:\n  - IC 608 (LECCE -> MILANO CENTRALE) (+3m) [Arrivo]\n
-   - IC 608 (LECCE -> MILANO CENTRALE) (+3m) [Arrivo]\n  - IC 608 (LECCE ->
-  MILANO CENTRALE) (+3m) [Partenza]\n  - IC 608 (LECCE -> MILANO CENTRALE) 
- (+3m) [Partenza]\n  - REG 4385 (BARI CENTRALE -> LECCE) (+2m) [Transito]\n
-   - REG 4385 (BARI CENTRALE -> LECCE) (+2m) [Transito]\nRitardo massimo ri
- levato: 3 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
- a continua per 6 treni: intervallo utile tra i passaggi (0s) inferiore all
+   - IC 608 (LECCE -> MILANO CENTRALE) (+3m) [Partenza]\nRitardo massimo ri
+ levato: 3 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusur
+ a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
  a soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:3
-X-PL-CONFIDENCE:0.78
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4386--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T064730Z
+UID:train-4385--20261125-S11129@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T064034Z
 DTEND:20261126T065500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:47 - 07:55 (primo: REG 4386) (+4 m
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:40 - 07:55 (primo: REG 4385) (+4 m
  in)
 DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 07:47:30 - 07:55:00\nTreni coinvol
- ti nella chiusura:\n  - REG 4386 (LECCE -> BARI CENTRALE) (+4m)\n  - REG 4
- 386 (LECCE -> BARI CENTRALE) (+4m)\nRitardo massimo rilevato: 4 min\nAffid
- abilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+ NUA - 2 TRENI\nChiusura sbarre stimata: 07:40:34 - 07:55:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 4385 (BARI CENTRALE -> LECCE) (+2m) [Transito]
+ \n  - REG 4386 (LECCE -> BARI CENTRALE) (+4m)\nRitardo massimo rilevato: 4
+  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
+ a per 2 treni: intervallo utile tra i passaggi (85s) inferiore alla soglia
+  minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:4
-X-PL-CONFIDENCE:0.99
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4385--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T065900Z
 DTEND:20261126T070630Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:59 - 08:06 (primo: REG 4385) (+4 m
- in)
-DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 07:59:00 - 08:06:30\nTreni coinvol
- ti nella chiusura:\n  - REG 4385 (BARI CENTRALE -> LECCE) (+4m)\n  - REG 4
- 385 (BARI CENTRALE -> LECCE) (+4m)\nRitardo massimo rilevato: 4 min\nAffid
- abilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+SUMMARY:[FERMATA] REG 4385 (BARI CENTRALE -> LECCE) ore 08:05 (+4 min)
+DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 07:59:00 - 08:06:30\nTreni coinvolti nella chiusura:\n
+   - REG 4385 (BARI CENTRALE -> LECCE) (+4m)\nRitardo massimo rilevato: 4 m
+ in\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale 
+ da circuito di binario
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23511--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T071825Z
-DTEND:20261126T072355Z
-SUMMARY:[TRANSITO VELOCE] REG 23511 (BARLETTA -> FASANO) ore 08:22
-DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 08:18:25 - 08:23:55\nTreni coinvolti nella chi
- usura:\n  - REG 23511 (BARLETTA -> FASANO) [Transito]\nRitardo massimo ril
- evato: -2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transit
- o stimato senza fermata (59% tratta BARI TORRE A MARE -> MOLA DI BARI\; pe
- dale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione MONOPOLI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:-2
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-23511--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T073600Z
 DTEND:20261126T074230Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:36 - 08:42 (primo: REG 23511) (+2 
- min)
-DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 08:36:00 - 08:42:30\nTreni coinvol
- ti nella chiusura:\n  - REG 23511 (BARLETTA -> FASANO) (+2m)\n  - REG 2351
- 1 (BARLETTA -> FASANO) (+2m)\nRitardo massimo rilevato: 2 min\nAffidabilit
- à stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+SUMMARY:[FERMATA] REG 23511 (BARLETTA -> FASANO) ore 08:41 (+2 min)
+DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 08:36:00 - 08:42:30\nTreni coinvolti nella chiusura:\n
+   - REG 23511 (BARLETTA -> FASANO) (+2m)\nRitardo massimo rilevato: 2 min\
+ nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale da 
+ circuito di binario
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8818--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T075723Z
-DTEND:20261126T080253Z
-SUMMARY:[TRANSITO VELOCE] TRENO 8818 (LECCE -> MILANO CENTRALE) ore 09:01 (
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T075754Z
+DTEND:20261126T080324Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8818 (LECCE -> MILANO CENTRALE) ore 09:02 (
  +1 min)
 DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 08:57:23 - 09:02:53\nTreni coinvolti nella chi
+ E\nChiusura sbarre stimata: 08:57:54 - 09:03:24\nTreni coinvolti nella chi
  usura:\n  - TRENO 8818 (LECCE -> MILANO CENTRALE) (+1m) [Transito]\nRitard
  o massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Transito stimato senza fermata (58% tratta BRINDISI -> BARI CENTRALE\
+ ica: Transito stimato senza fermata (59% tratta BRINDISI -> BARI CENTRALE\
  ; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
@@ -215,16 +203,16 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-612--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T081645Z
-DTEND:20261126T082115Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T081705Z
+DTEND:20261126T082135Z
 SUMMARY:[TRANSITO VELOCE] IC 612 (LECCE -> MILANO CENTRALE) ore 09:20
 DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 09:16:45 - 09:21:15\nTreni coinvolti nella chi
+ E\nChiusura sbarre stimata: 09:17:05 - 09:21:35\nTreni coinvolti nella chi
  usura:\n  - IC 612 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massimo 
  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
- ito stimato senza fermata (24% tratta BRINDISI -> FRANCAVILLA FONTANA\; pe
+ ito stimato senza fermata (25% tratta BRINDISI -> FRANCAVILLA FONTANA\; pe
  dale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
@@ -236,76 +224,72 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8382--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T094254Z
-DTEND:20261126T094824Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:42 - 10:48 (primo: TRENO 8382) (+1
- 8 min)
-DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 10:42:54 - 10:48:24\nTreni coinvol
- ti nella chiusura:\n  - TRENO 8382 (NAPOLI CENTRALE -> LECCE) (+18m) [Tran
- sito]\n  - TRENO 8382 (NAPOLI CENTRALE -> LECCE) (+18m) [Transito]\nRitard
- o massimo rilevato: 18 min\nAffidabilità stima: 78%\nNota normativa/euris
- tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T094318Z
+DTEND:20261126T094848Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8382 (NAPOLI CENTRALE -> LECCE) ore 10:47 (
+ +18 min)
+DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 10:43:18 - 10:48:48\nTreni coinvolti nella chi
+ usura:\n  - TRENO 8382 (NAPOLI CENTRALE -> LECCE) (+18m) [Transito]\nRitar
+ do massimo rilevato: 18 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Transito stimato senza fermata (43% tratta BARI CENTRALE -> BRINDIS
+ I\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:18
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4398--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T102900Z
 DTEND:20261126T103600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:29 - 11:36 (primo: REG 4398) (+5 m
- in)
-DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 11:29:00 - 11:36:00\nTreni coinvol
- ti nella chiusura:\n  - REG 4398 (LECCE -> BARI CENTRALE) (+5m)\n  - REG 4
- 398 (LECCE -> BARI CENTRALE) (+5m)\nRitardo massimo rilevato: 5 min\nAffid
- abilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+SUMMARY:[FERMATA] REG 4398 (LECCE -> BARI CENTRALE) ore 11:35 (+5 min)
+DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 11:29:00 - 11:36:00\nTreni coinvolti nella chiusura:\n
+   - REG 4398 (LECCE -> BARI CENTRALE) (+5m)\nRitardo massimo rilevato: 5 m
+ in\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale 
+ da circuito di binario
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-566--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T110125Z
-DTEND:20261126T110555Z
-SUMMARY:[TRANSITO VELOCE] IC 566 (LECCE -> REGGIO DI CALABRIA CENTRALE) ore
-  12:04
-DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 12:01:25 - 12:05:55\nTreni coinvolti nella chi
- usura:\n  - IC 566 (LECCE -> REGGIO DI CALABRIA CENTRALE) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (24% tratta BRINDISI -> FRANCAVILLA 
- FONTANA\; pedale annuncio fisso Vmax)
+UID:train-8314--20261125-S11129@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T110022Z
+DTEND:20261126T110608Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:00 - 12:06 (primo: TRENO 8314)
+DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 12:00:22 - 12:06:08\nTreni coinvol
+ ti nella chiusura:\n  - TRENO 8314 (LECCE -> ROMA TERMINI) [Transito]\n  -
+  IC 566 (LECCE -> REGGIO DI CALABRIA CENTRALE) [Transito]\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
+ sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4404--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T112530Z
 DTEND:20261126T113000Z
 SUMMARY:[FERMATA] REG 4404 (LECCE -> BARI CENTRALE) ore 12:29
@@ -324,142 +308,158 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23550--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T121500Z
 DTEND:20261126T122130Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:15 - 13:21 (primo: REG 23550) (+1 
- min)
-DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 13:15:00 - 13:21:30\nTreni coinvol
- ti nella chiusura:\n  - REG 23550 (FASANO -> BARLETTA) (+1m)\n  - REG 2355
- 0 (FASANO -> BARLETTA) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabilit
- à stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+SUMMARY:[FERMATA] REG 23550 (FASANO -> BARLETTA) ore 13:20 (+1 min)
+DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 13:15:00 - 13:21:30\nTreni coinvolti nella chiusura:\n
+   - REG 23550 (FASANO -> BARLETTA) (+1m)\nRitardo massimo rilevato: 1 min\
+ nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale da 
+ circuito di binario
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4407--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
+UID:train-9560--20261125-S11129@pl-tracker.local
+DTSTAMP:20261126T215722Z
 SEQUENCE:0
-DTSTART:20261126T125330Z
-DTEND:20261126T125800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:53 - 13:58 (primo: REG 4407)
-DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 13:53:30 - 13:58:00\nTreni coinvol
- ti nella chiusura:\n  - REG 4407 (BARI CENTRALE -> LECCE)\n  - REG 4407 (B
- ARI CENTRALE -> LECCE)\nRitardo massimo rilevato: -1 min\nAffidabilità st
- ima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
- llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
- adale (120s)
-LOCATION:Passaggio a Livello / Stazione MONOPOLI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:-1
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-4411--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T130424Z
-DTEND:20261126T130954Z
-SUMMARY:[TRANSITO VELOCE] REG 4411 (BARI CENTRALE -> LECCE) ore 14:08
+DTSTART:20261126T123457Z
+DTEND:20261126T124027Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9560 (LECCE -> MILANO CENTRALE) ore 13:39
 DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 14:04:24 - 14:09:54\nTreni coinvolti nella chi
- usura:\n  - REG 4411 (BARI CENTRALE -> LECCE) [Transito]\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
- ito stimato senza fermata (67% tratta BARI CENTRALE -> BARI TORRE A MARE\;
-  pedale annuncio fisso Vmax)
+ E\nChiusura sbarre stimata: 13:34:57 - 13:40:27\nTreni coinvolti nella chi
+ usura:\n  - TRENO 9560 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
+ ransito stimato senza fermata (59% tratta BRINDISI -> BARI CENTRALE\; peda
+ le annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4407--20261125-S11129@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T125330Z
+DTEND:20261126T125800Z
+SUMMARY:[FERMATA] REG 4407 (BARI CENTRALE -> LECCE) ore 13:57
+DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 13:53:30 - 13:58:00\nTreni coinvolti nella chiusura:\n
+   - REG 4407 (BARI CENTRALE -> LECCE)\nRitardo massimo rilevato: -1 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione con anticipo
+  (-1 min)
+LOCATION:Passaggio a Livello / Stazione MONOPOLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4411--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
+UID:train-8828--20261125-S11129@pl-tracker.local
+DTSTAMP:20261126T215722Z
 SEQUENCE:0
-DTSTART:20261126T132430Z
-DTEND:20261126T132900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:24 - 14:29 (primo: REG 4411)
+DTSTART:20261126T130422Z
+DTEND:20261126T130957Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:04 - 14:09 (primo: TRENO 8828) (+9
+  min)
 DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 14:24:30 - 14:29:00\nTreni coinvol
- ti nella chiusura:\n  - REG 4411 (BARI CENTRALE -> LECCE)\n  - REG 4411 (B
- ARI CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
- ma: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
- lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
- dale (120s)
+ NUA - 2 TRENI\nChiusura sbarre stimata: 14:04:22 - 14:09:57\nTreni coinvol
+ ti nella chiusura:\n  - TRENO 8828 (LECCE -> VENEZIA S.LUCIA) (+9m) [Trans
+ ito]\n  - REG 4411 (BARI CENTRALE -> LECCE) [Transito]\nRitardo massimo ri
+ levato: 9 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
+ a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:9
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4411--20261125-S11129@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T132430Z
+DTEND:20261126T132900Z
+SUMMARY:[FERMATA] REG 4411 (BARI CENTRALE -> LECCE) ore 14:28
+DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 14:24:30 - 14:29:00\nTreni coinvolti nella chiusura:\n
+   - REG 4411 (BARI CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAf
+ fidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia or
+ aria regolare
+LOCATION:Passaggio a Livello / Stazione MONOPOLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23536--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T134530Z
-DTEND:20261126T135747Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 14:45 - 14:57 (primo: REG 23536)
+DTEND:20261126T135814Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 14:45 - 14:58 (primo: REG 23536)
 DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: CHIUSURA CONTI
- NUA - 4 TRENI\nChiusura sbarre stimata: 14:45:30 - 14:57:47\nTreni coinvol
+ NUA - 3 TRENI\nChiusura sbarre stimata: 14:45:30 - 14:58:14\nTreni coinvol
  ti nella chiusura:\n  - REG 23536 (FASANO -> BARLETTA)\n  - TRENO 9511 (MI
  LANO CENTRALE -> LECCE) [Transito]\n  - TRENO 8801 (VENEZIA S.LUCIA -> LEC
- CE) [Transito]\n  - TRENO 8801 (VENEZIA S.LUCIA -> LECCE) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s)
-  inferiore alla soglia minima di sgombero stradale (120s)
+ CE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\
+ nNota normativa/euristica: Chiusura continua per 3 treni: intervallo utile
+  tra i passaggi (30s) inferiore alla soglia minima di sgombero stradale (1
+ 20s)
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-603--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T143315Z
-DTEND:20261126T143800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:33 - 15:38 (primo: IC 603) (+2 min
+DTEND:20261126T144044Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:33 - 15:40 (primo: IC 603) (+2 min
  )
 DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 15:33:15 - 15:38:00\nTreni coinvol
- ti nella chiusura:\n  - IC 603 (MILANO CENTRALE -> LECCE) (+2m)\n  - IC 60
- 3 (MILANO CENTRALE -> LECCE) (+2m)\nRitardo massimo rilevato: 2 min\nAffid
- abilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+ NUA - 2 TRENI\nChiusura sbarre stimata: 15:33:15 - 15:40:44\nTreni coinvol
+ ti nella chiusura:\n  - IC 603 (MILANO CENTRALE -> LECCE) (+2m)\n  - REG 2
+ 3541 (BARLETTA -> FASANO) [Transito]\nRitardo massimo rilevato: 2 min\nAff
+ idabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 t
+ reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
+  sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:2
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23541--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T145430Z
 DTEND:20261126T145900Z
 SUMMARY:[FERMATA] REG 23541 (BARLETTA -> FASANO) ore 15:58
@@ -478,74 +478,68 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4447--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T150730Z
-DTEND:20261126T151635Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:07 - 16:16 (primo: REG 4447)
-DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: CHIUSURA CONTI
- NUA - 3 TRENI\nChiusura sbarre stimata: 16:07:30 - 16:16:35\nTreni coinvol
- ti nella chiusura:\n  - REG 4447 (BARI CENTRALE -> LECCE)\n  - REG 4447 (B
- ARI CENTRALE -> LECCE)\n  - REG 19839 (BARI CENTRALE -> TARANTO) [Transito
- ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
- va/euristica: Chiusura continua per 3 treni: intervallo utile tra i passag
- gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTEND:20261126T151200Z
+SUMMARY:[FERMATA] REG 4447 (BARI CENTRALE -> LECCE) ore 16:11
+DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 16:07:30 - 16:12:00\nTreni coinvolti nella chiusura:\n
+   - REG 4447 (BARI CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAf
+ fidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia or
+ aria regolare
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4422--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T152530Z
 DTEND:20261126T153000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:25 - 16:30 (primo: REG 4422)
-DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 16:25:30 - 16:30:00\nTreni coinvol
- ti nella chiusura:\n  - REG 4422 (LECCE -> BARI CENTRALE)\n  - REG 4422 (L
- ECCE -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
- ma: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
- lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
- dale (120s)
+SUMMARY:[FERMATA] REG 4422 (LECCE -> BARI CENTRALE) ore 16:29
+DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 16:25:30 - 16:30:00\nTreni coinvolti nella chiusura:\n
+   - REG 4422 (LECCE -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAf
+ fidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia or
+ aria regolare
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23543--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T153530Z
 DTEND:20261126T154000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:35 - 16:40 (primo: REG 23543)
-DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 16:35:30 - 16:40:00\nTreni coinvol
- ti nella chiusura:\n  - REG 23543 (BARLETTA -> FASANO)\n  - REG 23543 (BAR
- LETTA -> FASANO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90
- %\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo uti
- le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
- 120s)
+SUMMARY:[FERMATA] REG 23543 (BARLETTA -> FASANO) ore 16:39
+DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 16:35:30 - 16:40:00\nTreni coinvolti nella chiusura:\n
+   - REG 23543 (BARLETTA -> FASANO)\nRitardo massimo rilevato: 0 min\nAffid
+ abilità stima: 90%\nNota normativa/euristica: Previsione da traccia orari
+ a regolare
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4421--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T155430Z
 DTEND:20261126T155900Z
 SUMMARY:[FERMATA] REG 4421 (BARI CENTRALE -> LECCE) ore 16:58
@@ -564,30 +558,49 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23545--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T160530Z
-DTEND:20261126T161355Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:05 - 17:13 (primo: REG 23545)
-DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 17:05:30 - 17:13:55\nTreni coinvol
- ti nella chiusura:\n  - REG 23545 (BARLETTA -> FASANO)\n  - IC 605 (MILANO
-  CENTRALE -> LECCE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabil
- ità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
+DTEND:20261126T161000Z
+SUMMARY:[FERMATA] REG 23545 (BARLETTA -> FASANO) ore 17:09
+DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 17:05:30 - 17:10:00\nTreni coinvolti nella chiusura:\n
+   - REG 23545 (BARLETTA -> FASANO)\nRitardo massimo rilevato: 0 min\nAffid
+ abilità stima: 90%\nNota normativa/euristica: Previsione da traccia orari
+ a regolare
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23547--20261125-S11129@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T161214Z
+DTEND:20261126T161744Z
+SUMMARY:[TRANSITO VELOCE] REG 23547 (BARLETTA -> FASANO) ore 17:16
+DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 17:12:14 - 17:17:44\nTreni coinvolti nella chi
+ usura:\n  - REG 23547 (BARLETTA -> FASANO) [Transito]\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito
+  stimato senza fermata (58% tratta BARI TORRE A MARE -> MOLA DI BARI\; ped
+ ale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MONOPOLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23547--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T163530Z
 DTEND:20261126T164000Z
 SUMMARY:[FERMATA] REG 23547 (BARLETTA -> FASANO) ore 17:39
@@ -606,17 +619,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9805--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T164654Z
-DTEND:20261126T165224Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T164718Z
+DTEND:20261126T165248Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9805 (TORINO PORTA NUOVA -> LECCE) ore 17:5
  1
 DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 17:46:54 - 17:52:24\nTreni coinvolti nella chi
+ E\nChiusura sbarre stimata: 17:47:18 - 17:52:48\nTreni coinvolti nella chi
  usura:\n  - TRENO 9805 (TORINO PORTA NUOVA -> LECCE) [Transito]\nRitardo m
  assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (42% tratta BARI CENTRALE -> BRINDISI\; p
+ : Transito stimato senza fermata (43% tratta BARI CENTRALE -> BRINDISI\; p
  edale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
@@ -627,37 +640,78 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-758--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
+UID:train-8326--20261125-S11129@pl-tracker.local
+DTSTAMP:20261126T215722Z
 SEQUENCE:0
-DTSTART:20261126T180322Z
-DTEND:20261126T180752Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:03 - 19:07 (primo: ICN 758)
-DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 19:03:22 - 19:07:52\nTreni coinvol
- ti nella chiusura:\n  - ICN 758 (LECCE -> MILANO CENTRALE) [Transito]\n  -
-  ICN 758 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
- ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
+DTSTART:20261126T165726Z
+DTEND:20261126T170256Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8326 (LECCE -> ROMA TERMINI) ore 18:01
+DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 17:57:26 - 18:02:56\nTreni coinvolti nella chi
+ usura:\n  - TRENO 8326 (LECCE -> ROMA TERMINI) [Transito]\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
+ sito stimato senza fermata (59% tratta BRINDISI -> BARI CENTRALE\; pedale 
+ annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-605--20261125-S11129@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T174256Z
+DTEND:20261126T174726Z
+SUMMARY:[TRANSITO VELOCE] IC 605 (MILANO CENTRALE -> LECCE) ore 18:46
+DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 18:42:56 - 18:47:26\nTreni coinvolti nella chi
+ usura:\n  - IC 605 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
+ ito stimato senza fermata (59% tratta TARANTO -> FRANCAVILLA FONTANA\; ped
+ ale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MONOPOLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-758--20261125-S11129@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T180337Z
+DTEND:20261126T180807Z
+SUMMARY:[TRANSITO VELOCE] ICN 758 (LECCE -> MILANO CENTRALE) ore 19:07
+DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 19:03:37 - 19:08:07\nTreni coinvolti nella chi
+ usura:\n  - ICN 758 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
+ sito stimato senza fermata (25% tratta BRINDISI -> FRANCAVILLA FONTANA\; p
+ edale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MONOPOLI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-607--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T181302Z
-DTEND:20261126T181732Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T181300Z
+DTEND:20261126T181730Z
 SUMMARY:[TRANSITO VELOCE] IC 607 (MILANO PORTA GARIBALDI -> LECCE) ore 19:1
  6
 DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 19:13:02 - 19:17:32\nTreni coinvolti nella chi
+ E\nChiusura sbarre stimata: 19:13:00 - 19:17:30\nTreni coinvolti nella chi
  usura:\n  - IC 607 (MILANO PORTA GARIBALDI -> LECCE) [Transito]\nRitardo m
  assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
  : Transito stimato senza fermata (88% tratta BARI CENTRALE -> POLIGNANO A 
@@ -672,8 +726,8 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-607--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T182315Z
 DTEND:20261126T182800Z
 SUMMARY:[FERMATA] IC 607 (MILANO PORTA GARIBALDI -> LECCE) ore 19:27
@@ -692,16 +746,16 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8809--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T184810Z
-DTEND:20261126T185340Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T184835Z
+DTEND:20261126T185405Z
 SUMMARY:[TRANSITO VELOCE] TRENO 8809 (MILANO CENTRALE -> LECCE) ore 19:52
 DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 19:48:10 - 19:53:40\nTreni coinvolti nella chi
+ E\nChiusura sbarre stimata: 19:48:35 - 19:54:05\nTreni coinvolti nella chi
  usura:\n  - TRENO 8809 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo mass
  imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (42% tratta BARI CENTRALE -> BRINDISI\; peda
+ ransito stimato senza fermata (43% tratta BARI CENTRALE -> BRINDISI\; peda
  le annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
@@ -713,52 +767,49 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8317--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T194110Z
-DTEND:20261126T194640Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:41 - 20:46 (primo: TRENO 8317)
-DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 20:41:10 - 20:46:40\nTreni coinvol
- ti nella chiusura:\n  - TRENO 8317 (ROMA TERMINI -> LECCE) [Transito]\n  -
-  TRENO 8317 (ROMA TERMINI -> LECCE) [Transito]\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
- ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T194135Z
+DTEND:20261126T194705Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8317 (ROMA TERMINI -> LECCE) ore 20:45
+DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 20:41:35 - 20:47:05\nTreni coinvolti nella chi
+ usura:\n  - TRENO 8317 (ROMA TERMINI -> LECCE) [Transito]\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
+ sito stimato senza fermata (43% tratta BARI CENTRALE -> BRINDISI\; pedale 
+ annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-752--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T200315Z
-DTEND:20261126T200954Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:03 - 21:09 (primo: ICN 752)
-DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 21:03:15 - 21:09:54\nTreni coinvol
- ti nella chiusura:\n  - ICN 752 (LECCE -> MILANO CENTRALE)\n  - REG 4441 (
- BARI CENTRALE -> LECCE) [Transito]\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+DTEND:20261126T200800Z
+SUMMARY:[FERMATA] ICN 752 (LECCE -> MILANO CENTRALE) ore 21:07
+DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 21:03:15 - 21:08:00\nTreni coinvolti nella chiusura:\n
+   - ICN 752 (LECCE -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4441--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T202430Z
 DTEND:20261126T202900Z
 SUMMARY:[FERMATA] REG 4441 (BARI CENTRALE -> LECCE) ore 21:28
@@ -777,39 +828,36 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-609--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T203315Z
 DTEND:20261126T203800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:33 - 21:38 (primo: IC 609) (+2 min
- )
-DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 21:33:15 - 21:38:00\nTreni coinvol
- ti nella chiusura:\n  - IC 609 (MILANO CENTRALE -> LECCE) (+2m)\n  - IC 60
- 9 (MILANO CENTRALE -> LECCE) (+2m)\nRitardo massimo rilevato: 2 min\nAffid
- abilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+SUMMARY:[FERMATA] IC 609 (MILANO CENTRALE -> LECCE) ore 21:37 (+2 min)
+DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 21:33:15 - 21:38:00\nTreni coinvolti nella chiusura:\n
+   - IC 609 (MILANO CENTRALE -> LECCE) (+2m)\nRitardo massimo rilevato: 2 m
+ in\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione con rit
+ ardo propagato (+2 min)
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8815--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T214901Z
-DTEND:20261126T215431Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T214927Z
+DTEND:20261126T215457Z
 SUMMARY:[TRANSITO VELOCE] TRENO 8815 (VENEZIA S.LUCIA -> LECCE) ore 22:53
 DESCRIPTION:Stazione/PL: MONOPOLI (S11129)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 22:49:01 - 22:54:31\nTreni coinvolti nella chi
+ E\nChiusura sbarre stimata: 22:49:27 - 22:54:57\nTreni coinvolti nella chi
  usura:\n  - TRENO 8815 (VENEZIA S.LUCIA -> LECCE) [Transito]\nRitardo mass
  imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
- ransito stimato senza fermata (42% tratta BARI CENTRALE -> BRINDISI\; peda
+ ransito stimato senza fermata (43% tratta BARI CENTRALE -> BRINDISI\; peda
  le annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MONOPOLI
 STATUS:CONFIRMED
@@ -821,8 +869,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-757--20261125-S11129@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261127T074615Z
 DTEND:20261127T075100Z
 SUMMARY:[FERMATA] ICN 757 (TORINO PORTA NUOVA -> LECCE) ore 08:50

@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:e7399a3455ab816ac804d75f55cc27388af65f5d88f37c5ae30decf4a8dd
- a2e2
+X-CONTENT-HASH:ddd3a218def6c949e4c8463d1ab915ac97e410dde952e97e50c726c484fc
+ fe35
 BEGIN:VEVENT
 UID:train-303--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T035130Z
 DTEND:20261126T035600Z
 SUMMARY:[FERMATA] REG 303 (MILANO CADORNA -> MALPENSA AEROPORTO TERMINAL 2)
@@ -34,13 +34,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2913--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T041530Z
-DTEND:20261126T042100Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T041531Z
+DTEND:20261126T042101Z
 SUMMARY:[TRANSITO VELOCE] REG 2913 (SARONNO -> MILANO CENTRALE) ore 05:19
 DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 05:15:30 - 05:21:00\nTreni coinvolti
+ SITO VELOCE\nChiusura sbarre stimata: 05:15:31 - 05:21:01\nTreni coinvolti
   nella chiusura:\n  - REG 2913 (SARONNO -> MILANO CENTRALE) [Transito]\nRi
  tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
  ristica: Transito stimato senza fermata (25% tratta MILANO BOVISA POLITECN
@@ -54,129 +54,163 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-307--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T045130Z
-DTEND:20261126T050930Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 05:51 - 06:09 (primo: REG 307) (+3 mi
- n)
-DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: CHIU
- SURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 05:51:30 - 06:09:30\nTre
- ni coinvolti nella chiusura:\n  - REG 307 (MILANO CADORNA -> MALPENSA AERO
- PORTO TERMINAL 2)\n  - REG 2916 (MILANO CENTRALE -> GALLARATE) [Transito]\
- n  - REG 2919 (GALLARATE -> MILANO CENTRALE) (+3m) [Transito]\n  - REG 291
- 9 (GALLARATE -> MILANO CENTRALE) (+3m) [Transito]\n  - REG 2916 (MILANO CE
- NTRALE -> GALLARATE)\nRitardo massimo rilevato: 3 min\nAffidabilità stima
- : 78%\nNota normativa/euristica: Chiusura continua per 5 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
+UID:train-2916--20261125-S01137@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T043437Z
+DTEND:20261126T044007Z
+SUMMARY:[TRANSITO VELOCE] REG 2916 (MILANO CENTRALE -> GALLARATE) ore 05:38
+DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 05:34:37 - 05:40:07\nTreni coinvolti
+  nella chiusura:\n  - REG 2916 (MILANO CENTRALE -> GALLARATE) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (70% tratta MILANO PORTA GARIBAL
+ DI -> MILANO BOVISA POLITECNICO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BUSTO ARSIZIO NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-307--20261125-S01137@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T045130Z
+DTEND:20261126T045600Z
+SUMMARY:[FERMATA] REG 307 (MILANO CADORNA -> MALPENSA AEROPORTO TERMINAL 2)
+  ore 05:55
+DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 05:51:30 - 05:56:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 307 (MILANO CADORNA -> MALPENSA AEROPORTO TERMINAL 2)\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/e
+ uristica: Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione BUSTO ARSIZIO NORD
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2919--20261125-S01137@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T045957Z
+DTEND:20261126T050930Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:59 - 06:09 (primo: REG 2919) (+3 m
+ in)
+DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:59:57 - 06:09:30\nTre
+ ni coinvolti nella chiusura:\n  - REG 2919 (GALLARATE -> MILANO CENTRALE) 
+ (+3m) [Transito]\n  - REG 2916 (MILANO CENTRALE -> GALLARATE)\nRitardo mas
+ simo rilevato: 3 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
+ ore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BUSTO ARSIZIO NORD
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2919--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T051849Z
 DTEND:20261126T052504Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:18 - 06:25 (primo: REG 2919) (+3 m
- in)
-DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:18:49 - 06:25:04\nTre
- ni coinvolti nella chiusura:\n  - REG 2919 (GALLARATE -> MILANO CENTRALE) 
- (+3m)\n  - REG 2919 (GALLARATE -> MILANO CENTRALE) (+3m)\nRitardo massimo 
- rilevato: 3 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chius
- ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
- lla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 2919 (GALLARATE -> MILANO CENTRALE) ore 06:24 (+3 min
+ )
+DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 06:18:49 - 06:25:04\nTreni coinvolti nella c
+ hiusura:\n  - REG 2919 (GALLARATE -> MILANO CENTRALE) (+3m)\nRitardo massi
+ mo rilevato: 3 min\nAffidabilità stima: 99%\nNota normativa/euristica: Ri
+ levamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione BUSTO ARSIZIO NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2921--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T052916Z
 DTEND:20261126T053446Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:29 - 06:34 (primo: REG 2921) (+5 m
- in)
-DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:29:16 - 06:34:46\nTre
- ni coinvolti nella chiusura:\n  - REG 2921 (GALLARATE -> MILANO CENTRALE) 
- (+5m) [Transito]\n  - REG 2921 (GALLARATE -> MILANO CENTRALE) (+5m) [Trans
+SUMMARY:[TRANSITO VELOCE] REG 2921 (GALLARATE -> MILANO CENTRALE) ore 06:33
+  (+5 min)
+DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 06:29:16 - 06:34:46\nTreni coinvolti
+  nella chiusura:\n  - REG 2921 (GALLARATE -> MILANO CENTRALE) (+5m) [Trans
  ito]\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 78%\nNota norm
- ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
- saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ ativa/euristica: Transito stimato senza fermata (83% tratta GALLARATE -> M
+ ALPENSA AEROPORTO TERMINAL 2\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BUSTO ARSIZIO NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1211--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T053701Z
-DTEND:20261126T054231Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:37 - 06:42 (primo: REG 1211)
-DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:37:01 - 06:42:31\nTre
- ni coinvolti nella chiusura:\n  - REG 1211 (MILANO CADORNA -> NOVARA NORD)
-  [Transito]\n  - REG 1211 (MILANO CADORNA -> NOVARA NORD) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
-  inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T053700Z
+DTEND:20261126T054230Z
+SUMMARY:[TRANSITO VELOCE] REG 1211 (MILANO CADORNA -> NOVARA NORD) ore 06:4
+ 1
+DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 06:37:00 - 06:42:30\nTreni coinvolti
+  nella chiusura:\n  - REG 1211 (MILANO CADORNA -> NOVARA NORD) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Transito stimato senza fermata (60% tratta SARONNO -> RESCALDI
+ NA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BUSTO ARSIZIO NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-1211--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T054715Z
-DTEND:20261126T055546Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 06:47 - 06:55 (primo: REG 1211) (+2 m
+DTEND:20261126T055545Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 06:47 - 06:55 (primo: REG 1211) (+2 m
  in)
 DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: CHIU
- SURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 06:47:15 - 06:55:46\nTre
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 06:47:15 - 06:55:45\nTre
  ni coinvolti nella chiusura:\n  - REG 1211 (MILANO CADORNA -> NOVARA NORD)
-  (+2m)\n  - REG 1211 (MILANO CADORNA -> NOVARA NORD) (+2m)\n  - REG 2921 (
- GALLARATE -> MILANO CENTRALE) (+2m)\n  - REG 2921 (GALLARATE -> MILANO CEN
- TRALE) (+2m)\n  - REG 316 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO CADORNA
- ) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nN
- ota normativa/euristica: Chiusura continua per 5 treni: intervallo utile t
- ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
- )
+  (+2m)\n  - REG 2921 (GALLARATE -> MILANO CENTRALE) (+2m)\n  - REG 316 (MA
+ LPENSA AEROPORTO TERMINAL 2 -> MILANO CADORNA) [Transito]\nRitardo massimo
+  rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
+ sura continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BUSTO ARSIZIO NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-316--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T055930Z
 DTEND:20261126T060400Z
 SUMMARY:[FERMATA] REG 316 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO CADORNA)
@@ -196,58 +230,56 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-318--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T062323Z
 DTEND:20261126T062853Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:23 - 07:28 (primo: REG 318)
-DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:23:23 - 07:28:53\nTre
- ni coinvolti nella chiusura:\n  - REG 318 (MALPENSA AEROPORTO TERMINAL 2 -
- > MILANO CADORNA) [Transito]\n  - REG 318 (MALPENSA AEROPORTO TERMINAL 2 -
- > MILANO CADORNA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 318 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO 
+ CADORNA) ore 07:27
+DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 07:23:23 - 07:28:53\nTreni coinvolti
+  nella chiusura:\n  - REG 318 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO CAD
+ ORNA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
+ %\nNota normativa/euristica: Transito stimato senza fermata (90% tratta MA
+ LPENSA AEROPORTO TERMINAL 2 -> MALPENSA AEROPORTO TERMINAL 1\; pedale annu
+ ncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BUSTO ARSIZIO NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2222--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T063430Z
 DTEND:20261126T064734Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 07:34 - 07:47 (primo: REG 2222) (+14 
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:34 - 07:47 (primo: REG 2222) (+14 
  min)
 DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: CHIU
- SURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 07:34:30 - 07:47:34\nTre
+ SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 07:34:30 - 07:47:34\nTre
  ni coinvolti nella chiusura:\n  - REG 2222 (NOVARA NORD -> MILANO CADORNA)
  \n  - REG 2922 (MILANO CENTRALE -> GALLARATE)\n  - REG 318 (MALPENSA AEROP
  ORTO TERMINAL 2 -> MILANO CADORNA) (+14m) [Arrivo]\n  - REG 318 (MALPENSA 
- AEROPORTO TERMINAL 2 -> MILANO CADORNA) (+14m) [Arrivo]\n  - REG 318 (MALP
- ENSA AEROPORTO TERMINAL 2 -> MILANO CADORNA) (+14m) [Partenza]\n  - REG 31
- 8 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO CADORNA) (+14m) [Partenza]\nRit
- ardo massimo rilevato: 14 min\nAffidabilità stima: 90%\nNota normativa/eu
- ristica: Chiusura continua per 6 treni: intervallo utile tra i passaggi (0
- s) inferiore alla soglia minima di sgombero stradale (120s)
+ AEROPORTO TERMINAL 2 -> MILANO CADORNA) (+14m) [Partenza]\nRitardo massimo
+  rilevato: 14 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
+ usura continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore
+  alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BUSTO ARSIZIO NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:14
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-315--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T065130Z
 DTEND:20261126T065600Z
 SUMMARY:[FERMATA] REG 315 (MILANO CADORNA -> MALPENSA AEROPORTO TERMINAL 2)
@@ -267,14 +299,14 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2217--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T070520Z
-DTEND:20261126T071050Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T070519Z
+DTEND:20261126T071049Z
 SUMMARY:[TRANSITO VELOCE] REG 2217 (MILANO CADORNA -> NOVARA NORD) ore 08:0
  9
 DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 08:05:20 - 08:10:50\nTreni coinvolti
+ SITO VELOCE\nChiusura sbarre stimata: 08:05:19 - 08:10:49\nTreni coinvolti
   nella chiusura:\n  - REG 2217 (MILANO CADORNA -> NOVARA NORD) [Transito]\
  nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
  /euristica: Transito stimato senza fermata (60% tratta SARONNO -> RESCALDI
@@ -289,8 +321,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2217--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T071630Z
 DTEND:20261126T072100Z
 SUMMARY:[FERMATA] REG 2217 (MILANO CADORNA -> NOVARA NORD) ore 08:20
@@ -308,91 +340,84 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2236--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T093522Z
+UID:train-2936--20261125-S01137@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T093438Z
 DTEND:20261126T094131Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:35 - 10:41 (primo: REG 2236) (+2 m
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:34 - 10:41 (primo: REG 2936) (+2 m
  in)
 DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:35:22 - 10:41:31\nTre
- ni coinvolti nella chiusura:\n  - REG 2236 (NOVARA NORD -> MILANO CADORNA)
-  (+2m)\n  - REG 2236 (NOVARA NORD -> MILANO CADORNA) (+2m)\nRitardo massim
- o rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chi
- usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:34:38 - 10:41:31\nTre
+ ni coinvolti nella chiusura:\n  - REG 2936 (MILANO CENTRALE -> GALLARATE) 
+ [Transito]\n  - REG 2236 (NOVARA NORD -> MILANO CADORNA) (+2m)\nRitardo ma
+ ssimo rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
+ iore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BUSTO ARSIZIO NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:2
-X-PL-CONFIDENCE:0.99
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-331--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T095203Z
-DTEND:20261126T100219Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 10:52 - 11:02 (primo: REG 331) (+2 mi
+DTEND:20261126T100218Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 10:52 - 11:02 (primo: REG 331) (+2 mi
  n)
 DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: CHIU
- SURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 10:52:03 - 11:02:19\nTre
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 10:52:03 - 11:02:18\nTre
  ni coinvolti nella chiusura:\n  - REG 331 (MILANO CADORNA -> MALPENSA AERO
- PORTO TERMINAL 2) (+2m)\n  - REG 331 (MILANO CADORNA -> MALPENSA AEROPORTO
-  TERMINAL 2) (+2m)\n  - REG 2936 (MILANO CENTRALE -> GALLARATE) [Transito]
- \n  - REG 2939 (GALLARATE -> MILANO CENTRALE) [Transito]\n  - REG 336 (MAL
- PENSA AEROPORTO TERMINAL 2 -> MILANO CADORNA) [Transito]\n  - REG 336 (MAL
- PENSA AEROPORTO TERMINAL 2 -> MILANO CADORNA) [Transito]\nRitardo massimo 
- rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
- ura continua per 6 treni: intervallo utile tra i passaggi (0s) inferiore a
- lla soglia minima di sgombero stradale (120s)
+ PORTO TERMINAL 2) (+2m)\n  - REG 2939 (GALLARATE -> MILANO CENTRALE) [Tran
+ sito]\n  - REG 336 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO CADORNA) [Tran
+ sito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota nor
+ mativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i pa
+ ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BUSTO ARSIZIO NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2936--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T100500Z
 DTEND:20261126T102645Z
-SUMMARY:[CHIUSURA CONTINUA - 12 TRENI] 11:05 - 11:26 (primo: REG 2936) (+12
-  min)
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 11:05 - 11:26 (primo: REG 2936) (+12 
+ min)
 DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: CHIU
- SURA CONTINUA - 12 TRENI\nChiusura sbarre stimata: 11:05:00 - 11:26:45\nTr
- eni coinvolti nella chiusura:\n  - REG 2936 (MILANO CENTRALE -> GALLARATE)
- \n  - REG 2231 (MILANO CADORNA -> NOVARA NORD) [Transito]\n  - REG 2231 (M
- ILANO CADORNA -> NOVARA NORD) [Transito]\n  - REG 336 (MALPENSA AEROPORTO 
- TERMINAL 2 -> MILANO CADORNA) (+12m) [Arrivo]\n  - REG 336 (MALPENSA AEROP
- ORTO TERMINAL 2 -> MILANO CADORNA) (+12m) [Arrivo]\n  - REG 336 (MALPENSA 
- AEROPORTO TERMINAL 2 -> MILANO CADORNA) (+12m) [Partenza]\n  - REG 336 (MA
- LPENSA AEROPORTO TERMINAL 2 -> MILANO CADORNA) (+12m) [Partenza]\n  - REG 
- 2939 (GALLARATE -> MILANO CENTRALE)\n  - REG 2231 (MILANO CADORNA -> NOVAR
- A NORD) (+1m)\n  - REG 2231 (MILANO CADORNA -> NOVARA NORD) (+1m)\n  - REG
-  333 (MILANO CADORNA -> MALPENSA AEROPORTO TERMINAL 2) (+1m)\n  - REG 333 
- (MILANO CADORNA -> MALPENSA AEROPORTO TERMINAL 2) (+1m)\nRitardo massimo r
- ilevato: 12 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
- ura continua per 12 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
+ SURA CONTINUA - 7 TRENI\nChiusura sbarre stimata: 11:05:00 - 11:26:45\nTre
+ ni coinvolti nella chiusura:\n  - REG 2936 (MILANO CENTRALE -> GALLARATE)\
+ n  - REG 2231 (MILANO CADORNA -> NOVARA NORD) [Transito]\n  - REG 336 (MAL
+ PENSA AEROPORTO TERMINAL 2 -> MILANO CADORNA) (+12m) [Arrivo]\n  - REG 336
+  (MALPENSA AEROPORTO TERMINAL 2 -> MILANO CADORNA) (+12m) [Partenza]\n  - 
+ REG 2939 (GALLARATE -> MILANO CENTRALE)\n  - REG 2231 (MILANO CADORNA -> N
+ OVARA NORD) (+1m)\n  - REG 333 (MILANO CADORNA -> MALPENSA AEROPORTO TERMI
+ NAL 2) (+1m)\nRitardo massimo rilevato: 12 min\nAffidabilità stima: 78%\n
+ Nota normativa/euristica: Chiusura continua per 7 treni: intervallo utile 
+ tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
+ s)
 LOCATION:Passaggio a Livello / Stazione BUSTO ARSIZIO NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 12 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
 X-PL-DELAY-MIN:12
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2240--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T103430Z
 DTEND:20261126T103900Z
 SUMMARY:[FERMATA] REG 2240 (NOVARA NORD -> MILANO CADORNA) ore 11:38
@@ -411,13 +436,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2940--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T105320Z
-DTEND:20261126T105850Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T105319Z
+DTEND:20261126T105849Z
 SUMMARY:[TRANSITO VELOCE] REG 2940 (MILANO CENTRALE -> GALLARATE) ore 11:57
 DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 11:53:20 - 11:58:50\nTreni coinvolti
+ SITO VELOCE\nChiusura sbarre stimata: 11:53:19 - 11:58:49\nTreni coinvolti
   nella chiusura:\n  - REG 2940 (MILANO CENTRALE -> GALLARATE) [Transito]\n
  Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
  euristica: Transito stimato senza fermata (60% tratta SARONNO -> RESCALDIN
@@ -432,8 +457,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2940--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T110500Z
 DTEND:20261126T110930Z
 SUMMARY:[FERMATA] REG 2940 (MILANO CENTRALE -> GALLARATE) ore 12:08
@@ -452,126 +477,118 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-344--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T115526Z
 DTEND:20261126T120056Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:55 - 13:00 (primo: REG 344)
-DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:55:26 - 13:00:56\nTre
- ni coinvolti nella chiusura:\n  - REG 344 (MALPENSA AEROPORTO TERMINAL 2 -
- > MILANO CADORNA) [Transito]\n  - REG 344 (MALPENSA AEROPORTO TERMINAL 2 -
- > MILANO CADORNA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 344 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO 
+ CADORNA) ore 12:59
+DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 12:55:26 - 13:00:56\nTreni coinvolti
+  nella chiusura:\n  - REG 344 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO CAD
+ ORNA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
+ %\nNota normativa/euristica: Transito stimato senza fermata (90% tratta MA
+ LPENSA AEROPORTO TERMINAL 2 -> MALPENSA AEROPORTO TERMINAL 1\; pedale annu
+ ncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BUSTO ARSIZIO NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-344--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T120457Z
 DTEND:20261126T121057Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:04 - 13:10 (primo: REG 344) (+7 mi
- n)
-DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:04:57 - 13:10:57\nTre
- ni coinvolti nella chiusura:\n  - REG 344 (MALPENSA AEROPORTO TERMINAL 2 -
- > MILANO CADORNA) (+7m)\n  - REG 344 (MALPENSA AEROPORTO TERMINAL 2 -> MIL
- ANO CADORNA) (+7m)\nRitardo massimo rilevato: 7 min\nAffidabilità stima: 
- 99%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo u
- tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
-  (120s)
+SUMMARY:[FERMATA] REG 344 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO CADORNA)
+  ore 13:09 (+7 min)
+DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 13:04:57 - 13:10:57\nTreni coinvolti nella c
+ hiusura:\n  - REG 344 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO CADORNA) (+
+ 7m)\nRitardo massimo rilevato: 7 min\nAffidabilità stima: 99%\nNota norma
+ tiva/euristica: Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione BUSTO ARSIZIO NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:7
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2949--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T122753Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T122752Z
 DTEND:20261126T124111Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 13:27 - 13:41 (primo: REG 2949) (+1 m
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:27 - 13:41 (primo: REG 2949) (+1 m
  in)
 DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: CHIU
- SURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 13:27:53 - 13:41:11\nTre
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:27:52 - 13:41:11\nTre
  ni coinvolti nella chiusura:\n  - REG 2949 (GALLARATE -> MILANO CENTRALE) 
- [Transito]\n  - REG 2949 (GALLARATE -> MILANO CENTRALE) [Transito]\n  - RE
- G 2246 (NOVARA NORD -> MILANO CADORNA) (+1m)\n  - REG 2246 (NOVARA NORD ->
-  MILANO CADORNA) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabilità sti
- ma: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: interval
- lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
- dale (120s)
+ [Transito]\n  - REG 2246 (NOVARA NORD -> MILANO CADORNA) (+1m)\nRitardo ma
+ ssimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Chiusura continua per 2 treni: intervallo utile tra i passaggi (106s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BUSTO ARSIZIO NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2949--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T124600Z
 DTEND:20261126T125030Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:46 - 13:50 (primo: REG 2949)
-DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:46:00 - 13:50:30\nTre
- ni coinvolti nella chiusura:\n  - REG 2949 (GALLARATE -> MILANO CENTRALE)\
- n  - REG 2949 (GALLARATE -> MILANO CENTRALE)\nRitardo massimo rilevato: -1
-  min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continu
- a per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 2949 (GALLARATE -> MILANO CENTRALE) ore 13:49
+DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 13:46:00 - 13:50:30\nTreni coinvolti nella c
+ hiusura:\n  - REG 2949 (GALLARATE -> MILANO CENTRALE)\nRitardo massimo ril
+ evato: -1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one con anticipo (-1 min)
 LOCATION:Passaggio a Livello / Stazione BUSTO ARSIZIO NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25309--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T132418Z
-DTEND:20261126T133152Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 14:24 - 14:31 (primo: REG 25309) (+2 
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T132433Z
+DTEND:20261126T133151Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:24 - 14:31 (primo: REG 25309) (+2 
  min)
 DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: CHIU
- SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 14:24:18 - 14:31:52\nTre
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:24:33 - 14:31:51\nTre
  ni coinvolti nella chiusura:\n  - REG 25309 (LUINO -> MILANO PORTA GARIBAL
- DI) (+2m) [Transito]\n  - REG 25309 (LUINO -> MILANO PORTA GARIBALDI) (+2m
- ) [Transito]\n  - REG 2953 (GALLARATE -> MILANO CENTRALE) [Transito]\nRita
- rdo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s)
-  inferiore alla soglia minima di sgombero stradale (120s)
+ DI) (+2m) [Transito]\n  - REG 2953 (GALLARATE -> MILANO CENTRALE) [Transit
+ o]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Chiusura continua per 2 treni: intervallo utile tra i passa
+ ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BUSTO ARSIZIO NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2953--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T134700Z
 DTEND:20261126T135130Z
 SUMMARY:[FERMATA] REG 2953 (GALLARATE -> MILANO CENTRALE) ore 14:50
@@ -590,13 +607,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2955--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T135622Z
-DTEND:20261126T140152Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T135621Z
+DTEND:20261126T140151Z
 SUMMARY:[TRANSITO VELOCE] REG 2955 (GALLARATE -> MILANO CENTRALE) ore 15:00
 DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 14:56:22 - 15:01:52\nTreni coinvolti
+ SITO VELOCE\nChiusura sbarre stimata: 14:56:21 - 15:01:51\nTreni coinvolti
   nella chiusura:\n  - REG 2955 (GALLARATE -> MILANO CENTRALE) [Transito]\n
  Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
  euristica: Transito stimato senza fermata (83% tratta GALLARATE -> MALPENS
@@ -611,8 +628,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2955--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T141700Z
 DTEND:20261126T142130Z
 SUMMARY:[FERMATA] REG 2955 (GALLARATE -> MILANO CENTRALE) ore 15:20
@@ -631,13 +648,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2957--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T142622Z
-DTEND:20261126T143152Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T142621Z
+DTEND:20261126T143151Z
 SUMMARY:[TRANSITO VELOCE] REG 2957 (GALLARATE -> MILANO CENTRALE) ore 15:30
 DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 15:26:22 - 15:31:52\nTreni coinvolti
+ SITO VELOCE\nChiusura sbarre stimata: 15:26:21 - 15:31:51\nTreni coinvolti
   nella chiusura:\n  - REG 2957 (GALLARATE -> MILANO CENTRALE) [Transito]\n
  Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
  euristica: Transito stimato senza fermata (83% tratta GALLARATE -> MALPENS
@@ -652,8 +669,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2254--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T143430Z
 DTEND:20261126T143900Z
 SUMMARY:[FERMATA] REG 2254 (NOVARA NORD -> MILANO CADORNA) ore 15:38
@@ -672,13 +689,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2957--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T144700Z
-DTEND:20261126T145546Z
+DTEND:20261126T145545Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:47 - 15:55 (primo: REG 2957)
 DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:47:00 - 15:55:46\nTre
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:47:00 - 15:55:45\nTre
  ni coinvolti nella chiusura:\n  - REG 2957 (GALLARATE -> MILANO CENTRALE)\
  n  - REG 356 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO CADORNA) [Transito]\
  nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
@@ -694,35 +711,36 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-356--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T145930Z
-DTEND:20261126T150400Z
-SUMMARY:[FERMATA] REG 356 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO CADORNA)
-  ore 16:03
-DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: FERM
- ATA\nChiusura sbarre stimata: 15:59:30 - 16:04:00\nTreni coinvolti nella c
- hiusura:\n  - REG 356 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO CADORNA)\nR
- itardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/e
- uristica: Previsione da traccia oraria regolare
+DTEND:20261126T151007Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:59 - 16:10 (primo: REG 356)
+DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: CHIU
+ SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:59:30 - 16:10:07\nTre
+ ni coinvolti nella chiusura:\n  - REG 356 (MALPENSA AEROPORTO TERMINAL 2 -
+ > MILANO CADORNA)\n  - REG 2958 (MILANO CENTRALE -> GALLARATE) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
+  (37s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BUSTO ARSIZIO NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-358--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T152016Z
-DTEND:20261126T152546Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T152015Z
+DTEND:20261126T152545Z
 SUMMARY:[TRANSITO VELOCE] REG 358 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO 
  CADORNA) ore 16:24
 DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 16:20:16 - 16:25:46\nTreni coinvolti
+ SITO VELOCE\nChiusura sbarre stimata: 16:20:15 - 16:25:45\nTreni coinvolti
   nella chiusura:\n  - REG 358 (MALPENSA AEROPORTO TERMINAL 2 -> MILANO CAD
  ORNA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
  %\nNota normativa/euristica: Transito stimato senza fermata (90% tratta MA
@@ -738,8 +756,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-358--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T152930Z
 DTEND:20261126T153930Z
 SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:29 - 16:39 (primo: REG 358)
@@ -761,8 +779,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-357--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T155130Z
 DTEND:20261126T155600Z
 SUMMARY:[FERMATA] REG 357 (MILANO CADORNA -> MALPENSA AEROPORTO TERMINAL 2)
@@ -782,14 +800,14 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2259--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T160520Z
-DTEND:20261126T161050Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T160519Z
+DTEND:20261126T161049Z
 SUMMARY:[TRANSITO VELOCE] REG 2259 (MILANO CADORNA -> NOVARA NORD) ore 17:0
  9
 DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 17:05:20 - 17:10:50\nTreni coinvolti
+ SITO VELOCE\nChiusura sbarre stimata: 17:05:19 - 17:10:49\nTreni coinvolti
   nella chiusura:\n  - REG 2259 (MILANO CADORNA -> NOVARA NORD) [Transito]\
  nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
  /euristica: Transito stimato senza fermata (60% tratta SARONNO -> RESCALDI
@@ -804,8 +822,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2259--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T161630Z
 DTEND:20261126T162600Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:16 - 17:26 (primo: REG 2259)
@@ -826,30 +844,29 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2977--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T192622Z
-DTEND:20261126T193152Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:26 - 20:31 (primo: REG 2977)
-DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:26:22 - 20:31:52\nTre
- ni coinvolti nella chiusura:\n  - REG 2977 (GALLARATE -> MILANO CENTRALE) 
- [Transito]\n  - REG 2977 (GALLARATE -> MILANO CENTRALE) [Transito]\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
- nferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T192621Z
+DTEND:20261126T193151Z
+SUMMARY:[TRANSITO VELOCE] REG 2977 (GALLARATE -> MILANO CENTRALE) ore 20:30
+DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 20:26:21 - 20:31:51\nTreni coinvolti
+  nella chiusura:\n  - REG 2977 (GALLARATE -> MILANO CENTRALE) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (83% tratta GALLARATE -> MALPENS
+ A AEROPORTO TERMINAL 2\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BUSTO ARSIZIO NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2280--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T193430Z
 DTEND:20261126T193900Z
 SUMMARY:[FERMATA] REG 2280 (NOVARA NORD -> MILANO CADORNA) ore 20:38
@@ -868,54 +885,54 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2977--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T194700Z
-DTEND:20261126T195850Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 20:47 - 20:58 (primo: REG 2977)
+DTEND:20261126T195849Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:47 - 20:58 (primo: REG 2977)
 DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: CHIU
- SURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 20:47:00 - 20:58:50\nTre
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 20:47:00 - 20:58:49\nTre
  ni coinvolti nella chiusura:\n  - REG 2977 (GALLARATE -> MILANO CENTRALE)\
- n  - REG 2977 (GALLARATE -> MILANO CENTRALE)\n  - REG 383 (MILANO CADORNA 
- -> MALPENSA AEROPORTO TERMINAL 2)\n  - REG 383 (MILANO CADORNA -> MALPENSA
-  AEROPORTO TERMINAL 2)\n  - REG 2976 (MILANO CENTRALE -> GALLARATE) [Trans
- ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
- ativa/euristica: Chiusura continua per 5 treni: intervallo utile tra i pas
- saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ n  - REG 383 (MILANO CADORNA -> MALPENSA AEROPORTO TERMINAL 2)\n  - REG 29
+ 76 (MILANO CENTRALE -> GALLARATE) [Transito]\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua
+  per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
+ inima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BUSTO ARSIZIO NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2976--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T200500Z
-DTEND:20261126T201050Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:05 - 21:10 (primo: REG 2976)
+DTEND:20261126T201049Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:05 - 21:10 (primo: REG 2976)
 DESCRIPTION:Stazione/PL: BUSTO ARSIZIO NORD (S01137)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:05:00 - 21:10:50\nTre
+ SURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 21:05:00 - 21:10:49\nTre
  ni coinvolti nella chiusura:\n  - REG 2976 (MILANO CENTRALE -> GALLARATE)\
- n  - REG 2283 (MILANO CADORNA -> NOVARA NORD) [Transito]\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
- ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
- lla soglia minima di sgombero stradale (120s)
+ n  - REG 2978 (MILANO CENTRALE -> GALLARATE) [Transito]\n  - REG 2283 (MIL
+ ANO CADORNA -> NOVARA NORD) [Transito]\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BUSTO ARSIZIO NORD
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2283--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T201630Z
 DTEND:20261126T202600Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:16 - 21:26 (primo: REG 2283)
@@ -936,8 +953,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2978--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T203500Z
 DTEND:20261126T203930Z
 SUMMARY:[FERMATA] REG 2978 (MILANO CENTRALE -> GALLARATE) ore 21:38
@@ -956,8 +973,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-387--20261125-S01137@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T205130Z
 DTEND:20261126T205600Z
 SUMMARY:[FERMATA] REG 387 (MILANO CADORNA -> MALPENSA AEROPORTO TERMINAL 2)

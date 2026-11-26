@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:dbd51a938455396ad3da4086a5d6d0ba89ca78c92bff9cf6161e27c75871
- 8e44
+X-CONTENT-HASH:d19d3dbf628ce508ded7e1c93f7745f999b8a28cbab8c7217676098bc7ea
+ 6b4c
 BEGIN:VEVENT
 UID:train-16037--20261125-S02719@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T042630Z
 DTEND:20261126T043100Z
 SUMMARY:[FERMATA] REG 16037 (TREVISO CENTRALE -> VENEZIA S.LUCIA) ore 05:30
@@ -33,30 +33,28 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16758--20261125-S02719@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T052030Z
 DTEND:20261126T052500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:20 - 06:25 (primo: REG 16758)
+SUMMARY:[FERMATA] REG 16758 (VENEZIA S.LUCIA -> UDINE) ore 06:24
 DESCRIPTION:Stazione/PL: VENEZIA MESTRE GAZZERA (S02719)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:20:30 - 06:25:00\
- nTreni coinvolti nella chiusura:\n  - REG 16758 (VENEZIA S.LUCIA -> UDINE)
- \n  - REG 16758 (VENEZIA S.LUCIA -> UDINE)\nRitardo massimo rilevato: -5 m
- in\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua 
- per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
- nima di sgombero stradale (120s)
+ FERMATA\nChiusura sbarre stimata: 06:20:30 - 06:25:00\nTreni coinvolti nel
+ la chiusura:\n  - REG 16758 (VENEZIA S.LUCIA -> UDINE)\nRitardo massimo ri
+ levato: -5 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previs
+ ione con anticipo (-5 min)
 LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE GAZZERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:-5
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16757--20261125-S02719@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T055430Z
 DTEND:20261126T060000Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:54 - 07:00 (primo: REG 16757)
@@ -77,8 +75,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16764--20261125-S02719@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T062530Z
 DTEND:20261126T063000Z
 SUMMARY:[FERMATA] REG 16764 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) ore 07:29
@@ -96,18 +94,39 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3400--20261125-S02719@pl-tracker.local
-DTSTAMP:20261126T123838Z
+UID:train-16854--20261125-S02719@pl-tracker.local
+DTSTAMP:20261126T215722Z
 SEQUENCE:0
-DTSTART:20261126T104242Z
-DTEND:20261126T104812Z
+DTSTART:20261126T065310Z
+DTEND:20261126T065840Z
+SUMMARY:[TRANSITO VELOCE] REG 16854 (VENEZIA S.LUCIA -> BELLUNO) ore 07:57
+DESCRIPTION:Stazione/PL: VENEZIA MESTRE GAZZERA (S02719)\nRegime chiusura: 
+ TRANSITO VELOCE\nChiusura sbarre stimata: 07:53:10 - 07:58:40\nTreni coinv
+ olti nella chiusura:\n  - REG 16854 (VENEZIA S.LUCIA -> BELLUNO) [Transito
+ ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
+ va/euristica: Transito stimato senza fermata (49% tratta VENEZIA MESTRE ->
+  VENEZIA MESTRE OSPEDALE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE GAZZERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3400--20261125-S02719@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T104233Z
+DTEND:20261126T104803Z
 SUMMARY:[TRANSITO VELOCE] REG 3400 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) or
  e 11:46
 DESCRIPTION:Stazione/PL: VENEZIA MESTRE GAZZERA (S02719)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 11:42:42 - 11:48:12\nTreni coinv
+ TRANSITO VELOCE\nChiusura sbarre stimata: 11:42:33 - 11:48:03\nTreni coinv
  olti nella chiusura:\n  - REG 3400 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) [
  Transito]\nRitardo massimo rilevato: -3 min\nAffidabilità stima: 78%\nNot
- a normativa/euristica: Transito stimato senza fermata (48% tratta MOGLIANO
+ a normativa/euristica: Transito stimato senza fermata (47% tratta MOGLIANO
   VENETO -> VENEZIA MESTRE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE GAZZERA
 STATUS:CONFIRMED
@@ -119,8 +138,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16775--20261125-S02719@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T112530Z
 DTEND:20261126T113000Z
 SUMMARY:[FERMATA] REG 16775 (CONEGLIANO -> VENEZIA S.LUCIA) ore 12:29
@@ -138,18 +157,18 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3653--20261125-S02719@pl-tracker.local
-DTSTAMP:20261126T123838Z
+UID:train-16800--20261125-S02719@pl-tracker.local
+DTSTAMP:20261126T215722Z
 SEQUENCE:0
-DTSTART:20261126T140529Z
-DTEND:20261126T141059Z
-SUMMARY:[TRANSITO VELOCE] REG 3653 (SACILE -> VENEZIA S.LUCIA) ore 15:09
+DTSTART:20261126T142310Z
+DTEND:20261126T142840Z
+SUMMARY:[TRANSITO VELOCE] REG 16800 (VENEZIA S.LUCIA -> UDINE) ore 15:27
 DESCRIPTION:Stazione/PL: VENEZIA MESTRE GAZZERA (S02719)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 15:05:29 - 15:10:59\nTreni coinv
- olti nella chiusura:\n  - REG 3653 (SACILE -> VENEZIA S.LUCIA) [Transito]\
+ TRANSITO VELOCE\nChiusura sbarre stimata: 15:23:10 - 15:28:40\nTreni coinv
+ olti nella chiusura:\n  - REG 16800 (VENEZIA S.LUCIA -> UDINE) [Transito]\
  nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Transito stimato senza fermata (48% tratta MOGLIANO VENETO -> 
- VENEZIA MESTRE\; pedale annuncio fisso Vmax)
+ /euristica: Transito stimato senza fermata (49% tratta VENEZIA MESTRE -> V
+ ENEZIA MESTRE OSPEDALE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE GAZZERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -160,17 +179,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3886--20261125-S02719@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T144244Z
-DTEND:20261126T144814Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T144229Z
+DTEND:20261126T144759Z
 SUMMARY:[TRANSITO VELOCE] REG 3886 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) or
  e 15:46
 DESCRIPTION:Stazione/PL: VENEZIA MESTRE GAZZERA (S02719)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 15:42:44 - 15:48:14\nTreni coinv
+ TRANSITO VELOCE\nChiusura sbarre stimata: 15:42:29 - 15:47:59\nTreni coinv
  olti nella chiusura:\n  - REG 3886 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) [
  Transito]\nRitardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNot
- a normativa/euristica: Transito stimato senza fermata (48% tratta MOGLIANO
+ a normativa/euristica: Transito stimato senza fermata (47% tratta MOGLIANO
   VENETO -> VENEZIA MESTRE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE GAZZERA
 STATUS:CONFIRMED
@@ -182,41 +201,60 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16804--20261125-S02719@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T145530Z
-DTEND:20261126T150041Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:55 - 16:00 (primo: REG 16804)
+DTEND:20261126T150000Z
+SUMMARY:[FERMATA] REG 16804 (VENEZIA S.LUCIA -> TREVISO CENTRALE) ore 15:59
 DESCRIPTION:Stazione/PL: VENEZIA MESTRE GAZZERA (S02719)\nRegime chiusura: 
- CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 15:55:30 - 16:00:41\
- nTreni coinvolti nella chiusura:\n  - REG 16804 (VENEZIA S.LUCIA -> TREVIS
- O CENTRALE)\n  - REG 16804 (VENEZIA S.LUCIA -> TREVISO CENTRALE)\n  - REG 
- 16768 (BELLUNO -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
- a per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+ FERMATA\nChiusura sbarre stimata: 15:55:30 - 16:00:00\nTreni coinvolti nel
+ la chiusura:\n  - REG 16804 (VENEZIA S.LUCIA -> TREVISO CENTRALE)\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristi
+ ca: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE GAZZERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16805--20261125-S02719@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T154757Z
+DTEND:20261126T155900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:47 - 16:59 (primo: REG 16805)
+DESCRIPTION:Stazione/PL: VENEZIA MESTRE GAZZERA (S02719)\nRegime chiusura: 
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:47:57 - 16:59:00\
+ nTreni coinvolti nella chiusura:\n  - REG 16805 (TREVISO CENTRALE -> VENEZ
+ IA S.LUCIA) [Transito]\n  - REG 16805 (TREVISO CENTRALE -> VENEZIA S.LUCIA
+ )\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
+ va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
+ gi (62s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE GAZZERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16805--20261125-S02719@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T155430Z
-DTEND:20261126T155900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:54 - 16:59 (primo: REG 16805)
+UID:train-16809--20261125-S02719@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T162530Z
+DTEND:20261126T163000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:25 - 17:30 (primo: REG 16809)
 DESCRIPTION:Stazione/PL: VENEZIA MESTRE GAZZERA (S02719)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:54:30 - 16:59:00\
- nTreni coinvolti nella chiusura:\n  - REG 16805 (TREVISO CENTRALE -> VENEZ
- IA S.LUCIA)\n  - REG 16805 (TREVISO CENTRALE -> VENEZIA S.LUCIA)\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
- a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
+ CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:25:30 - 17:30:00\
+ nTreni coinvolti nella chiusura:\n  - REG 16809 (UDINE -> VENEZIA S.LUCIA)
+ \n  - REG 16812 (VENEZIA S.LUCIA -> UDINE)\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
+ er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
+ ima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE GAZZERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -226,40 +264,18 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16809--20261125-S02719@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T162530Z
-DTEND:20261126T163000Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:25 - 17:30 (primo: REG 16809)
-DESCRIPTION:Stazione/PL: VENEZIA MESTRE GAZZERA (S02719)\nRegime chiusura: 
- CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 17:25:30 - 17:30:00\
- nTreni coinvolti nella chiusura:\n  - REG 16809 (UDINE -> VENEZIA S.LUCIA)
- \n  - REG 16812 (VENEZIA S.LUCIA -> UDINE)\n  - REG 16812 (VENEZIA S.LUCIA
-  -> UDINE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNot
- a normativa/euristica: Chiusura continua per 3 treni: intervallo utile tra
-  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE GAZZERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-16826--20261125-S02719@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T195305Z
-DTEND:20261126T195835Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T195310Z
+DTEND:20261126T195840Z
 SUMMARY:[TRANSITO VELOCE] REG 16826 (VENEZIA S.LUCIA -> TREVISO CENTRALE) o
  re 20:57
 DESCRIPTION:Stazione/PL: VENEZIA MESTRE GAZZERA (S02719)\nRegime chiusura: 
- TRANSITO VELOCE\nChiusura sbarre stimata: 20:53:05 - 20:58:35\nTreni coinv
+ TRANSITO VELOCE\nChiusura sbarre stimata: 20:53:10 - 20:58:40\nTreni coinv
  olti nella chiusura:\n  - REG 16826 (VENEZIA S.LUCIA -> TREVISO CENTRALE) 
  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
- a normativa/euristica: Transito stimato senza fermata (48% tratta VENEZIA 
+ a normativa/euristica: Transito stimato senza fermata (49% tratta VENEZIA 
  MESTRE -> VENEZIA MESTRE OSPEDALE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE GAZZERA
 STATUS:CONFIRMED
@@ -271,8 +287,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3515--20261125-S02719@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T200430Z
 DTEND:20261126T200900Z
 SUMMARY:[FERMATA] REG 3515 (SACILE -> VENEZIA S.LUCIA) ore 21:08
@@ -291,24 +307,44 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16831--20261125-S02719@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T202530Z
 DTEND:20261126T203000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:25 - 21:30 (primo: REG 16831)
+SUMMARY:[FERMATA] REG 16831 (UDINE -> VENEZIA S.LUCIA) ore 21:29
 DESCRIPTION:Stazione/PL: VENEZIA MESTRE GAZZERA (S02719)\nRegime chiusura: 
- CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:25:30 - 21:30:00\
- nTreni coinvolti nella chiusura:\n  - REG 16831 (UDINE -> VENEZIA S.LUCIA)
- \n  - REG 16831 (UDINE -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
- er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
+ FERMATA\nChiusura sbarre stimata: 21:25:30 - 21:30:00\nTreni coinvolti nel
+ la chiusura:\n  - REG 16831 (UDINE -> VENEZIA S.LUCIA)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE GAZZERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3898--20261125-S02719@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T203657Z
+DTEND:20261126T204227Z
+SUMMARY:[TRANSITO VELOCE] REG 3898 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) or
+ e 21:41
+DESCRIPTION:Stazione/PL: VENEZIA MESTRE GAZZERA (S02719)\nRegime chiusura: 
+ TRANSITO VELOCE\nChiusura sbarre stimata: 21:36:57 - 21:42:27\nTreni coinv
+ olti nella chiusura:\n  - REG 3898 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) [
+ Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Transito stimato senza fermata (47% tratta MOGLIANO 
+ VENETO -> VENEZIA MESTRE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione VENEZIA MESTRE GAZZERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

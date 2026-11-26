@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:89cc1496670db8ad6b1c3364f5b4c6e99dc4101501041e39e12a44d89d19
- 2cab
+X-CONTENT-HASH:d084958a025560d824a490f060ef393d440b1d0a744e4da29eb1e26b1993
+ a79e
 BEGIN:VEVENT
 UID:train-17176--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T041643Z
 DTEND:20261126T042213Z
 SUMMARY:[TRANSITO VELOCE] REG 17176 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)
@@ -35,8 +35,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17176--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T042830Z
 DTEND:20261126T043300Z
 SUMMARY:[FERMATA] REG 17176 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) ore 05:
@@ -56,62 +56,79 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9401--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T044712Z
-DTEND:20261126T045242Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:47 - 05:52 (primo: TRENO 9401) (+2
- 3 min)
-DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:47:12 - 05:52:42\nTreni 
- coinvolti nella chiusura:\n  - TRENO 9401 (VENEZIA S.LUCIA -> ROMA TERMINI
- ) (+23m) [Transito]\n  - TRENO 9401 (VENEZIA S.LUCIA -> ROMA TERMINI) (+23
- m) [Transito]\nRitardo massimo rilevato: 23 min\nAffidabilità stima: 78%\
- nNota normativa/euristica: Chiusura continua per 2 treni: intervallo utile
-  tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (12
- 0s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T044704Z
+DTEND:20261126T045234Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9401 (VENEZIA S.LUCIA -> ROMA TERMINI) ore 
+ 05:51 (+23 min)
+DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 05:47:04 - 05:52:34\nTreni coinvolti ne
+ lla chiusura:\n  - TRENO 9401 (VENEZIA S.LUCIA -> ROMA TERMINI) (+23m) [Tr
+ ansito]\nRitardo massimo rilevato: 23 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Transito stimato senza fermata (62% tratta VENEZIA ME
+ STRE -> PADOVA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:23
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9700--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T045709Z
-DTEND:20261126T051127Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 05:57 - 06:11 (primo: TRENO 9700) (+8
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T045659Z
+DTEND:20261126T050357Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:56 - 06:03 (primo: TRENO 9700) (+8
   min)
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 4 TRENI\nChiusura sbarre stimata: 05:57:09 - 06:11:27\nTreni 
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:56:59 - 06:03:57\nTreni 
  coinvolti nella chiusura:\n  - TRENO 9700 (VENEZIA S.LUCIA -> MILANO CENTR
- ALE) (+8m) [Transito]\n  - TRENO 9700 (VENEZIA S.LUCIA -> MILANO CENTRALE)
-  (+8m) [Transito]\n  - REG 3961 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) [Tra
- nsito]\n  - REG 17081 (VENEZIA S.LUCIA -> FERRARA) [Transito]\nRitardo mas
- simo rilevato: 8 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Chiusura continua per 4 treni: intervallo utile tra i passaggi (108s) infe
- riore alla soglia minima di sgombero stradale (120s)
+ ALE) (+8m) [Transito]\n  - REG 3961 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) 
+ [Transito]\nRitardo massimo rilevato: 8 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra
+  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:8
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
+UID:train-17081--20261125-S02586@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T050558Z
+DTEND:20261126T051128Z
+SUMMARY:[TRANSITO VELOCE] REG 17081 (VENEZIA S.LUCIA -> FERRARA) ore 06:10
+DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 06:05:58 - 06:11:28\nTreni coinvolti ne
+ lla chiusura:\n  - REG 17081 (VENEZIA S.LUCIA -> FERRARA) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Transito stimato senza fermata (75% tratta VENEZIA MESTRE -> MIRA M
+ IRANO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-17162--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T051813Z
-DTEND:20261126T052740Z
+DTEND:20261126T052743Z
 SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 06:18 - 06:27 (primo: REG 17162)
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 3 TRENI\nChiusura sbarre stimata: 06:18:13 - 06:27:40\nTreni 
+ A CONTINUA - 3 TRENI\nChiusura sbarre stimata: 06:18:13 - 06:27:43\nTreni 
  coinvolti nella chiusura:\n  - REG 17162 (VENEZIA S.LUCIA -> VERONA PORTA 
  NUOVA) [Transito]\n  - REG 17081 (VENEZIA S.LUCIA -> FERRARA)\n  - REG 347
  7 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo rile
@@ -128,8 +145,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17162--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T053230Z
 DTEND:20261126T053700Z
 SUMMARY:[FERMATA] REG 17162 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) ore 06:
@@ -149,13 +166,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9403--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T054301Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T054250Z
 DTEND:20261126T060700Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 06:43 - 07:07 (primo: TRENO 9403)
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 06:42 - 07:07 (primo: TRENO 9403)
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 5 TRENI\nChiusura sbarre stimata: 06:43:01 - 07:07:00\nTreni 
+ A CONTINUA - 5 TRENI\nChiusura sbarre stimata: 06:42:50 - 07:07:00\nTreni 
  coinvolti nella chiusura:\n  - TRENO 9403 (VENEZIA S.LUCIA -> NAPOLI CENTR
  ALE) [Transito]\n  - REG 17164 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Tr
  ansito]\n  - REG 17171 (PADOVA -> VENEZIA MESTRE) [Transito]\n  - REG 1717
@@ -173,40 +190,39 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8801--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T061535Z
-DTEND:20261126T062105Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:15 - 07:21 (primo: TRENO 8801)
-DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:15:35 - 07:21:05\nTreni 
- coinvolti nella chiusura:\n  - TRENO 8801 (VENEZIA S.LUCIA -> LECCE) [Tran
- sito]\n  - TRENO 8801 (VENEZIA S.LUCIA -> LECCE) [Transito]\nRitardo massi
- mo rilevato: -2 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
- hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
- re alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T061527Z
+DTEND:20261126T062057Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8801 (VENEZIA S.LUCIA -> LECCE) ore 07:19
+DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 07:15:27 - 07:20:57\nTreni coinvolti ne
+ lla chiusura:\n  - TRENO 8801 (VENEZIA S.LUCIA -> LECCE) [Transito]\nRitar
+ do massimo rilevato: -2 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Transito stimato senza fermata (62% tratta VENEZIA MESTRE -> PADOVA
+ \; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3482--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T062701Z
-DTEND:20261126T063916Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:27 - 07:39 (primo: REG 3482)
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T062650Z
+DTEND:20261126T063906Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:26 - 07:39 (primo: REG 3482)
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:27:01 - 07:39:16\nTreni 
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:26:50 - 07:39:06\nTreni 
  coinvolti nella chiusura:\n  - REG 3482 (VENEZIA S.LUCIA -> VERONA PORTA N
  UOVA) [Transito]\n  - TRENO 9708 (VENEZIA S.LUCIA -> MILANO CENTRALE) [Tra
  nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
  rmativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i p
- assaggi (74s) inferiore alla soglia minima di sgombero stradale (120s)
+ assaggi (76s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -217,45 +233,42 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16955--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T065031Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T065029Z
 DTEND:20261126T071700Z
-SUMMARY:[CHIUSURA CONTINUA - 13 TRENI] 07:50 - 08:17 (primo: REG 16955) (+1
- 0 min)
+SUMMARY:[CHIUSURA CONTINUA - 9 TRENI] 07:50 - 08:17 (primo: REG 16955) (+10
+  min)
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 13 TRENI\nChiusura sbarre stimata: 07:50:31 - 08:17:00\nTreni
-  coinvolti nella chiusura:\n  - REG 16955 (MANTOVA -> VENEZIA MESTRE) [Tra
- nsito]\n  - REG 3960 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [Transito]\n  -
-  REG 3483 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+4m) [Transito]\n  - RE
- G 3483 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+4m) [Transito]\n  - REG 1
- 7174 (VENEZIA S.LUCIA -> VICENZA) (+10m) [Transito]\n  - REG 17174 (VENEZI
- A S.LUCIA -> VICENZA) (+10m) [Transito]\n  - REG 16955 (MANTOVA -> VENEZIA
-  MESTRE)\n  - TRENO 9713 (UDINE -> MILANO CENTRALE) [Transito]\n  - REG 39
- 65 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) [Transito]\n  - REG 3965 (VENEZIA
-  S.LUCIA -> BOLOGNA CENTRALE) [Transito]\n  - REG 16054 (SCHIO -> VENEZIA 
- MESTRE) [Transito]\n  - REG 17174 (VENEZIA S.LUCIA -> VICENZA) (+10m)\n  -
-  REG 17174 (VENEZIA S.LUCIA -> VICENZA) (+10m)\nRitardo massimo rilevato: 
- 10 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
- nua per 13 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
+ A CONTINUA - 9 TRENI\nChiusura sbarre stimata: 07:50:29 - 08:17:00\nTreni 
+ coinvolti nella chiusura:\n  - REG 16955 (MANTOVA -> VENEZIA MESTRE) [Tran
+ sito]\n  - REG 3960 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [Transito]\n  - 
+ REG 3483 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) (+4m) [Transito]\n  - REG
+  17174 (VENEZIA S.LUCIA -> VICENZA) (+10m) [Transito]\n  - REG 16955 (MANT
+ OVA -> VENEZIA MESTRE)\n  - TRENO 9713 (UDINE -> MILANO CENTRALE) [Transit
+ o]\n  - REG 3965 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) [Transito]\n  - REG
+  16054 (SCHIO -> VENEZIA MESTRE) [Transito]\n  - REG 17174 (VENEZIA S.LUCI
+ A -> VICENZA) (+10m)\nRitardo massimo rilevato: 10 min\nAffidabilità stim
+ a: 78%\nNota normativa/euristica: Chiusura continua per 9 treni: intervall
+ o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
+ ale (120s)
 LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 13 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 9 TRENI,FERROVIA
 X-PL-DELAY-MIN:10
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9716--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T073346Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T073336Z
 DTEND:20261126T075200Z
 SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 08:33 - 08:52 (primo: TRENO 9716)
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 3 TRENI\nChiusura sbarre stimata: 08:33:46 - 08:52:00\nTreni 
+ A CONTINUA - 3 TRENI\nChiusura sbarre stimata: 08:33:36 - 08:52:00\nTreni 
  coinvolti nella chiusura:\n  - TRENO 9716 (VENEZIA S.LUCIA -> TORINO PORTA
   NUOVA) [Transito]\n  - REG 17181 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) 
  [Transito]\n  - REG 17181 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo
@@ -272,36 +285,36 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9409--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T075435Z
-DTEND:20261126T080005Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:54 - 09:00 (primo: TRENO 9409)
-DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:54:35 - 09:00:05\nTreni 
- coinvolti nella chiusura:\n  - TRENO 9409 (GORIZIA CENTRALE -> NAPOLI CENT
- RALE) [Transito]\n  - TRENO 9409 (GORIZIA CENTRALE -> NAPOLI CENTRALE) [Tr
- ansito]\nRitardo massimo rilevato: -8 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i
-  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T075427Z
+DTEND:20261126T075957Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9409 (GORIZIA CENTRALE -> NAPOLI CENTRALE) 
+ ore 08:58
+DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 08:54:27 - 08:59:57\nTreni coinvolti ne
+ lla chiusura:\n  - TRENO 9409 (GORIZIA CENTRALE -> NAPOLI CENTRALE) [Trans
+ ito]\nRitardo massimo rilevato: -8 min\nAffidabilità stima: 78%\nNota nor
+ mativa/euristica: Transito stimato senza fermata (62% tratta VENEZIA MESTR
+ E -> PADOVA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-8
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9400--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T080656Z
-DTEND:20261126T081226Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T080659Z
+DTEND:20261126T081229Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9400 (ROMA TERMINI -> VENEZIA S.LUCIA) ore 
  09:11
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: TRANSIT
- O VELOCE\nChiusura sbarre stimata: 09:06:56 - 09:12:26\nTreni coinvolti ne
+ O VELOCE\nChiusura sbarre stimata: 09:06:59 - 09:12:29\nTreni coinvolti ne
  lla chiusura:\n  - TRENO 9400 (ROMA TERMINI -> VENEZIA S.LUCIA) [Transito]
  \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
  a/euristica: Transito stimato senza fermata (38% tratta PADOVA -> VENEZIA 
@@ -316,42 +329,41 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9411--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T085009Z
-DTEND:20261126T085539Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:50 - 09:55 (primo: TRENO 9411) (+2
-  min)
-DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:50:09 - 09:55:39\nTreni 
- coinvolti nella chiusura:\n  - TRENO 9411 (VENEZIA S.LUCIA -> ROMA TERMINI
- ) (+2m) [Transito]\n  - TRENO 9411 (VENEZIA S.LUCIA -> ROMA TERMINI) (+2m)
-  [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNo
- ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
- a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T084955Z
+DTEND:20261126T085525Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9411 (VENEZIA S.LUCIA -> ROMA TERMINI) ore 
+ 09:54 (+2 min)
+DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 09:49:55 - 09:55:25\nTreni coinvolti ne
+ lla chiusura:\n  - TRENO 9411 (VENEZIA S.LUCIA -> ROMA TERMINI) (+2m) [Tra
+ nsito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Transito stimato senza fermata (62% tratta VENEZIA MEST
+ RE -> PADOVA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9404--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T090656Z
-DTEND:20261126T092740Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T090659Z
+DTEND:20261126T092743Z
 SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:06 - 10:27 (primo: TRENO 9404)
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 4 TRENI\nChiusura sbarre stimata: 10:06:56 - 10:27:40\nTreni 
+ A CONTINUA - 4 TRENI\nChiusura sbarre stimata: 10:06:59 - 10:27:43\nTreni 
  coinvolti nella chiusura:\n  - TRENO 9404 (ROMA TERMINI -> VENEZIA S.LUCIA
  ) [Transito]\n  - REG 17257 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Trans
  ito]\n  - REG 17257 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - REG 3485 
  (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo rileva
  to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
- ntinua per 4 treni: intervallo utile tra i passaggi (10s) inferiore alla s
+ ntinua per 4 treni: intervallo utile tra i passaggi (13s) inferiore alla s
  oglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
 STATUS:CONFIRMED
@@ -363,67 +375,63 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9724--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T100346Z
-DTEND:20261126T102558Z
-SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 11:03 - 11:25 (primo: TRENO 9724) (+1
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T100336Z
+DTEND:20261126T102600Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 11:03 - 11:26 (primo: TRENO 9724) (+1
   min)
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 7 TRENI\nChiusura sbarre stimata: 11:03:46 - 11:25:58\nTreni 
+ A CONTINUA - 5 TRENI\nChiusura sbarre stimata: 11:03:36 - 11:26:00\nTreni 
  coinvolti nella chiusura:\n  - TRENO 9724 (VENEZIA S.LUCIA -> MILANO CENTR
  ALE) [Transito]\n  - REG 3971 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) [Trans
- ito]\n  - REG 3971 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) [Transito]\n  - R
- EG 17299 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\n  - REG 17299
-  (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - TRENO 9715 (TORINO PORTA NUO
- VA -> VENEZIA S.LUCIA) (+1m) [Transito]\n  - TRENO 9715 (TORINO PORTA NUOV
- A -> VENEZIA S.LUCIA) (+1m) [Transito]\nRitardo massimo rilevato: 1 min\nA
- ffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 7
-  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
- di sgombero stradale (120s)
+ ito]\n  - REG 17299 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\n  
+ - REG 17299 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - TRENO 9715 (TORIN
+ O PORTA NUOVA -> VENEZIA S.LUCIA) (+1m) [Transito]\nRitardo massimo rileva
+ to: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
+ ntinua per 5 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17190--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T103629Z
 DTEND:20261126T104200Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:36 - 11:42 (primo: REG 17190) (+5 
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:36 - 11:42 (primo: REG 17190) (+5 
  min)
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 4 TRENI\nChiusura sbarre stimata: 11:36:29 - 11:42:00\nTreni 
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:36:29 - 11:42:00\nTreni 
  coinvolti nella chiusura:\n  - REG 17190 (VENEZIA S.LUCIA -> VERONA PORTA 
  NUOVA) (+5m) [Transito]\n  - REG 17190 (VENEZIA S.LUCIA -> VERONA PORTA NU
- OVA) (+5m) [Transito]\n  - REG 17190 (VENEZIA S.LUCIA -> VERONA PORTA NUOV
- A) (+5m)\n  - REG 17190 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+5m)\nRit
- ardo massimo rilevato: 5 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s
- ) inferiore alla soglia minima di sgombero stradale (120s)
+ OVA) (+5m)\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra
+  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9717--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T104547Z
-DTEND:20261126T105117Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T104550Z
+DTEND:20261126T105120Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9717 (MILANO CENTRALE -> VENEZIA S.LUCIA) o
  re 11:50
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: TRANSIT
- O VELOCE\nChiusura sbarre stimata: 11:45:47 - 11:51:17\nTreni coinvolti ne
+ O VELOCE\nChiusura sbarre stimata: 11:45:50 - 11:51:20\nTreni coinvolti ne
  lla chiusura:\n  - TRENO 9717 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Transi
  to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
  tiva/euristica: Transito stimato senza fermata (38% tratta PADOVA -> VENEZ
@@ -438,36 +446,35 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-84--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T105439Z
-DTEND:20261126T105909Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:54 - 11:59 (primo: EC 84) (+20 min
- )
-DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:54:39 - 11:59:09\nTreni 
- coinvolti nella chiusura:\n  - EC 84 (VENEZIA S.LUCIA -> BRENNERO) (+20m) 
- [Transito]\n  - EC 84 (VENEZIA S.LUCIA -> BRENNERO) (+20m) [Transito]\nRit
- ardo massimo rilevato: 20 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
- s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T105428Z
+DTEND:20261126T105858Z
+SUMMARY:[TRANSITO VELOCE] EC 84 (VENEZIA S.LUCIA -> BRENNERO) ore 11:57 (+2
+ 0 min)
+DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 11:54:28 - 11:58:58\nTreni coinvolti ne
+ lla chiusura:\n  - EC 84 (VENEZIA S.LUCIA -> BRENNERO) (+20m) [Transito]\n
+ Ritardo massimo rilevato: 20 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Transito stimato senza fermata (62% tratta VENEZIA MESTRE -> P
+ ADOVA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:20
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:EC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9728--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T110346Z
-DTEND:20261126T111226Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T110336Z
+DTEND:20261126T111229Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:03 - 12:12 (primo: TRENO 9728)
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:03:46 - 12:12:26\nTreni 
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:03:36 - 12:12:29\nTreni 
  coinvolti nella chiusura:\n  - TRENO 9728 (VENEZIA S.LUCIA -> MILANO CENTR
  ALE) [Transito]\n  - TRENO 9490 (SALERNO -> VENEZIA S.LUCIA) [Transito]\nR
  itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
@@ -483,13 +490,13 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3513--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T112210Z
-DTEND:20261126T113231Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T112213Z
+DTEND:20261126T113220Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:22 - 12:32 (primo: REG 3513)
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:22:10 - 12:32:31\nTreni 
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:22:13 - 12:32:20\nTreni 
  coinvolti nella chiusura:\n  - REG 3513 (VERONA PORTA NUOVA -> VENEZIA S.L
  UCIA) [Transito]\n  - REG 3490 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Tr
  ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
@@ -505,17 +512,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8419--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T114301Z
-DTEND:20261126T114831Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T114250Z
+DTEND:20261126T114820Z
 SUMMARY:[TRANSITO VELOCE] TRENO 8419 (VENEZIA S.LUCIA -> REGGIO DI CALABRIA
   CENTRALE) ore 12:47
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: TRANSIT
- O VELOCE\nChiusura sbarre stimata: 12:43:01 - 12:48:31\nTreni coinvolti ne
+ O VELOCE\nChiusura sbarre stimata: 12:42:50 - 12:48:20\nTreni coinvolti ne
  lla chiusura:\n  - TRENO 8419 (VENEZIA S.LUCIA -> REGGIO DI CALABRIA CENTR
  ALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%
- \nNota normativa/euristica: Transito stimato senza fermata (63% tratta VEN
+ \nNota normativa/euristica: Transito stimato senza fermata (62% tratta VEN
  EZIA MESTRE -> PADOVA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
 STATUS:CONFIRMED
@@ -527,116 +534,107 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3994--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T115707Z
-DTEND:20261126T120237Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:57 - 13:02 (primo: REG 3994) (+5 m
- in)
-DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:57:07 - 13:02:37\nTreni 
- coinvolti nella chiusura:\n  - REG 3994 (BOLOGNA CENTRALE -> VENEZIA S.LUC
- IA) (+5m) [Transito]\n  - REG 3994 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) (
- +5m) [Transito]\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 78%
- \nNota normativa/euristica: Chiusura continua per 2 treni: intervallo util
- e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
- 20s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T115710Z
+DTEND:20261126T120240Z
+SUMMARY:[TRANSITO VELOCE] REG 3994 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) or
+ e 13:01 (+5 min)
+DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 12:57:10 - 13:02:40\nTreni coinvolti ne
+ lla chiusura:\n  - REG 3994 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) (+5m) [T
+ ransito]\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Transito stimato senza fermata (38% tratta PADOVA -> 
+ VENEZIA MESTRE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9414--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T121536Z
-DTEND:20261126T122643Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 13:15 - 13:26 (primo: TRENO 9414) (+8
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T121539Z
+DTEND:20261126T122644Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:15 - 13:26 (primo: TRENO 9414) (+8
   min)
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 4 TRENI\nChiusura sbarre stimata: 13:15:36 - 13:26:43\nTreni 
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:15:39 - 13:26:44\nTreni 
  coinvolti nella chiusura:\n  - TRENO 9414 (SALERNO -> VENEZIA S.LUCIA) (+8
- m) [Transito]\n  - TRENO 9414 (SALERNO -> VENEZIA S.LUCIA) (+8m) [Transito
- ]\n  - REG 17266 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+2m) [Transito]\
- n  - REG 17266 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+2m) [Transito]\nR
- itardo massimo rilevato: 8 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (
- 0s) inferiore alla soglia minima di sgombero stradale (120s)
+ m) [Transito]\n  - REG 17266 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+2m)
+  [Transito]\nRitardo massimo rilevato: 8 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
+ a i passaggi (4s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:8
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17266--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T123430Z
 DTEND:20261126T125300Z
-SUMMARY:[CHIUSURA CONTINUA - 9 TRENI] 13:34 - 13:53 (primo: REG 17266) (+4 
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 13:34 - 13:53 (primo: REG 17266) (+4 
  min)
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 9 TRENI\nChiusura sbarre stimata: 13:34:30 - 13:53:00\nTreni 
+ A CONTINUA - 5 TRENI\nChiusura sbarre stimata: 13:34:30 - 13:53:00\nTreni 
  coinvolti nella chiusura:\n  - REG 17266 (VENEZIA S.LUCIA -> VERONA PORTA 
- NUOVA) (+2m)\n  - REG 17266 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) (+2m)\
- n  - TRENO 9729 (UDINE -> MILANO CENTRALE) (+4m) [Transito]\n  - TRENO 972
- 9 (UDINE -> MILANO CENTRALE) (+4m) [Transito]\n  - REG 17205 (PADOVA -> VE
- NEZIA S.LUCIA) (+1m) [Transito]\n  - REG 17205 (PADOVA -> VENEZIA S.LUCIA)
-  (+1m) [Transito]\n  - TRENO 9421 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Tr
- ansito]\n  - REG 17205 (PADOVA -> VENEZIA S.LUCIA) (+1m)\n  - REG 17205 (P
- ADOVA -> VENEZIA S.LUCIA) (+1m)\nRitardo massimo rilevato: 4 min\nAffidabi
- lità stima: 78%\nNota normativa/euristica: Chiusura continua per 9 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
+ NUOVA) (+2m)\n  - TRENO 9729 (UDINE -> MILANO CENTRALE) (+4m) [Transito]\n
+   - REG 17205 (PADOVA -> VENEZIA S.LUCIA) (+1m) [Transito]\n  - TRENO 9421
+  (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Transito]\n  - REG 17205 (PADOVA ->
+  VENEZIA S.LUCIA) (+1m)\nRitardo massimo rilevato: 4 min\nAffidabilità st
+ ima: 78%\nNota normativa/euristica: Chiusura continua per 5 treni: interva
+ llo utile tra i passaggi (9s) inferiore alla soglia minima di sgombero str
+ adale (120s)
 LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 9 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
 X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9723--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T125847Z
-DTEND:20261126T130417Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:58 - 14:04 (primo: TRENO 9723) (+1
- 3 min)
-DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:58:47 - 14:04:17\nTreni 
- coinvolti nella chiusura:\n  - TRENO 9723 (MILANO CENTRALE -> VENEZIA S.LU
- CIA) (+13m) [Transito]\n  - TRENO 9723 (MILANO CENTRALE -> VENEZIA S.LUCIA
- ) (+13m) [Transito]\nRitardo massimo rilevato: 13 min\nAffidabilità stima
- : 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T125850Z
+DTEND:20261126T130420Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9723 (MILANO CENTRALE -> VENEZIA S.LUCIA) o
+ re 14:03 (+13 min)
+DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 13:58:50 - 14:04:20\nTreni coinvolti ne
+ lla chiusura:\n  - TRENO 9723 (MILANO CENTRALE -> VENEZIA S.LUCIA) (+13m) 
+ [Transito]\nRitardo massimo rilevato: 13 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Transito stimato senza fermata (38% tratta PADOVA 
+ -> VENEZIA MESTRE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:13
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9416--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T130656Z
-DTEND:20261126T131226Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T130659Z
+DTEND:20261126T131229Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9416 (ROMA TERMINI -> VENEZIA S.LUCIA) ore 
  14:11
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: TRANSIT
- O VELOCE\nChiusura sbarre stimata: 14:06:56 - 14:12:26\nTreni coinvolti ne
+ O VELOCE\nChiusura sbarre stimata: 14:06:59 - 14:12:29\nTreni coinvolti ne
  lla chiusura:\n  - TRENO 9416 (ROMA TERMINI -> VENEZIA S.LUCIA) [Transito]
  \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
  a/euristica: Transito stimato senza fermata (38% tratta PADOVA -> VENEZIA 
@@ -651,46 +649,43 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17082--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T132426Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T132425Z
 DTEND:20261126T133600Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 14:24 - 14:36 (primo: REG 17082) (+1 
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 14:24 - 14:36 (primo: REG 17082) (+1 
  min)
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 6 TRENI\nChiusura sbarre stimata: 14:24:26 - 14:36:00\nTreni 
+ A CONTINUA - 3 TRENI\nChiusura sbarre stimata: 14:24:25 - 14:36:00\nTreni 
  coinvolti nella chiusura:\n  - REG 17082 (ROVIGO -> VENEZIA S.LUCIA) (+1m)
-  [Transito]\n  - REG 17082 (ROVIGO -> VENEZIA S.LUCIA) (+1m) [Transito]\n 
-  - REG 3496 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Transito]\n  - REG 34
- 96 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Transito]\n  - REG 17082 (ROVI
- GO -> VENEZIA S.LUCIA) (+1m)\n  - REG 17082 (ROVIGO -> VENEZIA S.LUCIA) (+
- 1m)\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 6 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+  [Transito]\n  - REG 3496 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Transit
+ o]\n  - REG 17082 (ROVIGO -> VENEZIA S.LUCIA) (+1m)\nRitardo massimo rilev
+ ato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
+ ontinua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3978--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T140047Z
-DTEND:20261126T140617Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:00 - 15:06 (primo: REG 3978) (+8 m
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T140050Z
+DTEND:20261126T141343Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:00 - 15:13 (primo: REG 3978) (+8 m
  in)
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:00:47 - 15:06:17\nTreni 
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:00:50 - 15:13:43\nTreni 
  coinvolti nella chiusura:\n  - REG 3978 (BOLOGNA CENTRALE -> VENEZIA S.LUC
- IA) (+8m) [Transito]\n  - REG 3978 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) (
- +8m) [Transito]\nRitardo massimo rilevato: 8 min\nAffidabilità stima: 78%
- \nNota normativa/euristica: Chiusura continua per 2 treni: intervallo util
- e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
- 20s)
+ IA) (+8m) [Transito]\n  - TRENO 8815 (VENEZIA S.LUCIA -> LECCE) [Transito]
+ \nRitardo massimo rilevato: 8 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
+ i (113s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -700,65 +695,62 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8815--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T140824Z
-DTEND:20261126T141354Z
-SUMMARY:[TRANSITO VELOCE] TRENO 8815 (VENEZIA S.LUCIA -> LECCE) ore 15:12
-DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: TRANSIT
- O VELOCE\nChiusura sbarre stimata: 15:08:24 - 15:13:54\nTreni coinvolti ne
- lla chiusura:\n  - TRENO 8815 (VENEZIA S.LUCIA -> LECCE) [Transito]\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
- tica: Transito stimato senza fermata (63% tratta VENEZIA MESTRE -> PADOVA\
- ; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
 UID:train-3499--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T142210Z
-DTEND:20261126T145817Z
-SUMMARY:[CHIUSURA CONTINUA - 11 TRENI] 15:22 - 15:58 (primo: REG 3499)
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T142213Z
+DTEND:20261126T143220Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:22 - 15:32 (primo: REG 3499)
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 11 TRENI\nChiusura sbarre stimata: 15:22:10 - 15:58:17\nTreni
-  coinvolti nella chiusura:\n  - REG 3499 (VERONA PORTA NUOVA -> VENEZIA S.
- LUCIA) [Transito]\n  - REG 3498 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [T
- ransito]\n  - REG 3498 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Transito]\
- n  - EC 36 (VENEZIA S.LUCIA -> CHIASSO) [Transito]\n  - REG 17213 (VICENZA
-  -> VENEZIA S.LUCIA) [Transito]\n  - REG 17213 (VICENZA -> VENEZIA S.LUCIA
- ) [Transito]\n  - TRENO 9427 (VENEZIA S.LUCIA -> SALERNO) [Transito]\n  - 
- REG 17213 (VICENZA -> VENEZIA S.LUCIA)\n  - REG 17213 (VICENZA -> VENEZIA 
- S.LUCIA)\n  - EC 80 (VENEZIA S.LUCIA -> BRENNERO) [Transito]\n  - REG 3980
-  (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
- tinua per 11 treni: intervallo utile tra i passaggi (0s) inferiore alla so
- glia minima di sgombero stradale (120s)
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:22:13 - 15:32:20\nTreni 
+ coinvolti nella chiusura:\n  - REG 3499 (VERONA PORTA NUOVA -> VENEZIA S.L
+ UCIA) [Transito]\n  - REG 3498 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Tr
+ ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
+ passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 11 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-36--20261125-S02586@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T143421Z
+DTEND:20261126T145820Z
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 15:34 - 15:58 (primo: EC 36)
+DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 6 TRENI\nChiusura sbarre stimata: 15:34:21 - 15:58:20\nTreni 
+ coinvolti nella chiusura:\n  - EC 36 (VENEZIA S.LUCIA -> CHIASSO) [Transit
+ o]\n  - REG 17213 (VICENZA -> VENEZIA S.LUCIA) [Transito]\n  - TRENO 9427 
+ (VENEZIA S.LUCIA -> SALERNO) [Transito]\n  - REG 17213 (VICENZA -> VENEZIA
+  S.LUCIA)\n  - EC 80 (VENEZIA S.LUCIA -> BRENNERO) [Transito]\n  - REG 398
+ 0 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
+ ntinua per 6 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:EC
+END:VEVENT
+BEGIN:VEVENT
 UID:train-588--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T150118Z
-DTEND:20261126T150548Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T150121Z
+DTEND:20261126T150551Z
 SUMMARY:[TRANSITO VELOCE] IC 588 (ROMA TERMINI -> TRIESTE CENTRALE) ore 16:
  04
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: TRANSIT
- O VELOCE\nChiusura sbarre stimata: 16:01:18 - 16:05:48\nTreni coinvolti ne
+ O VELOCE\nChiusura sbarre stimata: 16:01:21 - 16:05:51\nTreni coinvolti ne
  lla chiusura:\n  - IC 588 (ROMA TERMINI -> TRIESTE CENTRALE) [Transito]\nR
  itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
  uristica: Transito stimato senza fermata (38% tratta PADOVA -> VENEZIA MES
@@ -773,158 +765,15 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9733--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T151547Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T151550Z
 DTEND:20261126T152343Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:15 - 16:23 (primo: TRENO 9733)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:15 - 16:23 (primo: TRENO 9733)
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:15:47 - 16:23:43\nTreni 
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:15:50 - 16:23:43\nTreni 
  coinvolti nella chiusura:\n  - TRENO 9733 (MILANO CENTRALE -> VENEZIA S.LU
- CIA) [Transito]\n  - TRENO 9733 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Tran
- sito]\n  - REG 17208 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Transito]\nR
- itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (
- 0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-16026--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T152701Z
-DTEND:20261126T153700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:27 - 16:37 (primo: REG 16026)
-DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:27:01 - 16:37:00\nTreni 
- coinvolti nella chiusura:\n  - REG 16026 (VENEZIA S.LUCIA -> BRESCIA) [Tra
- nsito]\n  - REG 17208 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9735--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T154547Z
-DTEND:20261126T161127Z
-SUMMARY:[CHIUSURA CONTINUA - 9 TRENI] 16:45 - 17:11 (primo: TRENO 9735)
-DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 9 TRENI\nChiusura sbarre stimata: 16:45:47 - 17:11:27\nTreni 
- coinvolti nella chiusura:\n  - TRENO 9735 (MILANO CENTRALE -> VENEZIA S.LU
- CIA) [Transito]\n  - REG 17219 (PADOVA -> VENEZIA MESTRE) [Transito]\n  - 
- REG 17219 (PADOVA -> VENEZIA MESTRE) [Transito]\n  - REG 17219 (PADOVA -> 
- VENEZIA MESTRE)\n  - REG 17219 (PADOVA -> VENEZIA MESTRE)\n  - TRENO 9748 
- (VENEZIA S.LUCIA -> MILANO CENTRALE) [Transito]\n  - TRENO 9748 (VENEZIA S
- .LUCIA -> MILANO CENTRALE) [Transito]\n  - REG 17103 (VENEZIA S.LUCIA -> F
- ERRARA) [Transito]\n  - REG 17103 (VENEZIA S.LUCIA -> FERRARA) [Transito]\
- nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Chiusura continua per 9 treni: intervallo utile tra i passaggi
-  (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 9 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17103--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T162030Z
-DTEND:20261126T163231Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:20 - 17:32 (primo: REG 17103)
-DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 4 TRENI\nChiusura sbarre stimata: 17:20:30 - 17:32:31\nTreni 
- coinvolti nella chiusura:\n  - REG 17103 (VENEZIA S.LUCIA -> FERRARA)\n  -
-  REG 17103 (VENEZIA S.LUCIA -> FERRARA)\n  - REG 3505 (VERONA PORTA NUOVA 
- -> VENEZIA S.LUCIA) [Transito]\n  - REG 3504 (VENEZIA S.LUCIA -> VERONA PO
- RTA NUOVA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stim
- a: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: intervall
- o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
- ale (120s)
-LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9433--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T164301Z
-DTEND:20261126T165817Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:43 - 17:58 (primo: TRENO 9433)
-DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 4 TRENI\nChiusura sbarre stimata: 17:43:01 - 17:58:17\nTreni 
- coinvolti nella chiusura:\n  - TRENO 9433 (VENEZIA S.LUCIA -> ROMA TERMINI
- ) [Transito]\n  - TRENO 9741 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Transit
- o]\n  - TRENO 9741 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Transito]\n  - RE
- G 3984 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
- ra continua per 4 treni: intervallo utile tra i passaggi (90s) inferiore a
- lla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9747--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T174547Z
-DTEND:20261126T175817Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 18:45 - 18:58 (primo: TRENO 9747)
-DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 3 TRENI\nChiusura sbarre stimata: 18:45:47 - 18:58:17\nTreni 
- coinvolti nella chiusura:\n  - TRENO 9747 (MILANO CENTRALE -> VENEZIA S.LU
- CIA) [Transito]\n  - REG 3986 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [Trans
- ito]\n  - REG 3986 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [Transito]\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
- tica: Chiusura continua per 3 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9758--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T180047Z
-DTEND:20261126T180617Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:00 - 19:06 (primo: TRENO 9758)
-DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:00:47 - 19:06:17\nTreni 
- coinvolti nella chiusura:\n  - TRENO 9758 (TRIESTE CENTRALE -> MILANO CENT
- RALE) [Transito]\n  - TRENO 9758 (TRIESTE CENTRALE -> MILANO CENTRALE) [Tr
+ CIA) [Transito]\n  - REG 17208 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Tr
  ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
  ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
@@ -937,15 +786,151 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9749--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
+UID:train-16026--20261125-S02586@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T152650Z
+DTEND:20261126T153700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:26 - 16:37 (primo: REG 16026)
+DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:26:50 - 16:37:00\nTreni 
+ coinvolti nella chiusura:\n  - REG 16026 (VENEZIA S.LUCIA -> BRESCIA) [Tra
+ nsito]\n  - REG 17208 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA)\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Chiusura continua per 2 treni: intervallo utile tra i passaggi (9s) inferi
+ ore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9735--20261125-S02586@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T154550Z
+DTEND:20261126T161128Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 16:45 - 17:11 (primo: TRENO 9735)
+DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 5 TRENI\nChiusura sbarre stimata: 16:45:50 - 17:11:28\nTreni 
+ coinvolti nella chiusura:\n  - TRENO 9735 (MILANO CENTRALE -> VENEZIA S.LU
+ CIA) [Transito]\n  - REG 17219 (PADOVA -> VENEZIA MESTRE) [Transito]\n  - 
+ REG 17219 (PADOVA -> VENEZIA MESTRE)\n  - TRENO 9748 (VENEZIA S.LUCIA -> M
+ ILANO CENTRALE) [Transito]\n  - REG 17103 (VENEZIA S.LUCIA -> FERRARA) [Tr
+ ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Chiusura continua per 5 treni: intervallo utile tra i 
+ passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17103--20261125-S02586@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T162030Z
+DTEND:20261126T163220Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:20 - 17:32 (primo: REG 17103)
+DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 3 TRENI\nChiusura sbarre stimata: 17:20:30 - 17:32:20\nTreni 
+ coinvolti nella chiusura:\n  - REG 17103 (VENEZIA S.LUCIA -> FERRARA)\n  -
+  REG 3505 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\n  - REG 3504
+  (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Transito]\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura c
+ ontinua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9433--20261125-S02586@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T164250Z
+DTEND:20261126T165820Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:42 - 17:58 (primo: TRENO 9433)
+DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 3 TRENI\nChiusura sbarre stimata: 17:42:50 - 17:58:20\nTreni 
+ coinvolti nella chiusura:\n  - TRENO 9433 (VENEZIA S.LUCIA -> ROMA TERMINI
+ ) [Transito]\n  - TRENO 9741 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Transit
+ o]\n  - REG 3984 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Chiusura continua per 3 treni: intervallo utile tra i passaggi (90s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9747--20261125-S02586@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T174550Z
+DTEND:20261126T175820Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:45 - 18:58 (primo: TRENO 9747)
+DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:45:50 - 18:58:20\nTreni 
+ coinvolti nella chiusura:\n  - TRENO 9747 (MILANO CENTRALE -> VENEZIA S.LU
+ CIA) [Transito]\n  - REG 3986 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [Trans
+ ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
+ saggi (90s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9758--20261125-S02586@pl-tracker.local
+DTSTAMP:20261126T215722Z
 SEQUENCE:1
-DTSTART:20261126T181502Z
-DTEND:20261126T182032Z
+DTSTART:20261126T180032Z
+DTEND:20261126T180602Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9758 (TRIESTE CENTRALE -> MILANO CENTRALE) 
+ ore 19:04
+DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 19:00:32 - 19:06:02\nTreni coinvolti ne
+ lla chiusura:\n  - TRENO 9758 (TRIESTE CENTRALE -> MILANO CENTRALE) [Trans
+ ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Transito stimato senza fermata (62% tratta VENEZIA MESTRE
+  -> PADOVA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9749--20261125-S02586@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T181505Z
+DTEND:20261126T182035Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9749 (MILANO CENTRALE -> TRIESTE CENTRALE) 
  ore 19:19
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: TRANSIT
- O VELOCE\nChiusura sbarre stimata: 19:15:02 - 19:20:32\nTreni coinvolti ne
+ O VELOCE\nChiusura sbarre stimata: 19:15:05 - 19:20:35\nTreni coinvolti ne
  lla chiusura:\n  - TRENO 9749 (MILANO CENTRALE -> TRIESTE CENTRALE) [Trans
  ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
  ativa/euristica: Transito stimato senza fermata (38% tratta PADOVA -> VENE
@@ -960,14 +945,14 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9480--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T184147Z
-DTEND:20261126T184717Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T184150Z
+DTEND:20261126T184720Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9480 (ROMA TERMINI -> TRIESTE CENTRALE) ore
   19:46
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: TRANSIT
- O VELOCE\nChiusura sbarre stimata: 19:41:47 - 19:47:17\nTreni coinvolti ne
+ O VELOCE\nChiusura sbarre stimata: 19:41:50 - 19:47:20\nTreni coinvolti ne
  lla chiusura:\n  - TRENO 9480 (ROMA TERMINI -> TRIESTE CENTRALE) [Transito
  ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
  va/euristica: Transito stimato senza fermata (38% tratta PADOVA -> VENEZIA
@@ -982,13 +967,13 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17015--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T190557Z
-DTEND:20261126T191127Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T190558Z
+DTEND:20261126T191128Z
 SUMMARY:[TRANSITO VELOCE] REG 17015 (VENEZIA S.LUCIA -> ROVIGO) ore 20:10
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: TRANSIT
- O VELOCE\nChiusura sbarre stimata: 20:05:57 - 20:11:27\nTreni coinvolti ne
+ O VELOCE\nChiusura sbarre stimata: 20:05:58 - 20:11:28\nTreni coinvolti ne
  lla chiusura:\n  - REG 17015 (VENEZIA S.LUCIA -> ROVIGO) [Transito]\nRitar
  do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
  tica: Transito stimato senza fermata (75% tratta VENEZIA MESTRE -> MIRA MI
@@ -1003,46 +988,18 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9753--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T191547Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T191550Z
 DTEND:20261126T193500Z
-SUMMARY:[CHIUSURA CONTINUA - 10 TRENI] 20:15 - 20:35 (primo: TRENO 9753)
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 20:15 - 20:35 (primo: TRENO 9753)
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 10 TRENI\nChiusura sbarre stimata: 20:15:47 - 20:35:00\nTreni
-  coinvolti nella chiusura:\n  - TRENO 9753 (TORINO PORTA NUOVA -> VENEZIA 
- S.LUCIA) [Transito]\n  - TRENO 9753 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA
- ) [Transito]\n  - REG 17015 (VENEZIA S.LUCIA -> ROVIGO)\n  - REG 3523 (VER
- ONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\n  - REG 3523 (VERONA PORTA
-  NUOVA -> VENEZIA S.LUCIA) [Transito]\n  - REG 17090 (ROVIGO -> VENEZIA S.
- LUCIA) [Transito]\n  - REG 17090 (ROVIGO -> VENEZIA S.LUCIA) [Transito]\n 
-  - REG 3574 (VENEZIA S.LUCIA -> BRESCIA) [Transito]\n  - REG 17090 (ROVIGO
-  -> VENEZIA S.LUCIA)\n  - REG 17090 (ROVIGO -> VENEZIA S.LUCIA)\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Chiusura continua per 10 treni: intervallo utile tra i passaggi (0s) inf
- eriore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 10 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17243--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T194049Z
-DTEND:20261126T195817Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 20:40 - 20:58 (primo: REG 17243)
-DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 6 TRENI\nChiusura sbarre stimata: 20:40:49 - 20:58:17\nTreni 
- coinvolti nella chiusura:\n  - REG 17243 (VICENZA -> VENEZIA S.LUCIA) [Tra
- nsito]\n  - TRENO 9755 (MILANO CENTRALE -> UDINE) [Transito]\n  - REG 1724
- 3 (VICENZA -> VENEZIA S.LUCIA)\n  - REG 17236 (VENEZIA S.LUCIA -> VICENZA)
-  [Transito]\n  - REG 17236 (VENEZIA S.LUCIA -> VICENZA) [Transito]\n  - RE
- G 3990 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo r
+ A CONTINUA - 6 TRENI\nChiusura sbarre stimata: 20:15:50 - 20:35:00\nTreni 
+ coinvolti nella chiusura:\n  - TRENO 9753 (TORINO PORTA NUOVA -> VENEZIA S
+ .LUCIA) [Transito]\n  - REG 17015 (VENEZIA S.LUCIA -> ROVIGO)\n  - REG 352
+ 3 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\n  - REG 17090 (ROVIG
+ O -> VENEZIA S.LUCIA) [Transito]\n  - REG 3574 (VENEZIA S.LUCIA -> BRESCIA
+ ) [Transito]\n  - REG 17090 (ROVIGO -> VENEZIA S.LUCIA)\nRitardo massimo r
  ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
  ra continua per 6 treni: intervallo utile tra i passaggi (0s) inferiore al
  la soglia minima di sgombero stradale (120s)
@@ -1052,41 +1009,62 @@ TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17243--20261125-S02586@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T194049Z
+DTEND:20261126T195820Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 20:40 - 20:58 (primo: REG 17243)
+DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 5 TRENI\nChiusura sbarre stimata: 20:40:49 - 20:58:20\nTreni 
+ coinvolti nella chiusura:\n  - REG 17243 (VICENZA -> VENEZIA S.LUCIA) [Tra
+ nsito]\n  - TRENO 9755 (MILANO CENTRALE -> UDINE) [Transito]\n  - REG 1724
+ 3 (VICENZA -> VENEZIA S.LUCIA)\n  - REG 17236 (VENEZIA S.LUCIA -> VICENZA)
+  [Transito]\n  - REG 3990 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [Transito]
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Chiusura continua per 5 treni: intervallo utile tra i passagg
+ i (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17236--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T200230Z
-DTEND:20261126T202702Z
-SUMMARY:[CHIUSURA CONTINUA - 10 TRENI] 21:02 - 21:27 (primo: REG 17236)
+DTEND:20261126T202705Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 21:02 - 21:27 (primo: REG 17236)
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 10 TRENI\nChiusura sbarre stimata: 21:02:30 - 21:27:02\nTreni
-  coinvolti nella chiusura:\n  - REG 17236 (VENEZIA S.LUCIA -> VICENZA)\n  
- - REG 17236 (VENEZIA S.LUCIA -> VICENZA)\n  - TRENO 9430 (NAPOLI CENTRALE 
- -> GORIZIA CENTRALE) [Transito]\n  - REG 17245 (VERONA PORTA NUOVA -> VENE
- ZIA S.LUCIA) [Transito]\n  - TRENO 9757 (MILANO CENTRALE -> VENEZIA S.LUCI
- A) [Transito]\n  - TRENO 9757 (MILANO CENTRALE -> VENEZIA S.LUCIA) [Transi
- to]\n  - REG 17245 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - REG 17124 
- (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) [Transito]\n  - IC 592 (ROMA TERMI
- NI -> TRIESTE CENTRALE) [Transito]\n  - IC 592 (ROMA TERMINI -> TRIESTE CE
- NTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
- 78%\nNota normativa/euristica: Chiusura continua per 10 treni: intervallo 
- utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
- e (120s)
+ A CONTINUA - 7 TRENI\nChiusura sbarre stimata: 21:02:30 - 21:27:05\nTreni 
+ coinvolti nella chiusura:\n  - REG 17236 (VENEZIA S.LUCIA -> VICENZA)\n  -
+  TRENO 9430 (NAPOLI CENTRALE -> GORIZIA CENTRALE) [Transito]\n  - REG 1724
+ 5 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [Transito]\n  - TRENO 9757 (MILA
+ NO CENTRALE -> VENEZIA S.LUCIA) [Transito]\n  - REG 17245 (VERONA PORTA NU
+ OVA -> VENEZIA S.LUCIA)\n  - REG 17124 (VENEZIA S.LUCIA -> VERONA PORTA NU
+ OVA) [Transito]\n  - IC 592 (ROMA TERMINI -> TRIESTE CENTRALE) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Chiusura continua per 7 treni: intervallo utile tra i passaggi
+  (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 10 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17124--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T203230Z
 DTEND:20261126T203700Z
 SUMMARY:[FERMATA] REG 17124 (VENEZIA S.LUCIA -> VERONA PORTA NUOVA) ore 21:
@@ -1106,63 +1084,60 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-35686--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T204654Z
-DTEND:20261126T210231Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 21:46 - 22:02 (primo: ICN 35686) (+9 
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T204644Z
+DTEND:20261126T210220Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:46 - 22:02 (primo: ICN 35686) (+9 
  min)
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 4 TRENI\nChiusura sbarre stimata: 21:46:54 - 22:02:31\nTreni 
+ A CONTINUA - 3 TRENI\nChiusura sbarre stimata: 21:46:44 - 22:02:20\nTreni 
  coinvolti nella chiusura:\n  - ICN 35686 (TRIESTE CENTRALE -> ROMA TERMINI
  ) [Transito]\n  - TRENO 8828 (LECCE -> VENEZIA S.LUCIA) (+9m) [Transito]\n
-   - TRENO 8828 (LECCE -> VENEZIA S.LUCIA) (+9m) [Transito]\n  - REG 3993 (
- VENEZIA S.LUCIA -> BOLOGNA CENTRALE) [Transito]\nRitardo massimo rilevato:
-  9 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
- nua per 4 treni: intervallo utile tra i passaggi (118s) inferiore alla sog
- lia minima di sgombero stradale (120s)
+   - REG 3993 (VENEZIA S.LUCIA -> BOLOGNA CENTRALE) [Transito]\nRitardo mas
+ simo rilevato: 9 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Chiusura continua per 3 treni: intervallo utile tra i passaggi (104s) infe
+ riore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:9
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17247--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T211041Z
 DTEND:20261126T212200Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 22:10 - 22:22 (primo: REG 17247)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:10 - 22:22 (primo: REG 17247)
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: CHIUSUR
- A CONTINUA - 4 TRENI\nChiusura sbarre stimata: 22:10:41 - 22:22:00\nTreni 
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:10:41 - 22:22:00\nTreni 
  coinvolti nella chiusura:\n  - REG 17247 (VERONA PORTA NUOVA -> VENEZIA S.
- LUCIA) [Transito]\n  - REG 17247 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA) [
- Transito]\n  - REG 17247 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n  - REG 
- 17247 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
- a per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+ LUCIA) [Transito]\n  - REG 17247 (VERONA PORTA NUOVA -> VENEZIA S.LUCIA)\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi 
+ (78s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VIGONZA PIANIGA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9432--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T212825Z
-DTEND:20261126T213355Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T212827Z
+DTEND:20261126T213357Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9432 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) o
  re 22:32
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: TRANSIT
- O VELOCE\nChiusura sbarre stimata: 22:28:25 - 22:33:55\nTreni coinvolti ne
+ O VELOCE\nChiusura sbarre stimata: 22:28:27 - 22:33:57\nTreni coinvolti ne
  lla chiusura:\n  - TRENO 9432 (NAPOLI CENTRALE -> VENEZIA S.LUCIA) [Transi
  to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
  tiva/euristica: Transito stimato senza fermata (38% tratta PADOVA -> VENEZ
@@ -1177,14 +1152,14 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3992--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T215247Z
-DTEND:20261126T215817Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T215250Z
+DTEND:20261126T215820Z
 SUMMARY:[TRANSITO VELOCE] REG 3992 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) or
  e 22:57
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: TRANSIT
- O VELOCE\nChiusura sbarre stimata: 22:52:47 - 22:58:17\nTreni coinvolti ne
+ O VELOCE\nChiusura sbarre stimata: 22:52:50 - 22:58:20\nTreni coinvolti ne
  lla chiusura:\n  - REG 3992 (BOLOGNA CENTRALE -> VENEZIA S.LUCIA) [Transit
  o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
  iva/euristica: Transito stimato senza fermata (38% tratta PADOVA -> VENEZI
@@ -1199,14 +1174,14 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-774--20261125-S02586@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261127T045432Z
-DTEND:20261127T045902Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261127T045435Z
+DTEND:20261127T045905Z
 SUMMARY:[TRANSITO VELOCE] ICN 774 (ROMA TERMINI -> TRIESTE CENTRALE) ore 05
  :58
 DESCRIPTION:Stazione/PL: VIGONZA PIANIGA (S02586)\nRegime chiusura: TRANSIT
- O VELOCE\nChiusura sbarre stimata: 05:54:32 - 05:59:02\nTreni coinvolti ne
+ O VELOCE\nChiusura sbarre stimata: 05:54:35 - 05:59:05\nTreni coinvolti ne
  lla chiusura:\n  - ICN 774 (ROMA TERMINI -> TRIESTE CENTRALE) [Transito]\n
  Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
  euristica: Transito stimato senza fermata (38% tratta PADOVA -> VENEZIA ME

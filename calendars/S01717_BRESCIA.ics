@@ -9,33 +9,34 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:a9dcd6e70d7fded04551e33821b97560b7d071c09dcf208705bc2777ad8a
- c8ee
+X-CONTENT-HASH:68da6d8c2abb82d3eadc50f0ebef9153c89efcf86f1c9b8aab1909ca94af
+ 9a0a
 BEGIN:VEVENT
 UID:train-2916--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T042501Z
-DTEND:20261126T043031Z
-SUMMARY:[TRANSITO VELOCE] REG 2916 (MILANO CENTRALE -> GALLARATE) ore 05:29
-DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 05:25:01 - 05:30:31\nTreni coinvolti nella chiu
- sura:\n  - REG 2916 (MILANO CENTRALE -> GALLARATE) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Transito stimato senza fermata (48% tratta MILANO CENTRALE -> MILANO PORTA
-  GARIBALDI\; pedale annuncio fisso Vmax)
+DTEND:20261126T043227Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:25 - 05:32 (primo: REG 2916)
+DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 05:25:01 - 05:32:27\nTreni coinvolt
+ i nella chiusura:\n  - REG 2916 (MILANO CENTRALE -> GALLARATE) [Transito]\
+ n  - REG 2913 (SARONNO -> MILANO CENTRALE) [Transito]\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
+  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
+  soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BRESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2616--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T052230Z
 DTEND:20261126T052700Z
 SUMMARY:[FERMATA] REG 2616 (VERONA PORTA NUOVA -> MILANO CENTRALE) ore 06:2
@@ -55,8 +56,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9604--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T053830Z
 DTEND:20261126T054300Z
 SUMMARY:[FERMATA] TRENO 9604 (BRESCIA -> NAPOLI CENTRALE) ore 06:42
@@ -75,17 +76,17 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2613--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T055705Z
-DTEND:20261126T060235Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T055724Z
+DTEND:20261126T060254Z
 SUMMARY:[TRANSITO VELOCE] REG 2613 (MILANO CENTRALE -> VERONA PORTA NUOVA) 
  ore 07:01
 DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 06:57:05 - 07:02:35\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 06:57:24 - 07:02:54\nTreni coinvolti nella chiu
  sura:\n  - REG 2613 (MILANO CENTRALE -> VERONA PORTA NUOVA) [Transito]\nRi
  tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Transito stimato senza fermata (73% tratta TREVIGLIO -> ROMANO\; 
+ ristica: Transito stimato senza fermata (77% tratta TREVIGLIO -> ROMANO\; 
  pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BRESCIA
 STATUS:CONFIRMED
@@ -97,8 +98,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2613--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T062730Z
 DTEND:20261126T063200Z
 SUMMARY:[FERMATA] REG 2613 (MILANO CENTRALE -> VERONA PORTA NUOVA) ore 07:3
@@ -118,80 +119,55 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9700--20261125-S01717@pl-tracker.local-arr
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T063600Z
 DTEND:20261126T064430Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:36 - 07:44 (primo: TRENO 9700) (+1
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:36 - 07:44 (primo: TRENO 9700) (+1
  0 min)
 DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: CHIUSURA CONTIN
- UA - 4 TRENI\nChiusura sbarre stimata: 07:36:00 - 07:44:30\nTreni coinvolt
+ UA - 2 TRENI\nChiusura sbarre stimata: 07:36:00 - 07:44:30\nTreni coinvolt
  i nella chiusura:\n  - TRENO 9700 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+1
  0m) [Arrivo]\n  - TRENO 9700 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+10m) [
- Arrivo]\n  - TRENO 9700 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+10m) [Parte
- nza]\n  - TRENO 9700 (VENEZIA S.LUCIA -> MILANO CENTRALE) (+10m) [Partenza
- ]\nRitardo massimo rilevato: 10 min\nAffidabilità stima: 99%\nNota normat
- iva/euristica: Chiusura continua per 4 treni: intervallo utile tra i passa
- ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ Partenza]\nRitardo massimo rilevato: 10 min\nAffidabilità stima: 99%\nNot
+ a normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra
+  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BRESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:10
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2620--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T070812Z
-DTEND:20261126T071342Z
-SUMMARY:[TRANSITO VELOCE] REG 2620 (VERONA PORTA NUOVA -> MILANO CENTRALE) 
- ore 08:12 (+6 min)
-DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 08:08:12 - 08:13:42\nTreni coinvolti nella chiu
- sura:\n  - REG 2620 (VERONA PORTA NUOVA -> MILANO CENTRALE) (+6m) [Transit
- o]\nRitardo massimo rilevato: 6 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Transito stimato senza fermata (59% tratta PESCHIERA DEL GA
- RDA -> DESENZANO DEL GARDA-SIRMIONE\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione BRESCIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:6
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-2620--20261125-S01717@pl-tracker.local-arr
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T073030Z
 DTEND:20261126T073830Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:30 - 08:38 (primo: REG 2620) (+10 
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:30 - 08:38 (primo: REG 2620) (+10 
  min)
 DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: CHIUSURA CONTIN
- UA - 4 TRENI\nChiusura sbarre stimata: 08:30:30 - 08:38:30\nTreni coinvolt
+ UA - 2 TRENI\nChiusura sbarre stimata: 08:30:30 - 08:38:30\nTreni coinvolt
  i nella chiusura:\n  - REG 2620 (VERONA PORTA NUOVA -> MILANO CENTRALE) (+
  10m) [Arrivo]\n  - REG 2620 (VERONA PORTA NUOVA -> MILANO CENTRALE) (+10m)
-  [Arrivo]\n  - REG 2620 (VERONA PORTA NUOVA -> MILANO CENTRALE) (+10m) [Pa
- rtenza]\n  - REG 2620 (VERONA PORTA NUOVA -> MILANO CENTRALE) (+10m) [Part
- enza]\nRitardo massimo rilevato: 10 min\nAffidabilità stima: 99%\nNota no
- rmativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i p
- assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+  [Partenza]\nRitardo massimo rilevato: 10 min\nAffidabilità stima: 99%\nN
+ ota normativa/euristica: Chiusura continua per 2 treni: intervallo utile t
+ ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
+ )
 LOCATION:Passaggio a Livello / Stazione BRESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:10
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9708--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T080330Z
 DTEND:20261126T080800Z
 SUMMARY:[FERMATA] TRENO 9708 (VENEZIA S.LUCIA -> MILANO CENTRALE) ore 09:07
@@ -210,14 +186,14 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9712--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T081416Z
-DTEND:20261126T081946Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T081428Z
+DTEND:20261126T081958Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9712 (TRIESTE CENTRALE -> TORINO PORTA NUOV
  A) ore 09:18
 DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 09:14:16 - 09:19:46\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 09:14:28 - 09:19:58\nTreni coinvolti nella chiu
  sura:\n  - TRENO 9712 (TRIESTE CENTRALE -> TORINO PORTA NUOVA) [Transito]\
  nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
  /euristica: Transito stimato senza fermata (49% tratta VERONA PORTA NUOVA 
@@ -232,8 +208,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9713--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T083330Z
 DTEND:20261126T083800Z
 SUMMARY:[FERMATA] TRENO 9713 (UDINE -> MILANO CENTRALE) ore 09:37
@@ -252,31 +228,29 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9715--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T085200Z
 DTEND:20261126T085830Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:52 - 09:58 (primo: TRENO 9715) (+5
-  min)
-DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 09:52:00 - 09:58:30\nTreni coinvolt
- i nella chiusura:\n  - TRENO 9715 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA) 
- (+5m)\n  - TRENO 9715 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA) (+5m)\nRitar
- do massimo rilevato: 5 min\nAffidabilità stima: 99%\nNota normativa/euris
- tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] TRENO 9715 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA) ore 09
+ :57 (+5 min)
+DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 09:52:00 - 09:58:30\nTreni coinvolti nella chiusura:\n 
+  - TRENO 9715 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA) (+5m)\nRitardo massi
+ mo rilevato: 5 min\nAffidabilità stima: 99%\nNota normativa/euristica: Ri
+ levamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione BRESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9716--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T090330Z
 DTEND:20261126T090800Z
 SUMMARY:[FERMATA] TRENO 9716 (VENEZIA S.LUCIA -> TORINO PORTA NUOVA) ore 10
@@ -296,8 +270,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9717--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T091730Z
 DTEND:20261126T092200Z
 SUMMARY:[FERMATA] TRENO 9717 (MILANO CENTRALE -> VENEZIA S.LUCIA) ore 10:21
@@ -316,17 +290,17 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2601--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T095705Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T095724Z
 DTEND:20261126T100800Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:57 - 11:08 (primo: REG 2601)
 DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 10:57:05 - 11:08:00\nTreni coinvolt
+ UA - 2 TRENI\nChiusura sbarre stimata: 10:57:24 - 11:08:00\nTreni coinvolt
  i nella chiusura:\n  - REG 2601 (MILANO CENTRALE -> BRESCIA) [Transito]\n 
   - TRENO 9721 (BOLZANO -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 mi
  n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
- er 2 treni: intervallo utile tra i passaggi (54s) inferiore alla soglia mi
+ er 2 treni: intervallo utile tra i passaggi (35s) inferiore alla soglia mi
  nima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BRESCIA
 STATUS:CONFIRMED
@@ -338,8 +312,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2626--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T102230Z
 DTEND:20261126T102700Z
 SUMMARY:[FERMATA] REG 2626 (VERONA PORTA NUOVA -> MILANO CENTRALE) ore 11:2
@@ -359,8 +333,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2601--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T102930Z
 DTEND:20261126T103400Z
 SUMMARY:[FERMATA] REG 2601 (MILANO CENTRALE -> BRESCIA) ore 11:33
@@ -379,104 +353,95 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2623--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T110001Z
-DTEND:20261126T110531Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:00 - 12:05 (primo: REG 2623)
-DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 12:00:01 - 12:05:31\nTreni coinvolt
- i nella chiusura:\n  - REG 2623 (MILANO CENTRALE -> VERONA PORTA NUOVA) [T
- ransito]\n  - REG 2623 (MILANO CENTRALE -> VERONA PORTA NUOVA) [Transito]\
- nRitardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota normativ
- a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
- i (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T110013Z
+DTEND:20261126T110543Z
+SUMMARY:[TRANSITO VELOCE] REG 2623 (MILANO CENTRALE -> VERONA PORTA NUOVA) 
+ ore 12:04
+DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 12:00:13 - 12:05:43\nTreni coinvolti nella chiu
+ sura:\n  - REG 2623 (MILANO CENTRALE -> VERONA PORTA NUOVA) [Transito]\nRi
+ tardo massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Transito stimato senza fermata (77% tratta TREVIGLIO -> ROMANO\;
+  pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BRESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9723--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T112200Z
 DTEND:20261126T113800Z
-SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 12:22 - 12:38 (primo: TRENO 9723) (+5
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:22 - 12:38 (primo: TRENO 9723) (+5
   min)
 DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: CHIUSURA CONTIN
- UA - 7 TRENI\nChiusura sbarre stimata: 12:22:00 - 12:38:00\nTreni coinvolt
+ UA - 4 TRENI\nChiusura sbarre stimata: 12:22:00 - 12:38:00\nTreni coinvolt
  i nella chiusura:\n  - TRENO 9723 (MILANO CENTRALE -> VENEZIA S.LUCIA) (+5
- m)\n  - TRENO 9723 (MILANO CENTRALE -> VENEZIA S.LUCIA) (+5m)\n  - REG 262
- 3 (MILANO CENTRALE -> VERONA PORTA NUOVA) (+2m) [Arrivo]\n  - REG 2623 (MI
- LANO CENTRALE -> VERONA PORTA NUOVA) (+2m) [Arrivo]\n  - REG 2623 (MILANO 
- CENTRALE -> VERONA PORTA NUOVA) (+2m) [Partenza]\n  - REG 2623 (MILANO CEN
- TRALE -> VERONA PORTA NUOVA) (+2m) [Partenza]\n  - TRENO 9724 (VENEZIA S.L
- UCIA -> MILANO CENTRALE)\nRitardo massimo rilevato: 5 min\nAffidabilità s
- tima: 90%\nNota normativa/euristica: Chiusura continua per 7 treni: interv
- allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
- radale (120s)
+ m)\n  - REG 2623 (MILANO CENTRALE -> VERONA PORTA NUOVA) (+2m) [Arrivo]\n 
+  - REG 2623 (MILANO CENTRALE -> VERONA PORTA NUOVA) (+2m) [Partenza]\n  - 
+ TRENO 9724 (VENEZIA S.LUCIA -> MILANO CENTRALE)\nRitardo massimo rilevato:
+  5 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura conti
+ nua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BRESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10827--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T114630Z
 DTEND:20261126T115100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:46 - 12:51 (primo: REG 10827) (+1 
- min)
-DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 12:46:30 - 12:51:00\nTreni coinvolt
- i nella chiusura:\n  - REG 10827 (BRESCIA -> PARMA) (+1m)\n  - REG 10827 (
- BRESCIA -> PARMA) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabilità st
- ima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
- llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
- adale (120s)
+SUMMARY:[FERMATA] REG 10827 (BRESCIA -> PARMA) ore 12:49 (+1 min)
+DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 12:46:30 - 12:51:00\nTreni coinvolti nella chiusura:\n 
+  - REG 10827 (BRESCIA -> PARMA) (+1m)\nRitardo massimo rilevato: 1 min\nAf
+ fidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale da cir
+ cuito di binario
 LOCATION:Passaggio a Livello / Stazione BRESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2600--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T122530Z
 DTEND:20261126T123000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:25 - 13:30 (primo: REG 2600) (+1 m
- in)
-DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 13:25:30 - 13:30:00\nTreni coinvolt
- i nella chiusura:\n  - REG 2600 (BRESCIA -> MILANO CENTRALE) (+1m)\n  - RE
- G 2600 (BRESCIA -> MILANO CENTRALE) (+1m)\nRitardo massimo rilevato: 1 min
- \nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua pe
- r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
- ma di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 2600 (BRESCIA -> MILANO CENTRALE) ore 13:29 (+1 min)
+DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 13:25:30 - 13:30:00\nTreni coinvolti nella chiusura:\n 
+  - REG 2600 (BRESCIA -> MILANO CENTRALE) (+1m)\nRitardo massimo rilevato: 
+ 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento rea
+ le da circuito di binario
 LOCATION:Passaggio a Livello / Stazione BRESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9728--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T123330Z
 DTEND:20261126T123800Z
 SUMMARY:[FERMATA] TRENO 9728 (VENEZIA S.LUCIA -> MILANO CENTRALE) ore 13:37
@@ -495,8 +460,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8508--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T125630Z
 DTEND:20261126T130100Z
 SUMMARY:[FERMATA] TRENO 8508 (ROMA TERMINI -> BRESCIA) ore 14:00
@@ -514,54 +479,70 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9733--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
+UID:train-2949--20261125-S01717@pl-tracker.local
+DTSTAMP:20261126T215722Z
 SEQUENCE:0
-DTSTART:20261126T134730Z
-DTEND:20261126T135200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:47 - 14:52 (primo: TRENO 9733)
-DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 14:47:30 - 14:52:00\nTreni coinvolt
- i nella chiusura:\n  - TRENO 9733 (MILANO CENTRALE -> VENEZIA S.LUCIA)\n  
- - TRENO 9733 (MILANO CENTRALE -> VENEZIA S.LUCIA)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
- tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
- lia minima di sgombero stradale (120s)
+DTSTART:20261126T132557Z
+DTEND:20261126T133127Z
+SUMMARY:[TRANSITO VELOCE] REG 2949 (GALLARATE -> MILANO CENTRALE) ore 14:30
+DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 14:25:57 - 14:31:27\nTreni coinvolti nella chiu
+ sura:\n  - REG 2949 (GALLARATE -> MILANO CENTRALE) [Transito]\nRitardo mas
+ simo rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Transito stimato senza fermata (52% tratta MILANO PORTA GARIBALDI -> MILA
+ NO CENTRALE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BRESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9733--20261125-S01717@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T134730Z
+DTEND:20261126T135200Z
+SUMMARY:[FERMATA] TRENO 9733 (MILANO CENTRALE -> VENEZIA S.LUCIA) ore 14:51
+DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 14:47:30 - 14:52:00\nTreni coinvolti nella chiusura:\n 
+  - TRENO 9733 (MILANO CENTRALE -> VENEZIA S.LUCIA)\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
+ da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione BRESCIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9729--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T140730Z
 DTEND:20261126T141200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:07 - 15:12 (primo: TRENO 9729) (+4
-  min)
-DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 15:07:30 - 15:12:00\nTreni coinvolt
- i nella chiusura:\n  - TRENO 9729 (UDINE -> MILANO CENTRALE) (+4m)\n  - TR
- ENO 9729 (UDINE -> MILANO CENTRALE) (+4m)\nRitardo massimo rilevato: 4 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua pe
- r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
- ma di sgombero stradale (120s)
+SUMMARY:[FERMATA] TRENO 9729 (UDINE -> MILANO CENTRALE) ore 15:11 (+4 min)
+DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 15:07:30 - 15:12:00\nTreni coinvolti nella chiusura:\n 
+  - TRENO 9729 (UDINE -> MILANO CENTRALE) (+4m)\nRitardo massimo rilevato: 
+ 4 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione con 
+ ritardo propagato (+4 min)
 LOCATION:Passaggio a Livello / Stazione BRESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9735--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T141730Z
 DTEND:20261126T142200Z
 SUMMARY:[FERMATA] TRENO 9735 (MILANO CENTRALE -> VENEZIA S.LUCIA) ore 15:21
@@ -579,14 +560,35 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
+UID:train-2953--20261125-S01717@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T142657Z
+DTEND:20261126T143227Z
+SUMMARY:[TRANSITO VELOCE] REG 2953 (GALLARATE -> MILANO CENTRALE) ore 15:31
+DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 15:26:57 - 15:32:27\nTreni coinvolti nella chiu
+ sura:\n  - REG 2953 (GALLARATE -> MILANO CENTRALE) [Transito]\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Transito stimato senza fermata (52% tratta MILANO PORTA GARIBALDI -> MILAN
+ O CENTRALE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione BRESCIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-2958--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T145501Z
-DTEND:20261126T150235Z
+DTEND:20261126T150254Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:55 - 16:02 (primo: REG 2958)
 DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 15:55:01 - 16:02:35\nTreni coinvolt
+ UA - 2 TRENI\nChiusura sbarre stimata: 15:55:01 - 16:02:54\nTreni coinvolt
  i nella chiusura:\n  - REG 2958 (MILANO CENTRALE -> GALLARATE) [Transito]\
  n  - REG 2631 (MILANO CENTRALE -> VERONA PORTA NUOVA) [Transito]\nRitardo 
  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
@@ -602,54 +604,54 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9741--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T151730Z
-DTEND:20261126T153200Z
+DTEND:20261126T153227Z
 SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:17 - 16:32 (primo: TRENO 9741)
 DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: CHIUSURA CONTIN
- UA - 4 TRENI\nChiusura sbarre stimata: 16:17:30 - 16:32:00\nTreni coinvolt
+ UA - 4 TRENI\nChiusura sbarre stimata: 16:17:30 - 16:32:27\nTreni coinvolt
  i nella chiusura:\n  - TRENO 9741 (MILANO CENTRALE -> VENEZIA S.LUCIA)\n  
- - TRENO 9741 (MILANO CENTRALE -> VENEZIA S.LUCIA)\n  - REG 2636 (VERONA PO
- RTA NUOVA -> MILANO CENTRALE)\n  - REG 2631 (MILANO CENTRALE -> VERONA POR
- TA NUOVA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota
-  normativa/euristica: Chiusura continua per 4 treni: intervallo utile tra 
- i passaggi (30s) inferiore alla soglia minima di sgombero stradale (120s)
+ - REG 2636 (VERONA PORTA NUOVA -> MILANO CENTRALE)\n  - REG 2631 (MILANO C
+ ENTRALE -> VERONA PORTA NUOVA)\n  - REG 2957 (GALLARATE -> MILANO CENTRALE
+ ) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nN
+ ota normativa/euristica: Chiusura continua per 4 treni: intervallo utile t
+ ra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s
+ )
 LOCATION:Passaggio a Livello / Stazione BRESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2633--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T155705Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T155724Z
 DTEND:20261126T160800Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:57 - 17:08 (primo: REG 2633)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:57 - 17:08 (primo: REG 2633)
 DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: CHIUSURA CONTIN
- UA - 3 TRENI\nChiusura sbarre stimata: 16:57:05 - 17:08:00\nTreni coinvolt
+ UA - 2 TRENI\nChiusura sbarre stimata: 16:57:24 - 17:08:00\nTreni coinvolt
  i nella chiusura:\n  - REG 2633 (MILANO CENTRALE -> VERONA PORTA NUOVA) [T
- ransito]\n  - REG 2633 (MILANO CENTRALE -> VERONA PORTA NUOVA) [Transito]\
- n  - EC 36 (VENEZIA S.LUCIA -> CHIASSO)\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 
- 3 treni: intervallo utile tra i passaggi (39s) inferiore alla soglia minim
- a di sgombero stradale (120s)
+ ransito]\n  - EC 36 (VENEZIA S.LUCIA -> CHIASSO)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (20s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BRESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9747--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T161730Z
 DTEND:20261126T162200Z
 SUMMARY:[FERMATA] TRENO 9747 (MILANO CENTRALE -> VENEZIA S.LUCIA) ore 17:21
@@ -668,30 +670,29 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2633--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T162730Z
 DTEND:20261126T163200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:27 - 17:32 (primo: REG 2633)
-DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 17:27:30 - 17:32:00\nTreni coinvolt
- i nella chiusura:\n  - REG 2633 (MILANO CENTRALE -> VERONA PORTA NUOVA)\n 
+SUMMARY:[FERMATA] REG 2633 (MILANO CENTRALE -> VERONA PORTA NUOVA) ore 17:3
+ 1
+DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 17:27:30 - 17:32:00\nTreni coinvolti nella chiusura:\n 
   - REG 2633 (MILANO CENTRALE -> VERONA PORTA NUOVA)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+ ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
+  da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione BRESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9749--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T164730Z
 DTEND:20261126T165200Z
 SUMMARY:[FERMATA] TRENO 9749 (MILANO CENTRALE -> TRIESTE CENTRALE) ore 17:5
@@ -711,62 +712,38 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-10834--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T170330Z
 DTEND:20261126T170800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:03 - 18:08 (primo: REG 10834)
-DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 18:03:30 - 18:08:00\nTreni coinvolt
- i nella chiusura:\n  - REG 10834 (PARMA -> BRESCIA)\n  - REG 10834 (PARMA 
- -> BRESCIA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNo
- ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
- a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 10834 (PARMA -> BRESCIA) ore 18:07
+DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 18:03:30 - 18:08:00\nTreni coinvolti nella chiusura:\n 
+  - REG 10834 (PARMA -> BRESCIA)\nRitardo massimo rilevato: 0 min\nAffidabi
+ lità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria r
+ egolare
 LOCATION:Passaggio a Livello / Stazione BRESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9748--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T173330Z
 DTEND:20261126T174400Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 18:33 - 18:44 (primo: TRENO 9748)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:33 - 18:44 (primo: TRENO 9748)
 DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: CHIUSURA CONTIN
- UA - 3 TRENI\nChiusura sbarre stimata: 18:33:30 - 18:44:00\nTreni coinvolt
+ UA - 2 TRENI\nChiusura sbarre stimata: 18:33:30 - 18:44:00\nTreni coinvolt
  i nella chiusura:\n  - TRENO 9748 (VENEZIA S.LUCIA -> MILANO CENTRALE)\n  
- - TRENO 9748 (VENEZIA S.LUCIA -> MILANO CENTRALE)\n  - REG 16026 (VENEZIA 
- S.LUCIA -> BRESCIA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
-  90%\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo 
- utile tra i passaggi (90s) inferiore alla soglia minima di sgombero strada
- le (120s)
-LOCATION:Passaggio a Livello / Stazione BRESCIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9753--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T174730Z
-DTEND:20261126T175200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:47 - 18:52 (primo: TRENO 9753)
-DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 18:47:30 - 18:52:00\nTreni coinvolt
- i nella chiusura:\n  - TRENO 9753 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA)\
- n  - TRENO 9753 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+ - REG 16026 (VENEZIA S.LUCIA -> BRESCIA)\nRitardo massimo rilevato: 0 min\
+ nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per
+  2 treni: intervallo utile tra i passaggi (90s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BRESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -776,9 +753,30 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
+UID:train-9753--20261125-S01717@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T174730Z
+DTEND:20261126T175200Z
+SUMMARY:[FERMATA] TRENO 9753 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA) ore 18
+ :51
+DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 18:47:30 - 18:52:00\nTreni coinvolti nella chiusura:\n 
+  - TRENO 9753 (TORINO PORTA NUOVA -> VENEZIA S.LUCIA)\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
+ ne da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione BRESCIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
 UID:train-9755--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T181730Z
 DTEND:20261126T182200Z
 SUMMARY:[FERMATA] TRENO 9755 (MILANO CENTRALE -> UDINE) ore 19:21
@@ -797,80 +795,99 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9757--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T184730Z
 DTEND:20261126T185200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:47 - 19:52 (primo: TRENO 9757)
-DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 19:47:30 - 19:52:00\nTreni coinvolt
- i nella chiusura:\n  - TRENO 9757 (MILANO CENTRALE -> VENEZIA S.LUCIA)\n  
- - TRENO 9757 (MILANO CENTRALE -> VENEZIA S.LUCIA)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
- tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
- lia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] TRENO 9757 (MILANO CENTRALE -> VENEZIA S.LUCIA) ore 19:51
+DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 19:47:30 - 19:52:00\nTreni coinvolti nella chiusura:\n 
+  - TRENO 9757 (MILANO CENTRALE -> VENEZIA S.LUCIA)\nRitardo massimo rileva
+ to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione 
+ da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione BRESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2976--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T192501Z
-DTEND:20261126T193031Z
-SUMMARY:[TRANSITO VELOCE] REG 2976 (MILANO CENTRALE -> GALLARATE) ore 20:29
-DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 20:25:01 - 20:30:31\nTreni coinvolti nella chiu
- sura:\n  - REG 2976 (MILANO CENTRALE -> GALLARATE) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Transito stimato senza fermata (48% tratta MILANO CENTRALE -> MILANO PORTA
-  GARIBALDI\; pedale annuncio fisso Vmax)
+UID:train-9758--20261125-S01717@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T193330Z
+DTEND:20261126T193800Z
+SUMMARY:[FERMATA] TRENO 9758 (TRIESTE CENTRALE -> MILANO CENTRALE) ore 20:3
+ 7
+DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 20:33:30 - 20:38:00\nTreni coinvolti nella chiusura:\n 
+  - TRENO 9758 (TRIESTE CENTRALE -> MILANO CENTRALE)\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
+  da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione BRESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2978--20261125-S01717@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T195501Z
+DTEND:20261126T200254Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:55 - 21:02 (primo: REG 2978)
+DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 20:55:01 - 21:02:54\nTreni coinvolt
+ i nella chiusura:\n  - REG 2978 (MILANO CENTRALE -> GALLARATE) [Transito]\
+ n  - REG 2641 (MILANO CENTRALE -> VERONA PORTA NUOVA) [Transito]\nRitardo 
+ massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BRESCIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9758--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T193330Z
-DTEND:20261126T193800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:33 - 20:38 (primo: TRENO 9758)
-DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 20:33:30 - 20:38:00\nTreni coinvolt
- i nella chiusura:\n  - TRENO 9758 (TRIESTE CENTRALE -> MILANO CENTRALE)\n 
-  - TRENO 9758 (TRIESTE CENTRALE -> MILANO CENTRALE)\nRitardo massimo rilev
- ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura c
- ontinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla s
- oglia minima di sgombero stradale (120s)
+UID:train-2641--20261125-S01717@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T202730Z
+DTEND:20261126T203200Z
+SUMMARY:[FERMATA] REG 2641 (MILANO CENTRALE -> VERONA PORTA NUOVA) ore 21:3
+ 1
+DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 21:27:30 - 21:32:00\nTreni coinvolti nella chiusura:\n 
+  - REG 2641 (MILANO CENTRALE -> VERONA PORTA NUOVA)\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
+  da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione BRESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2641--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T195727Z
-DTEND:20261126T200257Z
-SUMMARY:[TRANSITO VELOCE] REG 2641 (MILANO CENTRALE -> VERONA PORTA NUOVA) 
- ore 21:01
+UID:train-2643--20261125-S01717@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T205724Z
+DTEND:20261126T210254Z
+SUMMARY:[TRANSITO VELOCE] REG 2643 (MILANO CENTRALE -> VERONA PORTA NUOVA) 
+ ore 22:01
 DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 20:57:27 - 21:02:57\nTreni coinvolti nella chiu
- sura:\n  - REG 2641 (MILANO CENTRALE -> VERONA PORTA NUOVA) [Transito]\nRi
+ \nChiusura sbarre stimata: 21:57:24 - 22:02:54\nTreni coinvolti nella chiu
+ sura:\n  - REG 2643 (MILANO CENTRALE -> VERONA PORTA NUOVA) [Transito]\nRi
  tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
  ristica: Transito stimato senza fermata (77% tratta TREVIGLIO -> ROMANO\; 
  pedale annuncio fisso Vmax)
@@ -883,41 +900,18 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2641--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T202730Z
-DTEND:20261126T203227Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:27 - 21:32 (primo: REG 2641)
-DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 21:27:30 - 21:32:27\nTreni coinvolt
- i nella chiusura:\n  - REG 2641 (MILANO CENTRALE -> VERONA PORTA NUOVA)\n 
-  - REG 2977 (GALLARATE -> MILANO CENTRALE) [Transito]\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
-  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione BRESCIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2643--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T205705Z
-DTEND:20261126T210235Z
-SUMMARY:[TRANSITO VELOCE] REG 2643 (MILANO CENTRALE -> VERONA PORTA NUOVA) 
- ore 22:01
+UID:train-3574--20261125-S01717@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T210904Z
+DTEND:20261126T211434Z
+SUMMARY:[TRANSITO VELOCE] REG 3574 (VENEZIA S.LUCIA -> BRESCIA) ore 22:13
 DESCRIPTION:Stazione/PL: BRESCIA (S01717)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 21:57:05 - 22:02:35\nTreni coinvolti nella chiu
- sura:\n  - REG 2643 (MILANO CENTRALE -> VERONA PORTA NUOVA) [Transito]\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Transito stimato senza fermata (73% tratta TREVIGLIO -> ROMANO\; 
- pedale annuncio fisso Vmax)
+ \nChiusura sbarre stimata: 22:09:04 - 22:14:34\nTreni coinvolti nella chiu
+ sura:\n  - REG 3574 (VENEZIA S.LUCIA -> BRESCIA) [Transito]\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
+ ansito stimato senza fermata (59% tratta PESCHIERA DEL GARDA -> DESENZANO 
+ DEL GARDA-SIRMIONE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BRESCIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -928,8 +922,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9660--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T211930Z
 DTEND:20261126T212400Z
 SUMMARY:[FERMATA] TRENO 9660 (NAPOLI CENTRALE -> BRESCIA) ore 22:23
@@ -948,8 +942,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2643--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T212730Z
 DTEND:20261126T213200Z
 SUMMARY:[FERMATA] REG 2643 (MILANO CENTRALE -> VERONA PORTA NUOVA) ore 22:3
@@ -969,8 +963,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3574--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T213730Z
 DTEND:20261126T214200Z
 SUMMARY:[FERMATA] REG 3574 (VENEZIA S.LUCIA -> BRESCIA) ore 22:41
@@ -989,8 +983,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8528--20261125-S01717@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T215630Z
 DTEND:20261126T220100Z
 SUMMARY:[FERMATA] TRENO 8528 (ROMA TERMINI -> BRESCIA) ore 23:00

@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:55e9dc3681a9b226dda23691011e9ae6b31e621d4d93b448bb3d9b5216d1
- 8341
+X-CONTENT-HASH:f2419118a6010a5f950f28fb5550ea37e64f117e5e704a5ffa19b4535c3c
+ 8955
 BEGIN:VEVENT
 UID:train-3016--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T051130Z
 DTEND:20261126T051600Z
 SUMMARY:[FERMATA] REG 3016 (SESTRI LEVANTE -> MILANO CENTRALE) ore 06:15
@@ -33,37 +33,57 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12019--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T053430Z
 DTEND:20261126T053900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:34 - 06:39 (primo: REG 12019) (+2 
- min)
-DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:34:30 - 06:39:00\nTreni 
- coinvolti nella chiusura:\n  - REG 12019 (ARQUATA SCRIVIA -> GENOVA BRIGNO
- LE) (+2m)\n  - REG 12019 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) (+2m)\nRitar
- do massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euris
- tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 12019 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) ore 06:37 
+ (+2 min)
+DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: FERMATA
+ \nChiusura sbarre stimata: 06:34:30 - 06:39:00\nTreni coinvolti nella chiu
+ sura:\n  - REG 12019 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) (+2m)\nRitardo m
+ assimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica
+ : Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione ARQUATA SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-500--20261125-S04207@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T062038Z
+DTEND:20261126T062508Z
+SUMMARY:[TRANSITO VELOCE] IC 500 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) or
+ e 07:24 (+2 min)
+DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 07:20:38 - 07:25:08\nTreni coinvolti ne
+ lla chiusura:\n  - IC 500 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) (+2m) [T
+ ransito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Transito stimato senza fermata (76% tratta GENOVA PIA
+ ZZA PRINCIPE -> NOVI LIGURE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ARQUATA SCRIVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
 UID:train-2115--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T064451Z
-DTEND:20261126T065021Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T064450Z
+DTEND:20261126T065020Z
 SUMMARY:[TRANSITO VELOCE] REG 2115 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) 
  ore 07:49
 DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: TRANSIT
- O VELOCE\nChiusura sbarre stimata: 07:44:51 - 07:50:21\nTreni coinvolti ne
+ O VELOCE\nChiusura sbarre stimata: 07:44:50 - 07:50:20\nTreni coinvolti ne
  lla chiusura:\n  - REG 2115 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) [Trans
  ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
  ativa/euristica: Transito stimato senza fermata (87% tratta NOVI LIGURE ->
@@ -78,8 +98,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2115--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T065230Z
 DTEND:20261126T065700Z
 SUMMARY:[FERMATA] REG 2115 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) ore 07:5
@@ -99,8 +119,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3019--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T071330Z
 DTEND:20261126T071800Z
 SUMMARY:[FERMATA] REG 3019 (VENTIMIGLIA -> MILANO CENTRALE) ore 08:17
@@ -119,18 +139,18 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-658--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T074028Z
-DTEND:20261126T075052Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T074036Z
+DTEND:20261126T075055Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:40 - 08:50 (primo: IC 658)
 DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:40:28 - 08:50:52\nTreni 
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:40:36 - 08:50:55\nTreni 
  coinvolti nella chiusura:\n  - IC 658 (LIVORNO CENTRALE -> MILANO CENTRALE
  ) [Transito]\n  - REG 12022 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) [Transito
  ]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normati
  va/euristica: Chiusura continua per 2 treni: intervallo utile tra i passag
- gi (23s) inferiore alla soglia minima di sgombero stradale (120s)
+ gi (18s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ARQUATA SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -141,8 +161,8 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12022--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T081030Z
 DTEND:20261126T081500Z
 SUMMARY:[FERMATA] REG 12022 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) ore 09:14
@@ -161,8 +181,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2070--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T081930Z
 DTEND:20261126T082400Z
 SUMMARY:[FERMATA] REG 2070 (RAVENNA -> GENOVA BRIGNOLE) ore 09:23
@@ -181,78 +201,96 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2119--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T084518Z
-DTEND:20261126T085700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:45 - 09:57 (primo: REG 2119)
-DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:45:18 - 09:57:00\nTreni 
- coinvolti nella chiusura:\n  - REG 2119 (TORINO PORTA NUOVA -> GENOVA BRIG
- NOLE) [Transito]\n  - REG 2119 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (1
- 01s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T084450Z
+DTEND:20261126T085020Z
+SUMMARY:[TRANSITO VELOCE] REG 2119 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) 
+ ore 09:49
+DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 09:44:50 - 09:50:20\nTreni coinvolti ne
+ lla chiusura:\n  - REG 2119 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) [Trans
+ ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Transito stimato senza fermata (87% tratta NOVI LIGURE ->
+  SERRAVALLE SCRIVIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ARQUATA SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2124--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T094708Z
-DTEND:20261126T095400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:47 - 10:54 (primo: REG 2124)
-DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:47:08 - 10:54:00\nTreni 
- coinvolti nella chiusura:\n  - REG 2124 (GENOVA BRIGNOLE -> TORINO PORTA N
- UOVA) [Transito]\n  - REG 12037 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE)\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
-  inferiore alla soglia minima di sgombero stradale (120s)
+UID:train-2119--20261125-S04207@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T085230Z
+DTEND:20261126T085700Z
+SUMMARY:[FERMATA] REG 2119 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) ore 09:5
+ 6
+DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: FERMATA
+ \nChiusura sbarre stimata: 09:52:30 - 09:57:00\nTreni coinvolti nella chiu
+ sura:\n  - REG 2119 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pr
+ evisione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione ARQUATA SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12037--20261125-S04207@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T094930Z
+DTEND:20261126T095400Z
+SUMMARY:[FERMATA] REG 12037 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) ore 10:53
+DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: FERMATA
+ \nChiusura sbarre stimata: 10:49:30 - 10:54:00\nTreni coinvolti nella chiu
+ sura:\n  - REG 12037 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
+ isione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione ARQUATA SCRIVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2124--20261125-S04207@pl-tracker.local-arr
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T100100Z
-DTEND:20261126T101452Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 11:01 - 11:14 (primo: REG 2124) (+9 m
+DTEND:20261126T101455Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:01 - 11:14 (primo: REG 2124) (+9 m
  in)
 DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: CHIUSUR
- A CONTINUA - 5 TRENI\nChiusura sbarre stimata: 11:01:00 - 11:14:52\nTreni 
+ A CONTINUA - 3 TRENI\nChiusura sbarre stimata: 11:01:00 - 11:14:55\nTreni 
  coinvolti nella chiusura:\n  - REG 2124 (GENOVA BRIGNOLE -> TORINO PORTA N
  UOVA) (+9m) [Arrivo]\n  - REG 2124 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA)
-  (+9m) [Arrivo]\n  - REG 2124 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) (+9m
- ) [Partenza]\n  - REG 2124 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) (+9m) [
- Partenza]\n  - REG 12032 (GENOVA PIAZZA PRINCIPE -> ARQUATA SCRIVIA) [Tran
- sito]\nRitardo massimo rilevato: 9 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Chiusura continua per 5 treni: intervallo utile tra i pa
- ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+  (+9m) [Partenza]\n  - REG 12032 (GENOVA PIAZZA PRINCIPE -> ARQUATA SCRIVI
+ A) [Transito]\nRitardo massimo rilevato: 9 min\nAffidabilità stima: 78%\n
+ Nota normativa/euristica: Chiusura continua per 3 treni: intervallo utile 
+ tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
+ s)
 LOCATION:Passaggio a Livello / Stazione ARQUATA SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:9
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12032--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T103130Z
 DTEND:20261126T103600Z
 SUMMARY:[FERMATA] REG 12032 (GENOVA PIAZZA PRINCIPE -> ARQUATA SCRIVIA) ore
@@ -272,8 +310,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3026--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T104530Z
 DTEND:20261126T105000Z
 SUMMARY:[FERMATA] REG 3026 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO PIRELLI)
@@ -293,18 +331,18 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2123--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T105322Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T105258Z
 DTEND:20261126T110400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:53 - 12:04 (primo: REG 2123)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:52 - 12:04 (primo: REG 2123)
 DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:53:22 - 12:04:00\nTreni 
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:52:58 - 12:04:00\nTreni 
  coinvolti nella chiusura:\n  - REG 2123 (TORINO PORTA NUOVA -> GENOVA BRIG
  NOLE) [Transito]\n  - REG 2123 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\nRi
  tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (3
- 7s) inferiore alla soglia minima di sgombero stradale (120s)
+ ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (6
+ 1s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ARQUATA SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -315,14 +353,14 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12036--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T110922Z
-DTEND:20261126T111452Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T110925Z
+DTEND:20261126T111455Z
 SUMMARY:[TRANSITO VELOCE] REG 12036 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) or
  e 12:13
 DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: TRANSIT
- O VELOCE\nChiusura sbarre stimata: 12:09:22 - 12:14:52\nTreni coinvolti ne
+ O VELOCE\nChiusura sbarre stimata: 12:09:25 - 12:14:55\nTreni coinvolti ne
  lla chiusura:\n  - REG 12036 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) [Transit
  o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
  iva/euristica: Transito stimato senza fermata (53% tratta RONCO SCRIVIA ->
@@ -337,84 +375,100 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-32--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T112328Z
-DTEND:20261126T113600Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:23 - 12:36 (primo: EC 32) (+7 min)
-DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: CHIUSUR
- A CONTINUA - 3 TRENI\nChiusura sbarre stimata: 12:23:28 - 12:36:00\nTreni 
- coinvolti nella chiusura:\n  - EC 32 (LA SPEZIA CENTRALE -> CHIASSO) [Tran
- sito]\n  - IC 515 (SAVONA -> TORINO PORTA NUOVA) (+7m) [Transito]\n  - REG
-  12036 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA)\nRitardo massimo rilevato: 7 m
- in\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua 
- per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
- nima di sgombero stradale (120s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T112339Z
+DTEND:20261126T112809Z
+SUMMARY:[TRANSITO VELOCE] EC 32 (LA SPEZIA CENTRALE -> CHIASSO) ore 12:27
+DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 12:23:39 - 12:28:09\nTreni coinvolti ne
+ lla chiusura:\n  - EC 32 (LA SPEZIA CENTRALE -> CHIASSO) [Transito]\nRitar
+ do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Transito stimato senza fermata (70% tratta GENOVA PIAZZA PRINCIPE ->
+  TORTONA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ARQUATA SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:7
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:EC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-2128--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T115500Z
-DTEND:20261126T120130Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:55 - 13:01 (primo: REG 2128) (+1 m
- in)
-DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:55:00 - 13:01:30\nTreni 
- coinvolti nella chiusura:\n  - REG 2128 (GENOVA BRIGNOLE -> TORINO PORTA N
- UOVA) (+1m)\n  - REG 2128 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) (+1m)\nR
- itardo massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/e
- uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
- 0s) inferiore alla soglia minima di sgombero stradale (120s)
+UID:train-12036--20261125-S04207@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T113130Z
+DTEND:20261126T113600Z
+SUMMARY:[FERMATA] REG 12036 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) ore 12:35
+DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: FERMATA
+ \nChiusura sbarre stimata: 12:31:30 - 12:36:00\nTreni coinvolti nella chiu
+ sura:\n  - REG 12036 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
+ isione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione ARQUATA SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2128--20261125-S04207@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T115500Z
+DTEND:20261126T120130Z
+SUMMARY:[FERMATA] REG 2128 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) ore 13:0
+ 0 (+1 min)
+DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: FERMATA
+ \nChiusura sbarre stimata: 12:55:00 - 13:01:30\nTreni coinvolti nella chiu
+ sura:\n  - REG 2128 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) (+1m)\nRitardo
+  massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristi
+ ca: Rilevamento reale da circuito di binario
+LOCATION:Passaggio a Livello / Stazione ARQUATA SCRIVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3034--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T144530Z
 DTEND:20261126T145900Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 15:45 - 15:59 (primo: REG 3034)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:45 - 15:59 (primo: REG 3034)
 DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: CHIUSUR
- A CONTINUA - 5 TRENI\nChiusura sbarre stimata: 15:45:30 - 15:59:00\nTreni 
+ A CONTINUA - 4 TRENI\nChiusura sbarre stimata: 15:45:30 - 15:59:00\nTreni 
  coinvolti nella chiusura:\n  - REG 3034 (GENOVA BRIGNOLE -> MILANO GRECO P
  IRELLI)\n  - REG 2131 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) [Transito]\n
-   - REG 12057 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE)\n  - REG 12057 (ARQUATA
-  SCRIVIA -> GENOVA BRIGNOLE)\n  - REG 2131 (TORINO PORTA NUOVA -> GENOVA B
- RIGNOLE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Chiusura continua per 5 treni: intervallo utile tra i
-  passaggi (30s) inferiore alla soglia minima di sgombero stradale (120s)
+   - REG 12057 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE)\n  - REG 2131 (TORINO P
+ ORTA NUOVA -> GENOVA BRIGNOLE)\nRitardo massimo rilevato: 0 min\nAffidabil
+ ità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: 
+ intervallo utile tra i passaggi (30s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ARQUATA SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-674--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T153952Z
-DTEND:20261126T154422Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T154000Z
+DTEND:20261126T154430Z
 SUMMARY:[TRANSITO VELOCE] IC 674 (LIVORNO CENTRALE -> MILANO CENTRALE) ore 
  16:43
 DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: TRANSIT
- O VELOCE\nChiusura sbarre stimata: 16:39:52 - 16:44:22\nTreni coinvolti ne
+ O VELOCE\nChiusura sbarre stimata: 16:40:00 - 16:44:30\nTreni coinvolti ne
  lla chiusura:\n  - IC 674 (LIVORNO CENTRALE -> MILANO CENTRALE) [Transito]
  \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
  a/euristica: Transito stimato senza fermata (70% tratta GENOVA PIAZZA PRIN
@@ -429,121 +483,93 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2090--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T170057Z
-DTEND:20261126T170627Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:00 - 18:06 (primo: REG 2090)
-DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:00:57 - 18:06:27\nTreni 
- coinvolti nella chiusura:\n  - REG 2090 (GENOVA BRIGNOLE -> RIMINI) [Trans
- ito]\n  - REG 2090 (GENOVA BRIGNOLE -> RIMINI) [Transito]\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
- sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T170101Z
+DTEND:20261126T170631Z
+SUMMARY:[TRANSITO VELOCE] REG 2090 (GENOVA BRIGNOLE -> RIMINI) ore 18:05
+DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 18:01:01 - 18:06:31\nTreni coinvolti ne
+ lla chiusura:\n  - REG 2090 (GENOVA BRIGNOLE -> RIMINI) [Transito]\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Transito stimato senza fermata (53% tratta RONCO SCRIVIA -> ISOLA DEL
+  CANTONE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ARQUATA SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2090--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T172430Z
 DTEND:20261126T172900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:24 - 18:29 (primo: REG 2090)
-DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:24:30 - 18:29:00\nTreni 
- coinvolti nella chiusura:\n  - REG 2090 (GENOVA BRIGNOLE -> RIMINI)\n  - R
- EG 2090 (GENOVA BRIGNOLE -> RIMINI)\nRitardo massimo rilevato: 0 min\nAffi
- dabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tr
- eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
- sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 2090 (GENOVA BRIGNOLE -> RIMINI) ore 18:28
+DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: FERMATA
+ \nChiusura sbarre stimata: 18:24:30 - 18:29:00\nTreni coinvolti nella chiu
+ sura:\n  - REG 2090 (GENOVA BRIGNOLE -> RIMINI)\nRitardo massimo rilevato:
+  0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da 
+ traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione ARQUATA SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-680--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T174010Z
-DTEND:20261126T174440Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:40 - 18:44 (primo: IC 680)
-DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:40:10 - 18:44:40\nTreni 
- coinvolti nella chiusura:\n  - IC 680 (LA SPEZIA CENTRALE -> MILANO CENTRA
- LE) [Transito]\n  - IC 680 (LA SPEZIA CENTRALE -> MILANO CENTRALE) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T174018Z
+DTEND:20261126T174448Z
+SUMMARY:[TRANSITO VELOCE] IC 680 (LA SPEZIA CENTRALE -> MILANO CENTRALE) or
+ e 18:43
+DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 18:40:18 - 18:44:48\nTreni coinvolti ne
+ lla chiusura:\n  - IC 680 (LA SPEZIA CENTRALE -> MILANO CENTRALE) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (70% tratta GENOVA PIAZZA PR
+ INCIPE -> TORTONA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ARQUATA SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3042--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T181917Z
-DTEND:20261126T182447Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:19 - 19:24 (primo: REG 3042)
+UID:train-3037--20261125-S04207@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T183930Z
+DTEND:20261126T185000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:39 - 19:50 (primo: REG 3037)
 DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:19:17 - 19:24:47\nTreni 
- coinvolti nella chiusura:\n  - REG 3042 (GENOVA PIAZZA PRINCIPE -> MILANO 
- GRECO PIRELLI) [Transito]\n  - REG 3042 (GENOVA PIAZZA PRINCIPE -> MILANO 
- GRECO PIRELLI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità 
- stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: inter
- vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
- tradale (120s)
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:39:30 - 19:50:00\nTreni 
+ coinvolti nella chiusura:\n  - REG 3037 (MILANO CENTRALE -> GENOVA BRIGNOL
+ E)\n  - REG 3042 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO PIRELLI)\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (90s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ARQUATA SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3037--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T183930Z
-DTEND:20261126T185000Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 19:39 - 19:50 (primo: REG 3037)
-DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: CHIUSUR
- A CONTINUA - 4 TRENI\nChiusura sbarre stimata: 19:39:30 - 19:50:00\nTreni 
- coinvolti nella chiusura:\n  - REG 3037 (MILANO CENTRALE -> GENOVA BRIGNOL
- E)\n  - REG 3037 (MILANO CENTRALE -> GENOVA BRIGNOLE)\n  - REG 3042 (GENOV
- A PIAZZA PRINCIPE -> MILANO GRECO PIRELLI)\n  - REG 3042 (GENOVA PIAZZA PR
- INCIPE -> MILANO GRECO PIRELLI)\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 90%\nNota normativa/euristica: Chiusura continua per 4 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione ARQUATA SCRIVIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2144--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T195330Z
 DTEND:20261126T195800Z
 SUMMARY:[FERMATA] REG 2144 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) ore 20:5
@@ -563,8 +589,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2146--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T204026Z
+DTEND:20261126T204556Z
+SUMMARY:[TRANSITO VELOCE] REG 2146 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) 
+ ore 21:44
+DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 21:40:26 - 21:45:56\nTreni coinvolti ne
+ lla chiusura:\n  - REG 2146 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) [Trans
+ ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Transito stimato senza fermata (80% tratta GENOVA PIAZZA 
+ PRINCIPE -> RONCO SCRIVIA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ARQUATA SCRIVIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2146--20261125-S04207@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T205530Z
 DTEND:20261126T210000Z
 SUMMARY:[FERMATA] REG 2146 (GENOVA BRIGNOLE -> TORINO PORTA NUOVA) ore 21:5
@@ -584,18 +632,18 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2145--20261125-S04207@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T214518Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T214517Z
 DTEND:20261126T215700Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:45 - 22:57 (primo: REG 2145)
 DESCRIPTION:Stazione/PL: ARQUATA SCRIVIA (S04207)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:45:18 - 22:57:00\nTreni 
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:45:17 - 22:57:00\nTreni 
  coinvolti nella chiusura:\n  - REG 2145 (TORINO PORTA NUOVA -> GENOVA BRIG
  NOLE) [Transito]\n  - REG 2145 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE)\nRi
  tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
  ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (1
- 01s) inferiore alla soglia minima di sgombero stradale (120s)
+ 02s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ARQUATA SCRIVIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE

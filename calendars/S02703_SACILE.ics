@@ -9,110 +9,125 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:db0bc00cfcca5027697ba0be9592a042f4647ecc373071f9bdb08850d314
- e556
+X-CONTENT-HASH:73f9d0c381ff82fb6d7489d15300e7ea8e010b38aa5dfdc4a20fe3e01598
+ bc82
 BEGIN:VEVENT
 UID:train-3865--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T054230Z
-DTEND:20261126T055428Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:42 - 06:54 (primo: REG 3865)
-DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 06:42:30 - 06:54:28\nTreni coinvolti
-  nella chiusura:\n  - REG 3865 (UDINE -> VENEZIA S.LUCIA)\n  - TRENO 9713 
- (UDINE -> MILANO CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAf
- fidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 
- treni: intervallo utile tra i passaggi (118s) inferiore alla soglia minima
-  di sgombero stradale (120s)
+DTEND:20261126T054700Z
+SUMMARY:[FERMATA] REG 3865 (UDINE -> VENEZIA S.LUCIA) ore 06:46
+DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 06:42:30 - 06:47:00\nTreni coinvolti nella chiusura:\n  
+ - REG 3865 (UDINE -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\nAf
+ fidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia or
+ aria regolare
 LOCATION:Passaggio a Livello / Stazione SACILE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16758--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
+UID:train-9713--20261125-S02703@pl-tracker.local
+DTSTAMP:20261126T215722Z
 SEQUENCE:0
-DTSTART:20261126T062428Z
-DTEND:20261126T062958Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:24 - 07:29 (primo: REG 16758)
-DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 07:24:28 - 07:29:58\nTreni coinvolti
-  nella chiusura:\n  - REG 16758 (VENEZIA S.LUCIA -> UDINE) [Transito]\n  -
-  REG 16758 (VENEZIA S.LUCIA -> UDINE) [Transito]\nRitardo massimo rilevato
- : -5 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
- tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
- lia minima di sgombero stradale (120s)
+DTSTART:20261126T054906Z
+DTEND:20261126T055436Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9713 (UDINE -> MILANO CENTRALE) ore 06:53
+DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 06:49:06 - 06:54:36\nTreni coinvolti nella chius
+ ura:\n  - TRENO 9713 (UDINE -> MILANO CENTRALE) [Transito]\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
+ nsito stimato senza fermata (47% tratta PORDENONE -> CONEGLIANO\; pedale a
+ nnuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SACILE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16758--20261125-S02703@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T062429Z
+DTEND:20261126T062959Z
+SUMMARY:[TRANSITO VELOCE] REG 16758 (VENEZIA S.LUCIA -> UDINE) ore 07:28
+DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 07:24:29 - 07:29:59\nTreni coinvolti nella chius
+ ura:\n  - REG 16758 (VENEZIA S.LUCIA -> UDINE) [Transito]\nRitardo massimo
+  rilevato: -5 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
+ nsito stimato senza fermata (77% tratta PIANZANO -> ORSAGO\; pedale annunc
+ io fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione SACILE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16758--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T063300Z
 DTEND:20261126T064030Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:33 - 07:40 (primo: REG 16758) (+4 
- min)
-DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 07:33:00 - 07:40:30\nTreni coinvolti
-  nella chiusura:\n  - REG 16758 (VENEZIA S.LUCIA -> UDINE) (+4m)\n  - REG 
- 16758 (VENEZIA S.LUCIA -> UDINE) (+4m)\nRitardo massimo rilevato: 4 min\nA
- ffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2
-  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
- di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 16758 (VENEZIA S.LUCIA -> UDINE) ore 07:39 (+4 min)
+DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 07:33:00 - 07:40:30\nTreni coinvolti nella chiusura:\n  
+ - REG 16758 (VENEZIA S.LUCIA -> UDINE) (+4m)\nRitardo massimo rilevato: 4 
+ min\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale
+  da circuito di binario
 LOCATION:Passaggio a Livello / Stazione SACILE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9409--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T064346Z
-DTEND:20261126T064916Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:43 - 07:49 (primo: TRENO 9409)
-DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 07:43:46 - 07:49:16\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9409 (GORIZIA CENTRALE -> NAPOLI CENTRALE) [Tr
- ansito]\n  - TRENO 9409 (GORIZIA CENTRALE -> NAPOLI CENTRALE) [Transito]\n
- Ritardo massimo rilevato: -8 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
-  (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T064357Z
+DTEND:20261126T064927Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9409 (GORIZIA CENTRALE -> NAPOLI CENTRALE) 
+ ore 07:48
+DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 07:43:57 - 07:49:27\nTreni coinvolti nella chius
+ ura:\n  - TRENO 9409 (GORIZIA CENTRALE -> NAPOLI CENTRALE) [Transito]\nRit
+ ardo massimo rilevato: -8 min\nAffidabilità stima: 78%\nNota normativa/eu
+ ristica: Transito stimato senza fermata (47% tratta PORDENONE -> CONEGLIAN
+ O\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SACILE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-8
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16764--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T071852Z
-DTEND:20261126T072422Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T071854Z
+DTEND:20261126T072424Z
 SUMMARY:[TRANSITO VELOCE] REG 16764 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) o
  re 08:23
 DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 08:18:52 - 08:24:22\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 08:18:54 - 08:24:24\nTreni coinvolti nella chius
  ura:\n  - REG 16764 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) [Transito]\nRita
  rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (52% tratta CONEGLIANO -> PIANZANO\;
+ stica: Transito stimato senza fermata (53% tratta CONEGLIANO -> PIANZANO\;
   pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SACILE
 STATUS:CONFIRMED
@@ -124,8 +139,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16764--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T073130Z
 DTEND:20261126T073600Z
 SUMMARY:[FERMATA] REG 16764 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) ore 08:35
@@ -144,103 +159,95 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3604--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T080130Z
 DTEND:20261126T080800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:01 - 09:08 (primo: REG 3604) (+4 m
- in)
-DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 09:01:30 - 09:08:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3604 (VENEZIA S.LUCIA -> UDINE) (+4m)\n  - REG 3
- 604 (VENEZIA S.LUCIA -> UDINE) (+4m)\nRitardo massimo rilevato: 4 min\nAff
- idabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 t
- reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
-  sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 3604 (VENEZIA S.LUCIA -> UDINE) ore 09:07 (+4 min)
+DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 09:01:30 - 09:08:00\nTreni coinvolti nella chiusura:\n  
+ - REG 3604 (VENEZIA S.LUCIA -> UDINE) (+4m)\nRitardo massimo rilevato: 4 m
+ in\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale 
+ da circuito di binario
 LOCATION:Passaggio a Livello / Stazione SACILE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3400--20261125-S02703@pl-tracker.local-arr
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T095100Z
 DTEND:20261126T100300Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 10:51 - 11:03 (primo: REG 3400) (+3 m
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 10:51 - 11:03 (primo: REG 3400) (+3 m
  in)
 DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: CHIUSURA CONTINU
- A - 5 TRENI\nChiusura sbarre stimata: 10:51:00 - 11:03:00\nTreni coinvolti
+ A - 3 TRENI\nChiusura sbarre stimata: 10:51:00 - 11:03:00\nTreni coinvolti
   nella chiusura:\n  - REG 3400 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) (+3m)
-  [Arrivo]\n  - REG 3400 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) (+3m) [Arriv
- o]\n  - REG 3400 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) (+3m) [Partenza]\n 
-  - REG 3400 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) (+3m) [Partenza]\n  - RE
- G 3876 (VENEZIA S.LUCIA -> TRIESTE CENTRALE)\nRitardo massimo rilevato: 3 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
-  per 5 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
+  [Arrivo]\n  - REG 3400 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) (+3m) [Parte
+ nza]\n  - REG 3876 (VENEZIA S.LUCIA -> TRIESTE CENTRALE)\nRitardo massimo 
+ rilevato: 3 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chius
+ ura continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SACILE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9729--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T110155Z
-DTEND:20261126T110725Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:01 - 12:07 (primo: TRENO 9729) (+4
-  min)
-DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 12:01:55 - 12:07:25\nTreni coinvolti
-  nella chiusura:\n  - TRENO 9729 (UDINE -> MILANO CENTRALE) (+4m) [Transit
- o]\n  - TRENO 9729 (UDINE -> MILANO CENTRALE) (+4m) [Transito]\nRitardo ma
- ssimo rilevato: 4 min\nAffidabilità stima: 78%\nNota normativa/euristica:
-  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
- iore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T110202Z
+DTEND:20261126T110732Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9729 (UDINE -> MILANO CENTRALE) ore 12:06 (
+ +4 min)
+DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 12:02:02 - 12:07:32\nTreni coinvolti nella chius
+ ura:\n  - TRENO 9729 (UDINE -> MILANO CENTRALE) (+4m) [Transito]\nRitardo 
+ massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Transito stimato senza fermata (47% tratta PORDENONE -> CONEGLIANO\; pe
+ dale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SACILE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3438--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T120730Z
 DTEND:20261126T121500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:07 - 13:15 (primo: REG 3438) (+11 
- min)
-DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 13:07:30 - 13:15:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3438 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) (+11m
- )\n  - REG 3438 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) (+11m)\nRitardo mass
- imo rilevato: 11 min\nAffidabilità stima: 99%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 3438 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) ore 13:14 
+ (+11 min)
+DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 13:07:30 - 13:15:00\nTreni coinvolti nella chiusura:\n  
+ - REG 3438 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) (+11m)\nRitardo massimo r
+ ilevato: 11 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rilev
+ amento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione SACILE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:11
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3653--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T131330Z
 DTEND:20261126T131800Z
 SUMMARY:[FERMATA] REG 3653 (SACILE -> VENEZIA S.LUCIA) ore 14:17
@@ -259,60 +266,56 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3886--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T134930Z
 DTEND:20261126T135400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:49 - 14:54 (primo: REG 3886)
-DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 14:49:30 - 14:54:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3886 (TRIESTE CENTRALE -> VENEZIA S.LUCIA)\n  - 
- REG 3886 (TRIESTE CENTRALE -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 
- -1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura conti
- nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
- a minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 3886 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) ore 14:53
+DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 14:49:30 - 14:54:00\nTreni coinvolti nella chiusura:\n  
+ - REG 3886 (TRIESTE CENTRALE -> VENEZIA S.LUCIA)\nRitardo massimo rilevato
+ : -1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione c
+ on anticipo (-1 min)
 LOCATION:Passaggio a Livello / Stazione SACILE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3660--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T144030Z
 DTEND:20261126T144500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:40 - 15:45 (primo: REG 3660)
-DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 15:40:30 - 15:45:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3660 (VENEZIA S.LUCIA -> SACILE)\n  - REG 3660 (
- VENEZIA S.LUCIA -> SACILE)\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+SUMMARY:[FERMATA] REG 3660 (VENEZIA S.LUCIA -> SACILE) ore 15:44
+DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 15:40:30 - 15:45:00\nTreni coinvolti nella chiusura:\n  
+ - REG 3660 (VENEZIA S.LUCIA -> SACILE)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
 LOCATION:Passaggio a Livello / Stazione SACILE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16809--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T150700Z
-DTEND:20261126T151230Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T150703Z
+DTEND:20261126T151233Z
 SUMMARY:[TRANSITO VELOCE] REG 16809 (UDINE -> VENEZIA S.LUCIA) ore 16:11
 DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 16:07:00 - 16:12:30\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 16:07:03 - 16:12:33\nTreni coinvolti nella chius
  ura:\n  - REG 16809 (UDINE -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo
   rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
- sito stimato senza fermata (61% tratta PORDENONE -> FONTANAFREDDA\; pedale
+ sito stimato senza fermata (62% tratta PORDENONE -> FONTANAFREDDA\; pedale
   annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SACILE
 STATUS:CONFIRMED
@@ -324,119 +327,111 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16800--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T151652Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T151654Z
 DTEND:20261126T152300Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:16 - 16:23 (primo: REG 16800)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:16 - 16:23 (primo: REG 16800)
 DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 16:16:52 - 16:23:00\nTreni coinvolti
+ A - 2 TRENI\nChiusura sbarre stimata: 16:16:54 - 16:23:00\nTreni coinvolti
   nella chiusura:\n  - REG 16800 (VENEZIA S.LUCIA -> UDINE) [Transito]\n  -
-  REG 16800 (VENEZIA S.LUCIA -> UDINE) [Transito]\n  - REG 16809 (UDINE -> 
- VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
- %\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo uti
- le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
- 120s)
+  REG 16809 (UDINE -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\nAf
+ fidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 
+ treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
+ i sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SACILE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16800--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T152930Z
 DTEND:20261126T153400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:29 - 16:34 (primo: REG 16800)
-DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 16:29:30 - 16:34:00\nTreni coinvolti
-  nella chiusura:\n  - REG 16800 (VENEZIA S.LUCIA -> UDINE)\n  - REG 16800 
- (VENEZIA S.LUCIA -> UDINE)\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+SUMMARY:[FERMATA] REG 16800 (VENEZIA S.LUCIA -> UDINE) ore 16:33
+DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 16:29:30 - 16:34:00\nTreni coinvolti nella chiusura:\n  
+ - REG 16800 (VENEZIA S.LUCIA -> UDINE)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
 LOCATION:Passaggio a Livello / Stazione SACILE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3888--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T155830Z
 DTEND:20261126T160300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:58 - 17:03 (primo: REG 3888)
-DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 16:58:30 - 17:03:00\nTreni coinvolti
-  nella chiusura:\n  - REG 3888 (VENEZIA S.LUCIA -> TRIESTE CENTRALE)\n  - 
- REG 3888 (VENEZIA S.LUCIA -> TRIESTE CENTRALE)\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura contin
- ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 3888 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) ore 17:02
+DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 16:58:30 - 17:03:00\nTreni coinvolti nella chiusura:\n  
+ - REG 3888 (VENEZIA S.LUCIA -> TRIESTE CENTRALE)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da
+  traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione SACILE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16806--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T161652Z
-DTEND:20261126T162222Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:16 - 17:22 (primo: REG 16806)
-DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 17:16:52 - 17:22:22\nTreni coinvolti
-  nella chiusura:\n  - REG 16806 (VENEZIA S.LUCIA -> UDINE) [Transito]\n  -
-  REG 16806 (VENEZIA S.LUCIA -> UDINE) [Transito]\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
- inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T161654Z
+DTEND:20261126T162224Z
+SUMMARY:[TRANSITO VELOCE] REG 16806 (VENEZIA S.LUCIA -> UDINE) ore 17:21
+DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 17:16:54 - 17:22:24\nTreni coinvolti nella chius
+ ura:\n  - REG 16806 (VENEZIA S.LUCIA -> UDINE) [Transito]\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
+ sito stimato senza fermata (53% tratta CONEGLIANO -> PIANZANO\; pedale ann
+ uncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SACILE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16806--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T162930Z
 DTEND:20261126T163400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:29 - 17:34 (primo: REG 16806)
-DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 17:29:30 - 17:34:00\nTreni coinvolti
-  nella chiusura:\n  - REG 16806 (VENEZIA S.LUCIA -> UDINE)\n  - REG 16806 
- (VENEZIA S.LUCIA -> UDINE)\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+SUMMARY:[FERMATA] REG 16806 (VENEZIA S.LUCIA -> UDINE) ore 17:33
+DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 17:29:30 - 17:34:00\nTreni coinvolti nella chiusura:\n  
+ - REG 16806 (VENEZIA S.LUCIA -> UDINE)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
 LOCATION:Passaggio a Livello / Stazione SACILE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3618--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T165830Z
 DTEND:20261126T170300Z
 SUMMARY:[FERMATA] REG 3618 (VENEZIA S.LUCIA -> TRIESTE CENTRALE) ore 18:02
@@ -455,52 +450,49 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16812--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T171852Z
-DTEND:20261126T172422Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:18 - 18:24 (primo: REG 16812)
-DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 18:18:52 - 18:24:22\nTreni coinvolti
-  nella chiusura:\n  - REG 16812 (VENEZIA S.LUCIA -> UDINE) [Transito]\n  -
-  REG 16812 (VENEZIA S.LUCIA -> UDINE) [Transito]\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
- inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T171854Z
+DTEND:20261126T172424Z
+SUMMARY:[TRANSITO VELOCE] REG 16812 (VENEZIA S.LUCIA -> UDINE) ore 18:23
+DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 18:18:54 - 18:24:24\nTreni coinvolti nella chius
+ ura:\n  - REG 16812 (VENEZIA S.LUCIA -> UDINE) [Transito]\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
+ sito stimato senza fermata (53% tratta CONEGLIANO -> PIANZANO\; pedale ann
+ uncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SACILE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16812--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T173130Z
 DTEND:20261126T173600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:31 - 18:36 (primo: REG 16812)
-DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 18:31:30 - 18:36:00\nTreni coinvolti
-  nella chiusura:\n  - REG 16812 (VENEZIA S.LUCIA -> UDINE)\n  - REG 16812 
- (VENEZIA S.LUCIA -> UDINE)\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+SUMMARY:[FERMATA] REG 16812 (VENEZIA S.LUCIA -> UDINE) ore 18:35
+DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 18:31:30 - 18:36:00\nTreni coinvolti nella chiusura:\n  
+ - REG 16812 (VENEZIA S.LUCIA -> UDINE)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
 LOCATION:Passaggio a Livello / Stazione SACILE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3894--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T175030Z
 DTEND:20261126T175500Z
 SUMMARY:[FERMATA] REG 3894 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) ore 18:54
@@ -519,8 +511,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3626--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T185030Z
 DTEND:20261126T185500Z
 SUMMARY:[FERMATA] REG 3626 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) ore 19:54
@@ -539,53 +531,51 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-35686--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T190115Z
 DTEND:20261126T191600Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:01 - 20:16 (primo: ICN 35686)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:01 - 20:16 (primo: ICN 35686)
 DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: CHIUSURA CONTINU
- A - 4 TRENI\nChiusura sbarre stimata: 20:01:15 - 20:16:00\nTreni coinvolti
+ A - 3 TRENI\nChiusura sbarre stimata: 20:01:15 - 20:16:00\nTreni coinvolti
   nella chiusura:\n  - ICN 35686 (TRIESTE CENTRALE -> ROMA TERMINI)\n  - RE
- G 16831 (UDINE -> VENEZIA S.LUCIA) [Transito]\n  - REG 16831 (UDINE -> VEN
- EZIA S.LUCIA) [Transito]\n  - REG 3515 (SACILE -> VENEZIA S.LUCIA)\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (0s) i
- nferiore alla soglia minima di sgombero stradale (120s)
+ G 16831 (UDINE -> VENEZIA S.LUCIA) [Transito]\n  - REG 3515 (SACILE -> VEN
+ EZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\n
+ Nota normativa/euristica: Chiusura continua per 3 treni: intervallo utile 
+ tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
+ s)
 LOCATION:Passaggio a Livello / Stazione SACILE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16831--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T191830Z
 DTEND:20261126T192300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:18 - 20:23 (primo: REG 16831)
-DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 20:18:30 - 20:23:00\nTreni coinvolti
-  nella chiusura:\n  - REG 16831 (UDINE -> VENEZIA S.LUCIA)\n  - REG 16831 
- (UDINE -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+SUMMARY:[FERMATA] REG 16831 (UDINE -> VENEZIA S.LUCIA) ore 20:22
+DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 20:18:30 - 20:23:00\nTreni coinvolti nella chiusura:\n  
+ - REG 16831 (UDINE -> VENEZIA S.LUCIA)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
 LOCATION:Passaggio a Livello / Stazione SACILE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3898--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T195030Z
 DTEND:20261126T195500Z
 SUMMARY:[FERMATA] REG 3898 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) ore 20:54
@@ -604,16 +594,16 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9755--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T205249Z
-DTEND:20261126T205819Z
-SUMMARY:[TRANSITO VELOCE] TRENO 9755 (MILANO CENTRALE -> UDINE) ore 21:57
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T205236Z
+DTEND:20261126T205806Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9755 (MILANO CENTRALE -> UDINE) ore 21:56
 DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 21:52:49 - 21:58:19\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 21:52:36 - 21:58:06\nTreni coinvolti nella chius
  ura:\n  - TRENO 9755 (MILANO CENTRALE -> UDINE) [Transito]\nRitardo massim
  o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
- nsito stimato senza fermata (55% tratta CONEGLIANO -> PORDENONE\; pedale a
+ nsito stimato senza fermata (54% tratta CONEGLIANO -> PORDENONE\; pedale a
  nnuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SACILE
 STATUS:CONFIRMED
@@ -625,17 +615,17 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9430--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T212222Z
-DTEND:20261126T212752Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T212209Z
+DTEND:20261126T212739Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9430 (NAPOLI CENTRALE -> GORIZIA CENTRALE) 
  ore 22:26
 DESCRIPTION:Stazione/PL: SACILE (S02703)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 22:22:22 - 22:27:52\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 22:22:09 - 22:27:39\nTreni coinvolti nella chius
  ura:\n  - TRENO 9430 (NAPOLI CENTRALE -> GORIZIA CENTRALE) [Transito]\nRit
  ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Transito stimato senza fermata (55% tratta CONEGLIANO -> PORDENONE
+ istica: Transito stimato senza fermata (54% tratta CONEGLIANO -> PORDENONE
  \; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SACILE
 STATUS:CONFIRMED
@@ -647,8 +637,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16022--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T214930Z
 DTEND:20261126T215400Z
 SUMMARY:[FERMATA] REG 16022 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) ore 22:53
@@ -667,8 +657,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16016--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T215930Z
 DTEND:20261126T220400Z
 SUMMARY:[FERMATA] REG 16016 (VENEZIA S.LUCIA -> UDINE) ore 23:03
@@ -687,8 +677,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-774--20261125-S02703@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261127T064415Z
 DTEND:20261127T064900Z
 SUMMARY:[FERMATA] ICN 774 (ROMA TERMINI -> TRIESTE CENTRALE) ore 07:48

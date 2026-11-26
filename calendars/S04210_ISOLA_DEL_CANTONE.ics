@@ -9,44 +9,64 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:56a4935e3915bc7b98c6d1f00593cec5fa71c6f9a8ca7ceb4d057a125a81
- 6f40
+X-CONTENT-HASH:8b13f221f03f784b2d67ef3991fa276e60eb87e79e8fc8d68768349cdf90
+ 79b3
 BEGIN:VEVENT
-UID:train-12019--20261125-S04210@pl-tracker.local
-DTSTAMP:20261126T123838Z
+UID:train-3016--20261125-S04210@pl-tracker.local
+DTSTAMP:20261126T215722Z
 SEQUENCE:0
-DTSTART:20261126T054430Z
-DTEND:20261126T054930Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:44 - 06:49 (primo: REG 12019) (+2 
- min)
-DESCRIPTION:Stazione/PL: ISOLA DEL CANTONE (S04210)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:44:30 - 06:49:30\nTren
- i coinvolti nella chiusura:\n  - REG 12019 (ARQUATA SCRIVIA -> GENOVA BRIG
- NOLE) (+2m)\n  - REG 12019 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) (+2m)\nRit
- ardo massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/eur
- istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
- ) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTART:20261126T050304Z
+DTEND:20261126T050834Z
+SUMMARY:[TRANSITO VELOCE] REG 3016 (SESTRI LEVANTE -> MILANO CENTRALE) ore 
+ 06:07
+DESCRIPTION:Stazione/PL: ISOLA DEL CANTONE (S04210)\nRegime chiusura: TRANS
+ ITO VELOCE\nChiusura sbarre stimata: 06:03:04 - 06:08:34\nTreni coinvolti 
+ nella chiusura:\n  - REG 3016 (SESTRI LEVANTE -> MILANO CENTRALE) [Transit
+ o]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (23% tratta RONCO SCRIVIA ->
+  ARQUATA SCRIVIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ISOLA DEL CANTONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12019--20261125-S04210@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T054430Z
+DTEND:20261126T054930Z
+SUMMARY:[FERMATA] REG 12019 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) ore 06:48 
+ (+2 min)
+DESCRIPTION:Stazione/PL: ISOLA DEL CANTONE (S04210)\nRegime chiusura: FERMA
+ TA\nChiusura sbarre stimata: 06:44:30 - 06:49:30\nTreni coinvolti nella ch
+ iusura:\n  - REG 12019 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) (+2m)\nRitardo
+  massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristi
+ ca: Rilevamento reale da circuito di binario
+LOCATION:Passaggio a Livello / Stazione ISOLA DEL CANTONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2115--20261125-S04210@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T065907Z
-DTEND:20261126T070437Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T065856Z
+DTEND:20261126T070426Z
 SUMMARY:[TRANSITO VELOCE] REG 2115 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) 
  ore 08:03
 DESCRIPTION:Stazione/PL: ISOLA DEL CANTONE (S04210)\nRegime chiusura: TRANS
- ITO VELOCE\nChiusura sbarre stimata: 07:59:07 - 08:04:37\nTreni coinvolti 
+ ITO VELOCE\nChiusura sbarre stimata: 07:58:56 - 08:04:26\nTreni coinvolti 
  nella chiusura:\n  - REG 2115 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) [Tra
  nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Transito stimato senza fermata (74% tratta ARQUATA SCRI
+ rmativa/euristica: Transito stimato senza fermata (72% tratta ARQUATA SCRI
  VIA -> RONCO SCRIVIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ISOLA DEL CANTONE
 STATUS:CONFIRMED
@@ -58,8 +78,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12022--20261125-S04210@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T074830Z
 DTEND:20261126T075300Z
 SUMMARY:[FERMATA] REG 12022 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA) ore 08:52
@@ -78,8 +98,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2070--20261125-S04210@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T082930Z
 DTEND:20261126T083400Z
 SUMMARY:[FERMATA] REG 2070 (RAVENNA -> GENOVA BRIGNOLE) ore 09:33
@@ -98,17 +118,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2119--20261125-S04210@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T085907Z
-DTEND:20261126T090437Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T085856Z
+DTEND:20261126T090426Z
 SUMMARY:[TRANSITO VELOCE] REG 2119 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) 
  ore 10:03
 DESCRIPTION:Stazione/PL: ISOLA DEL CANTONE (S04210)\nRegime chiusura: TRANS
- ITO VELOCE\nChiusura sbarre stimata: 09:59:07 - 10:04:37\nTreni coinvolti 
+ ITO VELOCE\nChiusura sbarre stimata: 09:58:56 - 10:04:26\nTreni coinvolti 
  nella chiusura:\n  - REG 2119 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) [Tra
  nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Transito stimato senza fermata (74% tratta ARQUATA SCRI
+ rmativa/euristica: Transito stimato senza fermata (72% tratta ARQUATA SCRI
  VIA -> RONCO SCRIVIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ISOLA DEL CANTONE
 STATUS:CONFIRMED
@@ -120,14 +140,14 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12037--20261125-S04210@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T095305Z
-DTEND:20261126T095835Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T095304Z
+DTEND:20261126T095834Z
 SUMMARY:[TRANSITO VELOCE] REG 12037 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) or
  e 10:57
 DESCRIPTION:Stazione/PL: ISOLA DEL CANTONE (S04210)\nRegime chiusura: TRANS
- ITO VELOCE\nChiusura sbarre stimata: 10:53:05 - 10:58:35\nTreni coinvolti 
+ ITO VELOCE\nChiusura sbarre stimata: 10:53:04 - 10:58:34\nTreni coinvolti 
  nella chiusura:\n  - REG 12037 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) [Trans
  ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
  ativa/euristica: Transito stimato senza fermata (62% tratta ARQUATA SCRIVI
@@ -142,8 +162,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12037--20261125-S04210@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T100230Z
 DTEND:20261126T100700Z
 SUMMARY:[FERMATA] REG 12037 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) ore 11:06
@@ -162,8 +182,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12032--20261125-S04210@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T101230Z
 DTEND:20261126T101700Z
 SUMMARY:[FERMATA] REG 12032 (GENOVA PIAZZA PRINCIPE -> ARQUATA SCRIVIA) ore
@@ -183,18 +203,18 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2123--20261125-S04210@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T110523Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T110513Z
 DTEND:20261126T111700Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:05 - 12:17 (primo: REG 2123)
 DESCRIPTION:Stazione/PL: ISOLA DEL CANTONE (S04210)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:05:23 - 12:17:00\nTren
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:05:13 - 12:17:00\nTren
  i coinvolti nella chiusura:\n  - REG 2123 (TORINO PORTA NUOVA -> GENOVA BR
  IGNOLE) [Transito]\n  - REG 12036 (GENOVA BRIGNOLE -> ARQUATA SCRIVIA)\nRi
  tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (9
- 6s) inferiore alla soglia minima di sgombero stradale (120s)
+ ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (1
+ 06s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ISOLA DEL CANTONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -205,84 +225,81 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12057--20261125-S04210@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T145305Z
-DTEND:20261126T145835Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:53 - 15:58 (primo: REG 12057)
-DESCRIPTION:Stazione/PL: ISOLA DEL CANTONE (S04210)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:53:05 - 15:58:35\nTren
- i coinvolti nella chiusura:\n  - REG 12057 (ARQUATA SCRIVIA -> GENOVA BRIG
- NOLE) [Transito]\n  - REG 12057 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) [Tran
- sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pa
- ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T145304Z
+DTEND:20261126T145834Z
+SUMMARY:[TRANSITO VELOCE] REG 12057 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) or
+ e 15:57
+DESCRIPTION:Stazione/PL: ISOLA DEL CANTONE (S04210)\nRegime chiusura: TRANS
+ ITO VELOCE\nChiusura sbarre stimata: 15:53:04 - 15:58:34\nTreni coinvolti 
+ nella chiusura:\n  - REG 12057 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE) [Trans
+ ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Transito stimato senza fermata (62% tratta ARQUATA SCRIVI
+ A -> PIETRABISSARA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ISOLA DEL CANTONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2131--20261125-S04210@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T150107Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T150056Z
 DTEND:20261126T150700Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:01 - 16:07 (primo: REG 2131)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:00 - 16:07 (primo: REG 2131)
 DESCRIPTION:Stazione/PL: ISOLA DEL CANTONE (S04210)\nRegime chiusura: CHIUS
- URA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:01:07 - 16:07:00\nTren
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:00:56 - 16:07:00\nTren
  i coinvolti nella chiusura:\n  - REG 2131 (TORINO PORTA NUOVA -> GENOVA BR
- IGNOLE) [Transito]\n  - REG 12057 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE)\n  
- - REG 12057 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
- inua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
+ IGNOLE) [Transito]\n  - REG 12057 (ARQUATA SCRIVIA -> GENOVA BRIGNOLE)\nRi
+ tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
+ ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
+ s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ISOLA DEL CANTONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2090--20261125-S04210@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T170530Z
 DTEND:20261126T171000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:05 - 18:10 (primo: REG 2090)
-DESCRIPTION:Stazione/PL: ISOLA DEL CANTONE (S04210)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:05:30 - 18:10:00\nTren
- i coinvolti nella chiusura:\n  - REG 2090 (GENOVA BRIGNOLE -> RIMINI)\n  -
-  REG 2090 (GENOVA BRIGNOLE -> RIMINI)\nRitardo massimo rilevato: 0 min\nAf
- fidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 
- treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
- i sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 2090 (GENOVA BRIGNOLE -> RIMINI) ore 18:09
+DESCRIPTION:Stazione/PL: ISOLA DEL CANTONE (S04210)\nRegime chiusura: FERMA
+ TA\nChiusura sbarre stimata: 18:05:30 - 18:10:00\nTreni coinvolti nella ch
+ iusura:\n  - REG 2090 (GENOVA BRIGNOLE -> RIMINI)\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
+ a traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione ISOLA DEL CANTONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3042--20261125-S04210@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T183155Z
-DTEND:20261126T183725Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T183141Z
+DTEND:20261126T183711Z
 SUMMARY:[TRANSITO VELOCE] REG 3042 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO 
- PIRELLI) ore 19:36
+ PIRELLI) ore 19:35
 DESCRIPTION:Stazione/PL: ISOLA DEL CANTONE (S04210)\nRegime chiusura: TRANS
- ITO VELOCE\nChiusura sbarre stimata: 19:31:55 - 19:37:25\nTreni coinvolti 
+ ITO VELOCE\nChiusura sbarre stimata: 19:31:41 - 19:37:11\nTreni coinvolti 
  nella chiusura:\n  - REG 3042 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO PIRE
  LLI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%
- \nNota normativa/euristica: Transito stimato senza fermata (25% tratta RON
+ \nNota normativa/euristica: Transito stimato senza fermata (23% tratta RON
  CO SCRIVIA -> ARQUATA SCRIVIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ISOLA DEL CANTONE
 STATUS:CONFIRMED
@@ -294,39 +311,39 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3037--20261125-S04210@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T184652Z
-DTEND:20261126T185222Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:46 - 19:52 (primo: REG 3037)
-DESCRIPTION:Stazione/PL: ISOLA DEL CANTONE (S04210)\nRegime chiusura: CHIUS
- URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:46:52 - 19:52:22\nTren
- i coinvolti nella chiusura:\n  - REG 3037 (MILANO CENTRALE -> GENOVA BRIGN
- OLE) [Transito]\n  - REG 3037 (MILANO CENTRALE -> GENOVA BRIGNOLE) [Transi
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T184639Z
+DTEND:20261126T185209Z
+SUMMARY:[TRANSITO VELOCE] REG 3037 (MILANO CENTRALE -> GENOVA BRIGNOLE) ore
+  19:50
+DESCRIPTION:Stazione/PL: ISOLA DEL CANTONE (S04210)\nRegime chiusura: TRANS
+ ITO VELOCE\nChiusura sbarre stimata: 19:46:39 - 19:52:09\nTreni coinvolti 
+ nella chiusura:\n  - REG 3037 (MILANO CENTRALE -> GENOVA BRIGNOLE) [Transi
  to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ tiva/euristica: Transito stimato senza fermata (72% tratta ARQUATA SCRIVIA
+  -> RONCO SCRIVIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ISOLA DEL CANTONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2145--20261125-S04210@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T215907Z
-DTEND:20261126T220437Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T215856Z
+DTEND:20261126T220426Z
 SUMMARY:[TRANSITO VELOCE] REG 2145 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) 
  ore 23:03
 DESCRIPTION:Stazione/PL: ISOLA DEL CANTONE (S04210)\nRegime chiusura: TRANS
- ITO VELOCE\nChiusura sbarre stimata: 22:59:07 - 23:04:37\nTreni coinvolti 
+ ITO VELOCE\nChiusura sbarre stimata: 22:58:56 - 23:04:26\nTreni coinvolti 
  nella chiusura:\n  - REG 2145 (TORINO PORTA NUOVA -> GENOVA BRIGNOLE) [Tra
  nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Transito stimato senza fermata (74% tratta ARQUATA SCRI
+ rmativa/euristica: Transito stimato senza fermata (72% tratta ARQUATA SCRI
  VIA -> RONCO SCRIVIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ISOLA DEL CANTONE
 STATUS:CONFIRMED

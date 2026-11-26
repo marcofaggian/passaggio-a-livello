@@ -9,35 +9,54 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:c8f86698a59858dd277a6f3e31339cde30aa0c3ff043b44bd3547c1b3142
- 7257
+X-CONTENT-HASH:83acf9d36c441605fcbc3179df8b8b7f926ea17c5e606153be3996a2753f
+ 6648
 BEGIN:VEVENT
 UID:train-2354--20261125-S01806@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T044330Z
 DTEND:20261126T045000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:43 - 05:50 (primo: REG 2354) (+2 m
- in)
-DESCRIPTION:Stazione/PL: PIZZALE-LUNGAVILLA (S01806)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:43:30 - 05:50:00\nTre
- ni coinvolti nella chiusura:\n  - REG 2354 (VOGHERA -> MILANO CENTRALE) (+
- 2m)\n  - REG 2354 (VOGHERA -> MILANO CENTRALE) (+2m)\nRitardo massimo rile
- vato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura 
- continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 2354 (VOGHERA -> MILANO CENTRALE) ore 05:49 (+2 min)
+DESCRIPTION:Stazione/PL: PIZZALE-LUNGAVILLA (S01806)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 05:43:30 - 05:50:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 2354 (VOGHERA -> MILANO CENTRALE) (+2m)\nRitardo massimo
+  rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rile
+ vamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione PIZZALE-LUNGAVILLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-3016--20261125-S01806@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T054318Z
+DTEND:20261126T054848Z
+SUMMARY:[TRANSITO VELOCE] REG 3016 (SESTRI LEVANTE -> MILANO CENTRALE) ore 
+ 06:47
+DESCRIPTION:Stazione/PL: PIZZALE-LUNGAVILLA (S01806)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 06:43:18 - 06:48:48\nTreni coinvolti
+  nella chiusura:\n  - REG 3016 (SESTRI LEVANTE -> MILANO CENTRALE) [Transi
+ to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (33% tratta VOGHERA -> PAVI
+ A\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PIZZALE-LUNGAVILLA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-2301--20261125-S01806@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T060030Z
 DTEND:20261126T060500Z
 SUMMARY:[FERMATA] REG 2301 (ALESSANDRIA -> MILANO CERTOSA) ore 07:04
@@ -55,9 +74,31 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-657--20261125-S01806@pl-tracker.local
-DTSTAMP:20261126T123838Z
+UID:train-658--20261125-S01806@pl-tracker.local
+DTSTAMP:20261126T215722Z
 SEQUENCE:0
+DTSTART:20261126T080903Z
+DTEND:20261126T081333Z
+SUMMARY:[TRANSITO VELOCE] IC 658 (LIVORNO CENTRALE -> MILANO CENTRALE) ore 
+ 09:12
+DESCRIPTION:Stazione/PL: PIZZALE-LUNGAVILLA (S01806)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 09:09:03 - 09:13:33\nTreni coinvolti
+  nella chiusura:\n  - IC 658 (LIVORNO CENTRALE -> MILANO CENTRALE) [Transi
+ to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (33% tratta VOGHERA -> PAVI
+ A\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PIZZALE-LUNGAVILLA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-657--20261125-S01806@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T081842Z
 DTEND:20261126T082312Z
 SUMMARY:[TRANSITO VELOCE] IC 657 (MILANO CENTRALE -> LA SPEZIA CENTRALE) or
@@ -77,31 +118,53 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-670--20261125-S01806@pl-tracker.local
-DTSTAMP:20261126T123838Z
+UID:train-3026--20261125-S01806@pl-tracker.local
+DTSTAMP:20261126T215722Z
 SEQUENCE:0
-DTSTART:20261126T140700Z
-DTEND:20261126T141130Z
-SUMMARY:[TRANSITO VELOCE] IC 670 (LA SPEZIA CENTRALE -> MILANO CENTRALE) or
- e 15:10
+DTSTART:20261126T111759Z
+DTEND:20261126T112329Z
+SUMMARY:[TRANSITO VELOCE] REG 3026 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO 
+ PIRELLI) ore 12:22
 DESCRIPTION:Stazione/PL: PIZZALE-LUNGAVILLA (S01806)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 15:07:00 - 15:11:30\nTreni coinvolti
-  nella chiusura:\n  - IC 670 (LA SPEZIA CENTRALE -> MILANO CENTRALE) [Tran
- sito]\nRitardo massimo rilevato: -2 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Transito stimato senza fermata (32% tratta VOGHERA -> P
- AVIA\; pedale annuncio fisso Vmax)
+ SITO VELOCE\nChiusura sbarre stimata: 12:17:59 - 12:23:29\nTreni coinvolti
+  nella chiusura:\n  - REG 3026 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO PIR
+ ELLI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
+ %\nNota normativa/euristica: Transito stimato senza fermata (33% tratta VO
+ GHERA -> PAVIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PIZZALE-LUNGAVILLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:-2
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-666--20261125-S01806@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T120903Z
+DTEND:20261126T121333Z
+SUMMARY:[TRANSITO VELOCE] IC 666 (LIVORNO CENTRALE -> MILANO CENTRALE) ore 
+ 13:12
+DESCRIPTION:Stazione/PL: PIZZALE-LUNGAVILLA (S01806)\nRegime chiusura: TRAN
+ SITO VELOCE\nChiusura sbarre stimata: 13:09:03 - 13:13:33\nTreni coinvolti
+  nella chiusura:\n  - IC 666 (LIVORNO CENTRALE -> MILANO CENTRALE) [Transi
+ to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (33% tratta VOGHERA -> PAVI
+ A\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione PIZZALE-LUNGAVILLA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2332--20261125-S01806@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T141630Z
 DTEND:20261126T142100Z
 SUMMARY:[FERMATA] REG 2332 (NOVI LIGURE -> MILANO GRECO PIRELLI) ore 15:20
@@ -120,30 +183,28 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2329--20261125-S01806@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T143330Z
 DTEND:20261126T143800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:33 - 15:38 (primo: REG 2329)
-DESCRIPTION:Stazione/PL: PIZZALE-LUNGAVILLA (S01806)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:33:30 - 15:38:00\nTre
- ni coinvolti nella chiusura:\n  - REG 2329 (MILANO GRECO PIRELLI -> NOVI L
- IGURE)\n  - REG 2329 (MILANO GRECO PIRELLI -> NOVI LIGURE)\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
- usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 2329 (MILANO GRECO PIRELLI -> NOVI LIGURE) ore 15:37
+DESCRIPTION:Stazione/PL: PIZZALE-LUNGAVILLA (S01806)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 15:33:30 - 15:38:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 2329 (MILANO GRECO PIRELLI -> NOVI LIGURE)\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
+ revisione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione PIZZALE-LUNGAVILLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2371--20261125-S01806@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T150457Z
 DTEND:20261126T151027Z
 SUMMARY:[TRANSITO VELOCE] REG 2371 (MILANO CENTRALE -> ASTI) ore 16:09
@@ -163,17 +224,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3034--20261125-S01806@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T151755Z
-DTEND:20261126T152325Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T151759Z
+DTEND:20261126T152329Z
 SUMMARY:[TRANSITO VELOCE] REG 3034 (GENOVA BRIGNOLE -> MILANO GRECO PIRELLI
  ) ore 16:22
 DESCRIPTION:Stazione/PL: PIZZALE-LUNGAVILLA (S01806)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 16:17:55 - 16:23:25\nTreni coinvolti
+ SITO VELOCE\nChiusura sbarre stimata: 16:17:59 - 16:23:29\nTreni coinvolti
   nella chiusura:\n  - REG 3034 (GENOVA BRIGNOLE -> MILANO GRECO PIRELLI) [
  Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
-  normativa/euristica: Transito stimato senza fermata (32% tratta VOGHERA -
+  normativa/euristica: Transito stimato senza fermata (33% tratta VOGHERA -
  > PAVIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PIZZALE-LUNGAVILLA
 STATUS:CONFIRMED
@@ -185,175 +246,42 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2333--20261125-S01806@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T163330Z
 DTEND:20261126T163800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:33 - 17:38 (primo: REG 2333)
-DESCRIPTION:Stazione/PL: PIZZALE-LUNGAVILLA (S01806)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:33:30 - 17:38:00\nTre
- ni coinvolti nella chiusura:\n  - REG 2333 (MILANO GRECO PIRELLI -> NOVI L
- IGURE)\n  - REG 2333 (MILANO GRECO PIRELLI -> NOVI LIGURE)\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
- usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 2333 (MILANO GRECO PIRELLI -> NOVI LIGURE) ore 17:37
+DESCRIPTION:Stazione/PL: PIZZALE-LUNGAVILLA (S01806)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 17:33:30 - 17:38:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 2333 (MILANO GRECO PIRELLI -> NOVI LIGURE)\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: P
+ revisione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione PIZZALE-LUNGAVILLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-675--20261125-S01806@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T164006Z
-DTEND:20261126T164436Z
-SUMMARY:[TRANSITO VELOCE] IC 675 (MILANO CENTRALE -> VENTIMIGLIA) ore 17:43
-DESCRIPTION:Stazione/PL: PIZZALE-LUNGAVILLA (S01806)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 17:40:06 - 17:44:36\nTreni coinvolti
-  nella chiusura:\n  - IC 675 (MILANO CENTRALE -> VENTIMIGLIA) [Transito]\n
- Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
- euristica: Transito stimato senza fermata (60% tratta PAVIA -> VOGHERA\; p
- edale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione PIZZALE-LUNGAVILLA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-679--20261125-S01806@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T174006Z
-DTEND:20261126T174436Z
-SUMMARY:[TRANSITO VELOCE] IC 679 (MILANO CENTRALE -> LIVORNO CENTRALE) ore 
- 18:43
-DESCRIPTION:Stazione/PL: PIZZALE-LUNGAVILLA (S01806)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 18:40:06 - 18:44:36\nTreni coinvolti
-  nella chiusura:\n  - IC 679 (MILANO CENTRALE -> LIVORNO CENTRALE) [Transi
- to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Transito stimato senza fermata (60% tratta PAVIA -> VOGHER
- A\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione PIZZALE-LUNGAVILLA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3037--20261125-S01806@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T180457Z
-DTEND:20261126T181027Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:04 - 19:10 (primo: REG 3037)
-DESCRIPTION:Stazione/PL: PIZZALE-LUNGAVILLA (S01806)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:04:57 - 19:10:27\nTre
- ni coinvolti nella chiusura:\n  - REG 3037 (MILANO CENTRALE -> GENOVA BRIG
- NOLE) [Transito]\n  - REG 3037 (MILANO CENTRALE -> GENOVA BRIGNOLE) [Trans
- ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
- ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
- saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PIZZALE-LUNGAVILLA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-7447--20261125-S01806@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T184315Z
-DTEND:20261126T184845Z
-SUMMARY:[TRANSITO VELOCE] REG 7447 (ASTI -> MILANO CENTRALE) ore 19:47
-DESCRIPTION:Stazione/PL: PIZZALE-LUNGAVILLA (S01806)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 19:43:15 - 19:48:45\nTreni coinvolti
-  nella chiusura:\n  - REG 7447 (ASTI -> MILANO CENTRALE) [Transito]\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
- tica: Transito stimato senza fermata (32% tratta VOGHERA -> PAVIA\; pedale
-  annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione PIZZALE-LUNGAVILLA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3042--20261125-S01806@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T191755Z
-DTEND:20261126T192325Z
-SUMMARY:[TRANSITO VELOCE] REG 3042 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO 
- PIRELLI) ore 20:22
-DESCRIPTION:Stazione/PL: PIZZALE-LUNGAVILLA (S01806)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 20:17:55 - 20:23:25\nTreni coinvolti
-  nella chiusura:\n  - REG 3042 (GENOVA PIAZZA PRINCIPE -> MILANO GRECO PIR
- ELLI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78
- %\nNota normativa/euristica: Transito stimato senza fermata (32% tratta VO
- GHERA -> PAVIA\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione PIZZALE-LUNGAVILLA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2341--20261125-S01806@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T203330Z
 DTEND:20261126T203800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:33 - 21:38 (primo: REG 2341)
-DESCRIPTION:Stazione/PL: PIZZALE-LUNGAVILLA (S01806)\nRegime chiusura: CHIU
- SURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:33:30 - 21:38:00\nTre
- ni coinvolti nella chiusura:\n  - REG 2341 (MILANO GRECO PIRELLI -> TORTON
- A)\n  - REG 2341 (MILANO GRECO PIRELLI -> TORTONA)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura co
- ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
- glia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 2341 (MILANO GRECO PIRELLI -> TORTONA) ore 21:37
+DESCRIPTION:Stazione/PL: PIZZALE-LUNGAVILLA (S01806)\nRegime chiusura: FERM
+ ATA\nChiusura sbarre stimata: 21:33:30 - 21:38:00\nTreni coinvolti nella c
+ hiusura:\n  - REG 2341 (MILANO GRECO PIRELLI -> TORTONA)\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previ
+ sione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione PIZZALE-LUNGAVILLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-639--20261125-S01806@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T210900Z
-DTEND:20261126T211330Z
-SUMMARY:[TRANSITO VELOCE] IC 639 (VENTIMIGLIA -> MILANO CENTRALE) ore 22:12
-DESCRIPTION:Stazione/PL: PIZZALE-LUNGAVILLA (S01806)\nRegime chiusura: TRAN
- SITO VELOCE\nChiusura sbarre stimata: 22:09:00 - 22:13:30\nTreni coinvolti
-  nella chiusura:\n  - IC 639 (VENTIMIGLIA -> MILANO CENTRALE) [Transito]\n
- Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
- euristica: Transito stimato senza fermata (32% tratta VOGHERA -> PAVIA\; p
- edale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione PIZZALE-LUNGAVILLA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 END:VCALENDAR

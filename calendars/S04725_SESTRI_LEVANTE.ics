@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:ffad3b9b48a2e71407ba64853034ddb80f942537a6fc1d63be06adf79e38
- a455
+X-CONTENT-HASH:f9bed999593c3ef145c708966aead213e384bc5b05be5baebb9d3e0e9238
+ 9477
 BEGIN:VEVENT
 UID:train-3016--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T032830Z
 DTEND:20261126T033300Z
 SUMMARY:[FERMATA] REG 3016 (SESTRI LEVANTE -> MILANO CENTRALE) ore 04:32
@@ -33,31 +33,51 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-652--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T043645Z
-DTEND:20261126T044430Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:36 - 05:44 (primo: IC 652) (+4 min
- )
-DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:36:45 - 05:44:30\nTreni c
- oinvolti nella chiusura:\n  - IC 652 (LA SPEZIA CENTRALE -> MILANO CENTRAL
- E) (+4m)\n  - IC 652 (LA SPEZIA CENTRALE -> MILANO CENTRALE) (+4m)\nRitard
- o massimo rilevato: 4 min\nAffidabilità stima: 99%\nNota normativa/eurist
- ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
- nferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T040647Z
+DTEND:20261126T041117Z
+SUMMARY:[TRANSITO VELOCE] IC 652 (LA SPEZIA CENTRALE -> MILANO CENTRALE) or
+ e 05:10 (+3 min)
+DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: TRANSITO
+  VELOCE\nChiusura sbarre stimata: 05:06:47 - 05:11:17\nTreni coinvolti nel
+ la chiusura:\n  - IC 652 (LA SPEZIA CENTRALE -> MILANO CENTRALE) (+3m) [Tr
+ ansito]\nRitardo massimo rilevato: 3 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Transito stimato senza fermata (61% tratta LA SPEZIA C
+ ENTRALE -> MONTEROSSO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-652--20261125-S04725@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T043645Z
+DTEND:20261126T044430Z
+SUMMARY:[FERMATA] IC 652 (LA SPEZIA CENTRALE -> MILANO CENTRALE) ore 05:43 
+ (+4 min)
+DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 05:36:45 - 05:44:30\nTreni coinvolti nella chius
+ ura:\n  - IC 652 (LA SPEZIA CENTRALE -> MILANO CENTRALE) (+4m)\nRitardo ma
+ ssimo rilevato: 4 min\nAffidabilità stima: 99%\nNota normativa/euristica:
+  Rilevamento reale da circuito di binario
+LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3360--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T051730Z
 DTEND:20261126T052200Z
 SUMMARY:[FERMATA] REG 3360 (SESTRI LEVANTE -> VENTIMIGLIA) ore 06:21
@@ -75,30 +95,31 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-12320--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T052930Z
-DTEND:20261126T053500Z
-SUMMARY:[TRANSITO VELOCE] REG 12320 (SARZANA -> SAVONA) ore 06:33
+UID:train-658--20261125-S04725@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T054219Z
+DTEND:20261126T054649Z
+SUMMARY:[TRANSITO VELOCE] IC 658 (LIVORNO CENTRALE -> MILANO CENTRALE) ore 
+ 06:45
 DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 06:29:30 - 06:35:00\nTreni coinvolti nel
- la chiusura:\n  - REG 12320 (SARZANA -> SAVONA) [Transito]\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
- nsito stimato senza fermata (63% tratta LA SPEZIA CENTRALE -> LEVANTO\; pe
- dale annuncio fisso Vmax)
+  VELOCE\nChiusura sbarre stimata: 06:42:19 - 06:46:49\nTreni coinvolti nel
+ la chiusura:\n  - IC 658 (LIVORNO CENTRALE -> MILANO CENTRALE) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Transito stimato senza fermata (61% tratta LA SPEZIA CENTRALE 
+ -> MONTEROSSO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12320--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T055130Z
 DTEND:20261126T055600Z
 SUMMARY:[FERMATA] REG 12320 (SARZANA -> SAVONA) ore 06:55
@@ -117,8 +138,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-658--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T061015Z
 DTEND:20261126T061500Z
 SUMMARY:[FERMATA] IC 658 (LIVORNO CENTRALE -> MILANO CENTRALE) ore 07:14
@@ -137,103 +158,73 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8605--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T064412Z
-DTEND:20261126T064942Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:44 - 07:49 (primo: TRENO 8605) (+9
- 8 min)
-DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:44:12 - 07:49:42\nTreni c
- oinvolti nella chiusura:\n  - TRENO 8605 (GENOVA PIAZZA PRINCIPE -> ROMA T
- ERMINI) (+98m) [Transito]\n  - TRENO 8605 (GENOVA PIAZZA PRINCIPE -> ROMA 
- TERMINI) (+98m) [Transito]\nRitardo massimo rilevato: 98 min\nAffidabilit
- à stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T063110Z
+DTEND:20261126T063640Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8605 (GENOVA PIAZZA PRINCIPE -> ROMA TERMIN
+ I) ore 07:35 (+98 min)
+DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: TRANSITO
+  VELOCE\nChiusura sbarre stimata: 07:31:10 - 07:36:40\nTreni coinvolti nel
+ la chiusura:\n  - TRENO 8605 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI) (+98
+ m) [Transito]\nRitardo massimo rilevato: 98 min\nAffidabilità stima: 78%\
+ nNota normativa/euristica: Transito stimato senza fermata (74% tratta RAPA
+ LLO -> CHIAVARI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:98
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3258--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T065833Z
-DTEND:20261126T070403Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:58 - 08:04 (primo: REG 3258) (+1 m
- in)
-DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:58:33 - 08:04:03\nTreni c
- oinvolti nella chiusura:\n  - REG 3258 (LA SPEZIA CENTRALE -> GENOVA BRIGN
- OLE) (+1m) [Transito]\n  - REG 3258 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE
- ) (+1m) [Transito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 
- 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo u
- tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
-  (120s)
-LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:1
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3258--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T072300Z
 DTEND:20261126T073000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:23 - 08:30 (primo: REG 3258) (+3 m
- in)
-DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:23:00 - 08:30:00\nTreni c
- oinvolti nella chiusura:\n  - REG 3258 (LA SPEZIA CENTRALE -> GENOVA BRIGN
- OLE) (+3m)\n  - REG 3258 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) (+3m)\nRi
- tardo massimo rilevato: 3 min\nAffidabilità stima: 99%\nNota normativa/eu
- ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
- s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 3258 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) ore 08:2
+ 9 (+3 min)
+DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 08:23:00 - 08:30:00\nTreni coinvolti nella chius
+ ura:\n  - REG 3258 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) (+3m)\nRitardo 
+ massimo rilevato: 3 min\nAffidabilità stima: 99%\nNota normativa/euristic
+ a: Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12331--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T081633Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T081632Z
 DTEND:20261126T082830Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 09:16 - 09:28 (primo: REG 12331)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:16 - 09:28 (primo: REG 12331)
 DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
-  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 09:16:33 - 09:28:30\nTreni c
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:16:32 - 09:28:30\nTreni c
  oinvolti nella chiusura:\n  - REG 12331 (VENTIMIGLIA -> SESTRI LEVANTE) [T
- ransito]\n  - REG 12331 (VENTIMIGLIA -> SESTRI LEVANTE) [Transito]\n  - RE
- G 12331 (VENTIMIGLIA -> SESTRI LEVANTE)\n  - REG 12331 (VENTIMIGLIA -> SES
- TRI LEVANTE)\nRitardo massimo rilevato: -1 min\nAffidabilità stima: 78%\n
- Nota normativa/euristica: Chiusura continua per 4 treni: intervallo utile 
- tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
- s)
+ ransito]\n  - REG 12331 (VENTIMIGLIA -> SESTRI LEVANTE)\nRitardo massimo r
+ ilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
+ ura continua per 2 treni: intervallo utile tra i passaggi (117s) inferiore
+  alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-505--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T083215Z
 DTEND:20261126T083700Z
 SUMMARY:[FERMATA] IC 505 (VENTIMIGLIA -> ROMA TERMINI) ore 09:36
@@ -251,127 +242,161 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-32--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T092115Z
+UID:train-666--20261125-S04725@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T091836Z
 DTEND:20261126T092600Z
-SUMMARY:[FERMATA] EC 32 (LA SPEZIA CENTRALE -> CHIASSO) ore 10:25
-DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 10:21:15 - 10:26:00\nTreni coinvolti nella chius
- ura:\n  - EC 32 (LA SPEZIA CENTRALE -> CHIASSO)\nRitardo massimo rilevato:
-  0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da 
- traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:EC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-12366--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T094930Z
-DTEND:20261126T095400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:49 - 10:54 (primo: REG 12366) (+6 
- min)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:18 - 10:26 (primo: IC 666)
 DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:49:30 - 10:54:00\nTreni c
- oinvolti nella chiusura:\n  - REG 12366 (SESTRI LEVANTE -> SAVONA) (+6m)\n
-   - REG 12366 (SESTRI LEVANTE -> SAVONA) (+6m)\nRitardo massimo rilevato: 
- 6 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura contin
- ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:18:36 - 10:26:00\nTreni c
+ oinvolti nella chiusura:\n  - IC 666 (LIVORNO CENTRALE -> MILANO CENTRALE)
+  [Transito]\n  - EC 32 (LA SPEZIA CENTRALE -> CHIASSO)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
+ a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12366--20261125-S04725@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T094930Z
+DTEND:20261126T095400Z
+SUMMARY:[FERMATA] REG 12366 (SESTRI LEVANTE -> SAVONA) ore 10:52 (+6 min)
+DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 10:49:30 - 10:54:00\nTreni coinvolti nella chius
+ ura:\n  - REG 12366 (SESTRI LEVANTE -> SAVONA) (+6m)\nRitardo massimo rile
+ vato: 6 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamen
+ to reale da circuito di binario
+LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-666--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T100415Z
-DTEND:20261126T101839Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:04 - 11:18 (primo: IC 666) (+43 mi
- n)
-DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
-  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 11:04:15 - 11:18:39\nTreni c
- oinvolti nella chiusura:\n  - IC 666 (LIVORNO CENTRALE -> MILANO CENTRALE)
- \n  - IC 657 (MILANO CENTRALE -> LA SPEZIA CENTRALE) (+43m) [Transito]\n  
- - REG 12351 (SAVONA -> SESTRI LEVANTE) [Transito]\nRitardo massimo rilevat
- o: 43 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
- ntinua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla so
- glia minima di sgombero stradale (120s)
+DTEND:20261126T100900Z
+SUMMARY:[FERMATA] IC 666 (LIVORNO CENTRALE -> MILANO CENTRALE) ore 11:08
+DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 11:04:15 - 11:09:00\nTreni coinvolti nella chius
+ ura:\n  - IC 666 (LIVORNO CENTRALE -> MILANO CENTRALE)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:43
-X-PL-CONFIDENCE:0.78
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12351--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T102430Z
-DTEND:20261126T103500Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:24 - 11:35 (primo: REG 12351) (+50
-  min)
-DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
-  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 11:24:30 - 11:35:00\nTreni c
- oinvolti nella chiusura:\n  - REG 12351 (SAVONA -> SESTRI LEVANTE)\n  - IC
-  657 (MILANO CENTRALE -> LA SPEZIA CENTRALE) (+50m)\n  - IC 657 (MILANO CE
- NTRALE -> LA SPEZIA CENTRALE) (+50m)\n  - REG 3265 (GENOVA BRIGNOLE -> LA 
- SPEZIA CENTRALE)\nRitardo massimo rilevato: 50 min\nAffidabilità stima: 9
- 0%\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo ut
- ile tra i passaggi (30s) inferiore alla soglia minima di sgombero stradale
-  (120s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T101307Z
+DTEND:20261126T101837Z
+SUMMARY:[TRANSITO VELOCE] REG 12351 (SAVONA -> SESTRI LEVANTE) ore 11:17
+DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: TRANSITO
+  VELOCE\nChiusura sbarre stimata: 11:13:07 - 11:18:37\nTreni coinvolti nel
+ la chiusura:\n  - REG 12351 (SAVONA -> SESTRI LEVANTE) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (59% tratta CHIAVARI -> LAVAGNA\; pedal
+ e annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12351--20261125-S04725@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T102430Z
+DTEND:20261126T103500Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:24 - 11:35 (primo: REG 12351) (+50
+  min)
+DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
+  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 11:24:30 - 11:35:00\nTreni c
+ oinvolti nella chiusura:\n  - REG 12351 (SAVONA -> SESTRI LEVANTE)\n  - IC
+  657 (MILANO CENTRALE -> LA SPEZIA CENTRALE) (+50m)\n  - REG 3265 (GENOVA 
+ BRIGNOLE -> LA SPEZIA CENTRALE)\nRitardo massimo rilevato: 50 min\nAffidab
+ ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 3 treni
+ : intervallo utile tra i passaggi (30s) inferiore alla soglia minima di sg
+ ombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:50
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12224--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T105622Z
-DTEND:20261126T111700Z
-SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 11:56 - 12:17 (primo: REG 12224)
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T105624Z
+DTEND:20261126T110202Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:56 - 12:02 (primo: REG 12224)
 DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
-  CONTINUA - 7 TRENI\nChiusura sbarre stimata: 11:56:22 - 12:17:00\nTreni c
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:56:24 - 12:02:02\nTreni c
  oinvolti nella chiusura:\n  - REG 12224 (LA SPEZIA CENTRALE -> SESTRI LEVA
- NTE) [Transito]\n  - REG 12359 (SAVONA -> SESTRI LEVANTE) [Transito]\n  - 
- REG 12359 (SAVONA -> SESTRI LEVANTE) [Transito]\n  - REG 3266 (LA SPEZIA C
- ENTRALE -> GENOVA BRIGNOLE) [Transito]\n  - REG 12359 (SAVONA -> SESTRI LE
- VANTE)\n  - REG 12359 (SAVONA -> SESTRI LEVANTE)\n  - REG 12224 (LA SPEZIA
-  CENTRALE -> SESTRI LEVANTE)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 78%\nNota normativa/euristica: Chiusura continua per 7 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+ NTE) [Transito]\n  - REG 12359 (SAVONA -> SESTRI LEVANTE) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
+  inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12359--20261125-S04725@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T110800Z
+DTEND:20261126T111700Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:08 - 12:17 (primo: REG 12359)
+DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
+  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 12:08:00 - 12:17:00\nTreni c
+ oinvolti nella chiusura:\n  - REG 12359 (SAVONA -> SESTRI LEVANTE)\n  - RE
+ G 3266 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) [Transito]\n  - REG 12224 (
+ LA SPEZIA CENTRALE -> SESTRI LEVANTE)\nRitardo massimo rilevato: 0 min\nAf
+ fidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 
+ treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
+ i sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3266--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T112130Z
 DTEND:20261126T112600Z
 SUMMARY:[FERMATA] REG 3266 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) ore 12:2
@@ -391,151 +416,184 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8613--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T114042Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T114037Z
 DTEND:20261126T114900Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:40 - 12:49 (primo: TRENO 8613) (+1
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:40 - 12:49 (primo: TRENO 8613) (+1
   min)
 DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
-  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 12:40:42 - 12:49:00\nTreni c
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:40:37 - 12:49:00\nTreni c
  oinvolti nella chiusura:\n  - TRENO 8613 (GENOVA PIAZZA PRINCIPE -> ROMA T
- ERMINI) [Transito]\n  - REG 12386 (SESTRI LEVANTE -> SAVONA) (+1m)\n  - RE
- G 12386 (SESTRI LEVANTE -> SAVONA) (+1m)\nRitardo massimo rilevato: 1 min\
- nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per
-  3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
- a di sgombero stradale (120s)
+ ERMINI) [Transito]\n  - REG 12386 (SESTRI LEVANTE -> SAVONA) (+1m)\nRitard
+ o massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12226--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T115822Z
-DTEND:20261126T120352Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:58 - 13:03 (primo: REG 12226)
-DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:58:22 - 13:03:52\nTreni c
- oinvolti nella chiusura:\n  - REG 12226 (LA SPEZIA CENTRALE -> SESTRI LEVA
- NTE) [Transito]\n  - REG 12226 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) [Tra
- nsito]\nRitardo massimo rilevato: -5 min\nAffidabilità stima: 78%\nNota n
- ormativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i 
- passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T115824Z
+DTEND:20261126T120354Z
+SUMMARY:[TRANSITO VELOCE] REG 12226 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) 
+ ore 13:02
+DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: TRANSITO
+  VELOCE\nChiusura sbarre stimata: 12:58:24 - 13:03:54\nTreni coinvolti nel
+ la chiusura:\n  - REG 12226 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) [Transi
+ to]\nRitardo massimo rilevato: -5 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Transito stimato senza fermata (78% tratta DEIVA MARINA -
+ > MONEGLIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12226--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T120800Z
-DTEND:20261126T123100Z
-SUMMARY:[CHIUSURA CONTINUA - 10 TRENI] 13:08 - 13:31 (primo: REG 12226) (+1
-  min)
-DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
-  CONTINUA - 10 TRENI\nChiusura sbarre stimata: 13:08:00 - 13:31:00\nTreni 
- coinvolti nella chiusura:\n  - REG 12226 (LA SPEZIA CENTRALE -> SESTRI LEV
- ANTE)\n  - REG 12226 (LA SPEZIA CENTRALE -> SESTRI LEVANTE)\n  - REG 12371
-  (SAVONA -> SESTRI LEVANTE) [Transito]\n  - REG 12371 (SAVONA -> SESTRI LE
- VANTE) [Transito]\n  - IC 670 (LA SPEZIA CENTRALE -> MILANO CENTRALE) (+1m
- ) [Arrivo]\n  - IC 670 (LA SPEZIA CENTRALE -> MILANO CENTRALE) (+1m) [Arri
- vo]\n  - IC 670 (LA SPEZIA CENTRALE -> MILANO CENTRALE) (+1m) [Partenza]\n
-   - IC 670 (LA SPEZIA CENTRALE -> MILANO CENTRALE) (+1m) [Partenza]\n  - R
- EG 12371 (SAVONA -> SESTRI LEVANTE)\n  - REG 12371 (SAVONA -> SESTRI LEVAN
- TE)\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 10 treni: intervallo utile tra i pas
- saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTEND:20261126T121230Z
+SUMMARY:[FERMATA] REG 12226 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) ore 13:1
+ 1
+DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 13:08:00 - 13:12:30\nTreni coinvolti nella chius
+ ura:\n  - REG 12226 (LA SPEZIA CENTRALE -> SESTRI LEVANTE)\nRitardo massim
+ o rilevato: -5 min\nAffidabilità stima: 99%\nNota normativa/euristica: Ri
+ levamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 10 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:-5
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12371--20261125-S04725@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T121432Z
+DTEND:20261126T123100Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 13:14 - 13:31 (primo: REG 12371) (+1 
+ min)
+DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
+  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 13:14:32 - 13:31:00\nTreni c
+ oinvolti nella chiusura:\n  - REG 12371 (SAVONA -> SESTRI LEVANTE) [Transi
+ to]\n  - IC 670 (LA SPEZIA CENTRALE -> MILANO CENTRALE) (+1m) [Arrivo]\n  
+ - IC 670 (LA SPEZIA CENTRALE -> MILANO CENTRALE) (+1m) [Partenza]\n  - REG
+  12371 (SAVONA -> SESTRI LEVANTE)\nRitardo massimo rilevato: 1 min\nAffida
+ bilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 tren
+ i: intervallo utile tra i passaggi (30s) inferiore alla soglia minima di s
+ gombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12396--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T124330Z
 DTEND:20261126T124800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:43 - 13:48 (primo: REG 12396)
-DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:43:30 - 13:48:00\nTreni c
- oinvolti nella chiusura:\n  - REG 12396 (SESTRI LEVANTE -> SAVONA)\n  - RE
- G 12396 (SESTRI LEVANTE -> SAVONA)\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+SUMMARY:[FERMATA] REG 12396 (SESTRI LEVANTE -> SAVONA) ore 13:47
+DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 13:43:30 - 13:48:00\nTreni coinvolti nella chius
+ ura:\n  - REG 12396 (SESTRI LEVANTE -> SAVONA)\nRitardo massimo rilevato: 
+ 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
+ raccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12381--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T131609Z
-DTEND:20261126T132139Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:16 - 14:21 (primo: REG 12381) (+1 
- min)
-DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:16:09 - 14:21:39\nTreni c
- oinvolti nella chiusura:\n  - REG 12381 (SAVONA -> LA SPEZIA CENTRALE) (+1
- m) [Transito]\n  - REG 12381 (SAVONA -> LA SPEZIA CENTRALE) (+1m) [Transit
- o]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Chiusura continua per 2 treni: intervallo utile tra i passa
- ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T131607Z
+DTEND:20261126T132137Z
+SUMMARY:[TRANSITO VELOCE] REG 12381 (SAVONA -> LA SPEZIA CENTRALE) ore 14:2
+ 0 (+1 min)
+DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: TRANSITO
+  VELOCE\nChiusura sbarre stimata: 14:16:07 - 14:21:37\nTreni coinvolti nel
+ la chiusura:\n  - REG 12381 (SAVONA -> LA SPEZIA CENTRALE) (+1m) [Transito
+ ]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normati
+ va/euristica: Transito stimato senza fermata (59% tratta CHIAVARI -> LAVAG
+ NA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12381--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T132530Z
 DTEND:20261126T133000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:25 - 14:30 (primo: REG 12381) (+1 
- min)
-DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:25:30 - 14:30:00\nTreni c
- oinvolti nella chiusura:\n  - REG 12381 (SAVONA -> LA SPEZIA CENTRALE) (+1
- m)\n  - REG 12381 (SAVONA -> LA SPEZIA CENTRALE) (+1m)\nRitardo massimo ri
- levato: 1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 12381 (SAVONA -> LA SPEZIA CENTRALE) ore 14:29 (+1 mi
+ n)
+DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 14:25:30 - 14:30:00\nTreni coinvolti nella chius
+ ura:\n  - REG 12381 (SAVONA -> LA SPEZIA CENTRALE) (+1m)\nRitardo massimo 
+ rilevato: 1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previ
+ sione con ritardo propagato (+1 min)
 LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-674--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T134255Z
+DTEND:20261126T134725Z
+SUMMARY:[TRANSITO VELOCE] IC 674 (LIVORNO CENTRALE -> MILANO CENTRALE) ore 
+ 14:46
+DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: TRANSITO
+  VELOCE\nChiusura sbarre stimata: 14:42:55 - 14:47:25\nTreni coinvolti nel
+ la chiusura:\n  - IC 674 (LIVORNO CENTRALE -> MILANO CENTRALE) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Transito stimato senza fermata (61% tratta LA SPEZIA CENTRALE 
+ -> MONTEROSSO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-674--20261125-S04725@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T141815Z
 DTEND:20261126T142300Z
 SUMMARY:[FERMATA] IC 674 (LIVORNO CENTRALE -> MILANO CENTRALE) ore 15:22
@@ -554,17 +612,17 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8616--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T150706Z
-DTEND:20261126T151236Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T150640Z
+DTEND:20261126T151210Z
 SUMMARY:[TRANSITO VELOCE] TRENO 8616 (ROMA TERMINI -> GENOVA PIAZZA PRINCIP
- E) ore 16:11 (+5 min)
+ E) ore 16:10 (+5 min)
 DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 16:07:06 - 16:12:36\nTreni coinvolti nel
+  VELOCE\nChiusura sbarre stimata: 16:06:40 - 16:12:10\nTreni coinvolti nel
  la chiusura:\n  - TRENO 8616 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) (+5m
  ) [Transito]\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 78%\nN
- ota normativa/euristica: Transito stimato senza fermata (77% tratta LA SPE
+ ota normativa/euristica: Transito stimato senza fermata (76% tratta LA SPE
  ZIA CENTRALE -> CHIAVARI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
 STATUS:CONFIRMED
@@ -575,38 +633,35 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8616--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
+UID:train-3274--20261125-S04725@pl-tracker.local
+DTSTAMP:20261126T215722Z
 SEQUENCE:0
-DTSTART:20261126T151719Z
+DTSTART:20261126T152130Z
 DTEND:20261126T152600Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:17 - 16:26 (primo: TRENO 8616) (+5
-  min)
-DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
-  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:17:19 - 16:26:00\nTreni c
- oinvolti nella chiusura:\n  - TRENO 8616 (ROMA TERMINI -> GENOVA PIAZZA PR
- INCIPE) (+5m) [Transito]\n  - REG 3274 (LA SPEZIA CENTRALE -> GENOVA BRIGN
- OLE)\n  - REG 3274 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE)\nRitardo massim
- o rilevato: 5 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
- usura continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 3274 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE) ore 16:2
+ 5
+DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 16:21:30 - 16:26:00\nTreni coinvolti nella chius
+ ura:\n  - REG 3274 (LA SPEZIA CENTRALE -> GENOVA BRIGNOLE)\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pre
+ visione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:5
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12407--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T155509Z
-DTEND:20261126T160152Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T155507Z
+DTEND:20261126T160154Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:55 - 17:01 (primo: REG 12407)
 DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:55:09 - 17:01:52\nTreni c
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:55:07 - 17:01:54\nTreni c
  oinvolti nella chiusura:\n  - REG 12407 (SAVONA -> SESTRI LEVANTE) [Transi
  to]\n  - REG 12234 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) [Transito]\nRita
  rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
@@ -622,61 +677,37 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12407--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T160930Z
 DTEND:20261126T162400Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 17:09 - 17:24 (primo: REG 12407)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 17:09 - 17:24 (primo: REG 12407)
 DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
-  CONTINUA - 6 TRENI\nChiusura sbarre stimata: 17:09:30 - 17:24:00\nTreni c
+  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 17:09:30 - 17:24:00\nTreni c
  oinvolti nella chiusura:\n  - REG 12407 (SAVONA -> SESTRI LEVANTE)\n  - RE
  G 12234 (LA SPEZIA CENTRALE -> SESTRI LEVANTE)\n  - EC 33 (CHIASSO -> LA S
- PEZIA CENTRALE)\n  - EC 33 (CHIASSO -> LA SPEZIA CENTRALE)\n  - IC 680 (LA
-  SPEZIA CENTRALE -> MILANO CENTRALE)\n  - IC 680 (LA SPEZIA CENTRALE -> MI
- LANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\
- nNota normativa/euristica: Chiusura continua per 6 treni: intervallo utile
-  tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (12
- 0s)
+ PEZIA CENTRALE)\n  - IC 680 (LA SPEZIA CENTRALE -> MILANO CENTRALE)\nRitar
+ do massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euris
+ tica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (75s)
+  inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-795--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T165333Z
-DTEND:20261126T165803Z
-SUMMARY:[TRANSITO VELOCE] ICN 795 (TORINO PORTA NUOVA -> REGGIO DI CALABRIA
-  CENTRALE) ore 17:57
-DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 17:53:33 - 17:58:03\nTreni coinvolti nel
- la chiusura:\n  - ICN 795 (TORINO PORTA NUOVA -> REGGIO DI CALABRIA CENTRA
- LE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\
- nNota normativa/euristica: Transito stimato senza fermata (75% tratta RAPA
- LLO -> CHIAVARI\; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:ICN
-END:VEVENT
-BEGIN:VEVENT
-UID:train-795--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T170824Z
-DTEND:20261126T171254Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T170814Z
+DTEND:20261126T171244Z
 SUMMARY:[TRANSITO VELOCE] ICN 795 (TORINO PORTA NUOVA -> REGGIO DI CALABRIA
   CENTRALE) ore 18:11
 DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 18:08:24 - 18:12:54\nTreni coinvolti nel
+  VELOCE\nChiusura sbarre stimata: 18:08:14 - 18:12:44\nTreni coinvolti nel
  la chiusura:\n  - ICN 795 (TORINO PORTA NUOVA -> REGGIO DI CALABRIA CENTRA
  LE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\
  nNota normativa/euristica: Transito stimato senza fermata (17% tratta CHIA
@@ -691,8 +722,8 @@ X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8556--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T184601Z
 DTEND:20261126T185131Z
 SUMMARY:[TRANSITO VELOCE] TRENO 8556 (ROMA TERMINI -> GENOVA PIAZZA PRINCIP
@@ -713,129 +744,128 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3283--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T191532Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T191525Z
 DTEND:20261126T193700Z
-SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 20:15 - 20:37 (primo: REG 3283)
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 20:15 - 20:37 (primo: REG 3283)
 DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
-  CONTINUA - 7 TRENI\nChiusura sbarre stimata: 20:15:32 - 20:37:00\nTreni c
+  CONTINUA - 5 TRENI\nChiusura sbarre stimata: 20:15:25 - 20:37:00\nTreni c
  oinvolti nella chiusura:\n  - REG 3283 (GENOVA BRIGNOLE -> PARMA) [Transit
- o]\n  - REG 3283 (GENOVA BRIGNOLE -> PARMA) [Transito]\n  - IC 518 (ROMA T
- ERMINI -> VENTIMIGLIA)\n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA)\n  - REG 
- 3283 (GENOVA BRIGNOLE -> PARMA)\n  - REG 3283 (GENOVA BRIGNOLE -> PARMA)\n
+ o]\n  - IC 679 (MILANO CENTRALE -> LIVORNO CENTRALE) [Transito]\n  - IC 51
+ 8 (ROMA TERMINI -> VENTIMIGLIA)\n  - REG 3283 (GENOVA BRIGNOLE -> PARMA)\n
    - IC 679 (MILANO CENTRALE -> LIVORNO CENTRALE)\nRitardo massimo rilevato
  : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
- inua per 7 treni: intervallo utile tra i passaggi (15s) inferiore alla sog
+ inua per 5 treni: intervallo utile tra i passaggi (15s) inferiore alla sog
  lia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12244--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T205836Z
-DTEND:20261126T210406Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:58 - 22:04 (primo: REG 12244)
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T205838Z
+DTEND:20261126T210408Z
+SUMMARY:[TRANSITO VELOCE] REG 12244 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) 
+ ore 22:02
+DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: TRANSITO
+  VELOCE\nChiusura sbarre stimata: 21:58:38 - 22:04:08\nTreni coinvolti nel
+ la chiusura:\n  - REG 12244 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) [Transi
+ to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (78% tratta DEIVA MARINA ->
+  MONEGLIA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12244--20261125-S04725@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T211530Z
+DTEND:20261126T212437Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:15 - 22:24 (primo: REG 12244)
 DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:58:36 - 22:04:06\nTreni c
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:15:30 - 22:24:37\nTreni c
  oinvolti nella chiusura:\n  - REG 12244 (LA SPEZIA CENTRALE -> SESTRI LEVA
- NTE) [Transito]\n  - REG 12244 (LA SPEZIA CENTRALE -> SESTRI LEVANTE) [Tra
- nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i p
- assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ NTE)\n  - REG 12461 (SAVONA -> SESTRI LEVANTE) [Transito]\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
+ sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-12244--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T211530Z
-DTEND:20261126T212439Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 22:15 - 22:24 (primo: REG 12244)
-DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
-  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 22:15:30 - 22:24:39\nTreni c
- oinvolti nella chiusura:\n  - REG 12244 (LA SPEZIA CENTRALE -> SESTRI LEVA
- NTE)\n  - REG 12244 (LA SPEZIA CENTRALE -> SESTRI LEVANTE)\n  - REG 12461 
- (SAVONA -> SESTRI LEVANTE) [Transito]\nRitardo massimo rilevato: 0 min\nAf
- fidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 
- treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
- i sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12461--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T213030Z
-DTEND:20261126T213500Z
-SUMMARY:[FERMATA] REG 12461 (SAVONA -> SESTRI LEVANTE) ore 22:34
-DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 22:30:30 - 22:35:00\nTreni coinvolti nella chius
- ura:\n  - REG 12461 (SAVONA -> SESTRI LEVANTE)\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da t
- raccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-899--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T221101Z
-DTEND:20261126T221531Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:11 - 23:15 (primo: ICN 899)
+DTEND:20261126T213839Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:30 - 22:38 (primo: REG 12461)
 DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 23:11:01 - 23:15:31\nTreni c
- oinvolti nella chiusura:\n  - ICN 899 (TORINO PORTA NUOVA -> SALERNO) [Tra
- nsito]\n  - ICN 899 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRitardo ma
- ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
-  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
- iore alla soglia minima di sgombero stradale (120s)
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:30:30 - 22:38:39\nTreni c
+ oinvolti nella chiusura:\n  - REG 12461 (SAVONA -> SESTRI LEVANTE)\n  - TR
+ ENO 8630 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) [Transito]\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
+ hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
+ re alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-899--20261125-S04725@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T221053Z
+DTEND:20261126T221523Z
+SUMMARY:[TRANSITO VELOCE] ICN 899 (TORINO PORTA NUOVA -> SALERNO) ore 23:14
+DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: TRANSITO
+  VELOCE\nChiusura sbarre stimata: 23:10:53 - 23:15:23\nTreni coinvolti nel
+ la chiusura:\n  - ICN 899 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Transito stimato senza fermata (17% tratta CHIAVARI -> LA SPEZIA CE
+ NTRALE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8596--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T224520Z
-DTEND:20261126T225050Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T224455Z
+DTEND:20261126T225025Z
 SUMMARY:[TRANSITO VELOCE] TRENO 8596 (ROMA TERMINI -> GENOVA PIAZZA PRINCIP
  E) ore 23:49
 DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 23:45:20 - 23:50:50\nTreni coinvolti nel
+  VELOCE\nChiusura sbarre stimata: 23:44:55 - 23:50:25\nTreni coinvolti nel
  la chiusura:\n  - TRENO 8596 (ROMA TERMINI -> GENOVA PIAZZA PRINCIPE) [Tra
  nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Transito stimato senza fermata (77% tratta LA SPEZIA CE
+ rmativa/euristica: Transito stimato senza fermata (76% tratta LA SPEZIA CE
  NTRALE -> CHIAVARI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
 STATUS:CONFIRMED
@@ -847,16 +877,16 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-796--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261127T035537Z
-DTEND:20261127T040007Z
-SUMMARY:[TRANSITO VELOCE] ICN 796 (SALERNO -> TORINO PORTA NUOVA) ore 04:59
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261127T035459Z
+DTEND:20261127T035929Z
+SUMMARY:[TRANSITO VELOCE] ICN 796 (SALERNO -> TORINO PORTA NUOVA) ore 04:58
 DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 04:55:37 - 05:00:07\nTreni coinvolti nel
+  VELOCE\nChiusura sbarre stimata: 04:54:59 - 04:59:29\nTreni coinvolti nel
  la chiusura:\n  - ICN 796 (SALERNO -> TORINO PORTA NUOVA) [Transito]\nRita
  rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Transito stimato senza fermata (77% tratta LA SPEZIA CENTRALE -> CH
+ stica: Transito stimato senza fermata (76% tratta LA SPEZIA CENTRALE -> CH
  IAVARI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
 STATUS:CONFIRMED
@@ -868,18 +898,18 @@ X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-794--20261125-S04725@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261127T104712Z
-DTEND:20261127T105142Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261127T102622Z
+DTEND:20261127T103052Z
 SUMMARY:[TRANSITO VELOCE] ICN 794 (REGGIO DI CALABRIA CENTRALE -> TORINO PO
- RTA NUOVA) ore 11:50
+ RTA NUOVA) ore 11:29
 DESCRIPTION:Stazione/PL: SESTRI LEVANTE (S04725)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 11:47:12 - 11:51:42\nTreni coinvolti nel
+  VELOCE\nChiusura sbarre stimata: 11:26:22 - 11:30:52\nTreni coinvolti nel
  la chiusura:\n  - ICN 794 (REGGIO DI CALABRIA CENTRALE -> TORINO PORTA NUO
  VA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\
- nNota normativa/euristica: Transito stimato senza fermata (29% tratta CHIA
- VARI -> RAPALLO\; pedale annuncio fisso Vmax)
+ nNota normativa/euristica: Transito stimato senza fermata (76% tratta LA S
+ PEZIA CENTRALE -> CHIAVARI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SESTRI LEVANTE
 STATUS:CONFIRMED
 TRANSP:OPAQUE

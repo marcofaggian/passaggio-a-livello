@@ -9,139 +9,167 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:23d94e87ba043976b81e532a58f05f582b5e9c7e2c29dd67ecbdc7026af8
- be84
+X-CONTENT-HASH:76feaf59f56972676d39a7a4b97e074e60e79acee5b553afbfdb74dc3a20
+ 75e6
 BEGIN:VEVENT
-UID:train-23510--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
+UID:train-8814--20261125-S11130@pl-tracker.local
+DTSTAMP:20261126T215722Z
 SEQUENCE:0
-DTSTART:20261126T060430Z
-DTEND:20261126T060900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:04 - 07:09 (primo: REG 23510) (+6 
- min)
-DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 07:04:30 - 07:09:00\nTreni coinvolti
-  nella chiusura:\n  - REG 23510 (FASANO -> BARLETTA) (+6m)\n  - REG 23510 
- (FASANO -> BARLETTA) (+6m)\nRitardo massimo rilevato: 6 min\nAffidabilità
-  stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+DTSTART:20261126T054401Z
+DTEND:20261126T054931Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8814 (LECCE -> MILANO CENTRALE) ore 06:48
+DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 06:44:01 - 06:49:31\nTreni coinvolti nella chius
+ ura:\n  - TRENO 8814 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
+ nsito stimato senza fermata (47% tratta BRINDISI -> BARI CENTRALE\; pedale
+  annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione FASANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23510--20261125-S11130@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T060430Z
+DTEND:20261126T060900Z
+SUMMARY:[FERMATA] REG 23510 (FASANO -> BARLETTA) ore 07:08 (+6 min)
+DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 07:04:30 - 07:09:00\nTreni coinvolti nella chiusura:\n  
+ - REG 23510 (FASANO -> BARLETTA) (+6m)\nRitardo massimo rilevato: 6 min\nA
+ ffidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale da ci
+ rcuito di binario
+LOCATION:Passaggio a Livello / Stazione FASANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23507--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T061630Z
 DTEND:20261126T063130Z
-SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 07:16 - 07:31 (primo: REG 23507) (+4 
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:16 - 07:31 (primo: REG 23507) (+4 
  min)
 DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: CHIUSURA CONTINU
- A - 7 TRENI\nChiusura sbarre stimata: 07:16:30 - 07:31:30\nTreni coinvolti
+ A - 4 TRENI\nChiusura sbarre stimata: 07:16:30 - 07:31:30\nTreni coinvolti
   nella chiusura:\n  - REG 23507 (BARI CENTRALE -> FASANO)\n  - IC 608 (LEC
  CE -> MILANO CENTRALE) (+3m) [Arrivo]\n  - IC 608 (LECCE -> MILANO CENTRAL
- E) (+3m) [Arrivo]\n  - IC 608 (LECCE -> MILANO CENTRALE) (+3m) [Partenza]\
- n  - IC 608 (LECCE -> MILANO CENTRALE) (+3m) [Partenza]\n  - REG 4386 (LEC
- CE -> BARI CENTRALE) (+4m) [Arrivo]\n  - REG 4386 (LECCE -> BARI CENTRALE)
-  (+4m) [Arrivo]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 90%
- \nNota normativa/euristica: Chiusura continua per 7 treni: intervallo util
- e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
- 20s)
+ E) (+3m) [Partenza]\n  - REG 4386 (LECCE -> BARI CENTRALE) (+4m) [Arrivo]\
+ nRitardo massimo rilevato: 4 min\nAffidabilità stima: 90%\nNota normativa
+ /euristica: Chiusura continua per 4 treni: intervallo utile tra i passaggi
+  (30s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FASANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4386--20261125-S11130@pl-tracker.local-dep
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T064000Z
 DTEND:20261126T064430Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:40 - 07:44 (primo: REG 4386) (+4 m
- in)
-DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 07:40:00 - 07:44:30\nTreni coinvolti
-  nella chiusura:\n  - REG 4386 (LECCE -> BARI CENTRALE) (+4m) [Partenza]\n
-   - REG 4386 (LECCE -> BARI CENTRALE) (+4m) [Partenza]\nRitardo massimo ri
- levato: 4 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 4386 (LECCE -> BARI CENTRALE) ore 07:43 (+4 min)
+DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 07:40:00 - 07:44:30\nTreni coinvolti nella chiusura:\n  
+ - REG 4386 (LECCE -> BARI CENTRALE) (+4m) [Partenza]\nRitardo massimo rile
+ vato: 4 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamen
+ to reale da circuito di binario (impegno itinerario partenza stazione)
 LOCATION:Passaggio a Livello / Stazione FASANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4385--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T070830Z
 DTEND:20261126T071530Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:08 - 08:15 (primo: REG 4385) (+4 m
- in)
-DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 08:08:30 - 08:15:30\nTreni coinvolti
-  nella chiusura:\n  - REG 4385 (BARI CENTRALE -> LECCE) (+4m)\n  - REG 438
- 5 (BARI CENTRALE -> LECCE) (+4m)\nRitardo massimo rilevato: 4 min\nAffidab
- ilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+SUMMARY:[FERMATA] REG 4385 (BARI CENTRALE -> LECCE) ore 08:14 (+4 min)
+DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 08:08:30 - 08:15:30\nTreni coinvolti nella chiusura:\n  
+ - REG 4385 (BARI CENTRALE -> LECCE) (+4m)\nRitardo massimo rilevato: 4 min
+ \nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale da
+  circuito di binario
 LOCATION:Passaggio a Livello / Stazione FASANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23511--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T074500Z
-DTEND:20261126T075630Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 08:45 - 08:56 (primo: REG 23511) (+1 
- min)
-DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 08:45:00 - 08:56:30\nTreni coinvolti
-  nella chiusura:\n  - REG 23511 (BARLETTA -> FASANO)\n  - REG 23511 (BARLE
- TTA -> FASANO)\n  - TRENO 8818 (LECCE -> MILANO CENTRALE) (+1m) [Transito]
- \nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativ
- a/euristica: Chiusura continua per 3 treni: intervallo utile tra i passagg
- i (90s) inferiore alla soglia minima di sgombero stradale (120s)
+DTEND:20261126T074930Z
+SUMMARY:[FERMATA] REG 23511 (BARLETTA -> FASANO) ore 08:48
+DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 08:45:00 - 08:49:30\nTreni coinvolti nella chiusura:\n  
+ - REG 23511 (BARLETTA -> FASANO)\nRitardo massimo rilevato: -2 min\nAffida
+ bilità stima: 99%\nNota normativa/euristica: Rilevamento reale da circuit
+ o di binario
 LOCATION:Passaggio a Livello / Stazione FASANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:1
-X-PL-CONFIDENCE:0.78
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:-2
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-8818--20261125-S11130@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T075135Z
+DTEND:20261126T075705Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8818 (LECCE -> MILANO CENTRALE) ore 08:55 (
+ +1 min)
+DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 08:51:35 - 08:57:05\nTreni coinvolti nella chius
+ ura:\n  - TRENO 8818 (LECCE -> MILANO CENTRALE) (+1m) [Transito]\nRitardo 
+ massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Transito stimato senza fermata (47% tratta BRINDISI -> BARI CENTRALE\; 
+ pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione FASANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
 UID:train-612--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T081437Z
-DTEND:20261126T081907Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T081456Z
+DTEND:20261126T081926Z
 SUMMARY:[TRANSITO VELOCE] IC 612 (LECCE -> MILANO CENTRALE) ore 09:18
 DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 09:14:37 - 09:19:07\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 09:14:56 - 09:19:26\nTreni coinvolti nella chius
  ura:\n  - IC 612 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massimo ri
  levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transit
- o stimato senza fermata (19% tratta BRINDISI -> FRANCAVILLA FONTANA\; peda
+ o stimato senza fermata (20% tratta BRINDISI -> FRANCAVILLA FONTANA\; peda
  le annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione FASANO
 STATUS:CONFIRMED
@@ -153,62 +181,61 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4398--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T101150Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T101155Z
 DTEND:20261126T102630Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:11 - 11:26 (primo: REG 4398) (+5 m
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:11 - 11:26 (primo: REG 4398) (+5 m
  in)
 DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: CHIUSURA CONTINU
- A - 4 TRENI\nChiusura sbarre stimata: 11:11:50 - 11:26:30\nTreni coinvolti
+ A - 2 TRENI\nChiusura sbarre stimata: 11:11:55 - 11:26:30\nTreni coinvolti
   nella chiusura:\n  - REG 4398 (LECCE -> BARI CENTRALE) [Transito]\n  - RE
- G 4398 (LECCE -> BARI CENTRALE) [Transito]\n  - REG 4398 (LECCE -> BARI CE
- NTRALE) (+5m)\n  - REG 4398 (LECCE -> BARI CENTRALE) (+5m)\nRitardo massim
- o rilevato: 5 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
- usura continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
+ G 4398 (LECCE -> BARI CENTRALE) (+5m)\nRitardo massimo rilevato: 5 min\nAf
+ fidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 
+ treni: intervallo utile tra i passaggi (94s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FASANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-566--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T105958Z
-DTEND:20261126T110428Z
-SUMMARY:[TRANSITO VELOCE] IC 566 (LECCE -> REGGIO DI CALABRIA CENTRALE) ore
-  12:03
-DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 11:59:58 - 12:04:28\nTreni coinvolti nella chius
- ura:\n  - IC 566 (LECCE -> REGGIO DI CALABRIA CENTRALE) [Transito]\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Transito stimato senza fermata (19% tratta BRINDISI -> FRANCAVILLA FO
- NTANA\; pedale annuncio fisso Vmax)
+UID:train-8314--20261125-S11130@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T105244Z
+DTEND:20261126T110441Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:52 - 12:04 (primo: TRENO 8314)
+DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 11:52:44 - 12:04:41\nTreni coinvolti
+  nella chiusura:\n  - TRENO 8314 (LECCE -> ROMA TERMINI) [Transito]\n  - I
+ C 566 (LECCE -> REGGIO DI CALABRIA CENTRALE) [Transito]\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
+ ra continua per 2 treni: intervallo utile tra i passaggi (117s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FASANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4404--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T110700Z
-DTEND:20261126T111230Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T110705Z
+DTEND:20261126T111235Z
 SUMMARY:[TRANSITO VELOCE] REG 4404 (LECCE -> BARI CENTRALE) ore 12:11
 DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 12:07:00 - 12:12:30\nTreni coinvolti nella chius
+ nChiusura sbarre stimata: 12:07:05 - 12:12:35\nTreni coinvolti nella chius
  ura:\n  - REG 4404 (LECCE -> BARI CENTRALE) [Transito]\nRitardo massimo ri
  levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transit
- o stimato senza fermata (66% tratta OSTUNI -> CISTERNINO\; pedale annuncio
+ o stimato senza fermata (67% tratta OSTUNI -> CISTERNINO\; pedale annuncio
   fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione FASANO
 STATUS:CONFIRMED
@@ -220,8 +247,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4404--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T111630Z
 DTEND:20261126T112100Z
 SUMMARY:[FERMATA] REG 4404 (LECCE -> BARI CENTRALE) ore 12:20
@@ -240,165 +267,178 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23550--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T120830Z
 DTEND:20261126T121300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:08 - 13:13 (primo: REG 23550) (+2 
- min)
-DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 13:08:30 - 13:13:00\nTreni coinvolti
-  nella chiusura:\n  - REG 23550 (FASANO -> BARLETTA) (+2m)\n  - REG 23550 
- (FASANO -> BARLETTA) (+2m)\nRitardo massimo rilevato: 2 min\nAffidabilità
-  stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+SUMMARY:[FERMATA] REG 23550 (FASANO -> BARLETTA) ore 13:12 (+2 min)
+DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 13:08:30 - 13:13:00\nTreni coinvolti nella chiusura:\n  
+ - REG 23550 (FASANO -> BARLETTA) (+2m)\nRitardo massimo rilevato: 2 min\nA
+ ffidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale da ci
+ rcuito di binario
 LOCATION:Passaggio a Livello / Stazione FASANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4407--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
+UID:train-9560--20261125-S11130@pl-tracker.local
+DTSTAMP:20261126T215722Z
 SEQUENCE:0
-DTSTART:20261126T130130Z
+DTSTART:20261126T122712Z
+DTEND:20261126T123242Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9560 (LECCE -> MILANO CENTRALE) ore 13:31
+DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 13:27:12 - 13:32:42\nTreni coinvolti nella chius
+ ura:\n  - TRENO 9560 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massim
+ o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
+ nsito stimato senza fermata (47% tratta BRINDISI -> BARI CENTRALE\; pedale
+  annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione FASANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8828--20261125-S11130@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T125644Z
 DTEND:20261126T130600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:01 - 14:06 (primo: REG 4407)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:56 - 14:06 (primo: TRENO 8828) (+9
+  min)
 DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 14:01:30 - 14:06:00\nTreni coinvolti
-  nella chiusura:\n  - REG 4407 (BARI CENTRALE -> LECCE)\n  - REG 4407 (BAR
- I CENTRALE -> LECCE)\nRitardo massimo rilevato: -1 min\nAffidabilità stim
- a: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: intervall
- o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
- ale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 13:56:44 - 14:06:00\nTreni coinvolti
+  nella chiusura:\n  - TRENO 8828 (LECCE -> VENEZIA S.LUCIA) (+9m) [Transit
+ o]\n  - REG 4407 (BARI CENTRALE -> LECCE)\nRitardo massimo rilevato: 9 min
+ \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
+ r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FASANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:-1
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
+X-PL-DELAY-MIN:9
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4411--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T133230Z
 DTEND:20261126T134100Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 14:32 - 14:41 (primo: REG 4411)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:32 - 14:41 (primo: REG 4411)
 DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 14:32:30 - 14:41:00\nTreni coinvolti
-  nella chiusura:\n  - REG 4411 (BARI CENTRALE -> LECCE)\n  - REG 4411 (BAR
- I CENTRALE -> LECCE)\n  - REG 23536 (FASANO -> BARLETTA)\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chius
- ura continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore a
- lla soglia minima di sgombero stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 14:32:30 - 14:41:00\nTreni coinvolti
+  nella chiusura:\n  - REG 4411 (BARI CENTRALE -> LECCE)\n  - REG 23536 (FA
+ SANO -> BARLETTA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 9
+ 0%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo ut
+ ile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale 
+ (120s)
 LOCATION:Passaggio a Livello / Stazione FASANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-603--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T144515Z
 DTEND:20261126T145000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:45 - 15:50 (primo: IC 603) (+2 min
- )
-DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 15:45:15 - 15:50:00\nTreni coinvolti
-  nella chiusura:\n  - IC 603 (MILANO CENTRALE -> LECCE) (+2m)\n  - IC 603 
- (MILANO CENTRALE -> LECCE) (+2m)\nRitardo massimo rilevato: 2 min\nAffidab
- ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+SUMMARY:[FERMATA] IC 603 (MILANO CENTRALE -> LECCE) ore 15:49 (+2 min)
+DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 15:45:15 - 15:50:00\nTreni coinvolti nella chiusura:\n  
+ - IC 603 (MILANO CENTRALE -> LECCE) (+2m)\nRitardo massimo rilevato: 2 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione con ritar
+ do propagato (+2 min)
 LOCATION:Passaggio a Livello / Stazione FASANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23541--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T150630Z
-DTEND:20261126T151230Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:06 - 16:12 (primo: REG 23541)
+DTEND:20261126T151235Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:06 - 16:12 (primo: REG 23541)
 DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: CHIUSURA CONTINU
- A - 3 TRENI\nChiusura sbarre stimata: 16:06:30 - 16:12:30\nTreni coinvolti
+ A - 2 TRENI\nChiusura sbarre stimata: 16:06:30 - 16:12:35\nTreni coinvolti
   nella chiusura:\n  - REG 23541 (BARLETTA -> FASANO)\n  - REG 4422 (LECCE 
- -> BARI CENTRALE) [Transito]\n  - REG 4422 (LECCE -> BARI CENTRALE) [Trans
- ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
- ativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i pas
- saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ -> BARI CENTRALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilit
+ à stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FASANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4447--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T151441Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T151443Z
 DTEND:20261126T152100Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 16:14 - 16:21 (primo: REG 4447)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:14 - 16:21 (primo: REG 4447)
 DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: CHIUSURA CONTINU
- A - 4 TRENI\nChiusura sbarre stimata: 16:14:41 - 16:21:00\nTreni coinvolti
+ A - 2 TRENI\nChiusura sbarre stimata: 16:14:43 - 16:21:00\nTreni coinvolti
   nella chiusura:\n  - REG 4447 (BARI CENTRALE -> LECCE) [Transito]\n  - RE
- G 4447 (BARI CENTRALE -> LECCE) [Transito]\n  - REG 4422 (LECCE -> BARI CE
- NTRALE)\n  - REG 4422 (LECCE -> BARI CENTRALE)\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
- ua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
+ G 4422 (LECCE -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabi
+ lità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni:
+  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FASANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23543--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T154630Z
 DTEND:20261126T155100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:46 - 16:51 (primo: REG 23543)
-DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 16:46:30 - 16:51:00\nTreni coinvolti
-  nella chiusura:\n  - REG 23543 (BARLETTA -> FASANO)\n  - REG 23543 (BARLE
- TTA -> FASANO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\
- nNota normativa/euristica: Chiusura continua per 2 treni: intervallo utile
-  tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (12
- 0s)
+SUMMARY:[FERMATA] REG 23543 (BARLETTA -> FASANO) ore 16:50
+DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 16:46:30 - 16:51:00\nTreni coinvolti nella chiusura:\n  
+ - REG 23543 (BARLETTA -> FASANO)\nRitardo massimo rilevato: 0 min\nAffidab
+ ilità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria 
+ regolare
 LOCATION:Passaggio a Livello / Stazione FASANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4421--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T160230Z
 DTEND:20261126T160700Z
 SUMMARY:[FERMATA] REG 4421 (BARI CENTRALE -> LECCE) ore 17:06
@@ -417,8 +457,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23545--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T161630Z
 DTEND:20261126T162100Z
 SUMMARY:[FERMATA] REG 23545 (BARLETTA -> FASANO) ore 17:20
@@ -437,50 +477,51 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23547--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T164630Z
-DTEND:20261126T165100Z
-SUMMARY:[FERMATA] REG 23547 (BARLETTA -> FASANO) ore 17:50
-DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 17:46:30 - 17:51:00\nTreni coinvolti nella chiusura:\n  
- - REG 23547 (BARLETTA -> FASANO)\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria 
- regolare
-LOCATION:Passaggio a Livello / Stazione FASANO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-758--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T180144Z
-DTEND:20261126T180614Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:01 - 19:06 (primo: ICN 758)
+DTEND:20261126T165554Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:46 - 17:55 (primo: REG 23547)
 DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 19:01:44 - 19:06:14\nTreni coinvolti
-  nella chiusura:\n  - ICN 758 (LECCE -> MILANO CENTRALE) [Transito]\n  - I
- CN 758 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 17:46:30 - 17:55:54\nTreni coinvolti
+  nella chiusura:\n  - REG 23547 (BARLETTA -> FASANO)\n  - TRENO 8326 (LECC
+ E -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabili
+ tà stima: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: i
+ ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
+ ro stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FASANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-758--20261125-S11130@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T180159Z
+DTEND:20261126T180629Z
+SUMMARY:[TRANSITO VELOCE] ICN 758 (LECCE -> MILANO CENTRALE) ore 19:05
+DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 19:01:59 - 19:06:29\nTreni coinvolti nella chius
+ ura:\n  - ICN 758 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transi
+ to stimato senza fermata (20% tratta BRINDISI -> FRANCAVILLA FONTANA\; ped
+ ale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione FASANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-607--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T183215Z
 DTEND:20261126T183700Z
 SUMMARY:[FERMATA] IC 607 (MILANO PORTA GARIBALDI -> LECCE) ore 19:36
@@ -499,8 +540,8 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-752--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T195315Z
 DTEND:20261126T195800Z
 SUMMARY:[FERMATA] ICN 752 (LECCE -> MILANO CENTRALE) ore 20:57
@@ -519,8 +560,8 @@ X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4441--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T203230Z
 DTEND:20261126T203700Z
 SUMMARY:[FERMATA] REG 4441 (BARI CENTRALE -> LECCE) ore 21:36
@@ -539,31 +580,28 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-609--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T204415Z
 DTEND:20261126T204900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:44 - 21:49 (primo: IC 609) (+2 min
- )
-DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 21:44:15 - 21:49:00\nTreni coinvolti
-  nella chiusura:\n  - IC 609 (MILANO CENTRALE -> LECCE) (+2m)\n  - IC 609 
- (MILANO CENTRALE -> LECCE) (+2m)\nRitardo massimo rilevato: 2 min\nAffidab
- ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+SUMMARY:[FERMATA] IC 609 (MILANO CENTRALE -> LECCE) ore 21:48 (+2 min)
+DESCRIPTION:Stazione/PL: FASANO (S11130)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 21:44:15 - 21:49:00\nTreni coinvolti nella chiusura:\n  
+ - IC 609 (MILANO CENTRALE -> LECCE) (+2m)\nRitardo massimo rilevato: 2 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione con ritar
+ do propagato (+2 min)
 LOCATION:Passaggio a Livello / Stazione FASANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-757--20261125-S11130@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261127T075815Z
 DTEND:20261127T080300Z
 SUMMARY:[FERMATA] ICN 757 (TORINO PORTA NUOVA -> LECCE) ore 09:02

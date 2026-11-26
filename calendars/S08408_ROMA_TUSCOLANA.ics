@@ -9,35 +9,55 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:ec61d0a902077a1a77646e3d716fe9f6f20efe2cfd0f08b6f6740ad21880
- 8642
+X-CONTENT-HASH:afe6c0a76ef298ec72efe87774593307ee933f50cf29ce13abf0554c9399
+ e8cd
 BEGIN:VEVENT
-UID:train-20156--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T052630Z
-DTEND:20261126T053330Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:26 - 06:33 (primo: REG 20156) (+3 
- min)
-DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:26:30 - 06:33:30\nTreni c
- oinvolti nella chiusura:\n  - REG 20156 (ROMA TIBURTINA -> VITERBO PORTA R
- OMANA) (+3m)\n  - REG 20156 (ROMA TIBURTINA -> VITERBO PORTA ROMANA) (+3m)
- \nRitardo massimo rilevato: 3 min\nAffidabilità stima: 99%\nNota normativ
- a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
- i (0s) inferiore alla soglia minima di sgombero stradale (120s)
+UID:train-4094--20261125-S08408@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T042810Z
+DTEND:20261126T043340Z
+SUMMARY:[TRANSITO VELOCE] REG 4094 (ROMA TERMINI -> FIRENZE SANTA MARIA NOV
+ ELLA) ore 05:32
+DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: TRANSITO
+  VELOCE\nChiusura sbarre stimata: 05:28:10 - 05:33:40\nTreni coinvolti nel
+ la chiusura:\n  - REG 4094 (ROMA TERMINI -> FIRENZE SANTA MARIA NOVELLA) [
+ Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Transito stimato senza fermata (40% tratta ROMA TERM
+ INI -> ROMA TIBURTINA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20156--20261125-S08408@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T052630Z
+DTEND:20261126T053330Z
+SUMMARY:[FERMATA] REG 20156 (ROMA TIBURTINA -> VITERBO PORTA ROMANA) ore 06
+ :32 (+3 min)
+DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 06:26:30 - 06:33:30\nTreni coinvolti nella chius
+ ura:\n  - REG 20156 (ROMA TIBURTINA -> VITERBO PORTA ROMANA) (+3m)\nRitard
+ o massimo rilevato: 3 min\nAffidabilità stima: 99%\nNota normativa/eurist
+ ica: Rilevamento reale da circuito di binario
+LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4501--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T053530Z
 DTEND:20261126T054000Z
 SUMMARY:[FERMATA] REG 4501 (GROSSETO -> ROMA TERMINI) ore 06:39
@@ -56,13 +76,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20409--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T054730Z
-DTEND:20261126T055543Z
+DTEND:20261126T055540Z
 SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 06:47 - 06:55 (primo: REG 20409)
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
-  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 06:47:30 - 06:55:43\nTreni c
+  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 06:47:30 - 06:55:40\nTreni c
  oinvolti nella chiusura:\n  - REG 20409 (FARA SABINA-MONTELIBRETTI -> ROMA
   OSTIENSE)\n  - REG 20555 (ROMA OSTIENSE -> MONTEROTONDO-MENTANA)\n  - REG
   4712 (ROMA TERMINI -> PERUGIA) [Transito]\nRitardo massimo rilevato: 0 mi
@@ -79,8 +99,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20397--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T060230Z
 DTEND:20261126T060700Z
 SUMMARY:[FERMATA] REG 20397 (ORTE -> ROMA OSTIENSE) ore 07:06
@@ -98,62 +118,58 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4151--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T061554Z
+UID:train-20577--20261125-S08408@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T061830Z
 DTEND:20261126T062900Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 07:15 - 07:29 (primo: REG 4151) (+2 m
- in)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:18 - 07:29 (primo: REG 20577) (+2 
+ min)
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
-  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 07:15:54 - 07:29:00\nTreni c
- oinvolti nella chiusura:\n  - REG 4151 (ANCONA -> ROMA TERMINI) [Transito]
- \n  - REG 20577 (ROMA OSTIENSE -> POGGIO MIRTETO) (+2m)\n  - REG 20577 (RO
- MA OSTIENSE -> POGGIO MIRTETO) (+2m)\n  - REG 23308 (ROMA TIBURTINA -> LA 
- STORTA)\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota n
- ormativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i 
- passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:18:30 - 07:29:00\nTreni c
+ oinvolti nella chiusura:\n  - REG 20577 (ROMA OSTIENSE -> POGGIO MIRTETO) 
+ (+2m)\n  - REG 23308 (ROMA TIBURTINA -> LA STORTA)\nRitardo massimo rileva
+ to: 2 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura co
+ ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:2
-X-PL-CONFIDENCE:0.78
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20579--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T063330Z
 DTEND:20261126T065757Z
-SUMMARY:[CHIUSURA CONTINUA - 9 TRENI] 07:33 - 07:57 (primo: REG 20579) (+3 
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 07:33 - 07:57 (primo: REG 20579) (+3 
  min)
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
-  CONTINUA - 9 TRENI\nChiusura sbarre stimata: 07:33:30 - 07:57:57\nTreni c
+  CONTINUA - 6 TRENI\nChiusura sbarre stimata: 07:33:30 - 07:57:57\nTreni c
  oinvolti nella chiusura:\n  - REG 20579 (ROMA OSTIENSE -> ORTE)\n  - REG 2
  0756 (MONTEROTONDO-MENTANA -> CESANO DI ROMA) (+2m) [Arrivo]\n  - REG 2075
- 6 (MONTEROTONDO-MENTANA -> CESANO DI ROMA) (+2m) [Arrivo]\n  - REG 20756 (
- MONTEROTONDO-MENTANA -> CESANO DI ROMA) (+2m) [Partenza]\n  - REG 20756 (M
- ONTEROTONDO-MENTANA -> CESANO DI ROMA) (+2m) [Partenza]\n  - REG 20421 (PO
- GGIO MIRTETO -> ROMA OSTIENSE)\n  - REG 20583 (ROMA OSTIENSE -> FARA SABIN
- A-MONTELIBRETTI) (+3m)\n  - REG 20583 (ROMA OSTIENSE -> FARA SABINA-MONTEL
- IBRETTI) (+3m)\n  - REG 4565 (FOLIGNO -> ROMA TERMINI) (+2m) [Transito]\nR
- itardo massimo rilevato: 3 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Chiusura continua per 9 treni: intervallo utile tra i passaggi (
- 0s) inferiore alla soglia minima di sgombero stradale (120s)
+ 6 (MONTEROTONDO-MENTANA -> CESANO DI ROMA) (+2m) [Partenza]\n  - REG 20421
+  (POGGIO MIRTETO -> ROMA OSTIENSE)\n  - REG 20583 (ROMA OSTIENSE -> FARA S
+ ABINA-MONTELIBRETTI) (+3m)\n  - REG 4565 (FOLIGNO -> ROMA TERMINI) (+2m) [
+ Transito]\nRitardo massimo rilevato: 3 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Chiusura continua per 6 treni: intervallo utile tra 
+ i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 9 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
 X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21382--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T070930Z
 DTEND:20261126T071800Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:09 - 08:18 (primo: REG 21382)
@@ -174,8 +190,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12571--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T080730Z
 DTEND:20261126T081200Z
 SUMMARY:[FERMATA] REG 12571 (MONTALTO DI CASTRO -> ROMA TERMINI) ore 09:11
@@ -194,13 +210,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9301--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T082754Z
-DTEND:20261126T083324Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T082753Z
+DTEND:20261126T083323Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9301 (MANTOVA -> ROMA TERMINI) ore 09:32
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 09:27:54 - 09:33:24\nTreni coinvolti nel
+  VELOCE\nChiusura sbarre stimata: 09:27:53 - 09:33:23\nTreni coinvolti nel
  la chiusura:\n  - TRENO 9301 (MANTOVA -> ROMA TERMINI) [Transito]\nRitardo
   massimo rilevato: -4 min\nAffidabilità stima: 78%\nNota normativa/eurist
  ica: Transito stimato senza fermata (41% tratta ROMA TIBURTINA -> ROMA TER
@@ -214,51 +230,31 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8508--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T084837Z
-DTEND:20261126T085407Z
-SUMMARY:[TRANSITO VELOCE] TRENO 8508 (ROMA TERMINI -> BRESCIA) ore 09:52
-DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 09:48:37 - 09:54:07\nTreni coinvolti nel
- la chiusura:\n  - TRENO 8508 (ROMA TERMINI -> BRESCIA) [Transito]\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Transito stimato senza fermata (41% tratta ROMA TERMINI -> ROMA TIBURT
- INA\; pedale annuncio fisso Vmax)
+UID:train-8505--20261125-S08408@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T090151Z
+DTEND:20261126T090800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:01 - 10:08 (primo: TRENO 8505)
+DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:01:51 - 10:08:00\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 8505 (BOLZANO -> ROMA TERMINI) [Transi
+ to]\n  - REG 20613 (ROMA OSTIENSE -> FARA SABINA-MONTELIBRETTI)\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-20613--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T090330Z
-DTEND:20261126T090800Z
-SUMMARY:[FERMATA] REG 20613 (ROMA OSTIENSE -> FARA SABINA-MONTELIBRETTI) or
- e 10:07
-DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 10:03:30 - 10:08:00\nTreni coinvolti nella chius
- ura:\n  - REG 20613 (ROMA OSTIENSE -> FARA SABINA-MONTELIBRETTI)\nRitardo 
- massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
- a: Previsione da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-20342--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T092430Z
 DTEND:20261126T092900Z
 SUMMARY:[FERMATA] REG 20342 (ROMA TIBURTINA -> CESANO DI ROMA) ore 10:28
@@ -277,80 +273,100 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20451--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T093230Z
 DTEND:20261126T094019Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 10:32 - 10:40 (primo: REG 20451)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:32 - 10:40 (primo: REG 20451)
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
-  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 10:32:30 - 10:40:19\nTreni c
+  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 10:32:30 - 10:40:19\nTreni c
  oinvolti nella chiusura:\n  - REG 20451 (POGGIO MIRTETO -> ROMA OSTIENSE)\
- n  - REG 20621 (ROMA OSTIENSE -> FARA SABINA-MONTELIBRETTI)\n  - REG 4519 
- (TERNI -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+ n  - REG 20621 (ROMA OSTIENSE -> FARA SABINA-MONTELIBRETTI)\n  - TRENO 941
+ 6 (ROMA TERMINI -> VENEZIA S.LUCIA) [Transito]\n  - REG 4519 (TERNI -> ROM
+ A TERMINI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stim
+ a: 78%\nNota normativa/euristica: Chiusura continua per 4 treni: intervall
+ o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
+ ale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12514--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T094330Z
 DTEND:20261126T095400Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 10:43 - 10:54 (primo: REG 12514) (+1 
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:43 - 10:54 (primo: REG 12514) (+1 
  min)
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
-  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 10:43:30 - 10:54:00\nTreni c
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:43:30 - 10:54:00\nTreni c
  oinvolti nella chiusura:\n  - REG 12514 (ROMA TERMINI -> CIVITAVECCHIA)\n 
-  - REG 20453 (FARA SABINA-MONTELIBRETTI -> ROMA OSTIENSE) (+1m)\n  - REG 2
- 0453 (FARA SABINA-MONTELIBRETTI -> ROMA OSTIENSE) (+1m)\nRitardo massimo r
- ilevato: 1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusu
- ra continua per 3 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+  - REG 20453 (FARA SABINA-MONTELIBRETTI -> ROMA OSTIENSE) (+1m)\nRitardo m
+ assimo rilevato: 1 min\nAffidabilità stima: 90%\nNota normativa/euristica
+ : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-20629--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
+UID:train-8513--20261125-S08408@pl-tracker.local
+DTSTAMP:20261126T215722Z
 SEQUENCE:0
-DTSTART:20261126T100330Z
-DTEND:20261126T103008Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 11:03 - 11:30 (primo: REG 20629)
+DTSTART:20261126T100015Z
+DTEND:20261126T101400Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 11:00 - 11:14 (primo: TRENO 8513)
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
-  CONTINUA - 5 TRENI\nChiusura sbarre stimata: 11:03:30 - 11:30:08\nTreni c
- oinvolti nella chiusura:\n  - REG 20629 (ROMA OSTIENSE -> FARA SABINA-MONT
- ELIBRETTI)\n  - REG 23258 (ROMA TIBURTINA -> BRACCIANO)\n  - REG 12516 (RO
- MA TERMINI -> CIVITAVECCHIA) [Transito]\n  - REG 20633 (ROMA OSTIENSE -> F
- ARA SABINA-MONTELIBRETTI)\n  - TRENO 8551 (GENOVA PIAZZA PRINCIPE -> ROMA 
- TERMINI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
-  78%\nNota normativa/euristica: Chiusura continua per 5 treni: intervallo 
- utile tra i passaggi (98s) inferiore alla soglia minima di sgombero strada
- le (120s)
+  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 11:00:15 - 11:14:00\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 8513 (BOLZANO -> ROMA TERMINI) [Transi
+ to]\n  - REG 20629 (ROMA OSTIENSE -> FARA SABINA-MONTELIBRETTI)\n  - REG 2
+ 3258 (ROMA TIBURTINA -> BRACCIANO)\nRitardo massimo rilevato: 0 min\nAffid
+ abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 tre
+ ni: intervallo utile tra i passaggi (90s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20633--20261125-S08408@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T101830Z
+DTEND:20261126T103008Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:18 - 11:30 (primo: REG 20633)
+DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:18:30 - 11:30:08\nTreni c
+ oinvolti nella chiusura:\n  - REG 20633 (ROMA OSTIENSE -> FARA SABINA-MONT
+ ELIBRETTI)\n  - TRENO 8551 (GENOVA PIAZZA PRINCIPE -> ROMA TERMINI) [Trans
+ ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
+ saggi (98s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20635--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T103330Z
 DTEND:20261126T103800Z
 SUMMARY:[FERMATA] REG 20635 (ROMA OSTIENSE -> ORTE) ore 11:37
@@ -369,38 +385,36 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12520--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T104300Z
 DTEND:20261126T105400Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:43 - 11:54 (primo: REG 12520) (+1 
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:43 - 11:54 (primo: REG 12520) (+1 
  min)
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
-  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 11:43:00 - 11:54:00\nTreni c
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:43:00 - 11:54:00\nTreni c
  oinvolti nella chiusura:\n  - REG 12520 (ROMA TERMINI -> CIVITAVECCHIA) (+
- 1m)\n  - REG 12520 (ROMA TERMINI -> CIVITAVECCHIA) (+1m)\n  - REG 20461 (F
- ARA SABINA-MONTELIBRETTI -> ROMA OSTIENSE) (+1m)\n  - REG 20461 (FARA SABI
- NA-MONTELIBRETTI -> ROMA OSTIENSE) (+1m)\nRitardo massimo rilevato: 1 min\
- nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per
-  4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
- a di sgombero stradale (120s)
+ 1m)\n  - REG 20461 (FARA SABINA-MONTELIBRETTI -> ROMA OSTIENSE) (+1m)\nRit
+ ardo massimo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/eur
+ istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s
+ ) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8507--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T110116Z
-DTEND:20261126T110646Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T110115Z
+DTEND:20261126T110645Z
 SUMMARY:[TRANSITO VELOCE] TRENO 8507 (BOLZANO -> ROMA TERMINI) ore 12:05
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 12:01:16 - 12:06:46\nTreni coinvolti nel
+  VELOCE\nChiusura sbarre stimata: 12:01:15 - 12:06:45\nTreni coinvolti nel
  la chiusura:\n  - TRENO 8507 (BOLZANO -> ROMA TERMINI) [Transito]\nRitardo
   massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
  ca: Transito stimato senza fermata (41% tratta ROMA TIBURTINA -> ROMA TERM
@@ -414,65 +428,63 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-20354--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
+UID:train-9311--20261125-S08408@pl-tracker.local
+DTSTAMP:20261126T215722Z
 SEQUENCE:0
-DTSTART:20261126T122400Z
+DTSTART:20261126T122338Z
 DTEND:20261126T123300Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 13:24 - 13:33 (primo: REG 20354) (+1 
- min)
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 13:23 - 13:33 (primo: TRENO 9311) (+1
+  min)
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
-  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 13:24:00 - 13:33:00\nTreni c
- oinvolti nella chiusura:\n  - REG 20354 (ROMA TIBURTINA -> CESANO DI ROMA)
-  (+1m)\n  - REG 20354 (ROMA TIBURTINA -> CESANO DI ROMA) (+1m)\n  - REG 23
- 259 (BRACCIANO -> ROMA TIBURTINA) (+1m)\n  - REG 23259 (BRACCIANO -> ROMA 
- TIBURTINA) (+1m)\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 99
- %\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo uti
- le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
- 120s)
+  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 13:23:38 - 13:33:00\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 9311 (TORINO PORTA NUOVA -> NAPOLI CEN
+ TRALE) [Transito]\n  - REG 20354 (ROMA TIBURTINA -> CESANO DI ROMA) (+1m)\
+ n  - REG 23259 (BRACCIANO -> ROMA TIBURTINA) (+1m)\nRitardo massimo rileva
+ to: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
+ ntinua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:1
-X-PL-CONFIDENCE:0.99
-X-PL-TRAIN-CATEGORY:REG
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20657--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T124830Z
 DTEND:20261126T125300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:48 - 13:53 (primo: REG 20657)
-DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:48:30 - 13:53:00\nTreni c
- oinvolti nella chiusura:\n  - REG 20657 (ROMA OSTIENSE -> FARA SABINA-MONT
- ELIBRETTI)\n  - REG 20657 (ROMA OSTIENSE -> FARA SABINA-MONTELIBRETTI)\nRi
- tardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eu
- ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
- s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 20657 (ROMA OSTIENSE -> FARA SABINA-MONTELIBRETTI) or
+ e 13:52
+DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 13:48:30 - 13:53:00\nTreni coinvolti nella chius
+ ura:\n  - REG 20657 (ROMA OSTIENSE -> FARA SABINA-MONTELIBRETTI)\nRitardo 
+ massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristic
+ a: Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9540--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T130048Z
-DTEND:20261126T130618Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T130037Z
+DTEND:20261126T130607Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9540 (NAPOLI CENTRALE -> MILANO CENTRALE) o
- re 14:05 (+1 min)
+ re 14:04 (+1 min)
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 14:00:48 - 14:06:18\nTreni coinvolti nel
+  VELOCE\nChiusura sbarre stimata: 14:00:37 - 14:06:07\nTreni coinvolti nel
  la chiusura:\n  - TRENO 9540 (NAPOLI CENTRALE -> MILANO CENTRALE) (+1m) [T
  ransito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota 
- normativa/euristica: Transito stimato senza fermata (41% tratta ROMA TERMI
+ normativa/euristica: Transito stimato senza fermata (40% tratta ROMA TERMI
  NI -> ROMA TIBURTINA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
@@ -484,64 +496,60 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12663--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T131430Z
 DTEND:20261126T131900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:14 - 14:19 (primo: REG 12663) (+7 
- min)
-DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:14:30 - 14:19:00\nTreni c
- oinvolti nella chiusura:\n  - REG 12663 (CIVITAVECCHIA -> ROMA TERMINI) (+
- 7m)\n  - REG 12663 (CIVITAVECCHIA -> ROMA TERMINI) (+7m)\nRitardo massimo 
- rilevato: 7 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chius
- ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
- lla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 12663 (CIVITAVECCHIA -> ROMA TERMINI) ore 14:18 (+7 m
+ in)
+DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 14:14:30 - 14:19:00\nTreni coinvolti nella chius
+ ura:\n  - REG 12663 (CIVITAVECCHIA -> ROMA TERMINI) (+7m)\nRitardo massimo
+  rilevato: 7 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
+ isione con ritardo propagato (+7 min)
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:7
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-505--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T132218Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T132212Z
 DTEND:20261126T133700Z
-SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 14:22 - 14:37 (primo: IC 505)
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 14:22 - 14:37 (primo: IC 505)
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
-  CONTINUA - 7 TRENI\nChiusura sbarre stimata: 14:22:18 - 14:37:00\nTreni c
+  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 14:22:12 - 14:37:00\nTreni c
  oinvolti nella chiusura:\n  - IC 505 (VENTIMIGLIA -> ROMA TERMINI) [Transi
- to]\n  - REG 20358 (ROMA TIBURTINA -> CESANO DI ROMA)\n  - REG 20358 (ROMA
-  TIBURTINA -> CESANO DI ROMA)\n  - REG 12580 (ROMA TERMINI -> LADISPOLI-CE
- RVETERI)\n  - REG 12580 (ROMA TERMINI -> LADISPOLI-CERVETERI)\n  - REG 204
- 87 (POGGIO MIRTETO -> ROMA OSTIENSE)\n  - REG 20487 (POGGIO MIRTETO -> ROM
- A OSTIENSE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
- ta normativa/euristica: Chiusura continua per 7 treni: intervallo utile tr
- a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ to]\n  - REG 20358 (ROMA TIBURTINA -> CESANO DI ROMA)\n  - REG 12580 (ROMA
+  TERMINI -> LADISPOLI-CERVETERI)\n  - REG 20487 (POGGIO MIRTETO -> ROMA OS
+ TIENSE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i 
+ passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8520--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T134837Z
-DTEND:20261126T135407Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T134834Z
+DTEND:20261126T135404Z
 SUMMARY:[TRANSITO VELOCE] TRENO 8520 (ROMA TERMINI -> BOLZANO) ore 14:52
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 14:48:37 - 14:54:07\nTreni coinvolti nel
+  VELOCE\nChiusura sbarre stimata: 14:48:34 - 14:54:04\nTreni coinvolti nel
  la chiusura:\n  - TRENO 8520 (ROMA TERMINI -> BOLZANO) [Transito]\nRitardo
   massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Transito stimato senza fermata (41% tratta ROMA TERMINI -> ROMA TIBURT
+ ca: Transito stimato senza fermata (40% tratta ROMA TERMINI -> ROMA TIBURT
  INA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
@@ -553,81 +561,76 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20491--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T140030Z
 DTEND:20261126T140500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:00 - 15:05 (primo: REG 20491)
-DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:00:30 - 15:05:00\nTreni c
- oinvolti nella chiusura:\n  - REG 20491 (ORTE -> ROMA OSTIENSE)\n  - REG 2
- 0491 (ORTE -> ROMA OSTIENSE)\nRitardo massimo rilevato: -2 min\nAffidabili
- tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
- ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
- ro stradale (120s)
+SUMMARY:[FERMATA] REG 20491 (ORTE -> ROMA OSTIENSE) ore 15:04
+DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 15:00:30 - 15:05:00\nTreni coinvolti nella chius
+ ura:\n  - REG 20491 (ORTE -> ROMA OSTIENSE)\nRitardo massimo rilevato: -2 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione con an
+ ticipo (-2 min)
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:-2
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23266--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T140930Z
 DTEND:20261126T141400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:09 - 15:14 (primo: REG 23266)
-DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:09:30 - 15:14:00\nTreni c
- oinvolti nella chiusura:\n  - REG 23266 (ROMA TIBURTINA -> BRACCIANO)\n  -
-  REG 23266 (ROMA TIBURTINA -> BRACCIANO)\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per
-  2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
- a di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 23266 (ROMA TIBURTINA -> BRACCIANO) ore 15:13
+DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 15:09:30 - 15:14:00\nTreni coinvolti nella chius
+ ura:\n  - REG 23266 (ROMA TIBURTINA -> BRACCIANO)\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
+ a traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20497--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T143230Z
-DTEND:20261126T143800Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:32 - 15:38 (primo: REG 20497)
+DTEND:20261126T144454Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 15:32 - 15:44 (primo: REG 20497)
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
-  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 15:32:30 - 15:38:00\nTreni c
+  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 15:32:30 - 15:44:54\nTreni c
  oinvolti nella chiusura:\n  - REG 20497 (POGGIO MIRTETO -> ROMA OSTIENSE)\
- n  - REG 20497 (POGGIO MIRTETO -> ROMA OSTIENSE)\n  - REG 20675 (ROMA OSTI
- ENSE -> FARA SABINA-MONTELIBRETTI)\n  - REG 20675 (ROMA OSTIENSE -> FARA S
- ABINA-MONTELIBRETTI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima
- : 90%\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
+ n  - REG 20675 (ROMA OSTIENSE -> FARA SABINA-MONTELIBRETTI)\n  - TRENO 953
+ 5 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
+ continua per 3 treni: intervallo utile tra i passaggi (84s) inferiore alla
+  soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20364--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T145430Z
-DTEND:20261126T150101Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:54 - 16:01 (primo: REG 20364)
+DTEND:20261126T150057Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:54 - 16:00 (primo: REG 20364)
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:54:30 - 16:01:01\nTreni c
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:54:30 - 16:00:57\nTreni c
  oinvolti nella chiusura:\n  - REG 20364 (ROMA TIBURTINA -> CESANO DI ROMA)
  \n  - IC 518 (ROMA TERMINI -> VENTIMIGLIA) [Transito]\nRitardo massimo ril
  evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
@@ -643,30 +646,28 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20679--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T150330Z
 DTEND:20261126T150800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:03 - 16:08 (primo: REG 20679)
-DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:03:30 - 16:08:00\nTreni c
- oinvolti nella chiusura:\n  - REG 20679 (ROMA OSTIENSE -> POGGIO MIRTETO)\
- n  - REG 20679 (ROMA OSTIENSE -> POGGIO MIRTETO)\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura cont
- inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 20679 (ROMA OSTIENSE -> POGGIO MIRTETO) ore 16:07
+DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 16:03:30 - 16:08:00\nTreni coinvolti nella chius
+ ura:\n  - REG 20679 (ROMA OSTIENSE -> POGGIO MIRTETO)\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
+ ne da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20681--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T151830Z
 DTEND:20261126T152300Z
 SUMMARY:[FERMATA] REG 20681 (ROMA OSTIENSE -> FARA SABINA-MONTELIBRETTI) or
@@ -686,39 +687,39 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20509--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T153230Z
 DTEND:20261126T153800Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 16:32 - 16:38 (primo: REG 20509)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:32 - 16:38 (primo: REG 20509)
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
-  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 16:32:30 - 16:38:00\nTreni c
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:32:30 - 16:38:00\nTreni c
  oinvolti nella chiusura:\n  - REG 20509 (POGGIO MIRTETO -> ROMA OSTIENSE)\
- n  - REG 20683 (ROMA OSTIENSE -> ORTE)\n  - REG 20683 (ROMA OSTIENSE -> OR
- TE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota norma
- tiva/euristica: Chiusura continua per 3 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ n  - REG 20683 (ROMA OSTIENSE -> ORTE)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12534--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T154330Z
-DTEND:20261126T155407Z
+DTEND:20261126T155404Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:43 - 16:54 (primo: REG 12534)
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:43:30 - 16:54:07\nTreni c
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:43:30 - 16:54:04\nTreni c
  oinvolti nella chiusura:\n  - REG 12534 (ROMA TERMINI -> CIVITAVECCHIA)\n 
   - TRENO 8524 (ROMA TERMINI -> BOLZANO) [Transito]\nRitardo massimo rileva
  to: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
- ntinua per 2 treni: intervallo utile tra i passaggi (37s) inferiore alla s
+ ntinua per 2 treni: intervallo utile tra i passaggi (34s) inferiore alla s
  oglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
@@ -730,30 +731,30 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4514--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T160016Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T160011Z
 DTEND:20261126T160700Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:00 - 17:07 (primo: REG 4514)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:00 - 17:07 (primo: REG 4514)
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
-  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 17:00:16 - 17:07:00\nTreni c
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:00:11 - 17:07:00\nTreni c
  oinvolti nella chiusura:\n  - REG 4514 (ROMA TERMINI -> FOLIGNO) [Transito
- ]\n  - REG 20503 (ORTE -> ROMA OSTIENSE)\n  - REG 20503 (ORTE -> ROMA OSTI
- ENSE)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i pa
- ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ ]\n  - REG 20503 (ORTE -> ROMA OSTIENSE)\nRitardo massimo rilevato: 0 min\
+ nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per
+  2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
+ a di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9421--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T161349Z
 DTEND:20261126T161919Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9421 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) o
@@ -774,17 +775,17 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4133--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T163706Z
-DTEND:20261126T164236Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T163701Z
+DTEND:20261126T164231Z
 SUMMARY:[TRANSITO VELOCE] REG 4133 (PISA CENTRALE -> ROMA TERMINI) ore 17:4
  1
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 17:37:06 - 17:42:36\nTreni coinvolti nel
+  VELOCE\nChiusura sbarre stimata: 17:37:01 - 17:42:31\nTreni coinvolti nel
  la chiusura:\n  - REG 4133 (PISA CENTRALE -> ROMA TERMINI) [Transito]\nRit
  ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Transito stimato senza fermata (45% tratta ROMA OSTIENSE -> ROMA T
+ istica: Transito stimato senza fermata (44% tratta ROMA OSTIENSE -> ROMA T
  ERMINI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
@@ -795,17 +796,59 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4504--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
+UID:train-8528--20261125-S08408@pl-tracker.local
+DTSTAMP:20261126T215722Z
 SEQUENCE:0
-DTSTART:20261126T181131Z
-DTEND:20261126T181701Z
+DTSTART:20261126T174858Z
+DTEND:20261126T175428Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8528 (ROMA TERMINI -> BRESCIA) ore 18:53
+DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: TRANSITO
+  VELOCE\nChiusura sbarre stimata: 18:48:58 - 18:54:28\nTreni coinvolti nel
+ la chiusura:\n  - TRENO 8528 (ROMA TERMINI -> BRESCIA) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (40% tratta ROMA TERMINI -> ROMA TIBURT
+ INA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9560--20261125-S08408@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T180125Z
+DTEND:20261126T180655Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9560 (LECCE -> MILANO CENTRALE) ore 19:05
+DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: TRANSITO
+  VELOCE\nChiusura sbarre stimata: 19:01:25 - 19:06:55\nTreni coinvolti nel
+ la chiusura:\n  - TRENO 9560 (LECCE -> MILANO CENTRALE) [Transito]\nRitard
+ o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
+ ica: Transito stimato senza fermata (40% tratta ROMA TERMINI -> ROMA TIBUR
+ TINA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4504--20261125-S08408@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T181126Z
+DTEND:20261126T181656Z
 SUMMARY:[TRANSITO VELOCE] REG 4504 (ROMA TERMINI -> GROSSETO) ore 19:15
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 19:11:31 - 19:17:01\nTreni coinvolti nel
+  VELOCE\nChiusura sbarre stimata: 19:11:26 - 19:16:56\nTreni coinvolti nel
  la chiusura:\n  - REG 4504 (ROMA TERMINI -> GROSSETO) [Transito]\nRitardo 
  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Transito stimato senza fermata (38% tratta ROMA TERMINI -> ROMA OSTIENS
+ a: Transito stimato senza fermata (37% tratta ROMA TERMINI -> ROMA OSTIENS
  E\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
@@ -816,15 +859,58 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-9328--20261125-S08408@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T182334Z
+DTEND:20261126T182904Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9328 (ROMA TERMINI -> MANTOVA) ore 19:27
+DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: TRANSITO
+  VELOCE\nChiusura sbarre stimata: 19:23:34 - 19:29:04\nTreni coinvolti nel
+ la chiusura:\n  - TRENO 9328 (ROMA TERMINI -> MANTOVA) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (40% tratta ROMA TERMINI -> ROMA TIBURT
+ INA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9330--20261125-S08408@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T184910Z
+DTEND:20261126T185440Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9330 (ROMA TERMINI -> MILANO CENTRALE) ore 
+ 19:53
+DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: TRANSITO
+  VELOCE\nChiusura sbarre stimata: 19:49:10 - 19:54:40\nTreni coinvolti nel
+ la chiusura:\n  - TRENO 9330 (ROMA TERMINI -> MILANO CENTRALE) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Transito stimato senza fermata (40% tratta ROMA TERMINI -> ROM
+ A TIBURTINA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
 UID:train-9325--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T192414Z
-DTEND:20261126T192944Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T192413Z
+DTEND:20261126T192943Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9325 (TORINO PORTA NUOVA -> NAPOLI CENTRALE
  ) ore 20:28
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 20:24:14 - 20:29:44\nTreni coinvolti nel
+  VELOCE\nChiusura sbarre stimata: 20:24:13 - 20:29:43\nTreni coinvolti nel
  la chiusura:\n  - TRENO 9325 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Tran
  sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
  mativa/euristica: Transito stimato senza fermata (41% tratta ROMA TIBURTIN
@@ -839,97 +925,96 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20551--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T193230Z
 DTEND:20261126T193800Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 20:32 - 20:38 (primo: REG 20551)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:32 - 20:38 (primo: REG 20551)
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
-  CONTINUA - 4 TRENI\nChiusura sbarre stimata: 20:32:30 - 20:38:00\nTreni c
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:32:30 - 20:38:00\nTreni c
  oinvolti nella chiusura:\n  - REG 20551 (FARA SABINA-MONTELIBRETTI -> ROMA
-  OSTIENSE)\n  - REG 20551 (FARA SABINA-MONTELIBRETTI -> ROMA OSTIENSE)\n  
- - REG 20731 (ROMA OSTIENSE -> ORTE)\n  - REG 20731 (ROMA OSTIENSE -> ORTE)
- \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativ
- a/euristica: Chiusura continua per 4 treni: intervallo utile tra i passagg
- i (0s) inferiore alla soglia minima di sgombero stradale (120s)
+  OSTIENSE)\n  - REG 20731 (ROMA OSTIENSE -> ORTE)\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
+ tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
+ lia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12550--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T194330Z
-DTEND:20261126T194944Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 20:43 - 20:49 (primo: REG 12550)
+DTEND:20261126T194943Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:43 - 20:49 (primo: REG 12550)
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
-  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 20:43:30 - 20:49:44\nTreni c
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:43:30 - 20:49:43\nTreni c
  oinvolti nella chiusura:\n  - REG 12550 (ROMA TERMINI -> CIVITAVECCHIA)\n 
-  - REG 12550 (ROMA TERMINI -> CIVITAVECCHIA)\n  - REG 4735 (PERUGIA -> ROM
- A TERMINI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stim
- a: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: intervall
- o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
- ale (120s)
+  - REG 4735 (PERUGIA -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-20547--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
+UID:train-9568--20261125-S08408@pl-tracker.local
+DTSTAMP:20261126T215722Z
 SEQUENCE:0
-DTSTART:20261126T200230Z
+DTSTART:20261126T195937Z
 DTEND:20261126T200700Z
-SUMMARY:[FERMATA] REG 20547 (ORTE -> ROMA OSTIENSE) ore 21:06
-DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 21:02:30 - 21:07:00\nTreni coinvolti nella chius
- ura:\n  - REG 20547 (ORTE -> ROMA OSTIENSE)\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da trac
- cia oraria regolare
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:59 - 21:07 (primo: TRENO 9568)
+DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:59:37 - 21:07:00\nTreni c
+ oinvolti nella chiusura:\n  - TRENO 9568 (NAPOLI CENTRALE -> FIRENZE SANTA
+  MARIA NOVELLA) [Transito]\n  - REG 20547 (ORTE -> ROMA OSTIENSE)\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4506--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
-DTSTART:20261126T201131Z
-DTEND:20261126T202146Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 21:11 - 21:21 (primo: REG 4506)
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T201126Z
+DTEND:20261126T202145Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:11 - 21:21 (primo: REG 4506)
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
-  CONTINUA - 3 TRENI\nChiusura sbarre stimata: 21:11:31 - 21:21:46\nTreni c
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:11:26 - 21:21:45\nTreni c
  oinvolti nella chiusura:\n  - REG 4506 (ROMA TERMINI -> GROSSETO) [Transit
- o]\n  - REG 4160 (ROMA TERMINI -> ANCONA) [Transito]\n  - TRENO 9433 (VENE
- ZIA S.LUCIA -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 
- 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
-  di sgombero stradale (120s)
+ o]\n  - TRENO 9433 (VENEZIA S.LUCIA -> ROMA TERMINI) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infe
+ riore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20388--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T205430Z
 DTEND:20261126T205900Z
 SUMMARY:[FERMATA] REG 20388 (ROMA TIBURTINA -> CESANO DI ROMA) ore 21:58
@@ -948,36 +1033,34 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12552--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T211330Z
 DTEND:20261126T211800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:13 - 22:18 (primo: REG 12552)
-DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:13:30 - 22:18:00\nTreni c
- oinvolti nella chiusura:\n  - REG 12552 (ROMA TERMINI -> CIVITAVECCHIA)\n 
-  - REG 12552 (ROMA TERMINI -> CIVITAVECCHIA)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 12552 (ROMA TERMINI -> CIVITAVECCHIA) ore 22:17
+DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 22:13:30 - 22:18:00\nTreni coinvolti nella chius
+ ura:\n  - REG 12552 (ROMA TERMINI -> CIVITAVECCHIA)\nRitardo massimo rilev
+ ato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione
+  da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9563--20261125-S08408@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T215616Z
-DTEND:20261126T220146Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T215615Z
+DTEND:20261126T220145Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9563 (MILANO CENTRALE -> ROMA TERMINI) ore 
  23:00
 DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: TRANSITO
-  VELOCE\nChiusura sbarre stimata: 22:56:16 - 23:01:46\nTreni coinvolti nel
+  VELOCE\nChiusura sbarre stimata: 22:56:15 - 23:01:45\nTreni coinvolti nel
  la chiusura:\n  - TRENO 9563 (MILANO CENTRALE -> ROMA TERMINI) [Transito]\
  nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
  /euristica: Transito stimato senza fermata (41% tratta ROMA TIBURTINA -> R
@@ -989,5 +1072,27 @@ CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4113--20261125-S08408@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T234357Z
+DTEND:20261126T234927Z
+SUMMARY:[TRANSITO VELOCE] REG 4113 (FIRENZE SANTA MARIA NOVELLA -> ROMA TER
+ MINI) ore 00:48
+DESCRIPTION:Stazione/PL: ROMA TUSCOLANA (S08408)\nRegime chiusura: TRANSITO
+  VELOCE\nChiusura sbarre stimata: 00:43:57 - 00:49:27\nTreni coinvolti nel
+ la chiusura:\n  - REG 4113 (FIRENZE SANTA MARIA NOVELLA -> ROMA TERMINI) [
+ Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Transito stimato senza fermata (41% tratta ROMA TIBU
+ RTINA -> ROMA TERMINI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ROMA TUSCOLANA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

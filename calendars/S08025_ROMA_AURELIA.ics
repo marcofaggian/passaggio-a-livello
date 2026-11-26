@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:a55ac78f142c1368ded40d7e8c3f5b9cb84ca52f2090c83cc04cae6f9b53
- b56b
+X-CONTENT-HASH:6c05bc7976132128ccf7a9e72fa31c849cc9054639fb1b4be613477e1e90
+ 88e8
 BEGIN:VEVENT
 UID:train-4501--20261125-S08025@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T051030Z
 DTEND:20261126T051500Z
 SUMMARY:[FERMATA] REG 4501 (GROSSETO -> ROMA TERMINI) ore 06:14
@@ -33,8 +33,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12506--20261125-S08025@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T073330Z
 DTEND:20261126T073800Z
 SUMMARY:[FERMATA] REG 12506 (ROMA TERMINI -> CIVITAVECCHIA) ore 08:37
@@ -53,8 +53,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12571--20261125-S08025@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T074130Z
 DTEND:20261126T074600Z
 SUMMARY:[FERMATA] REG 12571 (MONTALTO DI CASTRO -> ROMA TERMINI) ore 08:45
@@ -73,8 +73,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12514--20261125-S08025@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T100330Z
 DTEND:20261126T100800Z
 SUMMARY:[FERMATA] REG 12514 (ROMA TERMINI -> CIVITAVECCHIA) ore 11:07
@@ -92,79 +92,95 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-12520--20261125-S08025@pl-tracker.local-arr
-DTSTAMP:20261126T123838Z
+UID:train-12516--20261125-S08025@pl-tracker.local
+DTSTAMP:20261126T215722Z
 SEQUENCE:0
-DTSTART:20261126T111330Z
-DTEND:20261126T112300Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:13 - 12:23 (primo: REG 12520) (+13
-  min)
-DESCRIPTION:Stazione/PL: ROMA AURELIA (S08025)\nRegime chiusura: CHIUSURA C
- ONTINUA - 4 TRENI\nChiusura sbarre stimata: 12:13:30 - 12:23:00\nTreni coi
- nvolti nella chiusura:\n  - REG 12520 (ROMA TERMINI -> CIVITAVECCHIA) (+13
- m) [Arrivo]\n  - REG 12520 (ROMA TERMINI -> CIVITAVECCHIA) (+13m) [Arrivo]
- \n  - REG 12520 (ROMA TERMINI -> CIVITAVECCHIA) (+13m) [Partenza]\n  - REG
-  12520 (ROMA TERMINI -> CIVITAVECCHIA) (+13m) [Partenza]\nRitardo massimo 
- rilevato: 13 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiu
- sura continua per 4 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
+DTSTART:20261126T103129Z
+DTEND:20261126T103659Z
+SUMMARY:[TRANSITO VELOCE] REG 12516 (ROMA TERMINI -> CIVITAVECCHIA) ore 11:
+ 35
+DESCRIPTION:Stazione/PL: ROMA AURELIA (S08025)\nRegime chiusura: TRANSITO V
+ ELOCE\nChiusura sbarre stimata: 11:31:29 - 11:36:59\nTreni coinvolti nella
+  chiusura:\n  - REG 12516 (ROMA TERMINI -> CIVITAVECCHIA) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Transito stimato senza fermata (39% tratta ROMA S.PIETRO -> MACCARE
+ SE-FREGENE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ROMA AURELIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12520--20261125-S08025@pl-tracker.local-arr
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
+DTSTART:20261126T111330Z
+DTEND:20261126T112300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:13 - 12:23 (primo: REG 12520) (+13
+  min)
+DESCRIPTION:Stazione/PL: ROMA AURELIA (S08025)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:13:30 - 12:23:00\nTreni coi
+ nvolti nella chiusura:\n  - REG 12520 (ROMA TERMINI -> CIVITAVECCHIA) (+13
+ m) [Arrivo]\n  - REG 12520 (ROMA TERMINI -> CIVITAVECCHIA) (+13m) [Partenz
+ a]\nRitardo massimo rilevato: 13 min\nAffidabilità stima: 99%\nNota norma
+ tiva/euristica: Chiusura continua per 2 treni: intervallo utile tra i pass
+ aggi (30s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ROMA AURELIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:13
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12663--20261125-S08025@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T124830Z
 DTEND:20261126T125300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:48 - 13:53 (primo: REG 12663) (+7 
- min)
-DESCRIPTION:Stazione/PL: ROMA AURELIA (S08025)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:48:30 - 13:53:00\nTreni coi
- nvolti nella chiusura:\n  - REG 12663 (CIVITAVECCHIA -> ROMA TERMINI) (+7m
- )\n  - REG 12663 (CIVITAVECCHIA -> ROMA TERMINI) (+7m)\nRitardo massimo ri
- levato: 7 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 12663 (CIVITAVECCHIA -> ROMA TERMINI) ore 13:52 (+7 m
+ in)
+DESCRIPTION:Stazione/PL: ROMA AURELIA (S08025)\nRegime chiusura: FERMATA\nC
+ hiusura sbarre stimata: 13:48:30 - 13:53:00\nTreni coinvolti nella chiusur
+ a:\n  - REG 12663 (CIVITAVECCHIA -> ROMA TERMINI) (+7m)\nRitardo massimo r
+ ilevato: 7 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previs
+ ione con ritardo propagato (+7 min)
 LOCATION:Passaggio a Livello / Stazione ROMA AURELIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:7
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12580--20261125-S08025@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T134830Z
 DTEND:20261126T135300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:48 - 14:53 (primo: REG 12580)
-DESCRIPTION:Stazione/PL: ROMA AURELIA (S08025)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:48:30 - 14:53:00\nTreni coi
- nvolti nella chiusura:\n  - REG 12580 (ROMA TERMINI -> LADISPOLI-CERVETERI
- )\n  - REG 12580 (ROMA TERMINI -> LADISPOLI-CERVETERI)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 12580 (ROMA TERMINI -> LADISPOLI-CERVETERI) ore 14:52
+DESCRIPTION:Stazione/PL: ROMA AURELIA (S08025)\nRegime chiusura: FERMATA\nC
+ hiusura sbarre stimata: 14:48:30 - 14:53:00\nTreni coinvolti nella chiusur
+ a:\n  - REG 12580 (ROMA TERMINI -> LADISPOLI-CERVETERI)\nRitardo massimo r
+ ilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previs
+ ione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione ROMA AURELIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12534--20261125-S08025@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T160330Z
 DTEND:20261126T160800Z
 SUMMARY:[FERMATA] REG 12534 (ROMA TERMINI -> CIVITAVECCHIA) ore 17:07
@@ -183,14 +199,14 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4133--20261125-S08025@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
-DTSTART:20261126T161403Z
-DTEND:20261126T161933Z
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
+DTSTART:20261126T161410Z
+DTEND:20261126T161940Z
 SUMMARY:[TRANSITO VELOCE] REG 4133 (PISA CENTRALE -> ROMA TERMINI) ore 17:1
  8
 DESCRIPTION:Stazione/PL: ROMA AURELIA (S08025)\nRegime chiusura: TRANSITO V
- ELOCE\nChiusura sbarre stimata: 17:14:03 - 17:19:33\nTreni coinvolti nella
+ ELOCE\nChiusura sbarre stimata: 17:14:10 - 17:19:40\nTreni coinvolti nella
   chiusura:\n  - REG 4133 (PISA CENTRALE -> ROMA TERMINI) [Transito]\nRitar
  do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
  tica: Transito stimato senza fermata (72% tratta LADISPOLI-CERVETERI -> RO
@@ -204,9 +220,30 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-4502--20261125-S08025@pl-tracker.local
+DTSTAMP:20261126T215722Z
+SEQUENCE:0
+DTSTART:20261126T163129Z
+DTEND:20261126T163659Z
+SUMMARY:[TRANSITO VELOCE] REG 4502 (ROMA TERMINI -> GROSSETO) ore 17:35
+DESCRIPTION:Stazione/PL: ROMA AURELIA (S08025)\nRegime chiusura: TRANSITO V
+ ELOCE\nChiusura sbarre stimata: 17:31:29 - 17:36:59\nTreni coinvolti nella
+  chiusura:\n  - REG 4502 (ROMA TERMINI -> GROSSETO) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Transito stimato senza fermata (39% tratta ROMA S.PIETRO -> MACCARESE-FRE
+ GENE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ROMA AURELIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-4504--20261125-S08025@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T183330Z
 DTEND:20261126T183800Z
 SUMMARY:[FERMATA] REG 4504 (ROMA TERMINI -> GROSSETO) ore 19:37
@@ -225,66 +262,61 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12550--20261125-S08025@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:0
+DTSTAMP:20261126T215722Z
+SEQUENCE:1
 DTSTART:20261126T200330Z
 DTEND:20261126T200800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:03 - 21:08 (primo: REG 12550)
-DESCRIPTION:Stazione/PL: ROMA AURELIA (S08025)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:03:30 - 21:08:00\nTreni coi
- nvolti nella chiusura:\n  - REG 12550 (ROMA TERMINI -> CIVITAVECCHIA)\n  -
-  REG 12550 (ROMA TERMINI -> CIVITAVECCHIA)\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
- er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 12550 (ROMA TERMINI -> CIVITAVECCHIA) ore 21:07
+DESCRIPTION:Stazione/PL: ROMA AURELIA (S08025)\nRegime chiusura: FERMATA\nC
+ hiusura sbarre stimata: 21:03:30 - 21:08:00\nTreni coinvolti nella chiusur
+ a:\n  - REG 12550 (ROMA TERMINI -> CIVITAVECCHIA)\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
+ a traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione ROMA AURELIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4506--20261125-S08025@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T203129Z
 DTEND:20261126T203659Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:31 - 21:36 (primo: REG 4506)
-DESCRIPTION:Stazione/PL: ROMA AURELIA (S08025)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:31:29 - 21:36:59\nTreni coi
- nvolti nella chiusura:\n  - REG 4506 (ROMA TERMINI -> GROSSETO) [Transito]
- \n  - REG 4506 (ROMA TERMINI -> GROSSETO) [Transito]\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
- continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 4506 (ROMA TERMINI -> GROSSETO) ore 21:35
+DESCRIPTION:Stazione/PL: ROMA AURELIA (S08025)\nRegime chiusura: TRANSITO V
+ ELOCE\nChiusura sbarre stimata: 21:31:29 - 21:36:59\nTreni coinvolti nella
+  chiusura:\n  - REG 4506 (ROMA TERMINI -> GROSSETO) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Transito stimato senza fermata (39% tratta ROMA S.PIETRO -> MACCARESE-FRE
+ GENE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ROMA AURELIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12552--20261125-S08025@pl-tracker.local
-DTSTAMP:20261126T123838Z
-SEQUENCE:1
+DTSTAMP:20261126T215722Z
+SEQUENCE:2
 DTSTART:20261126T213430Z
 DTEND:20261126T213900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:34 - 22:39 (primo: REG 12552)
-DESCRIPTION:Stazione/PL: ROMA AURELIA (S08025)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:34:30 - 22:39:00\nTreni coi
- nvolti nella chiusura:\n  - REG 12552 (ROMA TERMINI -> CIVITAVECCHIA)\n  -
-  REG 12552 (ROMA TERMINI -> CIVITAVECCHIA)\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
- er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 12552 (ROMA TERMINI -> CIVITAVECCHIA) ore 22:38
+DESCRIPTION:Stazione/PL: ROMA AURELIA (S08025)\nRegime chiusura: FERMATA\nC
+ hiusura sbarre stimata: 22:34:30 - 22:39:00\nTreni coinvolti nella chiusur
+ a:\n  - REG 12552 (ROMA TERMINI -> CIVITAVECCHIA)\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
+ a traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione ROMA AURELIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
