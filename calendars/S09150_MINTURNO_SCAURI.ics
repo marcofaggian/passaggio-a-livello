@@ -9,131 +9,192 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:39a2922643fe1d6576af17ed7a816e7659283b3b8957fa24098a3051aa7c
- 392d
+X-CONTENT-HASH:a568c8cce5690b6a3429a312a65bf4757ed703dd93237bfecfe049f223ff
+ c50e
 BEGIN:VEVENT
 UID:train-21132--20261125-S09150@pl-tracker.local
-DTSTAMP:20261126T031031Z
-SEQUENCE:0
+DTSTAMP:20261126T123838Z
+SEQUENCE:1
 DTSTART:20261126T025230Z
 DTEND:20261126T030000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 03:52 - 04:00 (primo: REG 21132) (+2 
- min)
-DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 03:52:30 - 04:00:00\nTreni 
- coinvolti nella chiusura:\n  - REG 21132 (SESSA AURUNCA-ROCCAMONFINA -> RO
- MA TERMINI) (+2m)\n  - REG 21132 (SESSA AURUNCA-ROCCAMONFINA -> ROMA TERMI
- NI) (+2m)\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota
-  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
- i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 21132 (SESSA AURUNCA-ROCCAMONFINA -> ROMA TERMINI) or
+ e 03:59 (+2 min)
+DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: FERMATA
+ \nChiusura sbarre stimata: 03:52:30 - 04:00:00\nTreni coinvolti nella chiu
+ sura:\n  - REG 21132 (SESSA AURUNCA-ROCCAMONFINA -> ROMA TERMINI) (+2m)\nR
+ itardo massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/e
+ uristica: Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione MINTURNO-SCAURI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-21053--20261125-S09150@pl-tracker.local
-DTSTAMP:20261126T031031Z
+UID:train-21404--20261125-S09150@pl-tracker.local
+DTSTAMP:20261126T123838Z
 SEQUENCE:0
-DTSTART:20261126T055830Z
-DTEND:20261126T060300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:58 - 07:03 (primo: REG 21053)
-DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:58:30 - 07:03:00\nTreni 
- coinvolti nella chiusura:\n  - REG 21053 (ROMA TERMINI -> NAPOLI CENTRALE)
- \n  - REG 21053 (ROMA TERMINI -> NAPOLI CENTRALE)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
- tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
- lia minima di sgombero stradale (120s)
+DTSTART:20261126T034404Z
+DTEND:20261126T034934Z
+SUMMARY:[TRANSITO VELOCE] REG 21404 (NAPOLI CENTRALE -> ROMA TIBURTINA) ore
+  04:48
+DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 04:44:04 - 04:49:34\nTreni coinvolti ne
+ lla chiusura:\n  - REG 21404 (NAPOLI CENTRALE -> ROMA TIBURTINA) [Transito
+ ]\nRitardo massimo rilevato: -7 min\nAffidabilità stima: 78%\nNota normat
+ iva/euristica: Transito stimato senza fermata (35% tratta VILLA LITERNO ->
+  LATINA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MINTURNO-SCAURI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-7
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21053--20261125-S09150@pl-tracker.local
+DTSTAMP:20261126T123838Z
+SEQUENCE:1
+DTSTART:20261126T055830Z
+DTEND:20261126T060300Z
+SUMMARY:[FERMATA] REG 21053 (ROMA TERMINI -> NAPOLI CENTRALE) ore 07:02
+DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: FERMATA
+ \nChiusura sbarre stimata: 06:58:30 - 07:03:00\nTreni coinvolti nella chiu
+ sura:\n  - REG 21053 (ROMA TERMINI -> NAPOLI CENTRALE)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione MINTURNO-SCAURI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-723--20261125-S09150@pl-tracker.local
-DTSTAMP:20261126T031031Z
-SEQUENCE:0
-DTSTART:20261126T073546Z
-DTEND:20261126T074016Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:35 - 08:40 (primo: IC 723)
-DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:35:46 - 08:40:16\nTreni 
- coinvolti nella chiusura:\n  - IC 723 (ROMA TERMINI -> PALERMO CENTRALE) [
- Transito]\n  - IC 723 (ROMA TERMINI -> PALERMO CENTRALE) [Transito]\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
- tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261126T123838Z
+SEQUENCE:1
+DTSTART:20261126T073516Z
+DTEND:20261126T073946Z
+SUMMARY:[TRANSITO VELOCE] IC 723 (ROMA TERMINI -> PALERMO CENTRALE) ore 08:
+ 38
+DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 08:35:16 - 08:39:46\nTreni coinvolti ne
+ lla chiusura:\n  - IC 723 (ROMA TERMINI -> PALERMO CENTRALE) [Transito]\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Transito stimato senza fermata (16% tratta FORMIA-GAETA -> AVERS
+ A\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MINTURNO-SCAURI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-21061--20261125-S09150@pl-tracker.local
-DTSTAMP:20261126T031031Z
+UID:train-21057--20261125-S09150@pl-tracker.local
+DTSTAMP:20261126T123838Z
 SEQUENCE:0
-DTSTART:20261126T111630Z
-DTEND:20261126T112100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:16 - 12:21 (primo: REG 21061)
+DTSTART:20261126T082200Z
+DTEND:20261126T082630Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:22 - 09:26 (primo: REG 21057) (+4 
+ min)
 DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:16:30 - 12:21:00\nTreni 
- coinvolti nella chiusura:\n  - REG 21061 (ROMA TERMINI -> NAPOLI CENTRALE)
- \n  - REG 21061 (ROMA TERMINI -> NAPOLI CENTRALE)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
- tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
- lia minima di sgombero stradale (120s)
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:22:00 - 09:26:30\nTreni 
+ coinvolti nella chiusura:\n  - REG 21057 (ROMA TERMINI -> NAPOLI CENTRALE)
+  (+4m)\n  - REG 21057 (ROMA TERMINI -> NAPOLI CENTRALE) (+4m)\nRitardo mas
+ simo rilevato: 4 min\nAffidabilità stima: 99%\nNota normativa/euristica: 
+ Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
+ ore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MINTURNO-SCAURI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:4
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-590--20261125-S09150@pl-tracker.local
+DTSTAMP:20261126T123838Z
+SEQUENCE:0
+DTSTART:20261126T101354Z
+DTEND:20261126T101824Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:13 - 11:18 (primo: IC 590) (+10 mi
+ n)
+DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:13:54 - 11:18:24\nTreni 
+ coinvolti nella chiusura:\n  - IC 590 (SALERNO -> MILANO CENTRALE) (+10m) 
+ [Transito]\n  - IC 590 (SALERNO -> MILANO CENTRALE) (+10m) [Transito]\nRit
+ ardo massimo rilevato: 10 min\nAffidabilità stima: 78%\nNota normativa/eu
+ ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
+ s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MINTURNO-SCAURI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:10
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21061--20261125-S09150@pl-tracker.local
+DTSTAMP:20261126T123838Z
+SEQUENCE:1
+DTSTART:20261126T111630Z
+DTEND:20261126T112100Z
+SUMMARY:[FERMATA] REG 21061 (ROMA TERMINI -> NAPOLI CENTRALE) ore 12:20
+DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: FERMATA
+ \nChiusura sbarre stimata: 12:16:30 - 12:21:00\nTreni coinvolti nella chiu
+ sura:\n  - REG 21061 (ROMA TERMINI -> NAPOLI CENTRALE)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione MINTURNO-SCAURI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-700--20261125-S09150@pl-tracker.local
-DTSTAMP:20261126T031031Z
-SEQUENCE:0
-DTSTART:20261126T120813Z
-DTEND:20261126T121243Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:08 - 13:12 (primo: IC 700)
-DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:08:13 - 13:12:43\nTreni 
- coinvolti nella chiusura:\n  - IC 700 (TARANTO -> ROMA TERMINI) [Transito]
- \n  - IC 700 (TARANTO -> ROMA TERMINI) [Transito]\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
- tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
- lia minima di sgombero stradale (120s)
+DTSTAMP:20261126T123838Z
+SEQUENCE:1
+DTSTART:20261126T120831Z
+DTEND:20261126T121301Z
+SUMMARY:[TRANSITO VELOCE] IC 700 (TARANTO -> ROMA TERMINI) ore 13:12
+DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 13:08:31 - 13:13:01\nTreni coinvolti ne
+ lla chiusura:\n  - IC 700 (TARANTO -> ROMA TERMINI) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Transito stimato senza fermata (75% tratta AVERSA -> FORMIA-GAETA\; pedal
+ e annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MINTURNO-SCAURI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21067--20261125-S09150@pl-tracker.local
-DTSTAMP:20261126T031031Z
-SEQUENCE:0
-DTSTART:20261126T122430Z
-DTEND:20261126T122900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:24 - 13:29 (primo: REG 21067)
+DTSTAMP:20261126T123838Z
+SEQUENCE:1
+DTSTART:20261126T122230Z
+DTEND:20261126T123000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:22 - 13:30 (primo: REG 21067)
 DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:24:30 - 13:29:00\nTreni 
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:22:30 - 13:30:00\nTreni 
  coinvolti nella chiusura:\n  - REG 21067 (ROMA TERMINI -> NAPOLI CENTRALE)
  \n  - REG 21067 (ROMA TERMINI -> NAPOLI CENTRALE)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
+ o: 0 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura con
  tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
  lia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MINTURNO-SCAURI
@@ -141,40 +202,63 @@ STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-596--20261125-S09150@pl-tracker.local
-DTSTAMP:20261126T031031Z
+UID:train-21421--20261125-S09150@pl-tracker.local
+DTSTAMP:20261126T123838Z
 SEQUENCE:0
-DTSTART:20261126T131511Z
-DTEND:20261126T131941Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:15 - 14:19 (primo: IC 596)
+DTSTART:20261126T123815Z
+DTEND:20261126T124345Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:38 - 13:43 (primo: REG 21421) (+1 
+ min)
 DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:15:11 - 14:19:41\nTreni 
- coinvolti nella chiusura:\n  - IC 596 (NAPOLI CENTRALE -> MILANO CENTRALE)
-  [Transito]\n  - IC 596 (NAPOLI CENTRALE -> MILANO CENTRALE) [Transito]\nR
- itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
- 0s) inferiore alla soglia minima di sgombero stradale (120s)
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:38:15 - 13:43:45\nTreni 
+ coinvolti nella chiusura:\n  - REG 21421 (VILLA LITERNO -> NAPOLI CENTRALE
+ ) (+1m) [Transito]\n  - REG 21421 (VILLA LITERNO -> NAPOLI CENTRALE) (+1m)
+  [Transito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Chiusura continua per 2 treni: intervallo utile tr
+ a i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MINTURNO-SCAURI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-596--20261125-S09150@pl-tracker.local
+DTSTAMP:20261126T123838Z
+SEQUENCE:1
+DTSTART:20261126T131532Z
+DTEND:20261126T132002Z
+SUMMARY:[TRANSITO VELOCE] IC 596 (NAPOLI CENTRALE -> MILANO CENTRALE) ore 1
+ 4:19
+DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 14:15:32 - 14:20:02\nTreni coinvolti ne
+ lla chiusura:\n  - IC 596 (NAPOLI CENTRALE -> MILANO CENTRALE) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Transito stimato senza fermata (75% tratta AVERSA -> FORMIA-GA
+ ETA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MINTURNO-SCAURI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21090--20261125-S09150@pl-tracker.local
-DTSTAMP:20261126T031031Z
-SEQUENCE:0
-DTSTART:20261126T145716Z
-DTEND:20261126T150246Z
+DTSTAMP:20261126T123838Z
+SEQUENCE:1
+DTSTART:20261126T145718Z
+DTEND:20261126T150248Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:57 - 16:02 (primo: REG 21090)
 DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:57:16 - 16:02:46\nTreni 
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:57:18 - 16:02:48\nTreni 
  coinvolti nella chiusura:\n  - REG 21090 (NAPOLI CENTRALE -> ROMA TERMINI)
   [Transito]\n  - REG 21090 (NAPOLI CENTRALE -> ROMA TERMINI) [Transito]\nR
  itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
@@ -190,8 +274,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21090--20261125-S09150@pl-tracker.local
-DTSTAMP:20261126T031031Z
-SEQUENCE:0
+DTSTAMP:20261126T123838Z
+SEQUENCE:1
 DTSTART:20261126T151630Z
 DTEND:20261126T152100Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:16 - 16:21 (primo: REG 21090)
@@ -211,39 +295,61 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-95072--20261125-S09150@pl-tracker.local
-DTSTAMP:20261126T031031Z
-SEQUENCE:0
-DTSTART:20261126T160757Z
-DTEND:20261126T161227Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:07 - 17:12 (primo: IC 95072)
+UID:train-561--20261125-S09150@pl-tracker.local
+DTSTAMP:20261126T123838Z
+SEQUENCE:1
+DTSTART:20261126T163516Z
+DTEND:20261126T163946Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:35 - 17:39 (primo: IC 561) (+27 mi
+ n)
 DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:07:57 - 17:12:27\nTreni 
- coinvolti nella chiusura:\n  - IC 95072 (PALERMO CENTRALE -> ROMA TERMINI)
-  [Transito]\n  - IC 95072 (PALERMO CENTRALE -> ROMA TERMINI) [Transito]\nR
- itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
- uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
- 0s) inferiore alla soglia minima di sgombero stradale (120s)
+ A CONTINUA - 3 TRENI\nChiusura sbarre stimata: 17:35:16 - 17:39:46\nTreni 
+ coinvolti nella chiusura:\n  - IC 561 (ROMA TERMINI -> REGGIO DI CALABRIA 
+ CENTRALE) [Transito]\n  - IC 95072 (PALERMO CENTRALE -> ROMA TERMINI) (+27
+ m) [Transito]\n  - IC 95072 (PALERMO CENTRALE -> ROMA TERMINI) (+27m) [Tra
+ nsito]\nRitardo massimo rilevato: 27 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Chiusura continua per 3 treni: intervallo utile tra i 
+ passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MINTURNO-SCAURI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:27
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-561--20261125-S09150@pl-tracker.local
-DTSTAMP:20261126T031031Z
+UID:train-12739--20261125-S09150@pl-tracker.local
+DTSTAMP:20261126T123838Z
+SEQUENCE:1
+DTSTART:20261126T172030Z
+DTEND:20261126T172500Z
+SUMMARY:[FERMATA] REG 12739 (ROMA TERMINI -> MINTURNO-SCAURI) ore 18:24
+DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: FERMATA
+ \nChiusura sbarre stimata: 18:20:30 - 18:25:00\nTreni coinvolti nella chiu
+ sura:\n  - REG 12739 (ROMA TERMINI -> MINTURNO-SCAURI)\nRitardo massimo ri
+ levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione MINTURNO-SCAURI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-560--20261125-S09150@pl-tracker.local
+DTSTAMP:20261126T123838Z
 SEQUENCE:0
-DTSTART:20261126T163546Z
-DTEND:20261126T164016Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:35 - 17:40 (primo: IC 561)
+DTSTART:20261126T200816Z
+DTEND:20261126T201246Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:08 - 21:12 (primo: IC 560)
 DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:35:46 - 17:40:16\nTreni 
- coinvolti nella chiusura:\n  - IC 561 (ROMA TERMINI -> REGGIO DI CALABRIA 
- CENTRALE) [Transito]\n  - IC 561 (ROMA TERMINI -> REGGIO DI CALABRIA CENTR
- ALE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:08:16 - 21:12:46\nTreni 
+ coinvolti nella chiusura:\n  - IC 560 (REGGIO DI CALABRIA CENTRALE -> ROMA
+  TERMINI) [Transito]\n  - IC 560 (REGGIO DI CALABRIA CENTRALE -> ROMA TERM
+ INI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%
  \nNota normativa/euristica: Chiusura continua per 2 treni: intervallo util
  e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
  20s)
@@ -256,16 +362,38 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-12739--20261125-S09150@pl-tracker.local
-DTSTAMP:20261126T031031Z
+UID:train-21038--20261125-S09150@pl-tracker.local
+DTSTAMP:20261126T123838Z
 SEQUENCE:0
-DTSTART:20261126T172030Z
-DTEND:20261126T172500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:20 - 18:25 (primo: REG 12739)
+DTSTART:20261126T203418Z
+DTEND:20261126T203948Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:34 - 21:39 (primo: REG 21038)
 DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:20:30 - 18:25:00\nTreni 
- coinvolti nella chiusura:\n  - REG 12739 (ROMA TERMINI -> MINTURNO-SCAURI)
- \n  - REG 12739 (ROMA TERMINI -> MINTURNO-SCAURI)\nRitardo massimo rilevat
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:34:18 - 21:39:48\nTreni 
+ coinvolti nella chiusura:\n  - REG 21038 (NAPOLI CENTRALE -> ROMA TERMINI)
+  [Transito]\n  - REG 21038 (NAPOLI CENTRALE -> ROMA TERMINI) [Transito]\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (
+ 0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MINTURNO-SCAURI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21038--20261125-S09150@pl-tracker.local
+DTSTAMP:20261126T123838Z
+SEQUENCE:0
+DTSTART:20261126T205330Z
+DTEND:20261126T205800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:53 - 21:58 (primo: REG 21038)
+DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: CHIUSUR
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:53:30 - 21:58:00\nTreni 
+ coinvolti nella chiusura:\n  - REG 21038 (NAPOLI CENTRALE -> ROMA TERMINI)
+ \n  - REG 21038 (NAPOLI CENTRALE -> ROMA TERMINI)\nRitardo massimo rilevat
  o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
  tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
  lia minima di sgombero stradale (120s)
@@ -278,60 +406,57 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-796--20261125-S09150@pl-tracker.local
-DTSTAMP:20261126T031031Z
+UID:train-12749--20261125-S09150@pl-tracker.local
+DTSTAMP:20261126T123838Z
 SEQUENCE:0
-DTSTART:20261126T211411Z
-DTEND:20261126T211900Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 22:14 - 22:19 (primo: ICN 796)
+DTSTART:20261126T211430Z
+DTEND:20261126T211902Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:14 - 22:19 (primo: REG 12749)
 DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: CHIUSUR
- A CONTINUA - 4 TRENI\nChiusura sbarre stimata: 22:14:11 - 22:19:00\nTreni 
- coinvolti nella chiusura:\n  - ICN 796 (SALERNO -> TORINO PORTA NUOVA) [Tr
- ansito]\n  - ICN 796 (SALERNO -> TORINO PORTA NUOVA) [Transito]\n  - REG 1
- 2749 (ROMA TERMINI -> MINTURNO-SCAURI)\n  - REG 12749 (ROMA TERMINI -> MIN
- TURNO-SCAURI)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\n
- Nota normativa/euristica: Chiusura continua per 4 treni: intervallo utile 
- tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
- s)
-LOCATION:Passaggio a Livello / Stazione MINTURNO-SCAURI
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:ICN
-END:VEVENT
-BEGIN:VEVENT
-UID:train-597--20261125-S09150@pl-tracker.local
-DTSTAMP:20261126T031031Z
-SEQUENCE:0
-DTSTART:20261126T213718Z
-DTEND:20261126T214148Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:37 - 22:41 (primo: IC 597)
-DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:37:18 - 22:41:48\nTreni 
- coinvolti nella chiusura:\n  - IC 597 (MILANO CENTRALE -> SALERNO) [Transi
- to]\n  - IC 597 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:14:30 - 22:19:02\nTreni 
+ coinvolti nella chiusura:\n  - REG 12749 (ROMA TERMINI -> MINTURNO-SCAURI)
+ \n  - ICN 796 (SALERNO -> TORINO PORTA NUOVA) [Transito]\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
+ ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MINTURNO-SCAURI
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-597--20261125-S09150@pl-tracker.local
+DTSTAMP:20261126T123838Z
+SEQUENCE:1
+DTSTART:20261126T213644Z
+DTEND:20261126T214114Z
+SUMMARY:[TRANSITO VELOCE] IC 597 (MILANO CENTRALE -> SALERNO) ore 22:40
+DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: TRANSIT
+ O VELOCE\nChiusura sbarre stimata: 22:36:44 - 22:41:14\nTreni coinvolti ne
+ lla chiusura:\n  - IC 597 (MILANO CENTRALE -> SALERNO) [Transito]\nRitardo
+  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (16% tratta FORMIA-GAETA -> AVERSA\; pe
+ dale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MINTURNO-SCAURI
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-899--20261125-S09150@pl-tracker.local
-DTSTAMP:20261126T031031Z
-SEQUENCE:0
-DTSTART:20261127T061839Z
-DTEND:20261127T062309Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:18 - 07:23 (primo: ICN 899)
+DTSTAMP:20261126T123838Z
+SEQUENCE:1
+DTSTART:20261127T061804Z
+DTEND:20261127T062234Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:18 - 07:22 (primo: ICN 899)
 DESCRIPTION:Stazione/PL: MINTURNO-SCAURI (S09150)\nRegime chiusura: CHIUSUR
- A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:18:39 - 07:23:09\nTreni 
+ A CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:18:04 - 07:22:34\nTreni 
  coinvolti nella chiusura:\n  - ICN 899 (TORINO PORTA NUOVA -> SALERNO) [Tr
  ansito]\n  - ICN 899 (TORINO PORTA NUOVA -> SALERNO) [Transito]\nRitardo m
  assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica

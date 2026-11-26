@@ -9,28 +9,52 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:9ed296045fd78a4cbc1dfe10c7efc6048c719966ed76401e7257f63617d4
- 1431
+X-CONTENT-HASH:f7c1f3a5b01ffde064ea669c365c204440c67562a301433c24301c16c616
+ a694
 BEGIN:VEVENT
-UID:train-23363--20261125-S09053@pl-tracker.local
-DTSTAMP:20261126T031031Z
+UID:train-23363--20261125-S09053@pl-tracker.local-arr
+DTSTAMP:20261126T123838Z
 SEQUENCE:0
 DTSTART:20261126T072330Z
 DTEND:20261126T072800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:23 - 08:28 (primo: REG 23363)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:23 - 08:28 (primo: REG 23363) (+2 
+ min)
 DESCRIPTION:Stazione/PL: ISERNIA (S09053)\nRegime chiusura: CHIUSURA CONTIN
  UA - 2 TRENI\nChiusura sbarre stimata: 08:23:30 - 08:28:00\nTreni coinvolt
- i nella chiusura:\n  - REG 23363 (ROMA TERMINI -> BOIANO)\n  - REG 23363 (
- ROMA TERMINI -> BOIANO)\nRitardo massimo rilevato: 0 min\nAffidabilità st
- ima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
- llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
- adale (120s)
+ i nella chiusura:\n  - REG 23363 (ROMA TERMINI -> BOIANO) (+2m) [Arrivo]\n
+   - REG 23363 (ROMA TERMINI -> BOIANO) (+2m) [Arrivo]\nRitardo massimo ril
+ evato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura
+  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
+  soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ISERNIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23363--20261125-S09053@pl-tracker.local-dep
+DTSTAMP:20261126T123838Z
+SEQUENCE:0
+DTSTART:20261126T073600Z
+DTEND:20261126T074030Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:36 - 08:40 (primo: REG 23363) (+2 
+ min)
+DESCRIPTION:Stazione/PL: ISERNIA (S09053)\nRegime chiusura: CHIUSURA CONTIN
+ UA - 2 TRENI\nChiusura sbarre stimata: 08:36:00 - 08:40:30\nTreni coinvolt
+ i nella chiusura:\n  - REG 23363 (ROMA TERMINI -> BOIANO) (+2m) [Partenza]
+ \n  - REG 23363 (ROMA TERMINI -> BOIANO) (+2m) [Partenza]\nRitardo massimo
+  rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiu
+ sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
+ alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ISERNIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

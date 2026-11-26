@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:8b43c8cae0230ac98a76c717d515c472568a8a2e24fd895df452233cdde3
- e73f
+X-CONTENT-HASH:5bdfbb62cf984599495120ba354388df9052e92bdfe2cd1851770b4c84f8
+ 1539
 BEGIN:VEVENT
 UID:train-9712--20261125-S03312@pl-tracker.local
-DTSTAMP:20261126T031031Z
-SEQUENCE:0
+DTSTAMP:20261126T123838Z
+SEQUENCE:1
 DTSTART:20261126T050911Z
 DTEND:20261126T051441Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9712 (TRIESTE CENTRALE -> TORINO PORTA NUOV
@@ -35,30 +35,28 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17328--20261125-S03312@pl-tracker.local
-DTSTAMP:20261126T031031Z
-SEQUENCE:0
+DTSTAMP:20261126T123838Z
+SEQUENCE:1
 DTSTART:20261126T065030Z
 DTEND:20261126T065500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:50 - 07:55 (primo: REG 17328)
-DESCRIPTION:Stazione/PL: SISTIANA-VISOGLIANO (S03312)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:50:30 - 07:55:00\nTr
- eni coinvolti nella chiusura:\n  - REG 17328 (TRIESTE CENTRALE -> UDINE)\n
-   - REG 17328 (TRIESTE CENTRALE -> UDINE)\nRitardo massimo rilevato: 0 min
- \nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua pe
- r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
- ma di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 17328 (TRIESTE CENTRALE -> UDINE) ore 07:54
+DESCRIPTION:Stazione/PL: SISTIANA-VISOGLIANO (S03312)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 07:50:30 - 07:55:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 17328 (TRIESTE CENTRALE -> UDINE)\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
+ e da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione SISTIANA-VISOGLIANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3460--20261125-S03312@pl-tracker.local
-DTSTAMP:20261126T031031Z
-SEQUENCE:0
+DTSTAMP:20261126T123838Z
+SEQUENCE:1
 DTSTART:20261126T072628Z
 DTEND:20261126T073158Z
 SUMMARY:[TRANSITO VELOCE] REG 3460 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) or
@@ -78,19 +76,42 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3894--20261125-S03312@pl-tracker.local
-DTSTAMP:20261126T031031Z
+UID:train-23040--20261125-S03312@pl-tracker.local
+DTSTAMP:20261126T123838Z
 SEQUENCE:0
-DTSTART:20261126T160828Z
-DTEND:20261126T161358Z
-SUMMARY:[TRANSITO VELOCE] REG 3894 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) or
- e 17:12
+DTSTART:20261126T105227Z
+DTEND:20261126T105757Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:52 - 11:57 (primo: REG 23040)
+DESCRIPTION:Stazione/PL: SISTIANA-VISOGLIANO (S03312)\nRegime chiusura: CHI
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:52:27 - 11:57:57\nTr
+ eni coinvolti nella chiusura:\n  - REG 23040 (TRIESTE CENTRALE -> PORTOGRU
+ ARO CAORLE) [Transito]\n  - REG 23040 (TRIESTE CENTRALE -> PORTOGRUARO CAO
+ RLE) [Transito]\nRitardo massimo rilevato: -3 min\nAffidabilità stima: 78
+ %\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo uti
+ le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
+ 120s)
+LOCATION:Passaggio a Livello / Stazione SISTIANA-VISOGLIANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16640--20261125-S03312@pl-tracker.local
+DTSTAMP:20261126T123838Z
+SEQUENCE:0
+DTSTART:20261126T160228Z
+DTEND:20261126T160758Z
+SUMMARY:[TRANSITO VELOCE] REG 16640 (TRIESTE CENTRALE -> TARVISIO BOSCOVERD
+ E) ore 17:06
 DESCRIPTION:Stazione/PL: SISTIANA-VISOGLIANO (S03312)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 17:08:28 - 17:13:58\nTreni coinvolt
- i nella chiusura:\n  - REG 3894 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) [Tra
- nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Transito stimato senza fermata (64% tratta TRIESTE CENT
- RALE -> MONFALCONE\; pedale annuncio fisso Vmax)
+ NSITO VELOCE\nChiusura sbarre stimata: 17:02:28 - 17:07:58\nTreni coinvolt
+ i nella chiusura:\n  - REG 16640 (TRIESTE CENTRALE -> TARVISIO BOSCOVERDE)
+  [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
+ ta normativa/euristica: Transito stimato senza fermata (64% tratta TRIESTE
+  CENTRALE -> MONFALCONE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SISTIANA-VISOGLIANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -101,69 +122,44 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16042--20261125-S03312@pl-tracker.local
-DTSTAMP:20261126T031031Z
-SEQUENCE:0
+DTSTAMP:20261126T123838Z
+SEQUENCE:1
 DTSTART:20261126T192933Z
 DTEND:20261126T193503Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:29 - 20:35 (primo: REG 16042)
-DESCRIPTION:Stazione/PL: SISTIANA-VISOGLIANO (S03312)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:29:33 - 20:35:03\nTr
- eni coinvolti nella chiusura:\n  - REG 16042 (TRIESTE CENTRALE -> PORTOGRU
- ARO CAORLE) [Transito]\n  - REG 16042 (TRIESTE CENTRALE -> PORTOGRUARO CAO
- RLE) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%
- \nNota normativa/euristica: Chiusura continua per 2 treni: intervallo util
- e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
- 20s)
-LOCATION:Passaggio a Livello / Stazione SISTIANA-VISOGLIANO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-16022--20261125-S03312@pl-tracker.local
-DTSTAMP:20261126T031031Z
-SEQUENCE:0
-DTSTART:20261126T194430Z
-DTEND:20261126T194900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:44 - 20:49 (primo: REG 16022)
-DESCRIPTION:Stazione/PL: SISTIANA-VISOGLIANO (S03312)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:44:30 - 20:49:00\nTr
- eni coinvolti nella chiusura:\n  - REG 16022 (TRIESTE CENTRALE -> VENEZIA 
- S.LUCIA)\n  - REG 16022 (TRIESTE CENTRALE -> VENEZIA S.LUCIA)\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione SISTIANA-VISOGLIANO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3536--20261125-S03312@pl-tracker.local
-DTSTAMP:20261126T031031Z
-SEQUENCE:0
-DTSTART:20261126T211549Z
-DTEND:20261126T212119Z
-SUMMARY:[TRANSITO VELOCE] REG 3536 (TRIESTE CENTRALE -> VENEZIA MESTRE) ore
-  22:20
+SUMMARY:[TRANSITO VELOCE] REG 16042 (TRIESTE CENTRALE -> PORTOGRUARO CAORLE
+ ) ore 20:33
 DESCRIPTION:Stazione/PL: SISTIANA-VISOGLIANO (S03312)\nRegime chiusura: TRA
- NSITO VELOCE\nChiusura sbarre stimata: 22:15:49 - 22:21:19\nTreni coinvolt
- i nella chiusura:\n  - REG 3536 (TRIESTE CENTRALE -> VENEZIA MESTRE) [Tran
- sito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Transito stimato senza fermata (64% tratta TRIESTE CENTR
- ALE -> MONFALCONE\; pedale annuncio fisso Vmax)
+ NSITO VELOCE\nChiusura sbarre stimata: 20:29:33 - 20:35:03\nTreni coinvolt
+ i nella chiusura:\n  - REG 16042 (TRIESTE CENTRALE -> PORTOGRUARO CAORLE) 
+ [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Transito stimato senza fermata (55% tratta MIRAMARE
+  -> MONFALCONE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SISTIANA-VISOGLIANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16022--20261125-S03312@pl-tracker.local
+DTSTAMP:20261126T123838Z
+SEQUENCE:1
+DTSTART:20261126T194430Z
+DTEND:20261126T194900Z
+SUMMARY:[FERMATA] REG 16022 (TRIESTE CENTRALE -> VENEZIA S.LUCIA) ore 20:48
+DESCRIPTION:Stazione/PL: SISTIANA-VISOGLIANO (S03312)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 20:44:30 - 20:49:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 16022 (TRIESTE CENTRALE -> VENEZIA S.LUCIA)\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica:
+  Previsione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione SISTIANA-VISOGLIANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR
