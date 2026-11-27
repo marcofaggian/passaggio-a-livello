@@ -9,17 +9,17 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:15c0a009ec21531316340c20cc26528484619e13e10e7d0488b5cc300e58
- 175f
+X-CONTENT-HASH:24dc8d85efea67f85dd420a1ac751046f4703a47c81cd9aedd7691e60447
+ 0987
 BEGIN:VEVENT
 UID:train-25613--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T045002Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T045003Z
 DTEND:20261127T050900Z
 SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 05:50 - 06:09 (primo: REG 25613)
 DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: CH
- IUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 05:50:02 - 06:09:00\nT
+ IUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 05:50:03 - 06:09:00\nT
  reni coinvolti nella chiusura:\n  - REG 25613 (MILANO BOVISA POLITECNICO -
  > MELEGNANO) [Transito]\n  - REG 24313 (MILANO BOVISA POLITECNICO -> PAVIA
  ) [Transito]\n  - REG 25613 (MILANO BOVISA POLITECNICO -> MELEGNANO)\n  - 
@@ -37,20 +37,41 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24315--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T052509Z
 DTEND:20261127T053039Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:25 - 06:30 (primo: REG 24315) (+7 
+SUMMARY:[TRANSITO VELOCE] REG 24315 (MILANO BOVISA POLITECNICO -> PAVIA) or
+ e 06:29 (+7 min)
+DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: TR
+ ANSITO VELOCE\nChiusura sbarre stimata: 06:25:09 - 06:30:39\nTreni coinvol
+ ti nella chiusura:\n  - REG 24315 (MILANO BOVISA POLITECNICO -> PAVIA) (+7
+ m) [Transito]\nRitardo massimo rilevato: 7 min\nAffidabilità stima: 78%\n
+ Nota normativa/euristica: Transito stimato senza fermata (83% tratta MILAN
+ O BOVISA POLITECNICO -> MILANO LANCETTI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24315--20261126-S01649@pl-tracker.local
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
+DTSTART:20261127T053500Z
+DTEND:20261127T054022Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:35 - 06:40 (primo: REG 24315) (+7 
  min)
 DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:25:09 - 06:30:39\nT
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:35:00 - 06:40:22\nT
  reni coinvolti nella chiusura:\n  - REG 24315 (MILANO BOVISA POLITECNICO -
- > PAVIA) (+7m) [Transito]\n  - REG 24315 (MILANO BOVISA POLITECNICO -> PAV
- IA) (+7m) [Transito]\nRitardo massimo rilevato: 7 min\nAffidabilità stima
- : 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo
-  utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strada
- le (120s)
+ > PAVIA) (+7m)\n  - REG 24117 (SARONNO -> LODI) [Transito]\nRitardo massim
+ o rilevato: 7 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
+ usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
+  alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -60,33 +81,9 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-24315--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
-DTSTART:20261127T053500Z
-DTEND:20261127T054021Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 06:35 - 06:40 (primo: REG 24315) (+7 
- min)
-DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: CH
- IUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 06:35:00 - 06:40:21\nT
- reni coinvolti nella chiusura:\n  - REG 24315 (MILANO BOVISA POLITECNICO -
- > PAVIA) (+7m)\n  - REG 24315 (MILANO BOVISA POLITECNICO -> PAVIA) (+7m)\n
-   - REG 24117 (SARONNO -> LODI) [Transito]\nRitardo massimo rilevato: 7 mi
- n\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua p
- er 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:7
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-24117--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T054530Z
 DTEND:20261127T055000Z
 SUMMARY:[FERMATA] REG 24117 (SARONNO -> LODI) ore 06:49
@@ -105,57 +102,34 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24318--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T060752Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T060751Z
 DTEND:20261127T062730Z
-SUMMARY:[CHIUSURA CONTINUA - 10 TRENI] 07:07 - 07:27 (primo: REG 24318) (+1
- 6 min)
+SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 07:07 - 07:27 (primo: REG 24318) (+16
+  min)
 DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: CH
- IUSURA CONTINUA - 10 TRENI\nChiusura sbarre stimata: 07:07:52 - 07:27:30\n
- Treni coinvolti nella chiusura:\n  - REG 24318 (PAVIA -> GARBAGNATE MILANE
- SE) [Transito]\n  - REG 24219 (SEVESO -> MILANO ROGOREDO) (+1m) [Transito]
- \n  - REG 24219 (SEVESO -> MILANO ROGOREDO) (+1m) [Transito]\n  - REG 2411
- 6 (LODI -> SARONNO) [Transito]\n  - REG 24116 (LODI -> SARONNO) [Transito]
- \n  - REG 24318 (PAVIA -> GARBAGNATE MILANESE)\n  - REG 24116 (LODI -> SAR
- ONNO) (+16m)\n  - REG 24116 (LODI -> SARONNO) (+16m)\n  - REG 24219 (SEVES
- O -> MILANO ROGOREDO) (+3m)\n  - REG 24219 (SEVESO -> MILANO ROGOREDO) (+3
- m)\nRitardo massimo rilevato: 16 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 10 treni: intervallo utile tra i pas
- saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ IUSURA CONTINUA - 6 TRENI\nChiusura sbarre stimata: 07:07:51 - 07:27:30\nT
+ reni coinvolti nella chiusura:\n  - REG 24318 (PAVIA -> GARBAGNATE MILANES
+ E) [Transito]\n  - REG 24219 (SEVESO -> MILANO ROGOREDO) (+1m) [Transito]\
+ n  - REG 24116 (LODI -> SARONNO) [Transito]\n  - REG 24318 (PAVIA -> GARBA
+ GNATE MILANESE)\n  - REG 24116 (LODI -> SARONNO) (+16m)\n  - REG 24219 (SE
+ VESO -> MILANO ROGOREDO) (+3m)\nRitardo massimo rilevato: 16 min\nAffidabi
+ lità stima: 78%\nNota normativa/euristica: Chiusura continua per 6 treni:
+  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
+ bero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 10 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
 X-PL-DELAY-MIN:16
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25619--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
-DTSTART:20261127T063030Z
-DTEND:20261127T063500Z
-SUMMARY:[SOPPRESSO] [FERMATA] REG 25619 (MILANO BOVISA POLITECNICO -> MELEG
- NANO) ore 07:34
-DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: FE
- RMATA\nChiusura sbarre stimata: 07:30:30 - 07:35:00\nTreni coinvolti nella
-  chiusura:\n  - REG 25619 (MILANO BOVISA POLITECNICO -> MELEGNANO)\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/eurist
- ica: Previsione da traccia oraria regolare
-LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
-STATUS:CANCELLED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-25619--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T063030Z
 DTEND:20261127T063500Z
 SUMMARY:[SOPPRESSO] [FERMATA] REG 25619 (MILANO BOVISA POLITECNICO -> MELEG
@@ -175,53 +149,49 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24121--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T064119Z
 DTEND:20261127T072000Z
-SUMMARY:[CHIUSURA CONTINUA - 20 TRENI] 07:41 - 08:20 (primo: REG 24121) (+9
+SUMMARY:[CHIUSURA CONTINUA - 14 TRENI] 07:41 - 08:20 (primo: REG 24121) (+9
   min)
 DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: CH
- IUSURA CONTINUA - 20 TRENI\nChiusura sbarre stimata: 07:41:19 - 08:20:00\n
+ IUSURA CONTINUA - 14 TRENI\nChiusura sbarre stimata: 07:41:19 - 08:20:00\n
  Treni coinvolti nella chiusura:\n  - REG 24121 (SARONNO -> LODI) (+1m) [Tr
- ansito]\n  - REG 24121 (SARONNO -> LODI) (+1m) [Transito]\n  - REG 25620 (
- MELEGNANO -> MILANO BOVISA POLITECNICO) [Transito]\n  - REG 24221 (SEVESO 
- -> MILANO ROGOREDO) (+8m) [Transito]\n  - REG 24221 (SEVESO -> MILANO ROGO
- REDO) (+8m) [Transito]\n  - REG 25620 (MELEGNANO -> MILANO BOVISA POLITECN
- ICO)\n  - REG 25621 (MILANO BOVISA POLITECNICO -> MELEGNANO) [Transito]\n 
-  - REG 24121 (SARONNO -> LODI) (+6m)\n  - REG 24121 (SARONNO -> LODI) (+6m
- )\n  - REG 24220 (MILANO ROGOREDO -> SEVESO) [Transito]\n  - REG 24221 (SE
- VESO -> MILANO ROGOREDO) (+8m)\n  - REG 24221 (SEVESO -> MILANO ROGOREDO) 
- (+8m)\n  - REG 24321 (GARBAGNATE MILANESE -> PAVIA) (+9m) [Transito]\n  - 
- REG 24321 (GARBAGNATE MILANESE -> PAVIA) (+9m) [Transito]\n  - REG 24220 (
- MILANO ROGOREDO -> SEVESO)\n  - REG 25621 (MILANO BOVISA POLITECNICO -> ME
- LEGNANO)\n  - REG 24123 (SARONNO -> LODI) [Transito]\n  - REG 24321 (GARBA
- GNATE MILANESE -> PAVIA) (+6m)\n  - REG 24321 (GARBAGNATE MILANESE -> PAVI
- A) (+6m)\n  - REG 24123 (SARONNO -> LODI)\nRitardo massimo rilevato: 9 min
- \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
- r 20 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
+ ansito]\n  - REG 25620 (MELEGNANO -> MILANO BOVISA POLITECNICO) [Transito]
+ \n  - REG 24221 (SEVESO -> MILANO ROGOREDO) (+8m) [Transito]\n  - REG 2562
+ 0 (MELEGNANO -> MILANO BOVISA POLITECNICO)\n  - REG 25621 (MILANO BOVISA P
+ OLITECNICO -> MELEGNANO) [Transito]\n  - REG 24121 (SARONNO -> LODI) (+6m)
+ \n  - REG 24220 (MILANO ROGOREDO -> SEVESO) [Transito]\n  - REG 24221 (SEV
+ ESO -> MILANO ROGOREDO) (+8m)\n  - REG 24321 (GARBAGNATE MILANESE -> PAVIA
+ ) (+9m) [Transito]\n  - REG 24220 (MILANO ROGOREDO -> SEVESO)\n  - REG 256
+ 21 (MILANO BOVISA POLITECNICO -> MELEGNANO)\n  - REG 24123 (SARONNO -> LOD
+ I) [Transito]\n  - REG 24321 (GARBAGNATE MILANESE -> PAVIA) (+6m)\n  - REG
+  24123 (SARONNO -> LODI)\nRitardo massimo rilevato: 9 min\nAffidabilità s
+ tima: 78%\nNota normativa/euristica: Chiusura continua per 14 treni: inter
+ vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
+ tradale (120s)
 LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 20 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 14 TRENI,FERROVIA
 X-PL-DELAY-MIN:9
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25629--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T085002Z
-DTEND:20261127T085532Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T085003Z
+DTEND:20261127T085533Z
 SUMMARY:[TRANSITO VELOCE] REG 25629 (MILANO BOVISA POLITECNICO -> MELEGNANO
  ) ore 09:54
 DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: TR
- ANSITO VELOCE\nChiusura sbarre stimata: 09:50:02 - 09:55:32\nTreni coinvol
+ ANSITO VELOCE\nChiusura sbarre stimata: 09:50:03 - 09:55:33\nTreni coinvol
  ti nella chiusura:\n  - REG 25629 (MILANO BOVISA POLITECNICO -> MELEGNANO)
   [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
- ta normativa/euristica: Transito stimato senza fermata (82% tratta MILANO 
+ ta normativa/euristica: Transito stimato senza fermata (83% tratta MILANO 
  BOVISA POLITECNICO -> MILANO LANCETTI\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
 STATUS:CONFIRMED
@@ -233,13 +203,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25629--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T090030Z
-DTEND:20261127T091322Z
+DTEND:20261127T091321Z
 SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 10:00 - 10:13 (primo: REG 25629)
 DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: CH
- IUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 10:00:30 - 10:13:22\nT
+ IUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 10:00:30 - 10:13:21\nT
  reni coinvolti nella chiusura:\n  - REG 25629 (MILANO BOVISA POLITECNICO -
  > MELEGNANO)\n  - REG 24131 (SARONNO -> LODI) [Transito]\n  - REG 24330 (P
  AVIA -> GARBAGNATE MILANESE) [Transito]\nRitardo massimo rilevato: 0 min\n
@@ -256,8 +226,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24131--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T091530Z
 DTEND:20261127T092000Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:15 - 10:20 (primo: REG 24131)
@@ -278,288 +248,233 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24230--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
-DTSTART:20261127T092356Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
+DTSTART:20261127T092355Z
 DTEND:20261127T100900Z
-SUMMARY:[CHIUSURA CONTINUA - 30 TRENI] 10:23 - 11:09 (primo: REG 24230) (+4
+SUMMARY:[CHIUSURA CONTINUA - 18 TRENI] 10:23 - 11:09 (primo: REG 24230) (+4
   min)
 DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: CH
- IUSURA CONTINUA - 30 TRENI\nChiusura sbarre stimata: 10:23:56 - 11:09:00\n
+ IUSURA CONTINUA - 18 TRENI\nChiusura sbarre stimata: 10:23:55 - 11:09:00\n
  Treni coinvolti nella chiusura:\n  - REG 24230 (MILANO ROGOREDO -> SEVESO)
-  [Transito]\n  - REG 24230 (MILANO ROGOREDO -> SEVESO) [Transito]\n  - REG
-  24331 (GARBAGNATE MILANESE -> PAVIA) (+1m) [Transito]\n  - REG 24331 (GAR
- BAGNATE MILANESE -> PAVIA) (+1m) [Transito]\n  - REG 24130 (LODI -> SARONN
- O) [Transito]\n  - REG 24130 (LODI -> SARONNO) [Transito]\n  - REG 24230 (
- MILANO ROGOREDO -> SEVESO) (+1m)\n  - REG 24230 (MILANO ROGOREDO -> SEVESO
- ) (+1m)\n  - REG 24133 (SARONNO -> LODI) [Transito]\n  - REG 24331 (GARBAG
- NATE MILANESE -> PAVIA) (+1m)\n  - REG 24331 (GARBAGNATE MILANESE -> PAVIA
- ) (+1m)\n  - REG 24130 (LODI -> SARONNO) (+2m)\n  - REG 24130 (LODI -> SAR
- ONNO) (+2m)\n  - REG 24233 (SEVESO -> MILANO ROGOREDO) [Transito]\n  - REG
-  24332 (PAVIA -> GARBAGNATE MILANESE) [Transito]\n  - REG 24332 (PAVIA -> 
- GARBAGNATE MILANESE) [Transito]\n  - REG 24133 (SARONNO -> LODI)\n  - REG 
- 25632 (MELEGNANO -> MILANO BOVISA POLITECNICO) [Transito]\n  - REG 25632 (
- MELEGNANO -> MILANO BOVISA POLITECNICO) [Transito]\n  - REG 24233 (SEVESO 
- -> MILANO ROGOREDO)\n  - REG 24332 (PAVIA -> GARBAGNATE MILANESE) (+4m)\n 
-  - REG 24332 (PAVIA -> GARBAGNATE MILANESE) (+4m)\n  - REG 25633 (MILANO B
- OVISA POLITECNICO -> MELEGNANO) [Transito]\n  - REG 25633 (MILANO BOVISA P
- OLITECNICO -> MELEGNANO) [Transito]\n  - REG 25632 (MELEGNANO -> MILANO BO
- VISA POLITECNICO) (+4m)\n  - REG 25632 (MELEGNANO -> MILANO BOVISA POLITEC
- NICO) (+4m)\n  - REG 24333 (GARBAGNATE MILANESE -> PAVIA) [Transito]\n  - 
- REG 25633 (MILANO BOVISA POLITECNICO -> MELEGNANO)\n  - REG 25633 (MILANO 
- BOVISA POLITECNICO -> MELEGNANO)\n  - REG 24333 (GARBAGNATE MILANESE -> PA
- VIA)\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota norm
- ativa/euristica: Chiusura continua per 30 treni: intervallo utile tra i pa
- ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+  [Transito]\n  - REG 24331 (GARBAGNATE MILANESE -> PAVIA) (+1m) [Transito]
+ \n  - REG 24130 (LODI -> SARONNO) [Transito]\n  - REG 24230 (MILANO ROGORE
+ DO -> SEVESO) (+1m)\n  - REG 24133 (SARONNO -> LODI) [Transito]\n  - REG 2
+ 4331 (GARBAGNATE MILANESE -> PAVIA) (+1m)\n  - REG 24130 (LODI -> SARONNO)
+  (+2m)\n  - REG 24233 (SEVESO -> MILANO ROGOREDO) [Transito]\n  - REG 2433
+ 2 (PAVIA -> GARBAGNATE MILANESE) [Transito]\n  - REG 24133 (SARONNO -> LOD
+ I)\n  - REG 25632 (MELEGNANO -> MILANO BOVISA POLITECNICO) [Transito]\n  -
+  REG 24233 (SEVESO -> MILANO ROGOREDO)\n  - REG 24332 (PAVIA -> GARBAGNATE
+  MILANESE) (+4m)\n  - REG 25633 (MILANO BOVISA POLITECNICO -> MELEGNANO) [
+ Transito]\n  - REG 25632 (MELEGNANO -> MILANO BOVISA POLITECNICO) (+4m)\n 
+  - REG 24333 (GARBAGNATE MILANESE -> PAVIA) [Transito]\n  - REG 25633 (MIL
+ ANO BOVISA POLITECNICO -> MELEGNANO)\n  - REG 24333 (GARBAGNATE MILANESE -
+ > PAVIA)\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Chiusura continua per 18 treni: intervallo utile tra 
+ i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 30 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 18 TRENI,FERROVIA
 X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24235--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
-DTSTART:20261127T101606Z
-DTEND:20261127T104421Z
-SUMMARY:[CHIUSURA CONTINUA - 12 TRENI] 11:16 - 11:44 (primo: REG 24235) (+8
-  min)
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
+DTSTART:20261127T101607Z
+DTEND:20261127T104422Z
+SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 11:16 - 11:44 (primo: REG 24235) (+8 
+ min)
 DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: CH
- IUSURA CONTINUA - 12 TRENI\nChiusura sbarre stimata: 11:16:06 - 11:44:21\n
- Treni coinvolti nella chiusura:\n  - REG 24235 (SEVESO -> MILANO ROGOREDO)
-  (+8m) [Transito]\n  - REG 24235 (SEVESO -> MILANO ROGOREDO) (+8m) [Transi
- to]\n  - REG 2937 (GALLARATE -> MILANO CENTRALE) [Transito]\n  - REG 25634
-  (MELEGNANO -> MILANO BOVISA POLITECNICO) (+4m) [Transito]\n  - REG 25634 
- (MELEGNANO -> MILANO BOVISA POLITECNICO) (+4m) [Transito]\n  - REG 24235 (
- SEVESO -> MILANO ROGOREDO) (+7m)\n  - REG 24235 (SEVESO -> MILANO ROGOREDO
- ) (+7m)\n  - REG 24134 (LODI -> SARONNO) [Transito]\n  - REG 25634 (MELEGN
- ANO -> MILANO BOVISA POLITECNICO) (+8m)\n  - REG 25634 (MELEGNANO -> MILAN
- O BOVISA POLITECNICO) (+8m)\n  - REG 24134 (LODI -> SARONNO)\n  - REG 2423
- 7 (SEVESO -> MILANO ROGOREDO) [Transito]\nRitardo massimo rilevato: 8 min\
- nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per
-  12 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
- ma di sgombero stradale (120s)
+ IUSURA CONTINUA - 7 TRENI\nChiusura sbarre stimata: 11:16:07 - 11:44:22\nT
+ reni coinvolti nella chiusura:\n  - REG 24235 (SEVESO -> MILANO ROGOREDO) 
+ (+8m) [Transito]\n  - REG 25634 (MELEGNANO -> MILANO BOVISA POLITECNICO) (
+ +4m) [Transito]\n  - REG 24235 (SEVESO -> MILANO ROGOREDO) (+7m)\n  - REG 
+ 24134 (LODI -> SARONNO) [Transito]\n  - REG 25634 (MELEGNANO -> MILANO BOV
+ ISA POLITECNICO) (+8m)\n  - REG 24134 (LODI -> SARONNO)\n  - REG 24237 (SE
+ VESO -> MILANO ROGOREDO) [Transito]\nRitardo massimo rilevato: 8 min\nAffi
+ dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 7 tr
+ eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 12 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
 X-PL-DELAY-MIN:8
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25636--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
-DTSTART:20261127T104815Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
+DTSTART:20261127T104814Z
 DTEND:20261127T112400Z
-SUMMARY:[CHIUSURA CONTINUA - 21 TRENI] 11:48 - 12:24 (primo: REG 25636) (+9
+SUMMARY:[CHIUSURA CONTINUA - 14 TRENI] 11:48 - 12:24 (primo: REG 25636) (+9
   min)
 DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: CH
- IUSURA CONTINUA - 21 TRENI\nChiusura sbarre stimata: 11:48:15 - 12:24:00\n
+ IUSURA CONTINUA - 14 TRENI\nChiusura sbarre stimata: 11:48:14 - 12:24:00\n
  Treni coinvolti nella chiusura:\n  - REG 25636 (MELEGNANO -> MILANO BOVISA
-  POLITECNICO) (+4m) [Transito]\n  - REG 25636 (MELEGNANO -> MILANO BOVISA 
- POLITECNICO) (+4m) [Transito]\n  - REG 24237 (SEVESO -> MILANO ROGOREDO)\n
-   - REG 25637 (MILANO BOVISA POLITECNICO -> MELEGNANO) [Transito]\n  - REG
-  25637 (MILANO BOVISA POLITECNICO -> MELEGNANO) [Transito]\n  - REG 25636 
- (MELEGNANO -> MILANO BOVISA POLITECNICO) (+6m)\n  - REG 25636 (MELEGNANO -
- > MILANO BOVISA POLITECNICO) (+6m)\n  - REG 24337 (GARBAGNATE MILANESE -> 
- PAVIA) (+4m) [Transito]\n  - REG 24337 (GARBAGNATE MILANESE -> PAVIA) (+4m
- ) [Transito]\n  - REG 24136 (LODI -> SARONNO) [Transito]\n  - REG 25637 (M
- ILANO BOVISA POLITECNICO -> MELEGNANO) (+2m)\n  - REG 25637 (MILANO BOVISA
-  POLITECNICO -> MELEGNANO) (+2m)\n  - REG 24136 (LODI -> SARONNO)\n  - REG
-  24139 (SARONNO -> LODI) [Transito]\n  - REG 24337 (GARBAGNATE MILANESE ->
-  PAVIA) (+2m)\n  - REG 24337 (GARBAGNATE MILANESE -> PAVIA) (+2m)\n  - REG
-  25638 (MELEGNANO -> MILANO BOVISA POLITECNICO) [Transito]\n  - REG 24239 
- (SEVESO -> MILANO ROGOREDO) (+9m) [Transito]\n  - REG 24239 (SEVESO -> MIL
- ANO ROGOREDO) (+9m) [Transito]\n  - REG 24139 (SARONNO -> LODI)\n  - REG 2
- 5638 (MELEGNANO -> MILANO BOVISA POLITECNICO)\nRitardo massimo rilevato: 9
-  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
- a per 21 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
+  POLITECNICO) (+4m) [Transito]\n  - REG 24237 (SEVESO -> MILANO ROGOREDO)\
+ n  - REG 25637 (MILANO BOVISA POLITECNICO -> MELEGNANO) [Transito]\n  - RE
+ G 25636 (MELEGNANO -> MILANO BOVISA POLITECNICO) (+6m)\n  - REG 24337 (GAR
+ BAGNATE MILANESE -> PAVIA) (+4m) [Transito]\n  - REG 24136 (LODI -> SARONN
+ O) [Transito]\n  - REG 25637 (MILANO BOVISA POLITECNICO -> MELEGNANO) (+2m
+ )\n  - REG 24136 (LODI -> SARONNO)\n  - REG 24139 (SARONNO -> LODI) [Trans
+ ito]\n  - REG 24337 (GARBAGNATE MILANESE -> PAVIA) (+2m)\n  - REG 25638 (M
+ ELEGNANO -> MILANO BOVISA POLITECNICO) [Transito]\n  - REG 24239 (SEVESO -
+ > MILANO ROGOREDO) (+9m) [Transito]\n  - REG 24139 (SARONNO -> LODI)\n  - 
+ REG 25638 (MELEGNANO -> MILANO BOVISA POLITECNICO)\nRitardo massimo rileva
+ to: 9 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura co
+ ntinua per 14 treni: intervallo utile tra i passaggi (0s) inferiore alla s
+ oglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 21 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 14 TRENI,FERROVIA
 X-PL-DELAY-MIN:9
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24239--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T112630Z
 DTEND:20261127T113130Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:26 - 12:31 (primo: REG 24239) (+7 
- min)
-DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:26:30 - 12:31:30\nT
- reni coinvolti nella chiusura:\n  - REG 24239 (SEVESO -> MILANO ROGOREDO) 
- (+7m)\n  - REG 24239 (SEVESO -> MILANO ROGOREDO) (+7m)\nRitardo massimo ri
- levato: 7 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 24239 (SEVESO -> MILANO ROGOREDO) ore 12:30 (+7 min)
+DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 12:26:30 - 12:31:30\nTreni coinvolti nella
+  chiusura:\n  - REG 24239 (SEVESO -> MILANO ROGOREDO) (+7m)\nRitardo massi
+ mo rilevato: 7 min\nAffidabilità stima: 99%\nNota normativa/euristica: Ri
+ levamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:7
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24248--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T135307Z
-DTEND:20261127T144322Z
-SUMMARY:[CHIUSURA CONTINUA - 22 TRENI] 14:53 - 15:43 (primo: REG 24248) (+2
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T135306Z
+DTEND:20261127T144321Z
+SUMMARY:[CHIUSURA CONTINUA - 16 TRENI] 14:53 - 15:43 (primo: REG 24248) (+2
   min)
 DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: CH
- IUSURA CONTINUA - 22 TRENI\nChiusura sbarre stimata: 14:53:07 - 15:43:22\n
+ IUSURA CONTINUA - 16 TRENI\nChiusura sbarre stimata: 14:53:06 - 15:43:21\n
  Treni coinvolti nella chiusura:\n  - REG 24248 (MILANO ROGOREDO -> SEVESO)
   [Transito]\n  - REG 24349 (GARBAGNATE MILANESE -> PAVIA) [Transito]\n  - 
  REG 24248 (MILANO ROGOREDO -> SEVESO)\n  - REG 24349 (GARBAGNATE MILANESE 
  -> PAVIA)\n  - REG 24350 (PAVIA -> GARBAGNATE MILANESE) [Transito]\n  - RE
  G 25650 (MELEGNANO -> MILANO BOVISA POLITECNICO) (+1m) [Transito]\n  - REG
-  25650 (MELEGNANO -> MILANO BOVISA POLITECNICO) (+1m) [Transito]\n  - REG 
- 24350 (PAVIA -> GARBAGNATE MILANESE)\n  - REG 25650 (MELEGNANO -> MILANO B
- OVISA POLITECNICO) (+1m)\n  - REG 25650 (MELEGNANO -> MILANO BOVISA POLITE
- CNICO) (+1m)\n  - REG 25651 (MILANO BOVISA POLITECNICO -> MELEGNANO) [Tran
- sito]\n  - REG 24250 (MILANO ROGOREDO -> SEVESO) [Transito]\n  - REG 24150
-  (LODI -> SARONNO) (+2m) [Transito]\n  - REG 24150 (LODI -> SARONNO) (+2m)
-  [Transito]\n  - REG 24250 (MILANO ROGOREDO -> SEVESO)\n  - REG 25651 (MIL
- ANO BOVISA POLITECNICO -> MELEGNANO)\n  - REG 24153 (SARONNO -> LODI) [Tra
- nsito]\n  - REG 24153 (SARONNO -> LODI) [Transito]\n  - REG 24150 (LODI ->
-  SARONNO) (+2m)\n  - REG 24150 (LODI -> SARONNO) (+2m)\n  - REG 24352 (PAV
- IA -> GARBAGNATE MILANESE) [Transito]\n  - REG 24352 (PAVIA -> GARBAGNATE 
- MILANESE) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima
- : 78%\nNota normativa/euristica: Chiusura continua per 22 treni: intervall
- o utile tra i passaggi (0s) inferiore alla soglia minima di sgombero strad
- ale (120s)
+  24350 (PAVIA -> GARBAGNATE MILANESE)\n  - REG 25650 (MELEGNANO -> MILANO 
+ BOVISA POLITECNICO) (+1m)\n  - REG 25651 (MILANO BOVISA POLITECNICO -> MEL
+ EGNANO) [Transito]\n  - REG 24250 (MILANO ROGOREDO -> SEVESO) [Transito]\n
+   - REG 24150 (LODI -> SARONNO) (+2m) [Transito]\n  - REG 24250 (MILANO RO
+ GOREDO -> SEVESO)\n  - REG 25651 (MILANO BOVISA POLITECNICO -> MELEGNANO)\
+ n  - REG 24153 (SARONNO -> LODI) [Transito]\n  - REG 24150 (LODI -> SARONN
+ O) (+2m)\n  - REG 24352 (PAVIA -> GARBAGNATE MILANESE) [Transito]\nRitardo
+  massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Chiusura continua per 16 treni: intervallo utile tra i passaggi (0s) i
+ nferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 22 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 16 TRENI,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24153--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T144530Z
-DTEND:20261127T145000Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 15:45 - 15:50 (primo: REG 24153)
-DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: CH
- IUSURA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 15:45:30 - 15:50:00\nT
- reni coinvolti nella chiusura:\n  - REG 24153 (SARONNO -> LODI)\n  - REG 2
- 4153 (SARONNO -> LODI)\n  - REG 24352 (PAVIA -> GARBAGNATE MILANESE)\n  - 
- REG 24352 (PAVIA -> GARBAGNATE MILANESE)\nRitardo massimo rilevato: 0 min\
- nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per
-  4 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
- a di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-24252--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
-DTSTART:20261127T145307Z
 DTEND:20261127T152400Z
-SUMMARY:[CHIUSURA CONTINUA - 14 TRENI] 15:53 - 16:24 (primo: REG 24252)
+SUMMARY:[CHIUSURA CONTINUA - 13 TRENI] 15:45 - 16:24 (primo: REG 24153)
 DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: CH
- IUSURA CONTINUA - 14 TRENI\nChiusura sbarre stimata: 15:53:07 - 16:24:00\n
- Treni coinvolti nella chiusura:\n  - REG 24252 (MILANO ROGOREDO -> SEVESO)
-  [Transito]\n  - REG 24353 (GARBAGNATE MILANESE -> PAVIA) [Transito]\n  - 
- REG 24353 (GARBAGNATE MILANESE -> PAVIA) [Transito]\n  - REG 24252 (MILANO
-  ROGOREDO -> SEVESO)\n  - REG 24353 (GARBAGNATE MILANESE -> PAVIA)\n  - RE
- G 24353 (GARBAGNATE MILANESE -> PAVIA)\n  - REG 24155 (SARONNO -> LODI) [T
- ransito]\n  - REG 24255 (SEVESO -> MILANO ROGOREDO) [Transito]\n  - REG 25
- 654 (MELEGNANO -> MILANO BOVISA POLITECNICO) [Transito]\n  - REG 25654 (ME
- LEGNANO -> MILANO BOVISA POLITECNICO) [Transito]\n  - REG 24155 (SARONNO -
- > LODI)\n  - REG 24255 (SEVESO -> MILANO ROGOREDO)\n  - REG 25654 (MELEGNA
- NO -> MILANO BOVISA POLITECNICO)\n  - REG 25654 (MELEGNANO -> MILANO BOVIS
- A POLITECNICO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\
- nNota normativa/euristica: Chiusura continua per 14 treni: intervallo util
- e tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (1
- 20s)
+ IUSURA CONTINUA - 13 TRENI\nChiusura sbarre stimata: 15:45:30 - 16:24:00\n
+ Treni coinvolti nella chiusura:\n  - REG 24153 (SARONNO -> LODI)\n  - REG 
+ 24352 (PAVIA -> GARBAGNATE MILANESE)\n  - REG 2955 (GALLARATE -> MILANO CE
+ NTRALE) [Transito]\n  - REG 24252 (MILANO ROGOREDO -> SEVESO) [Transito]\n
+   - REG 24353 (GARBAGNATE MILANESE -> PAVIA) [Transito]\n  - REG 24252 (MI
+ LANO ROGOREDO -> SEVESO)\n  - REG 24353 (GARBAGNATE MILANESE -> PAVIA)\n  
+ - REG 24155 (SARONNO -> LODI) [Transito]\n  - REG 24255 (SEVESO -> MILANO 
+ ROGOREDO) [Transito]\n  - REG 25654 (MELEGNANO -> MILANO BOVISA POLITECNIC
+ O) [Transito]\n  - REG 24155 (SARONNO -> LODI)\n  - REG 24255 (SEVESO -> M
+ ILANO ROGOREDO)\n  - REG 25654 (MELEGNANO -> MILANO BOVISA POLITECNICO)\nR
+ itardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/e
+ uristica: Chiusura continua per 13 treni: intervallo utile tra i passaggi 
+ (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 14 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 13 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24154--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
-DTSTART:20261127T152652Z
-DTEND:20261127T153222Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:26 - 16:32 (primo: REG 24154)
-DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:26:52 - 16:32:22\nT
- reni coinvolti nella chiusura:\n  - REG 24154 (LODI -> SARONNO) [Transito]
- \n  - REG 24154 (LODI -> SARONNO) [Transito]\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
+DTSTART:20261127T152651Z
+DTEND:20261127T153221Z
+SUMMARY:[TRANSITO VELOCE] REG 24154 (LODI -> SARONNO) ore 16:31
+DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: TR
+ ANSITO VELOCE\nChiusura sbarre stimata: 16:26:51 - 16:32:21\nTreni coinvol
+ ti nella chiusura:\n  - REG 24154 (LODI -> SARONNO) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Transito stimato senza fermata (87% tratta MILANO ROGOREDO -> MILANO PORT
+ A VITTORIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24154--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T153430Z
 DTEND:20261127T153900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:34 - 16:39 (primo: REG 24154)
-DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:34:30 - 16:39:00\nT
- reni coinvolti nella chiusura:\n  - REG 24154 (LODI -> SARONNO)\n  - REG 2
- 4154 (LODI -> SARONNO)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
- ma: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
- lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
- dale (120s)
+SUMMARY:[FERMATA] REG 24154 (LODI -> SARONNO) ore 16:38
+DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 16:34:30 - 16:39:00\nTreni coinvolti nella
+  chiusura:\n  - REG 24154 (LODI -> SARONNO)\nRitardo massimo rilevato: 0 m
+ in\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da trac
+ cia oraria regolare
 LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25656--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T154152Z
-DTEND:20261127T154722Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T154151Z
+DTEND:20261127T154721Z
 SUMMARY:[TRANSITO VELOCE] REG 25656 (MELEGNANO -> MILANO BOVISA POLITECNICO
  ) ore 16:46
 DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: TR
- ANSITO VELOCE\nChiusura sbarre stimata: 16:41:52 - 16:47:22\nTreni coinvol
+ ANSITO VELOCE\nChiusura sbarre stimata: 16:41:51 - 16:47:21\nTreni coinvol
  ti nella chiusura:\n  - REG 25656 (MELEGNANO -> MILANO BOVISA POLITECNICO)
   [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
- ta normativa/euristica: Transito stimato senza fermata (88% tratta MILANO 
+ ta normativa/euristica: Transito stimato senza fermata (87% tratta MILANO 
  ROGOREDO -> MILANO PORTA VITTORIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
 STATUS:CONFIRMED
@@ -571,8 +486,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25656--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T154930Z
 DTEND:20261127T162400Z
 SUMMARY:[CHIUSURA CONTINUA - 9 TRENI] 16:49 - 17:24 (primo: REG 25656)
@@ -598,117 +513,108 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24268--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T185307Z
-DTEND:20261127T191021Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 19:53 - 20:10 (primo: REG 24268)
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T185306Z
+DTEND:20261127T191022Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 19:53 - 20:10 (primo: REG 24268)
 DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: CH
- IUSURA CONTINUA - 8 TRENI\nChiusura sbarre stimata: 19:53:07 - 20:10:21\nT
+ IUSURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 19:53:06 - 20:10:22\nT
  reni coinvolti nella chiusura:\n  - REG 24268 (MILANO ROGOREDO -> SEVESO) 
- [Transito]\n  - REG 24168 (LODI -> SARONNO) [Transito]\n  - REG 24168 (LOD
- I -> SARONNO) [Transito]\n  - REG 24268 (MILANO ROGOREDO -> SEVESO)\n  - R
- EG 24168 (LODI -> SARONNO)\n  - REG 24168 (LODI -> SARONNO)\n  - REG 24171
-  (SARONNO -> LODI) [Transito]\n  - REG 24171 (SARONNO -> LODI) [Transito]\
- nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
- /euristica: Chiusura continua per 8 treni: intervallo utile tra i passaggi
-  (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ [Transito]\n  - REG 24168 (LODI -> SARONNO) [Transito]\n  - REG 24268 (MIL
+ ANO ROGOREDO -> SEVESO)\n  - REG 24168 (LODI -> SARONNO)\n  - REG 24171 (S
+ ARONNO -> LODI) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità
+  stima: 78%\nNota normativa/euristica: Chiusura continua per 5 treni: inte
+ rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
+ stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24171--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T191530Z
 DTEND:20261127T192000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:15 - 20:20 (primo: REG 24171)
-DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:15:30 - 20:20:00\nT
- reni coinvolti nella chiusura:\n  - REG 24171 (SARONNO -> LODI)\n  - REG 2
- 4171 (SARONNO -> LODI)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
- ma: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
- lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
- dale (120s)
+SUMMARY:[FERMATA] REG 24171 (SARONNO -> LODI) ore 20:19
+DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 20:15:30 - 20:20:00\nTreni coinvolti nella
+  chiusura:\n  - REG 24171 (SARONNO -> LODI)\nRitardo massimo rilevato: 0 m
+ in\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da trac
+ cia oraria regolare
 LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24170--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
-DTSTART:20261127T192652Z
-DTEND:20261127T193222Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:26 - 20:32 (primo: REG 24170)
-DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:26:52 - 20:32:22\nT
- reni coinvolti nella chiusura:\n  - REG 24170 (LODI -> SARONNO) [Transito]
- \n  - REG 24170 (LODI -> SARONNO) [Transito]\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
+DTSTART:20261127T192651Z
+DTEND:20261127T193221Z
+SUMMARY:[TRANSITO VELOCE] REG 24170 (LODI -> SARONNO) ore 20:31
+DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: TR
+ ANSITO VELOCE\nChiusura sbarre stimata: 20:26:51 - 20:32:21\nTreni coinvol
+ ti nella chiusura:\n  - REG 24170 (LODI -> SARONNO) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Transito stimato senza fermata (87% tratta MILANO ROGOREDO -> MILANO PORT
+ A VITTORIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24170--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T193430Z
 DTEND:20261127T200500Z
-SUMMARY:[CHIUSURA CONTINUA - 16 TRENI] 20:34 - 21:05 (primo: REG 24170)
+SUMMARY:[CHIUSURA CONTINUA - 9 TRENI] 20:34 - 21:05 (primo: REG 24170)
 DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: CH
- IUSURA CONTINUA - 16 TRENI\nChiusura sbarre stimata: 20:34:30 - 21:05:00\n
- Treni coinvolti nella chiusura:\n  - REG 24170 (LODI -> SARONNO)\n  - REG 
- 24170 (LODI -> SARONNO)\n  - REG 24173 (SARONNO -> LODI) [Transito]\n  - R
- EG 24173 (SARONNO -> LODI) [Transito]\n  - REG 24372 (PAVIA -> MILANO BOVI
- SA POLITECNICO) [Transito]\n  - REG 24372 (PAVIA -> MILANO BOVISA POLITECN
- ICO) [Transito]\n  - REG 24273 (SEVESO -> MILANO ROGOREDO) [Transito]\n  -
-  REG 24273 (SEVESO -> MILANO ROGOREDO) [Transito]\n  - REG 24173 (SARONNO 
- -> LODI)\n  - REG 24173 (SARONNO -> LODI)\n  - REG 24372 (PAVIA -> MILANO 
- BOVISA POLITECNICO)\n  - REG 24372 (PAVIA -> MILANO BOVISA POLITECNICO)\n 
-  - REG 24273 (SEVESO -> MILANO ROGOREDO)\n  - REG 24273 (SEVESO -> MILANO 
- ROGOREDO)\n  - REG 24272 (MILANO ROGOREDO -> SEVESO) [Transito]\n  - REG 2
- 4272 (MILANO ROGOREDO -> SEVESO)\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 78%\nNota normativa/euristica: Chiusura continua per 16 tren
- i: intervallo utile tra i passaggi (112s) inferiore alla soglia minima di 
- sgombero stradale (120s)
+ IUSURA CONTINUA - 9 TRENI\nChiusura sbarre stimata: 20:34:30 - 21:05:00\nT
+ reni coinvolti nella chiusura:\n  - REG 24170 (LODI -> SARONNO)\n  - REG 2
+ 4173 (SARONNO -> LODI) [Transito]\n  - REG 24372 (PAVIA -> MILANO BOVISA P
+ OLITECNICO) [Transito]\n  - REG 24273 (SEVESO -> MILANO ROGOREDO) [Transit
+ o]\n  - REG 24173 (SARONNO -> LODI)\n  - REG 24372 (PAVIA -> MILANO BOVISA
+  POLITECNICO)\n  - REG 24273 (SEVESO -> MILANO ROGOREDO)\n  - REG 24272 (M
+ ILANO ROGOREDO -> SEVESO) [Transito]\n  - REG 24272 (MILANO ROGOREDO -> SE
+ VESO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota nor
+ mativa/euristica: Chiusura continua per 9 treni: intervallo utile tra i pa
+ ssaggi (113s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 16 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 9 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25674--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T201152Z
-DTEND:20261127T201722Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T201151Z
+DTEND:20261127T201721Z
 SUMMARY:[TRANSITO VELOCE] REG 25674 (MELEGNANO -> MILANO BOVISA POLITECNICO
  ) ore 21:16
 DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: TR
- ANSITO VELOCE\nChiusura sbarre stimata: 21:11:52 - 21:17:22\nTreni coinvol
+ ANSITO VELOCE\nChiusura sbarre stimata: 21:11:51 - 21:17:21\nTreni coinvol
  ti nella chiusura:\n  - REG 25674 (MELEGNANO -> MILANO BOVISA POLITECNICO)
   [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNo
- ta normativa/euristica: Transito stimato senza fermata (88% tratta MILANO 
+ ta normativa/euristica: Transito stimato senza fermata (87% tratta MILANO 
  ROGOREDO -> MILANO PORTA VITTORIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
 STATUS:CONFIRMED
@@ -720,70 +626,88 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-25674--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T201930Z
 DTEND:20261127T203900Z
-SUMMARY:[CHIUSURA CONTINUA - 7 TRENI] 21:19 - 21:39 (primo: REG 25674)
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 21:19 - 21:39 (primo: REG 25674)
 DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: CH
- IUSURA CONTINUA - 7 TRENI\nChiusura sbarre stimata: 21:19:30 - 21:39:00\nT
+ IUSURA CONTINUA - 5 TRENI\nChiusura sbarre stimata: 21:19:30 - 21:39:00\nT
  reni coinvolti nella chiusura:\n  - REG 25674 (MELEGNANO -> MILANO BOVISA 
  POLITECNICO)\n  - REG 24274 (MILANO ROGOREDO -> MILANO BOVISA POLITECNICO)
   [Transito]\n  - REG 24174 (LODI -> MILANO BOVISA POLITECNICO) [Transito]\
- n  - REG 24174 (LODI -> MILANO BOVISA POLITECNICO) [Transito]\n  - REG 242
- 74 (MILANO ROGOREDO -> MILANO BOVISA POLITECNICO)\n  - REG 24174 (LODI -> 
- MILANO BOVISA POLITECNICO)\n  - REG 24174 (LODI -> MILANO BOVISA POLITECNI
- CO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
- tiva/euristica: Chiusura continua per 7 treni: intervallo utile tra i pass
- aggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ n  - REG 24274 (MILANO ROGOREDO -> MILANO BOVISA POLITECNICO)\n  - REG 241
+ 74 (LODI -> MILANO BOVISA POLITECNICO)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 5
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 7 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2979--20261126-S01649@pl-tracker.local
+DTSTAMP:20261127T223343Z
+SEQUENCE:0
+DTSTART:20261127T204547Z
+DTEND:20261127T205117Z
+SUMMARY:[TRANSITO VELOCE] REG 2979 (GALLARATE -> MILANO CENTRALE) ore 21:50
+DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: TR
+ ANSITO VELOCE\nChiusura sbarre stimata: 21:45:47 - 21:51:17\nTreni coinvol
+ ti nella chiusura:\n  - REG 2979 (GALLARATE -> MILANO CENTRALE) [Transito]
+ \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Transito stimato senza fermata (29% tratta MILANO BOVISA POLI
+ TECNICO -> MILANO PORTA GARIBALDI\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24176--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
-DTSTART:20261127T205652Z
-DTEND:20261127T210222Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:56 - 22:02 (primo: REG 24176)
-DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:56:52 - 22:02:22\nT
- reni coinvolti nella chiusura:\n  - REG 24176 (LODI -> MILANO BOVISA POLIT
- ECNICO) [Transito]\n  - REG 24176 (LODI -> MILANO BOVISA POLITECNICO) [Tra
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
+DTSTART:20261127T205651Z
+DTEND:20261127T210221Z
+SUMMARY:[TRANSITO VELOCE] REG 24176 (LODI -> MILANO BOVISA POLITECNICO) ore
+  22:01
+DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: TR
+ ANSITO VELOCE\nChiusura sbarre stimata: 21:56:51 - 22:02:21\nTreni coinvol
+ ti nella chiusura:\n  - REG 24176 (LODI -> MILANO BOVISA POLITECNICO) [Tra
  nsito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i p
- assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ rmativa/euristica: Transito stimato senza fermata (87% tratta MILANO ROGOR
+ EDO -> MILANO PORTA VITTORIA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24176--20261126-S01649@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T210430Z
 DTEND:20261127T210900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:04 - 22:09 (primo: REG 24176)
-DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:04:30 - 22:09:00\nT
- reni coinvolti nella chiusura:\n  - REG 24176 (LODI -> MILANO BOVISA POLIT
- ECNICO)\n  - REG 24176 (LODI -> MILANO BOVISA POLITECNICO)\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chi
- usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 24176 (LODI -> MILANO BOVISA POLITECNICO) ore 22:08
+DESCRIPTION:Stazione/PL: MILANO PORTA VENEZIA (S01649)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 22:04:30 - 22:09:00\nTreni coinvolti nella
+  chiusura:\n  - REG 24176 (LODI -> MILANO BOVISA POLITECNICO)\nRitardo mas
+ simo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: 
+ Previsione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione MILANO PORTA VENEZIA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

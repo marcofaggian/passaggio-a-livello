@@ -9,38 +9,36 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:fa9af3335ad70b90e87659dd383345a7b01dc25b44364e62f071b9ca5d5a
- b656
+X-CONTENT-HASH:5bd05036e336b707d1e9bc2eb383f56055c1dfdce5514f3772c0d75ce443
+ 7114
 BEGIN:VEVENT
 UID:train-9304--20261126-S08671@pl-tracker.local-arr
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T052400Z
 DTEND:20261127T053400Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:24 - 06:34 (primo: TRENO 9304) (+2
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:24 - 06:34 (primo: TRENO 9304) (+2
  8 min)
 DESCRIPTION:Stazione/PL: CASSINO (S08671)\nRegime chiusura: CHIUSURA CONTIN
- UA - 4 TRENI\nChiusura sbarre stimata: 06:24:00 - 06:34:00\nTreni coinvolt
+ UA - 2 TRENI\nChiusura sbarre stimata: 06:24:00 - 06:34:00\nTreni coinvolt
  i nella chiusura:\n  - TRENO 9304 (NAPOLI CENTRALE -> TORINO PORTA NUOVA) 
  (+28m) [Arrivo]\n  - TRENO 9304 (NAPOLI CENTRALE -> TORINO PORTA NUOVA) (+
- 28m) [Arrivo]\n  - TRENO 9304 (NAPOLI CENTRALE -> TORINO PORTA NUOVA) (+28
- m) [Partenza]\n  - TRENO 9304 (NAPOLI CENTRALE -> TORINO PORTA NUOVA) (+28
- m) [Partenza]\nRitardo massimo rilevato: 28 min\nAffidabilità stima: 99%\
- nNota normativa/euristica: Chiusura continua per 4 treni: intervallo utile
-  tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (12
- 0s)
+ 28m) [Partenza]\nRitardo massimo rilevato: 28 min\nAffidabilità stima: 99
+ %\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo uti
+ le tra i passaggi (60s) inferiore alla soglia minima di sgombero stradale 
+ (120s)
 LOCATION:Passaggio a Livello / Stazione CASSINO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:28
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-23363--20261126-S08671@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T063730Z
 DTEND:20261127T064200Z
 SUMMARY:[FERMATA] REG 23363 (ROMA TERMINI -> BOIANO) ore 07:41
@@ -58,151 +56,161 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9601--20261126-S08671@pl-tracker.local
-DTSTAMP:20261127T135355Z
+UID:train-12601--20261126-S08671@pl-tracker.local
+DTSTAMP:20261127T223343Z
 SEQUENCE:1
-DTSTART:20261127T081715Z
+DTSTART:20261127T081759Z
 DTEND:20261127T082329Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 09:17 - 09:23 (primo: TRENO 9601)
-DESCRIPTION:Stazione/PL: CASSINO (S08671)\nRegime chiusura: CHIUSURA CONTIN
- UA - 3 TRENI\nChiusura sbarre stimata: 09:17:15 - 09:23:29\nTreni coinvolt
- i nella chiusura:\n  - TRENO 9601 (MILANO CENTRALE -> NAPOLI CENTRALE) [Tr
- ansito]\n  - REG 12601 (ROMA TERMINI -> CASSINO) [Transito]\n  - REG 12601
-  (ROMA TERMINI -> CASSINO) [Transito]\nRitardo massimo rilevato: 0 min\nAf
- fidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 
- treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
- i sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 12601 (ROMA TERMINI -> CASSINO) ore 09:22
+DESCRIPTION:Stazione/PL: CASSINO (S08671)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 09:17:59 - 09:23:29\nTreni coinvolti nella chiu
+ sura:\n  - REG 12601 (ROMA TERMINI -> CASSINO) [Transito]\nRitardo massimo
+  rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
+ nsito stimato senza fermata (65% tratta FROSINONE -> ROCCASECCA\; pedale a
+ nnuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CASSINO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12601--20261126-S08671@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T084300Z
 DTEND:20261127T084730Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:43 - 09:47 (primo: REG 12601)
-DESCRIPTION:Stazione/PL: CASSINO (S08671)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 09:43:00 - 09:47:30\nTreni coinvolt
- i nella chiusura:\n  - REG 12601 (ROMA TERMINI -> CASSINO)\n  - REG 12601 
- (ROMA TERMINI -> CASSINO)\nRitardo massimo rilevato: -1 min\nAffidabilità
-  stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+SUMMARY:[FERMATA] REG 12601 (ROMA TERMINI -> CASSINO) ore 09:46
+DESCRIPTION:Stazione/PL: CASSINO (S08671)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 09:43:00 - 09:47:30\nTreni coinvolti nella chiusura:\n 
+  - REG 12601 (ROMA TERMINI -> CASSINO)\nRitardo massimo rilevato: -1 min\n
+ Affidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale da c
+ ircuito di binario
 LOCATION:Passaggio a Livello / Stazione CASSINO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5806--20261126-S08671@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T090300Z
 DTEND:20261127T090730Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:03 - 10:07 (primo: REG 5806)
-DESCRIPTION:Stazione/PL: CASSINO (S08671)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 10:03:00 - 10:07:30\nTreni coinvolt
- i nella chiusura:\n  - REG 5806 (NAPOLI CENTRALE -> CASSINO)\n  - REG 5806
-  (NAPOLI CENTRALE -> CASSINO)\nRitardo massimo rilevato: -3 min\nAffidabil
- ità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
+SUMMARY:[FERMATA] REG 5806 (NAPOLI CENTRALE -> CASSINO) ore 10:06
+DESCRIPTION:Stazione/PL: CASSINO (S08671)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 10:03:00 - 10:07:30\nTreni coinvolti nella chiusura:\n 
+  - REG 5806 (NAPOLI CENTRALE -> CASSINO)\nRitardo massimo rilevato: -3 min
+ \nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale da
+  circuito di binario
 LOCATION:Passaggio a Livello / Stazione CASSINO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:-3
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-12610--20261126-S08671@pl-tracker.local
-DTSTAMP:20261127T135355Z
+UID:train-9603--20261126-S08671@pl-tracker.local
+DTSTAMP:20261127T223343Z
 SEQUENCE:0
-DTSTART:20261127T112830Z
-DTEND:20261127T113300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:28 - 12:33 (primo: REG 12610) (+1 
- min)
-DESCRIPTION:Stazione/PL: CASSINO (S08671)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 12:28:30 - 12:33:00\nTreni coinvolt
- i nella chiusura:\n  - REG 12610 (CASSINO -> ROMA TERMINI) (+1m)\n  - REG 
- 12610 (CASSINO -> ROMA TERMINI) (+1m)\nRitardo massimo rilevato: 1 min\nAf
- fidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 
- treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
- i sgombero stradale (120s)
+DTSTART:20261127T091359Z
+DTEND:20261127T091929Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9603 (MILANO CENTRALE -> NAPOLI CENTRALE) o
+ re 10:18 (+6 min)
+DESCRIPTION:Stazione/PL: CASSINO (S08671)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 10:13:59 - 10:19:29\nTreni coinvolti nella chiu
+ sura:\n  - TRENO 9603 (MILANO CENTRALE -> NAPOLI CENTRALE) (+6m) [Transito
+ ]\nRitardo massimo rilevato: 6 min\nAffidabilità stima: 78%\nNota normati
+ va/euristica: Transito stimato senza fermata (69% tratta ROMA TERMINI -> N
+ APOLI CENTRALE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CASSINO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12610--20261126-S08671@pl-tracker.local
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
+DTSTART:20261127T112830Z
+DTEND:20261127T113300Z
+SUMMARY:[FERMATA] REG 12610 (CASSINO -> ROMA TERMINI) ore 12:31 (+1 min)
+DESCRIPTION:Stazione/PL: CASSINO (S08671)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 12:28:30 - 12:33:00\nTreni coinvolti nella chiusura:\n 
+  - REG 12610 (CASSINO -> ROMA TERMINI) (+1m)\nRitardo massimo rilevato: 1 
+ min\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale
+  da circuito di binario
+LOCATION:Passaggio a Livello / Stazione CASSINO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12616--20261126-S08671@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T121830Z
 DTEND:20261127T122452Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 13:18 - 13:24 (primo: REG 12616) (+2 
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:18 - 13:24 (primo: REG 12616) (+2 
  min)
 DESCRIPTION:Stazione/PL: CASSINO (S08671)\nRegime chiusura: CHIUSURA CONTIN
- UA - 3 TRENI\nChiusura sbarre stimata: 13:18:30 - 13:24:52\nTreni coinvolt
+ UA - 2 TRENI\nChiusura sbarre stimata: 13:18:30 - 13:24:52\nTreni coinvolt
  i nella chiusura:\n  - REG 12616 (CASSINO -> ROMA TERMINI) (+2m)\n  - REG 
- 12616 (CASSINO -> ROMA TERMINI) (+2m)\n  - REG 5190 (NAPOLI CENTRALE -> BO
- IANO) [Transito]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78
- %\nNota normativa/euristica: Chiusura continua per 3 treni: intervallo uti
- le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
- 120s)
+ 5190 (NAPOLI CENTRALE -> BOIANO) [Transito]\nRitardo massimo rilevato: 2 m
+ in\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua 
+ per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
+ nima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CASSINO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5814--20261126-S08671@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T130330Z
 DTEND:20261127T130800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:03 - 14:08 (primo: REG 5814)
-DESCRIPTION:Stazione/PL: CASSINO (S08671)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 14:03:30 - 14:08:00\nTreni coinvolt
- i nella chiusura:\n  - REG 5814 (NAPOLI CENTRALE -> CASSINO)\n  - REG 5814
-  (NAPOLI CENTRALE -> CASSINO)\nRitardo massimo rilevato: -2 min\nAffidabil
- ità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
+SUMMARY:[FERMATA] REG 5814 (NAPOLI CENTRALE -> CASSINO) ore 14:07
+DESCRIPTION:Stazione/PL: CASSINO (S08671)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 14:03:30 - 14:08:00\nTreni coinvolti nella chiusura:\n 
+  - REG 5814 (NAPOLI CENTRALE -> CASSINO)\nRitardo massimo rilevato: -2 min
+ \nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento reale da
+  circuito di binario
 LOCATION:Passaggio a Livello / Stazione CASSINO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:-2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9311--20261126-S08671@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T131439Z
-DTEND:20261127T132009Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T131431Z
+DTEND:20261127T132001Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9311 (TORINO PORTA NUOVA -> NAPOLI CENTRALE
  ) ore 14:18
 DESCRIPTION:Stazione/PL: CASSINO (S08671)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 14:14:39 - 14:20:09\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 14:14:31 - 14:20:01\nTreni coinvolti nella chiu
  sura:\n  - TRENO 9311 (TORINO PORTA NUOVA -> NAPOLI CENTRALE) [Transito]\n
  Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
  euristica: Transito stimato senza fermata (60% tratta ROMA TERMINI -> NAPO
@@ -216,57 +224,77 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-5189--20261126-S08671@pl-tracker.local
-DTSTAMP:20261127T135355Z
+UID:train-9527--20261126-S08671@pl-tracker.local
+DTSTAMP:20261127T223343Z
 SEQUENCE:0
-DTSTART:20261127T135547Z
-DTEND:20261127T140117Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:55 - 15:01 (primo: REG 5189) (+1 m
- in)
-DESCRIPTION:Stazione/PL: CASSINO (S08671)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 14:55:47 - 15:01:17\nTreni coinvolt
- i nella chiusura:\n  - REG 5189 (BOIANO -> NAPOLI CENTRALE) (+1m) [Transit
- o]\n  - REG 5189 (BOIANO -> NAPOLI CENTRALE) (+1m) [Transito]\nRitardo mas
- simo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
+DTSTART:20261127T134431Z
+DTEND:20261127T135001Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9527 (MILANO CENTRALE -> SALERNO) ore 14:48
+  (+16 min)
+DESCRIPTION:Stazione/PL: CASSINO (S08671)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 14:44:31 - 14:50:01\nTreni coinvolti nella chiu
+ sura:\n  - TRENO 9527 (MILANO CENTRALE -> SALERNO) (+16m) [Transito]\nRita
+ rdo massimo rilevato: 16 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Transito stimato senza fermata (60% tratta ROMA TERMINI -> NAPOLI 
+ AFRAGOLA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CASSINO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:16
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-5189--20261126-S08671@pl-tracker.local
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
+DTSTART:20261127T135546Z
+DTEND:20261127T140116Z
+SUMMARY:[TRANSITO VELOCE] REG 5189 (BOIANO -> NAPOLI CENTRALE) ore 15:00 (+
+ 1 min)
+DESCRIPTION:Stazione/PL: CASSINO (S08671)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 14:55:46 - 15:01:16\nTreni coinvolti nella chiu
+ sura:\n  - REG 5189 (BOIANO -> NAPOLI CENTRALE) (+1m) [Transito]\nRitardo 
+ massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Transito stimato senza fermata (16% tratta VAIRANO-CAIANELLO -> CAPUA\;
+  pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione CASSINO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9539--20261126-S08671@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T170730Z
 DTEND:20261127T172345Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 18:07 - 18:23 (primo: TRENO 9539) (+6
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 18:07 - 18:23 (primo: TRENO 9539) (+6
   min)
 DESCRIPTION:Stazione/PL: CASSINO (S08671)\nRegime chiusura: CHIUSURA CONTIN
- UA - 4 TRENI\nChiusura sbarre stimata: 18:07:30 - 18:23:45\nTreni coinvolt
+ UA - 3 TRENI\nChiusura sbarre stimata: 18:07:30 - 18:23:45\nTreni coinvolt
  i nella chiusura:\n  - TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE)\n  
- - TRENO 9560 (LECCE -> MILANO CENTRALE) (+6m) [Transito]\n  - TRENO 9560 (
- LECCE -> MILANO CENTRALE) (+6m) [Transito]\n  - REG 12629 (ROMA TERMINI ->
-  CASSINO) [Transito]\nRitardo massimo rilevato: 6 min\nAffidabilità stima
- : 78%\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo
-  utile tra i passaggi (11s) inferiore alla soglia minima di sgombero strad
- ale (120s)
+ - TRENO 9560 (LECCE -> MILANO CENTRALE) (+6m) [Transito]\n  - REG 12629 (R
+ OMA TERMINI -> CASSINO) [Transito]\nRitardo massimo rilevato: 6 min\nAffid
+ abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 3 tre
+ ni: intervallo utile tra i passaggi (20s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CASSINO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5196--20261126-S08671@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T173643Z
 DTEND:20261127T174500Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:36 - 18:45 (primo: REG 5196)
@@ -287,8 +315,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-704--20261126-S08671@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T195515Z
 DTEND:20261127T200000Z
 SUMMARY:[FERMATA] IC 704 (BARI CENTRALE -> ROMA TERMINI) ore 20:59
@@ -306,18 +334,41 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8525--20261126-S08671@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T200242Z
-DTEND:20261127T200812Z
-SUMMARY:[TRANSITO VELOCE] TRENO 8525 (BOLZANO -> NAPOLI CENTRALE) ore 21:06
+UID:train-9431--20261126-S08671@pl-tracker.local
+DTSTAMP:20261127T223343Z
+SEQUENCE:0
+DTSTART:20261127T201741Z
+DTEND:20261127T202311Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9431 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) o
+ re 21:21
 DESCRIPTION:Stazione/PL: CASSINO (S08671)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 21:02:42 - 21:08:12\nTreni coinvolti nella chiu
- sura:\n  - TRENO 8525 (BOLZANO -> NAPOLI CENTRALE) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Transito stimato senza fermata (69% tratta ROMA TERMINI -> NAPOLI CENTRALE
- \; pedale annuncio fisso Vmax)
+ \nChiusura sbarre stimata: 21:17:41 - 21:23:11\nTreni coinvolti nella chiu
+ sura:\n  - TRENO 9431 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Transito]\nRit
+ ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Transito stimato senza fermata (69% tratta ROMA TERMINI -> NAPOLI 
+ CENTRALE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione CASSINO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9435--20261126-S08671@pl-tracker.local
+DTSTAMP:20261127T223343Z
+SEQUENCE:0
+DTSTART:20261127T220207Z
+DTEND:20261127T220737Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9435 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) o
+ re 23:06
+DESCRIPTION:Stazione/PL: CASSINO (S08671)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 23:02:07 - 23:07:37\nTreni coinvolti nella chiu
+ sura:\n  - TRENO 9435 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) [Transito]\nRit
+ ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
+ istica: Transito stimato senza fermata (60% tratta ROMA TERMINI -> NAPOLI 
+ AFRAGOLA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CASSINO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -328,16 +379,16 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12651--20261126-S08671@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T222437Z
-DTEND:20261127T223007Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T222440Z
+DTEND:20261127T223010Z
 SUMMARY:[TRANSITO VELOCE] REG 12651 (ROMA TERMINI -> CASSINO) ore 23:28
 DESCRIPTION:Stazione/PL: CASSINO (S08671)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 23:24:37 - 23:30:07\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 23:24:40 - 23:30:10\nTreni coinvolti nella chiu
  sura:\n  - REG 12651 (ROMA TERMINI -> CASSINO) [Transito]\nRitardo massimo
   rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
- sito stimato senza fermata (64% tratta ROCCASECCA -> PIEDIMONTE-VILLA S.LU
+ sito stimato senza fermata (65% tratta ROCCASECCA -> PIEDIMONTE-VILLA S.LU
  CIA-AQUINO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CASSINO
 STATUS:CONFIRMED
@@ -349,8 +400,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12651--20261126-S08671@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T223630Z
 DTEND:20261127T224100Z
 SUMMARY:[FERMATA] REG 12651 (ROMA TERMINI -> CASSINO) ore 23:40

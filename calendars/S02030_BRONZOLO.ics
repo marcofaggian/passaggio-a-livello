@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:057abf96a0cf2c1d1254394b6504355ecf34362bdfdefe6d155e77fbe4e4
- 2955
+X-CONTENT-HASH:7c123f89172699f7453847613a5570a68b1c3ba5e64445f5cb647f5fe531
+ 4a3b
 BEGIN:VEVENT
 UID:train-16656--20261126-S02030@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T060630Z
 DTEND:20261127T061100Z
 SUMMARY:[FERMATA] REG 16656 (VERONA PORTA NUOVA -> BOLZANO) ore 07:10
@@ -33,58 +33,98 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16604--20261126-S02030@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T080930Z
 DTEND:20261127T081630Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:09 - 09:16 (primo: REG 16604) (+5 
- min)
-DESCRIPTION:Stazione/PL: BRONZOLO (S02030)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 09:09:30 - 09:16:30\nTreni coinvol
- ti nella chiusura:\n  - REG 16604 (VERONA PORTA NUOVA -> BOLZANO) (+5m)\n 
-  - REG 16604 (VERONA PORTA NUOVA -> BOLZANO) (+5m)\nRitardo massimo rileva
- to: 5 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura co
- ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
- glia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 16604 (VERONA PORTA NUOVA -> BOLZANO) ore 09:15 (+5 m
+ in)
+DESCRIPTION:Stazione/PL: BRONZOLO (S02030)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 09:09:30 - 09:16:30\nTreni coinvolti nella chiusura:\n
+   - REG 16604 (VERONA PORTA NUOVA -> BOLZANO) (+5m)\nRitardo massimo rilev
+ ato: 5 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevament
+ o reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione BRONZOLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-16679--20261126-S02030@pl-tracker.local
-DTSTAMP:20261127T135355Z
+UID:train-2693--20261126-S02030@pl-tracker.local
+DTSTAMP:20261127T223343Z
 SEQUENCE:0
-DTSTART:20261127T114025Z
-DTEND:20261127T115400Z
-SUMMARY:[CHIUSURA CONTINUA - 6 TRENI] 12:40 - 12:54 (primo: REG 16679) (+3 
- min)
-DESCRIPTION:Stazione/PL: BRONZOLO (S02030)\nRegime chiusura: CHIUSURA CONTI
- NUA - 6 TRENI\nChiusura sbarre stimata: 12:40:25 - 12:54:00\nTreni coinvol
- ti nella chiusura:\n  - REG 16679 (BOLZANO -> VERONA PORTA NUOVA) [Transit
- o]\n  - REG 16679 (BOLZANO -> VERONA PORTA NUOVA) [Transito]\n  - REG 1667
- 9 (BOLZANO -> VERONA PORTA NUOVA) (+3m) [Arrivo]\n  - REG 16679 (BOLZANO -
- > VERONA PORTA NUOVA) (+3m) [Arrivo]\n  - REG 16679 (BOLZANO -> VERONA POR
- TA NUOVA) (+3m) [Partenza]\n  - REG 16679 (BOLZANO -> VERONA PORTA NUOVA) 
- (+3m) [Partenza]\nRitardo massimo rilevato: 3 min\nAffidabilità stima: 78
- %\nNota normativa/euristica: Chiusura continua per 6 treni: intervallo uti
- le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
- 120s)
+DTSTART:20261127T091222Z
+DTEND:20261127T091752Z
+SUMMARY:[TRANSITO VELOCE] REG 2693 (MILANO PORTA GARIBALDI -> BOLZANO) ore 
+ 10:16
+DESCRIPTION:Stazione/PL: BRONZOLO (S02030)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 10:12:22 - 10:17:52\nTreni coinvolti nella chi
+ usura:\n  - REG 2693 (MILANO PORTA GARIBALDI -> BOLZANO) [Transito]\nRitar
+ do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Transito stimato senza fermata (24% tratta ORA -> BOLZANO\; pedale a
+ nnuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione BRONZOLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 6 TRENI,FERROVIA
-X-PL-DELAY-MIN:3
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3841--20261126-S02030@pl-tracker.local
+DTSTAMP:20261127T223343Z
+SEQUENCE:0
+DTSTART:20261127T113643Z
+DTEND:20261127T115400Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:36 - 12:54 (primo: REG 3841) (+7 m
+ in)
+DESCRIPTION:Stazione/PL: BRONZOLO (S02030)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 4 TRENI\nChiusura sbarre stimata: 12:36:43 - 12:54:00\nTreni coinvol
+ ti nella chiusura:\n  - REG 3841 (BOLZANO -> BOLOGNA CENTRALE) (+7m) [Tran
+ sito]\n  - REG 16679 (BOLZANO -> VERONA PORTA NUOVA) [Transito]\n  - REG 1
+ 6679 (BOLZANO -> VERONA PORTA NUOVA) (+3m) [Arrivo]\n  - REG 16679 (BOLZAN
+ O -> VERONA PORTA NUOVA) (+3m) [Partenza]\nRitardo massimo rilevato: 7 min
+ \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
+ r 4 treni: intervallo utile tra i passaggi (30s) inferiore alla soglia min
+ ima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione BRONZOLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:7
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3843--20261126-S02030@pl-tracker.local
+DTSTAMP:20261127T223343Z
+SEQUENCE:0
+DTSTART:20261127T132906Z
+DTEND:20261127T133436Z
+SUMMARY:[TRANSITO VELOCE] REG 3843 (BRENNERO -> BOLOGNA CENTRALE) ore 14:33
+  (+5 min)
+DESCRIPTION:Stazione/PL: BRONZOLO (S02030)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 14:29:06 - 14:34:36\nTreni coinvolti nella chi
+ usura:\n  - REG 3843 (BRENNERO -> BOLOGNA CENTRALE) (+5m) [Transito]\nRita
+ rdo massimo rilevato: 5 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Transito stimato senza fermata (61% tratta BOLZANO -> ORA\; pedale 
+ annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione BRONZOLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16708--20261126-S02030@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T170630Z
 DTEND:20261127T171100Z
 SUMMARY:[FERMATA] REG 16708 (VERONA PORTA NUOVA -> BOLZANO) ore 18:10
@@ -103,13 +143,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3760--20261126-S02030@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T222408Z
-DTEND:20261127T222938Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T222409Z
+DTEND:20261127T222939Z
 SUMMARY:[TRANSITO VELOCE] REG 3760 (BOLOGNA CENTRALE -> BOLZANO) ore 23:28
 DESCRIPTION:Stazione/PL: BRONZOLO (S02030)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 23:24:08 - 23:29:38\nTreni coinvolti nella chi
+ E\nChiusura sbarre stimata: 23:24:09 - 23:29:39\nTreni coinvolti nella chi
  usura:\n  - REG 3760 (BOLOGNA CENTRALE -> BOLZANO) [Transito]\nRitardo mas
  simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
  Transito stimato senza fermata (24% tratta ORA -> BOLZANO\; pedale annunci

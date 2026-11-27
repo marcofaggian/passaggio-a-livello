@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:8e6614b930e19810f4de25349317c7ad397e8145e3c4bdcc880fab901f17
- f789
+X-CONTENT-HASH:f6573893246fe1ba0611ae2c4addca908a05e4fe0608ef1cf9603dc988cc
+ 71d6
 BEGIN:VEVENT
 UID:train-4009--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T050430Z
 DTEND:20261127T050900Z
 SUMMARY:[FERMATA] REG 4009 (BOLOGNA CENTRALE -> RAVENNA) ore 06:08
@@ -33,38 +33,58 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17480--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T052501Z
-DTEND:20261127T053700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:25 - 06:37 (primo: REG 17480)
-DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 06:25:01 - 06:37:00\nTreni coinvolti 
- nella chiusura:\n  - REG 17480 (RIMINI -> S.PIETRO IN CASALE) [Transito]\n
-   - REG 17480 (RIMINI -> S.PIETRO IN CASALE)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (118s) inferiore alla soglia
-  minima di sgombero stradale (120s)
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T052459Z
+DTEND:20261127T053029Z
+SUMMARY:[TRANSITO VELOCE] REG 17480 (RIMINI -> S.PIETRO IN CASALE) ore 06:2
+ 9
+DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: TRANSITO VELOCE\n
+ Chiusura sbarre stimata: 06:24:59 - 06:30:29\nTreni coinvolti nella chiusu
+ ra:\n  - REG 17480 (RIMINI -> S.PIETRO IN CASALE) [Transito]\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
+ ransito stimato senza fermata (89% tratta FAENZA -> CASTELBOLOGNESE-RIOLO 
+ TERME\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione IMOLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
+UID:train-17480--20261126-S05054@pl-tracker.local
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T053230Z
+DTEND:20261127T053700Z
+SUMMARY:[FERMATA] REG 17480 (RIMINI -> S.PIETRO IN CASALE) ore 06:36
+DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 06:32:30 - 06:37:00\nTreni coinvolti nella chiusura:\n  -
+  REG 17480 (RIMINI -> S.PIETRO IN CASALE)\nRitardo massimo rilevato: 0 min
+ \nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracci
+ a oraria regolare
+LOCATION:Passaggio a Livello / Stazione IMOLA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
 UID:train-3902--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T054201Z
-DTEND:20261127T054731Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T054159Z
+DTEND:20261127T054729Z
 SUMMARY:[TRANSITO VELOCE] REG 3902 (ANCONA -> PIACENZA) ore 06:46 (+1 min)
 DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 06:42:01 - 06:47:31\nTreni coinvolti nella chiusu
+ Chiusura sbarre stimata: 06:41:59 - 06:47:29\nTreni coinvolti nella chiusu
  ra:\n  - REG 3902 (ANCONA -> PIACENZA) (+1m) [Transito]\nRitardo massimo r
  ilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transi
- to stimato senza fermata (90% tratta FAENZA -> CASTELBOLOGNESE-RIOLO TERME
+ to stimato senza fermata (89% tratta FAENZA -> CASTELBOLOGNESE-RIOLO TERME
  \; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione IMOLA
 STATUS:CONFIRMED
@@ -76,8 +96,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3902--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T055030Z
 DTEND:20261127T055500Z
 SUMMARY:[FERMATA] REG 3902 (ANCONA -> PIACENZA) ore 06:54 (+1 min)
@@ -96,8 +116,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17481--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T064830Z
 DTEND:20261127T065300Z
 SUMMARY:[FERMATA] REG 17481 (FERRARA -> IMOLA) ore 07:52
@@ -116,8 +136,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17483--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T071330Z
 DTEND:20261127T071800Z
 SUMMARY:[FERMATA] REG 17483 (BOLOGNA CENTRALE -> IMOLA) ore 08:17
@@ -136,61 +156,57 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3907--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
-DTSTART:20261127T073957Z
-DTEND:20261127T074527Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:39 - 08:45 (primo: REG 3907)
-DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 08:39:57 - 08:45:27\nTreni coinvolti 
- nella chiusura:\n  - REG 3907 (PIACENZA -> ANCONA) [Transito]\n  - REG 390
- 7 (PIACENZA -> ANCONA) [Transito]\nRitardo massimo rilevato: -1 min\nAffid
- abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
+DTSTART:20261127T073940Z
+DTEND:20261127T074510Z
+SUMMARY:[TRANSITO VELOCE] REG 3907 (PIACENZA -> ANCONA) ore 08:43
+DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: TRANSITO VELOCE\n
+ Chiusura sbarre stimata: 08:39:40 - 08:45:10\nTreni coinvolti nella chiusu
+ ra:\n  - REG 3907 (PIACENZA -> ANCONA) [Transito]\nRitardo massimo rilevat
+ o: -1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito st
+ imato senza fermata (66% tratta BOLOGNA CENTRALE -> CASTEL S.PIETRO TERME\
+ ; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione IMOLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3907--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T075100Z
 DTEND:20261127T075730Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:51 - 08:57 (primo: REG 3907) (+2 m
- in)
-DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 08:51:00 - 08:57:30\nTreni coinvolti 
- nella chiusura:\n  - REG 3907 (PIACENZA -> ANCONA) (+2m)\n  - REG 3907 (PI
- ACENZA -> ANCONA) (+2m)\nRitardo massimo rilevato: 2 min\nAffidabilità st
- ima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
- llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
- adale (120s)
+SUMMARY:[FERMATA] REG 3907 (PIACENZA -> ANCONA) ore 08:56 (+2 min)
+DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 08:51:00 - 08:57:30\nTreni coinvolti nella chiusura:\n  -
+  REG 3907 (PIACENZA -> ANCONA) (+2m)\nRitardo massimo rilevato: 2 min\nAff
+ idabilità stima: 99%\nNota normativa/euristica: Rilevamento reale da circ
+ uito di binario
 LOCATION:Passaggio a Livello / Stazione IMOLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2067--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T083426Z
-DTEND:20261127T083956Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T083357Z
+DTEND:20261127T083927Z
 SUMMARY:[TRANSITO VELOCE] REG 2067 (VOGHERA -> RIMINI) ore 09:38
 DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 09:34:26 - 09:39:56\nTreni coinvolti nella chiusu
+ Chiusura sbarre stimata: 09:33:57 - 09:39:27\nTreni coinvolti nella chiusu
  ra:\n  - REG 2067 (VOGHERA -> RIMINI) [Transito]\nRitardo massimo rilevato
  : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito stim
- ato senza fermata (68% tratta BOLOGNA CENTRALE -> CASTEL S.PIETRO TERME\; 
+ ato senza fermata (66% tratta BOLOGNA CENTRALE -> CASTEL S.PIETRO TERME\; 
  pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione IMOLA
 STATUS:CONFIRMED
@@ -202,8 +218,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2067--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T085030Z
 DTEND:20261127T085500Z
 SUMMARY:[FERMATA] REG 2067 (VOGHERA -> RIMINI) ore 09:54
@@ -222,54 +238,52 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3910--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
-DTSTART:20261127T094610Z
-DTEND:20261127T095140Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:46 - 10:51 (primo: REG 3910)
-DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 10:46:10 - 10:51:40\nTreni coinvolti 
- nella chiusura:\n  - REG 3910 (ANCONA -> PIACENZA) [Transito]\n  - REG 391
- 0 (ANCONA -> PIACENZA) [Transito]\nRitardo massimo rilevato: -5 min\nAffid
- abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
+DTSTART:20261127T094609Z
+DTEND:20261127T095139Z
+SUMMARY:[TRANSITO VELOCE] REG 3910 (ANCONA -> PIACENZA) ore 10:50
+DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: TRANSITO VELOCE\n
+ Chiusura sbarre stimata: 10:46:09 - 10:51:39\nTreni coinvolti nella chiusu
+ ra:\n  - REG 3910 (ANCONA -> PIACENZA) [Transito]\nRitardo massimo rilevat
+ o: -5 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito st
+ imato senza fermata (89% tratta FAENZA -> CASTELBOLOGNESE-RIOLO TERME\; pe
+ dale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione IMOLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3910--20261126-S05054@pl-tracker.local-arr
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T095430Z
 DTEND:20261127T100230Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:54 - 11:02 (primo: REG 3910) (+2 m
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:54 - 11:02 (primo: REG 3910) (+2 m
  in)
 DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: CHIUSURA CONTINUA
-  - 4 TRENI\nChiusura sbarre stimata: 10:54:30 - 11:02:30\nTreni coinvolti 
+  - 2 TRENI\nChiusura sbarre stimata: 10:54:30 - 11:02:30\nTreni coinvolti 
  nella chiusura:\n  - REG 3910 (ANCONA -> PIACENZA) (+2m) [Arrivo]\n  - REG
-  3910 (ANCONA -> PIACENZA) (+2m) [Arrivo]\n  - REG 3910 (ANCONA -> PIACENZ
- A) (+2m) [Partenza]\n  - REG 3910 (ANCONA -> PIACENZA) (+2m) [Partenza]\nR
- itardo massimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/e
- uristica: Chiusura continua per 4 treni: intervallo utile tra i passaggi (
- 0s) inferiore alla soglia minima di sgombero stradale (120s)
+  3910 (ANCONA -> PIACENZA) (+2m) [Partenza]\nRitardo massimo rilevato: 2 m
+ in\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua 
+ per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
+ nima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione IMOLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17495--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T104630Z
 DTEND:20261127T105100Z
 SUMMARY:[FERMATA] REG 17495 (BOLOGNA CENTRALE -> IMOLA) ore 11:50
@@ -288,16 +302,16 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3917--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T113426Z
-DTEND:20261127T113956Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T113357Z
+DTEND:20261127T113927Z
 SUMMARY:[TRANSITO VELOCE] REG 3917 (PIACENZA -> ANCONA) ore 12:38
 DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 12:34:26 - 12:39:56\nTreni coinvolti nella chiusu
+ Chiusura sbarre stimata: 12:33:57 - 12:39:27\nTreni coinvolti nella chiusu
  ra:\n  - REG 3917 (PIACENZA -> ANCONA) [Transito]\nRitardo massimo rilevat
  o: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito sti
- mato senza fermata (68% tratta BOLOGNA CENTRALE -> CASTEL S.PIETRO TERME\;
+ mato senza fermata (66% tratta BOLOGNA CENTRALE -> CASTEL S.PIETRO TERME\;
   pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione IMOLA
 STATUS:CONFIRMED
@@ -309,8 +323,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3917--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T115030Z
 DTEND:20261127T115500Z
 SUMMARY:[FERMATA] REG 3917 (PIACENZA -> ANCONA) ore 12:54
@@ -329,82 +343,57 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3916--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
-DTSTART:20261127T124416Z
-DTEND:20261127T124946Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:44 - 13:49 (primo: REG 3916)
-DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 13:44:16 - 13:49:46\nTreni coinvolti 
- nella chiusura:\n  - REG 3916 (ANCONA -> PIACENZA) [Transito]\n  - REG 391
- 6 (ANCONA -> PIACENZA) [Transito]\nRitardo massimo rilevato: -2 min\nAffid
- abilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
+DTSTART:20261127T124415Z
+DTEND:20261127T124945Z
+SUMMARY:[TRANSITO VELOCE] REG 3916 (ANCONA -> PIACENZA) ore 13:48
+DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: TRANSITO VELOCE\n
+ Chiusura sbarre stimata: 13:44:15 - 13:49:45\nTreni coinvolti nella chiusu
+ ra:\n  - REG 3916 (ANCONA -> PIACENZA) [Transito]\nRitardo massimo rilevat
+ o: -2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito st
+ imato senza fermata (89% tratta FAENZA -> CASTELBOLOGNESE-RIOLO TERME\; pe
+ dale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione IMOLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3916--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T125700Z
 DTEND:20261127T130430Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:57 - 14:04 (primo: REG 3916) (+4 m
- in)
-DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 13:57:00 - 14:04:30\nTreni coinvolti 
- nella chiusura:\n  - REG 3916 (ANCONA -> PIACENZA) (+4m)\n  - REG 3916 (AN
- CONA -> PIACENZA) (+4m)\nRitardo massimo rilevato: 4 min\nAffidabilità st
- ima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
- llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
- adale (120s)
+SUMMARY:[FERMATA] REG 3916 (ANCONA -> PIACENZA) ore 14:03 (+4 min)
+DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 13:57:00 - 14:04:30\nTreni coinvolti nella chiusura:\n  -
+  REG 3916 (ANCONA -> PIACENZA) (+4m)\nRitardo massimo rilevato: 4 min\nAff
+ idabilità stima: 99%\nNota normativa/euristica: Rilevamento reale da circ
+ uito di binario
 LOCATION:Passaggio a Livello / Stazione IMOLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-609--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
-DTSTART:20261127T131211Z
-DTEND:20261127T131641Z
-SUMMARY:[TRANSITO VELOCE] IC 609 (MILANO CENTRALE -> LECCE) ore 14:15
-DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 14:12:11 - 14:16:41\nTreni coinvolti nella chiusu
- ra:\n  - IC 609 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massimo ril
- evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito
-  stimato senza fermata (66% tratta BOLOGNA CENTRALE -> FAENZA\; pedale ann
- uncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione IMOLA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
 UID:train-3918--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T134101Z
-DTEND:20261127T134631Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T134059Z
+DTEND:20261127T134629Z
 SUMMARY:[TRANSITO VELOCE] REG 3918 (ANCONA -> PIACENZA) ore 14:45
 DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 14:41:01 - 14:46:31\nTreni coinvolti nella chiusu
+ Chiusura sbarre stimata: 14:40:59 - 14:46:29\nTreni coinvolti nella chiusu
  ra:\n  - REG 3918 (ANCONA -> PIACENZA) [Transito]\nRitardo massimo rilevat
  o: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito sti
- mato senza fermata (90% tratta FAENZA -> CASTELBOLOGNESE-RIOLO TERME\; ped
+ mato senza fermata (89% tratta FAENZA -> CASTELBOLOGNESE-RIOLO TERME\; ped
  ale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione IMOLA
 STATUS:CONFIRMED
@@ -416,8 +405,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3918--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T135030Z
 DTEND:20261127T135500Z
 SUMMARY:[FERMATA] REG 3918 (ANCONA -> PIACENZA) ore 14:54
@@ -436,30 +425,28 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17502--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T143430Z
 DTEND:20261127T143900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:34 - 15:39 (primo: REG 17502)
-DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 15:34:30 - 15:39:00\nTreni coinvolti 
- nella chiusura:\n  - REG 17502 (IMOLA -> BOLOGNA CENTRALE)\n  - REG 17502 
- (IMOLA -> BOLOGNA CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+SUMMARY:[FERMATA] REG 17502 (IMOLA -> BOLOGNA CENTRALE) ore 15:38
+DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 15:34:30 - 15:39:00\nTreni coinvolti nella chiusura:\n  -
+  REG 17502 (IMOLA -> BOLOGNA CENTRALE)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
 LOCATION:Passaggio a Livello / Stazione IMOLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17507--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T144630Z
 DTEND:20261127T145100Z
 SUMMARY:[FERMATA] REG 17507 (S.PIETRO IN CASALE -> IMOLA) ore 15:50
@@ -477,32 +464,9 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-611--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
-DTSTART:20261127T150739Z
-DTEND:20261127T151209Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:07 - 16:12 (primo: IC 611) (+2 min
- )
-DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 16:07:39 - 16:12:09\nTreni coinvolti 
- nella chiusura:\n  - IC 611 (BOLZANO -> BARI CENTRALE) (+2m) [Transito]\n 
-  - IC 611 (BOLZANO -> BARI CENTRALE) (+2m) [Transito]\nRitardo massimo ril
- evato: 2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
-  continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla
-  soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione IMOLA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:2
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
 UID:train-17559--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T152130Z
 DTEND:20261127T152600Z
 SUMMARY:[FERMATA] REG 17559 (BOLOGNA CENTRALE -> RIMINI) ore 16:25
@@ -521,8 +485,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17517--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T154630Z
 DTEND:20261127T155100Z
 SUMMARY:[FERMATA] REG 17517 (BOLOGNA CENTRALE -> IMOLA) ore 16:50
@@ -540,30 +504,9 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-4001--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
-DTSTART:20261127T160506Z
-DTEND:20261127T161036Z
-SUMMARY:[TRANSITO VELOCE] REG 4001 (BOLOGNA CENTRALE -> RAVENNA) ore 17:09
-DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 17:05:06 - 17:10:36\nTreni coinvolti nella chiusu
- ra:\n  - REG 4001 (BOLOGNA CENTRALE -> RAVENNA) [Transito]\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
- nsito stimato senza fermata (51% tratta BOLOGNA CENTRALE -> LUGO\; pedale 
- annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione IMOLA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-1725--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T161730Z
 DTEND:20261127T162200Z
 SUMMARY:[FERMATA] REG 1725 (BOLOGNA CENTRALE -> ANCONA) ore 17:21
@@ -581,60 +524,17 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8819--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
-DTSTART:20261127T165330Z
-DTEND:20261127T165900Z
-SUMMARY:[TRANSITO VELOCE] TRENO 8819 (MILANO CENTRALE -> BARI CENTRALE) ore
-  17:57
-DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 17:53:30 - 17:59:00\nTreni coinvolti nella chiusu
- ra:\n  - TRENO 8819 (MILANO CENTRALE -> BARI CENTRALE) [Transito]\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Transito stimato senza fermata (66% tratta BOLOGNA CENTRALE -> FAENZA\
- ; pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione IMOLA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-613--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
-DTSTART:20261127T171130Z
-DTEND:20261127T171600Z
-SUMMARY:[TRANSITO VELOCE] IC 613 (MILANO CENTRALE -> PESCARA) ore 18:15
-DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 18:11:30 - 18:16:00\nTreni coinvolti nella chiusu
- ra:\n  - IC 613 (MILANO CENTRALE -> PESCARA) [Transito]\nRitardo massimo r
- ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transi
- to stimato senza fermata (66% tratta BOLOGNA CENTRALE -> FAENZA\; pedale a
- nnuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione IMOLA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
 UID:train-3926--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T174101Z
-DTEND:20261127T174631Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T174059Z
+DTEND:20261127T174629Z
 SUMMARY:[TRANSITO VELOCE] REG 3926 (ANCONA -> PIACENZA) ore 18:45
 DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 18:41:01 - 18:46:31\nTreni coinvolti nella chiusu
+ Chiusura sbarre stimata: 18:40:59 - 18:46:29\nTreni coinvolti nella chiusu
  ra:\n  - REG 3926 (ANCONA -> PIACENZA) [Transito]\nRitardo massimo rilevat
  o: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito sti
- mato senza fermata (90% tratta FAENZA -> CASTELBOLOGNESE-RIOLO TERME\; ped
+ mato senza fermata (89% tratta FAENZA -> CASTELBOLOGNESE-RIOLO TERME\; ped
  ale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione IMOLA
 STATUS:CONFIRMED
@@ -646,8 +546,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3926--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T175030Z
 DTEND:20261127T175500Z
 SUMMARY:[FERMATA] REG 3926 (ANCONA -> PIACENZA) ore 18:54
@@ -666,92 +566,86 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3928--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T184301Z
-DTEND:20261127T185500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:43 - 19:55 (primo: REG 3928)
-DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 19:43:01 - 19:55:00\nTreni coinvolti 
- nella chiusura:\n  - REG 3928 (PESARO -> PIACENZA) [Transito]\n  - REG 392
- 8 (PESARO -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
- ma: 78%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
- lo utile tra i passaggi (118s) inferiore alla soglia minima di sgombero st
- radale (120s)
-LOCATION:Passaggio a Livello / Stazione IMOLA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-3939--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T193426Z
-DTEND:20261127T195500Z
-SUMMARY:[CHIUSURA CONTINUA - 8 TRENI] 20:34 - 20:55 (primo: REG 3939)
-DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: CHIUSURA CONTINUA
-  - 8 TRENI\nChiusura sbarre stimata: 20:34:26 - 20:55:00\nTreni coinvolti 
- nella chiusura:\n  - REG 3939 (PIACENZA -> ANCONA) [Transito]\n  - REG 393
- 0 (ANCONA -> REGGIO EMILIA) [Transito]\n  - REG 3930 (ANCONA -> REGGIO EMI
- LIA) [Transito]\n  - REG 17531 (BOLOGNA CENTRALE -> IMOLA)\n  - REG 17531 
- (BOLOGNA CENTRALE -> IMOLA)\n  - REG 3930 (ANCONA -> REGGIO EMILIA)\n  - R
- EG 3930 (ANCONA -> REGGIO EMILIA)\n  - REG 3939 (PIACENZA -> ANCONA)\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Chiusura continua per 8 treni: intervallo utile tra i passaggi (0s)
-  inferiore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione IMOLA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 8 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-2477--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
-DTSTART:20261127T202430Z
-DTEND:20261127T202900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:24 - 21:29 (primo: REG 2477)
-DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 21:24:30 - 21:29:00\nTreni coinvolti 
- nella chiusura:\n  - REG 2477 (MILANO CENTRALE -> RIMINI)\n  - REG 2477 (M
- ILANO CENTRALE -> RIMINI)\nRitardo massimo rilevato: 0 min\nAffidabilità 
- stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inter
- vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
- tradale (120s)
-LOCATION:Passaggio a Livello / Stazione IMOLA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-765--20261126-S05054@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
-DTSTART:20261127T225109Z
-DTEND:20261127T225539Z
-SUMMARY:[TRANSITO VELOCE] ICN 765 (MILANO CENTRALE -> LECCE) ore 23:54
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T184259Z
+DTEND:20261127T184829Z
+SUMMARY:[TRANSITO VELOCE] REG 3928 (PESARO -> PIACENZA) ore 19:47
 DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: TRANSITO VELOCE\n
- Chiusura sbarre stimata: 23:51:09 - 23:55:39\nTreni coinvolti nella chiusu
- ra:\n  - ICN 765 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transit
- o stimato senza fermata (66% tratta BOLOGNA CENTRALE -> FAENZA\; pedale an
- nuncio fisso Vmax)
+ Chiusura sbarre stimata: 19:42:59 - 19:48:29\nTreni coinvolti nella chiusu
+ ra:\n  - REG 3928 (PESARO -> PIACENZA) [Transito]\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito sti
+ mato senza fermata (89% tratta FAENZA -> CASTELBOLOGNESE-RIOLO TERME\; ped
+ ale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione IMOLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:ICN
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3928--20261126-S05054@pl-tracker.local
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T185030Z
+DTEND:20261127T185500Z
+SUMMARY:[FERMATA] REG 3928 (PESARO -> PIACENZA) ore 19:54
+DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 19:50:30 - 19:55:00\nTreni coinvolti nella chiusura:\n  -
+  REG 3928 (PESARO -> PIACENZA)\nRitardo massimo rilevato: 0 min\nAffidabil
+ ità stima: 90%\nNota normativa/euristica: Previsione da traccia oraria re
+ golare
+LOCATION:Passaggio a Livello / Stazione IMOLA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3939--20261126-S05054@pl-tracker.local
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T193357Z
+DTEND:20261127T195500Z
+SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 20:33 - 20:55 (primo: REG 3939)
+DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: CHIUSURA CONTINUA
+  - 5 TRENI\nChiusura sbarre stimata: 20:33:57 - 20:55:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 3939 (PIACENZA -> ANCONA) [Transito]\n  - REG 393
+ 0 (ANCONA -> REGGIO EMILIA) [Transito]\n  - REG 17531 (BOLOGNA CENTRALE ->
+  IMOLA)\n  - REG 3930 (ANCONA -> REGGIO EMILIA)\n  - REG 3939 (PIACENZA ->
+  ANCONA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota 
+ normativa/euristica: Chiusura continua per 5 treni: intervallo utile tra i
+  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione IMOLA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2477--20261126-S05054@pl-tracker.local
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
+DTSTART:20261127T202430Z
+DTEND:20261127T202900Z
+SUMMARY:[FERMATA] REG 2477 (MILANO CENTRALE -> RIMINI) ore 21:28
+DESCRIPTION:Stazione/PL: IMOLA (S05054)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 21:24:30 - 21:29:00\nTreni coinvolti nella chiusura:\n  -
+  REG 2477 (MILANO CENTRALE -> RIMINI)\nRitardo massimo rilevato: 0 min\nAf
+ fidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia or
+ aria regolare
+LOCATION:Passaggio a Livello / Stazione IMOLA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:ce336c7ef8bb40c9aa87904a89287a9d930d66b4ce5eed983e1316888d46
- 432a
+X-CONTENT-HASH:7e8be6327c9882816cdafbd939c4d83a45ecb3f4b55790f696488bdc43c0
+ 8119
 BEGIN:VEVENT
 UID:train-5210--20261126-S11708@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T040530Z
 DTEND:20261127T041000Z
 SUMMARY:[FERMATA] REG 5210 (SAPRI -> NAPOLI CENTRALE) ore 05:09
@@ -33,8 +33,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5212--20261126-S11708@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T051530Z
 DTEND:20261127T052000Z
 SUMMARY:[FERMATA] REG 5212 (SAPRI -> NAPOLI CENTRALE) ore 06:19
@@ -53,8 +53,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5339--20261126-S11708@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T060030Z
 DTEND:20261127T060500Z
 SUMMARY:[FERMATA] REG 5339 (SALERNO -> PAOLA) ore 07:04
@@ -73,40 +73,62 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5211--20261126-S11708@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T082300Z
 DTEND:20261127T083100Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 09:23 - 09:31 (primo: REG 5211) (+7 m
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:23 - 09:31 (primo: REG 5211) (+7 m
  in)
 DESCRIPTION:Stazione/PL: OMIGNANO SALENTO (S11708)\nRegime chiusura: CHIUSU
- RA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 09:23:00 - 09:31:00\nTreni
+ RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:23:00 - 09:31:00\nTreni
   coinvolti nella chiusura:\n  - REG 5211 (NAPOLI CENTRALE -> SAPRI) (+7m)\
- n  - REG 5211 (NAPOLI CENTRALE -> SAPRI) (+7m)\n  - REG 5215 (NAPOLI CENTR
- ALE -> SAPRI)\nRitardo massimo rilevato: 7 min\nAffidabilità stima: 90%\n
- Nota normativa/euristica: Chiusura continua per 3 treni: intervallo utile 
- tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
- s)
+ n  - REG 5215 (NAPOLI CENTRALE -> SAPRI)\nRitardo massimo rilevato: 7 min\
+ nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per
+  2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minim
+ a di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione OMIGNANO SALENTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:7
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-5202--20261126-S11708@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T095451Z
-DTEND:20261127T100021Z
-SUMMARY:[TRANSITO VELOCE] REG 5202 (SAPRI -> NAPOLI CENTRALE) ore 10:59
+UID:train-9584--20261126-S11708@pl-tracker.local
+DTSTAMP:20261127T223343Z
+SEQUENCE:0
+DTSTART:20261127T085702Z
+DTEND:20261127T090232Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9584 (REGGIO DI CALABRIA CENTRALE -> TORINO
+  PORTA NUOVA) ore 10:01
 DESCRIPTION:Stazione/PL: OMIGNANO SALENTO (S11708)\nRegime chiusura: TRANSI
- TO VELOCE\nChiusura sbarre stimata: 10:54:51 - 11:00:21\nTreni coinvolti n
+ TO VELOCE\nChiusura sbarre stimata: 09:57:02 - 10:02:32\nTreni coinvolti n
+ ella chiusura:\n  - TRENO 9584 (REGGIO DI CALABRIA CENTRALE -> TORINO PORT
+ A NUOVA) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima:
+  78%\nNota normativa/euristica: Transito stimato senza fermata (23% tratta
+  VALLO DELLA LUCANIA-CASTELNUOVO -> AGROPOLI CASTELLABATE\; pedale annunci
+ o fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione OMIGNANO SALENTO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-5202--20261126-S11708@pl-tracker.local
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T095444Z
+DTEND:20261127T100014Z
+SUMMARY:[TRANSITO VELOCE] REG 5202 (SAPRI -> NAPOLI CENTRALE) ore 10:58
+DESCRIPTION:Stazione/PL: OMIGNANO SALENTO (S11708)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 10:54:44 - 11:00:14\nTreni coinvolti n
  ella chiusura:\n  - REG 5202 (SAPRI -> NAPOLI CENTRALE) [Transito]\nRitard
  o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Transito stimato senza fermata (24% tratta VALLO DELLA LUCANIA-CASTEL
+ ica: Transito stimato senza fermata (23% tratta VALLO DELLA LUCANIA-CASTEL
  NUOVO -> AGROPOLI CASTELLABATE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione OMIGNANO SALENTO
 STATUS:CONFIRMED
@@ -117,42 +139,62 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-5206--20261126-S11708@pl-tracker.local
-DTSTAMP:20261127T135355Z
+UID:train-556--20261126-S11708@pl-tracker.local
+DTSTAMP:20261127T223343Z
 SEQUENCE:0
-DTSTART:20261127T141630Z
-DTEND:20261127T142100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:16 - 15:21 (primo: REG 5206) (+3 m
- in)
-DESCRIPTION:Stazione/PL: OMIGNANO SALENTO (S11708)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:16:30 - 15:21:00\nTreni
-  coinvolti nella chiusura:\n  - REG 5206 (SAPRI -> SALERNO) (+3m)\n  - REG
-  5206 (SAPRI -> SALERNO) (+3m)\nRitardo massimo rilevato: 3 min\nAffidabil
- ità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: 
- intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
- ero stradale (120s)
+DTSTART:20261127T124833Z
+DTEND:20261127T125303Z
+SUMMARY:[TRANSITO VELOCE] IC 556 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMI
+ NI) ore 13:52
+DESCRIPTION:Stazione/PL: OMIGNANO SALENTO (S11708)\nRegime chiusura: TRANSI
+ TO VELOCE\nChiusura sbarre stimata: 13:48:33 - 13:53:03\nTreni coinvolti n
+ ella chiusura:\n  - IC 556 (REGGIO DI CALABRIA CENTRALE -> ROMA TERMINI) [
+ Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Transito stimato senza fermata (23% tratta VALLO DEL
+ LA LUCANIA-CASTELNUOVO -> AGROPOLI CASTELLABATE\; pedale annuncio fisso Vm
+ ax)
 LOCATION:Passaggio a Livello / Stazione OMIGNANO SALENTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-5206--20261126-S11708@pl-tracker.local
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
+DTSTART:20261127T141630Z
+DTEND:20261127T142100Z
+SUMMARY:[FERMATA] REG 5206 (SAPRI -> SALERNO) ore 15:20 (+3 min)
+DESCRIPTION:Stazione/PL: OMIGNANO SALENTO (S11708)\nRegime chiusura: FERMAT
+ A\nChiusura sbarre stimata: 15:16:30 - 15:21:00\nTreni coinvolti nella chi
+ usura:\n  - REG 5206 (SAPRI -> SALERNO) (+3m)\nRitardo massimo rilevato: 3
+  min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione con r
+ itardo propagato (+3 min)
+LOCATION:Passaggio a Livello / Stazione OMIGNANO SALENTO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9587--20261126-S11708@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
-DTSTART:20261127T165916Z
-DTEND:20261127T170446Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
+DTSTART:20261127T165854Z
+DTEND:20261127T170424Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9587 (TORINO PORTA NUOVA -> REGGIO DI CALAB
  RIA CENTRALE) ore 18:03 (+13 min)
 DESCRIPTION:Stazione/PL: OMIGNANO SALENTO (S11708)\nRegime chiusura: TRANSI
- TO VELOCE\nChiusura sbarre stimata: 17:59:16 - 18:04:46\nTreni coinvolti n
+ TO VELOCE\nChiusura sbarre stimata: 17:58:54 - 18:04:24\nTreni coinvolti n
  ella chiusura:\n  - TRENO 9587 (TORINO PORTA NUOVA -> REGGIO DI CALABRIA C
  ENTRALE) (+13m) [Transito]\nRitardo massimo rilevato: 13 min\nAffidabilit
- à stima: 78%\nNota normativa/euristica: Transito stimato senza fermata (7
- 0% tratta AGROPOLI CASTELLABATE -> VALLO DELLA LUCANIA-CASTELNUOVO\; pedal
+ à stima: 78%\nNota normativa/euristica: Transito stimato senza fermata (6
+ 8% tratta AGROPOLI CASTELLABATE -> VALLO DELLA LUCANIA-CASTELNUOVO\; pedal
  e annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione OMIGNANO SALENTO
 STATUS:CONFIRMED
@@ -164,89 +206,84 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5586--20261126-S11708@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T182930Z
 DTEND:20261127T183400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:29 - 19:34 (primo: REG 5586)
-DESCRIPTION:Stazione/PL: OMIGNANO SALENTO (S11708)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 19:29:30 - 19:34:00\nTreni
-  coinvolti nella chiusura:\n  - REG 5586 (SAPRI -> NAPOLI CENTRALE)\n  - R
- EG 5586 (SAPRI -> NAPOLI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+SUMMARY:[FERMATA] REG 5586 (SAPRI -> NAPOLI CENTRALE) ore 19:33
+DESCRIPTION:Stazione/PL: OMIGNANO SALENTO (S11708)\nRegime chiusura: FERMAT
+ A\nChiusura sbarre stimata: 19:29:30 - 19:34:00\nTreni coinvolti nella chi
+ usura:\n  - REG 5586 (SAPRI -> NAPOLI CENTRALE)\nRitardo massimo rilevato:
+  0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da 
+ traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione OMIGNANO SALENTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5208--20261126-S11708@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T200830Z
 DTEND:20261127T201300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:08 - 21:13 (primo: REG 5208)
-DESCRIPTION:Stazione/PL: OMIGNANO SALENTO (S11708)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:08:30 - 21:13:00\nTreni
-  coinvolti nella chiusura:\n  - REG 5208 (SAPRI -> NAPOLI CENTRALE)\n  - R
- EG 5208 (SAPRI -> NAPOLI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+SUMMARY:[FERMATA] REG 5208 (SAPRI -> NAPOLI CENTRALE) ore 21:12
+DESCRIPTION:Stazione/PL: OMIGNANO SALENTO (S11708)\nRegime chiusura: FERMAT
+ A\nChiusura sbarre stimata: 21:08:30 - 21:13:00\nTreni coinvolti nella chi
+ usura:\n  - REG 5208 (SAPRI -> NAPOLI CENTRALE)\nRitardo massimo rilevato:
+  0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da 
+ traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione OMIGNANO SALENTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5247--20261126-S11708@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T205830Z
 DTEND:20261127T210300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:58 - 22:03 (primo: REG 5247)
-DESCRIPTION:Stazione/PL: OMIGNANO SALENTO (S11708)\nRegime chiusura: CHIUSU
- RA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 21:58:30 - 22:03:00\nTreni
-  coinvolti nella chiusura:\n  - REG 5247 (NAPOLI CENTRALE -> SAPRI)\n  - R
- EG 5247 (NAPOLI CENTRALE -> SAPRI)\nRitardo massimo rilevato: 0 min\nAffid
- abilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tre
- ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
- gombero stradale (120s)
+SUMMARY:[FERMATA] REG 5247 (NAPOLI CENTRALE -> SAPRI) ore 22:02
+DESCRIPTION:Stazione/PL: OMIGNANO SALENTO (S11708)\nRegime chiusura: FERMAT
+ A\nChiusura sbarre stimata: 21:58:30 - 22:03:00\nTreni coinvolti nella chi
+ usura:\n  - REG 5247 (NAPOLI CENTRALE -> SAPRI)\nRitardo massimo rilevato:
+  0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da 
+ traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione OMIGNANO SALENTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-5249--20261126-S11708@pl-tracker.local
-DTSTAMP:20261127T135355Z
+UID:train-1962--20261126-S11708@pl-tracker.local
+DTSTAMP:20261127T223343Z
 SEQUENCE:0
-DTSTART:20261127T214734Z
-DTEND:20261127T215304Z
-SUMMARY:[TRANSITO VELOCE] REG 5249 (NAPOLI CENTRALE -> SAPRI) ore 22:51
+DTSTART:20261127T213429Z
+DTEND:20261127T213859Z
+SUMMARY:[TRANSITO VELOCE] ICN 1962 (CATANIA CENTRALE -> MILANO CENTRALE) or
+ e 22:37
 DESCRIPTION:Stazione/PL: OMIGNANO SALENTO (S11708)\nRegime chiusura: TRANSI
- TO VELOCE\nChiusura sbarre stimata: 22:47:34 - 22:53:04\nTreni coinvolti n
- ella chiusura:\n  - REG 5249 (NAPOLI CENTRALE -> SAPRI) [Transito]\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Transito stimato senza fermata (70% tratta AGROPOLI CASTELLABATE -> V
- ALLO DELLA LUCANIA-CASTELNUOVO\; pedale annuncio fisso Vmax)
+ TO VELOCE\nChiusura sbarre stimata: 22:34:29 - 22:38:59\nTreni coinvolti n
+ ella chiusura:\n  - ICN 1962 (CATANIA CENTRALE -> MILANO CENTRALE) [Transi
+ to]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norma
+ tiva/euristica: Transito stimato senza fermata (23% tratta VALLO DELLA LUC
+ ANIA-CASTELNUOVO -> AGROPOLI CASTELLABATE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione OMIGNANO SALENTO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
+X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 END:VCALENDAR

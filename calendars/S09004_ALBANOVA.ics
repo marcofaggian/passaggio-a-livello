@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:6cda66dad139f63a7dd6ec8c7acafd2ca2c39dd201d87cd57d2d606773f9
- e30d
+X-CONTENT-HASH:3cbfc2cb408f59773c0cb22f13ef23b46f5f6667496bc3713c05f7267b16
+ bfaa
 BEGIN:VEVENT
 UID:train-21404--20261126-S09004@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T032530Z
 DTEND:20261127T033100Z
 SUMMARY:[TRANSITO VELOCE] REG 21404 (NAPOLI CENTRALE -> ROMA TIBURTINA) ore
@@ -34,100 +34,117 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-21060--20261126-S09004@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T054039Z
-DTEND:20261127T054609Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:40 - 06:46 (primo: REG 21060) (+3 
- min)
-DESCRIPTION:Stazione/PL: ALBANOVA (S09004)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 06:40:39 - 06:46:09\nTreni coinvol
- ti nella chiusura:\n  - REG 21060 (NAPOLI CENTRALE -> ROMA TERMINI) (+3m) 
- [Transito]\n  - REG 21060 (NAPOLI CENTRALE -> ROMA TERMINI) (+3m) [Transit
- o]\nRitardo massimo rilevato: 3 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Chiusura continua per 2 treni: intervallo utile tra i passa
- ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+UID:train-21054--20261126-S09004@pl-tracker.local
+DTSTAMP:20261127T223343Z
+SEQUENCE:0
+DTSTART:20261127T042749Z
+DTEND:20261127T043319Z
+SUMMARY:[TRANSITO VELOCE] REG 21054 (NAPOLI CENTRALE -> ROMA TERMINI) ore 0
+ 5:32 (+1 min)
+DESCRIPTION:Stazione/PL: ALBANOVA (S09004)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 05:27:49 - 05:33:19\nTreni coinvolti nella chi
+ usura:\n  - REG 21054 (NAPOLI CENTRALE -> ROMA TERMINI) (+1m) [Transito]\n
+ Ritardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (62% tratta AVERSA -> VILLA LITE
+ RNO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALBANOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21060--20261126-S09004@pl-tracker.local
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T054039Z
+DTEND:20261127T054609Z
+SUMMARY:[TRANSITO VELOCE] REG 21060 (NAPOLI CENTRALE -> ROMA TERMINI) ore 0
+ 6:44 (+3 min)
+DESCRIPTION:Stazione/PL: ALBANOVA (S09004)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 06:40:39 - 06:46:09\nTreni coinvolti nella chi
+ usura:\n  - REG 21060 (NAPOLI CENTRALE -> ROMA TERMINI) (+3m) [Transito]\n
+ Ritardo massimo rilevato: 3 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (83% tratta AVERSA -> S.MARCELLI
+ NO FRIGNANO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ALBANOVA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21060--20261126-S09004@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T054830Z
 DTEND:20261127T055330Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:48 - 06:53 (primo: REG 21060) (+7 
- min)
-DESCRIPTION:Stazione/PL: ALBANOVA (S09004)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 06:48:30 - 06:53:30\nTreni coinvol
- ti nella chiusura:\n  - REG 21060 (NAPOLI CENTRALE -> ROMA TERMINI) (+7m)\
- n  - REG 21060 (NAPOLI CENTRALE -> ROMA TERMINI) (+7m)\nRitardo massimo ri
- levato: 7 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 21060 (NAPOLI CENTRALE -> ROMA TERMINI) ore 06:52 (+7
+  min)
+DESCRIPTION:Stazione/PL: ALBANOVA (S09004)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 06:48:30 - 06:53:30\nTreni coinvolti nella chiusura:\n
+   - REG 21060 (NAPOLI CENTRALE -> ROMA TERMINI) (+7m)\nRitardo massimo ril
+ evato: 7 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevame
+ nto reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione ALBANOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:7
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21072--20261126-S09004@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T103834Z
 DTEND:20261127T104404Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:38 - 11:44 (primo: REG 21072)
-DESCRIPTION:Stazione/PL: ALBANOVA (S09004)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 11:38:34 - 11:44:04\nTreni coinvol
- ti nella chiusura:\n  - REG 21072 (NAPOLI CENTRALE -> ROMA TERMINI) [Trans
- ito]\n  - REG 21072 (NAPOLI CENTRALE -> ROMA TERMINI) [Transito]\nRitardo 
- massimo rilevato: -2 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
- feriore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 21072 (NAPOLI CENTRALE -> ROMA TERMINI) ore 1
+ 1:42
+DESCRIPTION:Stazione/PL: ALBANOVA (S09004)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 11:38:34 - 11:44:04\nTreni coinvolti nella chi
+ usura:\n  - REG 21072 (NAPOLI CENTRALE -> ROMA TERMINI) [Transito]\nRitard
+ o massimo rilevato: -2 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Transito stimato senza fermata (83% tratta AVERSA -> S.MARCELLINO FR
+ IGNANO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione ALBANOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21072--20261126-S09004@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T104830Z
 DTEND:20261127T105330Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:48 - 11:53 (primo: REG 21072) (+7 
- min)
-DESCRIPTION:Stazione/PL: ALBANOVA (S09004)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 11:48:30 - 11:53:30\nTreni coinvol
- ti nella chiusura:\n  - REG 21072 (NAPOLI CENTRALE -> ROMA TERMINI) (+7m)\
- n  - REG 21072 (NAPOLI CENTRALE -> ROMA TERMINI) (+7m)\nRitardo massimo ri
- levato: 7 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 21072 (NAPOLI CENTRALE -> ROMA TERMINI) ore 11:52 (+7
+  min)
+DESCRIPTION:Stazione/PL: ALBANOVA (S09004)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 11:48:30 - 11:53:30\nTreni coinvolti nella chiusura:\n
+   - REG 21072 (NAPOLI CENTRALE -> ROMA TERMINI) (+7m)\nRitardo massimo ril
+ evato: 7 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevame
+ nto reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione ALBANOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:7
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21067--20261126-S09004@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T125830Z
 DTEND:20261127T130300Z
 SUMMARY:[FERMATA] REG 21067 (ROMA TERMINI -> NAPOLI CENTRALE) ore 14:02
@@ -146,8 +163,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21083--20261126-S09004@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T175830Z
 DTEND:20261127T180300Z
 SUMMARY:[FERMATA] REG 21083 (ROMA TERMINI -> NAPOLI CENTRALE) ore 19:02

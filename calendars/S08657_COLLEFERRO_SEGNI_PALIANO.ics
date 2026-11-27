@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:f8f887b2a8381e171c0f0a92f6e7d84c85bd7cf5bc57c343ccfced1486cd
- d1bb
+X-CONTENT-HASH:8de22f1207d15ca865623da1079431b0fcd3d195284b90214e8b2088316e
+ 7875
 BEGIN:VEVENT
 UID:train-12700--20261126-S08657@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T040321Z
 DTEND:20261127T040851Z
 SUMMARY:[TRANSITO VELOCE] REG 12700 (FROSINONE -> ROMA TERMINI) ore 05:07 (
@@ -35,8 +35,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12700--20261126-S08657@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T042930Z
 DTEND:20261127T043400Z
 SUMMARY:[FERMATA] REG 12700 (FROSINONE -> ROMA TERMINI) ore 05:33 (+2 min)
@@ -55,8 +55,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20201--20261126-S08657@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T050430Z
 DTEND:20261127T050900Z
 SUMMARY:[FERMATA] REG 20201 (ROMA TERMINI -> COLLEFERRO-SEGNI-PALIANO) ore 
@@ -76,17 +76,17 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20203--20261126-S08657@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T053930Z
-DTEND:20261127T055030Z
+DTEND:20261127T055033Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:39 - 06:50 (primo: REG 20203)
 DESCRIPTION:Stazione/PL: COLLEFERRO-SEGNI-PALIANO (S08657)\nRegime chiusura
  : CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:39:30 - 06:50:3
- 0\nTreni coinvolti nella chiusura:\n  - REG 20203 (ROMA TERMINI -> COLLEFE
+ 3\nTreni coinvolti nella chiusura:\n  - REG 20203 (ROMA TERMINI -> COLLEFE
  RRO-SEGNI-PALIANO)\n  - REG 23363 (ROMA TERMINI -> BOIANO) [Transito]\nRit
  ardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eur
- istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (60
+ istica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (63
  s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione COLLEFERRO-SEGNI-PALIANO
 STATUS:CONFIRMED
@@ -97,169 +97,201 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-12601--20261126-S08657@pl-tracker.local
-DTSTAMP:20261127T135355Z
+UID:train-9304--20261126-S08657@pl-tracker.local
+DTSTAMP:20261127T223343Z
 SEQUENCE:0
-DTSTART:20261127T073330Z
-DTEND:20261127T074000Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:33 - 08:40 (primo: REG 12601) (+1 
- min)
+DTSTART:20261127T055341Z
+DTEND:20261127T055911Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9304 (NAPOLI CENTRALE -> TORINO PORTA NUOVA
+ ) ore 06:57 (+39 min)
 DESCRIPTION:Stazione/PL: COLLEFERRO-SEGNI-PALIANO (S08657)\nRegime chiusura
- : CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:33:30 - 08:40:0
- 0\nTreni coinvolti nella chiusura:\n  - REG 12601 (ROMA TERMINI -> CASSINO
- ) (+1m)\n  - REG 12601 (ROMA TERMINI -> CASSINO) (+1m)\nRitardo massimo ri
- levato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+ : TRANSITO VELOCE\nChiusura sbarre stimata: 06:53:41 - 06:59:11\nTreni coi
+ nvolti nella chiusura:\n  - TRENO 9304 (NAPOLI CENTRALE -> TORINO PORTA NU
+ OVA) (+39m) [Transito]\nRitardo massimo rilevato: 39 min\nAffidabilità st
+ ima: 78%\nNota normativa/euristica: Transito stimato senza fermata (91% tr
+ atta CASSINO -> FROSINONE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione COLLEFERRO-SEGNI-PALIANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:39
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12601--20261126-S08657@pl-tracker.local
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
+DTSTART:20261127T073330Z
+DTEND:20261127T074000Z
+SUMMARY:[FERMATA] REG 12601 (ROMA TERMINI -> CASSINO) ore 08:39 (+1 min)
+DESCRIPTION:Stazione/PL: COLLEFERRO-SEGNI-PALIANO (S08657)\nRegime chiusura
+ : FERMATA\nChiusura sbarre stimata: 08:33:30 - 08:40:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 12601 (ROMA TERMINI -> CASSINO) (+1m)\nRitardo mas
+ simo rilevato: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: 
+ Rilevamento reale da circuito di binario
+LOCATION:Passaggio a Livello / Stazione COLLEFERRO-SEGNI-PALIANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12701--20261126-S08657@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T075330Z
-DTEND:20261127T075852Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:53 - 08:58 (primo: REG 12701)
+DTEND:20261127T075800Z
+SUMMARY:[FERMATA] REG 12701 (ROMA TERMINI -> FROSINONE) ore 08:57
 DESCRIPTION:Stazione/PL: COLLEFERRO-SEGNI-PALIANO (S08657)\nRegime chiusura
- : CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:53:30 - 08:58:5
- 2\nTreni coinvolti nella chiusura:\n  - REG 12701 (ROMA TERMINI -> FROSINO
- NE)\n  - TRENO 9601 (MILANO CENTRALE -> NAPOLI CENTRALE) [Transito]\nRitar
- do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
- tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
- inferiore alla soglia minima di sgombero stradale (120s)
+ : FERMATA\nChiusura sbarre stimata: 08:53:30 - 08:58:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 12701 (ROMA TERMINI -> FROSINONE)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
+ isione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione COLLEFERRO-SEGNI-PALIANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-12610--20261126-S08657@pl-tracker.local
-DTSTAMP:20261127T135355Z
+UID:train-9603--20261126-S08657@pl-tracker.local
+DTSTAMP:20261127T223343Z
 SEQUENCE:0
-DTSTART:20261127T122403Z
-DTEND:20261127T122933Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:24 - 13:29 (primo: REG 12610) (+4 
- min)
+DTSTART:20261127T084833Z
+DTEND:20261127T085403Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9603 (MILANO CENTRALE -> NAPOLI CENTRALE) o
+ re 09:52 (+6 min)
 DESCRIPTION:Stazione/PL: COLLEFERRO-SEGNI-PALIANO (S08657)\nRegime chiusura
- : CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:24:03 - 13:29:3
- 3\nTreni coinvolti nella chiusura:\n  - REG 12610 (CASSINO -> ROMA TERMINI
- ) (+4m) [Transito]\n  - REG 12610 (CASSINO -> ROMA TERMINI) (+4m) [Transit
- o]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota normat
- iva/euristica: Chiusura continua per 2 treni: intervallo utile tra i passa
- ggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ : TRANSITO VELOCE\nChiusura sbarre stimata: 09:48:33 - 09:54:03\nTreni coi
+ nvolti nella chiusura:\n  - TRENO 9603 (MILANO CENTRALE -> NAPOLI CENTRALE
+ ) (+6m) [Transito]\nRitardo massimo rilevato: 6 min\nAffidabilità stima: 
+ 78%\nNota normativa/euristica: Transito stimato senza fermata (29% tratta 
+ ROMA TERMINI -> NAPOLI CENTRALE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione COLLEFERRO-SEGNI-PALIANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-12610--20261126-S08657@pl-tracker.local
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
+DTSTART:20261127T122403Z
+DTEND:20261127T122933Z
+SUMMARY:[TRANSITO VELOCE] REG 12610 (CASSINO -> ROMA TERMINI) ore 13:28 (+4
+  min)
+DESCRIPTION:Stazione/PL: COLLEFERRO-SEGNI-PALIANO (S08657)\nRegime chiusura
+ : TRANSITO VELOCE\nChiusura sbarre stimata: 13:24:03 - 13:29:33\nTreni coi
+ nvolti nella chiusura:\n  - REG 12610 (CASSINO -> ROMA TERMINI) (+4m) [Tra
+ nsito]\nRitardo massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Transito stimato senza fermata (80% tratta FROSINONE ->
+  FERENTINO-SUPINO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione COLLEFERRO-SEGNI-PALIANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9311--20261126-S08657@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T124924Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T124921Z
 DTEND:20261127T125500Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 13:49 - 13:55 (primo: TRENO 9311) (+3
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:49 - 13:55 (primo: TRENO 9311) (+3
   min)
 DESCRIPTION:Stazione/PL: COLLEFERRO-SEGNI-PALIANO (S08657)\nRegime chiusura
- : CHIUSURA CONTINUA - 3 TRENI\nChiusura sbarre stimata: 13:49:24 - 13:55:0
+ : CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:49:21 - 13:55:0
  0\nTreni coinvolti nella chiusura:\n  - TRENO 9311 (TORINO PORTA NUOVA -> 
  NAPOLI CENTRALE) [Transito]\n  - REG 12610 (CASSINO -> ROMA TERMINI) (+3m)
- \n  - REG 12610 (CASSINO -> ROMA TERMINI) (+3m)\nRitardo massimo rilevato:
-  3 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
- nua per 3 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
- a minima di sgombero stradale (120s)
+ \nRitardo massimo rilevato: 3 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
+ i (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione COLLEFERRO-SEGNI-PALIANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12616--20261126-S08657@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T132203Z
-DTEND:20261127T132733Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:22 - 14:27 (primo: REG 12616) (+13
+DTEND:20261127T133002Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:22 - 14:30 (primo: REG 12616) (+16
   min)
 DESCRIPTION:Stazione/PL: COLLEFERRO-SEGNI-PALIANO (S08657)\nRegime chiusura
- : CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:22:03 - 14:27:3
- 3\nTreni coinvolti nella chiusura:\n  - REG 12616 (CASSINO -> ROMA TERMINI
- ) (+13m) [Transito]\n  - REG 12616 (CASSINO -> ROMA TERMINI) (+13m) [Trans
- ito]\nRitardo massimo rilevato: 13 min\nAffidabilità stima: 78%\nNota nor
- mativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pa
- ssaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ : CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:22:03 - 14:30:0
+ 2\nTreni coinvolti nella chiusura:\n  - REG 12616 (CASSINO -> ROMA TERMINI
+ ) (+13m) [Transito]\n  - TRENO 9527 (MILANO CENTRALE -> SALERNO) (+16m) [T
+ ransito]\nRitardo massimo rilevato: 16 min\nAffidabilità stima: 78%\nNota
+  normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra 
+ i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione COLLEFERRO-SEGNI-PALIANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:13
+X-PL-DELAY-MIN:16
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12616--20261126-S08657@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T134130Z
 DTEND:20261127T134800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:41 - 14:48 (primo: REG 12616) (+13
-  min)
+SUMMARY:[FERMATA] REG 12616 (CASSINO -> ROMA TERMINI) ore 14:47 (+13 min)
 DESCRIPTION:Stazione/PL: COLLEFERRO-SEGNI-PALIANO (S08657)\nRegime chiusura
- : CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:41:30 - 14:48:0
- 0\nTreni coinvolti nella chiusura:\n  - REG 12616 (CASSINO -> ROMA TERMINI
- ) (+13m)\n  - REG 12616 (CASSINO -> ROMA TERMINI) (+13m)\nRitardo massimo 
- rilevato: 13 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiu
- sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
+ : FERMATA\nChiusura sbarre stimata: 14:41:30 - 14:48:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 12616 (CASSINO -> ROMA TERMINI) (+13m)\nRitardo ma
+ ssimo rilevato: 13 min\nAffidabilità stima: 99%\nNota normativa/euristica
+ : Rilevamento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione COLLEFERRO-SEGNI-PALIANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:13
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12711--20261126-S08657@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T150330Z
 DTEND:20261127T150800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:03 - 16:08 (primo: REG 12711)
+SUMMARY:[FERMATA] REG 12711 (ROMA TERMINI -> FROSINONE) ore 16:07
 DESCRIPTION:Stazione/PL: COLLEFERRO-SEGNI-PALIANO (S08657)\nRegime chiusura
- : CHIUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:03:30 - 16:08:0
- 0\nTreni coinvolti nella chiusura:\n  - REG 12711 (ROMA TERMINI -> FROSINO
- NE)\n  - REG 12711 (ROMA TERMINI -> FROSINONE)\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura contin
- ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
+ : FERMATA\nChiusura sbarre stimata: 16:03:30 - 16:08:00\nTreni coinvolti n
+ ella chiusura:\n  - REG 12711 (ROMA TERMINI -> FROSINONE)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
+ isione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione COLLEFERRO-SEGNI-PALIANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12713--20261126-S08657@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T160330Z
 DTEND:20261127T160800Z
 SUMMARY:[FERMATA] REG 12713 (ROMA TERMINI -> FROSINONE) ore 17:07
@@ -278,14 +310,14 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9539--20261126-S08657@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T161821Z
-DTEND:20261127T162351Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T161824Z
+DTEND:20261127T162354Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE) o
  re 17:22
 DESCRIPTION:Stazione/PL: COLLEFERRO-SEGNI-PALIANO (S08657)\nRegime chiusura
- : TRANSITO VELOCE\nChiusura sbarre stimata: 17:18:21 - 17:23:51\nTreni coi
+ : TRANSITO VELOCE\nChiusura sbarre stimata: 17:18:24 - 17:23:54\nTreni coi
  nvolti nella chiusura:\n  - TRENO 9539 (MILANO CENTRALE -> NAPOLI CENTRALE
  ) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nN
  ota normativa/euristica: Transito stimato senza fermata (65% tratta ROMA T
@@ -300,8 +332,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12629--20261126-S08657@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T164230Z
 DTEND:20261127T164700Z
 SUMMARY:[FERMATA] REG 12629 (ROMA TERMINI -> CASSINO) ore 17:46
@@ -320,8 +352,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12715--20261126-S08657@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T170330Z
 DTEND:20261127T170800Z
 SUMMARY:[FERMATA] REG 12715 (ROMA TERMINI -> FROSINONE) ore 18:07
@@ -339,18 +371,19 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8525--20261126-S08657@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T192956Z
-DTEND:20261127T193526Z
-SUMMARY:[TRANSITO VELOCE] TRENO 8525 (BOLZANO -> NAPOLI CENTRALE) ore 20:34
+UID:train-9431--20261126-S08657@pl-tracker.local
+DTSTAMP:20261127T223343Z
+SEQUENCE:0
+DTSTART:20261127T194457Z
+DTEND:20261127T195027Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9431 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) o
+ re 20:49
 DESCRIPTION:Stazione/PL: COLLEFERRO-SEGNI-PALIANO (S08657)\nRegime chiusura
- : TRANSITO VELOCE\nChiusura sbarre stimata: 20:29:56 - 20:35:26\nTreni coi
- nvolti nella chiusura:\n  - TRENO 8525 (BOLZANO -> NAPOLI CENTRALE) [Trans
- ito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota norm
- ativa/euristica: Transito stimato senza fermata (29% tratta ROMA TERMINI -
- > NAPOLI CENTRALE\; pedale annuncio fisso Vmax)
+ : TRANSITO VELOCE\nChiusura sbarre stimata: 20:44:57 - 20:50:27\nTreni coi
+ nvolti nella chiusura:\n  - TRENO 9431 (VENEZIA S.LUCIA -> NAPOLI CENTRALE
+ ) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nN
+ ota normativa/euristica: Transito stimato senza fermata (29% tratta ROMA T
+ ERMINI -> NAPOLI CENTRALE\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione COLLEFERRO-SEGNI-PALIANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -361,8 +394,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-12651--20261126-S08657@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T211730Z
 DTEND:20261127T212200Z
 SUMMARY:[FERMATA] REG 12651 (ROMA TERMINI -> CASSINO) ore 22:21
@@ -378,5 +411,27 @@ CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9435--20261126-S08657@pl-tracker.local
+DTSTAMP:20261127T223343Z
+SEQUENCE:0
+DTSTART:20261127T213820Z
+DTEND:20261127T214350Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9435 (VENEZIA S.LUCIA -> NAPOLI CENTRALE) o
+ re 22:42
+DESCRIPTION:Stazione/PL: COLLEFERRO-SEGNI-PALIANO (S08657)\nRegime chiusura
+ : TRANSITO VELOCE\nChiusura sbarre stimata: 22:38:20 - 22:43:50\nTreni coi
+ nvolti nella chiusura:\n  - TRENO 9435 (VENEZIA S.LUCIA -> NAPOLI CENTRALE
+ ) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nN
+ ota normativa/euristica: Transito stimato senza fermata (25% tratta ROMA T
+ ERMINI -> NAPOLI AFRAGOLA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione COLLEFERRO-SEGNI-PALIANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 END:VCALENDAR

@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:63ff6aeb73b9a28239f3b6fb399d7e56a641c1fdafb84c9437f10279e6f9
- 377d
+X-CONTENT-HASH:6ea51df64db12e5d9eb70b932a9a7ab67ada35e3bf9749b94ae1308c766b
+ 3f87
 BEGIN:VEVENT
 UID:train-4205--20261126-S07802@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T053930Z
 DTEND:20261127T054400Z
 SUMMARY:[FERMATA] REG 4205 (ANCONA -> PESCARA) ore 06:43
@@ -33,8 +33,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-4209--20261126-S07802@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T074930Z
 DTEND:20261127T075400Z
 SUMMARY:[FERMATA] REG 4209 (ANCONA -> FRANCAVILLA AL MARE) ore 08:53
@@ -53,63 +53,60 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-608--20261126-S07802@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
-DTSTART:20261127T101046Z
-DTEND:20261127T101516Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:10 - 11:15 (primo: IC 608)
-DESCRIPTION:Stazione/PL: GIULIANOVA (S07802)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 11:10:46 - 11:15:16\nTreni coinv
- olti nella chiusura:\n  - IC 608 (LECCE -> MILANO CENTRALE) [Transito]\n  
- - IC 608 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massimo rilevato: 
- -2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura conti
- nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
- a minima di sgombero stradale (120s)
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
+DTSTART:20261127T101035Z
+DTEND:20261127T101505Z
+SUMMARY:[TRANSITO VELOCE] IC 608 (LECCE -> MILANO CENTRALE) ore 11:14
+DESCRIPTION:Stazione/PL: GIULIANOVA (S07802)\nRegime chiusura: TRANSITO VEL
+ OCE\nChiusura sbarre stimata: 11:10:35 - 11:15:05\nTreni coinvolti nella c
+ hiusura:\n  - IC 608 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massim
+ o rilevato: -2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tr
+ ansito stimato senza fermata (63% tratta PESCARA -> PINETO ATRI\; pedale a
+ nnuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GIULIANOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-608--20261126-S07802@pl-tracker.local-arr
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T103215Z
 DTEND:20261127T104100Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:32 - 11:41 (primo: IC 608) (+5 min
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:32 - 11:41 (primo: IC 608) (+5 min
  )
 DESCRIPTION:Stazione/PL: GIULIANOVA (S07802)\nRegime chiusura: CHIUSURA CON
- TINUA - 4 TRENI\nChiusura sbarre stimata: 11:32:15 - 11:41:00\nTreni coinv
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 11:32:15 - 11:41:00\nTreni coinv
  olti nella chiusura:\n  - IC 608 (LECCE -> MILANO CENTRALE) (+5m) [Arrivo]
- \n  - IC 608 (LECCE -> MILANO CENTRALE) (+5m) [Arrivo]\n  - IC 608 (LECCE 
- -> MILANO CENTRALE) (+5m) [Partenza]\n  - IC 608 (LECCE -> MILANO CENTRALE
- ) (+5m) [Partenza]\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 
- 99%\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo u
- tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
-  (120s)
+ \n  - IC 608 (LECCE -> MILANO CENTRALE) (+5m) [Partenza]\nRitardo massimo 
+ rilevato: 5 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chius
+ ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
+ lla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GIULIANOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8820--20261126-S07802@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T122523Z
-DTEND:20261127T123053Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T122448Z
+DTEND:20261127T123018Z
 SUMMARY:[TRANSITO VELOCE] TRENO 8820 (TARANTO -> MILANO CENTRALE) ore 13:29
 DESCRIPTION:Stazione/PL: GIULIANOVA (S07802)\nRegime chiusura: TRANSITO VEL
- OCE\nChiusura sbarre stimata: 13:25:23 - 13:30:53\nTreni coinvolti nella c
+ OCE\nChiusura sbarre stimata: 13:24:48 - 13:30:18\nTreni coinvolti nella c
  hiusura:\n  - TRENO 8820 (TARANTO -> MILANO CENTRALE) [Transito]\nRitardo 
  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Transito stimato senza fermata (71% tratta PESCARA -> S.BENEDETTO DEL T
+ a: Transito stimato senza fermata (69% tratta PESCARA -> S.BENEDETTO DEL T
  RONTO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GIULIANOVA
 STATUS:CONFIRMED
@@ -121,16 +118,16 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8824--20261126-S07802@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T132523Z
-DTEND:20261127T133053Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T132448Z
+DTEND:20261127T133018Z
 SUMMARY:[TRANSITO VELOCE] TRENO 8824 (LECCE -> MILANO CENTRALE) ore 14:29
 DESCRIPTION:Stazione/PL: GIULIANOVA (S07802)\nRegime chiusura: TRANSITO VEL
- OCE\nChiusura sbarre stimata: 14:25:23 - 14:30:53\nTreni coinvolti nella c
+ OCE\nChiusura sbarre stimata: 14:24:48 - 14:30:18\nTreni coinvolti nella c
  hiusura:\n  - TRENO 8824 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo ma
  ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
-  Transito stimato senza fermata (71% tratta PESCARA -> S.BENEDETTO DEL TRO
+  Transito stimato senza fermata (69% tratta PESCARA -> S.BENEDETTO DEL TRO
  NTO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GIULIANOVA
 STATUS:CONFIRMED
@@ -142,8 +139,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-612--20261126-S07802@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T141715Z
 DTEND:20261127T142200Z
 SUMMARY:[FERMATA] IC 612 (LECCE -> MILANO CENTRALE) ore 15:21
@@ -161,64 +158,83 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
-UID:train-609--20261126-S07802@pl-tracker.local
-DTSTAMP:20261127T135355Z
+UID:train-8809--20261126-S07802@pl-tracker.local
+DTSTAMP:20261127T223343Z
 SEQUENCE:0
-DTSTART:20261127T163115Z
-DTEND:20261127T163700Z
-SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 17:31 - 17:37 (primo: IC 609) (+3 min
- )
+DTSTART:20261127T152151Z
+DTEND:20261127T152721Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:21 - 16:27 (primo: TRENO 8809)
 DESCRIPTION:Stazione/PL: GIULIANOVA (S07802)\nRegime chiusura: CHIUSURA CON
- TINUA - 3 TRENI\nChiusura sbarre stimata: 17:31:15 - 17:37:00\nTreni coinv
- olti nella chiusura:\n  - IC 609 (MILANO CENTRALE -> LECCE)\n  - IC 614 (L
- ECCE -> MILANO CENTRALE) (+3m)\n  - IC 614 (LECCE -> MILANO CENTRALE) (+3m
- )\nRitardo massimo rilevato: 3 min\nAffidabilità stima: 90%\nNota normati
- va/euristica: Chiusura continua per 3 treni: intervallo utile tra i passag
- gi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 16:21:51 - 16:27:21\nTreni coinv
+ olti nella chiusura:\n  - TRENO 8809 (MILANO CENTRALE -> LECCE) [Transito]
+ \n  - TRENO 8809 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massimo ri
+ levato: -7 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
+ ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
+ la soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione GIULIANOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-7
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-609--20261126-S07802@pl-tracker.local
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
+DTSTART:20261127T163115Z
+DTEND:20261127T163700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:31 - 17:37 (primo: IC 609) (+3 min
+ )
+DESCRIPTION:Stazione/PL: GIULIANOVA (S07802)\nRegime chiusura: CHIUSURA CON
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 17:31:15 - 17:37:00\nTreni coinv
+ olti nella chiusura:\n  - IC 609 (MILANO CENTRALE -> LECCE)\n  - IC 614 (L
+ ECCE -> MILANO CENTRALE) (+3m)\nRitardo massimo rilevato: 3 min\nAffidabil
+ ità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: 
+ intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
+ ero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione GIULIANOVA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-611--20261126-S07802@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T184415Z
 DTEND:20261127T184900Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:44 - 19:49 (primo: IC 611) (+2 min
- )
-DESCRIPTION:Stazione/PL: GIULIANOVA (S07802)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 19:44:15 - 19:49:00\nTreni coinv
- olti nella chiusura:\n  - IC 611 (BOLZANO -> BARI CENTRALE) (+2m)\n  - IC 
- 611 (BOLZANO -> BARI CENTRALE) (+2m)\nRitardo massimo rilevato: 2 min\nAff
- idabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 t
- reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
-  sgombero stradale (120s)
+SUMMARY:[FERMATA] IC 611 (BOLZANO -> BARI CENTRALE) ore 19:48 (+2 min)
+DESCRIPTION:Stazione/PL: GIULIANOVA (S07802)\nRegime chiusura: FERMATA\nChi
+ usura sbarre stimata: 19:44:15 - 19:49:00\nTreni coinvolti nella chiusura:
+ \n  - IC 611 (BOLZANO -> BARI CENTRALE) (+2m)\nRitardo massimo rilevato: 2
+  min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione con r
+ itardo propagato (+2 min)
 LOCATION:Passaggio a Livello / Stazione GIULIANOVA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8819--20261126-S07802@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T192939Z
-DTEND:20261127T193509Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T192903Z
+DTEND:20261127T193433Z
 SUMMARY:[TRANSITO VELOCE] TRENO 8819 (MILANO CENTRALE -> BARI CENTRALE) ore
   20:33
 DESCRIPTION:Stazione/PL: GIULIANOVA (S07802)\nRegime chiusura: TRANSITO VEL
- OCE\nChiusura sbarre stimata: 20:29:39 - 20:35:09\nTreni coinvolti nella c
+ OCE\nChiusura sbarre stimata: 20:29:03 - 20:34:33\nTreni coinvolti nella c
  hiusura:\n  - TRENO 8819 (MILANO CENTRALE -> BARI CENTRALE) [Transito]\nRi
  tardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eu
- ristica: Transito stimato senza fermata (41% tratta S.BENEDETTO DEL TRONTO
+ ristica: Transito stimato senza fermata (39% tratta S.BENEDETTO DEL TRONTO
   -> PESCARA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GIULIANOVA
 STATUS:CONFIRMED
@@ -230,16 +246,16 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9811--20261126-S07802@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T202944Z
-DTEND:20261127T203514Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T202858Z
+DTEND:20261127T203428Z
 SUMMARY:[TRANSITO VELOCE] TRENO 9811 (MILANO CENTRALE -> PESCARA) ore 21:33
 DESCRIPTION:Stazione/PL: GIULIANOVA (S07802)\nRegime chiusura: TRANSITO VEL
- OCE\nChiusura sbarre stimata: 21:29:44 - 21:35:14\nTreni coinvolti nella c
+ OCE\nChiusura sbarre stimata: 21:28:58 - 21:34:28\nTreni coinvolti nella c
  hiusura:\n  - TRENO 9811 (MILANO CENTRALE -> PESCARA) [Transito]\nRitardo 
  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristic
- a: Transito stimato senza fermata (41% tratta S.BENEDETTO DEL TRONTO -> PE
+ a: Transito stimato senza fermata (39% tratta S.BENEDETTO DEL TRONTO -> PE
  SCARA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione GIULIANOVA
 STATUS:CONFIRMED
@@ -251,8 +267,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-613--20261126-S07802@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T204215Z
 DTEND:20261127T204700Z
 SUMMARY:[FERMATA] IC 613 (MILANO CENTRALE -> PESCARA) ore 21:46

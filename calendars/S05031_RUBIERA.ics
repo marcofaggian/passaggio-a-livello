@@ -9,12 +9,12 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:60143181b49fa3a86e31ca71e7151065b5bb0de2c1d2f92a753c53264bdd
- 61b4
+X-CONTENT-HASH:dd6ae97505332d045c18fc19bb2734ed22999a0e8e91cfedd135235bb081
+ d05e
 BEGIN:VEVENT
 UID:train-2066--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T042245Z
 DTEND:20261127T042815Z
 SUMMARY:[TRANSITO VELOCE] REG 2066 (BOLOGNA CENTRALE -> VOGHERA) ore 05:27
@@ -34,8 +34,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2454--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T045615Z
 DTEND:20261127T050145Z
 SUMMARY:[TRANSITO VELOCE] REG 2454 (BOLOGNA CENTRALE -> MILANO CENTRALE) or
@@ -56,8 +56,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17403--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T052230Z
 DTEND:20261127T053100Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:22 - 06:31 (primo: REG 17403)
@@ -78,78 +78,75 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2451--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T060800Z
 DTEND:20261127T061530Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:08 - 07:15 (primo: REG 2451) (+3 m
- in)
-DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 07:08:00 - 07:15:30\nTreni coinvolt
- i nella chiusura:\n  - REG 2451 (MILANO CENTRALE -> BOLOGNA CENTRALE) (+3m
- )\n  - REG 2451 (MILANO CENTRALE -> BOLOGNA CENTRALE) (+3m)\nRitardo massi
- mo rilevato: 3 min\nAffidabilità stima: 99%\nNota normativa/euristica: Ch
- iusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferior
- e alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 2451 (MILANO CENTRALE -> BOLOGNA CENTRALE) ore 07:14 
+ (+3 min)
+DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 07:08:00 - 07:15:30\nTreni coinvolti nella chiusura:\n 
+  - REG 2451 (MILANO CENTRALE -> BOLOGNA CENTRALE) (+3m)\nRitardo massimo r
+ ilevato: 3 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rileva
+ mento reale da circuito di binario
 LOCATION:Passaggio a Livello / Stazione RUBIERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-9303--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T062626Z
-DTEND:20261127T063156Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:26 - 07:31 (primo: TRENO 9303)
-DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 07:26:26 - 07:31:56\nTreni coinvolt
- i nella chiusura:\n  - TRENO 9303 (MILANO CENTRALE -> ROMA TERMINI) [Trans
- ito]\n  - TRENO 9303 (MILANO CENTRALE -> ROMA TERMINI) [Transito]\nRitardo
-  massimo rilevato: -2 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
- nferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T062628Z
+DTEND:20261127T063158Z
+SUMMARY:[TRANSITO VELOCE] TRENO 9303 (MILANO CENTRALE -> ROMA TERMINI) ore 
+ 07:30
+DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 07:26:28 - 07:31:58\nTreni coinvolti nella chiu
+ sura:\n  - TRENO 9303 (MILANO CENTRALE -> ROMA TERMINI) [Transito]\nRitard
+ o massimo rilevato: -2 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Transito stimato senza fermata (48% tratta REGGIO EMILIA -> MODENA\;
+  pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione RUBIERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2460--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T063715Z
-DTEND:20261127T065313Z
-SUMMARY:[CHIUSURA CONTINUA - 5 TRENI] 07:37 - 07:53 (primo: REG 2460) (+7 m
+DTEND:20261127T065314Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 07:37 - 07:53 (primo: REG 2460) (+7 m
  in)
 DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: CHIUSURA CONTIN
- UA - 5 TRENI\nChiusura sbarre stimata: 07:37:15 - 07:53:13\nTreni coinvolt
+ UA - 3 TRENI\nChiusura sbarre stimata: 07:37:15 - 07:53:14\nTreni coinvolt
  i nella chiusura:\n  - REG 2460 (BOLOGNA CENTRALE -> MILANO CENTRALE) (+7m
- ) [Transito]\n  - REG 2460 (BOLOGNA CENTRALE -> MILANO CENTRALE) (+7m) [Tr
- ansito]\n  - TRENO 8802 (ANCONA -> MILANO CENTRALE) [Transito]\n  - REG 39
- 07 (PIACENZA -> ANCONA) [Transito]\n  - REG 3907 (PIACENZA -> ANCONA) [Tra
- nsito]\nRitardo massimo rilevato: 7 min\nAffidabilità stima: 78%\nNota no
- rmativa/euristica: Chiusura continua per 5 treni: intervallo utile tra i p
- assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ ) [Transito]\n  - TRENO 8802 (ANCONA -> MILANO CENTRALE) [Transito]\n  - R
+ EG 3907 (PIACENZA -> ANCONA) [Transito]\nRitardo massimo rilevato: 7 min\n
+ Affidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 
+ 3 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
+  di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione RUBIERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 5 TRENI,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
 X-PL-DELAY-MIN:7
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3902--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T070245Z
 DTEND:20261127T070815Z
 SUMMARY:[TRANSITO VELOCE] REG 3902 (ANCONA -> PIACENZA) ore 08:07 (+1 min)
@@ -169,13 +166,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8804--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T074215Z
-DTEND:20261127T074957Z
+DTEND:20261127T074959Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:42 - 08:49 (primo: TRENO 8804)
 DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 08:42:15 - 08:49:57\nTreni coinvolt
+ UA - 2 TRENI\nChiusura sbarre stimata: 08:42:15 - 08:49:59\nTreni coinvolt
  i nella chiusura:\n  - TRENO 8804 (ANCONA -> MILANO CENTRALE) [Transito]\n
    - REG 2067 (VOGHERA -> RIMINI) [Transito]\nRitardo massimo rilevato: 0 m
  in\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua 
@@ -191,14 +188,14 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8803--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T080125Z
-DTEND:20261127T080655Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T080126Z
+DTEND:20261127T080656Z
 SUMMARY:[TRANSITO VELOCE] TRENO 8803 (MILANO CENTRALE -> BARI CENTRALE) ore
   09:05
 DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 09:01:25 - 09:06:55\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 09:01:26 - 09:06:56\nTreni coinvolti nella chiu
  sura:\n  - TRENO 8803 (MILANO CENTRALE -> BARI CENTRALE) [Transito]\nRitar
  do massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euris
  tica: Transito stimato senza fermata (48% tratta REGGIO EMILIA -> MODENA\;
@@ -213,8 +210,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-30--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T083600Z
 DTEND:20261127T084030Z
 SUMMARY:[TRANSITO VELOCE] EC 30 (FIRENZE SANTA MARIA NOVELLA -> CHIASSO) or
@@ -235,8 +232,8 @@ X-PL-TRAIN-CATEGORY:EC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17412--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T102630Z
 DTEND:20261127T103100Z
 SUMMARY:[FERMATA] REG 17412 (BOLOGNA CENTRALE -> PARMA) ore 11:30
@@ -255,13 +252,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3917--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T104427Z
-DTEND:20261127T104957Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T104429Z
+DTEND:20261127T104959Z
 SUMMARY:[TRANSITO VELOCE] REG 3917 (PIACENZA -> ANCONA) ore 11:48
 DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 11:44:27 - 11:49:57\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 11:44:29 - 11:49:59\nTreni coinvolti nella chiu
  sura:\n  - REG 3917 (PIACENZA -> ANCONA) [Transito]\nRitardo massimo rilev
  ato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito s
  timato senza fermata (48% tratta REGGIO EMILIA -> MODENA\; pedale annuncio
@@ -276,30 +273,29 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3910--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T110400Z
 DTEND:20261127T110930Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:04 - 12:09 (primo: REG 3910)
-DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 12:04:00 - 12:09:30\nTreni coinvolt
- i nella chiusura:\n  - REG 3910 (ANCONA -> PIACENZA) [Transito]\n  - REG 3
- 910 (ANCONA -> PIACENZA) [Transito]\nRitardo massimo rilevato: -5 min\nAff
- idabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 t
- reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
-  sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 3910 (ANCONA -> PIACENZA) ore 12:08
+DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 12:04:00 - 12:09:30\nTreni coinvolti nella chiu
+ sura:\n  - REG 3910 (ANCONA -> PIACENZA) [Transito]\nRitardo massimo rilev
+ ato: -5 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito 
+ stimato senza fermata (50% tratta MODENA -> REGGIO EMILIA\; pedale annunci
+ o fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione RUBIERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-5
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17413--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T112230Z
 DTEND:20261127T112700Z
 SUMMARY:[FERMATA] REG 17413 (PARMA -> BOLOGNA CENTRALE) ore 12:26
@@ -318,13 +314,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-609--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T121210Z
-DTEND:20261127T121640Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T121211Z
+DTEND:20261127T121641Z
 SUMMARY:[TRANSITO VELOCE] IC 609 (MILANO CENTRALE -> LECCE) ore 13:15
 DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 13:12:10 - 13:16:40\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 13:12:11 - 13:16:41\nTreni coinvolti nella chiu
  sura:\n  - IC 609 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massimo r
  ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transi
  to stimato senza fermata (48% tratta REGGIO EMILIA -> MODENA\; pedale annu
@@ -339,8 +335,8 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2474--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T132630Z
 DTEND:20261127T133100Z
 SUMMARY:[FERMATA] REG 2474 (BOLOGNA CENTRALE -> MILANO CENTRALE) ore 14:30
@@ -359,52 +355,50 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3916--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T140000Z
 DTEND:20261127T140530Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:00 - 15:05 (primo: REG 3916)
-DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 15:00:00 - 15:05:30\nTreni coinvolt
- i nella chiusura:\n  - REG 3916 (ANCONA -> PIACENZA) [Transito]\n  - REG 3
- 916 (ANCONA -> PIACENZA) [Transito]\nRitardo massimo rilevato: -2 min\nAff
- idabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 2 t
- reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
-  sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 3916 (ANCONA -> PIACENZA) ore 15:04
+DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 15:00:00 - 15:05:30\nTreni coinvolti nella chiu
+ sura:\n  - REG 3916 (ANCONA -> PIACENZA) [Transito]\nRitardo massimo rilev
+ ato: -2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito 
+ stimato senza fermata (50% tratta MODENA -> REGGIO EMILIA\; pedale annunci
+ o fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione RUBIERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-608--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T143000Z
 DTEND:20261127T143430Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:30 - 15:34 (primo: IC 608)
-DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 15:30:00 - 15:34:30\nTreni coinvolt
- i nella chiusura:\n  - IC 608 (LECCE -> MILANO CENTRALE) [Transito]\n  - I
- C 608 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massimo rilevato: -2 
- min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua
-  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia m
- inima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] IC 608 (LECCE -> MILANO CENTRALE) ore 15:33
+DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 15:30:00 - 15:34:30\nTreni coinvolti nella chiu
+ sura:\n  - IC 608 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massimo r
+ ilevato: -2 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
+ ito stimato senza fermata (50% tratta MODENA -> REGGIO EMILIA\; pedale ann
+ uncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione RUBIERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:-2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3918--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T150145Z
 DTEND:20261127T150715Z
 SUMMARY:[TRANSITO VELOCE] REG 3918 (ANCONA -> PIACENZA) ore 16:06
@@ -424,8 +418,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2478--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T152630Z
 DTEND:20261127T153100Z
 SUMMARY:[FERMATA] REG 2478 (BOLOGNA CENTRALE -> MILANO CENTRALE) ore 16:30
@@ -444,8 +438,8 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8820--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T154215Z
 DTEND:20261127T154745Z
 SUMMARY:[TRANSITO VELOCE] TRENO 8820 (TARANTO -> MILANO CENTRALE) ore 16:46
@@ -465,13 +459,13 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-613--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T160939Z
-DTEND:20261127T161409Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T160940Z
+DTEND:20261127T161410Z
 SUMMARY:[TRANSITO VELOCE] IC 613 (MILANO CENTRALE -> PESCARA) ore 17:13
 DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 17:09:39 - 17:14:09\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 17:09:40 - 17:14:10\nTreni coinvolti nella chiu
  sura:\n  - IC 613 (MILANO CENTRALE -> PESCARA) [Transito]\nRitardo massimo
   rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
  sito stimato senza fermata (48% tratta REGGIO EMILIA -> MODENA\; pedale an
@@ -486,8 +480,8 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17418--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T162530Z
 DTEND:20261127T163000Z
 SUMMARY:[FERMATA] REG 17418 (BOLOGNA CENTRALE -> PARMA) ore 17:29
@@ -506,13 +500,13 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3933--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T163756Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T163758Z
 DTEND:20261127T164745Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:37 - 17:47 (primo: REG 3933)
 DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 17:37:56 - 17:47:45\nTreni coinvolt
+ UA - 2 TRENI\nChiusura sbarre stimata: 17:37:58 - 17:47:45\nTreni coinvolt
  i nella chiusura:\n  - REG 3933 (PIACENZA -> BOLOGNA CENTRALE) [Transito]\
  n  - TRENO 8824 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massimo ril
  evato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura
@@ -528,35 +522,33 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2482--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T172630Z
 DTEND:20261127T173100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:26 - 18:31 (primo: REG 2482)
-DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 18:26:30 - 18:31:00\nTreni coinvolt
- i nella chiusura:\n  - REG 2482 (BOLOGNA CENTRALE -> MILANO CENTRALE)\n  -
-  REG 2482 (BOLOGNA CENTRALE -> MILANO CENTRALE)\nRitardo massimo rilevato:
-  0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura conti
- nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
- a minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 2482 (BOLOGNA CENTRALE -> MILANO CENTRALE) ore 18:30
+DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 18:26:30 - 18:31:00\nTreni coinvolti nella chiusura:\n 
+  - REG 2482 (BOLOGNA CENTRALE -> MILANO CENTRALE)\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
+ a traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione RUBIERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-599--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T182410Z
-DTEND:20261127T182840Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T182411Z
+DTEND:20261127T182841Z
 SUMMARY:[TRANSITO VELOCE] IC 599 (MILANO CENTRALE -> TERNI) ore 19:27
 DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: TRANSITO VELOCE
- \nChiusura sbarre stimata: 19:24:10 - 19:28:40\nTreni coinvolti nella chiu
+ \nChiusura sbarre stimata: 19:24:11 - 19:28:41\nTreni coinvolti nella chiu
  sura:\n  - IC 599 (MILANO CENTRALE -> TERNI) [Transito]\nRitardo massimo r
  ilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transi
  to stimato senza fermata (48% tratta REGGIO EMILIA -> MODENA\; pedale annu
@@ -571,13 +563,13 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-612--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T184030Z
-DTEND:20261127T184957Z
+DTEND:20261127T184959Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 19:40 - 19:49 (primo: IC 612)
 DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 19:40:30 - 19:49:57\nTreni coinvolt
+ UA - 2 TRENI\nChiusura sbarre stimata: 19:40:30 - 19:49:59\nTreni coinvolt
  i nella chiusura:\n  - IC 612 (LECCE -> MILANO CENTRALE) [Transito]\n  - R
  EG 3939 (PIACENZA -> ANCONA) [Transito]\nRitardo massimo rilevato: 0 min\n
  Affidabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 
@@ -593,8 +585,8 @@ X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3926--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T190145Z
 DTEND:20261127T190715Z
 SUMMARY:[TRANSITO VELOCE] REG 3926 (ANCONA -> PIACENZA) ore 20:06
@@ -614,35 +606,33 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2477--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:0
+DTSTAMP:20261127T223343Z
+SEQUENCE:1
 DTSTART:20261127T191330Z
 DTEND:20261127T191800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:13 - 20:18 (primo: REG 2477)
-DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 20:13:30 - 20:18:00\nTreni coinvolt
- i nella chiusura:\n  - REG 2477 (MILANO CENTRALE -> RIMINI)\n  - REG 2477 
- (MILANO CENTRALE -> RIMINI)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+SUMMARY:[FERMATA] REG 2477 (MILANO CENTRALE -> RIMINI) ore 20:17
+DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 20:13:30 - 20:18:00\nTreni coinvolti nella chiusura:\n 
+  - REG 2477 (MILANO CENTRALE -> RIMINI)\nRitardo massimo rilevato: 0 min\n
+ Affidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia 
+ oraria regolare
 LOCATION:Passaggio a Livello / Stazione RUBIERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8829--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
-DTSTART:20261127T200125Z
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
+DTSTART:20261127T200126Z
 DTEND:20261127T200715Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:01 - 21:07 (primo: TRENO 8829)
 DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 21:01:25 - 21:07:15\nTreni coinvolt
+ UA - 2 TRENI\nChiusura sbarre stimata: 21:01:26 - 21:07:15\nTreni coinvolt
  i nella chiusura:\n  - TRENO 8829 (MILANO CENTRALE -> ANCONA) [Transito]\n
    - REG 3928 (PESARO -> PIACENZA) [Transito]\nRitardo massimo rilevato: 0 
  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua
@@ -658,67 +648,63 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17422--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T202630Z
 DTEND:20261127T203100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:26 - 21:31 (primo: REG 17422)
-DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 21:26:30 - 21:31:00\nTreni coinvolt
- i nella chiusura:\n  - REG 17422 (BOLOGNA CENTRALE -> PARMA)\n  - REG 1742
- 2 (BOLOGNA CENTRALE -> PARMA)\nRitardo massimo rilevato: 0 min\nAffidabili
- tà stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: i
- ntervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombe
- ro stradale (120s)
+SUMMARY:[FERMATA] REG 17422 (BOLOGNA CENTRALE -> PARMA) ore 21:30
+DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 21:26:30 - 21:31:00\nTreni coinvolti nella chiusura:\n 
+  - REG 17422 (BOLOGNA CENTRALE -> PARMA)\nRitardo massimo rilevato: 0 min\
+ nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia
+  oraria regolare
 LOCATION:Passaggio a Livello / Stazione RUBIERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-614--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T204030Z
 DTEND:20261127T204500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:40 - 21:45 (primo: IC 614) (+3 min
- )
-DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 21:40:30 - 21:45:00\nTreni coinvolt
- i nella chiusura:\n  - IC 614 (LECCE -> MILANO CENTRALE) (+3m) [Transito]\
- n  - IC 614 (LECCE -> MILANO CENTRALE) (+3m) [Transito]\nRitardo massimo r
- ilevato: 3 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
- ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
- la soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] IC 614 (LECCE -> MILANO CENTRALE) ore 21:44 (+3 m
+ in)
+DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 21:40:30 - 21:45:00\nTreni coinvolti nella chiu
+ sura:\n  - IC 614 (LECCE -> MILANO CENTRALE) (+3m) [Transito]\nRitardo mas
+ simo rilevato: 3 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
+ Transito stimato senza fermata (50% tratta MODENA -> REGGIO EMILIA\; pedal
+ e annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione RUBIERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3930--20261126-S05031@pl-tracker.local
-DTSTAMP:20261127T135355Z
-SEQUENCE:1
+DTSTAMP:20261127T223343Z
+SEQUENCE:2
 DTSTART:20261127T210145Z
 DTEND:20261127T210715Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:01 - 22:07 (primo: REG 3930)
-DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 22:01:45 - 22:07:15\nTreni coinvolt
- i nella chiusura:\n  - REG 3930 (ANCONA -> REGGIO EMILIA) [Transito]\n  - 
- REG 3930 (ANCONA -> REGGIO EMILIA) [Transito]\nRitardo massimo rilevato: 0
-  min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continu
- a per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia 
- minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 3930 (ANCONA -> REGGIO EMILIA) ore 22:06
+DESCRIPTION:Stazione/PL: RUBIERA (S05031)\nRegime chiusura: TRANSITO VELOCE
+ \nChiusura sbarre stimata: 22:01:45 - 22:07:15\nTreni coinvolti nella chiu
+ sura:\n  - REG 3930 (ANCONA -> REGGIO EMILIA) [Transito]\nRitardo massimo 
+ rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Trans
+ ito stimato senza fermata (50% tratta MODENA -> REGGIO EMILIA\; pedale ann
+ uncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione RUBIERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
