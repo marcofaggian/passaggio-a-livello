@@ -9,26 +9,50 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:927b9e1f27049c0c0fecde3ee0d494455185b09033162797740c23977c2b
- cf2a
+X-CONTENT-HASH:2ac63b347f7d73178df8c577e4b430b03cc05bbdbc3e560b274bbf01b0d8
+ be6a
 BEGIN:VEVENT
-UID:train-4551--20261125-S08518@pl-tracker.local
-DTSTAMP:20261126T215722Z
-SEQUENCE:1
-DTSTART:20261126T104630Z
-DTEND:20261126T105100Z
-SUMMARY:[FERMATA] REG 4551 (AVEZZANO -> ROMA TERMINI) ore 11:50
-DESCRIPTION:Stazione/PL: ORICOLA-PERETO (S08518)\nRegime chiusura: FERMATA\
- nChiusura sbarre stimata: 11:46:30 - 11:51:00\nTreni coinvolti nella chius
- ura:\n  - REG 4551 (AVEZZANO -> ROMA TERMINI)\nRitardo massimo rilevato: -
- 12 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione con
-  anticipo (-12 min)
+UID:train-20798--20261126-S08518@pl-tracker.local
+DTSTAMP:20261127T040346Z
+SEQUENCE:0
+DTSTART:20261127T155730Z
+DTEND:20261127T160200Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:57 - 17:02 (primo: REG 20798)
+DESCRIPTION:Stazione/PL: ORICOLA-PERETO (S08518)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:57:30 - 17:02:00\nTreni c
+ oinvolti nella chiusura:\n  - REG 20798 (ROMA TIBURTINA -> AVEZZANO)\n  - 
+ REG 20798 (ROMA TIBURTINA -> AVEZZANO)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ORICOLA-PERETO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:-12
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21250--20261126-S08518@pl-tracker.local
+DTSTAMP:20261127T040346Z
+SEQUENCE:0
+DTSTART:20261127T172806Z
+DTEND:20261127T173336Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:28 - 18:33 (primo: REG 21250)
+DESCRIPTION:Stazione/PL: ORICOLA-PERETO (S08518)\nRegime chiusura: CHIUSURA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:28:06 - 18:33:36\nTreni c
+ oinvolti nella chiusura:\n  - REG 21250 (ROMA TIBURTINA -> AVEZZANO) [Tran
+ sito]\n  - REG 21250 (ROMA TIBURTINA -> AVEZZANO) [Transito]\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: C
+ hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
+ re alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ORICOLA-PERETO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR
