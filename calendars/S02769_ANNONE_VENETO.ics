@@ -9,28 +9,50 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:42fce464775892db9c8e7d528ec3b7594dc8e185200e29178e19b03bab8c
- 2d36
+X-CONTENT-HASH:866c43f5b58092d529e2f1e3d2a43ec6b0d20e379a570dd4a415dacef5da
+ e1e9
 BEGIN:VEVENT
 UID:train-16483--20261126-S02769@pl-tracker.local
-DTSTAMP:20261127T040346Z
-SEQUENCE:0
+DTSTAMP:20261127T135355Z
+SEQUENCE:1
 DTSTART:20261127T063930Z
 DTEND:20261127T064400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:39 - 07:44 (primo: REG 16483)
+SUMMARY:[FERMATA] REG 16483 (TREVISO CENTRALE -> PORTOGRUARO CAORLE) ore 07
+ :43
+DESCRIPTION:Stazione/PL: ANNONE VENETO (S02769)\nRegime chiusura: FERMATA\n
+ Chiusura sbarre stimata: 07:39:30 - 07:44:00\nTreni coinvolti nella chiusu
+ ra:\n  - REG 16483 (TREVISO CENTRALE -> PORTOGRUARO CAORLE)\nRitardo massi
+ mo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Pr
+ evisione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione ANNONE VENETO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16485--20261126-S02769@pl-tracker.local
+DTSTAMP:20261127T135355Z
+SEQUENCE:0
+DTSTART:20261127T074830Z
+DTEND:20261127T075400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:48 - 08:54 (primo: REG 16485) (+5 
+ min)
 DESCRIPTION:Stazione/PL: ANNONE VENETO (S02769)\nRegime chiusura: CHIUSURA 
- CONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:39:30 - 07:44:00\nTreni co
- involti nella chiusura:\n  - REG 16483 (TREVISO CENTRALE -> PORTOGRUARO CA
- ORLE)\n  - REG 16483 (TREVISO CENTRALE -> PORTOGRUARO CAORLE)\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
+ CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:48:30 - 08:54:00\nTreni co
+ involti nella chiusura:\n  - REG 16485 (TREVISO CENTRALE -> PORTOGRUARO CA
+ ORLE) (+5m)\n  - REG 16485 (TREVISO CENTRALE -> PORTOGRUARO CAORLE) (+5m)\
+ nRitardo massimo rilevato: 5 min\nAffidabilità stima: 99%\nNota normativa
+ /euristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi
+  (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ANNONE VENETO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

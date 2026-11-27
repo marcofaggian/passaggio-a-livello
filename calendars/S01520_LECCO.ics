@@ -9,22 +9,86 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:efca1aabade3a0dfdf129ca58a2fe8e8799e6b7f5c2ae0bdc410ef11e6ba
- 7b08
+X-CONTENT-HASH:a5ab87ba9f4bd6dab9d44914a135b08ff9fce68967be9a77f0dbf4195323
+ d112
 BEGIN:VEVENT
 UID:train-24819--20261126-S01520@pl-tracker.local
-DTSTAMP:20261127T040346Z
-SEQUENCE:0
+DTSTAMP:20261127T135355Z
+SEQUENCE:1
 DTSTART:20261127T043230Z
 DTEND:20261127T043700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:32 - 05:37 (primo: REG 24819)
+SUMMARY:[FERMATA] REG 24819 (LECCO -> MILANO PORTA GARIBALDI) ore 05:36
+DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 05:32:30 - 05:37:00\nTreni coinvolti nella chiusura:\n  -
+  REG 24819 (LECCO -> MILANO PORTA GARIBALDI)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
+ ccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione LECCO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-25818--20261126-S01520@pl-tracker.local
+DTSTAMP:20261127T135355Z
+SEQUENCE:0
+DTSTART:20261127T045649Z
+DTEND:20261127T050219Z
+SUMMARY:[TRANSITO VELOCE] REG 25818 (PONTE S.PIETRO -> MILANO PORTA GARIBAL
+ DI) ore 06:01
+DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: TRANSITO VELOCE\n
+ Chiusura sbarre stimata: 05:56:49 - 06:02:19\nTreni coinvolti nella chiusu
+ ra:\n  - REG 25818 (PONTE S.PIETRO -> MILANO PORTA GARIBALDI) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (51% tratta CARNATE USMATE -> AR
+ CORE\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione LECCO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24816--20261126-S01520@pl-tracker.local
+DTSTAMP:20261127T135355Z
+SEQUENCE:1
+DTSTART:20261127T054145Z
+DTEND:20261127T054715Z
+SUMMARY:[TRANSITO VELOCE] REG 24816 (MILANO PORTA GARIBALDI -> LECCO) ore 0
+ 6:46
+DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: TRANSITO VELOCE\n
+ Chiusura sbarre stimata: 06:41:45 - 06:47:15\nTreni coinvolti nella chiusu
+ ra:\n  - REG 24816 (MILANO PORTA GARIBALDI -> LECCO) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (67% tratta CALOLZIOCORTE OLGINATE -> LEC
+ CO MAGGIANICO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione LECCO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24816--20261126-S01520@pl-tracker.local
+DTSTAMP:20261127T135355Z
+SEQUENCE:1
+DTSTART:20261127T055030Z
+DTEND:20261127T060000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:50 - 07:00 (primo: REG 24816)
 DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 05:32:30 - 05:37:00\nTreni coinvolti 
- nella chiusura:\n  - REG 24819 (LECCO -> MILANO PORTA GARIBALDI)\n  - REG 
- 24819 (LECCO -> MILANO PORTA GARIBALDI)\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
- 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
-  di sgombero stradale (120s)
+  - 2 TRENI\nChiusura sbarre stimata: 06:50:30 - 07:00:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 24816 (MILANO PORTA GARIBALDI -> LECCO)\n  - REG 
+ 2812 (MILANO CENTRALE -> TIRANO)\nRitardo massimo rilevato: 0 min\nAffidab
+ ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
+ : intervallo utile tra i passaggi (30s) inferiore alla soglia minima di sg
+ ombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LECCO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -34,262 +98,326 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-24816--20261126-S01520@pl-tracker.local
-DTSTAMP:20261127T040346Z
-SEQUENCE:0
-DTSTART:20261127T054145Z
-DTEND:20261127T054715Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:41 - 06:47 (primo: REG 24816)
-DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 06:41:45 - 06:47:15\nTreni coinvolti 
- nella chiusura:\n  - REG 24816 (MILANO PORTA GARIBALDI -> LECCO) [Transito
- ]\n  - REG 24816 (MILANO PORTA GARIBALDI -> LECCO) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
+UID:train-24818--20261126-S01520@pl-tracker.local
+DTSTAMP:20261127T135355Z
+SEQUENCE:1
+DTSTART:20261127T061145Z
+DTEND:20261127T061715Z
+SUMMARY:[TRANSITO VELOCE] REG 24818 (MILANO PORTA GARIBALDI -> LECCO) ore 0
+ 7:16
+DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: TRANSITO VELOCE\n
+ Chiusura sbarre stimata: 07:11:45 - 07:17:15\nTreni coinvolti nella chiusu
+ ra:\n  - REG 24818 (MILANO PORTA GARIBALDI -> LECCO) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (67% tratta CALOLZIOCORTE OLGINATE -> LEC
+ CO MAGGIANICO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LECCO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-24816--20261126-S01520@pl-tracker.local
-DTSTAMP:20261127T040346Z
+UID:train-24818--20261126-S01520@pl-tracker.local
+DTSTAMP:20261127T135355Z
+SEQUENCE:1
+DTSTART:20261127T062030Z
+DTEND:20261127T062500Z
+SUMMARY:[FERMATA] REG 24818 (MILANO PORTA GARIBALDI -> LECCO) ore 07:24
+DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 07:20:30 - 07:25:00\nTreni coinvolti nella chiusura:\n  -
+  REG 24818 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
+ ccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione LECCO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24820--20261126-S01520@pl-tracker.local
+DTSTAMP:20261127T135355Z
+SEQUENCE:1
+DTSTART:20261127T064145Z
+DTEND:20261127T064715Z
+SUMMARY:[TRANSITO VELOCE] REG 24820 (MILANO PORTA GARIBALDI -> LECCO) ore 0
+ 7:46
+DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: TRANSITO VELOCE\n
+ Chiusura sbarre stimata: 07:41:45 - 07:47:15\nTreni coinvolti nella chiusu
+ ra:\n  - REG 24820 (MILANO PORTA GARIBALDI -> LECCO) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (67% tratta CALOLZIOCORTE OLGINATE -> LEC
+ CO MAGGIANICO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione LECCO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24820--20261126-S01520@pl-tracker.local
+DTSTAMP:20261127T135355Z
+SEQUENCE:1
+DTSTART:20261127T065030Z
+DTEND:20261127T065500Z
+SUMMARY:[FERMATA] REG 24820 (MILANO PORTA GARIBALDI -> LECCO) ore 07:54
+DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 07:50:30 - 07:55:00\nTreni coinvolti nella chiusura:\n  -
+  REG 24820 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
+ ccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione LECCO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24824--20261126-S01520@pl-tracker.local
+DTSTAMP:20261127T135355Z
+SEQUENCE:1
+DTSTART:20261127T074145Z
+DTEND:20261127T074715Z
+SUMMARY:[TRANSITO VELOCE] REG 24824 (MILANO PORTA GARIBALDI -> LECCO) ore 0
+ 8:46
+DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: TRANSITO VELOCE\n
+ Chiusura sbarre stimata: 08:41:45 - 08:47:15\nTreni coinvolti nella chiusu
+ ra:\n  - REG 24824 (MILANO PORTA GARIBALDI -> LECCO) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (67% tratta CALOLZIOCORTE OLGINATE -> LEC
+ CO MAGGIANICO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione LECCO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24824--20261126-S01520@pl-tracker.local
+DTSTAMP:20261127T135355Z
+SEQUENCE:1
+DTSTART:20261127T075030Z
+DTEND:20261127T075500Z
+SUMMARY:[FERMATA] REG 24824 (MILANO PORTA GARIBALDI -> LECCO) ore 08:54
+DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 08:50:30 - 08:55:00\nTreni coinvolti nella chiusura:\n  -
+  REG 24824 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
+ ccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione LECCO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24834--20261126-S01520@pl-tracker.local
+DTSTAMP:20261127T135355Z
 SEQUENCE:0
-DTSTART:20261127T055030Z
-DTEND:20261127T060000Z
-SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 06:50 - 07:00 (primo: REG 24816)
+DTSTART:20261127T101625Z
+DTEND:20261127T102800Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 11:16 - 11:28 (primo: REG 24834) (+3 
+ min)
 DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: CHIUSURA CONTINUA
-  - 4 TRENI\nChiusura sbarre stimata: 06:50:30 - 07:00:00\nTreni coinvolti 
- nella chiusura:\n  - REG 24816 (MILANO PORTA GARIBALDI -> LECCO)\n  - REG 
- 24816 (MILANO PORTA GARIBALDI -> LECCO)\n  - REG 2812 (MILANO CENTRALE -> 
- TIRANO)\n  - REG 2812 (MILANO CENTRALE -> TIRANO)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura con
- tinua per 4 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
- lia minima di sgombero stradale (120s)
+  - 4 TRENI\nChiusura sbarre stimata: 11:16:25 - 11:28:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 24834 (MILANO PORTA GARIBALDI -> LECCO) (+3m) [Tr
+ ansito]\n  - REG 24834 (MILANO PORTA GARIBALDI -> LECCO) (+3m) [Transito]\
+ n  - REG 24834 (MILANO PORTA GARIBALDI -> LECCO) (+3m)\n  - REG 24834 (MIL
+ ANO PORTA GARIBALDI -> LECCO) (+3m)\nRitardo massimo rilevato: 3 min\nAffi
+ dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 tr
+ eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione LECCO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-24818--20261126-S01520@pl-tracker.local
-DTSTAMP:20261127T040346Z
-SEQUENCE:0
-DTSTART:20261127T061145Z
-DTEND:20261127T061715Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:11 - 07:17 (primo: REG 24818)
-DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 07:11:45 - 07:17:15\nTreni coinvolti 
- nella chiusura:\n  - REG 24818 (MILANO PORTA GARIBALDI -> LECCO) [Transito
- ]\n  - REG 24818 (MILANO PORTA GARIBALDI -> LECCO) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione LECCO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:3
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-24818--20261126-S01520@pl-tracker.local
-DTSTAMP:20261127T040346Z
-SEQUENCE:0
-DTSTART:20261127T062030Z
-DTEND:20261127T062500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:20 - 07:25 (primo: REG 24818)
-DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 07:20:30 - 07:25:00\nTreni coinvolti 
- nella chiusura:\n  - REG 24818 (MILANO PORTA GARIBALDI -> LECCO)\n  - REG 
- 24818 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
- 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
-  di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione LECCO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-24820--20261126-S01520@pl-tracker.local
-DTSTAMP:20261127T040346Z
-SEQUENCE:0
-DTSTART:20261127T064145Z
-DTEND:20261127T064715Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:41 - 07:47 (primo: REG 24820)
-DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 07:41:45 - 07:47:15\nTreni coinvolti 
- nella chiusura:\n  - REG 24820 (MILANO PORTA GARIBALDI -> LECCO) [Transito
- ]\n  - REG 24820 (MILANO PORTA GARIBALDI -> LECCO) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione LECCO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-24820--20261126-S01520@pl-tracker.local
-DTSTAMP:20261127T040346Z
-SEQUENCE:0
-DTSTART:20261127T065030Z
-DTEND:20261127T065500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:50 - 07:55 (primo: REG 24820)
-DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 07:50:30 - 07:55:00\nTreni coinvolti 
- nella chiusura:\n  - REG 24820 (MILANO PORTA GARIBALDI -> LECCO)\n  - REG 
- 24820 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
- 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
-  di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione LECCO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-24824--20261126-S01520@pl-tracker.local
-DTSTAMP:20261127T040346Z
-SEQUENCE:0
-DTSTART:20261127T074145Z
-DTEND:20261127T074715Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:41 - 08:47 (primo: REG 24824)
-DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 08:41:45 - 08:47:15\nTreni coinvolti 
- nella chiusura:\n  - REG 24824 (MILANO PORTA GARIBALDI -> LECCO) [Transito
- ]\n  - REG 24824 (MILANO PORTA GARIBALDI -> LECCO) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione LECCO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-24824--20261126-S01520@pl-tracker.local
-DTSTAMP:20261127T040346Z
-SEQUENCE:0
-DTSTART:20261127T075030Z
-DTEND:20261127T075500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:50 - 08:55 (primo: REG 24824)
-DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 08:50:30 - 08:55:00\nTreni coinvolti 
- nella chiusura:\n  - REG 24824 (MILANO PORTA GARIBALDI -> LECCO)\n  - REG 
- 24824 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
- 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
-  di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione LECCO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24836--20261126-S01520@pl-tracker.local
-DTSTAMP:20261127T040346Z
-SEQUENCE:0
+DTSTAMP:20261127T135355Z
+SEQUENCE:1
 DTSTART:20261127T104145Z
 DTEND:20261127T104715Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:41 - 11:47 (primo: REG 24836)
-DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 11:41:45 - 11:47:15\nTreni coinvolti 
- nella chiusura:\n  - REG 24836 (MILANO PORTA GARIBALDI -> LECCO) [Transito
- ]\n  - REG 24836 (MILANO PORTA GARIBALDI -> LECCO) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 24836 (MILANO PORTA GARIBALDI -> LECCO) ore 1
+ 1:46
+DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: TRANSITO VELOCE\n
+ Chiusura sbarre stimata: 11:41:45 - 11:47:15\nTreni coinvolti nella chiusu
+ ra:\n  - REG 24836 (MILANO PORTA GARIBALDI -> LECCO) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (67% tratta CALOLZIOCORTE OLGINATE -> LEC
+ CO MAGGIANICO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LECCO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24836--20261126-S01520@pl-tracker.local
-DTSTAMP:20261127T040346Z
-SEQUENCE:0
+DTSTAMP:20261127T135355Z
+SEQUENCE:1
 DTSTART:20261127T105030Z
 DTEND:20261127T105500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:50 - 11:55 (primo: REG 24836)
-DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 11:50:30 - 11:55:00\nTreni coinvolti 
- nella chiusura:\n  - REG 24836 (MILANO PORTA GARIBALDI -> LECCO)\n  - REG 
- 24836 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
- 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
-  di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 24836 (MILANO PORTA GARIBALDI -> LECCO) ore 11:54
+DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 11:50:30 - 11:55:00\nTreni coinvolti nella chiusura:\n  -
+  REG 24836 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
+ ccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione LECCO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-24854--20261126-S01520@pl-tracker.local
-DTSTAMP:20261127T040346Z
+UID:train-24840--20261126-S01520@pl-tracker.local
+DTSTAMP:20261127T135355Z
 SEQUENCE:0
+DTSTART:20261127T114455Z
+DTEND:20261127T115600Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 12:44 - 12:56 (primo: REG 24840) (+1 
+ min)
+DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: CHIUSURA CONTINUA
+  - 4 TRENI\nChiusura sbarre stimata: 12:44:55 - 12:56:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 24840 (MILANO PORTA GARIBALDI -> LECCO) (+1m) [Tr
+ ansito]\n  - REG 24840 (MILANO PORTA GARIBALDI -> LECCO) (+1m) [Transito]\
+ n  - REG 24840 (MILANO PORTA GARIBALDI -> LECCO) (+1m)\n  - REG 24840 (MIL
+ ANO PORTA GARIBALDI -> LECCO) (+1m)\nRitardo massimo rilevato: 1 min\nAffi
+ dabilità stima: 78%\nNota normativa/euristica: Chiusura continua per 4 tr
+ eni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di 
+ sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione LECCO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2827--20261126-S01520@pl-tracker.local-arr
+DTSTAMP:20261127T135355Z
+SEQUENCE:0
+DTSTART:20261127T125700Z
+DTEND:20261127T130500Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 13:57 - 14:05 (primo: REG 2827) (+3 m
+ in)
+DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: CHIUSURA CONTINUA
+  - 4 TRENI\nChiusura sbarre stimata: 13:57:00 - 14:05:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 2827 (TIRANO -> MILANO CENTRALE) (+3m) [Arrivo]\n
+   - REG 2827 (TIRANO -> MILANO CENTRALE) (+3m) [Arrivo]\n  - REG 2827 (TIR
+ ANO -> MILANO CENTRALE) (+3m) [Partenza]\n  - REG 2827 (TIRANO -> MILANO C
+ ENTRALE) (+3m) [Partenza]\nRitardo massimo rilevato: 3 min\nAffidabilità 
+ stima: 99%\nNota normativa/euristica: Chiusura continua per 4 treni: inter
+ vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
+ tradale (120s)
+LOCATION:Passaggio a Livello / Stazione LECCO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-24854--20261126-S01520@pl-tracker.local
+DTSTAMP:20261127T135355Z
+SEQUENCE:1
 DTSTART:20261127T151145Z
 DTEND:20261127T151715Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:11 - 16:17 (primo: REG 24854)
-DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 16:11:45 - 16:17:15\nTreni coinvolti 
- nella chiusura:\n  - REG 24854 (MILANO PORTA GARIBALDI -> LECCO) [Transito
- ]\n  - REG 24854 (MILANO PORTA GARIBALDI -> LECCO) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 24854 (MILANO PORTA GARIBALDI -> LECCO) ore 1
+ 6:16
+DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: TRANSITO VELOCE\n
+ Chiusura sbarre stimata: 16:11:45 - 16:17:15\nTreni coinvolti nella chiusu
+ ra:\n  - REG 24854 (MILANO PORTA GARIBALDI -> LECCO) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (67% tratta CALOLZIOCORTE OLGINATE -> LEC
+ CO MAGGIANICO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LECCO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24854--20261126-S01520@pl-tracker.local
-DTSTAMP:20261127T040346Z
-SEQUENCE:0
+DTSTAMP:20261127T135355Z
+SEQUENCE:1
 DTSTART:20261127T152030Z
 DTEND:20261127T152500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:20 - 16:25 (primo: REG 24854)
+SUMMARY:[FERMATA] REG 24854 (MILANO PORTA GARIBALDI -> LECCO) ore 16:24
+DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 16:20:30 - 16:25:00\nTreni coinvolti nella chiusura:\n  -
+  REG 24854 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
+ ccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione LECCO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2832--20261126-S01520@pl-tracker.local
+DTSTAMP:20261127T135355Z
+SEQUENCE:0
+DTSTART:20261127T155530Z
+DTEND:20261127T160000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:55 - 17:00 (primo: REG 2832)
 DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 16:20:30 - 16:25:00\nTreni coinvolti 
- nella chiusura:\n  - REG 24854 (MILANO PORTA GARIBALDI -> LECCO)\n  - REG 
- 24854 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
- 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
-  di sgombero stradale (120s)
+  - 2 TRENI\nChiusura sbarre stimata: 16:55:30 - 17:00:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 2832 (MILANO CENTRALE -> TIRANO)\n  - REG 2832 (M
+ ILANO CENTRALE -> TIRANO)\nRitardo massimo rilevato: 0 min\nAffidabilità 
+ stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inter
+ vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
+ tradale (120s)
+LOCATION:Passaggio a Livello / Stazione LECCO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-2840--20261126-S01520@pl-tracker.local
+DTSTAMP:20261127T135355Z
+SEQUENCE:0
+DTSTART:20261127T195530Z
+DTEND:20261127T200000Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:55 - 21:00 (primo: REG 2840)
+DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: CHIUSURA CONTINUA
+  - 2 TRENI\nChiusura sbarre stimata: 20:55:30 - 21:00:00\nTreni coinvolti 
+ nella chiusura:\n  - REG 2840 (MILANO CENTRALE -> TIRANO)\n  - REG 2840 (M
+ ILANO CENTRALE -> TIRANO)\nRitardo massimo rilevato: 0 min\nAffidabilità 
+ stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inter
+ vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
+ tradale (120s)
 LOCATION:Passaggio a Livello / Stazione LECCO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -300,132 +428,125 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24874--20261126-S01520@pl-tracker.local
-DTSTAMP:20261127T040346Z
-SEQUENCE:0
+DTSTAMP:20261127T135355Z
+SEQUENCE:1
 DTSTART:20261127T201145Z
 DTEND:20261127T201715Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:11 - 21:17 (primo: REG 24874)
-DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 21:11:45 - 21:17:15\nTreni coinvolti 
- nella chiusura:\n  - REG 24874 (MILANO PORTA GARIBALDI -> LECCO) [Transito
- ]\n  - REG 24874 (MILANO PORTA GARIBALDI -> LECCO) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 24874 (MILANO PORTA GARIBALDI -> LECCO) ore 2
+ 1:16
+DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: TRANSITO VELOCE\n
+ Chiusura sbarre stimata: 21:11:45 - 21:17:15\nTreni coinvolti nella chiusu
+ ra:\n  - REG 24874 (MILANO PORTA GARIBALDI -> LECCO) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (67% tratta CALOLZIOCORTE OLGINATE -> LEC
+ CO MAGGIANICO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LECCO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24874--20261126-S01520@pl-tracker.local
-DTSTAMP:20261127T040346Z
-SEQUENCE:0
+DTSTAMP:20261127T135355Z
+SEQUENCE:1
 DTSTART:20261127T202030Z
 DTEND:20261127T202500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:20 - 21:25 (primo: REG 24874)
-DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 21:20:30 - 21:25:00\nTreni coinvolti 
- nella chiusura:\n  - REG 24874 (MILANO PORTA GARIBALDI -> LECCO)\n  - REG 
- 24874 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
- 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
-  di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 24874 (MILANO PORTA GARIBALDI -> LECCO) ore 21:24
+DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 21:20:30 - 21:25:00\nTreni coinvolti nella chiusura:\n  -
+  REG 24874 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
+ ccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione LECCO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2842--20261126-S01520@pl-tracker.local
-DTSTAMP:20261127T040346Z
-SEQUENCE:0
+DTSTAMP:20261127T135355Z
+SEQUENCE:1
 DTSTART:20261127T204323Z
 DTEND:20261127T204853Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:43 - 21:48 (primo: REG 2842)
-DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 21:43:23 - 21:48:53\nTreni coinvolti 
- nella chiusura:\n  - REG 2842 (MILANO CENTRALE -> SONDRIO) [Transito]\n  -
-  REG 2842 (MILANO CENTRALE -> SONDRIO) [Transito]\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura con
- tinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sog
- lia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 2842 (MILANO CENTRALE -> SONDRIO) ore 21:47
+DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: TRANSITO VELOCE\n
+ Chiusura sbarre stimata: 21:43:23 - 21:48:53\nTreni coinvolti nella chiusu
+ ra:\n  - REG 2842 (MILANO CENTRALE -> SONDRIO) [Transito]\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
+ sito stimato senza fermata (76% tratta MONZA -> CALOLZIOCORTE OLGINATE\; p
+ edale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LECCO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-2842--20261126-S01520@pl-tracker.local
-DTSTAMP:20261127T040346Z
-SEQUENCE:0
+DTSTAMP:20261127T135355Z
+SEQUENCE:1
 DTSTART:20261127T205730Z
 DTEND:20261127T210200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:57 - 22:02 (primo: REG 2842)
-DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 21:57:30 - 22:02:00\nTreni coinvolti 
- nella chiusura:\n  - REG 2842 (MILANO CENTRALE -> SONDRIO)\n  - REG 2842 (
- MILANO CENTRALE -> SONDRIO)\nRitardo massimo rilevato: 0 min\nAffidabilit
- à stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: in
- tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
- o stradale (120s)
+SUMMARY:[FERMATA] REG 2842 (MILANO CENTRALE -> SONDRIO) ore 22:01
+DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 21:57:30 - 22:02:00\nTreni coinvolti nella chiusura:\n  -
+  REG 2842 (MILANO CENTRALE -> SONDRIO)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
 LOCATION:Passaggio a Livello / Stazione LECCO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24880--20261126-S01520@pl-tracker.local
-DTSTAMP:20261127T040346Z
-SEQUENCE:0
+DTSTAMP:20261127T135355Z
+SEQUENCE:1
 DTSTART:20261127T214145Z
 DTEND:20261127T214715Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:41 - 22:47 (primo: REG 24880)
-DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 22:41:45 - 22:47:15\nTreni coinvolti 
- nella chiusura:\n  - REG 24880 (MILANO PORTA GARIBALDI -> LECCO) [Transito
- ]\n  - REG 24880 (MILANO PORTA GARIBALDI -> LECCO) [Transito]\nRitardo mas
- simo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferi
- ore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[TRANSITO VELOCE] REG 24880 (MILANO PORTA GARIBALDI -> LECCO) ore 2
+ 2:46
+DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: TRANSITO VELOCE\n
+ Chiusura sbarre stimata: 22:41:45 - 22:47:15\nTreni coinvolti nella chiusu
+ ra:\n  - REG 24880 (MILANO PORTA GARIBALDI -> LECCO) [Transito]\nRitardo m
+ assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (67% tratta CALOLZIOCORTE OLGINATE -> LEC
+ CO MAGGIANICO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione LECCO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-24880--20261126-S01520@pl-tracker.local
-DTSTAMP:20261127T040346Z
-SEQUENCE:0
+DTSTAMP:20261127T135355Z
+SEQUENCE:1
 DTSTART:20261127T215030Z
 DTEND:20261127T215500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:50 - 22:55 (primo: REG 24880)
-DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: CHIUSURA CONTINUA
-  - 2 TRENI\nChiusura sbarre stimata: 22:50:30 - 22:55:00\nTreni coinvolti 
- nella chiusura:\n  - REG 24880 (MILANO PORTA GARIBALDI -> LECCO)\n  - REG 
- 24880 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo rilevato: 0 min\n
- Affidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 
- 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
-  di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 24880 (MILANO PORTA GARIBALDI -> LECCO) ore 22:54
+DESCRIPTION:Stazione/PL: LECCO (S01520)\nRegime chiusura: FERMATA\nChiusura
+  sbarre stimata: 22:50:30 - 22:55:00\nTreni coinvolti nella chiusura:\n  -
+  REG 24880 (MILANO PORTA GARIBALDI -> LECCO)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
+ ccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione LECCO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

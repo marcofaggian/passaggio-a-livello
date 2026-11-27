@@ -9,40 +9,64 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:57e59529b1516fdf70445d61fdd678e2c94e40e64f1286a84baab01f6e55
- 3535
+X-CONTENT-HASH:a154053257ce82b5bf8e6fb1c251d73e8e34947e644f69e6bae3e127a97c
+ 7bcb
 BEGIN:VEVENT
-UID:train-17942--20261125-S05719@pl-tracker.local
-DTSTAMP:20261126T215722Z
-SEQUENCE:2
-DTSTART:20261126T060430Z
-DTEND:20261126T060900Z
-SUMMARY:[FERMATA] REG 17942 (BOLOGNA CENTRALE -> FERRARA) ore 07:08
-DESCRIPTION:Stazione/PL: CORONELLA (S05719)\nRegime chiusura: FERMATA\nChiu
- sura sbarre stimata: 07:04:30 - 07:09:00\nTreni coinvolti nella chiusura:\
- n  - REG 17942 (BOLOGNA CENTRALE -> FERRARA)\nRitardo massimo rilevato: 0 
- min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
- ccia oraria regolare
+UID:train-17481--20261126-S05719@pl-tracker.local
+DTSTAMP:20261127T135355Z
+SEQUENCE:0
+DTSTART:20261127T051757Z
+DTEND:20261127T052327Z
+SUMMARY:[TRANSITO VELOCE] REG 17481 (FERRARA -> IMOLA) ore 06:22
+DESCRIPTION:Stazione/PL: CORONELLA (S05719)\nRegime chiusura: TRANSITO VELO
+ CE\nChiusura sbarre stimata: 06:17:57 - 06:23:27\nTreni coinvolti nella ch
+ iusura:\n  - REG 17481 (FERRARA -> IMOLA) [Transito]\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Transito 
+ stimato senza fermata (60% tratta FERRARA -> POGGIO RENATICO\; pedale annu
+ ncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CORONELLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-17944--20261125-S05719@pl-tracker.local
-DTSTAMP:20261126T215722Z
-SEQUENCE:2
-DTSTART:20261126T062536Z
-DTEND:20261126T063106Z
-SUMMARY:[TRANSITO VELOCE] REG 17944 (BOLOGNA CENTRALE -> FERRARA) ore 07:29
+UID:train-17942--20261126-S05719@pl-tracker.local
+DTSTAMP:20261127T135355Z
+SEQUENCE:0
+DTSTART:20261127T060930Z
+DTEND:20261127T061500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:09 - 07:15 (primo: REG 17942) (+5 
+ min)
+DESCRIPTION:Stazione/PL: CORONELLA (S05719)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 07:09:30 - 07:15:00\nTreni coinvo
+ lti nella chiusura:\n  - REG 17942 (BOLOGNA CENTRALE -> FERRARA) (+5m)\n  
+ - REG 17942 (BOLOGNA CENTRALE -> FERRARA) (+5m)\nRitardo massimo rilevato:
+  5 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura conti
+ nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CORONELLA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17944--20261126-S05719@pl-tracker.local
+DTSTAMP:20261127T135355Z
+SEQUENCE:0
+DTSTART:20261127T062619Z
+DTEND:20261127T063149Z
+SUMMARY:[TRANSITO VELOCE] REG 17944 (BOLOGNA CENTRALE -> FERRARA) ore 07:30
 DESCRIPTION:Stazione/PL: CORONELLA (S05719)\nRegime chiusura: TRANSITO VELO
- CE\nChiusura sbarre stimata: 07:25:36 - 07:31:06\nTreni coinvolti nella ch
+ CE\nChiusura sbarre stimata: 07:26:19 - 07:31:49\nTreni coinvolti nella ch
  iusura:\n  - REG 17944 (BOLOGNA CENTRALE -> FERRARA) [Transito]\nRitardo m
  assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (32% tratta POGGIO RENATICO -> FERRARA\; 
+ : Transito stimato senza fermata (38% tratta POGGIO RENATICO -> FERRARA\; 
  pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CORONELLA
 STATUS:CONFIRMED
@@ -53,80 +77,40 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-17948--20261125-S05719@pl-tracker.local
-DTSTAMP:20261126T215722Z
-SEQUENCE:1
-DTSTART:20261126T100500Z
-DTEND:20261126T101030Z
-SUMMARY:[FERMATA] REG 17948 (BOLOGNA CENTRALE -> FERRARA) ore 11:09 (+1 min
- )
-DESCRIPTION:Stazione/PL: CORONELLA (S05719)\nRegime chiusura: FERMATA\nChiu
- sura sbarre stimata: 11:05:00 - 11:10:30\nTreni coinvolti nella chiusura:\
- n  - REG 17948 (BOLOGNA CENTRALE -> FERRARA) (+1m)\nRitardo massimo rileva
- to: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento
-  reale da circuito di binario
+UID:train-17961--20261126-S05719@pl-tracker.local
+DTSTAMP:20261127T135355Z
+SEQUENCE:0
+DTSTART:20261127T124800Z
+DTEND:20261127T125330Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:48 - 13:53 (primo: REG 17961) (+1 
+ min)
+DESCRIPTION:Stazione/PL: CORONELLA (S05719)\nRegime chiusura: CHIUSURA CONT
+ INUA - 2 TRENI\nChiusura sbarre stimata: 13:48:00 - 13:53:30\nTreni coinvo
+ lti nella chiusura:\n  - REG 17961 (FERRARA -> BOLOGNA CENTRALE) (+1m)\n  
+ - REG 17961 (FERRARA -> BOLOGNA CENTRALE) (+1m)\nRitardo massimo rilevato:
+  1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura conti
+ nua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogli
+ a minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CORONELLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-17952--20261125-S05719@pl-tracker.local
-DTSTAMP:20261126T215722Z
-SEQUENCE:1
-DTSTART:20261126T110500Z
-DTEND:20261126T111030Z
-SUMMARY:[FERMATA] REG 17952 (BOLOGNA CENTRALE -> FERRARA) ore 12:09 (+1 min
- )
-DESCRIPTION:Stazione/PL: CORONELLA (S05719)\nRegime chiusura: FERMATA\nChiu
- sura sbarre stimata: 12:05:00 - 12:10:30\nTreni coinvolti nella chiusura:\
- n  - REG 17952 (BOLOGNA CENTRALE -> FERRARA) (+1m)\nRitardo massimo rileva
- to: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento
-  reale da circuito di binario
-LOCATION:Passaggio a Livello / Stazione CORONELLA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:1
-X-PL-CONFIDENCE:0.99
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17958--20261125-S05719@pl-tracker.local
-DTSTAMP:20261126T215722Z
-SEQUENCE:1
-DTSTART:20261126T130453Z
-DTEND:20261126T131023Z
-SUMMARY:[TRANSITO VELOCE] REG 17958 (BOLOGNA CENTRALE -> FERRARA) ore 14:09
+UID:train-17960--20261126-S05719@pl-tracker.local
+DTSTAMP:20261127T135355Z
+SEQUENCE:0
+DTSTART:20261127T150636Z
+DTEND:20261127T151206Z
+SUMMARY:[TRANSITO VELOCE] REG 17960 (BOLOGNA CENTRALE -> FERRARA) ore 16:10
 DESCRIPTION:Stazione/PL: CORONELLA (S05719)\nRegime chiusura: TRANSITO VELO
- CE\nChiusura sbarre stimata: 14:04:53 - 14:10:23\nTreni coinvolti nella ch
- iusura:\n  - REG 17958 (BOLOGNA CENTRALE -> FERRARA) [Transito]\nRitardo m
- assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (32% tratta POGGIO RENATICO -> FERRARA\; 
- pedale annuncio fisso Vmax)
-LOCATION:Passaggio a Livello / Stazione CORONELLA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17960--20261125-S05719@pl-tracker.local
-DTSTAMP:20261126T215722Z
-SEQUENCE:2
-DTSTART:20261126T150531Z
-DTEND:20261126T151101Z
-SUMMARY:[TRANSITO VELOCE] REG 17960 (BOLOGNA CENTRALE -> FERRARA) ore 16:09
-DESCRIPTION:Stazione/PL: CORONELLA (S05719)\nRegime chiusura: TRANSITO VELO
- CE\nChiusura sbarre stimata: 16:05:31 - 16:11:01\nTreni coinvolti nella ch
+ CE\nChiusura sbarre stimata: 16:06:36 - 16:12:06\nTreni coinvolti nella ch
  iusura:\n  - REG 17960 (BOLOGNA CENTRALE -> FERRARA) [Transito]\nRitardo m
  assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (32% tratta POGGIO RENATICO -> FERRARA\; 
+ : Transito stimato senza fermata (38% tratta POGGIO RENATICO -> FERRARA\; 
  pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CORONELLA
 STATUS:CONFIRMED
@@ -137,17 +121,17 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-17962--20261125-S05719@pl-tracker.local
-DTSTAMP:20261126T215722Z
-SEQUENCE:2
-DTSTART:20261126T160453Z
-DTEND:20261126T161023Z
-SUMMARY:[TRANSITO VELOCE] REG 17962 (BOLOGNA CENTRALE -> FERRARA) ore 17:09
+UID:train-17970--20261126-S05719@pl-tracker.local
+DTSTAMP:20261127T135355Z
+SEQUENCE:0
+DTSTART:20261127T200636Z
+DTEND:20261127T201206Z
+SUMMARY:[TRANSITO VELOCE] REG 17970 (BOLOGNA CENTRALE -> FERRARA) ore 21:10
 DESCRIPTION:Stazione/PL: CORONELLA (S05719)\nRegime chiusura: TRANSITO VELO
- CE\nChiusura sbarre stimata: 17:04:53 - 17:10:23\nTreni coinvolti nella ch
- iusura:\n  - REG 17962 (BOLOGNA CENTRALE -> FERRARA) [Transito]\nRitardo m
+ CE\nChiusura sbarre stimata: 21:06:36 - 21:12:06\nTreni coinvolti nella ch
+ iusura:\n  - REG 17970 (BOLOGNA CENTRALE -> FERRARA) [Transito]\nRitardo m
  assimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica
- : Transito stimato senza fermata (32% tratta POGGIO RENATICO -> FERRARA\; 
+ : Transito stimato senza fermata (38% tratta POGGIO RENATICO -> FERRARA\; 
  pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione CORONELLA
 STATUS:CONFIRMED

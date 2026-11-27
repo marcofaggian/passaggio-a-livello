@@ -9,26 +9,51 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:bc0412e04f52a1a36a1da8e4778a7b3f1fce0c552d99030ab5773653abb5
- f453
+X-CONTENT-HASH:7b53b73f6f274a3f9089fa674e40196e802acdbb1f310024b0cbc51ff630
+ bc13
 BEGIN:VEVENT
-UID:train-19343--20261125-S06006@pl-tracker.local
-DTSTAMP:20261126T215722Z
-SEQUENCE:2
-DTSTART:20261126T060630Z
-DTEND:20261126T061100Z
-SUMMARY:[FERMATA] REG 19343 (LA SPEZIA CENTRALE -> PISA CENTRALE) ore 07:10
-DESCRIPTION:Stazione/PL: ARCOLA (S06006)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 07:06:30 - 07:11:00\nTreni coinvolti nella chiusura:\n  
- - REG 19343 (LA SPEZIA CENTRALE -> PISA CENTRALE)\nRitardo massimo rilevat
- o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
- a traccia oraria regolare
+UID:train-19343--20261126-S06006@pl-tracker.local
+DTSTAMP:20261127T135355Z
+SEQUENCE:0
+DTSTART:20261127T061430Z
+DTEND:20261127T061930Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:14 - 07:19 (primo: REG 19343) (+8 
+ min)
+DESCRIPTION:Stazione/PL: ARCOLA (S06006)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 07:14:30 - 07:19:30\nTreni coinvolti
+  nella chiusura:\n  - REG 19343 (LA SPEZIA CENTRALE -> PISA CENTRALE) (+8m
+ )\n  - REG 19343 (LA SPEZIA CENTRALE -> PISA CENTRALE) (+8m)\nRitardo mass
+ imo rilevato: 8 min\nAffidabilità stima: 99%\nNota normativa/euristica: C
+ hiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inferio
+ re alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione ARCOLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-19349--20261126-S06006@pl-tracker.local
+DTSTAMP:20261127T135355Z
+SEQUENCE:0
+DTSTART:20261127T065405Z
+DTEND:20261127T065935Z
+SUMMARY:[TRANSITO VELOCE] REG 19349 (LA SPEZIA CENTRALE -> PISA CENTRALE) o
+ re 07:58 (+3 min)
+DESCRIPTION:Stazione/PL: ARCOLA (S06006)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 07:54:05 - 07:59:35\nTreni coinvolti nella chius
+ ura:\n  - REG 19349 (LA SPEZIA CENTRALE -> PISA CENTRALE) (+3m) [Transito]
+ \nRitardo massimo rilevato: 3 min\nAffidabilità stima: 78%\nNota normativ
+ a/euristica: Transito stimato senza fermata (72% tratta VEZZANO LIGURE -> 
+ SARZANA\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione ARCOLA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

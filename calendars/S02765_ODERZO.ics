@@ -9,28 +9,52 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:aab4ccfaeff065a2fddd31b55f7aef0191f20033c802ec1e5b1bee357983
- 44df
+X-CONTENT-HASH:ddc78e36739de1ec68f70dec1f32338bb25eb8dea72112d9ae47093944c1
+ 7032
 BEGIN:VEVENT
 UID:train-16483--20261126-S02765@pl-tracker.local
-DTSTAMP:20261127T040346Z
-SEQUENCE:0
+DTSTAMP:20261127T135355Z
+SEQUENCE:1
 DTSTART:20261127T062230Z
 DTEND:20261127T062700Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:22 - 07:27 (primo: REG 16483)
-DESCRIPTION:Stazione/PL: ODERZO (S02765)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 07:22:30 - 07:27:00\nTreni coinvolti
-  nella chiusura:\n  - REG 16483 (TREVISO CENTRALE -> PORTOGRUARO CAORLE)\n
-   - REG 16483 (TREVISO CENTRALE -> PORTOGRUARO CAORLE)\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 16483 (TREVISO CENTRALE -> PORTOGRUARO CAORLE) ore 07
+ :26
+DESCRIPTION:Stazione/PL: ODERZO (S02765)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 07:22:30 - 07:27:00\nTreni coinvolti nella chiusura:\n  
+ - REG 16483 (TREVISO CENTRALE -> PORTOGRUARO CAORLE)\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prevision
+ e da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione ODERZO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16485--20261126-S02765@pl-tracker.local-arr
+DTSTAMP:20261127T135355Z
+SEQUENCE:0
+DTSTART:20261127T072830Z
+DTEND:20261127T073630Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 08:28 - 08:36 (primo: REG 16485) (+5 
+ min)
+DESCRIPTION:Stazione/PL: ODERZO (S02765)\nRegime chiusura: CHIUSURA CONTINU
+ A - 4 TRENI\nChiusura sbarre stimata: 08:28:30 - 08:36:30\nTreni coinvolti
+  nella chiusura:\n  - REG 16485 (TREVISO CENTRALE -> PORTOGRUARO CAORLE) (
+ +5m) [Arrivo]\n  - REG 16485 (TREVISO CENTRALE -> PORTOGRUARO CAORLE) (+5m
+ ) [Arrivo]\n  - REG 16485 (TREVISO CENTRALE -> PORTOGRUARO CAORLE) (+5m) [
+ Partenza]\n  - REG 16485 (TREVISO CENTRALE -> PORTOGRUARO CAORLE) (+5m) [P
+ artenza]\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 99%\nNota 
+ normativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i
+  passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione ODERZO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

@@ -9,49 +9,74 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:27451209d9fe23443eab6d7820186f8313c7c0687cf22a84235ec14aafcc
- ac9b
+X-CONTENT-HASH:5fbaad261bebfcf579faefc4694db79bfa782cb89ced9ac54646504b5856
+ 7db0
 BEGIN:VEVENT
-UID:train-21594--20261126-S11856@pl-tracker.local
-DTSTAMP:20261127T040346Z
+UID:train-21594--20261126-S11856@pl-tracker.local-arr
+DTSTAMP:20261127T135355Z
 SEQUENCE:0
 DTSTART:20261127T081930Z
 DTEND:20261127T082400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:19 - 09:24 (primo: REG 21594)
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:19 - 09:24 (primo: REG 21594) (+8 
+ min)
 DESCRIPTION:Stazione/PL: FERRUZZANO (S11856)\nRegime chiusura: CHIUSURA CON
  TINUA - 2 TRENI\nChiusura sbarre stimata: 09:19:30 - 09:24:00\nTreni coinv
  olti nella chiusura:\n  - REG 21594 (REGGIO DI CALABRIA CENTRALE -> ROCCEL
- LA JONICA)\n  - REG 21594 (REGGIO DI CALABRIA CENTRALE -> ROCCELLA JONICA)
- \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota normativ
- a/euristica: Chiusura continua per 2 treni: intervallo utile tra i passagg
- i (0s) inferiore alla soglia minima di sgombero stradale (120s)
+ LA JONICA) (+8m) [Arrivo]\n  - REG 21594 (REGGIO DI CALABRIA CENTRALE -> R
+ OCCELLA JONICA) (+8m) [Arrivo]\nRitardo massimo rilevato: 8 min\nAffidabil
+ ità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: 
+ intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
+ ero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione FERRUZZANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21594--20261126-S11856@pl-tracker.local-dep
+DTSTAMP:20261127T135355Z
+SEQUENCE:0
+DTSTART:20261127T082830Z
+DTEND:20261127T083300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:28 - 09:33 (primo: REG 21594) (+8 
+ min)
+DESCRIPTION:Stazione/PL: FERRUZZANO (S11856)\nRegime chiusura: CHIUSURA CON
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 09:28:30 - 09:33:00\nTreni coinv
+ olti nella chiusura:\n  - REG 21594 (REGGIO DI CALABRIA CENTRALE -> ROCCEL
+ LA JONICA) (+8m) [Partenza]\n  - REG 21594 (REGGIO DI CALABRIA CENTRALE ->
+  ROCCELLA JONICA) (+8m) [Partenza]\nRitardo massimo rilevato: 8 min\nAffid
+ abilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 tre
+ ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
+ gombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione FERRUZZANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:8
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-5536--20261126-S11856@pl-tracker.local
-DTSTAMP:20261127T040346Z
-SEQUENCE:0
-DTSTART:20261127T165615Z
-DTEND:20261127T170145Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:56 - 18:01 (primo: REG 5536)
-DESCRIPTION:Stazione/PL: FERRUZZANO (S11856)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 17:56:15 - 18:01:45\nTreni coinv
- olti nella chiusura:\n  - REG 5536 (REGGIO DI CALABRIA CENTRALE -> CATANZA
- RO LIDO) [Transito]\n  - REG 5536 (REGGIO DI CALABRIA CENTRALE -> CATANZAR
- O LIDO) [Transito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 
- 78%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo u
- tile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale
-  (120s)
+DTSTAMP:20261127T135355Z
+SEQUENCE:1
+DTSTART:20261127T165445Z
+DTEND:20261127T170015Z
+SUMMARY:[TRANSITO VELOCE] REG 5536 (REGGIO DI CALABRIA CENTRALE -> CATANZAR
+ O LIDO) ore 17:59
+DESCRIPTION:Stazione/PL: FERRUZZANO (S11856)\nRegime chiusura: TRANSITO VEL
+ OCE\nChiusura sbarre stimata: 17:54:45 - 18:00:15\nTreni coinvolti nella c
+ hiusura:\n  - REG 5536 (REGGIO DI CALABRIA CENTRALE -> CATANZARO LIDO) [Tr
+ ansito]\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota n
+ ormativa/euristica: Transito stimato senza fermata (36% tratta BRANCALEONE
+  -> BIANCO\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione FERRUZZANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG

@@ -9,28 +9,51 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:b0f76ea71f78db91192acba18ef0a4b5a2c1cf6ebed780b262ec2cde54db
- 7d06
+X-CONTENT-HASH:3dc8a2ce45dc13edcd04a750d0fc6db24ca78aaa52818bd05a6a09c1e89c
+ 22c8
 BEGIN:VEVENT
 UID:train-3211--20261126-S00608@pl-tracker.local
-DTSTAMP:20261127T040346Z
-SEQUENCE:0
+DTSTAMP:20261127T135355Z
+SEQUENCE:1
 DTSTART:20261127T051730Z
 DTEND:20261127T052200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:17 - 06:22 (primo: REG 3211)
-DESCRIPTION:Stazione/PL: CENTALLO (S00608)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 06:17:30 - 06:22:00\nTreni coinvol
- ti nella chiusura:\n  - REG 3211 (TORINO PORTA NUOVA -> CUNEO)\n  - REG 32
- 11 (TORINO PORTA NUOVA -> CUNEO)\nRitardo massimo rilevato: 0 min\nAffidab
- ilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni
- : intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgo
- mbero stradale (120s)
+SUMMARY:[FERMATA] REG 3211 (TORINO PORTA NUOVA -> CUNEO) ore 06:21
+DESCRIPTION:Stazione/PL: CENTALLO (S00608)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 06:17:30 - 06:22:00\nTreni coinvolti nella chiusura:\n
+   - REG 3211 (TORINO PORTA NUOVA -> CUNEO)\nRitardo massimo rilevato: 0 mi
+ n\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tracc
+ ia oraria regolare
 LOCATION:Passaggio a Livello / Stazione CENTALLO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3232--20261126-S00608@pl-tracker.local-arr
+DTSTAMP:20261127T135355Z
+SEQUENCE:0
+DTSTART:20261127T123130Z
+DTEND:20261127T124130Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 13:31 - 13:41 (primo: REG 3232) (+6 m
+ in)
+DESCRIPTION:Stazione/PL: CENTALLO (S00608)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 4 TRENI\nChiusura sbarre stimata: 13:31:30 - 13:41:30\nTreni coinvol
+ ti nella chiusura:\n  - REG 3232 (CUNEO -> TORINO PORTA NUOVA) (+6m) [Arri
+ vo]\n  - REG 3232 (CUNEO -> TORINO PORTA NUOVA) (+6m) [Arrivo]\n  - REG 32
+ 32 (CUNEO -> TORINO PORTA NUOVA) (+6m) [Partenza]\n  - REG 3232 (CUNEO -> 
+ TORINO PORTA NUOVA) (+6m) [Partenza]\nRitardo massimo rilevato: 6 min\nAff
+ idabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 4 t
+ reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
+  sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CENTALLO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR
