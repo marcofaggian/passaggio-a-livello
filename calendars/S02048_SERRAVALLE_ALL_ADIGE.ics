@@ -9,108 +9,197 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:43986d4f4283a2d62d9caba89a106567045f8be553b6245f1e3984c05821
- 0436
+X-CONTENT-HASH:ec8564c04aa0aed7c76dde38f5eafcd488ce0fdd4c3760d88566eeb98eee
+ 0f56
 BEGIN:VEVENT
-UID:train-16664--20261127-S02048@pl-tracker.local
-DTSTAMP:20261128T041740Z
+UID:train-3427--20261127-S02048@pl-tracker.local
+DTSTAMP:20261128T132805Z
 SEQUENCE:0
-DTSTART:20261128T055130Z
-DTEND:20261128T055600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:51 - 06:56 (primo: REG 16664)
-DESCRIPTION:Stazione/PL: SERRAVALLE ALL'ADIGE (S02048)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:51:30 - 06:56:00\nT
- reni coinvolti nella chiusura:\n  - REG 16664 (VERONA PORTA NUOVA -> BOLZA
- NO)\n  - REG 16664 (VERONA PORTA NUOVA -> BOLZANO)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura co
- ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
- glia minima di sgombero stradale (120s)
+DTSTART:20261128T045350Z
+DTEND:20261128T045920Z
+SUMMARY:[TRANSITO VELOCE] REG 3427 (BOLZANO -> BOLOGNA CENTRALE) ore 05:58 
+ (+1 min)
+DESCRIPTION:Stazione/PL: SERRAVALLE ALL'ADIGE (S02048)\nRegime chiusura: TR
+ ANSITO VELOCE\nChiusura sbarre stimata: 05:53:50 - 05:59:20\nTreni coinvol
+ ti nella chiusura:\n  - REG 3427 (BOLZANO -> BOLOGNA CENTRALE) (+1m) [Tran
+ sito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota nor
+ mativa/euristica: Transito stimato senza fermata (71% tratta ROVERETO -> A
+ LA\; pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SERRAVALLE ALL'ADIGE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16664--20261127-S02048@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T055130Z
+DTEND:20261128T055600Z
+SUMMARY:[FERMATA] REG 16664 (VERONA PORTA NUOVA -> BOLZANO) ore 06:55
+DESCRIPTION:Stazione/PL: SERRAVALLE ALL'ADIGE (S02048)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 06:51:30 - 06:56:00\nTreni coinvolti nella
+  chiusura:\n  - REG 16664 (VERONA PORTA NUOVA -> BOLZANO)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
+ isione da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione SERRAVALLE ALL'ADIGE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16668--20261127-S02048@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T075130Z
-DTEND:20261128T075600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:51 - 08:56 (primo: REG 16668)
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T075730Z
+DTEND:20261128T080300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:57 - 09:03 (primo: REG 16668) (+6 
+ min)
 DESCRIPTION:Stazione/PL: SERRAVALLE ALL'ADIGE (S02048)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:51:30 - 08:56:00\nT
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 08:57:30 - 09:03:00\nT
  reni coinvolti nella chiusura:\n  - REG 16668 (VERONA PORTA NUOVA -> BOLZA
- NO)\n  - REG 16668 (VERONA PORTA NUOVA -> BOLZANO)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura co
- ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
- glia minima di sgombero stradale (120s)
+ NO) (+6m)\n  - REG 16668 (VERONA PORTA NUOVA -> BOLZANO) (+6m)\nRitardo ma
+ ssimo rilevato: 6 min\nAffidabilità stima: 99%\nNota normativa/euristica:
+  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
+ iore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SERRAVALLE ALL'ADIGE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16684--20261127-S02048@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
 DTSTART:20261128T105130Z
 DTEND:20261128T105600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:51 - 11:56 (primo: REG 16684)
-DESCRIPTION:Stazione/PL: SERRAVALLE ALL'ADIGE (S02048)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:51:30 - 11:56:00\nT
- reni coinvolti nella chiusura:\n  - REG 16684 (VERONA PORTA NUOVA -> BOLZA
- NO)\n  - REG 16684 (VERONA PORTA NUOVA -> BOLZANO)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura co
- ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
- glia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 16684 (VERONA PORTA NUOVA -> BOLZANO) ore 11:55
+DESCRIPTION:Stazione/PL: SERRAVALLE ALL'ADIGE (S02048)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 11:51:30 - 11:56:00\nTreni coinvolti nella
+  chiusura:\n  - REG 16684 (VERONA PORTA NUOVA -> BOLZANO)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
+ isione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione SERRAVALLE ALL'ADIGE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3840--20261127-S02048@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T112520Z
-DTEND:20261128T113050Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:25 - 12:30 (primo: REG 3840)
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T112502Z
+DTEND:20261128T113032Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:25 - 12:30 (primo: REG 3840) (+1 m
+ in)
 DESCRIPTION:Stazione/PL: SERRAVALLE ALL'ADIGE (S02048)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:25:20 - 12:30:50\nT
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:25:02 - 12:30:32\nT
  reni coinvolti nella chiusura:\n  - REG 3840 (BOLOGNA CENTRALE -> BRENNERO
- ) [Transito]\n  - REG 3840 (BOLOGNA CENTRALE -> BRENNERO) [Transito]\nRita
- rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
-  inferiore alla soglia minima di sgombero stradale (120s)
+ ) (+1m) [Transito]\n  - REG 3840 (BOLOGNA CENTRALE -> BRENNERO) (+1m) [Tra
+ nsito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i p
+ assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione SERRAVALLE ALL'ADIGE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-3844--20261127-S02048@pl-tracker.local
-DTSTAMP:20261128T041740Z
+UID:train-3841--20261127-S02048@pl-tracker.local
+DTSTAMP:20261128T132805Z
 SEQUENCE:0
-DTSTART:20261128T152520Z
-DTEND:20261128T153050Z
+DTSTART:20261128T122958Z
+DTEND:20261128T123528Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:29 - 13:35 (primo: REG 3841) (+1 m
+ in)
+DESCRIPTION:Stazione/PL: SERRAVALLE ALL'ADIGE (S02048)\nRegime chiusura: CH
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:29:58 - 13:35:28\nT
+ reni coinvolti nella chiusura:\n  - REG 3841 (BOLZANO -> BOLOGNA CENTRALE)
+  (+1m) [Transito]\n  - REG 3841 (BOLZANO -> BOLOGNA CENTRALE) (+1m) [Trans
+ ito]\nRitardo massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota norm
+ ativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i pas
+ saggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SERRAVALLE ALL'ADIGE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16679--20261127-S02048@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T124855Z
+DTEND:20261128T125425Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:48 - 13:54 (primo: REG 16679) (+9 
+ min)
+DESCRIPTION:Stazione/PL: SERRAVALLE ALL'ADIGE (S02048)\nRegime chiusura: CH
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:48:55 - 13:54:25\nT
+ reni coinvolti nella chiusura:\n  - REG 16679 (BOLZANO -> VERONA PORTA NUO
+ VA) (+9m) [Transito]\n  - REG 16679 (BOLZANO -> VERONA PORTA NUOVA) (+9m) 
+ [Transito]\nRitardo massimo rilevato: 9 min\nAffidabilità stima: 78%\nNot
+ a normativa/euristica: Chiusura continua per 2 treni: intervallo utile tra
+  i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SERRAVALLE ALL'ADIGE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:9
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16679--20261127-S02048@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T125630Z
+DTEND:20261128T130130Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:56 - 14:01 (primo: REG 16679) (+2 
+ min)
+DESCRIPTION:Stazione/PL: SERRAVALLE ALL'ADIGE (S02048)\nRegime chiusura: CH
+ IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 13:56:30 - 14:01:30\nT
+ reni coinvolti nella chiusura:\n  - REG 16679 (BOLZANO -> VERONA PORTA NUO
+ VA) (+2m)\n  - REG 16679 (BOLZANO -> VERONA PORTA NUOVA) (+2m)\nRitardo ma
+ ssimo rilevato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica:
+  Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) infer
+ iore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione SERRAVALLE ALL'ADIGE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-3844--20261127-S02048@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T152501Z
+DTEND:20261128T153031Z
 SUMMARY:[TRANSITO VELOCE] REG 3844 (BOLOGNA CENTRALE -> BRENNERO) ore 16:29
 DESCRIPTION:Stazione/PL: SERRAVALLE ALL'ADIGE (S02048)\nRegime chiusura: TR
- ANSITO VELOCE\nChiusura sbarre stimata: 16:25:20 - 16:30:50\nTreni coinvol
+ ANSITO VELOCE\nChiusura sbarre stimata: 16:25:01 - 16:30:31\nTreni coinvol
  ti nella chiusura:\n  - REG 3844 (BOLOGNA CENTRALE -> BRENNERO) [Transito]
  \nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativ
- a/euristica: Transito stimato senza fermata (35% tratta ALA -> ROVERETO\; 
+ a/euristica: Transito stimato senza fermata (33% tratta ALA -> ROVERETO\; 
  pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SERRAVALLE ALL'ADIGE
 STATUS:CONFIRMED
@@ -122,44 +211,41 @@ X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16708--20261127-S02048@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
 DTSTART:20261128T155130Z
 DTEND:20261128T155600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:51 - 16:56 (primo: REG 16708)
-DESCRIPTION:Stazione/PL: SERRAVALLE ALL'ADIGE (S02048)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:51:30 - 16:56:00\nT
- reni coinvolti nella chiusura:\n  - REG 16708 (VERONA PORTA NUOVA -> BOLZA
- NO)\n  - REG 16708 (VERONA PORTA NUOVA -> BOLZANO)\nRitardo massimo rileva
- to: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura co
- ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
- glia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 16708 (VERONA PORTA NUOVA -> BOLZANO) ore 16:55
+DESCRIPTION:Stazione/PL: SERRAVALLE ALL'ADIGE (S02048)\nRegime chiusura: FE
+ RMATA\nChiusura sbarre stimata: 16:51:30 - 16:56:00\nTreni coinvolti nella
+  chiusura:\n  - REG 16708 (VERONA PORTA NUOVA -> BOLZANO)\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Prev
+ isione da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione SERRAVALLE ALL'ADIGE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-3760--20261127-S02048@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T213220Z
-DTEND:20261128T213750Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:32 - 22:37 (primo: REG 3760)
-DESCRIPTION:Stazione/PL: SERRAVALLE ALL'ADIGE (S02048)\nRegime chiusura: CH
- IUSURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 22:32:20 - 22:37:50\nT
- reni coinvolti nella chiusura:\n  - REG 3760 (BOLOGNA CENTRALE -> BOLZANO)
-  [Transito]\n  - REG 3760 (BOLOGNA CENTRALE -> BOLZANO) [Transito]\nRitard
- o massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/eurist
- ica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) i
- nferiore alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T213201Z
+DTEND:20261128T213731Z
+SUMMARY:[TRANSITO VELOCE] REG 3760 (BOLOGNA CENTRALE -> BOLZANO) ore 22:36
+DESCRIPTION:Stazione/PL: SERRAVALLE ALL'ADIGE (S02048)\nRegime chiusura: TR
+ ANSITO VELOCE\nChiusura sbarre stimata: 22:32:01 - 22:37:31\nTreni coinvol
+ ti nella chiusura:\n  - REG 3760 (BOLOGNA CENTRALE -> BOLZANO) [Transito]\
+ nRitardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa
+ /euristica: Transito stimato senza fermata (33% tratta ALA -> ROVERETO\; p
+ edale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione SERRAVALLE ALL'ADIGE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG

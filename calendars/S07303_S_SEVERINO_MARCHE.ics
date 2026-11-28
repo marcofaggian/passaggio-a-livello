@@ -9,25 +9,53 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:490fd6f96dec1bf411129e6ec80ab810db7bc76c093fd1dc523f40a4b8d2
- 56c3
+X-CONTENT-HASH:fef7ee20e5283ed910696068c1f64924c4b613a9d0261cf38b6c60d5fa34
+ 3faf
 BEGIN:VEVENT
-UID:train-23861--20261126-S07303@pl-tracker.local
-DTSTAMP:20261127T223343Z
-SEQUENCE:1
-DTSTART:20261127T152330Z
-DTEND:20261127T152800Z
-SUMMARY:[FERMATA] REG 23861 (ANCONA -> FABRIANO) ore 16:27
-DESCRIPTION:Stazione/PL: S.SEVERINO MARCHE (S07303)\nRegime chiusura: FERMA
- TA\nChiusura sbarre stimata: 16:23:30 - 16:28:00\nTreni coinvolti nella ch
- iusura:\n  - REG 23861 (ANCONA -> FABRIANO)\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da trac
- cia oraria regolare
+UID:train-23849--20261127-S07303@pl-tracker.local-arr
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T124930Z
+DTEND:20261128T130000Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 13:49 - 14:00 (primo: REG 23849) (+5 
+ min)
+DESCRIPTION:Stazione/PL: S.SEVERINO MARCHE (S07303)\nRegime chiusura: CHIUS
+ URA CONTINUA - 4 TRENI\nChiusura sbarre stimata: 13:49:30 - 14:00:00\nTren
+ i coinvolti nella chiusura:\n  - REG 23849 (ANCONA -> FABRIANO) (+5m) [Arr
+ ivo]\n  - REG 23849 (ANCONA -> FABRIANO) (+5m) [Arrivo]\n  - REG 23849 (AN
+ CONA -> FABRIANO) (+5m) [Partenza]\n  - REG 23849 (ANCONA -> FABRIANO) (+5
+ m) [Partenza]\nRitardo massimo rilevato: 5 min\nAffidabilità stima: 99%\n
+ Nota normativa/euristica: Chiusura continua per 4 treni: intervallo utile 
+ tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (120
+ s)
 LOCATION:Passaggio a Livello / Stazione S.SEVERINO MARCHE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23855--20261127-S07303@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T133330Z
+DTEND:20261128T133800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:33 - 14:38 (primo: REG 23855) (+5 
+ min)
+DESCRIPTION:Stazione/PL: S.SEVERINO MARCHE (S07303)\nRegime chiusura: CHIUS
+ URA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 14:33:30 - 14:38:00\nTren
+ i coinvolti nella chiusura:\n  - REG 23855 (ANCONA -> FABRIANO) (+5m)\n  -
+  REG 23855 (ANCONA -> FABRIANO) (+5m)\nRitardo massimo rilevato: 5 min\nAf
+ fidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 
+ treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima d
+ i sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione S.SEVERINO MARCHE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT

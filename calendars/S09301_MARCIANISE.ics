@@ -9,86 +9,176 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:8f42f1ee786008c9ff733d581f5e6f9b8e72e0c0cd40ab79fa02e0e6f36f
- a907
+X-CONTENT-HASH:54c325cc3294a085c8b2a4ea0631f7e111285e835ee51f6c7666ac8ba85a
+ 28cd
 BEGIN:VEVENT
 UID:train-21140--20261127-S09301@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
 DTSTART:20261128T040230Z
 DTEND:20261128T040730Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:02 - 05:07 (primo: REG 21140) (+3 
+SUMMARY:[FERMATA] REG 21140 (CASERTA -> NAPOLI CENTRALE) ore 05:06 (+3 min)
+DESCRIPTION:Stazione/PL: MARCIANISE (S09301)\nRegime chiusura: FERMATA\nChi
+ usura sbarre stimata: 05:02:30 - 05:07:30\nTreni coinvolti nella chiusura:
+ \n  - REG 21140 (CASERTA -> NAPOLI CENTRALE) (+3m)\nRitardo massimo rileva
+ to: 3 min\nAffidabilità stima: 99%\nNota normativa/euristica: Rilevamento
+  reale da circuito di binario
+LOCATION:Passaggio a Livello / Stazione MARCIANISE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21146--20261127-S09301@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T055530Z
+DTEND:20261128T060100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:55 - 07:01 (primo: REG 21146) (+2 
  min)
 DESCRIPTION:Stazione/PL: MARCIANISE (S09301)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 05:02:30 - 05:07:30\nTreni coinv
- olti nella chiusura:\n  - REG 21140 (CASERTA -> NAPOLI CENTRALE) (+3m)\n  
- - REG 21140 (CASERTA -> NAPOLI CENTRALE) (+3m)\nRitardo massimo rilevato: 
- 3 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura contin
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 06:55:30 - 07:01:00\nTreni coinv
+ olti nella chiusura:\n  - REG 21146 (CASERTA -> NAPOLI CENTRALE) (+2m)\n  
+ - REG 21146 (CASERTA -> NAPOLI CENTRALE) (+2m)\nRitardo massimo rilevato: 
+ 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura contin
  ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
   minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MARCIANISE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:3
+X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-9511--20261127-S09301@pl-tracker.local
-DTSTAMP:20261128T041740Z
+UID:train-8303--20261127-S09301@pl-tracker.local
+DTSTAMP:20261128T132805Z
 SEQUENCE:0
-DTSTART:20261128T095116Z
-DTEND:20261128T095646Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:51 - 10:56 (primo: TRENO 9511)
-DESCRIPTION:Stazione/PL: MARCIANISE (S09301)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 10:51:16 - 10:56:46\nTreni coinv
- olti nella chiusura:\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) [Transito]
- \n  - TRENO 9511 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massimo ri
- levato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusur
- a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
- a soglia minima di sgombero stradale (120s)
+DTSTART:20261128T074527Z
+DTEND:20261128T075057Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8303 (ROMA TERMINI -> LECCE) ore 08:49 (+3 
+ min)
+DESCRIPTION:Stazione/PL: MARCIANISE (S09301)\nRegime chiusura: TRANSITO VEL
+ OCE\nChiusura sbarre stimata: 08:45:27 - 08:50:57\nTreni coinvolti nella c
+ hiusura:\n  - TRENO 8303 (ROMA TERMINI -> LECCE) (+3m) [Transito]\nRitardo
+  massimo rilevato: 3 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Transito stimato senza fermata (90% tratta ROMA TERMINI -> CASERTA\; p
+ edale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione MARCIANISE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9511--20261127-S09301@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T095006Z
+DTEND:20261128T100230Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 10:50 - 11:02 (primo: TRENO 9511) (+2
+  min)
+DESCRIPTION:Stazione/PL: MARCIANISE (S09301)\nRegime chiusura: CHIUSURA CON
+ TINUA - 4 TRENI\nChiusura sbarre stimata: 10:50:06 - 11:02:30\nTreni coinv
+ olti nella chiusura:\n  - TRENO 9511 (MILANO CENTRALE -> LECCE) [Transito]
+ \n  - TRENO 9511 (MILANO CENTRALE -> LECCE) [Transito]\n  - REG 21152 (CAS
+ ERTA -> NAPOLI CENTRALE) (+2m)\n  - REG 21152 (CASERTA -> NAPOLI CENTRALE)
+  (+2m)\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 78%\nNota no
+ rmativa/euristica: Chiusura continua per 4 treni: intervallo utile tra i p
+ assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MARCIANISE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8312--20261127-S09301@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T131158Z
-DTEND:20261128T131728Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:11 - 14:17 (primo: TRENO 8312)
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T131132Z
+DTEND:20261128T132000Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 14:11 - 14:20 (primo: TRENO 8312) (+2
+  min)
 DESCRIPTION:Stazione/PL: MARCIANISE (S09301)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 14:11:58 - 14:17:28\nTreni coinv
+ TINUA - 3 TRENI\nChiusura sbarre stimata: 14:11:32 - 14:20:00\nTreni coinv
  olti nella chiusura:\n  - TRENO 8312 (LECCE -> ROMA TERMINI) [Transito]\n 
-  - TRENO 8312 (LECCE -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato
- : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
- inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
- ia minima di sgombero stradale (120s)
+  - REG 21158 (CASERTA -> NAPOLI CENTRALE) (+2m)\n  - REG 21158 (CASERTA ->
+  NAPOLI CENTRALE) (+2m)\nRitardo massimo rilevato: 2 min\nAffidabilità st
+ ima: 78%\nNota normativa/euristica: Chiusura continua per 3 treni: interva
+ llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
+ adale (120s)
+LOCATION:Passaggio a Livello / Stazione MARCIANISE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23349--20261127-S09301@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T134707Z
+DTEND:20261128T135237Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:47 - 14:52 (primo: REG 23349)
+DESCRIPTION:Stazione/PL: MARCIANISE (S09301)\nRegime chiusura: CHIUSURA CON
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 14:47:07 - 14:52:37\nTreni coinv
+ olti nella chiusura:\n  - REG 23349 (BOIANO -> ROMA TIBURTINA) [Transito]\
+ n  - REG 23349 (BOIANO -> ROMA TIBURTINA) [Transito]\nRitardo massimo rile
+ vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
+ continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
+ soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione MARCIANISE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21160--20261127-S09301@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T141230Z
+DTEND:20261128T141700Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:12 - 15:17 (primo: REG 21160)
+DESCRIPTION:Stazione/PL: MARCIANISE (S09301)\nRegime chiusura: CHIUSURA CON
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 15:12:30 - 15:17:00\nTreni coinv
+ olti nella chiusura:\n  - REG 21160 (CASERTA -> AVERSA)\n  - REG 21160 (CA
+ SERTA -> AVERSA)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90
+ %\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo uti
+ le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
+ 120s)
+LOCATION:Passaggio a Livello / Stazione MARCIANISE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8314--20261127-S09301@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T144911Z
-DTEND:20261128T145441Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:49 - 15:54 (primo: TRENO 8314)
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T144844Z
+DTEND:20261128T145832Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:48 - 15:58 (primo: TRENO 8314)
 DESCRIPTION:Stazione/PL: MARCIANISE (S09301)\nRegime chiusura: CHIUSURA CON
- TINUA - 2 TRENI\nChiusura sbarre stimata: 15:49:11 - 15:54:41\nTreni coinv
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 15:48:44 - 15:58:32\nTreni coinv
  olti nella chiusura:\n  - TRENO 8314 (LECCE -> ROMA TERMINI) [Transito]\n 
-  - TRENO 8314 (LECCE -> ROMA TERMINI) [Transito]\nRitardo massimo rilevato
+  - TRENO 8315 (ROMA TERMINI -> LECCE) [Transito]\nRitardo massimo rilevato
  : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
  inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
  ia minima di sgombero stradale (120s)
@@ -102,8 +192,8 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21197--20261127-S09301@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
 DTSTART:20261128T150330Z
 DTEND:20261128T150800Z
 SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:03 - 16:08 (primo: REG 21197)
@@ -121,5 +211,27 @@ CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9560--20261127-S09301@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T163651Z
+DTEND:20261128T164221Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:36 - 17:42 (primo: TRENO 9560)
+DESCRIPTION:Stazione/PL: MARCIANISE (S09301)\nRegime chiusura: CHIUSURA CON
+ TINUA - 2 TRENI\nChiusura sbarre stimata: 17:36:51 - 17:42:21\nTreni coinv
+ olti nella chiusura:\n  - TRENO 9560 (LECCE -> MILANO CENTRALE) [Transito]
+ \n  - TRENO 9560 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massimo ri
+ levato: -3 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusu
+ ra continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore al
+ la soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione MARCIANISE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-3
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 END:VCALENDAR

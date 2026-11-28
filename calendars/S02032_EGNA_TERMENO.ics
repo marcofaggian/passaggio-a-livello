@@ -9,92 +9,179 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:6f39b83ed3d0bad5b8bbfd58169a4c7e99ab7a3b65291177551ec7122756
- bc1c
+X-CONTENT-HASH:636b3a104143431acfc370139c5ff4aedb87cfd88a45e30a0dd9ce54b648
+ e05a
 BEGIN:VEVENT
 UID:train-16664--20261127-S02032@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T065630Z
-DTEND:20261128T070100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 07:56 - 08:01 (primo: REG 16664)
-DESCRIPTION:Stazione/PL: EGNA-TERMENO (S02032)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 07:56:30 - 08:01:00\nTreni coi
- nvolti nella chiusura:\n  - REG 16664 (VERONA PORTA NUOVA -> BOLZANO)\n  -
-  REG 16664 (VERONA PORTA NUOVA -> BOLZANO)\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
- er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T064500Z
+DTEND:20261128T065030Z
+SUMMARY:[TRANSITO VELOCE] REG 16664 (VERONA PORTA NUOVA -> BOLZANO) ore 07:
+ 49
+DESCRIPTION:Stazione/PL: EGNA-TERMENO (S02032)\nRegime chiusura: TRANSITO V
+ ELOCE\nChiusura sbarre stimata: 07:45:00 - 07:50:30\nTreni coinvolti nella
+  chiusura:\n  - REG 16664 (VERONA PORTA NUOVA -> BOLZANO) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Transito stimato senza fermata (71% tratta MEZZOCORONA -> SALORNO\;
+  pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione EGNA-TERMENO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16664--20261127-S02032@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T065630Z
+DTEND:20261128T070100Z
+SUMMARY:[FERMATA] REG 16664 (VERONA PORTA NUOVA -> BOLZANO) ore 08:00
+DESCRIPTION:Stazione/PL: EGNA-TERMENO (S02032)\nRegime chiusura: FERMATA\nC
+ hiusura sbarre stimata: 07:56:30 - 08:01:00\nTreni coinvolti nella chiusur
+ a:\n  - REG 16664 (VERONA PORTA NUOVA -> BOLZANO)\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
+ a traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione EGNA-TERMENO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16668--20261127-S02032@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T085630Z
-DTEND:20261128T090100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:56 - 10:01 (primo: REG 16668)
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T084817Z
+DTEND:20261128T085347Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:48 - 09:53 (primo: REG 16668)
 DESCRIPTION:Stazione/PL: EGNA-TERMENO (S02032)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:56:30 - 10:01:00\nTreni coi
- nvolti nella chiusura:\n  - REG 16668 (VERONA PORTA NUOVA -> BOLZANO)\n  -
-  REG 16668 (VERONA PORTA NUOVA -> BOLZANO)\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
- er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:48:17 - 09:53:47\nTreni coi
+ nvolti nella chiusura:\n  - REG 16668 (VERONA PORTA NUOVA -> BOLZANO) [Tra
+ nsito]\n  - REG 16668 (VERONA PORTA NUOVA -> BOLZANO) [Transito]\nRitardo 
+ massimo rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/euristi
+ ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
+ feriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione EGNA-TERMENO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16668--20261127-S02032@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T085700Z
+DTEND:20261128T090330Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:57 - 10:03 (primo: REG 16668) (+2 
+ min)
+DESCRIPTION:Stazione/PL: EGNA-TERMENO (S02032)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:57:00 - 10:03:30\nTreni coi
+ nvolti nella chiusura:\n  - REG 16668 (VERONA PORTA NUOVA -> BOLZANO) (+2m
+ )\n  - REG 16668 (VERONA PORTA NUOVA -> BOLZANO) (+2m)\nRitardo massimo ri
+ levato: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusur
+ a continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore all
+ a soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione EGNA-TERMENO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16684--20261127-S02032@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T115630Z
-DTEND:20261128T120100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:56 - 13:01 (primo: REG 16684)
-DESCRIPTION:Stazione/PL: EGNA-TERMENO (S02032)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:56:30 - 13:01:00\nTreni coi
- nvolti nella chiusura:\n  - REG 16684 (VERONA PORTA NUOVA -> BOLZANO)\n  -
-  REG 16684 (VERONA PORTA NUOVA -> BOLZANO)\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
- er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T114500Z
+DTEND:20261128T115030Z
+SUMMARY:[TRANSITO VELOCE] REG 16684 (VERONA PORTA NUOVA -> BOLZANO) ore 12:
+ 49
+DESCRIPTION:Stazione/PL: EGNA-TERMENO (S02032)\nRegime chiusura: TRANSITO V
+ ELOCE\nChiusura sbarre stimata: 12:45:00 - 12:50:30\nTreni coinvolti nella
+  chiusura:\n  - REG 16684 (VERONA PORTA NUOVA -> BOLZANO) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Transito stimato senza fermata (71% tratta MEZZOCORONA -> SALORNO\;
+  pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione EGNA-TERMENO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16684--20261127-S02032@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T115630Z
+DTEND:20261128T120730Z
+SUMMARY:[CHIUSURA CONTINUA - 3 TRENI] 12:56 - 13:07 (primo: REG 16684) (+6 
+ min)
+DESCRIPTION:Stazione/PL: EGNA-TERMENO (S02032)\nRegime chiusura: CHIUSURA C
+ ONTINUA - 3 TRENI\nChiusura sbarre stimata: 12:56:30 - 13:07:30\nTreni coi
+ nvolti nella chiusura:\n  - REG 16684 (VERONA PORTA NUOVA -> BOLZANO)\n  -
+  REG 16679 (BOLZANO -> VERONA PORTA NUOVA) (+6m)\n  - REG 16679 (BOLZANO -
+ > VERONA PORTA NUOVA) (+6m)\nRitardo massimo rilevato: 6 min\nAffidabilit
+ à stima: 90%\nNota normativa/euristica: Chiusura continua per 3 treni: in
+ tervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomber
+ o stradale (120s)
+LOCATION:Passaggio a Livello / Stazione EGNA-TERMENO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 3 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-16708--20261127-S02032@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T165630Z
-DTEND:20261128T170100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:56 - 18:01 (primo: REG 16708)
-DESCRIPTION:Stazione/PL: EGNA-TERMENO (S02032)\nRegime chiusura: CHIUSURA C
- ONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:56:30 - 18:01:00\nTreni coi
- nvolti nella chiusura:\n  - REG 16708 (VERONA PORTA NUOVA -> BOLZANO)\n  -
-  REG 16708 (VERONA PORTA NUOVA -> BOLZANO)\nRitardo massimo rilevato: 0 mi
- n\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua p
- er 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia min
- ima di sgombero stradale (120s)
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T164500Z
+DTEND:20261128T165030Z
+SUMMARY:[TRANSITO VELOCE] REG 16708 (VERONA PORTA NUOVA -> BOLZANO) ore 17:
+ 49
+DESCRIPTION:Stazione/PL: EGNA-TERMENO (S02032)\nRegime chiusura: TRANSITO V
+ ELOCE\nChiusura sbarre stimata: 17:45:00 - 17:50:30\nTreni coinvolti nella
+  chiusura:\n  - REG 16708 (VERONA PORTA NUOVA -> BOLZANO) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Transito stimato senza fermata (71% tratta MEZZOCORONA -> SALORNO\;
+  pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione EGNA-TERMENO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-16708--20261127-S02032@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T165630Z
+DTEND:20261128T170100Z
+SUMMARY:[FERMATA] REG 16708 (VERONA PORTA NUOVA -> BOLZANO) ore 18:00
+DESCRIPTION:Stazione/PL: EGNA-TERMENO (S02032)\nRegime chiusura: FERMATA\nC
+ hiusura sbarre stimata: 17:56:30 - 18:01:00\nTreni coinvolti nella chiusur
+ a:\n  - REG 16708 (VERONA PORTA NUOVA -> BOLZANO)\nRitardo massimo rilevat
+ o: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione d
+ a traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione EGNA-TERMENO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

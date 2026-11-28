@@ -9,21 +9,81 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:e1b9cbf66efc9c095bf7f3b8c436c8557c8006a04cef65f61175a8308d84
- d6d6
+X-CONTENT-HASH:96afbb8de3027c06e9d1b69d1b1657a52740bf37298fa6722a68c4cae8a7
+ c117
 BEGIN:VEVENT
 UID:train-17652--20261127-S05114@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
 DTSTART:20261128T042600Z
 DTEND:20261128T043030Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:26 - 05:30 (primo: REG 17652) (+1 
+SUMMARY:[FERMATA] REG 17652 (PORRETTA  TERME -> PIANORO) ore 05:29 (+1 min)
+DESCRIPTION:Stazione/PL: PIAN DI VENOLA (S05114)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 05:26:00 - 05:30:30\nTreni coinvolti nella chius
+ ura:\n  - REG 17652 (PORRETTA  TERME -> PIANORO) (+1m)\nRitardo massimo ri
+ levato: 1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsi
+ one con ritardo propagato (+1 min)
+LOCATION:Passaggio a Livello / Stazione PIAN DI VENOLA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17654--20261127-S05114@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T045900Z
+DTEND:20261128T050330Z
+SUMMARY:[FERMATA] REG 17654 (PORRETTA  TERME -> PIANORO) ore 06:02
+DESCRIPTION:Stazione/PL: PIAN DI VENOLA (S05114)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 05:59:00 - 06:03:30\nTreni coinvolti nella chius
+ ura:\n  - REG 17654 (PORRETTA  TERME -> PIANORO)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da
+  traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PIAN DI VENOLA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17658--20261127-S05114@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T055600Z
+DTEND:20261128T060030Z
+SUMMARY:[FERMATA] REG 17658 (PORRETTA  TERME -> PIANORO) ore 06:59
+DESCRIPTION:Stazione/PL: PIAN DI VENOLA (S05114)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 06:56:00 - 07:00:30\nTreni coinvolti nella chius
+ ura:\n  - REG 17658 (PORRETTA  TERME -> PIANORO)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da
+  traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PIAN DI VENOLA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17748--20261127-S05114@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T095330Z
+DTEND:20261128T095800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:53 - 10:58 (primo: REG 17748) (+1 
  min)
 DESCRIPTION:Stazione/PL: PIAN DI VENOLA (S05114)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:26:00 - 05:30:30\nTreni c
- oinvolti nella chiusura:\n  - REG 17652 (PORRETTA  TERME -> PIANORO) (+1m)
- \n  - REG 17652 (PORRETTA  TERME -> PIANORO) (+1m)\nRitardo massimo rileva
- to: 1 min\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura co
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 10:53:30 - 10:58:00\nTreni c
+ oinvolti nella chiusura:\n  - REG 17748 (PIANORO -> PORRETTA  TERME) (+1m)
+ \n  - REG 17748 (PIANORO -> PORRETTA  TERME) (+1m)\nRitardo massimo rileva
+ to: 1 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura co
  ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
  glia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PIAN DI VENOLA
@@ -31,86 +91,83 @@ STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:1
-X-PL-CONFIDENCE:0.90
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-17654--20261127-S05114@pl-tracker.local
-DTSTAMP:20261128T041740Z
+UID:train-17674--20261127-S05114@pl-tracker.local
+DTSTAMP:20261128T132805Z
 SEQUENCE:0
-DTSTART:20261128T045900Z
-DTEND:20261128T050330Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:59 - 06:03 (primo: REG 17654)
+DTSTART:20261128T100300Z
+DTEND:20261128T100730Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:03 - 11:07 (primo: REG 17674) (+2 
+ min)
 DESCRIPTION:Stazione/PL: PIAN DI VENOLA (S05114)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 05:59:00 - 06:03:30\nTreni c
- oinvolti nella chiusura:\n  - REG 17654 (PORRETTA  TERME -> PIANORO)\n  - 
- REG 17654 (PORRETTA  TERME -> PIANORO)\nRitardo massimo rilevato: 0 min\nA
- ffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2
-  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
- di sgombero stradale (120s)
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:03:00 - 11:07:30\nTreni c
+ oinvolti nella chiusura:\n  - REG 17674 (PORRETTA  TERME -> PIANORO) (+2m)
+ \n  - REG 17674 (PORRETTA  TERME -> PIANORO) (+2m)\nRitardo massimo rileva
+ to: 2 min\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura co
+ ntinua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla so
+ glia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PIAN DI VENOLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-17658--20261127-S05114@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T055600Z
-DTEND:20261128T060030Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:56 - 07:00 (primo: REG 17658)
-DESCRIPTION:Stazione/PL: PIAN DI VENOLA (S05114)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 06:56:00 - 07:00:30\nTreni c
- oinvolti nella chiusura:\n  - REG 17658 (PORRETTA  TERME -> PIANORO)\n  - 
- REG 17658 (PORRETTA  TERME -> PIANORO)\nRitardo massimo rilevato: 0 min\nA
- ffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2
-  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
- di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PIAN DI VENOLA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17752--20261127-S05114@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
 DTSTART:20261128T105200Z
 DTEND:20261128T105630Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:52 - 11:56 (primo: REG 17752)
-DESCRIPTION:Stazione/PL: PIAN DI VENOLA (S05114)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 11:52:00 - 11:56:30\nTreni c
- oinvolti nella chiusura:\n  - REG 17752 (PIANORO -> PORRETTA  TERME)\n  - 
- REG 17752 (PIANORO -> PORRETTA  TERME)\nRitardo massimo rilevato: 0 min\nA
- ffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2
-  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
- di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 17752 (PIANORO -> PORRETTA  TERME) ore 11:55
+DESCRIPTION:Stazione/PL: PIAN DI VENOLA (S05114)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 11:52:00 - 11:56:30\nTreni coinvolti nella chius
+ ura:\n  - REG 17752 (PIANORO -> PORRETTA  TERME)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da
+  traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione PIAN DI VENOLA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-17772--20261127-S05114@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
 DTSTART:20261128T155200Z
 DTEND:20261128T155630Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:52 - 16:56 (primo: REG 17772)
+SUMMARY:[FERMATA] REG 17772 (PIANORO -> PORRETTA  TERME) ore 16:55
+DESCRIPTION:Stazione/PL: PIAN DI VENOLA (S05114)\nRegime chiusura: FERMATA\
+ nChiusura sbarre stimata: 16:52:00 - 16:56:30\nTreni coinvolti nella chius
+ ura:\n  - REG 17772 (PIANORO -> PORRETTA  TERME)\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da
+  traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione PIAN DI VENOLA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-17712--20261127-S05114@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T190100Z
+DTEND:20261128T190530Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:01 - 20:05 (primo: REG 17712)
 DESCRIPTION:Stazione/PL: PIAN DI VENOLA (S05114)\nRegime chiusura: CHIUSURA
-  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 16:52:00 - 16:56:30\nTreni c
- oinvolti nella chiusura:\n  - REG 17772 (PIANORO -> PORRETTA  TERME)\n  - 
- REG 17772 (PIANORO -> PORRETTA  TERME)\nRitardo massimo rilevato: 0 min\nA
+  CONTINUA - 2 TRENI\nChiusura sbarre stimata: 20:01:00 - 20:05:30\nTreni c
+ oinvolti nella chiusura:\n  - REG 17712 (PORRETTA  TERME -> PIANORO)\n  - 
+ REG 17712 (PORRETTA  TERME -> PIANORO)\nRitardo massimo rilevato: 0 min\nA
  ffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2
   treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
  di sgombero stradale (120s)

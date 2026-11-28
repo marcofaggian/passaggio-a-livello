@@ -9,20 +9,83 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:a11323bc945f17c5a988802842cdc42433b4cfe2a0d86fb2b103fbef4790
- 89da
+X-CONTENT-HASH:5fb01c2c1748b4b2b81b20f973a1542f41e2f6061c4b17942f844bfc7f94
+ 7c7e
 BEGIN:VEVENT
 UID:train-20102--20261127-S08731@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
 DTSTART:20261128T042330Z
 DTEND:20261128T042800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:23 - 05:28 (primo: REG 20102) (+2 
+SUMMARY:[FERMATA] REG 20102 (VELLETRI -> ROMA TERMINI) ore 05:27 (+2 min)
+DESCRIPTION:Stazione/PL: PAVONA (S08731)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 05:23:30 - 05:28:00\nTreni coinvolti nella chiusura:\n  
+ - REG 20102 (VELLETRI -> ROMA TERMINI) (+2m)\nRitardo massimo rilevato: 2 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione con ri
+ tardo propagato (+2 min)
+LOCATION:Passaggio a Livello / Stazione PAVONA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20119--20261127-S08731@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T095330Z
+DTEND:20261128T095800Z
+SUMMARY:[FERMATA] REG 20119 (ROMA TERMINI -> VELLETRI) ore 10:57
+DESCRIPTION:Stazione/PL: PAVONA (S08731)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 10:53:30 - 10:58:00\nTreni coinvolti nella chiusura:\n  
+ - REG 20119 (ROMA TERMINI -> VELLETRI)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
+LOCATION:Passaggio a Livello / Stazione PAVONA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20121--20261127-S08731@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T105700Z
+DTEND:20261128T110330Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:57 - 12:03 (primo: REG 20121) (+5 
  min)
 DESCRIPTION:Stazione/PL: PAVONA (S08731)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 05:23:30 - 05:28:00\nTreni coinvolti
-  nella chiusura:\n  - REG 20102 (VELLETRI -> ROMA TERMINI) (+2m)\n  - REG 
- 20102 (VELLETRI -> ROMA TERMINI) (+2m)\nRitardo massimo rilevato: 2 min\nA
+ A - 2 TRENI\nChiusura sbarre stimata: 11:57:00 - 12:03:30\nTreni coinvolti
+  nella chiusura:\n  - REG 20121 (ROMA TERMINI -> VELLETRI) (+5m)\n  - REG 
+ 20121 (ROMA TERMINI -> VELLETRI) (+5m)\nRitardo massimo rilevato: 5 min\nA
+ ffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PAVONA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20136--20261127-S08731@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T132930Z
+DTEND:20261128T133400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:29 - 14:34 (primo: REG 20136) (+6 
+ min)
+DESCRIPTION:Stazione/PL: PAVONA (S08731)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 14:29:30 - 14:34:00\nTreni coinvolti
+  nella chiusura:\n  - REG 20136 (VELLETRI -> ROMA TERMINI) (+6m)\n  - REG 
+ 20136 (VELLETRI -> ROMA TERMINI) (+6m)\nRitardo massimo rilevato: 6 min\nA
  ffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2
   treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
  di sgombero stradale (120s)
@@ -30,72 +93,46 @@ LOCATION:Passaggio a Livello / Stazione PAVONA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:2
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-20119--20261127-S08731@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T095330Z
-DTEND:20261128T095800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:53 - 10:58 (primo: REG 20119)
-DESCRIPTION:Stazione/PL: PAVONA (S08731)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 10:53:30 - 10:58:00\nTreni coinvolti
-  nella chiusura:\n  - REG 20119 (ROMA TERMINI -> VELLETRI)\n  - REG 20119 
- (ROMA TERMINI -> VELLETRI)\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
-LOCATION:Passaggio a Livello / Stazione PAVONA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20153--20261127-S08731@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
 DTSTART:20261128T155330Z
 DTEND:20261128T155800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:53 - 16:58 (primo: REG 20153)
-DESCRIPTION:Stazione/PL: PAVONA (S08731)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 16:53:30 - 16:58:00\nTreni coinvolti
-  nella chiusura:\n  - REG 20153 (ROMA TERMINI -> VELLETRI)\n  - REG 20153 
- (ROMA TERMINI -> VELLETRI)\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+SUMMARY:[FERMATA] REG 20153 (ROMA TERMINI -> VELLETRI) ore 16:57
+DESCRIPTION:Stazione/PL: PAVONA (S08731)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 16:53:30 - 16:58:00\nTreni coinvolti nella chiusura:\n  
+ - REG 20153 (ROMA TERMINI -> VELLETRI)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
 LOCATION:Passaggio a Livello / Stazione PAVONA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20177--20261127-S08731@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
 DTSTART:20261128T195330Z
 DTEND:20261128T195800Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:53 - 20:58 (primo: REG 20177)
-DESCRIPTION:Stazione/PL: PAVONA (S08731)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 20:53:30 - 20:58:00\nTreni coinvolti
-  nella chiusura:\n  - REG 20177 (ROMA TERMINI -> VELLETRI)\n  - REG 20177 
- (ROMA TERMINI -> VELLETRI)\nRitardo massimo rilevato: 0 min\nAffidabilità
-  stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inte
- rvallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero 
- stradale (120s)
+SUMMARY:[FERMATA] REG 20177 (ROMA TERMINI -> VELLETRI) ore 20:57
+DESCRIPTION:Stazione/PL: PAVONA (S08731)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 20:53:30 - 20:58:00\nTreni coinvolti nella chiusura:\n  
+ - REG 20177 (ROMA TERMINI -> VELLETRI)\nRitardo massimo rilevato: 0 min\nA
+ ffidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia o
+ raria regolare
 LOCATION:Passaggio a Livello / Stazione PAVONA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

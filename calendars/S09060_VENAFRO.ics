@@ -9,28 +9,49 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:50e1f8f118bb9c69b5c6ed1b7076db22c3efd7d8aeb828c7d772799c9505
- eb54
+X-CONTENT-HASH:471721d67f13091b21f16aa02ace77a5f1fb259482ec33f5ff0f74eeb210
+ d645
 BEGIN:VEVENT
 UID:train-23363--20261127-S09060@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
 DTSTART:20261128T070130Z
 DTEND:20261128T070600Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:01 - 08:06 (primo: REG 23363)
+SUMMARY:[FERMATA] REG 23363 (ROMA TERMINI -> BOIANO) ore 08:05
+DESCRIPTION:Stazione/PL: VENAFRO (S09060)\nRegime chiusura: FERMATA\nChiusu
+ ra sbarre stimata: 08:01:30 - 08:06:00\nTreni coinvolti nella chiusura:\n 
+  - REG 23363 (ROMA TERMINI -> BOIANO)\nRitardo massimo rilevato: 0 min\nAf
+ fidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia or
+ aria regolare
+LOCATION:Passaggio a Livello / Stazione VENAFRO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23349--20261127-S09060@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T125430Z
+DTEND:20261128T125930Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:54 - 13:59 (primo: REG 23349) (+1 
+ min)
 DESCRIPTION:Stazione/PL: VENAFRO (S09060)\nRegime chiusura: CHIUSURA CONTIN
- UA - 2 TRENI\nChiusura sbarre stimata: 08:01:30 - 08:06:00\nTreni coinvolt
- i nella chiusura:\n  - REG 23363 (ROMA TERMINI -> BOIANO)\n  - REG 23363 (
- ROMA TERMINI -> BOIANO)\nRitardo massimo rilevato: 0 min\nAffidabilità st
- ima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interva
- llo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero str
- adale (120s)
+ UA - 2 TRENI\nChiusura sbarre stimata: 13:54:30 - 13:59:30\nTreni coinvolt
+ i nella chiusura:\n  - REG 23349 (BOIANO -> ROMA TIBURTINA) (+1m)\n  - REG
+  23349 (BOIANO -> ROMA TIBURTINA) (+1m)\nRitardo massimo rilevato: 1 min\n
+ Affidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 
+ 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima
+  di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione VENAFRO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

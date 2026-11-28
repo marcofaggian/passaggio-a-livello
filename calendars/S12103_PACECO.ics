@@ -9,40 +9,64 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:23f909ab62c77ca57eadeaa153d555059c45e6ff7ca7ccedbb9a324387cf
- 2b42
+X-CONTENT-HASH:d00cd61bd1fb4d8912359fc74de502f2aeb2cd4ef67c446c18091ad9f361
+ 1841
 BEGIN:VEVENT
-UID:train-21858--20261126-S12103@pl-tracker.local
-DTSTAMP:20261127T223343Z
-SEQUENCE:1
-DTSTART:20261127T055100Z
-DTEND:20261127T055730Z
-SUMMARY:[FERMATA] REG 21858 (TRAPANI -> PIRAINETO) ore 06:56
-DESCRIPTION:Stazione/PL: PACECO (S12103)\nRegime chiusura: FERMATA\nChiusur
- a sbarre stimata: 06:51:00 - 06:57:30\nTreni coinvolti nella chiusura:\n  
- - REG 21858 (TRAPANI -> PIRAINETO)\nRitardo massimo rilevato: -1 min\nAffi
- dabilità stima: 99%\nNota normativa/euristica: Rilevamento reale da circu
- ito di binario
+UID:train-21851--20261127-S12103@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T051301Z
+DTEND:20261128T051831Z
+SUMMARY:[TRANSITO VELOCE] REG 21851 (CASTELVETRANO -> TRAPANI) ore 06:17 (+
+ 1 min)
+DESCRIPTION:Stazione/PL: PACECO (S12103)\nRegime chiusura: TRANSITO VELOCE\
+ nChiusura sbarre stimata: 06:13:01 - 06:18:31\nTreni coinvolti nella chius
+ ura:\n  - REG 21851 (CASTELVETRANO -> TRAPANI) (+1m) [Transito]\nRitardo m
+ assimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristica
+ : Transito stimato senza fermata (55% tratta MOZIA-BIRGI -> MARAUSA\; peda
+ le annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PACECO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:FERMATA,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21858--20261127-S12103@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T055100Z
+DTEND:20261128T055800Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 06:51 - 06:58 (primo: REG 21858)
+DESCRIPTION:Stazione/PL: PACECO (S12103)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 06:51:00 - 06:58:00\nTreni coinvolti
+  nella chiusura:\n  - REG 21858 (TRAPANI -> PIRAINETO)\n  - REG 21858 (TRA
+ PANI -> PIRAINETO)\nRitardo massimo rilevato: -1 min\nAffidabilità stima:
+  99%\nNota normativa/euristica: Chiusura continua per 2 treni: intervallo 
+ utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stradal
+ e (120s)
+LOCATION:Passaggio a Livello / Stazione PACECO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-21860--20261126-S12103@pl-tracker.local
-DTSTAMP:20261127T223343Z
-SEQUENCE:1
-DTSTART:20261127T071025Z
-DTEND:20261127T071555Z
-SUMMARY:[TRANSITO VELOCE] REG 21860 (TRAPANI -> CASTELVETRANO) ore 08:14
+UID:train-21864--20261127-S12103@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T092237Z
+DTEND:20261128T092807Z
+SUMMARY:[TRANSITO VELOCE] REG 21864 (TRAPANI -> CASTELVETRANO) ore 10:26
 DESCRIPTION:Stazione/PL: PACECO (S12103)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 08:10:25 - 08:15:55\nTreni coinvolti nella chius
- ura:\n  - REG 21860 (TRAPANI -> CASTELVETRANO) [Transito]\nRitardo massimo
+ nChiusura sbarre stimata: 10:22:37 - 10:28:07\nTreni coinvolti nella chius
+ ura:\n  - REG 21864 (TRAPANI -> CASTELVETRANO) [Transito]\nRitardo massimo
   rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
- sito stimato senza fermata (36% tratta TRAPANI -> MARAUSA\; pedale annunci
+ sito stimato senza fermata (38% tratta TRAPANI -> MARAUSA\; pedale annunci
  o fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione PACECO
 STATUS:CONFIRMED
@@ -53,43 +77,68 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-21864--20261126-S12103@pl-tracker.local
-DTSTAMP:20261127T223343Z
-SEQUENCE:1
-DTSTART:20261127T092231Z
-DTEND:20261127T092801Z
-SUMMARY:[TRANSITO VELOCE] REG 21864 (TRAPANI -> CASTELVETRANO) ore 10:26
-DESCRIPTION:Stazione/PL: PACECO (S12103)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 10:22:31 - 10:28:01\nTreni coinvolti nella chius
- ura:\n  - REG 21864 (TRAPANI -> CASTELVETRANO) [Transito]\nRitardo massimo
-  rilevato: -6 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tra
- nsito stimato senza fermata (36% tratta TRAPANI -> MARAUSA\; pedale annunc
- io fisso Vmax)
+UID:train-21868--20261127-S12103@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T105341Z
+DTEND:20261128T105911Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:53 - 11:59 (primo: REG 21868)
+DESCRIPTION:Stazione/PL: PACECO (S12103)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 11:53:41 - 11:59:11\nTreni coinvolti
+  nella chiusura:\n  - REG 21868 (TRAPANI -> PIRAINETO) [Transito]\n  - REG
+  21868 (TRAPANI -> PIRAINETO) [Transito]\nRitardo massimo rilevato: -1 min
+ \nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura continua pe
+ r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PACECO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
-X-PL-DELAY-MIN:-6
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-21886--20261126-S12103@pl-tracker.local
-DTSTAMP:20261127T223343Z
-SEQUENCE:1
-DTSTART:20261127T194647Z
-DTEND:20261127T195217Z
-SUMMARY:[TRANSITO VELOCE] REG 21886 (TRAPANI -> CASTELVETRANO) ore 20:51
-DESCRIPTION:Stazione/PL: PACECO (S12103)\nRegime chiusura: TRANSITO VELOCE\
- nChiusura sbarre stimata: 20:46:47 - 20:52:17\nTreni coinvolti nella chius
- ura:\n  - REG 21886 (TRAPANI -> CASTELVETRANO) [Transito]\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
- sito stimato senza fermata (36% tratta TRAPANI -> MARAUSA\; pedale annunci
- o fisso Vmax)
+UID:train-21871--20261127-S12103@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T131030Z
+DTEND:20261128T131630Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:10 - 14:16 (primo: REG 21871) (+2 
+ min)
+DESCRIPTION:Stazione/PL: PACECO (S12103)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 14:10:30 - 14:16:30\nTreni coinvolti
+  nella chiusura:\n  - REG 21871 (PIRAINETO -> TRAPANI) (+2m)\n  - REG 2187
+ 1 (PIRAINETO -> TRAPANI) (+2m)\nRitardo massimo rilevato: 2 min\nAffidabil
+ ità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 treni: 
+ intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgomb
+ ero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione PACECO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:TRANSITO VELOCE,FERROVIA
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-21886--20261127-S12103@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T194700Z
+DTEND:20261128T195230Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:47 - 20:52 (primo: REG 21886)
+DESCRIPTION:Stazione/PL: PACECO (S12103)\nRegime chiusura: CHIUSURA CONTINU
+ A - 2 TRENI\nChiusura sbarre stimata: 20:47:00 - 20:52:30\nTreni coinvolti
+  nella chiusura:\n  - REG 21886 (TRAPANI -> CASTELVETRANO) [Transito]\n  -
+  REG 21886 (TRAPANI -> CASTELVETRANO) [Transito]\nRitardo massimo rilevato
+ : 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura cont
+ inua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla sogl
+ ia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione PACECO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG

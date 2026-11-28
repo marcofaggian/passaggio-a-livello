@@ -9,19 +9,82 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:db2a3abd042f189f806aa827b6410ea5c7acebee4b2747fbec97e83e89a8
- aa29
+X-CONTENT-HASH:93c30edc6523872bc82c04c4e03531dbb5bd1335e276f02cc3166aede1b6
+ 30a8
 BEGIN:VEVENT
 UID:train-20792--20261127-S08520@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
 DTSTART:20261128T085030Z
 DTEND:20261128T085500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:50 - 09:55 (primo: REG 20792)
+SUMMARY:[FERMATA] REG 20792 (ROMA TIBURTINA -> AVEZZANO) ore 09:54
+DESCRIPTION:Stazione/PL: COLLI DI MONTE BOVE (S08520)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 09:50:30 - 09:55:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 20792 (ROMA TIBURTINA -> AVEZZANO)\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
+ ne da traccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione COLLI DI MONTE BOVE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20794--20261127-S08520@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T115257Z
+DTEND:20261128T115827Z
+SUMMARY:[TRANSITO VELOCE] REG 20794 (ROMA TIBURTINA -> AVEZZANO) ore 12:57
+DESCRIPTION:Stazione/PL: COLLI DI MONTE BOVE (S08520)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 12:52:57 - 12:58:27\nTreni coinvolt
+ i nella chiusura:\n  - REG 20794 (ROMA TIBURTINA -> AVEZZANO) [Transito]\n
+ Ritardo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/
+ euristica: Transito stimato senza fermata (45% tratta CARSOLI -> TAGLIACOZ
+ ZO\; pedale annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione COLLI DI MONTE BOVE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-4164--20261127-S08520@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T143424Z
+DTEND:20261128T143954Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:34 - 15:39 (primo: REG 4164)
 DESCRIPTION:Stazione/PL: COLLI DI MONTE BOVE (S08520)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 09:50:30 - 09:55:00\nTr
- eni coinvolti nella chiusura:\n  - REG 20792 (ROMA TIBURTINA -> AVEZZANO)\
- n  - REG 20792 (ROMA TIBURTINA -> AVEZZANO)\nRitardo massimo rilevato: 0 m
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 15:34:24 - 15:39:54\nTr
+ eni coinvolti nella chiusura:\n  - REG 4164 (ROMA TERMINI -> PESCARA) [Tra
+ nsito]\n  - REG 4164 (ROMA TERMINI -> PESCARA) [Transito]\nRitardo massimo
+  rilevato: -1 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
+ usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
+  alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione COLLI DI MONTE BOVE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:-1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20796--20261127-S08520@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T161030Z
+DTEND:20261128T161500Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:10 - 17:15 (primo: REG 20796)
+DESCRIPTION:Stazione/PL: COLLI DI MONTE BOVE (S08520)\nRegime chiusura: CHI
+ USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:10:30 - 17:15:00\nTr
+ eni coinvolti nella chiusura:\n  - REG 20796 (ROMA TIBURTINA -> AVEZZANO)\
+ n  - REG 20796 (ROMA TIBURTINA -> AVEZZANO)\nRitardo massimo rilevato: 0 m
  in\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua 
  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
  nima di sgombero stradale (120s)
@@ -34,67 +97,42 @@ X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
-UID:train-20794--20261127-S08520@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T115322Z
-DTEND:20261128T115852Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:53 - 12:58 (primo: REG 20794)
-DESCRIPTION:Stazione/PL: COLLI DI MONTE BOVE (S08520)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 12:53:22 - 12:58:52\nTr
- eni coinvolti nella chiusura:\n  - REG 20794 (ROMA TIBURTINA -> AVEZZANO) 
- [Transito]\n  - REG 20794 (ROMA TIBURTINA -> AVEZZANO) [Transito]\nRitardo
-  massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristi
- ca: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) in
- feriore alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione COLLI DI MONTE BOVE
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
 UID:train-4166--20261127-S08520@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T165253Z
-DTEND:20261128T165823Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:52 - 17:58 (primo: REG 4166)
-DESCRIPTION:Stazione/PL: COLLI DI MONTE BOVE (S08520)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 17:52:53 - 17:58:23\nTr
- eni coinvolti nella chiusura:\n  - REG 4166 (ROMA TERMINI -> PESCARA) [Tra
- nsito]\n  - REG 4166 (ROMA TERMINI -> PESCARA) [Transito]\nRitardo massimo
-  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiu
- sura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore 
- alla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T165230Z
+DTEND:20261128T165800Z
+SUMMARY:[TRANSITO VELOCE] REG 4166 (ROMA TERMINI -> PESCARA) ore 17:56
+DESCRIPTION:Stazione/PL: COLLI DI MONTE BOVE (S08520)\nRegime chiusura: TRA
+ NSITO VELOCE\nChiusura sbarre stimata: 17:52:30 - 17:58:00\nTreni coinvolt
+ i nella chiusura:\n  - REG 4166 (ROMA TERMINI -> PESCARA) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Transito stimato senza fermata (45% tratta CARSOLI -> TAGLIACOZZO\;
+  pedale annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione COLLI DI MONTE BOVE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-21250--20261127-S08520@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
 DTSTART:20261128T174030Z
 DTEND:20261128T174500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:40 - 18:45 (primo: REG 21250)
-DESCRIPTION:Stazione/PL: COLLI DI MONTE BOVE (S08520)\nRegime chiusura: CHI
- USURA CONTINUA - 2 TRENI\nChiusura sbarre stimata: 18:40:30 - 18:45:00\nTr
- eni coinvolti nella chiusura:\n  - REG 21250 (ROMA TIBURTINA -> AVEZZANO)\
- n  - REG 21250 (ROMA TIBURTINA -> AVEZZANO)\nRitardo massimo rilevato: 0 m
- in\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua 
- per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
- nima di sgombero stradale (120s)
+SUMMARY:[FERMATA] REG 21250 (ROMA TIBURTINA -> AVEZZANO) ore 18:44
+DESCRIPTION:Stazione/PL: COLLI DI MONTE BOVE (S08520)\nRegime chiusura: FER
+ MATA\nChiusura sbarre stimata: 18:40:30 - 18:45:00\nTreni coinvolti nella 
+ chiusura:\n  - REG 21250 (ROMA TIBURTINA -> AVEZZANO)\nRitardo massimo ril
+ evato: 0 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsio
+ ne da traccia oraria regolare
 LOCATION:Passaggio a Livello / Stazione COLLI DI MONTE BOVE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

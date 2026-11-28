@@ -9,20 +9,83 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:234256d4d91f0c58cfdf491d0a30b4340fef936d2ebcce942c11c34a7863
- a9ee
+X-CONTENT-HASH:e7d329b9c245827f51c8ae7ed37d818ce553e86d9347ea450bb5c5ba2e8f
+ 3425
 BEGIN:VEVENT
 UID:train-20102--20261127-S08735@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
 DTSTART:20261128T042030Z
 DTEND:20261128T042500Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:20 - 05:25 (primo: REG 20102) (+2 
+SUMMARY:[FERMATA] REG 20102 (VELLETRI -> ROMA TERMINI) ore 05:24 (+2 min)
+DESCRIPTION:Stazione/PL: CANCELLIERA (S08735)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 05:20:30 - 05:25:00\nTreni coinvolti nella chiusura
+ :\n  - REG 20102 (VELLETRI -> ROMA TERMINI) (+2m)\nRitardo massimo rilevat
+ o: 2 min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione c
+ on ritardo propagato (+2 min)
+LOCATION:Passaggio a Livello / Stazione CANCELLIERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20119--20261127-S08735@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T095730Z
+DTEND:20261128T100200Z
+SUMMARY:[FERMATA] REG 20119 (ROMA TERMINI -> VELLETRI) ore 11:01
+DESCRIPTION:Stazione/PL: CANCELLIERA (S08735)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 10:57:30 - 11:02:00\nTreni coinvolti nella chiusura
+ :\n  - REG 20119 (ROMA TERMINI -> VELLETRI)\nRitardo massimo rilevato: 0 m
+ in\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da trac
+ cia oraria regolare
+LOCATION:Passaggio a Livello / Stazione CANCELLIERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20121--20261127-S08735@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T110130Z
+DTEND:20261128T110600Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:01 - 12:06 (primo: REG 20121) (+3 
  min)
 DESCRIPTION:Stazione/PL: CANCELLIERA (S08735)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 05:20:30 - 05:25:00\nTreni coin
- volti nella chiusura:\n  - REG 20102 (VELLETRI -> ROMA TERMINI) (+2m)\n  -
-  REG 20102 (VELLETRI -> ROMA TERMINI) (+2m)\nRitardo massimo rilevato: 2 m
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 12:01:30 - 12:06:00\nTreni coin
+ volti nella chiusura:\n  - REG 20121 (ROMA TERMINI -> VELLETRI) (+3m)\n  -
+  REG 20121 (ROMA TERMINI -> VELLETRI) (+3m)\nRitardo massimo rilevato: 3 m
+ in\nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua 
+ per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
+ nima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione CANCELLIERA
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:3
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-20136--20261127-S08735@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T132630Z
+DTEND:20261128T133100Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:26 - 14:31 (primo: REG 20136) (+6 
+ min)
+DESCRIPTION:Stazione/PL: CANCELLIERA (S08735)\nRegime chiusura: CHIUSURA CO
+ NTINUA - 2 TRENI\nChiusura sbarre stimata: 14:26:30 - 14:31:00\nTreni coin
+ volti nella chiusura:\n  - REG 20136 (VELLETRI -> ROMA TERMINI) (+6m)\n  -
+  REG 20136 (VELLETRI -> ROMA TERMINI) (+6m)\nRitardo massimo rilevato: 6 m
  in\nAffidabilità stima: 90%\nNota normativa/euristica: Chiusura continua 
  per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mi
  nima di sgombero stradale (120s)
@@ -30,72 +93,46 @@ LOCATION:Passaggio a Livello / Stazione CANCELLIERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:2
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:REG
-END:VEVENT
-BEGIN:VEVENT
-UID:train-20119--20261127-S08735@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T095730Z
-DTEND:20261128T100200Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:57 - 11:02 (primo: REG 20119)
-DESCRIPTION:Stazione/PL: CANCELLIERA (S08735)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 10:57:30 - 11:02:00\nTreni coin
- volti nella chiusura:\n  - REG 20119 (ROMA TERMINI -> VELLETRI)\n  - REG 2
- 0119 (ROMA TERMINI -> VELLETRI)\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione CANCELLIERA
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:6
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20153--20261127-S08735@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
 DTSTART:20261128T155700Z
 DTEND:20261128T160130Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:57 - 17:01 (primo: REG 20153)
-DESCRIPTION:Stazione/PL: CANCELLIERA (S08735)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 16:57:00 - 17:01:30\nTreni coin
- volti nella chiusura:\n  - REG 20153 (ROMA TERMINI -> VELLETRI)\n  - REG 2
- 0153 (ROMA TERMINI -> VELLETRI)\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
+SUMMARY:[FERMATA] REG 20153 (ROMA TERMINI -> VELLETRI) ore 17:00
+DESCRIPTION:Stazione/PL: CANCELLIERA (S08735)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 16:57:00 - 17:01:30\nTreni coinvolti nella chiusura
+ :\n  - REG 20153 (ROMA TERMINI -> VELLETRI)\nRitardo massimo rilevato: 0 m
+ in\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da trac
+ cia oraria regolare
 LOCATION:Passaggio a Livello / Stazione CANCELLIERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 BEGIN:VEVENT
 UID:train-20177--20261127-S08735@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
 DTSTART:20261128T195700Z
 DTEND:20261128T200130Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:57 - 21:01 (primo: REG 20177)
-DESCRIPTION:Stazione/PL: CANCELLIERA (S08735)\nRegime chiusura: CHIUSURA CO
- NTINUA - 2 TRENI\nChiusura sbarre stimata: 20:57:00 - 21:01:30\nTreni coin
- volti nella chiusura:\n  - REG 20177 (ROMA TERMINI -> VELLETRI)\n  - REG 2
- 0177 (ROMA TERMINI -> VELLETRI)\nRitardo massimo rilevato: 0 min\nAffidabi
- lità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni:
-  intervallo utile tra i passaggi (0s) inferiore alla soglia minima di sgom
- bero stradale (120s)
+SUMMARY:[FERMATA] REG 20177 (ROMA TERMINI -> VELLETRI) ore 21:00
+DESCRIPTION:Stazione/PL: CANCELLIERA (S08735)\nRegime chiusura: FERMATA\nCh
+ iusura sbarre stimata: 20:57:00 - 21:01:30\nTreni coinvolti nella chiusura
+ :\n  - REG 20177 (ROMA TERMINI -> VELLETRI)\nRitardo massimo rilevato: 0 m
+ in\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da trac
+ cia oraria regolare
 LOCATION:Passaggio a Livello / Stazione CANCELLIERA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:REG

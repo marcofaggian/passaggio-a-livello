@@ -9,20 +9,20 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:51258ef0318809db22b254d91b5a8df668e6f39d6e33df4b56411fbdfacc
- 582f
+X-CONTENT-HASH:e7cd8efcc3cec70602b95b1f9f8d06b0d7358875facf4b14ed1ac3fa927f
+ b88d
 BEGIN:VEVENT
 UID:train-8809--20261126-S11025@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:1
-DTSTART:20261127T165910Z
-DTEND:20261127T170440Z
-SUMMARY:[TRANSITO VELOCE] TRENO 8809 (MILANO CENTRALE -> LECCE) ore 18:03
+DTSTAMP:20261128T132805Z
+SEQUENCE:2
+DTSTART:20261127T170009Z
+DTEND:20261127T170539Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8809 (MILANO CENTRALE -> LECCE) ore 18:04
 DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: TRANSITO VELOC
- E\nChiusura sbarre stimata: 17:59:10 - 18:04:40\nTreni coinvolti nella chi
+ E\nChiusura sbarre stimata: 18:00:09 - 18:05:39\nTreni coinvolti nella chi
  usura:\n  - TRENO 8809 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo mass
  imo rilevato: -7 min\nAffidabilità stima: 78%\nNota normativa/euristica: 
- Transito stimato senza fermata (66% tratta TERMOLI -> FOGGIA\; pedale annu
+ Transito stimato senza fermata (69% tratta TERMOLI -> FOGGIA\; pedale annu
  ncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.SEVERO
 STATUS:CONFIRMED
@@ -33,148 +33,326 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-8816--20261127-S11025@pl-tracker.local
-DTSTAMP:20261128T041740Z
+UID:train-608--20261127-S11025@pl-tracker.local-arr
+DTSTAMP:20261128T132805Z
 SEQUENCE:0
-DTSTART:20261128T084136Z
-DTEND:20261128T084706Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:41 - 09:47 (primo: TRENO 8816)
+DTSTART:20261128T083015Z
+DTEND:20261128T083930Z
+SUMMARY:[CHIUSURA CONTINUA - 4 TRENI] 09:30 - 09:39 (primo: IC 608) (+2 min
+ )
 DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 09:41:36 - 09:47:06\nTreni coinvol
- ti nella chiusura:\n  - TRENO 8816 (LECCE -> VENEZIA S.LUCIA) [Transito]\n
-   - TRENO 8816 (LECCE -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
- continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+ NUA - 4 TRENI\nChiusura sbarre stimata: 09:30:15 - 09:39:30\nTreni coinvol
+ ti nella chiusura:\n  - IC 608 (LECCE -> MILANO CENTRALE) (+2m) [Arrivo]\n
+   - IC 608 (LECCE -> MILANO CENTRALE) (+2m) [Arrivo]\n  - IC 608 (LECCE ->
+  MILANO CENTRALE) (+2m) [Partenza]\n  - IC 608 (LECCE -> MILANO CENTRALE) 
+ (+2m) [Partenza]\nRitardo massimo rilevato: 2 min\nAffidabilità stima: 99
+ %\nNota normativa/euristica: Chiusura continua per 4 treni: intervallo uti
+ le tra i passaggi (0s) inferiore alla soglia minima di sgombero stradale (
+ 120s)
+LOCATION:Passaggio a Livello / Stazione S.SEVERO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 4 TRENI,FERROVIA
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8816--20261127-S11025@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T084601Z
+DTEND:20261128T085131Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:46 - 09:51 (primo: TRENO 8816) (+4
+  min)
+DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 09:46:01 - 09:51:31\nTreni coinvol
+ ti nella chiusura:\n  - TRENO 8816 (LECCE -> VENEZIA S.LUCIA) (+4m) [Trans
+ ito]\n  - TRENO 8816 (LECCE -> VENEZIA S.LUCIA) (+4m) [Transito]\nRitardo 
+ massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.SEVERO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8818--20261127-S11025@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T094136Z
-DTEND:20261128T094706Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:41 - 10:47 (primo: TRENO 8818)
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T094331Z
+DTEND:20261128T094901Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 10:43 - 10:49 (primo: TRENO 8818) (+4
+  min)
 DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 10:41:36 - 10:47:06\nTreni coinvol
- ti nella chiusura:\n  - TRENO 8818 (LECCE -> MILANO CENTRALE) [Transito]\n
-   - TRENO 8818 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
- continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+ NUA - 2 TRENI\nChiusura sbarre stimata: 10:43:31 - 10:49:01\nTreni coinvol
+ ti nella chiusura:\n  - TRENO 8818 (LECCE -> MILANO CENTRALE) (+4m) [Trans
+ ito]\n  - TRENO 8818 (LECCE -> MILANO CENTRALE) (+4m) [Transito]\nRitardo 
+ massimo rilevato: 4 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.SEVERO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:4
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-610--20261127-S11025@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
 DTSTART:20261128T101915Z
 DTEND:20261128T102400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:19 - 11:24 (primo: IC 610)
-DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 11:19:15 - 11:24:00\nTreni coinvol
- ti nella chiusura:\n  - IC 610 (LECCE -> BOLZANO)\n  - IC 610 (LECCE -> BO
- LZANO)\nRitardo massimo rilevato: 0 min\nAffidabilità stima: 90%\nNota no
- rmativa/euristica: Chiusura continua per 2 treni: intervallo utile tra i p
- assaggi (0s) inferiore alla soglia minima di sgombero stradale (120s)
+SUMMARY:[FERMATA] IC 610 (LECCE -> BOLZANO) ore 11:23
+DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 11:19:15 - 11:24:00\nTreni coinvolti nella chiusura:\n
+   - IC 610 (LECCE -> BOLZANO)\nRitardo massimo rilevato: 0 min\nAffidabili
+ tà stima: 90%\nNota normativa/euristica: Previsione da traccia oraria reg
+ olare
 LOCATION:Passaggio a Livello / Stazione S.SEVERO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8820--20261127-S11025@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T104136Z
-DTEND:20261128T104706Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 11:41 - 11:47 (primo: TRENO 8820)
-DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 11:41:36 - 11:47:06\nTreni coinvol
- ti nella chiusura:\n  - TRENO 8820 (TARANTO -> MILANO CENTRALE) [Transito]
- \n  - TRENO 8820 (TARANTO -> MILANO CENTRALE) [Transito]\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
- ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
- lla soglia minima di sgombero stradale (120s)
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T104213Z
+DTEND:20261128T104743Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8820 (TARANTO -> MILANO CENTRALE) ore 11:46
+DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 11:42:13 - 11:47:43\nTreni coinvolti nella chi
+ usura:\n  - TRENO 8820 (TARANTO -> MILANO CENTRALE) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Transito stimato senza fermata (30% tratta FOGGIA -> TERMOLI\; pedale ann
+ uncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.SEVERO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8824--20261127-S11025@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T114136Z
-DTEND:20261128T114706Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:41 - 12:47 (primo: TRENO 8824)
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T115025Z
+DTEND:20261128T115555Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:50 - 12:55 (primo: TRENO 8824) (+1
+ 3 min)
 DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 12:41:36 - 12:47:06\nTreni coinvol
- ti nella chiusura:\n  - TRENO 8824 (LECCE -> MILANO CENTRALE) [Transito]\n
-   - TRENO 8824 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
- continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+ NUA - 2 TRENI\nChiusura sbarre stimata: 12:50:25 - 12:55:55\nTreni coinvol
+ ti nella chiusura:\n  - TRENO 8824 (LECCE -> MILANO CENTRALE) (+13m) [Tran
+ sito]\n  - TRENO 8824 (LECCE -> MILANO CENTRALE) (+13m) [Transito]\nRitard
+ o massimo rilevato: 13 min\nAffidabilità stima: 78%\nNota normativa/euris
+ tica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) 
+ inferiore alla soglia minima di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.SEVERO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
+X-PL-DELAY-MIN:13
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-603--20261127-S11025@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T122915Z
-DTEND:20261128T123400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:29 - 13:34 (primo: IC 603) (+1 min
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T123615Z
+DTEND:20261128T124400Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:36 - 13:44 (primo: IC 603) (+9 min
  )
 DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 13:29:15 - 13:34:00\nTreni coinvol
- ti nella chiusura:\n  - IC 603 (MILANO CENTRALE -> LECCE) (+1m)\n  - IC 60
- 3 (MILANO CENTRALE -> LECCE) (+1m)\nRitardo massimo rilevato: 1 min\nAffid
- abilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 tre
+ NUA - 2 TRENI\nChiusura sbarre stimata: 13:36:15 - 13:44:00\nTreni coinvol
+ ti nella chiusura:\n  - IC 603 (MILANO CENTRALE -> LECCE) (+9m)\n  - IC 60
+ 3 (MILANO CENTRALE -> LECCE) (+9m)\nRitardo massimo rilevato: 9 min\nAffid
+ abilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2 tre
  ni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di s
  gombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione S.SEVERO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:1
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:9
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8803--20261127-S11025@pl-tracker.local
-DTSTAMP:20261128T041740Z
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T130037Z
+DTEND:20261128T130607Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8803 (MILANO CENTRALE -> BARI CENTRALE) ore
+  14:04
+DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 14:00:37 - 14:06:07\nTreni coinvolti nella chi
+ usura:\n  - TRENO 8803 (MILANO CENTRALE -> BARI CENTRALE) [Transito]\nRita
+ rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
+ stica: Transito stimato senza fermata (69% tratta TERMOLI -> FOGGIA\; peda
+ le annuncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione S.SEVERO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9808--20261127-S11025@pl-tracker.local
+DTSTAMP:20261128T132805Z
 SEQUENCE:0
-DTSTART:20261128T125928Z
-DTEND:20261128T130458Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:59 - 14:04 (primo: TRENO 8803)
+DTSTART:20261128T134713Z
+DTEND:20261128T135243Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 14:47 - 14:52 (primo: TRENO 9808) (+5
+  min)
 DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 13:59:28 - 14:04:58\nTreni coinvol
- ti nella chiusura:\n  - TRENO 8803 (MILANO CENTRALE -> BARI CENTRALE) [Tra
- nsito]\n  - TRENO 8803 (MILANO CENTRALE -> BARI CENTRALE) [Transito]\nRita
+ NUA - 2 TRENI\nChiusura sbarre stimata: 14:47:13 - 14:52:43\nTreni coinvol
+ ti nella chiusura:\n  - TRENO 9808 (LECCE -> TORINO PORTA NUOVA) (+5m) [Tr
+ ansito]\n  - TRENO 9808 (LECCE -> TORINO PORTA NUOVA) (+5m) [Transito]\nRi
+ tardo massimo rilevato: 5 min\nAffidabilità stima: 78%\nNota normativa/eu
+ ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
+ s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione S.SEVERO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:5
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-614--20261127-S11025@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T141915Z
+DTEND:20261128T142400Z
+SUMMARY:[FERMATA] IC 614 (LECCE -> MILANO CENTRALE) ore 15:23
+DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 15:19:15 - 15:24:00\nTreni coinvolti nella chiusura:\n
+   - IC 614 (LECCE -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAf
+ fidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia or
+ aria regolare
+LOCATION:Passaggio a Livello / Stazione S.SEVERO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8828--20261127-S11025@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T144313Z
+DTEND:20261128T144843Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:43 - 15:48 (primo: TRENO 8828) (+1
+  min)
+DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 15:43:13 - 15:48:43\nTreni coinvol
+ ti nella chiusura:\n  - TRENO 8828 (LECCE -> VENEZIA S.LUCIA) (+1m) [Trans
+ ito]\n  - TRENO 8828 (LECCE -> VENEZIA S.LUCIA) (+1m) [Transito]\nRitardo 
+ massimo rilevato: 1 min\nAffidabilità stima: 78%\nNota normativa/euristic
+ a: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s) inf
+ eriore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione S.SEVERO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:1
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-9805--20261127-S11025@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T150637Z
+DTEND:20261128T151207Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:06 - 16:12 (primo: TRENO 9805) (+6
+  min)
+DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 16:06:37 - 16:12:07\nTreni coinvol
+ ti nella chiusura:\n  - TRENO 9805 (TORINO PORTA NUOVA -> LECCE) (+6m) [Tr
+ ansito]\n  - TRENO 9805 (TORINO PORTA NUOVA -> LECCE) (+6m) [Transito]\nRi
+ tardo massimo rilevato: 6 min\nAffidabilità stima: 78%\nNota normativa/eu
+ ristica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0
+ s) inferiore alla soglia minima di sgombero stradale (120s)
+LOCATION:Passaggio a Livello / Stazione S.SEVERO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+X-PL-DELAY-MIN:6
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8807--20261127-S11025@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T160037Z
+DTEND:20261128T160607Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8807 (MILANO CENTRALE -> TARANTO) ore 17:04
+DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 17:00:37 - 17:06:07\nTreni coinvolti nella chi
+ usura:\n  - TRENO 8807 (MILANO CENTRALE -> TARANTO) [Transito]\nRitardo ma
+ ssimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica:
+  Transito stimato senza fermata (69% tratta TERMOLI -> FOGGIA\; pedale ann
+ uncio fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione S.SEVERO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:TRENO
+END:VEVENT
+BEGIN:VEVENT
+UID:train-607--20261127-S11025@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T161915Z
+DTEND:20261128T162400Z
+SUMMARY:[FERMATA] IC 607 (MILANO PORTA GARIBALDI -> LECCE) ore 17:23
+DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 17:19:15 - 17:24:00\nTreni coinvolti nella chiusura:\n
+   - IC 607 (MILANO PORTA GARIBALDI -> LECCE)\nRitardo massimo rilevato: 0 
+ min\nAffidabilità stima: 90%\nNota normativa/euristica: Previsione da tra
+ ccia oraria regolare
+LOCATION:Passaggio a Livello / Stazione S.SEVERO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:IC
+END:VEVENT
+BEGIN:VEVENT
+UID:train-8830--20261127-S11025@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T164213Z
+DTEND:20261128T164743Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:42 - 17:47 (primo: TRENO 8830)
+DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: CHIUSURA CONTI
+ NUA - 2 TRENI\nChiusura sbarre stimata: 17:42:13 - 17:47:43\nTreni coinvol
+ ti nella chiusura:\n  - TRENO 8830 (BARI CENTRALE -> MILANO CENTRALE) [Tra
+ nsito]\n  - TRENO 8830 (BARI CENTRALE -> MILANO CENTRALE) [Transito]\nRita
  rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
  stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
   inferiore alla soglia minima di sgombero stradale (120s)
@@ -187,168 +365,56 @@ X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
-UID:train-614--20261127-S11025@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T141915Z
-DTEND:20261128T142400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:19 - 15:24 (primo: IC 614)
-DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 15:19:15 - 15:24:00\nTreni coinvol
- ti nella chiusura:\n  - IC 614 (LECCE -> MILANO CENTRALE)\n  - IC 614 (LEC
- CE -> MILANO CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
- ma: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
- lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
- dale (120s)
-LOCATION:Passaggio a Livello / Stazione S.SEVERO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8828--20261127-S11025@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T144136Z
-DTEND:20261128T144706Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:41 - 15:47 (primo: TRENO 8828)
-DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 15:41:36 - 15:47:06\nTreni coinvol
- ti nella chiusura:\n  - TRENO 8828 (LECCE -> VENEZIA S.LUCIA) [Transito]\n
-   - TRENO 8828 (LECCE -> VENEZIA S.LUCIA) [Transito]\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
- continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione S.SEVERO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-9805--20261127-S11025@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T145928Z
-DTEND:20261128T150458Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 15:59 - 16:04 (primo: TRENO 9805)
-DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 15:59:28 - 16:04:58\nTreni coinvol
- ti nella chiusura:\n  - TRENO 9805 (TORINO PORTA NUOVA -> LECCE) [Transito
- ]\n  - TRENO 9805 (TORINO PORTA NUOVA -> LECCE) [Transito]\nRitardo massim
- o rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chi
- usura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore
-  alla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione S.SEVERO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-8807--20261127-S11025@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T155928Z
-DTEND:20261128T160458Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 16:59 - 17:04 (primo: TRENO 8807)
-DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 16:59:28 - 17:04:58\nTreni coinvol
- ti nella chiusura:\n  - TRENO 8807 (MILANO CENTRALE -> TARANTO) [Transito]
- \n  - TRENO 8807 (MILANO CENTRALE -> TARANTO) [Transito]\nRitardo massimo 
- rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chius
- ura continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore a
- lla soglia minima di sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione S.SEVERO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
-X-PL-TRAIN-CATEGORY:TRENO
-END:VEVENT
-BEGIN:VEVENT
-UID:train-607--20261127-S11025@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T161915Z
-DTEND:20261128T162400Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 17:19 - 17:24 (primo: IC 607)
-DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 17:19:15 - 17:24:00\nTreni coinvol
- ti nella chiusura:\n  - IC 607 (MILANO PORTA GARIBALDI -> LECCE)\n  - IC 6
- 07 (MILANO PORTA GARIBALDI -> LECCE)\nRitardo massimo rilevato: 0 min\nAff
- idabilità stima: 90%\nNota normativa/euristica: Chiusura continua per 2 t
- reni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima di
-  sgombero stradale (120s)
-LOCATION:Passaggio a Livello / Stazione S.SEVERO
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
-X-PL-TRAIN-CATEGORY:IC
-END:VEVENT
-BEGIN:VEVENT
 UID:train-8811--20261127-S11025@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T175928Z
-DTEND:20261128T180458Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 18:59 - 19:04 (primo: TRENO 8811)
-DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 18:59:28 - 19:04:58\nTreni coinvol
- ti nella chiusura:\n  - TRENO 8811 (MILANO CENTRALE -> LECCE) [Transito]\n
-   - TRENO 8811 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
- continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T180037Z
+DTEND:20261128T180607Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8811 (MILANO CENTRALE -> LECCE) ore 19:04
+DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 19:00:37 - 19:06:07\nTreni coinvolti nella chi
+ usura:\n  - TRENO 8811 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
+ ransito stimato senza fermata (69% tratta TERMOLI -> FOGGIA\; pedale annun
+ cio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.SEVERO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8813--20261127-S11025@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T190148Z
-DTEND:20261128T190718Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:01 - 20:07 (primo: TRENO 8813)
-DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 20:01:48 - 20:07:18\nTreni coinvol
- ti nella chiusura:\n  - TRENO 8813 (MILANO CENTRALE -> LECCE) [Transito]\n
-   - TRENO 8813 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo massimo rile
- vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
- continua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla 
- soglia minima di sgombero stradale (120s)
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T190256Z
+DTEND:20261128T190826Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8813 (MILANO CENTRALE -> LECCE) ore 20:07
+DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 20:02:56 - 20:08:26\nTreni coinvolti nella chi
+ usura:\n  - TRENO 8813 (MILANO CENTRALE -> LECCE) [Transito]\nRitardo mass
+ imo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: T
+ ransito stimato senza fermata (69% tratta TERMOLI -> FOGGIA\; pedale annun
+ cio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.SEVERO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8815--20261127-S11025@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T195928Z
-DTEND:20261128T200458Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 20:59 - 21:04 (primo: TRENO 8815)
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T200037Z
+DTEND:20261128T200607Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:00 - 21:06 (primo: TRENO 8815)
 DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 20:59:28 - 21:04:58\nTreni coinvol
+ NUA - 2 TRENI\nChiusura sbarre stimata: 21:00:37 - 21:06:07\nTreni coinvol
  ti nella chiusura:\n  - TRENO 8815 (VENEZIA S.LUCIA -> LECCE) [Transito]\n
    - TRENO 8815 (VENEZIA S.LUCIA -> LECCE) [Transito]\nRitardo massimo rile
  vato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura 
@@ -364,68 +430,87 @@ X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-611--20261127-S11025@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
 DTSTART:20261128T202815Z
 DTEND:20261128T203300Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 21:28 - 21:33 (primo: IC 611)
-DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 21:28:15 - 21:33:00\nTreni coinvol
- ti nella chiusura:\n  - IC 611 (BOLZANO -> BARI CENTRALE)\n  - IC 611 (BOL
- ZANO -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
- ma: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
- lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
- dale (120s)
+SUMMARY:[FERMATA] IC 611 (BOLZANO -> BARI CENTRALE) ore 21:32
+DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: FERMATA\nChius
+ ura sbarre stimata: 21:28:15 - 21:33:00\nTreni coinvolti nella chiusura:\n
+   - IC 611 (BOLZANO -> BARI CENTRALE)\nRitardo massimo rilevato: 0 min\nAf
+ fidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia or
+ aria regolare
 LOCATION:Passaggio a Livello / Stazione S.SEVERO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:FERMATA,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:IC
 END:VEVENT
 BEGIN:VEVENT
 UID:train-8819--20261127-S11025@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
-DTSTART:20261128T210828Z
-DTEND:20261128T211358Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 22:08 - 22:13 (primo: TRENO 8819)
-DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 22:08:28 - 22:13:58\nTreni coinvol
- ti nella chiusura:\n  - TRENO 8819 (MILANO CENTRALE -> BARI CENTRALE) [Tra
- nsito]\n  - TRENO 8819 (MILANO CENTRALE -> BARI CENTRALE) [Transito]\nRita
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T210937Z
+DTEND:20261128T211507Z
+SUMMARY:[TRANSITO VELOCE] TRENO 8819 (MILANO CENTRALE -> BARI CENTRALE) ore
+  22:13
+DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 22:09:37 - 22:15:07\nTreni coinvolti nella chi
+ usura:\n  - TRENO 8819 (MILANO CENTRALE -> BARI CENTRALE) [Transito]\nRita
  rdo massimo rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euri
- stica: Chiusura continua per 2 treni: intervallo utile tra i passaggi (0s)
-  inferiore alla soglia minima di sgombero stradale (120s)
+ stica: Transito stimato senza fermata (69% tratta TERMOLI -> FOGGIA\; peda
+ le annuncio fisso Vmax)
 LOCATION:Passaggio a Livello / Stazione S.SEVERO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
+CATEGORIES:TRANSITO VELOCE,FERROVIA
 X-PL-DELAY-MIN:0
 X-PL-CONFIDENCE:0.78
 X-PL-TRAIN-CATEGORY:TRENO
 END:VEVENT
 BEGIN:VEVENT
 UID:train-752--20261127-S11025@pl-tracker.local
-DTSTAMP:20261128T041740Z
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
+DTSTART:20261128T222852Z
+DTEND:20261128T223322Z
+SUMMARY:[TRANSITO VELOCE] ICN 752 (LECCE -> MILANO CENTRALE) ore 23:32
+DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: TRANSITO VELOC
+ E\nChiusura sbarre stimata: 23:28:52 - 23:33:22\nTreni coinvolti nella chi
+ usura:\n  - ICN 752 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massimo
+  rilevato: 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Tran
+ sito stimato senza fermata (30% tratta FOGGIA -> TERMOLI\; pedale annuncio
+  fisso Vmax)
+LOCATION:Passaggio a Livello / Stazione S.SEVERO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:TRANSITO VELOCE,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.78
+X-PL-TRAIN-CATEGORY:ICN
+END:VEVENT
+BEGIN:VEVENT
+UID:train-755--20261127-S11025@pl-tracker.local
+DTSTAMP:20261128T132805Z
 SEQUENCE:0
-DTSTART:20261128T222804Z
-DTEND:20261128T223234Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 23:28 - 23:32 (primo: ICN 752)
+DTSTART:20261129T044415Z
+DTEND:20261129T044900Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 05:44 - 05:49 (primo: ICN 755)
 DESCRIPTION:Stazione/PL: S.SEVERO (S11025)\nRegime chiusura: CHIUSURA CONTI
- NUA - 2 TRENI\nChiusura sbarre stimata: 23:28:04 - 23:32:34\nTreni coinvol
- ti nella chiusura:\n  - ICN 752 (LECCE -> MILANO CENTRALE) [Transito]\n  -
-  ICN 752 (LECCE -> MILANO CENTRALE) [Transito]\nRitardo massimo rilevato: 
- 0 min\nAffidabilità stima: 78%\nNota normativa/euristica: Chiusura contin
- ua per 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia
-  minima di sgombero stradale (120s)
+ NUA - 2 TRENI\nChiusura sbarre stimata: 05:44:15 - 05:49:00\nTreni coinvol
+ ti nella chiusura:\n  - ICN 755 (MILANO CENTRALE -> LECCE)\n  - ICN 755 (M
+ ILANO CENTRALE -> LECCE)\nRitardo massimo rilevato: 0 min\nAffidabilità s
+ tima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interv
+ allo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero st
+ radale (120s)
 LOCATION:Passaggio a Livello / Stazione S.SEVERO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
 X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.78
+X-PL-CONFIDENCE:0.90
 X-PL-TRAIN-CATEGORY:ICN
 END:VEVENT
 END:VCALENDAR

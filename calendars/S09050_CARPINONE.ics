@@ -9,28 +9,49 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:1ae2e5032eb57cbc1dfc71448014ac85f3c5b2bc3a1f419b5425720acb88
- c31b
+X-CONTENT-HASH:47a0029fb8915d560e4d6979ea35e605e42089a2285fefe885bf8fc6018d
+ 86f1
 BEGIN:VEVENT
 UID:train-23363--20261127-S09050@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
 DTSTART:20261128T074630Z
 DTEND:20261128T075100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 08:46 - 08:51 (primo: REG 23363)
+SUMMARY:[FERMATA] REG 23363 (ROMA TERMINI -> BOIANO) ore 08:50
+DESCRIPTION:Stazione/PL: CARPINONE (S09050)\nRegime chiusura: FERMATA\nChiu
+ sura sbarre stimata: 08:46:30 - 08:51:00\nTreni coinvolti nella chiusura:\
+ n  - REG 23363 (ROMA TERMINI -> BOIANO)\nRitardo massimo rilevato: 0 min\n
+ Affidabilità stima: 90%\nNota normativa/euristica: Previsione da traccia 
+ oraria regolare
+LOCATION:Passaggio a Livello / Stazione CARPINONE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23349--20261127-S09050@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T121200Z
+DTEND:20261128T121830Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 13:12 - 13:18 (primo: REG 23349) (+2 
+ min)
 DESCRIPTION:Stazione/PL: CARPINONE (S09050)\nRegime chiusura: CHIUSURA CONT
- INUA - 2 TRENI\nChiusura sbarre stimata: 08:46:30 - 08:51:00\nTreni coinvo
- lti nella chiusura:\n  - REG 23363 (ROMA TERMINI -> BOIANO)\n  - REG 23363
-  (ROMA TERMINI -> BOIANO)\nRitardo massimo rilevato: 0 min\nAffidabilità 
- stima: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: inter
- vallo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero s
- tradale (120s)
+ INUA - 2 TRENI\nChiusura sbarre stimata: 13:12:00 - 13:18:30\nTreni coinvo
+ lti nella chiusura:\n  - REG 23349 (BOIANO -> ROMA TIBURTINA) (+2m)\n  - R
+ EG 23349 (BOIANO -> ROMA TIBURTINA) (+2m)\nRitardo massimo rilevato: 2 min
+ \nAffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua pe
+ r 2 treni: intervallo utile tra i passaggi (0s) inferiore alla soglia mini
+ ma di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione CARPINONE
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR

@@ -9,28 +9,49 @@ X-WR-CALDESC:Stima chiusura sbarre e transiti ferroviari inferiti da dati p
 X-WR-TIMEZONE:Europe/Rome
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
-X-CONTENT-HASH:f00941af0a58be837f4f15ddca16640d1dba1aade141d136cdd6f3727e7a
- 0e4f
+X-CONTENT-HASH:bffe76f2130383a85b841a8f9d075a7ca7bbf4bba39aa596564a1c9143c5
+ 2253
 BEGIN:VEVENT
 UID:train-23363--20261127-S09453@pl-tracker.local
-DTSTAMP:20261128T041740Z
-SEQUENCE:0
+DTSTAMP:20261128T132805Z
+SEQUENCE:1
 DTSTART:20261128T080630Z
 DTEND:20261128T081100Z
-SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 09:06 - 09:11 (primo: REG 23363)
+SUMMARY:[FERMATA] REG 23363 (ROMA TERMINI -> BOIANO) ore 09:10
+DESCRIPTION:Stazione/PL: BOIANO (S09453)\nRegime chiusura: FERMATA\nChiusur
+ a sbarre stimata: 09:06:30 - 09:11:00\nTreni coinvolti nella chiusura:\n  
+ - REG 23363 (ROMA TERMINI -> BOIANO)\nRitardo massimo rilevato: 0 min\nAff
+ idabilità stima: 90%\nNota normativa/euristica: Previsione da traccia ora
+ ria regolare
+LOCATION:Passaggio a Livello / Stazione BOIANO
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:FERMATA,FERROVIA
+X-PL-DELAY-MIN:0
+X-PL-CONFIDENCE:0.90
+X-PL-TRAIN-CATEGORY:REG
+END:VEVENT
+BEGIN:VEVENT
+UID:train-23349--20261127-S09453@pl-tracker.local
+DTSTAMP:20261128T132805Z
+SEQUENCE:0
+DTSTART:20261128T115830Z
+DTEND:20261128T120300Z
+SUMMARY:[CHIUSURA CONTINUA - 2 TRENI] 12:58 - 13:03 (primo: REG 23349) (+2 
+ min)
 DESCRIPTION:Stazione/PL: BOIANO (S09453)\nRegime chiusura: CHIUSURA CONTINU
- A - 2 TRENI\nChiusura sbarre stimata: 09:06:30 - 09:11:00\nTreni coinvolti
-  nella chiusura:\n  - REG 23363 (ROMA TERMINI -> BOIANO)\n  - REG 23363 (R
- OMA TERMINI -> BOIANO)\nRitardo massimo rilevato: 0 min\nAffidabilità sti
- ma: 90%\nNota normativa/euristica: Chiusura continua per 2 treni: interval
- lo utile tra i passaggi (0s) inferiore alla soglia minima di sgombero stra
- dale (120s)
+ A - 2 TRENI\nChiusura sbarre stimata: 12:58:30 - 13:03:00\nTreni coinvolti
+  nella chiusura:\n  - REG 23349 (BOIANO -> ROMA TIBURTINA) (+2m)\n  - REG 
+ 23349 (BOIANO -> ROMA TIBURTINA) (+2m)\nRitardo massimo rilevato: 2 min\nA
+ ffidabilità stima: 99%\nNota normativa/euristica: Chiusura continua per 2
+  treni: intervallo utile tra i passaggi (0s) inferiore alla soglia minima 
+ di sgombero stradale (120s)
 LOCATION:Passaggio a Livello / Stazione BOIANO
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CATEGORIES:CHIUSURA CONTINUA - 2 TRENI,FERROVIA
-X-PL-DELAY-MIN:0
-X-PL-CONFIDENCE:0.90
+X-PL-DELAY-MIN:2
+X-PL-CONFIDENCE:0.99
 X-PL-TRAIN-CATEGORY:REG
 END:VEVENT
 END:VCALENDAR
